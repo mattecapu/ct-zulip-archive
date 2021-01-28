@@ -1,0 +1,331 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229122-general:-meta/topic/TikZ.20support.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/index.html">general: meta</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html">TikZ support</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+<head><link href="/style.css" rel="stylesheet"></head>
+
+{% raw %}
+
+<a name="191593860"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191593860" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191593860">(Mar 24 2020 at 11:01)</a>:</h4>
+<p>Anyone have any idea how easy/hard/impossible it will be to get TikZ working, or more generally fiddling with our LaTeX preamble?</p>
+
+
+
+<a name="191594111"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191594111" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191594111">(Mar 24 2020 at 11:03)</a>:</h4>
+<p>the LaTeX renderer Zulip uses does not support TikZ and although there is an open issue for xy support, no-one is currently working on it</p>
+
+
+
+<a name="191594229"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191594229" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191594229">(Mar 24 2020 at 11:04)</a>:</h4>
+<p>so the best options for now are to paste images</p>
+
+
+
+<a name="191594246"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191594246" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191594246">(Mar 24 2020 at 11:04)</a>:</h4>
+<p>thanks!</p>
+
+
+
+<a name="191594306"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191594306" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191594306">(Mar 24 2020 at 11:05)</a>:</h4>
+<p>if there was a server-side LaTeX renderer, we could possibly integrate a bot that would respond to TikZ code, but I'm not aware of one existing</p>
+
+
+
+<a name="191594498"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191594498" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191594498">(Mar 24 2020 at 11:07)</a>:</h4>
+<p>Any hackers with <strong><em>lots</em></strong> of spare time on their hands could try to integrate LaTeXit, an existing LaTeX-to-svg renderer. (Or with <strong>lots and lots</strong> of time, TikZit.......)</p>
+
+
+
+<a name="191605156"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191605156" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191605156">(Mar 24 2020 at 13:00)</a>:</h4>
+<p>I guess you have to take the telegram bot that converts latex to images and posts them for you, and adapt it to zulip</p>
+
+
+
+<a name="191605161"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191605161" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191605161">(Mar 24 2020 at 13:00)</a>:</h4>
+<p>I don't know how hard that is.</p>
+
+
+
+<a name="191656890"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191656890" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191656890">(Mar 24 2020 at 18:55)</a>:</h4>
+<p>if we get this to work it'll be great. with 180 members, we already have more than enough know-how to do it.<br>
+but for some reason, only a small subset are subscribed to the meta stream.</p>
+
+
+
+<a name="191657064"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191657064" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191657064">(Mar 24 2020 at 18:56)</a>:</h4>
+<p>Well, consider that knowing how to do something != doing it. It could still take many hours to implement such a thing, and I am fairly convinced many people wouldn't like to spend their time that way</p>
+
+
+
+<a name="191827235"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191827235" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191827235">(Mar 26 2020 at 00:14)</a>:</h4>
+<p>At some point we should try to port the telegram TikZ bot to this, cos that would be a total lifesaver. We'll have to see how different the APIs are. This could be a nice weekend project, time permitting.</p>
+
+
+
+<a name="191827634"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191827634" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191827634">(Mar 26 2020 at 00:17)</a>:</h4>
+<p>Yeah, that would be huge. We can then find a way to support tikzcd as well.</p>
+
+
+
+<a name="191827701"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191827701" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191827701">(Mar 26 2020 at 00:18)</a>:</h4>
+<p>Scratch that, it is quite diffucult</p>
+
+
+
+<a name="191827712"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191827712" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191827712">(Mar 26 2020 at 00:18)</a>:</h4>
+<p>Telegram supports inline bots, while I don't think that Zulip does</p>
+
+
+
+<a name="191827714"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191827714" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191827714">(Mar 26 2020 at 00:18)</a>:</h4>
+<p>that's a big difference</p>
+
+
+
+<a name="191827841"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191827841" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191827841">(Mar 26 2020 at 00:21)</a>:</h4>
+<p>I don't know how zulip renders Latex so I don't have an opinion on the difficulty right now :/.</p>
+
+
+
+<a name="191827854"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191827854" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191827854">(Mar 26 2020 at 00:21)</a>:</h4>
+<p>Zulip uses KaTeX to render LaTeX</p>
+
+
+
+<a name="191827912"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191827912" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191827912">(Mar 26 2020 at 00:22)</a>:</h4>
+<p>meaning if you want Zulip to support TikZ natively, you'll need to add it to KaTeX, which is not a small undertaking...</p>
+
+
+
+<a name="191827926"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191827926" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191827926">(Mar 26 2020 at 00:22)</a>:</h4>
+<p>The idea wasn't fiddling with KaTeX</p>
+
+
+
+<a name="191827974"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191827974" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191827974">(Mar 26 2020 at 00:23)</a>:</h4>
+<p>The idea was to deploy a bot. You address the bot in your message together with the latex you wanna render, the bot renders it and drops the png in the chat. At that point KaTeX is not used, the bot can run a full TeXLive under the hood</p>
+
+
+
+<a name="191828059"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828059" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828059">(Mar 26 2020 at 00:24)</a>:</h4>
+<p>That's what InLaTeX bot does on Telegram. But that's an inline bot, meaning that as soon as you type <code>@inlatex</code> and start writing code you have a popup preview window, and you can press send only when everything looks ok.</p>
+
+
+
+<a name="191828074"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828074" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828074">(Mar 26 2020 at 00:24)</a>:</h4>
+<p>(Which is actually pretty damn neat if you ask me)</p>
+
+
+
+<a name="191828100"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828100" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828100">(Mar 26 2020 at 00:25)</a>:</h4>
+<p>That's a good idea! But it doesn't have to be server-side TexLive, I guess there's some online tool we can use, i.e. the bot issuing a web request to get back rendered data.</p>
+
+
+
+<a name="191828106"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828106" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828106">(Mar 26 2020 at 00:25)</a>:</h4>
+<p>Especially while typesetting diagrams errors are frequent, so having a preview is very cool and avoids flooding the chat with wrong code</p>
+
+
+
+<a name="191828128"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828128" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828128">(Mar 26 2020 at 00:25)</a>:</h4>
+<p>So I initially thought "cool, let's just port the inline telegram bot to here, the source is public"</p>
+
+
+
+<a name="191828146"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828146" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828146">(Mar 26 2020 at 00:25)</a>:</h4>
+<p>But then again, zulip does not support inlne bots to my knowledge, making everything difficult</p>
+
+
+
+<a name="191828330"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828330" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828330">(Mar 26 2020 at 00:28)</a>:</h4>
+<p>Also, I understand that adding tikz to KaTeX is very hard, but it's also incredible that on KaTeX' Github there is only one issue about this, and it has been insta-closed with a wontfix in 2015. It would be about time to do something about it</p>
+
+
+
+<a name="191828356"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828356" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828356">(Mar 26 2020 at 00:29)</a>:</h4>
+<p><span class="user-mention" data-user-id="276438">@Fabrizio Genovese</span>: there's actually an open issue about commutative diagrams specifically (<a href="https://github.com/KaTeX/KaTeX/issues/1834" title="https://github.com/KaTeX/KaTeX/issues/1834">https://github.com/KaTeX/KaTeX/issues/1834</a>)</p>
+
+
+
+<a name="191828365"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828365" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828365">(Mar 26 2020 at 00:29)</a>:</h4>
+<p>though that only covers some of the use-cases</p>
+
+
+
+<a name="191828386"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828386" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828386">(Mar 26 2020 at 00:29)</a>:</h4>
+<blockquote>
+<p>it has been insta-closed with a wontfix in 2015</p>
+</blockquote>
+<p>I think that's because it's a monumental task</p>
+
+
+
+<a name="191828406"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828406" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828406">(Mar 26 2020 at 00:29)</a>:</h4>
+<p>Yes, I was that issue, but it's really not the same. Practically everyone in this community relies on tikz, one way or another. I think KaTeX is just not enough for us.</p>
+
+
+
+<a name="191828409"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828409" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828409">(Mar 26 2020 at 00:29)</a>:</h4>
+<p>if someone came along with a pull request, I don't think they'd be quick to turn it down</p>
+
+
+
+<a name="191828462"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828462" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828462">(Mar 26 2020 at 00:30)</a>:</h4>
+<p>I agree having a TikZ bot would be ideal</p>
+
+
+
+<a name="191828488"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828488" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828488">(Mar 26 2020 at 00:30)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276438">Fabrizio Genovese</span> <a href="#narrow/stream/229122-meta/topic/storage/near/191828146" title="#narrow/stream/229122-meta/topic/storage/near/191828146">said</a>:</p>
+<blockquote>
+<p>But then again, zulip does not support inlne bots to my knowledge, making everything difficult</p>
+</blockquote>
+<p>Wait, do you mean that one can't explicitly <em>invoke</em> a bot?</p>
+
+
+
+<a name="191828519"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828519" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828519">(Mar 26 2020 at 00:31)</a>:</h4>
+<p>as in: the bot will only respond to sent messages</p>
+
+
+
+<a name="191828524"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828524" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828524">(Mar 26 2020 at 00:31)</a>:</h4>
+<p>No, I mean that when you type <code>@inlinebot</code> on telegram the dialogue with the bot is interactive even <em>before</em> sending a message</p>
+
+
+
+<a name="191828572"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828572" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828572">(Mar 26 2020 at 00:32)</a>:</h4>
+<p>Exactly what <span class="user-mention" data-user-id="276092">@Nathanael Arkor</span> says</p>
+
+
+
+<a name="191828590"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828590" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828590">(Mar 26 2020 at 00:32)</a>:</h4>
+<p>Well, then the bot can react to a message by modifying it, right?</p>
+
+
+
+<a name="191828597"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828597" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828597">(Mar 26 2020 at 00:32)</a>:</h4>
+<p>Well, yes and no</p>
+
+
+
+<a name="191828704"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828704" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828704">(Mar 26 2020 at 00:34)</a>:</h4>
+<p>for instance I can say <code>@bot a \to b \Sum c</code>. This is wrong, cos <code>Sum</code> is capitalized, so the bot won't display anything. So I send another message <code>@bot a \to b \sum c</code>. The bot replies with a correctly rendered pictures, but my two messages stay in the main chat window</p>
+
+
+
+<a name="191828725"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828725" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828725">(Mar 26 2020 at 00:34)</a>:</h4>
+<p>Now imagine that these messages aren't just a line, but 4000 chars each</p>
+
+
+
+<a name="191828743"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828743" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828743">(Mar 26 2020 at 00:34)</a>:</h4>
+<p>You get the chat flooded with garbage code really quickly</p>
+
+
+
+<a name="191828775"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828775" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828775">(Mar 26 2020 at 00:35)</a>:</h4>
+<p>An obvious workaround would be to address the bot in a private chat specifying topic and stream to publish to, but that becomes really cumbersome quite quickly</p>
+
+
+
+<a name="191828966"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191828966" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191828966">(Mar 26 2020 at 00:38)</a>:</h4>
+<p>(moved the messages to the relevant thread)</p>
+
+
+
+<a name="191830027"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191830027" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191830027">(Mar 26 2020 at 00:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276438">Fabrizio Genovese</span> <a href="#narrow/stream/229122-meta/topic/TikZ.20support/near/191828704" title="#narrow/stream/229122-meta/topic/TikZ.20support/near/191828704">said</a>:</p>
+<blockquote>
+<p>for instance I can say <code>@bot a \to b \Sum c</code>. This is wrong, cos <code>Sum</code> is capitalized, so the bot won't display anything. So I send another message <code>@bot a \to b \sum c</code>. The bot replies with a correctly rendered pictures, but my two messages stay in the main chat window</p>
+</blockquote>
+<p>Modifying a message does not re-activate bots?</p>
+
+
+
+<a name="191830316"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191830316" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191830316">(Mar 26 2020 at 01:03)</a>:</h4>
+<p><span class="user-mention" data-user-id="275900">@Stelios Tsampas</span>: that doesn't seem clear from the documentation; we'd probably have to ask in the Zulip server</p>
+
+
+
+<a name="191830426"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/191830426" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#191830426">(Mar 26 2020 at 01:05)</a>:</h4>
+<p>I guess at worst we would have to make a "on-modify" bot? Anyway I should stop making conjectures on stuff I don't know :P.</p>
+
+
+
+<a name="195543576"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/195543576" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Aleks Kissinger <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#195543576">(Apr 28 2020 at 10:23)</a>:</h4>
+<p>Testing pasting directly from TikZiT:<br>
+<a href="/user_uploads/21317/Fb5Bk3IJ5toVI1_ibXC1JyUt/image.png" title="image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/Fb5Bk3IJ5toVI1_ibXC1JyUt/image.png" title="image.png"><img src="/user_uploads/21317/Fb5Bk3IJ5toVI1_ibXC1JyUt/image.png"></a></div>
+
+
+
+<a name="195543973"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229122-general%3A%20meta/topic/TikZ%20support/near/195543973" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Aleks Kissinger <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229122-general:-meta/topic/TikZ.20support.html#195543973">(Apr 28 2020 at 10:27)</a>:</h4>
+<p>That seems to work pretty well. If you preview a picture in TikZiT, you can copy it to clipboard by right clicking on it:<br>
+<a href="/user_uploads/21317/Ymjzc7xQdFO6x4ov2j8aOmMX/Screenshot-from-2020-04-28-11-24-56.png" title="Screenshot-from-2020-04-28-11-24-56.png">Screenshot-from-2020-04-28-11-24-56.png</a> <br>
+and paste into Zulip. Not as smooth as you might like (and no tikz source saved), but a pretty quick solution.</p>
+<div class="message_inline_image"><a href="/user_uploads/21317/Ymjzc7xQdFO6x4ov2j8aOmMX/Screenshot-from-2020-04-28-11-24-56.png" title="Screenshot-from-2020-04-28-11-24-56.png"><img src="/user_uploads/21317/Ymjzc7xQdFO6x4ov2j8aOmMX/Screenshot-from-2020-04-28-11-24-56.png"></a></div>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Jan 28 2021 at 12:33 UTC</p>
