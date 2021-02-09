@@ -9,7 +9,8 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
-* [web cats](topic/web.20cats.html) (115 messages, latest: Jan 27 2021 at 09:40)
+* [web cats](topic/web.20cats.html) (132 messages, latest: Feb 07 2021 at 15:19)
+* [operads for complex system design](topic/operads.20for.20complex.20system.20design.html) (63 messages, latest: Feb 01 2021 at 05:51)
 * [Understanding statecharts coalgebraically](topic/Understanding.20statecharts.20coalgebraically.html) (2 messages, latest: Jan 26 2021 at 23:03)
 * [imaging systems engineering](topic/imaging.20systems.20engineering.html) (143 messages, latest: Jan 14 2021 at 02:39)
 * [security + ct](topic/security.20.2B.20ct.html) (11 messages, latest: Jan 13 2021 at 06:39)
@@ -20,7 +21,6 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [Parallel diagram rewriting](topic/Parallel.20diagram.20rewriting.html) (25 messages, latest: Dec 10 2020 at 11:59)
 * [Markov games](topic/Markov.20games.html) (16 messages, latest: Nov 30 2020 at 22:12)
 * [graphical bimonoidal categories](topic/graphical.20bimonoidal.20categories.html) (111 messages, latest: Nov 20 2020 at 12:46)
-* [operads for complex system design](topic/operads.20for.20complex.20system.20design.html) (35 messages, latest: Oct 26 2020 at 16:21)
 * [systems](topic/systems.html) (99 messages, latest: Oct 23 2020 at 12:37)
 * [Continuous-time Markov processes as functors](topic/Continuous-time.20Markov.20processes.20as.20functors.html) (25 messages, latest: Oct 19 2020 at 10:24)
 * [Compositional modeling with category theory](topic/Compositional.20modeling.20with.20category.20theory.html) (1 message, latest: Oct 19 2020 at 04:50)
@@ -101,4 +101,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Jan 28 2021 at 12:33 UTC</p>
+<hr><p>Last updated: Feb 09 2021 at 08:01 UTC</p>

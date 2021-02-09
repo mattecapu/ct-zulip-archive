@@ -9,8 +9,21 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Groupoids and Sets](topic/Groupoids.20and.20Sets.html) (9 messages, latest: Feb 09 2021 at 00:04)
+* [Closed structure on presheaf category](topic/Closed.20structure.20on.20presheaf.20category.html) (14 messages, latest: Feb 08 2021 at 17:27)
+* [Categorical adjoints as dagger category](topic/Categorical.20adjoints.20as.20dagger.20category.html) (17 messages, latest: Feb 08 2021 at 14:01)
+* [promonads : categories = profunctors : graphs?](topic/promonads.20.3A.20categories.20.3D.20profunctors.20.3A.20graphs.3F.html) (80 messages, latest: Feb 07 2021 at 12:41)
+* [Profunctor composition in the double cat of spans](topic/Profunctor.20composition.20in.20the.20double.20cat.20of.20spans.html) (1 message, latest: Feb 07 2021 at 10:53)
+* [Probability dual](topic/Probability.20dual.html) (137 messages, latest: Feb 07 2021 at 04:54)
+* [Internal toposes](topic/Internal.20toposes.html) (28 messages, latest: Feb 06 2021 at 19:28)
+* [Differential rig categories](topic/Differential.20rig.20categories.html) (30 messages, latest: Feb 06 2021 at 11:12)
+* [Understanding Set -> Vect](topic/Understanding.20Set.20-.3E.20Vect.html) (100 messages, latest: Feb 05 2021 at 09:56)
+* [Monoidal functors to set](topic/Monoidal.20functors.20to.20set.html) (8 messages, latest: Feb 04 2021 at 17:19)
+* [A converse to Lambek theorem](topic/A.20converse.20to.20Lambek.20theorem.html) (8 messages, latest: Feb 03 2021 at 01:47)
+* [Factorizing and Finitely Presented Objects](topic/Factorizing.20and.20Finitely.20Presented.20Objects.html) (4 messages, latest: Feb 01 2021 at 03:13)
+* [Monoids and left adjoint to U: Vect -> Set](topic/Monoids.20and.20left.20adjoint.20to.20U.3A.20Vect.20-.3E.20Set.html) (208 messages, latest: Jan 31 2021 at 22:30)
+* [Kock-Lawvere axiom and Amazing Right Adjoints](topic/Kock-Lawvere.20axiom.20and.20Amazing.20Right.20Adjoints.html) (8 messages, latest: Jan 28 2021 at 17:58)
 * [Internal Categories in an Endofunctor Category](topic/Internal.20Categories.20in.20an.20Endofunctor.20Category.html) (14 messages, latest: Jan 28 2021 at 02:53)
-* [Kock-Lawvere axiom and Amazing Right Adjoints](topic/Kock-Lawvere.20axiom.20and.20Amazing.20Right.20Adjoints.html) (6 messages, latest: Jan 28 2021 at 02:03)
 * [Units in a VDC](topic/Units.20in.20a.20VDC.html) (13 messages, latest: Jan 27 2021 at 22:02)
 * ["Characterization" in categorical language?](topic/.22Characterization.22.20in.20categorical.20language.3F.html) (12 messages, latest: Jan 27 2021 at 17:22)
 * [Is Vect locally presentable?](topic/Is.20Vect.20locally.20presentable.3F.html) (34 messages, latest: Jan 27 2021 at 15:23)
@@ -19,12 +32,10 @@ permalink: /stream/229199-learning:-questions/index.html
 * [something like a slice category?](topic/something.20like.20a.20slice.20category.3F.html) (24 messages, latest: Jan 26 2021 at 16:50)
 * [Lax functors as lax modules?](topic/Lax.20functors.20as.20lax.20modules.3F.html) (1 message, latest: Jan 26 2021 at 15:41)
 * [Distributive laws for monoids](topic/Distributive.20laws.20for.20monoids.html) (8 messages, latest: Jan 25 2021 at 21:02)
-* [Differential rig categories](topic/Differential.20rig.20categories.html) (21 messages, latest: Jan 24 2021 at 10:45)
 * [All about 2-rigs: should they be called 2-rigs?](topic/All.20about.202-rigs.3A.20should.20they.20be.20called.202-rigs.3F.html) (7 messages, latest: Jan 23 2021 at 17:44)
 * [All about 2-rigs](topic/All.20about.202-rigs.html) (65 messages, latest: Jan 23 2021 at 12:25)
 * [Intuition for cospans](topic/Intuition.20for.20cospans.html) (16 messages, latest: Jan 22 2021 at 13:25)
 * [Relationship between spans and bimodules](topic/Relationship.20between.20spans.20and.20bimodules.html) (330 messages, latest: Jan 21 2021 at 18:25)
-* [Probability dual](topic/Probability.20dual.html) (126 messages, latest: Jan 20 2021 at 23:31)
 * [Optics and coequalisers](topic/Optics.20and.20coequalisers.html) (16 messages, latest: Jan 20 2021 at 12:40)
 * [Puzzle: Finitely complete categories](topic/Puzzle.3A.20Finitely.20complete.20categories.html) (192 messages, latest: Jan 19 2021 at 23:36)
 * [Partial application in a monoidal category](topic/Partial.20application.20in.20a.20monoidal.20category.html) (5 messages, latest: Jan 19 2021 at 13:15)
@@ -63,7 +74,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Left adjoint to monotone function](topic/Left.20adjoint.20to.20monotone.20function.html) (13 messages, latest: Dec 22 2020 at 04:09)
 * [Help with a false proof about pullbacks and monomorphisms](topic/Help.20with.20a.20false.20proof.20about.20pullbacks.20and.20monomorphisms.html) (6 messages, latest: Dec 21 2020 at 17:26)
 * [Reactivity categories](topic/Reactivity.20categories.html) (8 messages, latest: Dec 21 2020 at 11:58)
-* [Monoids and left adjoint to U: Vect -> Set](topic/Monoids.20and.20left.20adjoint.20to.20U.3A.20Vect.20-.3E.20Set.html) (168 messages, latest: Dec 19 2020 at 18:58)
 * [effect algebra examples](topic/effect.20algebra.20examples.html) (8 messages, latest: Dec 19 2020 at 12:13)
 * [Name that product](topic/Name.20that.20product.html) (3 messages, latest: Dec 19 2020 at 08:40)
 * [Kastler, Cyclic cohomology within the differential envelope](topic/Kastler.2C.20Cyclic.20cohomology.20within.20the.20differential.20envelope.html) (106 messages, latest: Dec 18 2020 at 00:33)
@@ -289,4 +299,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jan 28 2021 at 12:33 UTC</p>
+<hr><p>Last updated: Feb 09 2021 at 08:01 UTC</p>

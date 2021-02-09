@@ -18,4 +18,4 @@ permalink: /stream/229134-philosophy/index.html
 * [history](topic/history.html) (2 messages, latest: Mar 27 2020 at 06:56)
 * [stream events](topic/stream.20events.html) (6 messages, latest: Mar 26 2020 at 20:00)
 
-<hr><p>Last updated: Jan 28 2021 at 12:33 UTC</p>
+<hr><p>Last updated: Feb 09 2021 at 08:01 UTC</p>

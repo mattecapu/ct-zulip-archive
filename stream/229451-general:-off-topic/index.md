@@ -9,6 +9,16 @@ permalink: /stream/229451-general:-off-topic/index.html
 
 ### Topics:
 
+* [The Ramanujan Machine](topic/The.20Ramanujan.20Machine.html) (7 messages, latest: Feb 08 2021 at 13:01)
+* [coronavirus mutations](topic/coronavirus.20mutations.html) (2 messages, latest: Feb 08 2021 at 01:32)
+* [neutrinos and neutrettos](topic/neutrinos.20and.20neutrettos.html) (1 message, latest: Feb 07 2021 at 21:38)
+* [Solitude Standing](topic/Solitude.20Standing.html) (1 message, latest: Feb 07 2021 at 01:42)
+* [how to learn stuff](topic/how.20to.20learn.20stuff.html) (8 messages, latest: Feb 06 2021 at 22:35)
+* [Chrome Extensions](topic/Chrome.20Extensions.html) (3 messages, latest: Feb 05 2021 at 13:43)
+* [the Hoyle state](topic/the.20Hoyle.20state.html) (2 messages, latest: Feb 05 2021 at 08:26)
+* [stable nuclides](topic/stable.20nuclides.html) (11 messages, latest: Feb 04 2021 at 17:51)
+* [grothendieck](topic/grothendieck.html) (9 messages, latest: Feb 04 2021 at 09:40)
+* [The epistemic coup](topic/The.20epistemic.20coup.html) (29 messages, latest: Feb 03 2021 at 21:13)
 * [6-ary star system](topic/6-ary.20star.20system.html) (3 messages, latest: Jan 28 2021 at 02:02)
 * [Bach](topic/Bach.html) (52 messages, latest: Jan 28 2021 at 02:01)
 * [memes](topic/memes.html) (72 messages, latest: Jan 27 2021 at 23:34)
@@ -17,7 +27,6 @@ permalink: /stream/229451-general:-off-topic/index.html
 * [The Devil's Sonata](topic/The.20Devil's.20Sonata.html) (6 messages, latest: Jan 18 2021 at 20:57)
 * [math jokes](topic/math.20jokes.html) (11 messages, latest: Jan 17 2021 at 11:15)
 * [quote](topic/quote.html) (1 message, latest: Jan 13 2021 at 02:06)
-* [grothendieck](topic/grothendieck.html) (1 message, latest: Jan 11 2021 at 23:01)
 * [words I learned today](topic/words.20I.20learned.20today.html) (17 messages, latest: Jan 10 2021 at 06:23)
 * [Perotin](topic/Perotin.html) (11 messages, latest: Jan 09 2021 at 15:24)
 * [coup attempt](topic/coup.20attempt.html) (48 messages, latest: Jan 08 2021 at 19:04)
@@ -57,4 +66,4 @@ permalink: /stream/229451-general:-off-topic/index.html
 * [jobs](topic/jobs.html) (3 messages, latest: Mar 26 2020 at 18:39)
 * [local situations](topic/local.20situations.html) (8 messages, latest: Mar 25 2020 at 16:44)
 
-<hr><p>Last updated: Jan 28 2021 at 12:33 UTC</p>
+<hr><p>Last updated: Feb 09 2021 at 08:01 UTC</p>

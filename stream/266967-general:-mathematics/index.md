@@ -9,7 +9,9 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [This Week's Finds (1-50)](topic/This.20Week's.20Finds.20(1-50).html) (35 messages, latest: Jan 23 2021 at 08:02)
+* [endomorphism monoids of infinite sets](topic/endomorphism.20monoids.20of.20infinite.20sets.html) (71 messages, latest: Feb 08 2021 at 10:21)
+* [Perkel's graph and the 57-cell](topic/Perkel's.20graph.20and.20the.2057-cell.html) (28 messages, latest: Feb 07 2021 at 17:39)
+* [This Week's Finds (1-50)](topic/This.20Week's.20Finds.20(1-50).html) (40 messages, latest: Feb 04 2021 at 12:24)
 * [The initial model of logic: humans?!](topic/The.20initial.20model.20of.20logic.3A.20humans.3F!.html) (15 messages, latest: Jan 08 2021 at 00:26)
 * [The flying lemur principle](topic/The.20flying.20lemur.20principle.html) (6 messages, latest: Jan 07 2021 at 18:03)
 * [Forcing: cardinals below c](topic/Forcing.3A.20cardinals.20below.20c.html) (191 messages, latest: Jan 02 2021 at 16:50)
@@ -27,4 +29,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Jan 28 2021 at 12:33 UTC</p>
+<hr><p>Last updated: Feb 09 2021 at 08:01 UTC</p>

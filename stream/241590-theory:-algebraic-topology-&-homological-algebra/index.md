@@ -9,6 +9,8 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 
 ### Topics:
 
+* [spaces and complexes](topic/spaces.20and.20complexes.html) (7 messages, latest: Feb 01 2021 at 21:21)
+* [Simplices and projective spaces](topic/Simplices.20and.20projective.20spaces.html) (1 message, latest: Jan 30 2021 at 14:01)
 * [complexes of bundles](topic/complexes.20of.20bundles.html) (26 messages, latest: Dec 27 2020 at 21:47)
 * [Theorem A for topological categories](topic/Theorem.20A.20for.20topological.20categories.html) (6 messages, latest: Nov 15 2020 at 13:59)
 * [sheaf condition on sites](topic/sheaf.20condition.20on.20sites.html) (27 messages, latest: Oct 19 2020 at 14:24)
@@ -18,4 +20,4 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 * [simplicial sets](topic/simplicial.20sets.html) (1 message, latest: Jul 02 2020 at 11:05)
 * [Secondary algebraic K-theory](topic/Secondary.20algebraic.20K-theory.html) (13 messages, latest: Jun 01 2020 at 16:14)
 
-<hr><p>Last updated: Jan 28 2021 at 12:33 UTC</p>
+<hr><p>Last updated: Feb 09 2021 at 08:01 UTC</p>

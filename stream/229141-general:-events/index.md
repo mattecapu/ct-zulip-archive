@@ -9,6 +9,11 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [NYC Category Theory Seminar](topic/NYC.20Category.20Theory.20Seminar.html) (20 messages, latest: Feb 09 2021 at 06:29)
+* [Logic Webinar@IITK](topic/Logic.20Webinar.40IITK.html) (6 messages, latest: Feb 09 2021 at 04:16)
+* [ACT4E guest lecture](topic/ACT4E.20guest.20lecture.html) (1 message, latest: Feb 04 2021 at 10:02)
+* [Workshop on Polynomial Functors](topic/Workshop.20on.20Polynomial.20Functors.html) (1 message, latest: Feb 03 2021 at 22:22)
+* [structured vs decorated cospans](topic/structured.20vs.20decorated.20cospans.html) (2 messages, latest: Jan 31 2021 at 20:12)
 * [Bohemian L&P Cafe: Makkai](topic/Bohemian.20L.26P.20Cafe.3A.20Makkai.html) (3 messages, latest: Jan 28 2021 at 01:53)
 * [BLPC Talk: Makkai](topic/BLPC.20Talk.3A.20Makkai.html) (2 messages, latest: Jan 26 2021 at 15:43)
 * [World Logic Day](topic/World.20Logic.20Day.html) (8 messages, latest: Jan 14 2021 at 19:41)
@@ -21,7 +26,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Applied Compositional Thinking for Engineers](topic/Applied.20Compositional.20Thinking.20for.20Engineers.html) (4 messages, latest: Dec 07 2020 at 21:31)
 * [plannng for a career in software?](topic/plannng.20for.20a.20career.20in.20software.3F.html) (2 messages, latest: Dec 05 2020 at 01:37)
 * [Graph Transformation Theory and Applications](topic/Graph.20Transformation.20Theory.20and.20Applications.html) (4 messages, latest: Dec 04 2020 at 21:44)
-* [Logic Webinar@IITK](topic/Logic.20Webinar.40IITK.html) (5 messages, latest: Nov 22 2020 at 12:54)
 * [Palmgren memorial conference](topic/Palmgren.20memorial.20conference.html) (3 messages, latest: Nov 18 2020 at 20:08)
 * [Topos theory minicourse](topic/Topos.20theory.20minicourse.html) (4 messages, latest: Oct 27 2020 at 01:06)
 * [LMS Category Theory and Its Applications](topic/LMS.20Category.20Theory.20and.20Its.20Applications.html) (1 message, latest: Oct 23 2020 at 20:52)
@@ -31,7 +35,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Computational Logic and Applications 2020](topic/Computational.20Logic.20and.20Applications.202020.html) (14 messages, latest: Oct 06 2020 at 16:35)
 * [breakout rooms](topic/breakout.20rooms.html) (3 messages, latest: Sep 23 2020 at 19:19)
 * [NixCon 2020](topic/NixCon.202020.html) (1 message, latest: Sep 23 2020 at 01:21)
-* [NYC Category Theory Seminar](topic/NYC.20Category.20Theory.20Seminar.html) (16 messages, latest: Sep 17 2020 at 00:00)
 * [Johns Hopkins Category Theory Seminar](topic/Johns.20Hopkins.20Category.20Theory.20Seminar.html) (2 messages, latest: Sep 04 2020 at 08:46)
 * [operad pop-up](topic/operad.20pop-up.html) (2 messages, latest: Aug 04 2020 at 17:08)
 * [Topological Orders and Higher Structures](topic/Topological.20Orders.20and.20Higher.20Structures.html) (1 message, latest: Jul 24 2020 at 01:45)
@@ -67,4 +70,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Jan 28 2021 at 12:33 UTC</p>
+<hr><p>Last updated: Feb 09 2021 at 08:01 UTC</p>

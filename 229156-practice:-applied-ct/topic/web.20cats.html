@@ -937,6 +937,180 @@ But yes, my programme of extending Curruy-Howard to as many modal logics as poss
 
 
 
+<a name="224421541"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/224421541" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#224421541">(Jan 29 2021 at 01:44)</a>:</h4>
+<p><span class="user-mention" data-user-id="281126">@Henry Story</span> I'm not sure how exactly one wants to cash out the Curry-Howard correspondence for weak logics like EL or ACL. my attempts so far have been to construct modal logics of context, built on description logics, putting together the description logic paper above with the paper on a modal logic of contexts (based of John McCarthy's suggestion that context can be modeled via an operator like "isTrueIn(context Phi)". this is very underspecified, as these contexts based on modal intuitionistic logic K don't give you lots of inference, but they at least capture the feature that modal contexts stop information leaking in or out. You can read about it--if interested-- in my Textual Inference Logic papers. More recently Dick Crouch and Katerina Kalouli have used the description logic EL with named graphs to describe our logic of sentence inference. you may like their version better, it's in <a href="https://www.aclweb.org/anthology/S18-2013.pdf">https://www.aclweb.org/anthology/S18-2013.pdf</a></p>
+
+
+
+<a name="224471731"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/224471731" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#224471731">(Jan 29 2021 at 13:43)</a>:</h4>
+<p>That is a great article <span class="user-mention" data-user-id="276656">@Valeria de Paiva</span> you linked to "<a href="https://www.aclweb.org/anthology/S18-2013.pdf">Named Graphs for Semantic Representations</a>" discussing the work you are involved in!  It looks like we're coming to the same point from completely different places :-)</p>
+<p>It is interesting to see the relation with Donald Davidson that pops up there. When I was learning RDF I intuitively interpreted it either in terms of <a href="https://en.wikipedia.org/wiki/Donald_Davidson_(philosopher)">Donal Davidson</a> (Author of Truth and Interpretation) or in terms of <a href="https://en.wikipedia.org/wiki/David_Lewis_(philosopher)">David Lewis</a>'s possible worlds. As a side note: both  were students of the famous <a href="https://en.wikipedia.org/wiki/Willard_Van_Orman_Quine">Willard Von Orman Quine</a> , whose historical relation to <a href="https://en.wikipedia.org/wiki/Rudolf_Carnap">Carnap</a> was laid out by <span class="user-mention" data-user-id="276770">@Steve Awodey</span> in this fascinating talk "<a href="https://www.youtube.com/watch?v=alLgEf0uVkg&amp;feature=emb_logo">Mac Lane and Carnap's Logical Syntax of Language</a>".</p>
+
+
+
+<a name="224473209"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/224473209" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#224473209">(Jan 29 2021 at 13:57)</a>:</h4>
+<p>The relation to (Kripke, Hintikka, Lewis) modal logic was hinted at in the <a href="https://www.w3.org/TR/rdf-mt/#interp">2004  RDF Semantics specification</a> where the meaning of an RDF graph is explained in terms of possible worlds.  But that was later dropped in 1.1, I guess because the metaphysical assumptions were confusing some people too much. (It did help me a lot though).  That is part of the reason I have been looking to how one can legitimate these anew but structurally with a minimum of metaphysical assumptions. The CT way to talk of Possible Worlds is I believe via ultrafilters, though also interestingly enough via Coalgebras, as I learnt from <span class="user-mention" data-user-id="336517">@Corina Cirstea</span> .</p>
+
+
+
+<a name="224474845"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/224474845" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#224474845">(Jan 29 2021 at 14:09)</a>:</h4>
+<p>The article explains well how the move from triples  (ie functors from labelled directed graphs understood as functors from to small category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo separator="true">,</mo><mi>p</mi><mo separator="true">,</mo><mi>o</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">s,p,o: A \to N</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">p</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">o</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span>  to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>e</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">Set</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span></span></span></span>) to quads (i.e. hypergraphs corresponding to Functors from the small category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo separator="true">,</mo><mi>t</mi><mo separator="true">,</mo><mi>o</mi><mo separator="true">,</mo><mi>g</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>N</mi></mrow><annotation encoding="application/x-tex"> s,t,o,g : A \to N</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.80952em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">t</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">o</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span> to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>e</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">Set</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span></span></span></span>) increases the expressivity by allowing one to speak of relations to what others say, think, believe, dream, etc... instead of just relations between objects.</p>
+
+
+
+<a name="224479987"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/224479987" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#224479987">(Jan 29 2021 at 14:48)</a>:</h4>
+<p>It is actually really interesting to look at the swap repository <a href="https://github.com/linkeddata/swap/">now archived on github</a> where Tim Berners-Lee tried out these concepts 20 years ago.  <br>
+One import file is the log.n3 file which defines <a href="https://github.com/linkeddata/swap/blob/master/log.n3#L80">log:Truth</a> as a type of graphs, and <a href="https://github.com/linkeddata/swap/blob/master/log.n3#L91">log:implies</a> as a relation between formulas.</p>
+
+
+
+<a name="224482620"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/224482620" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#224482620">(Jan 29 2021 at 15:05)</a>:</h4>
+<p>Some examples are this example of a definition of a Transitive Property in <a href="https://github.com/linkeddata/swap/blob/master/test/rules13.n3#L13">test/rules13.n3</a> where I think <code>:means</code> is shorthand for <code>iff</code> </p>
+<div class="codehilite" data-code-language="Turtle"><pre><span></span><code><span class="err">@forAll</span> <span class="nv">&lt;#a&gt;</span><span class="p">,</span> <span class="nv">&lt;#b&gt;</span><span class="p">,</span> <span class="nv">&lt;#p&gt;</span> <span class="p">.</span>
+
+<span class="p">{</span>  <span class="nv">&lt;#p&gt;</span> <span class="kt">a</span> <span class="nn">daml</span><span class="p">:</span><span class="nt">TransitiveProperty</span> <span class="p">.</span> <span class="p">}</span> <span class="p">:</span><span class="nt">means</span> <span class="p">{</span>
+  <span class="p">{</span> <span class="err">@forAll</span> <span class="nv">&lt;#x&gt;</span> <span class="p">,</span> <span class="nv">&lt;#y&gt;</span> <span class="p">,</span> <span class="nv">&lt;#z&gt;</span><span class="p">.</span>
+    <span class="p">{</span> <span class="nv">&lt;#x&gt;</span> <span class="nv">&lt;#p&gt;</span> <span class="nv">&lt;#y&gt;</span><span class="p">.</span> <span class="nv">&lt;#y&gt;</span> <span class="nv">&lt;#p&gt;</span> <span class="nv">&lt;#z&gt;</span><span class="p">.</span> <span class="p">}</span> <span class="nn">log</span><span class="p">:</span><span class="nt">implies</span> <span class="p">{</span> <span class="nv">&lt;#x&gt;</span> <span class="nv">&lt;#p&gt;</span> <span class="nv">&lt;#z&gt;</span><span class="p">.</span> <span class="p">}</span>
+  <span class="p">}</span> <span class="kt">a</span> <span class="nn">log</span><span class="p">:</span><span class="nt">Truth</span><span class="p">.</span>
+<span class="p">}</span> <span class="p">.</span>
+</code></pre></div>
+
+
+
+<a name="224482862"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/224482862" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#224482862">(Jan 29 2021 at 15:07)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="281126">Henry Story</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/224471731">said</a>:</p>
+<blockquote>
+<p>That is a great article <span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> you linked to "<a href="https://www.aclweb.org/anthology/S18-2013.pdf">Named Graphs for Semantic Representations</a>" discussing the work you are involved in!  It looks like we're coming to the same point from completely different places :-)</p>
+<p>It is interesting to see the relation with Donald Davidson that pops up there. When I was learning RDF I intuitively interpreted it either in terms of <a href="https://en.wikipedia.org/wiki/Donald_Davidson_(philosopher)">Donal Davidson</a> (Author of Truth and Interpretation) or in terms of <a href="https://en.wikipedia.org/wiki/David_Lewis_(philosopher)">David Lewis</a>'s possible worlds. </p>
+</blockquote>
+<p>hi <span class="user-mention" data-user-id="281126">@Henry Story</span>  the connection to Davidsonian semantics has been in my work in NLP since the beginning: the paper <br>
+A basic logic for textual inference, <a href="https://www.aaai.org/Papers/Workshops/2005/WS-05-05/WS05-05-008.pdf">https://www.aaai.org/Papers/Workshops/2005/WS-05-05/WS05-05-008.pdf</a> from 2005 makes it clear. This is inherited from some 20 years of previous work by Xerox PARC researchers. the modelling discussion here is how todeal with contexts in the semantics: I first tried modalities (following McCarthy's suggestion), the new suggestion is "naming graphs" in the new paper. But no, there are many more ways of dealing with modal logic than "ultrafilters"--which are not my cup of tea.</p>
+
+
+
+<a name="224483648"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/224483648" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#224483648">(Jan 29 2021 at 15:12)</a>:</h4>
+<p>Ah! I guess that means that there are other ways to think of modalities other than ultrafilters... (well there is also the coalgebraic view of course)</p>
+<p>You may like this rule then following Tarski's System T, disquotational conception of truth which Donald Davidon built so much on, in the file <a href="https://github.com/linkeddata/swap/blob/master/test/rules13.n3#L13">rules13.n3</a> :-)</p>
+<div class="codehilite" data-code-language="Turtle"><pre><span></span><code><span class="err">@forAll</span> <span class="p">:</span><span class="nt">x</span><span class="p">,</span> <span class="p">:</span><span class="nt">y</span><span class="p">,</span> <span class="p">:</span><span class="nt">z</span><span class="p">.</span>
+
+<span class="p">{</span> <span class="p">{</span> <span class="p">:</span><span class="nt">x</span> <span class="p">:</span><span class="nt">y</span> <span class="p">:</span><span class="nt">z</span> <span class="p">}</span> <span class="kt">a</span> <span class="nn">log</span><span class="p">:</span><span class="nt">Truth</span> <span class="p">.</span>  <span class="p">}</span> <span class="nn">log</span><span class="p">:</span><span class="nt">implies</span> <span class="p">{</span> <span class="p">:</span><span class="nt">x</span> <span class="p">:</span><span class="nt">y</span> <span class="p">:</span><span class="nt">z</span> <span class="p">}</span> <span class="p">.</span>
+
+<span class="p">{</span> <span class="p">:</span><span class="nt">sky</span> <span class="p">:</span><span class="nt">is</span> <span class="p">:</span><span class="nt">blue</span> <span class="p">}</span> <span class="kt">a</span> <span class="nn">log</span><span class="p">:</span><span class="nt">Truth</span> <span class="p">.</span>
+</code></pre></div>
+
+
+
+<a name="224485656"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/224485656" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#224485656">(Jan 29 2021 at 15:24)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="281126">Henry Story</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/224483648">said</a>:<br>
+<code>quote
+Ah! I guess that means that there are other ways to think of modalities other than ultrafilters....
+</code></p>
+<p>Yes. my formalizations of modal logic uses CCCs+(co-)monads  (Intuitionistic necessity revisited 2000) or fibrations (Fibrational modal type theory 2016), Alex Kavvos did a recent PhD thesis on the subject.</p>
+
+
+
+<a name="224485869"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/224485869" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#224485869">(Jan 29 2021 at 15:25)</a>:</h4>
+<p>I think it should be possible to model some of Abadi's <code>:says</code> relation, <code>:believes</code> relations etc... using such tools. Indeed <a href="https://github.com/linkeddata/swap/blob/master/test/daml-ont.n3#L249">ont:imports</a> works somewhat this way. Here's a fun one <a href="https://github.com/linkeddata/swap/blob/master/test/tom-mary.n3">tom-mary.n3</a> demonstrating nested contexts :-)</p>
+<div class="codehilite" data-code-language="Turtle"><pre><span></span><code><span class="nv">&lt;#Tom&gt;</span> <span class="p">:</span><span class="nt">believes</span> <span class="p">{</span>
+    <span class="nv">&lt;#Mary&gt;</span> <span class="p">:</span><span class="nt">wants</span> <span class="p">{</span>
+        <span class="nv">&lt;#Mary&gt;</span> <span class="p">:</span><span class="nt">marriedTo</span> <span class="p">[</span> <span class="kt">a</span> <span class="p">:</span><span class="nt">Sailor</span> <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}.</span>
+</code></pre></div>
+
+
+
+<a name="224486568"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/224486568" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#224486568">(Jan 29 2021 at 15:29)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="281126">Henry Story</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/224485869">said</a>:</p>
+<blockquote>
+<p>I think it should be possible to model some of Abadi's <code>:says</code> relation, <code>:believes</code> relations etc... using such tools. Indeed <a href="https://github.com/linkeddata/swap/blob/master/test/daml-ont.n3#L249">ont:imports</a> works somewhat this way. Here's a fun one <a href="https://github.com/linkeddata/swap/blob/master/test/tom-mary.n3">tom-mary.n3</a> demonstrating nested contexts :-)</p>
+<p><div class="codehilite" data-code-language="Turtle"><pre><span></span><code><span class="nv">&lt;#Tom&gt;</span> <span class="p">:</span><span class="nt">believes</span> <span class="p">{</span>
+    <span class="nv">&lt;#Mary&gt;</span> <span class="p">:</span><span class="nt">wants</span> <span class="p">{</span>
+        <span class="nv">&lt;#Mary&gt;</span> <span class="p">:</span><span class="nt">marriedTo</span> <span class="p">[</span> <span class="kt">a</span> <span class="p">:</span><span class="nt">Sailor</span> <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}.</span>
+</code></pre></div><br>
+</p>
+</blockquote>
+<p>yes, we can deal with simple propositional attitudes like this and even more complicated ones like Karttunen's in Computing relative polarity for textual inference.</p>
+
+
+
+<a name="224487304"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/224487304" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#224487304">(Jan 29 2021 at 15:33)</a>:</h4>
+<p>What is needed I think then is to work out what the N3 folks are doing over at <a href="https://www.w3.org/community/n3-dev/">the N3 W3C Community Group</a> - the work is going on at the <a href="https://github.com/w3c/N3">github n3 repo</a> and see how your research and the work from CT can help inform decisions made there. Clearly it won't be as advanced in many areas, but it  has really useful applications. It would really be a pity if the wrong decisions get made there because of lack of mathematical insight.<br>
+(I should follow that too).</p>
+
+
+
+<a name="225407823"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/225407823" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#225407823">(Feb 06 2021 at 12:16)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/224421541">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="281126">Henry Story</span> I'm not sure how exactly one wants to cash out the Curry-Howard correspondence for weak logics like EL or ACL. </p>
+</blockquote>
+<p>I think the origin of the problem comes from trying to build Applications in typed languages such as Scala and having to work with Linked Data on the Web. There is a simple conceptual problem, just trying to work out what how these systems relate, which affects the programming of them, and also teaching people how to use these.</p>
+<p>We can see one attempt to help bridge the gap in this project described in 2019 <a href="https://arxiv.org/abs/1902.00545">Semantic Query Integration With Reason</a> where they made changes to the Scala 3 compiler so as to fetch ontologies used by say SPARQL queries, so that the results could be well typed. </p>
+<p>But when I write Linked Data software, things seem a lot more dynamic than that. I  may follow  a relation whose range is <code>foaf:Agent</code> and whose url is, say <code>https://acme.org/agents/xyz#i&gt;</code> and on fetching the remote Graph (dereferencing it) the node we fall on may state this URL to refer to a Person (a subclass of Agent). As we get more info what from far away looked like some Agent (Robot? Deer or even Lion) we find out to be a Person, .... Each of these are types. Could it be that Gradual Typing is the right place to look? <br>
+(That was following <a href="https://twitter.com/bblfish/status/1357230557592190977">a suggestion on Twitter</a> by <span class="user-mention" data-user-id="275901">@Jules Hedges</span> .</p>
+<div class="inline-preview-twitter"><div class="twitter-tweet"><a href="https://twitter.com/bblfish/status/1357230557592190977"><img class="twitter-avatar" src="https://pbs.twimg.com/profile_images/1004326761608417281/HjxjS9BX_normal.jpg"></a><p><a href="https://twitter.com/_julesh_">@_julesh_</a> I love types. I think there are half ways between static and dynamic types. As you gain more information about an object you can deduce more about it's type, narrow it down. An animal moving in the distance, turns out to be a lion not a zebra.</p><span>- The 🐟‍‍ BabelFish (@bblfish)</span></div></div>
+
+
+
+<a name="225424827"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/225424827" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#225424827">(Feb 06 2021 at 18:44)</a>:</h4>
+<p>As  I want to build a Web Server for the <a href="https://nlnet.nl/project/SolidControl/">Solid Control Project</a> I have looked around at various frameworks from Rust, to Haskell, and the <a href="https://akka.io">Akka</a> framework running written in Scala.  </p>
+<p>Akka is based on the Actor Model developed initially proposed in 1973 and the history of its evolution is described with passion in a 2010 retrospective by Carl Hewitt in <a href="https://arxiv.org/abs/1008.1459">"Actor Model of Computation: Scalable Robust Information Systems"</a>.  Here is a citation that should interest people here:</p>
+<blockquote>
+<p>In this way, the Actor Model integrated the following:<br>
+1. the lambda calculus<br>
+2. interrupts<br>
+3. blocking method invocation<br>
+4. imperative programming using locks<br>
+5. capability systems<br>
+6. co-routines<br>
+7. packet networks<br>
+8. email systems<br>
+9. Petri nets<br>
+10. Smalltalk-72<br>
+11. Simula-67<br>
+12. pattern-directed invocation (from Planner)</p>
+</blockquote>
+<p>Reading this, and with some experience using Akka 5 years ago,  it feels like the Actor model is very close to the model of the Web. And it also explains why Akka is used by LinkedIn, PayPal, Tesla, and many other giants to do billions of transactions a day.  <br>
+The Solid Web is perhaps Actors with a preference of messages being encoded as RDF Quads, giving us a logical notion of context that does not seem to be made explicit in the simple message passing (even if it is compatible with it).</p>
+
+
+
+<a name="225425029"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/225425029" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#225425029">(Feb 06 2021 at 18:50)</a>:</h4>
+<p>So as I was catching up on Akka, which added typed actors last year, I came across a course on it that mentioned the 2015 <a href="https://link.springer.com/chapter/10.1007/978-3-319-18941-3_4">A gentle introduction to multiparty asynchronous session types</a>, which I am now reading... Session types give a mathematical foundation to allow one to defined protocols using types in actor systems, and much more generally too I guess.</p>
+
+
+
+<a name="225468359"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/225468359" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#225468359">(Feb 07 2021 at 15:15)</a>:</h4>
+<p>The "Gentle Introduction to Session Types" above is still very abstract, so I wanted to find if session types had been developed for a programming framework based on Actors, to better understand the relationship between the two. That led me to this work on <a href="https://t.co/qDng8YoYIE">EffPi</a>, which is an interesting example of Academia meeting industry. Links to code and papers on this <a href="https://twitter.com/bblfish/status/1358392715118010369">in this twitter thread</a>.</p>
+<div class="inline-preview-twitter"><div class="twitter-tweet"><a href="https://twitter.com/bblfish/status/1358392715118010369"><img class="twitter-avatar" src="https://pbs.twimg.com/profile_images/1004326761608417281/HjxjS9BX_normal.jpg"></a><p>This slide from the Sept 2019 talk on EffPi (Pi for 𝛑-calculus) shows a story of the meeting of research on Akka used in Industry (coming from the Hewitt's work on Actors) and academic work on Session Types (used to prove properties of protocols ). <a href="https://t.co/ep9a5QybbF">https://twitter.com/bblfish/status/1358392715118010369/photo/1</a></p><span>- The 🐟‍‍ BabelFish (@bblfish)</span><div class="twitter-image"><a href="https://t.co/ep9a5QybbF"><img src="https://pbs.twimg.com/media/Etn50-UXcAAfzO7.jpg:small"></a></div></div></div>
+
+
+
+<a name="225468553"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/225468553" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#225468553">(Feb 07 2021 at 15:19)</a>:</h4>
+<p>It would be interesting to know where Session Types are positioned in the Category Theory landscape.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Jan 28 2021 at 12:33 UTC</p>
+<hr><p>Last updated: Feb 09 2021 at 08:01 UTC</p>

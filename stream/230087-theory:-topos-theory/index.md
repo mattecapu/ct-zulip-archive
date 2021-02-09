@@ -9,6 +9,7 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 
 ### Topics:
 
+* [logical properties and topological properties](topic/logical.20properties.20and.20topological.20properties.html) (30 messages, latest: Feb 05 2021 at 11:59)
 * [2-category of toposes](topic/2-category.20of.20toposes.html) (8 messages, latest: Jan 21 2021 at 16:29)
 * [inverse image separated?](topic/inverse.20image.20separated.3F.html) (11 messages, latest: Jan 21 2021 at 11:31)
 * [fiberwise homeomorphisms](topic/fiberwise.20homeomorphisms.html) (17 messages, latest: Jan 20 2021 at 09:21)
@@ -65,4 +66,4 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 * [essential geometric morphism](topic/essential.20geometric.20morphism.html) (2 messages, latest: Mar 27 2020 at 18:56)
 * [welcome](topic/welcome.html) (2 messages, latest: Mar 27 2020 at 09:22)
 
-<hr><p>Last updated: Jan 28 2021 at 12:33 UTC</p>
+<hr><p>Last updated: Feb 09 2021 at 08:01 UTC</p>

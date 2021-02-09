@@ -699,6 +699,965 @@ Optics, and in particular lenses, have been created in functional programming fi
 
 
 
+<a name="224571309"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224571309" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kale Evans <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224571309">(Jan 30 2021 at 07:39)</a>:</h4>
+<p>I have a Petri net describing some system I'd like to build. I was wondering if anyone knows of any documentation for a methodology for converting a Petri net into code?</p>
+
+
+
+<a name="224571438"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224571438" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224571438">(Jan 30 2021 at 07:43)</a>:</h4>
+<p>Section 25.4 of this book discusses software packages for implementing Petri nets:</p>
+<ul>
+<li>John Baez and Jacob Biamonte, <em><a href="http://math.ucr.edu/home/baez/stoch_stable.pdf">Quantum Techniques for Stochastic Mechanics</a></em>.</li>
+</ul>
+<p>I know that's not quite what you asked for, but maybe it will help.</p>
+
+
+
+<a name="224571604"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224571604" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eric Forgy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224571604">(Jan 30 2021 at 07:48)</a>:</h4>
+<p>Have a look at</p>
+<p><a href="https://www.algebraicjulia.org/">https://www.algebraicjulia.org/</a></p>
+<p>cc <span class="user-mention" data-user-id="275965">@Evan Patterson</span></p>
+
+
+
+<a name="224572028"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224572028" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224572028">(Jan 30 2021 at 08:01)</a>:</h4>
+<p>Yes, that too!</p>
+
+
+
+<a name="224572031"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224572031" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Eric Forgy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224572031">(Jan 30 2021 at 08:02)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224571438">said</a>:</p>
+<blockquote>
+<p>Section 25.4 of this book discusses software packages for implementing Petri nets:</p>
+<ul>
+<li>John Baez and Jacob Biamonte, <em><a href="http://math.ucr.edu/home/baez/stoch_stable.pdf">Quantum Techniques for Stochastic Mechanics</a></em>.</li>
+</ul>
+<p>I know that's not quite what you asked for, but maybe it will help.</p>
+</blockquote>
+<p>Wow. I hadn't seen this <span aria-label="heart eyes" class="emoji emoji-1f60d" role="img" title="heart eyes">:heart_eyes:</span></p>
+
+
+
+<a name="224613830"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224613830" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224613830">(Jan 31 2021 at 00:35)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="364022">Kale Evans</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224571309">said</a>:</p>
+<blockquote>
+<p>I have a Petri net describing some system I'd like to build. I was wondering if anyone knows of any documentation for a methodology for converting a Petri net into code?</p>
+</blockquote>
+<p><a href="http://www.statebox.io">www.statebox.io</a> does exactly this.</p>
+
+
+
+<a name="224613882"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224613882" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224613882">(Jan 31 2021 at 00:36)</a>:</h4>
+<p>Our software is still experimental, but the whole point is that you draw a Petri net, and we execute it for you in the cloud. Clearly each transition can correspond to some other thing that has to happen, e.g. running code or exchanging data</p>
+
+
+
+<a name="224613955"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224613955" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224613955">(Jan 31 2021 at 00:38)</a>:</h4>
+<p>A good idea could be subscribing to our telegram channel and ask to have early access. We're letting a very small number of users try our software atm.</p>
+
+
+
+<a name="224615985"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224615985" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kale Evans <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224615985">(Jan 31 2021 at 01:34)</a>:</h4>
+<p>Thank you so much for your responses <span class="user-mention" data-user-id="275920">@John Baez</span> , <span class="user-mention" data-user-id="367398">@Eric Forgy</span> , and <span class="user-mention" data-user-id="276438">@Fabrizio Genovese</span> . All great stuff. It's such an awesome place to get started.</p>
+<p><span class="user-mention" data-user-id="276438">@Fabrizio Genovese</span> I would love to subscribe to telegram and check that out actually. We have what I believe is a very good use case for Petri nets, and being able to prototype something relatively quickly will def help me prove a business case for it, which is where I am now. </p>
+<p>Is there a link you could provide?</p>
+
+
+
+<a name="224616015"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224616015" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224616015">(Jan 31 2021 at 01:35)</a>:</h4>
+<p><a href="https://t.me/stateboxorg">https://t.me/stateboxorg</a></p>
+
+
+
+<a name="224616080"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224616080" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224616080">(Jan 31 2021 at 01:38)</a>:</h4>
+<p>Alternatively, you can send a mail to <a href="mailto:info@statebox.io">info@statebox.io</a><br>
+We're very eager to connect with people that are/plan to use Petri nets to do stuff. Our software is still in development but it is very close to be stable enough so that we can open it up to users. At the moment, the way it works is that if you wanna try it we can manually create an account on our cloud for you. As I said, we plan to replace this with an invitation-based thing (like gmail was ages ago) in a few weeks</p>
+
+
+
+<a name="224616213"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224616213" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kale Evans <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224616213">(Jan 31 2021 at 01:41)</a>:</h4>
+<p>Thanks! I just joined. I'll request in the chat.</p>
+
+
+
+<a name="224616431"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224616431" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224616431">(Jan 31 2021 at 01:47)</a>:</h4>
+<p>Yeah, feel free to ask! Also we are from Europe and it's 3am here (I still don't know precisely why I'm not sleeping atm) so it's likely you'll get answers in a few hours. <span aria-label="smile" class="emoji emoji-1f642" role="img" title="smile">:smile:</span></p>
+
+
+
+<a name="224616759"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224616759" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kale Evans <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224616759">(Jan 31 2021 at 01:56)</a>:</h4>
+<p>Lol, im not sure why your not sleeping either, but much appreciated! Thanks. We'll talk soon</p>
+
+
+
+<a name="224626029"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224626029" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224626029">(Jan 31 2021 at 06:10)</a>:</h4>
+<p>I am interested in these kind of meetings and events. has there been any progress in organizing or is it still preliminary?</p>
+
+
+
+<a name="224626188"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224626188" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224626188">(Jan 31 2021 at 06:15)</a>:</h4>
+<p>my main interest: I've seen several implementations of presheaves, but I don't know what each can really do. I want to use the full higher-order dependent type theory of a presheaf topos. so, the language at least needs dependent types, which limits the options. to what extent has the the internal language of presheaf toposes been implemented in Idris, Agda, and Coq?</p>
+
+
+
+<a name="224626376"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224626376" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224626376">(Jan 31 2021 at 06:20)</a>:</h4>
+<p>I'm hoping that idris-ct can do this, maybe even efficiently; <span class="user-mention" data-user-id="276438">@Fabrizio Genovese</span> what do you think?</p>
+
+
+
+<a name="224627328"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224627328" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224627328">(Jan 31 2021 at 06:44)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275899">Christian Williams</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224626029">said</a>:</p>
+<blockquote>
+<p>I am interested in these kind of meetings and events. has there been any progress in organizing or is it still preliminary?</p>
+</blockquote>
+<p>All this organization just started today, I think.   I hope you can join those other folks in discussing these matters.</p>
+
+
+
+<a name="224641914"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224641914" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224641914">(Jan 31 2021 at 12:23)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275899">Christian Williams</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224626376">said</a>:</p>
+<blockquote>
+<p>I'm hoping that idris-ct can do this, maybe even efficiently; <span class="user-mention silent" data-user-id="276438">Fabrizio Genovese</span> what do you think?</p>
+</blockquote>
+<p>We've never moved in that direction as of now, because what we need is mainly monoidal categories</p>
+
+
+
+<a name="224641971"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224641971" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224641971">(Jan 31 2021 at 12:25)</a>:</h4>
+<p>In my limited experience, I can safely say that implementing category theory in a formally verified setting is a can of worms at every step. If you just need theorem proving then you could get away by using cubical agda or so, but that is stuff that typechecks, and does not compile</p>
+
+
+
+<a name="224641991"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224641991" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224641991">(Jan 31 2021 at 12:25)</a>:</h4>
+<p>In general, defining e.g. presheaves in idris is not difficult. Building them (that is, proving that some other thing fits your definition) is</p>
+
+
+
+<a name="224641997"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224641997" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224641997">(Jan 31 2021 at 12:26)</a>:</h4>
+<p>E.g. Defining symmetric monoidal categories is reasonably easy,  building the free SMC is a nightmare, and it took us a few months to do it.</p>
+
+
+
+<a name="224652106"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224652106" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224652106">(Jan 31 2021 at 16:10)</a>:</h4>
+<p><span class="user-mention" data-user-id="276438">@Fabrizio Genovese</span> can you point me to a repo where some of those difficult things are? I've found doing things in agda-categories relatively straightforward, once a few foundational decisions were settled on. There are indeed paths that are 'a nightmare'. </p>
+<p>Topos theory is one place where things are tricky. The usual theory is very classical (relies on excluded middle rather pervasively). My hope is that the constructive versions of a topos are actually good enough to do most of what people actually want to do.</p>
+
+
+
+<a name="224653135"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224653135" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224653135">(Jan 31 2021 at 16:39)</a>:</h4>
+<p><a href="https://github.com/statebox/idris-ct/tree/master/src">https://github.com/statebox/idris-ct/tree/master/src</a></p>
+
+
+
+<a name="224653140"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224653140" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224653140">(Jan 31 2021 at 16:39)</a>:</h4>
+<p>I do agree that making the right foundational choices is paramount</p>
+
+
+
+<a name="224657766"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224657766" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224657766">(Jan 31 2021 at 18:31)</a>:</h4>
+<p>I knew where the repo was... I was asking for pointers to those things that gave you the biggest headaches.</p>
+
+
+
+<a name="224658021"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224658021" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224658021">(Jan 31 2021 at 18:36)</a>:</h4>
+<p>Oh, the worst one was the implementation of free ssmcs</p>
+
+
+
+<a name="224658025"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224658025" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224658025">(Jan 31 2021 at 18:36)</a>:</h4>
+<p>One sec, let me find it</p>
+
+
+
+<a name="224658362"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224658362" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224658362">(Jan 31 2021 at 18:43)</a>:</h4>
+<p><a href="https://github.com/statebox/fsm-oracle/blob/cartographer/src/Permutations/PermutationsStrictMonoidalCategory.idr">https://github.com/statebox/fsm-oracle/blob/cartographer/src/Permutations/PermutationsStrictMonoidalCategory.idr</a></p>
+
+
+
+<a name="224658365"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224658365" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224658365">(Jan 31 2021 at 18:43)</a>:</h4>
+<p>This was particularly nasty</p>
+
+
+
+<a name="224664236"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224664236" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224664236">(Jan 31 2021 at 20:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276438">Fabrizio Genovese</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224641971">said</a>:</p>
+<blockquote>
+<p>In my limited experience, I can safely say that implementing category theory in a formally verified setting is a can of worms at every step. If you just need theorem proving then you could get away by using cubical agda or so, but that is stuff that typechecks, and does not compile</p>
+</blockquote>
+<p>Yeah. in your experience so far, what are the main reasons for the difficulty?</p>
+
+
+
+<a name="224708052"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224708052" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224708052">(Feb 01 2021 at 10:31)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="296322">Jacques Carette</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224652106">said</a>:</p>
+<blockquote>
+<p>Topos theory is one place where things are tricky. The usual theory is very classical (relies on excluded middle rather pervasively). My hope is that the constructive versions of a topos are actually good enough to do most of what people actually want to do.</p>
+</blockquote>
+<p>Huh? What are you talking about? Topos theory literature is very self-aware about precisely where and when non-constructive principles are employed, more so than anything else I've read.</p>
+
+
+
+<a name="224708502"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224708502" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224708502">(Feb 01 2021 at 10:37)</a>:</h4>
+<p>I was also surprised by this comment, especially since my own introduction to topos theory was in part through the works of Erik Palmgren who explicitly uses MLTT as a foundation...</p>
+
+
+
+<a name="224708968"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224708968" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224708968">(Feb 01 2021 at 10:42)</a>:</h4>
+<p>In general “Dutch” and “Swedish” topos theorists are certainly very careful about constructiveness. I do not know enough beyond that. :)</p>
+
+
+
+<a name="224712322"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224712322" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224712322">(Feb 01 2021 at 11:19)</a>:</h4>
+<p>What examples are there of non-avoidable non-constructive reasoning in topos theory?</p>
+
+
+
+<a name="224713226"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224713226" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224713226">(Feb 01 2021 at 11:30)</a>:</h4>
+<p>"every coherent topos has enough points" is non-constructive, for example, but the non-constructiveness in Deligne's original proof can be reduced to the requirement of a well-ordering of a site presenting a given coherent topos. The non-constructiveness doesn't live in the meta-theory; the well-ordering principle (or the weaker necessary and sufficient condition of the Boolean Prime Ideal Theorem) can be expressed as a property of the base topos over which one is working.</p>
+
+
+
+<a name="224713647"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224713647" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224713647">(Feb 01 2021 at 11:35)</a>:</h4>
+<p>Are there any examples of non-constructive reasoning  then where the subject matter is constructive (i.e. no classical toposes, etc..)</p>
+
+
+
+<a name="224716731"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224716731" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenji Maillard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224716731">(Feb 01 2021 at 12:11)</a>:</h4>
+<p>Maybe saying non-constructive is a bit too much about topos theory, but there is a clear gap between what we are able to implement well in proofs assistants and topos theory: the latter pervasively uses extensionality principles (function extensionality, propositional extensionality, equality reflection) as well as some weak choice principle (unique choice for instance) and quotients that are not straighforward to get in the multiple implementations of <strong>Intensional</strong> Type Theory. <br>
+As a result, you will need to work hard to obtain examples of toposes even if you were to formalize them (because types and functions between them do not form a topos since the metatheory lacks a few properties holding inside a topos).<br>
+Of course there are some (quite recent) implementations of proofs assistant that help with thoses aspects (cubical agda for instance).</p>
+
+
+
+<a name="224718069"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224718069" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224718069">(Feb 01 2021 at 12:26)</a>:</h4>
+<p>If you're unwilling to add axioms for basic things like function extensionality then I think your "tool" might be better called a proof hamperer rather than a proof assistant.</p>
+
+
+
+<a name="224718299"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224718299" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224718299">(Feb 01 2021 at 12:28)</a>:</h4>
+<p>But if you insist on working in such a spartan theory then you can just define an E-topos or something instead, right?</p>
+
+
+
+<a name="224718353"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224718353" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224718353">(Feb 01 2021 at 12:29)</a>:</h4>
+<p>One thing I never understood here is what it even means for example for a category to have finite products, and for a functor to preserve them</p>
+
+
+
+<a name="224718582"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224718582" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224718582">(Feb 01 2021 at 12:32)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276480">Reid Barton</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224718069">said</a>:</p>
+<blockquote>
+<p>If you're unwilling to add axioms for basic things like function extensionality then I think your "tool" might be better called a proof hamperer rather than a proof assistant.</p>
+</blockquote>
+<p><em>backs away slowly</em></p>
+
+
+
+<a name="224718593"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224718593" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224718593">(Feb 01 2021 at 12:32)</a>:</h4>
+<p>Well usually ‘have’ means equipped with some appropriate adjoint right?</p>
+
+
+
+<a name="224718598"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224718598" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224718598">(Feb 01 2021 at 12:32)</a>:</h4>
+<p>And preserve is just up to isomorphism</p>
+
+
+
+<a name="224718619"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224718619" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224718619">(Feb 01 2021 at 12:32)</a>:</h4>
+<p>Where the codomain category also has to ‘have’ such structure</p>
+
+
+
+<a name="224718646"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224718646" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224718646">(Feb 01 2021 at 12:33)</a>:</h4>
+<p>This can all be then expressed in a finite limit meta theory</p>
+
+
+
+<a name="224718703"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224718703" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224718703">(Feb 01 2021 at 12:33)</a>:</h4>
+<p>Well actually I’m not sure about expressing the existence of an isomorphism. I guess you can adjoin more function symbols</p>
+
+
+
+<a name="224720156"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224720156" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224720156">(Feb 01 2021 at 12:48)</a>:</h4>
+<p>What I really mean is that Kenji seemed to use "proof assistant" as a stand-in for working in a specific flavor of MLTT without axioms. But in fact most proof assistants aren't based on any sort of dependent type theory at all (e.g. Mizar, Isabelle, Metamath) or aren't allergic to adding axioms (e.g. Lean) or can prove the missing axioms (e.g. proof assistants for cubical type theory).</p>
+
+
+
+<a name="224720354"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224720354" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenji Maillard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224720354">(Feb 01 2021 at 12:50)</a>:</h4>
+<p>You can of course add axioms (I often do for practical purposes), but I am not sure how constructive that approach is: you easily lose all kind of witness extraction property for instance.</p>
+
+
+
+<a name="224720500"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224720500" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenji Maillard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224720500">(Feb 01 2021 at 12:51)</a>:</h4>
+<p>But it's right that I was considering only dependent type theories (which was the setting of the discussion, e.g. idris and agda,  if I'm not confused)</p>
+
+
+
+<a name="224720564"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224720564" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224720564">(Feb 01 2021 at 12:52)</a>:</h4>
+<p>But the point in the end is that the statement you want (Set is a topos) is just not provable in your background theory, and it has nothing to do with proof assistants or not.</p>
+
+
+
+<a name="224720954"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224720954" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224720954">(Feb 01 2021 at 12:55)</a>:</h4>
+<p>It just leads to more confusion on all sides if people conflate "working in a proof assistant" and "working in ITT", since in actuality they are independent  of each other. That's all I wanted to say.</p>
+
+
+
+<a name="224721199"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224721199" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224721199">(Feb 01 2021 at 12:57)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276885">Kenji Maillard</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224716731">said</a>:</p>
+<blockquote>
+<p>there is a clear gap between what we are able to implement well in proofs assistants and topos theory: the latter pervasively uses extensionality principles (function extensionality, propositional extensionality, equality reflection) as well as some weak choice principle (unique choice for instance) and quotients that are not straighforward to get in the multiple implementations of <strong>Intensional</strong> Type Theory.</p>
+</blockquote>
+<p>External function extensionality, that morphisms are equal if their application to all global elements of the domain object, is false in most non-trivial toposes, so we don't use that. The internal one, that two morphisms are equal if their composites with all "generalized elements" (ie composable morphisms) are equal, is trivially true from the fact that a 1-topos is a 1-category. So sure, if you work in a meta-theory/over a topos without a strict equality predicate, then this principle might not be valid, but it shouldn't be difficult to replace it with the weaker notion of equality that you prefer.</p>
+<p>I have less to say about unique choice, but also don't know that I've seen unavoidable applications of it in topos theory proofs. Maybe in some logical applications of toposes that I've spent less time studying this is more important.</p>
+
+
+
+<a name="224722045"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224722045" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224722045">(Feb 01 2021 at 13:05)</a>:</h4>
+<p>I don't think that's what he means by function extensionality</p>
+
+
+
+<a name="224722087"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224722087" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224722087">(Feb 01 2021 at 13:05)</a>:</h4>
+<p>In type theory, function extensionality means that agreement on all variable elements implies equality</p>
+
+
+
+<a name="224722443"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224722443" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224722443">(Feb 01 2021 at 13:08)</a>:</h4>
+<p>Yes? How is that different from what I said?</p>
+
+
+
+<a name="224722483"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224722483" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224722483">(Feb 01 2021 at 13:08)</a>:</h4>
+<p>Yeah my bad, I misunderstood what you meant.</p>
+
+
+
+<a name="224722630"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224722630" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224722630">(Feb 01 2021 at 13:09)</a>:</h4>
+<p>I think that intensional type theory has nicer computational properties so that's why its used in proof assistants right?</p>
+
+
+
+<a name="224722808"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224722808" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224722808">(Feb 01 2021 at 13:11)</a>:</h4>
+<p>Things like decidability of type checking, which doesn't hold when you enforce function extensionality</p>
+
+
+
+<a name="224724950"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224724950" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224724950">(Feb 01 2021 at 13:27)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224721199">said</a>:</p>
+<blockquote>
+<p>The internal one, that two morphisms are equal if their composites with all "generalized elements" (ie composable morphisms) are equal, is trivially true from the fact that a 1-topos is a 1-category.</p>
+</blockquote>
+<p>To clarify, when I say "is trivially true" I mean it reduces to "two functions are equal if and only if their respective composites with the identity on the domain are equal", which I'm pretty sure should hold in any type theory too <span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span></p>
+
+
+
+<a name="224724973"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224724973" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224724973">(Feb 01 2021 at 13:27)</a>:</h4>
+<p>Sorry <span class="user-mention" data-user-id="277473">@Morgan Rogers (he/him)</span> I was sloppy. What I meant, and has been echoed by others, is that although the internal language of a topos is indeed constructive, the external construction of some toposes often requires classical axioms.</p>
+<p>Case in point: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow><annotation encoding="application/x-tex">\mathsf{Set}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathsf">S</span><span class="mord mathsf">e</span><span class="mord mathsf">t</span></span></span></span></span> is a topos, but its more constructive cousin <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">d</mi></mrow><annotation encoding="application/x-tex">\mathsf{Setoid}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathsf">S</span><span class="mord mathsf">e</span><span class="mord mathsf">t</span><span class="mord mathsf">o</span><span class="mord mathsf">i</span><span class="mord mathsf">d</span></span></span></span></span> is not, it is only a <a href="https://ncatlab.org/nlab/show/%CE%A0W-pretopos">$$\Pi$$W-pretopos</a>.</p>
+
+
+
+<a name="224726100"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224726100" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224726100">(Feb 01 2021 at 13:36)</a>:</h4>
+<p>Ooh interesting! What are the morphisms in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">d</mi></mrow><annotation encoding="application/x-tex">\mathsf{Setoid}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathsf">S</span><span class="mord mathsf">e</span><span class="mord mathsf">t</span><span class="mord mathsf">o</span><span class="mord mathsf">i</span><span class="mord mathsf">d</span></span></span></span></span>? And what's missing from a <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Π</mi><mi>W</mi></mrow><annotation encoding="application/x-tex">\Pi W</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Π</span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span></span></span></span>-pretopos compared to a topos? (the nLab page is not very enlightening)</p>
+
+
+
+<a name="224726930"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224726930" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224726930">(Feb 01 2021 at 13:42)</a>:</h4>
+<p>Morphisms in <strong>Setoid</strong> are functions that respect the underlying equivalence relation.</p>
+<p>The pages on <a href="https://ncatlab.org/nlab/show/predicative+topos">predicative topos</a> and <a href="https://ncatlab.org/nlab/show/pretopos">pretopos</a> are much more instructive indeed.</p>
+<p>One issue is that the classifying map of the suboject classifier, as explained in the <a href="https://github.com/agda/agda-categories/issues/200">last comment</a>. It's unlikely to be the only issue.</p>
+
+
+
+<a name="224727387"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224727387" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224727387">(Feb 01 2021 at 13:46)</a>:</h4>
+<p>In settings where you have UIP (uniqueness of identity proofs), this part goes through because proofs don't bump up sizes, as they are unique, by fiat.</p>
+
+
+
+<a name="224727882"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224727882" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224727882">(Feb 01 2021 at 13:51)</a>:</h4>
+<p>I was aware of the issues of elementary topoi wrt predicativity, but I was also under the impression that the relation of predicativity and constructiveness is somewhat ambiguous, in that one can reject LEM and accept impredicative definitions. On the other hand, your original comment mentioned specifically reliance on excluded middle. Do you have any cases in mind that are strictly non-constructive as well as impredicative?</p>
+
+
+
+<a name="224728186"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224728186" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224728186">(Feb 01 2021 at 13:54)</a>:</h4>
+<p>Excellent question. Hmm, off the top of my head, I don't. I might have mixed up two different places where "things go sideways" (the other being building -1-categories as -2-category-enriched categories) where excluded middle does play an important role.</p>
+
+
+
+<a name="224728309"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224728309" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224728309">(Feb 01 2021 at 13:54)</a>:</h4>
+<p>By the way what I had in mind earlier was <a href="https://www.princeton.edu/~hhalvors/teaching/phi323_f2009/palmgren.pdf">this paper by Palmgren</a> showing that one can get a perfectly fine constructive theory of <em>Grothendieck</em> topoi with a constructive completeness theorem for <em>first-order</em> intuitionistic logic, so the problems do seem to arise only from the impredicativity of subobject classifiers (which of course are part of the definition of elementary topoi and needed for higher-order logic...)</p>
+
+
+
+<a name="224728594"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224728594" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224728594">(Feb 01 2021 at 13:56)</a>:</h4>
+<p>But it's already hard to do higher-order logic predicatively <span aria-label="grimacing" class="emoji emoji-1f62c" role="img" title="grimacing">:grimacing:</span></p>
+
+
+
+<a name="224728848"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224728848" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224728848">(Feb 01 2021 at 13:58)</a>:</h4>
+<p>Our plan is to 'implement' a whole zoo of pretopos definitions, to make it easier to explore this space, to see where things are odd. Including both elementary topos and Grothendieck topos.</p>
+
+
+
+<a name="224729777"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224729777" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224729777">(Feb 01 2021 at 14:05)</a>:</h4>
+<p>Woah, that's such a computer science approach! <span aria-label="open mouth" class="emoji emoji-1f62e" role="img" title="open mouth">:open_mouth:</span> My own approach to comparing these things would have been to export the construction of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">d</mi></mrow><annotation encoding="application/x-tex">\mathsf{Setoid}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathsf">S</span><span class="mord mathsf">e</span><span class="mord mathsf">t</span><span class="mord mathsf">o</span><span class="mord mathsf">i</span><span class="mord mathsf">d</span></span></span></span></span> from <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow><annotation encoding="application/x-tex">\mathsf{Set}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathsf">S</span><span class="mord mathsf">e</span><span class="mord mathsf">t</span></span></span></span></span> to an arbitrary topos, to provide a nice big supply of such categories, check that the properties one expects do in fact lift, and then use those to "see where things are odd" using those.</p>
+
+
+
+<a name="224730339"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224730339" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224730339">(Feb 01 2021 at 14:09)</a>:</h4>
+<p>Going back to where the conversation with <span class="user-mention" data-user-id="276438">@Fabrizio Genovese</span> was yesterday: yes, you are in for a lot of pain when doing 'strict' anything in a type theory like those of Idris/Agda (but not in cubical Agda, just a lot of work). That's why I've avoided <em>strict</em> completely in agda-categories. It just goes against the grain of the host type theory.</p>
+<p>Not that I haven't played with categories of permutations (as morphisms) - that's the whole topic of the (fully formalized) proof that they are a 'symmetric rig groupoid', as proved in <a href="https://www.cas.mcmaster.ca/~carette/publications/esop2.pdf">Computing with Semirings and Weak Rig Groupoids</a>. To obtain full reversibility of all coherences needed... 168 of them, if I remember well. That was definitely tedious to prove in full.</p>
+
+
+
+<a name="224730622"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224730622" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224730622">(Feb 01 2021 at 14:11)</a>:</h4>
+<p>And yes, I am now thoroughly a CS person, my Ph.D. in pure math notwithstanding.</p>
+
+
+
+<a name="224743473"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224743473" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224743473">(Feb 01 2021 at 15:38)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="341237">Fawzi Hreiki</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224722808">said</a>:</p>
+<blockquote>
+<p>Things like decidability of type checking, which doesn't hold when you enforce function extensionality</p>
+</blockquote>
+<p>I don't think this is correct. Maybe you are thinking about extensional type theory, i.e., turning propositional equalities into judgmental ones? An axiom can just be thought of as implicitly added to every context, so it can't affect decidability of type checking.</p>
+
+
+
+<a name="224744623"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224744623" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224744623">(Feb 01 2021 at 15:45)</a>:</h4>
+<p>I agree that strict anything is likely to be a headache, at least if you use the dependent type-style definition of a category. (If you use the "internal"-style definition with source and target as functions, there will be other and bigger headaches.) For example I think it's actually easier to formalize bicategories than strict 2-categories.</p>
+
+
+
+<a name="224748824"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224748824" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224748824">(Feb 01 2021 at 16:09)</a>:</h4>
+<p>If you formulate the internal language of a topos as a dependent type theory (e.g. as in <a href="/user_uploads/21317/BZ0eLkTSH96rbV_a3sU35eaF/Modular-correspondence-between-dependent-t-Maria-Emilia-Maietti.pdf">this</a>), then, for the reasoning to be sound and complete, you need to have extensionality in the sense of turning propositional equalities into judgmental ones.</p>
+
+
+
+<a name="224750174"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224750174" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224750174">(Feb 01 2021 at 16:17)</a>:</h4>
+<p>I guess it depends if you want to implement the topos rules as its own type theory or internally (i.e. within the existing type theory)</p>
+
+
+
+<a name="224750860"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224750860" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224750860">(Feb 01 2021 at 16:21)</a>:</h4>
+<p>I can report that, for agda-categories, it was definitely easier to do bicategories (defined cat-enriched categories + some coherences) than strict 2-categories. In fact, I think the latter only exist in a branch, as what we had was too hard to work with.</p>
+
+
+
+<a name="224750975"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224750975" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224750975">(Feb 01 2021 at 16:22)</a>:</h4>
+<p><span class="user-mention" data-user-id="341237">@Fawzi Hreiki</span> that link leads to a malformed PDF.</p>
+
+
+
+<a name="224753434"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224753434" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224753434">(Feb 01 2021 at 16:38)</a>:</h4>
+<p>Ah, well it’s meant to be a link to this <a href="https://pdfs.semanticscholar.org/fc4e/4155e4246811003c168d60897a296c2c56b9.pdf">https://pdfs.semanticscholar.org/fc4e/4155e4246811003c168d60897a296c2c56b9.pdf</a></p>
+
+
+
+<a name="224757046"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224757046" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224757046">(Feb 01 2021 at 17:01)</a>:</h4>
+<p>I need to find the time to work my way through that paper. I've been trying to find a definition of things exactly like this that 'fit' in MLTT. Categories with Families... doesn't. Or, it does, but things exploded when you try to put in Pi types.</p>
+
+
+
+<a name="224772547"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224772547" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224772547">(Feb 01 2021 at 18:48)</a>:</h4>
+<p>my experience with these languages is limited, so my perspective is still naive. but what confuses me about the difficulty of implementing presheaf toposes is that Coq uses the Calculus of Constructions, which is almost exactly the same as the full higher-order dependent type theory of a topos. so it just seems like it should be completely natural to use Coq to work in the language of a certain topos.</p>
+
+
+
+<a name="224795028"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224795028" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224795028">(Feb 01 2021 at 21:38)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="341237">Fawzi Hreiki</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224748824">said</a>:</p>
+<blockquote>
+<p>If you formulate the internal language of a topos as a dependent type theory (e.g. as in <a href="/user_uploads/21317/BZ0eLkTSH96rbV_a3sU35eaF/Modular-correspondence-between-dependent-t-Maria-Emilia-Maietti.pdf">this</a>), then, for the reasoning to be sound and complete, you need to have extensionality in the sense of turning propositional equalities into judgmental ones.</p>
+</blockquote>
+<p>Surely that's only the case if you want "complete" to mean that equal things in the topos are judgmentally equal in the type theory?  Wouldn't a more sensible notion of completeness be that equal things in the topos are  <em>propositionally</em> equal in the type theory?</p>
+
+
+
+<a name="224795272"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224795272" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224795272">(Feb 01 2021 at 21:40)</a>:</h4>
+<p><span class="user-mention" data-user-id="275899">@Christian Williams</span> It's easy to use Coq to work <em>in</em> the language of a certain topos.  Just add whatever axioms happen to hold in that topos and away you go.  I think what people are talking about here is formalizing reasoning <em>about</em> toposes externally, rather than in its internal language.  (But I haven't been following closely, so I could be wrong.)</p>
+
+
+
+<a name="224795388"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224795388" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224795388">(Feb 01 2021 at 21:41)</a>:</h4>
+<p>Yes, that is indeed what some of us have been discussing, reasoning about toposes, what things are provably toposes, etc.</p>
+
+
+
+<a name="224797914"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224797914" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224797914">(Feb 01 2021 at 22:00)</a>:</h4>
+<p><span class="user-mention" data-user-id="276777">@Mike Shulman</span> Yeah that's a good point.</p>
+
+
+
+<a name="224810826"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224810826" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224810826">(Feb 01 2021 at 23:48)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224795028">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="341237">Fawzi Hreiki</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224748824">said</a>:</p>
+<blockquote>
+<p>If you formulate the internal language of a topos as a dependent type theory (e.g. as in <a href="/user_uploads/21317/BZ0eLkTSH96rbV_a3sU35eaF/Modular-correspondence-between-dependent-t-Maria-Emilia-Maietti.pdf">this</a>), then, for the reasoning to be sound and complete, you need to have extensionality in the sense of turning propositional equalities into judgmental ones.</p>
+</blockquote>
+<p>Surely that's only the case if you want "complete" to mean that equal things in the topos are judgmentally equal in the type theory?  Wouldn't a more sensible notion of completeness be that equal things in the topos are  <em>propositionally</em> equal in the type theory?</p>
+</blockquote>
+<p>well, this worries me. In particular I don't understand this paper <a href="https://www.math.unipd.it/~maietti/papers/ch.pdf">https://www.math.unipd.it/~maietti/papers/ch.pdf</a>  well at all, but it does seem to indicate that something is not working well between the syntax of the type theory as transformed into CT and the more relaxed semantics. but yes, I'd like to understand it better</p>
+
+
+
+<a name="224810997"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224810997" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224810997">(Feb 01 2021 at 23:51)</a>:</h4>
+<p>By analogy, it doesn't seem reasonable to require that the laws of a group hold up to definitional equality; there would be very few examples, and you also wouldn't be able to abstract over a variable group.</p>
+
+
+
+<a name="224852770"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224852770" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224852770">(Feb 02 2021 at 10:29)</a>:</h4>
+<p><a href="https://arxiv.org/abs/2102.00905">This paper</a> out today on the arXiv seems relevant to the discussion. It proposes a variant of MLTT where judgmental equality is completely eliminated. The authors say:</p>
+<blockquote>
+<p>Clearly, such a system is weaker than the standard systems, so it is natural to wonder how much weaker it is. We claim that this system still suffices for doing all of constructive mathematics; indeed, we conjecture that in such a system it should be possible to formalise most of the HoTT book.</p>
+</blockquote>
+
+
+
+<a name="224881678"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224881678" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Tom Hirschowitz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224881678">(Feb 02 2021 at 14:55)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224795272">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="275899">Christian Williams</span> It's easy to use Coq to work <em>in</em> the language of a certain topos.  Just add whatever axioms happen to hold in that topos and away you go.  I think what people are talking about here is formalizing reasoning <em>about</em> toposes externally, rather than in its internal language.  (But I haven't been following closely, so I could be wrong.)</p>
+</blockquote>
+<p>I'd be curious to see this applied to realisability toposes. Has anyone seen anything like this? How about extraction? I suspect that when reasoning in a realisability topos, you'd expect to be able to extract programs in the underlying PCA (at least for the part living in modest sets). Would Coq let you do this in any way?</p>
+
+
+
+<a name="224891519"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224891519" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rune Haugseng <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224891519">(Feb 02 2021 at 16:00)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276363">Amar Hadzihasanovic</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224852770">said</a>:</p>
+<blockquote>
+<p><a href="https://arxiv.org/abs/2102.00905">This paper</a> out today on the arXiv seems relevant to the discussion. It proposes a variant of MLTT where judgmental equality is completely eliminated. </p>
+</blockquote>
+<p>I had somehow (naïvely and ignorantly!) hoped that removing the judgmental equalities might give you a version of homotopy type theory that would have genuinely infinity-categorical models (as opposed to describing certain strict categories with weak equivalences and fibrations). In this paper they still get an ordinary category though. I might well be too ignorant to understand the answer, but why would composition be strictly associative if you don't have judgmental equality? Shouldn't associativity now be witnessed by a term in an identity type instead of holding "on the nose"?</p>
+
+
+
+<a name="224892174"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224892174" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenji Maillard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224892174">(Feb 02 2021 at 16:04)</a>:</h4>
+<p><span class="user-mention" data-user-id="277887">@Rune Haugseng</span> be careful about what your morphisms are: when working with syntax a morphism is usually a substitution, and composition of substitution is "always" associative on syntax</p>
+
+
+
+<a name="224892593"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224892593" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224892593">(Feb 02 2021 at 16:07)</a>:</h4>
+<p>You can <a href="https://arxiv.org/abs/2007.00624">weaken the substitution structure</a> to get, say, bicategorical structure, but the syntax becomes correspondingly more complex.</p>
+
+
+
+<a name="224893037"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224893037" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rune Haugseng <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224893037">(Feb 02 2021 at 16:10)</a>:</h4>
+<p>Does that mean a term of type X -&gt; Y doesn't in some sense give a "morphism from X to Y" in this syntactic/contextual category?</p>
+
+
+
+<a name="224893201"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224893201" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Kenji Maillard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224893201">(Feb 02 2021 at 16:11)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224892593">said</a>:</p>
+<blockquote>
+<p>You can <a href="https://arxiv.org/abs/2007.00624">weaken the substitution structure</a> to get, say, bicategorical structure, but the syntax becomes correspondingly more complex.</p>
+</blockquote>
+<p>Right, the "always" meant as long as you don't consider explicit substitutions as part of your syntax (also an interesting research direction)</p>
+
+
+
+<a name="224893231"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224893231" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224893231">(Feb 02 2021 at 16:11)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277887">Rune Haugseng</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224893037">said</a>:</p>
+<blockquote>
+<p>Does that mean a term of type X -&gt; Y doesn't in some sense give a "morphism from X to Y" in this syntactic/contextual category?</p>
+</blockquote>
+<p>The morphisms are the same, but you replace implicit substitution of variables for terms with an explicit substitution operator that is not strictly associative or unital (so that composition is different to the usual interpretation).</p>
+
+
+
+<a name="224896310"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224896310" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rune Haugseng <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224896310">(Feb 02 2021 at 16:30)</a>:</h4>
+<p>I think you're answering a much more advanced question than the stupid one I'm asking :-)</p>
+
+
+
+<a name="224906927"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224906927" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Dylan Braithwaite <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224906927">(Feb 02 2021 at 17:34)</a>:</h4>
+<p>If I'm reading right, <span class="user-mention" data-user-id="277887">@Rune Haugseng</span> you were asking about the standard syntactic category, rather than the weakened one Nathanael is referring to? In that case I think any term <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi>t</mi><mo>:</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">\Gamma \vdash t : T</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">Γ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> is interpreted by a morphism <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>→</mo><mi mathvariant="normal">Γ</mi><mo separator="true">,</mo><mi>x</mi><mo>:</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">\Gamma \to \Gamma, x: T</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Γ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord">Γ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span>. <a href="https://ncatlab.org/nlab/show/syntactic+category">https://ncatlab.org/nlab/show/syntactic+category</a> says that when the theory has function types, the syntactic category is cartesian closed. Maybe then we have something like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">Γ</mi><mo separator="true">,</mo><mi>x</mi><mo>:</mo><mi>X</mi><mo>→</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\Gamma, x: X \to Y)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">Γ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mclose">)</span></span></span></span> is isomorphic to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo fence="true">(</mo><mi mathvariant="normal">Γ</mi><mo separator="true">,</mo><mi>y</mi><mo>:</mo><mi>Y</mi><mo fence="true">)</mo></mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>:</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></msup></mrow><annotation encoding="application/x-tex">\left( \Gamma, y: Y \right) ^{(x: X)}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1.2779em;vertical-align:-0.25em;"></span><span class="minner"><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord">Γ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.0279em;"><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathnormal mtight">x</span><span class="mrel mtight">:</span><span class="mord mathnormal mtight" style="margin-right:0.07847em;">X</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span></span></span></span>?</p>
+
+
+
+<a name="224906982"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224906982" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> dan pittman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224906982">(Feb 02 2021 at 17:35)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277887">Rune Haugseng</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224893037">said</a>:</p>
+<blockquote>
+<p>Does that mean a term of type X -&gt; Y doesn't in some sense give a "morphism from X to Y" in this syntactic/contextual category?</p>
+</blockquote>
+<p>As I understand it, yes, that's right—it does not. In this category the objects are contexts, and the morphisms are—I can't think of the right word to state this, but—updates? to those contexts, updates that are a result of the substitutions.</p>
+
+
+
+<a name="224922020"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224922020" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Rune Haugseng <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224922020">(Feb 02 2021 at 19:20)</a>:</h4>
+<p>I think I'm maybe starting to see the point: it's not that "f : X -&gt; Y gives a morphism from X to Y" but that there's a morphism [x:X,f:X-&gt;Y] -&gt; [y:Y] corresponding to (x,X,f:X-&gt;Y)|-f(x):Y. And then "composition of morphisms" as I imagined it is rather [x:X,f:X-&gt;Y,g:Y-&gt;Z] -&gt; [y:Y,g:Y-&gt;Z] -&gt; [z:Z] given by "substituting y=f(x) in g(y)". Definitely not so clear what an infinity-categorical version of that could mean - I suppose I'd have to insist that I can't just "substitute y=f(x)" because that's a strict equality, which is not allowed, but then these are just formal variables...</p>
+
+
+
+<a name="224932087"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224932087" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Dylan Braithwaite <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224932087">(Feb 02 2021 at 20:31)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277887">Rune Haugseng</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224922020">said</a>:</p>
+<blockquote>
+<p>I suppose I'd have to insist that I can't just "substitute y=f(x)"</p>
+</blockquote>
+<p>That sounds similar to the bicategory structure that Nathanael was describing. I imagine generalising that to infinity categories is a pretty big step though.</p>
+
+
+
+<a name="224932655"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224932655" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Dylan Braithwaite <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224932655">(Feb 02 2021 at 20:35)</a>:</h4>
+<p>For what it's worth, since you originally mentioned models, they're generally given in terms of some additional structure on top of the category of contexts, such as a "category with families", which I <em>think</em> is where the higher category structure usually comes in with HoTT</p>
+
+
+
+<a name="224964802"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224964802" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224964802">(Feb 03 2021 at 02:02)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224810826">said</a>:</p>
+<blockquote>
+<p>well, this worries me. In particular I don't understand this paper <a href="https://www.math.unipd.it/~maietti/papers/ch.pdf">https://www.math.unipd.it/~maietti/papers/ch.pdf</a>  well at all, but it does seem to indicate that something is not working well between the syntax of the type theory as transformed into CT and the more relaxed semantics. but yes, I'd like to understand it better</p>
+</blockquote>
+<p>On a quick glance, it seems to me that paper is just saying that you can't prove choice or unique choice when existence is formulated with respect to a notion of "Prop" that's underspecified, as it is in CoC.  That's equally true in categorical models.</p>
+
+
+
+<a name="224970506"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/224970506" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#224970506">(Feb 03 2021 at 03:42)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224964802">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/224810826">said</a>:</p>
+<blockquote>
+<p>well, this worries me. In particular I don't understand this paper <a href="https://www.math.unipd.it/~maietti/papers/ch.pdf">https://www.math.unipd.it/~maietti/papers/ch.pdf</a>  well at all, but it does seem to indicate that something is not working well between the syntax of the type theory as transformed into CT and the more relaxed semantics. but yes, I'd like to understand it better</p>
+</blockquote>
+<p>On a quick glance, it seems to me that paper is just saying that you can't prove choice or unique choice when existence is formulated with respect to a notion of "Prop" that's underspecified, as it is in CoC.  That's equally true in categorical models.</p>
+</blockquote>
+<p>Thanks for  coming in to help, much appreciated! but if you cannot prove choice for CoC doesn't this mean that our implementations in Coq are not helpful at all?</p>
+
+
+
+<a name="225027176"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225027176" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225027176">(Feb 03 2021 at 15:03)</a>:</h4>
+<p>Implementations of what?  Not helpful for what?</p>
+
+
+
+<a name="225034726"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225034726" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225034726">(Feb 03 2021 at 15:52)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/225027176">said</a>:</p>
+<blockquote>
+<p>Implementations of what?  Not helpful for what?</p>
+</blockquote>
+<p>Implementations of mathematical proofs, the theory is (I believe) that we can extract programs from proofs and their witnesses. but if the choice rule doesn't hold, does it mean that the dream of transforming specifications into programs does not work for Coq? this was my question.</p>
+
+
+
+<a name="225080600"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225080600" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225080600">(Feb 03 2021 at 20:58)</a>:</h4>
+<p>Direct-style type theoretic accounts of unique choice (and other things) where computing programs can actually be extracted is a somewhat _new_ development for type theory --- available in languages like cubical type theory, for instance. Non-direct-style approaches (i.e. approaches based on an encoding) where programs can be extracted have also existed for a lot longer, such as the setoid construction.</p>
+
+
+
+<a name="225100009"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225100009" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225100009">(Feb 03 2021 at 23:43)</a>:</h4>
+<p>Coq's Prop is, I believe, designed to be "irrelevant" in that proofs of types in Prop can always be discarded when extracting programs.  This is "obviously" somewhat in conflict with the idea of using an axiom like (unique) choice to prove a proposition and then extracting a program from it.  If you want programs to be extractable from proofs, I think the proofs need to stay in Type and not descend into Prop.  You don't need to go all the way to cubical type theory for that; you can just use the HoTT notion of "proposition" in Coq -- although then your propositions will <em>never</em> be discarded when extracting code, so I guess the result may be more verbose or inefficient than otherwise.  I believe (correct me if I'm wrong, <span class="user-mention" data-user-id="297784">@Jonathan Sterling</span> ) that what cubical type theory adds to this is the ability to use extensionality axioms, like function extensionality and univalence, still without disrupting the ability to extract code, which Coq has no way to do.</p>
+
+
+
+<a name="225102661"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225102661" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225102661">(Feb 04 2021 at 00:13)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="297784">Jonathan Sterling</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/225080600">said</a>:</p>
+<blockquote>
+<p>Direct-style type theoretic accounts of unique choice (and other things) where computing programs can actually be extracted is a somewhat _new_ development for type theory --- available in languages like cubical type theory, for instance. Non-direct-style approaches (i.e. approaches based on an encoding) where programs can be extracted have also existed for a lot longer, such as the setoid construction.</p>
+</blockquote>
+<p>Thanks for also helping, Jonathan! But  lots of things existed before cubical type theory and before HoTT. <br>
+I'm a little bit familiar with the idea of irrelevant types and, while I agree that they're useful (to avoid the dreadful verbosity of the terms we get) I always thought that people were working on better ways of simplifying the unnecessary verbosity, while keeping the <em>essence</em> of the proofs, to make  the whole Propositions-as-Types program work.<br>
+and I still don't fully understand your  point about "ability to use extensionality axioms" @Mike, but I will try later on. Thanks!</p>
+
+
+
+<a name="225113970"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225113970" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225113970">(Feb 04 2021 at 03:06)</a>:</h4>
+<p>I think people <em>are</em> working on that.  The innovations of HoTT and cubical TT are one contribution towards that goal, giving a better-behaved way of identifying the "propositions" while still keeping the computational content.  Then one needs a way to decide which propositions can be ignored on extraction.  For instance, Agda has a notion of "irrelevant argument" that I don't understand completely, but it's different from Coq's Prop and may have advantages in this regard.</p>
+
+
+
+<a name="225117792"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225117792" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> dan pittman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225117792">(Feb 04 2021 at 04:28)</a>:</h4>
+<p>I think it's used in cases where you don't care about its computation, only the constraints it implies for whatever you <em>are</em> trying to prove. </p>
+<p>That is, its normal form isn't a detail needed to prove your goal, but the proposition the type represents is.</p>
+
+
+
+<a name="225158742"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225158742" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225158742">(Feb 04 2021 at 13:29)</a>:</h4>
+<p><span class="user-mention" data-user-id="276656">@Valeria de Paiva</span> I am not sure what you are referring to with "lots of things existed before..." but obviously that's true. What <em>didn't</em> exist beforehand was a directstyle account of these notions that is compatible with computation and obeys the laws needed for them to be usable to formalize standard mathematics, which was the point of my message. <span aria-label="rolling eyes" class="emoji emoji-1f644" role="img" title="rolling eyes">:rolling_eyes:</span> </p>
+<p>There seems to be a somewhat fundamental incongruity between "irrelevance" qua "delete during extraction" and "irrelevance" qua "well-behaved notion of proposition". HoTT (and its computational variants, like cubical) unabashedly emphasize the latter, but one consequence of this approach is we don't actually know how to strip out propositional things during extraction for such languages (at least, I am unsure how to do it) --- on the bright side, they don't interrupt computation.</p>
+<p>Another approach, one of those things that "existed before", is to design your logic in such a way that the propositions can be totally deleted during extraction. Systems of this kind often support computation at the expense of failing to validate certain laws involving propositions that are necessary for them to be practical to use for mathematics. Other times, axioms are added to support these mathematical use-cases, but this interrupts the extraction of programs.</p>
+<p>What I'm trying to convey to you is that the trade-offs are complicated, and we are working on it, and no, we are not ignorant of what existed before. We are deeply aware of the old work's shortcomings, and of the (different) shortcomings of what we are doing now.</p>
+
+
+
+<a name="225164378"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225164378" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225164378">(Feb 04 2021 at 14:17)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="297784">Jonathan Sterling</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/225158742">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span>[...]</p>
+<p>What I'm trying to convey to you is that the trade-offs are complicated, and we are working on it, and no, we are not ignorant of what existed before. We are deeply aware of the old work's shortcomings, and of the (different) shortcomings of what we are doing now.</p>
+</blockquote>
+<p>well, we all know that "the trade-offs are complicated" and this is why we're having this conversation.</p>
+<p>But no, it's not clear to me that  everyone (not even any single one!) is deeply aware of previous and present shortcomings.</p>
+<p>it's part of our culture that we don't discuss the shortcomings of our "shining new rocks" very much. Hence anyone who wants to understand pros and cons of approaches has to extract them from relentless positive descriptions. HoTT is not even ten years old yet, Linear Logic is more than 30 years old, Curry-Howard close to a hundred years --if you go by <br>
+Schoenfinkel's combinators-- and all of them are work in progress, all have limitations, shortcomings, etc. <br>
+so instead of "We are deeply aware of the old work's shortcomings, and of the (different) shortcomings of what we are doing now", I'd much prefer a reasoned list of pros and cons. especially because pros and cons, like shortcomings tend to be individualized, according to a source. your pro might be a con for me and vice-versa.</p>
+
+
+
+<a name="225167242"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225167242" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225167242">(Feb 04 2021 at 14:39)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/225113970">said</a>:</p>
+<blockquote>
+<p>I think people <em>are</em> working on that.  The innovations of HoTT and cubical TT are one contribution towards that goal, giving a better-behaved way of identifying the "propositions" while still keeping the computational content.  Then one needs a way to decide which propositions can be ignored on extraction.  For instance, Agda has a notion of "irrelevant argument" that I don't understand completely, but it's different from Coq's Prop and may have advantages in this regard.</p>
+</blockquote>
+<p>yes, I can understand that the goal is a better-behaved way of identifying the "propositions" while still keeping the computational content. and sure "one needs a way to decide which propositions can be ignored on extraction."  <br>
+So Many Thanks <span class="user-mention" data-user-id="276777">@Mike Shulman</span>  for making the argument go back to something I can understand. <br>
+this is much clearer. </p>
+<p>But what I still want to hear is how this impinges on the categorical models that are at issue. Because the gap between implementations and syntactic descriptions is huge, right? even for the most studied system, simply typed lambda-calculus,  the gap is still huge. and attempts along the lines of the Categorical Abstract Machine seem to have fallen in disuse. so it's fine to say we have this nice system MLTT/CIC/whatever that we want to implement and our mathematics of it work better for X, but our implementations work better for Y and hence we're trying Z, etc. this is level of description that I was hoping for and thanks <span class="user-mention" data-user-id="284213">@dan pittman</span>  for a stab at that.</p>
+
+
+
+<a name="225171861"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225171861" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225171861">(Feb 04 2021 at 15:11)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/225164378">said</a>:</p>
+<blockquote>
+<p>I'd much prefer a reasoned list of pros and cons. especially because pros and cons, like shortcomings tend to be individualized, according to a source. your pro might be a con for me and vice-versa.</p>
+</blockquote>
+<p>Isn't that exactly what we've been discussing?  E.g. in the two paragraphs of Jon's that came just before the one you quoted?</p>
+
+
+
+<a name="225174042"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225174042" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225174042">(Feb 04 2021 at 15:25)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/225171861">said</a>:</p>
+<div class="codehilite"><pre><span></span><code>Isn&#39;t that exactly what we&#39;ve been discussing?  E.g. in the two paragraphs of Jon&#39;s that came just before the one you quoted?
+</code></pre></div>
+<p>I'm sure this is what we're trying to do <span class="user-mention" data-user-id="276777">@Mike Shulman</span></p>
+
+
+
+<a name="225174998"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225174998" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225174998">(Feb 04 2021 at 15:31)</a>:</h4>
+<p><span class="user-mention" data-user-id="276656">@Valeria de Paiva</span> I think that you will find more satisfactory answers to your questions if you take a moment to be more receptive to those who are trying to explain things to you, and then ask follow-up questions that can be given precise answers. Respectfully, your behavior in this thread has been to send "eye-roll" emojis to people who are trying to help you, and then to question my claim that even a single person is "deeply aware of previous and present shortcomings" --- you are here claiming that I am lying when I say I am deeply aware of previous and present shortcomings. Why would I have any interest in answering questions about shortcomings asked by someone who just said they think I do not gave any deep awareness of them?</p>
+
+
+
+<a name="225175095"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225175095" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225175095">(Feb 04 2021 at 15:32)</a>:</h4>
+<p>I am happy to discuss these things in more detail if you can commit to using a respectful mode of communication that assumes good-faith, and be open-minded to the possibility that experts in the field do have something relevant to say that could help you.</p>
+
+
+
+<a name="225175983"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225175983" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225175983">(Feb 04 2021 at 15:38)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/225167242">said</a>:</p>
+<blockquote>
+<p>But what I still want to hear is how this impinges on the categorical models that are at issue.</p>
+</blockquote>
+<p>In a categorical model there are roughly two ways to represent "propositions".  They can be arbitrary subobjects in your category, or they can be some other fibration of posets, e.g. the strong subobjects in a quasitopos.  The former corresponds to the HoTT notion of proposition, and the latter to a CoC-like "logic over a type theory" notion.  Choosing subobjects has all the advantages of HoTT propositions, e.g. provability of unique choice, which is why they're usually what category theorists choose.  I don't know anything about attempts to represent computational-irrelevance in categorical semantics, although I'd be surprised if they didn't exist.</p>
+<blockquote>
+<p>Because the gap between implementations and syntactic descriptions is huge, right? even for the most studied system, simply typed lambda-calculus,  the gap is still huge.</p>
+</blockquote>
+<p>I'm not sure what gap you're referring to here.</p>
+
+
+
+<a name="225176277"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225176277" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225176277">(Feb 04 2021 at 15:40)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="297784">Jonathan Sterling</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/225174998">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> I think that you will find more satisfactory answers to your questions if you take a moment to be more receptive to those who are trying to explain things to you, and then ask follow-up questions that can be given precise answers. Respectfully, your behavior in this thread has been to send "eye-roll" emojis to people who are trying to help you, and then to question my claim that even a single person is "deeply aware of previous and present shortcomings" --- you are here claiming that I am lying when I say I am deeply aware of previous and present shortcomings. Why would I have any interest in answering questions about shortcomings asked by someone who just said they think I do not gave any deep awareness of them?</p>
+</blockquote>
+<p>I think you're reading too much on a single emoji. I meant that I don't understand that statement. but thanks, I think I have had enough expert explanation for now.</p>
+
+
+
+<a name="225185576"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225185576" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Tom Hirschowitz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225185576">(Feb 04 2021 at 16:35)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/225175983">said</a>:</p>
+<blockquote>
+<p>I don't know anything about attempts to represent computational-irrelevance in categorical semantics, although I'd be surprised if they didn't exist.</p>
+</blockquote>
+<p>I'd be very interested to see this, as well as a categorical account of what it means for a type theory to "compute", in the sense of the proof assistants community. I've asked a few people some time ago but none seemed interested (I don't remember who it was, so no need for you to ask!). If it turns out not to exist, I might be interested in contributing!</p>
+
+
+
+<a name="225208109"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225208109" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225208109">(Feb 04 2021 at 19:16)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/225175983">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/225167242">said</a>:</p>
+<blockquote>
+<p>But what I still want to hear is how this impinges on the categorical models that are at issue.</p>
+</blockquote>
+<p>In a categorical model there are roughly two ways to represent "propositions".  They can be arbitrary subobjects in your category, or they can be some other fibration of posets, e.g. the strong subobjects in a quasitopos.  The former corresponds to the HoTT notion of proposition, and the latter to a CoC-like "logic over a type theory" notion.  Choosing subobjects has all the advantages of HoTT propositions, e.g. provability of unique choice, which is why they're usually what category theorists choose.  I don't know anything about attempts to represent computational-irrelevance in categorical semantics, although I'd be surprised if they didn't exist.</p>
+<blockquote>
+<p>Because the gap between implementations and syntactic descriptions is huge, right? even for the most studied system, simply typed lambda-calculus,  the gap is still huge.</p>
+</blockquote>
+<p>I'm not sure what gap you're referring to here.</p>
+</blockquote>
+<p>What I meant about (traditional) representing computational-irrelevance in categorical semantics is the paper Awodey, Steven; Bauer, Andrej (2018): Propositions as [Types]. Carnegie Mellon University. Journal contribution. <a href="https://doi.org/10.1184/R1/6492500.v1">https://doi.org/10.1184/R1/6492500.v1</a> which is 10 years old, so I was expecting many further developments.</p>
+<p>The gap I referred to is hard to point to a unique paper. I can see  it described in his introduction for laypeople to Pierre-Louis recent prize, but the point is not clearly made. I need to find another source which shows it better, working on it.<br>
+"In the ‘80s and ‘90s, his research had an impact on the design and implementation of programming languages, leading most notably to the creation of virtual machines, such as the CAM (categorical abstract machine). This machine was a central component of the first compiler for the CAML programming language, which would later become OCaml. “The change in perspective was quite striking: it turned out that the highly abstract structures used for interpreting λ-calculus were a ‘low-level’ language, meaning that it was close to a machine language, and interpretation became compilation”, comments the researcher."</p>
+
+
+
+<a name="225252143"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225252143" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225252143">(Feb 05 2021 at 02:02)</a>:</h4>
+<p>I would say -- and I think Steve and Andrej would agree -- that the HoTT notion of propositional truncation is the "modern successor" of Propositions As [Types].  IIRC the rules in that paper aren't quite right in the intensional / higher-categorical case, but now in HoTT we have the correct rules and a general justification.</p>
+
+
+
+<a name="225258380"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225258380" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225258380">(Feb 05 2021 at 03:50)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/225252143">said</a>:</p>
+<blockquote>
+<p>I would say -- and I think Steve and Andrej would agree -- that the HoTT notion of propositional truncation is the "modern successor" of Propositions As [Types].  IIRC the rules in that paper aren't quite right in the intensional / higher-categorical case, but now in HoTT we have the correct rules and a general justification.</p>
+</blockquote>
+<p>I hear you. (trying to avoid emojis, as I'm not very competent in that language)</p>
+
+
+
+<a name="225302290"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225302290" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225302290">(Feb 05 2021 at 14:09)</a>:</h4>
+<p>I hear you about emojis.  (-:  I generally restrict myself to thumbs-ups.</p>
+
+
+
+<a name="225362599"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225362599" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225362599">(Feb 05 2021 at 21:51)</a>:</h4>
+<p>@Mike one more question on this</p>
+<blockquote>
+<p>IIRC the rules in that paper aren't quite right in the intensional / higher-categorical case, </p>
+</blockquote>
+<p>is that written somewhere explicitly? what was the issue? I don't need the full story, just an impressionistic view will be great</p>
+
+
+
+<a name="225367228"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225367228" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225367228">(Feb 05 2021 at 22:34)</a>:</h4>
+<p>Their rule for eliminating out of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[A]</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal">A</span><span class="mclose">]</span></span></span></span> into a type <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> requires that you have <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">f:A\to B</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> such that for any <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>:</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">x,y:A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span></span></span></span> we have <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(x)=f(y)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span>.  This essentially defines <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[A]</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal">A</span><span class="mclose">]</span></span></span></span> to be the coequalizer of the two projections <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>×</mo><mi>A</mi><mo>⇉</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A\times A \rightrightarrows A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.86413em;vertical-align:-0.1808em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel amsrm">⇉</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span></span></span></span>, which is a correct definition of the propositional truncation in a 1-category, but not in a higher category (in general, that coequalizer need not be a proposition).  So in intensional/homotopy type theory, instead of that assumption on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span> you need to assume that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> is a proposition, i.e. for all <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo separator="true">,</mo><mi>v</mi><mo>:</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">u,v:B</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">u</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> we have <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">u=v</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">u</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span></span></span></span>.</p>
+
+
+
+<a name="225381033"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225381033" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225381033">(Feb 06 2021 at 02:18)</a>:</h4>
+<p>Many thanks for the explanation! <span aria-label="+1" class="emoji emoji-1f44d" role="img" title="+1">:+1:</span></p>
+
+
+
+<a name="225496563"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/category%20theory%20software/near/225496563" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Steve Awodey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/category.20theory.20software.html#225496563">(Feb 08 2021 at 02:03)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229111-general/topic/category.20theory.20software/near/225252143">said</a>:</p>
+<blockquote>
+<p>I would say -- and I think Steve and Andrej would agree -- that the HoTT notion of propositional truncation is the "modern successor" of Propositions As [Types].  IIRC the rules in that paper aren't quite right in the intensional / higher-categorical case, but now in HoTT we have the correct rules and a general justification.</p>
+</blockquote>
+<p>I agree</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Jan 28 2021 at 12:33 UTC</p>
+<hr><p>Last updated: Feb 09 2021 at 08:01 UTC</p>

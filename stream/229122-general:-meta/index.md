@@ -9,8 +9,9 @@ permalink: /stream/229122-general:-meta/index.html
 
 ### Topics:
 
-* [public-facing archive](topic/public-facing.20archive.html) (8 messages, latest: Jan 28 2021 at 11:26)
-* [invite link](topic/invite.20link.html) (37 messages, latest: Jan 22 2021 at 10:06)
+* [invite link](topic/invite.20link.html) (48 messages, latest: Feb 05 2021 at 16:07)
+* [public-facing archive](topic/public-facing.20archive.html) (32 messages, latest: Feb 04 2021 at 09:37)
+* [etiquette of new streams](topic/etiquette.20of.20new.20streams.html) (18 messages, latest: Jan 29 2021 at 02:04)
 * [the etiquette of constructivism](topic/the.20etiquette.20of.20constructivism.html) (19 messages, latest: Jan 10 2021 at 20:24)
 * [#appreciation and #coappreciation](topic/.23appreciation.20and.20.23coappreciation.html) (8 messages, latest: Jan 10 2021 at 10:11)
 * [going public](topic/going.20public.html) (89 messages, latest: Dec 10 2020 at 11:26)
@@ -53,4 +54,4 @@ permalink: /stream/229122-general:-meta/index.html
 * [scope](topic/scope.html) (18 messages, latest: Mar 23 2020 at 17:33)
 * [meta](topic/meta.html) (11 messages, latest: Mar 23 2020 at 17:17)
 
-<hr><p>Last updated: Jan 28 2021 at 12:33 UTC</p>
+<hr><p>Last updated: Feb 09 2021 at 08:01 UTC</p>

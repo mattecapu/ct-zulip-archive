@@ -9,16 +9,16 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [Citing zulip](topic/Citing.20zulip.html) (3 messages, latest: Jan 28 2021 at 11:22)
+* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (542 messages, latest: Feb 08 2021 at 17:01)
+* [category theory software](topic/category.20theory.20software.html) (219 messages, latest: Feb 08 2021 at 02:03)
+* [new streams](topic/new.20streams.html) (72 messages, latest: Jan 31 2021 at 20:25)
+* [Pure CT Conferences/Seminars](topic/Pure.20CT.20Conferences.2FSeminars.html) (29 messages, latest: Jan 29 2021 at 02:20)
+* [Kevin Buzzard 'Is HoTT the way to do mathematics?'](topic/Kevin.20Buzzard.20'Is.20HoTT.20the.20way.20to.20do.20mathematics.3F'.html) (68 messages, latest: Jan 28 2021 at 12:55)
+* [Citing zulip](topic/Citing.20zulip.html) (6 messages, latest: Jan 28 2021 at 12:48)
 * [Kock-Lawvere axiom and Amazing Right Adjoints](topic/Kock-Lawvere.20axiom.20and.20Amazing.20Right.20Adjoints.html) (12 messages, latest: Jan 28 2021 at 01:43)
 * [Bohemian L&P Cafe: Makkai](topic/Bohemian.20L.26P.20Cafe.3A.20Makkai.html) (2 messages, latest: Jan 27 2021 at 17:40)
-* [Pure CT Conferences/Seminars](topic/Pure.20CT.20Conferences.2FSeminars.html) (28 messages, latest: Jan 27 2021 at 10:15)
-* [Kevin Buzzard 'Is HoTT the way to do mathematics?'](topic/Kevin.20Buzzard.20'Is.20HoTT.20the.20way.20to.20do.20mathematics.3F'.html) (67 messages, latest: Jan 27 2021 at 09:05)
 * [Sending stuff to the Moon](topic/Sending.20stuff.20to.20the.20Moon.html) (2 messages, latest: Jan 27 2021 at 02:34)
-* [new streams](topic/new.20streams.html) (70 messages, latest: Jan 26 2021 at 17:58)
 * [BLPC Talk: Makkai](topic/BLPC.20Talk.3A.20Makkai.html) (2 messages, latest: Jan 26 2021 at 15:43)
-* [category theory software](topic/category.20theory.20software.html) (91 messages, latest: Jan 23 2021 at 16:55)
-* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (525 messages, latest: Jan 20 2021 at 08:45)
 * [Categories of nets](topic/Categories.20of.20nets.html) (5 messages, latest: Jan 19 2021 at 21:53)
 * [Fresh invite link?](topic/Fresh.20invite.20link.3F.html) (23 messages, latest: Jan 11 2021 at 15:37)
 * [Topos Institute news](topic/Topos.20Institute.20news.html) (11 messages, latest: Jan 03 2021 at 16:08)
@@ -190,4 +190,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Jan 28 2021 at 12:33 UTC</p>
+<hr><p>Last updated: Feb 09 2021 at 08:01 UTC</p>

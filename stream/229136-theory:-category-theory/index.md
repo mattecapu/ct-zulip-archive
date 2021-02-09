@@ -9,6 +9,10 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [adjoints are maps of adjoints?](topic/adjoints.20are.20maps.20of.20adjoints.3F.html) (3 messages, latest: Feb 07 2021 at 16:48)
+* [Functorial boxes](topic/Functorial.20boxes.html) (4 messages, latest: Feb 03 2021 at 08:01)
+* [category theory in chemistry](topic/category.20theory.20in.20chemistry.html) (43 messages, latest: Feb 02 2021 at 21:27)
+* [lax morphism classifiers](topic/lax.20morphism.20classifiers.html) (33 messages, latest: Feb 01 2021 at 16:21)
 * [this lemma is false, but why?](topic/this.20lemma.20is.20false.2C.20but.20why.3F.html) (5 messages, latest: Jan 25 2021 at 13:41)
 * [name this thing](topic/name.20this.20thing.html) (5 messages, latest: Jan 25 2021 at 13:41)
 * [Transfer of 'monoidness'](topic/Transfer.20of.20'monoidness'.html) (3 messages, latest: Jan 21 2021 at 05:33)
@@ -126,4 +130,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jan 28 2021 at 12:33 UTC</p>
+<hr><p>Last updated: Feb 09 2021 at 08:01 UTC</p>
