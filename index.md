@@ -10,6 +10,8 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (289 topics)
 
+* [general](stream/229111-general/index.html) (174 topics)
+
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (120 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (91 topics)
@@ -126,4 +128,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 09 2021 at 10:15 UTC</p>
+<hr><p>Last updated: Feb 09 2021 at 10:18 UTC</p>
