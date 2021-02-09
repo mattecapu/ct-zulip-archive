@@ -10,8 +10,6 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (289 topics)
 
-* [general](stream/229111-general/index.html) (180 topics)
-
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (120 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (91 topics)
@@ -22,11 +20,7 @@ permalink: /index.html
 
 * [general: events](stream/229141-general:-events/index.html) (60 topics)
 
-* [general: off-topic](stream/229451-general:-off-topic/index.html) (56 topics)
-
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (56 topics)
-
-* [general: meta](stream/229122-general:-meta/index.html) (44 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
