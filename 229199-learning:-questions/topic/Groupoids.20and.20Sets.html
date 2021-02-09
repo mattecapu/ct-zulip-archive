@@ -1,0 +1,103 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/Groupoids.20and.20Sets.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Groupoids.20and.20Sets.html">Groupoids and Sets</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+<head><link href="/style.css" rel="stylesheet"></head>
+
+{% raw %}
+
+<a name="225584389"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Groupoids%20and%20Sets/near/225584389" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Ben Sprott <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Groupoids.20and.20Sets.html#225584389">(Feb 08 2021 at 18:09)</a>:</h4>
+<p>There is a known Free Groupoid Functor from Graphs to the category of Groupoids. It is given as the example in the <a href="https://ncatlab.org/nlab/show/free+groupoid">nlab article on free Groupoids</a>.  I would like to create such an adjunction between the category of Groupoids and the category of, perhaps finite, Sets.  I just picture doing this by taking any set or set of sets and attaching every isomorphism in sight.  Then, you just see the sets and isomorphisms as objects and morphisms of a given Groupoid.  Does this work?  Could it work if we restrict the category of Groupoids to contain only Groupoids that are categories that are finely presented?</p>
+
+
+
+<a name="225602121"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Groupoids%20and%20Sets/near/225602121" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Groupoids.20and.20Sets.html#225602121">(Feb 08 2021 at 20:23)</a>:</h4>
+<p>Do you mean you want to add an isomorphism between every pair of elements of the set, considered as objects of the category?</p>
+
+
+
+<a name="225602400"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Groupoids%20and%20Sets/near/225602400" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Groupoids.20and.20Sets.html#225602400">(Feb 08 2021 at 20:25)</a>:</h4>
+<p>The forgetful functor from categories to sets has a right adjoint, given by sending each set to the <a href="https://ncatlab.org/nlab/show/indiscrete+category">codiscrete category</a> on that set (which is precisely adding isomorphisms between each pair of elements). This functor factors through the category of groupoids. (Note that the categories in the image of this functor are all equivalent to the terminal category, though.)</p>
+
+
+
+<a name="225624148"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Groupoids%20and%20Sets/near/225624148" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Ben Sprott <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Groupoids.20and.20Sets.html#225624148">(Feb 08 2021 at 23:19)</a>:</h4>
+<p><span class="user-mention" data-user-id="276092">@Nathanael Arkor</span> </p>
+<blockquote>
+<p>Do you mean you want to add an isomorphism between every pair of elements of the set, considered as objects of the category?</p>
+</blockquote>
+<p>Yes.  So the objects of the categories(groupoids) are the sets and the morphisms of the categories are every isomorphism of the set to itself.  I am picturing being able to do this with sets of sets and then you have categories with more than one object and you just add to the Category all the endo-isos and all isos between all of the sets.</p>
+
+
+
+<a name="225624253"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Groupoids%20and%20Sets/near/225624253" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Ben Sprott <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Groupoids.20and.20Sets.html#225624253">(Feb 08 2021 at 23:20)</a>:</h4>
+<p><span class="user-mention" data-user-id="276092">@Nathanael Arkor</span> </p>
+<blockquote>
+<p>The forgetful functor from categories to sets has a right adjoint, given by sending each set to the <a href="https://ncatlab.org/nlab/show/indiscrete+category">codiscrete category</a> on that set (which is precisely adding isomorphisms between each pair of elements). This functor factors through the category of groupoids. (Note that the categories in the image of this functor are all equivalent to the terminal category, though.)</p>
+</blockquote>
+<p>So does this mean there is a construction like I'm describing, but it's trivial?</p>
+
+
+
+<a name="225624365"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Groupoids%20and%20Sets/near/225624365" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Groupoids.20and.20Sets.html#225624365">(Feb 08 2021 at 23:21)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="308261">Ben Sprott</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Groupoids.20and.20Sets/near/225624148">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> </p>
+<blockquote>
+<p>Do you mean you want to add an isomorphism between every pair of elements of the set, considered as objects of the category?</p>
+</blockquote>
+<p>Yes.  So the objects of the categories(groupoids) are the sets and the morphisms of the categories are every isomorphism of the set to itself.  I am picturing being able to do this with sets of sets and then you have categories with more than one object and you just add to the Category all the endo-isos and all isos between all of the sets.</p>
+</blockquote>
+<p>What you describe here sounds like the category of sets and bijections. But this is a specific category. (Also, "set of sets" doesn't make sense: the collection of all sets forms a proper class, not a set.)</p>
+
+
+
+<a name="225627358"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Groupoids%20and%20Sets/near/225627358" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Groupoids.20and.20Sets.html#225627358">(Feb 08 2021 at 23:58)</a>:</h4>
+<p>While Ben said </p>
+<blockquote>
+<p>Yes.</p>
+</blockquote>
+<p>his answer to Nathanaels' question actually seems to be "No".   Nathanael asked:</p>
+<blockquote>
+<p>Do you mean you want to add an isomorphism between every pair of elements of the set, considered as objects of the category?</p>
+</blockquote>
+<p>This one of two famous ways to turn a set into a groupoid.  In this way, you take the objects of the groupoid to be elements of your set, and put in one isomorphism from each object to each other object.</p>
+
+
+
+<a name="225627551"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Groupoids%20and%20Sets/near/225627551" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Groupoids.20and.20Sets.html#225627551">(Feb 09 2021 at 00:00)</a>:</h4>
+<p>Since Ben was originally asking about how to get an adjunction between the category of groupoids and the category of finite sets, he was - or should have been - looking for some way to turn a set into a groupoid.  And Nathanael's way was one of the two famous ways.</p>
+
+
+
+<a name="225627964"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Groupoids%20and%20Sets/near/225627964" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Groupoids.20and.20Sets.html#225627964">(Feb 09 2021 at 00:04)</a>:</h4>
+<p>But then, Ben's comment:</p>
+<blockquote>
+<p>So the objects of the categories (groupoids) are the sets and the morphisms of the categories are every isomorphism of the set to itself. I am picturing being able to do this with sets of sets and then you have categories with more than one object and you just add to the Category all the endo-isos and all isos between all of the sets.</p>
+</blockquote>
+<p>shoots off in a completely different direction.  So I can no longer tell what he was asking about.</p>
+<p>He seems now to be talking about a specific groupoid: the groupoid with sets as objects and bijections as morphisms.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Feb 09 2021 at 08:01 UTC</p>

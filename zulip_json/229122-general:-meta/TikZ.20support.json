@@ -1,0 +1,296 @@
+[
+    {
+        "content": "<p>Anyone have any idea how easy/hard/impossible it will be to get TikZ working, or more generally fiddling with our LaTeX preamble?</p>",
+        "id": 191593860,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1585047715
+    },
+    {
+        "content": "<p>the LaTeX renderer Zulip uses does not support TikZ and although there is an open issue for xy support, no-one is currently working on it</p>",
+        "id": 191594111,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585047836
+    },
+    {
+        "content": "<p>so the best options for now are to paste images</p>",
+        "id": 191594229,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585047879
+    },
+    {
+        "content": "<p>thanks!</p>",
+        "id": 191594246,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1585047891
+    },
+    {
+        "content": "<p>if there was a server-side LaTeX renderer, we could possibly integrate a bot that would respond to TikZ code, but I'm not aware of one existing</p>",
+        "id": 191594306,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585047923
+    },
+    {
+        "content": "<p>Any hackers with <strong><em>lots</em></strong> of spare time on their hands could try to integrate LaTeXit, an existing LaTeX-to-svg renderer. (Or with <strong>lots and lots</strong> of time, TikZit.......)</p>",
+        "id": 191594498,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1585048028
+    },
+    {
+        "content": "<p>I guess you have to take the telegram bot that converts latex to images and posts them for you, and adapt it to zulip</p>",
+        "id": 191605156,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585054814
+    },
+    {
+        "content": "<p>I don't know how hard that is.</p>",
+        "id": 191605161,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585054820
+    },
+    {
+        "content": "<p>if we get this to work it'll be great. with 180 members, we already have more than enough know-how to do it.<br>\nbut for some reason, only a small subset are subscribed to the meta stream.</p>",
+        "id": 191656890,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1585076134
+    },
+    {
+        "content": "<p>Well, consider that knowing how to do something != doing it. It could still take many hours to implement such a thing, and I am fairly convinced many people wouldn't like to spend their time that way</p>",
+        "id": 191657064,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585076200
+    },
+    {
+        "content": "<p>At some point we should try to port the telegram TikZ bot to this, cos that would be a total lifesaver. We'll have to see how different the APIs are. This could be a nice weekend project, time permitting.</p>",
+        "id": 191827235,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585181695
+    },
+    {
+        "content": "<p>Yeah, that would be huge. We can then find a way to support tikzcd as well.</p>",
+        "id": 191827634,
+        "sender_full_name": "Stelios Tsampas",
+        "timestamp": 1585181873
+    },
+    {
+        "content": "<p>Scratch that, it is quite diffucult</p>",
+        "id": 191827701,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585181920
+    },
+    {
+        "content": "<p>Telegram supports inline bots, while I don't think that Zulip does</p>",
+        "id": 191827712,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585181933
+    },
+    {
+        "content": "<p>that's a big difference</p>",
+        "id": 191827714,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585181939
+    },
+    {
+        "content": "<p>I don't know how zulip renders Latex so I don't have an opinion on the difficulty right now :/.</p>",
+        "id": 191827841,
+        "sender_full_name": "Stelios Tsampas",
+        "timestamp": 1585182074
+    },
+    {
+        "content": "<p>Zulip uses KaTeX to render LaTeX</p>",
+        "id": 191827854,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585182103
+    },
+    {
+        "content": "<p>meaning if you want Zulip to support TikZ natively, you'll need to add it to KaTeX, which is not a small undertaking...</p>",
+        "id": 191827912,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585182142
+    },
+    {
+        "content": "<p>The idea wasn't fiddling with KaTeX</p>",
+        "id": 191827926,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585182152
+    },
+    {
+        "content": "<p>The idea was to deploy a bot. You address the bot in your message together with the latex you wanna render, the bot renders it and drops the png in the chat. At that point KaTeX is not used, the bot can run a full TeXLive under the hood</p>",
+        "id": 191827974,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585182206
+    },
+    {
+        "content": "<p>That's what InLaTeX bot does on Telegram. But that's an inline bot, meaning that as soon as you type <code>@inlatex</code> and start writing code you have a popup preview window, and you can press send only when everything looks ok.</p>",
+        "id": 191828059,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585182252
+    },
+    {
+        "content": "<p>(Which is actually pretty damn neat if you ask me)</p>",
+        "id": 191828074,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585182267
+    },
+    {
+        "content": "<p>That's a good idea! But it doesn't have to be server-side TexLive, I guess there's some online tool we can use, i.e. the bot issuing a web request to get back rendered data.</p>",
+        "id": 191828100,
+        "sender_full_name": "Stelios Tsampas",
+        "timestamp": 1585182302
+    },
+    {
+        "content": "<p>Especially while typesetting diagrams errors are frequent, so having a preview is very cool and avoids flooding the chat with wrong code</p>",
+        "id": 191828106,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585182303
+    },
+    {
+        "content": "<p>So I initially thought \"cool, let's just port the inline telegram bot to here, the source is public\"</p>",
+        "id": 191828128,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585182332
+    },
+    {
+        "content": "<p>But then again, zulip does not support inlne bots to my knowledge, making everything difficult</p>",
+        "id": 191828146,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585182346
+    },
+    {
+        "content": "<p>Also, I understand that adding tikz to KaTeX is very hard, but it's also incredible that on KaTeX' Github there is only one issue about this, and it has been insta-closed with a wontfix in 2015. It would be about time to do something about it</p>",
+        "id": 191828330,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585182497
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276438\">@Fabrizio Genovese</span>: there's actually an open issue about commutative diagrams specifically (<a href=\"https://github.com/KaTeX/KaTeX/issues/1834\" title=\"https://github.com/KaTeX/KaTeX/issues/1834\">https://github.com/KaTeX/KaTeX/issues/1834</a>)</p>",
+        "id": 191828356,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585182543
+    },
+    {
+        "content": "<p>though that only covers some of the use-cases</p>",
+        "id": 191828365,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585182548
+    },
+    {
+        "content": "<blockquote>\n<p>it has been insta-closed with a wontfix in 2015</p>\n</blockquote>\n<p>I think that's because it's a monumental task</p>",
+        "id": 191828386,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585182584
+    },
+    {
+        "content": "<p>Yes, I was that issue, but it's really not the same. Practically everyone in this community relies on tikz, one way or another. I think KaTeX is just not enough for us.</p>",
+        "id": 191828406,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585182598
+    },
+    {
+        "content": "<p>if someone came along with a pull request, I don't think they'd be quick to turn it down</p>",
+        "id": 191828409,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585182599
+    },
+    {
+        "content": "<p>I agree having a TikZ bot would be ideal</p>",
+        "id": 191828462,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585182618
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276438\">Fabrizio Genovese</span> <a href=\"#narrow/stream/229122-meta/topic/storage/near/191828146\" title=\"#narrow/stream/229122-meta/topic/storage/near/191828146\">said</a>:</p>\n<blockquote>\n<p>But then again, zulip does not support inlne bots to my knowledge, making everything difficult</p>\n</blockquote>\n<p>Wait, do you mean that one can't explicitly <em>invoke</em> a bot?</p>",
+        "id": 191828488,
+        "sender_full_name": "Stelios Tsampas",
+        "timestamp": 1585182654
+    },
+    {
+        "content": "<p>as in: the bot will only respond to sent messages</p>",
+        "id": 191828519,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585182711
+    },
+    {
+        "content": "<p>No, I mean that when you type <code>@inlinebot</code> on telegram the dialogue with the bot is interactive even <em>before</em> sending a message</p>",
+        "id": 191828524,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585182716
+    },
+    {
+        "content": "<p>Exactly what <span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> says</p>",
+        "id": 191828572,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585182728
+    },
+    {
+        "content": "<p>Well, then the bot can react to a message by modifying it, right?</p>",
+        "id": 191828590,
+        "sender_full_name": "Stelios Tsampas",
+        "timestamp": 1585182757
+    },
+    {
+        "content": "<p>Well, yes and no</p>",
+        "id": 191828597,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585182768
+    },
+    {
+        "content": "<p>for instance I can say <code>@bot a \\to b \\Sum c</code>. This is wrong, cos <code>Sum</code> is capitalized, so the bot won't display anything. So I send another message <code>@bot a \\to b \\sum c</code>. The bot replies with a correctly rendered pictures, but my two messages stay in the main chat window</p>",
+        "id": 191828704,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585182847
+    },
+    {
+        "content": "<p>Now imagine that these messages aren't just a line, but 4000 chars each</p>",
+        "id": 191828725,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585182868
+    },
+    {
+        "content": "<p>You get the chat flooded with garbage code really quickly</p>",
+        "id": 191828743,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585182893
+    },
+    {
+        "content": "<p>An obvious workaround would be to address the bot in a private chat specifying topic and stream to publish to, but that becomes really cumbersome quite quickly</p>",
+        "id": 191828775,
+        "sender_full_name": "Fabrizio Genovese",
+        "timestamp": 1585182922
+    },
+    {
+        "content": "<p>(moved the messages to the relevant thread)</p>",
+        "id": 191828966,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585183100
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276438\">Fabrizio Genovese</span> <a href=\"#narrow/stream/229122-meta/topic/TikZ.20support/near/191828704\" title=\"#narrow/stream/229122-meta/topic/TikZ.20support/near/191828704\">said</a>:</p>\n<blockquote>\n<p>for instance I can say <code>@bot a \\to b \\Sum c</code>. This is wrong, cos <code>Sum</code> is capitalized, so the bot won't display anything. So I send another message <code>@bot a \\to b \\sum c</code>. The bot replies with a correctly rendered pictures, but my two messages stay in the main chat window</p>\n</blockquote>\n<p>Modifying a message does not re-activate bots?</p>",
+        "id": 191830027,
+        "sender_full_name": "Stelios Tsampas",
+        "timestamp": 1585184335
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275900\">@Stelios Tsampas</span>: that doesn't seem clear from the documentation; we'd probably have to ask in the Zulip server</p>",
+        "id": 191830316,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1585184605
+    },
+    {
+        "content": "<p>I guess at worst we would have to make a \"on-modify\" bot? Anyway I should stop making conjectures on stuff I don't know :P.</p>",
+        "id": 191830426,
+        "sender_full_name": "Stelios Tsampas",
+        "timestamp": 1585184745
+    },
+    {
+        "content": "<p>Testing pasting directly from TikZiT:<br>\n<a href=\"/user_uploads/21317/Fb5Bk3IJ5toVI1_ibXC1JyUt/image.png\" title=\"image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/Fb5Bk3IJ5toVI1_ibXC1JyUt/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/Fb5Bk3IJ5toVI1_ibXC1JyUt/image.png\"></a></div>",
+        "id": 195543576,
+        "sender_full_name": "Aleks Kissinger",
+        "timestamp": 1588069394
+    },
+    {
+        "content": "<p>That seems to work pretty well. If you preview a picture in TikZiT, you can copy it to clipboard by right clicking on it:<br>\n<a href=\"/user_uploads/21317/Ymjzc7xQdFO6x4ov2j8aOmMX/Screenshot-from-2020-04-28-11-24-56.png\" title=\"Screenshot-from-2020-04-28-11-24-56.png\">Screenshot-from-2020-04-28-11-24-56.png</a> <br>\nand paste into Zulip. Not as smooth as you might like (and no tikz source saved), but a pretty quick solution.</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/Ymjzc7xQdFO6x4ov2j8aOmMX/Screenshot-from-2020-04-28-11-24-56.png\" title=\"Screenshot-from-2020-04-28-11-24-56.png\"><img src=\"/user_uploads/21317/Ymjzc7xQdFO6x4ov2j8aOmMX/Screenshot-from-2020-04-28-11-24-56.png\"></a></div>",
+        "id": 195543973,
+        "sender_full_name": "Aleks Kissinger",
+        "timestamp": 1588069664
+    }
+]
