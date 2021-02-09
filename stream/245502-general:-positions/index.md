@@ -9,7 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
-* [people who have gotten jobs](topic/people.20who.20have.20gotten.20jobs.html) (3 messages, latest: Feb 08 2021 at 03:08)
+* [people who have gotten jobs](topic/people.20who.20have.20gotten.20jobs.html) (4 messages, latest: Feb 09 2021 at 10:22)
 * [8 tenure-track positions at McMaster University](topic/8.20tenure-track.20positions.20at.20McMaster.20University.html) (1 message, latest: Dec 18 2020 at 16:03)
 * [2 PhD positions at University of Strathclyde, Glasgow](topic/2.20PhD.20positions.20at.20University.20of.20Strathclyde.2C.20Glasgow.html) (3 messages, latest: Dec 16 2020 at 13:28)
 * [RFP: AI for SQL via CT](topic/RFP.3A.20AI.20for.20SQL.20via.20CT.html) (2 messages, latest: Dec 07 2020 at 06:56)
@@ -29,4 +29,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Feb 09 2021 at 10:21 UTC</p>
+<hr><p>Last updated: Feb 09 2021 at 10:22 UTC</p>
