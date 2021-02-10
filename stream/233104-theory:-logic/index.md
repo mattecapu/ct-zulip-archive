@@ -9,7 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
-* [Axiom systems](topic/Axiom.20systems.html) (26 messages, latest: Feb 08 2021 at 13:26)
+* [Axiom systems](topic/Axiom.20systems.html) (29 messages, latest: Feb 10 2021 at 00:05)
 * [for all x implies exists x?](topic/for.20all.20x.20implies.20exists.20x.3F.html) (119 messages, latest: Jan 16 2021 at 00:27)
 * [constructive and co-constructive logic](topic/constructive.20and.20co-constructive.20logic.html) (27 messages, latest: Jan 11 2021 at 13:02)
 * [Axiom of Multiple Choice](topic/Axiom.20of.20Multiple.20Choice.html) (10 messages, latest: Jan 03 2021 at 21:11)
@@ -36,4 +36,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Feb 09 2021 at 10:30 UTC</p>
+<hr><p>Last updated: Feb 10 2021 at 00:13 UTC</p>

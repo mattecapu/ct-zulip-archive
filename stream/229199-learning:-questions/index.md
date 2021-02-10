@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Groupoids and Sets](topic/Groupoids.20and.20Sets.html) (9 messages, latest: Feb 09 2021 at 00:04)
-* [Closed structure on presheaf category](topic/Closed.20structure.20on.20presheaf.20category.html) (14 messages, latest: Feb 08 2021 at 17:27)
+* [Groupoids and Sets](topic/Groupoids.20and.20Sets.html) (15 messages, latest: Feb 10 2021 at 00:07)
+* [Closed structure on presheaf category](topic/Closed.20structure.20on.20presheaf.20category.html) (17 messages, latest: Feb 09 2021 at 23:33)
 * [Categorical adjoints as dagger category](topic/Categorical.20adjoints.20as.20dagger.20category.html) (17 messages, latest: Feb 08 2021 at 14:01)
 * [promonads : categories = profunctors : graphs?](topic/promonads.20.3A.20categories.20.3D.20profunctors.20.3A.20graphs.3F.html) (80 messages, latest: Feb 07 2021 at 12:41)
 * [Profunctor composition in the double cat of spans](topic/Profunctor.20composition.20in.20the.20double.20cat.20of.20spans.html) (1 message, latest: Feb 07 2021 at 10:53)
@@ -299,4 +299,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 09 2021 at 10:30 UTC</p>
+<hr><p>Last updated: Feb 10 2021 at 00:13 UTC</p>

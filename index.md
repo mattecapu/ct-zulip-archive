@@ -100,6 +100,8 @@ permalink: /index.html
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (4 topics)
 
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (4 topics)
+
 * [expression](stream/247180-expression/index.html) (3 topics)
 
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (3 topics)
@@ -107,8 +109,6 @@ permalink: /index.html
 * [practice: neuroscience](stream/233925-practice:-neuroscience/index.html) (3 topics)
 
 * [process-io](stream/267137-process-io/index.html) (3 topics)
-
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (3 topics)
 
 * [NYC Category Theory](stream/237238-NYC-Category-Theory/index.html) (2 topics)
 
@@ -128,4 +128,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 09 2021 at 10:30 UTC</p>
+<hr><p>Last updated: Feb 10 2021 at 00:13 UTC</p>
