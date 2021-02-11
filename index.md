@@ -8,11 +8,11 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (289 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (290 topics)
 
 * [general](stream/229111-general/index.html) (174 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (120 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (122 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (91 topics)
 
@@ -32,9 +32,9 @@ permalink: /index.html
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (26 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (19 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (20 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (19 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (20 topics)
 
 * [general: values](stream/241990-general:-values/index.html) (19 topics)
 
@@ -46,9 +46,9 @@ permalink: /index.html
 
 * [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
 
-* [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (15 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (14 topics)
+* [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
 
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
 
@@ -128,4 +128,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 10 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 11 2021 at 00:13 UTC</p>

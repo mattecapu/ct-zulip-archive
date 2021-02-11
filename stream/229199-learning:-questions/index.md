@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Morphism-based pullback notation?](topic/Morphism-based.20pullback.20notation.3F.html) (16 messages, latest: Feb 10 2021 at 20:00)
 * [Groupoids and Sets](topic/Groupoids.20and.20Sets.html) (15 messages, latest: Feb 10 2021 at 00:07)
 * [Closed structure on presheaf category](topic/Closed.20structure.20on.20presheaf.20category.html) (17 messages, latest: Feb 09 2021 at 23:33)
 * [Categorical adjoints as dagger category](topic/Categorical.20adjoints.20as.20dagger.20category.html) (17 messages, latest: Feb 08 2021 at 14:01)
@@ -299,4 +300,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 10 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 11 2021 at 00:13 UTC</p>

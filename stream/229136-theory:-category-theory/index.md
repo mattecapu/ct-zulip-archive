@@ -9,6 +9,9 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Anti-Grothendieck Construction](topic/Anti-Grothendieck.20Construction.html) (21 messages, latest: Feb 10 2021 at 17:22)
+* [Categories of Algebras](topic/Categories.20of.20Algebras.html) (6 messages, latest: Feb 10 2021 at 12:24)
+* [functors between categories of F-algebras](topic/functors.20between.20categories.20of.20F-algebras.html) (20 messages, latest: Feb 10 2021 at 03:23)
 * [adjoints are maps of adjoints?](topic/adjoints.20are.20maps.20of.20adjoints.3F.html) (3 messages, latest: Feb 07 2021 at 16:48)
 * [Functorial boxes](topic/Functorial.20boxes.html) (4 messages, latest: Feb 03 2021 at 08:01)
 * [category theory in chemistry](topic/category.20theory.20in.20chemistry.html) (43 messages, latest: Feb 02 2021 at 21:27)
@@ -32,7 +35,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [cocompactness](topic/cocompactness.html) (8 messages, latest: Dec 09 2020 at 11:55)
 * [Indexed F-algebras?](topic/Indexed.20F-algebras.3F.html) (5 messages, latest: Dec 08 2020 at 21:35)
 * [cocompletion preserving some existing colimits](topic/cocompletion.20preserving.20some.20existing.20colimits.html) (9 messages, latest: Dec 06 2020 at 12:36)
-* [functors between categories of F-algebras](topic/functors.20between.20categories.20of.20F-algebras.html) (19 messages, latest: Dec 04 2020 at 14:10)
 * [yoneda lemma & yoneda embedding](topic/yoneda.20lemma.20.26.20yoneda.20embedding.html) (16 messages, latest: Dec 03 2020 at 19:10)
 * [Model Category of GAT Presentations](topic/Model.20Category.20of.20GAT.20Presentations.html) (4 messages, latest: Dec 03 2020 at 07:45)
 * [braiding as lax monoidal structure](topic/braiding.20as.20lax.20monoidal.20structure.html) (6 messages, latest: Nov 29 2020 at 06:28)
@@ -130,4 +132,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Feb 10 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 11 2021 at 00:13 UTC</p>

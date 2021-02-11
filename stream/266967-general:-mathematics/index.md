@@ -9,6 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* [Dieudonné determinant](topic/Dieudonn.C3.A9.20determinant.html) (20 messages, latest: Feb 10 2021 at 19:46)
 * [endomorphism monoids of infinite sets](topic/endomorphism.20monoids.20of.20infinite.20sets.html) (71 messages, latest: Feb 08 2021 at 10:21)
 * [Perkel's graph and the 57-cell](topic/Perkel's.20graph.20and.20the.2057-cell.html) (28 messages, latest: Feb 07 2021 at 17:39)
 * [This Week's Finds (1-50)](topic/This.20Week's.20Finds.20(1-50).html) (40 messages, latest: Feb 04 2021 at 12:24)
@@ -29,4 +30,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Feb 10 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 11 2021 at 00:13 UTC</p>

@@ -1,0 +1,248 @@
+[
+    {
+        "content": "<p>Hello, I and <span class=\"user-mention\" data-user-id=\"276048\">@Mike Stay</span> wrote a paper: <a href=\"https://arxiv.org/abs/2102.04672\">https://arxiv.org/abs/2102.04672</a></p>",
+        "id": 225786149,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612923091
+    },
+    {
+        "content": "<p>Native Type Theory is a method of generating logical type systems for a broad class of languages, to provide a shared framework of higher-order reasoning for the many languages and structures used in software.</p>",
+        "id": 225786274,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612923211
+    },
+    {
+        "content": "<p>The idea is very simple - a programming language can be modelled as a theory, and its presheaves form a topos. The internal language of this topos is an intuitive and expressive type theory in which we have total expression of the structure and behavior of terms.</p>",
+        "id": 225786406,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612923345
+    },
+    {
+        "content": "<p>In the paper we outline the construction as a functor from \"higher-order algebraic theories\" to \"(nice) dependent type theories\". We give the basics of the type system, and some first applications.</p>",
+        "id": 225786529,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612923481
+    },
+    {
+        "content": "<p>The construction is probably closer to implementation than it may seem. The formal specification community has used K Framework to write languages such as C, Java, and Python as higher-order algebraic theories (with rewriting); and native type systems are the same kind as that of Coq.</p>",
+        "id": 225786837,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612923740
+    },
+    {
+        "content": "<p>So, we are now looking to make it happen. If you are interested, just let me know.</p>",
+        "id": 225786942,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612923859
+    },
+    {
+        "content": "<p>It would be great to use this space for thoughts about the paper, exploring applications, and anything else.</p>",
+        "id": 225786960,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612923880
+    },
+    {
+        "content": "<p>If suddenly every programming language had an expressive logic built-in, what kind of things would you want to do? How do you think this could affect the practice of programming?</p>",
+        "id": 225787683,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612924578
+    },
+    {
+        "content": "<p>A motivating example we like is searching codebases --- we imagine querying on GitHub \"programs that implement this algorithm under these conditions\" and pulling up all results to compare, plug and play.</p>",
+        "id": 225787863,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612924791
+    },
+    {
+        "content": "<p>That's really cool work! Kudos!</p>",
+        "id": 225806686,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1612946226
+    },
+    {
+        "content": "<p>In Proposition 26, L and R have the same domain and codomain; which one is the wrong way around?</p>",
+        "id": 225815342,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1612951634
+    },
+    {
+        "content": "<p>(sorry, that wasn't the most constructive remark <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span> )<br>\nI have more interesting questions now that I've read the paper a little more closely. First, I'll summarise what I understand from the paper:<br>\nYou start with a certain notion of higher-order algebraic theory (I haven't studied HOL deeply enough to know whether your \"base types exponentiable to order n\" notion is equivalent to the more familiar one in terms of quantification over subobjects etc, but I can ignore that for now). You construct the syntactic category in a standard way, then note that it can be characterised by its canonical identity-on-objects functor from the free such category, so you can hide the syntax. Since the structure in these categories is defined in terms of limits and exponentials, which are preserved by the Yoneda embedding, you can pass to the presheaf topos without losing anything. Then you extract a type theory for the topos, most of the ingredients of which seem fairly standard.</p>\n<p>So now I wonder:</p>\n<ol>\n<li>(Most important) Is this extension conservative? If I prove a theorem which can be stated in the language of the original higher-order algebraic theory using the native type theory for the presheaf topos, is it provable in the original theory? I expect the answer is yes, but checking this is so amounts to verifying that passing to the native type theory isn't adding anything unexpected to the logic.</li>\n<li>The notion of theory morphism in the category of higher-order algebraic theories is not especially well-motivated, and it is not clear how it results in functoriality of P:HOAT^op -&gt; CCT when the latter is equipped with (co)continuous logical functors as its morphisms. Why is the subobject classifier or any non-representable exponential object preserved by composition with a cartex functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span>?</li>\n<li>Assuming that the preceding point all works out fine, it still seems unfortunate that you choose such restricted morphisms in the codomain. An ordinary (first-order) algebraic theory is <em>classified</em> by the topos of presheaves over its syntactic site, which means that its Set-models (or indeed its models in any Grothendieck topos E) correspond to the geometric morphisms from Set to that topos (resp. from E to that topos). To obtain the models of the higher-order theories you describe, it suffices to consider geometric morphisms whose inverse image functors preserve the defining exponentials. In particular, a locally connected geometric morphism which is not atomic (inverse image functor is cartesian-closed but not logical) would produce a model.</li>\n</ol>\n<p>It's plausible that you won't care much about the details I'm pointing to above, since the many examples illustrate that you have thought hard enough about your set-up to know it does what you want it to, which is to say produce rich, typed languages for a suitably large class of theories, implementable using tools which already exist, and useably functorial. I'm looking at this purely from the categorical logic perspective that is accessible to me. In any case, taking my critical hat off, I'm happy to see toposes emerging in a new way in computer science, and hope applying this stuff will lead to new insights!</p>",
+        "id": 225842163,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1612966858
+    },
+    {
+        "content": "<p>Question in a completely different direction: so programming languages are really bad, in the sense that their type theory is quite degenerate, in a wide variety of ways. [From Java getting variance of arrays wrong to Haskell's type system being inconsistent as a logic.]  How does this \"show up\" in this construction? i.e. what are the symptoms that one started with a 'bad' language in the induced native type theory?  I'm interested in seeing how this \"shows up\" in all steps of the construction, not just in the end.</p>",
+        "id": 225843173,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1612967248
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/258900-practice.3A-our.20papers/topic/Native.20Type.20Theory/near/225815342\">said</a>:</p>\n<blockquote>\n<p>In Proposition 26, L and R have the same domain and codomain; which one is the wrong way around?</p>\n</blockquote>\n<p>L is the wrong way around. Thanks! I don't know how that happened.</p>",
+        "id": 225896254,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612986267
+    },
+    {
+        "content": "<p>Thanks for your thoughts, Morgan. Yes, we need to check for conservativity. I do not have much intuition for this --- it seems as though the native type system is so much more expressive than the original theory that there would surely be new provable facts, but I'm not sure. The logic of toposes has been thoroughly studied; I imagine someone has asked whether the presheaf construction is conservative. If anyone knows a reference, it would be appreciated.</p>",
+        "id": 225896899,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612986531
+    },
+    {
+        "content": "<p>Well, the Yoneda embedding is fully faithful.  What more conservativity than that would you ask for?</p>",
+        "id": 225897262,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1612986703
+    },
+    {
+        "content": "<p>Ah, okay. But when you step outside of the image, like taking a coequalizer, and you prove that a term is of this type, is that not \"proving something that isn't provable in the theory\"?</p>",
+        "id": 225897793,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612986973
+    },
+    {
+        "content": "<p>Usually in logic a bigger theory is a \"conservative\" extension of a smaller one if anything that can be <em>stated</em> in the smaller theory and <em>proved</em> in the bigger theory can actually be proved in the smaller theory.</p>",
+        "id": 225898135,
+        "sender_full_name": "John Baez",
+        "timestamp": 1612987158
+    },
+    {
+        "content": "<p>Ah yes, okay great.</p>",
+        "id": 225898180,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612987181
+    },
+    {
+        "content": "<p>If something can't even be <em>stated</em> in the smaller theory, then of course the smaller theory has no hope of proving it.</p>",
+        "id": 225898187,
+        "sender_full_name": "John Baez",
+        "timestamp": 1612987186
+    },
+    {
+        "content": "<p>In this case it's not even entirely clear to me what it means for the smaller theory to \"prove\" something, since it's just a (higher-order) algebraic theory without an associated \"logic\".</p>",
+        "id": 225898382,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1612987269
+    },
+    {
+        "content": "<p>For example in nonstandard analysis we add new infinitesimals to the real numbers and new rules for working with them, but it's a conservative extension, which is reassuring, because it means anything we can <em>state</em> about plain old real numbers and <em>prove</em> using nonstandard analysis could actually be proved using the ordinary axioms for real numbers.</p>",
+        "id": 225898403,
+        "sender_full_name": "John Baez",
+        "timestamp": 1612987277
+    },
+    {
+        "content": "<p>The theory's logic is equational logic in (nth-order) simply-typed lambda calculus.</p>",
+        "id": 225898808,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612987446
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/258900-practice.3A-our.20papers/topic/Native.20Type.20Theory/near/225898382\">said</a>:</p>\n<blockquote>\n<p>In this case it's not even entirely clear to me what it means for the smaller theory to \"prove\" something, since it's just a (higher-order) algebraic theory without an associated \"logic\".</p>\n</blockquote>\n<p>Well, some composites of morphisms can equal some other morphism.   And then your remark about Yoneda fully faithful embedding comes into play: if the analogous fact holds in the presheaf category, it held already in the original category.    </p>\n<p>(You know all this, I'm just saying it for the sake of the universe at large.)</p>",
+        "id": 225898813,
+        "sender_full_name": "John Baez",
+        "timestamp": 1612987448
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275899\">Christian Williams</span> <a href=\"#narrow/stream/258900-practice.3A-our.20papers/topic/Native.20Type.20Theory/near/225898808\">said</a>:</p>\n<blockquote>\n<p>The theory's logic is equational logic in (nth-order) simply-typed lambda calculus.</p>\n</blockquote>\n<p>Yes, I'd say that counts as a \"logic\".  I'm very generous about what counts as a logic.</p>",
+        "id": 225898990,
+        "sender_full_name": "John Baez",
+        "timestamp": 1612987522
+    },
+    {
+        "content": "<p>So, Morgan's concern is answered. I should've mentioned it in the paper, but the discussion here will make a better draft.</p>",
+        "id": 225899051,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612987545
+    },
+    {
+        "content": "<p>To expand further on <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span>'s comment (with the same caveat), seeing propositions as types, one would expect the \"correct\" generalisation of conservativity to demonstrate a bijective correspondence from every term <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Γ</mi><mo>⊢</mo><mi>t</mi><mo>:</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">\\Gamma \\vdash t : A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\">Γ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.61508em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> in the new theory, to one <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Γ</mi><mo>⊢</mo><msup><mi>t</mi><mo lspace=\"0em\" mathvariant=\"normal\" rspace=\"0em\">′</mo></msup><mo>:</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">\\Gamma \\vdash t' : A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord\">Γ</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.751892em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.751892em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> in the original theory, which corresponds precisely to the inclusion being fully faithful.</p>",
+        "id": 225899243,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1612987613
+    },
+    {
+        "content": "<p>Oh right, of course equational logic is a logic.</p>",
+        "id": 225899578,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1612987749
+    },
+    {
+        "content": "<p>And there's even the null logic where you can't say or prove anything!   <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 225899853,
+        "sender_full_name": "John Baez",
+        "timestamp": 1612987873
+    },
+    {
+        "content": "<p>I use that one myself sometimes.</p>",
+        "id": 225899923,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612987903
+    },
+    {
+        "content": "<p>As for point #2, ultimately the definition of theory morphism does not play much role in functoriality, because it is just a certain kind of cartex functor, and we're basically just including HOAT into Cat. My understanding is that precomposition is a classic example of a logical functor, which should preserve everything in sight.</p>",
+        "id": 225900145,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612987990
+    },
+    {
+        "content": "<p>For point #3, I don't fully understand what you're saying. I get that there is a connection to the classifying topos, but I don't have any use for it in mind. What we care about for this paper are morphisms between <em>type theories</em>, which need to preserve all of that structure. But if you expand on what you're saying I can understand better.</p>",
+        "id": 225900487,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612988149
+    },
+    {
+        "content": "<blockquote>\n<p>My understanding is that precomposition is a classic example of a logical functor, which should preserve everything in sight.</p>\n</blockquote>\n<p>By the way: if that's true, let's add it as an example to <a href=\"https://ncatlab.org/nlab/show/logical+functor#examples\">logical functor</a>.   Maybe it's hiding in the stuff before the examples?</p>",
+        "id": 225900617,
+        "sender_full_name": "John Baez",
+        "timestamp": 1612988206
+    },
+    {
+        "content": "<p>Jacques, thanks for your thoughts. The formal verification community has used K Framework to specify many real-world languages: <a href=\"https://github.com/kframework\">https://github.com/kframework</a>. They are basically higher-order algebraic theories with rewriting. So the fact that some popular languages don't have much in the way of type systems is reflected in their representation simply as sorted theories. But from the construction, they get a dependent type theory that's as rich as the one used in Coq.</p>",
+        "id": 225900848,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612988299
+    },
+    {
+        "content": "<p>Well, Haskell has quite a lot in terms of a type system... But perhaps I am not asking the right question. It's not clear what the difference is between Haskell's type system (a variant of System F, if I remember well) and the type system that this construction gives it. Is there a way to understand that?</p>\n<p>But still, odd languages like C, which make it legal to lie to the compiler (they call it 'casting'),  the operational semantics ends up untyped. Yes, there is a 'core language' that's decently behaved, but that's not what most people use. So the question is, when the operational semantics allows you to collapse everything, what does the construction do with that?</p>\n<p>Note that being able to specify a language (which indeed has been done in K, but in many other systems too) doesn't mean that what's specified isn't degenerate.  There are many very complicated ways to 'specify' the empty set too... [I'm being colourful here, not facetious].</p>\n<p>So I guess I have 3 questions:</p>\n<ol>\n<li>if you start with something very well-behaved, like say Martin-Loef type theory, what do you get using your construction?</li>\n<li>if you start with something well-behaved but with a naturally weak type system (like simply-typed lambda calculus), what do you get?</li>\n<li>if you start with something really awful (like the fully untyped lambda calculus, or worse, something entirely inconsistent), what do you get?</li>\n</ol>\n<p>I think you've partially answered the second question: you get a dependently-typed system.</p>",
+        "id": 225904976,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1612989991
+    },
+    {
+        "content": "<p>As I understand it, you start with a simple type theory (with possibly higher-order operators), and then extend it to a dependent type theory. There is no attempt to restrict to well-behaved languages. So (1) isn't valid, because the original language has to be simple. If you start with (2), you get a variant of MLTT (namely, the internal language of a presheaf topos). If you start with (3), you get an inconsistent language.</p>",
+        "id": 225906585,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1612990641
+    },
+    {
+        "content": "<p>What do we mean by inconsistent here?</p>",
+        "id": 225907904,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1612991199
+    },
+    {
+        "content": "<p>In the sense of <a href=\"https://en.wikipedia.org/wiki/Curry%27s_paradox\">Curry's paradox</a>, for instance.</p>",
+        "id": 225908849,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1612991612
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/258900-practice.3A-our.20papers/topic/Native.20Type.20Theory/near/225897262\">said</a>:</p>\n<blockquote>\n<p>Well, the Yoneda embedding is fully faithful.  What more conservativity than that would you ask for?</p>\n</blockquote>\n<p>Although it was straightforward, I'm glad that it ended up being discussed <span aria-label=\"grinning face with smiling eyes\" class=\"emoji emoji-1f601\" role=\"img\" title=\"grinning face with smiling eyes\">:grinning_face_with_smiling_eyes:</span></p>",
+        "id": 225915132,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1612994219
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275899\">Christian Williams</span> <a href=\"#narrow/stream/258900-practice.3A-our.20papers/topic/Native.20Type.20Theory/near/225900145\">said</a>:</p>\n<blockquote>\n<p>As for point #2, ultimately the definition of theory morphism does not play much role in functoriality, because it is just a certain kind of cartex functor, and we're basically just including HOAT into Cat. My understanding is that precomposition is a classic example of a logical functor, which should preserve everything in sight.</p>\n</blockquote>\n<p>The definition of theory morphism for HOATs does include a cartex functor, but it also includes a relation and a mapping of signatures. Is \"a relation of orders <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>i</mi><mo>:</mo><msub><mi>n</mi><mn>1</mn></msub><mo>→</mo><msub><mi>n</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">i:n_1 \\to n_2</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.65952em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">n</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">n</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>\" in Definition 12 just saying that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>≤</mo><msub><mi>n</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">n_1 \\leq n_2</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7859700000000001em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">n</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.58056em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">n</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>? Is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"double-struck\">T</mi><mi>i</mi></msub><mo stretchy=\"false\">(</mo><mi>f</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><msub><mi>T</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><msub><mi>τ</mi><mn>1</mn></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathbb{T}_i(f)(T_1,\\tau_1)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbb\">T</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.31166399999999994em;\"><span style=\"top:-2.5500000000000003em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mclose\">)</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1132em;\">τ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.1132em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span> equivalent to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>T</mi><mn>1</mn></msub></mrow><annotation encoding=\"application/x-tex\">T_1</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.83333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.30110799999999993em;\"><span style=\"top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> as a category? If so, is this supposed to follow from Proposition 10 (there's a missing reference in the proof of that Proposition, btw)? If not, why does composition with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> give a functor between the presheaf categories?</p>",
+        "id": 225917403,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1612994799
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275899\">Christian Williams</span> <a href=\"#narrow/stream/258900-practice.3A-our.20papers/topic/Native.20Type.20Theory/near/225900487\">said</a>:</p>\n<blockquote>\n<p>What we care about for this paper are morphisms between <em>type theories</em>, which need to preserve all of that structure.</p>\n</blockquote>\n<p>That's only true if you want the morphisms to preserve everything on the nose, which might not actually be what you want, considering that you're building these native type theories to extend a strictly smaller class of theories. For example, a functor which is merely cartesian-closed will preserve all of the types coming from the original HOAT, even if it doesn't preserve the extra types which were added in the process of passing to the presheaf topos and extracting the native type theory.<br>\nThe point I was trying to make originally is that if you do end up caring about the models of these theories (or if someone else does because they're interested in HOATs for another reason), choosing a class of morphisms between HOATs large enough to recover \"models as induced geometric morphisms\" could be neat.</p>",
+        "id": 225919107,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1612995267
+    }
+]
