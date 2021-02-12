@@ -30,4 +30,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Feb 11 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 12 2021 at 00:13 UTC</p>

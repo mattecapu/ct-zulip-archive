@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (290 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (291 topics)
 
 * [general](stream/229111-general/index.html) (174 topics)
 
@@ -20,7 +20,7 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (60 topics)
+* [general: events](stream/229141-general:-events/index.html) (61 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (56 topics)
 
@@ -32,7 +32,7 @@ permalink: /index.html
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (26 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (20 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (22 topics)
 
 * [general: positions](stream/245502-general:-positions/index.html) (20 topics)
 
@@ -128,4 +128,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 11 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 12 2021 at 00:13 UTC</p>

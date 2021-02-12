@@ -9,6 +9,8 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [ACT2021 Adjoint School](topic/ACT2021.20Adjoint.20School.html) (8 messages, latest: Feb 11 2021 at 23:38)
+* [Witten on Langlands](topic/Witten.20on.20Langlands.html) (7 messages, latest: Feb 11 2021 at 19:54)
 * [NYC Category Theory Seminar](topic/NYC.20Category.20Theory.20Seminar.html) (30 messages, latest: Feb 09 2021 at 17:06)
 * [Logic Webinar@IITK](topic/Logic.20Webinar.40IITK.html) (6 messages, latest: Feb 09 2021 at 04:16)
 * [ACT4E guest lecture](topic/ACT4E.20guest.20lecture.html) (1 message, latest: Feb 04 2021 at 10:02)
@@ -19,7 +21,6 @@ permalink: /stream/229141-general:-events/index.html
 * [World Logic Day](topic/World.20Logic.20Day.html) (8 messages, latest: Jan 14 2021 at 19:41)
 * [QPL 2021](topic/QPL.202021.html) (1 message, latest: Jan 13 2021 at 14:20)
 * [course on coalgebraic methods](topic/course.20on.20coalgebraic.20methods.html) (1 message, latest: Jan 03 2021 at 23:21)
-* [ACT2021 Adjoint School](topic/ACT2021.20Adjoint.20School.html) (5 messages, latest: Jan 02 2021 at 19:51)
 * [Bohemian Logical & Philosophical Café](topic/Bohemian.20Logical.20.26.20Philosophical.20Caf.C3.A9.html) (2 messages, latest: Dec 30 2020 at 16:01)
 * [Australian Category Seminar](topic/Australian.20Category.20Seminar.html) (21 messages, latest: Dec 17 2020 at 01:18)
 * [Universal Logic Project Webinar](topic/Universal.20Logic.20Project.20Webinar.html) (1 message, latest: Dec 12 2020 at 13:23)
@@ -70,4 +71,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Feb 11 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 12 2021 at 00:13 UTC</p>
