@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [CH in a topos](topic/CH.20in.20a.20topos.html) (5 messages, latest: Feb 11 2021 at 21:41)
+* [CH in a topos](topic/CH.20in.20a.20topos.html) (16 messages, latest: Feb 12 2021 at 23:34)
+* [Self-enrichment without symmetry](topic/Self-enrichment.20without.20symmetry.html) (4 messages, latest: Feb 12 2021 at 22:08)
 * [Morphism-based pullback notation?](topic/Morphism-based.20pullback.20notation.3F.html) (17 messages, latest: Feb 11 2021 at 06:10)
 * [Groupoids and Sets](topic/Groupoids.20and.20Sets.html) (15 messages, latest: Feb 10 2021 at 00:07)
 * [Closed structure on presheaf category](topic/Closed.20structure.20on.20presheaf.20category.html) (17 messages, latest: Feb 09 2021 at 23:33)
@@ -301,4 +302,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 12 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 13 2021 at 00:12 UTC</p>

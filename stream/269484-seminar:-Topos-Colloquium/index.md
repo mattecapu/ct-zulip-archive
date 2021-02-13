@@ -14,4 +14,4 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 * [David Spivak: “Poly: a category of remarkable abundance”](topic/David.20Spivak.3A.20.E2.80.9CPoly.3A.20a.20category.20of.20remarkable.20abundance.E2.80.9D.html) (21 messages, latest: Feb 09 2021 at 20:13)
 * [stream events](topic/stream.20events.html) (2 messages, latest: Dec 26 2020 at 19:06)
 
-<hr><p>Last updated: Feb 12 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 13 2021 at 00:12 UTC</p>
