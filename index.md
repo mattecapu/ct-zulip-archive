@@ -8,19 +8,19 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (292 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (293 topics)
 
 * [general](stream/229111-general/index.html) (174 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (122 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (91 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (92 topics)
+
+* [general: events](stream/229141-general:-events/index.html) (63 topics)
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
-
-* [general: events](stream/229141-general:-events/index.html) (61 topics)
 
 * [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (56 topics)
 
@@ -38,7 +38,7 @@ permalink: /index.html
 
 * [general: values](stream/241990-general:-values/index.html) (19 topics)
 
-* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (18 topics)
+* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (19 topics)
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (17 topics)
 
@@ -128,4 +128,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 13 2021 at 01:07 UTC</p>
+<hr><p>Last updated: Feb 14 2021 at 00:13 UTC</p>

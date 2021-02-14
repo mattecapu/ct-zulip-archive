@@ -9,6 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [chemical recipes as functors](topic/chemical.20recipes.20as.20functors.html) (38 messages, latest: Feb 13 2021 at 23:01)
 * [web cats](topic/web.20cats.html) (132 messages, latest: Feb 07 2021 at 15:19)
 * [operads for complex system design](topic/operads.20for.20complex.20system.20design.html) (63 messages, latest: Feb 01 2021 at 05:51)
 * [Understanding statecharts coalgebraically](topic/Understanding.20statecharts.20coalgebraically.html) (2 messages, latest: Jan 26 2021 at 23:03)
@@ -101,4 +102,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Feb 13 2021 at 01:07 UTC</p>
+<hr><p>Last updated: Feb 14 2021 at 00:13 UTC</p>
