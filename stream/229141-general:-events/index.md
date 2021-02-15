@@ -9,7 +9,8 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [AMS Sectional Meetings](topic/AMS.20Sectional.20Meetings.html) (5 messages, latest: Feb 13 2021 at 23:22)
+* [Australian Category Seminar](topic/Australian.20Category.20Seminar.html) (22 messages, latest: Feb 14 2021 at 17:53)
+* [AMS Sectional Meetings](topic/AMS.20Sectional.20Meetings.html) (7 messages, latest: Feb 14 2021 at 17:27)
 * [Higher Structures @CRM](topic/Higher.20Structures.20.40CRM.html) (3 messages, latest: Feb 13 2021 at 08:37)
 * [Logic Webinar@IITK](topic/Logic.20Webinar.40IITK.html) (7 messages, latest: Feb 12 2021 at 13:29)
 * [ACT2021 Adjoint School](topic/ACT2021.20Adjoint.20School.html) (9 messages, latest: Feb 12 2021 at 03:19)
@@ -24,7 +25,6 @@ permalink: /stream/229141-general:-events/index.html
 * [QPL 2021](topic/QPL.202021.html) (1 message, latest: Jan 13 2021 at 14:20)
 * [course on coalgebraic methods](topic/course.20on.20coalgebraic.20methods.html) (1 message, latest: Jan 03 2021 at 23:21)
 * [Bohemian Logical & Philosophical Café](topic/Bohemian.20Logical.20.26.20Philosophical.20Caf.C3.A9.html) (2 messages, latest: Dec 30 2020 at 16:01)
-* [Australian Category Seminar](topic/Australian.20Category.20Seminar.html) (21 messages, latest: Dec 17 2020 at 01:18)
 * [Universal Logic Project Webinar](topic/Universal.20Logic.20Project.20Webinar.html) (1 message, latest: Dec 12 2020 at 13:23)
 * [Applied Compositional Thinking for Engineers](topic/Applied.20Compositional.20Thinking.20for.20Engineers.html) (4 messages, latest: Dec 07 2020 at 21:31)
 * [plannng for a career in software?](topic/plannng.20for.20a.20career.20in.20software.3F.html) (2 messages, latest: Dec 05 2020 at 01:37)
@@ -73,4 +73,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Feb 14 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 15 2021 at 00:13 UTC</p>

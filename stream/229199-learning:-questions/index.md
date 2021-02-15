@@ -9,8 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [CH in a topos](topic/CH.20in.20a.20topos.html) (22 messages, latest: Feb 14 2021 at 21:34)
+* [Internal toposes](topic/Internal.20toposes.html) (31 messages, latest: Feb 14 2021 at 12:06)
 * [Goguen on "hidden algebra"](topic/Goguen.20on.20.22hidden.20algebra.22.html) (1 message, latest: Feb 13 2021 at 22:31)
-* [CH in a topos](topic/CH.20in.20a.20topos.html) (18 messages, latest: Feb 13 2021 at 15:25)
 * [Self-enrichment without symmetry](topic/Self-enrichment.20without.20symmetry.html) (4 messages, latest: Feb 12 2021 at 22:08)
 * [Morphism-based pullback notation?](topic/Morphism-based.20pullback.20notation.3F.html) (17 messages, latest: Feb 11 2021 at 06:10)
 * [Groupoids and Sets](topic/Groupoids.20and.20Sets.html) (15 messages, latest: Feb 10 2021 at 00:07)
@@ -19,7 +20,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [promonads : categories = profunctors : graphs?](topic/promonads.20.3A.20categories.20.3D.20profunctors.20.3A.20graphs.3F.html) (80 messages, latest: Feb 07 2021 at 12:41)
 * [Profunctor composition in the double cat of spans](topic/Profunctor.20composition.20in.20the.20double.20cat.20of.20spans.html) (1 message, latest: Feb 07 2021 at 10:53)
 * [Probability dual](topic/Probability.20dual.html) (137 messages, latest: Feb 07 2021 at 04:54)
-* [Internal toposes](topic/Internal.20toposes.html) (28 messages, latest: Feb 06 2021 at 19:28)
 * [Differential rig categories](topic/Differential.20rig.20categories.html) (30 messages, latest: Feb 06 2021 at 11:12)
 * [Understanding Set -> Vect](topic/Understanding.20Set.20-.3E.20Vect.html) (100 messages, latest: Feb 05 2021 at 09:56)
 * [Monoidal functors to set](topic/Monoidal.20functors.20to.20set.html) (8 messages, latest: Feb 04 2021 at 17:19)
@@ -303,4 +303,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 14 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 15 2021 at 00:13 UTC</p>
