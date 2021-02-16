@@ -9,8 +9,8 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [AMS Sectional Meetings](topic/AMS.20Sectional.20Meetings.html) (8 messages, latest: Feb 15 2021 at 18:36)
 * [Australian Category Seminar](topic/Australian.20Category.20Seminar.html) (22 messages, latest: Feb 14 2021 at 17:53)
-* [AMS Sectional Meetings](topic/AMS.20Sectional.20Meetings.html) (7 messages, latest: Feb 14 2021 at 17:27)
 * [Higher Structures @CRM](topic/Higher.20Structures.20.40CRM.html) (3 messages, latest: Feb 13 2021 at 08:37)
 * [Logic Webinar@IITK](topic/Logic.20Webinar.40IITK.html) (7 messages, latest: Feb 12 2021 at 13:29)
 * [ACT2021 Adjoint School](topic/ACT2021.20Adjoint.20School.html) (9 messages, latest: Feb 12 2021 at 03:19)
@@ -73,4 +73,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Feb 15 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 16 2021 at 00:13 UTC</p>

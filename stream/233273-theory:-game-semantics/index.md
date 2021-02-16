@@ -11,4 +11,4 @@ permalink: /stream/233273-theory:-game-semantics/index.html
 
 * [stream events](topic/stream.20events.html) (12 messages, latest: Apr 24 2020 at 19:53)
 
-<hr><p>Last updated: Feb 15 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 16 2021 at 00:13 UTC</p>

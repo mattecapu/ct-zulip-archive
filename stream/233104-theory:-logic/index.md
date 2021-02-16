@@ -9,6 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
+* [fragments of logic](topic/fragments.20of.20logic.html) (24 messages, latest: Feb 15 2021 at 15:38)
 * [Axiom systems](topic/Axiom.20systems.html) (35 messages, latest: Feb 13 2021 at 06:30)
 * [for all x implies exists x?](topic/for.20all.20x.20implies.20exists.20x.3F.html) (119 messages, latest: Jan 16 2021 at 00:27)
 * [constructive and co-constructive logic](topic/constructive.20and.20co-constructive.20logic.html) (27 messages, latest: Jan 11 2021 at 13:02)
@@ -24,7 +25,6 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Inference rules for sequents without exchange](topic/Inference.20rules.20for.20sequents.20without.20exchange.html) (61 messages, latest: Oct 18 2020 at 16:53)
 * [Category of sequents?](topic/Category.20of.20sequents.3F.html) (30 messages, latest: Oct 16 2020 at 15:32)
 * [Ideal Notation](topic/Ideal.20Notation.html) (1 message, latest: Sep 05 2020 at 17:28)
-* [fragments of logic](topic/fragments.20of.20logic.html) (23 messages, latest: Aug 28 2020 at 13:32)
 * [Girard's latest work](topic/Girard's.20latest.20work.html) (16 messages, latest: Jul 15 2020 at 21:26)
 * [Filters](topic/Filters.html) (2 messages, latest: Jun 21 2020 at 14:01)
 * [Tukey category](topic/Tukey.20category.html) (21 messages, latest: May 21 2020 at 21:38)
@@ -36,4 +36,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Feb 15 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 16 2021 at 00:13 UTC</p>
