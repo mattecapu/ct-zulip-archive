@@ -16,4 +16,4 @@ permalink: /stream/245528-learning:-statistics-reading-group/index.html
 * [housekeeping](topic/housekeeping.html) (24 messages, latest: Jun 27 2020 at 20:25)
 * [time zones](topic/time.20zones.html) (15 messages, latest: Jun 15 2020 at 05:24)
 
-<hr><p>Last updated: Feb 16 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 17 2021 at 00:13 UTC</p>

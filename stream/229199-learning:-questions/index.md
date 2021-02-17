@@ -9,8 +9,11 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Categories of ordinals as a topoi](topic/Categories.20of.20ordinals.20as.20a.20topoi.html) (20 messages, latest: Feb 16 2021 at 21:40)
+* [CH in a topos](topic/CH.20in.20a.20topos.html) (28 messages, latest: Feb 16 2021 at 21:28)
+* [Dependent Type Families in Topos Type Theory](topic/Dependent.20Type.20Families.20in.20Topos.20Type.20Theory.html) (14 messages, latest: Feb 16 2021 at 16:48)
+* [logarithm as left adjoint](topic/logarithm.20as.20left.20adjoint.html) (1 message, latest: Feb 16 2021 at 14:55)
 * [Street orientals](topic/Street.20orientals.html) (2 messages, latest: Feb 15 2021 at 21:25)
-* [CH in a topos](topic/CH.20in.20a.20topos.html) (24 messages, latest: Feb 15 2021 at 14:15)
 * [Internal toposes](topic/Internal.20toposes.html) (31 messages, latest: Feb 14 2021 at 12:06)
 * [Goguen on "hidden algebra"](topic/Goguen.20on.20.22hidden.20algebra.22.html) (1 message, latest: Feb 13 2021 at 22:31)
 * [Self-enrichment without symmetry](topic/Self-enrichment.20without.20symmetry.html) (4 messages, latest: Feb 12 2021 at 22:08)
@@ -304,4 +307,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 16 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 17 2021 at 00:13 UTC</p>
