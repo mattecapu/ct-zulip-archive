@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (297 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (301 topics)
 
 * [general](stream/229111-general/index.html) (174 topics)
 
@@ -16,7 +16,7 @@ permalink: /index.html
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (93 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (63 topics)
+* [general: events](stream/229141-general:-events/index.html) (64 topics)
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
@@ -128,4 +128,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 17 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 18 2021 at 00:13 UTC</p>

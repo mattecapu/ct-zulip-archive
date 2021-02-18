@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [congratulations to Fabrizio](topic/congratulations.20to.20Fabrizio.html) (13 messages, latest: Feb 17 2021 at 22:24)
 * [Introduce Yourself!](topic/Introduce.20Yourself!.html) (562 messages, latest: Feb 13 2021 at 23:58)
 * [category theory software](topic/category.20theory.20software.html) (219 messages, latest: Feb 08 2021 at 02:03)
 * [new streams](topic/new.20streams.html) (72 messages, latest: Jan 31 2021 at 20:25)
@@ -18,7 +19,6 @@ permalink: /stream/229111-general/index.html
 * [Sending stuff to the Moon](topic/Sending.20stuff.20to.20the.20Moon.html) (2 messages, latest: Jan 27 2021 at 02:34)
 * [Fresh invite link?](topic/Fresh.20invite.20link.3F.html) (23 messages, latest: Jan 11 2021 at 15:37)
 * [Topos Institute news](topic/Topos.20Institute.20news.html) (9 messages, latest: Jan 03 2021 at 16:08)
-* [congratulations to Fabrizio](topic/congratulations.20to.20Fabrizio.html) (10 messages, latest: Jan 01 2021 at 17:46)
 * [neutrinos](topic/neutrinos.html) (103 messages, latest: Dec 30 2020 at 20:00)
 * [Announcement: Bohemian Logical & Philosophical Café](topic/Announcement.3A.20Bohemian.20Logical.20.26.20Philosophical.20Caf.C3.A9.html) (8 messages, latest: Dec 30 2020 at 17:42)
 * [procedure for new members on Zulip](topic/procedure.20for.20new.20members.20on.20Zulip.html) (2 messages, latest: Dec 22 2020 at 15:00)
@@ -184,4 +184,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Feb 17 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 18 2021 at 00:13 UTC</p>
