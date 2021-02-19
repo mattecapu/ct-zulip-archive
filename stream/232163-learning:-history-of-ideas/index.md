@@ -9,6 +9,7 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 
 ### Topics:
 
+* [Ideas for new topics](topic/Ideas.20for.20new.20topics.html) (7 messages, latest: Feb 18 2021 at 08:01)
 * [videos on the history of CT](topic/videos.20on.20the.20history.20of.20CT.html) (23 messages, latest: Feb 13 2021 at 18:29)
 * [HIstory of Ideas AMA: John Baez](topic/HIstory.20of.20Ideas.20AMA.3A.20John.20Baez.html) (23 messages, latest: Jan 28 2021 at 01:56)
 * [history of ideas AMA: John Baez](topic/history.20of.20ideas.20AMA.3A.20John.20Baez.html) (794 messages, latest: Nov 07 2020 at 20:29)
@@ -20,7 +21,6 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 * [history of cs + ct](topic/history.20of.20cs.20.2B.20ct.html) (86 messages, latest: May 28 2020 at 04:57)
 * [History of TWF](topic/History.20of.20TWF.html) (18 messages, latest: May 27 2020 at 20:36)
 * [Opinion Dynamics on Discourse Sheaves](topic/Opinion.20Dynamics.20on.20Discourse.20Sheaves.html) (9 messages, latest: May 27 2020 at 15:55)
-* [Ideas for new topics](topic/Ideas.20for.20new.20topics.html) (6 messages, latest: May 27 2020 at 00:39)
 * [History of Ideas AMA: Henry Story](topic/History.20of.20Ideas.20AMA.3A.20Henry.20Story.html) (14 messages, latest: May 26 2020 at 19:58)
 * [Secondary algebraic K-theory](topic/Secondary.20algebraic.20K-theory.html) (1 message, latest: May 26 2020 at 17:37)
 * [History of Ideas AMA: Daniel Geisler](topic/History.20of.20Ideas.20AMA.3A.20Daniel.20Geisler.html) (34 messages, latest: May 26 2020 at 11:17)
@@ -29,4 +29,4 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 * [All things Feynman](topic/All.20things.20Feynman.html) (2 messages, latest: May 22 2020 at 06:04)
 * [stream events](topic/stream.20events.html) (2 messages, latest: Apr 06 2020 at 18:15)
 
-<hr><p>Last updated: Feb 18 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 19 2021 at 00:13 UTC</p>

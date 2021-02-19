@@ -9,13 +9,13 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [security + ct](topic/security.20.2B.20ct.html) (13 messages, latest: Feb 18 2021 at 15:52)
 * [chemical recipes as functors](topic/chemical.20recipes.20as.20functors.html) (86 messages, latest: Feb 17 2021 at 15:16)
 * [are commutative monoidal categories monadic over Petri nets?](topic/are.20commutative.20monoidal.20categories.20monadic.20over.20Petri.20nets.3F.html) (52 messages, latest: Feb 17 2021 at 03:39)
 * [web cats](topic/web.20cats.html) (132 messages, latest: Feb 07 2021 at 15:19)
 * [operads for complex system design](topic/operads.20for.20complex.20system.20design.html) (63 messages, latest: Feb 01 2021 at 05:51)
 * [Understanding statecharts coalgebraically](topic/Understanding.20statecharts.20coalgebraically.html) (2 messages, latest: Jan 26 2021 at 23:03)
 * [imaging systems engineering](topic/imaging.20systems.20engineering.html) (143 messages, latest: Jan 14 2021 at 02:39)
-* [security + ct](topic/security.20.2B.20ct.html) (11 messages, latest: Jan 13 2021 at 06:39)
 * [Invitation: CT approach to discrete differential geometry](topic/Invitation.3A.20CT.20approach.20to.20discrete.20differential.20geometry.html) (6 messages, latest: Jan 09 2021 at 09:38)
 * [provenance for pre-sheaves](topic/provenance.20for.20pre-sheaves.html) (5 messages, latest: Jan 03 2021 at 07:17)
 * [ACT Adjoint School 2021](topic/ACT.20Adjoint.20School.202021.html) (5 messages, latest: Jan 02 2021 at 19:20)
@@ -103,4 +103,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Feb 18 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 19 2021 at 00:13 UTC</p>

@@ -9,8 +9,9 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (9 messages, latest: Feb 18 2021 at 17:03)
+* [Online Category Theory Seminar at Brandon University](topic/Online.20Category.20Theory.20Seminar.20at.20Brandon.20University.html) (1 message, latest: Feb 18 2021 at 07:45)
 * [ACT2021 Adjoint School](topic/ACT2021.20Adjoint.20School.html) (10 messages, latest: Feb 17 2021 at 19:39)
-* [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (1 message, latest: Feb 17 2021 at 19:37)
 * [AMS Sectional Meetings](topic/AMS.20Sectional.20Meetings.html) (8 messages, latest: Feb 15 2021 at 18:36)
 * [Australian Category Seminar](topic/Australian.20Category.20Seminar.html) (22 messages, latest: Feb 14 2021 at 17:53)
 * [Higher Structures @CRM](topic/Higher.20Structures.20.40CRM.html) (3 messages, latest: Feb 13 2021 at 08:37)
@@ -74,4 +75,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Feb 18 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 19 2021 at 00:13 UTC</p>
