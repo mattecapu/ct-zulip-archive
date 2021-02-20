@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [A New Chatting Platform for Discussions in Logic](topic/A.20New.20Chatting.20Platform.20for.20Discussions.20in.20Logic.html) (3 messages, latest: Feb 19 2021 at 17:02)
 * [congratulations to Fabrizio](topic/congratulations.20to.20Fabrizio.html) (15 messages, latest: Feb 18 2021 at 03:54)
 * [Introduce Yourself!](topic/Introduce.20Yourself!.html) (562 messages, latest: Feb 13 2021 at 23:58)
 * [category theory software](topic/category.20theory.20software.html) (219 messages, latest: Feb 08 2021 at 02:03)
@@ -184,4 +185,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Feb 19 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 20 2021 at 00:13 UTC</p>

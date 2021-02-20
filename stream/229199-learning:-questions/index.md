@@ -9,9 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Adjunction between sets and groupoids](topic/Adjunction.20between.20sets.20and.20groupoids.html) (103 messages, latest: Feb 18 2021 at 21:49)
-* [functions on inductive types are coinductive?](topic/functions.20on.20inductive.20types.20are.20coinductive.3F.html) (10 messages, latest: Feb 18 2021 at 21:25)
-* [indexed categories as dependent types](topic/indexed.20categories.20as.20dependent.20types.html) (8 messages, latest: Feb 18 2021 at 15:32)
+* [classifying topos of local rings](topic/classifying.20topos.20of.20local.20rings.html) (42 messages, latest: Feb 19 2021 at 19:04)
+* [functions on inductive types are coinductive?](topic/functions.20on.20inductive.20types.20are.20coinductive.3F.html) (12 messages, latest: Feb 19 2021 at 14:44)
+* [indexed categories as dependent types](topic/indexed.20categories.20as.20dependent.20types.html) (9 messages, latest: Feb 19 2021 at 11:22)
+* [Adjunction between sets and groupoids](topic/Adjunction.20between.20sets.20and.20groupoids.html) (106 messages, latest: Feb 19 2021 at 03:38)
 * [extremely nice monoidal closed categories](topic/extremely.20nice.20monoidal.20closed.20categories.html) (12 messages, latest: Feb 18 2021 at 10:36)
 * [A preorder is to an antichain as a category is to what?](topic/A.20preorder.20is.20to.20an.20antichain.20as.20a.20category.20is.20to.20what.3F.html) (10 messages, latest: Feb 17 2021 at 22:12)
 * [CH in a topos](topic/CH.20in.20a.20topos.html) (37 messages, latest: Feb 17 2021 at 16:26)
@@ -312,4 +313,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 19 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 20 2021 at 00:13 UTC</p>
