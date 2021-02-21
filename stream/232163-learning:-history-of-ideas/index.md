@@ -9,8 +9,8 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 
 ### Topics:
 
+* [videos on the history of CT](topic/videos.20on.20the.20history.20of.20CT.html) (25 messages, latest: Feb 20 2021 at 17:20)
 * [Ideas for new topics](topic/Ideas.20for.20new.20topics.html) (7 messages, latest: Feb 18 2021 at 08:01)
-* [videos on the history of CT](topic/videos.20on.20the.20history.20of.20CT.html) (23 messages, latest: Feb 13 2021 at 18:29)
 * [HIstory of Ideas AMA: John Baez](topic/HIstory.20of.20Ideas.20AMA.3A.20John.20Baez.html) (23 messages, latest: Jan 28 2021 at 01:56)
 * [history of ideas AMA: John Baez](topic/history.20of.20ideas.20AMA.3A.20John.20Baez.html) (794 messages, latest: Nov 07 2020 at 20:29)
 * [HOTT Book](topic/HOTT.20Book.html) (25 messages, latest: Aug 30 2020 at 16:10)
@@ -29,4 +29,4 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 * [All things Feynman](topic/All.20things.20Feynman.html) (2 messages, latest: May 22 2020 at 06:04)
 * [stream events](topic/stream.20events.html) (2 messages, latest: Apr 06 2020 at 18:15)
 
-<hr><p>Last updated: Feb 20 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 21 2021 at 00:14 UTC</p>

@@ -9,8 +9,8 @@ permalink: /stream/241990-general:-values/index.html
 
 ### Topics:
 
+* [Attitudes that hinder the adoption of applied category th...](topic/Attitudes.20that.20hinder.20the.20adoption.20of.20applied.20category.20th.2E.2E.2E.html) (61 messages, latest: Feb 20 2021 at 19:32)
 * [Anti-racism resources](topic/Anti-racism.20resources.html) (9 messages, latest: Feb 19 2021 at 16:37)
-* [Attitudes that hinder the adoption of applied category th...](topic/Attitudes.20that.20hinder.20the.20adoption.20of.20applied.20category.20th.2E.2E.2E.html) (57 messages, latest: Feb 19 2021 at 11:31)
 * [Exponential discounting](topic/Exponential.20discounting.html) (1 message, latest: Oct 25 2020 at 19:50)
 * [Capabilities](topic/Capabilities.html) (18 messages, latest: Sep 14 2020 at 15:18)
 * [BAE and other exclusions](topic/BAE.20and.20other.20exclusions.html) (260 messages, latest: Jul 13 2020 at 23:24)
@@ -30,4 +30,4 @@ permalink: /stream/241990-general:-values/index.html
 * [stream events](topic/stream.20events.html) (6 messages, latest: Jun 03 2020 at 19:22)
 * [ACT2020 tutorial day](topic/ACT2020.20tutorial.20day.html) (1 message, latest: Jun 03 2020 at 18:38)
 
-<hr><p>Last updated: Feb 20 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 21 2021 at 00:14 UTC</p>

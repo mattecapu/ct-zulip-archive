@@ -9,7 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [classifying topos of local rings](topic/classifying.20topos.20of.20local.20rings.html) (42 messages, latest: Feb 19 2021 at 19:04)
+* [Differential rig categories](topic/Differential.20rig.20categories.html) (37 messages, latest: Feb 20 2021 at 23:49)
+* [classifying topos of local rings](topic/classifying.20topos.20of.20local.20rings.html) (44 messages, latest: Feb 20 2021 at 09:35)
+* [HoTT book](topic/HoTT.20book.html) (39 messages, latest: Feb 20 2021 at 08:51)
 * [functions on inductive types are coinductive?](topic/functions.20on.20inductive.20types.20are.20coinductive.3F.html) (12 messages, latest: Feb 19 2021 at 14:44)
 * [indexed categories as dependent types](topic/indexed.20categories.20as.20dependent.20types.html) (9 messages, latest: Feb 19 2021 at 11:22)
 * [Adjunction between sets and groupoids](topic/Adjunction.20between.20sets.20and.20groupoids.html) (106 messages, latest: Feb 19 2021 at 03:38)
@@ -30,7 +32,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [promonads : categories = profunctors : graphs?](topic/promonads.20.3A.20categories.20.3D.20profunctors.20.3A.20graphs.3F.html) (80 messages, latest: Feb 07 2021 at 12:41)
 * [Profunctor composition in the double cat of spans](topic/Profunctor.20composition.20in.20the.20double.20cat.20of.20spans.html) (1 message, latest: Feb 07 2021 at 10:53)
 * [Probability dual](topic/Probability.20dual.html) (137 messages, latest: Feb 07 2021 at 04:54)
-* [Differential rig categories](topic/Differential.20rig.20categories.html) (30 messages, latest: Feb 06 2021 at 11:12)
 * [Understanding Set -> Vect](topic/Understanding.20Set.20-.3E.20Vect.html) (100 messages, latest: Feb 05 2021 at 09:56)
 * [Monoidal functors to set](topic/Monoidal.20functors.20to.20set.html) (8 messages, latest: Feb 04 2021 at 17:19)
 * [A converse to Lambek theorem](topic/A.20converse.20to.20Lambek.20theorem.html) (8 messages, latest: Feb 03 2021 at 01:47)
@@ -313,4 +314,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 20 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 21 2021 at 00:14 UTC</p>

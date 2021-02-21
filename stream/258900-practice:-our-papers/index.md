@@ -9,7 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
-* [Native Type Theory](topic/Native.20Type.20Theory.html) (50 messages, latest: Feb 12 2021 at 05:41)
+* [Native Type Theory](topic/Native.20Type.20Theory.html) (62 messages, latest: Feb 20 2021 at 18:15)
 * [a categorical semantics for hierarchical nets](topic/a.20categorical.20semantics.20for.20hierarchical.20nets.html) (5 messages, latest: Feb 02 2021 at 23:08)
 * [category of real numbers: the addition as a biproduct](topic/category.20of.20real.20numbers.3A.20the.20addition.20as.20a.20biproduct.html) (1 message, latest: Jan 29 2021 at 07:09)
 * [Smash product of monoidal theories](topic/Smash.20product.20of.20monoidal.20theories.html) (13 messages, latest: Jan 27 2021 at 14:23)
@@ -25,4 +25,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [stream events](topic/stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Feb 20 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 21 2021 at 00:14 UTC</p>
