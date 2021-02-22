@@ -9,7 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Differential rig categories](topic/Differential.20rig.20categories.html) (37 messages, latest: Feb 20 2021 at 23:49)
+* [logarithm as left adjoint](topic/logarithm.20as.20left.20adjoint.html) (30 messages, latest: Feb 21 2021 at 23:44)
+* [$$\epsilon-delta$$ is "semi-adjunction"?](topic/.24.24.5Cepsilon-delta.24.24.20is.20.22semi-adjunction.22.3F.html) (3 messages, latest: Feb 21 2021 at 23:40)
+* [Differential rig categories](topic/Differential.20rig.20categories.html) (52 messages, latest: Feb 21 2021 at 18:58)
 * [classifying topos of local rings](topic/classifying.20topos.20of.20local.20rings.html) (44 messages, latest: Feb 20 2021 at 09:35)
 * [HoTT book](topic/HoTT.20book.html) (39 messages, latest: Feb 20 2021 at 08:51)
 * [functions on inductive types are coinductive?](topic/functions.20on.20inductive.20types.20are.20coinductive.3F.html) (12 messages, latest: Feb 19 2021 at 14:44)
@@ -20,7 +22,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [CH in a topos](topic/CH.20in.20a.20topos.html) (37 messages, latest: Feb 17 2021 at 16:26)
 * [Categories of ordinals as a topoi](topic/Categories.20of.20ordinals.20as.20a.20topoi.html) (26 messages, latest: Feb 17 2021 at 04:49)
 * [Dependent Type Families in Topos Type Theory](topic/Dependent.20Type.20Families.20in.20Topos.20Type.20Theory.html) (14 messages, latest: Feb 16 2021 at 16:48)
-* [logarithm as left adjoint](topic/logarithm.20as.20left.20adjoint.html) (1 message, latest: Feb 16 2021 at 14:55)
 * [Street orientals](topic/Street.20orientals.html) (2 messages, latest: Feb 15 2021 at 21:25)
 * [Internal toposes](topic/Internal.20toposes.html) (31 messages, latest: Feb 14 2021 at 12:06)
 * [Goguen on "hidden algebra"](topic/Goguen.20on.20.22hidden.20algebra.22.html) (1 message, latest: Feb 13 2021 at 22:31)
@@ -314,4 +315,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 21 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Feb 22 2021 at 00:13 UTC</p>

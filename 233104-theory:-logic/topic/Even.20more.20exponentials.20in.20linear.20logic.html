@@ -81,6 +81,19 @@ Read(G) |- !A
 
 
 
+<a name="227186856"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Even%20more%20exponentials%20in%20linear%20logic/near/227186856" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Even.20more.20exponentials.20in.20linear.20logic.html#227186856">(Feb 21 2021 at 18:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="320695">Andrew Cann</span> <a href="#narrow/stream/233104-theory.3A-logic/topic/Even.20more.20exponentials.20in.20linear.20logic/near/227081420">said</a>:</p>
+<blockquote>
+<p>Hello people. I'm working on a type theory for a programming language I want to make based on linear logic and dependent types. As part of that, I'm considering adding an exponential modality similar to <code>!</code>/"of course" except without dereliction or promotion and with another rule instead which here I'll call "read". My problem is that I'm failing to figure out how to formulate this rule, so I'm hoping someone can help me...<br>
+[...]</p>
+<p>The advantage of this formulation is that each rule has a single instance of <code>?A</code> on the right-hand side of the conclusion, which I think is necessary for cut-elimination and proof search.</p>
+</blockquote>
+<p>Well, the traditional wisdom on that has been that you do want Natural Deduction (ND)  instead of sequent calculus for Curry-Howard, as you want to make more proofs equivalent. the sequent calculus is better for proof search, but it's too verbose, too many essentially the same proof are considered different proofs.  However there are serious problems when trying to make ND <em>multi-conclusion</em>, there are some books on the issues and possible solutions, starting with Kneale and Kneale (the math historians), CSLI's Ungar in the 80s and many others. So the idea of concentrating on ?A, instead of !A does not seem to me very promising, but of course you may be able to make progress in all of these different issues. But then what it would make sense to  ask is what is the categorical semantics of this not-quite-monad "Read". Because references (meaning "pointers") have also always been difficult to model. So, I'm always willing to discuss making LL into programming languages, I'm doing it and talking about it all the time and pleased to do so with new ideas, but hear I am not seeing a "path to the sea", perhaps yet.<br>
+*here</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Feb 21 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Feb 22 2021 at 00:13 UTC</p>

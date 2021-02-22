@@ -9,6 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [A simple adjunction in probability theory](topic/A.20simple.20adjunction.20in.20probability.20theory.html) (3 messages, latest: Feb 21 2021 at 23:07)
 * [security + ct](topic/security.20.2B.20ct.html) (13 messages, latest: Feb 18 2021 at 15:52)
 * [chemical recipes as functors](topic/chemical.20recipes.20as.20functors.html) (86 messages, latest: Feb 17 2021 at 15:16)
 * [are commutative monoidal categories monadic over Petri nets?](topic/are.20commutative.20monoidal.20categories.20monadic.20over.20Petri.20nets.3F.html) (52 messages, latest: Feb 17 2021 at 03:39)
@@ -103,4 +104,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Feb 21 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Feb 22 2021 at 00:13 UTC</p>
