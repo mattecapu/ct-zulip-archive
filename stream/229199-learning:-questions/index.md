@@ -9,11 +9,12 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [HoTT book](topic/HoTT.20book.html) (44 messages, latest: Feb 22 2021 at 19:10)
+* [conditions for points functor to have a left SMC adjoint?](topic/conditions.20for.20points.20functor.20to.20have.20a.20left.20SMC.20adjoint.3F.html) (3 messages, latest: Feb 22 2021 at 19:01)
+* [$$\epsilon-delta$$ is "semi-adjunction"?](topic/.24.24.5Cepsilon-delta.24.24.20is.20.22semi-adjunction.22.3F.html) (9 messages, latest: Feb 22 2021 at 17:39)
 * [logarithm as left adjoint](topic/logarithm.20as.20left.20adjoint.html) (30 messages, latest: Feb 21 2021 at 23:44)
-* [$$\epsilon-delta$$ is "semi-adjunction"?](topic/.24.24.5Cepsilon-delta.24.24.20is.20.22semi-adjunction.22.3F.html) (3 messages, latest: Feb 21 2021 at 23:40)
 * [Differential rig categories](topic/Differential.20rig.20categories.html) (52 messages, latest: Feb 21 2021 at 18:58)
 * [classifying topos of local rings](topic/classifying.20topos.20of.20local.20rings.html) (44 messages, latest: Feb 20 2021 at 09:35)
-* [HoTT book](topic/HoTT.20book.html) (39 messages, latest: Feb 20 2021 at 08:51)
 * [functions on inductive types are coinductive?](topic/functions.20on.20inductive.20types.20are.20coinductive.3F.html) (12 messages, latest: Feb 19 2021 at 14:44)
 * [indexed categories as dependent types](topic/indexed.20categories.20as.20dependent.20types.html) (9 messages, latest: Feb 19 2021 at 11:22)
 * [Adjunction between sets and groupoids](topic/Adjunction.20between.20sets.20and.20groupoids.html) (106 messages, latest: Feb 19 2021 at 03:38)
@@ -315,4 +316,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 22 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 23 2021 at 00:13 UTC</p>
