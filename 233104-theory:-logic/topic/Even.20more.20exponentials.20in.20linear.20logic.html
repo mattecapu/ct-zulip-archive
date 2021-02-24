@@ -94,6 +94,241 @@ Read(G) |- !A
 
 
 
+<a name="227384813"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Even%20more%20exponentials%20in%20linear%20logic/near/227384813" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Cann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Even.20more.20exponentials.20in.20linear.20logic.html#227384813">(Feb 23 2021 at 05:33)</a>:</h4>
+<blockquote>
+<p>Is this reasoning sound?</p>
+</blockquote>
+<p>Looking at this again, it's obviously not. I'm missing an axiom.</p>
+<p><span class="user-mention" data-user-id="276656">@Valeria de Paiva</span>:</p>
+<blockquote>
+<p>Well, the traditional wisdom on that has been that you do want Natural Deduction (ND) instead of sequent calculus for Curry-Howard</p>
+</blockquote>
+<p>The language I've got so far uses a natural-deduction style and it captures all of linear logic, plus another two modalities which I discussed <a href="#narrow/stream/233104-theory.3A-logic/topic/Exponential.20Modalities.20in.20Linear.20Logic.20.2F.20Type.20Theory">here</a></p>
+<p>The basic idea is that there's two kinds of judgements, which I'll call "terms" and "patterns". A term judgement is of the form <code>G |- A</code> where <code>G</code> is a context (a multi-set of formulas) and <code>A</code> is a single formula. This is the same as the standard linear logic sequent it resembles. A pattern judgement is of the form <code>G |- A -| D</code> where <code>D</code> is another context. This is equivalent to the linear logic sequent <code>G |- A, tensor(D)</code> where <code>tensor(D)</code> means to combine all the formulas in <code>D</code> into a tensor.</p>
+<p>From here you can derive term and pattern rules for all the types in linear logic, and this is what you get:</p>
+<ul>
+<li><code>0</code> type (which I write <code>@[]</code>)</li>
+</ul>
+<p>(no term or pattern rule)</p>
+<ul>
+<li><code>⊤</code> type (which I write <code>#[]</code>)</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>----
+G |- []: #[]
+
+
+----
+G |- [] : #[] -| D
+</code></pre></div>
+<ul>
+<li><code>1</code> type (which I write <code>#()</code>)</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>----
+. |- () : #()
+
+
+G0 |- x: A -| .
+G1 |- y: Not(A) -| D
+----
+G0, G1 |- connect x = y : #() -| D
+</code></pre></div>
+<ul>
+<li><code>⊥</code> type (which I write <code>@()</code>)</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>G0 |- x : A
+G1 |- y : Not(A)
+----
+G0, G1 |- connect x = y : @()
+
+
+----
+. |- () : @() -| .
+</code></pre></div>
+<ul>
+<li>Sum types (which I write <code>@[left: A, .. B]</code>)</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>G |- a : A
+----
+G |- @left a : @[left: A, .. B]
+
+
+G |- a : A -| D
+----
+G |- @left a : @[left: A, .. B] -| D
+</code></pre></div>
+<ul>
+<li>With types (which I write <code>#[left: A, .. B]</code>)</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>G |- a : A
+G |- b : B
+----
+G |- [left = a, .. b] : #[left: A, .. B]
+
+
+G |- a : A -| D
+G |- b : B -| D
+----
+G |- [left = a, .. b] : #[left: A, .. B] -| D
+</code></pre></div>
+<ul>
+<li>Tensor types (which I write <code>#(left: A, .. B)</code>)</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>G0 |- a : A
+G1 |- b : B
+----
+G0, G1 |- (left = a, .. b) : #(left: A, .. B)
+
+
+G0 |- a : A
+G1 |- b : B -| D
+----
+G0, G1 |- (left = a) =&gt; b : #(left: A, .. B) -| D
+</code></pre></div>
+<ul>
+<li>Par types (which I write <code>@(left: A, .. B)</code>)</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>G0 |- a : A -| C
+G1, C |- b : B
+----
+G0, G1 |- (left = a) =&gt; b : @(left: A, .. B)
+
+
+G0 |- a : A -| D0
+G1 |- b : B -| D1
+----
+G0, G1 |- (left = a, .. b) : @(left: A, .. B) -| D0, D1
+</code></pre></div>
+<ul>
+<li>Of-course types (which I write <code>Copy(A)</code>)</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>Copy(G) |- a : A
+----
+Copy(G) |- copy a : Copy(A)
+
+
+Copy(G0) |- a : A -| C
+Copy(G1), C |- x : Bundle(B)
+Copy(G2) |- y : Copy(Not(B)) -| D
+----
+Copy(G0, G1, G2) |- srv(x = y) a : Copy(A) -| D
+</code></pre></div>
+<ul>
+<li>Why-not types (which I write <code>Bundle(A)</code>)</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>G0 |- x : T
+G1 |- y : Not(T)
+----
+G0, G1 |- x &lt;|&gt; y : Bundle(A)
+
+
+G |- a : A
+----
+G |- just a : Bundle(A)
+
+
+G0 |- x : Bundle(A) -| C
+G1, C |- y : Bundle(A)
+----
+G0, G1 |- &lt;.. x&gt; =&gt; y : Bundle(A)
+
+
+----
+. |- &lt;&gt; : Bundle(A) -| .
+
+
+G |- a : A -| D
+----
+G |- &lt;a&gt; : Bundle(A) -| D
+
+
+G0 |- x : Bundle(A) -| D0
+G1 |- y : Bundle(A) -| D1
+----
+G0, G1 |- &lt;.. x, .. y&gt; : Bundle(A) -| D0, D1
+</code></pre></div>
+<ul>
+<li><code>Set(A)</code> types (multi-sets of values)</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>----
+. |- &lt;&gt; : Set(A)
+
+
+G |- a : A
+----
+G |- &lt;a&gt; : Set(A)
+
+
+G0 |- x : Set(A)
+G1 |- y : Set(A)
+----
+G0, G1 |- &lt;.. x, .. y&gt; : Set(A)
+
+
+G0 |- x : T -| .
+G1 |- y : Not(T) -| D
+----
+G0, G1 |- x &lt;|&gt; y : Set(A) -| D
+
+
+G |- a : A -| D
+----
+G |- just a : Set(A) -| D
+
+
+G0 |- x : Set(A)
+G1 |- y : Set(A) -| D
+----
+G0, G1 |- &lt;.. x&gt; =&gt; y : Set(A) -| D
+</code></pre></div>
+<ul>
+<li><code>Srv(A)</code> types (the dual of <code>Set</code> types)</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>C |- a : A
+. |- x : Set(Not(B)) -| C
+G |- y : Srv(B)
+----
+G |- srv(x = y) a : Srv(A)
+
+
+. |- a : A -| Set(C)
+----
+. |- copy a : Srv(A) -| Set(C)
+</code></pre></div>
+<p>If I've done everything correctly then these rules should be equivalent to the original linear logic rules.</p>
+
+
+
+<a name="227386852"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Even%20more%20exponentials%20in%20linear%20logic/near/227386852" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Cann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Even.20more.20exponentials.20in.20linear.20logic.html#227386852">(Feb 23 2021 at 06:09)</a>:</h4>
+<p>An interesting thing about this is that the term/pattern rules for any type mirror the pattern/term rules of it's "semi-dual" (where I'm defining semi-dual to mean the type with all the multiplicative components inverted). For instance, if you take the term rule for par types and replace all the pattern premises with terms and all the term premises with patterns you get the pattern rule for tensor types, and vice-versa. I don't know if this has any deep significance, but it makes for a nice language since it means I can make pattern syntax be identical to term syntax (eg. any syntactic form that's usable in one position is usable in the other).</p>
+<blockquote>
+<p>references (meaning "pointers") have also always been difficult to model.</p>
+</blockquote>
+<p>I think I'm nearly there... The idea I'm going for is to add another 4 modalities, similar to the existing four but with opposite "monadness" (sort-of). The (co)weakening and (co)contraction rules then move to the new modalities and the rules for the original 4 modalities then get reformulated in terms of the new ones:</p>
+<div class="codehilite"><pre><span></span><code>Read(G) |- A
+----
+Read(G) |- Copy(A)
+
+
+G |- CoRead(Bundle(A)), D
+----
+G |- Bundle(A), D
+
+
+G |- Extend(Set(A)), D
+----
+G |- Set(A), D
+
+
+CoExtend(B) |- A
+----
+CoExtend(B) |- Srv(A)
+</code></pre></div>
+<p>The problem I'm having is how to formulate the rules for these new modalities. (co)weakening and (co)contraction are easy but then I need another few axioms which give me the equivalences for <code>Read</code> that I listed in the OP, as well as similar equivalences for the other types.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Feb 23 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 24 2021 at 00:13 UTC</p>

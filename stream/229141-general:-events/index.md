@@ -9,20 +9,20 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Bohemian L&P Cafe: Makkai](topic/Bohemian.20L.26P.20Cafe.3A.20Makkai.html) (7 messages, latest: Feb 23 2021 at 15:04)
+* [Higher Structures @CRM](topic/Higher.20Structures.20.40CRM.html) (4 messages, latest: Feb 23 2021 at 07:42)
 * [ICLA 2021](topic/ICLA.202021.html) (2 messages, latest: Feb 22 2021 at 16:34)
 * [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (9 messages, latest: Feb 18 2021 at 17:03)
 * [Online Category Theory Seminar at Brandon University](topic/Online.20Category.20Theory.20Seminar.20at.20Brandon.20University.html) (1 message, latest: Feb 18 2021 at 07:45)
 * [ACT2021 Adjoint School](topic/ACT2021.20Adjoint.20School.html) (10 messages, latest: Feb 17 2021 at 19:39)
 * [AMS Sectional Meetings](topic/AMS.20Sectional.20Meetings.html) (8 messages, latest: Feb 15 2021 at 18:36)
 * [Australian Category Seminar](topic/Australian.20Category.20Seminar.html) (22 messages, latest: Feb 14 2021 at 17:53)
-* [Higher Structures @CRM](topic/Higher.20Structures.20.40CRM.html) (3 messages, latest: Feb 13 2021 at 08:37)
 * [Logic Webinar@IITK](topic/Logic.20Webinar.40IITK.html) (7 messages, latest: Feb 12 2021 at 13:29)
 * [Witten on Langlands](topic/Witten.20on.20Langlands.html) (7 messages, latest: Feb 11 2021 at 19:54)
 * [NYC Category Theory Seminar](topic/NYC.20Category.20Theory.20Seminar.html) (30 messages, latest: Feb 09 2021 at 17:06)
 * [ACT4E guest lecture](topic/ACT4E.20guest.20lecture.html) (1 message, latest: Feb 04 2021 at 10:02)
 * [Workshop on Polynomial Functors](topic/Workshop.20on.20Polynomial.20Functors.html) (1 message, latest: Feb 03 2021 at 22:22)
 * [structured vs decorated cospans](topic/structured.20vs.20decorated.20cospans.html) (2 messages, latest: Jan 31 2021 at 20:12)
-* [Bohemian L&P Cafe: Makkai](topic/Bohemian.20L.26P.20Cafe.3A.20Makkai.html) (3 messages, latest: Jan 28 2021 at 01:53)
 * [BLPC Talk: Makkai](topic/BLPC.20Talk.3A.20Makkai.html) (2 messages, latest: Jan 26 2021 at 15:43)
 * [World Logic Day](topic/World.20Logic.20Day.html) (8 messages, latest: Jan 14 2021 at 19:41)
 * [QPL 2021](topic/QPL.202021.html) (1 message, latest: Jan 13 2021 at 14:20)
@@ -76,4 +76,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Feb 23 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 24 2021 at 00:13 UTC</p>

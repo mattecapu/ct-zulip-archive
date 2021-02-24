@@ -9,7 +9,8 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [understanding Fermat's Last Theorem proof](topic/understanding.20Fermat's.20Last.20Theorem.20proof.html) (4 messages, latest: Feb 22 2021 at 23:24)
+* [fundamental theorem of noncommutative algebra](topic/fundamental.20theorem.20of.20noncommutative.20algebra.html) (4 messages, latest: Feb 23 2021 at 21:03)
+* [understanding Fermat's Last Theorem proof](topic/understanding.20Fermat's.20Last.20Theorem.20proof.html) (14 messages, latest: Feb 23 2021 at 16:42)
 * [This Week's Finds (1-50)](topic/This.20Week's.20Finds.20(1-50).html) (41 messages, latest: Feb 16 2021 at 17:17)
 * [affine toric varieties](topic/affine.20toric.20varieties.html) (55 messages, latest: Feb 12 2021 at 20:08)
 * [What is trivial](topic/What.20is.20trivial.html) (14 messages, latest: Feb 12 2021 at 01:24)
@@ -33,4 +34,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Feb 23 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 24 2021 at 00:13 UTC</p>
