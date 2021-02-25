@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (307 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (308 topics)
 
 * [general](stream/229111-general/index.html) (178 topics)
 
@@ -42,11 +42,11 @@ permalink: /index.html
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (17 topics)
 
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (17 topics)
+
 * [practice: software](stream/229125-practice:-software/index.html) (17 topics)
 
 * [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
-
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (15 topics)
 
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
 
@@ -128,4 +128,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 24 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 25 2021 at 00:13 UTC</p>

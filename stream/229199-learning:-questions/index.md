@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [ε-δ is "semi-adjunction"?](topic/.CE.B5-.CE.B4.20is.20.22semi-adjunction.22.3F.html) (22 messages, latest: Feb 24 2021 at 22:51)
 * [SMCs as opfibrations](topic/SMCs.20as.20opfibrations.html) (10 messages, latest: Feb 23 2021 at 20:09)
 * [HoTT book](topic/HoTT.20book.html) (44 messages, latest: Feb 22 2021 at 19:10)
 * [conditions for points functor to have a left SMC adjoint?](topic/conditions.20for.20points.20functor.20to.20have.20a.20left.20SMC.20adjoint.3F.html) (3 messages, latest: Feb 22 2021 at 19:01)
@@ -317,4 +318,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 24 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 25 2021 at 00:13 UTC</p>

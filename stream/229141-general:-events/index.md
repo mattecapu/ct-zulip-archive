@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [UNAM category seminar](topic/UNAM.20category.20seminar.html) (20 messages, latest: Feb 24 2021 at 23:48)
 * [Bohemian L&P Cafe: Makkai](topic/Bohemian.20L.26P.20Cafe.3A.20Makkai.html) (7 messages, latest: Feb 23 2021 at 15:04)
 * [Higher Structures @CRM](topic/Higher.20Structures.20.40CRM.html) (4 messages, latest: Feb 23 2021 at 07:42)
 * [ICLA 2021](topic/ICLA.202021.html) (2 messages, latest: Feb 22 2021 at 16:34)
@@ -36,7 +37,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Topos theory minicourse](topic/Topos.20theory.20minicourse.html) (4 messages, latest: Oct 27 2020 at 01:06)
 * [LMS Category Theory and Its Applications](topic/LMS.20Category.20Theory.20and.20Its.20Applications.html) (1 message, latest: Oct 23 2020 at 20:52)
 * [Category theory for cryptography](topic/Category.20theory.20for.20cryptography.html) (6 messages, latest: Oct 22 2020 at 16:36)
-* [UNAM category seminar](topic/UNAM.20category.20seminar.html) (16 messages, latest: Oct 20 2020 at 06:52)
 * [Petri nets: probabilities vs. amplitudes](topic/Petri.20nets.3A.20probabilities.20vs.2E.20amplitudes.html) (2 messages, latest: Oct 07 2020 at 15:37)
 * [Computational Logic and Applications 2020](topic/Computational.20Logic.20and.20Applications.202020.html) (14 messages, latest: Oct 06 2020 at 16:35)
 * [breakout rooms](topic/breakout.20rooms.html) (3 messages, latest: Sep 23 2020 at 19:19)
@@ -76,4 +76,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Feb 24 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 25 2021 at 00:13 UTC</p>
