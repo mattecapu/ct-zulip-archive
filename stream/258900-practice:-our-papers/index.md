@@ -9,8 +9,8 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [Categorical Semantics of Cyber-Physical Systems Theory](topic/Categorical.20Semantics.20of.20Cyber-Physical.20Systems.20Theory.html) (11 messages, latest: Feb 25 2021 at 19:01)
 * [Category O for oriented matroids](topic/Category.20O.20for.20oriented.20matroids.html) (22 messages, latest: Feb 24 2021 at 22:27)
-* [Categorical Semantics of Cyber-Physical Systems Theory](topic/Categorical.20Semantics.20of.20Cyber-Physical.20Systems.20Theory.html) (4 messages, latest: Feb 24 2021 at 22:13)
 * [Native Type Theory](topic/Native.20Type.20Theory.html) (64 messages, latest: Feb 22 2021 at 03:12)
 * [a categorical semantics for hierarchical nets](topic/a.20categorical.20semantics.20for.20hierarchical.20nets.html) (5 messages, latest: Feb 02 2021 at 23:08)
 * [category of real numbers: the addition as a biproduct](topic/category.20of.20real.20numbers.3A.20the.20addition.20as.20a.20biproduct.html) (1 message, latest: Jan 29 2021 at 07:09)
@@ -27,4 +27,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [stream events](topic/stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Feb 25 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 26 2021 at 00:13 UTC</p>

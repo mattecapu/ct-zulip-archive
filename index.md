@@ -8,13 +8,13 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (308 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (309 topics)
 
 * [general](stream/229111-general/index.html) (178 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (123 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (94 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (95 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (66 topics)
 
@@ -36,7 +36,7 @@ permalink: /index.html
 
 * [general: positions](stream/245502-general:-positions/index.html) (21 topics)
 
-* [general: values](stream/241990-general:-values/index.html) (20 topics)
+* [general: values](stream/241990-general:-values/index.html) (21 topics)
 
 * [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (19 topics)
 
@@ -128,4 +128,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 25 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 26 2021 at 00:13 UTC</p>
