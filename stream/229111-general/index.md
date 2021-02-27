@@ -9,9 +9,9 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (573 messages, latest: Feb 26 2021 at 12:21)
 * [a new chatting platform for discussions in logic](topic/a.20new.20chatting.20platform.20for.20discussions.20in.20logic.html) (36 messages, latest: Feb 25 2021 at 16:41)
 * [Keeping track of papers](topic/Keeping.20track.20of.20papers.html) (22 messages, latest: Feb 23 2021 at 21:20)
-* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (567 messages, latest: Feb 23 2021 at 10:03)
 * [Theory A/B](topic/Theory.20A.2FB.html) (15 messages, latest: Feb 22 2021 at 21:09)
 * [A New Chatting Platform for Discussions in Logic](topic/A.20New.20Chatting.20Platform.20for.20Discussions.20in.20Logic.html) (3 messages, latest: Feb 19 2021 at 17:02)
 * [congratulations to Fabrizio](topic/congratulations.20to.20Fabrizio.html) (15 messages, latest: Feb 18 2021 at 03:54)
@@ -188,4 +188,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Feb 26 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 27 2021 at 00:13 UTC</p>

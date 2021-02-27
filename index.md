@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (309 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (312 topics)
 
 * [general](stream/229111-general/index.html) (178 topics)
 
@@ -76,9 +76,9 @@ permalink: /index.html
 
 * [theory: physics](stream/251538-theory:-physics/index.html) (8 topics)
 
-* [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (7 topics)
+* [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (7 topics)
 
-* [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (6 topics)
+* [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (7 topics)
 
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (6 topics)
 
@@ -128,4 +128,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 26 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 27 2021 at 00:13 UTC</p>

@@ -9,7 +9,7 @@ permalink: /stream/241990-general:-values/index.html
 
 ### Topics:
 
-* [The Responsibility of the Scientist Today](topic/The.20Responsibility.20of.20the.20Scientist.20Today.html) (208 messages, latest: Feb 26 2021 at 00:13)
+* [The Responsibility of the Scientist Today](topic/The.20Responsibility.20of.20the.20Scientist.20Today.html) (422 messages, latest: Feb 26 2021 at 23:49)
 * [Attitudes that hinder the adoption of applied category th...](topic/Attitudes.20that.20hinder.20the.20adoption.20of.20applied.20category.20th.2E.2E.2E.html) (101 messages, latest: Feb 22 2021 at 17:27)
 * [Anti-racism resources](topic/Anti-racism.20resources.html) (10 messages, latest: Feb 21 2021 at 20:07)
 * [Exponential discounting](topic/Exponential.20discounting.html) (1 message, latest: Oct 25 2020 at 19:50)
@@ -31,4 +31,4 @@ permalink: /stream/241990-general:-values/index.html
 * [stream events](topic/stream.20events.html) (6 messages, latest: Jun 03 2020 at 19:22)
 * [ACT2020 tutorial day](topic/ACT2020.20tutorial.20day.html) (1 message, latest: Jun 03 2020 at 18:38)
 
-<hr><p>Last updated: Feb 26 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 27 2021 at 00:13 UTC</p>

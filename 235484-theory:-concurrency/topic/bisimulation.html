@@ -1590,6 +1590,39 @@ Personally I'm in the Petri net crowd but I'm also interested in notions of bisi
 
 
 
+<a name="227933504"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/bisimulation/near/227933504" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> GhaS Shee <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/bisimulation.html#227933504">(Feb 26 2021 at 14:16)</a>:</h4>
+<p>I have a question. If we see the evaluation of a term in STL as a coalgebra, does anyone know what the counterpart of "normalization property" in algebra is?</p>
+
+
+
+<a name="227945849"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/bisimulation/near/227945849" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> GhaS Shee <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/bisimulation.html#227945849">(Feb 26 2021 at 15:45)</a>:</h4>
+<p>Is it semi-decidable set?</p>
+
+
+
+<a name="227957007"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/bisimulation/near/227957007" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> GhaS Shee <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/bisimulation.html#227957007">(Feb 26 2021 at 16:59)</a>:</h4>
+<p>I do not know what are semi-decidable sets and co-semi-decidable sets, and I am confused by them. <br>
+The counterpart of normalization seems to be the set of terms defined as they normalize. <br>
+Does anyone know where (co-)semi-decidable set is defined well and who defined them?</p>
+
+
+
+<a name="227979594"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/bisimulation/near/227979594" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/bisimulation.html#227979594">(Feb 26 2021 at 19:31)</a>:</h4>
+<p>Can you expand on what you mean by "algebraic counterpart"?</p>
+
+
+
+<a name="227980238"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/bisimulation/near/227980238" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/bisimulation.html#227980238">(Feb 26 2021 at 19:35)</a>:</h4>
+<p>A "semi-decidable set" is the same as a <a href="https://en.wikipedia.org/wiki/Recursively_enumerable_set">recursively enumerable set</a> - in other words, a set <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> for which there is an algorithm such that if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x \in X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> then the algorithm will prove this.   </p>
+<p>A "co-semi-decidable set" is the complement of a recursively enumerable set.   In other words, it's a set <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> for which there's an algorithm such that if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo mathvariant="normal">∉</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x \notin X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mord"><span class="mrel">∈</span></span><span class="mord vbox"><span class="thinbox"><span class="llap"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="inner"><span class="mord"><span class="mord">/</span><span class="mspace" style="margin-right:0.05555555555555555em;"></span></span></span><span class="fix"></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> then the algorithm will prove that.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Feb 26 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 27 2021 at 00:13 UTC</p>
