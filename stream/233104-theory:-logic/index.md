@@ -9,7 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
-* [for all x implies exists x?](topic/for.20all.20x.20implies.20exists.20x.3F.html) (121 messages, latest: Feb 26 2021 at 19:12)
+* [for all x implies exists x?](topic/for.20all.20x.20implies.20exists.20x.3F.html) (122 messages, latest: Feb 27 2021 at 02:39)
 * [Even more exponentials in linear logic](topic/Even.20more.20exponentials.20in.20linear.20logic.html) (5 messages, latest: Feb 23 2021 at 06:09)
 * [Terminology: “a calculus of sequents”](topic/Terminology.3A.20.E2.80.9Ca.20calculus.20of.20sequents.E2.80.9D.html) (25 messages, latest: Feb 21 2021 at 22:01)
 * [fragments of logic](topic/fragments.20of.20logic.html) (40 messages, latest: Feb 20 2021 at 00:00)
@@ -38,4 +38,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Feb 27 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 28 2021 at 00:14 UTC</p>

@@ -84,6 +84,8 @@ permalink: /index.html
 
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (6 topics)
 
+* [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (6 topics)
+
 * [theory: probability](stream/253118-theory:-probability/index.html) (6 topics)
 
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
@@ -97,8 +99,6 @@ permalink: /index.html
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (5 topics)
 
 * [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (5 topics)
-
-* [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (5 topics)
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (4 topics)
 
@@ -128,4 +128,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Feb 27 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 28 2021 at 00:14 UTC</p>

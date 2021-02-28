@@ -9,7 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
-* [ACT as a field](topic/ACT.20as.20a.20field.html) (189 messages, latest: Feb 26 2021 at 13:59)
+* [ACT as a field](topic/ACT.20as.20a.20field.html) (215 messages, latest: Feb 27 2021 at 23:13)
 * [A simple adjunction in probability theory](topic/A.20simple.20adjunction.20in.20probability.20theory.html) (5 messages, latest: Feb 22 2021 at 23:13)
 * [security + ct](topic/security.20.2B.20ct.html) (13 messages, latest: Feb 18 2021 at 15:52)
 * [chemical recipes as functors](topic/chemical.20recipes.20as.20functors.html) (86 messages, latest: Feb 17 2021 at 15:16)
@@ -105,4 +105,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Feb 27 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 28 2021 at 00:14 UTC</p>

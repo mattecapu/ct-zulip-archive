@@ -1386,6 +1386,250 @@ You won't find any category theory in there, but as far as I can tell it contain
 
 
 
+<a name="228065600"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228065600" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228065600">(Feb 27 2021 at 15:45)</a>:</h4>
+<p>I'm going to throw in my 2 cents' worth.</p>
+<p>Certainly one issue is that a lot of 'pure' category theorists are very scary people. Some of them on the personal level, but even the ones who are very nice people are very scary on a professional level. The tendency of some of these people to see a piece of math and say "Oh, that's easy, that's just the application of the Babbleflung theorem to generalized Unboabs tensored with Quoftas" is the extreme opposite of helpful and welcoming.  So if pure category theorists are going to be hanging around, many of the others will simply not deign to show up. So the community needs to forcefully reject bad behaviour (even if done by absolutely brilliant mathematicians), as well as never ever use phrases like "Oh, that's easy" (or any synonyms thereof), even if they think it (and are, in some sense, right).</p>
+<p>Second, because the ACT people seem to have arisen from CT, they seem to be completely blind to the fact that ACT has been going on for &gt; 45 years!  To name just two pioneers: Joseph Goguen and Rod Burstall. The algebraic specification community has been a hotbed of category theory for decades. There's a whole textbook from 2005 <a href="https://www.springer.com/gp/book/9783540209096">Categories for Software Engineering</a> full of ACT.  If 'ACT as a field' cannot recognize that it is already a very old field, it is doomed!  Using spans and cospans as connectors in diagrams representing systems? Super old hat stuff, if only you look in the right places, such as this PhD thesis from 1995 <a href="https://apps.dtic.mil/dtic/tr/fulltext/u2/a297528.pdf">Formal Foundations for the Specification of Software Architecture</a>. [Not that there isn't a lot that can be improved on some of that clunky old stuff...]  There's also the graph rewriting community which happily uses double-pushouts - happily here <a href="https://ncatlab.org/nlab/show/span+rewriting">the nlab</a> acknowledges the existence of this, and that it goes back to 1973. And those are merely the ones that I know of, I am sure the actual list is considerably longer.  To me, ACT has already existed for a very long time.</p>
+<p>The whole endeavour is also hampered by the opaqueness of most books on category theory. There are some exceptions (Conceptual Mathematics as one example), but most do not state some very simple intuitions, such as:</p>
+<ul>
+<li>categories embody the idea of 'typed composition'</li>
+<li>functors are just homomorphisms, which themselves are just 'functions that preserve structure'</li>
+<li>natural transformations are just homomorphisms (of functors)</li>
+</ul>
+<p>and so on.  These ideas are known to most category theorists, but apparently only even mentioned in hushed tones and never written down. So one is left to painstakingly reconstruct the intuitive understanding from the dry definitions. Of course, it doesn't help that so many of the examples given in textbooks are misleading (i.e. too based on historically important examples, instead of highlighting the conceptually important parts, with a preponderance of examples being set-theoretic in nature).  All sorts of concepts in category theory are actually quite simple once they get stripped of their historical baggage and re-expressed with fewer assumptions (example: multicategories are simpler when expressed over an index set rather than over the natural numbers; informally, they're both about the same, but if you try to be precise, the implicit combinatorics of the version based on natural numbers is a complete nightmare. There's a reason most texts don't bother to ever write down the full details of associativity!  And it is, in fact, quite simple to do so, if you don't assume natural-number indexing).</p>
+
+
+
+<a name="228067348"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228067348" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joshua Meyers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228067348">(Feb 27 2021 at 16:17)</a>:</h4>
+<p><span class="user-mention" data-user-id="296322">@Jacques Carette</span> wow you should write a CT textbook!</p>
+
+
+
+<a name="228067671"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228067671" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228067671">(Feb 27 2021 at 16:23)</a>:</h4>
+<p>Thanks for the flattery <span class="user-mention" data-user-id="280784">@Joshua Meyers</span> but unfortunately I am a slow writer. Writing a textbook, on my own, is not going to happen, at least not before retirement. Though I have wondered if it could be done, using some of the methods of the past: a few student scribes write down material from a series of lectures, put into decent enough shape, and then polished as a group effort. [With writing credit given to all.]  Plus my intuitive understanding of CT still has some ways to go before I could fill even a small textbook.</p>
+
+
+
+<a name="228067792"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228067792" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bob Coecke <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228067792">(Feb 27 2021 at 16:25)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="296322">Jacques Carette</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/ACT.20as.20a.20field/near/228065600">said</a>:</p>
+<blockquote>
+<p>I'm going to throw in my 2 cents' worth.</p>
+<p>Certainly one issue is that a lot of 'pure' category theorists are very scary people. Some of them on the personal level, but even the ones who are very nice people are very scary on a professional level. The tendency of some of these people to see a piece of math and say "Oh, that's easy, that's just the application of the Babbleflung theorem to generalized Unboabs tensored with Quoftas" is the extreme opposite of helpful and welcoming.  So if pure category theorists are going to be hanging around, many of the others will simply not deign to show up. So the community needs to forcefully reject bad behaviour (even if done by absolutely brilliant mathematicians), as well as never ever use phrases like "Oh, that's easy" (or any synonyms thereof), even if they think it (and are, in some sense, right).</p>
+<p>Second, because the ACT people seem to have arisen from CT, they seem to be completely blind to the fact that ACT has been going on for &gt; 45 years!  To name just two pioneers: Joseph Goguen and Rod Burstall. The algebraic specification community has been a hotbed of category theory for decades. There's a whole textbook from 2005 <a href="https://www.springer.com/gp/book/9783540209096">Categories for Software Engineering</a> full of ACT.  If 'ACT as a field' cannot recognize that it is already a very old field, it is doomed!  Using spans and cospans as connectors in diagrams representing systems? Super old hat stuff, if only you look in the right places, such as this PhD thesis from 1995 <a href="https://apps.dtic.mil/dtic/tr/fulltext/u2/a297528.pdf">Formal Foundations for the Specification of Software Architecture</a>. [Not that there isn't a lot that can be improved on some of that clunky old stuff...]  There's also the graph rewriting community which happily uses double-pushouts - happily here <a href="https://ncatlab.org/nlab/show/span+rewriting">the nlab</a> acknowledges the existence of this, and that it goes back to 1973. And those are merely the ones that I know of, I am sure the actual list is considerably longer.  To me, ACT has already existed for a very long time.</p>
+<p>The whole endeavour is also hampered by the opaqueness of most books on category theory. There are some exceptions (Conceptual Mathematics as one example), but most do not state some very simple intuitions, such as:</p>
+<ul>
+<li>categories embody the idea of 'typed composition'</li>
+<li>functors are just homomorphisms, which themselves are just 'functions that preserve structure'</li>
+<li>natural transformations are just homomorphisms (of functors)</li>
+</ul>
+<p>and so on.  These ideas are known to most category theorists, but apparently only even mentioned in hushed tones and never written down. So one is left to painstakingly reconstruct the intuitive understanding from the dry definitions. Of course, it doesn't help that so many of the examples given in textbooks are misleading (i.e. too based on historically important examples, instead of highlighting the conceptually important parts, with a preponderance of examples being set-theoretic in nature).  All sorts of concepts in category theory are actually quite simple once they get stripped of their historical baggage and re-expressed with fewer assumptions (example: multicategories are simpler when expressed over an index set rather than over the natural numbers; informally, they're both about the same, but if you try to be precise, the implicit combinatorics of the version based on natural numbers is a complete nightmare. There's a reason most texts don't bother to ever write down the full details of associativity!  And it is, in fact, quite simple to do so, if you don't assume natural-number indexing).</p>
+</blockquote>
+<p>As people like <span class="user-mention" data-user-id="275920">@John Baez</span> and <span class="user-mention" data-user-id="276049">@David Spivak</span> know, for me a main motivation for the ACT conference series and Compositionality journal was to provide and alternative to the scary CT community, although meanwhile that seems to have turned a bit less scary as well.  Now, the category theory in CS community is also packed with jargon that made it impossible to penetrate.  So I see ACT as a community where an effort is made to explain things to each other, and be a bit nicer to each other.  I actually don't think that many here came out of the traditional CT community.</p>
+
+
+
+<a name="228067982"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228067982" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228067982">(Feb 27 2021 at 16:29)</a>:</h4>
+<p>Please don't get me wrong: I think both the ACT Conference and Compositionality are great!  I'm just injecting an additional outsider's view into things, for people's consideration.</p>
+
+
+
+<a name="228068557"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228068557" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228068557">(Feb 27 2021 at 16:39)</a>:</h4>
+<p>We're lucky to have quite a high concentration of people who are really good science communicators, like Bob and David and Tai. I have a lot of respect for them because I know from trying that good science communication is <em>really hard</em>. Writing Bourbaki style is way easier, for example</p>
+
+
+
+<a name="228071386"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228071386" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228071386">(Feb 27 2021 at 17:29)</a>:</h4>
+<blockquote>
+<p>Second, because the ACT people seem to have arisen from CT, they seem to be completely blind to the fact that ACT has been going on for &gt; 45 years! To name just two pioneers: Joseph Goguen and Rod Burstall.</p>
+</blockquote>
+<p>I "arose" - that makes me sound like some sort of swam creature - not from CT but from mathematical physics, so I've struggled for decades to learn category theory, and I know essentially nothing about computer science. </p>
+<p>I keep trying to learn bits of computer science here and there, especially since some of my students are interested in it - like <span class="user-mention" data-user-id="276048">@Mike Stay</span>, who taught me the lambda calculus, and <span class="user-mention" data-user-id="275899">@Christian Williams</span> , who is now working with Mike on type theory.   But I don't think I'll ever know much about it.   I never program and don't want to.   I've read Goguen's <a href="https://ncatlab.org/nlab/show/A+Categorical+Manifesto">A categorical manifesto</a>, since the title is irresistible and it's pretty short and fun.  I've heard of Burstall but don't know anything about him.  </p>
+<p>Because I've spent much more time studying category theory, I find it much easier to understand category theorists than computer scientists.   What category theorists say feels natural to me: even if I don't understand all the details, I can often guess what they're trying to do.  Computer science, on the other hand, is much more mysterious.   But I don't bother <em>saying</em> this, because I don't <em>expect</em> to understand it: why should I?   </p>
+<p>When I first helped launch the ACT conference series in ACT2018, I pushed for it to exclude categorical computer science, categorical quantum mechanics, or applications of category theory to string theory and topological quantum field theory - because those were relatively old, well-established fields with their own conferences.  I envisaged ACT as being about the <em>other</em> stuff, the <em>new</em> stuff.  </p>
+<p>By the time ACT2019 came along, Tom Leinster had forcefully talked me out of this idea.  I realized, thanks largely to him, that ACT should be all-embracing.     </p>
+<p>I think it's great that we have people of many kinds talking here.  But I hope everyone realizes that their expertise is a mysterious black box to many other people here.   It's not just category theorists who are hard to understand!</p>
+
+
+
+<a name="228074454"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228074454" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bob Coecke <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228074454">(Feb 27 2021 at 18:25)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275901">Jules Hedges</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/ACT.20as.20a.20field/near/228068557">said</a>:</p>
+<blockquote>
+<p>We're lucky to have quite a high concentration of people who are really good science communicators, like Bob and David and Tai. I have a lot of respect for them because I know from trying that good science communication is <em>really hard</em>. Writing Bourbaki style is way easier, for example</p>
+</blockquote>
+<p>Funny you didn't mention the inventor of scientific blogging.  But yeah, he is indeed pretty crap at it.</p>
+
+
+
+<a name="228075287"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228075287" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228075287">(Feb 27 2021 at 18:41)</a>:</h4>
+<p><span class="user-mention" data-user-id="275920">@John Baez</span> the days of being able to learn everything are long, long past. Even though I have an odd background (my PhD is in complex dynamics, with Douady and Hubbard being my co-supervisors, but I spent just as much time learning combinatorics and analysis of algorithms from Phillippe Flajolet and Bruno Salvy at INRIA, then many years doing symbolic computation / system building at Maplesoft, doing more software engineering than anything else, before re-joining academia as a computer scientist who is increasingly interested in meta-programming and programming language design, on top of mechanized mathematics. Oh, and a side gig applying cognitive psychology models to game design.), I too refuse to learn certain topics. There is only so much time.   I know I'm missing out on beautiful stuff in areas I've sworn off of, so I can sympathize with your choice to largely stay out of CS.</p>
+<p>Amusingly, quantum used to be one of those domains that I swore I'd never learn. But Amr Sabry got me totally hooked on the categorical approach to reversible computation, because of his approach from the fundamentals (i.e. asking the question "what does <em>conservation of information</em> really mean for computations?"). Of course, the jump to quantum from there is trivial so, despite my best intentions, I now know quite a bit more about quantum computing than I ever expected.</p>
+
+
+
+<a name="228075367"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228075367" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Blake Pollard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228075367">(Feb 27 2021 at 18:42)</a>:</h4>
+<p>At least twice I've gone to workshops/conferences and been floored by folks I never heard of doing 'way-more-applied' category theory than I knew existed: once was in Luxembourg at a workshop on "Dynamics, Thermodynamics and Information Processing in Chemical Networks" where I learned about <a href="https://cheminf.imada.sdu.dk/mod/index.html">https://cheminf.imada.sdu.dk/mod/index.html</a> and the other was at a model transformation Dagstuhl workshop on "Multidirectional Transformations and Synchronisations" where I basically learned about the existence of the graph-transformation and model transformation community/communities. I was kind of shocked these hadn't been on my radar, but I mean that is research, different neighboring communities, gotta interact. I think the point is that for me, going to adjacent conferences/workshops and talking about ACT was always a bit intimidating bc I didn't know their history and 'how baby' the stuff I was presenting appeared to them, nor did I feel I really represented the 'category theory' part of ACT, but it was one of the most important parts of my development as a researcher and led to the most new connections/ideas/perspectives.</p>
+
+
+
+<a name="228075647"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228075647" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Blake Pollard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228075647">(Feb 27 2021 at 18:48)</a>:</h4>
+<p>Some mechanism encouraging young 'ACT researchers' to present/participate in domain workshops/conferences would be dope. Maybe with a reciprocation from the domain workshop. Foreign research domain exchange program.</p>
+
+
+
+<a name="228076021"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228076021" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Blake Pollard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228076021">(Feb 27 2021 at 18:55)</a>:</h4>
+<p>I also remember, I think it was <span class="user-mention" data-user-id="275920">@John Baez</span>, talking about setting the 'temperature' of conversations. Like an expectation about what 'level' you'll try to keep the discussion. Low temp convos are focused, down in the deets, not much jumping around. High temp ones can be more all over the place. Drawing on the temp/time analogy, I think setting an expectation about an interaction with domain folks based on time could be helpful. Yea it takes years to learn deeply about a domain or about CT, let alone to identify and tackle an interesting problem that involves a  bit of both, but there is def value in shorter interactions: over a few days at a workshop, a few hours on a forum, once a month via a group zoom for a while. I always thought of kind of serving a 'speed-dating' app for domain people and folks wanting to do more 'applied category theory.' Like that is part of knowing the community, knowing what types of problems/questions/discussions to bring up with which people. Helping domain people find the 'right' flavour of applied category theorist to kick it with and vice-versa.</p>
+
+
+
+<a name="228078459"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228078459" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joshua Meyers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228078459">(Feb 27 2021 at 19:39)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="296322">Jacques Carette</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/ACT.20as.20a.20field/near/228067671">said</a>:</p>
+<blockquote>
+<p>Thanks for the flattery <span class="user-mention silent" data-user-id="280784">Joshua Meyers</span> but unfortunately I am a slow writer. Writing a textbook, on my own, is not going to happen, at least not before retirement. Though I have wondered if it could be done, using some of the methods of the past: a few student scribes write down material from a series of lectures, put into decent enough shape, and then polished as a group effort. [With writing credit given to all.]  Plus my intuitive understanding of CT still has some ways to go before I could fill even a small textbook.</p>
+</blockquote>
+<p>I like thinking about protocols such as that for efficient production of pedagogical material.  Here's a very simple protocol, involving a teacher and a student.  Teacher explains something to student.  Student writes up an explanation of it.  Teacher edits student's write-up.  The student will be able to sympathize well with other people in their position, learning the material for the first time, so their write-up will be intelligible to such people, and the act of writing it will also help their own learning.  The teacher though, will have to edit it at the end in order to remove misconceptions which can happen when someone is first learning something.</p>
+
+
+
+<a name="228079646"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228079646" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228079646">(Feb 27 2021 at 20:05)</a>:</h4>
+<p>That's an interesting loop, <span class="user-mention" data-user-id="280784">@Joshua Meyers</span>, but it can be tiring for the teacher: more work than writing a book on one's own.  I gave a course on classical mechanics, my student Derek Wise wrote great hand-written notes, then a grad student at another school jumped in and LaTeXed them up.  Great!  But this student added his own observations and jokes, almost none of which I agree with.  So now I'm going to spend a long time trying to polish the book further, and get it back to my conception of things.</p>
+
+
+
+<a name="228079758"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228079758" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228079758">(Feb 27 2021 at 20:07)</a>:</h4>
+<p>Jacques Carette:</p>
+<blockquote>
+<p>the days of being able to learn everything are long, long past. </p>
+</blockquote>
+<p>Yes.  I never wanted to learn <em>everything</em>.  At some stage I wanted to learn everything <em>interesting</em>, which cuts the job down by about 2 orders of magnitude.  <span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span> But even this is hopeless, especially because things tend to get more interesting when you know more about them.</p>
+
+
+
+<a name="228079885"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228079885" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228079885">(Feb 27 2021 at 20:09)</a>:</h4>
+<blockquote>
+<p>I spent just as much time learning combinatorics and analysis of algorithms from Phillippe Flajolet and Bruno Salvy at INRIA [....]</p>
+</blockquote>
+<p>That's cool!   This blog series of mine:</p>
+<ul>
+<li><a href="https://math.ucr.edu/home/baez/permutations/">Random permutations</a></li>
+</ul>
+<p>is heavily inspired by Phillipe Flajolet and Robert Sedgewick's book *<a href="http://algo.inria.fr/flajolet/Publications/book.pdf">Analytic Combinatorics</a>, which is actually very connected to Andre Joyal's theory of species, nicely formulated using category theory.</p>
+
+
+
+<a name="228079954"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228079954" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228079954">(Feb 27 2021 at 20:10)</a>:</h4>
+<blockquote>
+<p>I can sympathize with your choice to largely stay out of CS.</p>
+</blockquote>
+<p>Thanks.  But I'm still curious sometimes about what the hell you guys are talking about.  <span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span></p>
+
+
+
+<a name="228080838"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228080838" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joshua Meyers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228080838">(Feb 27 2021 at 20:24)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/ACT.20as.20a.20field/near/228079646">said</a>:</p>
+<blockquote>
+<p>That's an interesting loop, <span class="user-mention silent" data-user-id="280784">Joshua Meyers</span>, but it can be tiring for the teacher: more work than writing a book on one's own.  I gave a course on classical mechanics, my student Derek Wise wrote great hand-written notes, then a grad student at another school jumped in and LaTeXed them up.  Great!  But this student added his own observations and jokes, almost none of which I agree with.  So now I'm going to spend a long time trying to polish the book further, and get it back to my conception of things.</p>
+</blockquote>
+<p>Glad to see a real-life example!  Sure, it can be more work than writing a book on one's own, but I think that if it was done right, it could be much less work!  In the example you gave, the participants didn't consciously decide to do a process for producing pedagogical material and agree on the terms of the process at the beginning, rather it just sort of "fell into place".  I think that if people did this sort of process intentionally it could be optimized for efficiency.  And I don't think that efficiency is an end in itself, but there is a dearth of good pedagogical material and producing it more efficiently would cause more to be produced.</p>
+
+
+
+<a name="228081969"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228081969" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228081969">(Feb 27 2021 at 20:43)</a>:</h4>
+<blockquote>
+<p>Sure, it can be more work than writing a book on one's own, but I think that if it was done right, it could be much less work! </p>
+</blockquote>
+<p>In my case there was much less work because someone else translated a bunch of notes into LaTeX... and now some more work because I have to deal with this.   On the whole it was <em>less</em> work.  But you're right, this collaboration was not planned, it just happened.  It would have worked better if the grad student had simply contacted me before converting the notes into LaTeX!</p>
+
+
+
+<a name="228088431"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228088431" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228088431">(Feb 27 2021 at 22:52)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="296322">Jacques Carette</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/ACT.20as.20a.20field/near/228065600">said</a>:</p>
+<blockquote>
+<p>The whole endeavour is also hampered by the opaqueness of most books on category theory. There are some exceptions (Conceptual Mathematics as one example), but most do not state some very simple intuitions, such as:</p>
+<ul>
+<li>categories embody the idea of 'typed composition'</li>
+<li>functors are just homomorphisms, which themselves are just 'functions that preserve structure'</li>
+<li>natural transformations are just homomorphisms (of functors)</li>
+</ul>
+</blockquote>
+<p>I'm not sure what you're getting at here.  I just had a look at some books on category theory.  The section on functors in MacLane's "Categories for the working mathematician" begins with the sentence "A <em>functor</em> is a morphism of categories".  Similarly, Leinster's "Basic category theory" starts the section on functors with "One of the lessons of category theory is that whenever we meet a new type of mathematical object, we should always ask whether there is a sensible notion of ‘map’ between such objects. We can ask this about categories themselves. The answer is yes, and a map between categories is called a functor."  In fact, I can't imagine introducing functors without saying that they are the obvious structure-preserving morphisms between categories.</p>
+<p>In general I think it is important to realize that "opaque" and "simpler" are relative concepts.  What is opaque for you may be simpler for someone else, and vice versa.</p>
+
+
+
+<a name="228088878"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228088878" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228088878">(Feb 27 2021 at 23:01)</a>:</h4>
+<blockquote>
+<p>In general I think it is important to realize that "opaque" and "simpler" are relative concepts. What is opaque for you may be simpler for someone else, and vice versa.</p>
+</blockquote>
+<p>I was trying to say that too, in a very friendly way.   I complain a lot about the opaqueness of other people's writing - to myself.  But I don't think it helps a lot to complain about it publicly.   Instead I try to explain things as soon as I learn them - and explain them the way I wish someone had explained them to me.   </p>
+<p>When learning a subject I think it's important to explain it to other people <em>soon</em>, because later on a bunch of things become obvious and it's hard to remember what was hard to understand.   It's also good to explain things <em>later</em>, since then you can zip past all that obvious stuff and focus on deeper issues.</p>
+
+
+
+<a name="228089257"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228089257" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228089257">(Feb 27 2021 at 23:08)</a>:</h4>
+<p>Category theory is a "least common denominator" subject for a whole lot of people, which surely makes it really hard or even impossible to write a textbook that could please everyone who might want to read it. Mac Lane surely isn't a bad book, but he definitely has an audience in mind: pure mathematicians, probably with a leaning towards algebra. So it's not a surprise that computer scientists find it a bit hard to read. Luckily by now we have a bunch of good introductions written for different audiences. The only thing is making sure the right reader finds the right book</p>
+
+
+
+<a name="228089337"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228089337" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bob Coecke <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228089337">(Feb 27 2021 at 23:10)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/ACT.20as.20a.20field/near/228088431">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="296322">Jacques Carette</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/ACT.20as.20a.20field/near/228065600">said</a>:</p>
+<blockquote>
+<p>The whole endeavour is also hampered by the opaqueness of most books on category theory. There are some exceptions (Conceptual Mathematics as one example), but most do not state some very simple intuitions, such as:</p>
+<ul>
+<li>categories embody the idea of 'typed composition'</li>
+<li>functors are just homomorphisms, which themselves are just 'functions that preserve structure'</li>
+<li>natural transformations are just homomorphisms (of functors)</li>
+</ul>
+</blockquote>
+<p>I'm not sure what you're getting at here.  I just had a look at some books on category theory.  The section on functors in MacLane's "Categories for the working mathematician" begins with the sentence "A <em>functor</em> is a morphism of categories".  Similarly, Leinster's "Basic category theory" starts the section on functors with "One of the lessons of category theory is that whenever we meet a new type of mathematical object, we should always ask whether there is a sensible notion of ‘map’ between such objects. We can ask this about categories themselves. The answer is yes, and a map between categories is called a functor."  In fact, I can't imagine introducing functors without saying that they are the obvious structure-preserving morphisms between categories.</p>
+<p>In general I think it is important to realize that "opaque" and "simpler" are relative concepts.  What is opaque for you may be simpler for someone else, and vice versa.</p>
+</blockquote>
+<p>For much of categorical quantum mechanics etc, starting with categories, functors, and especially natural transformations already kills the audience.  None of that is needed.  That's the problem for non-mathematicians with category theory.  Adjunctions also don't come into the game, nor limits.  So it's a very different thing, really.  The nr1 definition is symmetric monoidal category, and you don't need all the above stuff to explain what it is (contra what MacLane does).  When I was still a kid, we wrote this: <a href="https://arxiv.org/abs/0905.3010">https://arxiv.org/abs/0905.3010</a></p>
+
+
+
+<a name="228089457"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228089457" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228089457">(Feb 27 2021 at 23:12)</a>:</h4>
+<p>I thought you <em>are</em> still a kid.</p>
+
+
+
+<a name="228089482"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228089482" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bob Coecke <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228089482">(Feb 27 2021 at 23:13)</a>:</h4>
+<p>These days I am allowed to drink alcohol.</p>
+
+
+
+<a name="228089503"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/ACT%20as%20a%20field/near/228089503" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Joshua Meyers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/ACT.20as.20a.20field.html#228089503">(Feb 27 2021 at 23:13)</a>:</h4>
+<p>Right now we have a thread on Applied CT as a field and a thread on CT applied to fields lol</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Feb 27 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 28 2021 at 00:14 UTC</p>

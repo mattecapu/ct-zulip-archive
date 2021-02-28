@@ -9,10 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [decomposing 2d TQFTs](topic/decomposing.202d.20TQFTs.html) (47 messages, latest: Feb 27 2021 at 00:04)
-* [products in a monoid](topic/products.20in.20a.20monoid.html) (11 messages, latest: Feb 26 2021 at 22:37)
+* [ε-δ is "semi-adjunction"?](topic/.CE.B5-.CE.B4.20is.20.22semi-adjunction.22.3F.html) (36 messages, latest: Feb 27 2021 at 21:47)
+* [products in a monoid](topic/products.20in.20a.20monoid.html) (30 messages, latest: Feb 27 2021 at 21:28)
+* [decomposing 2d TQFTs](topic/decomposing.202d.20TQFTs.html) (64 messages, latest: Feb 27 2021 at 20:26)
 * [Finite Biproducts Without Pointedness](topic/Finite.20Biproducts.20Without.20Pointedness.html) (7 messages, latest: Feb 26 2021 at 21:33)
-* [ε-δ is "semi-adjunction"?](topic/.CE.B5-.CE.B4.20is.20.22semi-adjunction.22.3F.html) (34 messages, latest: Feb 26 2021 at 09:55)
 * [Walking arrow in a 2-category](topic/Walking.20arrow.20in.20a.202-category.html) (2 messages, latest: Feb 26 2021 at 02:08)
 * [conditions for points functor to have a left SMC adjoint?](topic/conditions.20for.20points.20functor.20to.20have.20a.20left.20SMC.20adjoint.3F.html) (4 messages, latest: Feb 25 2021 at 18:14)
 * [SMCs as opfibrations](topic/SMCs.20as.20opfibrations.html) (10 messages, latest: Feb 23 2021 at 20:09)
@@ -322,4 +322,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 27 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Feb 28 2021 at 00:14 UTC</p>
