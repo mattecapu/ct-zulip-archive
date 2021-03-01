@@ -9,8 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [differential rig categories](topic/differential.20rig.20categories.html) (3 messages, latest: Feb 28 2021 at 09:44)
+* [products in a monoid](topic/products.20in.20a.20monoid.html) (31 messages, latest: Feb 28 2021 at 08:56)
 * [ε-δ is "semi-adjunction"?](topic/.CE.B5-.CE.B4.20is.20.22semi-adjunction.22.3F.html) (36 messages, latest: Feb 27 2021 at 21:47)
-* [products in a monoid](topic/products.20in.20a.20monoid.html) (30 messages, latest: Feb 27 2021 at 21:28)
 * [decomposing 2d TQFTs](topic/decomposing.202d.20TQFTs.html) (64 messages, latest: Feb 27 2021 at 20:26)
 * [Finite Biproducts Without Pointedness](topic/Finite.20Biproducts.20Without.20Pointedness.html) (7 messages, latest: Feb 26 2021 at 21:33)
 * [Walking arrow in a 2-category](topic/Walking.20arrow.20in.20a.202-category.html) (2 messages, latest: Feb 26 2021 at 02:08)
@@ -322,4 +323,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Feb 28 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 01 2021 at 00:14 UTC</p>
