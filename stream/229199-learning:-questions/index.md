@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [beginner questions](topic/beginner.20questions.html) (25 messages, latest: Mar 02 2021 at 00:06)
+* [beginner questions](topic/beginner.20questions.html) (27 messages, latest: Mar 02 2021 at 00:47)
 * [I forgot a bunch of stuff](topic/I.20forgot.20a.20bunch.20of.20stuff.html) (10 messages, latest: Mar 01 2021 at 22:23)
 * [differential rig categories](topic/differential.20rig.20categories.html) (3 messages, latest: Feb 28 2021 at 09:44)
 * [products in a monoid](topic/products.20in.20a.20monoid.html) (31 messages, latest: Feb 28 2021 at 08:56)
@@ -325,4 +325,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 02 2021 at 00:11 UTC</p>
+<hr><p>Last updated: Mar 02 2021 at 00:59 UTC</p>
