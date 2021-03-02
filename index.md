@@ -8,15 +8,15 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (313 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (315 topics)
 
-* [general](stream/229111-general/index.html) (178 topics)
+* [general](stream/229111-general/index.html) (180 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (123 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (124 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (95 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (66 topics)
+* [general: events](stream/229141-general:-events/index.html) (67 topics)
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
@@ -58,7 +58,7 @@ permalink: /index.html
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (13 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (12 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (13 topics)
 
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
@@ -128,4 +128,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 01 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 02 2021 at 00:11 UTC</p>
