@@ -9,7 +9,7 @@ permalink: /stream/229952-theory:-type-theory/index.html
 
 ### Topics:
 
-* [self-types](topic/self-types.html) (4 messages, latest: Mar 01 2021 at 20:42)
+* [self-types](topic/self-types.html) (6 messages, latest: Mar 02 2021 at 11:35)
 * [generating type theories](topic/generating.20type.20theories.html) (25 messages, latest: Dec 22 2020 at 23:43)
 * [Normalization by Evaluation](topic/Normalization.20by.20Evaluation.html) (43 messages, latest: Dec 05 2020 at 13:25)
 * [weak homotopy equivalence of types](topic/weak.20homotopy.20equivalence.20of.20types.html) (13 messages, latest: Dec 04 2020 at 16:11)
@@ -23,4 +23,4 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [W-types and CFGs](topic/W-types.20and.20CFGs.html) (11 messages, latest: Apr 02 2020 at 16:00)
 * [homotopy type theory](topic/homotopy.20type.20theory.html) (10 messages, latest: Mar 26 2020 at 23:30)
 
-<hr><p>Last updated: Mar 02 2021 at 00:59 UTC</p>
+<hr><p>Last updated: Mar 03 2021 at 00:13 UTC</p>

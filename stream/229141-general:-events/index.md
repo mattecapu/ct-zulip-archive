@@ -9,6 +9,9 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [ACT2021 Adjoint School](topic/ACT2021.20Adjoint.20School.html) (19 messages, latest: Mar 02 2021 at 18:30)
+* [category-theoretic language for human flourishing](topic/category-theoretic.20language.20for.20human.20flourishing.html) (1 message, latest: Mar 02 2021 at 18:25)
+* [Bohemian L&P Cafe: Rosicky](topic/Bohemian.20L.26P.20Cafe.3A.20Rosicky.html) (1 message, latest: Mar 02 2021 at 15:33)
 * [Theoretical physics in the 21st century](topic/Theoretical.20physics.20in.20the.2021st.20century.html) (1 message, latest: Mar 01 2021 at 22:48)
 * [UNAM category seminar](topic/UNAM.20category.20seminar.html) (20 messages, latest: Feb 24 2021 at 23:48)
 * [Bohemian L&P Cafe: Makkai](topic/Bohemian.20L.26P.20Cafe.3A.20Makkai.html) (7 messages, latest: Feb 23 2021 at 15:04)
@@ -16,7 +19,6 @@ permalink: /stream/229141-general:-events/index.html
 * [ICLA 2021](topic/ICLA.202021.html) (2 messages, latest: Feb 22 2021 at 16:34)
 * [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (9 messages, latest: Feb 18 2021 at 17:03)
 * [Online Category Theory Seminar at Brandon University](topic/Online.20Category.20Theory.20Seminar.20at.20Brandon.20University.html) (1 message, latest: Feb 18 2021 at 07:45)
-* [ACT2021 Adjoint School](topic/ACT2021.20Adjoint.20School.html) (10 messages, latest: Feb 17 2021 at 19:39)
 * [AMS Sectional Meetings](topic/AMS.20Sectional.20Meetings.html) (8 messages, latest: Feb 15 2021 at 18:36)
 * [Australian Category Seminar](topic/Australian.20Category.20Seminar.html) (22 messages, latest: Feb 14 2021 at 17:53)
 * [Logic Webinar@IITK](topic/Logic.20Webinar.40IITK.html) (7 messages, latest: Feb 12 2021 at 13:29)
@@ -77,4 +79,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Mar 02 2021 at 00:59 UTC</p>
+<hr><p>Last updated: Mar 03 2021 at 00:13 UTC</p>

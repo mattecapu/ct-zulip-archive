@@ -1,0 +1,68 @@
+[
+    {
+        "content": "<p>Yes, the \"cofree\" structures come from having a <em>right</em> adjoint to the forgetful <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>o</mi><mi>a</mi><mi>l</mi><mi>g</mi><mo>→</mo><mi>S</mi><mi>e</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">Coalg\\to Set</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\" style=\"margin-right:0.01968em;\">l</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\">t</span></span></span></span>. I haven't yet gotten a solid intuition of coinduction, but it seems very powerful. Bart Jacobs' book <a href=\"http://www.cs.ru.nl/B.Jacobs/CLG/JacobsCoalgebraIntro.pdf\">http://www.cs.ru.nl/B.Jacobs/CLG/JacobsCoalgebraIntro.pdf</a> is a good introduction.</p>",
+        "id": 228336351,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1614647140
+    },
+    {
+        "content": "<p>As for why it's become prominent in CS and not math, that is a very good question.</p>",
+        "id": 228336369,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1614647158
+    },
+    {
+        "content": "<p>Thank you Christian</p>",
+        "id": 228336769,
+        "sender_full_name": "Nasos Evangelou-Oost",
+        "timestamp": 1614647385
+    },
+    {
+        "content": "<p>For some reasons (which we could get into) mathematicians like to describe algebraic structures - like groups, rings, etc. - using Lawvere theories, and then it's very handy that any structure of a given kind can be described using <em>free</em> ones, either directly as an algebra of a monad on Set, or as a coequalizer of free algebras (which is almost the same thing).   </p>\n<p>What would happen to math if took the other path and tried to use coalgebras of comonads on Set?</p>",
+        "id": 228337822,
+        "sender_full_name": "John Baez",
+        "timestamp": 1614648072
+    },
+    {
+        "content": "<p>One possible reason is that mathematicians are generally happy to work directly with infinite things, whereas programmers are forced to encode infinite things with finite information.  One of the uses of coinductive structures is to do the latter, but mathematicians don't need them as much for this.  Sometimes what the mathematicians are doing would be <a href=\"https://golem.ph.utexas.edu/category/2011/07/coinductive_definitions.html\">clarified</a> by a coinductive perspective, but coinduction also has limitations relative to explicit infinity, so the mathematicians aren't hugely motivated to pick it up.</p>",
+        "id": 228338166,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1614648325
+    },
+    {
+        "content": "<blockquote>\n<p>mathematicians are generally happy to work directly with infinite things</p>\n</blockquote>\n<p><span aria-label=\"muscle\" class=\"emoji emoji-1f4aa\" role=\"img\" title=\"muscle\">:muscle:</span>   It's interesting how we convince ourselves that we can do this.</p>",
+        "id": 228338572,
+        "sender_full_name": "John Baez",
+        "timestamp": 1614648585
+    },
+    {
+        "content": "<p>It's not as if our brains are infinitely big.</p>",
+        "id": 228338657,
+        "sender_full_name": "John Baez",
+        "timestamp": 1614648622
+    },
+    {
+        "content": "<p>Another possible reason is that mathematics is generally static whereas programming can be dynamic.  For instance, variables in mathematics don't change their values; if we let <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">x=3</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">3</span></span></span></span> then we don't go back later and say let <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mi>x</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">x = x+1</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.64444em;vertical-align:0em;\"></span><span class=\"mord\">1</span></span></span></span>, and there's no analogue of a for-loop in mathematics: we only use recursion and induction, never iteration.  The relevance of this here is that inductive definitions are datatypes that describe what something <em>is</em>, in a static way, whereas coinductive definitions are <em>interfaces</em> or <em>behaviors</em> that a dynamic process can implement.</p>",
+        "id": 228340624,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1614650148
+    },
+    {
+        "content": "<p>The usual description of a coinductive definition as an infinite object is the \"trace\" of all possible execution paths of a process, but since a corecursively defined function doesn't evaluate until it's \"forced\", I sometimes find it helpful to instead think of the definition of such a function as creating an \"object\" or \"process\" that you can \"communicate\" with by applying a destructor, thereby getting a response and/or changing its \"state\".</p>",
+        "id": 228340982,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1614650409
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/coinductive.20free.20things/near/228337822\">said</a>:</p>\n<blockquote>\n<p>What would happen to math if took the other path and tried to use coalgebras of comonads on Set?</p>\n</blockquote>\n<p>Of course, <a href=\"https://ncatlab.org/nlab/show/coalgebra\">coalgebraic structures</a> <em>do</em> pop up in mathematics.  But it's true that they generally tend to play second fiddle to algebraic ones.  I wonder how much of that can be blamed on the nature of our base categories like Set.</p>\n<p>What are some good examples of categories that are comonadic over Set?  Here are two simple ones:</p>\n<ul>\n<li>If <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span> is a monoid, then the category of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span>-sets is both monadic and comonadic.  The comonad is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mo>↦</mo><msup><mi>X</mi><mi>M</mi></msup></mrow><annotation encoding=\"application/x-tex\">X \\mapsto X^M</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69433em;vertical-align:-0.011em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">↦</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8413309999999999em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413309999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.10903em;\">M</span></span></span></span></span></span></span></span></span></span></span>.</li>\n<li>If <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> is any set, then the slice category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow><mi mathvariant=\"normal\">/</mi><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Set}/A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">S</span><span class=\"mord mathrm\">e</span><span class=\"mord mathrm\">t</span></span><span class=\"mord\">/</span><span class=\"mord mathnormal\">A</span></span></span></span> is comonadic.  The comonad is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mo>↦</mo><mi>X</mi><mo>×</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">X \\mapsto X\\times A</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69433em;vertical-align:-0.011em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">↦</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.76666em;vertical-align:-0.08333em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222222222222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span>.</li>\n</ul>",
+        "id": 228342111,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1614651245
+    },
+    {
+        "content": "<p>Here are some relevant old discussions from the n-Cafe: <a href=\"https://golem.ph.utexas.edu/category/2008/11/coalgebraically_thinking.html\">https://golem.ph.utexas.edu/category/2008/11/coalgebraically_thinking.html</a>, <a href=\"https://golem.ph.utexas.edu/category/2008/12/the_status_of_coalgebra.html\">https://golem.ph.utexas.edu/category/2008/12/the_status_of_coalgebra.html</a>.  Maybe John can find more.</p>",
+        "id": 228342185,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1614651314
+    }
+]
