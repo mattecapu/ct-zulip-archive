@@ -9,6 +9,8 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [ItaCa Fest 2021](topic/ItaCa.20Fest.202021.html) (1 message, latest: Mar 03 2021 at 12:06)
+* [CT20->21](topic/CT20-.3E21.html) (3 messages, latest: Mar 03 2021 at 09:19)
 * [ACT2021 Adjoint School](topic/ACT2021.20Adjoint.20School.html) (19 messages, latest: Mar 02 2021 at 18:30)
 * [category-theoretic language for human flourishing](topic/category-theoretic.20language.20for.20human.20flourishing.html) (1 message, latest: Mar 02 2021 at 18:25)
 * [Bohemian L&P Cafe: Rosicky](topic/Bohemian.20L.26P.20Cafe.3A.20Rosicky.html) (1 message, latest: Mar 02 2021 at 15:33)
@@ -79,4 +81,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Mar 03 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Mar 04 2021 at 00:13 UTC</p>
