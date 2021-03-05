@@ -9,8 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [beginner questions](topic/beginner.20questions.html) (77 messages, latest: Mar 03 2021 at 23:42)
-* [coinductive free things](topic/coinductive.20free.20things.html) (11 messages, latest: Mar 02 2021 at 02:15)
+* [beginner questions](topic/beginner.20questions.html) (89 messages, latest: Mar 05 2021 at 00:01)
+* [coinductive free things](topic/coinductive.20free.20things.html) (35 messages, latest: Mar 04 2021 at 18:14)
+* [Equationally presenting monads](topic/Equationally.20presenting.20monads.html) (4 messages, latest: Mar 04 2021 at 13:27)
 * [I forgot a bunch of stuff](topic/I.20forgot.20a.20bunch.20of.20stuff.html) (10 messages, latest: Mar 01 2021 at 22:23)
 * [differential rig categories](topic/differential.20rig.20categories.html) (3 messages, latest: Feb 28 2021 at 09:44)
 * [products in a monoid](topic/products.20in.20a.20monoid.html) (31 messages, latest: Feb 28 2021 at 08:56)
@@ -326,4 +327,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 04 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Mar 05 2021 at 00:14 UTC</p>

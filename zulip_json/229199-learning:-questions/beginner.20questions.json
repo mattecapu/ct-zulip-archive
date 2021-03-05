@@ -460,5 +460,77 @@
         "id": 228689407,
         "sender_full_name": "John Baez",
         "timestamp": 1614814954
+    },
+    {
+        "content": "<p>This topic was moved here from <a class=\"stream-topic\" data-stream-id=\"229199\" href=\"/#narrow/stream/229199-learning.3A-questions/topic/beginner.20questions\">#learning: questions &gt; beginner questions</a> by <span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span></p>",
+        "id": 228732503,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1614845745
+    },
+    {
+        "content": "<p>This topic was moved by <span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span> to <a class=\"stream-topic\" data-stream-id=\"229451\" href=\"/#narrow/stream/229451-general.3A-off-topic/topic/greek.20shenanigans.20and.20misspelled.20words\">#general: off-topic &gt; greek shenanigans and misspelled words</a></p>",
+        "id": 228732504,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1614845745
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/beginner.20questions/near/228689407\">said</a>:</p>\n<blockquote>\n<p>I found this talk by cleverly typing \"MSP101 bruno\" into Google.</p>\n</blockquote>\n<p>never underestimate the power of googling</p>",
+        "id": 228732717,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1614845852
+    },
+    {
+        "content": "<p>There's also his other talk for the CyberCats seminar <a href=\"https://www.youtube.com/watch?v=tKM8JdXJEII\">https://www.youtube.com/watch?v=tKM8JdXJEII</a><br>\nAFAIR there's a lot of overlap between the two, but just in case</p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"tKM8JdXJEII\" href=\"https://www.youtube.com/watch?v=tKM8JdXJEII\"><img src=\"https://i.ytimg.com/vi/tKM8JdXJEII/default.jpg\"></a></div>",
+        "id": 228732862,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1614845932
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/beginner.20questions/near/228571446\">said</a>:</p>\n<blockquote>\n<p>I think the true answer is actually closer to \"game theory is a kind of machine learning\" than the other way round</p>\n</blockquote>\n<p>The correspondence I've seen already is that there's a functor from learners into games, which initially seems to suggest the converse to that. Does that suggest there's an interesting map in the other direction?</p>",
+        "id": 228737449,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1614848419
+    },
+    {
+        "content": "<p>If there is a nice map in both directions (learners to games and games to learners), do we further have an adjunction between the two?</p>",
+        "id": 228739144,
+        "sender_full_name": "Jason Erbele",
+        "timestamp": 1614849273
+    },
+    {
+        "content": "<p>It really depends on how you define stuff. I'm quite eager to make game and learners the same thing, since their categorical semantics is so similar. One key difference is in the computation of equilibria/learning process, but they can be put on the same footing as well (by swapping a gadget attached to them)<br>\nIt'd be nice to link to a paper now, but there's not one yet on this : <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 228744752,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1614852075
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"378472\">Dylan Braithwaite</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/beginner.20questions/near/228737449\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/beginner.20questions/near/228571446\">said</a>:</p>\n<blockquote>\n<p>I think the true answer is actually closer to \"game theory is a kind of machine learning\" than the other way round</p>\n</blockquote>\n<p>The correspondence I've seen already is that there's a functor from learners into games, which initially seems to suggest the converse to that. Does that suggest there's an interesting map in the other direction?</p>\n</blockquote>\n<p>If you take the definitions exactly as given in Backprop As Functor and Compositional Game Theory then in a completely literal sense you get a functor from learners to games (I wrote the construction in this short tech report: <a href=\"https://arxiv.org/abs/1902.08666\">https://arxiv.org/abs/1902.08666</a>), and I think not the other way. But in private we've been fiddling with the definitions of both so they are both subsumed under a single definition, since we had a gut feeling that it was a good idea. Mostly this involves making learners look more like games. In particular, almost all of the differences between the 2 papers arise from the fact that they're not talking about the differentiable structure that's in machine learning, they stick to Set (which in turn buys them some more generality to talk about other kinds of learners that don't use differentiation). Once you put the differentiable structure back into Backprop As Functor it <em>really</em> starts to look the same as open games - not that there's an adjunction or even an equivalence, but that they're literally the same category</p>",
+        "id": 228750781,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1614854947
+    },
+    {
+        "content": "<p>Exactly - I'm still quite fascinated that it's now plausible to say that <em>exactly the same structure might be shared by learners and open games</em>. Now I'm actually thinking it might even be a good idea to create a stream here about category theory &amp; machine learning... there's definitely papers piling up, having finally  uploaded ours! :) <a href=\"https://arxiv.org/abs/2103.01931\">Categorical Foundations of Gradient-Based Learning</a></p>",
+        "id": 228807798,
+        "sender_full_name": "Bruno Gavranovic",
+        "timestamp": 1614876490
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276875\">@Bruno Gavranovic</span> do you want to mention that paper over on <a class=\"stream\" data-stream-id=\"258900\" href=\"/#narrow/stream/258900-practice.3A-our-papers\">#practice: our papers</a> ?</p>",
+        "id": 228808095,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1614876600
+    },
+    {
+        "content": "<p>Ah, I was just looking if there's a place to mention papers. Yes I will!</p>",
+        "id": 228808261,
+        "sender_full_name": "Bruno Gavranovic",
+        "timestamp": 1614876641
+    },
+    {
+        "content": "<p>Please do create that stream on category theory &amp; machine learning! I would really like to teach a course on that, but I need some good arguments to convince the rest of my department...</p>",
+        "id": 228872878,
+        "sender_full_name": "Peter Arndt",
+        "timestamp": 1614902480
     }
 ]
