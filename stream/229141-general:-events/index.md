@@ -9,7 +9,9 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [Clubhouse Category Theory](topic/Clubhouse.20Category.20Theory.html) (14 messages, latest: Mar 04 2021 at 23:35)
+* [Clubhouse Category Theory](topic/Clubhouse.20Category.20Theory.html) (21 messages, latest: Mar 05 2021 at 21:03)
+* [Categories for quantum codes](topic/Categories.20for.20quantum.20codes.html) (1 message, latest: Mar 05 2021 at 15:24)
+* [ICLA 2021](topic/ICLA.202021.html) (3 messages, latest: Mar 05 2021 at 06:49)
 * [ItaCa Fest 2021](topic/ItaCa.20Fest.202021.html) (1 message, latest: Mar 03 2021 at 12:06)
 * [CT20->21](topic/CT20-.3E21.html) (3 messages, latest: Mar 03 2021 at 09:19)
 * [ACT2021 Adjoint School](topic/ACT2021.20Adjoint.20School.html) (19 messages, latest: Mar 02 2021 at 18:30)
@@ -19,7 +21,6 @@ permalink: /stream/229141-general:-events/index.html
 * [UNAM category seminar](topic/UNAM.20category.20seminar.html) (20 messages, latest: Feb 24 2021 at 23:48)
 * [Bohemian L&P Cafe: Makkai](topic/Bohemian.20L.26P.20Cafe.3A.20Makkai.html) (7 messages, latest: Feb 23 2021 at 15:04)
 * [Higher Structures @CRM](topic/Higher.20Structures.20.40CRM.html) (4 messages, latest: Feb 23 2021 at 07:42)
-* [ICLA 2021](topic/ICLA.202021.html) (2 messages, latest: Feb 22 2021 at 16:34)
 * [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (9 messages, latest: Feb 18 2021 at 17:03)
 * [Online Category Theory Seminar at Brandon University](topic/Online.20Category.20Theory.20Seminar.20at.20Brandon.20University.html) (1 message, latest: Feb 18 2021 at 07:45)
 * [AMS Sectional Meetings](topic/AMS.20Sectional.20Meetings.html) (8 messages, latest: Feb 15 2021 at 18:36)
@@ -82,4 +83,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Mar 05 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 06 2021 at 00:13 UTC</p>

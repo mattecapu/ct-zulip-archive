@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Infinity kan extensions](topic/Infinity.20kan.20extensions.html) (1 message, latest: Mar 05 2021 at 13:07)
 * [beginner questions](topic/beginner.20questions.html) (89 messages, latest: Mar 05 2021 at 00:01)
 * [coinductive free things](topic/coinductive.20free.20things.html) (35 messages, latest: Mar 04 2021 at 18:14)
 * [Equationally presenting monads](topic/Equationally.20presenting.20monads.html) (4 messages, latest: Mar 04 2021 at 13:27)
@@ -327,4 +328,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 05 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 06 2021 at 00:13 UTC</p>
