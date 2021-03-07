@@ -34,5 +34,23 @@
         "id": 228394836,
         "sender_full_name": "Nick Scheel",
         "timestamp": 1614684939
+    },
+    {
+        "content": "<p>You may already be aware but the <a href=\"https://github.com/uwu-tech/Kind\">Kind</a> language (recently renamed from “Formality”) has an implementation of self types if it helps at all. The language targets JS, Haskell and also an experimental interaction net (optimal reduction) based backend. </p>\n<p>I am also interested in a categorical interpretation of self types but that is beyond my abilities at the moment.</p>",
+        "id": 229089367,
+        "sender_full_name": "Sam Kuhn",
+        "timestamp": 1615029143
+    },
+    {
+        "content": "<p>This is quite a nice informal summary from Victor Maia (the main author of Kind): </p>\n<blockquote>\n<p>The main insight behind self types is easy to explain. Simple functions can be written as A -&gt; B, and an application f a has type B. Dependent functions can be written as (x: A) -&gt; B x, and an application f a has type B a. The insight is that the type returned by an application has access to the value of the argument a. Self dependent functions can be written as s(x: A) -&gt; B s x, and an application f a has type B f a. The insight is that the type returned by an application can also access the value of the function f! This simple, elegant extension allow us to construct inductive datatypes with lambdas.</p>\n</blockquote>\n<p>Original article <a href=\"https://medium.com/@maiavictor/funext-from-self-cc738b441050\">here</a>.</p>",
+        "id": 229089979,
+        "sender_full_name": "Sam Kuhn",
+        "timestamp": 1615029728
+    },
+    {
+        "content": "<p>But the problem is that this \"insight\" doesn't make much sense in category theory, where you have to have the codomain of a morphism before you can talk about the morphism.</p>",
+        "id": 229104654,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615043291
     }
 ]

@@ -57,6 +57,29 @@ permalink: /stream/229952-theory:-type-theory/topic/self-types.html
 
 
 
+<a name="229089367"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/self-types/near/229089367" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sam Kuhn <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/self-types.html#229089367">(Mar 06 2021 at 11:12)</a>:</h4>
+<p>You may already be aware but the <a href="https://github.com/uwu-tech/Kind">Kind</a> language (recently renamed from “Formality”) has an implementation of self types if it helps at all. The language targets JS, Haskell and also an experimental interaction net (optimal reduction) based backend. </p>
+<p>I am also interested in a categorical interpretation of self types but that is beyond my abilities at the moment.</p>
+
+
+
+<a name="229089979"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/self-types/near/229089979" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sam Kuhn <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/self-types.html#229089979">(Mar 06 2021 at 11:22)</a>:</h4>
+<p>This is quite a nice informal summary from Victor Maia (the main author of Kind): </p>
+<blockquote>
+<p>The main insight behind self types is easy to explain. Simple functions can be written as A -&gt; B, and an application f a has type B. Dependent functions can be written as (x: A) -&gt; B x, and an application f a has type B a. The insight is that the type returned by an application has access to the value of the argument a. Self dependent functions can be written as s(x: A) -&gt; B s x, and an application f a has type B f a. The insight is that the type returned by an application can also access the value of the function f! This simple, elegant extension allow us to construct inductive datatypes with lambdas.</p>
+</blockquote>
+<p>Original article <a href="https://medium.com/@maiavictor/funext-from-self-cc738b441050">here</a>.</p>
+
+
+
+<a name="229104654"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/self-types/near/229104654" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/self-types.html#229104654">(Mar 06 2021 at 15:08)</a>:</h4>
+<p>But the problem is that this "insight" doesn't make much sense in category theory, where you have to have the codomain of a morphism before you can talk about the morphism.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Mar 06 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Mar 07 2021 at 00:14 UTC</p>

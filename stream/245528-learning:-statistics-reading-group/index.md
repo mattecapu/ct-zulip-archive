@@ -9,6 +9,7 @@ permalink: /stream/245528-learning:-statistics-reading-group/index.html
 
 ### Topics:
 
+* [information geometry](topic/information.20geometry.html) (6 messages, latest: Mar 06 2021 at 06:38)
 * [Information Geometry](topic/Information.20Geometry.html) (15 messages, latest: Mar 05 2021 at 23:38)
 * [general](topic/general.html) (108 messages, latest: Aug 22 2020 at 18:03)
 * [McCullagh (2002)](topic/McCullagh.20(2002).html) (49 messages, latest: Aug 08 2020 at 17:07)
@@ -16,4 +17,4 @@ permalink: /stream/245528-learning:-statistics-reading-group/index.html
 * [housekeeping](topic/housekeeping.html) (24 messages, latest: Jun 27 2020 at 20:25)
 * [time zones](topic/time.20zones.html) (15 messages, latest: Jun 15 2020 at 05:24)
 
-<hr><p>Last updated: Mar 06 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Mar 07 2021 at 00:14 UTC</p>

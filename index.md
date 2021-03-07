@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (318 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (321 topics)
 
 * [general](stream/229111-general/index.html) (181 topics)
 
@@ -80,9 +80,9 @@ permalink: /index.html
 
 * [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (7 topics)
 
-* [languages: francais/French](stream/231124-languages:-francais/French/index.html) (6 topics)
+* [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
-* [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (6 topics)
+* [languages: francais/French](stream/231124-languages:-francais/French/index.html) (6 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (6 topics)
 
@@ -128,4 +128,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 06 2021 at 00:13 UTC</p>
+<hr><p>Last updated: Mar 07 2021 at 00:14 UTC</p>
