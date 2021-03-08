@@ -9,6 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
+* [Category of sequents?](topic/Category.20of.20sequents.3F.html) (33 messages, latest: Mar 07 2021 at 15:01)
 * [for all x implies exists x?](topic/for.20all.20x.20implies.20exists.20x.3F.html) (122 messages, latest: Feb 27 2021 at 02:39)
 * [Even more exponentials in linear logic](topic/Even.20more.20exponentials.20in.20linear.20logic.html) (5 messages, latest: Feb 23 2021 at 06:09)
 * [Terminology: “a calculus of sequents”](topic/Terminology.3A.20.E2.80.9Ca.20calculus.20of.20sequents.E2.80.9D.html) (25 messages, latest: Feb 21 2021 at 22:01)
@@ -25,7 +26,6 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Type theory and sequent calculus](topic/Type.20theory.20and.20sequent.20calculus.html) (13 messages, latest: Oct 25 2020 at 19:25)
 * [Why Finitely Axiomatizable?](topic/Why.20Finitely.20Axiomatizable.3F.html) (60 messages, latest: Oct 19 2020 at 23:07)
 * [Inference rules for sequents without exchange](topic/Inference.20rules.20for.20sequents.20without.20exchange.html) (61 messages, latest: Oct 18 2020 at 16:53)
-* [Category of sequents?](topic/Category.20of.20sequents.3F.html) (30 messages, latest: Oct 16 2020 at 15:32)
 * [Ideal Notation](topic/Ideal.20Notation.html) (1 message, latest: Sep 05 2020 at 17:28)
 * [Girard's latest work](topic/Girard's.20latest.20work.html) (16 messages, latest: Jul 15 2020 at 21:26)
 * [Filters](topic/Filters.html) (2 messages, latest: Jun 21 2020 at 14:01)
@@ -38,4 +38,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Mar 07 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 08 2021 at 00:14 UTC</p>

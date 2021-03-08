@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (321 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (322 topics)
 
 * [general](stream/229111-general/index.html) (181 topics)
 
@@ -22,7 +22,7 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (56 topics)
+* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (58 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -84,6 +84,8 @@ permalink: /index.html
 
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (6 topics)
 
+* [practice: our work](stream/274877-practice:-our-work/index.html) (6 topics)
+
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (6 topics)
 
 * [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (6 topics)
@@ -99,8 +101,6 @@ permalink: /index.html
 * [practice: translation](stream/260000-practice:-translation/index.html) (5 topics)
 
 * [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (5 topics)
-
-* [practice: our work](stream/274877-practice:-our-work/index.html) (4 topics)
 
 * [expression](stream/247180-expression/index.html) (3 topics)
 
@@ -128,4 +128,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 07 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 08 2021 at 00:14 UTC</p>
