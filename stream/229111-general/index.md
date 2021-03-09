@@ -9,10 +9,10 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (582 messages, latest: Mar 08 2021 at 18:42)
 * [Clubhouse Category Theory](topic/Clubhouse.20Category.20Theory.html) (1 message, latest: Mar 04 2021 at 13:17)
 * [Topos Institute](topic/Topos.20Institute.html) (21 messages, latest: Mar 02 2021 at 23:32)
 * [nLab donations](topic/nLab.20donations.html) (4 messages, latest: Mar 01 2021 at 19:16)
-* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (578 messages, latest: Mar 01 2021 at 09:40)
 * [a new chatting platform for discussions in logic](topic/a.20new.20chatting.20platform.20for.20discussions.20in.20logic.html) (36 messages, latest: Feb 25 2021 at 16:41)
 * [Keeping track of papers](topic/Keeping.20track.20of.20papers.html) (22 messages, latest: Feb 23 2021 at 21:20)
 * [Theory A/B](topic/Theory.20A.2FB.html) (15 messages, latest: Feb 22 2021 at 21:09)
@@ -191,4 +191,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Mar 08 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 09 2021 at 00:14 UTC</p>

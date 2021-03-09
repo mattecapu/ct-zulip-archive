@@ -46,6 +46,111 @@ permalink: /stream/258900-practice:-our-papers/topic/Yoneda.20Hacking.3A.20The.2
 
 
 
+<a name="229231696"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Yoneda%20Hacking%3A%20The%20Algebra%20of%20Attacker%20Actions/near/229231696" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html#229231696">(Mar 08 2021 at 00:43)</a>:</h4>
+<p>Let's talk about this!</p>
+
+
+
+<a name="229232460"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Yoneda%20Hacking%3A%20The%20Algebra%20of%20Attacker%20Actions/near/229232460" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Bruno Gavranovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html#229232460">(Mar 08 2021 at 00:56)</a>:</h4>
+<p>I'm down!</p>
+
+
+
+<a name="229337684"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Yoneda%20Hacking%3A%20The%20Algebra%20of%20Attacker%20Actions/near/229337684" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html#229337684">(Mar 08 2021 at 17:13)</a>:</h4>
+<p>Hi <span class="user-mention" data-user-id="275902">@Giorgos Bakirtzis</span> <span class="user-mention" data-user-id="276438">@Fabrizio Genovese</span></p>
+<p>I'm reading through this paper and having some trouble attaching intuitions to the mathematics. Specifically, I'd like to hear more about the representation of a system (?) as a functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">W</mi><mo>→</mo><mrow><mi mathvariant="bold">C</mi><mi mathvariant="bold">a</mi><mi mathvariant="bold">t</mi></mrow></mrow><annotation encoding="application/x-tex">\mathbf{W}\to\mathbf{Cat}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf" style="margin-right:0.01597em;">W</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">C</span><span class="mord mathbf">a</span><span class="mord mathbf">t</span></span></span></span></span>.</p>
+<p>I don't have a good sense of what the semantics are supposed to be here. Is this supposed to be something like behaviors through time, with composition by concatenation at common states? Thanks!</p>
+
+
+
+<a name="229342437"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Yoneda%20Hacking%3A%20The%20Algebra%20of%20Attacker%20Actions/near/229342437" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html#229342437">(Mar 08 2021 at 17:41)</a>:</h4>
+<p>Nope, to each box you are attaching the <em>category</em> of all possible things that can inhabit the box. So it's not like "To a box I attach one system". It's more like "to a box I attach the category of systems that can inhabit it"</p>
+
+
+
+<a name="229342671"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Yoneda%20Hacking%3A%20The%20Algebra%20of%20Attacker%20Actions/near/229342671" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html#229342671">(Mar 08 2021 at 17:43)</a>:</h4>
+<p>Then, as you compose boxes, you obtain a functor between categories that tells you something along the lines of: <br>
+"You are attaching a category C to X and a category D to Y. IF you have a morphism X -f-&gt; Y, then a given system S in C will be mapped to a system FfS in Y"</p>
+
+
+
+<a name="229342677"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Yoneda%20Hacking%3A%20The%20Algebra%20of%20Attacker%20Actions/near/229342677" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Giorgos Bakirtzis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html#229342677">(Mar 08 2021 at 17:43)</a>:</h4>
+<p>Maybe we should say that in the paper</p>
+
+
+
+<a name="229348223"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Yoneda%20Hacking%3A%20The%20Algebra%20of%20Attacker%20Actions/near/229348223" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html#229348223">(Mar 08 2021 at 18:20)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276438">Fabrizio Genovese</span> <a href="#narrow/stream/258900-practice.3A-our.20papers/topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions/near/229342437">said</a>:</p>
+<blockquote>
+<p>Nope, to each box you are attaching the <em>category</em> of all possible things that can inhabit the box. So it's not like "To a box I attach one system". It's more like "to a box I attach the category of systems that can inhabit it"</p>
+</blockquote>
+<p>I understand that we're interested in a "universe of interest" rather than a particular system,  but what are the elements of that universe (in some naive example)? The "things that can inhabit" are viewed as the objects or the arrows of the category?</p>
+
+
+
+<a name="229348506"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Yoneda%20Hacking%3A%20The%20Algebra%20of%20Attacker%20Actions/near/229348506" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html#229348506">(Mar 08 2021 at 18:22)</a>:</h4>
+<p>Put another way, if the box-fillers are the objects, what are the arrows (and composition)? If the box-fillers are arrows, what are the objects (and composition)?</p>
+
+
+
+<a name="229348961"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Yoneda%20Hacking%3A%20The%20Algebra%20of%20Attacker%20Actions/near/229348961" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html#229348961">(Mar 08 2021 at 18:25)</a>:</h4>
+<p>I'm really trying to understand this definition better:<br>
+"A system is a pair <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo separator="true">,</mo><mi>S</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X, S)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">)</span></span></span></span>, with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> an object of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">W</mi></mrow><annotation encoding="application/x-tex">\bf{W}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord"><span class="mord"><span class="mord mathbf" style="margin-right:0.01597em;">W</span></span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> an object of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>X</mi></mrow><annotation encoding="application/x-tex">FX</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span>."<br>
+So <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> tells me the interface, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> is supposed to characterize the system somehow, but I want to get a better sense of what that looks like.</p>
+
+
+
+<a name="229349265"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Yoneda%20Hacking%3A%20The%20Algebra%20of%20Attacker%20Actions/near/229349265" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html#229349265">(Mar 08 2021 at 18:27)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="278008">Spencer Breiner</span> <a href="#narrow/stream/258900-practice.3A-our.20papers/topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions/near/229348961">said</a>:</p>
+<blockquote>
+<p>I'm really trying to understand this definition better:<br>
+"A system is a pair <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo separator="true">,</mo><mi>S</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X, S)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">)</span></span></span></span>, with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> an object of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">W</mi></mrow><annotation encoding="application/x-tex">\bf{W}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord"><span class="mord"><span class="mord mathbf" style="margin-right:0.01597em;">W</span></span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> an object of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>X</mi></mrow><annotation encoding="application/x-tex">FX</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span>."<br>
+So <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> tells me the interface, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> is supposed to characterize the system somehow, but I want to get a better sense of what that looks like.</p>
+</blockquote>
+<p>So, the objects of the category are the possible inhabitants of the box. Since to do what we do in the paper we have to pinpoint one specific system, I say that a system is a couple like the one you wrote down, that is, a box, and an object in the category to which we map the box</p>
+
+
+
+<a name="229349305"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Yoneda%20Hacking%3A%20The%20Algebra%20of%20Attacker%20Actions/near/229349305" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html#229349305">(Mar 08 2021 at 18:28)</a>:</h4>
+<p>But then what are the arrows?</p>
+
+
+
+<a name="229349460"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Yoneda%20Hacking%3A%20The%20Algebra%20of%20Attacker%20Actions/near/229349460" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html#229349460">(Mar 08 2021 at 18:28)</a>:</h4>
+<p>The morphism are just the possible ways to transform the systems that inhabit the box. For instance, you can map a box with m inputs and n outputs to the category of Mealy machines with m inputs and n outputs. The arrows of this categories are ways to transform these Mealy machines one into the other</p>
+
+
+
+<a name="229349558"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Yoneda%20Hacking%3A%20The%20Algebra%20of%20Attacker%20Actions/near/229349558" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html#229349558">(Mar 08 2021 at 18:29)</a>:</h4>
+<p>The existence of those arrows is exactly what allows Yoneda Hacking to make sense!</p>
+
+
+
+<a name="229350348"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Yoneda%20Hacking%3A%20The%20Algebra%20of%20Attacker%20Actions/near/229350348" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html#229350348">(Mar 08 2021 at 18:33)</a>:</h4>
+<p>Ordinarily I would think of the "category of Mealy machines" to have interfaces as objects and machines as arrows. I'm a bit fuzzy on the details, but I think there are 2-arrows that modulate internal state spaces (maybe without changing observable behavior?). Should I be thinking about a value categories <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>X</mi></mrow><annotation encoding="application/x-tex">FX</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> here as being a Hom-category in a 2-category?</p>
+
+
+
+<a name="229351111"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Yoneda%20Hacking%3A%20The%20Algebra%20of%20Attacker%20Actions/near/229351111" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html#229351111">(Mar 08 2021 at 18:38)</a>:</h4>
+<p>I think you could, possibly. I do agree that usually you expect the interfaces to be the objects, but this framework is a bit different. In any case this stuff is given for granted in this paper, it is probably better to read something else first (I guess it's in the references, but <span class="user-mention" data-user-id="275902">@Giorgos Bakirtzis</span> knows better than me where to look)</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Mar 08 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 09 2021 at 00:14 UTC</p>
