@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Cambridge Category Theory Seminar](topic/Cambridge.20Category.20Theory.20Seminar.html) (1 message, latest: Mar 09 2021 at 11:16)
 * [Clubhouse Category Theory](topic/Clubhouse.20Category.20Theory.html) (23 messages, latest: Mar 08 2021 at 16:27)
 * [Categories for quantum codes](topic/Categories.20for.20quantum.20codes.html) (3 messages, latest: Mar 07 2021 at 20:06)
 * [ICLA 2021](topic/ICLA.202021.html) (3 messages, latest: Mar 05 2021 at 06:49)
@@ -83,4 +84,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Mar 09 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 10 2021 at 00:14 UTC</p>
