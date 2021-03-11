@@ -9,10 +9,14 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Definition of an enriched natural transformation](topic/Definition.20of.20an.20enriched.20natural.20transformation.html) (29 messages, latest: Mar 09 2021 at 23:01)
+* [intuition about cofree things](topic/intuition.20about.20cofree.20things.html) (13 messages, latest: Mar 10 2021 at 23:53)
+* [Definition of an enriched natural transformation](topic/Definition.20of.20an.20enriched.20natural.20transformation.html) (41 messages, latest: Mar 10 2021 at 21:56)
+* [History of $$\dashv$$](topic/History.20of.20.24.24.5Cdashv.24.24.html) (11 messages, latest: Mar 10 2021 at 19:38)
+* [Composing exponential objects](topic/Composing.20exponential.20objects.html) (13 messages, latest: Mar 10 2021 at 18:04)
+* [quasi-cartesian monoidal categories](topic/quasi-cartesian.20monoidal.20categories.html) (28 messages, latest: Mar 10 2021 at 16:21)
+* [iterated enrichment?](topic/iterated.20enrichment.3F.html) (2 messages, latest: Mar 10 2021 at 10:39)
 * [Completeness theorem via density](topic/Completeness.20theorem.20via.20density.html) (10 messages, latest: Mar 09 2021 at 16:16)
 * [why graphs are not algebraic?](topic/why.20graphs.20are.20not.20algebraic.3F.html) (12 messages, latest: Mar 09 2021 at 14:13)
-* [iterated enrichment?](topic/iterated.20enrichment.3F.html) (1 message, latest: Mar 08 2021 at 18:58)
 * [Opposite Category](topic/Opposite.20Category.html) (4 messages, latest: Mar 07 2021 at 19:21)
 * [Iterated enrichment?](topic/Iterated.20enrichment.3F.html) (19 messages, latest: Mar 07 2021 at 04:53)
 * [(Co)ends formally](topic/(Co)ends.20formally.html) (4 messages, latest: Mar 07 2021 at 00:18)
@@ -335,4 +339,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 10 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 11 2021 at 00:14 UTC</p>

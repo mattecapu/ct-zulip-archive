@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (325 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (329 topics)
 
 * [general](stream/229111-general/index.html) (181 topics)
 
@@ -32,7 +32,7 @@ permalink: /index.html
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (28 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (24 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (25 topics)
 
 * [general: positions](stream/245502-general:-positions/index.html) (21 topics)
 
@@ -128,4 +128,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 10 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 11 2021 at 00:14 UTC</p>
