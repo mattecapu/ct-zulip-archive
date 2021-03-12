@@ -9,7 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [Doubts about "identity on objects" Functors](topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html) (51 messages, latest: Mar 11 2021 at 00:04)
+* [Doubts about "identity on objects" Functors](topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html) (79 messages, latest: Mar 11 2021 at 16:08)
 * [fundamental theorem of noncommutative algebra](topic/fundamental.20theorem.20of.20noncommutative.20algebra.html) (13 messages, latest: Feb 24 2021 at 16:58)
 * [understanding Fermat's Last Theorem proof](topic/understanding.20Fermat's.20Last.20Theorem.20proof.html) (14 messages, latest: Feb 23 2021 at 16:42)
 * [This Week's Finds (1-50)](topic/This.20Week's.20Finds.20(1-50).html) (41 messages, latest: Feb 16 2021 at 17:17)
@@ -35,4 +35,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Mar 11 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 12 2021 at 00:14 UTC</p>

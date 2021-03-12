@@ -42,9 +42,9 @@ permalink: /index.html
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (19 topics)
 
-* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (17 topics)
+* [practice: software](stream/229125-practice:-software/index.html) (18 topics)
 
-* [practice: software](stream/229125-practice:-software/index.html) (17 topics)
+* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (17 topics)
 
 * [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
 
@@ -128,4 +128,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 11 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 12 2021 at 00:14 UTC</p>

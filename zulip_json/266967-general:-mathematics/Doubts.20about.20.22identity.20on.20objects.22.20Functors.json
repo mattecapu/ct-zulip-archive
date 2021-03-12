@@ -304,5 +304,173 @@
         "id": 229769862,
         "sender_full_name": "Jacques Carette",
         "timestamp": 1615421072
+    },
+    {
+        "content": "<p>I've tried to read the paper you linked... It would require serious study on my part to be able to understand those examples.</p>",
+        "id": 229776393,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615425070
+    },
+    {
+        "content": "<p>Yeah.</p>",
+        "id": 229776824,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615425348
+    },
+    {
+        "content": "<p>I don't know if you can read Adga, but if you could verify that our definition of (Grothendieck) <a href=\"https://agda.github.io/agda-categories/Categories.Functor.Fibration.html\">Fibration</a> is correct, I'd certainly appreciate it!</p>",
+        "id": 229777223,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615425630
+    },
+    {
+        "content": "<p>I think that identity morphisms in general should be excluded from \"evilness\". Identity morphisms are a an essential part of every category which are necessary for defining equivalences in the first place. Identity on object functors aren't identity morphisms but their object components are.</p>",
+        "id": 229790145,
+        "sender_full_name": "Jade Master",
+        "timestamp": 1615435347
+    },
+    {
+        "content": "<p>I've included the id-on-objs definition of Lawvere theory on the <a href=\"https://ncatlab.org/nlab/show/Lawvere+theory#definition\">nlab page</a>. Happy to be overridden. I almost made the id-on-objs definition the \"A\" definition, which is what it is in my head, but I didn't have the guts (so to speak). I also noticed that Mike wrote a <a href=\"https://ncatlab.org/nlab/show/identity-on-objects+functor#equivalenceinvariance\">similar explanation</a> about id-on-objs back in 2017.</p>",
+        "id": 229820419,
+        "sender_full_name": "Sam Staton",
+        "timestamp": 1615455531
+    },
+    {
+        "content": "<p>Obviously the two definitions are equivalent in the traditional case, but the B definition generalises better to the enriched case</p>",
+        "id": 229823146,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615456792
+    },
+    {
+        "content": "<p>I think it depends what you mean by \"equivalent\"; personally I don't think they're equivalent definitions. I expect both definitions can be enriched, but I agree that B is the more usual one to start from.</p>",
+        "id": 229824666,
+        "sender_full_name": "Sam Staton",
+        "timestamp": 1615457499
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276037\">@Jade Master</span> The point is that if you have two <em>given</em> categories, saying that there is an io functor between them is not an equivalence-invariant statement.</p>",
+        "id": 229854397,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615472154
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> Okay that's true. I see what you mean. Why would you want it to be equivalence invariant in this case? Having an object component which is the identity seems very nice to me already.</p>",
+        "id": 229855506,
+        "sender_full_name": "Jade Master",
+        "timestamp": 1615472523
+    },
+    {
+        "content": "<p>I suppose that having things be equivalence invariant is in general a good thing I get that.</p>",
+        "id": 229856588,
+        "sender_full_name": "Jade Master",
+        "timestamp": 1615472876
+    },
+    {
+        "content": "<p>But yeah there are some things which just aren't equivalent invariant but are nevertheless the best definition for something? And your idea is that were just using the wrong type of equivalence for these things?</p>",
+        "id": 229857007,
+        "sender_full_name": "Jade Master",
+        "timestamp": 1615473013
+    },
+    {
+        "content": "<p>I guess that's the interesting thing about the interaction between type theory (which strives to be as strict as possible) and category theory (which strives to be as weak as possible)</p>",
+        "id": 229857024,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615473017
+    },
+    {
+        "content": "<p>I think one of the reasons why things should be formulated as weak as possible is to not mistakenly use a fact or property which is not invariant under equivalence.</p>",
+        "id": 229857231,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1615473101
+    },
+    {
+        "content": "<p>That's why I like <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> 's idea of an ioo functor as a <em>sui generis</em> structure which <em>induces</em> a functor rather then being a functor. That fixes all the issues in one go.</p>",
+        "id": 229857547,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615473218
+    },
+    {
+        "content": "<p>Does this fix it by introducing a new type of equivalence?</p>",
+        "id": 229858130,
+        "sender_full_name": "Jade Master",
+        "timestamp": 1615473432
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276037\">Jade Master</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229858130\">said</a>:</p>\n<blockquote>\n<p>Does this fix it by introducing a new type of equivalence?</p>\n</blockquote>\n<p>I presume it does as follows: given an equivalent base category, you have sufficient data to define an identity on objects functor over it.</p>",
+        "id": 229863054,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1615475054
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229750390\">said</a>:</p>\n<blockquote>\n<p>(This is related to the point earlier that monads in Prof are identity-on-objects functors. Martin Hyland has <a href=\"https://arxiv.org/abs/1311.7642\">some good notes</a> on this topic.)</p>\n</blockquote>\n<p>Won't this only be true up to a Cauchy completeness assumption?</p>",
+        "id": 229867030,
+        "sender_full_name": "Nick Hu",
+        "timestamp": 1615476380
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229777223\">said</a>:</p>\n<blockquote>\n<p>I don't know if you can read Adga, but if you could verify that our definition of (Grothendieck) <a href=\"https://agda.github.io/agda-categories/Categories.Functor.Fibration.html\">Fibration</a> is correct, I'd certainly appreciate it!</p>\n</blockquote>\n<p>It looks like you are defining the weakened notion of <a href=\"https://ncatlab.org/nlab/show/Street+fibration\">Street fibration</a>, which <em>is</em> equivalence-invariant.</p>",
+        "id": 229868536,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615476881
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"280859\">Nick Hu</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229867030\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229750390\">said</a>:</p>\n<blockquote>\n<p>(This is related to the point earlier that monads in Prof are identity-on-objects functors. Martin Hyland has <a href=\"https://arxiv.org/abs/1311.7642\">some good notes</a> on this topic.)</p>\n</blockquote>\n<p>Won't this only be true up to a Cauchy completeness assumption?</p>\n</blockquote>\n<p>Nope.  Cauchy completeness is necessary to identify left adjoint profunctors with functors, but that's not how this result goes.</p>",
+        "id": 229868730,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615476959
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229868536\">said</a>:</p>\n<blockquote>\n<p>It looks like you are defining the weakened notion of <a href=\"https://ncatlab.org/nlab/show/Street+fibration\">Street fibration</a>, which <em>is</em> equivalence-invariant.</p>\n</blockquote>\n<p>In which case, we should fix our documentation to say that clearly.</p>",
+        "id": 229868892,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615477005
+    },
+    {
+        "content": "<p>Thanks.</p>",
+        "id": 229868983,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615477036
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276037\">Jade Master</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229855506\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> Okay that's true. I see what you mean. Why would you want it to be equivalence invariant in this case? Having an object component which is the identity seems very nice to me already.</p>\n</blockquote>\n<p>There's an argument that anything we say about \"a category\" should be invariant under equivalence of that category, just like anything we say about \"a group\" should be invariant under isomorphism.  You would look at someone strangely if they said something like \"Definition: a group G is splanzy if it contains the number 24\", since that's not an isomorphism-invariant property.  (Of course, it makes sense to talk about whether a <em>subgroup</em> of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">Z</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{Z}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">Z</span></span></span></span></span> contains 24.)  Similarly, you should look at someone strangely if they say \"A category is plitzy if it contains exactly 53 objects,\" since that's not invariant under equivalence.</p>",
+        "id": 229869486,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615477211
+    },
+    {
+        "content": "<p>When doing mathematics in HoTT this is actually <em>necessary</em>, because equivalent categories are actually equal to each other, and anything we say about one of them can always be transported to another one.</p>",
+        "id": 229869566,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615477249
+    },
+    {
+        "content": "<p>(Hence Voevodsky's renaming of \"contextual categories\" to \"C-systems\".)</p>",
+        "id": 229869801,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615477336
+    },
+    {
+        "content": "<p>But it <em>is</em> true that having an identity-on-objects component <em>is</em> nice, and we <em>can</em> use such definitions even in HoTT.  It's just that we can't express it as two given categories <em>together with</em> a functor between them that has the \"property\" of being identity-on-objects.  Rather, we say \"there's a single type of objects equipped with two different families of hom-sets forming categories and a map between them that preserves composition and identities\".  Then we observe afterwards that from these data we can extract two categories and a functor between them.</p>",
+        "id": 229869863,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615477373
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229869801\">said</a>:</p>\n<blockquote>\n<p>(Hence Voevodsky's renaming of \"contextual categories\" to \"C-systems\".)</p>\n</blockquote>\n<p>I'm actually not sold on that reasoning for that.  I think of a contextual category as a dependently typed analogue of a multicategory, and multicategories are really category-like things, defined up to equivalence and forming a 2-category and not just a 1-category.  But I haven't tried to see whether that can be made precise.</p>",
+        "id": 229870086,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1615477448
+    },
+    {
+        "content": "<p>I would be interested to see if that could be made precise.</p>",
+        "id": 229871501,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1615477926
+    },
+    {
+        "content": "<p>Meta comment: I was apprehensive about asking this question, originally. Now I'm quite glad that I did.</p>",
+        "id": 229875504,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1615478899
     }
 ]

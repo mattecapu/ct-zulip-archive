@@ -367,6 +367,206 @@ permalink: /stream/266967-general:-mathematics/topic/Doubts.20about.20.22identit
 
 
 
+<a name="229776393"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229776393" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229776393">(Mar 11 2021 at 01:11)</a>:</h4>
+<p>I've tried to read the paper you linked... It would require serious study on my part to be able to understand those examples.</p>
+
+
+
+<a name="229776824"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229776824" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229776824">(Mar 11 2021 at 01:15)</a>:</h4>
+<p>Yeah.</p>
+
+
+
+<a name="229777223"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229777223" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229777223">(Mar 11 2021 at 01:20)</a>:</h4>
+<p>I don't know if you can read Adga, but if you could verify that our definition of (Grothendieck) <a href="https://agda.github.io/agda-categories/Categories.Functor.Fibration.html">Fibration</a> is correct, I'd certainly appreciate it!</p>
+
+
+
+<a name="229790145"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229790145" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jade Master <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229790145">(Mar 11 2021 at 04:02)</a>:</h4>
+<p>I think that identity morphisms in general should be excluded from "evilness". Identity morphisms are a an essential part of every category which are necessary for defining equivalences in the first place. Identity on object functors aren't identity morphisms but their object components are.</p>
+
+
+
+<a name="229820419"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229820419" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sam Staton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229820419">(Mar 11 2021 at 09:38)</a>:</h4>
+<p>I've included the id-on-objs definition of Lawvere theory on the <a href="https://ncatlab.org/nlab/show/Lawvere+theory#definition">nlab page</a>. Happy to be overridden. I almost made the id-on-objs definition the "A" definition, which is what it is in my head, but I didn't have the guts (so to speak). I also noticed that Mike wrote a <a href="https://ncatlab.org/nlab/show/identity-on-objects+functor#equivalenceinvariance">similar explanation</a> about id-on-objs back in 2017.</p>
+
+
+
+<a name="229823146"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229823146" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229823146">(Mar 11 2021 at 09:59)</a>:</h4>
+<p>Obviously the two definitions are equivalent in the traditional case, but the B definition generalises better to the enriched case</p>
+
+
+
+<a name="229824666"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229824666" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Sam Staton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229824666">(Mar 11 2021 at 10:11)</a>:</h4>
+<p>I think it depends what you mean by "equivalent"; personally I don't think they're equivalent definitions. I expect both definitions can be enriched, but I agree that B is the more usual one to start from.</p>
+
+
+
+<a name="229854397"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229854397" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229854397">(Mar 11 2021 at 14:15)</a>:</h4>
+<p><span class="user-mention" data-user-id="276037">@Jade Master</span> The point is that if you have two <em>given</em> categories, saying that there is an io functor between them is not an equivalence-invariant statement.</p>
+
+
+
+<a name="229855506"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229855506" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jade Master <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229855506">(Mar 11 2021 at 14:22)</a>:</h4>
+<p><span class="user-mention" data-user-id="276777">@Mike Shulman</span> Okay that's true. I see what you mean. Why would you want it to be equivalence invariant in this case? Having an object component which is the identity seems very nice to me already.</p>
+
+
+
+<a name="229856588"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229856588" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jade Master <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229856588">(Mar 11 2021 at 14:27)</a>:</h4>
+<p>I suppose that having things be equivalence invariant is in general a good thing I get that.</p>
+
+
+
+<a name="229857007"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229857007" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jade Master <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229857007">(Mar 11 2021 at 14:30)</a>:</h4>
+<p>But yeah there are some things which just aren't equivalent invariant but are nevertheless the best definition for something? And your idea is that were just using the wrong type of equivalence for these things?</p>
+
+
+
+<a name="229857024"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229857024" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229857024">(Mar 11 2021 at 14:30)</a>:</h4>
+<p>I guess that's the interesting thing about the interaction between type theory (which strives to be as strict as possible) and category theory (which strives to be as weak as possible)</p>
+
+
+
+<a name="229857231"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229857231" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229857231">(Mar 11 2021 at 14:31)</a>:</h4>
+<p>I think one of the reasons why things should be formulated as weak as possible is to not mistakenly use a fact or property which is not invariant under equivalence.</p>
+
+
+
+<a name="229857547"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229857547" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229857547">(Mar 11 2021 at 14:33)</a>:</h4>
+<p>That's why I like <span class="user-mention" data-user-id="276777">@Mike Shulman</span> 's idea of an ioo functor as a <em>sui generis</em> structure which <em>induces</em> a functor rather then being a functor. That fixes all the issues in one go.</p>
+
+
+
+<a name="229858130"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229858130" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jade Master <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229858130">(Mar 11 2021 at 14:37)</a>:</h4>
+<p>Does this fix it by introducing a new type of equivalence?</p>
+
+
+
+<a name="229863054"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229863054" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229863054">(Mar 11 2021 at 15:04)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276037">Jade Master</span> <a href="#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229858130">said</a>:</p>
+<blockquote>
+<p>Does this fix it by introducing a new type of equivalence?</p>
+</blockquote>
+<p>I presume it does as follows: given an equivalent base category, you have sufficient data to define an identity on objects functor over it.</p>
+
+
+
+<a name="229867030"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229867030" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nick Hu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229867030">(Mar 11 2021 at 15:26)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229750390">said</a>:</p>
+<blockquote>
+<p>(This is related to the point earlier that monads in Prof are identity-on-objects functors. Martin Hyland has <a href="https://arxiv.org/abs/1311.7642">some good notes</a> on this topic.)</p>
+</blockquote>
+<p>Won't this only be true up to a Cauchy completeness assumption?</p>
+
+
+
+<a name="229868536"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229868536" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229868536">(Mar 11 2021 at 15:34)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="296322">Jacques Carette</span> <a href="#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229777223">said</a>:</p>
+<blockquote>
+<p>I don't know if you can read Adga, but if you could verify that our definition of (Grothendieck) <a href="https://agda.github.io/agda-categories/Categories.Functor.Fibration.html">Fibration</a> is correct, I'd certainly appreciate it!</p>
+</blockquote>
+<p>It looks like you are defining the weakened notion of <a href="https://ncatlab.org/nlab/show/Street+fibration">Street fibration</a>, which <em>is</em> equivalence-invariant.</p>
+
+
+
+<a name="229868730"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229868730" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229868730">(Mar 11 2021 at 15:35)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="280859">Nick Hu</span> <a href="#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229867030">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229750390">said</a>:</p>
+<blockquote>
+<p>(This is related to the point earlier that monads in Prof are identity-on-objects functors. Martin Hyland has <a href="https://arxiv.org/abs/1311.7642">some good notes</a> on this topic.)</p>
+</blockquote>
+<p>Won't this only be true up to a Cauchy completeness assumption?</p>
+</blockquote>
+<p>Nope.  Cauchy completeness is necessary to identify left adjoint profunctors with functors, but that's not how this result goes.</p>
+
+
+
+<a name="229868892"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229868892" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229868892">(Mar 11 2021 at 15:36)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229868536">said</a>:</p>
+<blockquote>
+<p>It looks like you are defining the weakened notion of <a href="https://ncatlab.org/nlab/show/Street+fibration">Street fibration</a>, which <em>is</em> equivalence-invariant.</p>
+</blockquote>
+<p>In which case, we should fix our documentation to say that clearly.</p>
+
+
+
+<a name="229868983"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229868983" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229868983">(Mar 11 2021 at 15:37)</a>:</h4>
+<p>Thanks.</p>
+
+
+
+<a name="229869486"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229869486" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229869486">(Mar 11 2021 at 15:40)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276037">Jade Master</span> <a href="#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229855506">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> Okay that's true. I see what you mean. Why would you want it to be equivalence invariant in this case? Having an object component which is the identity seems very nice to me already.</p>
+</blockquote>
+<p>There's an argument that anything we say about "a category" should be invariant under equivalence of that category, just like anything we say about "a group" should be invariant under isomorphism.  You would look at someone strangely if they said something like "Definition: a group G is splanzy if it contains the number 24", since that's not an isomorphism-invariant property.  (Of course, it makes sense to talk about whether a <em>subgroup</em> of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">Z</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbb">Z</span></span></span></span></span> contains 24.)  Similarly, you should look at someone strangely if they say "A category is plitzy if it contains exactly 53 objects," since that's not invariant under equivalence.</p>
+
+
+
+<a name="229869566"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229869566" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229869566">(Mar 11 2021 at 15:40)</a>:</h4>
+<p>When doing mathematics in HoTT this is actually <em>necessary</em>, because equivalent categories are actually equal to each other, and anything we say about one of them can always be transported to another one.</p>
+
+
+
+<a name="229869801"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229869801" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229869801">(Mar 11 2021 at 15:42)</a>:</h4>
+<p>(Hence Voevodsky's renaming of "contextual categories" to "C-systems".)</p>
+
+
+
+<a name="229869863"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229869863" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229869863">(Mar 11 2021 at 15:42)</a>:</h4>
+<p>But it <em>is</em> true that having an identity-on-objects component <em>is</em> nice, and we <em>can</em> use such definitions even in HoTT.  It's just that we can't express it as two given categories <em>together with</em> a functor between them that has the "property" of being identity-on-objects.  Rather, we say "there's a single type of objects equipped with two different families of hom-sets forming categories and a map between them that preserves composition and identities".  Then we observe afterwards that from these data we can extract two categories and a functor between them.</p>
+
+
+
+<a name="229870086"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229870086" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229870086">(Mar 11 2021 at 15:44)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/266967-general.3A-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors/near/229869801">said</a>:</p>
+<blockquote>
+<p>(Hence Voevodsky's renaming of "contextual categories" to "C-systems".)</p>
+</blockquote>
+<p>I'm actually not sold on that reasoning for that.  I think of a contextual category as a dependently typed analogue of a multicategory, and multicategories are really category-like things, defined up to equivalence and forming a 2-category and not just a 1-category.  But I haven't tried to see whether that can be made precise.</p>
+
+
+
+<a name="229871501"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229871501" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229871501">(Mar 11 2021 at 15:52)</a>:</h4>
+<p>I would be interested to see if that could be made precise.</p>
+
+
+
+<a name="229875504"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/266967-general%3A%20mathematics/topic/Doubts%20about%20%22identity%20on%20objects%22%20Functors/near/229875504" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/266967-general:-mathematics/topic/Doubts.20about.20.22identity.20on.20objects.22.20Functors.html#229875504">(Mar 11 2021 at 16:08)</a>:</h4>
+<p>Meta comment: I was apprehensive about asking this question, originally. Now I'm quite glad that I did.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Mar 11 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 12 2021 at 00:14 UTC</p>
