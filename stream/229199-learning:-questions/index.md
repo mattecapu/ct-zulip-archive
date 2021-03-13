@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [intuition about cofree things](topic/intuition.20about.20cofree.20things.html) (30 messages, latest: Mar 11 2021 at 17:30)
+* [intuition about cofree things](topic/intuition.20about.20cofree.20things.html) (37 messages, latest: Mar 12 2021 at 15:54)
+* [Polynomial functors, Type Theory and Homotopy](topic/Polynomial.20functors.2C.20Type.20Theory.20and.20Homotopy.html) (2 messages, latest: Mar 12 2021 at 15:04)
 * [History of $$\dashv$$](topic/History.20of.20.24.24.5Cdashv.24.24.html) (28 messages, latest: Mar 11 2021 at 16:35)
 * [Definition of an enriched natural transformation](topic/Definition.20of.20an.20enriched.20natural.20transformation.html) (41 messages, latest: Mar 10 2021 at 21:56)
 * [Composing exponential objects](topic/Composing.20exponential.20objects.html) (13 messages, latest: Mar 10 2021 at 18:04)
@@ -339,4 +340,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 12 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 13 2021 at 00:14 UTC</p>

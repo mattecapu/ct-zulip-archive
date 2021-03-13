@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (329 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (330 topics)
 
 * [general](stream/229111-general/index.html) (181 topics)
 
@@ -32,15 +32,15 @@ permalink: /index.html
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (28 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (25 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (26 topics)
 
 * [general: positions](stream/245502-general:-positions/index.html) (21 topics)
 
 * [general: values](stream/241990-general:-values/index.html) (21 topics)
 
-* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (19 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (20 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (19 topics)
+* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (19 topics)
 
 * [practice: software](stream/229125-practice:-software/index.html) (18 topics)
 
@@ -110,6 +110,8 @@ permalink: /index.html
 
 * [process-io](stream/267137-process-io/index.html) (3 topics)
 
+* [theory: analysis](stream/281848-theory:-analysis/index.html) (3 topics)
+
 * [NYC Category Theory](stream/237238-NYC-Category-Theory/index.html) (2 topics)
 
 * [Topos Colloquium](stream/269484-Topos-Colloquium/index.html) (2 topics)
@@ -128,4 +130,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 12 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 13 2021 at 00:14 UTC</p>
