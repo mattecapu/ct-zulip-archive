@@ -9,6 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [notions of lax monoidal functors](topic/notions.20of.20lax.20monoidal.20functors.html) (1 message, latest: Mar 14 2021 at 20:47)
+* [beginner questions](topic/beginner.20questions.html) (95 messages, latest: Mar 14 2021 at 07:12)
+* [infinity kan extensions](topic/infinity.20kan.20extensions.html) (2 messages, latest: Mar 14 2021 at 02:52)
 * [intuition about cofree things](topic/intuition.20about.20cofree.20things.html) (37 messages, latest: Mar 12 2021 at 15:54)
 * [Polynomial functors, Type Theory and Homotopy](topic/Polynomial.20functors.2C.20Type.20Theory.20and.20Homotopy.html) (2 messages, latest: Mar 12 2021 at 15:04)
 * [History of $$\dashv$$](topic/History.20of.20.24.24.5Cdashv.24.24.html) (28 messages, latest: Mar 11 2021 at 16:35)
@@ -23,7 +26,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [(Co)ends formally](topic/(Co)ends.20formally.html) (4 messages, latest: Mar 07 2021 at 00:18)
 * [does LaxMonCat have a product?](topic/does.20LaxMonCat.20have.20a.20product.3F.html) (3 messages, latest: Mar 06 2021 at 15:07)
 * [Infinity kan extensions](topic/Infinity.20kan.20extensions.html) (1 message, latest: Mar 05 2021 at 13:07)
-* [beginner questions](topic/beginner.20questions.html) (89 messages, latest: Mar 05 2021 at 00:01)
 * [coinductive free things](topic/coinductive.20free.20things.html) (35 messages, latest: Mar 04 2021 at 18:14)
 * [Equationally presenting monads](topic/Equationally.20presenting.20monads.html) (4 messages, latest: Mar 04 2021 at 13:27)
 * [I forgot a bunch of stuff](topic/I.20forgot.20a.20bunch.20of.20stuff.html) (10 messages, latest: Mar 01 2021 at 22:23)
@@ -340,4 +342,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 14 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 14 2021 at 20:47 UTC</p>

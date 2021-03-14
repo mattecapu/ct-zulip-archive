@@ -9,11 +9,12 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [Workshop on Polynomial Functors](topic/Workshop.20on.20Polynomial.20Functors.html) (8 messages, latest: Mar 10 2021 at 17:03)
+* [Mathematics in the 21st century](topic/Mathematics.20in.20the.2021st.20century.html) (3 messages, latest: Mar 14 2021 at 19:37)
+* [Workshop on Polynomial Functors](topic/Workshop.20on.20Polynomial.20Functors.html) (9 messages, latest: Mar 14 2021 at 15:12)
+* [ICLA 2021](topic/ICLA.202021.html) (4 messages, latest: Mar 14 2021 at 15:00)
 * [Cambridge Category Theory Seminar](topic/Cambridge.20Category.20Theory.20Seminar.html) (1 message, latest: Mar 09 2021 at 11:16)
 * [Clubhouse Category Theory](topic/Clubhouse.20Category.20Theory.html) (23 messages, latest: Mar 08 2021 at 16:27)
 * [Categories for quantum codes](topic/Categories.20for.20quantum.20codes.html) (3 messages, latest: Mar 07 2021 at 20:06)
-* [ICLA 2021](topic/ICLA.202021.html) (3 messages, latest: Mar 05 2021 at 06:49)
 * [ItaCa Fest 2021](topic/ItaCa.20Fest.202021.html) (1 message, latest: Mar 03 2021 at 12:06)
 * [CT20->21](topic/CT20-.3E21.html) (3 messages, latest: Mar 03 2021 at 09:19)
 * [ACT2021 Adjoint School](topic/ACT2021.20Adjoint.20School.html) (19 messages, latest: Mar 02 2021 at 18:30)
@@ -84,4 +85,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Mar 14 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 14 2021 at 20:47 UTC</p>
