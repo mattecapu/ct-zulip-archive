@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [notions of lax monoidal functors](topic/notions.20of.20lax.20monoidal.20functors.html) (1 message, latest: Mar 14 2021 at 20:47)
-* [beginner questions](topic/beginner.20questions.html) (95 messages, latest: Mar 14 2021 at 07:12)
+* [notions of lax monoidal functors](topic/notions.20of.20lax.20monoidal.20functors.html) (7 messages, latest: Mar 14 2021 at 22:13)
+* [beginner questions](topic/beginner.20questions.html) (97 messages, latest: Mar 14 2021 at 22:04)
 * [infinity kan extensions](topic/infinity.20kan.20extensions.html) (2 messages, latest: Mar 14 2021 at 02:52)
 * [intuition about cofree things](topic/intuition.20about.20cofree.20things.html) (37 messages, latest: Mar 12 2021 at 15:54)
 * [Polynomial functors, Type Theory and Homotopy](topic/Polynomial.20functors.2C.20Type.20Theory.20and.20Homotopy.html) (2 messages, latest: Mar 12 2021 at 15:04)
@@ -342,4 +342,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 14 2021 at 20:47 UTC</p>
+<hr><p>Last updated: Mar 15 2021 at 00:14 UTC</p>
