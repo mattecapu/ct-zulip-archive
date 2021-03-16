@@ -54,6 +54,70 @@ permalink: /stream/229125-practice:-software/topic/Nix.2FNixOS.html
 
 
 
+<a name="230315029"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Nix/NixOS/near/230315029" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nick Hu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Nix.2FNixOS.html#230315029">(Mar 15 2021 at 09:23)</a>:</h4>
+<p>There is a virtual box appliance available to download instead of an ISO on <a href="http://nixos.org">nixos.org</a>, I would recommend that because there are some gotchas wrt virtualbox</p>
+
+
+
+<a name="230315162"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Nix/NixOS/near/230315162" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nick Hu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Nix.2FNixOS.html#230315162">(Mar 15 2021 at 09:24)</a>:</h4>
+<p>What libraries in particular are you concerned about? The coverage of packaged software is very comprehensive these days, which was less true say 5 years ago or so (where you might encounter old blog posts about nix)</p>
+
+
+
+<a name="230326070"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Nix/NixOS/near/230326070" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Javier Prieto <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Nix.2FNixOS.html#230326070">(Mar 15 2021 at 11:01)</a>:</h4>
+<blockquote>
+<p>What libraries in particular are you concerned about?</p>
+</blockquote>
+<p>Well, that's the problem with unknown unknowns. I won't miss them until it's too late.</p>
+
+
+
+<a name="230326512"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Nix/NixOS/near/230326512" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Nick Hu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Nix.2FNixOS.html#230326512">(Mar 15 2021 at 11:05)</a>:</h4>
+<p>Maybe if you gave me a particular ecosystem you're interested in I can give more specific guidance? For instance, every Haskell library on Hackage is automatically packaged effectively</p>
+
+
+
+<a name="230328707"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Nix/NixOS/near/230328707" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Javier Prieto <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Nix.2FNixOS.html#230328707">(Mar 15 2021 at 11:23)</a>:</h4>
+<p>Let's see... Other than haskell:</p>
+<ul>
+<li>I use VSCode, git and a zsh shell for ~everything</li>
+<li>Python stuff: pip, anaconda</li>
+<li>JS stuff: node and friends</li>
+<li>docker and docker-compose</li>
+<li>GUI apps I'd like to keep: anki, calibre, firefox/brave, vcv rack, zotero, zulip</li>
+</ul>
+
+
+
+<a name="230337043"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Nix/NixOS/near/230337043" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Nix.2FNixOS.html#230337043">(Mar 15 2021 at 12:38)</a>:</h4>
+<p>I'm fairly sure all this stuff is packaged (I had to check calibre and vcv-rack because I've never heard of them, but they're there). I don't know how easily the middle three can be used; you sometimes find that Nix doesn't take kindly to other package managers, but sometimes it does.</p>
+
+
+
+<a name="230433320"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Nix/NixOS/near/230433320" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Owen Lynch <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Nix.2FNixOS.html#230433320">(Mar 15 2021 at 22:45)</a>:</h4>
+<p>There actually is anaconda support for Nix! The way it works is through this thing called a "FHS", which basically chroots into a more-standard-looking directory setup so that non-nix programs can find their dependencies. I use conda a lot for python stuff, because there are some (not a lot) of python libraries that are not included in NixOS</p>
+
+
+
+<a name="230433476"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Nix/NixOS/near/230433476" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Owen Lynch <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Nix.2FNixOS.html#230433476">(Mar 15 2021 at 22:47)</a>:</h4>
+<p>I just majorly refactored my julia setup to use a FHS environment along with conda support, so basically all of my "scientific software" is installed in a non-nixy way, but it plays nicely with the rest of my system which is very nix-y!</p>
+
+
+
+<a name="230433634"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229125-practice%3A%20software/topic/Nix/NixOS/near/230433634" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Owen Lynch <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice:-software/topic/Nix.2FNixOS.html#230433634">(Mar 15 2021 at 22:48)</a>:</h4>
+<p><span class="user-mention" data-user-id="276060">@Javier Prieto</span> , if you use VSCode, then you always have the option of remoting into a docker container if you are struggling with installing something on nix, which has saved me a couple times!</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Mar 15 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 16 2021 at 00:14 UTC</p>

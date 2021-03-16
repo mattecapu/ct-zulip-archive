@@ -34,5 +34,59 @@
         "id": 230220914,
         "sender_full_name": "Javier Prieto",
         "timestamp": 1615707705
+    },
+    {
+        "content": "<p>There is a virtual box appliance available to download instead of an ISO on <a href=\"http://nixos.org\">nixos.org</a>, I would recommend that because there are some gotchas wrt virtualbox</p>",
+        "id": 230315029,
+        "sender_full_name": "Nick Hu",
+        "timestamp": 1615800208
+    },
+    {
+        "content": "<p>What libraries in particular are you concerned about? The coverage of packaged software is very comprehensive these days, which was less true say 5 years ago or so (where you might encounter old blog posts about nix)</p>",
+        "id": 230315162,
+        "sender_full_name": "Nick Hu",
+        "timestamp": 1615800271
+    },
+    {
+        "content": "<blockquote>\n<p>What libraries in particular are you concerned about?</p>\n</blockquote>\n<p>Well, that's the problem with unknown unknowns. I won't miss them until it's too late.</p>",
+        "id": 230326070,
+        "sender_full_name": "Javier Prieto",
+        "timestamp": 1615806076
+    },
+    {
+        "content": "<p>Maybe if you gave me a particular ecosystem you're interested in I can give more specific guidance? For instance, every Haskell library on Hackage is automatically packaged effectively</p>",
+        "id": 230326512,
+        "sender_full_name": "Nick Hu",
+        "timestamp": 1615806302
+    },
+    {
+        "content": "<p>Let's see... Other than haskell:</p>\n<ul>\n<li>I use VSCode, git and a zsh shell for ~everything</li>\n<li>Python stuff: pip, anaconda</li>\n<li>JS stuff: node and friends</li>\n<li>docker and docker-compose</li>\n<li>GUI apps I'd like to keep: anki, calibre, firefox/brave, vcv rack, zotero, zulip</li>\n</ul>",
+        "id": 230328707,
+        "sender_full_name": "Javier Prieto",
+        "timestamp": 1615807386
+    },
+    {
+        "content": "<p>I'm fairly sure all this stuff is packaged (I had to check calibre and vcv-rack because I've never heard of them, but they're there). I don't know how easily the middle three can be used; you sometimes find that Nix doesn't take kindly to other package managers, but sometimes it does.</p>",
+        "id": 230337043,
+        "sender_full_name": "James Wood",
+        "timestamp": 1615811929
+    },
+    {
+        "content": "<p>There actually is anaconda support for Nix! The way it works is through this thing called a \"FHS\", which basically chroots into a more-standard-looking directory setup so that non-nix programs can find their dependencies. I use conda a lot for python stuff, because there are some (not a lot) of python libraries that are not included in NixOS</p>",
+        "id": 230433320,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1615848346
+    },
+    {
+        "content": "<p>I just majorly refactored my julia setup to use a FHS environment along with conda support, so basically all of my \"scientific software\" is installed in a non-nixy way, but it plays nicely with the rest of my system which is very nix-y!</p>",
+        "id": 230433476,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1615848429
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276060\">@Javier Prieto</span> , if you use VSCode, then you always have the option of remoting into a docker container if you are struggling with installing something on nix, which has saved me a couple times!</p>",
+        "id": 230433634,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1615848533
     }
 ]

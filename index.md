@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (332 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (333 topics)
 
 * [general](stream/229111-general/index.html) (182 topics)
 
@@ -92,6 +92,8 @@ permalink: /index.html
 
 * [theory: probability](stream/253118-theory:-probability/index.html) (6 topics)
 
+* [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (6 topics)
+
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
 
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
@@ -130,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 15 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 16 2021 at 00:14 UTC</p>
