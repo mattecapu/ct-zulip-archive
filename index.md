@@ -8,9 +8,9 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (333 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (335 topics)
 
-* [general](stream/229111-general/index.html) (182 topics)
+* [general](stream/229111-general/index.html) (183 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (124 topics)
 
@@ -32,7 +32,7 @@ permalink: /index.html
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (30 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (26 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (27 topics)
 
 * [general: positions](stream/245502-general:-positions/index.html) (21 topics)
 
@@ -60,9 +60,11 @@ permalink: /index.html
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (13 topics)
 
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (11 topics)
+
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (10 topics)
+* [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (10 topics)
 
 * [philosophy](stream/229134-philosophy/index.html) (8 topics)
 
@@ -91,8 +93,6 @@ permalink: /index.html
 * [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (6 topics)
 
 * [theory: probability](stream/253118-theory:-probability/index.html) (6 topics)
-
-* [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (6 topics)
 
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 16 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 17 2021 at 00:14 UTC</p>

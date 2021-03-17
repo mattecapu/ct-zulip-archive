@@ -9,6 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [ε-δ is "semi-adjunction"?](topic/.CE.B5-.CE.B4.20is.20.22semi-adjunction.22.3F.html) (37 messages, latest: Mar 16 2021 at 17:23)
+* [infinity naturality](topic/infinity.20naturality.html) (9 messages, latest: Mar 16 2021 at 15:02)
+* [equalisers/pullbacks of "global elements", but for mon. cats](topic/equalisers.2Fpullbacks.20of.20.22global.20elements.22.2C.20but.20for.20mon.2E.20cats.html) (1 message, latest: Mar 16 2021 at 02:13)
 * [category where objects and arrows are the same thing?](topic/category.20where.20objects.20and.20arrows.20are.20the.20same.20thing.3F.html) (26 messages, latest: Mar 15 2021 at 19:20)
 * [notions of lax monoidal functors](topic/notions.20of.20lax.20monoidal.20functors.html) (9 messages, latest: Mar 15 2021 at 17:42)
 * [beginner questions](topic/beginner.20questions.html) (97 messages, latest: Mar 14 2021 at 22:04)
@@ -32,7 +35,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [I forgot a bunch of stuff](topic/I.20forgot.20a.20bunch.20of.20stuff.html) (10 messages, latest: Mar 01 2021 at 22:23)
 * [differential rig categories](topic/differential.20rig.20categories.html) (3 messages, latest: Feb 28 2021 at 09:44)
 * [products in a monoid](topic/products.20in.20a.20monoid.html) (31 messages, latest: Feb 28 2021 at 08:56)
-* [ε-δ is "semi-adjunction"?](topic/.CE.B5-.CE.B4.20is.20.22semi-adjunction.22.3F.html) (36 messages, latest: Feb 27 2021 at 21:47)
 * [decomposing 2d TQFTs](topic/decomposing.202d.20TQFTs.html) (64 messages, latest: Feb 27 2021 at 20:26)
 * [Finite Biproducts Without Pointedness](topic/Finite.20Biproducts.20Without.20Pointedness.html) (7 messages, latest: Feb 26 2021 at 21:33)
 * [Walking arrow in a 2-category](topic/Walking.20arrow.20in.20a.202-category.html) (2 messages, latest: Feb 26 2021 at 02:08)
@@ -343,4 +345,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 16 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 17 2021 at 00:14 UTC</p>
