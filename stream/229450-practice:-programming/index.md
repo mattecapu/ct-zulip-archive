@@ -9,6 +9,7 @@ permalink: /stream/229450-practice:-programming/index.html
 
 ### Topics:
 
+* [kripke-joyal semantics solver](topic/kripke-joyal.20semantics.20solver.html) (1 message, latest: Mar 17 2021 at 14:52)
 * [hyperdocument system](topic/hyperdocument.20system.html) (1 message, latest: Aug 14 2020 at 15:13)
 * [monads and object oriented programming](topic/monads.20and.20object.20oriented.20programming.html) (41 messages, latest: May 12 2020 at 15:49)
 * [type classes](topic/type.20classes.html) (14 messages, latest: Apr 26 2020 at 18:47)
@@ -18,4 +19,4 @@ permalink: /stream/229450-practice:-programming/index.html
 * [Hask](topic/Hask.html) (141 messages, latest: Apr 01 2020 at 18:14)
 * [other resources](topic/other.20resources.html) (2 messages, latest: Mar 25 2020 at 07:15)
 
-<hr><p>Last updated: Mar 17 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 18 2021 at 00:14 UTC</p>

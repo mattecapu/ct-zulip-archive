@@ -10,7 +10,7 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (335 topics)
 
-* [general](stream/229111-general/index.html) (183 topics)
+* [general](stream/229111-general/index.html) (184 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (124 topics)
 
@@ -52,6 +52,8 @@ permalink: /index.html
 
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
 
+* [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (14 topics)
+
 * [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (13 topics)
 
 * [practice: communication](stream/233322-practice:-communication/index.html) (13 topics)
@@ -64,15 +66,13 @@ permalink: /index.html
 
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
-* [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (10 topics)
+* [practice: programming](stream/229450-practice:-programming/index.html) (9 topics)
+
+* [theory: concurrency](stream/235484-theory:-concurrency/index.html) (9 topics)
 
 * [philosophy](stream/229134-philosophy/index.html) (8 topics)
 
 * [practice: economics](stream/231468-practice:-economics/index.html) (8 topics)
-
-* [practice: programming](stream/229450-practice:-programming/index.html) (8 topics)
-
-* [theory: concurrency](stream/235484-theory:-concurrency/index.html) (8 topics)
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 17 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 18 2021 at 00:14 UTC</p>
