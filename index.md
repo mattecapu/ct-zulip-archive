@@ -10,9 +10,9 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (335 topics)
 
-* [general](stream/229111-general/index.html) (184 topics)
+* [general](stream/229111-general/index.html) (185 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (124 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (125 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (95 topics)
 
@@ -44,6 +44,8 @@ permalink: /index.html
 
 * [practice: software](stream/229125-practice:-software/index.html) (19 topics)
 
+* [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (18 topics)
+
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (17 topics)
 
 * [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
@@ -51,8 +53,6 @@ permalink: /index.html
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
 
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
-
-* [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (14 topics)
 
 * [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (13 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 18 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 19 2021 at 00:14 UTC</p>

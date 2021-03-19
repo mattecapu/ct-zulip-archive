@@ -1,0 +1,66 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html">workshop: Polynomial Functors @ Topos</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html">Thorsten Altenkirch: "Containers and inductive types"</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+<head><link href="/style.css" rel="stylesheet"></head>
+
+{% raw %}
+
+<a name="230926457"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230926457" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Tim Hosgood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230926457">(Mar 18 2021 at 19:45)</a>:</h4>
+<p>Thursday, 20:00 UTC</p>
+
+
+
+<a name="230937265"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230937265" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230937265">(Mar 18 2021 at 21:03)</a>:</h4>
+<p><span class="user-mention" data-user-id="398566">@Thorsten Altenkirch</span> Thanks for the talk, very interesting. Sorry my microphone is not working properly, so I am asking a question here: Do you have an implementation of the syntax you mentioned for QIIT in a proof assistant? Say for instance I would like to formalize a type theory using an intrinsic syntax, is there any practical way of doing so? I have tried in the past following your paper with A. Kaposi, but handling manually all the elimination principles and never using Agda's pattern mattching is not really where you want to be</p>
+
+
+
+<a name="230940398"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230940398" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Thorsten Altenkirch <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230940398">(Mar 18 2021 at 21:26)</a>:</h4>
+<p>Yes, but there are still bits and proofs missing. As I said it is work in progress. I am using cubical agda. But I am happy to discuss it. I don't think the code is anywhere ready for sharing without comment.</p>
+
+
+
+<a name="230940432"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230940432" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Thorsten Altenkirch <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230940432">(Mar 18 2021 at 21:27)</a>:</h4>
+<p>Ah in cubical agda you can define QIITs and just use pattern matching.</p>
+
+
+
+<a name="230940645"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230940645" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Thorsten Altenkirch <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230940645">(Mar 18 2021 at 21:29)</a>:</h4>
+<p>You need to apply a little trick due to a student by Ambrus (whose name escapes me just now). You always define a "micro" universe U : Set, El : U -&gt; Set mutually. This way you can add your constructor in any order.</p>
+
+
+
+<a name="230941293"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230941293" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230941293">(Mar 18 2021 at 21:34)</a>:</h4>
+<p>Thanks, I have been meaning to look at cubical Agda for a while. I will give this a try and see how it goes then</p>
+
+
+
+<a name="230956101"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/230956101" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#230956101">(Mar 19 2021 at 00:10)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="398566">Thorsten Altenkirch</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/230940645">said</a>:</p>
+<blockquote>
+<p>You need to apply a little trick due to a student by Ambrus (whose name escapes me just now). You always define a "micro" universe U : Set, El : U -&gt; Set mutually. This way you can add your constructor in any order.</p>
+</blockquote>
+<p>Thorsten,  I have a very uninformed question: why people in TT want to have QIIT and HIIT? what do they give you more than you have already? and does any one consider conductive versions for these guys?</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Mar 19 2021 at 00:14 UTC</p>

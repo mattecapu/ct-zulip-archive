@@ -1,0 +1,44 @@
+[
+    {
+        "content": "<p>Thursday, 20:00 UTC</p>",
+        "id": 230926457,
+        "sender_full_name": "Tim Hosgood",
+        "timestamp": 1616096753
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"398566\">@Thorsten Altenkirch</span> Thanks for the talk, very interesting. Sorry my microphone is not working properly, so I am asking a question here: Do you have an implementation of the syntax you mentioned for QIIT in a proof assistant? Say for instance I would like to formalize a type theory using an intrinsic syntax, is there any practical way of doing so? I have tried in the past following your paper with A. Kaposi, but handling manually all the elimination principles and never using Agda's pattern mattching is not really where you want to be</p>",
+        "id": 230937265,
+        "sender_full_name": "Thibaut Benjamin",
+        "timestamp": 1616101435
+    },
+    {
+        "content": "<p>Yes, but there are still bits and proofs missing. As I said it is work in progress. I am using cubical agda. But I am happy to discuss it. I don't think the code is anywhere ready for sharing without comment.</p>",
+        "id": 230940398,
+        "sender_full_name": "Thorsten Altenkirch",
+        "timestamp": 1616102818
+    },
+    {
+        "content": "<p>Ah in cubical agda you can define QIITs and just use pattern matching.</p>",
+        "id": 230940432,
+        "sender_full_name": "Thorsten Altenkirch",
+        "timestamp": 1616102844
+    },
+    {
+        "content": "<p>You need to apply a little trick due to a student by Ambrus (whose name escapes me just now). You always define a \"micro\" universe U : Set, El : U -&gt; Set mutually. This way you can add your constructor in any order.</p>",
+        "id": 230940645,
+        "sender_full_name": "Thorsten Altenkirch",
+        "timestamp": 1616102955
+    },
+    {
+        "content": "<p>Thanks, I have been meaning to look at cubical Agda for a while. I will give this a try and see how it goes then</p>",
+        "id": 230941293,
+        "sender_full_name": "Thibaut Benjamin",
+        "timestamp": 1616103255
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"398566\">Thorsten Altenkirch</span> <a href=\"#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/230940645\">said</a>:</p>\n<blockquote>\n<p>You need to apply a little trick due to a student by Ambrus (whose name escapes me just now). You always define a \"micro\" universe U : Set, El : U -&gt; Set mutually. This way you can add your constructor in any order.</p>\n</blockquote>\n<p>Thorsten,  I have a very uninformed question: why people in TT want to have QIIT and HIIT? what do they give you more than you have already? and does any one consider conductive versions for these guys?</p>",
+        "id": 230956101,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1616112631
+    }
+]

@@ -9,6 +9,8 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [TheCanonworks, A New Social Media Site of Interest to Aca...](topic/TheCanonworks.2C.20A.20New.20Social.20Media.20Site.20of.20Interest.20to.20Aca.2E.2E.2E.html) (3 messages, latest: Mar 18 2021 at 14:33)
+* [quiver: a modern commutative diagram editor](topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (35 messages, latest: Mar 18 2021 at 11:14)
 * [Contacting David Spivak](topic/Contacting.20David.20Spivak.html) (3 messages, latest: Mar 17 2021 at 22:51)
 * [birthday celebration](topic/birthday.20celebration.html) (3 messages, latest: Mar 16 2021 at 19:26)
 * [Introduce Yourself!](topic/Introduce.20Yourself!.html) (585 messages, latest: Mar 16 2021 at 14:12)
@@ -39,7 +41,6 @@ permalink: /stream/229111-general/index.html
 * [Process.io stream](topic/Process.2Eio.20stream.html) (1 message, latest: Dec 08 2020 at 10:28)
 * [Tools for typesetting wiring diagrams?](topic/Tools.20for.20typesetting.20wiring.20diagrams.3F.html) (3 messages, latest: Dec 08 2020 at 09:48)
 * [Peter Johnstone](topic/Peter.20Johnstone.html) (12 messages, latest: Dec 06 2020 at 11:27)
-* [quiver: a modern commutative diagram editor](topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (32 messages, latest: Nov 30 2020 at 20:26)
 * [Spans in 2-categories](topic/Spans.20in.202-categories.html) (1 message, latest: Nov 30 2020 at 10:46)
 * [Spans in 2-categories (sidetopic: Diamonds)](topic/Spans.20in.202-categories.20(sidetopic.3A.20Diamonds).html) (1 message, latest: Nov 30 2020 at 10:46)
 * [Ramanujan's last formula](topic/Ramanujan's.20last.20formula.html) (4 messages, latest: Nov 29 2020 at 23:07)
@@ -194,4 +195,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Mar 18 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 19 2021 at 00:14 UTC</p>
