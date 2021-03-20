@@ -34,6 +34,8 @@ permalink: /index.html
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (27 topics)
 
+* [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
+
 * [general: positions](stream/245502-general:-positions/index.html) (21 topics)
 
 * [general: values](stream/241990-general:-values/index.html) (21 topics)
@@ -43,8 +45,6 @@ permalink: /index.html
 * [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (19 topics)
 
 * [practice: software](stream/229125-practice:-software/index.html) (19 topics)
-
-* [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (18 topics)
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (17 topics)
 
@@ -62,7 +62,7 @@ permalink: /index.html
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (13 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (11 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (12 topics)
 
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 19 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 20 2021 at 00:14 UTC</p>

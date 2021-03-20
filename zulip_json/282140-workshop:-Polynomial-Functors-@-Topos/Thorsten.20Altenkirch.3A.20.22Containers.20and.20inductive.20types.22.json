@@ -40,5 +40,59 @@
         "id": 230956101,
         "sender_full_name": "Valeria de Paiva",
         "timestamp": 1616112631
+    },
+    {
+        "content": "<p>I think I can partially answer your first question: You want HIIT for the same reason that you want higher order inductive types and that you want inductive inductive types but combined. </p>\n<p>Basically you want \"higher order\" because you want to be able to define \"non-free\" types. With usual inductive types, everything is free, in the sense that you only give generators. Higher inductive types let you also add relations, and since HoTT wants to stay proof relevant, you may also need to add relations between relations and so on. I would say going to higher inductive is analogous to moving from free groups to generic groups, by adding relations to the generators. </p>\n<p>On the other hand, you want inductive inductive types to describe concepts that are mutually dependent on each other in an intrinsic way. The primary example that I know of is the syntax of a type theory, where a type is only valid in a context, which is itself made of types. I actually don't have a good algebraic analogue of this situation, but it would be nice to have one. </p>\n<p>Now combine these two motivations and you get HIIT: where multiple concepts depend on each other mutually and they are not freely presented but need some relations.</p>",
+        "id": 230957485,
+        "sender_full_name": "Thibaut Benjamin",
+        "timestamp": 1616113790
+    },
+    {
+        "content": "<p>I don't know exactly how much more they give you compared to just higher inductive. I think I vaguely remember something about inductive inductive types (or maybe inductive recursive types) reducing to normal inductive types, but I am not sure about that, and even if it is true, it may not generalize to higher settings. I have never heard of higher coinductive types either but that would make sense, as it would correspond to a presentation of a coalgebra. I have never heard of coinductive coinductive types either, and I don't have a clear intuition of what these could really be. Maybe it could be used to define some kind of infinitary type theory</p>",
+        "id": 230958158,
+        "sender_full_name": "Thibaut Benjamin",
+        "timestamp": 1616114228
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"279935\">Thibaut Benjamin</span> <a href=\"#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/230957485\">said</a>:</p>\n<blockquote>\n<p>I think I can partially answer your first question: You want HIIT for the same reason that you want higher order inductive types and that you want inductive inductive types but combined. </p>\n<p>Basically you want \"higher order\" because you want to be able to define \"non-free\" types. With usual inductive types, everything is free, in the sense that you only give generators. Higher inductive types let you also add relations, and since HoTT wants to stay proof relevant, you may also need to add relations between relations and so on. I would say going to higher inductive is analogous to moving from free groups to generic groups, by adding relations to the generators. <br>\n</p>\n</blockquote>\n<p>Many thanks! but I do find it very strange: I expected examples of programs that you'd want it for. Because I expected that inductive types would be enough for proof-relevant vanilla type theory.  it's a surprise to hear that this is not the case.</p>",
+        "id": 230963585,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1616117984
+    },
+    {
+        "content": "<p>An example I always have in mind when thinking about HITs is the integers.<br>\nTo be fair, I don't know whether this is actually true (and correct) or just a figment of my imagination. I'd be happy to know if this is/isn't a good example.<br>\nSo, you'd like to define integers like you do for natural numbers, that is, something like</p>\n<div class=\"codehilite\"><pre><span></span><code>data Z : Set where\n  zero : Z\n  succ : Z -&gt; Z\n  pred : Z -&gt; Z\n</code></pre></div>\n<p>but in this way <code>succ pred zero</code> is different than <code>pred succ zero</code>, which is not what happens for the integers (as Thorsten says, this type is the free monoid on 2 generators, and the integers are not free)<br>\nThe most direct way would be to add two lines, corresponding to the two relations lurking in the integers</p>\n<div class=\"codehilite\"><pre><span></span><code>  comm : (z : Z) -&gt; succ pred z ≣ pred succ z\n  canc : (z : Z) -&gt; succ pred z ≣ z\n</code></pre></div>\n<p>and I guess that's where HIT come on the stage.</p>",
+        "id": 230989374,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1616142415
+    },
+    {
+        "content": "<p>Yes exactly there are a few other \"classical\" examples out there. Another example that I find enlightening is the propositional truncation. For a type <code>X</code>, its propositional truncation<code>||X||</code> is a type that contains the same terms as <code>X</code>, except they are all equal. The intuition is that <code>||X||</code> is logically equivalent to <code>X</code>, but it is required that all its terms are propositionally equal. A possible definition of the propositional truncation using a HIT:</p>\n<div class=\"codehilite\"><pre><span></span><code>data ||X|| :Set where\n  tm :  X -&gt;  ||X||\n  eq : (x y : ||X||) -&gt; x==y\n</code></pre></div>\n<p>Interestingly in this case the initiality part of the HIT gives you exactly the universal property that you want for the propositional truncation. That is not something you can write with usual inductive types. You could define this type manually using axioms. But the idea in having HIT, is that it guarantees the consistency, provide a uniform way for understanding the semantics gives you a framework that computes better than axioms</p>",
+        "id": 230998286,
+        "sender_full_name": "Thibaut Benjamin",
+        "timestamp": 1616147687
+    },
+    {
+        "content": "<p>Sorry; what was the reference for containers have derivatives in symmetric containers?</p>",
+        "id": 231044801,
+        "sender_full_name": "D.G. Berry",
+        "timestamp": 1616169073
+    },
+    {
+        "content": "<p>It just occurred to me that I could just watch the YT recording!</p>",
+        "id": 231045104,
+        "sender_full_name": "D.G. Berry",
+        "timestamp": 1616169184
+    },
+    {
+        "content": "<p>You mean the thesis by Gylterud? Here, <a href=\"https://www.duo.uio.no/handle/10852/10740\">https://www.duo.uio.no/handle/10852/10740</a> .</p>",
+        "id": 231097118,
+        "sender_full_name": "Tarmo Uustalu",
+        "timestamp": 1616192128
+    },
+    {
+        "content": "<p><a href=\"https://hakon.gylterud.net/research/\">https://hakon.gylterud.net/research/</a></p>",
+        "id": 231097291,
+        "sender_full_name": "Tarmo Uustalu",
+        "timestamp": 1616192246
     }
 ]

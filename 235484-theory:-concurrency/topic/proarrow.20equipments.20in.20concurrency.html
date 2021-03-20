@@ -428,6 +428,121 @@ but they seem to be different.</p>
 
 
 
+<a name="230960222"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/230960222" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Alex Gryzlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#230960222">(Mar 19 2021 at 01:03)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276438">Fabrizio Genovese</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/224349809">said</a>:</p>
+<blockquote>
+<p>In any case, back to the original issue: I am not a fan of describing concurrent processes in terms of messages. There are very deep reasons for this, but in a nutshell: A concurrent system is made of two layers:</p>
+<ul>
+<li>A network layer, where messages get exchanged. The network can also dynamically change in time, and you should also take into account things like latencies etc to model race conditions.</li>
+<li>A local layer, that is, the computation that each machine executes locally.<br>
+All the frameworks I've seen so far either ignore the network layer (e.g. lambda calculus, FSMs) or ignore the local layer (e.g. pi calculus, Petri nets). We won't go anywhere until we merge the two approaches into a unique condition. I've tried to do so using sheaves for two years and with the help of many people (lately mainly <span class="user-mention silent" data-user-id="275932">Matteo Capucci (he/him)</span> ), but it's effing hard, and I'm not anymore convinced that sheaves are the right way to tackle this. If someone is interested in pursuing this line of research, or to suggest any possible mathematical tool to model this, please let me know, I'm -&gt;Super&lt;- interested in this.</li>
+</ul>
+</blockquote>
+<p>"Concurrency" is a pretty overloaded term, but in programming it usually means local computation, and what you get by adding various network effects (dynamic topology, partitions, crashes/byzantine behaviour etc) is usually grouped under the term "distributed systems". The border between the two is of course pretty fuzzy because of stuff like weak memory models, where each CPU core and its cache is essentially a separate agent which must negotiate with others, which sometimes introduces some bizzare side-effects in the execution.</p>
+
+
+
+<a name="230981142"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/230981142" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Tom Hirschowitz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#230981142">(Mar 19 2021 at 06:18)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276037">Jade Master</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/224368004">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276438">Fabrizio Genovese</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/224349809">said</a>:</p>
+<blockquote>
+<p>In any case, back to the original issue: I am not a fan of describing concurrent processes in terms of messages. There are very deep reasons for this, but in a nutshell: A concurrent system is made of two layers:</p>
+<ul>
+<li>A network layer, where messages get exchanged. The network can also dynamically change in time, and you should also take into account things like latencies etc to model race conditions.</li>
+<li>A local layer, that is, the computation that each machine executes locally.<br>
+All the frameworks I've seen so far either ignore the network layer (e.g. lambda calculus, FSMs) or ignore the local layer (e.g. pi calculus, Petri nets). We won't go anywhere until we merge the two approaches into a unique condition. I've tried to do so using sheaves for two years and with the help of many people (lately mainly <span class="user-mention silent" data-user-id="275932">Matteo Capucci (he/him)</span> ), but it's effing hard, and I'm not anymore convinced that sheaves are the right way to tackle this. If someone is interested in pursuing this line of research, or to suggest any possible mathematical tool to model this, please let me know, I'm -&gt;Super&lt;- interested in this.</li>
+</ul>
+</blockquote>
+<p>I suppose that I don't entirely understand this distinction. I would say that Petri nets can do both, either model the computations on a specific machine or model the coordination between machines. Similarly, FSM's can also model on both levels. Is your point that they don't model at both levels at the same time? If so there are various ways to make Petri nets Hierarchical which I think you might already be aware of... .</p>
+</blockquote>
+<p>Sorry I'm late on this one, but I don't understand either, in a different way: I would say that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span></span>-calculus also does both. Obviously, messages implement the network layer, but the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span></span>-calculus is also Turing complete (there are quite a few faithful translations from the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">λ</span></span></span></span>-calculus out there), so it may also represent the local layer. Am I missing something?</p>
+
+
+
+<a name="231015673"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/231015673" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#231015673">(Mar 19 2021 at 12:38)</a>:</h4>
+<p>No, you are totally right. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span></span> calculus, being turing complete, can represent any computation _in terms of messages_, and that's my point! What I mean is that networks and local computations, in my opinion, are conceptually very different. Networks are best explained using messages, local computations using stuff like lambda calculus. All the models I've seen so far throw everything in the same bucket: pi calculus describes everything in terms of messages for instance, which makes it cumbersome to do some of the things that lambda calculus does easily. lambda calculus does not have a notion of message or channel, and so network models become difficult to express in that framework. All these models are pretty extreme, meaning that you are looking at everything using the same conceptual filter.</p>
+
+
+
+<a name="231015803"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/231015803" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#231015803">(Mar 19 2021 at 12:39)</a>:</h4>
+<p>In ordinary infrastructure we have a network layer and a local layer. These are both ultimately the same if you describe them as "electrons going around" but really have much much different conceptual flavors, and all the models I've seen so far discard one of these flavors to favor the other. I don't think this makes real justice to the task of describing what things like consensus protocols are</p>
+
+
+
+<a name="231015995"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/231015995" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#231015995">(Mar 19 2021 at 12:41)</a>:</h4>
+<p>So, Ideally, I would like something that has enough depth so that we can talk about networks and local computations using different dictionaries, but in a way so that these different dictionaries end up being compatible. BTW, my work with <span class="user-mention" data-user-id="275932">@Matteo Capucci (he/him)</span> on this has stalled for now, saying something meaningful ended up proving much harder than we expected.</p>
+
+
+
+<a name="231016671"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/231016671" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#231016671">(Mar 19 2021 at 12:47)</a>:</h4>
+<p>Maybe, to clarify, try to invert things: As (I think) Samson Abramsky once asked, "which function does the Internet compute?"<br>
+Theoretically, you _could_ come up with something a program for a Turing machine that computes the internet. You can for sure because of Turing completeness. We all know that this approach won't fly tho. <br>
+I think pi calculus didn't really become popular among programmers for a similar reason: It is great to model messaging infrastructure, but it is incredibly cumbersome for modelling task that are menial in other languages. All in all I think all these paradigms fall short of something when you employ them to model mixed systems where local computations, messaging and (maybe) data storage/retrieve are all happening at the same time.</p>
+
+
+
+<a name="231017348"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/231017348" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Tom Hirschowitz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#231017348">(Mar 19 2021 at 12:52)</a>:</h4>
+<p>Aha, this is starting to make sense to me. Are you looking for something like Leroy's <a href="https://xavierleroy.org/bibrefs/Leroy-modular-modules.html">modular module system</a>, but for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span></span>-calculus? Explicitly, are you attempting to view <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span></span>-calculus as a language fragment, interacting with another, more local fragment, in a way that is perhaps parametric in the latter? </p>
+<p>In passing, <span class="user-mention" data-user-id="385613">@Clovis Eberhart</span>, <span class="user-mention" data-user-id="302916">@Thomas Seiller</span>,  and I did some <a href="https://lmcs.episciences.org/4069">work</a> on a sheaf-based model for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span></span>-calculus, in case you're interested. There, the sheaf condition says that the future behaviour of each node in the network from some point in time should depend only on its own history, which in particular entails that each node behaves independently from others.</p>
+
+
+
+<a name="231017970"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/231017970" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#231017970">(Mar 19 2021 at 12:57)</a>:</h4>
+<p>So, I didn't look at calculi, the approach we were taking was mainly semantic. This is basically due to the fact that I (and I guess Matteo) know categories better than I know calculi. But yes, I think we are basically saying the same thing</p>
+
+
+
+<a name="231025800"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/231025800" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Jake Gillberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#231025800">(Mar 19 2021 at 13:55)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276438">Fabrizio Genovese</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/224349809">said</a>:</p>
+<blockquote>
+<p>In any case, back to the original issue: I am not a fan of describing concurrent processes in terms of messages. There are very deep reasons for this, but in a nutshell: A concurrent system is made of two layers:</p>
+<ul>
+<li>A network layer, where messages get exchanged. The network can also dynamically change in time, and you should also take into account things like latencies etc to model race conditions.</li>
+<li>A local layer, that is, the computation that each machine executes locally.<br>
+All the frameworks I've seen so far either ignore the network layer (e.g. lambda calculus, FSMs) or ignore the local layer (e.g. pi calculus, Petri nets). We won't go anywhere until we merge the two approaches into a unique condition. I've tried to do so using sheaves for two years and with the help of many people (lately mainly <span class="user-mention silent" data-user-id="275932">Matteo Capucci (he/him)</span> ), but it's effing hard, and I'm not anymore convinced that sheaves are the right way to tackle this. If someone is interested in pursuing this line of research, or to suggest any possible mathematical tool to model this, please let me know, I'm -&gt;Super&lt;- interested in this.</li>
+</ul>
+</blockquote>
+<p><span class="user-mention" data-user-id="276438">@Fabrizio Genovese</span>  Have you looked into Milner's later work on "bigraphs"? They were created to subsume process calculi and have exactly the two layers you describe: A DAG to represent locality, and a graph to represent network connections.</p>
+
+
+
+<a name="231039556"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/231039556" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Alex Gryzlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#231039556">(Mar 19 2021 at 15:16)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276438">Fabrizio Genovese</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/231015995">said</a>:</p>
+<blockquote>
+<p>So, Ideally, I would like something that has enough depth so that we can talk about networks and local computations using different dictionaries, but in a way so that these different dictionaries end up being compatible. BTW, my work with <span class="user-mention silent" data-user-id="275932">Matteo Capucci (he/him)</span> on this has stalled for now, saying something meaningful ended up proving much harder than we expected.</p>
+</blockquote>
+<p>Sounds like you're looking for models that combine shared-state and message-passing concurrency, so some recent dist-systems literature on state machine replication could be relevant here, e.g. <a href="https://www.cs.technion.ac.il/~erez/Papers/rdma-podc18.pdf">Aguilera, Ben-David, Calciu, Guerraoui, Petrank, Toueg, [2018] "Passing Messages while Sharing Memory"</a></p>
+
+
+
+<a name="231041659"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/231041659" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Alex Gryzlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#231041659">(Mar 19 2021 at 15:31)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="383799">Tom Hirschowitz</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/231017348">said</a>:</p>
+<blockquote>
+<p>Aha, this is starting to make sense to me. Are you looking for something like Leroy's <a href="https://xavierleroy.org/bibrefs/Leroy-modular-modules.html">modular module system</a>, but for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span></span>-calculus? Explicitly, are you attempting to view <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span></span>-calculus as a language fragment, interacting with another, more local fragment, in a way that is perhaps parametric in the latter? </p>
+<p>In passing, <span class="user-mention silent" data-user-id="385613">Clovis Eberhart</span>, <span class="user-mention silent" data-user-id="302916">Thomas Seiller</span>,  and I did some <a href="https://lmcs.episciences.org/4069">work</a> on a sheaf-based model for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">π</span></span></span></span>-calculus, in case you're interested. There, the sheaf condition says that the future behaviour of each node in the network from some point in time should depend only on its own history, which in particular entails that each node behaves independently from others.</p>
+</blockquote>
+<p>Game-semantical models also seem to be tied to module systems, and there has been some separate work on GS for both <a href="http://www2.tcs.ifi.lmu.de/~schoepp/Docs/modules_tr.pdf">modules</a> and <a href="https://arxiv.org/abs/1304.4159">distributed execution</a>.</p>
+
+
+
+<a name="231046808"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/231046808" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#231046808">(Mar 19 2021 at 16:02)</a>:</h4>
+<p>So, my main idea/hope was this: Sheaves are a way to globally organize a bunch of local information. Here, if I take "local information" to be what happens on a single machine, the it should be possible to express this local vs global thing using the language of sheaves. One would organize a bunch of machines into a (pre)sheaf, which would represent the act of consistently organizing those machines (by sharing messages and resources). We tried to investigate this point of view for quite a while but got absolutely nothing out of it, so I am afraid I cannot be more precise as of now...</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Mar 19 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 20 2021 at 00:14 UTC</p>
