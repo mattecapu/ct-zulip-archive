@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Fibration composition using pseudofunctors](topic/Fibration.20composition.20using.20pseudofunctors.html) (14 messages, latest: Mar 20 2021 at 23:00)
 * [ε-δ is "semi-adjunction"?](topic/.CE.B5-.CE.B4.20is.20.22semi-adjunction.22.3F.html) (37 messages, latest: Mar 16 2021 at 17:23)
 * [infinity naturality](topic/infinity.20naturality.html) (9 messages, latest: Mar 16 2021 at 15:02)
 * [equalisers/pullbacks of "global elements", but for mon. cats](topic/equalisers.2Fpullbacks.20of.20.22global.20elements.22.2C.20but.20for.20mon.2E.20cats.html) (1 message, latest: Mar 16 2021 at 02:13)
@@ -345,4 +346,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 20 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 21 2021 at 00:15 UTC</p>

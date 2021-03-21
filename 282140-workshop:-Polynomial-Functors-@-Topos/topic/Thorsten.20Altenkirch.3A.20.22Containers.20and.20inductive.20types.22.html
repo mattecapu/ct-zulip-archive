@@ -142,6 +142,44 @@ The most direct way would be to add two lines, corresponding to the two relation
 
 
 
+<a name="231107856"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231107856" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231107856">(Mar 20 2021 at 00:21)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275932">Matteo Capucci (he/him)</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/230989374">said</a>:</p>
+<blockquote>
+<p>An example I always have in mind when thinking about HITs is the integers.<br>
+To be fair, I don't know whether this is actually true (and correct) or just a figment of my imagination. I'd be happy to know if this is/isn't a good example.<br>
+So, you'd like to define integers like you do for natural numbers, that is, something like</p>
+<div class="codehilite"><pre><span></span><code>data Z : Set where
+  zero : Z
+  succ : Z -&gt; Z
+  pred : Z -&gt; Z
+</code></pre></div>
+<p>but in this way <code>succ pred zero</code> is different than <code>pred succ zero</code>, which is not what happens for the integers (as Thorsten says, this type is the free monoid on 2 generators, and the integers are not free)<br>
+The most direct way would be to add two lines, corresponding to the two relations lurking in the integers</p>
+<div class="codehilite"><pre><span></span><code>  comm : (z : Z) -&gt; succ pred z ≣ pred succ z
+  canc : (z : Z) -&gt; succ pred z ≣ z
+</code></pre></div>
+<p>and I guess that's where HIT come on the stage.</p>
+</blockquote>
+<p>Thanks! but the example does not convince me very much. we have lots of ways to treat integers already. I understand that the point of the example is to show that this is a more natural way to have/deal with them, but I still fail to see why it's more natural to do it via HIIT types.</p>
+
+
+
+<a name="231110927"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231110927" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231110927">(Mar 20 2021 at 01:14)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="279935">Thibaut Benjamin</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/230998286">said</a>:</p>
+<blockquote>
+<p>Yes exactly there are a few other "classical" examples out there. Another example that I find enlightening is the propositional truncation. For a type <code>X</code>, its propositional truncation<code>||X||</code> is a type that contains the same terms as <code>X</code>, except they are all equal. The intuition is that <code>||X||</code> is logically equivalent to <code>X</code>, but it is required that all its terms are propositionally equal. A possible definition of the propositional truncation using a HIT:</p>
+<div class="codehilite"><pre><span></span><code>data ||X|| :Set where
+  tm :  X -&gt;  ||X||
+  eq : (x y : ||X||) -&gt; x==y
+</code></pre></div>
+<p>Interestingly in this case the initiality part of the HIT gives you exactly the universal property that you want for the propositional truncation. That is not something you can write with usual inductive types. You could define this type manually using axioms. But the idea in having HIT, is that it guarantees the consistency, provide a uniform way for understanding the semantics gives you a framework that computes better than axioms</p>
+</blockquote>
+<p>More thanks! I think this fits in with what I (think I) heard from K. Sojokova about a divergence between TT for CS and TT for mathematics yesterday, but again the intuition is not clear to me. of course we want to be able to simplify relevant proofs to proof-irrelevant ones and get rid of all the noise. not clear to me if there's a single way of doing it, if I should expect a single way of doing it or not.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Mar 20 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 21 2021 at 00:15 UTC</p>

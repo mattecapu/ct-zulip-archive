@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (335 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (336 topics)
 
 * [general](stream/229111-general/index.html) (185 topics)
 
@@ -60,9 +60,9 @@ permalink: /index.html
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (13 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (13 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (13 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (12 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (13 topics)
 
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
@@ -84,6 +84,8 @@ permalink: /index.html
 
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
+* [theory: probability](stream/253118-theory:-probability/index.html) (7 topics)
+
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (6 topics)
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (6 topics)
@@ -91,8 +93,6 @@ permalink: /index.html
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (6 topics)
 
 * [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (6 topics)
-
-* [theory: probability](stream/253118-theory:-probability/index.html) (6 topics)
 
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 20 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 21 2021 at 00:15 UTC</p>
