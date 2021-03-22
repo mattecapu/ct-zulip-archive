@@ -9,8 +9,8 @@ permalink: /stream/229125-practice:-software/index.html
 
 ### Topics:
 
+* [Metatheory.jl](topic/Metatheory.2Ejl.html) (43 messages, latest: Mar 21 2021 at 16:28)
 * [Nix/NixOS](topic/Nix.2FNixOS.html) (16 messages, latest: Mar 16 2021 at 08:45)
-* [Metatheory.jl](topic/Metatheory.2Ejl.html) (42 messages, latest: Mar 15 2021 at 19:51)
 * [discussion: quiver](topic/discussion.3A.20quiver.html) (23 messages, latest: Dec 16 2020 at 02:42)
 * [tools for diagrams](topic/tools.20for.20diagrams.html) (136 messages, latest: Dec 13 2020 at 12:58)
 * [Process.io stream](topic/Process.2Eio.20stream.html) (1 message, latest: Dec 08 2020 at 10:27)
@@ -29,4 +29,4 @@ permalink: /stream/229125-practice:-software/index.html
 * [Introduction](topic/Introduction.html) (8 messages, latest: Mar 24 2020 at 17:58)
 * [idris-ct](topic/idris-ct.html) (1 message, latest: Mar 24 2020 at 13:24)
 
-<hr><p>Last updated: Mar 21 2021 at 00:15 UTC</p>
+<hr><p>Last updated: Mar 22 2021 at 00:14 UTC</p>

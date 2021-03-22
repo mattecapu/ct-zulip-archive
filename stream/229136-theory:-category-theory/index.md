@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [tensor product of EM-algebras](topic/tensor.20product.20of.20EM-algebras.html) (40 messages, latest: Mar 19 2021 at 08:17)
+* [tensor product of EM-algebras](topic/tensor.20product.20of.20EM-algebras.html) (41 messages, latest: Mar 21 2021 at 23:55)
 * [Looking for references on enriched bicategories](topic/Looking.20for.20references.20on.20enriched.20bicategories.html) (10 messages, latest: Mar 12 2021 at 07:11)
 * [Slice categories as free lex categories](topic/Slice.20categories.20as.20free.20lex.20categories.html) (12 messages, latest: Feb 17 2021 at 05:04)
 * [Anti-Grothendieck Construction](topic/Anti-Grothendieck.20Construction.html) (21 messages, latest: Feb 10 2021 at 17:22)
@@ -135,4 +135,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Mar 21 2021 at 00:15 UTC</p>
+<hr><p>Last updated: Mar 22 2021 at 00:14 UTC</p>
