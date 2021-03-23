@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (336 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (337 topics)
 
 * [general](stream/229111-general/index.html) (185 topics)
 
@@ -16,7 +16,7 @@ permalink: /index.html
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (95 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (75 topics)
+* [general: events](stream/229141-general:-events/index.html) (76 topics)
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
@@ -30,7 +30,7 @@ permalink: /index.html
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
-* [theory: logic](stream/233104-theory:-logic/index.html) (30 topics)
+* [theory: logic](stream/233104-theory:-logic/index.html) (31 topics)
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (27 topics)
 
@@ -84,13 +84,13 @@ permalink: /index.html
 
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (7 topics)
+
 * [theory: probability](stream/253118-theory:-probability/index.html) (7 topics)
 
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (6 topics)
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (6 topics)
-
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (6 topics)
 
 * [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (6 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 22 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 23 2021 at 00:14 UTC</p>

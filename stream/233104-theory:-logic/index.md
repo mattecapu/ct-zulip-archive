@@ -9,6 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
+* [(uniform) interpolation and proof equalities/normalization](topic/(uniform).20interpolation.20and.20proof.20equalities.2Fnormalization.html) (1 message, latest: Mar 22 2021 at 11:13)
 * [filtered colimits and type theory](topic/filtered.20colimits.20and.20type.20theory.html) (3 messages, latest: Mar 14 2021 at 12:01)
 * [Filtered Colimits and Type Theory](topic/Filtered.20Colimits.20and.20Type.20Theory.html) (1 message, latest: Mar 13 2021 at 19:42)
 * [Category of sequents?](topic/Category.20of.20sequents.3F.html) (33 messages, latest: Mar 07 2021 at 15:01)
@@ -40,4 +41,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Mar 22 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 23 2021 at 00:14 UTC</p>

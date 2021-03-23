@@ -9,10 +9,10 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [birthday celebration](topic/birthday.20celebration.html) (6 messages, latest: Mar 22 2021 at 18:25)
 * [TheCanonworks, A New Social Media Site of Interest to Aca...](topic/TheCanonworks.2C.20A.20New.20Social.20Media.20Site.20of.20Interest.20to.20Aca.2E.2E.2E.html) (3 messages, latest: Mar 18 2021 at 14:33)
 * [quiver: a modern commutative diagram editor](topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (35 messages, latest: Mar 18 2021 at 11:14)
 * [Contacting David Spivak](topic/Contacting.20David.20Spivak.html) (3 messages, latest: Mar 17 2021 at 22:51)
-* [birthday celebration](topic/birthday.20celebration.html) (3 messages, latest: Mar 16 2021 at 19:26)
 * [Introduce Yourself!](topic/Introduce.20Yourself!.html) (585 messages, latest: Mar 16 2021 at 14:12)
 * [Counterexamples in Category Theory](topic/Counterexamples.20in.20Category.20Theory.html) (67 messages, latest: Mar 15 2021 at 15:47)
 * [new streams](topic/new.20streams.html) (74 messages, latest: Mar 15 2021 at 14:07)
@@ -195,4 +195,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Mar 22 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 23 2021 at 00:14 UTC</p>
