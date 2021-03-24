@@ -9,6 +9,7 @@ permalink: /stream/229125-practice:-software/index.html
 
 ### Topics:
 
+* [Reverse image search for categories](topic/Reverse.20image.20search.20for.20categories.html) (6 messages, latest: Mar 23 2021 at 20:12)
 * [Metatheory.jl](topic/Metatheory.2Ejl.html) (43 messages, latest: Mar 21 2021 at 16:28)
 * [Nix/NixOS](topic/Nix.2FNixOS.html) (16 messages, latest: Mar 16 2021 at 08:45)
 * [discussion: quiver](topic/discussion.3A.20quiver.html) (23 messages, latest: Dec 16 2020 at 02:42)
@@ -29,4 +30,4 @@ permalink: /stream/229125-practice:-software/index.html
 * [Introduction](topic/Introduction.html) (8 messages, latest: Mar 24 2020 at 17:58)
 * [idris-ct](topic/idris-ct.html) (1 message, latest: Mar 24 2020 at 13:24)
 
-<hr><p>Last updated: Mar 23 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 24 2021 at 00:14 UTC</p>

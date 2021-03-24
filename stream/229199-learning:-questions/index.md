@@ -9,8 +9,11 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Fibration composition using pseudofunctors](topic/Fibration.20composition.20using.20pseudofunctors.html) (34 messages, latest: Mar 23 2021 at 21:38)
+* [Locales](topic/Locales.html) (10 messages, latest: Mar 23 2021 at 21:21)
+* [Exponential, limits](topic/Exponential.2C.20limits.html) (2 messages, latest: Mar 23 2021 at 20:55)
+* [distributive laws](topic/distributive.20laws.html) (2 messages, latest: Mar 23 2021 at 17:28)
 * [Categorical interpretation of CLL + quantifiers?](topic/Categorical.20interpretation.20of.20CLL.20.2B.20quantifiers.3F.html) (5 messages, latest: Mar 22 2021 at 17:10)
-* [Fibration composition using pseudofunctors](topic/Fibration.20composition.20using.20pseudofunctors.html) (16 messages, latest: Mar 21 2021 at 09:20)
 * [ε-δ is "semi-adjunction"?](topic/.CE.B5-.CE.B4.20is.20.22semi-adjunction.22.3F.html) (37 messages, latest: Mar 16 2021 at 17:23)
 * [infinity naturality](topic/infinity.20naturality.html) (9 messages, latest: Mar 16 2021 at 15:02)
 * [equalisers/pullbacks of "global elements", but for mon. cats](topic/equalisers.2Fpullbacks.20of.20.22global.20elements.22.2C.20but.20for.20mon.2E.20cats.html) (1 message, latest: Mar 16 2021 at 02:13)
@@ -347,4 +350,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 23 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 24 2021 at 00:14 UTC</p>

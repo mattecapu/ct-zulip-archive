@@ -225,6 +225,82 @@ The most direct way would be to add two lines, corresponding to the two relation
 
 
 
+<a name="231438758"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231438758" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231438758">(Mar 23 2021 at 08:56)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/231367544">said</a>:</p>
+<blockquote>
+<p><em>Whenever</em> we want to simplify relevant proofs to proof irrelevant ones and get rid of all the noise, it is not clear to me if there's one single way of doing it that's morally correct or not. that is, it's not clear to me if I should expect a single way of doing it or many.</p>
+</blockquote>
+<p>I am not completely sure how to answer that because I suspect it depends in which framework you are working. In HoTT, you have the propositional truncation, which can be defined by a universal property, and any two types satisfying the same universal property are always equivalent, so I would say there is an essentially unique way of doing so. The way I see it is that it amounts to taking a higher groupoid and freely throwing as many higher cells as needed to make is 1-trivial. My guess would be that this corresponds to a monad of some sort on higher groupoids, but I am not sure about that. I don't know of any construction internal to Martin-Löf TT that allows to go from relevant to irrelevant. One could extend MLTT with a new constructor that does this, but that would be exactly the same as the HIT. It's kind of like the fact that you can define natural numbers externally as a type constructor and give all its rules, or you can define inductive types in general, and then use them to define natural numbers internally.</p>
+
+
+
+<a name="231440780"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231440780" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231440780">(Mar 23 2021 at 09:16)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/231379766">said</a>:</p>
+<blockquote>
+<blockquote>
+<p>It is in fact very hard to come up with a notion of equality that is proof irrelevant, but still computes.</p>
+</blockquote>
+<p>hmm, why do you think this is?</p>
+</blockquote>
+<p>It's more of an "I noticed that" statement. When you have a function that takes an equality, if the equality is proof irrelevant, it amounts to giving only only the information that the identity type is inhabited, but not a specific term of the identity type. So somehow you need to come up with a function that can use the information that the identity type is inhabited, but is not allowed to prompt for what the inhabitant is. In particular, the function is not allowed to say how it computes on <code>refl</code> and then use the elimination principle. I don't know how to compute with such functions (but maybe some people do)</p>
+<p>The only workaround this I know is to restrict to types with decidable equality. The reason why it works in that case is that there is essentially a unique inhabitant for each identity types, so giving the info that the type is inhabited is really the same as giving the inhabitant.</p>
+
+
+
+<a name="231526777"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231526777" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231526777">(Mar 23 2021 at 19:13)</a>:</h4>
+<p>Many thanks! I think your answer is very much   what I was really asking  about when you say</p>
+<blockquote>
+<p>I don't know of any construction internal to Martin-Löf TT that allows to go from relevant to irrelevant. One could extend MLTT with a new constructor that does this, but that would be exactly the same as the HIT. </p>
+</blockquote>
+<p>OK. good to know. but why HIT instead of some kind of W-type?</p>
+<blockquote>
+<p>It's kind of like the fact that you can define natural numbers externally as a type constructor and give all its rules, or you can define inductive types in general, and then use them to define natural numbers internally.</p>
+</blockquote>
+<p>I find it very difficult to navigate which bits of CT correspond to which bits of the type theory. in MLTT or HoTT. <br>
+So I expected that ok truncation is great, if the model you're working with is HoTT. but I also expected other mechanisms (as you conjecture above) for other models. so this was why I was starting from first principles on what we know should happen, i.e you can forget the relevant proof structure, and the irrelevant proof should make sense. but then you need to know which of the noise is important and for what.</p>
+
+
+
+<a name="231532523"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231532523" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231532523">(Mar 23 2021 at 19:48)</a>:</h4>
+<p>and thanks again for the bit about why</p>
+<blockquote>
+<p>very hard to come up with a notion of equality that is proof irrelevant, but still computes.<br>
+I don't really understand it, but I think  I can vaguely see that computing with stuff that's all collapsed might be difficult. I also liked</p>
+</blockquote>
+<blockquote>
+<p>The only workaround this I know is to restrict to types with decidable equality. The reason why it works in that case is that there is essentially a unique inhabitant for each identity type, so giving the info that the type is inhabited is really the same as giving the inhabitant.</p>
+</blockquote>
+<p>Many thanks indeed!!! this has been very clarifying. <br>
+by the way, yesterday Dag Prawitz gave a talk in the Nordic Seminar and his talk seemed to be echoing some of the ideas here, because Prawitz seems to know when he thinks bits of a derivation are noise, when we actually need them (of course it might be all my imagination, I keep wishing that people are answering my questions). the talk will be online soon, I'll post the link here when I get it.</p>
+
+
+
+<a name="231539111"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231539111" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Conor McBride <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231539111">(Mar 23 2021 at 20:33)</a>:</h4>
+<p>Perhaps I might offer a clue about how proof irrelevance works when it does. It's important to remember that in type theory, we compute under hypotheses which might very well and undetectably be false. You cannot believe <em>proofs</em>, because all lies might be derivable from the current hypotheses. You can believe only <em>canonical</em> proofs. But asking if a proof is canonical is really not treating proofs as irrelevant. So instead of asking "is this proof canonical?" you have to ask "is there a canonical proof of this?". That is to say, you may act in no way that relies on believing a <em>proof</em>, but you may still act in ways which rely on believing your <em>eyes</em>. And that turns out to be enough to compute with proof irrelevant equality, provided the only equations between types are structural on the syntax of types (which is very far from the situation in HoTT).</p>
+
+
+
+<a name="231546099"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231546099" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231546099">(Mar 23 2021 at 21:23)</a>:</h4>
+<p>Many thanks, this also helps a lot!<br>
+ But</p>
+<blockquote>
+<p>It's important to remember that in type theory, we compute under hypotheses which might very well and undetectably be false. You cannot believe proofs, because all lies might be derivable from the current hypotheses. </p>
+</blockquote>
+<p>is also true of traditional logic, no? if you have deduction under hypotheses <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi><mo>⊢</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\Gamma\vdash A</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">Γ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⊢</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span></span></span></span>, the assumptions in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Γ</mi></mrow><annotation encoding="application/x-tex">\Gamma</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Γ</span></span></span></span> don't have to be true, I think. </p>
+<p>but yes, traditional logicians don't think canonicity of proofs is important, because the notion of different proofs of the same theorem is something they don't see in the logical formalism.</p>
+<blockquote>
+<p>And that turns out to be enough to compute with proof irrelevant equality, provided the only equations between types are structural on the syntax of types (which is very far from the situation in HoTT).</p>
+</blockquote>
+<p>ok, makes sense.  this (computing with proof irrelevant equality) would be enough for a middle-of-the-road, generic programmer, if we knew that the syntax of types we have is enough to represent everything we want and we knew all the equalities between these types. is it universally assumed that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Π</mi><mo separator="true">,</mo><mi mathvariant="normal">Σ</mi></mrow><annotation encoding="application/x-tex">\Pi,\Sigma</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord">Π</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">Σ</span></span></span></span>,  universes, identity and W-types is all we need? Can you tell me more about where you're putting your 'money' as it were, in terms of how to deal with what I called noise above, the bits of proof-relevant calculations that we want to throw away?</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Mar 23 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 24 2021 at 00:14 UTC</p>

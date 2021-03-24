@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (337 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (340 topics)
 
 * [general](stream/229111-general/index.html) (185 topics)
 
@@ -42,9 +42,9 @@ permalink: /index.html
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (20 topics)
 
-* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (19 topics)
+* [practice: software](stream/229125-practice:-software/index.html) (20 topics)
 
-* [practice: software](stream/229125-practice:-software/index.html) (19 topics)
+* [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (19 topics)
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (17 topics)
 
@@ -90,6 +90,8 @@ permalink: /index.html
 
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (6 topics)
 
+* [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (6 topics)
+
 * [practice: our work](stream/274877-practice:-our-work/index.html) (6 topics)
 
 * [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (6 topics)
@@ -97,8 +99,6 @@ permalink: /index.html
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
 
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
-
-* [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (5 topics)
 
 * [practice: translation](stream/260000-practice:-translation/index.html) (5 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 23 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 24 2021 at 00:14 UTC</p>
