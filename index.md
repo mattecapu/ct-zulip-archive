@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (340 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (342 topics)
 
 * [general](stream/229111-general/index.html) (185 topics)
 
@@ -32,7 +32,7 @@ permalink: /index.html
 
 * [theory: logic](stream/233104-theory:-logic/index.html) (31 topics)
 
-* [general: mathematics](stream/266967-general:-mathematics/index.html) (27 topics)
+* [general: mathematics](stream/266967-general:-mathematics/index.html) (29 topics)
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
@@ -84,6 +84,8 @@ permalink: /index.html
 
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
+* [practice: our work](stream/274877-practice:-our-work/index.html) (7 topics)
+
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (7 topics)
 
 * [theory: probability](stream/253118-theory:-probability/index.html) (7 topics)
@@ -91,8 +93,6 @@ permalink: /index.html
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (6 topics)
 
 * [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (6 topics)
-
-* [practice: our work](stream/274877-practice:-our-work/index.html) (6 topics)
 
 * [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (6 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 24 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 25 2021 at 00:46 UTC</p>

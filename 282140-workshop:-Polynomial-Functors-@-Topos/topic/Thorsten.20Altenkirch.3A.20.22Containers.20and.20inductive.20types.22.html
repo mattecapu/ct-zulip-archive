@@ -301,6 +301,66 @@ by the way, yesterday Dag Prawitz gave a talk in the Nordic Seminar and his talk
 
 
 
+<a name="231605104"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231605104" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Conor McBride <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231605104">(Mar 24 2021 at 09:37)</a>:</h4>
+<p>It's certainly true in most open settings that contexts tell lies. In ordinary logic, though, lies don't have such drastic computational consequences. The challenge is to explain how to make coerce : S = T -&gt; S -&gt; T compute, but also how to make it <em>not</em> compute if you have a bogus proof of X = (X -&gt; X) that you use to fix up the type errors in your favourite non-normalizing term.</p>
+<p>The old and manifestly proof-relevant way to do this is to wait for the proof of S = T to be reflexivity, which guarantees that S and T are <em>definitionally</em> equal, allowing coerce to become id on the nose. This has the unfortunate consequence of nailing the mathematical concept of equality to whatever disappointing accident has been cooked up as the conversion test. Even so, one can rescue this mechanism for proof irrelevance by testing whether S and T are convertible (i.e., the proof <em>could</em> be reflexivity) rather than staring directly at the proof.</p>
+<p>And that step away from the proof is the clue to alternative options. If you can't look at the proof, what can you look at? S, T, and the input of type S. And by "look", here, I mean "test for being canonical". If S and T are canonical with the same head, and the input value is canonical in S, and T admits its constructor, it must be possible to push the coercion under the constructor, componentwise. That's to say, computation proceeds while the equation is <em>plausible</em>, regardless of the proof. There need not even be a proof object. (I hasten to add that a great deal of workaday extensionality is available in such a setting.)</p>
+<p>But what to do if we want some non-syntactic equations between types? Equality, like orange juice, "with bits"? I haven't yet given up on the idea that we might be able to bookkeep where the bits are. Much as with the conversion test, we might circumscribe a universe of mundane sets which <em>obviously</em> admit proof irrelevant equality, where the precise definition of "obvious" is a disappointing accident, but generous enough to be getting along with. It would then be fun to construct a Tarski universe which gives a mundane syntax for interesting types and equalities.</p>
+<p>Whilst there has rightly been a drive to get our hands on higher structure, there is still scope for engineering to exploit its absence.</p>
+
+
+
+<a name="231613557"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231613557" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231613557">(Mar 24 2021 at 10:45)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277574">Conor McBride</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/231605104">said</a>:</p>
+<blockquote>
+<p>It's certainly true in most open settings that contexts tell lies. In ordinary logic, though, lies don't have such drastic computational consequences. The challenge is to explain how to make coerce : S = T -&gt; S -&gt; T compute, but also how to make it <em>not</em> compute if you have a bogus proof of X = (X -&gt; X) that you use to fix up the type errors in your favourite non-normalizing term.</p>
+</blockquote>
+<p>That's a very nice way to put it, thanks for this formulation! </p>
+<p>On a somewhat related note, I would advise some of the recent talks and blog post by Kevin Buzzard, and his experience formalizing algebraic geometry in Lean. He has a lot of discussions about what is the equality mathematicians in their daily practice. It turns out it is kind of a mix between a proof-relevant and a proof-irrelevant one.</p>
+
+
+
+<a name="231613778"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231613778" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Thibaut Benjamin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231613778">(Mar 24 2021 at 10:47)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> <a href="#narrow/stream/282140-workshop.3A-Polynomial.20Functors.20.40.20Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22/near/231532523">said</a>:</p>
+<blockquote>
+<p>by the way, yesterday Dag Prawitz gave a talk in the Nordic Seminar and his talk seemed to be echoing some of the ideas here, because Prawitz seems to know when he thinks bits of a derivation are noise, when we actually need them (of course it might be all my imagination, I keep wishing that people are answering my questions). the talk will be online soon, I'll post the link here when I get it.</p>
+</blockquote>
+<p>That's great, thanks a lot, I would be very interested to watch it</p>
+
+
+
+<a name="231641623"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231641623" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231641623">(Mar 24 2021 at 14:19)</a>:</h4>
+<p>Lovely, Connor! many thanks.</p>
+<blockquote>
+<p>Equality, like orange juice, "with bits"</p>
+</blockquote>
+<p>yes! at least this is what I thought we wanted to have, from the beginning. </p>
+<p>but I had never thought about the not-computing that you mention here.</p>
+<blockquote>
+<p>The challenge is to explain how to make coerce : S = T -&gt; S -&gt; T compute, but also how to make it not compute if you have a bogus proof of X = (X -&gt; X) that you use to fix up the type errors in your favourite non-normalizing term.</p>
+</blockquote>
+<p>great to hear that</p>
+<blockquote>
+<p>I haven't yet given up on the idea that we might be able to bookkeep where the bits are. </p>
+</blockquote>
+<p>looking forward to seeing more about this, in due course.</p>
+<blockquote>
+<p>Whilst there has rightly been a drive to get our hands on higher structure, there is still scope for engineering to exploit its absence.</p>
+</blockquote>
+<p>hear, hear!</p>
+
+
+
+<a name="231656378"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/282140-workshop%3A%20Polynomial%20Functors%20%40%20Topos/topic/Thorsten%20Altenkirch%3A%20%22Containers%20and%20inductive%20types%22/near/231656378" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/282140-workshop:-Polynomial-Functors-@-Topos/topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html#231656378">(Mar 24 2021 at 15:41)</a>:</h4>
+<p>I'm posting here the site for Prawitz's talk, just in case <a href="https://scandinavianlogic.org/2021-03-17-NOL-Seminar-Dag-Prawitz.html">https://scandinavianlogic.org/2021-03-17-NOL-Seminar-Dag-Prawitz.html</a></p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Mar 24 2021 at 00:14 UTC</p>
+<hr><p>Last updated: Mar 25 2021 at 00:46 UTC</p>
