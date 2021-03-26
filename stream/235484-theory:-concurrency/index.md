@@ -9,7 +9,7 @@ permalink: /stream/235484-theory:-concurrency/index.html
 
 ### Topics:
 
-* [shapes and algebraic structures](topic/shapes.20and.20algebraic.20structures.html) (141 messages, latest: Mar 24 2021 at 21:26)
+* [shapes and algebraic structures](topic/shapes.20and.20algebraic.20structures.html) (142 messages, latest: Mar 25 2021 at 19:33)
 * [proarrow equipments in concurrency](topic/proarrow.20equipments.20in.20concurrency.html) (72 messages, latest: Mar 24 2021 at 08:30)
 * [bisimulation](topic/bisimulation.html) (336 messages, latest: Mar 19 2021 at 05:39)
 * [Nets Within Nets From Grothendieck](topic/Nets.20Within.20Nets.20From.20Grothendieck.html) (76 messages, latest: Feb 04 2021 at 16:15)
@@ -19,4 +19,4 @@ permalink: /stream/235484-theory:-concurrency/index.html
 * [compact closed bicategories and the π-calculus](topic/compact.20closed.20bicategories.20and.20the.20.CF.80-calculus.html) (1 message, latest: Apr 22 2020 at 18:46)
 * [stream events](topic/stream.20events.html) (1 message, latest: Apr 22 2020 at 18:45)
 
-<hr><p>Last updated: Mar 25 2021 at 00:46 UTC</p>
+<hr><p>Last updated: Mar 26 2021 at 02:09 UTC</p>

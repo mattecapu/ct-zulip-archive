@@ -9,6 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [model and data provenance](topic/model.20and.20data.20provenance.html) (15 messages, latest: Mar 25 2021 at 20:28)
 * [web cats](topic/web.20cats.html) (135 messages, latest: Mar 23 2021 at 06:37)
 * [ACT as a field](topic/ACT.20as.20a.20field.html) (247 messages, latest: Feb 28 2021 at 17:49)
 * [A simple adjunction in probability theory](topic/A.20simple.20adjunction.20in.20probability.20theory.html) (5 messages, latest: Feb 22 2021 at 23:13)
@@ -105,4 +106,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Mar 25 2021 at 00:46 UTC</p>
+<hr><p>Last updated: Mar 26 2021 at 02:09 UTC</p>

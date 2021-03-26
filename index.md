@@ -10,11 +10,11 @@ permalink: /index.html
 
 * [learning: questions](stream/229199-learning:-questions/index.html) (342 topics)
 
-* [general](stream/229111-general/index.html) (185 topics)
+* [general](stream/229111-general/index.html) (186 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (125 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (95 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (96 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (76 topics)
 
@@ -52,11 +52,11 @@ permalink: /index.html
 
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
 
+* [practice: communication](stream/233322-practice:-communication/index.html) (14 topics)
+
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
 
 * [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (13 topics)
-
-* [practice: communication](stream/233322-practice:-communication/index.html) (13 topics)
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (13 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 25 2021 at 00:46 UTC</p>
+<hr><p>Last updated: Mar 26 2021 at 02:09 UTC</p>

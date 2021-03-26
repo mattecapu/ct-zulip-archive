@@ -9,7 +9,7 @@ permalink: /stream/238032-Categorical-Probability-and-Statistics-2020-workshop/i
 
 ### Topics:
 
-* [Categorical Radon-Nikodym](topic/Categorical.20Radon-Nikodym.html) (88 messages, latest: Mar 24 2021 at 15:36)
+* [Categorical Radon-Nikodym](topic/Categorical.20Radon-Nikodym.html) (90 messages, latest: Mar 25 2021 at 09:01)
 * [Jun 6: Eigil Rischel's talk](topic/Jun.206.3A.20Eigil.20Rischel's.20talk.html) (33 messages, latest: Nov 17 2020 at 14:37)
 * [Jun 6: Rob Spekkens' talk](topic/Jun.206.3A.20Rob.20Spekkens'.20talk.html) (15 messages, latest: Sep 08 2020 at 16:54)
 * [Jun 8: Prakash Panangaden's talk](topic/Jun.208.3A.20Prakash.20Panangaden's.20talk.html) (14 messages, latest: Sep 01 2020 at 18:48)
@@ -44,4 +44,4 @@ permalink: /stream/238032-Categorical-Probability-and-Statistics-2020-workshop/i
 * [signing up](topic/signing.20up.html) (5 messages, latest: Jun 04 2020 at 19:03)
 * [stream events](topic/stream.20events.html) (1 message, latest: May 08 2020 at 18:21)
 
-<hr><p>Last updated: Mar 25 2021 at 00:46 UTC</p>
+<hr><p>Last updated: Mar 26 2021 at 02:09 UTC</p>
