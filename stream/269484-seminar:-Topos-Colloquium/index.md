@@ -9,6 +9,7 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 
 ### Topics:
 
+* [Dan Christensen: "Reasoning in an ∞-topos with HoTT"](topic/Dan.20Christensen.3A.20.22Reasoning.20in.20an.20.E2.88.9E-topos.20with.20HoTT.22.html) (4 messages, latest: Mar 26 2021 at 14:38)
 * [John Baez: "Mathematics in the 21st century"](topic/John.20Baez.3A.20.22Mathematics.20in.20the.2021st.20century.22.html) (21 messages, latest: Mar 25 2021 at 23:54)
 * [Samson Abramsky: "The logic of contextuality"](topic/Samson.20Abramsky.3A.20.22The.20logic.20of.20contextuality.22.html) (19 messages, latest: Mar 14 2021 at 19:37)
 * [David Spivak: “Poly: a category of remarkable abundance”](topic/David.20Spivak.3A.20.E2.80.9CPoly.3A.20a.20category.20of.20remarkable.20abundance.E2.80.9D.html) (24 messages, latest: Feb 26 2021 at 09:06)
@@ -17,4 +18,4 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 * [Richard Garner: "Comodels of an algebraic theory"](topic/Richard.20Garner.3A.20.22Comodels.20of.20an.20algebraic.20theory.22.html) (27 messages, latest: Feb 11 2021 at 22:36)
 * [stream events](topic/stream.20events.html) (2 messages, latest: Dec 26 2020 at 19:06)
 
-<hr><p>Last updated: Mar 26 2021 at 02:09 UTC</p>
+<hr><p>Last updated: Mar 27 2021 at 00:34 UTC</p>

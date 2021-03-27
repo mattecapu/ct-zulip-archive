@@ -12,7 +12,7 @@ permalink: /index.html
 
 * [general](stream/229111-general/index.html) (186 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (125 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (126 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (96 topics)
 
@@ -74,6 +74,8 @@ permalink: /index.html
 
 * [practice: economics](stream/231468-practice:-economics/index.html) (8 topics)
 
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (8 topics)
+
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
 * [theory: physics](stream/251538-theory:-physics/index.html) (8 topics)
@@ -85,8 +87,6 @@ permalink: /index.html
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (7 topics)
-
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (7 topics)
 
 * [theory: probability](stream/253118-theory:-probability/index.html) (7 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Mar 26 2021 at 02:09 UTC</p>
+<hr><p>Last updated: Mar 27 2021 at 00:34 UTC</p>

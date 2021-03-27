@@ -23,4 +23,4 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [W-types and CFGs](topic/W-types.20and.20CFGs.html) (11 messages, latest: Apr 02 2020 at 16:00)
 * [homotopy type theory](topic/homotopy.20type.20theory.html) (10 messages, latest: Mar 26 2020 at 23:30)
 
-<hr><p>Last updated: Mar 26 2021 at 02:09 UTC</p>
+<hr><p>Last updated: Mar 27 2021 at 00:34 UTC</p>
