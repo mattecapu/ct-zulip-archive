@@ -9,11 +9,11 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [security + ct](topic/security.20.2B.20ct.html) (14 messages, latest: Mar 27 2021 at 20:26)
+* [web cats](topic/web.20cats.html) (136 messages, latest: Mar 27 2021 at 16:40)
 * [model and data provenance](topic/model.20and.20data.20provenance.html) (18 messages, latest: Mar 26 2021 at 18:24)
-* [web cats](topic/web.20cats.html) (135 messages, latest: Mar 23 2021 at 06:37)
 * [ACT as a field](topic/ACT.20as.20a.20field.html) (247 messages, latest: Feb 28 2021 at 17:49)
 * [A simple adjunction in probability theory](topic/A.20simple.20adjunction.20in.20probability.20theory.html) (5 messages, latest: Feb 22 2021 at 23:13)
-* [security + ct](topic/security.20.2B.20ct.html) (13 messages, latest: Feb 18 2021 at 15:52)
 * [chemical recipes as functors](topic/chemical.20recipes.20as.20functors.html) (86 messages, latest: Feb 17 2021 at 15:16)
 * [are commutative monoidal categories monadic over Petri nets?](topic/are.20commutative.20monoidal.20categories.20monadic.20over.20Petri.20nets.3F.html) (52 messages, latest: Feb 17 2021 at 03:39)
 * [operads for complex system design](topic/operads.20for.20complex.20system.20design.html) (63 messages, latest: Feb 01 2021 at 05:51)
@@ -106,4 +106,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Mar 27 2021 at 00:34 UTC</p>
+<hr><p>Last updated: Mar 28 2021 at 00:35 UTC</p>
