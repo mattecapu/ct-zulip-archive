@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [fibration composition using pseudofunctors](topic/fibration.20composition.20using.20pseudofunctors.html) (64 messages, latest: Mar 27 2021 at 16:49)
+* [fibration composition using pseudofunctors](topic/fibration.20composition.20using.20pseudofunctors.html) (74 messages, latest: Mar 28 2021 at 21:48)
 * [distributive laws](topic/distributive.20laws.html) (9 messages, latest: Mar 24 2021 at 22:02)
 * [exponential, limits](topic/exponential.2C.20limits.html) (9 messages, latest: Mar 24 2021 at 19:22)
 * [Fibration composition using pseudofunctors](topic/Fibration.20composition.20using.20pseudofunctors.html) (34 messages, latest: Mar 23 2021 at 21:38)
@@ -352,4 +352,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 28 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Mar 29 2021 at 00:35 UTC</p>
