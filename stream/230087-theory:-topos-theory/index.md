@@ -68,4 +68,4 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 * [essential geometric morphism](topic/essential.20geometric.20morphism.html) (2 messages, latest: Mar 27 2020 at 18:56)
 * [welcome](topic/welcome.html) (2 messages, latest: Mar 27 2020 at 09:22)
 
-<hr><p>Last updated: Mar 29 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Mar 30 2021 at 00:33 UTC</p>

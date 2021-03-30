@@ -9,7 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [fibration composition using pseudofunctors](topic/fibration.20composition.20using.20pseudofunctors.html) (74 messages, latest: Mar 28 2021 at 21:48)
+* [fibration composition using pseudofunctors](topic/fibration.20composition.20using.20pseudofunctors.html) (78 messages, latest: Mar 29 2021 at 20:29)
+* [structured ncatlab](topic/structured.20ncatlab.html) (4 messages, latest: Mar 29 2021 at 09:26)
+* [Why are generators of 2-morphisms usually nullary?](topic/Why.20are.20generators.20of.202-morphisms.20usually.20nullary.3F.html) (3 messages, latest: Mar 29 2021 at 03:34)
 * [distributive laws](topic/distributive.20laws.html) (9 messages, latest: Mar 24 2021 at 22:02)
 * [exponential, limits](topic/exponential.2C.20limits.html) (9 messages, latest: Mar 24 2021 at 19:22)
 * [Fibration composition using pseudofunctors](topic/Fibration.20composition.20using.20pseudofunctors.html) (34 messages, latest: Mar 23 2021 at 21:38)
@@ -352,4 +354,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Mar 29 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Mar 30 2021 at 00:33 UTC</p>

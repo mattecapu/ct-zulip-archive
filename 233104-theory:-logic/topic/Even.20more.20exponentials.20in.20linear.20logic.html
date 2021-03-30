@@ -16,7 +16,7 @@ permalink: /stream/233104-theory:-logic/topic/Even.20more.20exponentials.20in.20
 {% raw %}
 
 <a name="227081420"></a>
-<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Even%20more%20exponentials%20in%20linear%20logic/near/227081420" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Cann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Even.20more.20exponentials.20in.20linear.20logic.html#227081420">(Feb 20 2021 at 10:04)</a>:</h4>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Even%20more%20exponentials%20in%20linear%20logic/near/227081420" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andrew Cann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Even.20more.20exponentials.20in.20linear.20logic.html#227081420">(Feb 20 2021 at 10:04)</a>:</h4>
 <p>Hello people. I'm working on a type theory for a programming language I want to make based on linear logic and dependent types. As part of that, I'm considering adding an exponential modality similar to <code>!</code>/"of course" except without dereliction or promotion and with another rule instead which here I'll call "read". My problem is that I'm failing to figure out how to formulate this rule, so I'm hoping someone can help me...</p>
 <p>I'll describe my problem in more detail: The <code>!</code> modality has these three properties (in addition to promotion):</p>
 <ul>
@@ -69,7 +69,7 @@ Read(Read(A)) = Read(A)
 
 
 <a name="227082753"></a>
-<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Even%20more%20exponentials%20in%20linear%20logic/near/227082753" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Cann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Even.20more.20exponentials.20in.20linear.20logic.html#227082753">(Feb 20 2021 at 10:32)</a>:</h4>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Even%20more%20exponentials%20in%20linear%20logic/near/227082753" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andrew Cann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Even.20more.20exponentials.20in.20linear.20logic.html#227082753">(Feb 20 2021 at 10:32)</a>:</h4>
 <p>To explain my motivation a bit: The type <code>!A</code> is a strictly positive / "pure-data" type in the sense that it can be freely copied and destroyed. The only way to create a <code>!A</code> is if it's possible to create an <code>A</code> out of strictly-positive pure-data, but once you have an <code>!A</code> you can freely extract as many <code>A</code>s out of it as you like. In this sense, <code>!A</code> can be read as "I have a copyable <code>A</code>". And <code>!A</code> behaves like a comonad.</p>
 <p>I'd like a similar kind of type which behaves more like a monad (though not quite like one) and can be read as "I have a reference to an A". <code>Read(A)</code>, like <code>!A</code>, can be freely copied and destroyed. The difference is that you can always create a <code>Read(A)</code> out of an <code>A</code> (though without consuming the <code>A</code>, which you still have to consume in parallel), but when you have a <code>Read(A)</code> you can only extract the positive/data component of the <code>A</code> out of it.</p>
 <p>I can then add dependent types to my linear-logic language by having the type of a term under a context <code>G</code> be checked under a context <code>Read(G)</code>. I might also redefine the promotion rule for <code>!</code> as being:</p>
@@ -82,7 +82,7 @@ Read(G) |- !A
 
 
 <a name="227186856"></a>
-<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Even%20more%20exponentials%20in%20linear%20logic/near/227186856" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Even.20more.20exponentials.20in.20linear.20logic.html#227186856">(Feb 21 2021 at 18:58)</a>:</h4>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Even%20more%20exponentials%20in%20linear%20logic/near/227186856" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Even.20more.20exponentials.20in.20linear.20logic.html#227186856">(Feb 21 2021 at 18:58)</a>:</h4>
 <p><span class="user-mention silent" data-user-id="320695">Andrew Cann</span> <a href="#narrow/stream/233104-theory.3A-logic/topic/Even.20more.20exponentials.20in.20linear.20logic/near/227081420">said</a>:</p>
 <blockquote>
 <p>Hello people. I'm working on a type theory for a programming language I want to make based on linear logic and dependent types. As part of that, I'm considering adding an exponential modality similar to <code>!</code>/"of course" except without dereliction or promotion and with another rule instead which here I'll call "read". My problem is that I'm failing to figure out how to formulate this rule, so I'm hoping someone can help me...<br>
@@ -95,7 +95,7 @@ Read(G) |- !A
 
 
 <a name="227384813"></a>
-<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Even%20more%20exponentials%20in%20linear%20logic/near/227384813" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Cann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Even.20more.20exponentials.20in.20linear.20logic.html#227384813">(Feb 23 2021 at 05:33)</a>:</h4>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Even%20more%20exponentials%20in%20linear%20logic/near/227384813" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andrew Cann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Even.20more.20exponentials.20in.20linear.20logic.html#227384813">(Feb 23 2021 at 05:33)</a>:</h4>
 <blockquote>
 <p>Is this reasoning sound?</p>
 </blockquote>
@@ -300,7 +300,7 @@ G |- srv(x = y) a : Srv(A)
 
 
 <a name="227386852"></a>
-<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Even%20more%20exponentials%20in%20linear%20logic/near/227386852" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip2.png" alt="view this post on Zulip"></a> Andrew Cann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Even.20more.20exponentials.20in.20linear.20logic.html#227386852">(Feb 23 2021 at 06:09)</a>:</h4>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/233104-theory%3A%20logic/topic/Even%20more%20exponentials%20in%20linear%20logic/near/227386852" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andrew Cann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233104-theory:-logic/topic/Even.20more.20exponentials.20in.20linear.20logic.html#227386852">(Feb 23 2021 at 06:09)</a>:</h4>
 <p>An interesting thing about this is that the term/pattern rules for any type mirror the pattern/term rules of it's "semi-dual" (where I'm defining semi-dual to mean the type with all the multiplicative components inverted). For instance, if you take the term rule for par types and replace all the pattern premises with terms and all the term premises with patterns you get the pattern rule for tensor types, and vice-versa. I don't know if this has any deep significance, but it makes for a nice language since it means I can make pattern syntax be identical to term syntax (eg. any syntactic form that's usable in one position is usable in the other).</p>
 <blockquote>
 <p>references (meaning "pointers") have also always been difficult to model.</p>
@@ -331,4 +331,4 @@ CoExtend(B) |- Srv(A)
 
 {% endraw %}
 
-<hr><p>Last updated: Mar 29 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Mar 30 2021 at 00:33 UTC</p>
