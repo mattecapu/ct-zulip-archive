@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [finitely generated/presented theories?](topic/finitely.20generated.2Fpresented.20theories.3F.html) (32 messages, latest: Mar 29 2021 at 21:53)
+* [finitely generated/presented theories?](topic/finitely.20generated.2Fpresented.20theories.3F.html) (35 messages, latest: Mar 30 2021 at 06:55)
 * [Finitely generated/presented theories?](topic/Finitely.20generated.2Fpresented.20theories.3F.html) (6 messages, latest: Mar 27 2021 at 16:54)
 * [tensor product of EM-algebras](topic/tensor.20product.20of.20EM-algebras.html) (41 messages, latest: Mar 21 2021 at 23:55)
 * [Looking for references on enriched bicategories](topic/Looking.20for.20references.20on.20enriched.20bicategories.html) (10 messages, latest: Mar 12 2021 at 07:11)
@@ -137,4 +137,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Mar 30 2021 at 00:33 UTC</p>
+<hr><p>Last updated: Mar 31 2021 at 00:30 UTC</p>
