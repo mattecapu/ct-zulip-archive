@@ -9,7 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
-* [Native Type Theory](topic/Native.20Type.20Theory.html) (82 messages, latest: Mar 30 2021 at 11:54)
+* [Native Type Theory](topic/Native.20Type.20Theory.html) (89 messages, latest: Mar 31 2021 at 19:42)
 * [ZH-calculus](topic/ZH-calculus.html) (2 messages, latest: Mar 12 2021 at 11:03)
 * [Yoneda Hacking: The Algebra of Attacker Actions](topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html) (39 messages, latest: Mar 09 2021 at 18:47)
 * [Categorical Foundations of Gradient-Based Learning](topic/Categorical.20Foundations.20of.20Gradient-Based.20Learning.html) (7 messages, latest: Mar 04 2021 at 19:00)
@@ -30,4 +30,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [stream events](topic/stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Mar 31 2021 at 00:30 UTC</p>
+<hr><p>Last updated: Apr 01 2021 at 00:35 UTC</p>
