@@ -22,5 +22,29 @@
         "id": 232555344,
         "sender_full_name": "Javier Prieto",
         "timestamp": 1617180300
+    },
+    {
+        "content": "<p>A trick to piggyback on existing proof assistants (like Agda) is to use the internal language of your categories to work in their type theory. Being careful to not use things your language hasn't (e.g. products/pairs, exponentials/arrow types), you can carry on quite a bit of proofs.<br>\nI noticed it often happens that the things you actually think as trivial become really trivial (meaning the proof assistant can figure it out by itself) when done like this.<br>\nI'm not sure how far you can go with this approach, though. I myself done very little stuff like this, but not because I encountered obstacles.</p>",
+        "id": 232723975,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1617267327
+    },
+    {
+        "content": "<blockquote>\n<p>Being careful to not use things your language hasn't (e.g. products/pairs, exponentials/arrow types), you can carry on quite a bit of proofs.</p>\n</blockquote>\n<p>It seems risky to me to do this for a significantly weaker theory than the \"internal language of Agda\", because the proof assistant may make some assumptions that are only valid in the stronger metatheory. For example, when you have exponentials, you have distributivity of products over sums, but this isn't true in general. However, it might not be obvious that you're using that fact automatically in a proof assistant, because the role exponentials play isn't completely explicit, if all you're seeing are products and sums.</p>",
+        "id": 232758191,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1617284637
+    },
+    {
+        "content": "<p>Maybe <span class=\"user-mention\" data-user-id=\"275899\">@Christian Williams</span> native type theory could help here?</p>",
+        "id": 232763069,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1617286389
+    },
+    {
+        "content": "<p>Well I think NTT produces type systems that are basically \"Coq(T)\", the type system of Coq/Agda parameterized by some simple type theory T. But we haven't verified this yet. Either way, not sure how it might help here.</p>",
+        "id": 232774290,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1617290156
     }
 ]

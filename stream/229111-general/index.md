@@ -9,8 +9,9 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [CALCO is in trouble!](topic/CALCO.20is.20in.20trouble!.html) (17 messages, latest: Mar 31 2021 at 19:52)
-* [category theory in human psychology](topic/category.20theory.20in.20human.20psychology.html) (85 messages, latest: Mar 31 2021 at 04:10)
+* [category theory illustrated](topic/category.20theory.20illustrated.html) (1 message, latest: Apr 01 2021 at 21:55)
+* [category theory in human psychology](topic/category.20theory.20in.20human.20psychology.html) (101 messages, latest: Apr 01 2021 at 19:25)
+* [CALCO is in trouble!](topic/CALCO.20is.20in.20trouble!.html) (19 messages, latest: Apr 01 2021 at 08:32)
 * [birthday celebration](topic/birthday.20celebration.html) (16 messages, latest: Mar 27 2021 at 11:38)
 * [HoTT Zulip Invite link?](topic/HoTT.20Zulip.20Invite.20link.3F.html) (2 messages, latest: Mar 25 2021 at 15:05)
 * [TheCanonworks, A New Social Media Site of Interest to Aca...](topic/TheCanonworks.2C.20A.20New.20Social.20Media.20Site.20of.20Interest.20to.20Aca.2E.2E.2E.html) (3 messages, latest: Mar 18 2021 at 14:33)
@@ -198,4 +199,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Apr 01 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 02 2021 at 00:44 UTC</p>

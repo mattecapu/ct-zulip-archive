@@ -44,6 +44,35 @@ permalink: /stream/229199-learning:-questions/topic/are.20proof.20assistants.20u
 
 
 
+<a name="232723975"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20proof%20assistants%20useful%20for%20CT%3F/near/232723975" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F.html#232723975">(Apr 01 2021 at 08:55)</a>:</h4>
+<p>A trick to piggyback on existing proof assistants (like Agda) is to use the internal language of your categories to work in their type theory. Being careful to not use things your language hasn't (e.g. products/pairs, exponentials/arrow types), you can carry on quite a bit of proofs.<br>
+I noticed it often happens that the things you actually think as trivial become really trivial (meaning the proof assistant can figure it out by itself) when done like this.<br>
+I'm not sure how far you can go with this approach, though. I myself done very little stuff like this, but not because I encountered obstacles.</p>
+
+
+
+<a name="232758191"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20proof%20assistants%20useful%20for%20CT%3F/near/232758191" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F.html#232758191">(Apr 01 2021 at 13:43)</a>:</h4>
+<blockquote>
+<p>Being careful to not use things your language hasn't (e.g. products/pairs, exponentials/arrow types), you can carry on quite a bit of proofs.</p>
+</blockquote>
+<p>It seems risky to me to do this for a significantly weaker theory than the "internal language of Agda", because the proof assistant may make some assumptions that are only valid in the stronger metatheory. For example, when you have exponentials, you have distributivity of products over sums, but this isn't true in general. However, it might not be obvious that you're using that fact automatically in a proof assistant, because the role exponentials play isn't completely explicit, if all you're seeing are products and sums.</p>
+
+
+
+<a name="232763069"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20proof%20assistants%20useful%20for%20CT%3F/near/232763069" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F.html#232763069">(Apr 01 2021 at 14:13)</a>:</h4>
+<p>Maybe <span class="user-mention" data-user-id="275899">@Christian Williams</span> native type theory could help here?</p>
+
+
+
+<a name="232774290"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20proof%20assistants%20useful%20for%20CT%3F/near/232774290" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F.html#232774290">(Apr 01 2021 at 15:15)</a>:</h4>
+<p>Well I think NTT produces type systems that are basically "Coq(T)", the type system of Coq/Agda parameterized by some simple type theory T. But we haven't verified this yet. Either way, not sure how it might help here.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Apr 01 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 02 2021 at 00:44 UTC</p>
