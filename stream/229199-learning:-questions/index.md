@@ -9,9 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [are proof assistants useful for CT?](topic/are.20proof.20assistants.20useful.20for.20CT.3F.html) (15 messages, latest: Apr 02 2021 at 23:58)
 * [functoriality of cod fibration](topic/functoriality.20of.20cod.20fibration.html) (6 messages, latest: Apr 01 2021 at 21:31)
 * [relations between test categories](topic/relations.20between.20test.20categories.html) (11 messages, latest: Apr 01 2021 at 16:46)
-* [are proof assistants useful for CT?](topic/are.20proof.20assistants.20useful.20for.20CT.3F.html) (8 messages, latest: Apr 01 2021 at 15:15)
 * [natural enough transformations of graph homomorphisms](topic/natural.20enough.20transformations.20of.20graph.20homomorphisms.html) (30 messages, latest: Mar 31 2021 at 20:11)
 * [Are proof assistants useful for CT?](topic/Are.20proof.20assistants.20useful.20for.20CT.3F.html) (26 messages, latest: Mar 31 2021 at 00:02)
 * [fibration composition using pseudofunctors](topic/fibration.20composition.20using.20pseudofunctors.html) (78 messages, latest: Mar 29 2021 at 20:29)
@@ -359,4 +359,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 02 2021 at 00:44 UTC</p>
+<hr><p>Last updated: Apr 03 2021 at 00:34 UTC</p>

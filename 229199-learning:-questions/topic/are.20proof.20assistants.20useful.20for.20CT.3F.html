@@ -73,6 +73,48 @@ I'm not sure how far you can go with this approach, though. I myself done very l
 
 
 
+<a name="232911846"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20proof%20assistants%20useful%20for%20CT%3F/near/232911846" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F.html#232911846">(Apr 02 2021 at 15:25)</a>:</h4>
+<p>It's also very hard to avoid using universes, unless you never do any kind of abstraction or quantification over types, which is quite awkward--they are even likely to appear in the statement of the theorem you want to verify.</p>
+
+
+
+<a name="232912949"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20proof%20assistants%20useful%20for%20CT%3F/near/232912949" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F.html#232912949">(Apr 02 2021 at 15:34)</a>:</h4>
+<p>For example: a while ago I asked here whether the free abelian group monad preserves monomorphisms in any topos. If I proved it without axioms in Agda/Coq/Lean, I would technically only know that it holds in topoi that contain a countable tower of universes.</p>
+
+
+
+<a name="232913151"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20proof%20assistants%20useful%20for%20CT%3F/near/232913151" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F.html#232913151">(Apr 02 2021 at 15:36)</a>:</h4>
+<p>And that is technically extra power, for example, I could also prove Con(ZFC) which is a statement about a polynomial not having any solutions.</p>
+
+
+
+<a name="232913203"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20proof%20assistants%20useful%20for%20CT%3F/near/232913203" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F.html#232913203">(Apr 02 2021 at 15:36)</a>:</h4>
+<p>(At least I could if I add choice as an axiom, I'm not sure about otherwise.)</p>
+
+
+
+<a name="232914245"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20proof%20assistants%20useful%20for%20CT%3F/near/232914245" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F.html#232914245">(Apr 02 2021 at 15:46)</a>:</h4>
+<p>Related: <a href="https://mathoverflow.net/questions/294651/proof-assistant-for-working-in-weaker-foundations">https://mathoverflow.net/questions/294651/proof-assistant-for-working-in-weaker-foundations</a></p>
+
+
+
+<a name="232965558"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20proof%20assistants%20useful%20for%20CT%3F/near/232965558" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F.html#232965558">(Apr 02 2021 at 23:56)</a>:</h4>
+<p>I think NTT or something like it can help.  The point is to take the category you're interested in and embed it by Yoneda in a category that models all the type theory of your proof assistant, including exponentials, distributivity, universes, etc.  Then whichever of those structures are preserved by the Yoneda embedding, like exponentials and products, can be used directly as operations on the "representables" inside your type theory, whereas the structures that are present in your category but aren't preserved by Yoneda, like sums, are asserted as separate structure on the representables that doesn't coincide with the structure of the ambient proof assistant type theory.</p>
+
+
+
+<a name="232965692"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20proof%20assistants%20useful%20for%20CT%3F/near/232965692" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F.html#232965692">(Apr 02 2021 at 23:58)</a>:</h4>
+<p>And if you have some structure that isn't preserved by Yoneda but does "act sufficiently like" the corresponding structure in a topos, then you can make it coincide with that of the embedding type theory by using a sheafified Yoneda embedding into a sheaf topos.  Where of course "act sufficiently like" means essentially "defines a subcanonical Grothendieck topology", i.e. "is a postulated colimit", e.g. sums that are extensive.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Apr 02 2021 at 00:44 UTC</p>
+<hr><p>Last updated: Apr 03 2021 at 00:34 UTC</p>

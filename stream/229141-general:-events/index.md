@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Logic Webinar@IITK](topic/Logic.20Webinar.40IITK.html) (8 messages, latest: Apr 02 2021 at 07:10)
 * [Categories and Companions Symposium 2021](topic/Categories.20and.20Companions.20Symposium.202021.html) (1 message, latest: Mar 31 2021 at 21:28)
 * [submitting to CT2021](topic/submitting.20to.20CT2021.html) (53 messages, latest: Mar 24 2021 at 02:20)
 * [Workshop on Polynomial Functors](topic/Workshop.20on.20Polynomial.20Functors.html) (10 messages, latest: Mar 15 2021 at 14:12)
@@ -30,7 +31,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Online Category Theory Seminar at Brandon University](topic/Online.20Category.20Theory.20Seminar.20at.20Brandon.20University.html) (1 message, latest: Feb 18 2021 at 07:45)
 * [AMS Sectional Meetings](topic/AMS.20Sectional.20Meetings.html) (8 messages, latest: Feb 15 2021 at 18:36)
 * [Australian Category Seminar](topic/Australian.20Category.20Seminar.html) (22 messages, latest: Feb 14 2021 at 17:53)
-* [Logic Webinar@IITK](topic/Logic.20Webinar.40IITK.html) (7 messages, latest: Feb 12 2021 at 13:29)
 * [Witten on Langlands](topic/Witten.20on.20Langlands.html) (7 messages, latest: Feb 11 2021 at 19:54)
 * [NYC Category Theory Seminar](topic/NYC.20Category.20Theory.20Seminar.html) (30 messages, latest: Feb 09 2021 at 17:06)
 * [ACT4E guest lecture](topic/ACT4E.20guest.20lecture.html) (1 message, latest: Feb 04 2021 at 10:02)
@@ -87,4 +87,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Apr 02 2021 at 00:44 UTC</p>
+<hr><p>Last updated: Apr 03 2021 at 00:34 UTC</p>

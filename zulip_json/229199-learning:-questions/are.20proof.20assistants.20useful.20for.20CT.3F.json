@@ -46,5 +46,47 @@
         "id": 232774290,
         "sender_full_name": "Christian Williams",
         "timestamp": 1617290156
+    },
+    {
+        "content": "<p>It's also very hard to avoid using universes, unless you never do any kind of abstraction or quantification over types, which is quite awkward--they are even likely to appear in the statement of the theorem you want to verify.</p>",
+        "id": 232911846,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1617377106
+    },
+    {
+        "content": "<p>For example: a while ago I asked here whether the free abelian group monad preserves monomorphisms in any topos. If I proved it without axioms in Agda/Coq/Lean, I would technically only know that it holds in topoi that contain a countable tower of universes.</p>",
+        "id": 232912949,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1617377681
+    },
+    {
+        "content": "<p>And that is technically extra power, for example, I could also prove Con(ZFC) which is a statement about a polynomial not having any solutions.</p>",
+        "id": 232913151,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1617377777
+    },
+    {
+        "content": "<p>(At least I could if I add choice as an axiom, I'm not sure about otherwise.)</p>",
+        "id": 232913203,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1617377804
+    },
+    {
+        "content": "<p>Related: <a href=\"https://mathoverflow.net/questions/294651/proof-assistant-for-working-in-weaker-foundations\">https://mathoverflow.net/questions/294651/proof-assistant-for-working-in-weaker-foundations</a></p>",
+        "id": 232914245,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1617378384
+    },
+    {
+        "content": "<p>I think NTT or something like it can help.  The point is to take the category you're interested in and embed it by Yoneda in a category that models all the type theory of your proof assistant, including exponentials, distributivity, universes, etc.  Then whichever of those structures are preserved by the Yoneda embedding, like exponentials and products, can be used directly as operations on the \"representables\" inside your type theory, whereas the structures that are present in your category but aren't preserved by Yoneda, like sums, are asserted as separate structure on the representables that doesn't coincide with the structure of the ambient proof assistant type theory.</p>",
+        "id": 232965558,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1617407796
+    },
+    {
+        "content": "<p>And if you have some structure that isn't preserved by Yoneda but does \"act sufficiently like\" the corresponding structure in a topos, then you can make it coincide with that of the embedding type theory by using a sheafified Yoneda embedding into a sheaf topos.  Where of course \"act sufficiently like\" means essentially \"defines a subcanonical Grothendieck topology\", i.e. \"is a postulated colimit\", e.g. sums that are extensive.</p>",
+        "id": 232965692,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1617407935
     }
 ]
