@@ -12,7 +12,7 @@ permalink: /index.html
 
 * [general](stream/229111-general/index.html) (189 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (128 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (129 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (96 topics)
 
@@ -80,6 +80,8 @@ permalink: /index.html
 
 * [theory: physics](stream/251538-theory:-physics/index.html) (8 topics)
 
+* [theory: probability](stream/253118-theory:-probability/index.html) (8 topics)
+
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (7 topics)
 
 * [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (7 topics)
@@ -88,19 +90,17 @@ permalink: /index.html
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (7 topics)
 
-* [theory: probability](stream/253118-theory:-probability/index.html) (7 topics)
-
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (6 topics)
 
 * [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (6 topics)
+
+* [practice: translation](stream/260000-practice:-translation/index.html) (6 topics)
 
 * [theory: algebra & CT](stream/230123-theory:-algebra-&-CT/index.html) (6 topics)
 
 * [ACT@UMD seminar](stream/229967-ACT@UMD-seminar/index.html) (5 topics)
 
 * [languages: Deutsch/German](stream/231144-languages:-Deutsch/German/index.html) (5 topics)
-
-* [practice: translation](stream/260000-practice:-translation/index.html) (5 topics)
 
 * [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (5 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 03 2021 at 00:34 UTC</p>
+<hr><p>Last updated: Apr 04 2021 at 00:36 UTC</p>

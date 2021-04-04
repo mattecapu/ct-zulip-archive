@@ -88,5 +88,65 @@
         "id": 232965692,
         "sender_full_name": "Mike Shulman",
         "timestamp": 1617407935
+    },
+    {
+        "content": "<p>As a side note, I think it's worth entertaining the (very) related question, \"are <em>automatic</em> theorem provers useful for CT\"?</p>\n<p>Given the effectiveness of tools like <a href=\"https://www.gap-system.org/\">GAP</a> and the power of provers like <a href=\"https://vprover.github.io/\">Vampire</a> (and the reasonable effectivness of things like <a href=\"https://hackage.haskell.org/package/djinn\">Djinn</a>), I wouldn't be surprised if one could build a somewhat effective automatic tool to discharge <em>some</em> of these \"trivial\" obligations.</p>\n<p>Though one should note that these obligations are far from trivial from an ATP perspective.</p>\n<p>I briefly tried to build the skeleton of such a system, but got distracted. I think my friend <span class=\"user-mention\" data-user-id=\"276026\">@Philip Zucker</span> has made a more successful attempt.</p>\n<p>If I had but a grad student...</p>",
+        "id": 233007668,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1617457737
+    },
+    {
+        "content": "<p>Thanks for the ping! Yes, I've been sort of slowly plunking away at the problem of automation for category reasoning in various forms for about a year now. I don't know that anything I've done is genuinely useful as of yet.</p>\n<ul>\n<li><a href=\"https://www.philipzucker.com/category-theory-in-the-e-automated-theorem-prover/\">https://www.philipzucker.com/category-theory-in-the-e-automated-theorem-prover/</a> Here I tried using Automated first order logic theorem provers off the shelf to try an encode some universal properties. I'm not particularly confident my encoding is sound.</li>\n</ul>\n<p>I switched tracks to instead of treating universal properties, which feel more complicated, to just equational reasoning</p>\n<ul>\n<li><a href=\"https://www.philipzucker.com/notes-on-synthesis-and-equation-proving-for-catlab-jl/\">https://www.philipzucker.com/notes-on-synthesis-and-equation-proving-for-catlab-jl/</a> Using ATP like Vampire and E again. This post is mostly just junk now. </li>\n<li><a href=\"https://www.philipzucker.com/theorem-proving-for-catlab-2-lets-try-z3-this-time-nope/\">https://www.philipzucker.com/theorem-proving-for-catlab-2-lets-try-z3-this-time-nope/</a> Using Z3 SMT for encoding. Seemed correct, but the encoding was too heaviweight to do anything more than trivial. Perhaps with recent lessons I could go back and tune it up.</li>\n</ul>\n<p>The egg paper came out <a href=\"https://egraphs-good.github.io/\">https://egraphs-good.github.io/</a> , which describes a data structure for equational reasoning. I implemented a version here <a href=\"https://www.philipzucker.com/egraph-1/\">https://www.philipzucker.com/egraph-1/</a> and Alessandro Cheli made a better version of that here <a href=\"https://github.com/0x0f0f0f/Metatheory.jl\">https://github.com/0x0f0f0f/Metatheory.jl</a> . I think I have a sound system for equational reasoning in a cartesian category here, once in Julia using Metatheory.jl, once in Rust using egg.</p>\n<ul>\n<li><a href=\"https://www.philipzucker.com/metatheory-progress/\">https://www.philipzucker.com/metatheory-progress/</a></li>\n<li><a href=\"https://www.philipzucker.com/rust-category/\">https://www.philipzucker.com/rust-category/</a></li>\n</ul>\n<p>Currently I'm trying to fix up the data structure so that it records and prints its proofs in a human readable way and auto translating the axioms sets that are contained in the Julia package Catlab <a href=\"https://github.com/AlgebraicJulia/Catlab.jl\">https://github.com/AlgebraicJulia/Catlab.jl</a> into my system. You may also find Catlab interesting in it's own right depending on what you want.</p>\n<p>Having said all that, I suspect you'd find it most interesting to try and use Agda categories as mentioned above. <a href=\"https://github.com/agda/agda-categories\">https://github.com/agda/agda-categories</a>  No automated system as of yet gets you all that much as far as I am aware.</p>",
+        "id": 233009535,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1617459585
+    },
+    {
+        "content": "<p>Note that I recently pulled in the PR from <span class=\"user-mention\" data-user-id=\"276059\">@Reed Mullanix</span> that gives you a <a href=\"https://agda.github.io/agda-categories/Categories.Tactic.Category.html\">tactic for equational reasoning</a> for morphism equations in categories. I'm sure that's just the start / tip of the iceberg.</p>",
+        "id": 233012078,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1617462439
+    },
+    {
+        "content": "<p>Cool! I saw him tweet about this. I vaguely thought it was a port of the monoid solver so it mainly dealt with associativity and identity absorption. Any idea how likely the approach is to extend to complex queries?</p>",
+        "id": 233015174,
+        "sender_full_name": "Philip Zucker",
+        "timestamp": 1617465739
+    },
+    {
+        "content": "<p>The basic idea of that solver is that we want to embed our category into a nice place where equalities hold up to beta-eta equivalence, then let agda figure out the details from there. For arbitrary categories this place is the category of copresheaves, and the embedding is yoneda. This is nice insofar that the tactic has actual categorical semantics, but is a bit underpowered when it comes to adding extra stuff ontop of it.</p>\n<p>I think we can do something similar with Closed Monoidal Categories using a \"curried\" form of day convolution, but I've yet to play with it too much</p>",
+        "id": 233031787,
+        "sender_full_name": "Reed Mullanix",
+        "timestamp": 1617482985
+    },
+    {
+        "content": "<p>Nice! So some kind of NbE?</p>",
+        "id": 233033171,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1617483963
+    },
+    {
+        "content": "<p>I've often wondered what one could generalize this to, in terms of which equational theories.</p>",
+        "id": 233033219,
+        "sender_full_name": "Cody Roux",
+        "timestamp": 1617483996
+    },
+    {
+        "content": "<p>Yeah, it is a bit mysterious. For instance, I _dont_ think it would work with any old Monoidal Category, as the day convolutions doesn't seem to melt away in the same way that the  curried version would. This is all speculation though!</p>",
+        "id": 233034339,
+        "sender_full_name": "Reed Mullanix",
+        "timestamp": 1617485242
+    },
+    {
+        "content": "<p>To elaborate, you would end up with this giant pile of tensors that you would have to sift through, whereas you can shift some stuff around when the category is closed monoidal to get rid of all of the tensors that might show up</p>",
+        "id": 233034425,
+        "sender_full_name": "Reed Mullanix",
+        "timestamp": 1617485340
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276030\">Cody Roux</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F/near/233033219\">said</a>:</p>\n<blockquote>\n<p>I've often wondered what one could generalize this to, in terms of which equational theories.</p>\n</blockquote>\n<p>Yeah, there's interesting variety in NbE-style solvers. Sometimes, you have to make extra use of the fact that expressions are given syntactically, so only finitely many elements have to be considered. The simplest example would be <a href=\"https://agda.github.io/agda-stdlib/Algebra.Solver.CommutativeMonoid.html\">commutative monoids</a>, where expressions in <code>n</code> variables are interpreted into <code>Vec ℕ n</code> (for each variable, how many times it occurs in the expression). That is, you don't use a general free commutative monoid, but rather a specific, data-like, free commutative monoid on finite sets.</p>",
+        "id": 233036303,
+        "sender_full_name": "James Wood",
+        "timestamp": 1617487418
     }
 ]

@@ -24,4 +24,4 @@ permalink: /stream/266854-working:-discrete-geometry-and-entanglement/index.html
 * [Some references](topic/Some.20references.html) (2 messages, latest: Nov 30 2020 at 05:47)
 * [stream events](topic/stream.20events.html) (1 message, latest: Nov 30 2020 at 01:32)
 
-<hr><p>Last updated: Apr 03 2021 at 00:34 UTC</p>
+<hr><p>Last updated: Apr 04 2021 at 00:36 UTC</p>
