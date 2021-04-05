@@ -9,7 +9,8 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 
 ### Topics:
 
-* [Localic Topoi](topic/Localic.20Topoi.html) (28 messages, latest: Mar 23 2021 at 16:30)
+* [Localic Topoi](topic/Localic.20Topoi.html) (29 messages, latest: Apr 04 2021 at 03:31)
+* [Visualizing Grothendieck topologies and nuclei](topic/Visualizing.20Grothendieck.20topologies.20and.20nuclei.html) (2 messages, latest: Apr 04 2021 at 03:22)
 * [localic topoi](topic/localic.20topoi.html) (1 message, latest: Mar 07 2021 at 16:22)
 * [logical properties and topological properties](topic/logical.20properties.20and.20topological.20properties.html) (30 messages, latest: Feb 05 2021 at 11:59)
 * [2-category of toposes](topic/2-category.20of.20toposes.html) (8 messages, latest: Jan 21 2021 at 16:29)
@@ -68,4 +69,4 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 * [essential geometric morphism](topic/essential.20geometric.20morphism.html) (2 messages, latest: Mar 27 2020 at 18:56)
 * [welcome](topic/welcome.html) (2 messages, latest: Mar 27 2020 at 09:22)
 
-<hr><p>Last updated: Apr 04 2021 at 00:36 UTC</p>
+<hr><p>Last updated: Apr 05 2021 at 00:37 UTC</p>

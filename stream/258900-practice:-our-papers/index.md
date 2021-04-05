@@ -9,8 +9,8 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [Categories of Nets](topic/Categories.20of.20Nets.html) (9 messages, latest: Apr 04 2021 at 18:02)
 * [Native Type Theory](topic/Native.20Type.20Theory.html) (111 messages, latest: Apr 02 2021 at 19:40)
-* [Categories of Nets](topic/Categories.20of.20Nets.html) (3 messages, latest: Apr 01 2021 at 14:57)
 * [Combining Nondeterminism, Probability, and Termination](topic/Combining.20Nondeterminism.2C.20Probability.2C.20and.20Termination.html) (1 message, latest: Apr 01 2021 at 13:43)
 * [Normalization for Cubical Type Theory](topic/Normalization.20for.20Cubical.20Type.20Theory.html) (1 message, latest: Apr 01 2021 at 12:08)
 * [ZH-calculus](topic/ZH-calculus.html) (2 messages, latest: Mar 12 2021 at 11:03)
@@ -33,4 +33,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [stream events](topic/stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Apr 04 2021 at 00:36 UTC</p>
+<hr><p>Last updated: Apr 05 2021 at 00:37 UTC</p>

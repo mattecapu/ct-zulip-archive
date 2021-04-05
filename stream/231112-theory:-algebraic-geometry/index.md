@@ -23,4 +23,4 @@ permalink: /stream/231112-theory:-algebraic-geometry/index.html
 * [stream events](topic/stream.20events.html) (15 messages, latest: Apr 06 2020 at 05:56)
 * [stokes' theorem as a coend](topic/stokes'.20theorem.20as.20a.20coend.html) (3 messages, latest: Apr 02 2020 at 17:58)
 
-<hr><p>Last updated: Apr 04 2021 at 00:36 UTC</p>
+<hr><p>Last updated: Apr 05 2021 at 00:37 UTC</p>

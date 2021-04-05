@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [are proof assistants useful for CT?](topic/are.20proof.20assistants.20useful.20for.20CT.3F.html) (25 messages, latest: Apr 03 2021 at 22:03)
+* [Locales](topic/Locales.html) (12 messages, latest: Apr 04 2021 at 22:56)
+* [are proof assistants useful for CT?](topic/are.20proof.20assistants.20useful.20for.20CT.3F.html) (28 messages, latest: Apr 04 2021 at 09:25)
 * [functoriality of cod fibration](topic/functoriality.20of.20cod.20fibration.html) (6 messages, latest: Apr 01 2021 at 21:31)
 * [relations between test categories](topic/relations.20between.20test.20categories.html) (11 messages, latest: Apr 01 2021 at 16:46)
 * [natural enough transformations of graph homomorphisms](topic/natural.20enough.20transformations.20of.20graph.20homomorphisms.html) (30 messages, latest: Mar 31 2021 at 20:11)
@@ -20,7 +21,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [distributive laws](topic/distributive.20laws.html) (9 messages, latest: Mar 24 2021 at 22:02)
 * [exponential, limits](topic/exponential.2C.20limits.html) (9 messages, latest: Mar 24 2021 at 19:22)
 * [Fibration composition using pseudofunctors](topic/Fibration.20composition.20using.20pseudofunctors.html) (34 messages, latest: Mar 23 2021 at 21:38)
-* [Locales](topic/Locales.html) (10 messages, latest: Mar 23 2021 at 21:21)
 * [Exponential, limits](topic/Exponential.2C.20limits.html) (2 messages, latest: Mar 23 2021 at 20:55)
 * [Categorical interpretation of CLL + quantifiers?](topic/Categorical.20interpretation.20of.20CLL.20.2B.20quantifiers.3F.html) (5 messages, latest: Mar 22 2021 at 17:10)
 * [ε-δ is "semi-adjunction"?](topic/.CE.B5-.CE.B4.20is.20.22semi-adjunction.22.3F.html) (37 messages, latest: Mar 16 2021 at 17:23)
@@ -359,4 +359,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 04 2021 at 00:36 UTC</p>
+<hr><p>Last updated: Apr 05 2021 at 00:37 UTC</p>
