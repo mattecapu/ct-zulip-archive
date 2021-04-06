@@ -16,4 +16,4 @@ permalink: /stream/230123-theory:-algebra-&-CT/index.html
 * [stream events](topic/stream.20events.html) (3 messages, latest: Apr 06 2020 at 05:46)
 * [Theme?](topic/Theme.3F.html) (2 messages, latest: Apr 06 2020 at 01:13)
 
-<hr><p>Last updated: Apr 05 2021 at 00:37 UTC</p>
+<hr><p>Last updated: Apr 06 2021 at 00:36 UTC</p>

@@ -221,6 +221,63 @@ I'm not sure how far you can go with this approach, though. I myself done very l
 
 
 
+<a name="233125532"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20proof%20assistants%20useful%20for%20CT%3F/near/233125532" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reed Mullanix <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F.html#233125532">(Apr 05 2021 at 01:08)</a>:</h4>
+<p>Presheaves could work too, copresheaves just happen to work out a bit nicer for programming reasons.</p>
+
+
+
+<a name="233153110"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20proof%20assistants%20useful%20for%20CT%3F/near/233153110" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F.html#233153110">(Apr 05 2021 at 09:27)</a>:</h4>
+<p>But then Yoneda is contravariant... I'm curious about the programming reasons. Is it just that defining C^op in order to construct presheaves is more effort than just working with functors on C because you already have C?</p>
+
+
+
+<a name="233197315"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20proof%20assistants%20useful%20for%20CT%3F/near/233197315" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reed Mullanix <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F.html#233197315">(Apr 05 2021 at 16:43)</a>:</h4>
+<p>So the tactic works by first reifying some series of morphisms composed together into a tree, like so:</p>
+<div class="codehilite" data-code-language="Agda"><pre><span></span><code>  <span class="kr">data</span> Expr <span class="ow">:</span> Obj <span class="ow">→</span> Obj <span class="ow">→</span> <span class="kt">Set</span> <span class="o">(</span>o ⊔ ℓ<span class="o">)</span> <span class="kr">where</span>
+    <span class="nf">_∘′_</span> <span class="ow">:</span> <span class="ow">∀</span> <span class="o">{</span>A B C<span class="o">}</span> <span class="ow">→</span> Expr B C <span class="ow">→</span> Expr A B <span class="ow">→</span> Expr A C
+    <span class="nf">id′</span>  <span class="ow">:</span> <span class="ow">∀</span> <span class="o">{</span>A<span class="o">}</span> <span class="ow">→</span> Expr A A
+    <span class="nf">[_↑]</span> <span class="ow">:</span> <span class="ow">∀</span> <span class="o">{</span>A B<span class="o">}</span> <span class="ow">→</span> A ⇒ B <span class="ow">→</span> Expr A B
+</code></pre></div>
+<p>As a note on notation, <code>A ⇒ B</code> is notation for a morphism between <code>A</code> and <code>B</code></p>
+<p>We then turn this reified tree of morphisms into an action on homs:</p>
+<div class="codehilite" data-code-language="Agda"><pre><span></span><code>  <span class="nf">embed</span> <span class="ow">:</span> Expr B C <span class="ow">→</span> A ⇒ B <span class="ow">→</span> A ⇒ C
+  embed <span class="o">(</span>f ∘′ g<span class="o">)</span> h  <span class="ow">=</span> embed f <span class="o">(</span>embed g h<span class="o">)</span>
+  embed id′ h       <span class="ow">=</span> h
+  embed [ f ↑] h    <span class="ow">=</span> f ∘ h
+</code></pre></div>
+<p>This is the "programming reason". We could have it be:</p>
+<div class="codehilite" data-code-language="Agda"><pre><span></span><code>  <span class="nf">embed-contra</span> <span class="ow">:</span> Expr C A <span class="ow">→</span> A ⇒ B <span class="ow">→</span> C ⇒ B
+  embed-contra <span class="o">(</span>f ∘′ g<span class="o">)</span> h <span class="ow">=</span> embed-contra g <span class="o">(</span>embed-contra f h<span class="o">)</span>
+  embed-contra id′ h <span class="ow">=</span> h
+  embed-contra [ x ↑] h <span class="ow">=</span> h ∘ x
+</code></pre></div>
+<p>But the traversal is a lot less natural</p>
+<p>Full code is here if you want to take a peek :)<br>
+<a href="https://github.com/agda/agda-categories/blob/master/src/Categories/Tactic/Category.agda">https://github.com/agda/agda-categories/blob/master/src/Categories/Tactic/Category.agda</a></p>
+
+
+
+<a name="233238482"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20proof%20assistants%20useful%20for%20CT%3F/near/233238482" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cody Roux <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F.html#233238482">(Apr 05 2021 at 22:11)</a>:</h4>
+<p>Neat! I learned this trick from Peter Dybjer's <a href="http://www.cse.chalmers.se/~peterd/slides/Leicester.pdf">slides</a></p>
+
+
+
+<a name="233239040"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20proof%20assistants%20useful%20for%20CT%3F/near/233239040" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F.html#233239040">(Apr 05 2021 at 22:16)</a>:</h4>
+<p>We use a related trick in the Lean category theory library: if we have a lemma of the form <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∘</mo><mi>g</mi><mo>=</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">f \circ g = h</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">h</span></span></span></span> that we want the simplifier to apply, even if it appears in some tree of compositions in which <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi></mrow><annotation encoding="application/x-tex">g</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span></span></span></span> are not necessarily siblings, we automatically generate a second lemma of the form <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∘</mo><mo stretchy="false">(</mo><mi>g</mi><mo>∘</mo><mi>k</mi><mo stretchy="false">)</mo><mo>=</mo><mi>h</mi><mo>∘</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">f \circ (g \circ k) = h \circ k</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span>, which will always apply after moving all parentheses to the right</p>
+
+
+
+<a name="233239386"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/are%20proof%20assistants%20useful%20for%20CT%3F/near/233239386" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/are.20proof.20assistants.20useful.20for.20CT.3F.html#233239386">(Apr 05 2021 at 22:20)</a>:</h4>
+<p>It's also turning a system of compositions-in-a-category into a "native" composition <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>∘</mo><mo>−</mo><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>g</mi><mo>∘</mo><mo>−</mo><mo stretchy="false">)</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">(f \circ -) (g \circ -) k</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">−</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">−</span><span class="mclose">)</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span>.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Apr 05 2021 at 00:37 UTC</p>
+<hr><p>Last updated: Apr 06 2021 at 00:36 UTC</p>
