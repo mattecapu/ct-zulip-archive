@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [dual of subterminal](topic/dual.20of.20subterminal.html) (33 messages, latest: Apr 06 2021 at 21:31)
 * [closed monoidal abelian categories](topic/closed.20monoidal.20abelian.20categories.html) (8 messages, latest: Apr 03 2021 at 16:08)
 * [microcosm principle for actegories](topic/microcosm.20principle.20for.20actegories.html) (9 messages, latest: Apr 03 2021 at 09:59)
 * [finitely generated/presented theories?](topic/finitely.20generated.2Fpresented.20theories.3F.html) (35 messages, latest: Mar 30 2021 at 06:55)
@@ -139,4 +140,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 06 2021 at 00:36 UTC</p>
+<hr><p>Last updated: Apr 07 2021 at 00:35 UTC</p>

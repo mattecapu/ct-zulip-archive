@@ -9,9 +9,11 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Optics and apartness](topic/Optics.20and.20apartness.html) (17 messages, latest: Apr 06 2021 at 22:21)
+* [the list functor](topic/the.20list.20functor.html) (29 messages, latest: Apr 06 2021 at 16:11)
+* [beginner questions](topic/beginner.20questions.html) (115 messages, latest: Apr 06 2021 at 15:47)
 * [Locales](topic/Locales.html) (16 messages, latest: Apr 05 2021 at 23:25)
 * [are proof assistants useful for CT?](topic/are.20proof.20assistants.20useful.20for.20CT.3F.html) (34 messages, latest: Apr 05 2021 at 22:20)
-* [beginner questions](topic/beginner.20questions.html) (107 messages, latest: Apr 05 2021 at 20:15)
 * [functoriality of cod fibration](topic/functoriality.20of.20cod.20fibration.html) (6 messages, latest: Apr 01 2021 at 21:31)
 * [relations between test categories](topic/relations.20between.20test.20categories.html) (11 messages, latest: Apr 01 2021 at 16:46)
 * [natural enough transformations of graph homomorphisms](topic/natural.20enough.20transformations.20of.20graph.20homomorphisms.html) (30 messages, latest: Mar 31 2021 at 20:11)
@@ -359,4 +361,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 06 2021 at 00:36 UTC</p>
+<hr><p>Last updated: Apr 07 2021 at 00:35 UTC</p>
