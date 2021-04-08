@@ -8,11 +8,11 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (351 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (354 topics)
 
-* [general](stream/229111-general/index.html) (189 topics)
+* [general](stream/229111-general/index.html) (190 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (130 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (131 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (96 topics)
 
@@ -68,13 +68,13 @@ permalink: /index.html
 
 * [practice: programming](stream/229450-practice:-programming/index.html) (9 topics)
 
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (9 topics)
+
 * [theory: concurrency](stream/235484-theory:-concurrency/index.html) (9 topics)
 
 * [philosophy](stream/229134-philosophy/index.html) (8 topics)
 
 * [practice: economics](stream/231468-practice:-economics/index.html) (8 topics)
-
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (8 topics)
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 07 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 08 2021 at 00:38 UTC</p>

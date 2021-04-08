@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [ACT Directory](topic/ACT.20Directory.html) (5 messages, latest: Apr 07 2021 at 22:47)
 * [category theory in human psychology](topic/category.20theory.20in.20human.20psychology.html) (104 messages, latest: Apr 03 2021 at 09:47)
 * [category theory illustrated](topic/category.20theory.20illustrated.html) (1 message, latest: Apr 01 2021 at 21:55)
 * [CALCO is in trouble!](topic/CALCO.20is.20in.20trouble!.html) (19 messages, latest: Apr 01 2021 at 08:32)
@@ -199,4 +200,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Apr 07 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 08 2021 at 00:38 UTC</p>
