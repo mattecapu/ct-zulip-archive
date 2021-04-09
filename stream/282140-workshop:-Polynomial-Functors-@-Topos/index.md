@@ -9,8 +9,8 @@ permalink: /stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html
 
 ### Topics:
 
+* [general information](topic/general.20information.html) (22 messages, latest: Apr 08 2021 at 18:15)
 * [Thorsten Altenkirch: "Containers and inductive types"](topic/Thorsten.20Altenkirch.3A.20.22Containers.20and.20inductive.20types.22.html) (32 messages, latest: Mar 24 2021 at 15:41)
-* [general information](topic/general.20information.html) (21 messages, latest: Mar 20 2021 at 00:16)
 * [Steve Awodey: "Polynomial functors and natural models \[...\]"](topic/Steve.20Awodey.3A.20.22Polynomial.20functors.20and.20natural.20models.20.5B.2E.2E.2E.5D.22.html) (2 messages, latest: Mar 19 2021 at 20:04)
 * [Fredrik Nordvall Forsberg: "Quantitative polynomial functor"](topic/Fredrik.20Nordvall.20Forsberg.3A.20.22Quantitative.20polynomial.20functor.22.html) (2 messages, latest: Mar 19 2021 at 20:03)
 * [Rune Haugseng: "Polynomial functors and Segal conditions"](topic/Rune.20Haugseng.3A.20.22Polynomial.20functors.20and.20Segal.20conditions.22.html) (2 messages, latest: Mar 19 2021 at 20:03)
@@ -32,4 +32,4 @@ permalink: /stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html
 * [Richard Garner: "Polynomials in categories with pullbacks" 1](topic/Richard.20Garner.3A.20.22Polynomials.20in.20categories.20with.20pullbacks.22.201.html) (2 messages, latest: Mar 15 2021 at 21:58)
 * [stream events](topic/stream.20events.html) (2 messages, latest: Mar 15 2021 at 14:12)
 
-<hr><p>Last updated: Apr 08 2021 at 00:38 UTC</p>
+<hr><p>Last updated: Apr 09 2021 at 00:33 UTC</p>

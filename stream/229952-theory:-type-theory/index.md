@@ -9,6 +9,7 @@ permalink: /stream/229952-theory:-type-theory/index.html
 
 ### Topics:
 
+* [implications of type theory on foundations/finitism/etc.](topic/implications.20of.20type.20theory.20on.20foundations.2Ffinitism.2Fetc.2E.html) (1 message, latest: Apr 08 2021 at 22:23)
 * [self-types](topic/self-types.html) (9 messages, latest: Mar 06 2021 at 15:08)
 * [generating type theories](topic/generating.20type.20theories.html) (25 messages, latest: Dec 22 2020 at 23:43)
 * [Normalization by Evaluation](topic/Normalization.20by.20Evaluation.html) (43 messages, latest: Dec 05 2020 at 13:25)
@@ -23,4 +24,4 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [W-types and CFGs](topic/W-types.20and.20CFGs.html) (11 messages, latest: Apr 02 2020 at 16:00)
 * [homotopy type theory](topic/homotopy.20type.20theory.html) (10 messages, latest: Mar 26 2020 at 23:30)
 
-<hr><p>Last updated: Apr 08 2021 at 00:38 UTC</p>
+<hr><p>Last updated: Apr 09 2021 at 00:33 UTC</p>

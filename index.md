@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (354 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (356 topics)
 
 * [general](stream/229111-general/index.html) (190 topics)
 
@@ -54,6 +54,8 @@ permalink: /index.html
 
 * [practice: communication](stream/233322-practice:-communication/index.html) (14 topics)
 
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (14 topics)
+
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
 
 * [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (13 topics)
@@ -62,9 +64,9 @@ permalink: /index.html
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (13 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (13 topics)
-
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
+
+* [theory: physics](stream/251538-theory:-physics/index.html) (10 topics)
 
 * [practice: programming](stream/229450-practice:-programming/index.html) (9 topics)
 
@@ -77,8 +79,6 @@ permalink: /index.html
 * [practice: economics](stream/231468-practice:-economics/index.html) (8 topics)
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
-
-* [theory: physics](stream/251538-theory:-physics/index.html) (8 topics)
 
 * [theory: probability](stream/253118-theory:-probability/index.html) (8 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 08 2021 at 00:38 UTC</p>
+<hr><p>Last updated: Apr 09 2021 at 00:33 UTC</p>
