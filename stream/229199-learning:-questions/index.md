@@ -9,12 +9,14 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [categories enriched in a promonoidal category](topic/categories.20enriched.20in.20a.20promonoidal.20category.html) (2 messages, latest: Apr 08 2021 at 22:41)
-* [The intuitive understanding of category theory](topic/The.20intuitive.20understanding.20of.20category.20theory.html) (34 messages, latest: Apr 08 2021 at 17:37)
-* [encoding algebraic constraints as functors](topic/encoding.20algebraic.20constraints.20as.20functors.html) (5 messages, latest: Apr 08 2021 at 15:32)
-* [beginner questions](topic/beginner.20questions.html) (121 messages, latest: Apr 08 2021 at 09:57)
+* [decomposing 2d TQFTs](topic/decomposing.202d.20TQFTs.html) (65 messages, latest: Apr 09 2021 at 22:11)
+* [are proof assistants useful for CT?](topic/are.20proof.20assistants.20useful.20for.20CT.3F.html) (36 messages, latest: Apr 09 2021 at 18:13)
+* [Notation for (un)currying](topic/Notation.20for.20(un)currying.html) (7 messages, latest: Apr 09 2021 at 15:22)
+* [categories enriched in a promonoidal category](topic/categories.20enriched.20in.20a.20promonoidal.20category.html) (4 messages, latest: Apr 09 2021 at 09:56)
+* [The intuitive understanding of category theory](topic/The.20intuitive.20understanding.20of.20category.20theory.html) (35 messages, latest: Apr 09 2021 at 08:00)
+* [encoding algebraic constraints as functors](topic/encoding.20algebraic.20constraints.20as.20functors.html) (6 messages, latest: Apr 09 2021 at 07:55)
+* [beginner questions](topic/beginner.20questions.html) (130 messages, latest: Apr 09 2021 at 02:47)
 * [locales](topic/locales.html) (2 messages, latest: Apr 07 2021 at 22:58)
-* [are proof assistants useful for CT?](topic/are.20proof.20assistants.20useful.20for.20CT.3F.html) (35 messages, latest: Apr 07 2021 at 21:04)
 * [Encoding algebraic constrains as functors](topic/Encoding.20algebraic.20constrains.20as.20functors.html) (5 messages, latest: Apr 07 2021 at 14:28)
 * [the list functor](topic/the.20list.20functor.html) (32 messages, latest: Apr 07 2021 at 14:02)
 * [Optics and apartness](topic/Optics.20and.20apartness.html) (19 messages, latest: Apr 07 2021 at 12:58)
@@ -56,7 +58,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [I forgot a bunch of stuff](topic/I.20forgot.20a.20bunch.20of.20stuff.html) (10 messages, latest: Mar 01 2021 at 22:23)
 * [differential rig categories](topic/differential.20rig.20categories.html) (3 messages, latest: Feb 28 2021 at 09:44)
 * [products in a monoid](topic/products.20in.20a.20monoid.html) (31 messages, latest: Feb 28 2021 at 08:56)
-* [decomposing 2d TQFTs](topic/decomposing.202d.20TQFTs.html) (64 messages, latest: Feb 27 2021 at 20:26)
 * [Finite Biproducts Without Pointedness](topic/Finite.20Biproducts.20Without.20Pointedness.html) (7 messages, latest: Feb 26 2021 at 21:33)
 * [Walking arrow in a 2-category](topic/Walking.20arrow.20in.20a.202-category.html) (2 messages, latest: Feb 26 2021 at 02:08)
 * [conditions for points functor to have a left SMC adjoint?](topic/conditions.20for.20points.20functor.20to.20have.20a.20left.20SMC.20adjoint.3F.html) (4 messages, latest: Feb 25 2021 at 18:14)
@@ -366,4 +367,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 09 2021 at 00:33 UTC</p>
+<hr><p>Last updated: Apr 10 2021 at 00:35 UTC</p>
