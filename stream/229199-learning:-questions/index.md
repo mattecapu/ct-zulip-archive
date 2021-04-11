@@ -9,16 +9,17 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [decomposing 2d TQFTs](topic/decomposing.202d.20TQFTs.html) (65 messages, latest: Apr 09 2021 at 22:11)
+* [describing presheaves on Lawvere theories](topic/describing.20presheaves.20on.20Lawvere.20theories.html) (16 messages, latest: Apr 10 2021 at 21:56)
+* [the list functor](topic/the.20list.20functor.html) (34 messages, latest: Apr 10 2021 at 21:17)
+* [Notation for (un)currying](topic/Notation.20for.20(un)currying.html) (9 messages, latest: Apr 10 2021 at 09:33)
+* [decomposing 2d TQFTs](topic/decomposing.202d.20TQFTs.html) (68 messages, latest: Apr 10 2021 at 02:16)
 * [are proof assistants useful for CT?](topic/are.20proof.20assistants.20useful.20for.20CT.3F.html) (36 messages, latest: Apr 09 2021 at 18:13)
-* [Notation for (un)currying](topic/Notation.20for.20(un)currying.html) (7 messages, latest: Apr 09 2021 at 15:22)
 * [categories enriched in a promonoidal category](topic/categories.20enriched.20in.20a.20promonoidal.20category.html) (4 messages, latest: Apr 09 2021 at 09:56)
 * [The intuitive understanding of category theory](topic/The.20intuitive.20understanding.20of.20category.20theory.html) (35 messages, latest: Apr 09 2021 at 08:00)
 * [encoding algebraic constraints as functors](topic/encoding.20algebraic.20constraints.20as.20functors.html) (6 messages, latest: Apr 09 2021 at 07:55)
 * [beginner questions](topic/beginner.20questions.html) (130 messages, latest: Apr 09 2021 at 02:47)
 * [locales](topic/locales.html) (2 messages, latest: Apr 07 2021 at 22:58)
 * [Encoding algebraic constrains as functors](topic/Encoding.20algebraic.20constrains.20as.20functors.html) (5 messages, latest: Apr 07 2021 at 14:28)
-* [the list functor](topic/the.20list.20functor.html) (32 messages, latest: Apr 07 2021 at 14:02)
 * [Optics and apartness](topic/Optics.20and.20apartness.html) (19 messages, latest: Apr 07 2021 at 12:58)
 * [Locales](topic/Locales.html) (16 messages, latest: Apr 05 2021 at 23:25)
 * [functoriality of cod fibration](topic/functoriality.20of.20cod.20fibration.html) (6 messages, latest: Apr 01 2021 at 21:31)
@@ -367,4 +368,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 10 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 11 2021 at 00:38 UTC</p>
