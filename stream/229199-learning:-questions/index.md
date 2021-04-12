@@ -9,8 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [describing presheaves on Lawvere theories](topic/describing.20presheaves.20on.20Lawvere.20theories.html) (16 messages, latest: Apr 10 2021 at 21:56)
-* [the list functor](topic/the.20list.20functor.html) (34 messages, latest: Apr 10 2021 at 21:17)
+* [algebra, geometry, coalgebra](topic/algebra.2C.20geometry.2C.20coalgebra.html) (28 messages, latest: Apr 11 2021 at 21:05)
+* [describing presheaves on Lawvere theories](topic/describing.20presheaves.20on.20Lawvere.20theories.html) (21 messages, latest: Apr 11 2021 at 19:49)
+* [the list functor](topic/the.20list.20functor.html) (35 messages, latest: Apr 11 2021 at 02:16)
 * [Notation for (un)currying](topic/Notation.20for.20(un)currying.html) (9 messages, latest: Apr 10 2021 at 09:33)
 * [decomposing 2d TQFTs](topic/decomposing.202d.20TQFTs.html) (68 messages, latest: Apr 10 2021 at 02:16)
 * [are proof assistants useful for CT?](topic/are.20proof.20assistants.20useful.20for.20CT.3F.html) (36 messages, latest: Apr 09 2021 at 18:13)
@@ -368,4 +369,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 11 2021 at 00:38 UTC</p>
+<hr><p>Last updated: Apr 12 2021 at 00:37 UTC</p>
