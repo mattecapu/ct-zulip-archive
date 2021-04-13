@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [lemma in structured cospans](topic/lemma.20in.20structured.20cospans.html) (10 messages, latest: Apr 11 2021 at 23:14)
+* [lemma in structured cospans](topic/lemma.20in.20structured.20cospans.html) (11 messages, latest: Apr 12 2021 at 02:31)
 * [monads vs monadic functors](topic/monads.20vs.20monadic.20functors.html) (3 messages, latest: Apr 07 2021 at 11:06)
 * [dual of subterminal](topic/dual.20of.20subterminal.html) (33 messages, latest: Apr 06 2021 at 21:31)
 * [closed monoidal abelian categories](topic/closed.20monoidal.20abelian.20categories.html) (8 messages, latest: Apr 03 2021 at 16:08)
@@ -142,4 +142,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 12 2021 at 00:37 UTC</p>
+<hr><p>Last updated: Apr 13 2021 at 00:37 UTC</p>

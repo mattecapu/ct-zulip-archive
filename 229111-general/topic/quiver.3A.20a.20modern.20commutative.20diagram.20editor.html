@@ -248,6 +248,77 @@ In Safari I get a blank page, aside from the quiver logo linking to GitHub.  See
 
 
 
+<a name="234217543"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/234217543" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ralph Sarkis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#234217543">(Apr 12 2021 at 19:38)</a>:</h4>
+<p>I am writing here and not in a Github issue because it is not really a feature request (I don't see myself using it in the near future), more an idea that still needs some mulling over but that could probably be nicely implemented within quiver. I have found most written diagram chasing proofs to be a big hassle to read because a single big diagram is drawn and you must visualize which parts are drawn at each step of the proof. My idea to solve this would be to have a diagram for each step and indicators in the text to see which diagrams the reader should look at. Obviously, this demands more work from the writer because they have to edit a diagram for each step. Thus, I was thinking that within quiver, there could be a way to put every part of the diagram (objects and arrows) into groups and then quiver generates a diagram for each group displaying only the parts within that group. This way, one could draw the whole diagram on quiver, select the parts of the diagram that should be displayed at step 1,2,etc. and quiver generates a diagram for step 1,2,etc. automatically.</p>
+<p>A better way (imo) to display this would be to have a slideshow instead of many diagrams and inside the text, there are indicators to tell you when to move to the next step. This would be very hard to implement on a pdf I guess, but that could be done as an extension of the embedding capabilities quiver already has in webpages.</p>
+
+
+
+<a name="234225162"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/234225162" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#234225162">(Apr 12 2021 at 20:30)</a>:</h4>
+<p>Once you start thinking there's an endless number of fun ideas for improving presentation, where one of the big barriers is the limitations of the pdf format itself. Another possibility is to have the diagram all in one go, but mousing over each cell of the diagram reveals a section of popup text explaining why it commutes, with links to the needed assumptions</p>
+
+
+
+<a name="234225307"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/234225307" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#234225307">(Apr 12 2021 at 20:31)</a>:</h4>
+<p>Animating a diagram to be revealed parts at a time can be done with TikZ + beamer, although it would be a bunch of effort</p>
+
+
+
+<a name="234225823"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/234225823" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#234225823">(Apr 12 2021 at 20:34)</a>:</h4>
+<p>It's really important that diagrams show up a bit at a time as one is explaining them.  There's a nice way to do this called a blackboard.</p>
+
+
+
+<a name="234225987"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/234225987" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#234225987">(Apr 12 2021 at 20:35)</a>:</h4>
+<p>Getting high-tech tools to work almost as smoothly as talking while writing on a blackboard is a big challenge, but worthwhile because of course the high-tech route has certain advantages.</p>
+
+
+
+<a name="234227770"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/234227770" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Conor McBride <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#234227770">(Apr 12 2021 at 20:48)</a>:</h4>
+<p>I've been doing a bit of thinking about how to expose the quantifier alternation in explaining what proposition is represented by a diagram. I.e., what's the game? My rule of thumb is to label phases starting from 0, with even phases being demonic and odd phases being angelic. The key insight is that you need only bother labelling a thing which arrives strictly later in the dialogue than its boundary.</p>
+
+
+
+<a name="234249006"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/234249006" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#234249006">(Apr 13 2021 at 00:07)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229111-general/topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor/near/234225987">said</a>:</p>
+<blockquote>
+<p>Getting high-tech tools to work almost as smoothly as talking while writing on a blackboard is a big challenge, but worthwhile because of course the high-tech route has certain advantages.</p>
+</blockquote>
+<p>I've found that a wacom tablet is just about as smooth as a blackboard for me.</p>
+
+
+
+<a name="234249025"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/234249025" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#234249025">(Apr 13 2021 at 00:07)</a>:</h4>
+<p>Yeah, you're good at that.  My tablet usage still sucks.</p>
+
+
+
+<a name="234249108"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/234249108" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#234249108">(Apr 13 2021 at 00:08)</a>:</h4>
+<p>I just can't write smoothly as I can on a board.</p>
+
+
+
+<a name="234249203"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/234249203" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#234249203">(Apr 13 2021 at 00:09)</a>:</h4>
+<p>Are you using a tablet that's also a screen, so you can see what you're writing directly under your pen?  I wouldn't give that up for the world, although I know people who claim to be fully satisfied with the kind of tablet where you have to write on a black plastic board and only see what you're writing on a separate screen.</p>
+
+
+
+<a name="234249325"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229111-general/topic/quiver%3A%20a%20modern%20commutative%20diagram%20editor/near/234249325" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-general/topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html#234249325">(Apr 13 2021 at 00:10)</a>:</h4>
+<p>No, I'm not using that - maybe that's the problem, writing while looking somewhere else.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Apr 12 2021 at 00:37 UTC</p>
+<hr><p>Last updated: Apr 13 2021 at 00:37 UTC</p>
