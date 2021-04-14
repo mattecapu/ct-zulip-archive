@@ -9,7 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [Category Theory Meets Computational Irreducibility](topic/Category.20Theory.20Meets.20Computational.20Irreducibility.html) (13 messages, latest: Apr 12 2021 at 23:32)
+* [Category Theory Meets Computational Irreducibility](topic/Category.20Theory.20Meets.20Computational.20Irreducibility.html) (15 messages, latest: Apr 13 2021 at 09:27)
 * [Compositional Robotics: Mathematics and Tools Workshop](topic/Compositional.20Robotics.3A.20Mathematics.20and.20Tools.20Workshop.html) (6 messages, latest: Apr 12 2021 at 20:17)
 * [Logic Webinar@IITK](topic/Logic.20Webinar.40IITK.html) (8 messages, latest: Apr 02 2021 at 07:10)
 * [Categories and Companions Symposium 2021](topic/Categories.20and.20Companions.20Symposium.202021.html) (1 message, latest: Mar 31 2021 at 21:28)
@@ -89,4 +89,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Apr 13 2021 at 00:37 UTC</p>
+<hr><p>Last updated: Apr 14 2021 at 00:33 UTC</p>

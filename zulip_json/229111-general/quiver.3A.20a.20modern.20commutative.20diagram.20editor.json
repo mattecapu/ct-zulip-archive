@@ -274,5 +274,59 @@
         "id": 234249325,
         "sender_full_name": "John Baez",
         "timestamp": 1618272635
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229111-general/topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor/near/234225307\">said</a>:</p>\n<blockquote>\n<p>Animating a diagram to be revealed parts at a time can be done with TikZ + beamer, although it would be a bunch of effort</p>\n</blockquote>\n<p>I've done it, and I don't think it's that bad.  It could be even easier with built-in quiver support.</p>",
+        "id": 234258204,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1618280182
+    },
+    {
+        "content": "<p>I've tried to use \"animated\" (in the Beamer sense) diagrams and I didn't like them much. Here is one of my favorite low-tech solutions - I guess that it is similar to what <span class=\"user-mention\" data-user-id=\"277574\">@Conor McBride</span> uses. Here is how Freyd states that a category has all equalizers:<br>\n<a href=\"/user_uploads/21317/_VEojGTeQTMeD-OqnRON69ux/freyd1.png\">freyd1.png</a> <br>\nand here is how to write that as a single diagram:<br>\n<a href=\"/user_uploads/21317/K5aBcOWTS6mxQU70cm3_2pli/freyd2.png\">freyd2.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/_VEojGTeQTMeD-OqnRON69ux/freyd1.png\" title=\"freyd1.png\"><img src=\"/user_uploads/21317/_VEojGTeQTMeD-OqnRON69ux/freyd1.png\"></a></div><div class=\"message_inline_image\"><a href=\"/user_uploads/21317/K5aBcOWTS6mxQU70cm3_2pli/freyd2.png\" title=\"freyd2.png\"><img src=\"/user_uploads/21317/K5aBcOWTS6mxQU70cm3_2pli/freyd2.png\"></a></div>",
+        "id": 234259004,
+        "sender_full_name": "Eduardo Ochs",
+        "timestamp": 1618280928
+    },
+    {
+        "content": "<p>Selecting a bunch of things to duplicate would make it easier to make piece-by-piece diagrams in the style of Freyd.  I haven't played around enough with quiver to find that option.</p>",
+        "id": 234332662,
+        "sender_full_name": "Jason Erbele",
+        "timestamp": 1618323314
+    },
+    {
+        "content": "<p>Unfortunately, I don't think you can copy-paste in quiver</p>",
+        "id": 234336536,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1618324534
+    },
+    {
+        "content": "<p>I think perhaps a more intuitive UI would be having layers for the commutative diagram, equipped with an order. That way, you wouldn't have to update each duplicated component each time you wanted to edit something. Then <strong>quiver</strong> could export the diagrams with the right Beamer commands to reveal the diagram in the correct order.</p>",
+        "id": 234338595,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1618325191
+    },
+    {
+        "content": "<p>(Having copy-and-paste would be a useful feature independently.)</p>",
+        "id": 234338656,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1618325217
+    },
+    {
+        "content": "<p>Although sometimes one also wants to <em>remove</em> something from the diagram in a later slide.</p>",
+        "id": 234367619,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1618334696
+    },
+    {
+        "content": "<p>For removing elements from a diagram in a later slide, I think an intuitive UI would allow editing frame by frame, where each existing frame is independent of the others (or can be edited independently of the others, at least), but adding a new frame would include everything from either the last frame or the currently selected frame (and would either insert at the end or immediately after the current frame – ideally frames could be shuffled, too).</p>",
+        "id": 234377421,
+        "sender_full_name": "Jason Erbele",
+        "timestamp": 1618338489
+    },
+    {
+        "content": "<p>In my fantasy (I have no idea how much it would complicate the backend...), re-inserting a deleted element in a subsequent frame would allow that element to still be updated across all frames where it appears.</p>",
+        "id": 234378687,
+        "sender_full_name": "Jason Erbele",
+        "timestamp": 1618339027
     }
 ]

@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [deep learning](topic/deep.20learning.html) (1 message, latest: Apr 13 2021 at 02:16)
 * [algebra, geometry, coalgebra... cogeometry?](topic/algebra.2C.20geometry.2C.20coalgebra.2E.2E.2E.20cogeometry.3F.html) (18 messages, latest: Apr 12 2021 at 17:53)
 * [algebra, geometry, coalgebra](topic/algebra.2C.20geometry.2C.20coalgebra.html) (28 messages, latest: Apr 11 2021 at 21:05)
 * [describing presheaves on Lawvere theories](topic/describing.20presheaves.20on.20Lawvere.20theories.html) (21 messages, latest: Apr 11 2021 at 19:49)
@@ -370,4 +371,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 13 2021 at 00:37 UTC</p>
+<hr><p>Last updated: Apr 14 2021 at 00:33 UTC</p>
