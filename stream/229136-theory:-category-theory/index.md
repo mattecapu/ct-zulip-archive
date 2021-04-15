@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [type theory of a topos](topic/type.20theory.20of.20a.20topos.html) (4 messages, latest: Apr 13 2021 at 21:38)
+* [type theory of a topos](topic/type.20theory.20of.20a.20topos.html) (68 messages, latest: Apr 14 2021 at 19:51)
 * [where can i look for a laxator](topic/where.20can.20i.20look.20for.20a.20laxator.html) (17 messages, latest: Apr 13 2021 at 19:01)
 * [mono in a 2-category](topic/mono.20in.20a.202-category.html) (17 messages, latest: Apr 13 2021 at 17:23)
 * [lemma in structured cospans](topic/lemma.20in.20structured.20cospans.html) (11 messages, latest: Apr 12 2021 at 02:31)
@@ -145,4 +145,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 14 2021 at 00:33 UTC</p>
+<hr><p>Last updated: Apr 15 2021 at 00:35 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [reference request](topic/reference.20request.html) (10 messages, latest: Apr 14 2021 at 22:13)
 * [deep learning](topic/deep.20learning.html) (1 message, latest: Apr 13 2021 at 02:16)
 * [algebra, geometry, coalgebra... cogeometry?](topic/algebra.2C.20geometry.2C.20coalgebra.2E.2E.2E.20cogeometry.3F.html) (18 messages, latest: Apr 12 2021 at 17:53)
 * [algebra, geometry, coalgebra](topic/algebra.2C.20geometry.2C.20coalgebra.html) (28 messages, latest: Apr 11 2021 at 21:05)
@@ -162,7 +163,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [what is a modality?](topic/what.20is.20a.20modality.3F.html) (126 messages, latest: Dec 04 2020 at 18:25)
 * [co/limit when diagram has initial/terminal objects](topic/co.2Flimit.20when.20diagram.20has.20initial.2Fterminal.20objects.html) (113 messages, latest: Dec 03 2020 at 15:58)
 * ["contravariant" 2-functors](topic/.22contravariant.22.202-functors.html) (77 messages, latest: Dec 03 2020 at 11:55)
-* [reference request](topic/reference.20request.html) (7 messages, latest: Nov 30 2020 at 22:18)
 * [enrichment in a 2-category](topic/enrichment.20in.20a.202-category.html) (11 messages, latest: Nov 28 2020 at 23:47)
 * [modular lattices](topic/modular.20lattices.html) (27 messages, latest: Nov 26 2020 at 23:11)
 * [The real unit interval categorically](topic/The.20real.20unit.20interval.20categorically.html) (8 messages, latest: Nov 25 2020 at 17:57)
@@ -371,4 +371,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 14 2021 at 00:33 UTC</p>
+<hr><p>Last updated: Apr 15 2021 at 00:35 UTC</p>

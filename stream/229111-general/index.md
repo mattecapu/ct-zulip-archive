@@ -9,9 +9,9 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [quiver: a modern commutative diagram editor](topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (55 messages, latest: Apr 13 2021 at 18:37)
+* [ACT Directory](topic/ACT.20Directory.html) (21 messages, latest: Apr 14 2021 at 13:02)
+* [quiver: a modern commutative diagram editor](topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (56 messages, latest: Apr 14 2021 at 10:28)
 * [category theory in human psychology](topic/category.20theory.20in.20human.20psychology.html) (107 messages, latest: Apr 11 2021 at 04:53)
-* [ACT Directory](topic/ACT.20Directory.html) (20 messages, latest: Apr 10 2021 at 17:34)
 * [category theory illustrated](topic/category.20theory.20illustrated.html) (2 messages, latest: Apr 08 2021 at 03:35)
 * [CALCO is in trouble!](topic/CALCO.20is.20in.20trouble!.html) (19 messages, latest: Apr 01 2021 at 08:32)
 * [birthday celebration](topic/birthday.20celebration.html) (16 messages, latest: Mar 27 2021 at 11:38)
@@ -200,4 +200,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Apr 14 2021 at 00:33 UTC</p>
+<hr><p>Last updated: Apr 15 2021 at 00:35 UTC</p>
