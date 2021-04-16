@@ -8,11 +8,11 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (361 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (364 topics)
 
 * [general](stream/229111-general/index.html) (190 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (135 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (136 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (97 topics)
 
@@ -54,11 +54,11 @@ permalink: /index.html
 
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
 
+* [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (14 topics)
+
 * [practice: communication](stream/233322-practice:-communication/index.html) (14 topics)
 
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
-
-* [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (13 topics)
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (13 topics)
 
@@ -66,11 +66,11 @@ permalink: /index.html
 
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (10 topics)
+
 * [theory: physics](stream/251538-theory:-physics/index.html) (10 topics)
 
 * [practice: programming](stream/229450-practice:-programming/index.html) (9 topics)
-
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (9 topics)
 
 * [theory: concurrency](stream/235484-theory:-concurrency/index.html) (9 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 15 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 16 2021 at 00:33 UTC</p>

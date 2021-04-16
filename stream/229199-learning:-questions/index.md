@@ -9,7 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [reference request](topic/reference.20request.html) (10 messages, latest: Apr 14 2021 at 22:13)
+* [$$\times$$ in $$\mathbf{Rel}$$](topic/.24.24.5Ctimes.24.24.20in.20.24.24.5Cmathbf.7BRel.7D.24.24.html) (11 messages, latest: Apr 15 2021 at 21:28)
+* [How to characterize a groupoid by its equipment in Cat](topic/How.20to.20characterize.20a.20groupoid.20by.20its.20equipment.20in.20Cat.html) (7 messages, latest: Apr 15 2021 at 19:42)
+* [How to work with a labeled concrete category?](topic/How.20to.20work.20with.20a.20labeled.20concrete.20category.3F.html) (2 messages, latest: Apr 15 2021 at 16:29)
+* [reference request](topic/reference.20request.html) (12 messages, latest: Apr 15 2021 at 16:08)
 * [deep learning](topic/deep.20learning.html) (1 message, latest: Apr 13 2021 at 02:16)
 * [algebra, geometry, coalgebra... cogeometry?](topic/algebra.2C.20geometry.2C.20coalgebra.2E.2E.2E.20cogeometry.3F.html) (18 messages, latest: Apr 12 2021 at 17:53)
 * [algebra, geometry, coalgebra](topic/algebra.2C.20geometry.2C.20coalgebra.html) (28 messages, latest: Apr 11 2021 at 21:05)
@@ -371,4 +374,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 15 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 16 2021 at 00:33 UTC</p>
