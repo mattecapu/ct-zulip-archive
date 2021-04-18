@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [What can CT tell us about alternative programming paradigms?](topic/What.20can.20CT.20tell.20us.20about.20alternative.20programming.20paradigms.3F.html) (12 messages, latest: Apr 17 2021 at 00:15)
-* [Arrow category as a ??? category](topic/Arrow.20category.20as.20a.20.3F.3F.3F.20category.html) (4 messages, latest: Apr 16 2021 at 22:55)
+* [Arrow category as a ??? category](topic/Arrow.20category.20as.20a.20.3F.3F.3F.20category.html) (9 messages, latest: Apr 17 2021 at 19:06)
+* [What can CT tell us about alternative programming paradigms?](topic/What.20can.20CT.20tell.20us.20about.20alternative.20programming.20paradigms.3F.html) (23 messages, latest: Apr 17 2021 at 12:01)
 * [how to work with a labeled concrete category?](topic/how.20to.20work.20with.20a.20labeled.20concrete.20category.3F.html) (7 messages, latest: Apr 16 2021 at 15:37)
 * [How to work with a labeled concrete category?](topic/How.20to.20work.20with.20a.20labeled.20concrete.20category.3F.html) (4 messages, latest: Apr 16 2021 at 15:27)
 * [$$\times$$ in $$\mathbf{Rel}$$](topic/.24.24.5Ctimes.24.24.20in.20.24.24.5Cmathbf.7BRel.7D.24.24.html) (25 messages, latest: Apr 16 2021 at 15:17)
@@ -377,4 +377,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 17 2021 at 00:34 UTC</p>
+<hr><p>Last updated: Apr 18 2021 at 00:35 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Jeremy Avigad](topic/Jeremy.20Avigad.html) (1 message, latest: Apr 17 2021 at 14:15)
 * [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (15 messages, latest: Apr 16 2021 at 14:04)
 * [Compositional Robotics: Mathematics and Tools Workshop](topic/Compositional.20Robotics.3A.20Mathematics.20and.20Tools.20Workshop.html) (7 messages, latest: Apr 15 2021 at 16:08)
 * [Category Theory Meets Computational Irreducibility](topic/Category.20Theory.20Meets.20Computational.20Irreducibility.html) (15 messages, latest: Apr 13 2021 at 09:27)
@@ -89,4 +90,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Apr 17 2021 at 00:34 UTC</p>
+<hr><p>Last updated: Apr 18 2021 at 00:35 UTC</p>
