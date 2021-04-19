@@ -14,7 +14,7 @@ permalink: /index.html
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (136 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (97 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (98 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (80 topics)
 
@@ -64,11 +64,11 @@ permalink: /index.html
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (13 topics)
 
+* [theory: physics](stream/251538-theory:-physics/index.html) (11 topics)
+
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (10 topics)
-
-* [theory: physics](stream/251538-theory:-physics/index.html) (10 topics)
 
 * [practice: programming](stream/229450-practice:-programming/index.html) (9 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 18 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 19 2021 at 00:35 UTC</p>

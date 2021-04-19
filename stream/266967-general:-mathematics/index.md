@@ -9,6 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* [there are no functions of 3 variables](topic/there.20are.20no.20functions.20of.203.20variables.html) (34 messages, latest: Apr 18 2021 at 22:28)
 * [catalan numbers and fibonacci numbers](topic/catalan.20numbers.20and.20fibonacci.20numbers.html) (7 messages, latest: Apr 06 2021 at 15:49)
 * [natural numbers](topic/natural.20numbers.html) (48 messages, latest: Mar 28 2021 at 11:55)
 * [Barry Mitchell](topic/Barry.20Mitchell.html) (5 messages, latest: Mar 25 2021 at 11:33)
@@ -26,7 +27,6 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [The initial model of logic: humans?!](topic/The.20initial.20model.20of.20logic.3A.20humans.3F!.html) (15 messages, latest: Jan 08 2021 at 00:26)
 * [The flying lemur principle](topic/The.20flying.20lemur.20principle.html) (6 messages, latest: Jan 07 2021 at 18:03)
 * [Forcing: cardinals below c](topic/Forcing.3A.20cardinals.20below.20c.html) (191 messages, latest: Jan 02 2021 at 16:50)
-* [there are no functions of 3 variables](topic/there.20are.20no.20functions.20of.203.20variables.html) (33 messages, latest: Jan 01 2021 at 12:43)
 * [groupoids](topic/groupoids.html) (82 messages, latest: Dec 29 2020 at 18:24)
 * [mathematical phantoms](topic/mathematical.20phantoms.html) (39 messages, latest: Dec 26 2020 at 11:41)
 * [Coalgebras for non-operadic monads](topic/Coalgebras.20for.20non-operadic.20monads.html) (3 messages, latest: Dec 20 2020 at 18:14)
@@ -40,4 +40,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Apr 18 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 19 2021 at 00:35 UTC</p>
