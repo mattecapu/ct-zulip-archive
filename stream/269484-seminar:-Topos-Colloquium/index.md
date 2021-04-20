@@ -9,6 +9,7 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 
 ### Topics:
 
+* [Shaowei Lin: "Proofs as programs: challenges and \[...\]"](topic/Shaowei.20Lin.3A.20.22Proofs.20as.20programs.3A.20challenges.20and.20.5B.2E.2E.2E.5D.22.html) (5 messages, latest: Apr 19 2021 at 14:41)
 * [Asgar Jamneshan: "Topos theory and measurability"](topic/Asgar.20Jamneshan.3A.20.22Topos.20theory.20and.20measurability.22.html) (7 messages, latest: Apr 17 2021 at 13:58)
 * [Joachim Kock: "Noncrossing hyperchords and free probability"](topic/Joachim.20Kock.3A.20.22Noncrossing.20hyperchords.20and.20free.20probability.22.html) (13 messages, latest: Apr 13 2021 at 12:27)
 * [John Baez: "Mathematics in the 21st century"](topic/John.20Baez.3A.20.22Mathematics.20in.20the.2021st.20century.22.html) (26 messages, latest: Apr 01 2021 at 18:02)
@@ -20,4 +21,4 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 * [Richard Garner: "Comodels of an algebraic theory"](topic/Richard.20Garner.3A.20.22Comodels.20of.20an.20algebraic.20theory.22.html) (27 messages, latest: Feb 11 2021 at 22:36)
 * [stream events](topic/stream.20events.html) (2 messages, latest: Dec 26 2020 at 19:06)
 
-<hr><p>Last updated: Apr 19 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 20 2021 at 00:35 UTC</p>

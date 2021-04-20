@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (592 messages, latest: Apr 19 2021 at 16:08)
 * [ACT Directory](topic/ACT.20Directory.html) (21 messages, latest: Apr 14 2021 at 13:02)
 * [quiver: a modern commutative diagram editor](topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (56 messages, latest: Apr 14 2021 at 10:28)
 * [category theory in human psychology](topic/category.20theory.20in.20human.20psychology.html) (107 messages, latest: Apr 11 2021 at 04:53)
@@ -18,7 +19,6 @@ permalink: /stream/229111-general/index.html
 * [HoTT Zulip Invite link?](topic/HoTT.20Zulip.20Invite.20link.3F.html) (2 messages, latest: Mar 25 2021 at 15:05)
 * [TheCanonworks, A New Social Media Site of Interest to Aca...](topic/TheCanonworks.2C.20A.20New.20Social.20Media.20Site.20of.20Interest.20to.20Aca.2E.2E.2E.html) (3 messages, latest: Mar 18 2021 at 14:33)
 * [Contacting David Spivak](topic/Contacting.20David.20Spivak.html) (3 messages, latest: Mar 17 2021 at 22:51)
-* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (585 messages, latest: Mar 16 2021 at 14:12)
 * [Counterexamples in Category Theory](topic/Counterexamples.20in.20Category.20Theory.html) (67 messages, latest: Mar 15 2021 at 15:47)
 * [new streams](topic/new.20streams.html) (74 messages, latest: Mar 15 2021 at 14:07)
 * [Clubhouse Category Theory](topic/Clubhouse.20Category.20Theory.html) (1 message, latest: Mar 04 2021 at 13:17)
@@ -200,4 +200,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Apr 19 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 20 2021 at 00:35 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [grothendieck construction as a colimit](topic/grothendieck.20construction.20as.20a.20colimit.html) (25 messages, latest: Apr 19 2021 at 19:25)
 * [type theory of a topos](topic/type.20theory.20of.20a.20topos.html) (149 messages, latest: Apr 17 2021 at 18:51)
 * [co/yoneda as co/evaluation](topic/co.2Fyoneda.20as.20co.2Fevaluation.html) (34 messages, latest: Apr 16 2021 at 21:44)
 * [where can i look for a laxator](topic/where.20can.20i.20look.20for.20a.20laxator.html) (17 messages, latest: Apr 13 2021 at 19:01)
@@ -146,4 +147,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 19 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 20 2021 at 00:35 UTC</p>

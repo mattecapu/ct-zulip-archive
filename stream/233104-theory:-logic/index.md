@@ -9,6 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
+* [Axiom systems](topic/Axiom.20systems.html) (37 messages, latest: Apr 19 2021 at 16:03)
 * [(uniform) interpolation and proof equalities/normalization](topic/(uniform).20interpolation.20and.20proof.20equalities.2Fnormalization.html) (1 message, latest: Mar 22 2021 at 11:13)
 * [filtered colimits and type theory](topic/filtered.20colimits.20and.20type.20theory.html) (3 messages, latest: Mar 14 2021 at 12:01)
 * [Filtered Colimits and Type Theory](topic/Filtered.20Colimits.20and.20Type.20Theory.html) (1 message, latest: Mar 13 2021 at 19:42)
@@ -17,7 +18,6 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Even more exponentials in linear logic](topic/Even.20more.20exponentials.20in.20linear.20logic.html) (5 messages, latest: Feb 23 2021 at 06:09)
 * [Terminology: “a calculus of sequents”](topic/Terminology.3A.20.E2.80.9Ca.20calculus.20of.20sequents.E2.80.9D.html) (25 messages, latest: Feb 21 2021 at 22:01)
 * [fragments of logic](topic/fragments.20of.20logic.html) (40 messages, latest: Feb 20 2021 at 00:00)
-* [Axiom systems](topic/Axiom.20systems.html) (36 messages, latest: Feb 17 2021 at 22:37)
 * [constructive and co-constructive logic](topic/constructive.20and.20co-constructive.20logic.html) (27 messages, latest: Jan 11 2021 at 13:02)
 * [Axiom of Multiple Choice](topic/Axiom.20of.20Multiple.20Choice.html) (10 messages, latest: Jan 03 2021 at 21:11)
 * [Tukey's Lemma](topic/Tukey's.20Lemma.html) (14 messages, latest: Dec 22 2020 at 03:17)
@@ -41,4 +41,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Apr 19 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 20 2021 at 00:35 UTC</p>

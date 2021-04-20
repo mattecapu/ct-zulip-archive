@@ -8,15 +8,15 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (367 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (368 topics)
 
 * [general](stream/229111-general/index.html) (190 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (136 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (137 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (98 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (80 topics)
+* [general: events](stream/229141-general:-events/index.html) (81 topics)
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
@@ -64,11 +64,11 @@ permalink: /index.html
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (13 topics)
 
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (11 topics)
+
 * [theory: physics](stream/251538-theory:-physics/index.html) (11 topics)
 
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
-
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (10 topics)
 
 * [practice: programming](stream/229450-practice:-programming/index.html) (9 topics)
 
@@ -86,13 +86,13 @@ permalink: /index.html
 
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (7 topics)
 
+* [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (7 topics)
+
 * [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (7 topics)
 
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (6 topics)
-
-* [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (6 topics)
 
 * [practice: translation](stream/260000-practice:-translation/index.html) (6 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 19 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 20 2021 at 00:35 UTC</p>
