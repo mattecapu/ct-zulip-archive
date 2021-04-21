@@ -9,7 +9,11 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Uniqueness of Cartesian maps](topic/Uniqueness.20of.20Cartesian.20maps.html) (4 messages, latest: Apr 19 2021 at 21:34)
+* [Markov category question](topic/Markov.20category.20question.html) (9 messages, latest: Apr 21 2021 at 00:08)
+* [Composing monadic and non-monadic adjunctions](topic/Composing.20monadic.20and.20non-monadic.20adjunctions.html) (2 messages, latest: Apr 20 2021 at 22:55)
+* [Euler characteristic and derivatives](topic/Euler.20characteristic.20and.20derivatives.html) (4 messages, latest: Apr 20 2021 at 22:51)
+* [×  in Rel](topic/.C3.97.20.20in.20Rel.html) (1 message, latest: Apr 20 2021 at 19:13)
+* [Uniqueness of Cartesian maps](topic/Uniqueness.20of.20Cartesian.20maps.html) (5 messages, latest: Apr 20 2021 at 11:21)
 * [How to characterize a groupoid by its equipment in Cat](topic/How.20to.20characterize.20a.20groupoid.20by.20its.20equipment.20in.20Cat.html) (10 messages, latest: Apr 19 2021 at 17:05)
 * [Arrow category as a ??? category](topic/Arrow.20category.20as.20a.20.3F.3F.3F.20category.html) (12 messages, latest: Apr 18 2021 at 17:05)
 * [What can CT tell us about alternative programming paradigms?](topic/What.20can.20CT.20tell.20us.20about.20alternative.20programming.20paradigms.3F.html) (23 messages, latest: Apr 17 2021 at 12:01)
@@ -378,4 +382,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 20 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 21 2021 at 00:35 UTC</p>

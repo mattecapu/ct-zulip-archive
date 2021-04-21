@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [tensor product of EM-algebras](topic/tensor.20product.20of.20EM-algebras.html) (42 messages, latest: Apr 20 2021 at 21:25)
 * [grothendieck construction as a colimit](topic/grothendieck.20construction.20as.20a.20colimit.html) (25 messages, latest: Apr 19 2021 at 19:25)
 * [type theory of a topos](topic/type.20theory.20of.20a.20topos.html) (149 messages, latest: Apr 17 2021 at 18:51)
 * [co/yoneda as co/evaluation](topic/co.2Fyoneda.20as.20co.2Fevaluation.html) (34 messages, latest: Apr 16 2021 at 21:44)
@@ -21,7 +22,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [microcosm principle for actegories](topic/microcosm.20principle.20for.20actegories.html) (9 messages, latest: Apr 03 2021 at 09:59)
 * [finitely generated/presented theories?](topic/finitely.20generated.2Fpresented.20theories.3F.html) (35 messages, latest: Mar 30 2021 at 06:55)
 * [Finitely generated/presented theories?](topic/Finitely.20generated.2Fpresented.20theories.3F.html) (6 messages, latest: Mar 27 2021 at 16:54)
-* [tensor product of EM-algebras](topic/tensor.20product.20of.20EM-algebras.html) (41 messages, latest: Mar 21 2021 at 23:55)
 * [Looking for references on enriched bicategories](topic/Looking.20for.20references.20on.20enriched.20bicategories.html) (10 messages, latest: Mar 12 2021 at 07:11)
 * [Slice categories as free lex categories](topic/Slice.20categories.20as.20free.20lex.20categories.html) (12 messages, latest: Feb 17 2021 at 05:04)
 * [Anti-Grothendieck Construction](topic/Anti-Grothendieck.20Construction.html) (21 messages, latest: Feb 10 2021 at 17:22)
@@ -147,4 +147,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 20 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 21 2021 at 00:35 UTC</p>
