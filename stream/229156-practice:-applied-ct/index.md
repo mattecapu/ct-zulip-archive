@@ -9,7 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
-* [An involution on 'Learn'](topic/An.20involution.20on.20'Learn'.html) (4 messages, latest: Apr 18 2021 at 13:32)
+* [An involution on 'Learn'](topic/An.20involution.20on.20'Learn'.html) (28 messages, latest: Apr 22 2021 at 00:01)
 * [Coalgebras and convergence of sequences](topic/Coalgebras.20and.20convergence.20of.20sequences.html) (13 messages, latest: Apr 14 2021 at 07:11)
 * [web cats](topic/web.20cats.html) (137 messages, latest: Apr 03 2021 at 14:57)
 * [security + ct](topic/security.20.2B.20ct.html) (16 messages, latest: Mar 31 2021 at 10:18)
@@ -108,4 +108,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Apr 21 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 22 2021 at 00:36 UTC</p>
