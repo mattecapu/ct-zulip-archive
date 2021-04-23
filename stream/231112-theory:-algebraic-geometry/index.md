@@ -9,6 +9,7 @@ permalink: /stream/231112-theory:-algebraic-geometry/index.html
 
 ### Topics:
 
+* [Functorial algebraic geometry notes](topic/Functorial.20algebraic.20geometry.20notes.html) (8 messages, latest: Apr 22 2021 at 17:33)
 * [Descent](topic/Descent.html) (450 messages, latest: Nov 15 2020 at 15:33)
 * [who named flat module ?](topic/who.20named.20flat.20module.20.3F.html) (6 messages, latest: Sep 04 2020 at 05:28)
 * [Holomorphic differential cohomology](topic/Holomorphic.20differential.20cohomology.html) (16 messages, latest: May 25 2020 at 12:07)
@@ -23,4 +24,4 @@ permalink: /stream/231112-theory:-algebraic-geometry/index.html
 * [stream events](topic/stream.20events.html) (15 messages, latest: Apr 06 2020 at 05:56)
 * [stokes' theorem as a coend](topic/stokes'.20theorem.20as.20a.20coend.html) (3 messages, latest: Apr 02 2020 at 17:58)
 
-<hr><p>Last updated: Apr 22 2021 at 00:36 UTC</p>
+<hr><p>Last updated: Apr 23 2021 at 00:35 UTC</p>

@@ -8,15 +8,15 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (373 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (374 topics)
 
 * [general](stream/229111-general/index.html) (190 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (137 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (98 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (99 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (81 topics)
+* [general: events](stream/229141-general:-events/index.html) (82 topics)
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
@@ -58,9 +58,9 @@ permalink: /index.html
 
 * [practice: communication](stream/233322-practice:-communication/index.html) (14 topics)
 
-* [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
+* [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (14 topics)
 
-* [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (13 topics)
+* [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (13 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 22 2021 at 00:36 UTC</p>
+<hr><p>Last updated: Apr 23 2021 at 00:35 UTC</p>
