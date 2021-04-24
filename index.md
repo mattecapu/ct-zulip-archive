@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (374 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (375 topics)
 
 * [general](stream/229111-general/index.html) (190 topics)
 
@@ -48,7 +48,7 @@ permalink: /index.html
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (17 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (16 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (17 topics)
 
 * [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
 
@@ -70,6 +70,8 @@ permalink: /index.html
 
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
+* [practice: our work](stream/274877-practice:-our-work/index.html) (9 topics)
+
 * [practice: programming](stream/229450-practice:-programming/index.html) (9 topics)
 
 * [theory: concurrency](stream/235484-theory:-concurrency/index.html) (9 topics)
@@ -77,8 +79,6 @@ permalink: /index.html
 * [philosophy](stream/229134-philosophy/index.html) (8 topics)
 
 * [practice: economics](stream/231468-practice:-economics/index.html) (8 topics)
-
-* [practice: our work](stream/274877-practice:-our-work/index.html) (8 topics)
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 23 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 24 2021 at 00:36 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [LaTeX support](topic/LaTeX.20support.html) (84 messages, latest: Apr 23 2021 at 19:43)
 * [Introduce Yourself!](topic/Introduce.20Yourself!.html) (601 messages, latest: Apr 21 2021 at 05:19)
 * [ACT Directory](topic/ACT.20Directory.html) (21 messages, latest: Apr 14 2021 at 13:02)
 * [quiver: a modern commutative diagram editor](topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (56 messages, latest: Apr 14 2021 at 10:28)
@@ -63,7 +64,6 @@ permalink: /stream/229111-general/index.html
 * [Kock on symmetries](topic/Kock.20on.20symmetries.html) (10 messages, latest: Nov 10 2020 at 15:49)
 * [finding a paper on premonoidal categories](topic/finding.20a.20paper.20on.20premonoidal.20categories.html) (39 messages, latest: Nov 05 2020 at 08:54)
 * [Consistency proofs](topic/Consistency.20proofs.html) (53 messages, latest: Nov 01 2020 at 23:20)
-* [LaTeX support](topic/LaTeX.20support.html) (80 messages, latest: Oct 19 2020 at 13:23)
 * [Group object in an arbitrary category](topic/Group.20object.20in.20an.20arbitrary.20category.html) (7 messages, latest: Oct 19 2020 at 08:26)
 * [The Brownian map](topic/The.20Brownian.20map.html) (9 messages, latest: Oct 19 2020 at 03:16)
 * [Nonstandard models of arithmetic](topic/Nonstandard.20models.20of.20arithmetic.html) (149 messages, latest: Oct 13 2020 at 18:24)
@@ -200,4 +200,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Apr 23 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 24 2021 at 00:36 UTC</p>

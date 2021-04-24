@@ -9,10 +9,12 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [how to work with a labeled concrete category?](topic/how.20to.20work.20with.20a.20labeled.20concrete.20category.3F.html) (12 messages, latest: Apr 22 2021 at 23:55)
-* [reference request](topic/reference.20request.html) (14 messages, latest: Apr 22 2021 at 22:45)
+* [smc to petri nets](topic/smc.20to.20petri.20nets.html) (95 messages, latest: Apr 23 2021 at 22:48)
+* [reference request](topic/reference.20request.html) (33 messages, latest: Apr 23 2021 at 17:22)
+* [How to work with a labeled concrete category?](topic/How.20to.20work.20with.20a.20labeled.20concrete.20category.3F.html) (9 messages, latest: Apr 23 2021 at 13:09)
+* [how to work with a labeled concrete category?](topic/how.20to.20work.20with.20a.20labeled.20concrete.20category.3F.html) (13 messages, latest: Apr 23 2021 at 03:00)
+* [Algebraic theory of two elements?](topic/Algebraic.20theory.20of.20two.20elements.3F.html) (6 messages, latest: Apr 23 2021 at 02:40)
 * [uniqueness of Cartesian maps](topic/uniqueness.20of.20Cartesian.20maps.html) (8 messages, latest: Apr 22 2021 at 17:50)
-* [Algebraic theory of two elements?](topic/Algebraic.20theory.20of.20two.20elements.3F.html) (5 messages, latest: Apr 22 2021 at 17:46)
 * [Euler characteristic and derivatives](topic/Euler.20characteristic.20and.20derivatives.html) (6 messages, latest: Apr 21 2021 at 17:48)
 * [Markov category question](topic/Markov.20category.20question.html) (9 messages, latest: Apr 21 2021 at 00:08)
 * [Composing monadic and non-monadic adjunctions](topic/Composing.20monadic.20and.20non-monadic.20adjunctions.html) (2 messages, latest: Apr 20 2021 at 22:55)
@@ -21,7 +23,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [How to characterize a groupoid by its equipment in Cat](topic/How.20to.20characterize.20a.20groupoid.20by.20its.20equipment.20in.20Cat.html) (10 messages, latest: Apr 19 2021 at 17:05)
 * [Arrow category as a ??? category](topic/Arrow.20category.20as.20a.20.3F.3F.3F.20category.html) (12 messages, latest: Apr 18 2021 at 17:05)
 * [What can CT tell us about alternative programming paradigms?](topic/What.20can.20CT.20tell.20us.20about.20alternative.20programming.20paradigms.3F.html) (23 messages, latest: Apr 17 2021 at 12:01)
-* [How to work with a labeled concrete category?](topic/How.20to.20work.20with.20a.20labeled.20concrete.20category.3F.html) (4 messages, latest: Apr 16 2021 at 15:27)
 * [$$\times$$ in $$\mathbf{Rel}$$](topic/.24.24.5Ctimes.24.24.20in.20.24.24.5Cmathbf.7BRel.7D.24.24.html) (25 messages, latest: Apr 16 2021 at 15:17)
 * [deep learning](topic/deep.20learning.html) (1 message, latest: Apr 13 2021 at 02:16)
 * [algebra, geometry, coalgebra... cogeometry?](topic/algebra.2C.20geometry.2C.20coalgebra.2E.2E.2E.20cogeometry.3F.html) (18 messages, latest: Apr 12 2021 at 17:53)
@@ -384,4 +385,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 23 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 24 2021 at 00:36 UTC</p>
