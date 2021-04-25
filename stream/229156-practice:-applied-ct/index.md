@@ -9,6 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [ct & engineering](topic/ct.20.26.20engineering.html) (81 messages, latest: Apr 24 2021 at 17:43)
 * [ACT as a field](topic/ACT.20as.20a.20field.html) (277 messages, latest: Apr 23 2021 at 08:17)
 * [an involution on 'Learn'](topic/an.20involution.20on.20'Learn'.html) (19 messages, latest: Apr 23 2021 at 03:27)
 * [An involution on 'Learn'](topic/An.20involution.20on.20'Learn'.html) (28 messages, latest: Apr 22 2021 at 00:01)
@@ -109,4 +110,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Apr 24 2021 at 00:36 UTC</p>
+<hr><p>Last updated: Apr 25 2021 at 00:37 UTC</p>
