@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [locales](topic/locales.html) (5 messages, latest: Apr 25 2021 at 15:32)
 * [smc to petri nets](topic/smc.20to.20petri.20nets.html) (95 messages, latest: Apr 23 2021 at 22:48)
 * [reference request](topic/reference.20request.html) (33 messages, latest: Apr 23 2021 at 17:22)
 * [How to work with a labeled concrete category?](topic/How.20to.20work.20with.20a.20labeled.20concrete.20category.3F.html) (9 messages, latest: Apr 23 2021 at 13:09)
@@ -36,7 +37,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [The intuitive understanding of category theory](topic/The.20intuitive.20understanding.20of.20category.20theory.html) (35 messages, latest: Apr 09 2021 at 08:00)
 * [encoding algebraic constraints as functors](topic/encoding.20algebraic.20constraints.20as.20functors.html) (6 messages, latest: Apr 09 2021 at 07:55)
 * [beginner questions](topic/beginner.20questions.html) (130 messages, latest: Apr 09 2021 at 02:47)
-* [locales](topic/locales.html) (2 messages, latest: Apr 07 2021 at 22:58)
 * [Encoding algebraic constrains as functors](topic/Encoding.20algebraic.20constrains.20as.20functors.html) (5 messages, latest: Apr 07 2021 at 14:28)
 * [Optics and apartness](topic/Optics.20and.20apartness.html) (19 messages, latest: Apr 07 2021 at 12:58)
 * [Locales](topic/Locales.html) (16 messages, latest: Apr 05 2021 at 23:25)
@@ -385,4 +385,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 25 2021 at 00:37 UTC</p>
+<hr><p>Last updated: Apr 26 2021 at 00:37 UTC</p>

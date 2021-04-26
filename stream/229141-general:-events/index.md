@@ -9,12 +9,12 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (16 messages, latest: Apr 25 2021 at 07:33)
 * [Em-Cats](topic/Em-Cats.html) (2 messages, latest: Apr 24 2021 at 18:58)
 * [Numerous Numerosity Conference](topic/Numerous.20Numerosity.20Conference.html) (1 message, latest: Apr 22 2021 at 15:13)
 * [ItaCa Fest — Season 2](topic/ItaCa.20Fest.20.E2.80.94.20Season.202.html) (1 message, latest: Apr 19 2021 at 11:26)
 * [Logic Webinar@IITK](topic/Logic.20Webinar.40IITK.html) (9 messages, latest: Apr 19 2021 at 06:25)
 * [Jeremy Avigad](topic/Jeremy.20Avigad.html) (1 message, latest: Apr 17 2021 at 14:15)
-* [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (15 messages, latest: Apr 16 2021 at 14:04)
 * [Compositional Robotics: Mathematics and Tools Workshop](topic/Compositional.20Robotics.3A.20Mathematics.20and.20Tools.20Workshop.html) (7 messages, latest: Apr 15 2021 at 16:08)
 * [Category Theory Meets Computational Irreducibility](topic/Category.20Theory.20Meets.20Computational.20Irreducibility.html) (15 messages, latest: Apr 13 2021 at 09:27)
 * [Categories and Companions Symposium 2021](topic/Categories.20and.20Companions.20Symposium.202021.html) (1 message, latest: Mar 31 2021 at 21:28)
@@ -93,4 +93,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Apr 25 2021 at 00:37 UTC</p>
+<hr><p>Last updated: Apr 26 2021 at 00:37 UTC</p>

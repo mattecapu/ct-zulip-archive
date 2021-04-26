@@ -9,7 +9,7 @@ permalink: /stream/229952-theory:-type-theory/index.html
 
 ### Topics:
 
-* [equalizers](topic/equalizers.html) (44 messages, latest: Apr 24 2021 at 02:20)
+* [equalizers](topic/equalizers.html) (45 messages, latest: Apr 25 2021 at 02:56)
 * [how was Martin-Löf's 'Type in Type' theory supposed to work?](topic/how.20was.20Martin-L.C3.B6f's.20'Type.20in.20Type'.20theory.20supposed.20to.20work.3F.html) (6 messages, latest: Apr 12 2021 at 09:50)
 * [How was Martin-Löf's 'Type in Type' theory supposed to work?](topic/How.20was.20Martin-L.C3.B6f's.20'Type.20in.20Type'.20theory.20supposed.20to.20work.3F.html) (11 messages, latest: Apr 11 2021 at 14:13)
 * [implications of type theory on foundations/finitism/etc.](topic/implications.20of.20type.20theory.20on.20foundations.2Ffinitism.2Fetc.2E.html) (32 messages, latest: Apr 10 2021 at 17:31)
@@ -27,4 +27,4 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [W-types and CFGs](topic/W-types.20and.20CFGs.html) (11 messages, latest: Apr 02 2020 at 16:00)
 * [homotopy type theory](topic/homotopy.20type.20theory.html) (10 messages, latest: Mar 26 2020 at 23:30)
 
-<hr><p>Last updated: Apr 25 2021 at 00:37 UTC</p>
+<hr><p>Last updated: Apr 26 2021 at 00:37 UTC</p>
