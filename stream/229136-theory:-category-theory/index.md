@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [categorification of the real numbers](topic/categorification.20of.20the.20real.20numbers.html) (56 messages, latest: Apr 26 2021 at 23:56)
 * [representability of multirepresentable functors](topic/representability.20of.20multirepresentable.20functors.html) (11 messages, latest: Apr 25 2021 at 15:24)
 * [tensor product of EM-algebras](topic/tensor.20product.20of.20EM-algebras.html) (42 messages, latest: Apr 20 2021 at 21:25)
 * [grothendieck construction as a colimit](topic/grothendieck.20construction.20as.20a.20colimit.html) (25 messages, latest: Apr 19 2021 at 19:25)
@@ -148,4 +149,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 26 2021 at 00:37 UTC</p>
+<hr><p>Last updated: Apr 27 2021 at 00:35 UTC</p>
