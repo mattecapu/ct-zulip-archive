@@ -9,8 +9,8 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (17 messages, latest: Apr 27 2021 at 16:37)
 * [Nobel Prize Summit](topic/Nobel.20Prize.20Summit.html) (2 messages, latest: Apr 26 2021 at 13:15)
-* [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (16 messages, latest: Apr 25 2021 at 07:33)
 * [Em-Cats](topic/Em-Cats.html) (2 messages, latest: Apr 24 2021 at 18:58)
 * [Numerous Numerosity Conference](topic/Numerous.20Numerosity.20Conference.html) (1 message, latest: Apr 22 2021 at 15:13)
 * [ItaCa Fest — Season 2](topic/ItaCa.20Fest.20.E2.80.94.20Season.202.html) (1 message, latest: Apr 19 2021 at 11:26)
@@ -94,4 +94,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Apr 27 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 28 2021 at 00:35 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [String diagrams = tensor networks?](topic/String.20diagrams.20.3D.20tensor.20networks.3F.html) (22 messages, latest: Apr 27 2021 at 23:29)
 * [locales](topic/locales.html) (5 messages, latest: Apr 25 2021 at 15:32)
 * [smc to petri nets](topic/smc.20to.20petri.20nets.html) (95 messages, latest: Apr 23 2021 at 22:48)
 * [reference request](topic/reference.20request.html) (33 messages, latest: Apr 23 2021 at 17:22)
@@ -385,4 +386,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 27 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 28 2021 at 00:35 UTC</p>
