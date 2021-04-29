@@ -1,0 +1,69 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/doctrines.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html">doctrines</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+<head><link href="https://mattecapu.github.io/ct-zulip-archive/style.css" rel="stylesheet"></head>
+
+{% raw %}
+
+<a name="236541077"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236541077" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236541077">(Apr 28 2021 at 16:49)</a>:</h4>
+<p>At present I'm thinking about categories with pullbacks, and pullback-preserving functors between these. I want to construct pushouts of these things. <em>However</em> I realised today that I don't want to be working with 1-pushouts: I want pseudo-pushouts. That is, the universal completion of a span of such categories to a square commuting up to specified natural isomorphism.</p>
+<p>Mildly inconveniently, I want this to be the pseudo-pushout in the (2-/bi-)category I get by including all natural transformations between these functors as 2-morphisms, not just cartesian ones; the latter are in some ways <a href="https://arxiv.org/pdf/0904.2486.pdf">more natural</a>, but that is up for discussion.</p>
+<p>When I was (mistakenly) trying to use 1-pushouts, I was able to prove that they exist abstractly using some classical <a href="https://ncatlab.org/nlab/show/colimits+in+categories+of+algebras">1-categorical results</a> about categories of algebras, thanks to <a href="https://www.cambridge.org/core/journals/canadian-journal-of-mathematics/article/simply-connected-limits/529606C55837A71662D3F9AEA5F2E52F">Paré's result</a> that one can construct free pullback-completions of categories, so that the underlying 1-category is monadic over the 1-category of categories.</p>
+<p>It seems to me that I want to instead consider the "doctrine of pullbacks" (or indeed, of connected simply connected limits) and its <a href="https://ncatlab.org/nlab/show/doctrine#as_2monads">associated 2-monad</a> on the category of categories. Since the liftings of 1-categorical results in this context are sparsely reported, please can someone advise me on:</p>
+<ol>
+<li>whether I should be looking at a <a href="https://ncatlab.org/nlab/show/2-monad#2monad">strict 2-monad</a> or a weaker version, and similarly whether I should be looking at strict or pseudo algebras for this; I expect that whatever the right choice is, it will give me all natural transformations out at the end, but if this is not so or determined by these choices, I would like to understand how;</li>
+<li>any references containing useful abstract results about 2-monads generally, especially as regards to properties of the relevant categories of algebras.</li>
+</ol>
+
+
+
+<a name="236541375"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236541375" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236541375">(Apr 28 2021 at 16:51)</a>:</h4>
+<p>Alternatively, anything about the equivalent situation for categories with finite limits might help, since that's like to be a more well-document case.</p>
+
+
+
+<a name="236541540"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236541540" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236541540">(Apr 28 2021 at 16:53)</a>:</h4>
+<p>There is a strict 2-monad on Cat whose algebras and pseudomorphisms are pullback-complete categories and pullback-preserving functors (in the usual sense), which I imagine is what you're after. See Kelly–Lack's paper <a href="http://www.tac.mta.ca/tac/volumes/7/n7/7-07abs.html">On the monadicity of categories with chosen colimits</a>, for instance.</p>
+
+
+
+<a name="236541643"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236541643" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236541643">(Apr 28 2021 at 16:54)</a>:</h4>
+<p>Will check that out and report back, thanks!</p>
+
+
+
+<a name="236541840"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236541840" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236541840">(Apr 28 2021 at 16:55)</a>:</h4>
+<p>I don't think they discuss limits/colimits in the categories of algebras here, but this can be deduced from the fact the 2-monad is finitary, Cat is LFP, and so the 2-category of algebras will be too.</p>
+
+
+
+<a name="236564046"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236564046" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236564046">(Apr 28 2021 at 19:25)</a>:</h4>
+<p>But if you want (bi)colimits in the 2-category of algebras and <em>pseudo</em> morphisms, you need to do some more work, such as in Blackwell-Kelly-Power "Two-dimensional monad theory".</p>
+
+
+
+<a name="236564562"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/doctrines/near/236564562" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/doctrines.html#236564562">(Apr 28 2021 at 19:28)</a>:</h4>
+<p>Since I don't know in advance which one I want, I'll need to check both <span aria-label="wink" class="emoji emoji-1f609" role="img" title="wink">:wink:</span></p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Apr 29 2021 at 00:35 UTC</p>

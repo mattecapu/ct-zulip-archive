@@ -9,6 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
+* [Topos Institute is hiring](topic/Topos.20Institute.20is.20hiring.html) (3 messages, latest: Apr 29 2021 at 00:29)
 * [position at Susquehanna University](topic/position.20at.20Susquehanna.20University.html) (1 message, latest: Apr 09 2021 at 17:59)
 * [2 PhD positions at University of Strathclyde, Glasgow](topic/2.20PhD.20positions.20at.20University.20of.20Strathclyde.2C.20Glasgow.html) (5 messages, latest: Apr 02 2021 at 11:51)
 * [Faculty position at University College London](topic/Faculty.20position.20at.20University.20College.20London.html) (1 message, latest: Apr 02 2021 at 09:19)
@@ -33,4 +34,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Apr 28 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 29 2021 at 00:35 UTC</p>

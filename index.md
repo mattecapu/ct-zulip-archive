@@ -8,13 +8,13 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (376 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (377 topics)
 
-* [general](stream/229111-general/index.html) (191 topics)
+* [general](stream/229111-general/index.html) (193 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (139 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (143 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (101 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (102 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (84 topics)
 
@@ -34,7 +34,7 @@ permalink: /index.html
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (31 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (23 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (24 topics)
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (23 topics)
 
@@ -64,7 +64,7 @@ permalink: /index.html
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (13 topics)
 
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (11 topics)
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (12 topics)
 
 * [theory: physics](stream/251538-theory:-physics/index.html) (11 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 28 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 29 2021 at 00:35 UTC</p>

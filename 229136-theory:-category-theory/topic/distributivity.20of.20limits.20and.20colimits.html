@@ -1,0 +1,730 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html">distributivity of limits and colimits</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+<head><link href="https://mattecapu.github.io/ct-zulip-archive/style.css" rel="stylesheet"></head>
+
+{% raw %}
+
+<a name="236582354"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236582354" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236582354">(Apr 28 2021 at 21:20)</a>:</h4>
+<p>This thread is for a continuation of <a href="https://chat.stackexchange.com/rooms/123548/discussion-between-tim-campion-and-mike-shulman">this discussion</a> on MO chat which was a continuation of the comments on <a href="https://mathoverflow.net/a/391273/49">this answer</a>.  Because Zulip is a better platform for conversations than either MO comments or MO chat.</p>
+
+
+
+<a name="236583021"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236583021" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236583021">(Apr 28 2021 at 21:23)</a>:</h4>
+<p>Oh cool!</p>
+
+
+
+<a name="236583636"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236583636" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236583636">(Apr 28 2021 at 21:26)</a>:</h4>
+<p>Something I've been meaning to mention in this area is that Charles Rezk has a draft up on his website investigating oo-categorical limit doctrines</p>
+
+
+
+<a name="236583684"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236583684" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236583684">(Apr 28 2021 at 21:26)</a>:</h4>
+<p><a href="https://faculty.math.illinois.edu/~rezk/accessible-cat-thoughts.pdf">https://faculty.math.illinois.edu/~rezk/accessible-cat-thoughts.pdf</a></p>
+
+
+
+<a name="236583768"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236583768" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236583768">(Apr 28 2021 at 21:27)</a>:</h4>
+<p>The most exciting thing to me is that Charles discovered that oo-categorically, the doctrine of pullbacks is _sound_ (in the evident sense mimicking ABLR in oo-categories)</p>
+
+
+
+<a name="236583793"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236583793" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236583793">(Apr 28 2021 at 21:27)</a>:</h4>
+<p>Notoriously, this doctrine is not sound 1-categorically.</p>
+
+
+
+<a name="236584435"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236584435" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236584435">(Apr 28 2021 at 21:31)</a>:</h4>
+<p>That's neat that there's another way in which limits/colimits are better <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-categorically.  I don't work enough with sound doctrines that it sounds exciting to me, though.  Does it have useful applications?</p>
+
+
+
+<a name="236584760"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236584760" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236584760">(Apr 28 2021 at 21:34)</a>:</h4>
+<p>I'm not sure! One thing it tells you is that Cat_oo (which is sketchable by a pullback sketch of course) has certain limit/colimit commmutativity properties.</p>
+
+
+
+<a name="236584868"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236584868" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236584868">(Apr 28 2021 at 21:34)</a>:</h4>
+<p>PB-filteredness is equivalent, Charles shows, to being a space-indexed colimit of filtered categories</p>
+
+
+
+<a name="236584897"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236584897" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236584897">(Apr 28 2021 at 21:35)</a>:</h4>
+<p>So colimits in Cat_oo indexed by such categories commute with pullbacks.</p>
+
+
+
+<a name="236584932"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236584932" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236584932">(Apr 28 2021 at 21:35)</a>:</h4>
+<p>I think Charles gives some interesting unexpected examples like mapping tori</p>
+
+
+
+<a name="236585144"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236585144" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236585144">(Apr 28 2021 at 21:37)</a>:</h4>
+<p>But I guess mostly I just find it suggestive -- in 1-categories, it seems to me the main limitation of sound doctrines is that there just don't seem to be that many of them, and you can really generally get by treating them on an ad hoc individual basis.</p>
+
+
+
+<a name="236585157"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236585157" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236585157">(Apr 28 2021 at 21:37)</a>:</h4>
+<p>Maybe the true potential of the theory will be more fully realized in oo-categories.</p>
+
+
+
+<a name="236585261"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236585261" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236585261">(Apr 28 2021 at 21:38)</a>:</h4>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>-categories</p>
+
+
+
+<a name="236585267"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236585267" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236585267">(Apr 28 2021 at 21:38)</a>:</h4>
+<p><span class="user-mention" data-user-id="277991">@Tim Campion</span>:</p>
+<blockquote>
+<p>I've had occasion to wonder recently if maybe the whole apparatus of limit doctrines could be redone with distributivity rather than commutation of limits and colimits.</p>
+</blockquote>
+<p>To my understanding, the paper <a href="https://arxiv.org/abs/1804.08710">Accessibility and presentability in 2-categories</a> by <span class="user-mention" data-user-id="277318">@Ivan Di Liberti</span> and <span class="user-mention" data-user-id="282822">@fosco</span> is very much inspired by this perspective.</p>
+
+
+
+<a name="236585356"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236585356" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236585356">(Apr 28 2021 at 21:39)</a>:</h4>
+<p><span class="user-mention" data-user-id="276092">@Nathanael Arkor</span> Oh that's really cool! Could you explain more? I don't see the word "distribut-" appearing in the paper.</p>
+
+
+
+<a name="236585553"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236585553" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236585553">(Apr 28 2021 at 21:41)</a>:</h4>
+<p>Perhaps the version on my computer is old though</p>
+
+
+
+<a name="236585659"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236585659" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236585659">(Apr 28 2021 at 21:42)</a>:</h4>
+<p>The notion of "envelope" (Definition 3.1) can be rephrased in terms of a distributive law of KZ doctrines (for S over D), so that P is the composite SD.</p>
+
+
+
+<a name="236585697"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236585697" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dmitri Pavlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236585697">(Apr 28 2021 at 21:42)</a>:</h4>
+<p>How does one post here without replying to anybody?  Anyway, Corollary 2.5 in Johnstone–Joyal (Continuous categories and exponentiable toposes) proves that locally finitely presentable categories are continuous, hence also precontinuous, which answers a question asked on the MO chat.</p>
+
+
+
+<a name="236585757"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236585757" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236585757">(Apr 28 2021 at 21:43)</a>:</h4>
+<p>If you're viewing a topic, then your replies go to that topic; there is no notion of "replying" to an individual post other than to the topic it's in.</p>
+
+
+
+<a name="236585770"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236585770" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236585770">(Apr 28 2021 at 21:43)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/distributivity.20of.20limits.20and.20colimits/near/236585757">said</a>:</p>
+<blockquote>
+<p>If you're viewing a topic, then your replies go to that topic; there is no notion of "replying" to an individual post other than to the topic it's in.</p>
+</blockquote>
+<p>Apart from quoting :)<br>
+(Which can be done with the drop-down menu by clicking the three dots on the rightmost side of a post.)</p>
+
+
+
+<a name="236585955"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236585955" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dmitri Pavlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236585955">(Apr 28 2021 at 21:45)</a>:</h4>
+<p>Okay, so basically Zulip is a glorified IRC (if anybody still remembers what that is...).</p>
+
+
+
+<a name="236586023"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236586023" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236586023">(Apr 28 2021 at 21:46)</a>:</h4>
+<p>Yeah, that was my reaction too.  (-:</p>
+
+
+
+<a name="236586036"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236586036" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236586036">(Apr 28 2021 at 21:46)</a>:</h4>
+<p>IRC didn't have math syntax, so that's something.</p>
+
+
+
+<a name="236586229"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236586229" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236586229">(Apr 28 2021 at 21:48)</a>:</h4>
+<p><span class="user-mention" data-user-id="408784">@Dmitri Pavlov</span> Thanks for the reference. Taking a look, I _think_ the idea generalizes as follows: any KZ-doctrine distributes over the doctrine Lim</p>
+
+
+
+<a name="236586310"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236586310" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236586310">(Apr 28 2021 at 21:49)</a>:</h4>
+<p>And a free algebra for the KZ doctrine is automatically an algebra for the composite doctrine</p>
+
+
+
+<a name="236586367"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236586367" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236586367">(Apr 28 2021 at 21:49)</a>:</h4>
+<p>I think it just boils down to the fact that the structure map for the algebra fits into an appropriate string of adjoints (by virtue of KZ ness), and in particular preserves limits.</p>
+
+
+
+<a name="236586724"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236586724" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236586724">(Apr 28 2021 at 21:53)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277991">Tim Campion</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/distributivity.20of.20limits.20and.20colimits/near/236586229">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="408784">Dmitri Pavlov</span> Thanks for the reference. Taking a look, I _think_ the idea generalizes as follows: any KZ-doctrine distributes over the doctrine Lim</p>
+</blockquote>
+<p>This is certainly true for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">D</mi><mtext>-</mtext><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">d</mi></mrow></mrow><annotation encoding="application/x-tex">\mathbb D\text{-}\mathrm{Ind}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathbb">D</span><span class="mord text"><span class="mord">-</span></span><span class="mord"><span class="mord mathrm">Ind</span></span></span></span></span> for sound <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">D</mi></mrow><annotation encoding="application/x-tex">\mathbb D</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord mathbb">D</span></span></span></span>.</p>
+
+
+
+<a name="236586784"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236586784" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236586784">(Apr 28 2021 at 21:54)</a>:</h4>
+<p>(By Corollary 6.4 of <a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.28.3481&amp;rep=rep1&amp;type=pdf">A classification of accessible categories</a>.)</p>
+
+
+
+<a name="236586840"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236586840" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236586840">(Apr 28 2021 at 21:54)</a>:</h4>
+<p>Right... my claim does seem fishy, given that ABLR have to do _some_ work to prove there's a distributive law.</p>
+
+
+
+<a name="236586880"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236586880" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236586880">(Apr 28 2021 at 21:54)</a>:</h4>
+<p>I suppose what I should really claim is that _if_ there's a distributive law, then the free algebras for the KZ monad are automatically algebras for the composite monad</p>
+
+
+
+<a name="236586932"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236586932" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236586932">(Apr 28 2021 at 21:55)</a>:</h4>
+<p>In the particular case of composing the one's KZ doctrine with the doctrine Lim</p>
+
+
+
+<a name="236586960"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236586960" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236586960">(Apr 28 2021 at 21:55)</a>:</h4>
+<p>Surely that can't be true unless your algebra is free on a Lim-algebra?</p>
+
+
+
+<a name="236587019"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236587019" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236587019">(Apr 28 2021 at 21:56)</a>:</h4>
+<p>(in which case it should follow formally from the existence of a distributive law, right?)</p>
+
+
+
+<a name="236587039"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236587039" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236587039">(Apr 28 2021 at 21:56)</a>:</h4>
+<p>I agree that case follows formally from the existence of a distributive law</p>
+
+
+
+<a name="236587071"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236587071" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236587071">(Apr 28 2021 at 21:57)</a>:</h4>
+<p>Okay -- there's an additional requirement.</p>
+
+
+
+<a name="236587203"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236587203" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236587203">(Apr 28 2021 at 21:58)</a>:</h4>
+<p>Let T be a KZ doctrine and suppose that T distributes over Lim. Let C be a category, and suppose that T(C) in fact has limits. Then T(C) is an algebra for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>∘</mo><mi>L</mi><mi>i</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">T \circ Lim</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span><span class="mord mathnormal">im</span></span></span></span></p>
+
+
+
+<a name="236587249"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236587249" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236587249">(Apr 28 2021 at 21:58)</a>:</h4>
+<p>Proof: the only thing to check is that the structure map <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>T</mi><mn>2</mn></msup><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo><mo>→</mo><mi>T</mi><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">T^2(C) \to T(C)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span> preserves limits. But by KZness it has a left adjoint</p>
+
+
+
+<a name="236587274"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236587274" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236587274">(Apr 28 2021 at 21:59)</a>:</h4>
+<p>The left adjoint is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">T(y)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span> where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span> is the unit for the KZ doctrine</p>
+
+
+
+<a name="236587386"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236587386" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236587386">(Apr 28 2021 at 22:00)</a>:</h4>
+<p>I would have to look up the definitions to verify that that particular adjunction is guaranteed to exist by the KZ property, but at least it seems to be the case when <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mi>I</mi><mi>n</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">T = Ind</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal">n</span><span class="mord mathnormal">d</span></span></span></span> (and this adjunction is the core of the Johnstone-Joyal proof).</p>
+
+
+
+<a name="236587422"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236587422" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236587422">(Apr 28 2021 at 22:00)</a>:</h4>
+<p>So I feel pretty comfortable asserting that this is the correct generalization.</p>
+
+
+
+<a name="236587808"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236587808" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236587808">(Apr 28 2021 at 22:03)</a>:</h4>
+<p>My memory of lax-idempotence is that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mi>T</mi></msub></mrow><annotation encoding="application/x-tex">y_T</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is <em>right</em> adjoint to the structure map.  I don't remember anything about <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">T(y)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span> being left adjoint to it.</p>
+
+
+
+<a name="236587888"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236587888" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236587888">(Apr 28 2021 at 22:04)</a>:</h4>
+<p>I think they both hold</p>
+
+
+
+<a name="236587904"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236587904" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236587904">(Apr 28 2021 at 22:04)</a>:</h4>
+<p>You only get one adjunction for a generic T-algebra</p>
+
+
+
+<a name="236587912"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236587912" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236587912">(Apr 28 2021 at 22:04)</a>:</h4>
+<p>But we have a free T-algebra</p>
+
+
+
+<a name="236587924"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236587924" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236587924">(Apr 28 2021 at 22:04)</a>:</h4>
+<p>So both adjunctions potentially make sense</p>
+
+
+
+<a name="236587928"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236587928" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236587928">(Apr 28 2021 at 22:04)</a>:</h4>
+<p>And I believe they both hold</p>
+
+
+
+<a name="236587980"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236587980" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236587980">(Apr 28 2021 at 22:05)</a>:</h4>
+<p>Ah, that could be.</p>
+
+
+
+<a name="236588055"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236588055" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236588055">(Apr 28 2021 at 22:06)</a>:</h4>
+<p>I think Marmolejo and Wood talk about this adjoint triple</p>
+
+
+
+<a name="236588076"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236588076" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236588076">(Apr 28 2021 at 22:06)</a>:</h4>
+<p>Yes, it's on the first page of <a href="http://www.tac.mta.ca/tac/volumes/26/1/26-01.pdf">Kan extensions and lax idempotent pseudomonads</a>.</p>
+
+
+
+<a name="236588290"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236588290" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236588290">(Apr 28 2021 at 22:08)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/distributivity.20of.20limits.20and.20colimits/near/236585757">said</a>:</p>
+<blockquote>
+<p>If you're viewing a topic, then your replies go to that topic...</p>
+</blockquote>
+<p>Unless of course you edit the topic or the stream to change it - which is what you do if you want to start a new discussion.</p>
+
+
+
+<a name="236588471"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236588471" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236588471">(Apr 28 2021 at 22:10)</a>:</h4>
+<p>I've dipped my toe into using Discord for math -- there's an Algebraic Topology server (there's a standing invite at <a href="http://nodorek.net">nodorek.net</a>). Over there there's just one level of organization into "channels". But it seems convenient to have both "streams" and "threads".</p>
+
+
+
+<a name="236588551"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236588551" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236588551">(Apr 28 2021 at 22:11)</a>:</h4>
+<p>or was it "streams" and "topics"</p>
+
+
+
+<a name="236588575"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236588575" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236588575">(Apr 28 2021 at 22:11)</a>:</h4>
+<p>I see, yes, "topic"</p>
+
+
+
+<a name="236588745"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236588745" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236588745">(Apr 28 2021 at 22:13)</a>:</h4>
+<p>_italics_</p>
+
+
+
+<a name="236588749"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236588749" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236588749">(Apr 28 2021 at 22:13)</a>:</h4>
+<p>no</p>
+
+
+
+<a name="236588758"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236588758" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236588758">(Apr 28 2021 at 22:13)</a>:</h4>
+<p><strong>bold</strong></p>
+
+
+
+<a name="236588760"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236588760" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236588760">(Apr 28 2021 at 22:13)</a>:</h4>
+<p>yes</p>
+
+
+
+<a name="236588792"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236588792" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236588792">(Apr 28 2021 at 22:13)</a>:</h4>
+<p><code>*italics*</code></p>
+
+
+
+<a name="236588799"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236588799" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236588799">(Apr 28 2021 at 22:13)</a>:</h4>
+<p><em>italics</em></p>
+
+
+
+<a name="236588807"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236588807" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236588807">(Apr 28 2021 at 22:13)</a>:</h4>
+<p>nice, thanks!</p>
+
+
+
+<a name="236588887"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236588887" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236588887">(Apr 28 2021 at 22:14)</a>:</h4>
+<p><code>_italics_</code></p>
+
+
+
+<a name="236588888"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236588888" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236588888">(Apr 28 2021 at 22:14)</a>:</h4>
+<p>yeah!</p>
+
+
+
+<a name="236588890"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236588890" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236588890">(Apr 28 2021 at 22:14)</a>:</h4>
+<p>You can examine the source for someone's post using the dropdown menu, which helps to find out the syntax other people are using.</p>
+
+
+
+<a name="236588907"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236588907" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236588907">(Apr 28 2021 at 22:14)</a>:</h4>
+<p>That last one was guessable :)</p>
+
+
+
+<a name="236589891"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236589891" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236589891">(Apr 28 2021 at 22:24)</a>:</h4>
+<p>Let's see. Does this work in great generality?</p>
+
+
+
+<a name="236589923"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236589923" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236589923">(Apr 28 2021 at 22:25)</a>:</h4>
+<p>Let <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">K</mi></mrow><annotation encoding="application/x-tex">\mathcal K</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathcal" style="margin-right:0.01445em;">K</span></span></span></span> be any class of small categories</p>
+
+
+
+<a name="236589979"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236589979" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236589979">(Apr 28 2021 at 22:25)</a>:</h4>
+<p>To be used for indexing colimits</p>
+
+
+
+<a name="236590085"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236590085" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236590085">(Apr 28 2021 at 22:26)</a>:</h4>
+<p>The free <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">K</mi></mrow><annotation encoding="application/x-tex">\mathcal K</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathcal" style="margin-right:0.01445em;">K</span></span></span></span>-cocompletion can always be computed as the closure in the presheaf category under <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">K</mi></mrow><annotation encoding="application/x-tex">\mathcal K</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathcal" style="margin-right:0.01445em;">K</span></span></span></span>-indexed colimits.</p>
+
+
+
+<a name="236590120"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236590120" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236590120">(Apr 28 2021 at 22:27)</a>:</h4>
+<p>Call this functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi mathvariant="script">K</mi></msub></mrow><annotation encoding="application/x-tex">P_{\mathcal K}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></p>
+
+
+
+<a name="236590166"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236590166" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236590166">(Apr 28 2021 at 22:27)</a>:</h4>
+<p>Suppose that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi mathvariant="script">K</mi></msub><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P_{\mathcal K}(C)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span> is naturally reflective in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(C)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span> for any small <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span>.</p>
+
+
+
+<a name="236590231"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236590231" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236590231">(Apr 28 2021 at 22:28)</a>:</h4>
+<p>Where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(C)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span> is the presheaf category.</p>
+
+
+
+<a name="236590262"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236590262" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236590262">(Apr 28 2021 at 22:28)</a>:</h4>
+<p>Then for every small <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi mathvariant="script">K</mi></msub><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P_{\mathcal K}(C)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span> is complete.</p>
+
+
+
+<a name="236590354"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236590354" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236590354">(Apr 28 2021 at 22:29)</a>:</h4>
+<p>And by the previous argment, since <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi mathvariant="script">K</mi></msub></mrow><annotation encoding="application/x-tex">P_{\mathcal K}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> is lax-idempotent, the structure map <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>P</mi><mi mathvariant="script">K</mi><mn>2</mn></msubsup><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo><mo>→</mo><msub><mi>P</mi><mi mathvariant="script">K</mi></msub><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P_{\mathcal K}^2(C) \to P_{\mathcal K}(C)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1.089439em;vertical-align:-0.275331em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-2.424669em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.275331em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span> has a left adjoint and so is continuous.</p>
+
+
+
+<a name="236590466"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236590466" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236590466">(Apr 28 2021 at 22:30)</a>:</h4>
+<p>So in order to get a distributive law with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>i</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">Lim</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span><span class="mord mathnormal">im</span></span></span></span>, and have that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi mathvariant="script">K</mi></msub><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P_{\mathcal K}(C)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span> is always an algebra for the composite monad, well, we just need the distributive law.</p>
+
+
+
+<a name="236590602"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236590602" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236590602">(Apr 28 2021 at 22:32)</a>:</h4>
+<p>(I am still perpetually confused about which monad is said to distribute over which other one)</p>
+
+
+
+<a name="236590806"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236590806" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236590806">(Apr 28 2021 at 22:34)</a>:</h4>
+<p>The thing to check is that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi mathvariant="script">K</mi></msub></mrow><annotation encoding="application/x-tex">P_{\mathcal K}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> preserves completeness of categories and continuity of functors between complete categories.</p>
+
+
+
+<a name="236590911"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236590911" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236590911">(Apr 28 2021 at 22:35)</a>:</h4>
+<p>(It's good to remember that multiplication distributes over addition, so timesy things like the monad for cartesian categories tend to distribute over plussy things like the monad for categories with some class of colimits.)</p>
+
+
+
+<a name="236590942"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236590942" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236590942">(Apr 28 2021 at 22:35)</a>:</h4>
+<p>(But you probably know that.)</p>
+
+
+
+<a name="236590950"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236590950" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236590950">(Apr 28 2021 at 22:35)</a>:</h4>
+<p><span class="user-mention" data-user-id="275920">@John Baez</span> Ah, thanks. Yeah, that makes sense.</p>
+
+
+
+<a name="236591045"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236591045" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236591045">(Apr 28 2021 at 22:36)</a>:</h4>
+<p>I think the part which confuses me is that to verify the distributive law of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>i</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">Lim</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span><span class="mord mathnormal">im</span></span></span></span> over <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span> so that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>∘</mo><mi>L</mi><mi>i</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">P \circ Lim</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span><span class="mord mathnormal">im</span></span></span></span> is a monad, you need to consider <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>i</mi><mi>m</mi><mo>∘</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">Lim \circ P</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span><span class="mord mathnormal">im</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span>, which feels backwards</p>
+
+
+
+<a name="236591082"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236591082" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236591082">(Apr 28 2021 at 22:36)</a>:</h4>
+<p>Of course, you just consider <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>i</mi><mi>m</mi><mo>∘</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">Lim \circ P</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span><span class="mord mathnormal">im</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span> in order to get a functor from it to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>∘</mo><mi>L</mi><mi>i</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">P \circ Lim</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span><span class="mord mathnormal">im</span></span></span></span>, but it still feels strange.</p>
+
+
+
+<a name="236591124"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236591124" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236591124">(Apr 28 2021 at 22:37)</a>:</h4>
+<p>Er -- I guess I'm still a bit turned around :)</p>
+
+
+
+<a name="236591296"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236591296" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236591296">(Apr 28 2021 at 22:39)</a>:</h4>
+<p>What I want to say is that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi mathvariant="script">K</mi></msub></mrow><annotation encoding="application/x-tex">P_{\mathcal K}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> will preserve right adjoints and that that will be enough to preserve continuity. Of course that doesn't quite work because we end up leaving adjoint-functor-theorem land.</p>
+
+
+
+<a name="236591324"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236591324" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236591324">(Apr 28 2021 at 22:39)</a>:</h4>
+<p>I guess this is how I remember this stuff:</p>
+<p>In a ring you can rewrite any product of sums as a sum of products (but not vice versa), so you define the monad for rings using a distributive law PS <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span> SP, where P is for products (the monad for monoids) and S is for sums (the monad for abelian groups).</p>
+
+
+
+<a name="236591404"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236591404" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236591404">(Apr 28 2021 at 22:40)</a>:</h4>
+<p>But then, yeah, the monad for rings is SP, with multiplication SPSP <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span> SSPP <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\to</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span> SP.</p>
+
+
+
+<a name="236591670"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236591670" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236591670">(Apr 28 2021 at 22:43)</a>:</h4>
+<p>Thanks. I think I got that well enough to at least rewrite my confusion in an accurate way!</p>
+
+
+
+<a name="236591774"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236591774" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236591774">(Apr 28 2021 at 22:44)</a>:</h4>
+<p>I managed not to be too confused by the fact that my <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span> corresponds to your <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> :)</p>
+
+
+
+<a name="236591785"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236591785" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236591785">(Apr 28 2021 at 22:44)</a>:</h4>
+<p>I think</p>
+
+
+
+<a name="236592189"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236592189" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236592189">(Apr 28 2021 at 22:48)</a>:</h4>
+<p>However, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>i</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">Lim</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span><span class="mord mathnormal">im</span></span></span></span> is co-lax-idempotent.</p>
+
+
+
+<a name="236592206"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236592206" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236592206">(Apr 28 2021 at 22:49)</a>:</h4>
+<p>So <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is complete iff there is a right adjoint to the unit <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>→</mo><mi>L</mi><mi>i</mi><mi>m</mi><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">C \to Lim(C)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">L</span><span class="mord mathnormal">im</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span></p>
+
+
+
+<a name="236592259"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236592259" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236592259">(Apr 28 2021 at 22:49)</a>:</h4>
+<p>So completeness is witnessed by an adjunction. Unfortunately maybe that doesn't help.</p>
+
+
+
+<a name="236592344"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236592344" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236592344">(Apr 28 2021 at 22:50)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277991">Tim Campion</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/distributivity.20of.20limits.20and.20colimits/near/236591774">said</a>:</p>
+<blockquote>
+<p>I managed not to be too confused by the fact that my <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span> corresponds to your <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> :)</p>
+</blockquote>
+<p>Darn, I was trying to confuse you.</p>
+
+
+
+<a name="236592981"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236592981" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236592981">(Apr 28 2021 at 22:57)</a>:</h4>
+<p>It really feels like all that needs to be juggled is size. It doesn't feel like soundness should actually be necessary for anything here.</p>
+
+
+
+<a name="236593384"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236593384" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236593384">(Apr 28 2021 at 23:01)</a>:</h4>
+<p>Let <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>κ</mi></msub></mrow><annotation encoding="application/x-tex">L_\kappa</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">κ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> be the doctrine for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi></mrow><annotation encoding="application/x-tex">\kappa</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">κ</span></span></span></span>-small limits. If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is small, then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>κ</mi></msub><mi>C</mi></mrow><annotation encoding="application/x-tex">L_\kappa C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">κ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is small.</p>
+
+
+
+<a name="236593653"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236593653" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236593653">(Apr 28 2021 at 23:04)</a>:</h4>
+<p>Let <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mi>L</mi><mi>i</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">L = Lim</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span><span class="mord mathnormal">im</span></span></span></span> be the dotrine for all small limits.</p>
+
+
+
+<a name="236593808"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236593808" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236593808">(Apr 28 2021 at 23:05)</a>:</h4>
+<p>In general, the unit <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>→</mo><msub><mi>L</mi><mi>κ</mi></msub><mi>C</mi></mrow><annotation encoding="application/x-tex">C \to L_\kappa C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">κ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> induces <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi mathvariant="script">K</mi></msub><mi>C</mi><mo>→</mo><msub><mi>P</mi><mi mathvariant="script">K</mi></msub><msub><mi>L</mi><mi>κ</mi></msub><mi>C</mi></mrow><annotation encoding="application/x-tex">P_{\mathcal K} C \to P_{\mathcal K} L_\kappa C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">κ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span></p>
+
+
+
+<a name="236593931"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236593931" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236593931">(Apr 28 2021 at 23:07)</a>:</h4>
+<p>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is small, then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>κ</mi></msub><mi>C</mi></mrow><annotation encoding="application/x-tex">L_\kappa C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">κ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is small. By hypothesis, this implies that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi mathvariant="script">K</mi></msub><msub><mi>L</mi><mi>κ</mi></msub><mi>C</mi></mrow><annotation encoding="application/x-tex">P_{\mathcal K} L_\kappa C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">κ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is complete.</p>
+
+
+
+<a name="236593946"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236593946" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236593946">(Apr 28 2021 at 23:07)</a>:</h4>
+<p>and in particular <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi></mrow><annotation encoding="application/x-tex">\kappa</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">κ</span></span></span></span>-complete.</p>
+
+
+
+<a name="236593992"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236593992" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236593992">(Apr 28 2021 at 23:08)</a>:</h4>
+<p>By the universal property of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>κ</mi></msub></mrow><annotation encoding="application/x-tex">L_\kappa</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">κ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>, we get an induced functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>κ</mi></msub><msub><mi>P</mi><mi mathvariant="script">K</mi></msub><mi>C</mi><mo>→</mo><msub><mi>P</mi><mi mathvariant="script">K</mi></msub><msub><mi>L</mi><mi>κ</mi></msub><mi>C</mi></mrow><annotation encoding="application/x-tex">L_\kappa P_{\mathcal K} C \to P_{\mathcal K} L_\kappa C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">κ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">κ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span>.</p>
+
+
+
+<a name="236594037"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236594037" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236594037">(Apr 28 2021 at 23:08)</a>:</h4>
+<p>which hopefully gives us a distributive law.</p>
+
+
+
+<a name="236594147"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236594147" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236594147">(Apr 28 2021 at 23:09)</a>:</h4>
+<p>Ah, but the hypothesis was a bit problematic.</p>
+
+
+
+<a name="236594227"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236594227" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236594227">(Apr 28 2021 at 23:10)</a>:</h4>
+<p>Generally we expect that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi mathvariant="script">K</mi></msub><mi>C</mi></mrow><annotation encoding="application/x-tex">P_{\mathcal K} C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> will only be complete, or even <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi></mrow><annotation encoding="application/x-tex">\kappa</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">κ</span></span></span></span>-complete, if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is appropriately cocomplete.</p>
+
+
+
+<a name="236594261"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236594261" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236594261">(Apr 28 2021 at 23:10)</a>:</h4>
+<p>And that's where we might actually need some theory of limit doctrines to understand things.</p>
+
+
+
+<a name="236597487"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236597487" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236597487">(Apr 28 2021 at 23:46)</a>:</h4>
+<p>Perhaps an easier approach would be: prove once and for all that there is a distributive law <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>∘</mo><mi>P</mi><mo>→</mo><mi>P</mi><mo>∘</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">L \circ P \to P \circ L</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span></span></span></span>.</p>
+
+
+
+<a name="236597506"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236597506" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236597506">(Apr 28 2021 at 23:46)</a>:</h4>
+<p>This is done in Day and Lack's "Limits of small functors"</p>
+
+
+
+<a name="236597529"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236597529" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236597529">(Apr 28 2021 at 23:47)</a>:</h4>
+<p>in the enriched setting. So it seems to be reasonably formal.</p>
+
+
+
+<a name="236597584"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236597584" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236597584">(Apr 28 2021 at 23:47)</a>:</h4>
+<p>Then all these other distributive laws are "sub-distributive laws" of that one.</p>
+
+
+
+<a name="236597723"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236597723" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236597723">(Apr 28 2021 at 23:49)</a>:</h4>
+<p>I think it follows that there is a distributive law <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>∘</mo><msub><mi>P</mi><mi mathvariant="script">K</mi></msub><mo>→</mo><msub><mi>P</mi><mi mathvariant="script">K</mi></msub><mo>∘</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">L \circ P_{\mathcal K} \to P_{\mathcal K} \circ L</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span></span></span></span> [which is a sub-distributive law of  <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>∘</mo><mi>P</mi><mo>→</mo><mi>P</mi><mo>∘</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">L \circ P \to P \circ L</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span></span></span></span>] if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi mathvariant="script">K</mi></msub><mi>L</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">P_{\mathcal K} L C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal">L</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is complete for every <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span>.</p>
+
+
+
+<a name="236597914"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236597914" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236597914">(Apr 28 2021 at 23:51)</a>:</h4>
+<p>And showing this does indeed seem to be the substantive part of any proof in the literature that there is such a distributive law for a particular <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">K</mi></mrow><annotation encoding="application/x-tex">\mathcal K</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathcal" style="margin-right:0.01445em;">K</span></span></span></span>.</p>
+
+
+
+<a name="236598249"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236598249" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236598249">(Apr 28 2021 at 23:56)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277991">Tim Campion</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/distributivity.20of.20limits.20and.20colimits/near/236597723">said</a>:</p>
+<blockquote>
+<p>I think it follows that there is a distributive law <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>∘</mo><msub><mi>P</mi><mi mathvariant="script">K</mi></msub><mo>→</mo><msub><mi>P</mi><mi mathvariant="script">K</mi></msub><mo>∘</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">L \circ P_{\mathcal K} \to P_{\mathcal K} \circ L</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span></span></span></span> [which is a sub-distributive law of  <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>∘</mo><mi>P</mi><mo>→</mo><mi>P</mi><mo>∘</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">L \circ P \to P \circ L</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span></span></span></span>] if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi mathvariant="script">K</mi></msub><mi>L</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">P_{\mathcal K} L C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.01445em;">K</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal">L</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is complete for every <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span>.</p>
+</blockquote>
+<p>I think this is Theorem 5.4 of Karazeris–Velebil's <a href="http://www.numdam.org/article/CTGDC_2009__50_1_3_0.pdf">Representability relative to a doctrine</a>.</p>
+
+
+
+<a name="236599891"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236599891" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236599891">(Apr 29 2021 at 00:14)</a>:</h4>
+<p><span class="user-mention" data-user-id="276092">@Nathanael Arkor</span> Thanks, that is very nice! And they are treating sub-monads of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi></mrow><annotation encoding="application/x-tex">L</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">L</span></span></span></span> at the same time!</p>
+
+
+
+<a name="236599968"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236599968" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236599968">(Apr 29 2021 at 00:15)</a>:</h4>
+<p>I bet one can get away with this holding for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> small.</p>
+
+
+
+<a name="236600113"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/distributivity%20of%20limits%20and%20colimits/near/236600113" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tim Campion <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/distributivity.20of.20limits.20and.20colimits.html#236600113">(Apr 29 2021 at 00:17)</a>:</h4>
+<p>Just because these monads should commute with colimits of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mi>r</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">Ord</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">d</span></span></span></span>-indexed chains.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Apr 29 2021 at 00:35 UTC</p>

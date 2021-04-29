@@ -9,7 +9,11 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [categorification of the real numbers](topic/categorification.20of.20the.20real.20numbers.html) (56 messages, latest: Apr 26 2021 at 23:56)
+* [distributivity of limits and colimits](topic/distributivity.20of.20limits.20and.20colimits.html) (114 messages, latest: Apr 29 2021 at 00:17)
+* [categorification of the real numbers](topic/categorification.20of.20the.20real.20numbers.html) (59 messages, latest: Apr 28 2021 at 22:31)
+* [doctrines](topic/doctrines.html) (7 messages, latest: Apr 28 2021 at 19:28)
+* [cartesian vs Cartesian](topic/cartesian.20vs.20Cartesian.html) (35 messages, latest: Apr 28 2021 at 19:20)
+* [braided monoidal categories as tricategories](topic/braided.20monoidal.20categories.20as.20tricategories.html) (3 messages, latest: Apr 28 2021 at 11:33)
 * [representability of multirepresentable functors](topic/representability.20of.20multirepresentable.20functors.html) (11 messages, latest: Apr 25 2021 at 15:24)
 * [tensor product of EM-algebras](topic/tensor.20product.20of.20EM-algebras.html) (42 messages, latest: Apr 20 2021 at 21:25)
 * [grothendieck construction as a colimit](topic/grothendieck.20construction.20as.20a.20colimit.html) (25 messages, latest: Apr 19 2021 at 19:25)
@@ -149,4 +153,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 28 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 29 2021 at 00:35 UTC</p>

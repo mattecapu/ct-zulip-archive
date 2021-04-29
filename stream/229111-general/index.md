@@ -9,10 +9,12 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (602 messages, latest: Apr 29 2021 at 00:33)
+* [nlab down](topic/nlab.20down.html) (20 messages, latest: Apr 28 2021 at 21:18)
+* [commutative diagrams on Zulip](topic/commutative.20diagrams.20on.20Zulip.html) (5 messages, latest: Apr 28 2021 at 20:08)
 * [Announcement:  Structure meets Power Workshop](topic/Announcement.3A.20.20Structure.20meets.20Power.20Workshop.html) (1 message, latest: Apr 26 2021 at 09:26)
 * [category theory in human psychology](topic/category.20theory.20in.20human.20psychology.html) (108 messages, latest: Apr 24 2021 at 11:23)
 * [LaTeX support](topic/LaTeX.20support.html) (84 messages, latest: Apr 23 2021 at 19:43)
-* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (601 messages, latest: Apr 21 2021 at 05:19)
 * [ACT Directory](topic/ACT.20Directory.html) (21 messages, latest: Apr 14 2021 at 13:02)
 * [quiver: a modern commutative diagram editor](topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (56 messages, latest: Apr 14 2021 at 10:28)
 * [category theory illustrated](topic/category.20theory.20illustrated.html) (2 messages, latest: Apr 08 2021 at 03:35)
@@ -201,4 +203,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Apr 28 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 29 2021 at 00:35 UTC</p>
