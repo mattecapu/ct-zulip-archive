@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Eilenberg–Moore bicategory](topic/Eilenberg.E2.80.93Moore.20bicategory.html) (2 messages, latest: Apr 29 2021 at 19:47)
 * [string diagrams = tensor networks?](topic/string.20diagrams.20.3D.20tensor.20networks.3F.html) (5 messages, latest: Apr 28 2021 at 12:20)
 * [String diagrams = tensor networks?](topic/String.20diagrams.20.3D.20tensor.20networks.3F.html) (22 messages, latest: Apr 27 2021 at 23:29)
 * [locales](topic/locales.html) (5 messages, latest: Apr 25 2021 at 15:32)
@@ -387,4 +388,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Apr 29 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 30 2021 at 00:25 UTC</p>

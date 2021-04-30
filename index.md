@@ -8,15 +8,15 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (377 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (378 topics)
 
 * [general](stream/229111-general/index.html) (193 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (143 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (144 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (102 topics)
 
-* [general: events](stream/229141-general:-events/index.html) (84 topics)
+* [general: events](stream/229141-general:-events/index.html) (85 topics)
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
@@ -66,9 +66,11 @@ permalink: /index.html
 
 * [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (12 topics)
 
-* [theory: physics](stream/251538-theory:-physics/index.html) (11 topics)
+* [theory: physics](stream/251538-theory:-physics/index.html) (12 topics)
 
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
+
+* [practice: economics](stream/231468-practice:-economics/index.html) (9 topics)
 
 * [practice: our work](stream/274877-practice:-our-work/index.html) (9 topics)
 
@@ -77,8 +79,6 @@ permalink: /index.html
 * [theory: concurrency](stream/235484-theory:-concurrency/index.html) (9 topics)
 
 * [philosophy](stream/229134-philosophy/index.html) (8 topics)
-
-* [practice: economics](stream/231468-practice:-economics/index.html) (8 topics)
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Apr 29 2021 at 00:35 UTC</p>
+<hr><p>Last updated: Apr 30 2021 at 00:25 UTC</p>
