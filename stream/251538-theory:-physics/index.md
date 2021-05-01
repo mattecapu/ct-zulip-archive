@@ -9,7 +9,7 @@ permalink: /stream/251538-theory:-physics/index.html
 
 ### Topics:
 
-* [Discrete Quantum Theory](topic/Discrete.20Quantum.20Theory.html) (3 messages, latest: Apr 29 2021 at 23:21)
+* [Discrete Quantum Theory](topic/Discrete.20Quantum.20Theory.html) (4 messages, latest: Apr 30 2021 at 23:59)
 * [Lawvere on continuum physics](topic/Lawvere.20on.20continuum.20physics.html) (31 messages, latest: Apr 19 2021 at 17:06)
 * [muons](topic/muons.html) (6 messages, latest: Apr 08 2021 at 19:44)
 * [Muons](topic/Muons.html) (2 messages, latest: Apr 08 2021 at 08:30)
@@ -22,4 +22,4 @@ permalink: /stream/251538-theory:-physics/index.html
 * [CFT and Elliptic Cohomology for Physicists](topic/CFT.20and.20Elliptic.20Cohomology.20for.20Physicists.html) (12 messages, latest: Oct 26 2020 at 15:45)
 * [open systems in classical mechanics](topic/open.20systems.20in.20classical.20mechanics.html) (17 messages, latest: Oct 20 2020 at 00:05)
 
-<hr><p>Last updated: Apr 30 2021 at 00:25 UTC</p>
+<hr><p>Last updated: May 01 2021 at 00:27 UTC</p>

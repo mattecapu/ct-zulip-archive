@@ -9,9 +9,10 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [morphism of modules over 2-rigs](topic/morphism.20of.20modules.20over.202-rigs.html) (16 messages, latest: Apr 29 2021 at 16:21)
-* [distributivity of limits and colimits](topic/distributivity.20of.20limits.20and.20colimits.html) (177 messages, latest: Apr 29 2021 at 15:00)
-* [doctrines](topic/doctrines.html) (10 messages, latest: Apr 29 2021 at 13:46)
+* [doctrines](topic/doctrines.html) (77 messages, latest: Apr 30 2021 at 20:35)
+* [morphism of modules over 2-rigs](topic/morphism.20of.20modules.20over.202-rigs.html) (19 messages, latest: Apr 30 2021 at 18:37)
+* [distributivity of limits and colimits](topic/distributivity.20of.20limits.20and.20colimits.html) (201 messages, latest: Apr 30 2021 at 16:15)
+* [Looking for references on enriched bicategories](topic/Looking.20for.20references.20on.20enriched.20bicategories.html) (11 messages, latest: Apr 30 2021 at 15:06)
 * [categorification of the real numbers](topic/categorification.20of.20the.20real.20numbers.html) (59 messages, latest: Apr 28 2021 at 22:31)
 * [cartesian vs Cartesian](topic/cartesian.20vs.20Cartesian.html) (35 messages, latest: Apr 28 2021 at 19:20)
 * [braided monoidal categories as tricategories](topic/braided.20monoidal.20categories.20as.20tricategories.html) (3 messages, latest: Apr 28 2021 at 11:33)
@@ -29,7 +30,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [microcosm principle for actegories](topic/microcosm.20principle.20for.20actegories.html) (9 messages, latest: Apr 03 2021 at 09:59)
 * [finitely generated/presented theories?](topic/finitely.20generated.2Fpresented.20theories.3F.html) (35 messages, latest: Mar 30 2021 at 06:55)
 * [Finitely generated/presented theories?](topic/Finitely.20generated.2Fpresented.20theories.3F.html) (6 messages, latest: Mar 27 2021 at 16:54)
-* [Looking for references on enriched bicategories](topic/Looking.20for.20references.20on.20enriched.20bicategories.html) (10 messages, latest: Mar 12 2021 at 07:11)
 * [Slice categories as free lex categories](topic/Slice.20categories.20as.20free.20lex.20categories.html) (12 messages, latest: Feb 17 2021 at 05:04)
 * [Anti-Grothendieck Construction](topic/Anti-Grothendieck.20Construction.html) (21 messages, latest: Feb 10 2021 at 17:22)
 * [Categories of Algebras](topic/Categories.20of.20Algebras.html) (6 messages, latest: Feb 10 2021 at 12:24)
@@ -154,4 +154,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Apr 30 2021 at 00:25 UTC</p>
+<hr><p>Last updated: May 01 2021 at 00:27 UTC</p>

@@ -9,7 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
-* [emergent behaviour as laxity](topic/emergent.20behaviour.20as.20laxity.html) (241 messages, latest: Apr 30 2021 at 00:03)
+* [emergent behaviour as laxity](topic/emergent.20behaviour.20as.20laxity.html) (246 messages, latest: Apr 30 2021 at 15:53)
 * [emergent behaviour workshop](topic/emergent.20behaviour.20workshop.html) (21 messages, latest: Apr 28 2021 at 21:45)
 * [ct & engineering](topic/ct.20.26.20engineering.html) (182 messages, latest: Apr 25 2021 at 23:20)
 * [ACT as a field](topic/ACT.20as.20a.20field.html) (277 messages, latest: Apr 23 2021 at 08:17)
@@ -112,4 +112,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Apr 30 2021 at 00:25 UTC</p>
+<hr><p>Last updated: May 01 2021 at 00:27 UTC</p>
