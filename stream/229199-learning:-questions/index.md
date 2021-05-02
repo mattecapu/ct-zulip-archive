@@ -9,6 +9,9 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Principle of equivalence and strict 2-categories](topic/Principle.20of.20equivalence.20and.20strict.202-categories.html) (5 messages, latest: May 01 2021 at 23:45)
+* [line graphs](topic/line.20graphs.html) (12 messages, latest: May 01 2021 at 16:55)
+* [Markov category question](topic/Markov.20category.20question.html) (10 messages, latest: May 01 2021 at 13:59)
 * [Grothendieck topologies](topic/Grothendieck.20topologies.html) (11 messages, latest: Apr 30 2021 at 15:53)
 * [Eilenberg–Moore bicategory](topic/Eilenberg.E2.80.93Moore.20bicategory.html) (2 messages, latest: Apr 29 2021 at 19:47)
 * [string diagrams = tensor networks?](topic/string.20diagrams.20.3D.20tensor.20networks.3F.html) (5 messages, latest: Apr 28 2021 at 12:20)
@@ -21,7 +24,6 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebraic theory of two elements?](topic/Algebraic.20theory.20of.20two.20elements.3F.html) (6 messages, latest: Apr 23 2021 at 02:40)
 * [uniqueness of Cartesian maps](topic/uniqueness.20of.20Cartesian.20maps.html) (8 messages, latest: Apr 22 2021 at 17:50)
 * [Euler characteristic and derivatives](topic/Euler.20characteristic.20and.20derivatives.html) (6 messages, latest: Apr 21 2021 at 17:48)
-* [Markov category question](topic/Markov.20category.20question.html) (9 messages, latest: Apr 21 2021 at 00:08)
 * [Composing monadic and non-monadic adjunctions](topic/Composing.20monadic.20and.20non-monadic.20adjunctions.html) (2 messages, latest: Apr 20 2021 at 22:55)
 * [×  in Rel](topic/.C3.97.20.20in.20Rel.html) (1 message, latest: Apr 20 2021 at 19:13)
 * [Uniqueness of Cartesian maps](topic/Uniqueness.20of.20Cartesian.20maps.html) (5 messages, latest: Apr 20 2021 at 11:21)
@@ -389,4 +391,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 01 2021 at 00:27 UTC</p>
+<hr><p>Last updated: May 02 2021 at 00:30 UTC</p>
