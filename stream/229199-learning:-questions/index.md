@@ -9,6 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [principle of equivalence and strict 2-categories](topic/principle.20of.20equivalence.20and.20strict.202-categories.html) (17 messages, latest: May 03 2021 at 00:07)
+* [signs in the dg-nerve](topic/signs.20in.20the.20dg-nerve.html) (1 message, latest: May 02 2021 at 16:01)
 * [Principle of equivalence and strict 2-categories](topic/Principle.20of.20equivalence.20and.20strict.202-categories.html) (5 messages, latest: May 01 2021 at 23:45)
 * [line graphs](topic/line.20graphs.html) (12 messages, latest: May 01 2021 at 16:55)
 * [Markov category question](topic/Markov.20category.20question.html) (10 messages, latest: May 01 2021 at 13:59)
@@ -391,4 +393,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 02 2021 at 00:30 UTC</p>
+<hr><p>Last updated: May 03 2021 at 00:28 UTC</p>

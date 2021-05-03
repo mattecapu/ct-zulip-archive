@@ -1,0 +1,104 @@
+[
+    {
+        "content": "<p>By the way, I personally never got rid of the term \"evil\".   Jim Dolan always meant it to be humorous.  It's not intended to indicate a blanket prohibition, just an important issue to be be aware of.</p>",
+        "id": 237013686,
+        "sender_full_name": "John Baez",
+        "timestamp": 1619916176
+    },
+    {
+        "content": "<p>Sorry; by \"we\" I meant the nLab.</p>",
+        "id": 237026928,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619931686
+    },
+    {
+        "content": "<p>Which is, of course, not a monolithic entity, and even among the people participating actively in the discussion there were varying viewpoints.</p>",
+        "id": 237026939,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619931712
+    },
+    {
+        "content": "<p>So I should have been more precise.</p>",
+        "id": 237026997,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619931751
+    },
+    {
+        "content": "<p>Can't you study strict 2-categories in a nonevil way? Define the weak 3-category of strict 2-categories in such a way that nonisomorphic strict 2-categories are not equivalent. Then there's some functor from this weak 3-category to the weak 3-category of weak 2-categories, and the strictification theorem says that it's essentially surjective on objects.</p>",
+        "id": 237031333,
+        "sender_full_name": "Oscar Cunningham",
+        "timestamp": 1619936958
+    },
+    {
+        "content": "<p>In other words <em>strict</em> 2-categories are different from good (i.e. weak) 2-categories. So although it's evil to talk about equality between objects of 2-categories, it's not evil to talk about equality of objects of strict 2-categories.</p>",
+        "id": 237031545,
+        "sender_full_name": "Oscar Cunningham",
+        "timestamp": 1619937134
+    },
+    {
+        "content": "<p>You can ask the same question one dimension down, with the 2-category of categories (in which the natural notion of sameness is equivalence) admitting a functor from the 1-category of <a href=\"https://ncatlab.org/nlab/show/strict+category\">strict categories</a> (in which the natural notion of sameness is isomorphism), and expecting a strictification theorem that says this functor is essentially surjective.  Of course we don't usually think about that version, since in set-theoretic foundations every category comes with a default structure of strict category already.</p>",
+        "id": 237058161,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619967628
+    },
+    {
+        "content": "<p>But in a foundational system where the question is nontrivial, such as homotopy type theory, which mandates the principle of equivalence through the univalence axiom, it turns out that these functors are <em>not</em> essentially surjective.  (More precisely, their essential surjectivity is an <a href=\"https://ncatlab.org/nlab/show/n-types+cover\">extra axiom</a> that doesn't follow from the basic theory, and doesn't hold in all models of interest.)  So you can certainly study strict categories and strict 2-categories in HoTT, but they are much less interesting than in set-theoretic foundations, because you don't have a strictification theorem.</p>",
+        "id": 237058922,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619967809
+    },
+    {
+        "content": "<p>In other words, it's true that you can talk about strict 2-categories on their own without violating the principle of equivalence; it's the strictification theorem that allows you to then deduce things about weak 2-categories that's dubious.</p>",
+        "id": 237059599,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619968084
+    },
+    {
+        "content": "<p>Thanks for all the answers! If structural foundations don't admit strictification theorems offhand, isn't this an argument for material set-theories?<br>\nAlthough I'm not sure whether this issue also applies to structural foundations other than HoTT. If it does, I'm somewhat confused: a recent discussion on MO (<a href=\"https://mathoverflow.net/q/388731\">https://mathoverflow.net/q/388731</a>) came to the conclusion that every structural statement with a material proof also has a structural proof, roughly speaking. In this way, my naive expectation would be that each application of \"evil\" techniques such as strictification theorems should be eliminable.</p>",
+        "id": 237072628,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1619981094
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"408864\">Leopold Schlicht</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories/near/237072628\">said</a>:</p>\n<blockquote>\n<p>Thanks for all the answers! If structural foundations don't admit strictification theorems offhand, isn't this an argument for material set-theories?</p>\n</blockquote>\n<p>No, it's an argument against strictification theorems.  (-:O</p>",
+        "id": 237073637,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619982069
+    },
+    {
+        "content": "<blockquote>\n<p>Although I'm not sure whether this issue also applies to structural foundations other than HoTT. If it does, I'm somewhat confused: a recent discussion on MO (<a href=\"https://mathoverflow.net/q/388731\">https://mathoverflow.net/q/388731</a>) came to the conclusion that every structural statement with a material proof also has a structural proof, roughly speaking.</p>\n</blockquote>\n<p>The discussion there was about ETCS, but it applies also to the set-fragment of HoTT.  But statements about large categories are not in \"the language of ETCS\" in this sense, and similarly the relevant categories we're talking about don't live in the set-fragment of HoTT.</p>",
+        "id": 237073862,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619982245
+    },
+    {
+        "content": "<p>(The question isn't really about size but about categorical dimension, but the most natural examples of non-strict categories are large, like the category of sets.)</p>",
+        "id": 237073892,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619982289
+    },
+    {
+        "content": "<p>(Also, ETCS doesn't really have a good way to talk about large categories at all, so it's hard to make the question precise there.)</p>",
+        "id": 237074028,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1619982428
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories/near/237074028\">said</a>:</p>\n<blockquote>\n<p>(Also, ETCS doesn't really have a good way to talk about large categories at all, so it's hard to make the question precise there.)</p>\n</blockquote>\n<p>How about a boolean category (or pretopos maybe) with a model of ETCS internally? I guess this is in the vein of algebraic set theory.</p>",
+        "id": 237075840,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1619983772
+    },
+    {
+        "content": "<p>Yes, you can work in a structural version of a class-set theory, or just assume there are category-theoretic universes inside your model of ETCS.  In that case strictification works just as well as it does in ZFC.  Same if you work in type theory with UIP and universes.  So the dichotomy of relevance to strictification isn't material/structural, but rather set-level / univalent.  I think that's what I was trying to say, but didn't express very well.</p>",
+        "id": 237096330,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620000379
+    },
+    {
+        "content": "<p>One could also go the other way and enhance HoTT to 2LTT, in which case one might be able to strictify with respect to the exo-equality.</p>",
+        "id": 237096359,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620000422
+    }
+]

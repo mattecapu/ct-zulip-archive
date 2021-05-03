@@ -9,8 +9,8 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (612 messages, latest: May 02 2021 at 13:46)
 * [nlab down](topic/nlab.20down.html) (26 messages, latest: Apr 30 2021 at 16:50)
-* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (611 messages, latest: Apr 29 2021 at 09:12)
 * [commutative diagrams on Zulip](topic/commutative.20diagrams.20on.20Zulip.html) (5 messages, latest: Apr 28 2021 at 20:08)
 * [Announcement:  Structure meets Power Workshop](topic/Announcement.3A.20.20Structure.20meets.20Power.20Workshop.html) (1 message, latest: Apr 26 2021 at 09:26)
 * [category theory in human psychology](topic/category.20theory.20in.20human.20psychology.html) (108 messages, latest: Apr 24 2021 at 11:23)
@@ -203,4 +203,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: May 02 2021 at 00:30 UTC</p>
+<hr><p>Last updated: May 03 2021 at 00:28 UTC</p>

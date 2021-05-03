@@ -9,8 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Categorifying eigenvalues](topic/Categorifying.20eigenvalues.html) (29 messages, latest: May 02 2021 at 22:04)
 * [doctrines](topic/doctrines.html) (85 messages, latest: May 02 2021 at 00:21)
-* [Categorifying eigenvalues](topic/Categorifying.20eigenvalues.html) (26 messages, latest: May 01 2021 at 14:03)
 * [morphism of modules over 2-rigs](topic/morphism.20of.20modules.20over.202-rigs.html) (19 messages, latest: Apr 30 2021 at 18:37)
 * [distributivity of limits and colimits](topic/distributivity.20of.20limits.20and.20colimits.html) (201 messages, latest: Apr 30 2021 at 16:15)
 * [Looking for references on enriched bicategories](topic/Looking.20for.20references.20on.20enriched.20bicategories.html) (11 messages, latest: Apr 30 2021 at 15:06)
@@ -155,4 +155,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: May 02 2021 at 00:30 UTC</p>
+<hr><p>Last updated: May 03 2021 at 00:28 UTC</p>
