@@ -129,6 +129,82 @@ Although I'm not sure whether this issue also applies to structural foundations 
 
 
 
+<a name="237146885"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/principle%20of%20equivalence%20and%20strict%202-categories/near/237146885" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories.html#237146885">(May 03 2021 at 11:28)</a>:</h4>
+<p>So although the MO discussion I linked to above was about ETCS and BZC, the same thing (structural statements with a material proof also have a structural proof) holds if one replaces BZC by a material set theory T appropriate for talking about largeness and proving the strictification theorem for large 1-categories and ETCS by a type theory T' that admits similar constructions as T, but where "large types" don't come equipped with an equality predicate offhand, right?<br>
+So T should be able to prove "every large category is equivalent to a large category that is strict", which is a material statement that can't be translated into T', but it implies the statement "every large category D is equivalent to UC, for some strict large category C", where U is the construction from strict large categories to large categories forgetting the equality predicate on the objects of C. This is the non-evil version of the strictification theorem (as proposed by Oscar in the 2-categorical setting) which can be formulated in T', and if the answer to my question above is "yes", then this would mean that a structural proof of this structural strictification theorem inside T' can be extracted from the material proof inside T in which the evil strictification theorem is used as an intermediate step, right?<br>
+Similarly for the strictification theorem in the 2-categorical setting.<br>
+(For me, type theory is a sort of "structural" set theory.)</p>
+
+
+
+<a name="237170616"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/principle%20of%20equivalence%20and%20strict%202-categories/near/237170616" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories.html#237170616">(May 03 2021 at 14:39)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="408864">Leopold Schlicht</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories/near/237146885">said</a>:</p>
+<blockquote>
+<p>So although the MO discussion I linked to above was about ETCS and BZC, the same thing (structural statements with a material proof also have a structural proof) holds if one replaces BZC by a material set theory T appropriate for talking about largeness and proving the strictification theorem for large 1-categories and ETCS by a type theory T' that admits similar constructions as T, but where "large types" don't come equipped with an equality predicate offhand, right?</p>
+</blockquote>
+<p>No, I don't think so.  The classifying category of T' wouldn't be a 1-category, for one thing.  You could hope for a similar statement to hold with a higher category, but no one has proven such a thing that I know of.  And in order for anything of the sort to be true, you would certainly have to add to T' some axiom like "sets cover", which requires at least some notion of identity type for all types even if it's univalent rather than strict.</p>
+
+
+
+<a name="237177873"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/principle%20of%20equivalence%20and%20strict%202-categories/near/237177873" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories.html#237177873">(May 03 2021 at 15:15)</a>:</h4>
+<p>Interesting. So you wouldn't even expect T' to be able to prove the non-evil version of the strictification theorem (the forgetful functor from strict large categories to large categories is essentially surjective)?<br>
+I would like to understand what we need to add to T' so that this is possible. Above you already mention that it works if one adds UIP, and now you are mentioning "sets cover". I only have a rough understanding of the former, which I think means that any two proofs of an equality (i.e., terms of an identity type) have to be equal. Why do these additional assumptions enable us to prove the non-evil coherence theorem?<br>
+Is it possible to formulate (and prove) the non-evil coherence theorem only on the set-fragment of HoTT? My naive opinion is that only because one talks about largeness, it doesn't necessarily has to mean that one leaves the set-level. (But this is very naive, I'm not really qualified to even use these words.)</p>
+
+
+
+<a name="237197013"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/principle%20of%20equivalence%20and%20strict%202-categories/near/237197013" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories.html#237197013">(May 03 2021 at 17:28)</a>:</h4>
+<p>By the way I always wondered why the HoTT book defines a category to have a <em>type</em> of objects (but a set of morphisms). Why isn't it better to have a set of objects? I usually think about objects in a category not as being points in some space. :-)<br>
+Does this change of definition yield all the strictification theorems?</p>
+
+
+
+<a name="237203821"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/principle%20of%20equivalence%20and%20strict%202-categories/near/237203821" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories.html#237203821">(May 03 2021 at 18:09)</a>:</h4>
+<p>A concrete reason would be that the (large) type of sets is not itself a set, but rather a groupoid. More abstractly, you can see a set as a type whose notion of equality is well behaved, and because we don't talk about equality of objects, we don't need that equality to be well behaved (in contrast to the equality of parallel morphisms). Moreover, when you get the notion of <em>univalent</em> category (a category in which isomorphism is equivalent to equality (of objects)), it is then natural for the objects to form a groupoid, because there are often many isomorphisms between a pair of objects.</p>
+
+
+
+<a name="237217873"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/principle%20of%20equivalence%20and%20strict%202-categories/near/237217873" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories.html#237217873">(May 03 2021 at 19:46)</a>:</h4>
+<p>Right: the objects of a category <em>are</em> points in a space, namely the homotopy 1-type (= groupoid) underlying the category.  If you assume the univalence axiom, then the type of sets is not itself a set; so if you want to have a "category of sets" (which seems a reasonable expectation) you can't demand that the objects of a category form a set.</p>
+
+
+
+<a name="237218245"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/principle%20of%20equivalence%20and%20strict%202-categories/near/237218245" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories.html#237218245">(May 03 2021 at 19:49)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="281583">James Wood</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories/near/237203821">said</a>:</p>
+<blockquote>
+<p>you can see a set as a type whose notion of equality is well behaved</p>
+</blockquote>
+<p>Well, "well-behaved" is a value judgment.  I think the notion of equality in the type of sets, assuming the univalence axiom, is quite well-behaved.  It's just that it's not a mere proposition.  (-:  But it's much better-behaved than the notion of equality in the type of sets if you assume UIP, because in the latter case you can't say anything about when two sets are equal; whereas univalence tells you exactly when two sets are equal, and the answer is the same one that we use all the time in structural mathematics.</p>
+<p>I'm sorry about nitpicking your words, but I don't want people to have the impression that types that aren't sets are "bad" or "pathological" in any way.  They're actually much more natural than the behavior of large types under UIP.</p>
+
+
+
+<a name="237218869"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/principle%20of%20equivalence%20and%20strict%202-categories/near/237218869" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories.html#237218869">(May 03 2021 at 19:53)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="408864">Leopold Schlicht</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories/near/237177873">said</a>:</p>
+<blockquote>
+<p>Interesting. So you wouldn't even expect T' to be able to prove that... the forgetful functor from strict large categories to large categories is essentially surjective?</p>
+</blockquote>
+<p>Correct.  Because T' should have models in which that statement is false, such as those mentioned on the "sets cover" nlab page.  (And we care about these models, so "sets cover" is not really a good axiom to add.)</p>
+<blockquote>
+<p>I would like to understand what we need to add to T' so that this is possible. Above you already mention that it works if one adds UIP, and now you are mentioning "sets cover". ... Why do these additional assumptions enable us to prove [the above statement]?</p>
+</blockquote>
+<p>Under UIP, every category <em>is</em> already strict, so there is nothing to prove.</p>
+<p>Under sets cover, what you get is a weaker statement, that every category is <em>weakly equivalent</em> to a strict one.  Just take a set cover of the type of objects, and pull back the morphisms; the resulting functor is fully faithful (by definition of the morphisms) and essentially surjective (because you started with a cover), and its domain is strict by construction.  (But it won't, in general, have an inverse functor going in the other direction, so it won't be a strong equivalence.)</p>
+<blockquote>
+<p>Is it possible to formulate (and prove) the non-evil coherence theorem only on the set-fragment of HoTT?</p>
+</blockquote>
+<p>Well, yes, you can prove that every category in the set-fragment is (equivalent to) a strict one, since by definition "a category in the set-fragment" means a strict category.  But this isn't very useful, because for instance "the category of sets" doesn't live in the set-fragment.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: May 03 2021 at 00:28 UTC</p>
+<hr><p>Last updated: May 04 2021 at 00:22 UTC</p>

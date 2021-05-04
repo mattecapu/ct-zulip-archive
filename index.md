@@ -8,11 +8,11 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (383 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (385 topics)
 
 * [general](stream/229111-general/index.html) (193 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (145 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (146 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (103 topics)
 
@@ -46,9 +46,9 @@ permalink: /index.html
 
 * [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (19 topics)
 
-* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (17 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (18 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (17 topics)
+* [learning: recommendations](stream/232161-learning:-recommendations/index.html) (17 topics)
 
 * [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
 
@@ -62,17 +62,17 @@ permalink: /index.html
 
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (13 topics)
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (13 topics)
 
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (12 topics)
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (13 topics)
 
 * [theory: physics](stream/251538-theory:-physics/index.html) (12 topics)
 
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
-* [practice: economics](stream/231468-practice:-economics/index.html) (9 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (10 topics)
 
-* [practice: our work](stream/274877-practice:-our-work/index.html) (9 topics)
+* [practice: economics](stream/231468-practice:-economics/index.html) (9 topics)
 
 * [practice: programming](stream/229450-practice:-programming/index.html) (9 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: May 03 2021 at 00:28 UTC</p>
+<hr><p>Last updated: May 04 2021 at 00:22 UTC</p>

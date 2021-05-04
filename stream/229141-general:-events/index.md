@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Categories and Companions Symposium 2021](topic/Categories.20and.20Companions.20Symposium.202021.html) (2 messages, latest: May 03 2021 at 03:43)
 * [Bohemian L&P Cafe': Shulman](topic/Bohemian.20L.26P.20Cafe'.3A.20Shulman.html) (2 messages, latest: Apr 30 2021 at 14:35)
 * [thermodynamics in biology](topic/thermodynamics.20in.20biology.html) (2 messages, latest: Apr 30 2021 at 01:23)
 * [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (17 messages, latest: Apr 27 2021 at 16:37)
@@ -20,7 +21,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Jeremy Avigad](topic/Jeremy.20Avigad.html) (1 message, latest: Apr 17 2021 at 14:15)
 * [Compositional Robotics: Mathematics and Tools Workshop](topic/Compositional.20Robotics.3A.20Mathematics.20and.20Tools.20Workshop.html) (7 messages, latest: Apr 15 2021 at 16:08)
 * [Category Theory Meets Computational Irreducibility](topic/Category.20Theory.20Meets.20Computational.20Irreducibility.html) (15 messages, latest: Apr 13 2021 at 09:27)
-* [Categories and Companions Symposium 2021](topic/Categories.20and.20Companions.20Symposium.202021.html) (1 message, latest: Mar 31 2021 at 21:28)
 * [submitting to CT2021](topic/submitting.20to.20CT2021.html) (53 messages, latest: Mar 24 2021 at 02:20)
 * [Workshop on Polynomial Functors](topic/Workshop.20on.20Polynomial.20Functors.html) (10 messages, latest: Mar 15 2021 at 14:12)
 * [Mathematics in the 21st century](topic/Mathematics.20in.20the.2021st.20century.html) (3 messages, latest: Mar 14 2021 at 19:37)
@@ -96,4 +96,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: May 03 2021 at 00:28 UTC</p>
+<hr><p>Last updated: May 04 2021 at 00:22 UTC</p>

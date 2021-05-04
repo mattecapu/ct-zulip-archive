@@ -9,6 +9,7 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 
 ### Topics:
 
+* [Emily Riehl: "Contractibility as uniqueness"](topic/Emily.20Riehl.3A.20.22Contractibility.20as.20uniqueness.22.html) (2 messages, latest: May 03 2021 at 12:09)
 * [Jonathan Gorard: "Fast Diagrammatic Reasoning and \[...\]"](topic/Jonathan.20Gorard.3A.20.22Fast.20Diagrammatic.20Reasoning.20and.20.5B.2E.2E.2E.5D.22.html) (2 messages, latest: Apr 29 2021 at 16:54)
 * [Shaowei Lin: "Proofs as programs: challenges and \[...\]"](topic/Shaowei.20Lin.3A.20.22Proofs.20as.20programs.3A.20challenges.20and.20.5B.2E.2E.2E.5D.22.html) (9 messages, latest: Apr 22 2021 at 19:02)
 * [Asgar Jamneshan: "Topos theory and measurability"](topic/Asgar.20Jamneshan.3A.20.22Topos.20theory.20and.20measurability.22.html) (10 messages, latest: Apr 20 2021 at 17:51)
@@ -22,4 +23,4 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 * [Richard Garner: "Comodels of an algebraic theory"](topic/Richard.20Garner.3A.20.22Comodels.20of.20an.20algebraic.20theory.22.html) (27 messages, latest: Feb 11 2021 at 22:36)
 * [stream events](topic/stream.20events.html) (2 messages, latest: Dec 26 2020 at 19:06)
 
-<hr><p>Last updated: May 03 2021 at 00:28 UTC</p>
+<hr><p>Last updated: May 04 2021 at 00:22 UTC</p>
