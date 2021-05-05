@@ -9,7 +9,8 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (612 messages, latest: May 02 2021 at 13:46)
+* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (618 messages, latest: May 04 2021 at 22:55)
+* [ArxivDiff](topic/ArxivDiff.html) (3 messages, latest: May 04 2021 at 22:08)
 * [nlab down](topic/nlab.20down.html) (26 messages, latest: Apr 30 2021 at 16:50)
 * [commutative diagrams on Zulip](topic/commutative.20diagrams.20on.20Zulip.html) (5 messages, latest: Apr 28 2021 at 20:08)
 * [Announcement:  Structure meets Power Workshop](topic/Announcement.3A.20.20Structure.20meets.20Power.20Workshop.html) (1 message, latest: Apr 26 2021 at 09:26)
@@ -203,4 +204,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: May 04 2021 at 00:22 UTC</p>
+<hr><p>Last updated: May 05 2021 at 00:16 UTC</p>

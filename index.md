@@ -8,9 +8,9 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (385 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (387 topics)
 
-* [general](stream/229111-general/index.html) (193 topics)
+* [general](stream/229111-general/index.html) (194 topics)
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (146 topics)
 
@@ -36,7 +36,7 @@ permalink: /index.html
 
 * [general: positions](stream/245502-general:-positions/index.html) (24 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (23 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (24 topics)
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
@@ -46,7 +46,7 @@ permalink: /index.html
 
 * [learning: history of ideas](stream/232163-learning:-history-of-ideas/index.html) (19 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (18 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (19 topics)
 
 * [learning: recommendations](stream/232161-learning:-recommendations/index.html) (17 topics)
 
@@ -68,9 +68,9 @@ permalink: /index.html
 
 * [theory: physics](stream/251538-theory:-physics/index.html) (12 topics)
 
-* [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (11 topics)
 
-* [practice: our work](stream/274877-practice:-our-work/index.html) (10 topics)
+* [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
 * [practice: economics](stream/231468-practice:-economics/index.html) (9 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: May 04 2021 at 00:22 UTC</p>
+<hr><p>Last updated: May 05 2021 at 00:16 UTC</p>

@@ -1,0 +1,50 @@
+[
+    {
+        "content": "<p>Two quotes from the HoTT book:</p>\n<p>\"On the one hand, there is Voevodsky’s subtle and beautiful univalence axiom. The univalence axiom implies, in particular, that isomorphic structures can be identified, a principle that mathematicians have been happily using on workdays, despite its incompatibility with the “official” doctrines of conventional foundations.\"<br>\n\"The short answer is that all of the constructions and axioms considered in this book have a model in the category of Kan complexes, due to Voevodsky [KLV12] (see [LS17] for higher inductive types).\"</p>\n<p>Isn't it a bit odd that one needs to search really hard in areas as advanced as algebraic topology to find a model justifying a principle that mathematicians are already using in day-to-day work? After all, probably most mathematicians are thinking about set-based mathematics when applying this principle, with \"set\" meaning \"set\" rather than \"Kan complex\". :-) So shouldn't the principle also be true in set-based mathematics (in some form)?</p>",
+        "id": 237379879,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1620154568
+    },
+    {
+        "content": "<p>I think the idea is that such models of HoTT are as complex as they are because they’re being modelled in ZFC (or something like it) so you need to build in all the higher homotopies ‘by hand’ on top of the abstract sets.</p>",
+        "id": 237383503,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1620156060
+    },
+    {
+        "content": "<p>Also, that comment is more so about the principle of equivalence rather than the full univalence axiom in its formal guise. It just means that mathematicians really only care about things up to the correct notion of equivalence and so act as if equivalent things are equal (even if formally they know that to not be the case in set theoretic foundations).</p>",
+        "id": 237386695,
+        "sender_full_name": "Fawzi Hreiki",
+        "timestamp": 1620157471
+    },
+    {
+        "content": "<p>There are a lot of different ways to answer this question.  One is that yes, it's odd -- and that this says more about ZFC than about HoTT!  After all, if a principle is natural in everyday mathematics, isn't it more natural to use a foundational system in which it's true?  In traditional set-based foundations we have to work hard to set up a context in which this principle becomes true, but that tells us more about the <em>unnaturality</em> of set-based foundations.</p>",
+        "id": 237394044,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620160707
+    },
+    {
+        "content": "<p>(I think this is similar to what Fawzi said.)</p>",
+        "id": 237394100,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620160753
+    },
+    {
+        "content": "<p>Another answer is that you don't need things like homotopy theory and Kan complexes if you only want to apply univalence to isomorphism of <em>set-based</em> structures such as groups, rings, fields, etc.  For that purpose, it suffices to use a version of HoTT in which only the universe of sets is univalent, and that theory can be modeled using plain ordinary groupoids (as shown by Hofmann and Streicher in 1998).  It's only when you want to start applying univalence to <em>equivalence</em> of categorical structures that you need higher categorical models (e.g. to model a univalent universe of 1-types you need a model in some kind of 2-groupoid), leading in the limit to homotopy theory.</p>",
+        "id": 237394436,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620160918
+    },
+    {
+        "content": "<p>In addition, there are senses in which the principle is \"true in set-based mathematics\".  It's certainly not <em>literally</em> true in set theory, since we can make statements about a group <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>, like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∅</mi><mo>∈</mo><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">\\emptyset \\in G</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.80556em;vertical-align:-0.05556em;\"></span><span class=\"mord\">∅</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span> or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi><mo>=</mo><mi mathvariant=\"double-struck\">Z</mi></mrow><annotation encoding=\"application/x-tex\">G = \\mathbb{Z}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">G</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathbb\">Z</span></span></span></span>, that can be true about some group but not about an isomorphic one.  But there are set-like theories in which the principle is \"true\" as a metatheorem, such as dependent type theory without any equality predicate on the universe.  The most intuitive (in my opinion) <em>reason</em> for such metatheorems is that the theory would remain consistent if you add univalence -- but you can also give direct syntactic proofs.  However, a metatheorem is significantly less convenient to use in practice than an actual theorem, and doesn't yield any of the additional benefits of univalence.</p>",
+        "id": 237395068,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620161217
+    },
+    {
+        "content": "<blockquote>\n<p>However, a metatheorem is significantly less convenient to use in practice than an actual theorem....</p>\n</blockquote>\n<p>I always wondered what exactly was the difference between a theorem and a metatheorem.   <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 237413531,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620169118
+    }
+]

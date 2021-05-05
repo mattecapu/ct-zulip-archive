@@ -205,6 +205,64 @@ Does this change of definition yield all the strictification theorems?</p>
 
 
 
+<a name="237375552"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/principle%20of%20equivalence%20and%20strict%202-categories/near/237375552" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories.html#237375552">(May 04 2021 at 18:27)</a>:</h4>
+<p>Ah, thanks, I see: I agree that one wants to have a notion of "large collection" so that "large collections" don't come equipped with a form of "equality proposition" on it (the collection of sets should be such a "large collection" and we generally don't want to talk about equality of sets). And the collection of all objects of a category should be such a "large collection". Although in my personal informal type theory I'm using in practice, I still don't think of "large collections" as <em>spaces</em> whose identity types aren't mere propositions, but as something like "sets" that just don't have <em>any</em> equality predicate (not even identity types failing to be mere propositions).<br>
+This was also what I had in mind when sketching, in an extremely vague form, the theory T'.<br>
+It seems to me that one of the conclusions we had in the conversation so far is that T' <em>can't prove the (non-evil) strictification theorem</em>. I think that's quite remarkable.<br>
+My current question then is: Can T' prove the coherence theorem (every formal diagram in a bicategory made up of associators and unitors commutes)?<br>
+Usually, this follows from the strictification theorem (for bicategories). If the coherence theorem isn't provable in T', perhaps this would be a serious philosophical argument for not believing in it. At least if one denies the meaningfulness of equality of objects, just as some people might deny the existence of infinite sets. Remarkably, the latter opinion denies the truth of an axiom (the axiom of infinity), while the former denies only a concept (the concept of equality between objects).</p>
+
+
+
+<a name="237377820"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/principle%20of%20equivalence%20and%20strict%202-categories/near/237377820" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories.html#237377820">(May 04 2021 at 18:42)</a>:</h4>
+<p>Yes, T' can prove the coherence theorem.  I think it's better to regard the strictification theorem as following (in classical mathematics) from the coherence theorem than the other way around.  In particular, I don't know how to prove the strictification theorem without already having something essentially equivalent to the coherence theorem, although it's true that if you assume the strictification theorem you can derive the coherence theorem from it.</p>
+
+
+
+<a name="237377871"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/principle%20of%20equivalence%20and%20strict%202-categories/near/237377871" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories.html#237377871">(May 04 2021 at 18:42)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="408864">Leopold Schlicht</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories/near/237375552">said</a>:</p>
+<blockquote>
+<p>Remarkably, the latter opinion denies the truth of an axiom (the axiom of infinity), while the former denies only a concept (the concept of equality between objects).</p>
+</blockquote>
+<p>I'm pretty sure that the existence of an equality predicate is implemented as an axiom, it's just that it's more often taken for granted than the axiom of infinity.</p>
+
+
+
+<a name="237378179"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/principle%20of%20equivalence%20and%20strict%202-categories/near/237378179" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories.html#237378179">(May 04 2021 at 18:44)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories/near/237377871">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="408864">Leopold Schlicht</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories/near/237375552">said</a>:</p>
+<blockquote>
+<p>Remarkably, the latter opinion denies the truth of an axiom (the axiom of infinity), while the former denies only a concept (the concept of equality between objects).</p>
+</blockquote>
+<p>I'm pretty sure that the existence of an equality predicate is implemented as an axiom, it's just that it's more often taken for granted than the axiom of infinity.</p>
+</blockquote>
+<p>It depends on what you mean by "axiom" and "equality predicate".  In type theory, identity types are usually specified by rules, with computational behavior, whereas an "axiom" in type theory usually means a bare element of some type without any computational behavior.  However, if you consider only identity types "up to equivalence" then their existence can be asserted internally as an axiom.</p>
+
+
+
+<a name="237378382"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/principle%20of%20equivalence%20and%20strict%202-categories/near/237378382" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories.html#237378382">(May 04 2021 at 18:45)</a>:</h4>
+<p>In first-order logic, I don't think the existence of equality can be formulated as an axiom, but has to be given by rules for forming atomic equality propositions.  But in higher-order logic, you should be able to formulate it as an axiom -- although, as for up-to-equivalence identity types in type theory, an ordinary such axiom would only assert it for some particular type or family of types, rather than uniformly for all types.</p>
+
+
+
+<a name="237379631"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/principle%20of%20equivalence%20and%20strict%202-categories/near/237379631" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories.html#237379631">(May 04 2021 at 18:54)</a>:</h4>
+<p>I can see why there is a need to make a distinction between "a rule of how first order logic works" and "an axiom in a first order theory", so apologies for the imprecision. Perhaps "meta-axiom" would be more appropriate. The point I was trying to make is that they're both rules formalising the assumptions we make about our logics/theories, and even if they are in some sense a level apart in some formulations, the distinction between them doesn't quite reach the heights of "remarkable" (for me, anyway <span aria-label="sweat smile" class="emoji emoji-1f605" role="img" title="sweat smile">:sweat_smile:</span> ).</p>
+
+
+
+<a name="237389161"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/principle%20of%20equivalence%20and%20strict%202-categories/near/237389161" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories.html#237389161">(May 04 2021 at 20:01)</a>:</h4>
+<p>Yes, I agree.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: May 04 2021 at 00:22 UTC</p>
+<hr><p>Last updated: May 05 2021 at 00:16 UTC</p>

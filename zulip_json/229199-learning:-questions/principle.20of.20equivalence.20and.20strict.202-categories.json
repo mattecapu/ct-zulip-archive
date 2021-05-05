@@ -148,5 +148,47 @@
         "id": 237218869,
         "sender_full_name": "Mike Shulman",
         "timestamp": 1620071636
+    },
+    {
+        "content": "<p>Ah, thanks, I see: I agree that one wants to have a notion of \"large collection\" so that \"large collections\" don't come equipped with a form of \"equality proposition\" on it (the collection of sets should be such a \"large collection\" and we generally don't want to talk about equality of sets). And the collection of all objects of a category should be such a \"large collection\". Although in my personal informal type theory I'm using in practice, I still don't think of \"large collections\" as <em>spaces</em> whose identity types aren't mere propositions, but as something like \"sets\" that just don't have <em>any</em> equality predicate (not even identity types failing to be mere propositions).<br>\nThis was also what I had in mind when sketching, in an extremely vague form, the theory T'.<br>\nIt seems to me that one of the conclusions we had in the conversation so far is that T' <em>can't prove the (non-evil) strictification theorem</em>. I think that's quite remarkable.<br>\nMy current question then is: Can T' prove the coherence theorem (every formal diagram in a bicategory made up of associators and unitors commutes)?<br>\nUsually, this follows from the strictification theorem (for bicategories). If the coherence theorem isn't provable in T', perhaps this would be a serious philosophical argument for not believing in it. At least if one denies the meaningfulness of equality of objects, just as some people might deny the existence of infinite sets. Remarkably, the latter opinion denies the truth of an axiom (the axiom of infinity), while the former denies only a concept (the concept of equality between objects).</p>",
+        "id": 237375552,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1620152870
+    },
+    {
+        "content": "<p>Yes, T' can prove the coherence theorem.  I think it's better to regard the strictification theorem as following (in classical mathematics) from the coherence theorem than the other way around.  In particular, I don't know how to prove the strictification theorem without already having something essentially equivalent to the coherence theorem, although it's true that if you assume the strictification theorem you can derive the coherence theorem from it.</p>",
+        "id": 237377820,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620153721
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"408864\">Leopold Schlicht</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories/near/237375552\">said</a>:</p>\n<blockquote>\n<p>Remarkably, the latter opinion denies the truth of an axiom (the axiom of infinity), while the former denies only a concept (the concept of equality between objects).</p>\n</blockquote>\n<p>I'm pretty sure that the existence of an equality predicate is implemented as an axiom, it's just that it's more often taken for granted than the axiom of infinity.</p>",
+        "id": 237377871,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1620153730
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories/near/237377871\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"408864\">Leopold Schlicht</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/principle.20of.20equivalence.20and.20strict.202-categories/near/237375552\">said</a>:</p>\n<blockquote>\n<p>Remarkably, the latter opinion denies the truth of an axiom (the axiom of infinity), while the former denies only a concept (the concept of equality between objects).</p>\n</blockquote>\n<p>I'm pretty sure that the existence of an equality predicate is implemented as an axiom, it's just that it's more often taken for granted than the axiom of infinity.</p>\n</blockquote>\n<p>It depends on what you mean by \"axiom\" and \"equality predicate\".  In type theory, identity types are usually specified by rules, with computational behavior, whereas an \"axiom\" in type theory usually means a bare element of some type without any computational behavior.  However, if you consider only identity types \"up to equivalence\" then their existence can be asserted internally as an axiom.</p>",
+        "id": 237378179,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620153853
+    },
+    {
+        "content": "<p>In first-order logic, I don't think the existence of equality can be formulated as an axiom, but has to be given by rules for forming atomic equality propositions.  But in higher-order logic, you should be able to formulate it as an axiom -- although, as for up-to-equivalence identity types in type theory, an ordinary such axiom would only assert it for some particular type or family of types, rather than uniformly for all types.</p>",
+        "id": 237378382,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620153955
+    },
+    {
+        "content": "<p>I can see why there is a need to make a distinction between \"a rule of how first order logic works\" and \"an axiom in a first order theory\", so apologies for the imprecision. Perhaps \"meta-axiom\" would be more appropriate. The point I was trying to make is that they're both rules formalising the assumptions we make about our logics/theories, and even if they are in some sense a level apart in some formulations, the distinction between them doesn't quite reach the heights of \"remarkable\" (for me, anyway <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span> ).</p>",
+        "id": 237379631,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1620154449
+    },
+    {
+        "content": "<p>Yes, I agree.</p>",
+        "id": 237389161,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620158486
     }
 ]

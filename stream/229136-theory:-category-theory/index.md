@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [categorifying eigenvalues](topic/categorifying.20eigenvalues.html) (8 messages, latest: May 03 2021 at 15:56)
+* [categorifying eigenvalues](topic/categorifying.20eigenvalues.html) (33 messages, latest: May 04 2021 at 15:13)
 * [doctrines](topic/doctrines.html) (86 messages, latest: May 03 2021 at 14:41)
 * [categorification of the real numbers](topic/categorification.20of.20the.20real.20numbers.html) (61 messages, latest: May 03 2021 at 13:41)
 * [Categorifying eigenvalues](topic/Categorifying.20eigenvalues.html) (29 messages, latest: May 02 2021 at 22:04)
@@ -156,4 +156,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: May 04 2021 at 00:22 UTC</p>
+<hr><p>Last updated: May 05 2021 at 00:16 UTC</p>
