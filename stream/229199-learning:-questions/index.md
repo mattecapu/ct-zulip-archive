@@ -9,13 +9,14 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [principle of equivalence and strict 2-categories](topic/principle.20of.20equivalence.20and.20strict.202-categories.html) (32 messages, latest: May 04 2021 at 20:01)
-* [L^p as adjoint](topic/L.5Ep.20as.20adjoint.html) (2 messages, latest: May 04 2021 at 19:31)
+* [L^p as adjoint](topic/L.5Ep.20as.20adjoint.html) (9 messages, latest: May 05 2021 at 22:43)
+* [principle of equivalence and strict 2-categories](topic/principle.20of.20equivalence.20and.20strict.202-categories.html) (37 messages, latest: May 05 2021 at 16:20)
+* [exterior product and tensor of chain complexes](topic/exterior.20product.20and.20tensor.20of.20chain.20complexes.html) (8 messages, latest: May 05 2021 at 13:49)
+* [signs in the dg-nerve](topic/signs.20in.20the.20dg-nerve.html) (2 messages, latest: May 05 2021 at 13:10)
 * [self-enrichment as terminal coalgebra](topic/self-enrichment.20as.20terminal.20coalgebra.html) (4 messages, latest: May 04 2021 at 16:45)
 * [Self-enrichment as terminal coalgebra](topic/Self-enrichment.20as.20terminal.20coalgebra.html) (2 messages, latest: May 03 2021 at 20:08)
 * [line graphs](topic/line.20graphs.html) (14 messages, latest: May 03 2021 at 16:21)
 * [elementary (∞,1)-topos](topic/elementary.20(.E2.88.9E.2C1)-topos.html) (8 messages, latest: May 03 2021 at 15:25)
-* [signs in the dg-nerve](topic/signs.20in.20the.20dg-nerve.html) (1 message, latest: May 02 2021 at 16:01)
 * [Principle of equivalence and strict 2-categories](topic/Principle.20of.20equivalence.20and.20strict.202-categories.html) (5 messages, latest: May 01 2021 at 23:45)
 * [Markov category question](topic/Markov.20category.20question.html) (10 messages, latest: May 01 2021 at 13:59)
 * [Grothendieck topologies](topic/Grothendieck.20topologies.html) (11 messages, latest: Apr 30 2021 at 15:53)
@@ -397,4 +398,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 05 2021 at 00:16 UTC</p>
+<hr><p>Last updated: May 06 2021 at 00:16 UTC</p>
