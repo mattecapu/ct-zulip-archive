@@ -118,5 +118,41 @@
         "id": 237576437,
         "sender_full_name": "Fawzi Hreiki",
         "timestamp": 1620253076
+    },
+    {
+        "content": "<p>From my perspective as a software engineer, the respect for mathematics in computing might have been severely supressed by the Internet Boom and Silicon Valley startup mania that began in the 90s. A lot of research started focusing on solving concrete problems: app usability, security, data compression, search engines, advertising, data analytics...  My uninformed guess is that research groups started applying for lots of grants to solve these immediate problems and the more theoretical stuff got left in the dust <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span> . And at the same time, I'd wager a greater proportion of college students started aiming for industry jobs instead of research, due to lucrative salaries fueled by a shortage of talented software engineers. There's no money in basic research <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span> </p>\n<p>Also, my CS degree didn't even teach type theory or lambda calculus, and nobody ever told me that programming languages could be defined mathematically. In industry, programming language design is essentially considered a \"creative art\"... often some Messiah comes along and pulls a new programming language out of nowhere, and explains that \"this language is better than its competitors\" because it adds features X and Y, and abolishes feature Z. No mention of mathematics. Most people in industry still see OCaml and Haskell (the \"categorical\" programming languages) as arcane and not useful for writing \"real apps\".</p>",
+        "id": 237613853,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1620284340
+    },
+    {
+        "content": "<p>All that said, I'm not really sure of the extent that industry influenced academia in the 90s-00s <span aria-label=\"innocent\" class=\"emoji emoji-1f607\" role=\"img\" title=\"innocent\">:innocent:</span> This is just a speculation.</p>",
+        "id": 237614734,
+        "sender_full_name": "Nick Smith",
+        "timestamp": 1620284837
+    },
+    {
+        "content": "<p>My feeling on why the \"heyday\" ended (or became less mainstream anyway) is that categorical techniques in PL were somewhat tied to domain theoretic denotational semantics. In the late 90s people wanted to prove that their type systems were \"sound\" and the options were either denotational models, like in Milner's \"well typed programs don't go wrong\", or the Wright and Felleisen progress+preservation technique. The nice things about progress+preservation were that it was pretty elementary, it seems to scale to anything you can write down a small step operational semantics for, and the notion of \"soundness\" falls out of your operational semantics, so you don't have to think too hard about what \"wrong\" means. It is difficult to imagine Benjamin Pierce's TAPL being as successful if it were written using domain theory.</p>\n<p>Of course, categorical techniques in PL never really went away. In the late 90s and early 2000s, Monads took off in Haskell, as did initial algebra semantics for datatypes (under the name \"two level types\"). Plotkin and Power started algebraic effects. Martin Hofmann used category theory to do semantics of type theory and implicit computational complexity. Hyland and Ong's and Abramsky's game semantics were explicitly formulated in the setting of categorical models of Linear Logic. Separation Logic started out from O'Hearn's investigations of Interference Controlled Algol using sheaves, and worked with Pym on categorical semantics of Bunched Implications. Some of this is documented in <a href=\"https://research.fb.com/wp-content/uploads/2016/11/from_categorical_logic_to_facebook_engineering.pdf\">From Categorical Logic to Facebook Engineering</a>.</p>\n<p>This is from a UK and specifically Edinburgh perspective though, I'm not sure what it looked like in the US or elsewhere.</p>",
+        "id": 237646558,
+        "sender_full_name": "Bob Atkey",
+        "timestamp": 1620302726
+    },
+    {
+        "content": "<p>In the US I think theoretical computer science focuses more on computational complexity, and a lot of researchers in that subject express disinterest in the semantic issues you just listed - disinterest verging sometimes on contempt.</p>",
+        "id": 237692704,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620320165
+    },
+    {
+        "content": "<p>For example, they might say \"I'd be interested if you could use these ideas to reduce our bounds on the complexity of some problem from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mo stretchy=\"false\">(</mo><msup><mi>N</mi><mn>3</mn></msup><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">O(N^3)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.064108em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">O</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mo stretchy=\"false\">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">O(N^2)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.064108em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">O</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141079999999999em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>.\"</p>",
+        "id": 237692806,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620320214
+    },
+    {
+        "content": "<p>Another US attitude, connected to the dotcom boom, is \"we're too busy writing software that's changing the world to worry about these arcane theoretical issues\".</p>",
+        "id": 237693094,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620320319
     }
 ]

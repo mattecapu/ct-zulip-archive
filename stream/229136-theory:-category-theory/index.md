@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [categorical differential equations](topic/categorical.20differential.20equations.html) (62 messages, latest: May 05 2021 at 23:42)
+* [categorical differential equations](topic/categorical.20differential.20equations.html) (88 messages, latest: May 06 2021 at 23:21)
 * [nominal substitution monoids](topic/nominal.20substitution.20monoids.html) (3 messages, latest: May 05 2021 at 15:34)
 * [doctrines](topic/doctrines.html) (87 messages, latest: May 05 2021 at 07:14)
 * [categorifying eigenvalues](topic/categorifying.20eigenvalues.html) (33 messages, latest: May 04 2021 at 15:13)
@@ -158,4 +158,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: May 06 2021 at 00:16 UTC</p>
+<hr><p>Last updated: May 07 2021 at 00:17 UTC</p>

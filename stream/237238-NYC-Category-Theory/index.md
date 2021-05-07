@@ -12,4 +12,4 @@ permalink: /stream/237238-NYC-Category-Theory/index.html
 * [Picturing Quantum Processes](topic/Picturing.20Quantum.20Processes.html) (9 messages, latest: May 11 2020 at 17:31)
 * [stream events](topic/stream.20events.html) (1 message, latest: May 03 2020 at 22:13)
 
-<hr><p>Last updated: May 06 2021 at 00:16 UTC</p>
+<hr><p>Last updated: May 07 2021 at 00:17 UTC</p>
