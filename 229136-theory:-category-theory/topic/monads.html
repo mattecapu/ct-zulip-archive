@@ -1,0 +1,174 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229136-theory:-category-theory/topic/monads.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html">monads</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+<head><link href="https://mattecapu.github.io/ct-zulip-archive/style.css" rel="stylesheet"></head>
+
+{% raw %}
+
+<a name="237785148"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237785148" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237785148">(May 07 2021 at 08:22)</a>:</h4>
+<p>I have just discovered that the <a href="https://ncatlab.org/nlab/show/monad">nLab page on monads</a> contains only the bicategorical definition, with only a vague allusions to monads in Cat. Yet all of the examples are of monads in CAT (notably of monads <em>on</em> Set rather than <em>in</em> Set, as the subsection heading misleading notes), and this is true in CT more generally in my experience. Is there any reason why a definition so inaccessible to students, and more importantly to computer scientists whose existing understanding of CT might be limited, is prioritised? Shouldn't the "monad in a bicategory" definition be in a later section, for example?<br>
+I figured I should get some input before going ahead and making such changes.<br>
+I <a href="https://nforum.ncatlab.org/discussion/1563/monad/?Focus=92158#Comment_92158">cross-posted to the nforum too</a>, before anyone asks <span aria-label="wink" class="emoji emoji-1f609" role="img" title="wink">:wink:</span></p>
+
+
+
+<a name="237790981"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237790981" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237790981">(May 07 2021 at 09:14)</a>:</h4>
+<p>Most likely, as with all nLab pages, this entry grew organically and whoever first wrote the definition was interested in the general definition at the time. I agree it would be an improvement to add the less general definition earlier in the page, if you have the time.</p>
+
+
+
+<a name="237808981"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237808981" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nicolas Blanco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237808981">(May 07 2021 at 11:50)</a>:</h4>
+<p>Another possibility would be to only have the basic definition of a monad (i.e. the one in Cat) there and to have the "monad in a bicategory" as a separated page (with a small section in monad introducing the idea and pointing to the "monad in bicategory" page)</p>
+
+
+
+<a name="237809561"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237809561" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237809561">(May 07 2021 at 11:54)</a>:</h4>
+<p>That sounds like a good idea, although I don't know how to add a page to the nlab</p>
+
+
+
+<a name="237810566"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237810566" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237810566">(May 07 2021 at 12:01)</a>:</h4>
+<p>My preference would just be to have another section. The definition of monad in a 2-category is identical to that in Cat specifically (in a bicategory you need to add in the structural operations, but even so this is not so different).</p>
+
+
+
+<a name="237810677"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237810677" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237810677">(May 07 2021 at 12:02)</a>:</h4>
+<p>I imagine this is why the more general definition was given originally. It's easy to read off the definition in Cat.</p>
+
+
+
+<a name="237815539"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237815539" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237815539">(May 07 2021 at 12:40)</a>:</h4>
+<p>My opinion is to keep it as one page. But if you want to add a new page, it's very easy. You edit the current page, add a link to the page that doesn't exist, then save it. The link will now be to a "Create xyz page" page.</p>
+
+
+
+<a name="237815794"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237815794" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237815794">(May 07 2021 at 12:43)</a>:</h4>
+<p>eg, in the monad page somewhere, write "[[monad in a bicategory]]". When you save it should show up like "monad in a bicategory?". Then you click the question mark.</p>
+
+
+
+<a name="237815906"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237815906" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237815906">(May 07 2021 at 12:44)</a>:</h4>
+<p><a href="https://ncatlab.org/nlab/new/monad+in+a+bicategory">https://ncatlab.org/nlab/new/monad+in+a+bicategory</a></p>
+
+
+
+<a name="237816079"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237816079" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237816079">(May 07 2021 at 12:45)</a>:</h4>
+<p>You should give a warning lol</p>
+
+
+
+<a name="237822358"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237822358" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Hu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237822358">(May 07 2021 at 13:29)</a>:</h4>
+<p>I also feel like the significance of monads in functional programming would've warranted at least a paragraph or so on the nLab page, but I'm not sure if it's considered off-topic</p>
+
+
+
+<a name="237822575"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237822575" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237822575">(May 07 2021 at 13:30)</a>:</h4>
+<p>I don't think it's off topic. If anybody wants an appeal to authority, Emily Riehl gives a remark on the significance of monads in functional programming in her book.</p>
+
+
+
+<a name="237823234"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237823234" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Hu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237823234">(May 07 2021 at 13:34)</a>:</h4>
+<p>I meant more that an explicit description of Reader, Writer, State etc. doesn't seem to fit the tone of the nLab</p>
+
+
+
+<a name="237823289"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237823289" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237823289">(May 07 2021 at 13:34)</a>:</h4>
+<p>Oh ok. I disagree, that should be in there.</p>
+
+
+
+<a name="237823343"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237823343" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237823343">(May 07 2021 at 13:35)</a>:</h4>
+<p>There already are articles for specific monads in CS, e.g. <a href="https://ncatlab.org/nlab/show/state+monad">https://ncatlab.org/nlab/show/state+monad</a> (which suggests it does match the tone).</p>
+
+
+
+<a name="237823424"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237823424" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237823424">(May 07 2021 at 13:35)</a>:</h4>
+<p>That simplifies this question then. Someone could just give a list of links to such pages.</p>
+
+
+
+<a name="237823641"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237823641" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Hu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237823641">(May 07 2021 at 13:37)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/monads/near/237823343">said</a>:</p>
+<blockquote>
+<p>There already are articles for specific monads in CS, e.g. <a href="https://ncatlab.org/nlab/show/state+monad">https://ncatlab.org/nlab/show/state+monad</a> (which suggests it does match the tone).</p>
+</blockquote>
+<p>Aha, I see they are peppered throughout the monad article too - like <span class="user-mention" data-user-id="275914">@Joe Moeller</span>  said, it might be worth putting a collated list in some subsection or something</p>
+
+
+
+<a name="237824289"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237824289" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237824289">(May 07 2021 at 13:41)</a>:</h4>
+<p>I want to emphasize, the tone of the nLab is just a weighted aggregate of the tones of the authors, weighted by how active they are. If you think something doesn't match the tone, but you do think it's valuable information related to the sorts of topics discussed, then you should put it in there.</p>
+
+
+
+<a name="237904385"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237904385" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237904385">(May 07 2021 at 23:24)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/monads/near/237809561">said</a>:</p>
+<blockquote>
+<p>That sounds like a good idea, although I don't know how to add a page to the nlab</p>
+</blockquote>
+<p>It's super-easy, it works like this on most wikis: you create a link to the would-be page on some other page - just go in and type something like</p>
+<p>This is a special case of a [[monad in a bicategory]]</p>
+
+
+
+<a name="237904436"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237904436" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237904436">(May 07 2021 at 23:25)</a>:</h4>
+<p>Then, click on that link and it will take you to the new, not-yet-written page.  Then write stuff in it.</p>
+
+
+
+<a name="237904538"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237904538" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237904538">(May 07 2021 at 23:26)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="280859">Nick Hu</span> <a href="#narrow/stream/229136-theory.3A-category.20theory/topic/monads/near/237823234">said</a>:</p>
+<blockquote>
+<p>I meant more that an explicit description of Reader, Writer, State etc. doesn't seem to fit the tone of the nLab</p>
+</blockquote>
+<p>It's fine if you put this information in some section (or page) that makes it clear you're discussing monads as used in programming - as opposed to how mathematicians think about monads.</p>
+
+
+
+<a name="237906177"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237906177" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237906177">(May 07 2021 at 23:48)</a>:</h4>
+<p>By the way: I think people on the nLab, including me, will feel a bit grumpy if "monad in a bicategory" gets made into a separate page, since for most of us that's what a monad <em>really is</em>.</p>
+
+
+
+<a name="237907277"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229136-theory%3A%20category%20theory/topic/monads/near/237907277" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory:-category-theory/topic/monads.html#237907277">(May 08 2021 at 00:02)</a>:</h4>
+<p>In addition, there are probably 10-50 links that will be broken if you move all material on monads in bicategories off the page "monad".</p>
+<p>So, I recommend discussing massive changes like that  [on the nForum]https://nforum.ncatlab.org/).  Just adding material, or sections, causes less trouble.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: May 08 2021 at 00:17 UTC</p>

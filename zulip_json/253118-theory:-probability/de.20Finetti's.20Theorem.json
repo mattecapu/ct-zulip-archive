@@ -1,0 +1,50 @@
+[
+    {
+        "content": "<p><a href=\"https://en.wikipedia.org/wiki/De_Finetti's_theorem\">De Finetti's Theorem</a> is a classical result in probability theory. <span class=\"user-mention\" data-user-id=\"302756\">@Tomáš Gonda</span>, <span class=\"user-mention\" data-user-id=\"275989\">@Paolo Perrone</span> and myself have <a href=\"https://arxiv.org/abs/2105.02639\">now proven it</a> in completely categorical terms: as it turns out, one only needs a Markov category that has conditionals, countable Kolmogorov products and is the Kleisli category of a monad in a way that respects almost sure equality.</p>\n<p>The Kleisli category of the Giry monad on standard Borel measurable spaces satisfies these assumptions, and we therefore recover the usual de Finetti Theorem in this case. Despite having a large supply of Markov categories in general, we do not know of <em>any</em> nontrivial Markov category outside of measure-theoretic probability that would satisfy the three relevant assumptions! So unfortunately we don't get any new de Finetti theorems yet.</p>",
+        "id": 237790847,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1620378801
+    },
+    {
+        "content": "<p>Can you at least loosen the conditions in some directions to get weakenings of the theorem?</p>",
+        "id": 237798614,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1620382879
+    },
+    {
+        "content": "<p>Good question! I can't think of any weakening that would still preserve the spirit of the theorem, but perhaps the others can say more.</p>\n<p>Some of our lemmas though do hold more generally, and we do expect them to be more generally useful, in particular Lemma 5.2. But we pretty much use the existence of conditionals throughout, and this seems to be the \"bottleneck\": most Markov categories that I can think of do not have conditionals, and assuming conditionals already seems to get us quite close to measure-theoretic probability. This is an intuition so far, but it would be nice to make this statement precise at some point by providing a categorical characterization theorem of measure-theoretic probability.</p>",
+        "id": 237801806,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1620384636
+    },
+    {
+        "content": "<p>I don't understand this stuff very well (hopefully this paper will help!), but an obvious question, just from looking at the theorem itself, is what happens if you remove the restriction to finite permutations? Can you generalize your Kolmogorov product definition to other families of subsets (maybe an ultrafilter?)?</p>",
+        "id": 237852714,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1620405446
+    },
+    {
+        "content": "<p>Alternatively/additionally, I would be interested in hearing more about why the Kolmogorov product is defined in the way that it is? Is there something going on here with the  cofinite topology?</p>",
+        "id": 237852967,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1620405562
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"278008\">Spencer Breiner</span> <a href=\"#narrow/stream/253118-theory.3A-probability/topic/de.20Finetti's.20Theorem/near/237852714\">said</a>:</p>\n<blockquote>\n<p><del>(maybe an ultrafilter?)</del></p>\n</blockquote>\n<p>That doesn't make sense. How about the closed sets for a finer topology?</p>",
+        "id": 237853860,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1620405938
+    },
+    {
+        "content": "<p>I suppose this would be a strengthening of the theorem, so the question is really whether those extra \"projections\" would give you something more.</p>",
+        "id": 237854467,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1620406192
+    },
+    {
+        "content": "<p>I'm not sure what generalization of Kolmogorov products you have in mind, in the sense of where the closed sets come in. Could you spell that out a bit? What would its universal property be?</p>\n<p>The definition of Kolmogorov products is based on the <a href=\"https://en.wikipedia.org/wiki/Kolmogorov_extension_theorem\">Kolmogorov extension theorem</a>, which states that a probability measure is uniquely determined by its finite marginals; and conversely, every compatible family of finite marginals arises in this way. So it very much has the flavour of a sheaf condition. There's a more detailed discussion of Kolmogorov products and why they're defined that way in an <a href=\"https://arxiv.org/abs/1912.02769\">earlier paper</a> that I wrote together with <span class=\"user-mention\" data-user-id=\"276165\">@Eigil Rischel</span>.</p>",
+        "id": 237861034,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1620408681
+    }
+]

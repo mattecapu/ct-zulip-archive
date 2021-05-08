@@ -9,11 +9,12 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [monads](topic/monads.html) (23 messages, latest: May 08 2021 at 00:02)
+* [categorification of the real numbers](topic/categorification.20of.20the.20real.20numbers.html) (67 messages, latest: May 07 2021 at 17:39)
 * [categorical differential equations](topic/categorical.20differential.20equations.html) (88 messages, latest: May 06 2021 at 23:21)
 * [nominal substitution monoids](topic/nominal.20substitution.20monoids.html) (3 messages, latest: May 05 2021 at 15:34)
 * [doctrines](topic/doctrines.html) (87 messages, latest: May 05 2021 at 07:14)
 * [categorifying eigenvalues](topic/categorifying.20eigenvalues.html) (33 messages, latest: May 04 2021 at 15:13)
-* [categorification of the real numbers](topic/categorification.20of.20the.20real.20numbers.html) (61 messages, latest: May 03 2021 at 13:41)
 * [Categorifying eigenvalues](topic/Categorifying.20eigenvalues.html) (29 messages, latest: May 02 2021 at 22:04)
 * [morphism of modules over 2-rigs](topic/morphism.20of.20modules.20over.202-rigs.html) (19 messages, latest: Apr 30 2021 at 18:37)
 * [distributivity of limits and colimits](topic/distributivity.20of.20limits.20and.20colimits.html) (201 messages, latest: Apr 30 2021 at 16:15)
@@ -158,4 +159,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: May 07 2021 at 00:17 UTC</p>
+<hr><p>Last updated: May 08 2021 at 00:17 UTC</p>

@@ -1,0 +1,140 @@
+[
+    {
+        "content": "<p>I have just discovered that the <a href=\"https://ncatlab.org/nlab/show/monad\">nLab page on monads</a> contains only the bicategorical definition, with only a vague allusions to monads in Cat. Yet all of the examples are of monads in CAT (notably of monads <em>on</em> Set rather than <em>in</em> Set, as the subsection heading misleading notes), and this is true in CT more generally in my experience. Is there any reason why a definition so inaccessible to students, and more importantly to computer scientists whose existing understanding of CT might be limited, is prioritised? Shouldn't the \"monad in a bicategory\" definition be in a later section, for example?<br>\nI figured I should get some input before going ahead and making such changes.<br>\nI <a href=\"https://nforum.ncatlab.org/discussion/1563/monad/?Focus=92158#Comment_92158\">cross-posted to the nforum too</a>, before anyone asks <span aria-label=\"wink\" class=\"emoji emoji-1f609\" role=\"img\" title=\"wink\">:wink:</span></p>",
+        "id": 237785148,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1620375763
+    },
+    {
+        "content": "<p>Most likely, as with all nLab pages, this entry grew organically and whoever first wrote the definition was interested in the general definition at the time. I agree it would be an improvement to add the less general definition earlier in the page, if you have the time.</p>",
+        "id": 237790981,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1620378873
+    },
+    {
+        "content": "<p>Another possibility would be to only have the basic definition of a monad (i.e. the one in Cat) there and to have the \"monad in a bicategory\" as a separated page (with a small section in monad introducing the idea and pointing to the \"monad in bicategory\" page)</p>",
+        "id": 237808981,
+        "sender_full_name": "Nicolas Blanco",
+        "timestamp": 1620388205
+    },
+    {
+        "content": "<p>That sounds like a good idea, although I don't know how to add a page to the nlab</p>",
+        "id": 237809561,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1620388485
+    },
+    {
+        "content": "<p>My preference would just be to have another section. The definition of monad in a 2-category is identical to that in Cat specifically (in a bicategory you need to add in the structural operations, but even so this is not so different).</p>",
+        "id": 237810566,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1620388916
+    },
+    {
+        "content": "<p>I imagine this is why the more general definition was given originally. It's easy to read off the definition in Cat.</p>",
+        "id": 237810677,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1620388960
+    },
+    {
+        "content": "<p>My opinion is to keep it as one page. But if you want to add a new page, it's very easy. You edit the current page, add a link to the page that doesn't exist, then save it. The link will now be to a \"Create xyz page\" page.</p>",
+        "id": 237815539,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1620391251
+    },
+    {
+        "content": "<p>eg, in the monad page somewhere, write \"[[monad in a bicategory]]\". When you save it should show up like \"monad in a bicategory?\". Then you click the question mark.</p>",
+        "id": 237815794,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1620391403
+    },
+    {
+        "content": "<p><a href=\"https://ncatlab.org/nlab/new/monad+in+a+bicategory\">https://ncatlab.org/nlab/new/monad+in+a+bicategory</a></p>",
+        "id": 237815906,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1620391453
+    },
+    {
+        "content": "<p>You should give a warning lol</p>",
+        "id": 237816079,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1620391540
+    },
+    {
+        "content": "<p>I also feel like the significance of monads in functional programming would've warranted at least a paragraph or so on the nLab page, but I'm not sure if it's considered off-topic</p>",
+        "id": 237822358,
+        "sender_full_name": "Nick Hu",
+        "timestamp": 1620394148
+    },
+    {
+        "content": "<p>I don't think it's off topic. If anybody wants an appeal to authority, Emily Riehl gives a remark on the significance of monads in functional programming in her book.</p>",
+        "id": 237822575,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1620394221
+    },
+    {
+        "content": "<p>I meant more that an explicit description of Reader, Writer, State etc. doesn't seem to fit the tone of the nLab</p>",
+        "id": 237823234,
+        "sender_full_name": "Nick Hu",
+        "timestamp": 1620394463
+    },
+    {
+        "content": "<p>Oh ok. I disagree, that should be in there.</p>",
+        "id": 237823289,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1620394492
+    },
+    {
+        "content": "<p>There already are articles for specific monads in CS, e.g. <a href=\"https://ncatlab.org/nlab/show/state+monad\">https://ncatlab.org/nlab/show/state+monad</a> (which suggests it does match the tone).</p>",
+        "id": 237823343,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1620394511
+    },
+    {
+        "content": "<p>That simplifies this question then. Someone could just give a list of links to such pages.</p>",
+        "id": 237823424,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1620394543
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/monads/near/237823343\">said</a>:</p>\n<blockquote>\n<p>There already are articles for specific monads in CS, e.g. <a href=\"https://ncatlab.org/nlab/show/state+monad\">https://ncatlab.org/nlab/show/state+monad</a> (which suggests it does match the tone).</p>\n</blockquote>\n<p>Aha, I see they are peppered throughout the monad article too - like <span class=\"user-mention\" data-user-id=\"275914\">@Joe Moeller</span>  said, it might be worth putting a collated list in some subsection or something</p>",
+        "id": 237823641,
+        "sender_full_name": "Nick Hu",
+        "timestamp": 1620394631
+    },
+    {
+        "content": "<p>I want to emphasize, the tone of the nLab is just a weighted aggregate of the tones of the authors, weighted by how active they are. If you think something doesn't match the tone, but you do think it's valuable information related to the sorts of topics discussed, then you should put it in there.</p>",
+        "id": 237824289,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1620394879
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/monads/near/237809561\">said</a>:</p>\n<blockquote>\n<p>That sounds like a good idea, although I don't know how to add a page to the nlab</p>\n</blockquote>\n<p>It's super-easy, it works like this on most wikis: you create a link to the would-be page on some other page - just go in and type something like</p>\n<p>This is a special case of a [[monad in a bicategory]]</p>",
+        "id": 237904385,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620429890
+    },
+    {
+        "content": "<p>Then, click on that link and it will take you to the new, not-yet-written page.  Then write stuff in it.</p>",
+        "id": 237904436,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620429928
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"280859\">Nick Hu</span> <a href=\"#narrow/stream/229136-theory.3A-category.20theory/topic/monads/near/237823234\">said</a>:</p>\n<blockquote>\n<p>I meant more that an explicit description of Reader, Writer, State etc. doesn't seem to fit the tone of the nLab</p>\n</blockquote>\n<p>It's fine if you put this information in some section (or page) that makes it clear you're discussing monads as used in programming - as opposed to how mathematicians think about monads.</p>",
+        "id": 237904538,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620430006
+    },
+    {
+        "content": "<p>By the way: I think people on the nLab, including me, will feel a bit grumpy if \"monad in a bicategory\" gets made into a separate page, since for most of us that's what a monad <em>really is</em>.</p>",
+        "id": 237906177,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620431326
+    },
+    {
+        "content": "<p>In addition, there are probably 10-50 links that will be broken if you move all material on monads in bicategories off the page \"monad\".</p>\n<p>So, I recommend discussing massive changes like that  [on the nForum]https://nforum.ncatlab.org/).  Just adding material, or sections, causes less trouble.</p>",
+        "id": 237907277,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620432147
+    }
+]
