@@ -9,7 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [monads](topic/monads.html) (23 messages, latest: May 08 2021 at 00:02)
+* [equivalences of presheaf categories](topic/equivalences.20of.20presheaf.20categories.html) (33 messages, latest: May 08 2021 at 23:27)
+* [monads](topic/monads.html) (42 messages, latest: May 08 2021 at 19:54)
 * [categorification of the real numbers](topic/categorification.20of.20the.20real.20numbers.html) (67 messages, latest: May 07 2021 at 17:39)
 * [categorical differential equations](topic/categorical.20differential.20equations.html) (88 messages, latest: May 06 2021 at 23:21)
 * [nominal substitution monoids](topic/nominal.20substitution.20monoids.html) (3 messages, latest: May 05 2021 at 15:34)
@@ -159,4 +160,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: May 08 2021 at 00:17 UTC</p>
+<hr><p>Last updated: May 09 2021 at 00:19 UTC</p>

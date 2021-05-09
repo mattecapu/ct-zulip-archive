@@ -9,10 +9,10 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [principle of equivalence and strict 2-categories](topic/principle.20of.20equivalence.20and.20strict.202-categories.html) (44 messages, latest: May 07 2021 at 21:12)
-* [L^p as adjoint](topic/L.5Ep.20as.20adjoint.html) (10 messages, latest: May 07 2021 at 19:56)
+* [principle of equivalence and strict 2-categories](topic/principle.20of.20equivalence.20and.20strict.202-categories.html) (50 messages, latest: May 08 2021 at 22:47)
+* [exterior product and tensor of chain complexes](topic/exterior.20product.20and.20tensor.20of.20chain.20complexes.html) (83 messages, latest: May 08 2021 at 22:39)
+* [L^p as adjoint](topic/L.5Ep.20as.20adjoint.html) (18 messages, latest: May 08 2021 at 18:40)
 * [All about 2-rigs: should they be called 2-rigs?](topic/All.20about.202-rigs.3A.20should.20they.20be.20called.202-rigs.3F.html) (25 messages, latest: May 07 2021 at 04:03)
-* [exterior product and tensor of chain complexes](topic/exterior.20product.20and.20tensor.20of.20chain.20complexes.html) (50 messages, latest: May 06 2021 at 18:31)
 * [On the relation between twisted and untwisted arrows](topic/On.20the.20relation.20between.20twisted.20and.20untwisted.20arrows.html) (1 message, latest: May 06 2021 at 16:06)
 * [signs in the dg-nerve](topic/signs.20in.20the.20dg-nerve.html) (2 messages, latest: May 05 2021 at 13:10)
 * [self-enrichment as terminal coalgebra](topic/self-enrichment.20as.20terminal.20coalgebra.html) (4 messages, latest: May 04 2021 at 16:45)
@@ -399,4 +399,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 08 2021 at 00:17 UTC</p>
+<hr><p>Last updated: May 09 2021 at 00:19 UTC</p>

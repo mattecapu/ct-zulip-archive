@@ -12,9 +12,9 @@ permalink: /index.html
 
 * [general](stream/229111-general/index.html) (195 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (149 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (150 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (103 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (104 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (86 topics)
 
@@ -52,11 +52,11 @@ permalink: /index.html
 
 * [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
 
+* [practice: communication](stream/233322-practice:-communication/index.html) (15 topics)
+
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
 
 * [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (14 topics)
-
-* [practice: communication](stream/233322-practice:-communication/index.html) (14 topics)
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (14 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: May 08 2021 at 00:17 UTC</p>
+<hr><p>Last updated: May 09 2021 at 00:19 UTC</p>

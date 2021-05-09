@@ -9,6 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
+* [Subgame perfect equilibrium for open games](topic/Subgame.20perfect.20equilibrium.20for.20open.20games.html) (7 messages, latest: May 08 2021 at 23:12)
 * [emergent behaviour workshop](topic/emergent.20behaviour.20workshop.html) (24 messages, latest: May 07 2021 at 14:54)
 * [emergent behaviour as laxity](topic/emergent.20behaviour.20as.20laxity.html) (263 messages, latest: May 06 2021 at 16:15)
 * [compositional thermodynamics](topic/compositional.20thermodynamics.html) (144 messages, latest: May 04 2021 at 14:30)
@@ -113,4 +114,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: May 08 2021 at 00:17 UTC</p>
+<hr><p>Last updated: May 09 2021 at 00:19 UTC</p>
