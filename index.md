@@ -14,7 +14,7 @@ permalink: /index.html
 
 * [theory: category theory](stream/229136-theory:-category-theory/index.html) (151 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (104 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (105 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (86 topics)
 
@@ -38,7 +38,7 @@ permalink: /index.html
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (24 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (22 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (23 topics)
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: May 10 2021 at 00:17 UTC</p>
+<hr><p>Last updated: May 11 2021 at 00:17 UTC</p>

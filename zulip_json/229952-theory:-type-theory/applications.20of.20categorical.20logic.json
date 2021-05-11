@@ -196,5 +196,77 @@
         "id": 238044038,
         "sender_full_name": "John Baez",
         "timestamp": 1620575516
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276885\">Kenji Maillard</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/applications.20of.20categorical.20logic/near/238029600\">said</a>:</p>\n<blockquote>\n<p>I'm actually quite surprised by the claim that it is outdated (hence the reaction). Working a lot with the Coq Proof assistant I see important bits of domain theory underlying quite a lot of large development in computer science: interaction trees are a clever implementation of ideas stemming from domain theory, they are organized to work in hand with the paco library which reuses plenty of domain theory; the Iris framework (upon which large developments such as rustbelt flourish) is also based at its very foundation on domain theory; more generally, a lot of formalization of a non-terminating languages have a small domain theory library lurking around. On the theoretical side I think <span class=\"user-mention silent\" data-user-id=\"355959\">Tom de Jong</span> has some interesting results about domain theory in univalent foundations. On the more practical side, there have been a serie of paper by <span class=\"user-mention silent\" data-user-id=\"276642\">Max New</span> and his coauthors relating domain theory with gradual typing.</p>\n<p>So maybe I'm missing to see what is the \"classical\" bit that <span class=\"user-mention silent\" data-user-id=\"276047\">Alex Gryzlov</span> mentions, but domain theory seems to me to be still quite present in modern CS. What is however true is that I never really had any in depth lectures on domain theory (tackling its technical part in particular) during my studies in France this last decade.</p>\n</blockquote>\n<p>You bring up Iris, but this is actually the perfect example of something that is using a domain theory that is <em>not</em> classic domain theory --- to answer your question as to what the \"classic\" part means, I would suggest that people like me are using it to distinguish from guarded domain theory, which has very different properties.</p>\n<p>To me, domain theory is immortal --- no matter what we do, we are going to keep coming back to ideas that were formulated as part of the program of domain theory. I am utterly convinced of this. But it is one thing to say this, and another to treat the present-day inheritors of domain theory as if they are the same as classic domain theory.</p>",
+        "id": 238080682,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1620615533
+    },
+    {
+        "content": "<p>Domain theory in the sense of Dana's agenda is not, I would say, one of those fields that succeeded in its goals and has no open questions. My impression is that there are <em>many</em> questions and they are way too hard to solve without changing some definitions.  Dana's own conclusion was that domain theory had to be re-done in order to make progress. Roughly what happened is that domain theory got increasingly arcane, so Scott, Hyland, as well as a number of other excellent scientists attempted to tame the situation by developing a topos-theoretic abstraction called synthetic domain theory. Synthetic domain theory is actually an excellent idea that contains many very very deep insights, but it truly never caught on (not even a little bit!).</p>\n<p>Recently these things are coming back! But I don't think that the classic CPOs, etc. will ever come back in full force, and I'm ok with that.</p>\n<p>About a decade ago, Birkedal, Møgelberg, Schwinghammer and Støvring introduced what they called synthetic <em>guarded</em> domain theory (SGDT). This has several very important technical differences from the old domain theory (both analytic and synthetic); in the guarded domain theory, one does not work with true fixed points but with 'guarded' fixed points where the recursive part is underneath a certain modality. In return, you have a general fixed point combinator that works on _any_ object of the topos, in contrast to synthetic domain theory where you can solve fixed points only on certain objects that have some cool properties relative to the classifier of semidecidable propositions. While computer scientists have been reluctant to actually phrase their work in the language of SGDT (they are more comfortable working with natural numbers by hand), it would not be an exaggeration to say that an immense proportion of the last 10 years of work in programming languages is using ideas from SGDT.</p>\n<p>And this month, a <a href=\"https://arxiv.org/abs/2105.02156\">new paper</a> came out on ArXiv working in the style of classic synthetic domain theory in a really cool way, which I was delighted to see.</p>",
+        "id": 238081162,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1620616020
+    },
+    {
+        "content": "<p>To add a bit to Jon's great answer, I think in practice the two main stumbling blocks for classic domain theory were the problem of full abstraction (i.e., finding semantics without \"junk\" in it) which was already an issue for PCF (probably the simplest possible functional PL) and the ever-increasing need to model concurrent features (AFAIK no one has figured out how to properly work with powerdomains for that).</p>",
+        "id": 238126829,
+        "sender_full_name": "Alex Gryzlov",
+        "timestamp": 1620647347
+    },
+    {
+        "content": "<p>Ironically, the new paper I linked to pertains to full abstraction for PCF...</p>\n<p>But more broadly speaking I think that a big problem with the old school work on denotational semantics was methodological: at the time (and now!), people were trying to understand what kinds of equational reasoning are justified with regard to actual programs, and many people felt that one way to come up with the set of equations was to interpret into a domain model, and then check what equations hold. So long as your model is non-trivial, this method can be used to show that two programs behave the same way when you run them in any execution context (that they are \"observationally equivalent\"): if they are interpreted to the same object in the model, there can be no definable program context that distinguishes them, because that too would have an interpretation in the model. On the other hand, absent full abstraction, this approach cannot be used to find _all_ the observational equivalences --- indeed, in most cases the domain interpretation will contain contexts that lie outside the image of the interpretation that are able to make additional distinctions, meaning that two programs might behave the same but not be identified.</p>\n<p>I think this was considered a big problem at the time because people wanted to think of the domain models as definitions of the behavior of a programming language, and people were very concerned that the obvious models did not model all observational equivalences. So this set off an immense amount of work to study various restrictions of the semantic domains and their morphisms, in order to investigate questions like full abstraction.</p>\n<p>While a lot of great stuff came out of that process (like Berry's stable domains), I personally feel that some of the motivations were a bit misguided. I think of the models, including domain models, as tools that can be used to prove specific theorems, and I personally have use for <em>many</em> different such models; therefore it is strange, from my viewpoint, to want to have a single model that captures every observational equivalence. Moreover, because observational equivalences in a programming language will not be preserved by adding new features to the language, it is really totally bizarre from my point of view to want observational equivalence to define the equational theory of a language --- because this would be a totally degenerate kind of \"theory\" that cannot be extended in a non-trivial way! The category of such \"theories\" would be very pitiful indeed...</p>\n<p>From this perspective, it is much easier to make peace with the lack of full abstraction and proceed with semantics in a way that is more inspired by categorical algebra than by the (to my view) very old-fashioned style of thinking about \"intended semantics\", etc.</p>",
+        "id": 238134239,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1620650957
+    },
+    {
+        "content": "<p>Hear hear!!</p>",
+        "id": 238152285,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620657349
+    },
+    {
+        "content": "<p>Thanks everyone for your insightful replies!</p>",
+        "id": 238173055,
+        "sender_full_name": "Olli",
+        "timestamp": 1620664741
+    },
+    {
+        "content": "<p>I don't have the background to contribute here, but <span class=\"user-mention\" data-user-id=\"276048\">@Mike Stay</span> and I just wrote <a href=\"/user_uploads/21317/AQgBUZax4zJwJf1Jpy8bstpR/Native-Type-Theory.pdf\">Native-Type-Theory.pdf</a>, a method to enhance languages using the internal logic of their presheaf toposes.</p>\n<p>This is probably one of the simplest possible applications of categorical logic; we are surprised to find that it has not yet really been explored and implemented.</p>",
+        "id": 238193914,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1620672973
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275899\">@Christian Williams</span> I liked the part of your paper that involved including rewrite rules in the base theory, and generating some kind of program logic from this. I think this is indeed a new and under-explored perspective...</p>\n<p>In general the idea of using a category of presheaves to enhance a language has seen quite a bit of application in type theory, but very little so far in PL until your draft and my recent draft with Bob Harper (\"Logical Relations As Types\"). It's a good idea, and I hope that more people will start applying it.</p>",
+        "id": 238211595,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1620680594
+    },
+    {
+        "content": "<p>Thanks! Yeah, I've been very happy to realize that with finite limits, we can internalize most common forms of structural operational semantics.</p>",
+        "id": 238218450,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1620683974
+    },
+    {
+        "content": "<p>You probably saw the application toward the end, where we construct the type of bisimilar processes. Though apparently this type is not decidable, I'm sure there are benefits to expressing it as a type in this way, e.g. reasoning up to bisimilarity.</p>",
+        "id": 238218848,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1620684172
+    },
+    {
+        "content": "<p>I haven't yet understood your Logical Relations as Types; it has a lot of CS terminology and intuitions that I am not yet familiar with.</p>",
+        "id": 238219390,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1620684467
+    },
+    {
+        "content": "<p>By the way, Bob and I just finished a pretty substantial revision of our paper, now uploaded here: <a href=\"http://www.jonmsterling.com/pdfs/lrat.pdf\">http://www.jonmsterling.com/pdfs/lrat.pdf</a></p>\n<p>The main changes are revamping the discussion of related work, and providing more background and explicit computations in the section on topoi. And fixing zillions of typos.</p>",
+        "id": 238227105,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1620689338
     }
 ]

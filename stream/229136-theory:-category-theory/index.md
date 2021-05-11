@@ -9,7 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [equivalences of presheaf categories](topic/equivalences.20of.20presheaf.20categories.html) (48 messages, latest: May 09 2021 at 20:54)
+* [cartesian vs Cartesian](topic/cartesian.20vs.20Cartesian.html) (37 messages, latest: May 10 2021 at 17:28)
+* [equivalences of presheaf categories](topic/equivalences.20of.20presheaf.20categories.html) (51 messages, latest: May 10 2021 at 07:10)
 * [twisting cochains](topic/twisting.20cochains.html) (5 messages, latest: May 09 2021 at 15:56)
 * [monads](topic/monads.html) (42 messages, latest: May 08 2021 at 19:54)
 * [categorification of the real numbers](topic/categorification.20of.20the.20real.20numbers.html) (67 messages, latest: May 07 2021 at 17:39)
@@ -21,7 +22,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [morphism of modules over 2-rigs](topic/morphism.20of.20modules.20over.202-rigs.html) (19 messages, latest: Apr 30 2021 at 18:37)
 * [distributivity of limits and colimits](topic/distributivity.20of.20limits.20and.20colimits.html) (201 messages, latest: Apr 30 2021 at 16:15)
 * [Looking for references on enriched bicategories](topic/Looking.20for.20references.20on.20enriched.20bicategories.html) (11 messages, latest: Apr 30 2021 at 15:06)
-* [cartesian vs Cartesian](topic/cartesian.20vs.20Cartesian.html) (35 messages, latest: Apr 28 2021 at 19:20)
 * [braided monoidal categories as tricategories](topic/braided.20monoidal.20categories.20as.20tricategories.html) (3 messages, latest: Apr 28 2021 at 11:33)
 * [representability of multirepresentable functors](topic/representability.20of.20multirepresentable.20functors.html) (11 messages, latest: Apr 25 2021 at 15:24)
 * [tensor product of EM-algebras](topic/tensor.20product.20of.20EM-algebras.html) (42 messages, latest: Apr 20 2021 at 21:25)
@@ -161,4 +161,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: May 10 2021 at 00:17 UTC</p>
+<hr><p>Last updated: May 11 2021 at 00:17 UTC</p>
