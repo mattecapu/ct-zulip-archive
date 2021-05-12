@@ -688,5 +688,107 @@
         "id": 238228197,
         "sender_full_name": "Jonathan Sterling",
         "timestamp": 1620690042
+    },
+    {
+        "content": "<p>we were using \"higher-order algebraic theories\", developed by <span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> and Dylan McDermott generalizing Fiore and Mahmoud's <a href=\"https://arxiv.org/abs/1308.5409\">second-order algebraic theories</a>.</p>",
+        "id": 238233516,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1620693082
+    },
+    {
+        "content": "<p>these are very nice because they correspond to monads, and the strength of these monads with respect to \"substitution monoidal structure\" provides a formal categorical method of variable binding and capture-avoiding substitution. <a href=\"https://www.cl.cam.ac.uk/~mpf23/talks/ICMS2007.pdf\">Fiore slides</a></p>",
+        "id": 238233681,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1620693228
+    },
+    {
+        "content": "<p>but we were not using these ideas in the native types construction, so we decided to simplify and work with CCCs.</p>",
+        "id": 238233752,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1620693255
+    },
+    {
+        "content": "<p>OK cool, thanks! Fiore &amp; Mahmoud's stuff, and what came after, is very very elegant --- but I too have found in practice that it ends up being easiest for my intended applications to just work with either CCCs or LCCCs.</p>",
+        "id": 238236894,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1620695867
+    },
+    {
+        "content": "<p>Does anyone understand the link between this native type theory approach and gluing? I'm kind of asking while <span class=\"user-mention\" data-user-id=\"297784\">@Jonathan Sterling</span> is around in the hope that he would <span aria-label=\"innocent\" class=\"emoji emoji-1f607\" role=\"img\" title=\"innocent\">:innocent:</span> . Indeed, gluing looks a bit like a restriction of native type theory to closed terms, and predicates with a fixed arity. So, e.g., is there a sense in which native type theory embeds most forms of gluing? Or, for a more negative question, does native type theory make as much computational sense as gluing does (through realisability)?</p>",
+        "id": 238256054,
+        "sender_full_name": "Tom Hirschowitz",
+        "timestamp": 1620712857
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"383799\">Tom Hirschowitz</span> <a href=\"#narrow/stream/258900-practice.3A-our.20papers/topic/Native.20Type.20Theory/near/238256054\">said</a>:</p>\n<blockquote>\n<p>Does anyone understand the link between this native type theory approach and gluing? I'm kind of asking while <span class=\"user-mention silent\" data-user-id=\"297784\">Jonathan Sterling</span> is around in the hope that he would <span aria-label=\"innocent\" class=\"emoji emoji-1f607\" role=\"img\" title=\"innocent\">:innocent:</span> . Indeed, gluing looks a bit like a restriction of native type theory to closed terms, and predicates with a fixed arity. So, e.g., is there a sense in which native type theory embeds most forms of gluing? Or, for a more negative question, does native type theory make as much computational sense as gluing does (through realisability)?</p>\n</blockquote>\n<p>I would say that these are diferent constructions, but the topos of presheaves on a language often serves as an <em>input</em> to a gluing construction --- for instance, this is how we proved normalization for cubical type theory. My idea from a few years ago, which thankfully panned out, was that we could obliterate all the complexities of Tait-computability arguments for type theories and programming languages by first turning a PL into a topos (whose internal language Christian is calling its \"native type theory\"), and then gluing this topos onto another topos that models whatever semantic thing I want to prove.</p>\n<p>Taking presheaves on your syntactic category gives you a type theory that extends your existing language and speaks only of notions that make sense for open terms and are closed under substitution. But many statements <em>about</em> a language are not of this form: they may be statements about closed terms, or they may be statements about open terms but stable only under some substitutions, etc...</p>\n<p>In this case you can consider a functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">D</mi><mo>→</mo><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{D}\\to \\mathcal{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.02778em;\">D</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span> into the syntactic category where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">D</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{D}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> captures the shape of the contexts and substitutions you are going to be invariant under, and then take presheaves on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">D</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{D}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.02778em;\">D</span></span></span></span>. The result may not embed your language anymore (indeed, I guess it does not embed it unless <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">D</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{D}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> is a dense subcategory of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span>), but it will be a place where various important notions <em>about</em> your language can be stated. But now you need to connect these things to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span>! And that is what Artin gluing is for. In particular, you can embed your language into the Artin gluing of the inverse image to the induced essential morphism of topoi <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover accent=\"true\"><mi mathvariant=\"script\">C</mi><mo stretchy=\"true\">undefined</mo></mover><mo>→</mo><mover accent=\"true\"><mi mathvariant=\"script\">D</mi><mo stretchy=\"true\">undefined</mo></mover></mrow><annotation encoding=\"application/x-tex\">\\widehat{\\mathcal{C}}\\to\\widehat{\\mathcal{D}}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.92333em;vertical-align:0em;\"></span><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.92333em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span><span class=\"svg-align\" style=\"width:calc(100% - 0.16668em);margin-left:0.16668em;top:-3.6833299999999998em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span style=\"height:0.24em;\"><svg width='100%' height='0.24em' viewBox='0 0 1062 239' preserveAspectRatio='none'><path d='M529 0h5l519 115c5 1 9 5 9 10 0 1-1 2-1 3l-4 22\nc-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z'/></svg></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.92333em;vertical-align:0em;\"></span><span class=\"mord accent\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.92333em;\"><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.02778em;\">D</span></span><span class=\"svg-align\" style=\"width:calc(100% - 0.11112em);margin-left:0.11112em;top:-3.6833299999999998em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span style=\"height:0.24em;\"><svg width='100%' height='0.24em' viewBox='0 0 1062 239' preserveAspectRatio='none'><path d='M529 0h5l519 115c5 1 9 5 9 10 0 1-1 2-1 3l-4 22\nc-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z'/></svg></span></span></span></span></span></span></span></span></span>. This is what Johnstone calls the \"closed mapping cylinder\"; it is important to note that this is not usually an instance of sconing in the geometrical sense except in a few special cases, so it is unfortunate that this terminology has become so popular.</p>\n<p>For intuitions, if you are studying closed terms, then <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">D</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{D}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> is the terminal category and the structure map sends <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∗</mo></mrow><annotation encoding=\"application/x-tex\">*</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.46528em;vertical-align:0em;\"></span><span class=\"mord\">∗</span></span></span></span> to the empty context; in this case, the glued topos gives you an internal language that has the original \"native type theory\" as a <em>open</em>-modal subuniverse, and set theory as a complemetnary <em>closed</em>-modal subuniverse. On the other hand, if you are studying open terms up to renamings (but not substitutions), then <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">D</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{D}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> is a category of formal contexts and renamings and the structure map decodes these into actual contexts and actual substitutions.</p>",
+        "id": 238256589,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1620713279
+    },
+    {
+        "content": "<p>The pertinent part of our paper on <a href=\"http://www.jonmsterling.com/pdfs/cubical-norm.pdf\">normalization for cubical type theory</a> is Section IV (\"The Computability Topos\"). Unfortunately the exposition is very terse because of LICS length restrictions.</p>\n<p>My thesis will be coming out soon, and there will be a much more leisurely introduction to these ideas.</p>",
+        "id": 238257040,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1620713691
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"297784\">@Jonathan Sterling</span> Thanks, this is very helpful! Looking forward to your thesis then. (I watched your talk at Augusta, which was also very helpful, but not quite enough for me to fully get how things work.)</p>",
+        "id": 238259466,
+        "sender_full_name": "Tom Hirschowitz",
+        "timestamp": 1620715676
+    },
+    {
+        "content": "<p>I couldn't resist and had a look at Section IV. It's actually quite readable, at least superficially. Congratulations for making such difficult material accessible!  </p>\n<p>What exactly is the scope of this technique? Until now, if I understand correctly, it has only been applied in this form to \"congruent\" languages, i.e., ones in which rewrite rules may be applied anywhere in the program --- that's rather informal, please don't hesitate to complain. </p>\n<p>On the other hand, techniques like <a href=\"https://www.fing.edu.uy/~amiquel/intro-krivine.pdf\">classical realisability</a> kind of do similar things by hand.</p>\n<p>Any guess on how easy it would be to apply it to, e.g., languages in the sense of <a href=\"https://era.ed.ac.uk/bitstream/handle/1842/215/Math_Op_Sem.pdf\">bialgebraic semantics</a> or <a href=\"https://hal.archives-ouvertes.fr/hal-02338144/file/LIPIcs-FSCD-2020-12.pdf\">transition monads</a>?</p>",
+        "id": 238283047,
+        "sender_full_name": "Tom Hirschowitz",
+        "timestamp": 1620728404
+    },
+    {
+        "content": "<p>Of course, another framework for the congruent case is <span class=\"user-mention\" data-user-id=\"398565\">@Marcelo Fiore</span> and <span class=\"user-mention\" data-user-id=\"277754\">@Philip Saville</span> 's <a href=\"https://link.springer.com/chapter/10.1007%2F978-3-030-45231-5_15\">bicategorical construction</a>.</p>",
+        "id": 238283598,
+        "sender_full_name": "Tom Hirschowitz",
+        "timestamp": 1620728662
+    },
+    {
+        "content": "<p>Indeed, this method really only shines right now on languages that can be phrased as equational theories (for instance, by means of a congruent rewriting system or otherwise). I have been exploring lately what it looks like for languages where you have actual transitions that are not equational (in the sense of not being congruent, or in the sense of not being deterministic) --- such things can be expressed, but here one is likely to just be reconstructing standard operational arguments in a slightly nicer way, rather than demolishing them <span aria-label=\"wink\" class=\"emoji emoji-1f609\" role=\"img\" title=\"wink\">:wink:</span></p>",
+        "id": 238310212,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1620740968
+    },
+    {
+        "content": "<p>This sounds cool! Everything lies in the \"slightly\", which I suspect I'd find understated. What puzzles me at the moment is how you can tune the granularity, e.g., how you avoid being too intentional in the glued topos. Not exactly sure what I'm talking about here, but probably if you start with a syntactic category modulo rewriting, then individuals in the glued logic are only considered equivalent up to rewriting, right? Or can gluing make them equivalent up to something coarser like some contextual equivalence?</p>",
+        "id": 238336560,
+        "sender_full_name": "Tom Hirschowitz",
+        "timestamp": 1620749890
+    },
+    {
+        "content": "<p>I have not explored trying to quotient by contextual equivalence, but generally I think this is a bad idea, because contextual equivalence is not modular. On the other hand, it is possible to use the gluing argument (modulo rewriting only) to establish contextual equivalences.</p>",
+        "id": 238340166,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1620751329
+    },
+    {
+        "content": "<p>With that said, I think it is a very interesting question to try and phrase \"respect for contextual equivalence\" as perhaps some kind of orthogonality or lifting property in the gluing topos, and then one could investigate what connectives preserve this property! But I haven't thought about it. Perhaps this is something for you to try :)</p>",
+        "id": 238340277,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1620751384
+    },
+    {
+        "content": "<p>Maybe! The learning curve looks a bit frightening, but I might get to it at some point.</p>",
+        "id": 238341156,
+        "sender_full_name": "Tom Hirschowitz",
+        "timestamp": 1620751741
+    },
+    {
+        "content": "<p>great idea, to capture a certain shapes of contexts and substitutions you'd like to study. I'll have to think more about what this \"closed mapping cylinder\" is like. thanks for the overview.</p>",
+        "id": 238347650,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1620752752
+    },
+    {
+        "content": "<p>as for your subsequent discussion, I don't even know how rewriting comes into this picture at all. but I should mention, the idea of representing operational semantics using internal graphs in a theory is very expressive. it is not restricted to languages with congruent rewriting systems.</p>",
+        "id": 238348150,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1620752926
     }
 ]

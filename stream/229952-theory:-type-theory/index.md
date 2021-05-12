@@ -9,10 +9,10 @@ permalink: /stream/229952-theory:-type-theory/index.html
 
 ### Topics:
 
+* [semisimplicial types](topic/semisimplicial.20types.html) (18 messages, latest: May 11 2021 at 23:55)
 * [Model of univalence](topic/Model.20of.20univalence.html) (71 messages, latest: May 11 2021 at 00:09)
 * [model of univalence](topic/model.20of.20univalence.html) (17 messages, latest: May 10 2021 at 23:58)
 * [applications of categorical logic](topic/applications.20of.20categorical.20logic.html) (45 messages, latest: May 10 2021 at 23:28)
-* [semisimplicial types](topic/semisimplicial.20types.html) (17 messages, latest: May 10 2021 at 21:58)
 * [Semisimplicial types](topic/Semisimplicial.20types.html) (4 messages, latest: May 09 2021 at 22:13)
 * ["Intuitionistic type theory"](topic/.22Intuitionistic.20type.20theory.22.html) (8 messages, latest: May 04 2021 at 17:35)
 * [equalizers](topic/equalizers.html) (45 messages, latest: Apr 25 2021 at 02:56)
@@ -33,4 +33,4 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [W-types and CFGs](topic/W-types.20and.20CFGs.html) (11 messages, latest: Apr 02 2020 at 16:00)
 * [homotopy type theory](topic/homotopy.20type.20theory.html) (10 messages, latest: Mar 26 2020 at 23:30)
 
-<hr><p>Last updated: May 11 2021 at 00:17 UTC</p>
+<hr><p>Last updated: May 12 2021 at 00:18 UTC</p>
