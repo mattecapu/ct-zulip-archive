@@ -9,7 +9,8 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
-* [Native Type Theory](topic/Native.20Type.20Theory.html) (132 messages, latest: May 11 2021 at 17:08)
+* [Native Type Theory](topic/Native.20Type.20Theory.html) (137 messages, latest: May 12 2021 at 22:39)
+* [Categorical Semantics of Cyber-Physical Systems Theory](topic/Categorical.20Semantics.20of.20Cyber-Physical.20Systems.20Theory.html) (16 messages, latest: May 12 2021 at 14:46)
 * [Toposes of Topological Monoid Actions](topic/Toposes.20of.20Topological.20Monoid.20Actions.html) (4 messages, latest: May 05 2021 at 08:02)
 * [Categories of Nets](topic/Categories.20of.20Nets.html) (9 messages, latest: Apr 04 2021 at 18:02)
 * [Combining Nondeterminism, Probability, and Termination](topic/Combining.20Nondeterminism.2C.20Probability.2C.20and.20Termination.html) (1 message, latest: Apr 01 2021 at 13:43)
@@ -17,7 +18,6 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [ZH-calculus](topic/ZH-calculus.html) (2 messages, latest: Mar 12 2021 at 11:03)
 * [Yoneda Hacking: The Algebra of Attacker Actions](topic/Yoneda.20Hacking.3A.20The.20Algebra.20of.20Attacker.20Actions.html) (39 messages, latest: Mar 09 2021 at 18:47)
 * [Categorical Foundations of Gradient-Based Learning](topic/Categorical.20Foundations.20of.20Gradient-Based.20Learning.html) (7 messages, latest: Mar 04 2021 at 19:00)
-* [Categorical Semantics of Cyber-Physical Systems Theory](topic/Categorical.20Semantics.20of.20Cyber-Physical.20Systems.20Theory.html) (13 messages, latest: Feb 26 2021 at 19:42)
 * [Category O for oriented matroids](topic/Category.20O.20for.20oriented.20matroids.html) (22 messages, latest: Feb 24 2021 at 22:27)
 * [a categorical semantics for hierarchical nets](topic/a.20categorical.20semantics.20for.20hierarchical.20nets.html) (5 messages, latest: Feb 02 2021 at 23:08)
 * [category of real numbers: the addition as a biproduct](topic/category.20of.20real.20numbers.3A.20the.20addition.20as.20a.20biproduct.html) (1 message, latest: Jan 29 2021 at 07:09)
@@ -34,4 +34,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [stream events](topic/stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: May 12 2021 at 00:18 UTC</p>
+<hr><p>Last updated: May 13 2021 at 00:29 UTC</p>

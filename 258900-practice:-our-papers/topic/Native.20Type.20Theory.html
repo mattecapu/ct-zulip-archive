@@ -936,6 +936,57 @@ c-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z'/></svg><
 
 
 
+<a name="238480656"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238480656" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tom Hirschowitz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238480656">(May 12 2021 at 14:15)</a>:</h4>
+<p>Thanks <span class="user-mention" data-user-id="275899">@Christian Williams</span>. Regarding rewriting, I got the -- apparently wrong -- impression that your framework used a notion of signature close to higher-order rewriting systems to generate languages. But yes, I agree with you that internal graphs are expressive, that's more or less what we use in transition monads. But then, what do you do exactly?</p>
+<p>If you mod out by the graph (i.e., consider edges as equations), then that's probably too coarse in a few relevant examples, e.g., non-deterministic languages. Right?</p>
+<p>If you retain the graph as a (proof-relevant) predicate in the logic, then (and this gets close to my earlier question about granularity) aren't you worryingly fine? E.g., in good old <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">λ</span></span></span></span>-calculus your logic isn't even invariant under <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.05278em;">β</span></span></span></span>-reduction. Would you agree that this at least begs some discussion? Can gluing rectify this in some way?</p>
+
+
+
+<a name="238511501"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238511501" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238511501">(May 12 2021 at 17:20)</a>:</h4>
+<p>sorry, I'm not sure what you mean. the logic is very fine-grained, yes, but there should be ways to tune it... can you explain this desired beta invariance?</p>
+
+
+
+<a name="238519438"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238519438" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238519438">(May 12 2021 at 18:12)</a>:</h4>
+<p><span class="user-mention" data-user-id="383799">@Tom Hirschowitz</span> wrote:</p>
+<blockquote>
+<p>If you mod out by the graph (i.e., consider edges as equations), then that's probably too coarse in a few relevant examples, e.g., non-deterministic languages. Right?</p>
+</blockquote>
+<p>Yes.   The pi calculus, one of the main examples in Christian's paper, is a perfect example of this.  That's one of the main reasons Mike and Christian brought graphs into the game.</p>
+
+
+
+<a name="238519893"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238519893" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238519893">(May 12 2021 at 18:15)</a>:</h4>
+<blockquote>
+<p>If you retain the graph as a (proof-relevant) predicate in the logic, then (and this gets close to my earlier question about granularity) aren't you worryingly fine? </p>
+</blockquote>
+<p>What does "worryingly fine" mean here, exactly?    </p>
+<p>Are you saying that two lambda-terms differing by just <a href="https://wiki.haskell.org/Beta_reduction">beta-reduction</a> count as distinct in Mike and Christian's setup applied to the lambda-calculus?    I guess that's right if we model beta-reduction as an edge of a graph.   </p>
+<p>Is that bad?</p>
+
+
+
+<a name="238554823"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238554823" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238554823">(May 12 2021 at 22:39)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/258900-practice.3A-our.20papers/topic/Native.20Type.20Theory/near/238519893">said</a>:</p>
+<blockquote>
+<blockquote>
+<p>If you retain the graph as a (proof-relevant) predicate in the logic, then (and this gets close to my earlier question about granularity) aren't you worryingly fine? </p>
+</blockquote>
+<p>What does "worryingly fine" mean here, exactly?    </p>
+<p>Are you saying that two lambda-terms differing by just <a href="https://wiki.haskell.org/Beta_reduction">beta-reduction</a> count as distinct in Mike and Christian's setup applied to the lambda-calculus?    I guess that's right if we model beta-reduction as an edge of a graph.   </p>
+<p>Is that bad?</p>
+</blockquote>
+<p>The "Is that bad?" thing is, I would say, one of the most important and deepest questions we have to deal with in PL (and type theory) right now... It's certainly the case that not modding out by beta-reductions is the source of 95% of the complexity in metatheoretic arguments for type theory and programming languages (those scary papers that have 200 pages of inductions), but there are many cases where you can't seem to mod out --- as you and Tom have pointed out, non-determinism is one of them.</p>
+<p>My experience is that there is not usually a legitimate purpose (in the sense of being motivated by theorems that are of broad interest) to distinguishing beta redexes from their contracta, but that there are a variety of reductions (even deterministic ones) that probably we should distinguish because we have useful models that distinguish them. This arises, in particular, with recursive types and the so-called "unfold-fold" transitions.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: May 12 2021 at 00:18 UTC</p>
+<hr><p>Last updated: May 13 2021 at 00:29 UTC</p>

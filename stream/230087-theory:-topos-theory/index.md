@@ -9,7 +9,7 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 
 ### Topics:
 
-* [morphisms of presheaf toposes](topic/morphisms.20of.20presheaf.20toposes.html) (46 messages, latest: May 11 2021 at 20:51)
+* [morphisms of presheaf toposes](topic/morphisms.20of.20presheaf.20toposes.html) (47 messages, latest: May 12 2021 at 02:41)
 * [Localic Topoi](topic/Localic.20Topoi.html) (29 messages, latest: Apr 04 2021 at 03:31)
 * [Visualizing Grothendieck topologies and nuclei](topic/Visualizing.20Grothendieck.20topologies.20and.20nuclei.html) (2 messages, latest: Apr 04 2021 at 03:22)
 * [localic topoi](topic/localic.20topoi.html) (1 message, latest: Mar 07 2021 at 16:22)
@@ -70,4 +70,4 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 * [essential geometric morphism](topic/essential.20geometric.20morphism.html) (2 messages, latest: Mar 27 2020 at 18:56)
 * [welcome](topic/welcome.html) (2 messages, latest: Mar 27 2020 at 09:22)
 
-<hr><p>Last updated: May 12 2021 at 00:18 UTC</p>
+<hr><p>Last updated: May 13 2021 at 00:29 UTC</p>

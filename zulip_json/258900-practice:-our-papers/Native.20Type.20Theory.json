@@ -790,5 +790,35 @@
         "id": 238348150,
         "sender_full_name": "Christian Williams",
         "timestamp": 1620752926
+    },
+    {
+        "content": "<p>Thanks <span class=\"user-mention\" data-user-id=\"275899\">@Christian Williams</span>. Regarding rewriting, I got the -- apparently wrong -- impression that your framework used a notion of signature close to higher-order rewriting systems to generate languages. But yes, I agree with you that internal graphs are expressive, that's more or less what we use in transition monads. But then, what do you do exactly?</p>\n<p>If you mod out by the graph (i.e., consider edges as equations), then that's probably too coarse in a few relevant examples, e.g., non-deterministic languages. Right?</p>\n<p>If you retain the graph as a (proof-relevant) predicate in the logic, then (and this gets close to my earlier question about granularity) aren't you worryingly fine? E.g., in good old <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>λ</mi></mrow><annotation encoding=\"application/x-tex\">\\lambda</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.69444em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">λ</span></span></span></span>-calculus your logic isn't even invariant under <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>β</mi></mrow><annotation encoding=\"application/x-tex\">\\beta</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05278em;\">β</span></span></span></span>-reduction. Would you agree that this at least begs some discussion? Can gluing rectify this in some way?</p>",
+        "id": 238480656,
+        "sender_full_name": "Tom Hirschowitz",
+        "timestamp": 1620828954
+    },
+    {
+        "content": "<p>sorry, I'm not sure what you mean. the logic is very fine-grained, yes, but there should be ways to tune it... can you explain this desired beta invariance?</p>",
+        "id": 238511501,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1620840015
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"383799\">@Tom Hirschowitz</span> wrote:</p>\n<blockquote>\n<p>If you mod out by the graph (i.e., consider edges as equations), then that's probably too coarse in a few relevant examples, e.g., non-deterministic languages. Right?</p>\n</blockquote>\n<p>Yes.   The pi calculus, one of the main examples in Christian's paper, is a perfect example of this.  That's one of the main reasons Mike and Christian brought graphs into the game.</p>",
+        "id": 238519438,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620843135
+    },
+    {
+        "content": "<blockquote>\n<p>If you retain the graph as a (proof-relevant) predicate in the logic, then (and this gets close to my earlier question about granularity) aren't you worryingly fine? </p>\n</blockquote>\n<p>What does \"worryingly fine\" mean here, exactly?    </p>\n<p>Are you saying that two lambda-terms differing by just <a href=\"https://wiki.haskell.org/Beta_reduction\">beta-reduction</a> count as distinct in Mike and Christian's setup applied to the lambda-calculus?    I guess that's right if we model beta-reduction as an edge of a graph.   </p>\n<p>Is that bad?</p>",
+        "id": 238519893,
+        "sender_full_name": "John Baez",
+        "timestamp": 1620843348
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/258900-practice.3A-our.20papers/topic/Native.20Type.20Theory/near/238519893\">said</a>:</p>\n<blockquote>\n<blockquote>\n<p>If you retain the graph as a (proof-relevant) predicate in the logic, then (and this gets close to my earlier question about granularity) aren't you worryingly fine? </p>\n</blockquote>\n<p>What does \"worryingly fine\" mean here, exactly?    </p>\n<p>Are you saying that two lambda-terms differing by just <a href=\"https://wiki.haskell.org/Beta_reduction\">beta-reduction</a> count as distinct in Mike and Christian's setup applied to the lambda-calculus?    I guess that's right if we model beta-reduction as an edge of a graph.   </p>\n<p>Is that bad?</p>\n</blockquote>\n<p>The \"Is that bad?\" thing is, I would say, one of the most important and deepest questions we have to deal with in PL (and type theory) right now... It's certainly the case that not modding out by beta-reductions is the source of 95% of the complexity in metatheoretic arguments for type theory and programming languages (those scary papers that have 200 pages of inductions), but there are many cases where you can't seem to mod out --- as you and Tom have pointed out, non-determinism is one of them.</p>\n<p>My experience is that there is not usually a legitimate purpose (in the sense of being motivated by theorems that are of broad interest) to distinguishing beta redexes from their contracta, but that there are a variety of reductions (even deterministic ones) that probably we should distinguish because we have useful models that distinguish them. This arises, in particular, with recursive types and the so-called \"unfold-fold\" transitions.</p>",
+        "id": 238554823,
+        "sender_full_name": "Jonathan Sterling",
+        "timestamp": 1620859187
     }
 ]

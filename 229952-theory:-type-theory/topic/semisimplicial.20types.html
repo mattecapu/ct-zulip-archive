@@ -168,6 +168,43 @@ Here "<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.
 
 
 
+<a name="238402810"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/semisimplicial%20types/near/238402810" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/semisimplicial.20types.html#238402810">(May 12 2021 at 00:32)</a>:</h4>
+<p>While I generally prefer Coq for homotopy-theoretic formalization, for something like this I would reach for Agda without hesitation.  As you said, Agda has very powerful mutual "inductive-inductive-recursive" definitions, I believe sometimes even outstripping what's known to make sense semantically.  I believe it also has a somewhat more forgiving termination checker than Coq does, and you can even tell it to ignore the termination checker and accept something even though it can't check that it terminates.  This is what you want for something like this: you want to formalize <em>something</em> to find out whether it makes any sense at all, and then if it does you can worry later about precisely what it requires of the formal system.</p>
+
+
+
+<a name="238403854"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/semisimplicial%20types/near/238403854" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/semisimplicial.20types.html#238403854">(May 12 2021 at 00:47)</a>:</h4>
+<p>Since, as you said, the main challenges will probably not be homotopy-theoretic, I wouldn't expect you to need much in the way of a HoTT library.  But if you do need more than is in the old HoTT-Agda library, you could try the Cubical Agda library, which is under more active development.</p>
+
+
+
+<a name="238403947"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/semisimplicial%20types/near/238403947" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/semisimplicial.20types.html#238403947">(May 12 2021 at 00:48)</a>:</h4>
+<p>It's a bit questionable at the moment semantically too, but again, I wouldn't expect any of that to matter to you at this stage.</p>
+
+
+
+<a name="238430148"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/semisimplicial%20types/near/238430148" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ulrik Buchholtz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/semisimplicial.20types.html#238430148">(May 12 2021 at 07:01)</a>:</h4>
+<p>I'd second the recommendation for Agda:</p>
+<ul>
+<li>For something very simple, you can play around in a browser with <a href="https://agdapad.quasicoherent.io/">AgdaPad</a></li>
+<li>There are “getting started” guides at both <a href="https://agda.readthedocs.io/en/v2.6.1.3/getting-started/index.html">readthedocs</a> and at the <a href="https://plfa.github.io/GettingStarted/">PLFA book site</a></li>
+<li>The old HoTT library was ported to 2.6 by <a href="https://github.com/awswan/HoTT-Agda">Andrew Swan here</a></li>
+<li>I also second the recommendation for the <a href="https://github.com/agda/cubical">cubical library</a></li>
+<li>You might also like the <a href="https://github.com/HoTT-Intro/Agda">formalization</a> accompanying Egbert Rijke's introductory book.</li>
+</ul>
+
+
+
+<a name="238469059"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229952-theory%3A%20type%20theory/topic/semisimplicial%20types/near/238469059" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Hu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory:-type-theory/topic/semisimplicial.20types.html#238469059">(May 12 2021 at 13:01)</a>:</h4>
+<p>(As a novice) I would also recommend Agda, but I think cubical is really hard to use (even for someone who knows HoTT, because you are forced to constantly be thinking about the cubes - this is 'the point' I think)</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: May 12 2021 at 00:18 UTC</p>
+<hr><p>Last updated: May 13 2021 at 00:29 UTC</p>

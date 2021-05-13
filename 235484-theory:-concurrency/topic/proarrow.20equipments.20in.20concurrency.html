@@ -647,6 +647,262 @@ All the frameworks I've seen so far either ignore the network layer (e.g. lambda
 
 
 
+<a name="238443988"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238443988" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chad Nester <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238443988">(May 12 2021 at 09:10)</a>:</h4>
+<p>I confess to knowing essentially nothing about Petri nets. My understanding is that a Petri net is essentially a monoidal signature, with the places giving the atomic objects and the transitions giving the generating morphisms. Then the associated symmetric monoidal category is called the category of "executions" of the Petri net. I had a look at the decorated cospans version of open Petri nets, thinking it might be an instance of the corner structure, but as far as I can tell this isn't the case. Is there a different version of Petri nets with boundaries? </p>
+<p>A related question, open to anyone reading this: I'm under the impression that people don't usually impose equations on the monoidal signature associated with a Petri net. From the resource theory view of monoidal signatures this is extremely natural, which seems like an advantage. Am I wrong?</p>
+
+
+
+<a name="238444175"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238444175" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chad Nester <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238444175">(May 12 2021 at 09:12)</a>:</h4>
+<p>I get the impression that the category of executions of a Petri net is usually treated more like a transition system, so maybe it would be a better fit with the existing literature to use them to define the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">s</mi><mi mathvariant="sans-serif">p</mi><mi mathvariant="sans-serif">a</mi><mi mathvariant="sans-serif">n</mi><mo stretchy="false">(</mo><mi mathvariant="sans-serif">R</mi><mi mathvariant="sans-serif">G</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">a</mi><mi mathvariant="sans-serif">p</mi><mi mathvariant="sans-serif">h</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathsf{span(RGraph)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathsf">span</span><span class="mopen">(</span><span class="mord mathsf">RGraph</span><span class="mclose">)</span></span></span></span></span> part of a situated system. It seems plausible that the decorated cospan version of open Petri nets (or indeed, the version of open Petri nets in your thesis) would work well here.</p>
+
+
+
+<a name="238448395"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238448395" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238448395">(May 12 2021 at 09:53)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276114">Chad Nester</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/238443988">said</a>:</p>
+<blockquote>
+<p>I confess to knowing essentially nothing about Petri nets. My understanding is that a Petri net is essentially a monoidal signature, with the places giving the atomic objects and the transitions giving the generating morphisms. Then the associated symmetric monoidal category is called the category of "executions" of the Petri net. I had a look at the decorated cospans version of open Petri nets, thinking it might be an instance of the corner structure, but as far as I can tell this isn't the case. Is there a different version of Petri nets with boundaries? </p>
+</blockquote>
+<p>Yes, there is. The open Petri nets defined by people like <span class="user-mention" data-user-id="281251">@Pawel Sobocinski</span> ,  <span class="user-mention" data-user-id="277342">@Robin Piedeleu</span> , Fabio Gadducci and others from the school of Pisa generaly glue along transitions instead than on places</p>
+
+
+
+<a name="238448571"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238448571" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238448571">(May 12 2021 at 09:55)</a>:</h4>
+<p>This is very hand-wavy said this way, but if you wish this is a "synchronous" gluing, meaning that if a transition fires, the transition it is glued with has to fire as well. This definition is way more manageable in terms of studying the reachability relation of a net from its components, whereas gluing on places, albeit more intuitive, is problematic because it is asynchronous: When you put a token in a place, you never know which transition will use it, and when</p>
+
+
+
+<a name="238448720"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238448720" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238448720">(May 12 2021 at 09:56)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276114">Chad Nester</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/238443988">said</a>:</p>
+<blockquote>
+<p>A related question, open to anyone reading this: I'm under the impression that people don't usually impose equations on the monoidal signature associated with a Petri net. From the resource theory view of monoidal signatures this is extremely natural, which seems like an advantage. Am I wrong?</p>
+</blockquote>
+<p>Actually we do, depending on how you want to obtain categories from nets. In the paper <span class="user-mention" data-user-id="275920">@John Baez</span> , me, <span class="user-mention" data-user-id="276037">@Jade Master</span> and <span class="user-mention" data-user-id="276777">@Mike Shulman</span>  published recently, we show how if, say, you want to generate a symmetric monoidal category from a Petri net, you need to impose some equations</p>
+
+
+
+<a name="238448743"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238448743" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238448743">(May 12 2021 at 09:56)</a>:</h4>
+<p><a href="https://arxiv.org/abs/2101.04238">https://arxiv.org/abs/2101.04238</a></p>
+
+
+
+<a name="238448851"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238448851" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238448851">(May 12 2021 at 09:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276114">Chad Nester</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/238444175">said</a>:</p>
+<blockquote>
+<p>I get the impression that the category of executions of a Petri net is usually treated more like a transition system, so maybe it would be a better fit with the existing literature to use them to define the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">s</mi><mi mathvariant="sans-serif">p</mi><mi mathvariant="sans-serif">a</mi><mi mathvariant="sans-serif">n</mi><mo stretchy="false">(</mo><mi mathvariant="sans-serif">R</mi><mi mathvariant="sans-serif">G</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">a</mi><mi mathvariant="sans-serif">p</mi><mi mathvariant="sans-serif">h</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathsf{span(RGraph)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathsf">span</span><span class="mopen">(</span><span class="mord mathsf">RGraph</span><span class="mclose">)</span></span></span></span></span> part of a situated system. It seems plausible that the decorated cospan version of open Petri nets (or indeed, the version of open Petri nets in your thesis) would work well here.</p>
+</blockquote>
+<p>Here I don't think I agree, the most important thing of the category of executions of a Petri net is that it is monoidal, and as such you have an interchange law given by the functoriality of the tensor product. This basically models concurrency, that is, the idea that if two boxes (transitions) are causally independent, it doesn't matter which one comes first (which transition fires first)</p>
+
+
+
+<a name="238448943"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238448943" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238448943">(May 12 2021 at 09:59)</a>:</h4>
+<p>All in all, I think that the main way you can think of a Petri net is as a state machine where: </p>
+<ul>
+<li>You can be in more than one state at the same time (given by where are your tokens, in contrast with FSMs where you can be in one vertes of the graph at best)</li>
+<li>You can walk multiple paths of the graph at the same time</li>
+</ul>
+
+
+
+<a name="238450096"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238450096" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chad Nester <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238450096">(May 12 2021 at 10:09)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276438">Fabrizio Genovese</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/238448720">said</a>:</p>
+<blockquote>
+<p>Actually we do, depending on how you want to obtain categories from nets. In the paper <span class="user-mention silent" data-user-id="275920">John Baez</span> , me, <span class="user-mention silent" data-user-id="276037">Jade Master</span> and <span class="user-mention silent" data-user-id="276777">Mike Shulman</span>  published recently, we show how if, say, you want to generate a symmetric monoidal category from a Petri net, you need to impose some equations</p>
+</blockquote>
+<p>Do you impose the same equations every time in order to obtain the same categorical structure? The point I'm trying to make is that by imposing equations on my resource theory, I can insist that certain sequences of events have the same material effect (see the  part of the situated systems writeup about <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="fraktur">B</mi><mrow><mi mathvariant="sans-serif">s</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">f</mi><mi mathvariant="sans-serif">t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\mathfrak{B}_\mathsf{sift}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84141em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathfrak">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathsf mtight">sift</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> and equality). It's "user-facing", in that if I want to use the machinery this is a parameter I can fiddle with.</p>
+
+
+
+<a name="238450324"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238450324" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chad Nester <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238450324">(May 12 2021 at 10:11)</a>:</h4>
+<p>I'll look into Petri nets glued along transitions -- thanks!</p>
+
+
+
+<a name="238450480"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238450480" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chad Nester <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238450480">(May 12 2021 at 10:12)</a>:</h4>
+<p>I know "concurrency" is a loaded word but I don't think that interchange / functoriality of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding="application/x-tex">\otimes</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord">⊗</span></span></span></span> models it. I agree that it models a kind of <em>independence</em>, but I think this is a different thing.</p>
+
+
+
+<a name="238451373"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238451373" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chad Nester <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238451373">(May 12 2021 at 10:22)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276438">Fabrizio Genovese</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/238448943">said</a>:</p>
+<blockquote>
+<p>All in all, I think that the main way you can think of a Petri net is as a state machine where: </p>
+<ul>
+<li>You can be in more than one state at the same time (given by where are your tokens, in contrast with FSMs where you can be in one vertes of the graph at best)</li>
+<li>You can walk multiple paths of the graph at the same time</li>
+</ul>
+</blockquote>
+<p>I will have to think about this. It feels like a pretty strange way of putting things <span aria-label="dizzy" class="emoji emoji-1f635" role="img" title="dizzy">:dizzy:</span></p>
+
+
+
+<a name="238454085"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238454085" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238454085">(May 12 2021 at 10:50)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276114">Chad Nester</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/238451373">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276438">Fabrizio Genovese</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/238448943">said</a>:</p>
+<blockquote>
+<p>All in all, I think that the main way you can think of a Petri net is as a state machine where: </p>
+<ul>
+<li>You can be in more than one state at the same time (given by where are your tokens, in contrast with FSMs where you can be in one vertes of the graph at best)</li>
+<li>You can walk multiple paths of the graph at the same time</li>
+</ul>
+</blockquote>
+<p>I will have to think about this. It feels like a pretty strange way of putting things <span aria-label="dizzy" class="emoji emoji-1f635" role="img" title="dizzy">:dizzy:</span></p>
+</blockquote>
+<p>It is the most natural, Petri nets done categorically are the niche, not the other way around</p>
+
+
+
+<a name="238454165"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238454165" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238454165">(May 12 2021 at 10:51)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276114">Chad Nester</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/238450096">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276438">Fabrizio Genovese</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/238448720">said</a>:</p>
+<blockquote>
+<p>Actually we do, depending on how you want to obtain categories from nets. In the paper <span class="user-mention silent" data-user-id="275920">John Baez</span> , me, <span class="user-mention silent" data-user-id="276037">Jade Master</span> and <span class="user-mention silent" data-user-id="276777">Mike Shulman</span>  published recently, we show how if, say, you want to generate a symmetric monoidal category from a Petri net, you need to impose some equations</p>
+</blockquote>
+<p>Do you impose the same equations every time in order to obtain the same categorical structure? The point I'm trying to make is that by imposing equations on my resource theory, I can insist that certain sequences of events have the same material effect (see the  part of the situated systems writeup about <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="fraktur">B</mi><mrow><mi mathvariant="sans-serif">s</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">f</mi><mi mathvariant="sans-serif">t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\mathfrak{B}_\mathsf{sift}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84141em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathfrak">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathsf mtight">sift</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> and equality). It's "user-facing", in that if I want to use the machinery this is a parameter I can fiddle with.</p>
+</blockquote>
+<p>The point is that you do this if you want to use Petri nets to present monoidal category. Traditionally, this is not what Petri nets are made for. You can do it in any case, I just don't think it is too interesting for people studying Petri nets</p>
+
+
+
+<a name="238454280"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238454280" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238454280">(May 12 2021 at 10:52)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276114">Chad Nester</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/238450480">said</a>:</p>
+<blockquote>
+<p>I know "concurrency" is a loaded word but I don't think that interchange / functoriality of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding="application/x-tex">\otimes</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord">⊗</span></span></span></span> models it. I agree that it models a kind of <em>independence</em>, but I think this is a different thing.</p>
+</blockquote>
+<p>There is much more to concurrency than this, clearly. Still, this is a pretty important property, it's not by chance that nearly all theories exhibiting some form of non-trivial causality are monoidal</p>
+
+
+
+<a name="238486279"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238486279" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Robin Piedeleu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238486279">(May 12 2021 at 14:47)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276114">Chad Nester</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/238443988">said</a>:</p>
+<blockquote>
+<p>I had a look at the decorated cospans version of open Petri nets, thinking it might be an instance of the corner structure, but as far as I can tell this isn't the case. Is there a different version of Petri nets with boundaries? </p>
+</blockquote>
+<p><span class="user-mention" data-user-id="276438">@Fabrizio Genovese</span> already answered some of your questions so I'll only try to develop a bit what I hinted at earlier and  answer this question of yours.  My vision may be extremely naive at this point because I've never worked properly on the Petri net-as-SMC view. More knowledgeable people in this area should definitely correct me if they think there's a fundamental obstacle to developing what I had in mind.</p>
+<p>If you only care about reachability, you can view a Petri net as just a collection transitions, i.e. of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>P</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|P|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord">∣</span></span></span></span> dimensional <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">Z</mi></mrow><annotation encoding="application/x-tex">\mathbb Z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68889em;vertical-align:0em;"></span><span class="mord mathbb">Z</span></span></span></span>-vectors, where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span> is the set of places Then valid runs are sequences of points in the lattice <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="double-struck">N</mi><mi>P</mi></msup></mrow><annotation encoding="application/x-tex">\mathbb N^P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8413309999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbb">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">P</span></span></span></span></span></span></span></span></span></span></span> such that, starting at any of them one can reach the next adding (i.e. firing) one of the transition to it.  </p>
+<p>But if you care about how you get from one state to another, you can also name your transitions and view them as a set of  generators of some SMC. Now instead of points in a <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi>P</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">|P|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord">∣</span></span></span></span>-dimensional lattice, each dimension is a generating object of the corresponding SMC and each transition a generating morphism. Instead of a sequence of points, a run is now a morphism of the free SMC on these generators. From the point of view of reachability, this is the same. But now you're keeping track of much more information in each run, namely how (with what combination of transitions) you transformed some resources (the objects of the category) into others, modulo the laws of SMCs which factor out irrelevant ordering of transitions that can be fired concurrently (this is the interchange law Fabrizio was talking about). </p>
+<p>Petri nets with boundaries are Petri nets  with potentially open transitions, which require synchronising with their environment to be fired. In some sense, they are orthogonal to the the Petri-net-as-SMC perspective. Together they form an SMC (this is different form how each standard Petri net can generate an SMC) and their semantics in all previous work I know of has been given in terms of sets and (so called additive) relations. But that's just an extension of the first perspective on Petri nets that I sketched above, to account for open transitions. If we wanted to keep track more precisely of how one gets from one state to another in Petri-net-as-SMC style we would need another dimension and your double-categorical framework seems like a natural candidate. </p>
+<p>When I first learnt about Petri nets-as-SMC, I knew about Petri nets with boundaries and wondered what sort of mathematical object these would generate but no real answer. Seeing your work, I conjectured above that cornerings could be it. Maybe cornerings are overkill and a simpler double-categorical structure is sufficient but one should definitely have some sort of correspondence between the objects in the vertical (resource) and horizontal (boundary) dimensions.</p>
+
+
+
+<a name="238489033"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238489033" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Robin Piedeleu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238489033">(May 12 2021 at 15:03)</a>:</h4>
+<p>Hmm... now that I think about this idea on some small examples, there is a mismatch between the two notions so maybe something else is needed.</p>
+
+
+
+<a name="238500680"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238500680" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238500680">(May 12 2021 at 16:07)</a>:</h4>
+<p>I'd like to hear more about gluing along transitions.</p>
+<ul>
+<li>Do they need to have the same input/output interface to allow gluing?</li>
+<li>Can the resulting nets be described by colimits of generating data?</li>
+</ul>
+<p>I assume that the reachability issues are analogous to the recent discussion on emergence.</p>
+<ul>
+<li>Is there an easy example to show how this approach ameliorates the problem?</li>
+<li>Can we construe this condition terms of fullness of the maps from the shared overlap into each component net (full on the poset reflection, if we only care about reachability)?</li>
+</ul>
+
+
+
+<a name="238505433"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238505433" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jade Master <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238505433">(May 12 2021 at 16:37)</a>:</h4>
+<p><span class="user-mention" data-user-id="276114">@Chad Nester</span> If you want to impose extra equations, of a more ad-hoc sort, on the free smc generated by a Petri net then I think the best way to do that is with semantics. I.e. you can impose equations by taking a symmetric monoidal functor into a category C where the equations you want to hold do hold.</p>
+
+
+
+<a name="238520340"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238520340" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238520340">(May 12 2021 at 18:18)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276438">Fabrizio Genovese</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/238448720">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276114">Chad Nester</span> <a href="#narrow/stream/235484-theory.3A-concurrency/topic/proarrow.20equipments.20in.20concurrency/near/238443988">said</a>:</p>
+<blockquote>
+<p>A related question, open to anyone reading this: I'm under the impression that people don't usually impose equations on the monoidal signature associated with a Petri net. From the resource theory view of monoidal signatures this is extremely natural, which seems like an advantage. Am I wrong?</p>
+</blockquote>
+<p>Actually we do, depending on how you want to obtain categories from nets. In the paper <span class="user-mention silent" data-user-id="275920">John Baez</span> , me, <span class="user-mention silent" data-user-id="276037">Jade Master</span> and <span class="user-mention silent" data-user-id="276777">Mike Shulman</span>  published recently, we show how if, say, you want to generate a symmetric monoidal category from a Petri net, you need to impose some equations.</p>
+</blockquote>
+<p>I'm not quite sure what that means, so I'll try to say it more carefully.    A Petri net generates a <em>free commutative monoidal category</em>.  This has extra equations as compared with a free symmetric strict monoidal category, since "commutative" says that all the symmetries, aka braidings, are identities:</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mrow><mi>x</mi><mo separator="true">,</mo><mi>y</mi></mrow></msub><mo>=</mo><msub><mrow><mi mathvariant="normal">i</mi><mi mathvariant="normal">d</mi></mrow><mrow><mi>x</mi><mo separator="true">,</mo><mi>y</mi></mrow></msub></mrow><annotation encoding="application/x-tex"> B_{x,y} = \mathrm{id}_{x,y} </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">id</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></p>
+<p>But those are the only extra equations we need to impose, to get the free commutative monoidal category from the free symmetric strict monoidal category.</p>
+
+
+
+<a name="238520405"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238520405" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238520405">(May 12 2021 at 18:19)</a>:</h4>
+<p>Chad wrote:</p>
+<blockquote>
+<p>I'm under the impression that people don't usually impose equations on the monoidal signature associated with a Petri net. From the resource theory view of monoidal signatures this is extremely natural, which seems like an advantage. Am I wrong?</p>
+</blockquote>
+
+
+
+<a name="238520782"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238520782" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238520782">(May 12 2021 at 18:21)</a>:</h4>
+<p>They often don't.   If one wanted to, one should really prove my conjecture:</p>
+<p><strong>Conjecture.</strong>   The category of commutative monoidal categories is monadic over Petri nets.</p>
+<p>In other words, the adjunction between free commutative monoidal categories and Petri nets gives a monad on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">P</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">i</mi></mrow><annotation encoding="application/x-tex">\mathsf{Petri}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathsf">Petri</span></span></span></span></span> whose Eilenberg-Moore category is equivalent to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">C</mi><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">m</mi><mi mathvariant="sans-serif">M</mi><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">C</mi><mi mathvariant="sans-serif">a</mi><mi mathvariant="sans-serif">t</mi></mrow><annotation encoding="application/x-tex">\mathsf{ComMonCat}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord"><span class="mord mathsf">ComMonCat</span></span></span></span></span>.</p>
+
+
+
+<a name="238520944"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238520944" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238520944">(May 12 2021 at 18:23)</a>:</h4>
+<p>If we had this fact, we could describe <em>arbitrary</em> commutative monoidal categories in a "generators and relations" way, just like people do for groups: that is, describe an arbitrary one as an equalizer of free ones.</p>
+
+
+
+<a name="238521211"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238521211" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238521211">(May 12 2021 at 18:25)</a>:</h4>
+<p>If you don't like "commutative monoidal categories", the same issues show up for symmetric strict monoidal categories: in <a href="https://arxiv.org/abs/2101.04238">our paper</a> we construct an adjunction between symmetric strict monoidal categories and a variant of Petri nets that we call <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Σ</mi></mrow><annotation encoding="application/x-tex">\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Σ</span></span></span></span>-nets.</p>
+
+
+
+<a name="238521310"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238521310" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238521310">(May 12 2021 at 18:25)</a>:</h4>
+<p>So again it would be nice to know if this adjunction is monadic, because that would instantly give us access to a lot of results about "generators and relations" descriptions of symmetric strict monoidal categories.</p>
+
+
+
+<a name="238521573"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238521573" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238521573">(May 12 2021 at 18:27)</a>:</h4>
+<p>I guess while I'm at it, I should advertise that <span class="user-mention" data-user-id="278430">@Brandon Coya</span> and Franciscus Rebro and I came up with a nice monadic adjunction between PROPs and certain "signatures", which allows us to get generators and relations descriptions of PROPs.  See:</p>
+<ul>
+<li><a href="https://arxiv.org/abs/1707.08321">Props in network theory</a>, Appendix B.</li>
+</ul>
+
+
+
+<a name="238522253"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238522253" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238522253">(May 12 2021 at 18:31)</a>:</h4>
+<p>In practice people have been describing PROPs using generators and relations since the Late Bronze Age.   But our results justify this and - perhaps more importantly - give access to all sorts of nice results.   For example, if you take a PROP and throw in some extra relations, you get a new PROP and an epimorphism from the original PROP to this new one.      Or, if you thrown in some new generators, you get a new PROP and a <em>monomorphism</em> from the original PROP to the new one.</p>
+
+
+
+<a name="238522961"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/235484-theory%3A%20concurrency/topic/proarrow%20equipments%20in%20concurrency/near/238522961" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/235484-theory:-concurrency/topic/proarrow.20equipments.20in.20concurrency.html#238522961">(May 12 2021 at 18:35)</a>:</h4>
+<p>My conjecture would imply some similar results for Petri nets.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: May 12 2021 at 00:18 UTC</p>
+<hr><p>Last updated: May 13 2021 at 00:29 UTC</p>
