@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (391 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (392 topics)
 
 * [general](stream/229111-general/index.html) (196 topics)
 
@@ -34,9 +34,9 @@ permalink: /index.html
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (31 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (24 topics)
+* [practice: our papers](stream/258900-practice:-our-papers/index.html) (25 topics)
 
-* [practice: our papers](stream/258900-practice:-our-papers/index.html) (24 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (24 topics)
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (23 topics)
 
@@ -58,11 +58,11 @@ permalink: /index.html
 
 * [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (14 topics)
 
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (14 topics)
+
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (14 topics)
 
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
-
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (13 topics)
 
 * [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (13 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: May 13 2021 at 00:29 UTC</p>
+<hr><p>Last updated: May 14 2021 at 00:29 UTC</p>

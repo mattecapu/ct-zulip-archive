@@ -820,5 +820,227 @@
         "id": 233011495,
         "sender_full_name": "Henry Story",
         "timestamp": 1617461824
+    },
+    {
+        "content": "<p>Here is a question that keeps popping in my head regarding Graphs, Setoids and RDF. <br>\n<span class=\"user-mention\" data-user-id=\"296322\">@Jacques Carette</span>'s <a href=\"https://github.com/agda/agda-categories\">Agda Categories</a> library is built on setoids. <a href=\"https://www.w3.org/TR/rdf11-mt/\">RDF</a>  is known to be specified in terms of Sets. But I keep wondering if the <em>semantic</em> element of the <em>Semantic Web</em> does not really give us setoids after all, ie. could one not think of RDF as \"really\" specified in terms of setoids?</p>\n<p>If I  look at the functor category from the small category with three arrows <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mo separator=\"true\">,</mo><mi>r</mi><mo separator=\"true\">,</mo><mi>o</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">s,r,o: A \\to N</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\">s</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">r</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.16666666666666666em;\"></span><span class=\"mord mathnormal\">o</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span> to Set I get essentially the category of graphs (which is close to RDF). But those types of graphs, in the semantic web would correspond perhaps the <a href=\"https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/\">abstract syntax</a>. RDF adds another mapping from names to things, in terms of which truth can then be defined, and since it does not have a unique naming assumption,  multiple names can map to the same object.  Multiple names mapping to the same object just seems to be another way to say that we are dealing with setoids. Ie the names can form equivalence classes. </p>\n<p>Does that make sense? I</p>",
+        "id": 238598999,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1620897521
+    },
+    {
+        "content": "<p>If I can ask a silly question, why <em>three</em> arrows <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>→</mo><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">A\\to N</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span>?  An arrow in a graph has only a source and a target.  Is it that relations in RDF have their own \"name\" as well as two things that they relate?</p>",
+        "id": 238618598,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620911459
+    },
+    {
+        "content": "<p>Regarding setoids, a general setoid is equipped with not merely an equivalence relation, but a collection of witnesses for the truth of that equivalence relation.  Can two names every name the same object \"in more than one way\"?</p>",
+        "id": 238618659,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620911520
+    },
+    {
+        "content": "<p><code>agda-categories</code> is built on setoids mostly because of constructivity reasons. That this works well for basic category theory goes back to Huet-Saibi in 2000. Jason and I \"discovered\" that it keeps working very well into quite complex parts of category theory. Though eventually things do go a little sideways: the category Set is a topos, but Setoids is only a (really nice) pretopos. So presheaves and profunctors are not quite as magical and over-powered in this setting.</p>\n<p>That most things are built on set is largely an accident of classical education not showing people there's even a choice here.  A complete formalization of RDF done in an effective manner (i.e. things that ought to compute, do in fact compute) would tell. To really \"tell\", it would probably have to be done multiple times, in different settings, such as in Isabelle/HOL, cubical agda and 'plain' agda (for example).</p>\n<p>So setoids seem to be nice when you have all sorts of equivalence relations floating around, especially when you have multiple equivalences on the same underlying carrier. But they carry a large proof burden too. So they are not zero cost.</p>\n<p>[And all the things <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> mentions too: the \"proof relevance\" of the equivalence relation is a rather interesting phenomenon.]</p>",
+        "id": 238621204,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1620912736
+    },
+    {
+        "content": "<p>Doesn't the category of setoids form a Setoid-enriched (Grothendieck) topos?</p>",
+        "id": 238622381,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1620913286
+    },
+    {
+        "content": "<p>Not as far as I know, only a <a href=\"https://ncatlab.org/nlab/show/%CE%A0W-pretopos\">Pi-W-Pretopos</a>. The subobject classifier's universal map is \"too big\" - there was a lot of discussion of this at <a href=\"https://github.com/agda/agda-categories/issues/200\">this issue</a>, along with links to a number of relevant papers.</p>",
+        "id": 238622960,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1620913559
+    },
+    {
+        "content": "<p>Oh, the <a href=\"https://ncatlab.org/nlab/show/Grothendieck+topos#in_weak_foundations\">nLab suggests</a> that the problem could be that even though they might form a Grothendieck topos, a Grothendieck topos is confusingly not necessarily an elementary topos in weak foundations!</p>",
+        "id": 238623432,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1620913783
+    },
+    {
+        "content": "<p>Yes, probably it would be better to call it a \"category of sheaves\" or a \"Grothendieck pretopos\" in that case.  Essentially <em>any</em> category is a \"category of sheaves\" over itself, namely sheaves on the one-point space.</p>",
+        "id": 238623826,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620913960
+    },
+    {
+        "content": "<p>A very serious disadvantage of using setoids rather than sets is that they give you the wrong answer when interpreting mathematics internally in a category.  For instance, if you define the set of real numbers in constructive mathematics and then interpret it in the topos of sheaves on a space <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span>, you get the sheaf of continuous real-valued functions on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span>.  But if you do the same thing with the <em>setoid</em> of real numbers, you get nothing of the kind.</p>",
+        "id": 238624137,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620914136
+    },
+    {
+        "content": "<p>Setoids make sense (and, indeed, are unavoidable) when building mathematics from a weak foundation that doesn't have its own notion of \"quotient\", like Martin-Lof's original type theory.  But when you start from a foundation that already has quotients, working with setoids loses all the information about those quotients by introducing new \"free\" quotients.</p>",
+        "id": 238624337,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620914234
+    },
+    {
+        "content": "<p>It's true that setoids are better-behaved than sets for doing category theory in a constructive set-based foundation.  For instance, the 2-category of categories (in the usual sense) with hom-sets is not constructively exact (in the appropriate sense for a 2-category), whereas the 2-category of e-categories (categories with hom-setoids) is.  But in my opinion this mostly goes away in a homotopy type theory foundation.</p>",
+        "id": 238624687,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620914427
+    },
+    {
+        "content": "<p>Peter Lumsdaine gave a nice talk at the <a href=\"http://logic.math.su.se/palmgren-memorial/\">Palmgren memorial conference</a> about setoids and categories.</p>",
+        "id": 238624777,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620914449
+    },
+    {
+        "content": "<p>Sorry for the long spiel, but setoids and categories are something I've been thinking a lot about recently for some reason, so I had a lot to say.  (-:</p>",
+        "id": 238624833,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620914474
+    },
+    {
+        "content": "<p>That talk was indeed excellent.</p>\n<p>While I started on setoids and categories accidentally, I've also been thinking about them a lot. It does seem that HoTT does add something, though the design space still a lot of places left to be explored. All-setoids-all-the-time is sub-optimal, but all-univalence-all-the-time seems similarly problematic.</p>\n<p>Why I'm still exploring is the following: if one rebuilds categories by successive enrichment (constructively), i.e. -1 categories are -2 enriched, and so on, it looks like 0-categories really want to be Setoids, with then 1-categories being \"naturally\" E-Categories. The point being that -1-categories don't collapse to just 2 things. With excluded middle, yes, that's immediate. Without? I conjecture that it's in fact equivalent to excluded middle. [No proof yet.]</p>",
+        "id": 238626091,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1620915039
+    },
+    {
+        "content": "<p>What problems do you see with all-univalence-all-the-time?</p>",
+        "id": 238626403,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620915184
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> yes, I understand the third arrow as what allows one to group arrows together. So I can say</p>\n<div class=\"codehilite\" data-code-language=\"Turtle\"><pre><span></span><code><span class=\"err\">TimBernersLee</span> <span class=\"err\">--knows--&gt;</span> <span class=\"err\">VintCerf</span> <span class=\"p\">.</span>\n</code></pre></div>\n<p>I tried to illustrate this and argue for it in the slides and (sketch of a) paper <a href=\"https://co-operating.systems/2020/11/\">Functorial RDF</a>.</p>\n<p>RDF also  wants  to  make it easy to express </p>\n<div class=\"codehilite\"><pre><span></span><code>VintCerf --knows--&gt; DanBrickley\nVintCerf --olderThan--&gt; DanBrickley\n</code></pre></div>\n<p>etc... In a way the Grothendieck construction gives this too, but then RDF goes into the direction of hypergraphs with DataSets, and I am not sure how that maps to Grothendieck constructions.</p>",
+        "id": 238627850,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1620915788
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/238626091\">said</a>:</p>\n<blockquote>\n<p>Why I'm still exploring is the following: if one rebuilds categories by successive enrichment (constructively), i.e. -1 categories are -2 enriched, and so on, it looks like 0-categories really want to be Setoids, with then 1-categories being \"naturally\" E-Categories.</p>\n</blockquote>\n<p>Yes, that's true; you have to additionally saturate / Rezk-complete to get back to the \"correct\" (IMO) notions of set and category.</p>\n<blockquote>\n<p>The point being that -1-categories don't collapse to just 2 things. With excluded middle, yes, that's immediate. Without? I conjecture that it's in fact equivalent to excluded middle. [No proof yet.]</p>\n</blockquote>\n<p>Actually, I believe it's equivalent to the axiom of choice!</p>",
+        "id": 238628183,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620915924
+    },
+    {
+        "content": "<p>A lot of the work that I do has its origins in symbolic computation, where syntactic issues matter a lot. Quite a number of objects have a kind of 'syntactic polymorphism' to them that is most definitely not extensional (a given polynomial with coefficients in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">N</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{N}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathbb\">N</span></span></span></span> can be interpreted in many fields, and behaves quite differently over small <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"double-struck\">Z</mi><mi>p</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\mathbb{Z}_p</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.974998em;vertical-align:-0.286108em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">Z</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15139200000000003em;\"><span style=\"top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">p</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.286108em;\"><span></span></span></span></span></span></span></span></span></span> than over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68889em;vertical-align:0em;\"></span><span class=\"mord mathbb\">C</span></span></span></span>)  . This can be <em>encoded</em> in type theories, but every layer of coding makes things awkward and less 'first class'. </p>\n<p>What I'm looking for is a kind of 'onion' type system where the inner ring is as nice as possible (HoTT with univalence and more), and concentric rings where one loses properties gradually. I want to be able to make statements like <strong>the object X is non-denoting</strong> a valid mathematical statement (like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi><mi mathvariant=\"normal\">/</mi><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty / \\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">∞/∞</span></span></span></span>), without <em>too many</em> layers of quotations.  There are many things that we can write down that look reasonable, but turn out to not be meaningful. The way it fails to be meaningful can itself be a non-trivial mathematical result.</p>",
+        "id": 238628378,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1620915996
+    },
+    {
+        "content": "<p>I don't see anything non-univalent about that.  A polynomial is, of course, an abstract object of the rig <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">N</mi><mo stretchy=\"false\">[</mo><mi>x</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\mathbb{N}[x]</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathbb\">N</span><span class=\"mopen\">[</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">]</span></span></span></span>, not the <em>function</em> that it induces on any given field, and that's true already in pencil-and-paper mathematics.</p>",
+        "id": 238628567,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620916086
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/238628183\">said</a>:</p>\n<blockquote>\n<blockquote>\n<p>The point being that -1-categories don't collapse to just 2 things. With excluded middle, yes, that's immediate. Without? I conjecture that it's in fact equivalent to excluded middle. [No proof yet.]</p>\n</blockquote>\n<p>Actually, I believe it's equivalent to the axiom of choice!</p>\n</blockquote>\n<p>Oh no, wait, I jumped too fast.  Setoids being equivalent to sets is equivalent to AC, and the status of this statement about <em>derivators</em> (which is what I've been thinking about recently) is not clear to me, but if you just mean the ordinary 1-categories of these things then yes, I believe it's equivalent to LEM.  Sorry.</p>",
+        "id": 238629029,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620916304
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/238628183\">said</a>:</p>\n<blockquote>\n<blockquote>\n<p>The point being that -1-categories don't collapse to just 2 things. With excluded middle, yes, that's immediate. Without? I conjecture that it's in fact equivalent to excluded middle. [No proof yet.]</p>\n</blockquote>\n<p>Actually, I believe it's equivalent to the axiom of choice!</p>\n</blockquote>\n<p>I now realize that I was assuming decidability of inhabitation constructively, which is more than excluded middle. But that's not full choice, is it?</p>",
+        "id": 238629118,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1620916329
+    },
+    {
+        "content": "<p>[I see you correctly yourself at the same time.]</p>",
+        "id": 238629190,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1620916370
+    },
+    {
+        "content": "<p>What do you mean by \"decidability of inhabitation\"?  Isn't decidability of anything an instance of LEM?</p>",
+        "id": 238629586,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620916505
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/238618659\">said</a>:</p>\n<blockquote>\n<p>Regarding setoids, a general setoid is equipped with not merely an equivalence relation, but a collection of witnesses for the truth of that equivalence relation.  Can two names ever name the same object \"in more than one way\"?</p>\n</blockquote>\n<p>That is a difficult question :-) The RDF semantics just speaks of a function from names to things.<br>\n (But those are specs reached by consensus, so we should not think that they settle the matter of what mathematics underlies the structures they are using. Rather the way the semantic web is used should be a guide to answering that question.) <br>\nThe simplest example would be a URL that refers to a document say <code>https://nlab.org/Monad</code> and that is then later made to redirect to <code>https://nlab.org/monad</code>. Do they refer in the same way? It seems not quite, the path in space-time that a request for one takes is different from the second.</p>\n<p>The way this works is defined by <a href=\"https://datatracker.ietf.org/doc/html/rfc2616#section-10.3.2\">RFC 2616 Hypertext Transfer Protocol -- HTTP/1.1 §10.3.2 301 Moved Permanently</a>. <br>\nThe client makes a request on a resource <code>&lt;...Monad&gt;</code> and the server responds with a <code>301 Moved Permanently</code> answer which I think counts as a proof object that the first URL now refers to the same things as the second URL. </p>\n<p>Things get a bit more complicated for URLs that refer to objects-in-the-world, via descriptions found on the web, as for example with a <a href=\"https://www.w3.org/2005/Incubator/webid/spec/identity/#overview\">WebID</a>. An individual could have two such WebIDs - one professional and one for work say, and the descriptions could be done in such a way that one can build a proof that the referents have to be the same. </p>\n<p>So yes, I think we do have witnesses to the equivalence of two terms, and one should not equate two terms unless one has such witnesses. (That fact does not come out that well from the current RDF semantics though ...)</p>",
+        "id": 238630078,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1620916707
+    },
+    {
+        "content": "<p>Part of my problem (with things like polynomials) is that a lot of texts in symbolic computation are very sloppy about intensional vs extensional issues. They treat things interchangeably, even though they shouldn't. And write everything down as if it was all the same. So it's very hard to disentangle what is what.</p>",
+        "id": 238630092,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1620916715
+    },
+    {
+        "content": "<p>Sure, but that's not a problem with the formal system.  (-:</p>",
+        "id": 238630120,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620916739
+    },
+    {
+        "content": "<p>On decidability: I probably confused myself because I was doubting myself after your error. I use <a href=\"https://agda.github.io/agda-stdlib/Axiom.ExcludedMiddle.html\">this definition</a>.</p>",
+        "id": 238630162,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1620916757
+    },
+    {
+        "content": "<p>Ok, that looks like the strong untruncated form of LEM that's incompatible with univalence (which is never what I mean by LEM).  But I don't think you need that to show that the preorder reflection of Set is equivalent to 2.  All you need is that given <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mi>X</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding=\"application/x-tex\">f:X\\to Y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span></span></span></span> such that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> is at least as inhabited as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Y</mi></mrow><annotation encoding=\"application/x-tex\">Y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span></span></span></span> there <em>exists</em> a function <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Y</mi><mo>→</mo><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">Y\\to X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span>, and for that all you need is that there exists an element of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.68333em;vertical-align:0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span>.</p>",
+        "id": 238630494,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620916889
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/238630120\">said</a>:</p>\n<blockquote>\n<p>Sure, but that's not a problem with the formal system.  (-:</p>\n</blockquote>\n<p>Agreed!  I have a hard time pinpointing what my discomfort is with assuming univalence all the time. In part, it might be due to an incorrect internalization of what a 'function' is. I just keep thinking about spaces with too few points, that would end up identifying two things that are still somehow different, just because we didn't have enough points to tell them apart.</p>",
+        "id": 238630895,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1620917059
+    },
+    {
+        "content": "<p>Well, you can still talk about pointless locales in univalent mathematics.  That's not a problem because their \"continuous maps\" are encoded by functions backwards on their underlying frames, not determined by what they do to points.</p>",
+        "id": 238631595,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620917362
+    },
+    {
+        "content": "<p>Would you be able to give me a helping hand with formalizing exactly what \"the preorder reflection of Set is equivalent to 2\" requires in the meta-theory?  I'll resurrect my dead code; I think I just need a hint or two.</p>",
+        "id": 238631821,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1620917456
+    },
+    {
+        "content": "<p>Sure.  I'd be even more interested if you can factor it through \"the preorder reflection of Set is equivalent to Prop\", which I suspect is equivalent to something like the \"propositional axiom of choice\", followed by \"Prop is equivalent to 2\" which of course is equivalent to LEM.</p>",
+        "id": 238632009,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620917552
+    },
+    {
+        "content": "<p>Hmm, that might be quite challenging to do in Agda. Though I'm willing to give it a try.</p>\n<p>The eventual thing I'm interested in is about -1-categories, as -2-enriched categories. If I follow your chain, it still says that (the category of -1-categories is equivalent to 2) is equivalent to LEM.  [And yes, my pure guess was that indeed, one level up from that has a strong choice flavour, but I wasn't willing to go there until I had this 'easy' case done.]</p>",
+        "id": 238632576,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1620917784
+    },
+    {
+        "content": "<p>Well, I would call those \"pre-(-1)-categories\".  Actual (-1)-categories should satisfy a Rezk-completion condition that makes them equivalent to Prop without any classicality assumptions.</p>",
+        "id": 238638660,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620920386
+    },
+    {
+        "content": "<p>I am amenable to that terminology.  Hmm, a quick search on Rezk completion condition gives me things that are above my comprehension level of these matters. Is there a way to phrase a \"Rezk completion condition\" specialized to this situation? Is it obvious that this in some sense forces LEM?</p>",
+        "id": 238640998,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1620921467
+    },
+    {
+        "content": "<p>You only get LEM when you start talking about 2 rather than Prop.</p>",
+        "id": 238644272,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620922867
+    },
+    {
+        "content": "<p>Rezk completion of an ordinary (pre-)category says that isomorphic objects are equal (in an appropriate univalent sense, where equalities can actually carry the information of particular isomorphisms).   In a pre-(-1)-category, all objects are isomorphic, so Rezk completeness says that all objects are equal.  Thus, it is just a proposition.</p>",
+        "id": 238644500,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1620922974
     }
 ]

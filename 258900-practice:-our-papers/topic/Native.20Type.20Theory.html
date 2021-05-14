@@ -987,6 +987,102 @@ c-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z'/></svg><
 
 
 
+<a name="238585682"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238585682" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tom Hirschowitz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238585682">(May 13 2021 at 06:12)</a>:</h4>
+<p>You're right, <span class="user-mention" data-user-id="275920">@John Baez</span> and <span class="user-mention" data-user-id="275899">@Christian Williams</span>,  I'm not sure what I'm saying here. I guess it depends what you're planning to do with this native type theory. E.g., could you define some legitimate behavioural equivalence and prove some of its properties?</p>
+
+
+
+<a name="238618104"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238618104" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238618104">(May 13 2021 at 13:06)</a>:</h4>
+<p>I would augment <span class="user-mention" data-user-id="297784">@Jonathan Sterling</span> 's response regarding <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.05278em;">β</span></span></span></span>-reduction in the following way: it makes little sense to regard two terms seen as <em>values</em> as different if they only differ by a <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.05278em;">β</span></span></span></span>-reduction. But it makes a lot of sense to view two terms seen as <em>computations</em> as different in that same case. </p>
+<p>So if computation is merely an ends to a means, then ignoring its process is fine.</p>
+<p>When doing meta-programming of all sorts, often the main point is to shift computation around. One of the things we often want to do in meta-computation is to shift <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.05278em;">β</span></span></span></span>-redexes from run-time to compile-time. So staging really cares a lot. One of the most basic things you keep track of in a partial evaluator is whether something is known to be a value (and thus it can be freely duplicated) or not (and so should be let-bound).</p>
+<p>So in 1-stage PL seen as black-boxes for getting work done, indeed, we don't care. In other cases? I'd say we care a lot!</p>
+
+
+
+<a name="238652780"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238652780" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238652780">(May 13 2021 at 17:26)</a>:</h4>
+<p>I roughly understand what Jacques is saying and this is why I <em>like</em> working with graphs as Christian and Mike are doing: it's a way to treat terms as computations.</p>
+
+
+
+<a name="238655949"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238655949" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238655949">(May 13 2021 at 17:52)</a>:</h4>
+<p>I feel ultimately it is a question of what you are trying to study. If you are trying to study the results of those computations, then it is going to be a major waste of time to differentiate between the different steps. If you are studying the steps themselves, then obviously we need to look at those directly! One methodological remark I would like to point out is, however, that in practice a mix of the two approaches is what is usually needed for most applications.</p>
+<p>There is a reason, for instance, that while some people may be interested in studying the transition from <code>fst(a,b)</code> to <code>a</code>, nobody is interested in studying the transition from <code>\x.M(x)</code> to <code>\y.M(y)</code>, etc. (Well, I may exaggerate when I say "nobody", but I hope my point is made that we are dealing with a spectrum, and where we end up on that spectrum can be determined by the applications we have in mind.)</p>
+
+
+
+<a name="238656249"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238656249" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238656249">(May 13 2021 at 17:55)</a>:</h4>
+<p>I guess I'd like an approach that lets you include something resembling 2-morphisms between all these syntactically different terms - even the ones "nobody is interested in" - and then lets you easily mod out by any 2-morphisms you don't happen to be interested in right now.</p>
+
+
+
+<a name="238656489"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238656489" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238656489">(May 13 2021 at 17:57)</a>:</h4>
+<p>In pure math, at least, it's generally easier to "mod out" when you decide you're uninterested in something you were paying attention to, than to "un-mod out" when you decide you're interested in something you were ignoring.</p>
+
+
+
+<a name="238656788"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238656788" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238656788">(May 13 2021 at 17:59)</a>:</h4>
+<p>I like the 2-categoric approach too (and you get interesting stuff when you go beyond 2-categories too!). I think there is room for a bit of controversy, however, about whether some of these things should be dealt with by non-identity cells: for instance, there is a question of whether terms are graphs with distinguished back-edges denoting variable binding sites, or if they are strings. You could consider the string presentation and then add a lot of 2-cells that express the fact that adding parentheses around certain sub-strings is a no-op... And indeed, you can mod out by these if you consider them unimportant. But at some point you have to ask, why am I talking about strings in the first place? Maybe terms are actually graphs... In which case these 2-cells for dropping parentheses really don't make any sense...</p>
+
+
+
+<a name="238657037"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238657037" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238657037">(May 13 2021 at 18:00)</a>:</h4>
+<p>In the end, as I say, it must keep coming down to whether you haev an interesting theorem to prove that would depend on being able to see (e.g.) the parentheses. If you do, then I really welcome the integration of them into some higher structure that can then be modded out later if one wishes to access a higher level of abstraction. But if you don't, then we shouldn't be doing it... Various low-level representations of things did not fall from the sky: human beings invented them. So categorification has to take into account not only what exists, but also what the intention was behind what exists.</p>
+
+
+
+<a name="238657906"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238657906" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238657906">(May 13 2021 at 18:07)</a>:</h4>
+<p>Yes, I'm just a mathematician, so I don't know much about what syntax computer scientists actually care about, and I don't actually have any interesting theorems to prove on this subject; I just want to be able to describe whatever is going on without being <em>forced</em> to identify things that don't look equal to me.</p>
+
+
+
+<a name="238664069"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238664069" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238664069">(May 13 2021 at 18:56)</a>:</h4>
+<p>So, my humble job would be merely to provide tools...</p>
+
+
+
+<a name="238683224"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238683224" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Sterling <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238683224">(May 13 2021 at 21:20)</a>:</h4>
+<p>If you are mainly providing tools to be used by others, then I hope you will take our advice as to will and will not be useful to us ;-) But I do appreciate the distinction you are making and am, as always, very excited to see what you come up with.</p>
+
+
+
+<a name="238685638"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238685638" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238685638">(May 13 2021 at 21:42)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="297784">Jonathan Sterling</span> <a href="#narrow/stream/258900-practice.3A-our.20papers/topic/Native.20Type.20Theory/near/238656788">said</a>:</p>
+<blockquote>
+<p>I like the 2-categoric approach too (and you get interesting stuff when you go beyond 2-categories too!). I think there is room for a bit of controversy, however, about whether some of these things should be dealt with by non-identity cells: for instance, there is a question of whether terms are graphs with distinguished back-edges denoting variable binding sites, or if they are strings. You could consider the string presentation and then add a lot of 2-cells that express the fact that adding parentheses around certain sub-strings is a no-op... And indeed, you can mod out by these if you consider them unimportant. But at some point you have to ask, why am I talking about strings in the first place? Maybe terms are actually graphs... In which case these 2-cells for dropping parentheses really don't make any sense...</p>
+</blockquote>
+<p>I don't understand what you're saying about terms as graphs or strings; to me a term is just its abstract syntax tree. as for the 2-categorical aspect, John and I considered enriched theories for languages with rewriting; but only more recently I realized that these only work for <em>congruent</em> rewriting systems, not more general operational semantics. though maybe that's enough for many applications you care about.</p>
+
+
+
+<a name="238686007"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238686007" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Christian Williams <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238686007">(May 13 2021 at 21:46)</a>:</h4>
+<p>More generally in the discussion, this is why I think it's significant that native type theory combines reasoning about both structure and behavior. If the type system of the presheaf topos is initially too fine-grained for your purposes, we can restrict to subsystems which only make certain distinctions. We can quotient and reason up to behavioral equivalence.</p>
+
+
+
+<a name="238692281"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Native%20Type%20Theory/near/238692281" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Native.20Type.20Theory.html#238692281">(May 13 2021 at 22:45)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="297784">Jonathan Sterling</span> <a href="#narrow/stream/258900-practice.3A-our.20papers/topic/Native.20Type.20Theory/near/238683224">said</a>:</p>
+<blockquote>
+<p>If you are mainly providing tools to be used by others, then I hope you will take our advice as to will and will not be useful to us ;-) </p>
+</blockquote>
+<p>That makes plenty of sense.  I was trying to weasel out of this responsibility but I didn't really give the true reason.  The real reason is that it's <span class="user-mention" data-user-id="275899">@Christian Williams</span> and <span class="user-mention" data-user-id="276048">@Mike Stay</span> who are taking the lead on of this project, with me just providing a bit of category-theoretic assistance as Christian's thesis advisor.   So  I hope you keep talking about these issues, but I'll let them focus on the "practical" issues while I focus on the math questions that come up.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: May 13 2021 at 00:29 UTC</p>
+<hr><p>Last updated: May 14 2021 at 00:29 UTC</p>

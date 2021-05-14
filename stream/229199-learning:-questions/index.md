@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [partial inverses in $\infty$-categories](topic/partial.20inverses.20in.20.24.5Cinfty.24-categories.html) (2 messages, latest: May 13 2021 at 00:49)
 * [Partial inverses in $\infty$-categories](topic/Partial.20inverses.20in.20.24.5Cinfty.24-categories.html) (16 messages, latest: May 13 2021 at 00:20)
 * [left adjoint = right adjoint](topic/left.20adjoint.20.3D.20right.20adjoint.html) (31 messages, latest: May 11 2021 at 17:11)
 * [L^p as adjoint](topic/L.5Ep.20as.20adjoint.html) (19 messages, latest: May 10 2021 at 19:33)
@@ -401,4 +402,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 13 2021 at 00:29 UTC</p>
+<hr><p>Last updated: May 14 2021 at 00:29 UTC</p>

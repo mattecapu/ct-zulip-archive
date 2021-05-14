@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [submitting to CT2021](topic/submitting.20to.20CT2021.html) (56 messages, latest: May 13 2021 at 14:19)
 * [thermodynamics in biology](topic/thermodynamics.20in.20biology.html) (3 messages, latest: May 11 2021 at 05:55)
 * [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (26 messages, latest: May 08 2021 at 20:20)
 * [Compositional Robotics: Mathematics and Tools Workshop](topic/Compositional.20Robotics.3A.20Mathematics.20and.20Tools.20Workshop.html) (9 messages, latest: May 07 2021 at 09:04)
@@ -21,7 +22,6 @@ permalink: /stream/229141-general:-events/index.html
 * [Logic Webinar@IITK](topic/Logic.20Webinar.40IITK.html) (9 messages, latest: Apr 19 2021 at 06:25)
 * [Jeremy Avigad](topic/Jeremy.20Avigad.html) (1 message, latest: Apr 17 2021 at 14:15)
 * [Category Theory Meets Computational Irreducibility](topic/Category.20Theory.20Meets.20Computational.20Irreducibility.html) (15 messages, latest: Apr 13 2021 at 09:27)
-* [submitting to CT2021](topic/submitting.20to.20CT2021.html) (53 messages, latest: Mar 24 2021 at 02:20)
 * [Workshop on Polynomial Functors](topic/Workshop.20on.20Polynomial.20Functors.html) (10 messages, latest: Mar 15 2021 at 14:12)
 * [Mathematics in the 21st century](topic/Mathematics.20in.20the.2021st.20century.html) (3 messages, latest: Mar 14 2021 at 19:37)
 * [ICLA 2021](topic/ICLA.202021.html) (4 messages, latest: Mar 14 2021 at 15:00)
@@ -96,4 +96,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: May 13 2021 at 00:29 UTC</p>
+<hr><p>Last updated: May 14 2021 at 00:29 UTC</p>
