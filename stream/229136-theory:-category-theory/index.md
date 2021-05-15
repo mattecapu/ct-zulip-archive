@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [nominal substitution monoids](topic/nominal.20substitution.20monoids.html) (10 messages, latest: May 13 2021 at 12:17)
+* [nominal substitution monoids](topic/nominal.20substitution.20monoids.html) (78 messages, latest: May 14 2021 at 16:39)
 * [monads](topic/monads.html) (48 messages, latest: May 12 2021 at 22:20)
 * [morphisms of presheaf toposes](topic/morphisms.20of.20presheaf.20toposes.html) (1 message, latest: May 11 2021 at 00:56)
 * [cartesian vs Cartesian](topic/cartesian.20vs.20Cartesian.html) (37 messages, latest: May 10 2021 at 17:28)
@@ -162,4 +162,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: May 14 2021 at 00:29 UTC</p>
+<hr><p>Last updated: May 15 2021 at 00:27 UTC</p>

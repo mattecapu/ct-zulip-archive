@@ -9,7 +9,9 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
-* [Native Type Theory](topic/Native.20Type.20Theory.html) (151 messages, latest: May 13 2021 at 22:45)
+* [Categorical composable cryptography](topic/Categorical.20composable.20cryptography.html) (1 message, latest: May 14 2021 at 13:07)
+* [Native Type Theory](topic/Native.20Type.20Theory.html) (152 messages, latest: May 14 2021 at 12:21)
+* [Graphical Calculus for Lagrangian Relations](topic/Graphical.20Calculus.20for.20Lagrangian.20Relations.html) (3 messages, latest: May 14 2021 at 05:29)
 * [pregroups are frobenii are pregroups](topic/pregroups.20are.20frobenii.20are.20pregroups.html) (1 message, latest: May 13 2021 at 07:25)
 * [Categorical Semantics of Cyber-Physical Systems Theory](topic/Categorical.20Semantics.20of.20Cyber-Physical.20Systems.20Theory.html) (16 messages, latest: May 12 2021 at 14:46)
 * [Toposes of Topological Monoid Actions](topic/Toposes.20of.20Topological.20Monoid.20Actions.html) (4 messages, latest: May 05 2021 at 08:02)
@@ -35,4 +37,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [stream events](topic/stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: May 14 2021 at 00:29 UTC</p>
+<hr><p>Last updated: May 15 2021 at 00:27 UTC</p>

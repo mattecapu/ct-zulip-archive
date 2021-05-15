@@ -9,7 +9,7 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
-* [David Roberts](topic/David.20Roberts.html) (11 messages, latest: May 13 2021 at 17:24)
+* [David Roberts](topic/David.20Roberts.html) (12 messages, latest: May 14 2021 at 07:53)
 * [Jon Sterling](topic/Jon.20Sterling.html) (4 messages, latest: May 05 2021 at 03:26)
 * [Morgan Rogers](topic/Morgan.20Rogers.html) (1 message, latest: May 03 2021 at 13:42)
 * [Nicolas Blanco](topic/Nicolas.20Blanco.html) (5 messages, latest: Apr 23 2021 at 23:31)
@@ -21,4 +21,4 @@ permalink: /stream/274877-practice:-our-work/index.html
 * [stream events](topic/stream.20events.html) (6 messages, latest: Jan 31 2021 at 03:39)
 * [thoughts on sharing ideas](topic/thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: May 14 2021 at 00:29 UTC</p>
+<hr><p>Last updated: May 15 2021 at 00:27 UTC</p>
