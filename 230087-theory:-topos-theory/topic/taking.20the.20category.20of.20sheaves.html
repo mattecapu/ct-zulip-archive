@@ -1,0 +1,136 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/index.html">theory: topos theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html">taking the category of sheaves</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+<head><link href="https://mattecapu.github.io/ct-zulip-archive/style.css" rel="stylesheet"></head>
+
+{% raw %}
+
+<a name="238900104"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238900104" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jade Master <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238900104">(May 15 2021 at 14:00)</a>:</h4>
+<p>I've heard before that taking the category of sheaves on a site cocompletes your category with respect to a certain class of diagrams. I have two questions.</p>
+<ol>
+<li>Is this true?</li>
+<li>How does it work?</li>
+</ol>
+
+
+
+<a name="238901263"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238901263" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238901263">(May 15 2021 at 14:19)</a>:</h4>
+<p>I can point you to some relevant references. First, note that a category of sheaves is a <a href="https://ncatlab.org/nlab/show/sheaf+toposes+are+equivalently+the+left+exact+reflective+subcategories+of+presheaf+toposes">(lex) reflective subcategory of a presheaf category</a>, hence a cocompletion under some class of colimits. Next, the sheaf condition can be described as an orthogonality condition for a presheaf: see the "Orthogonal Subcategory Problem (OSP)" subsection in <a href="https://golem.ph.utexas.edu/category/2014/02/categories_of_continuous_funct.html">this blog post</a>, for instance. Orthogonality conditions are used to describe cocompletions that preserve some existing class of colimits (e.g. see Theorem 11.5 of Fiore's <em>Enrichment and Representation Theorems for Categories of Domains and Continuous Functions</em>), so this says essentially that the category of sheaves is a cocompletion that respects certain existing colimits (i.e. the covering colimits).</p>
+
+
+
+<a name="238901503"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238901503" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jade Master <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238901503">(May 15 2021 at 14:22)</a>:</h4>
+<p>Interesting thanks.</p>
+
+
+
+<a name="238902410"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238902410" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238902410">(May 15 2021 at 14:38)</a>:</h4>
+<p>The latter (a cocompletion that respects certain colimits) is the one I'm familiar with.  What do you mean by the first one "hence a cocompletion under some class of colimits"?</p>
+
+
+
+<a name="238902660"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238902660" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238902660">(May 15 2021 at 14:43)</a>:</h4>
+<p>The category of sheaves is also the free cocompletion respecting existing colimits "in the world of finitely complete categories".  This is the statement that it's the <a href="https://ncatlab.org/nlab/show/classifying+topos#CoverPreservingFLatFunctors">classifying topos</a> for cover-preserving flat functors.  Other references include <a href="https://arxiv.org/abs/1107.0778">lex colimits</a> and <a href="https://arxiv.org/abs/1203.4318">exact completions and small sheaves</a>.</p>
+
+
+
+<a name="238902694"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238902694" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238902694">(May 15 2021 at 14:43)</a>:</h4>
+<p>Of course, the "existing colimits" might not actually be colimits, if the site isn't subcanonical.  And the "finite limits" might not actually exist in the site either.</p>
+
+
+
+<a name="238902717"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238902717" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jade Master <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238902717">(May 15 2021 at 14:43)</a>:</h4>
+<p>I'm not sure about how this works but I was under the impression that the Grothendieck topology allows you to choose which colimits are in the category of sheaves.</p>
+
+
+
+<a name="238902821"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238902821" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jade Master <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238902821">(May 15 2021 at 14:45)</a>:</h4>
+<p>I suppose it's true because of the first fact that Nathanael mentioned but I am curious about how it works in a bit more detail.</p>
+
+
+
+<a name="238903072"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238903072" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238903072">(May 15 2021 at 14:48)</a>:</h4>
+<p>That's the second fact: it lets you choose which "colimits" in the site <em>remain</em> colimits in the category of sheaves.  The category of sheaves always <em>has</em> all small colimits.</p>
+
+
+
+<a name="238903212"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238903212" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jade Master <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238903212">(May 15 2021 at 14:50)</a>:</h4>
+<p>Oh I get it now.</p>
+
+
+
+<a name="238903342"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238903342" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238903342">(May 15 2021 at 14:52)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/230087-theory.3A-topos.20theory/topic/Taking.20the.20category.20of.20sheaves/near/238902410">said</a>:</p>
+<blockquote>
+<p>The latter (a cocompletion that respects certain colimits) is the one I'm familiar with.  What do you mean by the first one "hence a cocompletion under some class of colimits"?</p>
+</blockquote>
+<p>I should have also mentioned that the right adjoint preserves some colimits, which is a characteristic property for cocompletions, as it intuitively expresses that these colimits are given freely. But really this first observation is just intended to give a clue that one might expect a sheaf topos to be characterised via a cocompletion condition; the formal argument is given by orthogonality.</p>
+
+
+
+<a name="238913944"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238913944" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238913944">(May 15 2021 at 17:43)</a>:</h4>
+<p>So Jade was thinking that by taking sheaves with respect to a Grothendieck topology we can decide which kinds of colimits to freely add to a category - but freely throwing in colimits destroys the colimits we had, and in fact what the Grothendieck topology does is let us decide which kinds of colimits we <em>don't</em> mess with.</p>
+
+
+
+<a name="238913995"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238913995" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238913995">(May 15 2021 at 17:44)</a>:</h4>
+<p>It's also pretty easy to do what Jade was originally talking about: take a category and freely throw in a certain class of coproducts.</p>
+
+
+
+<a name="238914026"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238914026" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238914026">(May 15 2021 at 17:45)</a>:</h4>
+<p>For example, if I have a category C and I want to freely throw in coproducts, I take the category of presheaves on C, and then take the full subcategory consisting of objects that are coproducts of representables.   Voila!</p>
+
+
+
+<a name="238914165"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238914165" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238914165">(May 15 2021 at 17:47)</a>:</h4>
+<p>However, note that this works because coproducts of coproducts are coproducts.</p>
+
+
+
+<a name="238914217"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238914217" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238914217">(May 15 2021 at 17:48)</a>:</h4>
+<p>So by taking coproducts of representables, we get a bunch of objects that are closed under coproducts: a coproduct of coproducts of representables is a coproduct of representables.</p>
+
+
+
+<a name="238914232"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238914232" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238914232">(May 15 2021 at 17:48)</a>:</h4>
+<p>For other kinds of colimits it may not work so simply.</p>
+
+
+
+<a name="238924598"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/230087-theory%3A%20topos%20theory/topic/taking%20the%20category%20of%20sheaves/near/238924598" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/230087-theory:-topos-theory/topic/taking.20the.20category.20of.20sheaves.html#238924598">(May 15 2021 at 20:52)</a>:</h4>
+<p>Yes, for other kinds of colimits what you need is the closure of the representables under those colimits, which you can build either by a transfinite iteration (or inductive predicate) or an impredicative intersection.</p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: May 16 2021 at 00:30 UTC</p>

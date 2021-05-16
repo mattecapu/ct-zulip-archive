@@ -22,7 +22,7 @@ permalink: /index.html
 
 * [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
-* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (60 topics)
+* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (61 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: May 15 2021 at 00:27 UTC</p>
+<hr><p>Last updated: May 16 2021 at 00:30 UTC</p>
