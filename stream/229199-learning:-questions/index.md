@@ -9,6 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [A category similar to the simplex category](topic/A.20category.20similar.20to.20the.20simplex.20category.html) (8 messages, latest: May 16 2021 at 20:20)
+* [How to work with composable sequences of arrows of a cat?](topic/How.20to.20work.20with.20composable.20sequences.20of.20arrows.20of.20a.20cat.3F.html) (10 messages, latest: May 16 2021 at 18:49)
 * [partial inverses in $\infty$-categories](topic/partial.20inverses.20in.20.24.5Cinfty.24-categories.html) (2 messages, latest: May 13 2021 at 00:49)
 * [Partial inverses in $\infty$-categories](topic/Partial.20inverses.20in.20.24.5Cinfty.24-categories.html) (16 messages, latest: May 13 2021 at 00:20)
 * [left adjoint = right adjoint](topic/left.20adjoint.20.3D.20right.20adjoint.html) (31 messages, latest: May 11 2021 at 17:11)
@@ -402,4 +404,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 16 2021 at 00:30 UTC</p>
+<hr><p>Last updated: May 17 2021 at 00:27 UTC</p>

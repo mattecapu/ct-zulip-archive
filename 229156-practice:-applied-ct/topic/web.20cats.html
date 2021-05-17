@@ -1422,6 +1422,55 @@ The client makes a request on a resource <code>&lt;...Monad&gt;</code> and the s
 
 
 
+<a name="238963772"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/238963772" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#238963772">(May 16 2021 at 09:35)</a>:</h4>
+<p>Here is a much better example on how two web identifiers (a.k.a URLs) can have the same reference but in a different way, as <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/238630078">discussed above</a><br>
+A <a href="https://twitter.com/amar_hh/status/1393182368702283777">recent tweet</a> by <span class="user-mention" data-user-id="276363">@Amar Hadzihasanovic</span> pointed out that what used to be called "Computational Trinitarianism" on nlab is now called "computational trilogy".</p>
+<div class="inline-preview-twitter"><div class="twitter-tweet"><a href="https://twitter.com/amar_hh/status/1393182368702283777"><img class="twitter-avatar" src="https://uploads.zulipusercontent.net/96aa735739dfc5b9c34f8e22704e45fd8d5c24d8/68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f313037383036383533343230353236373936382f572d38627a4c584f5f6e6f726d616c2e6a7067"></a><p>The legendary nLab page on “computational trinitarianism” is now called “computational trilogy”. Not sure yet how I feel about that.
+
+<a href="https://t.co/3fINduqjWB">https://ncatlab.org/nlab/show/computational+trilogy</a></p><span>- Amar Hadzihasanovic (@amar_hh)</span></div></div>
+
+
+
+<a name="238963915"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/238963915" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#238963915">(May 16 2021 at 09:38)</a>:</h4>
+<p>From a terminal you see how this is encoded in the HTTP exchange when you make a call to the old page</p>
+<div class="codehilite" data-code-language="Bash"><pre><span></span><code>curl -I https://ncatlab.org/nlab/show/computational+trinitarianism
+</code></pre></div>
+<p>The <code>-I</code> flag on <code>curl</code> tells it to only return the HTTP headers.  Running that in the console will open a connection to nlab, which returns the following message:</p>
+<div class="codehilite" data-code-language="HTTP"><pre><span></span><code><span class="kr">HTTP</span><span class="o">/</span><span class="m">2</span> <span class="m">301</span>
+<span class="na">date</span><span class="o">:</span> <span class="l">Sun, 16 May 2021 09:31:20 GMT</span>
+<span class="na">content-type</span><span class="o">:</span> <span class="l">text/html; charset=utf-8</span>
+<span class="na">cache-control</span><span class="o">:</span> <span class="l">no-cache</span>
+<span class="na">location</span><span class="o">:</span> <span class="l">https://ncatlab.org/nlab/show/computational+trilogy</span>
+<span class="na">x-runtime</span><span class="o">:</span> <span class="l">35</span>
+<span class="na">set-cookie</span><span class="o">:</span> <span class="l">instiki_session=60ca073898c53ed9d461f6f8f2602417; path=/; HttpOnly</span>
+<span class="na">strict-transport-security</span><span class="o">:</span> <span class="l">max-age=15768000</span>
+<span class="na">cf-cache-status</span><span class="o">:</span> <span class="l">DYNAMIC</span>
+<span class="na">cf-request-id</span><span class="o">:</span> <span class="l">0a161d1a8b00004ee0fd10b000000001</span>
+<span class="na">expect-ct</span><span class="o">:</span> <span class="l">max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"</span>
+<span class="na">report-to</span><span class="o">:</span> <span class="l">{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=5tjGVBp1Ew3TWm4Qo64LXSAyLnvuKzIaW2z1Sg9wd57GvEJnYUmKS37ulZ57j1cHD7GKFq8XajeJ6u0Yyo11gkQMjyklfllj%2FOQjUNBZeV5CybBfKTFM3A%3D%3D"}],"group":"cf-nel","max_age":604800}</span>
+<span class="na">nel</span><span class="o">:</span> <span class="l">{"report_to":"cf-nel","max_age":604800}</span>
+<span class="na">server</span><span class="o">:</span> <span class="l">cloudflare</span>
+<span class="na">cf-ray</span><span class="o">:</span> <span class="l">650397a41a724ee0-FRA</span>
+<span class="na">alt-svc</span><span class="o">:</span> <span class="l">h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400</span>
+</code></pre></div>
+<p>The <code>301</code> is the code for <code>Moved Permanently</code> redirect, and the <code>location</code> header tells the browser where to look for the new content, namley at <code>location: https://ncatlab.org/nlab/show/computational+trilogy</code>.</p>
+
+
+
+<a name="238964329"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/238964329" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#238964329">(May 16 2021 at 09:45)</a>:</h4>
+<p>The above <a href="https://http.cat/301">301 response</a> can then be seen as a proof object that <code>https://ncatlab.org/nlab/show/computational+trinitarianism</code>  and <code>https://ncatlab.org/nlab/show/computational+trilogy</code> considered semantically can be related as equivalent, falling thus in the same equivalence class. If one can do that with slice categories in HoTT, I'd be happy with that too of course :-)</p>
+
+
+
+<a name="238968306"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/238968306" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#238968306">(May 16 2021 at 10:54)</a>:</h4>
+<p>See the full list of <a href="https://http.cat">cat illustrated http codes</a>.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: May 16 2021 at 00:30 UTC</p>
+<hr><p>Last updated: May 17 2021 at 00:27 UTC</p>
