@@ -1,0 +1,74 @@
+[
+    {
+        "content": "<p>I thought it'd be a good idea to tell you what I've been up to as well!</p>\n<p>I submitted a couple of papers last year, in collaboration with <span class=\"user-mention\" data-user-id=\"386922\">@Graham Manuell</span>  and <span class=\"user-mention\" data-user-id=\"386925\">@Peter Faul</span> :</p>\n<p>1) In <a href=\"https://arxiv.org/abs/2010.07926\">https://arxiv.org/abs/2010.07926</a>  we prove an extension of a classical theorem on collations of families of functors into a bifunctor, which turns out to also generalize the process of composing monads via a distributive law. This provides a notion of  \"distributive law\" for lax functors.</p>\n<p>2) In <a href=\"https://arxiv.org/abs/2012.04963\">https://arxiv.org/abs/2012.04963</a>,  we show that Artin glueings of toposes correspond to a 2-categorical notion of adjoint split extensions in the 2-category of toposes,  cartesian functors, and natural transformations. This is another instance of a statement for frames/locales carrying over to the topos level, although the process wasn't easy.</p>\n<p>I've also just submitted my PhD thesis, which doesn't really have to do with those papers; it is a new attempt to categorify nonstandard analysis, going through the route of Internal Set Theory and using Tripos Theory as the main tool. The idea is to show that if you start with a model of ZFC (with the language including a st(x) symbol), then the satisfaction of the additional axioms of IST that make nonstandard proofs work (Idealization, Standardization, and Transfer) correspond to certain relationships holding between 3  triposes you can build. This then<br>\nsuggests a notion of \"tripos model of IST\" which abstracts away what is necessary to make the machinery work, so that you can replicate the nonstandard proof methods in any such model. We can then describe what Standardization and Idealization (and not just Transfer) mean in contexts such as the one studied by A. Kock and C. J. Mikkelsen in their old paper on nonstandard extensions, for example.</p>\n<p>Now that it is submitted, I'll probably  think about how to structure some of the material (plus some extra stuff) into paper form and look for postdocs and collaborations. Please do get in touch if you think you can help with that :)</p>",
+        "id": 239075184,
+        "sender_full_name": "José Siqueira",
+        "timestamp": 1621252796
+    },
+    {
+        "content": "<p><em>2-dimensional bifunctor theorems and distributive laws</em> is a really nice paper. It seems very much in the vein of Street's <em>Two constructions on Lax functors</em>; I think it's surprising, but very satisfying, how many constructions on monads can be generalised to constructions on lax functors.</p>",
+        "id": 239112511,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1621266230
+    },
+    {
+        "content": "<p>I'm curious what other generalizations of constructions on monads to lax functors you have in mind?</p>",
+        "id": 239120238,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1621269014
+    },
+    {
+        "content": "<p>E.g. every adjunction gives rise to a monad; the Kleisli and Eilenberg–Moore constructions; the monadicity theorem; the structure–semantics adjunction.</p>",
+        "id": 239120685,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1621269204
+    },
+    {
+        "content": "<p>The Kleisli and EM constructions are just certain 2-categorical limits and colimits, so it's not surprising that they can be generalized.  I'm not sure what generalizations you are referring to for the others, can you give references?</p>",
+        "id": 239120925,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1621269297
+    },
+    {
+        "content": "<p>I ask because I recently noticed a way to interpret lax functors as literally being monads in an appropriate place, so I'm wondering how many of these generalizations can be viewed conversely as <em>specializations</em> of formal monad notions to lax functors from that viewpoint.</p>",
+        "id": 239121192,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1621269415
+    },
+    {
+        "content": "<blockquote>\n<p>The Kleisli and EM constructions are just certain 2-categorical limits and colimits, so it's not surprising that they can be generalized.</p>\n</blockquote>\n<p>If you have the right way of looking at things, nothing is surprising – but I think phrasing them as lax colimits and limits in the first place is a surprising fact when one first encounters it.</p>",
+        "id": 239121476,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1621269522
+    },
+    {
+        "content": "<blockquote>\n<p>I'm not sure what generalizations you are referring to for the others, can you give references?</p>\n</blockquote>\n<p>All the other generalisations I mentioned are in <em>Two constructions on Lax functors</em>.</p>",
+        "id": 239121501,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1621269540
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/274877-practice.3A-our.20work/topic/Jos.C3.A9.20Siqueira/near/239121192\">said</a>:</p>\n<blockquote>\n<p>I ask because I recently noticed a way to interpret lax functors as literally being monads in an appropriate place, so I'm wondering how many of these generalizations can be viewed conversely as <em>specializations</em> of formal monad notions to lax functors from that viewpoint.</p>\n</blockquote>\n<p>That sounds very interesting! Can you say any more?</p>",
+        "id": 239121553,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1621269566
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/274877-practice.3A-our.20work/topic/Jos.C3.A9.20Siqueira/near/239121192\">said</a>:</p>\n<blockquote>\n<p>I ask because I recently noticed a way to interpret lax functors as literally being monads in an appropriate place, so I'm wondering how many of these generalizations can be viewed conversely as <em>specializations</em> of formal monad notions to lax functors from that viewpoint.</p>\n</blockquote>\n<p>I'd also be interested to hear about this, because I thought about it a bit when we were writing the paper, but I couldn't see how to make it work. Later at a talk I gave, <span class=\"user-mention\" data-user-id=\"277067\">@Tom Leinster</span> suggested trying to generalise the result that monoidal functors from C to D are monoids in the category of all functors from C to D with Day convolution as the tensor product. This suggests a rather weird generalisation to some kind of 2-category of maps between 2-categories that don't need to preserve the 1-dimensional structure, but I haven't had time to think exactly how this would work.</p>",
+        "id": 239149412,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1621281144
+    },
+    {
+        "content": "<p>I'll send a note by email.</p>",
+        "id": 239174773,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1621293984
+    },
+    {
+        "content": "<p>Or I would, if I knew your email addresses.  I have Nathanael's.</p>",
+        "id": 239175072,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1621294223
+    }
+]

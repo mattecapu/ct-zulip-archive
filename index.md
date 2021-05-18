@@ -56,19 +56,19 @@ permalink: /index.html
 
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
 
-* [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (14 topics)
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (15 topics)
 
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (14 topics)
+* [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (14 topics)
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (14 topics)
 
+* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (14 topics)
+
 * [working: discrete geometry and entanglement](stream/266854-working:-discrete-geometry-and-entanglement/index.html) (14 topics)
 
-* [theory: algebraic topology & homological algebra](stream/241590-theory:-algebraic-topology-&-homological-algebra/index.html) (13 topics)
+* [practice: our work](stream/274877-practice:-our-work/index.html) (12 topics)
 
 * [theory: physics](stream/251538-theory:-physics/index.html) (12 topics)
-
-* [practice: our work](stream/274877-practice:-our-work/index.html) (11 topics)
 
 * [practice: ACT wiki](stream/243548-practice:-ACT-wiki/index.html) (10 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: May 17 2021 at 00:27 UTC</p>
+<hr><p>Last updated: May 18 2021 at 00:30 UTC</p>

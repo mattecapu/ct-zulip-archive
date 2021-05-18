@@ -35,6 +35,102 @@ permalink: /stream/258900-practice:-our-papers/topic/Categorical.20composable.20
 
 
 
+<a name="239062448"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Categorical%20composable%20cryptography/near/239062448" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bas Spitters <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Categorical.20composable.20cryptography.html#239062448">(May 17 2021 at 10:02)</a>:</h4>
+<p><span class="user-mention" data-user-id="277285">@Martti Karvonen</span>  Thanks for the nice paper. I believe the urge to use category theory for modular crypto proofs is very natural.<br>
+We've made a formalization of the SSP framework which is similar to constructive crypto<br>
+<a href="https://github.com/SSProve/ssprove">https://github.com/SSProve/ssprove</a></p>
+<p>Is my understanding correct that the resource theory you are using only captures probabilistic computations, but not stateful computations, and that shared state is dealt with by shared resources.<br>
+BTW. you may also be interested in the formalization of CC in Isabelle.</p>
+
+
+
+<a name="239083864"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Categorical%20composable%20cryptography/near/239083864" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martti Karvonen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Categorical.20composable.20cryptography.html#239083864">(May 17 2021 at 13:01)</a>:</h4>
+<p>Thanks <span class="user-mention" data-user-id="278549">@Bas Spitters</span>  for bringing this formalization to my attention - I knew that people do formally verified cryptography, but I didn't know that there's also formally verified work  on  simulation-based security/constructive cryptography.</p>
+
+
+
+<a name="239084242"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Categorical%20composable%20cryptography/near/239084242" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martti Karvonen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Categorical.20composable.20cryptography.html#239084242">(May 17 2021 at 13:03)</a>:</h4>
+<p>As far as your question goes, I think one of the main benefits of going categorical is that the background theory is agnostic about the computational model (as long as it results in a (symmetric) monoidal category) - in particular, I'd expect it to handle stateful computations as well as quantum computations or even relativistic scenarios like here: <a href="https://iopscience.iop.org/article/10.1088/1367-2630/ab0e3b/meta">https://iopscience.iop.org/article/10.1088/1367-2630/ab0e3b/meta</a></p>
+
+
+
+<a name="239084464"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Categorical%20composable%20cryptography/near/239084464" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martti Karvonen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Categorical.20composable.20cryptography.html#239084464">(May 17 2021 at 13:04)</a>:</h4>
+<p>Of course, one then needs to build/choose some model  of computation (which we don't really address) and most security proofs probably need to go into details of the model, so one can't  do everything at the model-agnostic level.</p>
+
+
+
+<a name="239085196"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Categorical%20composable%20cryptography/near/239085196" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martti Karvonen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Categorical.20composable.20cryptography.html#239085196">(May 17 2021 at 13:09)</a>:</h4>
+<p><span class="user-mention" data-user-id="294557">@dusko</span>  I'm actually curious about this passage:</p>
+<blockquote>
+<p>but many of the approaches that you discuss were discussed, accepted, and not just widely cited, but also really tried out in applications in their time, and then the cryptosystems and protocols proven secure got broken, time and again<br>
+I've often heard/read the complaint that composable security definitions are too strong in that many/most important functionalities are impossible to achieve composably (at least without setup), whereas this passage sounds like the opposite: composable security proofs are too weak in that they don't guarantee real-world security. What are some examples of the latter? Of course there is a gap between provable security and real-security (e.g. due to side-channel attacks) - to what extent is this gap more prominent in composable security proofs as opposed to e.g. game-based security proofs (still done by theorists on paper)?</p>
+</blockquote>
+
+
+
+<a name="239091152"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Categorical%20composable%20cryptography/near/239091152" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bas Spitters <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Categorical.20composable.20cryptography.html#239091152">(May 17 2021 at 13:44)</a>:</h4>
+<p>Hi <span class="user-mention" data-user-id="277285">@Martti Karvonen</span> I had briefly looked a similar approach before, but it seems that the Kleisli category of state+probability is not a SMC, as state is not a commutative monad. It's possible that I overlooked something, but it looks like this does not directly fit in your framework.<br>
+Please correct me if I'm wrong.</p>
+
+
+
+<a name="239093495"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Categorical%20composable%20cryptography/near/239093495" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martti Karvonen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Categorical.20composable.20cryptography.html#239093495">(May 17 2021 at 13:59)</a>:</h4>
+<p>So there is a whole can of worms in choosing a model (mostly unaddressed in the paper), but I've understood that people in game semantics can build categorical models  for interactive asynchronous probablistic/quantum computation, and those should work (although one might need to cut quotion out a bicategory to get a 1-category). Similarly, I'd hope that one could extract categories from the  fairly detailed models of compuation in UC, IITM, GNUC or other variants, but I haven't checked carefully. That said, if the Kleisli category of state+probability is not an SMC then it doesn't fit as-is.</p>
+
+
+
+<a name="239096091"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Categorical%20composable%20cryptography/near/239096091" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bas Spitters <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Categorical.20composable.20cryptography.html#239096091">(May 17 2021 at 14:13)</a>:</h4>
+<p>The computational models for crypto are quite well understood in systems such as easycrypt and cryptHOL. I don't see why we'd need game semantics for that.<br>
+In fact, cryptHOL explicitly passes state, so their model is the Kleisli category for the Giry monad, which is a SMC. <br>
+How would the one-time-pad (OTP) example from CC look in your framework?</p>
+
+
+
+<a name="239096700"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Categorical%20composable%20cryptography/near/239096700" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martti Karvonen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Categorical.20composable.20cryptography.html#239096700">(May 17 2021 at 14:17)</a>:</h4>
+<p>That's good to hear, so the model selection issue seems to be an issue just for quantum computing</p>
+
+
+
+<a name="239097601"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Categorical%20composable%20cryptography/near/239097601" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martti Karvonen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Categorical.20composable.20cryptography.html#239097601">(May 17 2021 at 14:22)</a>:</h4>
+<p>I'm not sure if the one-time pad example from CC (I really like that  example!) changes substantially. I could imagine that in a parallel universe the same paper was written with the OTP-example as-is and then a different formalization of the background theory after the example (i.e. instead of system algebras, one moves to categories). The main differences in discussing that example (at the level of formality of that paper) seem to be syntactic: one might denote "plugging converters to ports" with a more categorical notation and the pictures (e.g. fig 3) would be oriented consistently so as to result in string diagrams, rather than having open ports in arbitrary directions.</p>
+
+
+
+<a name="239097922"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Categorical%20composable%20cryptography/near/239097922" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martti Karvonen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Categorical.20composable.20cryptography.html#239097922">(May 17 2021 at 14:24)</a>:</h4>
+<p>I guess one difference is that in our setup, a protocol prescribes an action for all parties, so in the honest case we ask Eve to ignore the input apart form it's length and then the correctness equation would say that the end-result equals SEC, and then the case of dishonest Eve amounts to the same equation as currently in the paper with the same simulator.</p>
+
+
+
+<a name="239098434"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Categorical%20composable%20cryptography/near/239098434" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martti Karvonen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Categorical.20composable.20cryptography.html#239098434">(May 17 2021 at 14:27)</a>:</h4>
+<blockquote>
+<p>The computational models for crypto are quite well understood in systems such as easycrypt and cryptHOL</p>
+</blockquote>
+<p>Btw, could you point me to some references that would help me understand these models? I can obviously start from the beginning, but if there's some paper that would get me up to speed faster I'd be happy to hear</p>
+
+
+
+<a name="239100870"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Categorical%20composable%20cryptography/near/239100870" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bas Spitters <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Categorical.20composable.20cryptography.html#239100870">(May 17 2021 at 14:39)</a>:</h4>
+<p>But having a precise syntax/semantics is precisely what makes the categorical approach worthwhile, so for instruction purposes it would be good to work out the OTP example.<br>
+Easycrypt uses an imperative pwhile language (which does not directly fit your framework because of state)<br>
+<a href="https://link.springer.com/chapter/10.1007/978-3-319-10082-1_6">https://link.springer.com/chapter/10.1007/978-3-319-10082-1_6</a></p>
+<p>Here's the cryptHOL paper: <a href="https://eprint.iacr.org/2017/753.pdf">https://eprint.iacr.org/2017/753.pdf</a><br>
+Here's the OTP example in CC in CryptHOL: <a href="https://ieeexplore.ieee.org/document/8823694">https://ieeexplore.ieee.org/document/8823694</a></p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: May 17 2021 at 00:27 UTC</p>
+<hr><p>Last updated: May 18 2021 at 00:30 UTC</p>

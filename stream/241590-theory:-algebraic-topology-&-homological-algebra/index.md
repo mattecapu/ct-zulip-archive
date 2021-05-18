@@ -9,6 +9,7 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 
 ### Topics:
 
+* [external vs internal homology](topic/external.20vs.20internal.20homology.html) (23 messages, latest: May 17 2021 at 21:47)
 * [Michael Boardman](topic/Michael.20Boardman.html) (3 messages, latest: Mar 20 2021 at 22:28)
 * [Categorical take on Physics of Functional Networks](topic/Categorical.20take.20on.20Physics.20of.20Functional.20Networks.html) (2 messages, latest: Mar 20 2021 at 10:58)
 * [Bisimulations of spaces](topic/Bisimulations.20of.20spaces.html) (21 messages, latest: Mar 17 2021 at 16:22)
@@ -23,4 +24,4 @@ permalink: /stream/241590-theory:-algebraic-topology-&-homological-algebra/index
 * [simplicial sets](topic/simplicial.20sets.html) (1 message, latest: Jul 02 2020 at 11:05)
 * [Secondary algebraic K-theory](topic/Secondary.20algebraic.20K-theory.html) (13 messages, latest: Jun 01 2020 at 16:14)
 
-<hr><p>Last updated: May 17 2021 at 00:27 UTC</p>
+<hr><p>Last updated: May 18 2021 at 00:30 UTC</p>
