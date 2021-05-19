@@ -94,5 +94,17 @@
         "id": 239100870,
         "sender_full_name": "Bas Spitters",
         "timestamp": 1621262386
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"278549\">@Bas Spitters</span> Just to clarify the earlier comments on needing an SMC: the particular construction of n-partite resource transformations  and the related attack models requires that you start from an SMC (in fact, I think braiding is enough but one should check). If you have a monoidal category where your protocols live and you're able to express directly the relevant attack models (satisfying the axioms), no symmetry is needed to get a monoidal category of secure protocols. If you just have a plain category (i.e. no monoidal structure), I don't see why one would expect to get a monoidal category of secure protocols out of it. However, if you're ok with just getting a plain category of secure protocols, that should work provided you can spell out the attack model (now dropping the axioms referring to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.66666em;vertical-align:-0.08333em;\"></span><span class=\"mord\">⊗</span></span></span></span>). That said, I always thought that the reason people cared about the simulation paradigm was parallel composition, as I've understood that getting secure sequential composition is often doable with game-based security definitions.   If everything in sight is premonoidal, I'm not sure what happens - I can imagine it working after numerous checks or failing pretty fast.</p>",
+        "id": 239262372,
+        "sender_full_name": "Martti Karvonen",
+        "timestamp": 1621347964
+    },
+    {
+        "content": "<p>I would find it easier to think about this if one concrete (known/existing) model would be worked out. E.g. the ones in cryptoHOL and easycrypt are know to capture many existing protocols.</p>",
+        "id": 239320704,
+        "sender_full_name": "Bas Spitters",
+        "timestamp": 1621369812
     }
 ]

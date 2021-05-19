@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [A bounty over at Math Overflow](topic/A.20bounty.20over.20at.20Math.20Overflow.html) (1 message, latest: May 19 2021 at 00:27)
 * [monads](topic/monads.html) (70 messages, latest: May 17 2021 at 14:39)
 * [nominal substitution monoids](topic/nominal.20substitution.20monoids.html) (78 messages, latest: May 14 2021 at 16:39)
 * [morphisms of presheaf toposes](topic/morphisms.20of.20presheaf.20toposes.html) (1 message, latest: May 11 2021 at 00:56)
@@ -162,4 +163,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: May 18 2021 at 00:30 UTC</p>
+<hr><p>Last updated: May 19 2021 at 00:27 UTC</p>
