@@ -9,6 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Probing with closed vs open balls](topic/Probing.20with.20closed.20vs.20open.20balls.html) (21 messages, latest: May 19 2021 at 20:21)
+* [a category similar to the simplex category](topic/a.20category.20similar.20to.20the.20simplex.20category.html) (2 messages, latest: May 19 2021 at 19:19)
 * [how to work with composable sequences of arrows of a cat?](topic/how.20to.20work.20with.20composable.20sequences.20of.20arrows.20of.20a.20cat.3F.html) (10 messages, latest: May 18 2021 at 16:12)
 * [A category similar to the simplex category](topic/A.20category.20similar.20to.20the.20simplex.20category.html) (15 messages, latest: May 18 2021 at 05:40)
 * [How to work with composable sequences of arrows of a cat?](topic/How.20to.20work.20with.20composable.20sequences.20of.20arrows.20of.20a.20cat.3F.html) (22 messages, latest: May 17 2021 at 18:02)
@@ -405,4 +407,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 19 2021 at 00:27 UTC</p>
+<hr><p>Last updated: May 20 2021 at 00:27 UTC</p>

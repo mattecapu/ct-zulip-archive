@@ -19,4 +19,4 @@ permalink: /stream/229450-practice:-programming/index.html
 * [Hask](topic/Hask.html) (141 messages, latest: Apr 01 2020 at 18:14)
 * [other resources](topic/other.20resources.html) (2 messages, latest: Mar 25 2020 at 07:15)
 
-<hr><p>Last updated: May 19 2021 at 00:27 UTC</p>
+<hr><p>Last updated: May 20 2021 at 00:27 UTC</p>

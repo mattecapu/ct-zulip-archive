@@ -9,11 +9,11 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Compositional Robotics: Mathematics and Tools Workshop](topic/Compositional.20Robotics.3A.20Mathematics.20and.20Tools.20Workshop.html) (10 messages, latest: May 19 2021 at 12:33)
 * [Toposes online](topic/Toposes.20online.html) (1 message, latest: May 16 2021 at 13:44)
 * [submitting to CT2021](topic/submitting.20to.20CT2021.html) (56 messages, latest: May 13 2021 at 14:19)
 * [thermodynamics in biology](topic/thermodynamics.20in.20biology.html) (3 messages, latest: May 11 2021 at 05:55)
 * [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (26 messages, latest: May 08 2021 at 20:20)
-* [Compositional Robotics: Mathematics and Tools Workshop](topic/Compositional.20Robotics.3A.20Mathematics.20and.20Tools.20Workshop.html) (9 messages, latest: May 07 2021 at 09:04)
 * [Bohemian L&P Cafe': Shulman](topic/Bohemian.20L.26P.20Cafe'.3A.20Shulman.html) (5 messages, latest: May 04 2021 at 21:02)
 * [Categories and Companions Symposium 2021](topic/Categories.20and.20Companions.20Symposium.202021.html) (2 messages, latest: May 03 2021 at 03:43)
 * [Nobel Prize Summit](topic/Nobel.20Prize.20Summit.html) (2 messages, latest: Apr 26 2021 at 13:15)
@@ -97,4 +97,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: May 19 2021 at 00:27 UTC</p>
+<hr><p>Last updated: May 20 2021 at 00:27 UTC</p>
