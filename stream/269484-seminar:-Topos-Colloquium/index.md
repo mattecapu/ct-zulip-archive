@@ -9,7 +9,7 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 
 ### Topics:
 
-* [Tobias Fritz: "The law of large numbers in categorical \[..\]"](topic/Tobias.20Fritz.3A.20.22The.20law.20of.20large.20numbers.20in.20categorical.20.5B.2E.2E.5D.22.html) (1 message, latest: May 17 2021 at 22:44)
+* [Tobias Fritz: "The law of large numbers in categorical \[..\]"](topic/Tobias.20Fritz.3A.20.22The.20law.20of.20large.20numbers.20in.20categorical.20.5B.2E.2E.5D.22.html) (2 messages, latest: May 20 2021 at 15:41)
 * [Maria Emilia Maietti: "Quotient completions for topos-\[...\]"](topic/Maria.20Emilia.20Maietti.3A.20.22Quotient.20completions.20for.20topos-.5B.2E.2E.2E.5D.22.html) (3 messages, latest: May 13 2021 at 16:26)
 * [Emily Riehl: "Contractibility as uniqueness"](topic/Emily.20Riehl.3A.20.22Contractibility.20as.20uniqueness.22.html) (6 messages, latest: May 06 2021 at 16:50)
 * [Jonathan Gorard: "Fast Diagrammatic Reasoning and \[...\]"](topic/Jonathan.20Gorard.3A.20.22Fast.20Diagrammatic.20Reasoning.20and.20.5B.2E.2E.2E.5D.22.html) (2 messages, latest: Apr 29 2021 at 16:54)
@@ -25,4 +25,4 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 * [Richard Garner: "Comodels of an algebraic theory"](topic/Richard.20Garner.3A.20.22Comodels.20of.20an.20algebraic.20theory.22.html) (27 messages, latest: Feb 11 2021 at 22:36)
 * [stream events](topic/stream.20events.html) (2 messages, latest: Dec 26 2020 at 19:06)
 
-<hr><p>Last updated: May 20 2021 at 00:27 UTC</p>
+<hr><p>Last updated: May 21 2021 at 00:28 UTC</p>

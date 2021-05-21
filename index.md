@@ -8,11 +8,11 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (397 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (399 topics)
 
-* [general](stream/229111-general/index.html) (196 topics)
+* [general](stream/229111-general/index.html) (197 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (153 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (154 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (105 topics)
 
@@ -80,6 +80,8 @@ permalink: /index.html
 
 * [theory: probability](stream/253118-theory:-probability/index.html) (9 topics)
 
+* [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (8 topics)
+
 * [philosophy](stream/229134-philosophy/index.html) (8 topics)
 
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
@@ -87,8 +89,6 @@ permalink: /index.html
 * [general: co/appreciation](stream/271602-general:-co/appreciation/index.html) (7 topics)
 
 * [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (7 topics)
-
-* [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (7 topics)
 
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: May 20 2021 at 00:27 UTC</p>
+<hr><p>Last updated: May 21 2021 at 00:28 UTC</p>

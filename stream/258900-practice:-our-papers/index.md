@@ -9,7 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
-* [The derivator of setoids](topic/The.20derivator.20of.20setoids.html) (15 messages, latest: May 20 2021 at 00:25)
+* [The derivator of setoids](topic/The.20derivator.20of.20setoids.html) (20 messages, latest: May 20 2021 at 18:32)
 * [Categorical composable cryptography](topic/Categorical.20composable.20cryptography.html) (18 messages, latest: May 18 2021 at 20:30)
 * [Native Type Theory](topic/Native.20Type.20Theory.html) (153 messages, latest: May 17 2021 at 10:10)
 * [Graphical Calculus for Lagrangian Relations](topic/Graphical.20Calculus.20for.20Lagrangian.20Relations.html) (3 messages, latest: May 14 2021 at 05:29)
@@ -38,4 +38,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [stream events](topic/stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: May 20 2021 at 00:27 UTC</p>
+<hr><p>Last updated: May 21 2021 at 00:28 UTC</p>

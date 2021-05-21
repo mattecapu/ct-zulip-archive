@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [Externalisation of non-Cartesian internal categories](topic/Externalisation.20of.20non-Cartesian.20internal.20categories.html) (1 message, latest: May 20 2021 at 23:27)
 * [A bounty over at Math Overflow](topic/A.20bounty.20over.20at.20Math.20Overflow.html) (4 messages, latest: May 19 2021 at 09:18)
 * [monads](topic/monads.html) (70 messages, latest: May 17 2021 at 14:39)
 * [nominal substitution monoids](topic/nominal.20substitution.20monoids.html) (78 messages, latest: May 14 2021 at 16:39)
@@ -163,4 +164,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: May 20 2021 at 00:27 UTC</p>
+<hr><p>Last updated: May 21 2021 at 00:28 UTC</p>
