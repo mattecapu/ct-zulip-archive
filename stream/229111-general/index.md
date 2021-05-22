@@ -9,7 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [for beginners](topic/for.20beginners.html) (2 messages, latest: May 20 2021 at 18:43)
+* [for beginners](topic/for.20beginners.html) (15 messages, latest: May 21 2021 at 20:40)
 * [University of Leicester boycott](topic/University.20of.20Leicester.20boycott.html) (6 messages, latest: May 18 2021 at 14:27)
 * [Introduce Yourself!](topic/Introduce.20Yourself!.html) (628 messages, latest: May 17 2021 at 21:44)
 * [William Lawvere?](topic/William.20Lawvere.3F.html) (2 messages, latest: May 07 2021 at 21:50)
@@ -207,4 +207,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: May 21 2021 at 00:28 UTC</p>
+<hr><p>Last updated: May 22 2021 at 00:28 UTC</p>

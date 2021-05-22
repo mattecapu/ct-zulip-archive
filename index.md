@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (399 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (400 topics)
 
 * [general](stream/229111-general/index.html) (197 topics)
 
@@ -104,11 +104,11 @@ permalink: /index.html
 
 * [semiotics and semiosis](stream/229179-semiotics-and-semiosis/index.html) (5 topics)
 
+* [practice: neuroscience](stream/233925-practice:-neuroscience/index.html) (4 topics)
+
 * [expression](stream/247180-expression/index.html) (3 topics)
 
 * [languages: espanol/Spanish](stream/231120-languages:-espanol/Spanish/index.html) (3 topics)
-
-* [practice: neuroscience](stream/233925-practice:-neuroscience/index.html) (3 topics)
 
 * [process-io](stream/267137-process-io/index.html) (3 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: May 21 2021 at 00:28 UTC</p>
+<hr><p>Last updated: May 22 2021 at 00:28 UTC</p>

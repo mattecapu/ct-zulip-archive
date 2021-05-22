@@ -1078,5 +1078,47 @@
         "id": 239258333,
         "sender_full_name": "Henry Story",
         "timestamp": 1621346433
+    },
+    {
+        "content": "<p>Here is some recent Category Theory I came across writing a <a href=\"https://github.com/co-operating-systems/Reactive-SoLiD\">read-write web server in Scala</a>.<br>\nWhen I last wrote this 7 years ago, I used a Free Monad construct to use as a DSL (I was pointed to it and worked out how to use it without understanding any CT). The Scala Cats library has a <a href=\"https://typelevel.org/cats/datatypes/freemonad.html\">page documenting how one can use Free Monads</a>.  They illustrate their code with one interpreter as a natural transformation, but one can easily create a DSL to GET, PUT, PATCH, content on the web, and have the resulting free monad script sent around from actor to actor, each one peeling off the top command on the stack, executing it (interpreting it locally) and then sending the rest of the stack (after application of the monad function) on to the next actor.</p>",
+        "id": 239729635,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1621593622
+    },
+    {
+        "content": "<p>There is a very helpful talk On Free  and CoFree from 2016 <a href=\"https://www.youtube.com/watch?v=7xSfLPD6tiQ\">Pure Functional Database Programming with Fixpoint Types</a> with <a href=\"http://tpolecat.github.io/presentations/cofree/slides#20\">slides</a>, where Rob Norris shows how one can use <code>Fix</code> for recursive data structures and <code>CoFree</code> as a way to annotate such recursive data.</p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"7xSfLPD6tiQ\" href=\"https://www.youtube.com/watch?v=7xSfLPD6tiQ\"><img src=\"https://uploads.zulipusercontent.net/66458763b247e2140e2cb2bb1b79118e9e2dcf53/68747470733a2f2f692e7974696d672e636f6d2f76692f377853664c5044367469512f64656661756c742e6a7067\"></a></div>",
+        "id": 239730254,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1621593992
+    },
+    {
+        "content": "<p>Having studied that talk carefully, I have come I think to an interesting view of what <a href=\"https://www.w3.org/TR/rdf11-datasets/\">Datasets</a> in RDF should be. Following Rob Norris I wrote the following definitions</p>\n<div class=\"codehilite\" data-code-language=\"Scala\"><pre><span></span><code><span class=\"k\">case</span> <span class=\"k\">class</span> <span class=\"nc\">CoFree</span><span class=\"p\">[</span><span class=\"nc\">F</span><span class=\"p\">[</span><span class=\"n\">_</span><span class=\"p\">],</span> <span class=\"nc\">A</span><span class=\"p\">](</span><span class=\"n\">head</span><span class=\"p\">:</span> <span class=\"nc\">A</span><span class=\"p\">,</span> <span class=\"n\">tail</span><span class=\"p\">:</span> <span class=\"nc\">F</span><span class=\"p\">[</span><span class=\"nc\">CoFree</span><span class=\"p\">[</span><span class=\"nc\">F</span><span class=\"p\">,</span> <span class=\"nc\">A</span><span class=\"p\">]])</span>\n<span class=\"c1\">// Graph Functor -- modelled on ProfF</span>\n<span class=\"k\">case</span> <span class=\"k\">class</span> <span class=\"nc\">GraF</span><span class=\"p\">[</span><span class=\"nc\">A</span><span class=\"p\">](</span><span class=\"n\">g</span><span class=\"p\">:</span> <span class=\"nc\">Rdf</span><span class=\"n\">#</span><span class=\"nc\">Graph</span><span class=\"p\">,</span> <span class=\"n\">other</span><span class=\"p\">:</span> <span class=\"nc\">Set</span><span class=\"p\">[</span><span class=\"nc\">A</span><span class=\"p\">]</span><span class=\"o\">=</span><span class=\"nc\">Set</span><span class=\"p\">())</span>\n</code></pre></div>\n<p>then we can define <a href=\"https://github.com/co-operating-systems/Reactive-SoLiD/blob/master/src/test/scala/run/cosy/ldp/TestLDPCmd.scala#L117\">A set of nested DataSets (code)</a>. <br>\nwith the following type declaration:</p>\n<div class=\"codehilite\" data-code-language=\"Scala\"><pre><span></span><code><span class=\"k\">type</span> <span class=\"nc\">DataSet</span> <span class=\"o\">=</span> <span class=\"nc\">GraF</span><span class=\"p\">[</span><span class=\"nc\">CoFree</span><span class=\"p\">[</span><span class=\"nc\">GraF</span><span class=\"p\">,</span><span class=\"nc\">Uri</span><span class=\"p\">]]</span>\n</code></pre></div>\n<p>It turns out that RDF DataSets datastructure may not have been written to allow them to contain DataSets - as I may have discovered today on the <a href=\"https://lists.w3.org/Archives/Public/semantic-web/2021May/0140.html\">semantic-web mailing list</a>. But that seems like something that could be fixed and also that people will want to be fixed for reasons of signing rdf graphs.</p>",
+        "id": 239754128,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1621605271
+    },
+    {
+        "content": "<p><code>case class</code>es are essentially product types. Whatever is between the <code>[...]</code> are type arguments, meaning that the case classes above are actually a functors, <code>CoFree</code> is a bifunctor I guess as it takes two arguments, one of which is a functor.</p>",
+        "id": 239760473,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1621607604
+    },
+    {
+        "content": "<p>I think you're talking about categorical semantics for (higher-kinded) inductive types, which are traditionally viewed as some flavor of polynomial functors.</p>",
+        "id": 239763132,
+        "sender_full_name": "Alex Gryzlov",
+        "timestamp": 1621608650
+    },
+    {
+        "content": "<p>Yes. I think it would be quite easy to rewrite this in terms of Polynomial Functors, ... though I won't get to that for a while, as the programming is taking up most of my time right now.  CoFree is I think on the coalgebra side of things.  I actually got to Category Theory from programming. It is articles such as this series <a href=\"http://blog.higher-order.com/blog/2016/04/02/a-comonad-of-graph-decompositions/\">on Comonads</a> that made me really want to find out what was going on :-)</p>",
+        "id": 239764396,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1621609175
+    },
+    {
+        "content": "<p>I found out that N3 graphs can contain graphs (formulae) recursively (see <a href=\"https://lists.w3.org/Archives/Public/public-n3-dev/2021May/0012.html\">mail on n3 dev list</a>).</p>",
+        "id": 239809170,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1621629123
     }
 ]

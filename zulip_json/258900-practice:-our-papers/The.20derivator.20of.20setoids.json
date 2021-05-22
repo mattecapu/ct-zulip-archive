@@ -118,5 +118,53 @@
         "id": 239638601,
         "sender_full_name": "Mike Shulman",
         "timestamp": 1621535524
+    },
+    {
+        "content": "<p>Quoting from the abstract:<br>\n<span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/258900-practice.3A-our.20papers/topic/The.20derivator.20of.20setoids/near/239358604\">said</a>:</p>\n<blockquote>\n<p>Without the axiom of choice, the free exact completion of the category of sets (i.e. the category of setoids) may not be complete or cocomplete.</p>\n</blockquote>\n<p>So it seems that what is meant by \"the\" category of setoids matters quite a bit. Because in \"pure\" MLTT, one can fully mechanize that <a href=\"https://agda.github.io/agda-categories/Categories.Category.Instance.Properties.Setoids.Complete.html\">Setoids is complete</a> and <a href=\"https://agda.github.io/agda-categories/Categories.Category.Instance.Properties.Setoids.Cocomplete.html\">cocomplete</a> .  No need for anything fancy at all.</p>",
+        "id": 239770861,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1621611699
+    },
+    {
+        "content": "<p>I think Mike is talking about the actual (not e-) category obtained by quotienting the Hom-setoids down to sets.</p>",
+        "id": 239775754,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1621613509
+    },
+    {
+        "content": "<p>I think so too. Which reinforces my point: it matters quite a bit which version you're talking about. The e-category of setoids is fairly nice - though not as nice as the (classical) Set-category of Sets.</p>",
+        "id": 239776288,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1621613738
+    },
+    {
+        "content": "<p>Right!  That's why I said \"the category of setoids\", not \"the e-category of setoids\".  (-:  And why I put that only in a parenthetical, since \"the free exact completion of the category of sets\" is also unambiguous.</p>",
+        "id": 239788364,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1621619278
+    },
+    {
+        "content": "<p>I find it really fascinating how delicate a lot of this is. Parts of category theory seems very robust (set-enriched 1-categories and E-categories mostly work the same, for hundreds of definitions and theorems), but their interplay is more subtle.</p>",
+        "id": 239791436,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1621620699
+    },
+    {
+        "content": "<p>I think part of that is due to how general and formal a lot of what we think of as \"category theory\" really is.  A huge amount of category theory can be done abstractly in a 2-category with very little additional extra structure.</p>",
+        "id": 239796565,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1621623173
+    },
+    {
+        "content": "<p>It can also be viewed as an instance of the fact that most of category theory generalizes without a hitch to higher category theory, since an E-category can be regarded as a tricategory whose hom-bicategories are weakly discrete.</p>",
+        "id": 239797090,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1621623392
+    },
+    {
+        "content": "<p>Is the E-category of setoids the exact completion of the (E-)category of sets, in the world of E-categories?</p>",
+        "id": 239815903,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1621632962
     }
 ]

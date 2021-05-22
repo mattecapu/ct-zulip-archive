@@ -166,6 +166,59 @@ Have I got it right if I summarize the situation as follows:</p>
 
 
 
+<a name="239770861"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/The%20derivator%20of%20setoids/near/239770861" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/The.20derivator.20of.20setoids.html#239770861">(May 21 2021 at 15:41)</a>:</h4>
+<p>Quoting from the abstract:<br>
+<span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/258900-practice.3A-our.20papers/topic/The.20derivator.20of.20setoids/near/239358604">said</a>:</p>
+<blockquote>
+<p>Without the axiom of choice, the free exact completion of the category of sets (i.e. the category of setoids) may not be complete or cocomplete.</p>
+</blockquote>
+<p>So it seems that what is meant by "the" category of setoids matters quite a bit. Because in "pure" MLTT, one can fully mechanize that <a href="https://agda.github.io/agda-categories/Categories.Category.Instance.Properties.Setoids.Complete.html">Setoids is complete</a> and <a href="https://agda.github.io/agda-categories/Categories.Category.Instance.Properties.Setoids.Cocomplete.html">cocomplete</a> .  No need for anything fancy at all.</p>
+
+
+
+<a name="239775754"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/The%20derivator%20of%20setoids/near/239775754" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/The.20derivator.20of.20setoids.html#239775754">(May 21 2021 at 16:11)</a>:</h4>
+<p>I think Mike is talking about the actual (not e-) category obtained by quotienting the Hom-setoids down to sets.</p>
+
+
+
+<a name="239776288"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/The%20derivator%20of%20setoids/near/239776288" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/The.20derivator.20of.20setoids.html#239776288">(May 21 2021 at 16:15)</a>:</h4>
+<p>I think so too. Which reinforces my point: it matters quite a bit which version you're talking about. The e-category of setoids is fairly nice - though not as nice as the (classical) Set-category of Sets.</p>
+
+
+
+<a name="239788364"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/The%20derivator%20of%20setoids/near/239788364" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/The.20derivator.20of.20setoids.html#239788364">(May 21 2021 at 17:47)</a>:</h4>
+<p>Right!  That's why I said "the category of setoids", not "the e-category of setoids".  (-:  And why I put that only in a parenthetical, since "the free exact completion of the category of sets" is also unambiguous.</p>
+
+
+
+<a name="239791436"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/The%20derivator%20of%20setoids/near/239791436" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/The.20derivator.20of.20setoids.html#239791436">(May 21 2021 at 18:11)</a>:</h4>
+<p>I find it really fascinating how delicate a lot of this is. Parts of category theory seems very robust (set-enriched 1-categories and E-categories mostly work the same, for hundreds of definitions and theorems), but their interplay is more subtle.</p>
+
+
+
+<a name="239796565"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/The%20derivator%20of%20setoids/near/239796565" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/The.20derivator.20of.20setoids.html#239796565">(May 21 2021 at 18:52)</a>:</h4>
+<p>I think part of that is due to how general and formal a lot of what we think of as "category theory" really is.  A huge amount of category theory can be done abstractly in a 2-category with very little additional extra structure.</p>
+
+
+
+<a name="239797090"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/The%20derivator%20of%20setoids/near/239797090" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/The.20derivator.20of.20setoids.html#239797090">(May 21 2021 at 18:56)</a>:</h4>
+<p>It can also be viewed as an instance of the fact that most of category theory generalizes without a hitch to higher category theory, since an E-category can be regarded as a tricategory whose hom-bicategories are weakly discrete.</p>
+
+
+
+<a name="239815903"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/The%20derivator%20of%20setoids/near/239815903" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/The.20derivator.20of.20setoids.html#239815903">(May 21 2021 at 21:36)</a>:</h4>
+<p>Is the E-category of setoids the exact completion of the (E-)category of sets, in the world of E-categories?</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: May 21 2021 at 00:28 UTC</p>
+<hr><p>Last updated: May 22 2021 at 00:28 UTC</p>
