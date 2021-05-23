@@ -9,7 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
-* [web cats](topic/web.20cats.html) (187 messages, latest: May 21 2021 at 20:32)
+* [web cats](topic/web.20cats.html) (190 messages, latest: May 22 2021 at 07:15)
 * [subgame perfect equilibrium for open games](topic/subgame.20perfect.20equilibrium.20for.20open.20games.html) (3 messages, latest: May 11 2021 at 11:25)
 * [Subgame perfect equilibrium for open games](topic/Subgame.20perfect.20equilibrium.20for.20open.20games.html) (8 messages, latest: May 09 2021 at 13:51)
 * [emergent behaviour workshop](topic/emergent.20behaviour.20workshop.html) (24 messages, latest: May 07 2021 at 14:54)
@@ -115,4 +115,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: May 22 2021 at 00:28 UTC</p>
+<hr><p>Last updated: May 23 2021 at 00:32 UTC</p>
