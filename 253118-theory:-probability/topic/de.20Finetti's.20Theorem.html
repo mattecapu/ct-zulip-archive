@@ -116,6 +116,31 @@ permalink: /stream/253118-theory:-probability/topic/de.20Finetti's.20Theorem.htm
 
 
 
+<a name="239916184"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/253118-theory%3A%20probability/topic/de%20Finetti%27s%20Theorem/near/239916184" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/253118-theory:-probability/topic/de.20Finetti's.20Theorem.html#239916184">(May 23 2021 at 02:09)</a>:</h4>
+<p>hi tobias. how is your categorical view of this related with the one proposed by bart jacobs and sam satton? i see that you cite their paper and say that the approaches are different. the formalisms obviously are, but the general goal of axiomatizing synthetic probability theory seems to be shared. and i guess one could say that both jaynes and de finetti were arguing for the same. what would you say to de finetti himself: what does CT bring to the table that he did not have? and why are there two different categorical approaches? ((i forgot to say: wonderful work! so no misunderstanding about why i ask: CT is all about the big picture...))</p>
+
+
+
+<a name="239940682"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/253118-theory%3A%20probability/topic/de%20Finetti%27s%20Theorem/near/239940682" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tobias Fritz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/253118-theory:-probability/topic/de.20Finetti's.20Theorem.html#239940682">(May 23 2021 at 10:23)</a>:</h4>
+<p>Hi Dusko, those are great questions! Let me try to say something about each one in turn while hopefully not making this too lengthy.</p>
+<ul>
+<li>
+<p>Concerning the relation to the <a href="https://arxiv.org/abs/2003.01964">Jacobs-Staton paper</a>, the short answer is that they've reformulated de Finetti's theorem as a universal property, while we've proven the existence part of that universal property (which is the hard part) entirely synthetically.</p>
+</li>
+<li>
+<p>In some more detail, I think that their approach is more hands-on and explicit, arguably closer to probabilistic programming, while not providing a clean separation between the synthetic and the semantic level. In particular they do not have anything like a synthetic proof of the de Finetti theorem. For these latter reasons I'm not sure if I would consider their paper as part of the project of axiomatizing synthetic probability theory. Our paper makes a clear distinction between the synthetic axiomatics and the semantics, and the main point is to give a purely synthetic proof of the de Finetti theorem. But on the other hand and I'm not aware of any significance of our proof to probabilistic programming. As for more minor technical differences, JS have also focused on the binary case, although (as they comment at the end) it can quite plausibly be extended from there. We have not stated any universal property like JS have, since so far we have only been able to prove the existence but not the uniqueness part of it synthetically. Finally, JS consider multisets while we work with sequences with permutation invariance, but this is arguably more of a superficial difference.</p>
+</li>
+</ul>
+<p>I'm obviously biased though, and am a bit worried about not having done the JS paper enough justice. Since <span class="user-mention" data-user-id="308397">@Sam Staton</span> is here occasionally too, perhaps he can add whatever I may have missed.</p>
+<ul>
+<li>As for the relevance of CT, I think the answer is that the synthetic level provides a much cleaner framework in which things like the de Finetti theorem can be proven without getting bogged down too much in measure-theoretic technicalities. Ultimately one can hope that this will facilitate the development of results of greater complexity than what is humanly possible with measure theory directly. One could also hope that our de Finetti theorem would be more general and apply with semantics different from measure-theoretic probability, but this hasn't panned out so far: as discussed earlier in this thread, we haven't yet found any category outside of measure-theoretic probability in which our result would apply nontrivially. In particular, any attempted application to categories with nondeterminism (instead of probabilistic uncertainty) in the morphisms seems to conspire so as to violate one of our axioms. For example, the category of sets and multivalued functions (meaning the counit-preserving morphisms in Rel) does not have countable Kolmogorov products.</li>
+</ul>
+<p>In any case, I'm glad that you find this stuff interesting!</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: May 23 2021 at 00:32 UTC</p>
+<hr><p>Last updated: May 24 2021 at 00:29 UTC</p>

@@ -143,6 +143,27 @@ Here's the OTP example in CC in CryptHOL: <a href="https://ieeexplore.ieee.org/d
 
 
 
+<a name="239915019"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Categorical%20composable%20cryptography/near/239915019" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> dusko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Categorical.20composable.20cryptography.html#239915019">(May 23 2021 at 01:47)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277285">Martti Karvonen</span> <a href="#narrow/stream/258900-practice.3A-our.20papers/topic/Categorical.20composable.20cryptography/near/239085196">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="294557">dusko</span>  I'm actually curious about this passage:</p>
+<blockquote>
+<p>but many of the approaches that you discuss were discussed, accepted, and not just widely cited, but also really tried out in applications in their time, and then the cryptosystems and protocols proven secure got broken, time and again<br>
+I've often heard/read the complaint that composable security definitions are too strong in that many/most important functionalities are impossible to achieve composably (at least without setup), whereas this passage sounds like the opposite: composable security proofs are too weak in that they don't guarantee real-world security. What are some examples of the latter? Of course there is a gap between provable security and real-security (e.g. due to side-channel attacks) - to what extent is this gap more prominent in composable security proofs as opposed to e.g. game-based security proofs (still done by theorists on paper)?</p>
+</blockquote>
+</blockquote>
+<p>a model can be too strong for applications and too weak for guarantees at the same time. but here it was something else. the complaint that universal composability simulatability etc had too strong requirements refers to the fact that the requirements that there are no key cycles, or in similatability that there is no XOR, hash, whatnot --- preclude most applications. the fact that the protocols proven secure in one of the composable schemas get broken does not mean that the proofs are too weak. it means that they are too rigid for refinements. CT could solve that, but not by magic. one memorable example is that MQV and ECMQV  were proven secure in universal composability model, only to fall to an actual attacker who used an eager key server to obtain a certificate <em>during</em> the session. the requirements must specify that the lower bound of certificate authority must be above the session timeout. several of the protocols proposed for the IPSec, and actually i think accepted in the early RFCs, were also proven secure, and every single implementation got broken by someone, but the attacks could not be modeled because the model used could not be refined. then the whole schema had to be abandoned, like 4 years of work, and IKE was proposed... you will notice that all of the compositional paradigms date back to late 90s and into the 2000s, and are not in use any more. you could read about that in papers by michael backes from late 2000s. he was a very prominent researcher in the area, and he had a series of papers with examples and nogo statements.</p>
+
+
+
+<a name="239950800"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/258900-practice%3A%20our%20papers/topic/Categorical%20composable%20cryptography/near/239950800" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martti Karvonen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/258900-practice:-our-papers/topic/Categorical.20composable.20cryptography.html#239950800">(May 23 2021 at 13:16)</a>:</h4>
+<p>thanks for the examples of failures in practice!</p>
+<p>at least on the quantum crypto side, composability is alive and well (although they mostly use abstract/constructive cryptography). for instance,  <a href="https://arxiv.org/abs/1904.06320">https://arxiv.org/abs/1904.06320</a> and <a href="https://arxiv.org/abs/2011.12704">https://arxiv.org/abs/2011.12704</a> come to mind as two recent(ish) works doing things composably</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: May 23 2021 at 00:32 UTC</p>
+<hr><p>Last updated: May 24 2021 at 00:29 UTC</p>
