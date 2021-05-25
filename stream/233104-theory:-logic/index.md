@@ -9,6 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
+* [Proving equivalence/equiconsistency results using CT?](topic/Proving.20equivalence.2Fequiconsistency.20results.20using.20CT.3F.html) (3 messages, latest: May 24 2021 at 16:47)
 * [fragments of logic](topic/fragments.20of.20logic.html) (52 messages, latest: May 22 2021 at 06:33)
 * [word problem for braided monoidal categories](topic/word.20problem.20for.20braided.20monoidal.20categories.html) (38 messages, latest: May 14 2021 at 10:50)
 * [axiom systems](topic/axiom.20systems.html) (21 messages, latest: May 05 2021 at 15:33)
@@ -43,4 +44,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: May 24 2021 at 00:29 UTC</p>
+<hr><p>Last updated: May 25 2021 at 00:30 UTC</p>

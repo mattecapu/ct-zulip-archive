@@ -9,7 +9,7 @@ permalink: /stream/253118-theory:-probability/index.html
 
 ### Topics:
 
-* [de Finetti's Theorem](topic/de.20Finetti's.20Theorem.html) (14 messages, latest: May 23 2021 at 10:23)
+* [de Finetti's Theorem](topic/de.20Finetti's.20Theorem.html) (16 messages, latest: May 24 2021 at 10:11)
 * [When does a Kleisli category have conditionals?](topic/When.20does.20a.20Kleisli.20category.20have.20conditionals.3F.html) (4 messages, latest: Apr 03 2021 at 12:12)
 * [Thesis of Nicholas Gauguin Houghton-Larsen](topic/Thesis.20of.20Nicholas.20Gauguin.20Houghton-Larsen.html) (19 messages, latest: Mar 23 2021 at 09:37)
 * [What is normalisation?](topic/What.20is.20normalisation.3F.html) (18 messages, latest: Jan 28 2021 at 05:37)
@@ -19,4 +19,4 @@ permalink: /stream/253118-theory:-probability/index.html
 * [Finitely additive probability](topic/Finitely.20additive.20probability.html) (1 message, latest: Aug 16 2020 at 00:48)
 * [stream events](topic/stream.20events.html) (2 messages, latest: Aug 16 2020 at 00:31)
 
-<hr><p>Last updated: May 24 2021 at 00:29 UTC</p>
+<hr><p>Last updated: May 25 2021 at 00:30 UTC</p>

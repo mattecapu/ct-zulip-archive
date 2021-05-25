@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [Optics - grates](topic/Optics.20-.20grates.html) (26 messages, latest: May 24 2021 at 23:47)
 * [Conceptual Mathematics: Exercises Help](topic/Conceptual.20Mathematics.3A.20Exercises.20Help.html) (3 messages, latest: May 22 2021 at 08:59)
 * [coalgebras of constant functors](topic/coalgebras.20of.20constant.20functors.html) (3 messages, latest: May 21 2021 at 10:12)
 * [Coalgebras of constant functors](topic/Coalgebras.20of.20constant.20functors.html) (2 messages, latest: May 21 2021 at 00:00)
@@ -411,4 +412,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: May 24 2021 at 00:29 UTC</p>
+<hr><p>Last updated: May 25 2021 at 00:30 UTC</p>
