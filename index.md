@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 28 2021 at 13:21 UTC</p>
+<hr><p>Last updated: Jun 28 2021 at 13:42 UTC</p>
