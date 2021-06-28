@@ -9,7 +9,7 @@ permalink: /stream/229370-practice:-industry/index.html
 
 ### Topics:
 
-* [visual programming](topic/visual.20programming.html) (106 messages, latest: Jun 02 2020 at 15:32)
+* [visual programming](topic/visual.20programming.html) (107 messages, latest: Jun 07 2021 at 08:22)
 * [stream events](topic/stream.20events.html) (3 messages, latest: Apr 06 2020 at 05:34)
 
-<hr><p>Last updated: May 25 2021 at 00:30 UTC</p>
+<hr><p>Last updated: Jun 28 2021 at 13:21 UTC</p>

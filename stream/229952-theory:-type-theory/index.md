@@ -9,8 +9,11 @@ permalink: /stream/229952-theory:-type-theory/index.html
 
 ### Topics:
 
+* [presenting categorical semantics](topic/presenting.20categorical.20semantics.html) (3 messages, latest: Jun 27 2021 at 21:10)
+* [K and UIP](topic/K.20and.20UIP.html) (6 messages, latest: Jun 27 2021 at 21:07)
+* [model of univalence](topic/model.20of.20univalence.html) (41 messages, latest: Jun 26 2021 at 15:47)
+* [Presenting categorical semantics](topic/Presenting.20categorical.20semantics.html) (18 messages, latest: Jun 26 2021 at 15:37)
 * [semisimplicial types](topic/semisimplicial.20types.html) (51 messages, latest: May 19 2021 at 19:47)
-* [model of univalence](topic/model.20of.20univalence.html) (21 messages, latest: May 13 2021 at 08:58)
 * [Model of univalence](topic/Model.20of.20univalence.html) (97 messages, latest: May 12 2021 at 21:17)
 * [applications of categorical logic](topic/applications.20of.20categorical.20logic.html) (45 messages, latest: May 10 2021 at 23:28)
 * [Semisimplicial types](topic/Semisimplicial.20types.html) (4 messages, latest: May 09 2021 at 22:13)
@@ -33,4 +36,4 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [W-types and CFGs](topic/W-types.20and.20CFGs.html) (11 messages, latest: Apr 02 2020 at 16:00)
 * [homotopy type theory](topic/homotopy.20type.20theory.html) (10 messages, latest: Mar 26 2020 at 23:30)
 
-<hr><p>Last updated: May 25 2021 at 00:30 UTC</p>
+<hr><p>Last updated: Jun 28 2021 at 13:21 UTC</p>

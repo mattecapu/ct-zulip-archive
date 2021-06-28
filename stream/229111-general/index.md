@@ -9,20 +9,26 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [Dedication](topic/Dedication.html) (17 messages, latest: Jun 26 2021 at 05:38)
+* [life in academia](topic/life.20in.20academia.html) (112 messages, latest: Jun 25 2021 at 11:25)
+* [citing unnumbered results](topic/citing.20unnumbered.20results.html) (74 messages, latest: Jun 23 2021 at 23:16)
+* [Category Theory AI Companies](topic/Category.20Theory.20AI.20Companies.html) (37 messages, latest: Jun 23 2021 at 01:48)
+* [quiver: a modern commutative diagram editor](topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (59 messages, latest: Jun 22 2021 at 10:27)
+* [commutative diagrams on Zulip](topic/commutative.20diagrams.20on.20Zulip.html) (8 messages, latest: Jun 22 2021 at 04:03)
+* [lean prover](topic/lean.20prover.html) (4 messages, latest: Jun 21 2021 at 15:14)
+* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (648 messages, latest: Jun 12 2021 at 01:38)
+* [CALCO is in trouble!](topic/CALCO.20is.20in.20trouble!.html) (38 messages, latest: Jun 11 2021 at 17:33)
+* [square categories?](topic/square.20categories.3F.html) (7 messages, latest: Jun 07 2021 at 09:14)
 * [for beginners](topic/for.20beginners.html) (15 messages, latest: May 21 2021 at 20:40)
 * [University of Leicester boycott](topic/University.20of.20Leicester.20boycott.html) (6 messages, latest: May 18 2021 at 14:27)
-* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (628 messages, latest: May 17 2021 at 21:44)
 * [William Lawvere?](topic/William.20Lawvere.3F.html) (2 messages, latest: May 07 2021 at 21:50)
 * [ArxivDiff](topic/ArxivDiff.html) (4 messages, latest: May 05 2021 at 15:43)
 * [nlab down](topic/nlab.20down.html) (26 messages, latest: Apr 30 2021 at 16:50)
-* [commutative diagrams on Zulip](topic/commutative.20diagrams.20on.20Zulip.html) (5 messages, latest: Apr 28 2021 at 20:08)
 * [Announcement:  Structure meets Power Workshop](topic/Announcement.3A.20.20Structure.20meets.20Power.20Workshop.html) (1 message, latest: Apr 26 2021 at 09:26)
 * [category theory in human psychology](topic/category.20theory.20in.20human.20psychology.html) (108 messages, latest: Apr 24 2021 at 11:23)
 * [LaTeX support](topic/LaTeX.20support.html) (84 messages, latest: Apr 23 2021 at 19:43)
 * [ACT Directory](topic/ACT.20Directory.html) (21 messages, latest: Apr 14 2021 at 13:02)
-* [quiver: a modern commutative diagram editor](topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (56 messages, latest: Apr 14 2021 at 10:28)
 * [category theory illustrated](topic/category.20theory.20illustrated.html) (2 messages, latest: Apr 08 2021 at 03:35)
-* [CALCO is in trouble!](topic/CALCO.20is.20in.20trouble!.html) (19 messages, latest: Apr 01 2021 at 08:32)
 * [birthday celebration](topic/birthday.20celebration.html) (16 messages, latest: Mar 27 2021 at 11:38)
 * [HoTT Zulip Invite link?](topic/HoTT.20Zulip.20Invite.20link.3F.html) (2 messages, latest: Mar 25 2021 at 15:05)
 * [TheCanonworks, A New Social Media Site of Interest to Aca...](topic/TheCanonworks.2C.20A.20New.20Social.20Media.20Site.20of.20Interest.20to.20Aca.2E.2E.2E.html) (3 messages, latest: Mar 18 2021 at 14:33)
@@ -200,11 +206,10 @@ permalink: /stream/229111-general/index.html
 * [upgrading zulipchat plan](topic/upgrading.20zulipchat.20plan.html) (2 messages, latest: Mar 29 2020 at 16:57)
 * [document exchange](topic/document.20exchange.html) (4 messages, latest: Mar 28 2020 at 20:47)
 * [David Myers on HoTT](topic/David.20Myers.20on.20HoTT.html) (11 messages, latest: Mar 28 2020 at 08:15)
-* [lean prover](topic/lean.20prover.html) (1 message, latest: Mar 26 2020 at 10:52)
 * [ct visualization](topic/ct.20visualization.html) (22 messages, latest: Mar 26 2020 at 09:49)
 * [swimming turtles](topic/swimming.20turtles.html) (12 messages, latest: Mar 26 2020 at 01:42)
 * [zulip for ct](topic/zulip.20for.20ct.html) (100 messages, latest: Mar 25 2020 at 20:35)
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: May 25 2021 at 00:30 UTC</p>
+<hr><p>Last updated: Jun 28 2021 at 13:21 UTC</p>

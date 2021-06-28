@@ -9,16 +9,17 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
-* [Cambridge Category Theory Seminar](topic/Cambridge.20Category.20Theory.20Seminar.html) (2 messages, latest: May 20 2021 at 10:47)
-* [Compositional Robotics: Mathematics and Tools Workshop](topic/Compositional.20Robotics.3A.20Mathematics.20and.20Tools.20Workshop.html) (10 messages, latest: May 19 2021 at 12:33)
-* [Toposes online](topic/Toposes.20online.html) (1 message, latest: May 16 2021 at 13:44)
+* [Toposes online](topic/Toposes.20online.html) (8 messages, latest: Jun 24 2021 at 08:20)
+* [Em-Cats](topic/Em-Cats.html) (4 messages, latest: Jun 20 2021 at 14:57)
+* [data visualization bootcamp](topic/data.20visualization.20bootcamp.html) (9 messages, latest: Jun 19 2021 at 17:28)
+* [thermodynamics in biology](topic/thermodynamics.20in.20biology.html) (4 messages, latest: Jun 16 2021 at 16:46)
+* [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (29 messages, latest: Jun 10 2021 at 12:10)
+* [Categories and Companions Symposium 2021](topic/Categories.20and.20Companions.20Symposium.202021.html) (3 messages, latest: Jun 07 2021 at 10:34)
+* [Cambridge Category Theory Seminar](topic/Cambridge.20Category.20Theory.20Seminar.html) (10 messages, latest: Jun 02 2021 at 18:32)
+* [Compositional Robotics: Mathematics and Tools Workshop](topic/Compositional.20Robotics.3A.20Mathematics.20and.20Tools.20Workshop.html) (20 messages, latest: Jun 01 2021 at 09:19)
 * [submitting to CT2021](topic/submitting.20to.20CT2021.html) (56 messages, latest: May 13 2021 at 14:19)
-* [thermodynamics in biology](topic/thermodynamics.20in.20biology.html) (3 messages, latest: May 11 2021 at 05:55)
-* [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (26 messages, latest: May 08 2021 at 20:20)
 * [Bohemian L&P Cafe': Shulman](topic/Bohemian.20L.26P.20Cafe'.3A.20Shulman.html) (5 messages, latest: May 04 2021 at 21:02)
-* [Categories and Companions Symposium 2021](topic/Categories.20and.20Companions.20Symposium.202021.html) (2 messages, latest: May 03 2021 at 03:43)
 * [Nobel Prize Summit](topic/Nobel.20Prize.20Summit.html) (2 messages, latest: Apr 26 2021 at 13:15)
-* [Em-Cats](topic/Em-Cats.html) (2 messages, latest: Apr 24 2021 at 18:58)
 * [Numerous Numerosity Conference](topic/Numerous.20Numerosity.20Conference.html) (1 message, latest: Apr 22 2021 at 15:13)
 * [ItaCa Fest — Season 2](topic/ItaCa.20Fest.20.E2.80.94.20Season.202.html) (1 message, latest: Apr 19 2021 at 11:26)
 * [Logic Webinar@IITK](topic/Logic.20Webinar.40IITK.html) (9 messages, latest: Apr 19 2021 at 06:25)
@@ -97,4 +98,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: May 25 2021 at 00:30 UTC</p>
+<hr><p>Last updated: Jun 28 2021 at 13:21 UTC</p>

@@ -9,11 +9,18 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
-* [web cats](topic/web.20cats.html) (190 messages, latest: May 22 2021 at 07:15)
+* [web cats](topic/web.20cats.html) (262 messages, latest: Jun 27 2021 at 12:10)
+* [emergent behaviour as laxity](topic/emergent.20behaviour.20as.20laxity.html) (265 messages, latest: Jun 22 2021 at 19:29)
+* [what to do with too abstract results?](topic/what.20to.20do.20with.20too.20abstract.20results.3F.html) (16 messages, latest: Jun 20 2021 at 15:20)
+* [factored sets](topic/factored.20sets.html) (2 messages, latest: Jun 12 2021 at 10:14)
+* [around machine learning](topic/around.20machine.20learning.html) (43 messages, latest: Jun 09 2021 at 14:00)
+* [Piecewise-linear subspaces diagrammatically?](topic/Piecewise-linear.20subspaces.20diagrammatically.3F.html) (195 messages, latest: Jun 06 2021 at 01:35)
+* [piecewise-linear subspaces diagrammatically?](topic/piecewise-linear.20subspaces.20diagrammatically.3F.html) (346 messages, latest: Jun 04 2021 at 14:07)
+* [chainlets](topic/chainlets.html) (18 messages, latest: Jun 01 2021 at 16:10)
+* [network transformations](topic/network.20transformations.html) (9 messages, latest: May 30 2021 at 20:46)
 * [subgame perfect equilibrium for open games](topic/subgame.20perfect.20equilibrium.20for.20open.20games.html) (3 messages, latest: May 11 2021 at 11:25)
 * [Subgame perfect equilibrium for open games](topic/Subgame.20perfect.20equilibrium.20for.20open.20games.html) (8 messages, latest: May 09 2021 at 13:51)
 * [emergent behaviour workshop](topic/emergent.20behaviour.20workshop.html) (24 messages, latest: May 07 2021 at 14:54)
-* [emergent behaviour as laxity](topic/emergent.20behaviour.20as.20laxity.html) (263 messages, latest: May 06 2021 at 16:15)
 * [compositional thermodynamics](topic/compositional.20thermodynamics.html) (144 messages, latest: May 04 2021 at 14:30)
 * [ct & engineering](topic/ct.20.26.20engineering.html) (182 messages, latest: Apr 25 2021 at 23:20)
 * [ACT as a field](topic/ACT.20as.20a.20field.html) (277 messages, latest: Apr 23 2021 at 08:17)
@@ -115,4 +122,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: May 25 2021 at 00:30 UTC</p>
+<hr><p>Last updated: Jun 28 2021 at 13:21 UTC</p>
