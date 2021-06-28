@@ -9,12 +9,29 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [plane graphs in a PRO](topic/plane.20graphs.20in.20a.20PRO.html) (22 messages, latest: Jun 28 2021 at 13:20)
+* [Plane graphs in a PRO](topic/Plane.20graphs.20in.20a.20PRO.html) (10 messages, latest: Jun 27 2021 at 18:54)
+* [liftings and distributive laws](topic/liftings.20and.20distributive.20laws.html) (4 messages, latest: Jun 26 2021 at 19:32)
+* ["Inverse" of free](topic/.22Inverse.22.20of.20free.html) (27 messages, latest: Jun 25 2021 at 14:59)
+* [Presentation of traced SMC of relations between finite sets](topic/Presentation.20of.20traced.20SMC.20of.20relations.20between.20finite.20sets.html) (19 messages, latest: Jun 23 2021 at 09:15)
+* [Lawvere theories for operads](topic/Lawvere.20theories.20for.20operads.html) (3 messages, latest: Jun 21 2021 at 16:03)
+* [Category theory journals: The Cahiers](topic/Category.20theory.20journals.3A.20The.20Cahiers.html) (3 messages, latest: Jun 21 2021 at 08:55)
+* [Splitting an idempotent to quotient a monad](topic/Splitting.20an.20idempotent.20to.20quotient.20a.20monad.html) (14 messages, latest: Jun 19 2021 at 23:54)
+* [a variant of adjunctions](topic/a.20variant.20of.20adjunctions.html) (4 messages, latest: Jun 19 2021 at 23:51)
+* [looping of monoidal cats](topic/looping.20of.20monoidal.20cats.html) (9 messages, latest: Jun 14 2021 at 08:46)
+* [Slice categories as free lex categories](topic/Slice.20categories.20as.20free.20lex.20categories.html) (13 messages, latest: Jun 13 2021 at 17:40)
+* [cartesian vs Cartesian](topic/cartesian.20vs.20Cartesian.html) (39 messages, latest: Jun 05 2021 at 01:40)
+* [Looking for references on enriched bicategories](topic/Looking.20for.20references.20on.20enriched.20bicategories.html) (14 messages, latest: Jun 02 2021 at 13:58)
+* [constant + cocontinuous](topic/constant.20.2B.20cocontinuous.html) (9 messages, latest: Jun 02 2021 at 10:47)
+* [adhesive + extensive](topic/adhesive.20.2B.20extensive.html) (8 messages, latest: Jun 02 2021 at 02:53)
+* [directional structured cospans?](topic/directional.20structured.20cospans.3F.html) (28 messages, latest: Jun 01 2021 at 21:32)
+* [commutative monoids in a braided monoidal cat](topic/commutative.20monoids.20in.20a.20braided.20monoidal.20cat.html) (11 messages, latest: May 28 2021 at 13:46)
+* [The right notion of 'number of morphisms in a category'](topic/The.20right.20notion.20of.20'number.20of.20morphisms.20in.20a.20category'.html) (16 messages, latest: May 26 2021 at 17:44)
 * [Externalisation of non-Cartesian internal categories](topic/Externalisation.20of.20non-Cartesian.20internal.20categories.html) (1 message, latest: May 20 2021 at 23:27)
 * [A bounty over at Math Overflow](topic/A.20bounty.20over.20at.20Math.20Overflow.html) (4 messages, latest: May 19 2021 at 09:18)
 * [monads](topic/monads.html) (70 messages, latest: May 17 2021 at 14:39)
 * [nominal substitution monoids](topic/nominal.20substitution.20monoids.html) (78 messages, latest: May 14 2021 at 16:39)
 * [morphisms of presheaf toposes](topic/morphisms.20of.20presheaf.20toposes.html) (1 message, latest: May 11 2021 at 00:56)
-* [cartesian vs Cartesian](topic/cartesian.20vs.20Cartesian.html) (37 messages, latest: May 10 2021 at 17:28)
 * [equivalences of presheaf categories](topic/equivalences.20of.20presheaf.20categories.html) (51 messages, latest: May 10 2021 at 07:10)
 * [twisting cochains](topic/twisting.20cochains.html) (5 messages, latest: May 09 2021 at 15:56)
 * [categorification of the real numbers](topic/categorification.20of.20the.20real.20numbers.html) (67 messages, latest: May 07 2021 at 17:39)
@@ -24,7 +41,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [Categorifying eigenvalues](topic/Categorifying.20eigenvalues.html) (29 messages, latest: May 02 2021 at 22:04)
 * [morphism of modules over 2-rigs](topic/morphism.20of.20modules.20over.202-rigs.html) (19 messages, latest: Apr 30 2021 at 18:37)
 * [distributivity of limits and colimits](topic/distributivity.20of.20limits.20and.20colimits.html) (201 messages, latest: Apr 30 2021 at 16:15)
-* [Looking for references on enriched bicategories](topic/Looking.20for.20references.20on.20enriched.20bicategories.html) (11 messages, latest: Apr 30 2021 at 15:06)
 * [braided monoidal categories as tricategories](topic/braided.20monoidal.20categories.20as.20tricategories.html) (3 messages, latest: Apr 28 2021 at 11:33)
 * [representability of multirepresentable functors](topic/representability.20of.20multirepresentable.20functors.html) (11 messages, latest: Apr 25 2021 at 15:24)
 * [tensor product of EM-algebras](topic/tensor.20product.20of.20EM-algebras.html) (42 messages, latest: Apr 20 2021 at 21:25)
@@ -40,7 +56,6 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [microcosm principle for actegories](topic/microcosm.20principle.20for.20actegories.html) (9 messages, latest: Apr 03 2021 at 09:59)
 * [finitely generated/presented theories?](topic/finitely.20generated.2Fpresented.20theories.3F.html) (35 messages, latest: Mar 30 2021 at 06:55)
 * [Finitely generated/presented theories?](topic/Finitely.20generated.2Fpresented.20theories.3F.html) (6 messages, latest: Mar 27 2021 at 16:54)
-* [Slice categories as free lex categories](topic/Slice.20categories.20as.20free.20lex.20categories.html) (12 messages, latest: Feb 17 2021 at 05:04)
 * [Anti-Grothendieck Construction](topic/Anti-Grothendieck.20Construction.html) (21 messages, latest: Feb 10 2021 at 17:22)
 * [Categories of Algebras](topic/Categories.20of.20Algebras.html) (6 messages, latest: Feb 10 2021 at 12:24)
 * [functors between categories of F-algebras](topic/functors.20between.20categories.20of.20F-algebras.html) (20 messages, latest: Feb 10 2021 at 03:23)
@@ -164,4 +179,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: May 25 2021 at 00:30 UTC</p>
+<hr><p>Last updated: Jun 28 2021 at 13:21 UTC</p>

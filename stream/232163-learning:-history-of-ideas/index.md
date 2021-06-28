@@ -9,6 +9,7 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 
 ### Topics:
 
+* [precursors of category theory](topic/precursors.20of.20category.20theory.html) (12 messages, latest: Jun 01 2021 at 11:42)
 * [videos on the history of CT](topic/videos.20on.20the.20history.20of.20CT.html) (25 messages, latest: Feb 20 2021 at 17:20)
 * [Ideas for new topics](topic/Ideas.20for.20new.20topics.html) (7 messages, latest: Feb 18 2021 at 08:01)
 * [HIstory of Ideas AMA: John Baez](topic/HIstory.20of.20Ideas.20AMA.3A.20John.20Baez.html) (23 messages, latest: Jan 28 2021 at 01:56)
@@ -29,4 +30,4 @@ permalink: /stream/232163-learning:-history-of-ideas/index.html
 * [All things Feynman](topic/All.20things.20Feynman.html) (2 messages, latest: May 22 2020 at 06:04)
 * [stream events](topic/stream.20events.html) (2 messages, latest: Apr 06 2020 at 18:15)
 
-<hr><p>Last updated: May 25 2021 at 00:30 UTC</p>
+<hr><p>Last updated: Jun 28 2021 at 13:21 UTC</p>

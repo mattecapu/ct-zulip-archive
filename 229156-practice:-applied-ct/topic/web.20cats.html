@@ -1574,6 +1574,613 @@ with the following type declaration:</p>
 
 
 
+<a name="240213972"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/240213972" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#240213972">(May 25 2021 at 16:26)</a>:</h4>
+<p><span class="user-mention" data-user-id="390165">@Eric Neumann</span> reminded me of the blog post <a href="http://blog.higher-order.com/blog/2016/04/02/a-comonad-of-graph-decompositions/">on a comonad of graph decompositions</a> just about a month ago.</p>
+
+
+
+<a name="240559672"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/240559672" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#240559672">(May 28 2021 at 04:13)</a>:</h4>
+<p>Yesterday I watched the introductory talk <a href="https://twitter.com/bblfish/status/1397962748429062145">Symmetric Monoidal Categories, A Rosetta Stone</a> by <span class="user-mention" data-user-id="275920">@John Baez</span>. I studied SMCs a little bit last year here and there, but I think I needed this talk working at the intuitive level  (mostly examples) to help something go click. <br>
+John's emphasis on their relation to Open Worlds rather than closed worlds made another click (A bit like opening a safe).  His pointing me to <span class="user-mention" data-user-id="276053">@Brendan Fong</span> 's <a href="https://arxiv.org/abs/1609.05382">The Algebra of Open Systems</a> which I quickly read the Preface which explains the role of Open World thinking at that very approachable intuitive/philosophical level, made me put a few strands of thought together and the door  (safe?) openened up.</p>
+<div class="inline-preview-twitter"><div class="twitter-tweet"><a href="https://twitter.com/bblfish/status/1397962748429062145"><img class="twitter-avatar" src="https://uploads.zulipusercontent.net/77b199c7e82b7b9c52e9d03926bbf1970d09fe5d/68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f313030343332363736313630383431373238312f486a786a533942585f6e6f726d616c2e6a7067"></a><p>Great introduction from examples to Symmetric Monoidal Categories by <a href="https://twitter.com/johncarlosbaez">@johncarlosbaez</a> : their use in electrical engineering, quantum theory, programming, logic, ecology and other *open* systems with some thoughts on the 3rd law of thermodynamics.
+<a href="https://t.co/FRAnRwSDl4">https://www.youtube.com/watch?v=DAGJw7YBy8E&amp;t=18s</a></p><span>- The 🐟‍‍ BabelFish (@bblfish)</span></div></div>
+
+
+
+<a name="240560370"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/240560370" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#240560370">(May 28 2021 at 04:27)</a>:</h4>
+<p>So the first SMC I discovered was RDF. That is what <span class="user-mention" data-user-id="275965">@Evan Patterson</span> shows in <a href="https://arxiv.org/abs/1706.00526">Knowledge Representation in Bicategories of Relations</a>. It then occurred to me that the hypergraphs I get with RDF Quads are a bit like these diagram pieces that SMCs can stick together along inputs and outputs.  Here is an SMC from the  <a href="https://doc.akka.io/docs/akka/current/stream/stream-composition.html">Akka Actor library: "Composing Complex Systems"</a> (of streams) <a href="/user_uploads/21317/OyXlBvWnXyYknfdp9YMnDlzo/compose_graph_flow.png">which shows a composition of sources flows and sinks</a>. Each little box has boxes in it, and these are connected together by larger boxes.</p>
+<div class="message_inline_image"><a href="/user_uploads/21317/OyXlBvWnXyYknfdp9YMnDlzo/compose_graph_flow.png" title="which shows a composition of sources flows and sinks"><img src="/user_uploads/21317/OyXlBvWnXyYknfdp9YMnDlzo/compose_graph_flow.png"></a></div>
+
+
+
+<a name="240560762"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/240560762" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#240560762">(May 28 2021 at 04:34)</a>:</h4>
+<p>A very important part of the semantic web is (one is always told) the Open World Assumption. (Evan's paper has a section on that). So how does that fit? <br>
+Well my thought is the following: <em>the connectors on these RDF Graphs are identified by URLs</em>. <br>
+These are what allows graphs to be composed.</p>
+<p>Without URLs (not even in relation position) one could only ever put two RDF graphs together side by side. <br>
+This is what one would be forced to do if one took normal SQL databases or Graph databases and tried to put them together without assuming that they had anything in common.  So the URIs in RDF play the role of telling us ahead of time how graphs can be composed. (It does not mean they should be btw, as one graph may contain false information or be from an unreliable source, just like one does not want to compose every Akka streaming component one finds on the web that fits together)</p>
+
+
+
+<a name="240561322"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/240561322" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Caleb Foong <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#240561322">(May 28 2021 at 04:45)</a>:</h4>
+<p>I think surely we can connect two RDF graph if they contain entities with the same URI, but isn't that two restrictive? For example,  how about two entities having a "isa" relationship? In general, can we construct a some connections between entities of two RDF graphs, not necessarily for all, but some , and then piece them together</p>
+
+
+
+<a name="240561512"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/240561512" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#240561512">(May 28 2021 at 04:48)</a>:</h4>
+<p>if you did not even have <code>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;</code> to identify the "isA" relation then you would not a priori be entitled to equate a graph in one DB that had a relation named "isA" with another one in another graph database named "isA". The second graph database may be using relations named "isA" as a shorthand for "issueAtomic" for example.</p>
+
+
+
+<a name="240561686"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/240561686" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#240561686">(May 28 2021 at 04:52)</a>:</h4>
+<p>RDF is built on this ability to name things with URLs allowing graphs to be stuck together. With that feature one can of course build a lot more: one can name relations with inferential properties such as <code>&lt;http://www.w3.org/2000/01/rdf-schema#subPropertyOf&gt;</code>, whose inferential property is that if  <code>{?r1 rdfs:subPropertyOf ?r2. ?a ?r1 ?b}</code> then <code>{ ?a ?r2 ?b }</code>.</p>
+
+
+
+<a name="240562128"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/240562128" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#240562128">(May 28 2021 at 05:01)</a>:</h4>
+<blockquote>
+<p>can we construct a some connections between entities of two RDF graphs, not necessarily for all, but some , and then piece them together</p>
+</blockquote>
+<p>Yes, you could have a third RDF Graph (G3) that contained only one relation linking a node in G1 to a node in G2. <br>
+Those would have to be named nodes if you don't use the inferential properties of OWL I mentioned earlier. Once you have regular or geometric logic, built on identifiable relations such as <code>&lt;http://www.w3.org/2002/07/owl#inverseFunctionalProperty&gt;</code> you can then identify blank nodes or even differently named nodes in two graphs.</p>
+<p>A simple example is that <code>&lt;http://xmlns.com/foaf/0.1/mbox&gt;</code> relating an Agent and an email inbox is defined to be inverse functional. So if you have G1:</p>
+<div class="codehilite" data-code-language="Turtle"><pre><span></span><code><span class="nv">&lt;https://www.w3.org/People/Berners-Lee/card#i&gt;</span>
+          <span class="nv">&lt;http://xmlns.com/foaf/0.1/mbox&gt;</span> <span class="nv">&lt;mailto:timbl@w3.org&gt;</span> <span class="p">.</span>
+</code></pre></div>
+<p>and another graph G2 with </p>
+<div class="codehilite" data-code-language="Turtle"><pre><span></span><code><span class="nv">&lt;https://webid.mit.edu/timbl#i&gt;</span>
+        <span class="nv">&lt;http://xmlns.com/foaf/0.1/mbox&gt;</span> <span class="nv">&lt;mailto:timbl@w3.org&gt;</span> <span class="p">.</span>
+</code></pre></div>
+<p>Then, because the objects of the relations are the same, it follows that the subjects can be identified - i.e. fall in the same partition of a given syntax/semantics setoid (?). Expressed in RDF one can conclude that </p>
+<div class="codehilite" data-code-language="Turtle"><pre><span></span><code><span class="nv">&lt;https://www.w3.org/People/Berners-Lee/card#i&gt;</span>
+       <span class="nv">&lt;http://www.w3.org/2002/07/owl#sameAs&gt;</span> <span class="nv">&lt;https://webid.mit.edu/timbl#i&gt;</span> <span class="p">.</span>
+</code></pre></div>
+
+
+
+<a name="240562809"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/240562809" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#240562809">(May 28 2021 at 05:14)</a>:</h4>
+<p>But none of that would work if you could not compose RDF graphs along nodes (or relations) named with the same URLs.</p>
+
+
+
+<a name="240568038"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/240568038" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#240568038">(May 28 2021 at 07:00)</a>:</h4>
+<p>Actually here is a view of the sticking together of 3 graphs from my Semweb Pro presentation last year. <br>
+My thought, which would need to be verified, is that this fits the Symmetric Monoidal Category view of sticking things together. It would also show how the Semantic Web is an Open World System (which it has to be, as it is designed to make global interlinking of information possible).<br>
+<a href="/user_uploads/21317/WfGHYrkaeJ14ZMyVsRIO_n55/NamedGraphs4.jpg">Slide from SemWeb Pro presentation</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/WfGHYrkaeJ14ZMyVsRIO_n55/NamedGraphs4.jpg" title="Slide from SemWeb Pro presentation"><img src="/user_uploads/21317/WfGHYrkaeJ14ZMyVsRIO_n55/NamedGraphs4.jpg"></a></div>
+
+
+
+<a name="240571590"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/240571590" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#240571590">(May 28 2021 at 07:48)</a>:</h4>
+<p>Btw, I just found that there is a whole course online on Knowledge Graphs ending next week. The last talk is with Prof Jim Hendler and Doug Lenat <a href="https://web.stanford.edu/class/cs520/">What are some research issues in Knowledge Graphs?</a>. Jim Hendler is very famous in the Semantic Web community, and wrote the Book "Semantic Web for the Working Ontologist" whose third edition came out last year. There is a short biography of him there <a href="https://twitter.com/bblfish/status/1321753388195975168">https://twitter.com/bblfish/status/1321753388195975168</a></p>
+<div class="inline-preview-twitter"><div class="twitter-tweet"><a href="https://twitter.com/bblfish/status/1321753388195975168"><img class="twitter-avatar" src="https://uploads.zulipusercontent.net/77b199c7e82b7b9c52e9d03926bbf1970d09fe5d/68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f313030343332363736313630383431373238312f486a786a533942585f6e6f726d616c2e6a7067"></a><p><a href="https://twitter.com/lescarr">@lescarr</a> Are you trying to compete with <a href="https://twitter.com/jahendler">@jahendler</a>? You've got a way to go still! Check out his bio on edition 3 of his "Semantic Web for the Working Ontologist" (4 lines from the bottom) <a href="https://t.co/ldUYq98Kvy">http://www.morganclaypoolpublishers.com/catalog_Orig/product_info.php?products_id=1564</a> #Semweb <a href="https://t.co/SSIPUOOP1B">https://twitter.com/bblfish/status/1321753388195975168/photo/1</a></p><span>- The 🐟‍‍ BabelFish (@bblfish)</span><div class="twitter-image"><a href="https://t.co/SSIPUOOP1B"><img src="https://uploads.zulipusercontent.net/6b71b49b86e67a0ebafd337951f2e838028e4e86/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f456c6650695633573041452d5f5a4b2e706e673a7468756d62"></a></div></div></div>
+
+
+
+<a name="240957383"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/240957383" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Neumann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#240957383">(Jun 01 2021 at 15:14)</a>:</h4>
+<p>I have concerns that the literal notion of a knowledge graph may have serious limitations. Both the nonstandard means of handling nary relations and the expressive bounds of 1-graphs limits the practical kinds of representations possible. </p>
+<p>This may also reflect the bounded range of problems that Description Logic can address. It might be helpful to catalog various problems in domains that DL will have issues representing. Many exist in biology that require high order graphs, ie gene transcription factors and regulation.</p>
+
+
+
+<a name="240964806"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/240964806" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#240964806">(Jun 01 2021 at 16:05)</a>:</h4>
+<p>I am a new to the "knowledge graph" terminology, so I need to watch a few of <a href="https://web.stanford.edu/class/cs520/">those lectures</a> to see where that comes from and what it covers...</p>
+
+
+
+<a name="241120360"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/241120360" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Caleb Foong <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#241120360">(Jun 02 2021 at 08:41)</a>:</h4>
+<p><span class="user-mention" data-user-id="390165">@Eric Neumann</span> you might wear to look at <a href="https://grakn.ai">https://grakn.ai</a> it addresses some of the problems you mentioned</p>
+
+
+
+<a name="241409773"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/241409773" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#241409773">(Jun 03 2021 at 15:44)</a>:</h4>
+<p>I was going to say that it looks to me like TypeDB from grakn is a closed world database. And indeed in the <a href="https://docs.vaticle.com/docs/comparisons/semantic-web-and-typedb">comparison page to the Semantic Web</a> </p>
+<blockquote>
+<p>Specifically, the Semantic Web is built for the Web, with incomplete data coming from many sources, where anyone can contribute to the definition and mapping between information sources. TypeDB, in contrast, wasn’t built to share data over the web, but instead to work as a transactional database for closed world organisations. </p>
+</blockquote>
+<p>That is why I recently <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/240559672">pointed to John Baez's talk</a> on symmetric monoidal categories, which led me to the PhD thesis by <span class="user-mention" data-user-id="276053">@Brendan Fong</span>  which starts with the importance of Open World  Systems. I put the first <a href="https://twitter.com/bblfish/status/1398230682237911041">two pages of his thesis on Twitter</a> as those are easily readable even by non-mathematicians.</p>
+<div class="inline-preview-twitter"><div class="twitter-tweet"><a href="https://twitter.com/bblfish/status/1398230682237911041"><img class="twitter-avatar" src="https://uploads.zulipusercontent.net/77b199c7e82b7b9c52e9d03926bbf1970d09fe5d/68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f313030343332363736313630383431373238312f486a786a533942585f6e6f726d616c2e6a7067"></a><p><a href="https://twitter.com/johncarlosbaez">@johncarlosbaez</a> <a href="https://twitter.com/ejpatters">@ejpatters</a> Ah yes, the preface to Brendan Fong's thesis "The Algebra of Open and Interconnected Systems" <a href="https://t.co/bz9wmfPWvI">https://arxiv.org/abs/1609.05382</a> should be of great interest to Philosophers as well as #linkeddata folks interested in what is behind the Open World Assumption. cc <a href="https://twitter.com/DJRoss70">@DJRoss70</a> <a href="https://t.co/OiBEhy2Ddy">https://twitter.com/bblfish/status/1398230682237911041/photo/1</a></p><span>- The 🐟‍‍ BabelFish (@bblfish)</span><div class="twitter-image"><a href="https://t.co/OiBEhy2Ddy"><img src="https://uploads.zulipusercontent.net/bbb72c9e0cfed4b9b3f66b54bbac2457684d1846/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f453265444d43415830414532566c4c2e706e673a7468756d62"></a></div></div></div>
+
+
+
+<a name="241410666"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/241410666" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#241410666">(Jun 03 2021 at 15:50)</a>:</h4>
+<p>The idea is quite simple but very deep from those two pages: where closed world mathematics works well for physical systems, it does not work well at all for biological systems. And so of course not for human instititutions either, such as  economics.  The person who brought economics from to think in terms of this divide is I am told  <a href="https://en.wikipedia.org/wiki/Nicholas_Georgescu-Roegen">Nicholas Georgescu-Roegen</a> a mathematician  who argued in detail the biological aspect of economics and its negenthropic dimension. (He was notably, a research assistant of "creative destruction" Schumpeter.)</p>
+<p>If Brendan and John Baez have found the mathematical structural difference between closed world and open world, between physical and biological systems, between entropic and negantropic systems, then this is a hugely important discovery.</p>
+
+
+
+<a name="241410754"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/241410754" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#241410754">(Jun 03 2021 at 15:51)</a>:</h4>
+<p>So starting just from that point we should be skeptical that a closed world database is going to be that helpful to <span class="user-mention" data-user-id="390165">@Eric Neumann</span> with modelling problems in biology.</p>
+
+
+
+<a name="241411728"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/241411728" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#241411728">(Jun 03 2021 at 15:58)</a>:</h4>
+<p>Is the Semantic Web related to Symmetric Monoidal Categories? Well it happens that 6 months ago before I started the EU project on access control on Solid, I was annotating the <a href="https://github.com/bblfish/agda-web-semantic">Agda-Web-Semantic Library</a> in order to understand what was going on there.  It is the Agda proof of the thesis put forward in the article "Integrity Constraints for Linked Data" which has the following abstract.</p>
+<blockquote>
+<p>Linked Data makes one central addition to the Semantic Web principles: all entity URIs should be dereferenceable to provide an authoritative RDF representation. URIs in a linked dataset can be partitioned into the exported URIs for which the dataset is authoritative versus the imported URIs the dataset is linking against. This partitioning has an impact on integrity constraints, as a Closed World Assumption applies to the exported URIs, while a Open World Assumption applies to the imported URIs. We provide a definition of integrity constraint satisfaction in the presence of partitioning, and show that it leads to a formal interpretation of dependency graphs which describe the hyperlinking relations between datasets. We prove that datasets with integrity constraints form a <strong>symmetric monoidal category</strong>, from which the soundness of acyclic dependency graphs follows.</p>
+</blockquote>
+
+
+
+<a name="241411804"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/241411804" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#241411804">(Jun 03 2021 at 15:59)</a>:</h4>
+<p>Notice the last line "We prove that datasets with integrity constraints form a symmetric monoidal category, from which the soundness of acyclic dependency graphs follows."</p>
+
+
+
+<a name="241412119"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/241412119" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#241412119">(Jun 03 2021 at 16:01)</a>:</h4>
+<p>So now I am even more keen to get back to finishing reading that paper and Brendan's thesis :-) (when I get some spare time...)</p>
+
+
+
+<a name="241413581"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/241413581" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#241413581">(Jun 03 2021 at 16:12)</a>:</h4>
+<p>Just to circle back to the beginning, one of the author of the article "Integrity Constraints for Linked Data" <a href="https://www.linkedin.com/in/peter-f-patel-schneider-5a65b848/">Peter F. Patel-Schneider</a>, is the first speakers in the <a href="https://www.youtube.com/watch?v=IE1ZF02-yI0">2021 Knowledge Graph Semaniar Session 6</a> where he talks about how to get from <a href="https://www.wikidata.org/">wikidata</a> to wiki-knowledge.</p>
+<div class="youtube-video message_inline_image"><a data-id="IE1ZF02-yI0" href="https://www.youtube.com/watch?v=IE1ZF02-yI0"><img src="https://uploads.zulipusercontent.net/5fc463be679c929430c3067e556061febcc71834/68747470733a2f2f692e7974696d672e636f6d2f76692f4945315a4630322d7949302f64656661756c742e6a7067"></a></div>
+
+
+
+<a name="242567619"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/242567619" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#242567619">(Jun 14 2021 at 08:40)</a>:</h4>
+<p>A basic question on the Linked Data Signatures came up that reveals an interesting aspect of RDF. The question was "why sign the graph and not just the bytes?" There is a simple A-level maths answer using  combinatorial mathematics. For a graph with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span></span></span></span> <code>subject relation object</code> triples, the number of ways of serialising those into a list is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo stretchy="false">!</mo></mrow><annotation encoding="application/x-tex">n! </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">n</span><span class="mclose">!</span></span></span></span>, i.e. the factorial of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span></span></span></span>. </p>
+<p>I <a href="https://lists.w3.org/Archives/Public/semantic-web/2021Jun/0120.html">wrote a little Scala program</a> for that</p>
+<div class="codehilite" data-code-language="Scala"><pre><span></span><code><span class="n">scala</span><span class="o">&gt;</span> <span class="k">def</span> <span class="nf">fact</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nc">BigInt</span><span class="p">):</span> <span class="nc">BigInt</span> <span class="o">=</span>
+     <span class="o">|</span>   <span class="n">n</span> <span class="k">match</span>
+     <span class="o">|</span>      <span class="k">case</span> <span class="mi">1</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+     <span class="o">|</span>      <span class="k">case</span> <span class="n">x</span> <span class="o">=&gt;</span> <span class="n">x</span> <span class="o">*</span> <span class="n">fact</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">scala</span><span class="o">&gt;</span> <span class="n">fact</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="kd">val</span> <span class="n">res0</span><span class="p">:</span> <span class="nc">Long</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">scala</span><span class="o">&gt;</span> <span class="n">fact</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="kd">val</span> <span class="n">res2</span><span class="p">:</span> <span class="nc">Long</span> <span class="o">=</span> <span class="mi">120</span>
+<span class="n">scala</span><span class="o">&gt;</span> <span class="n">fact</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
+<span class="kd">val</span> <span class="n">res4</span><span class="p">:</span> <span class="nc">BigInt</span> <span class="o">=</span> <span class="mi">6689502913449127057588118054090372586752746333138029810295671352301633557244962989366874165271984981308157637893214090552534408589408121859898481114389650005964960521256960000000000000000000000000000</span>
+</code></pre></div>
+<p>(The same applies for named graphs seen as <code>subject relation object graphName</code> quads).<br>
+So with a graph of 120 triples - a very small graph - the number of possible serialisations is huge. And that is without taking into account white-spacing lenience of the basic formats, that there are at least 6 different formats to serialise to that have even more flexibility (some being desgined to be read by humans),  and that probably most format (e.g. XML) could be mappedf to RDF. </p>
+<p>So an RDF graph, and DataSet (Sets of graphs) considered this way is a very powerful equivalence relation on serialisations.  (and we have only been thinking syntactically here: semantics allows one to create equivalences between graphs via identifying the references of nodes).</p>
+
+
+
+<a name="242568001"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/242568001" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#242568001">(Jun 14 2021 at 08:44)</a>:</h4>
+<p>The proposal is to create a canonical serialisation of an RDF Graph, hash it and sign that.  <br>
+But I was just wondering if in the space of all possible ways of canonicalising such a graph, there was  a known best way - or most interesting/composable? - way of doing that.</p>
+
+
+
+<a name="242913469"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/242913469" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#242913469">(Jun 16 2021 at 17:21)</a>:</h4>
+<p>A discussion on  "Principles of Identity in Web Architecture" started on the W3C Technical Architecture Group this week. <br>
+I wrote <a href="https://lists.w3.org/Archives/Public/www-tag/2021Jun/0037.html">a reply there today</a> referencing work  on the Yoneda Lemma, coalgebras, and the recent talk by <span class="user-mention" data-user-id="275920">@John Baez</span> on Symmetric Monoidal Categories. I hope I have not completely mungled all these concepts. <br>
+Perhaps some of you will get some calls from W3C folks... :-)</p>
+
+
+
+<a name="242949560"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/242949560" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jon Awbrey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#242949560">(Jun 16 2021 at 22:08)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="281126">Henry Story</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/242913469">said</a>:</p>
+<blockquote>
+<p>A discussion on  "Principles of Identity in Web Architecture" started on the W3C Technical Architecture Group this week. <br>
+I wrote <a href="https://lists.w3.org/Archives/Public/www-tag/2021Jun/0037.html">a reply there today</a> referencing work  on the Yoneda Lemma, coalgebras, and the recent talk by <span class="user-mention silent" data-user-id="275920">John Baez</span> on Symmetric Monoidal Categories. I hope I have not completely mungled all these concepts. <br>
+Perhaps some of you will get some calls from W3C folks... :-)</p>
+</blockquote>
+<p>Identity, Indiscernibility, Individuality, Information, and their Interminglings are perennial topics in Peirce circles, especially in view of his radically pragmatic spins on the questions, pace both Leibniz and nominalists of all stripes.  I will dig up some links. JA</p>
+
+
+
+<a name="242972348"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/242972348" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#242972348">(Jun 17 2021 at 04:44)</a>:</h4>
+<p>Pat Hayes who contributed to the <a href="https://lists.w3.org/Archives/Public/www-tag/2021Jun/">discussion thread</a> and is famous for his <a href="https://en.wikipedia.org/wiki/Pat_Hayes">early criticism of AI</a> is a big fan of Peirce I believe. Sadly the W3C has a lossy archive for html e-mails, and so it is difficult to work out what his statements are in his e-mails and what he is replying to. But they were the most fun to read.</p>
+
+
+
+<a name="243172888"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243172888" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jon Awbrey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243172888">(Jun 18 2021 at 15:04)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="281126">Henry Story</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/242972348">said</a>:</p>
+<blockquote>
+<p>Pat Hayes who contributed to the <a href="https://lists.w3.org/Archives/Public/www-tag/2021Jun/">discussion thread</a> and is famous for his <a href="https://en.wikipedia.org/wiki/Pat_Hayes">early criticism of AI</a> is a big fan of Peirce I believe. Sadly the W3C has a lossy archive for html e-mails, and so it is difficult to work out what his statements are in his e-mails and what he is replying to. But they were the most fun to read.</p>
+</blockquote>
+<p>I spent a lot of time in the WC (Ha!) and  several Web Ontology forums 15 or 20 years ago. As a rule one wastes a lot of breath spilling all one's best ideas as to what the future might hold and then some Dudes with a military contract come in and tell you This Is The Way It Goes  (TITWIG) &mdash; and it's always regression to the legacy in place.</p>
+
+
+
+<a name="243182483"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243182483" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243182483">(Jun 18 2021 at 16:24)</a>:</h4>
+<p>yes, W3C is a consortium that is designed to get often mortal enemies to cooperate and produce standards by convincing enough participants that it is in their interest to spend that time (often 3 years) to work on a standard that everyone will then be able to use.<br>
+It is quite amazing that it works.</p>
+
+
+
+<a name="243182828"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243182828" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243182828">(Jun 18 2021 at 16:27)</a>:</h4>
+<p>It works because the participants follow the dictum that "a rising tide lifts all boats" and they each want to get a bigger part of the pie, but won't get any if it is not available to all to use. <br>
+I think one could and perhaps should explain this in terms of the prisoners dilemma and game theory. It's located at MIT, so I would guess that has been done.</p>
+
+
+
+<a name="243183103"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243183103" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243183103">(Jun 18 2021 at 16:30)</a>:</h4>
+<p>It is actually very important to have large players or extreemly dynamic and ambitious ones. A standard with only a few small players participating is not useful, and really a waste of time.<br>
+Anyway, it is all about network effects.</p>
+
+
+
+<a name="243183919"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243183919" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243183919">(Jun 18 2021 at 16:38)</a>:</h4>
+<p>But  ideally - and I think the semantic web is going in that direction - standards would be close to mathematical objects, so that one could have proofs and serious discussions on issues.</p>
+
+
+
+<a name="243184003"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243184003" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243184003">(Jun 18 2021 at 16:39)</a>:</h4>
+<p>Ah this is a nice video that I think illustrates perfectly what it must be to Work at the W3C: <br>
+<a href="https://youtu.be/vTwJzTsb2QQ">https://youtu.be/vTwJzTsb2QQ</a><br>
+I have a hunch it may be similar working with mathematicians ;-)</p>
+<div class="youtube-video message_inline_image"><a data-id="vTwJzTsb2QQ" href="https://youtu.be/vTwJzTsb2QQ"><img src="https://uploads.zulipusercontent.net/328a0a2dddd643caf41d05168186b1814d763867/68747470733a2f2f692e7974696d672e636f6d2f76692f7654774a7a5473623251512f64656661756c742e6a7067"></a></div>
+
+
+
+<a name="243187517"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243187517" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jon Awbrey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243187517">(Jun 18 2021 at 17:15)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="281126">Henry Story</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/243184003">said</a>:</p>
+<blockquote>
+<p>Ah this is a nice video that I think illustrates perfectly what it must be to Work at the W3C: <br>
+<a href="https://youtu.be/vTwJzTsb2QQ">https://youtu.be/vTwJzTsb2QQ</a><br>
+I have a hunch it may be similar working with mathematicians ;-)</p>
+</blockquote>
+<p>I still observe/participate in several spin-offs of the old SUO (Standard Upper Ontology) and Ontolog Forums, but they operate more in what one member described as a "water-cooler" kibitzing fashion than a state-of-the-art research SIG.  Okay as far as it goes I guess ...</p>
+
+
+
+<a name="243188107"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243188107" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243188107">(Jun 18 2021 at 17:20)</a>:</h4>
+<p>Ah, yes, I have not participated in the Upper Ontology work nor looked much in that direction. It seemed too "philosophical" ("academic"?) to me.  I have been more interested in building applications that would read and write linked data in order to grow the system organically the way the web grew.  That is following Ruth Garett Millikan's view that Language falls with the Category of the biological - very broadly understood as: that which reproduces.<br>
+Somehow I ended up in Category Theory, because it turned out to be useful :-)</p>
+
+
+
+<a name="243192809"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243192809" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jon Awbrey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243192809">(Jun 18 2021 at 18:08)</a>:</h4>
+<p>Very copacetic with what I took away from Chomsky and the evolutionary philosophy of Peirce.  Often refer to natural languages as Naturally Evolved Organs &mdash; Wake Up, NEO! &mdash; and thereby hangs a tail ...</p>
+
+
+
+<a name="243818580"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243818580" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Neumann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243818580">(Jun 24 2021 at 17:23)</a>:</h4>
+<p>As I stated a few weeks ago, I’m hoping to start a discussion on thinking about the Web  in a different light that attempts to include its collective role and  activities as a living substrate for multiple authors (human and machine) to extend and modify it across multiple edges in an  ever adapting form. This perspective I am proposing for the Web is best understood as a <strong>Comonad</strong> *, an object from algebraic category theory. </p>
+<p>*For a basic introduction to Comonads, see Bartosz Milewski’s enjoyable description of them (<a href="https://bartoszmilewski.com/2017/01/02/comonads">https://bartoszmilewski.com/2017/01/02/comonads</a>), as well as their dual,  Monads (<a href="https://bartoszmilewski.com/2016/11/21/monads-programmers-definition/">https://bartoszmilewski.com/2016/11/21/monads-programmers-definition/</a>).</p>
+
+
+
+<a name="243818972"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243818972" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Neumann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243818972">(Jun 24 2021 at 17:27)</a>:</h4>
+<p>Since its inception, the World Wide Web was always described as a graph of URL internet located documents with http links embedded in each document (page). This has proven to be a very powerful and extensible model for publishing on the web and sharing documents by contextualized reference. Many features have been layered onto this: visually formatted pages, bookmarks, embedded javascript, breadcrumbs, cookies, already-viewed affordances, etc., but all these basically maintain the Web as a stateless entity when traversed and viewed. Even the semantic web emerged as a data extension of the Web with semantics introduced to describe entities and relations more precisely and in support of logical inference, yet the Web itself (http mechanics) doesn’t gain or utilize anything from these semantics,  and so we have limited means for its extension. Keeping http simple like this is  probably why the Web took off; it also limits its general potential and relies on third-parties for work-arounds, both open and closed.</p>
+<p>However, this graph model of the Web is not quite accurate, since in fact the Web changes and the way new links are introduced define critical mechanics of the Web not yet addressed explicitly by a graph model. More importantly, without the ability for users to view a web page (document) or navigate across the links, the Web as only a graph has virtually no value: it needs observers and actors to perform actions onto it.  If on the other hand the views, the various contexts of users, and current location of a browser are considered as part of the overall Web model, what emerges is an algebraic framework for the Web (including <strong>algebras</strong> and <strong>coalgebras</strong>).</p>
+
+
+
+<a name="243819601"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243819601" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Neumann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243819601">(Jun 24 2021 at 17:31)</a>:</h4>
+<p>More specifically, if we assume the Web can grow indefinitely (perhaps not an infinite web, but certainly one where we don’t know when it will stop), we will need a formulation that encompasses this, analogous to the concept of streams of data which are List-like but have no obvious size but do have a current index. This is where <strong>Comonads</strong> possibly come in: they handle structures of unknown size with possible (even multiple) contexts over different of its elements. <strong>Comonads</strong> (W) consist of 2 maps (aka natural transformations, since a <strong>comonad</strong> is more accurately defined as an <strong>endofunctor</strong>):</p>
+<p>A <strong>coproduct 𝛅</strong>: W(X) → W(X) × W(X) a kind of data copy &amp; branch, and a counit 𝛆: W(X) → X that extracts some specific (focused) content out.</p>
+
+
+
+<a name="243820738"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243820738" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Neumann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243820738">(Jun 24 2021 at 17:39)</a>:</h4>
+<p>A common example used to describe a <strong>Comonad</strong> is the universal covering, which is a map (functor actually) taking a pointed space <strong>(𝑋, 𝑥0)</strong> and producing the space of homotopy classes of paths starting at <strong>𝑥0</strong> (think paths on top of other paths). This example extends to the rooted tree model on directed graphs <strong>G</strong>, whose vertices are all the paths starting from a root <strong>𝑥0</strong>, and are connected if they have a single edge between them in <strong>G</strong>. This notion of spaces of traversals really begins to suggest the link between the usage of the <strong>Web</strong> and <strong>Comonads</strong>.</p>
+<p>Other familiar example of <strong>Comonads</strong> are the <strong>Reader Comonad</strong> (its dual is  the <strong>Writer Monad</strong>), which takes a set <strong>X</strong> and adds (reads) extra data (<strong>A</strong>) onto it , and the <strong>Stream Comonad</strong>, which takes a <em>monoid</em> sequence like time <strong>T</strong> and adds sets of maps <strong>T → X</strong> for the various histories or trajectories of <strong>X</strong> (which are contravariant in T) . The <strong>coproduct 𝛅 </strong>duplicates the data or relative histories and passes it along, while the <strong>counit 𝛆</strong> forgets the rest of the data or the different histories and returns the value at the local context. This further characterizes a comonadic model of how web browsers work with the Web. (see Runar Bjarnason's blog example <a href="http://blog.higher-order.com/blog/2016/04/02/a-comonad-of-graph-decompositions/">http://blog.higher-order.com/blog/2016/04/02/a-comonad-of-graph-decompositions/</a>)</p>
+<p>The <strong>Comonad</strong> of a graph can be visualized as a graph of graphs with different context views at each higher-level graph vertex. Going to a page involves selecting an index onto the Web and forming an element of its coproduct, namely the traversal; the browser request of the new page (http-get) at a site and its rendering of the http-response is the extraction (counit <strong>𝛆</strong>).  That’s all very abstract, but this lets us establish multiple forms of these principles for using with or even extending the current Web.</p>
+
+
+
+<a name="243821983"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243821983" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Neumann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243821983">(Jun 24 2021 at 17:49)</a>:</h4>
+<p>So, what actually can be the (indexed) contexts on a <strong>Comonad</strong> of a Web <strong>graph</strong>? I believe there are several practical candidates which I would like to list for consideration, in hopes they will elicit a useful discussion in this thread…</p>
+
+
+
+<a name="243823206"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243823206" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Neumann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243823206">(Jun 24 2021 at 17:59)</a>:</h4>
+<p>I will begin with the first example, which is about how most of us use the Web:</p>
+<ol>
+<li>The current location of a browser that a user is viewing is certainly one index of the Web graph; it is something that analyzers of web activity are constantly harvesting (think Hubspot, Facebook, etc). From each viewed location (browser context), a user views out onto parts of the larger Web from their particular context. Their subsequent actions are dictated by their initial objective+current thoughts (model), and the link-out content of the webpage they are currently viewing. The history path they create is itself a subgraph around their context, and since it extends during a session it is also comonadic.</li>
+</ol>
+
+
+
+<a name="243825133"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243825133" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Neumann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243825133">(Jun 24 2021 at 18:13)</a>:</h4>
+<p>Also consider,  this is happening many times each second across the same Web by web users all over the planet! It's not different from what Tim BL was thinking, but here we include the activities of all users as part of the overall algebra, not just the static Web graph object.</p>
+
+
+
+<a name="243825297"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243825297" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jon Awbrey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243825297">(Jun 24 2021 at 18:14)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="390165">Eric Neumann</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/243823206">said</a>:</p>
+<blockquote>
+<p>I will begin with the first example, which is about how most of us use the Web:</p>
+<ol>
+<li>The current location of a browser that a user is viewing is certainly one index of the Web graph; it is something that analyzers of web activity are constantly harvesting (think Hubspot, Facebook, etc). From each viewed location (browser context), a user views out onto parts of the larger Web form their particular context. Their subsequent actions are dictated by their initial objective+current thoughts (model), and the link-out content of the webpage they are currently viewing. The history path they create is itself a subgraph around their context, and since it extends during a session it is also comonadic.</li>
+</ol>
+</blockquote>
+<p>Dear Eric,<br>
+Don't know much about co-monads but this sounds a lot like manifolds to me and I've done some thinking about co-products and wreath products in webby contexts.&nbsp; There is a close connection between manifolds and C.S. Peirce's triadic sign relations.</p>
+
+
+
+<a name="243826033"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243826033" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243826033">(Jun 24 2021 at 18:21)</a>:</h4>
+<p>Thanks <span class="user-mention" data-user-id="390165">@Eric Neumann</span> . That's right on track for what I was thinking web-cats should be about :-)</p>
+
+
+
+<a name="243828548"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243828548" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243828548">(Jun 24 2021 at 18:39)</a>:</h4>
+<p>I was looking at monads and comonads about 5 years ago exactly with this type of thinking in mind, but I also felt I needed to learn more about Cats than what I could glean through reading (some excellent) programming blogs such as those <span class="user-mention" data-user-id="390165">@Eric Neumann</span> linked to above.</p>
+<p>So my first discovery at university was coalgebras which led me to <span class="user-mention" data-user-id="332942">@Corina Cirstea</span>. Those seemed to fit very nicely to HTTP and I wrote up in my first year report how a Web Resource can be thought of as coalgebraically  as a thing which changes state. GET is the method allowing observation of the state of a resource <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>GET</mtext><mo>:</mo><mi>S</mi><mo>→</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">\text{GET}: S \to R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord">GET</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span> named by a URL and PUT is the way to change the state of a resource <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>PUT</mtext><mo>:</mo><mi>S</mi><mo>→</mo><msup><mi>S</mi><mi>R</mi></msup></mrow><annotation encoding="application/x-tex">\text{PUT}: S \to S^{R}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord">PUT</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8413309999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.00773em;">R</span></span></span></span></span></span></span></span></span></span></span></span>, i.e. give a state of a resource, put is a function that if you give it a new representation will return a new state S. <br>
+Coalgebras and comonads are closely related so that was a nice find. Except that we need to then deal with infintely many resources simultaneously. That may well be where the comonadic space comes in nicely.</p>
+
+
+
+<a name="243830570"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243830570" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Neumann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243830570">(Jun 24 2021 at 18:54)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="306979">Jon Awbrey</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/243825297">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="390165">Eric Neumann</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/243823206">said</a>:</p>
+<blockquote>
+<p>...</p>
+</blockquote>
+<p>Dear Eric,<br>
+Don't know much about co-monads but this sounds a lot like manifolds to me and I've done some thinking about co-products and wreath products in webby contexts.&nbsp; There is a close connection between manifolds and C.S. Peirce's triadic sign relations.</p>
+</blockquote>
+<p>Jon,<br>
+That certainly may be the case, since we are dealing with a graph  topology and the  triadic reaction you mention could <em>ornament</em> elements of the graph. <strong>Pushouts</strong> could be regarded as <strong>Coproducts</strong> could be the semantically constrained mergers of parts of the  Web graph to form larger semantically valid graphs. My focus on <strong>Comonads</strong> is to include some (co)algebraic active elements (e.g., user behavior) in the way the Web is used, and to capture/represent much of what is done as logical formalisms. These hopefully could help developers utilize (Co)Algebra languages for developing more powerful applications and platforms in the future.</p>
+
+
+
+<a name="243831742"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243831742" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jon Awbrey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243831742">(Jun 24 2021 at 19:02)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="281126">Henry Story</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/243828548">said</a>:</p>
+<blockquote>
+<p>GET is the method allowing observation of the state of a resource <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>GET</mtext><mo>:</mo><mi>S</mi><mo>→</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">\text{GET}: S \to R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord">GET</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span> named by a URL and PUT is the way to change the state of a resource <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>PUT</mtext><mo>:</mo><mi>S</mi><mo>→</mo><msup><mi>S</mi><mi>R</mi></msup></mrow><annotation encoding="application/x-tex">\text{PUT}: S \to S^{R}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord">PUT</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8413309999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.00773em;">R</span></span></span></span></span></span></span></span></span></span></span></span>, i.e. give a state of a resource, put is a function that if you give it a new representation will return a new state S. </p>
+</blockquote>
+<p>Operating under the influence of Peirce as I do, my <a href="https://www.academia.edu/5210987/Theme_One_Program_Pascal_Source_Code">Master's Piece</a> used a threesome here.&nbsp; TAP for changing the state based on input, PAT for putting a symbol in the output stream, and APT for testing the equality of two values.</p>
+
+
+
+<a name="243946471"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243946471" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jon Awbrey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243946471">(Jun 25 2021 at 17:32)</a>:</h4>
+<p>While I've got it on my mind, here's a few links to what documentation I've put on the web so far about my old Theme One Program.</p>
+<ul>
+<li><a href="https://oeis.org/wiki/Theme_One_Program_%E2%80%A2_Overview">Theme One Program &bull; Overview</a></li>
+<li><a href="https://www.academia.edu/5211369/Theme_One_Program_User_Guide">Theme One Program &bull; User Guide (doc)</a></li>
+<li><a href="https://inquiryintoinquiry.files.wordpress.com/2021/05/theme-one-guide.pdf">Theme One Program &bull; User Guide (pdf)</a></li>
+<li><a href="https://www.academia.edu/5210987/Theme_One_Program_Pascal_Source_Code">Theme One Program • Pascal Source Code</a></li>
+<li><a href="https://www.academia.edu/1272839/Exploring_Research_Data_Interactively_Theme_One_A_Program_of_Inquiry">Exploring Research Data Interactively &bull; Theme One : A Program of Inquiry</a></li>
+<li><a href="https://www.academia.edu/1270327/An_Architecture_for_Inquiry_Building_Computer_Platforms_for_Discovery">An Architecture for Inquiry &bull; Building Computer Platforms for Discovery</a></li>
+</ul>
+
+
+
+<a name="243997226"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243997226" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243997226">(Jun 26 2021 at 06:03)</a>:</h4>
+<p>I found the book "Diagrammatic Immanence" discussed on the <a href="#narrow/stream/229134-philosophy/topic/Peirce">Peirce channel</a> very interesting, but the whole thing is still quite fuzzy. My feeling is that the tripartite structure of Peirce is what <a href="https://en.wikipedia.org/wiki/J._L._Austin">J.L Austin</a> onwards thematised under the heading of speech acts. That would fit as Peirce was a pragmatists, and so how one uses words for a pragmatist is essential to understanding their meaning. (It is quite possible that the author did not make that link as he is influenced by Deleuze who was upset with those philosophers - ordinary language philosophers - because they perhaps too often made reference to common sense, which in France or Germany after the second world war may not have seemed as such a good foundation for things, as it might have in the UK or US).</p>
+
+
+
+<a name="243997444"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243997444" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243997444">(Jun 26 2021 at 06:09)</a>:</h4>
+<p>Be that as it may, if what is at stake are speech acts then I think this is a major part of the web, and I argue for that at length in my <a href="https://co-operating.systems/2019/04/01/">second year PhD report</a>.  That is what we are discussing here in part when looking at coalgebras. Those are probably just the key ingredient with a lot more required. <a href="https://twitter.com/bblfish/status/1358436988228153345">Session types</a> tend to come up.</p>
+<div class="inline-preview-twitter"><div class="twitter-tweet"><a href="https://twitter.com/bblfish/status/1358436988228153345"><img class="twitter-avatar" src="https://uploads.zulipusercontent.net/77b199c7e82b7b9c52e9d03926bbf1970d09fe5d/68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f313030343332363736313630383431373238312f486a786a533942585f6e6f726d616c2e6a7067"></a><p>So interestingly in the latest research on integrating Akka Typed and Session Types we find dependent function types appear. See this thread:
+<a href="https://t.co/tQWZ77umj2">https://twitter.com/bblfish/status/1358412385007112193</a></p><span>- The 🐟‍‍ BabelFish (@bblfish)</span></div></div>
+
+
+
+<a name="243997639"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243997639" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243997639">(Jun 26 2021 at 06:15)</a>:</h4>
+<p>So one way one can make <span class="user-mention" data-user-id="390165">@Eric Neumann</span> 's point is that modelling the web as a graph misses out on speech acts - which I call document acts, since there really is no speech involved.  It took analytic philosophy about 50 years to cotton on to the importance of speech acts, so it is not surprising that this is being repeated on the web, even by its practitioners. <br>
+When one does understand speech acts, then one tends to point out that truth is not the only reason for language, and that can appear to those who are defending truth as crime worthy of excommunication.</p>
+
+
+
+<a name="243997779"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243997779" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243997779">(Jun 26 2021 at 06:19)</a>:</h4>
+<p>But those are 50-70 year old debates. They are understood now. And we have mathematics for them. I have a feeling that linear logic is one aspect of that: <a href="https://en.wikipedia.org/wiki/POST_(HTTP)">POSTing</a> content to a server (say an order for a book on amazon) creates a new resource and will take money out of your account. Doing it twice will take money ouf of your account twice.</p>
+
+
+
+<a name="243998369"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/243998369" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#243998369">(Jun 26 2021 at 06:34)</a>:</h4>
+<p>I was just wondering what Robert Brandom who defends a merging of pragmatic and analytic thinking had to say on Peirce and fell on this article <a href="https://www.jstor.org/stable/43921233">Brandom, Peirce and the overlooked friction of Contrapiction</a> and interestingly enough Diagrams come up there too....</p>
+
+
+
+<a name="244004518"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244004518" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244004518">(Jun 26 2021 at 09:10)</a>:</h4>
+<p>That article is actually very helpful. It may not be quite fair to Brandom, but it helps a lot in explaining what how the Peirceans think of how diagrams should work.</p>
+
+
+
+<a name="244004765"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244004765" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244004765">(Jun 26 2021 at 09:17)</a>:</h4>
+<p>If I have understood correctly, it should be quite easy to say what Peircean Diagrams are on the Semantic Web: they are just the RDF Graphs or the RDF DataSets. Those can be expressed as <a href="https://arxiv.org/abs/1706.00526">Bicategories of Relations</a> and drawn with string diagrams.  <br>
+(I have recently suggested that DataSets may be Cofree structures on those graphs, and it seems to work in the code examples I put together).</p>
+
+
+
+<a name="244014571"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244014571" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jon Awbrey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244014571">(Jun 26 2021 at 13:15)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="281126">Henry Story</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/243997226">said</a>:</p>
+<blockquote>
+<p>I found the book "Diagrammatic Immanence" discussed on the <a href="#narrow/stream/229134-philosophy/topic/Peirce">Peirce channel</a> very interesting, but the whole thing is still quite fuzzy. My feeling is that the tripartite structure of Peirce is what <a href="https://en.wikipedia.org/wiki/J._L._Austin">J.L Austin</a> onwards thematised under the heading of speech acts. That would fit as Peirce was a pragmatists, and so how one uses words for a pragmatist is essential to understanding their meaning. (It is quite possible that the author did not make that link as he is influenced by Deleuze who was upset with those philosophers - ordinary language philosophers - because they perhaps too often made reference to common sense, which in France or Germany after the second world war may not have seemed as such a good foundation for things, as it might have in the UK or US).</p>
+</blockquote>
+<p>Dear Henry,</p>
+<p>There's a long and tangled history here.&nbsp; I would place thinkers like <a href="https://plato.stanford.edu/entries/ramsey/">Frank Ramsey</a>, <a href="http://www.pragmatism.org/research/morris.htm">Charles W. Morris</a>, and <a href="https://plato.stanford.edu/entries/austin-jl/">J.L. Austin</a> in the camp of early assimilationists who attempted to grapple with the issues of pragmatism &mdash;  its logic, semiotics, and theory of inquiry &mdash; but who came to it from a constitutionally different perspective and never quite pierced to the core of it.&nbsp; Some called themselves pragmatists, at least in some phases of their careers, some did not, and some contributed to the popular spin and warp of pragmatic semiotics, but what they turned out all too often clouds the key issues.</p>
+<p>Regards,<br>
+Jon</p>
+
+
+
+<a name="244015362"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244015362" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jon Awbrey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244015362">(Jun 26 2021 at 13:32)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="281126">Henry Story</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/244004765">said</a>:</p>
+<blockquote>
+<p>If I have understood correctly, it should be quite easy to say what Peircean Diagrams are on the Semantic Web: they are just the RDF Graphs or the RDF DataSets. Those can be expressed as <a href="https://arxiv.org/abs/1706.00526">Bicategories of Relations</a> and drawn with string diagrams.  <br>
+(I have recently suggested that DataSets may be Cofree structures on those graphs, and it seems to work in the code examples I put together).</p>
+</blockquote>
+<p>I have 20+ years experience participating in various discussion lists and working groups on so-called &ldquo;Ontology&rdquo; and &ldquo;Semantic Web&rdquo; topics and I can tell you they have yet to get the first principles of Peirce's semiotics and logical graphs.</p>
+
+
+
+<a name="244016071"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244016071" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244016071">(Jun 26 2021 at 13:50)</a>:</h4>
+<p><span class="user-mention" data-user-id="306979">@Jon Awbrey</span> </p>
+<blockquote>
+<p>I have 20+ years experience participating in various discussion lists and working groups on so-called “Ontology” and “Semantic Web” topics and I can tell you they have yet to get the first principles of Peirce's semiotics and logical graphs.</p>
+</blockquote>
+<p>The Web is a structure designed to be used by billions of people, and approachable to nearly anyone to build on with minimal understanding of how it actually works. Most people who use the web don't really understand how it works. I would say that even people who develop web sites don't really understand the architecture. They use it.</p>
+<p>In some respects the whole of it is so complex that there is a discipline called Web Science to study it. They had a conference last week <a href="https://websci21.webscience.org">https://websci21.webscience.org</a></p>
+<p>The Semweb as a tool that has to be designed to get that type of uptake too, so it has to be aproachable. It is a lot more ambitious in a way, requiring some minimal understanding of logic, the ability to name new words, etc... <br>
+There are few people who understand it, because few people are building the apps to get it to work as intended. </p>
+<p>But for a pragmaticst that should be no problem:  the most important thing is that it needs to work. (If we had to wait for people to understand, we'd never make any progress.)</p>
+<p>Still to build it out, I want to work out what the real mathematics behind it is. And I have been gathering quite a lot of different pieces that can be useful.</p>
+
+
+
+<a name="244016299"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244016299" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244016299">(Jun 26 2021 at 13:56)</a>:</h4>
+<p>So instead of discussing what people on some mailing lists think, it would be more interesting to have your take on whether the presentation of the Semantic Web in <span class="user-mention" data-user-id="275965">@Evan Patterson</span>'s <a href="https://arxiv.org/abs/1706.00526">Knowledge Representation in Bicategories of Relations</a> captures a good aspect of the conception of Diagrams that Peirce was talking of.  These are diagrams that give us first order logic.  Those diagrams don't capture modal logic, so I am looking forward to CT getting there too. But first order logic is a good start I would say.</p>
+
+
+
+<a name="244016736"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244016736" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244016736">(Jun 26 2021 at 14:07)</a>:</h4>
+<p>The problem, is I don't have time to be a Peirce expert.  Since this is a Category Theory forum, what we want to do is help integrate his work into Category Theory. <br>
+So my recent question is: do the string diagrams of bicategories of relations count as diagrams in Peirce's work? If you have an article that answers that, then that would be fine. But my guess is that if you look at it, with your knowledge of Peirce, it should be quite easy for you to tell.</p>
+
+
+
+<a name="244018513"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244018513" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244018513">(Jun 26 2021 at 14:47)</a>:</h4>
+<p>As I understand, Category Theory has been developed since the beginning as a framwork to translate theories between different mathematical spaces. So there should be no problem finding that some of Peirce's ideas can be translated into bicategories of relations, or to find the concept of Diagrams taken up in various parts of mathematics, philosophy or engineering.  What is important to understand is just what gets lost in a translation and what gets captured by it.</p>
+
+
+
+<a name="244020550"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244020550" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244020550">(Jun 26 2021 at 15:33)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="306979">Jon Awbrey</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/244018000">said</a>:</p>
+<blockquote>
+<p>I looked at that abstract the first time and skimmed a bit of the paper.  It had all the usual keywords that tell me BTDT (Been There Done That) from a million other readings and discussions.</p>
+</blockquote>
+<p>So it should be really easy to help work out what those diagrams capture and what important pieces are missing. Then we can look to see if the missing pieces are  and if</p>
+<ol>
+<li>they are needed for the type of apps we want to build on the web (I call those hyper-apps),</li>
+<li>If they are not allready there located elsewhere in a different guise under different standards</li>
+</ol>
+<p>Then one can try to work out what use cases the missing pieces would make possible if available, the cost of developing the pieces, standardising them, the business or geopolitical value in having them, etc... As you see it would be quite possible for there to be missing pieces and for that not to be a problem because there is no value in hainv them right at the start. But perhaps there is....</p>
+
+
+
+<a name="244020594"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244020594" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jon Awbrey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244020594">(Jun 26 2021 at 15:34)</a>:</h4>
+<p>As I said above, or somewhere, &ldquo;diagram&rdquo; is a very ambiguous word.</p>
+<ul>
+<li>Feynman diagrams are one of my first loves, and sure it would be fun to bring them in via Redfield and Penrose.</li>
+<li>If you are thinking of commutative diagrams and want to try looking at that domain from a triadic semiotic perspective then it would lead to another sort of discussion.&nbsp; That would take me back to a line of inquiry I pursued in the mid 80s when I took a course on Categories, Combinators, and Computation from John Gray at UIUC and followed it up with an independent study on Peircean angles.&nbsp; That would be a worthwhile tack ... but require a bit of memory dredging.</li>
+<li>Logical graphs are critters of another color.&nbsp; I am currently focused mainly on those.</li>
+</ul>
+
+
+
+<a name="244021439"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244021439" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244021439">(Jun 26 2021 at 15:53)</a>:</h4>
+<p>Are those bicategory of relations diagrams what you would call Logical Graphs?</p>
+
+
+
+<a name="244023317"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244023317" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jon Awbrey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244023317">(Jun 26 2021 at 16:36)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="281126">Henry Story</span> <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/web.20cats/near/244021439">said</a>:</p>
+<blockquote>
+<p>Are those bicategory of relations diagrams what you would call Logical Graphs?</p>
+</blockquote>
+<p>Not as far as I can tell.</p>
+<ul>
+<li><a href="https://inquiryintoinquiry.com/2021/05/01/survey-of-animated-logical-graphs-4/">Survey of Animated Logical Graphs</a></li>
+</ul>
+<p>What they are doing there is highly developed but it starts from a very different starting point and takes very different assumptions for granted.</p>
+<p>If you are a programmer, you know how hard it is to explain the things you learn through hard knocks programming practice to folks who have never done that.&nbsp; And of course there are diverse programming styles whose devotees have sundry cognitive styles and difficulty understanding each other. </p>
+<p>Programming changes a person.&nbsp; I started out in a proof-theoretic mode, trying to write an ATM for Peirce's &alpha;-level logical graphs and I tried all the tricks of the proof-theoretic trade in trying to do that.&nbsp; Failure teaches to try another tack and I gradually, painfully, reluctantly shifted into model-theoretic gear.&nbsp; Long story short and a dozen style changes later I eventually learned one or three things.&nbsp; I'll try to say what those are.&nbsp; I kind of know how that will go ... but maybe it will be healthy exercise.</p>
+
+
+
+<a name="244025823"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244025823" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Neumann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244025823">(Jun 26 2021 at 17:40)</a>:</h4>
+<p>In addition to the comonadic structure for the Web, when one uses a browser, the session begins with an initial site launch  (using a searched returned, bookmarked or shared site). One is then given choices for next step with embedded displayed links relative to the page’s context. The hyperlink selection chosen is done based the user’s intent context (UIC), which also would benefit from being modeled. Each browser’s click and view is therefor an action on a Comonad and therefore a <strong>coalgebra h:  X  → W(X)</strong> from a locally-viewed page to an indexed site on the Web’s (via an internet protocol). Indeed, this action doesn’t alway complete, and one gets a <em>404 error</em> or <em>no internet connection</em>. It would very useful to build upon these coalgebraic web actions.</p>
+
+
+
+<a name="244026215"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244026215" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244026215">(Jun 26 2021 at 17:51)</a>:</h4>
+<p>I am actually writing a Web Server in Scala called <a href="https://github.com/co-operating-systems/Reactive-SoLiD">Reactive-Solid</a>, which uses Free Monads (from the <a href="https://typelevel.org/cats/datatypes/freemonad.html">cats library</a>) to allow my access control layer to be scripted to fetch the needed data on the server and on the web. <br>
+Here is a Diagram of a Web Server with a number of resources and their associated Access Control Rules, and an <a href="https://github.com/solid/authorization-panel/issues/210">imports relation</a> which I have built to return me a cofree comonad of all the graphs it found following the :imports link.  That seems close to what you  are describing, but it's looking at it from the free monad side I think. </p>
+<p><a href="/user_uploads/21317/SOytzc7pqOYWQYS2gXJU2Wxx/image.png">Access Control</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/SOytzc7pqOYWQYS2gXJU2Wxx/image.png" title="Access Control"><img src="/user_uploads/21317/SOytzc7pqOYWQYS2gXJU2Wxx/image.png"></a></div>
+
+
+
+<a name="244026667"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244026667" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244026667">(Jun 26 2021 at 18:00)</a>:</h4>
+<p>A couple of years ago I was looking at some work on comonads an User Interfaces. There was this paper <a href="https://github.com/paf31/the-future-is-comonadic">Declarative UIs Are The Future - And the Future Is Comonadic!</a>. And <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;ved=2ahUKEwiQkKGi77XxAhURDOwKHesZAfkQFjAGegQIChAD&amp;url=https%3A%2F%2Farthurxavierx.github.io%2FComonadsForUIs.pdf&amp;usg=AOvVaw1v4I6qiSOnK68o4L2NhQmL">Comonads for User Interfaces</a> by Arthur Xavier. I am not sure where that went... If I remember correctly it was related to this blog post <a href="https://blog.functorial.com/posts/2016-08-07-Comonads-As-Spaces.html">comonads as spaces</a>.</p>
+
+
+
+<a name="244027050"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244027050" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric Neumann <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244027050">(Jun 26 2021 at 18:08)</a>:</h4>
+<p><span class="user-mention" data-user-id="281126">@Henry Story</span> I think this is a specific example of exactly what I was describing. It seems it even demonstrates  how a sequence of actions can be combined (monads) and the how the set of structured results (comonadic) are  returned from this. I’ve got a hunch that (co)algebras here not only can make web actions sequences well-defined (and therefore consistency checked), but any indexable processing on the Web ala trees, graphs, etc.</p>
+
+
+
+<a name="244028016"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244028016" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244028016">(Jun 26 2021 at 18:28)</a>:</h4>
+<p>I had also found this page related to a talk <a href="https://github.com/dalaing/cofun/blob/master/blog/posts/free_and_cofree.md">Free for DSLs, cofree for interpreters</a>. But I did not completely understand it at the time. Same with the previous talk on UIs...</p>
+
+
+
+<a name="244028434"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244028434" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244028434">(Jun 26 2021 at 18:38)</a>:</h4>
+<p>I should try again.</p>
+
+
+
+<a name="244064190"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/web%20cats/near/244064190" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/web.20cats.html#244064190">(Jun 27 2021 at 12:10)</a>:</h4>
+<p>For those who want to know what co-fun is, I think it is what happens when you watch David Laing's Lambda Jam talk <a href="https://www.youtube.com/watch?v=IhzvLsvRO98">Cofun with Cofree Comonads</a>. It is short but it lifts off like a rocket. You get to learn about comonads too on the way. You need a bit of Haskell under your belt though.<br>
+The aim of the talk is to show how one can use free and cofree monads together, the one as a DSL and the other as an intepreter.</p>
+<div class="youtube-video message_inline_image"><a data-id="IhzvLsvRO98" href="https://www.youtube.com/watch?v=IhzvLsvRO98"><img src="https://uploads.zulipusercontent.net/ad589516816ba0a8a2c6e4f4f183513aa73a2c49/68747470733a2f2f692e7974696d672e636f6d2f76692f49687a764c7376524f39382f64656661756c742e6a7067"></a></div>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: May 25 2021 at 00:30 UTC</p>
+<hr><p>Last updated: Jun 28 2021 at 13:21 UTC</p>

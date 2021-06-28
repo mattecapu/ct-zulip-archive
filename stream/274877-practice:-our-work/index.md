@@ -9,17 +9,17 @@ permalink: /stream/274877-practice:-our-work/index.html
 
 ### Topics:
 
+* [Ralph Sarkis](topic/Ralph.20Sarkis.html) (8 messages, latest: Jun 26 2021 at 12:20)
+* [Mike Shulman](topic/Mike.20Shulman.html) (54 messages, latest: Jun 10 2021 at 14:09)
+* [Jon Sterling](topic/Jon.20Sterling.html) (14 messages, latest: Jun 09 2021 at 08:52)
+* [John Baez](topic/John.20Baez.html) (47 messages, latest: Jun 04 2021 at 17:39)
 * [José Siqueira](topic/Jos.C3.A9.20Siqueira.html) (17 messages, latest: May 18 2021 at 16:15)
 * [David Roberts](topic/David.20Roberts.html) (17 messages, latest: May 15 2021 at 23:43)
-* [Jon Sterling](topic/Jon.20Sterling.html) (4 messages, latest: May 05 2021 at 03:26)
 * [Morgan Rogers](topic/Morgan.20Rogers.html) (1 message, latest: May 03 2021 at 13:42)
 * [Nicolas Blanco](topic/Nicolas.20Blanco.html) (5 messages, latest: Apr 23 2021 at 23:31)
-* [John Baez](topic/John.20Baez.html) (11 messages, latest: Apr 21 2021 at 22:50)
-* [Mike Shulman](topic/Mike.20Shulman.html) (48 messages, latest: Apr 13 2021 at 00:04)
 * [Conor Mc Bride](topic/Conor.20Mc.20Bride.html) (60 messages, latest: Apr 08 2021 at 15:15)
-* [Ralph Sarkis](topic/Ralph.20Sarkis.html) (5 messages, latest: Mar 07 2021 at 23:18)
 * [Daniel Geisler](topic/Daniel.20Geisler.html) (1 message, latest: Feb 07 2021 at 01:26)
 * [stream events](topic/stream.20events.html) (6 messages, latest: Jan 31 2021 at 03:39)
 * [thoughts on sharing ideas](topic/thoughts.20on.20sharing.20ideas.html) (20 messages, latest: Jan 31 2021 at 03:05)
 
-<hr><p>Last updated: May 25 2021 at 00:30 UTC</p>
+<hr><p>Last updated: Jun 28 2021 at 13:21 UTC</p>

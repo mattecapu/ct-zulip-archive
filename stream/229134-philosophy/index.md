@@ -9,6 +9,11 @@ permalink: /stream/229134-philosophy/index.html
 
 ### Topics:
 
+* [René Guitart](topic/Ren.C3.A9.20Guitart.html) (1 message, latest: Jun 28 2021 at 07:52)
+* [Lawvere and Hegel](topic/Lawvere.20and.20Hegel.html) (44 messages, latest: Jun 28 2021 at 07:31)
+* [Deleuze](topic/Deleuze.html) (2 messages, latest: Jun 28 2021 at 06:59)
+* [Peirce](topic/Peirce.html) (31 messages, latest: Jun 27 2021 at 15:10)
+* [Biological Circularchy](topic/Biological.20Circularchy.html) (1 message, latest: Jun 27 2021 at 12:30)
 * [category error](topic/category.20error.html) (14 messages, latest: Nov 06 2020 at 16:31)
 * [univalence irl](topic/univalence.20irl.html) (21 messages, latest: Sep 26 2020 at 18:38)
 * [Philosophy and Mathematics](topic/Philosophy.20and.20Mathematics.html) (30 messages, latest: Aug 31 2020 at 20:44)
@@ -18,4 +23,4 @@ permalink: /stream/229134-philosophy/index.html
 * [history](topic/history.html) (2 messages, latest: Mar 27 2020 at 06:56)
 * [stream events](topic/stream.20events.html) (6 messages, latest: Mar 26 2020 at 20:00)
 
-<hr><p>Last updated: May 25 2021 at 00:30 UTC</p>
+<hr><p>Last updated: Jun 28 2021 at 13:21 UTC</p>
