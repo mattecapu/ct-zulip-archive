@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [workshop on type theory and machine learning](topic/workshop.20on.20type.20theory.20and.20machine.20learning.html) (2 messages, latest: Jun 28 2021 at 16:01)
 * [Toposes online](topic/Toposes.20online.html) (8 messages, latest: Jun 24 2021 at 08:20)
 * [Em-Cats](topic/Em-Cats.html) (4 messages, latest: Jun 20 2021 at 14:57)
 * [data visualization bootcamp](topic/data.20visualization.20bootcamp.html) (9 messages, latest: Jun 19 2021 at 17:28)
@@ -98,4 +99,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Jun 28 2021 at 13:42 UTC</p>
+<hr><p>Last updated: Jun 29 2021 at 00:23 UTC</p>

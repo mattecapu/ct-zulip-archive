@@ -9,7 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
-* [plane graphs in a PRO](topic/plane.20graphs.20in.20a.20PRO.html) (24 messages, latest: Jun 28 2021 at 13:25)
+* [plane graphs in a PRO](topic/plane.20graphs.20in.20a.20PRO.html) (26 messages, latest: Jun 28 2021 at 13:55)
 * [Plane graphs in a PRO](topic/Plane.20graphs.20in.20a.20PRO.html) (10 messages, latest: Jun 27 2021 at 18:54)
 * [liftings and distributive laws](topic/liftings.20and.20distributive.20laws.html) (4 messages, latest: Jun 26 2021 at 19:32)
 * ["Inverse" of free](topic/.22Inverse.22.20of.20free.html) (27 messages, latest: Jun 25 2021 at 14:59)
@@ -179,4 +179,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jun 28 2021 at 13:42 UTC</p>
+<hr><p>Last updated: Jun 29 2021 at 00:23 UTC</p>

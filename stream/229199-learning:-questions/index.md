@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [natural transformations](topic/natural.20transformations.html) (306 messages, latest: Jun 28 2021 at 06:59)
+* [equation bond](topic/equation.20bond.html) (5 messages, latest: Jun 28 2021 at 19:31)
+* [natural transformations](topic/natural.20transformations.html) (307 messages, latest: Jun 28 2021 at 15:56)
 * [Equation Bond](topic/Equation.20Bond.html) (1 message, latest: Jun 27 2021 at 19:30)
 * [path objects of bicats](topic/path.20objects.20of.20bicats.html) (8 messages, latest: Jun 25 2021 at 23:05)
 * [Forward derivative composition pattern](topic/Forward.20derivative.20composition.20pattern.html) (12 messages, latest: Jun 24 2021 at 17:43)
@@ -440,4 +441,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jun 28 2021 at 13:42 UTC</p>
+<hr><p>Last updated: Jun 29 2021 at 00:23 UTC</p>

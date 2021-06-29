@@ -244,5 +244,47 @@
         "id": 244021117,
         "sender_full_name": "Mike Shulman",
         "timestamp": 1624722442
+    },
+    {
+        "content": "<p>Thanks!<br>\n<span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/model.20of.20univalence/near/244021117\">said</a>:</p>\n<blockquote>\n<p>Because applying univalence to equivalence of categories requires the categories to be \"univalent\" themselves, which requires their type of objects to be a 1-type.  So if there is a type <em>of</em> categories to which to apply univalence, it must be a 2-type.</p>\n</blockquote>\n<p>These two sentences somehow don't compile in my brain. What do you mean by \"applying univalence to equivalence of categories\"? What does it mean for a category to be \"univalent\"?</p>\n<blockquote>\n<p>Requiring isequiv to be a mere proposition achieves this same result in HoTT.</p>\n</blockquote>\n<p>I see, but this just explains why one wants isequiv(f) to be a mere proposition, and doesn't motivate Voevodsky's subtle definition of isequiv(f) and why it is a mere proposition. Of course, one could \"justify\" the definition by formally proving that it is a mere proposition. But I would like to know an intuitive reason for that and, moreover, understand why it is natural to come up with this definition. (My goal in <a href=\"#narrow/stream/229952-theory.3A-type.20theory/topic/model.20of.20univalence/near/241761226\">https://categorytheory.zulipchat.com/#narrow/stream/229952-theory.3A-type.20theory/topic/model.20of.20univalence/near/241761226</a> was to propose another definition that I consider to be \"natural\", but as you pointed out, it isn't that useful.)</p>",
+        "id": 244181972,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1624902919
+    },
+    {
+        "content": "<blockquote>\n<p>What do you mean by \"applying univalence to equivalence of categories\"? What does it mean for a category to be \"univalent\"?</p>\n</blockquote>\n<p>Have you read chapter 9 of the HoTT Book?</p>",
+        "id": 244182413,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624903100
+    },
+    {
+        "content": "<p>Sort of, but only parts of it in detail. <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 244182861,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1624903304
+    },
+    {
+        "content": "<p>It should answer those questions.</p>",
+        "id": 244182888,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624903314
+    },
+    {
+        "content": "<blockquote>\n<p>I see, but this just explains why one wants isequiv(f) to be a mere proposition, and doesn't motivate Voevodsky's subtle definition of isequiv(f) and why it is a mere proposition.</p>\n</blockquote>\n<p>Oh, I see I misread your question.  I thought you were asking \"why <em>should</em> isequiv\" be a proposition?\" rather than \"why <em>does</em> some particular definition of isequiv happen to be a proposition?\".</p>\n<p>If you're asking about Voevodsky's definition of isequiv, then the reason that's a proposition is because iscontr is a proposition.  As for why iscontr is a proposition, one way to understand this intuitively is that to prove a type is a proposition it suffices to assume it is inhabited.  But once iscontr(A) is inhabited, then A is contractible, and so pretty much anything we construct out of it will also be contractible, including iscontr(A).  Specifically, iscontr(A) consists of a center and a contraction, but when A is contractible, there is a contractible space of such points and a contractible space of contractions to any such point.</p>",
+        "id": 244183078,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624903392
+    },
+    {
+        "content": "<p>For other definitions of isequiv, one can give different intuitions.  For instance, for a half-adjoint equivalence one can make an argument about how a ball has a CW-presentation with 2 cells at each dimension except 1 at the top.</p>",
+        "id": 244183231,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1624903460
+    },
+    {
+        "content": "<p>That's exactly what I was asking for, thanks! :-)</p>",
+        "id": 244184040,
+        "sender_full_name": "Leopold Schlicht",
+        "timestamp": 1624903818
     }
 ]
