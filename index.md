@@ -12,9 +12,9 @@ permalink: /index.html
 
 * [general](stream/229111-general/index.html) (204 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (169 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (170 topics)
 
-* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (112 topics)
+* [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (113 topics)
 
 * [general: events](stream/229141-general:-events/index.html) (89 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Jun 29 2021 at 00:23 UTC</p>
+<hr><p>Last updated: Jun 30 2021 at 00:22 UTC</p>

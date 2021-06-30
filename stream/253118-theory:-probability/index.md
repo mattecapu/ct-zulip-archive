@@ -9,7 +9,7 @@ permalink: /stream/253118-theory:-probability/index.html
 
 ### Topics:
 
-* [de Finetti's Theorem](topic/de.20Finetti's.20Theorem.html) (36 messages, latest: Jun 23 2021 at 22:44)
+* [de Finetti's Theorem](topic/de.20Finetti's.20Theorem.html) (37 messages, latest: Jun 29 2021 at 21:00)
 * [Jacobs' "Updating"](topic/Jacobs'.20.22Updating.22.html) (2 messages, latest: Jun 21 2021 at 18:52)
 * [uniform distributions in categorical probability?](topic/uniform.20distributions.20in.20categorical.20probability.3F.html) (14 messages, latest: Jun 03 2021 at 10:32)
 * [When does a Kleisli category have conditionals?](topic/When.20does.20a.20Kleisli.20category.20have.20conditionals.3F.html) (4 messages, latest: Apr 03 2021 at 12:12)
@@ -21,4 +21,4 @@ permalink: /stream/253118-theory:-probability/index.html
 * [Finitely additive probability](topic/Finitely.20additive.20probability.html) (1 message, latest: Aug 16 2020 at 00:48)
 * [stream events](topic/stream.20events.html) (2 messages, latest: Aug 16 2020 at 00:31)
 
-<hr><p>Last updated: Jun 29 2021 at 00:23 UTC</p>
+<hr><p>Last updated: Jun 30 2021 at 00:22 UTC</p>

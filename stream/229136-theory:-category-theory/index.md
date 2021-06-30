@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [string diagrams for The formal theory of monads](topic/string.20diagrams.20for.20The.20formal.20theory.20of.20monads.html) (4 messages, latest: Jun 29 2021 at 21:37)
 * [plane graphs in a PRO](topic/plane.20graphs.20in.20a.20PRO.html) (26 messages, latest: Jun 28 2021 at 13:55)
 * [Plane graphs in a PRO](topic/Plane.20graphs.20in.20a.20PRO.html) (10 messages, latest: Jun 27 2021 at 18:54)
 * [liftings and distributive laws](topic/liftings.20and.20distributive.20laws.html) (4 messages, latest: Jun 26 2021 at 19:32)
@@ -179,4 +180,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jun 29 2021 at 00:23 UTC</p>
+<hr><p>Last updated: Jun 30 2021 at 00:22 UTC</p>
