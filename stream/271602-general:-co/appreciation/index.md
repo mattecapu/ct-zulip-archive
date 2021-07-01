@@ -9,7 +9,7 @@ permalink: /stream/271602-general:-co/appreciation/index.html
 
 ### Topics:
 
-* [René Guitart](topic/Ren.C3.A9.20Guitart.html) (58 messages, latest: Jun 29 2021 at 13:53)
+* [René Guitart](topic/Ren.C3.A9.20Guitart.html) (65 messages, latest: Jun 30 2021 at 16:45)
 * [co-appreciation for the University of Leicester](topic/co-appreciation.20for.20the.20University.20of.20Leicester.html) (21 messages, latest: Jun 20 2021 at 15:07)
 * [appreciation for ACT2021](topic/appreciation.20for.20ACT2021.html) (4 messages, latest: Jun 09 2021 at 04:13)
 * [appreciation for ACT21](topic/appreciation.20for.20ACT21.html) (5 messages, latest: May 28 2021 at 10:51)
@@ -21,4 +21,4 @@ permalink: /stream/271602-general:-co/appreciation/index.html
 * [Tom Leinster's "Basic Category Theory"](topic/Tom.20Leinster's.20.22Basic.20Category.20Theory.22.html) (7 messages, latest: Jan 17 2021 at 09:06)
 * [stream events](topic/stream.20events.html) (1 message, latest: Jan 10 2021 at 10:11)
 
-<hr><p>Last updated: Jun 30 2021 at 00:22 UTC</p>
+<hr><p>Last updated: Jul 01 2021 at 00:25 UTC</p>
