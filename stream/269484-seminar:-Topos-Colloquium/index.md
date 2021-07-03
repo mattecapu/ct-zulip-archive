@@ -9,7 +9,7 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 
 ### Topics:
 
-* [Lawrence Paulson: "Formalising Contemporary Mathematics ..."](topic/Lawrence.20Paulson.3A.20.22Formalising.20Contemporary.20Mathematics.20.2E.2E.2E.22.html) (3 messages, latest: Jul 01 2021 at 21:58)
+* [Lawrence Paulson: "Formalising Contemporary Mathematics ..."](topic/Lawrence.20Paulson.3A.20.22Formalising.20Contemporary.20Mathematics.20.2E.2E.2E.22.html) (5 messages, latest: Jul 02 2021 at 10:13)
 * [Kathryn Hess: "From comonads to calculus"](topic/Kathryn.20Hess.3A.20.22From.20comonads.20to.20calculus.22.html) (4 messages, latest: Jun 24 2021 at 19:43)
 * [Chris Heunen: "Sheaf representation of monoidal categories"](topic/Chris.20Heunen.3A.20.22Sheaf.20representation.20of.20monoidal.20categories.22.html) (2 messages, latest: Jun 18 2021 at 21:40)
 * [other Topos talks?](topic/other.20Topos.20talks.3F.html) (10 messages, latest: Jun 14 2021 at 13:00)
@@ -32,4 +32,4 @@ permalink: /stream/269484-seminar:-Topos-Colloquium/index.html
 * [Richard Garner: "Comodels of an algebraic theory"](topic/Richard.20Garner.3A.20.22Comodels.20of.20an.20algebraic.20theory.22.html) (27 messages, latest: Feb 11 2021 at 22:36)
 * [stream events](topic/stream.20events.html) (2 messages, latest: Dec 26 2020 at 19:06)
 
-<hr><p>Last updated: Jul 02 2021 at 00:22 UTC</p>
+<hr><p>Last updated: Jul 03 2021 at 00:22 UTC</p>

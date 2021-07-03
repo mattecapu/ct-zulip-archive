@@ -9,7 +9,7 @@ permalink: /stream/229134-philosophy/index.html
 
 ### Topics:
 
-* [Peirce](topic/Peirce.html) (32 messages, latest: Jul 01 2021 at 14:18)
+* [Peirce](topic/Peirce.html) (34 messages, latest: Jul 02 2021 at 13:40)
 * [René Guitart](topic/Ren.C3.A9.20Guitart.html) (1 message, latest: Jun 28 2021 at 07:52)
 * [Lawvere and Hegel](topic/Lawvere.20and.20Hegel.html) (44 messages, latest: Jun 28 2021 at 07:31)
 * [Deleuze](topic/Deleuze.html) (2 messages, latest: Jun 28 2021 at 06:59)
@@ -23,4 +23,4 @@ permalink: /stream/229134-philosophy/index.html
 * [history](topic/history.html) (2 messages, latest: Mar 27 2020 at 06:56)
 * [stream events](topic/stream.20events.html) (6 messages, latest: Mar 26 2020 at 20:00)
 
-<hr><p>Last updated: Jul 02 2021 at 00:22 UTC</p>
+<hr><p>Last updated: Jul 03 2021 at 00:22 UTC</p>

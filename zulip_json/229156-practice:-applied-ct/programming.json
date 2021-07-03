@@ -52,5 +52,17 @@
         "id": 244464903,
         "sender_full_name": "Henry Story",
         "timestamp": 1625076412
+    },
+    {
+        "content": "<p>Over on <a href=\"https://discord.com/channels/632277896739946517/839263668478672937/860478811580530720\">Discord (Scala) Cats Theory channel</a> zhukpauk asked:</p>\n<blockquote>\n<p>Can someone recommend something to read to understand the difference between types and classes in scala? I am not experienced that much with OOP and getting confused when reading theory about classes and types, where they differ, where they similar, when they should be used etc. Even haskell types were less confusing to me than this</p>\n</blockquote>\n<p>I answered the following (it seems a good hypothesis):</p>\n<blockquote>\n<p>One way to think of them is that they are the same.<br>\nAnother way, could be to think of classes as duals to types perhaps, in that classes are coalgebraic and types algebraic, or classes are codata types as opposed to data types. So classes in Java are specified by their interfaces, which can have multiple implementations. As long as those implementations agree on what is visible and what results they give when interacted with they are the same, or more precisely bisimilar. Look at the papers in the list <a href=\"https://web-cats.gitlab.io/Cats/Intro.html\">I cited above</a> by Bart Jacobs.</p>\n</blockquote>",
+        "id": 244693319,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1625228012
+    },
+    {
+        "content": "<p>Ah well one of the answers point to this being actually a distinction that has already been worked on, and I was just trying to guess at that distinction. </p>\n<blockquote>\n<p>A type is a compile time label that statically proves the absence of certain behavior. A class is a runtime tag that is used for dispatch<br>\nSome features work at runtime in terms of classes, eg pattern matching or overriding. Other work at compile time in terms of types, eg implicit resolution or overloading. If you want a haskell comparison, data constructors in haskell are like classes, and types are... Well types</p>\n</blockquote>\n<p>Here is <a href=\"https://typelevel.org/blog/2017/02/13/more-types-than-classes.html\">an article on types being more than classes</a>...</p>",
+        "id": 244694819,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1625228832
     }
 ]

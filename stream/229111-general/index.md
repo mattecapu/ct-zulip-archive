@@ -9,8 +9,8 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [the Topos Institute is open!](topic/the.20Topos.20Institute.20is.20open!.html) (13 messages, latest: Jul 02 2021 at 18:05)
 * [Dedication](topic/Dedication.html) (18 messages, latest: Jul 01 2021 at 15:20)
-* [the Topos Institute is open!](topic/the.20Topos.20Institute.20is.20open!.html) (12 messages, latest: Jul 01 2021 at 13:33)
 * [category theory AI companies](topic/category.20theory.20AI.20companies.html) (30 messages, latest: Jul 01 2021 at 13:15)
 * [life in academia](topic/life.20in.20academia.html) (112 messages, latest: Jun 25 2021 at 11:25)
 * [citing unnumbered results](topic/citing.20unnumbered.20results.html) (74 messages, latest: Jun 23 2021 at 23:16)
@@ -214,4 +214,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Jul 02 2021 at 00:22 UTC</p>
+<hr><p>Last updated: Jul 03 2021 at 00:22 UTC</p>
