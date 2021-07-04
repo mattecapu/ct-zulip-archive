@@ -9,7 +9,9 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
-* [web cats](topic/web.20cats.html) (262 messages, latest: Jun 27 2021 at 12:10)
+* [web cats](topic/web.20cats.html) (264 messages, latest: Jul 03 2021 at 16:28)
+* [optics and servers](topic/optics.20and.20servers.html) (3 messages, latest: Jul 03 2021 at 08:20)
+* [programming](topic/programming.html) (11 messages, latest: Jul 02 2021 at 12:27)
 * [emergent behaviour as laxity](topic/emergent.20behaviour.20as.20laxity.html) (265 messages, latest: Jun 22 2021 at 19:29)
 * [what to do with too abstract results?](topic/what.20to.20do.20with.20too.20abstract.20results.3F.html) (16 messages, latest: Jun 20 2021 at 15:20)
 * [factored sets](topic/factored.20sets.html) (2 messages, latest: Jun 12 2021 at 10:14)
@@ -122,4 +124,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Jun 28 2021 at 13:42 UTC</p>
+<hr><p>Last updated: Jul 04 2021 at 00:22 UTC</p>

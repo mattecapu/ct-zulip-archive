@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [LNL polycategories](topic/LNL.20polycategories.html) (5 messages, latest: Jul 02 2021 at 13:59)
 * [The derivator of setoids](topic/The.20derivator.20of.20setoids.html) (48 messages, latest: May 23 2021 at 15:20)
 * [Categorical composable cryptography](topic/Categorical.20composable.20cryptography.html) (20 messages, latest: May 23 2021 at 13:16)
 * [Native Type Theory](topic/Native.20Type.20Theory.html) (153 messages, latest: May 17 2021 at 10:10)
@@ -38,4 +39,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [stream events](topic/stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Jun 28 2021 at 13:42 UTC</p>
+<hr><p>Last updated: Jul 04 2021 at 00:22 UTC</p>
