@@ -54,11 +54,11 @@ permalink: /index.html
 
 * [ACT@UCR seminar](stream/229966-ACT@UCR-seminar/index.html) (15 topics)
 
+* [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (15 topics)
+
 * [practice: communication](stream/233322-practice:-communication/index.html) (15 topics)
 
 * [seminar: ACT@UCR](stream/229966-seminar:-ACT@UCR/index.html) (15 topics)
-
-* [learning: show and tell](stream/232162-learning:-show-and-tell/index.html) (14 topics)
 
 * [theory: algebraic geometry](stream/231112-theory:-algebraic-geometry/index.html) (14 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 04 2021 at 00:22 UTC</p>
+<hr><p>Last updated: Jul 04 2021 at 09:13 UTC</p>

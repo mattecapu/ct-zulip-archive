@@ -16,5 +16,35 @@
         "id": 244790182,
         "sender_full_name": "Henry Story",
         "timestamp": 1625300407
+    },
+    {
+        "content": "<p>I was just looking at this course from 2019 again <a href=\"https://www.youtube.com/watch?v=HOmOQnQGtPU\">Comonads by Example</a> by Chris Penner, who really does a very good job of building up intutions very clearly. (I am not sure yet about his idea that there is something comonadic about <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>→</mo><mi>f</mi><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">a \\to  f b</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.43056em;vertical-align:0em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2777777777777778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8888799999999999em;vertical-align:-0.19444em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mord mathnormal\">b</span></span></span></span> in monads...). <br>\nThe second video looks at the Store comonad.<br>\nThat made me think: A Web Server is a store of States comonad. The index into the Store are URLs and the values are states, which can be changed. Or perhaps better the values are coalgebras with various methods to observe and change the state?</p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"HOmOQnQGtPU\" href=\"https://www.youtube.com/watch?v=HOmOQnQGtPU\"><img src=\"https://uploads.zulipusercontent.net/7bd9cd4be924fc693a1055c52f1e8c40e6e12f1a/68747470733a2f2f692e7974696d672e636f6d2f76692f484f6d4f516e51477450552f64656661756c742e6a7067\"></a></div>",
+        "id": 244843129,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1625377982
+    },
+    {
+        "content": "<p>When I want protect a resource with <a href=\"https://github.com/solid/authorization-panel/issues/210#issuecomment-838747077\">access control rules (see issue 210)</a> I could use something like the Haskell <a href=\"https://hackage.haskell.org/package/comonad-5.0.8/docs/Control-Comonad-Store.html\">experiment method</a> method (explained in the second video)</p>\n<div class=\"codehilite\" data-code-language=\"Haskell\"><pre><span></span><code><span class=\"nf\">experiment</span> <span class=\"ow\">::</span> <span class=\"kt\">Functor</span> <span class=\"n\">f</span> <span class=\"ow\">=&gt;</span> <span class=\"p\">(</span><span class=\"n\">s</span> <span class=\"ow\">-&gt;</span> <span class=\"n\">f</span> <span class=\"n\">s</span><span class=\"p\">)</span> <span class=\"ow\">-&gt;</span> <span class=\"n\">w</span> <span class=\"n\">a</span> <span class=\"ow\">-&gt;</span> <span class=\"n\">f</span> <span class=\"n\">a</span>\n</code></pre></div>\n<p>as I provide a function from a URL to a set of of URLs which are all the access control rules linked to from the first. That function would need to be given the store itself, in order to (1) be able to fetch the first access control rule and then (2) collect for each rule the imported access control rules. So <code>experiment</code> above would be very inefficient way of doing that: one really wants to traverse the store....</p>",
+        "id": 244843835,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1625379314
+    },
+    {
+        "content": "<p>What falls out from that experiment and the hyper-textual and hyper-data nature of the web, is that as soon as you start following links, you don't as a client at least (but client/server is just a role distinction not an ontologically fundamental one  - See <a href=\"https://github.com/w3c/architecture/issues/14\">issue on peer to peer web</a> ), ... so you don't consider one web server alone, but you must look at the whole web itself.<br>\nSo you need a Web Store, that gives you the  state of all the resources possible. That would then have to be in non-verified handwavy scala notation</p>\n<div class=\"codehilite\" data-code-language=\"Scala\"><pre><span></span><code><span class=\"k\">type</span> <span class=\"nc\">Web</span> <span class=\"o\">=</span> <span class=\"nc\">Store</span><span class=\"p\">[</span><span class=\"nc\">URL</span><span class=\"p\">,</span><span class=\"nc\">Option</span><span class=\"p\">[</span><span class=\"nc\">ResourceState</span><span class=\"p\">]]</span>\n</code></pre></div>\n<p>Ie an index from URLs into optional states, because not URLs have a reference.</p>",
+        "id": 244843972,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1625379585
+    },
+    {
+        "content": "<p>But that is not quite right, because we never get back states on the web (a web server may), which we can interact with. Instead  we send messages to those resources, which respond by telling us if they exist (200) or don't (40x if lucky, or by never responding if the server is not up or does not exist.)</p>",
+        "id": 244844782,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1625380957
+    },
+    {
+        "content": "<p>In that video there is a quick overview of how to represent Conway's Game of Life using the Store comonad. He points out that the default implementation is very slow, but that this can be fixed using representable functors. I wonder if those can be used for caching on the web too! <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span> - I need that!</p>",
+        "id": 244845685,
+        "sender_full_name": "Henry Story",
+        "timestamp": 1625382546
     }
 ]

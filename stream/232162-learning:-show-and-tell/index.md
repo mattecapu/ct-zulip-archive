@@ -9,6 +9,7 @@ permalink: /stream/232162-learning:-show-and-tell/index.html
 
 ### Topics:
 
+* [Globular](topic/Globular.html) (4 messages, latest: Jul 04 2021 at 05:27)
 * [open game engine](topic/open.20game.20engine.html) (6 messages, latest: Apr 15 2021 at 21:20)
 * [Exploding Cats :boom:](topic/Exploding.20Cats.20.3Aboom.3A.html) (2 messages, latest: Jan 31 2021 at 23:25)
 * [Pictures](topic/Pictures.html) (63 messages, latest: Dec 26 2020 at 13:09)
@@ -24,4 +25,4 @@ permalink: /stream/232162-learning:-show-and-tell/index.html
 * [Syntactic monoid for decidable languages](topic/Syntactic.20monoid.20for.20decidable.20languages.html) (47 messages, latest: Apr 08 2020 at 01:48)
 * [stream events](topic/stream.20events.html) (2 messages, latest: Apr 06 2020 at 18:15)
 
-<hr><p>Last updated: Jul 04 2021 at 00:22 UTC</p>
+<hr><p>Last updated: Jul 04 2021 at 09:13 UTC</p>
