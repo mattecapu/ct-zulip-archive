@@ -11,8 +11,6 @@
 
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
 
-	<base href="https://categorytheory.zulipchat.com/" target="_blank">
-
 	<script type="text/x-mathjax-config">
 	  MathJax.Hub.Config({
 		  extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "a11y/accessibility-menu.js"],
@@ -29,6 +27,13 @@
 	<script type="text/javascript" async
 	  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" />
 	</script>
+	<!-- <script type="text/javascript">
+		document.querySelectorAll('img').forEach(function(img) {
+			if (img.src.startsWith('/')) {
+				img.src = 'https://categorytheory.zulipchat.com/' + img.src;
+			}
+		});
+	</script> -->
 	<noscript>
 		<style>
 			.katex-mathml { display: none; }
