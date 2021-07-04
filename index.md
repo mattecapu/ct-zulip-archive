@@ -30,9 +30,9 @@ permalink: /index.html
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (37 topics)
 
-* [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
+* [theory: logic](stream/233104-theory:-logic/index.html) (35 topics)
 
-* [theory: logic](stream/233104-theory:-logic/index.html) (34 topics)
+* [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (29 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 03 2021 at 00:22 UTC</p>
+<hr><p>Last updated: Jul 04 2021 at 00:22 UTC</p>
