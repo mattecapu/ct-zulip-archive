@@ -45,4 +45,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Jul 04 2021 at 09:13 UTC</p>
+<hr><p>Last updated: Jul 05 2021 at 00:21 UTC</p>

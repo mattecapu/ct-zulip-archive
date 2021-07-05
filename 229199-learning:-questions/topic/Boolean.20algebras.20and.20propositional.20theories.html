@@ -1,0 +1,67 @@
+---
+layout: archive
+title: Zulip Chat Archive
+permalink: /stream/229199-learning:-questions/topic/Boolean.20algebras.20and.20propositional.20theories.html
+---
+
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Boolean.20algebras.20and.20propositional.20theories.html">Boolean algebras and propositional theories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com/">
+
+<head><link href="https://mattecapu.github.io/ct-zulip-archive/style.css" rel="stylesheet"></head>
+
+{% raw %}
+
+<a name="244873602"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Boolean%20algebras%20and%20propositional%20theories/near/244873602" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Boolean.20algebras.20and.20propositional.20theories.html#244873602">(Jul 04 2021 at 19:26)</a>:</h4>
+<p>The category of Boolean algebras is equivalent to the category of theories in propositional logic (as witnessed by the functor sending a propositional theory to its Lindenbaum--Tarski algebra). Is there a (standard) reference for this theorem? It astonishes me a bit that such a reference is hard to find (and that the theorem seems to be only rarely stated at all!), as both topics (propositional logic and Boolean algebras) have the same motivation/origin: to investigate logical operations such as "and", "or", and "not" (for some people, the words "propositional logic" and "Boolean algebra" are even synonyms). So I would think it is natural to explicitly state the connection...</p>
+
+
+
+<a name="244873820"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Boolean%20algebras%20and%20propositional%20theories/near/244873820" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Boolean.20algebras.20and.20propositional.20theories.html#244873820">(Jul 04 2021 at 19:32)</a>:</h4>
+<p>I don't know much about this, but I'll just guess:</p>
+<p>It sounds like a category theorist might state a version of this result by saying Boolean algebras are algebras of a finitary monad on Set, since then every Boolean algebra has a "presentation" in terms of free Boolean algebras (i.e. it's a coequalizer of free Boolean algebras, where one describes the "generators" and the other describes the "relations", i.e. axioms).   From this you can get an equivalence of categories between Boolean algebras and "presented Boolean algebras".   </p>
+<p>This idea works equally well if you replace the word "Boolean algebra" by "group", "ring", "complex vector space", etc.</p>
+
+
+
+<a name="244873896"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Boolean%20algebras%20and%20propositional%20theories/near/244873896" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Boolean.20algebras.20and.20propositional.20theories.html#244873896">(Jul 04 2021 at 19:34)</a>:</h4>
+<p>But I imagine propositional logic experts have some special hand-crafted concept of "propositional theory", which is a different way of saying "presented Boolean algebra".</p>
+
+
+
+<a name="244876885"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Boolean%20algebras%20and%20propositional%20theories/near/244876885" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Boolean.20algebras.20and.20propositional.20theories.html#244876885">(Jul 04 2021 at 20:49)</a>:</h4>
+<p>There's some of this in Mike Shulman's 'Categorical logic from a categorical point of view'</p>
+
+
+
+<a name="244876980"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Boolean%20algebras%20and%20propositional%20theories/near/244876980" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Boolean.20algebras.20and.20propositional.20theories.html#244876980">(Jul 04 2021 at 20:51)</a>:</h4>
+<p>The categorical approach though isn't that there is an 'equivalence between propositional theories and Boolean algebras' but that propositional theories are Boolean algebras and models are valuations (maps to the Boolean algebra of truth values).</p>
+
+
+
+<a name="244877066"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Boolean%20algebras%20and%20propositional%20theories/near/244877066" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fawzi Hreiki <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Boolean.20algebras.20and.20propositional.20theories.html#244877066">(Jul 04 2021 at 20:53)</a>:</h4>
+<p>Awodey's category theory book also has a subsection on (constructive) propositional logic via Heyting algebras.</p>
+
+
+
+<a name="244877259"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229199-learning%3A%20questions/topic/Boolean%20algebras%20and%20propositional%20theories/near/244877259" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning:-questions/topic/Boolean.20algebras.20and.20propositional.20theories.html#244877259">(Jul 04 2021 at 20:59)</a>:</h4>
+<blockquote>
+<p>The categorical approach though isn't that there is an 'equivalence between propositional theories and Boolean algebras' but that propositional theories are Boolean algebras [....]</p>
+</blockquote>
+<p>That sounds like an equivalence to me!  <span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span></p>
+
+
+
+{% endraw %}
+
+<hr><p>Last updated: Jul 05 2021 at 00:21 UTC</p>
