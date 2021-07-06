@@ -9,7 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [Boolean algebras and propositional theories](topic/Boolean.20algebras.20and.20propositional.20theories.html) (7 messages, latest: Jul 04 2021 at 20:59)
+* [Boolean algebras and propositional theories](topic/Boolean.20algebras.20and.20propositional.20theories.html) (14 messages, latest: Jul 05 2021 at 19:27)
+* [free-forgetful adjoint for Sets and Monoids question](topic/free-forgetful.20adjoint.20for.20Sets.20and.20Monoids.20question.html) (6 messages, latest: Jul 05 2021 at 09:21)
 * [Link between limits and "usual" limits for sequence ?](topic/Link.20between.20limits.20and.20.22usual.22.20limits.20for.20sequence.20.3F.html) (20 messages, latest: Jul 04 2021 at 16:32)
 * [path objects of bicats](topic/path.20objects.20of.20bicats.html) (9 messages, latest: Jul 01 2021 at 16:47)
 * [free-forgetful adjoint for Sets and Monads question](topic/free-forgetful.20adjoint.20for.20Sets.20and.20Monads.20question.html) (4 messages, latest: Jul 01 2021 at 15:03)
@@ -444,4 +445,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 05 2021 at 00:21 UTC</p>
+<hr><p>Last updated: Jul 06 2021 at 00:24 UTC</p>

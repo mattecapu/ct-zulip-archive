@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (434 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (435 topics)
 
 * [general](stream/229111-general/index.html) (204 topics)
 
@@ -20,9 +20,9 @@ permalink: /index.html
 
 * [conference: ACT 2020](stream/243068-conference:-ACT-2020/index.html) (62 topics)
 
-* [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
+* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (62 topics)
 
-* [theory: topos theory](stream/230087-theory:-topos-theory/index.html) (61 topics)
+* [ACT 2020](stream/243068-ACT-2020/index.html) (61 topics)
 
 * [MIT Categories Seminar](stream/229457-MIT-Categories-Seminar/index.html) (41 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 05 2021 at 00:21 UTC</p>
+<hr><p>Last updated: Jul 06 2021 at 00:24 UTC</p>

@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [category theory in human psychology](topic/category.20theory.20in.20human.20psychology.html) (111 messages, latest: Jul 05 2021 at 21:50)
 * [the Topos Institute is open!](topic/the.20Topos.20Institute.20is.20open!.html) (21 messages, latest: Jul 03 2021 at 14:52)
 * [Dedication](topic/Dedication.html) (18 messages, latest: Jul 01 2021 at 15:20)
 * [category theory AI companies](topic/category.20theory.20AI.20companies.html) (30 messages, latest: Jul 01 2021 at 13:15)
@@ -27,7 +28,6 @@ permalink: /stream/229111-general/index.html
 * [ArxivDiff](topic/ArxivDiff.html) (4 messages, latest: May 05 2021 at 15:43)
 * [nlab down](topic/nlab.20down.html) (26 messages, latest: Apr 30 2021 at 16:50)
 * [Announcement:  Structure meets Power Workshop](topic/Announcement.3A.20.20Structure.20meets.20Power.20Workshop.html) (1 message, latest: Apr 26 2021 at 09:26)
-* [category theory in human psychology](topic/category.20theory.20in.20human.20psychology.html) (108 messages, latest: Apr 24 2021 at 11:23)
 * [LaTeX support](topic/LaTeX.20support.html) (84 messages, latest: Apr 23 2021 at 19:43)
 * [ACT Directory](topic/ACT.20Directory.html) (21 messages, latest: Apr 14 2021 at 13:02)
 * [category theory illustrated](topic/category.20theory.20illustrated.html) (2 messages, latest: Apr 08 2021 at 03:35)
@@ -214,4 +214,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Jul 05 2021 at 00:21 UTC</p>
+<hr><p>Last updated: Jul 06 2021 at 00:24 UTC</p>
