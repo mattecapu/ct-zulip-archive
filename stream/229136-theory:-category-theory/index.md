@@ -9,8 +9,8 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [algebra of a profunctor](topic/algebra.20of.20a.20profunctor.html) (16 messages, latest: Jul 06 2021 at 13:00)
 * [adjoint of arrow functor](topic/adjoint.20of.20arrow.20functor.html) (7 messages, latest: Jul 05 2021 at 12:54)
-* [algebra of a profunctor](topic/algebra.20of.20a.20profunctor.html) (10 messages, latest: Jul 04 2021 at 19:28)
 * [questions about "Carrés exacts et carrés déductifs"](topic/questions.20about.20.22Carr.C3.A9s.20exacts.20et.20carr.C3.A9s.20d.C3.A9ductifs.22.html) (14 messages, latest: Jul 01 2021 at 19:56)
 * [string diagrams for The formal theory of monads](topic/string.20diagrams.20for.20The.20formal.20theory.20of.20monads.html) (4 messages, latest: Jun 29 2021 at 21:37)
 * [plane graphs in a PRO](topic/plane.20graphs.20in.20a.20PRO.html) (26 messages, latest: Jun 28 2021 at 13:55)
@@ -183,4 +183,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jul 06 2021 at 00:24 UTC</p>
+<hr><p>Last updated: Jul 07 2021 at 00:23 UTC</p>

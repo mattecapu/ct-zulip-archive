@@ -9,7 +9,7 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 
 ### Topics:
 
-* [singleton morphism](topic/singleton.20morphism.html) (13 messages, latest: Jul 05 2021 at 22:30)
+* [singleton morphism](topic/singleton.20morphism.html) (26 messages, latest: Jul 06 2021 at 14:48)
 * [taking the category of sheaves](topic/taking.20the.20category.20of.20sheaves.html) (34 messages, latest: May 16 2021 at 15:21)
 * [morphisms of presheaf toposes](topic/morphisms.20of.20presheaf.20toposes.html) (47 messages, latest: May 12 2021 at 02:41)
 * [Localic Topoi](topic/Localic.20Topoi.html) (29 messages, latest: Apr 04 2021 at 03:31)
@@ -72,4 +72,4 @@ permalink: /stream/230087-theory:-topos-theory/index.html
 * [essential geometric morphism](topic/essential.20geometric.20morphism.html) (2 messages, latest: Mar 27 2020 at 18:56)
 * [welcome](topic/welcome.html) (2 messages, latest: Mar 27 2020 at 09:22)
 
-<hr><p>Last updated: Jul 06 2021 at 00:24 UTC</p>
+<hr><p>Last updated: Jul 07 2021 at 00:23 UTC</p>

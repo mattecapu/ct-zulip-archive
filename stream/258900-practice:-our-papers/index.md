@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [On Supercompactly and Compactly Generated Toposes](topic/On.20Supercompactly.20and.20Compactly.20Generated.20Toposes.html) (19 messages, latest: Jul 06 2021 at 18:40)
 * [LNL polycategories](topic/LNL.20polycategories.html) (5 messages, latest: Jul 02 2021 at 13:59)
 * [The derivator of setoids](topic/The.20derivator.20of.20setoids.html) (48 messages, latest: May 23 2021 at 15:20)
 * [Categorical composable cryptography](topic/Categorical.20composable.20cryptography.html) (20 messages, latest: May 23 2021 at 13:16)
@@ -32,11 +33,10 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [open systems and double categories](topic/open.20systems.20and.20double.20categories.html) (1 message, latest: Jan 24 2021 at 01:12)
 * [structured vs decorated cospans](topic/structured.20vs.20decorated.20cospans.html) (13 messages, latest: Jan 23 2021 at 23:56)
 * [LICS paper](topic/LICS.20paper.html) (5 messages, latest: Jan 23 2021 at 19:52)
-* [On Supercompactly and Compactly Generated Toposes](topic/On.20Supercompactly.20and.20Compactly.20Generated.20Toposes.html) (1 message, latest: Jan 20 2021 at 11:45)
 * [Nets with Mana: A Framework for Chemical Reaction Modelling](topic/Nets.20with.20Mana.3A.20A.20Framework.20for.20Chemical.20Reaction.20Modelling.html) (10 messages, latest: Jan 18 2021 at 13:10)
 * [Monoid Properties as Invariants of Toposes of Monoid Actions](topic/Monoid.20Properties.20as.20Invariants.20of.20Toposes.20of.20Monoid.20Actions.html) (2 messages, latest: Dec 04 2020 at 09:59)
 * [Functorial semantics for partial theories](topic/Functorial.20semantics.20for.20partial.20theories.html) (30 messages, latest: Nov 29 2020 at 08:46)
 * [stream events](topic/stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Jul 06 2021 at 00:24 UTC</p>
+<hr><p>Last updated: Jul 07 2021 at 00:23 UTC</p>

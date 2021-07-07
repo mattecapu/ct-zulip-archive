@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (435 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (436 topics)
 
 * [general](stream/229111-general/index.html) (204 topics)
 
@@ -86,13 +86,13 @@ permalink: /index.html
 
 * [learning: reading groups](stream/232160-learning:-reading-groups/index.html) (8 topics)
 
+* [practice: translation](stream/260000-practice:-translation/index.html) (8 topics)
+
 * [theory: monoids](stream/231815-theory:-monoids/index.html) (8 topics)
 
 * [languages: italiano/Italian](stream/231111-languages:-italiano/Italian/index.html) (7 topics)
 
 * [learning: statistics reading group](stream/245528-learning:-statistics-reading-group/index.html) (7 topics)
-
-* [practice: translation](stream/260000-practice:-translation/index.html) (7 topics)
 
 * [languages: francais/French](stream/231124-languages:-francais/French/index.html) (6 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 06 2021 at 00:24 UTC</p>
+<hr><p>Last updated: Jul 07 2021 at 00:23 UTC</p>

@@ -16,4 +16,4 @@ permalink: /stream/231124-languages:-francais/French/index.html
 * [chocolatine ou pain au chocolat](topic/chocolatine.20ou.20pain.20au.20chocolat.html) (16 messages, latest: Apr 07 2020 at 12:33)
 * [cosmos étymologie](topic/cosmos.20.C3.A9tymologie.html) (2 messages, latest: Apr 01 2020 at 11:50)
 
-<hr><p>Last updated: Jul 06 2021 at 00:24 UTC</p>
+<hr><p>Last updated: Jul 07 2021 at 00:23 UTC</p>
