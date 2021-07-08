@@ -14,4 +14,4 @@ permalink: /stream/233925-practice:-neuroscience/index.html
 * [Critical Brain](topic/Critical.20Brain.html) (9 messages, latest: Jul 08 2020 at 00:55)
 * [general](topic/general.html) (12 messages, latest: Jul 06 2020 at 22:12)
 
-<hr><p>Last updated: Jul 07 2021 at 00:23 UTC</p>
+<hr><p>Last updated: Jul 08 2021 at 00:21 UTC</p>

@@ -8,11 +8,11 @@ permalink: /index.html
 
 ## Streams:
 
-* [learning: questions](stream/229199-learning:-questions/index.html) (436 topics)
+* [learning: questions](stream/229199-learning:-questions/index.html) (437 topics)
 
 * [general](stream/229111-general/index.html) (204 topics)
 
-* [theory: category theory](stream/229136-theory:-category-theory/index.html) (173 topics)
+* [theory: category theory](stream/229136-theory:-category-theory/index.html) (174 topics)
 
 * [practice: applied ct](stream/229156-practice:-applied-ct/index.html) (114 topics)
 
@@ -30,7 +30,7 @@ permalink: /index.html
 
 * [general: mathematics](stream/266967-general:-mathematics/index.html) (37 topics)
 
-* [theory: logic](stream/233104-theory:-logic/index.html) (35 topics)
+* [theory: logic](stream/233104-theory:-logic/index.html) (36 topics)
 
 * [Categorical Probability and Statistics 2020 workshop](stream/238032-Categorical-Probability-and-Statistics-2020-workshop/index.html) (34 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 07 2021 at 00:23 UTC</p>
+<hr><p>Last updated: Jul 08 2021 at 00:21 UTC</p>
