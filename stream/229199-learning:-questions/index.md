@@ -9,6 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
+* [open Petri nets](topic/open.20Petri.20nets.html) (4 messages, latest: Jul 09 2021 at 00:00)
 * [notation for delooping](topic/notation.20for.20delooping.html) (10 messages, latest: Jul 07 2021 at 22:21)
 * [Notation for delooping](topic/Notation.20for.20delooping.html) (3 messages, latest: Jul 06 2021 at 22:12)
 * [free-forgetful adjoint for Sets and Monoids question](topic/free-forgetful.20adjoint.20for.20Sets.20and.20Monoids.20question.html) (7 messages, latest: Jul 06 2021 at 08:18)
@@ -447,4 +448,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 08 2021 at 00:21 UTC</p>
+<hr><p>Last updated: Jul 09 2021 at 00:24 UTC</p>

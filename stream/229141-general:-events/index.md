@@ -9,13 +9,13 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (31 messages, latest: Jul 08 2021 at 16:37)
 * [submitting to CT2021](topic/submitting.20to.20CT2021.html) (77 messages, latest: Jun 29 2021 at 21:39)
 * [workshop on type theory and machine learning](topic/workshop.20on.20type.20theory.20and.20machine.20learning.html) (2 messages, latest: Jun 28 2021 at 16:01)
 * [Toposes online](topic/Toposes.20online.html) (8 messages, latest: Jun 24 2021 at 08:20)
 * [Em-Cats](topic/Em-Cats.html) (4 messages, latest: Jun 20 2021 at 14:57)
 * [data visualization bootcamp](topic/data.20visualization.20bootcamp.html) (9 messages, latest: Jun 19 2021 at 17:28)
 * [thermodynamics in biology](topic/thermodynamics.20in.20biology.html) (4 messages, latest: Jun 16 2021 at 16:46)
-* [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (29 messages, latest: Jun 10 2021 at 12:10)
 * [Categories and Companions Symposium 2021](topic/Categories.20and.20Companions.20Symposium.202021.html) (3 messages, latest: Jun 07 2021 at 10:34)
 * [Cambridge Category Theory Seminar](topic/Cambridge.20Category.20Theory.20Seminar.html) (10 messages, latest: Jun 02 2021 at 18:32)
 * [Compositional Robotics: Mathematics and Tools Workshop](topic/Compositional.20Robotics.3A.20Mathematics.20and.20Tools.20Workshop.html) (20 messages, latest: Jun 01 2021 at 09:19)
@@ -99,4 +99,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Jul 08 2021 at 00:21 UTC</p>
+<hr><p>Last updated: Jul 09 2021 at 00:24 UTC</p>

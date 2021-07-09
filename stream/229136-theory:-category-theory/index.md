@@ -184,4 +184,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jul 08 2021 at 00:21 UTC</p>
+<hr><p>Last updated: Jul 09 2021 at 00:24 UTC</p>
