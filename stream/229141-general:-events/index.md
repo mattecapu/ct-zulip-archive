@@ -9,6 +9,7 @@ permalink: /stream/229141-general:-events/index.html
 
 ### Topics:
 
+* [Poly Course](topic/Poly.20Course.html) (1 message, latest: Jul 09 2021 at 22:04)
 * [Applied Category Theory 2021](topic/Applied.20Category.20Theory.202021.html) (31 messages, latest: Jul 08 2021 at 16:37)
 * [submitting to CT2021](topic/submitting.20to.20CT2021.html) (77 messages, latest: Jun 29 2021 at 21:39)
 * [workshop on type theory and machine learning](topic/workshop.20on.20type.20theory.20and.20machine.20learning.html) (2 messages, latest: Jun 28 2021 at 16:01)
@@ -99,4 +100,4 @@ permalink: /stream/229141-general:-events/index.html
 * [April 1st: ACT@UCR](topic/April.201st.3A.20ACT.40UCR.html) (3 messages, latest: Mar 26 2020 at 23:58)
 * [Google Sites problem](topic/Google.20Sites.20problem.html) (4 messages, latest: Mar 25 2020 at 04:29)
 
-<hr><p>Last updated: Jul 09 2021 at 00:24 UTC</p>
+<hr><p>Last updated: Jul 10 2021 at 00:23 UTC</p>
