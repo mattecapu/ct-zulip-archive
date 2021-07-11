@@ -191,6 +191,53 @@ That will work if you are the actor in charge of the resource. If you are a clie
 
 
 
+<a name="245559426"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/optics%20and%20servers/near/245559426" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/optics.20and.20servers.html#245559426">(Jul 10 2021 at 16:23)</a>:</h4>
+<p>I <a href="https://gist.github.com/bblfish/e759acba8794b53462c362935a80e471">wrote up some code</a> using the Scala Monocle library to simulate a POST. It uses the <code>modify</code> method that is defined on the Setter trait, and available on a Lens.</p>
+<div class="codehilite" data-code-language="Scala"><pre><span></span><code><span class="k">def</span> <span class="nf">POST</span><span class="p">(</span><span class="n">slug</span><span class="p">:</span> <span class="nc">String</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nc">String</span><span class="p">):</span> <span class="nc">Container</span> <span class="o">=&gt;</span> <span class="nc">Container</span> <span class="o">=</span>
+    <span class="n">contents</span><span class="p">.</span><span class="n">modify</span><span class="p">(</span><span class="n">oldMap</span> <span class="o">=&gt;</span>
+        <span class="n">oldMap</span> <span class="o">+</span> <span class="p">(</span><span class="n">slug</span> <span class="o">-&gt;</span> <span class="nc">TextResource</span><span class="p">(</span><span class="n">text</span><span class="p">))</span>
+     <span class="p">)</span>
+
+<span class="o">&gt;</span> <span class="kd">val</span> <span class="n">p1</span> <span class="o">=</span> <span class="nc">Server</span><span class="p">.</span><span class="nc">POST</span><span class="p">(</span><span class="s">"blog1"</span><span class="p">,</span><span class="s">"My first blog. Testing"</span><span class="p">)</span>
+<span class="o">&gt;</span> <span class="kd">val</span> <span class="n">newRoot</span> <span class="o">=</span> <span class="n">p1</span><span class="p">(</span><span class="nc">Server</span><span class="p">.</span><span class="n">root</span><span class="p">)</span>
+<span class="kd">val</span> <span class="n">newRoot</span><span class="p">:</span> <span class="n">monocle</span><span class="p">.</span><span class="nc">Container</span> <span class="o">=</span> <span class="nc">Container</span><span class="p">(</span><span class="nc">Map</span><span class="p">(</span><span class="n">blog1</span> <span class="o">-&gt;</span> <span class="nc">TextResource</span><span class="p">(</span><span class="nc">My</span> <span class="n">first</span> <span class="n">blog</span><span class="p">.</span> <span class="nc">Testing</span><span class="p">,</span><span class="mi">2021</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">10</span><span class="nc">T14</span><span class="p">:</span><span class="mi">31</span><span class="p">:</span><span class="mf">41.680411</span><span class="nc">Z</span><span class="p">)),</span><span class="mi">2021</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">10</span><span class="nc">T14</span><span class="p">:</span><span class="mi">31</span><span class="p">:</span><span class="mf">41.640292</span><span class="nc">Z</span>
+</code></pre></div>
+<p>So that suggests that POST is ok.</p>
+
+
+
+<a name="245567245"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/optics%20and%20servers/near/245567245" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/optics.20and.20servers.html#245567245">(Jul 10 2021 at 19:35)</a>:</h4>
+<p>So where I differ from <span class="user-mention" data-user-id="296298">@André Videla</span> in the way I conceive of a Web Server, is that I think of a web server as essentially perhaps requiring nothing more than the colagebra on the Store comonad, and perhaps the concept of a Container and a Resource as in </p>
+<div class="codehilite" data-code-language="Scala"><pre><span></span><code><span class="k">sealed</span> <span class="k">trait</span> <span class="nc">Resource</span><span class="p">[</span><span class="nc">T</span><span class="p">]</span> <span class="p">{</span>
+    <span class="k">def</span> <span class="nf">content</span><span class="p">:</span> <span class="nc">T</span>
+    <span class="k">def</span> <span class="nf">created</span><span class="p">:</span> <span class="nc">Instant</span>
+<span class="p">}</span>
+<span class="k">case</span> <span class="k">class</span> <span class="nc">Container</span><span class="p">(</span> <span class="n">content</span><span class="p">:</span> <span class="nc">Map</span><span class="p">[</span><span class="nc">String</span><span class="p">,</span> <span class="nc">Resource</span><span class="p">[</span><span class="n">_</span><span class="p">]]</span> <span class="o">=</span> <span class="nc">Map</span><span class="p">(),</span>
+         <span class="n">created</span><span class="p">:</span> <span class="nc">Instant</span> <span class="o">=</span> <span class="n">now</span><span class="p">)</span> <span class="k">extends</span> <span class="nc">Resource</span><span class="p">[</span><span class="nc">Map</span><span class="p">[</span><span class="nc">String</span><span class="p">,</span> <span class="nc">Resource</span><span class="p">[</span><span class="n">_</span><span class="p">]]]</span>
+<span class="k">case</span> <span class="k">class</span> <span class="nc">TextResource</span><span class="p">(</span><span class="n">content</span><span class="p">:</span> <span class="nc">String</span><span class="p">,</span> <span class="n">created</span><span class="p">:</span> <span class="nc">Instant</span> <span class="o">=</span> <span class="n">now</span><span class="p">)</span> <span class="k">extends</span> <span class="nc">Resource</span><span class="p">[</span><span class="nc">String</span><span class="p">]</span>
+</code></pre></div>
+<p>The String attributes in the Map constitutes a path segment giving us the path to the resource. Containers can contain Containers, giving us the URL Path such as <code>&lt;/people/tim&gt;</code> .<br>
+The resource itself could just be a bytestring with metadata such as a mime type to be interpreted by the client, or a creation date. </p>
+<p>It is the clients that create the resources, that get described with metadata. A Client can create an image, some css, some html, a film, some javascript, on a server and link them altogether so that they form a nice blog page. Then it can add some RDF to describe the data in an RSS feed.</p>
+<p>It is really up to a read/write client to POST new content, edit it with PUT if needed, and GET it to display it. That is what <a href="https://www.w3.org/TR/ldp/">the LDP protocol</a> essentially describes. <br>
+So the way to see it is perhaps that Lenses explain why we have this simple universal API with which to interact with any such server.</p>
+<p>Additional efficiency additions like </p>
+<ul>
+<li>QUERY - an efficient form of GET (one can use <a href="https://www.w3.org/TR/2013/REC-sparql11-query-20130321/">SPARQL</a> when the data is relational) or </li>
+<li>PATCH is just an efficient form of PUT (one can use <a href="https://www.w3.org/TR/sparql11-update/">SPARQL UPDATE</a>.</li>
+</ul>
+<p>These require more of the server, as they require it to interpret the data on its store and keep indexes for example.</p>
+
+
+
+<a name="245567859"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/optics%20and%20servers/near/245567859" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/optics.20and.20servers.html#245567859">(Jul 10 2021 at 19:51)</a>:</h4>
+<p>Say that lenses as such actually help give us a nice model of a web server (without access control).  Is there a category where I could take the idea of a Lens which would better fit the <a href="https://en.wikipedia.org/wiki/Actor_model">actor model</a>, such as implemented by Erlang or <a href="https://akka.io">akka</a>)</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Jul 10 2021 at 00:23 UTC</p>
+<hr><p>Last updated: Jul 11 2021 at 00:23 UTC</p>
