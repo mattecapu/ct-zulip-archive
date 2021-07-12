@@ -9,9 +9,9 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
+* [earring space](topic/earring.20space.html) (14 messages, latest: Jul 11 2021 at 21:56)
 * [New Spaces in Mathematics](topic/New.20Spaces.20in.20Mathematics.html) (1 message, latest: Jun 27 2021 at 20:01)
 * [closed form expressions of functions](topic/closed.20form.20expressions.20of.20functions.html) (8 messages, latest: Jun 27 2021 at 19:11)
-* [earring space](topic/earring.20space.html) (3 messages, latest: Jun 25 2021 at 03:35)
 * [Connes on the Riemann Hypothesis](topic/Connes.20on.20the.20Riemann.20Hypothesis.html) (1 message, latest: Jun 15 2021 at 18:03)
 * [comonoids for Day convolution products](topic/comonoids.20for.20Day.20convolution.20products.html) (4 messages, latest: Jun 13 2021 at 16:23)
 * [Knowlege graph fusion as a global section in a presheave](topic/Knowlege.20graph.20fusion.20as.20a.20global.20section.20in.20a.20presheave.html) (5 messages, latest: May 27 2021 at 17:06)
@@ -47,4 +47,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Jul 11 2021 at 00:23 UTC</p>
+<hr><p>Last updated: Jul 12 2021 at 00:24 UTC</p>

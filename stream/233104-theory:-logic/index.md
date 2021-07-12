@@ -9,7 +9,7 @@ permalink: /stream/233104-theory:-logic/index.html
 
 ### Topics:
 
-* [differential logic](topic/differential.20logic.html) (8 messages, latest: Jul 10 2021 at 18:12)
+* [differential logic](topic/differential.20logic.html) (10 messages, latest: Jul 11 2021 at 20:16)
 * [logical graphs](topic/logical.20graphs.html) (21 messages, latest: Jul 10 2021 at 07:48)
 * [Proving equivalence/equiconsistency results using CT?](topic/Proving.20equivalence.2Fequiconsistency.20results.20using.20CT.3F.html) (3 messages, latest: May 24 2021 at 16:47)
 * [fragments of logic](topic/fragments.20of.20logic.html) (52 messages, latest: May 22 2021 at 06:33)
@@ -46,4 +46,4 @@ permalink: /stream/233104-theory:-logic/index.html
 * [Probability as logic](topic/Probability.20as.20logic.html) (63 messages, latest: Apr 15 2020 at 12:33)
 * [stream events](topic/stream.20events.html) (1 message, latest: Apr 10 2020 at 12:32)
 
-<hr><p>Last updated: Jul 11 2021 at 00:23 UTC</p>
+<hr><p>Last updated: Jul 12 2021 at 00:24 UTC</p>

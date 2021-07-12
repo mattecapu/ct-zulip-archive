@@ -238,6 +238,15 @@ So the way to see it is perhaps that Lenses explain why we have this simple univ
 
 
 
+<a name="245595801"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/optics%20and%20servers/near/245595801" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/optics.20and.20servers.html#245595801">(Jul 11 2021 at 08:29)</a>:</h4>
+<p>I think one can actually see why the actor model is advantageous over the model presented in Andre's video <a href="#narrow/stream/229156-practice.3A-applied.20ct/topic/optics.20and.20servers/near/244737770">above</a>. </p>
+<p>The model of the web server given by Andre is an immutable model. That is the advantage of optics: it gives you a way to change the state of one component inside a much larger structure. So you are to imagine the whole web server in one immutable data structure.<br>
+A PUT on &lt;/foo/bar/baz&gt; changes the object at that location and returns a new root web server object.  The risk here is that one then has to sequentialise updates, or deal with problems of merging a number of web server objects resulting from parallel update requests.  Having an sequence of update events for the whole web server could be useful for keeping a full history of it perhaps. But given that a web server has pages linked to the whole web, and that keeping a full history of the whole web is impossible and even undersireable (due to privacy reasons for example), it is not clear that this is really that useful. The state of the server will have to be written to disk, so it may be better there to have a versioned file system. In any case the versioning was not the part put forward in the talk, and it creates a lot of other problems as we saw, potentially sequentialising all updates: someone wants to upload a 500MB video of a cute duck swimming in a pond, and everyone else using your web server will have to wait for that to complete before they can do the next update.</p>
+<p>The actor model on the other had limits state transformations to the smallest state needed. So if a new video is POSTed to /2021/07/11/ then only one actor for that resource needs to be synchronise the state of that resource. Edits can occur simultaneously on any number of other resources too.</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Jul 11 2021 at 00:23 UTC</p>
+<hr><p>Last updated: Jul 12 2021 at 00:24 UTC</p>

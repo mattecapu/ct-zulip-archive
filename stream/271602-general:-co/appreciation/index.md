@@ -21,4 +21,4 @@ permalink: /stream/271602-general:-co/appreciation/index.html
 * [Tom Leinster's "Basic Category Theory"](topic/Tom.20Leinster's.20.22Basic.20Category.20Theory.22.html) (7 messages, latest: Jan 17 2021 at 09:06)
 * [stream events](topic/stream.20events.html) (1 message, latest: Jan 10 2021 at 10:11)
 
-<hr><p>Last updated: Jul 11 2021 at 00:23 UTC</p>
+<hr><p>Last updated: Jul 12 2021 at 00:24 UTC</p>
