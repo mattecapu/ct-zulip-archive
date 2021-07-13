@@ -9,6 +9,7 @@ permalink: /stream/229136-theory:-category-theory/index.html
 
 ### Topics:
 
+* [resources for learning category theory](topic/resources.20for.20learning.20category.20theory.html) (2 messages, latest: Jul 12 2021 at 16:03)
 * [terminology for functor that is almost monadic](topic/terminology.20for.20functor.20that.20is.20almost.20monadic.html) (15 messages, latest: Jul 11 2021 at 22:48)
 * [algebra of a profunctor](topic/algebra.20of.20a.20profunctor.html) (16 messages, latest: Jul 06 2021 at 13:00)
 * [adjoint of arrow functor](topic/adjoint.20of.20arrow.20functor.html) (7 messages, latest: Jul 05 2021 at 12:54)
@@ -184,4 +185,4 @@ permalink: /stream/229136-theory:-category-theory/index.html
 * [diagrams for application](topic/diagrams.20for.20application.html) (13 messages, latest: Mar 24 2020 at 06:19)
 * [universal constructions](topic/universal.20constructions.html) (8 messages, latest: Mar 23 2020 at 21:06)
 
-<hr><p>Last updated: Jul 12 2021 at 00:24 UTC</p>
+<hr><p>Last updated: Jul 13 2021 at 00:23 UTC</p>

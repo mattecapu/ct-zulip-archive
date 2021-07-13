@@ -9,6 +9,7 @@ permalink: /stream/229457-seminar:-MIT-Categories-Seminar/index.html
 
 ### Topics:
 
+* [April 2 - Todd Trimble's talk](topic/April.202.20-.20Todd.20Trimble's.20talk.html) (137 messages, latest: Jul 12 2021 at 15:59)
 * [May 21 - Jade Master's talk](topic/May.2021.20-.20Jade.20Master's.20talk.html) (43 messages, latest: Jan 28 2021 at 02:55)
 * [June 11: Paolo Perrone's talk](topic/June.2011.3A.20Paolo.20Perrone's.20talk.html) (14 messages, latest: Jan 14 2021 at 10:30)
 * [stream events](topic/stream.20events.html) (2 messages, latest: Dec 26 2020 at 19:06)
@@ -44,11 +45,10 @@ permalink: /stream/229457-seminar:-MIT-Categories-Seminar/index.html
 * [May 7 - Bob Coecke's talk](topic/May.207.20-.20Bob.20Coecke's.20talk.html) (24 messages, latest: May 08 2020 at 09:38)
 * [April 23 - Joe Moeller's talk](topic/April.2023.20-.20Joe.20Moeller's.20talk.html) (34 messages, latest: Apr 24 2020 at 09:45)
 * [April 16 - Joachim Kock's talk](topic/April.2016.20-.20Joachim.20Kock's.20talk.html) (25 messages, latest: Apr 17 2020 at 00:33)
-* [April 2 - Todd Trimble's talk](topic/April.202.20-.20Todd.20Trimble's.20talk.html) (128 messages, latest: Apr 14 2020 at 13:43)
 * [April 9 - John Baez's talk](topic/April.209.20-.20John.20Baez's.20talk.html) (81 messages, latest: Apr 14 2020 at 05:29)
 * [technology choices](topic/technology.20choices.html) (9 messages, latest: Apr 03 2020 at 13:14)
 * [scheduling](topic/scheduling.html) (3 messages, latest: Apr 01 2020 at 23:43)
 * [March 26 - David Myers' talk](topic/March.2026.20-.20David.20Myers'.20talk.html) (40 messages, latest: Mar 27 2020 at 18:11)
 * [March 19 - Pilot talk](topic/March.2019.20-.20Pilot.20talk.html) (1 message, latest: Mar 24 2020 at 20:49)
 
-<hr><p>Last updated: Jul 12 2021 at 00:24 UTC</p>
+<hr><p>Last updated: Jul 13 2021 at 00:23 UTC</p>
