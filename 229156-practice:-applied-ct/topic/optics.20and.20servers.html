@@ -247,6 +247,15 @@ A PUT on &lt;/foo/bar/baz&gt; changes the object at that location and returns a 
 
 
 
+<a name="245787441"></a>
+<h4><a href="https://categorytheory.zulipchat.com/#narrow/stream/229156-practice%3A%20applied%20ct/topic/optics%20and%20servers/near/245787441" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Henry Story <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-practice:-applied-ct/topic/optics.20and.20servers.html#245787441">(Jul 13 2021 at 07:27)</a>:</h4>
+<p>Even though I don't see Lenses as a good way to implement a web server, it does at least seem to do one thing right: it captures the laws a client relies on when fetching, puting or creating a resource (at least in an <code>ldp:BasicContainer</code>). The laws seem to tell us that a client that makes such requests, can know that it is not responsible for any other changes to the server. Any other changes must be due to other agents.<br>
+To re-iterate the problem: an implementation of a web server as a Lens would force all changes to by synchronised by the server as it coalgebraically steps from one state to the next - this requires too much synchronisation.<br>
+But the laws seem to be right.</p>
+<p>So we seem to have structure describing a contract. Does that make any categorical sense?</p>
+
+
+
 {% endraw %}
 
-<hr><p>Last updated: Jul 13 2021 at 00:23 UTC</p>
+<hr><p>Last updated: Jul 14 2021 at 00:22 UTC</p>

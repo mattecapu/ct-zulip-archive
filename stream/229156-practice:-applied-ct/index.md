@@ -9,7 +9,7 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 
 ### Topics:
 
-* [optics and servers](topic/optics.20and.20servers.html) (23 messages, latest: Jul 11 2021 at 08:29)
+* [optics and servers](topic/optics.20and.20servers.html) (24 messages, latest: Jul 13 2021 at 07:27)
 * [web cats](topic/web.20cats.html) (265 messages, latest: Jul 04 2021 at 07:41)
 * [programming](topic/programming.html) (11 messages, latest: Jul 02 2021 at 12:27)
 * [emergent behaviour as laxity](topic/emergent.20behaviour.20as.20laxity.html) (265 messages, latest: Jun 22 2021 at 19:29)
@@ -124,4 +124,4 @@ permalink: /stream/229156-practice:-applied-ct/index.html
 * [AACT2020](topic/AACT2020.html) (1 message, latest: Mar 24 2020 at 00:56)
 * [welcome](topic/welcome.html) (15 messages, latest: Mar 24 2020 at 00:03)
 
-<hr><p>Last updated: Jul 13 2021 at 00:23 UTC</p>
+<hr><p>Last updated: Jul 14 2021 at 00:22 UTC</p>

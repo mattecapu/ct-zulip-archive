@@ -9,6 +9,7 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
+* [the MathFoldr project](topic/the.20MathFoldr.20project.html) (7 messages, latest: Jul 13 2021 at 21:12)
 * [the Topos Institute is open!](topic/the.20Topos.20Institute.20is.20open!.html) (22 messages, latest: Jul 06 2021 at 16:02)
 * [category theory in human psychology](topic/category.20theory.20in.20human.20psychology.html) (111 messages, latest: Jul 05 2021 at 21:50)
 * [Dedication](topic/Dedication.html) (18 messages, latest: Jul 01 2021 at 15:20)
@@ -214,4 +215,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Jul 13 2021 at 00:23 UTC</p>
+<hr><p>Last updated: Jul 14 2021 at 00:22 UTC</p>
