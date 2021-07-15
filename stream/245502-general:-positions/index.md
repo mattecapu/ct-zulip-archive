@@ -9,6 +9,7 @@ permalink: /stream/245502-general:-positions/index.html
 
 ### Topics:
 
+* [Cat Theory in Master's](topic/Cat.20Theory.20in.20Master's.html) (13 messages, latest: Jul 14 2021 at 21:49)
 * [Startup working on AI](topic/Startup.20working.20on.20AI.html) (1 message, latest: Jun 07 2021 at 08:36)
 * [Sabbaticals in Tallinn](topic/Sabbaticals.20in.20Tallinn.html) (20 messages, latest: Jun 02 2021 at 12:34)
 * [Phd position at University College London](topic/Phd.20position.20at.20University.20College.20London.html) (1 message, latest: Jun 01 2021 at 16:21)
@@ -37,4 +38,4 @@ permalink: /stream/245502-general:-positions/index.html
 * [PhD positions in Estonia](topic/PhD.20positions.20in.20Estonia.html) (1 message, latest: Jun 27 2020 at 18:04)
 * [Companies that hire category people](topic/Companies.20that.20hire.20category.20people.html) (2 messages, latest: May 13 2020 at 03:50)
 
-<hr><p>Last updated: Jul 14 2021 at 00:22 UTC</p>
+<hr><p>Last updated: Jul 15 2021 at 00:22 UTC</p>

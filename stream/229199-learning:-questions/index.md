@@ -9,8 +9,8 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [open Petri nets](topic/open.20Petri.20nets.html) (23 messages, latest: Jul 13 2021 at 22:00)
-* [coalgebras and comonads](topic/coalgebras.20and.20comonads.html) (20 messages, latest: Jul 13 2021 at 20:53)
+* [open Petri nets](topic/open.20Petri.20nets.html) (25 messages, latest: Jul 14 2021 at 18:03)
+* [coalgebras and comonads](topic/coalgebras.20and.20comonads.html) (33 messages, latest: Jul 14 2021 at 11:14)
 * [subcategories](topic/subcategories.html) (4 messages, latest: Jul 12 2021 at 22:10)
 * [complete atomic boolean algebras](topic/complete.20atomic.20boolean.20algebras.html) (29 messages, latest: Jul 12 2021 at 03:36)
 * [notation for delooping](topic/notation.20for.20delooping.html) (10 messages, latest: Jul 07 2021 at 22:21)
@@ -451,4 +451,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 14 2021 at 00:22 UTC</p>
+<hr><p>Last updated: Jul 15 2021 at 00:22 UTC</p>

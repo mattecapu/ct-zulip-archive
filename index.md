@@ -36,7 +36,7 @@ permalink: /index.html
 
 * [practice: our papers](stream/258900-practice:-our-papers/index.html) (29 topics)
 
-* [general: positions](stream/245502-general:-positions/index.html) (27 topics)
+* [general: positions](stream/245502-general:-positions/index.html) (28 topics)
 
 * [theory: type theory](stream/229952-theory:-type-theory/index.html) (26 topics)
 
@@ -132,4 +132,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 14 2021 at 00:22 UTC</p>
+<hr><p>Last updated: Jul 15 2021 at 00:22 UTC</p>

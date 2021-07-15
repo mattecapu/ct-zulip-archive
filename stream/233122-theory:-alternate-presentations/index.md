@@ -11,4 +11,4 @@ permalink: /stream/233122-theory:-alternate-presentations/index.html
 
 * [stream events](topic/stream.20events.html) (10 messages, latest: Apr 10 2020 at 18:26)
 
-<hr><p>Last updated: Jul 14 2021 at 00:22 UTC</p>
+<hr><p>Last updated: Jul 15 2021 at 00:22 UTC</p>

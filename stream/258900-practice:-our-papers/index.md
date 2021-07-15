@@ -39,4 +39,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [stream events](topic/stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Jul 14 2021 at 00:22 UTC</p>
+<hr><p>Last updated: Jul 15 2021 at 00:22 UTC</p>

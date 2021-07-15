@@ -9,7 +9,8 @@ permalink: /stream/229111-general/index.html
 
 ### Topics:
 
-* [the MathFoldr project](topic/the.20MathFoldr.20project.html) (7 messages, latest: Jul 13 2021 at 21:12)
+* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (649 messages, latest: Jul 14 2021 at 21:49)
+* [the MathFoldr project](topic/the.20MathFoldr.20project.html) (16 messages, latest: Jul 14 2021 at 21:35)
 * [the Topos Institute is open!](topic/the.20Topos.20Institute.20is.20open!.html) (22 messages, latest: Jul 06 2021 at 16:02)
 * [category theory in human psychology](topic/category.20theory.20in.20human.20psychology.html) (111 messages, latest: Jul 05 2021 at 21:50)
 * [Dedication](topic/Dedication.html) (18 messages, latest: Jul 01 2021 at 15:20)
@@ -20,7 +21,6 @@ permalink: /stream/229111-general/index.html
 * [quiver: a modern commutative diagram editor](topic/quiver.3A.20a.20modern.20commutative.20diagram.20editor.html) (59 messages, latest: Jun 22 2021 at 10:27)
 * [commutative diagrams on Zulip](topic/commutative.20diagrams.20on.20Zulip.html) (8 messages, latest: Jun 22 2021 at 04:03)
 * [lean prover](topic/lean.20prover.html) (4 messages, latest: Jun 21 2021 at 15:14)
-* [Introduce Yourself!](topic/Introduce.20Yourself!.html) (648 messages, latest: Jun 12 2021 at 01:38)
 * [CALCO is in trouble!](topic/CALCO.20is.20in.20trouble!.html) (38 messages, latest: Jun 11 2021 at 17:33)
 * [square categories?](topic/square.20categories.3F.html) (7 messages, latest: Jun 07 2021 at 09:14)
 * [for beginners](topic/for.20beginners.html) (15 messages, latest: May 21 2021 at 20:40)
@@ -215,4 +215,4 @@ permalink: /stream/229111-general/index.html
 * [Tools for diagrams](topic/Tools.20for.20diagrams.html) (78 messages, latest: Mar 25 2020 at 17:53)
 * [topic demonstration](topic/topic.20demonstration.html) (2 messages, latest: Mar 23 2020 at 16:57)
 
-<hr><p>Last updated: Jul 14 2021 at 00:22 UTC</p>
+<hr><p>Last updated: Jul 15 2021 at 00:22 UTC</p>
