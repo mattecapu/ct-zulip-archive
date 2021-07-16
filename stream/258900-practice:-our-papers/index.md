@@ -9,6 +9,7 @@ permalink: /stream/258900-practice:-our-papers/index.html
 
 ### Topics:
 
+* [Categorical Semantics of Cyber-Physical Systems Theory](topic/Categorical.20Semantics.20of.20Cyber-Physical.20Systems.20Theory.html) (17 messages, latest: Jul 15 2021 at 13:39)
 * [On Supercompactly and Compactly Generated Toposes](topic/On.20Supercompactly.20and.20Compactly.20Generated.20Toposes.html) (19 messages, latest: Jul 06 2021 at 18:40)
 * [LNL polycategories](topic/LNL.20polycategories.html) (5 messages, latest: Jul 02 2021 at 13:59)
 * [The derivator of setoids](topic/The.20derivator.20of.20setoids.html) (48 messages, latest: May 23 2021 at 15:20)
@@ -16,7 +17,6 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [Native Type Theory](topic/Native.20Type.20Theory.html) (153 messages, latest: May 17 2021 at 10:10)
 * [Graphical Calculus for Lagrangian Relations](topic/Graphical.20Calculus.20for.20Lagrangian.20Relations.html) (3 messages, latest: May 14 2021 at 05:29)
 * [pregroups are frobenii are pregroups](topic/pregroups.20are.20frobenii.20are.20pregroups.html) (1 message, latest: May 13 2021 at 07:25)
-* [Categorical Semantics of Cyber-Physical Systems Theory](topic/Categorical.20Semantics.20of.20Cyber-Physical.20Systems.20Theory.html) (16 messages, latest: May 12 2021 at 14:46)
 * [Toposes of Topological Monoid Actions](topic/Toposes.20of.20Topological.20Monoid.20Actions.html) (4 messages, latest: May 05 2021 at 08:02)
 * [Categories of Nets](topic/Categories.20of.20Nets.html) (9 messages, latest: Apr 04 2021 at 18:02)
 * [Combining Nondeterminism, Probability, and Termination](topic/Combining.20Nondeterminism.2C.20Probability.2C.20and.20Termination.html) (1 message, latest: Apr 01 2021 at 13:43)
@@ -39,4 +39,4 @@ permalink: /stream/258900-practice:-our-papers/index.html
 * [stream events](topic/stream.20events.html) (2 messages, latest: Oct 05 2020 at 15:30)
 * [Coends of higher arity](topic/Coends.20of.20higher.20arity.html) (3 messages, latest: Sep 26 2020 at 16:28)
 
-<hr><p>Last updated: Jul 15 2021 at 00:22 UTC</p>
+<hr><p>Last updated: Jul 16 2021 at 00:23 UTC</p>

@@ -9,7 +9,7 @@ permalink: /stream/266967-general:-mathematics/index.html
 
 ### Topics:
 
-* [earring space](topic/earring.20space.html) (18 messages, latest: Jul 14 2021 at 12:10)
+* [earring space](topic/earring.20space.html) (23 messages, latest: Jul 15 2021 at 05:49)
 * [New Spaces in Mathematics](topic/New.20Spaces.20in.20Mathematics.html) (1 message, latest: Jun 27 2021 at 20:01)
 * [closed form expressions of functions](topic/closed.20form.20expressions.20of.20functions.html) (8 messages, latest: Jun 27 2021 at 19:11)
 * [Connes on the Riemann Hypothesis](topic/Connes.20on.20the.20Riemann.20Hypothesis.html) (1 message, latest: Jun 15 2021 at 18:03)
@@ -47,4 +47,4 @@ permalink: /stream/266967-general:-mathematics/index.html
 * [the 600-cell](topic/the.20600-cell.html) (5 messages, latest: Dec 01 2020 at 16:35)
 * [hermitian matrix over normed division algebra](topic/hermitian.20matrix.20over.20normed.20division.20algebra.html) (8 messages, latest: Sep 28 2020 at 21:19)
 
-<hr><p>Last updated: Jul 15 2021 at 00:22 UTC</p>
+<hr><p>Last updated: Jul 16 2021 at 00:23 UTC</p>
