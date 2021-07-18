@@ -9,7 +9,7 @@ permalink: /stream/229199-learning:-questions/index.html
 
 ### Topics:
 
-* [coalgebras and comonads](topic/coalgebras.20and.20comonads.html) (47 messages, latest: Jul 15 2021 at 16:09)
+* [coalgebras and comonads](topic/coalgebras.20and.20comonads.html) (49 messages, latest: Jul 17 2021 at 16:38)
 * [open Petri nets](topic/open.20Petri.20nets.html) (25 messages, latest: Jul 14 2021 at 18:03)
 * [subcategories](topic/subcategories.html) (4 messages, latest: Jul 12 2021 at 22:10)
 * [complete atomic boolean algebras](topic/complete.20atomic.20boolean.20algebras.html) (29 messages, latest: Jul 12 2021 at 03:36)
@@ -451,4 +451,4 @@ permalink: /stream/229199-learning:-questions/index.html
 * [Algebra (Aluffi) exercises](topic/Algebra.20(Aluffi).20exercises.html) (55 messages, latest: Mar 27 2020 at 23:38)
 * [What is category theory about?](topic/What.20is.20category.20theory.20about.3F.html) (16 messages, latest: Mar 26 2020 at 16:03)
 
-<hr><p>Last updated: Jul 17 2021 at 00:23 UTC</p>
+<hr><p>Last updated: Jul 18 2021 at 00:24 UTC</p>
