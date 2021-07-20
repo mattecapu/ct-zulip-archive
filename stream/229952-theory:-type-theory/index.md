@@ -9,6 +9,7 @@ permalink: /stream/229952-theory:-type-theory/index.html
 
 ### Topics:
 
+* [NbG vs NbE](topic/NbG.20vs.20NbE.html) (52 messages, latest: Jul 19 2021 at 22:28)
 * [K and UIP](topic/K.20and.20UIP.html) (29 messages, latest: Jun 28 2021 at 22:24)
 * [model of univalence](topic/model.20of.20univalence.html) (48 messages, latest: Jun 28 2021 at 18:10)
 * [presenting categorical semantics](topic/presenting.20categorical.20semantics.html) (3 messages, latest: Jun 27 2021 at 21:10)
@@ -36,4 +37,4 @@ permalink: /stream/229952-theory:-type-theory/index.html
 * [W-types and CFGs](topic/W-types.20and.20CFGs.html) (11 messages, latest: Apr 02 2020 at 16:00)
 * [homotopy type theory](topic/homotopy.20type.20theory.html) (10 messages, latest: Mar 26 2020 at 23:30)
 
-<hr><p>Last updated: Jul 19 2021 at 00:24 UTC</p>
+<hr><p>Last updated: Jul 20 2021 at 00:24 UTC</p>

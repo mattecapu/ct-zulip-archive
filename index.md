@@ -38,9 +38,9 @@ permalink: /index.html
 
 * [general: positions](stream/245502-general:-positions/index.html) (28 topics)
 
-* [theory: type theory](stream/229952-theory:-type-theory/index.html) (26 topics)
+* [theory: type theory](stream/229952-theory:-type-theory/index.html) (27 topics)
 
-* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (23 topics)
+* [seminar: Topos Colloquium](stream/269484-seminar:-Topos-Colloquium/index.html) (24 topics)
 
 * [workshop: Polynomial Functors @ Topos](stream/282140-workshop:-Polynomial-Functors-@-Topos/index.html) (22 topics)
 
@@ -120,6 +120,8 @@ permalink: /index.html
 
 * [practice: industry](stream/229370-practice:-industry/index.html) (2 topics)
 
+* [practice: pedagogy](stream/295092-practice:-pedagogy/index.html) (2 topics)
+
 * [seminar: YAMCaTS](stream/275483-seminar:-YAMCaTS/index.html) (2 topics)
 
 * [theory: combinatorics](stream/229794-theory:-combinatorics/index.html) (2 topics)
@@ -132,4 +134,4 @@ permalink: /index.html
 
 * [theory: game semantics](stream/233273-theory:-game-semantics/index.html) (1 topic)
 
-<hr><p>Last updated: Jul 19 2021 at 00:24 UTC</p>
+<hr><p>Last updated: Jul 20 2021 at 00:24 UTC</p>

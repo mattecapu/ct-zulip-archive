@@ -9,7 +9,7 @@ permalink: /stream/233322-practice:-communication/index.html
 
 ### Topics:
 
-* [teaching children](topic/teaching.20children.html) (8 messages, latest: Jul 18 2021 at 13:39)
+* [teaching children](topic/teaching.20children.html) (19 messages, latest: Jul 19 2021 at 22:00)
 * [nickname for this forum](topic/nickname.20for.20this.20forum.html) (7 messages, latest: May 09 2021 at 20:21)
 * [refereeing for "general interest" journals](topic/refereeing.20for.20.22general.20interest.22.20journals.html) (33 messages, latest: Mar 28 2021 at 06:48)
 * [AlgebraicJulia blog](topic/AlgebraicJulia.20blog.html) (3 messages, latest: Sep 22 2020 at 16:58)
@@ -26,4 +26,4 @@ permalink: /stream/233322-practice:-communication/index.html
 * [going rogue: the personal math website](topic/going.20rogue.3A.20the.20personal.20math.20website.html) (1 message, latest: Apr 21 2020 at 05:12)
 * [Funding the revolution](topic/Funding.20the.20revolution.html) (6 messages, latest: Apr 16 2020 at 16:37)
 
-<hr><p>Last updated: Jul 19 2021 at 00:24 UTC</p>
+<hr><p>Last updated: Jul 20 2021 at 00:24 UTC</p>
