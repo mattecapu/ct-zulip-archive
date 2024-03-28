@@ -1,0 +1,44 @@
+[
+    {
+        "content": "<p>In the context of (virtual) equipments, one can internalize notions of representability into many different kinds of category, even beyond categories of categories, via proarrows. I'm wondering if this could be taken even further where there's some notion of \"internal enrichment\" that can work for any category, where we can define what it means for something to be \"enriched over\" some object in the general category C, which we can then call an \"enriched object internal to C\". Maybe for instance, if C = MonCat (viewed as a subcategory of BiCat on 1 object bicategories) then we get \"normal\" enriched categories; if C = BiCat then we get categories enriched in bicategories, and so on. If so, then perhaps we can use this to define a concept of \"enriched double category\" where instead of sets of horizontal or vertical arrows, we instead have objects of horizontal or vertical arrows. Or more general situations, perhaps where we can doubly enrich categories, or enrich even more exotic objects than categories. Any thoughts?</p>",
+        "id": 429421603,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1711376940
+    },
+    {
+        "content": "<p>You may find Leinster's paper <a href=\"https://arxiv.org/abs/math/9901139\">Generalized Enrichment for Categories and Multicategories</a> interesting, as it tackles similar questions to these.</p>",
+        "id": 429503389,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1711398017
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> Ah thanks! Looks like the objects that can be enriched are \"suitable\" generalized multicategories (T-multicategories) for cartesian monads.</p>",
+        "id": 429668650,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1711463640
+    },
+    {
+        "content": "<p>As a follow-up, in Dr. Shulman's  works he generalizes T-multicategories to the case of monads over virtual double categories (fc-multicategories). I'm wondering if enrichment as defined by Leinster in his paper generalizes straightforwardly to VDC type generalized multicategories, or if it only works for generalized multicategories via cartesian monads. Shulman's paper \"A Unified Framework\" in Appendix B1 discusses Leinster's paper but I'm not sure if it directly gives the answer.<br>\nSecondly, in Leinster's paper an enriched (C, T)-multicategory is given by a morphism from an object in (C', T')-Multicat of form MI(c) (for c in C) to some other object in (C', T')-Multicat. This generalizes the idea of an enriched category being a polyad, since if we take (C, T) = (Set, id) then we get that an enriched category is a virtual double functor from MI(S) to a virtual double category, with MI(S) now the VDC corresponding to the indiscrete category construction on the set S, which itself is given by I(S). Leinster states that the functor I (from Prop 1.1.2) in general acts as a generalization of this process of making indiscrete categories, so my question is if any object given by the I functor through this construction will always be seen as some form of an \"<a href=\"https://ncatlab.org/nlab/show/codiscrete+object\">indiscrete</a> object\" (in any sense of the term over at nlab) in (C, T)-Multicat. If so, then what properties would we expect of the full MI(S), and could the \"most\" general conception of \"an enriched object internal to a category\" be a morphism out of such an object in some particular setting?</p>",
+        "id": 429669062,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1711463760
+    },
+    {
+        "content": "<blockquote>\n<p>I'm wondering if enrichment as defined by Leinster in his paper generalizes straightforwardly to VDC type generalized multicategories, or if it only works for generalized multicategories via cartesian monads.</p>\n</blockquote>\n<p>I don't think this has been worked out in the literature, so it could be a good thing to think about if you're interested in it.</p>",
+        "id": 429749610,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1711491910
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> Ah, that's a bummer! Cartesian monad generalized multicategories cover a large array of cases (such as double categories and virtual double categories themselves) so Leinster's construction works well enough. Though, maybe I was a little curious about what an \"enriched topological space\" would look like, since topological spaces are generalized multicategories in Shulman's sense.</p>",
+        "id": 429768260,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1711504228
+    },
+    {
+        "content": "<p>Brandon Shapiro greatly extended the work of Leinster, perhaps you can find what you want in his thesis: <a href=\"https://pi.math.cornell.edu/~bts82/research/papers/thesis.pdf\">https://pi.math.cornell.edu/~bts82/research/papers/thesis.pdf</a></p>",
+        "id": 429822585,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1711533733
+    }
+]

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Enriched Objects · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Enriched.20Objects.html">Enriched Objects</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="429421603"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Enriched%20Objects/near/429421603" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Enriched.20Objects.html#429421603">(Mar 25 2024 at 14:29)</a>:</h4>
+<p>In the context of (virtual) equipments, one can internalize notions of representability into many different kinds of category, even beyond categories of categories, via proarrows. I'm wondering if this could be taken even further where there's some notion of "internal enrichment" that can work for any category, where we can define what it means for something to be "enriched over" some object in the general category C, which we can then call an "enriched object internal to C". Maybe for instance, if C = MonCat (viewed as a subcategory of BiCat on 1 object bicategories) then we get "normal" enriched categories; if C = BiCat then we get categories enriched in bicategories, and so on. If so, then perhaps we can use this to define a concept of "enriched double category" where instead of sets of horizontal or vertical arrows, we instead have objects of horizontal or vertical arrows. Or more general situations, perhaps where we can doubly enrich categories, or enrich even more exotic objects than categories. Any thoughts?</p>
+
+
+
+<a name="429503389"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Enriched%20Objects/near/429503389" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Enriched.20Objects.html#429503389">(Mar 25 2024 at 20:20)</a>:</h4>
+<p>You may find Leinster's paper <a href="https://arxiv.org/abs/math/9901139">Generalized Enrichment for Categories and Multicategories</a> interesting, as it tackles similar questions to these.</p>
+
+
+
+<a name="429668650"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Enriched%20Objects/near/429668650" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Enriched.20Objects.html#429668650">(Mar 26 2024 at 14:34)</a>:</h4>
+<p><span class="user-mention" data-user-id="276092">@Nathanael Arkor</span> Ah thanks! Looks like the objects that can be enriched are "suitable" generalized multicategories (T-multicategories) for cartesian monads.</p>
+
+
+
+<a name="429669062"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Enriched%20Objects/near/429669062" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Enriched.20Objects.html#429669062">(Mar 26 2024 at 14:36)</a>:</h4>
+<p>As a follow-up, in Dr. Shulman's  works he generalizes T-multicategories to the case of monads over virtual double categories (fc-multicategories). I'm wondering if enrichment as defined by Leinster in his paper generalizes straightforwardly to VDC type generalized multicategories, or if it only works for generalized multicategories via cartesian monads. Shulman's paper "A Unified Framework" in Appendix B1 discusses Leinster's paper but I'm not sure if it directly gives the answer.<br>
+Secondly, in Leinster's paper an enriched (C, T)-multicategory is given by a morphism from an object in (C', T')-Multicat of form MI(c) (for c in C) to some other object in (C', T')-Multicat. This generalizes the idea of an enriched category being a polyad, since if we take (C, T) = (Set, id) then we get that an enriched category is a virtual double functor from MI(S) to a virtual double category, with MI(S) now the VDC corresponding to the indiscrete category construction on the set S, which itself is given by I(S). Leinster states that the functor I (from Prop 1.1.2) in general acts as a generalization of this process of making indiscrete categories, so my question is if any object given by the I functor through this construction will always be seen as some form of an "<a href="https://ncatlab.org/nlab/show/codiscrete+object">indiscrete</a> object" (in any sense of the term over at nlab) in (C, T)-Multicat. If so, then what properties would we expect of the full MI(S), and could the "most" general conception of "an enriched object internal to a category" be a morphism out of such an object in some particular setting?</p>
+
+
+
+<a name="429749610"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Enriched%20Objects/near/429749610" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Enriched.20Objects.html#429749610">(Mar 26 2024 at 22:25)</a>:</h4>
+<blockquote>
+<p>I'm wondering if enrichment as defined by Leinster in his paper generalizes straightforwardly to VDC type generalized multicategories, or if it only works for generalized multicategories via cartesian monads.</p>
+</blockquote>
+<p>I don't think this has been worked out in the literature, so it could be a good thing to think about if you're interested in it.</p>
+
+
+
+<a name="429768260"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Enriched%20Objects/near/429768260" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Enriched.20Objects.html#429768260">(Mar 27 2024 at 01:50)</a>:</h4>
+<p><span class="user-mention" data-user-id="276092">@Nathanael Arkor</span> Ah, that's a bummer! Cartesian monad generalized multicategories cover a large array of cases (such as double categories and virtual double categories themselves) so Leinster's construction works well enough. Though, maybe I was a little curious about what an "enriched topological space" would look like, since topological spaces are generalized multicategories in Shulman's sense.</p>
+
+
+
+<a name="429822585"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Enriched%20Objects/near/429822585" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Enriched.20Objects.html#429822585">(Mar 27 2024 at 10:02)</a>:</h4>
+<p>Brandon Shapiro greatly extended the work of Leinster, perhaps you can find what you want in his thesis: <a href="https://pi.math.cornell.edu/~bts82/research/papers/thesis.pdf">https://pi.math.cornell.edu/~bts82/research/papers/thesis.pdf</a></p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Mar 28 2024 at 12:08 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>
