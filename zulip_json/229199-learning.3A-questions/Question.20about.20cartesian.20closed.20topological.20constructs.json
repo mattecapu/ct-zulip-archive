@@ -1,0 +1,134 @@
+[
+    {
+        "content": "<p>According to exercise 27D.(d) of \"The Joy of Cats\", a concretely cartesian closed topological construct (A, U) with function spaces is isomorphic to Set. Thus, it seems like categories like Conv (of convergence spaces and continuous functions) are isomorphic to Set? Could this exercise be a mistake?</p>",
+        "id": 422594873,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1708514261
+    },
+    {
+        "content": "<p>I'm not familiar enough with the terms in Joy of Cats to know what everything means in that question. What's the definition of \"topological construct\"? And does \"concretely\" modify \"cartesian closed\" or is is just referring to a category that is both concrete and cartesian closed?</p>",
+        "id": 422625777,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1708524605
+    },
+    {
+        "content": "<p>A topogical construct is a pair (A, U) where A is category and U : A → Set is a topological functor.</p>",
+        "id": 422625966,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1708524667
+    },
+    {
+        "content": "<p>\"concretely cartesian closed\" means that the functor U : A → Set preserves cartesian closedness.</p>",
+        "id": 422626272,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1708524749
+    },
+    {
+        "content": "<p>For cartesian closed constructs, \"has function spaces\" basically means that constant functions in Set are always A-morphisms.</p>",
+        "id": 422627124,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1708524992
+    },
+    {
+        "content": "<p>Does that mean that if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mi>U</mi><mo stretchy=\"false\">(</mo><mi>X</mi><mo stretchy=\"false\">)</mo><mo>→</mo><mi>U</mi><mo stretchy=\"false\">(</mo><mi>Y</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">f:U(X) \\to U(Y)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span><span class=\"mclose\">)</span></span></span></span> factors through the terminal object then it is in the image of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi></mrow><annotation encoding=\"application/x-tex\">U</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span></span></span></span>?</p>",
+        "id": 422627471,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1708525096
+    },
+    {
+        "content": "<p>For a cartesian closed topological construct, it says:</p>\n<blockquote>\n<p>(A, U) has function spaces if and only if A × T* → A is an isomorphism for each A-object A.</p>\n</blockquote>\n<p>Here, T is the terminal object and T* is the terminal object equipped with the discrete structure.</p>",
+        "id": 422628284,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1708525335
+    },
+    {
+        "content": "<p>Is Conv cartesian closed?</p>",
+        "id": 422629684,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1708525754
+    },
+    {
+        "content": "<p>(It's not clear to me if <a href=\"https://mathoverflow.net/questions/281945/is-the-category-of-convergence-spaces-cartesian-closed\">this</a> answers my question hahaha)</p>",
+        "id": 422629947,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1708525841
+    },
+    {
+        "content": "<p>At any rate, I think the argument that the exercise is looking for is to use cartesian closedness to somehow show that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi></mrow><annotation encoding=\"application/x-tex\">U</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span></span></span></span> must be full, which means that it's full and faithful and hence a reflective and coreflective subcategory of Set, which limits the possibilities to Set itself and the degenerate category with a single object. It does seem strange to me that the exercise would say \"isomorphic to Set\", since we surely only get an equivalence here, but that's not so problematic.</p>",
+        "id": 422633669,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1708526847
+    },
+    {
+        "content": "<p>Yes, Conv is cartesian closed.</p>",
+        "id": 422637113,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1708527724
+    },
+    {
+        "content": "<p>And constant functions are always continuous in Conv.</p>",
+        "id": 422637406,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1708527811
+    },
+    {
+        "content": "<p>I am almost certain that it is also concretely cartesian closed too.</p>",
+        "id": 422638212,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1708528026
+    },
+    {
+        "content": "<p>If <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi><mo>:</mo><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">o</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">v</mi></mrow><mo>→</mo><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">U : \\mathsf{Conv} \\to \\mathsf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">Conv</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span></span></span></span> is a Cartesian closed functor, then <em>all</em> functions on the underlying sets of convergence spaces are maps of convergence spaces.  This seems unlikely to me!</p>",
+        "id": 422641918,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1708529039
+    },
+    {
+        "content": "<p>Regarding \"isomorphic\", probably their notion of topological construct is also an <a href=\"https://ncatlab.org/nlab/show/amnestic%20functor\">[[amnestic functor]]</a>.</p>",
+        "id": 422645310,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708529848
+    },
+    {
+        "content": "<p>Alright, I gather that Joy of Cats is rather more concerned with grounding everything in sets than the broader category theory community is. That's fine, I guess.</p>",
+        "id": 422647887,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1708530498
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"438995\">James Deikun</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Question.20about.20cartesian.20closed.20topological.20constructs/near/422641918\">said</a>:</p>\n<blockquote>\n<p>If <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi><mo>:</mo><mrow><mi mathvariant=\"sans-serif\">C</mi><mi mathvariant=\"sans-serif\">o</mi><mi mathvariant=\"sans-serif\">n</mi><mi mathvariant=\"sans-serif\">v</mi></mrow><mo>→</mo><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">U : \\mathsf{Conv} \\to \\mathsf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\" style=\"margin-right:0.01389em;\">Conv</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span></span></span></span> is a Cartesian closed functor, then <em>all</em> functions on the underlying sets of convergence spaces are maps of convergence spaces.  This seems unlikely to me!</p>\n</blockquote>\n<p>So you are saying that if C(A, B) is the exponentional object of all continuous functions from A to B, then U(C(A,B)) is not <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>B</mi><mi>A</mi></msup></mrow><annotation encoding=\"application/x-tex\">B^A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8413em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">A</span></span></span></span></span></span></span></span></span></span></span>?</p>",
+        "id": 422651776,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1708531463
+    },
+    {
+        "content": "<p>Ah, that makes sense actually. There are plenty of discontinuous functions after all.</p>",
+        "id": 422652240,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1708531577
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Question.20about.20cartesian.20closed.20topological.20constructs/near/422645310\">said</a>:</p>\n<blockquote>\n<p>Regarding \"isomorphic\", probably their notion of topological construct is also an <a href=\"https://ncatlab.org/nlab/show/amnestic%20functor\">[[amnestic functor]]</a>.</p>\n</blockquote>\n<p>Yes, topological functors are amnestic.</p>",
+        "id": 422654296,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1708532019
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Question.20about.20cartesian.20closed.20topological.20constructs/near/422647887\">said</a>:</p>\n<blockquote>\n<p>Alright, I gather that Joy of Cats is rather more concerned with grounding everything in sets than the broader category theory community is. That's fine, I guess.</p>\n</blockquote>\n<p>Yes. The foundations of Joy of Cats relies on sets, classes and \"conglomerates\".</p>",
+        "id": 422654726,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1708532111
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"575698\">Bernd Losert</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Question.20about.20cartesian.20closed.20topological.20constructs/near/422654296\">said</a>:</p>\n<blockquote>\n<p>Yes, topological functors are amnestic.</p>\n</blockquote>\n<p>(According to Joy of Cats.)</p>",
+        "id": 422655105,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708532190
+    },
+    {
+        "content": "<p>Suppose you have two cartesian-closed categories (A, U) an (B, V) over some base category X that is also cartesian-closed. Under what conditions is the pullback or pseudopullback of U and V also cartesian closed?</p>\n<p>I am particularly interested in the case where (A, U) and (B, V) are well-fibered topological constructs. Acording to Joy of Cats, it's enough to prove that for any object m in the pullback, the functor m × - preserves colimits. Here's my attempt at proving this: Let c be a colimit in the pullback category C. Then Wc is also a colimit in X = Set, where W is the forgetful functor C → Set. Since  Set is cartesian closed, Wm × Wc ≅ W(m × c) is a colimit in Set, and since W is topological, we can lift it to a colimit c' in C. Now I somehow need to argue that c' and m × c are isomorphic, but I can't think of any argument here.</p>",
+        "id": 425201940,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1709770344
+    }
+]
