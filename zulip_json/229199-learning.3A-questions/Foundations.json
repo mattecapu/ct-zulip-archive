@@ -1,0 +1,452 @@
+[
+    {
+        "content": "<p>I've been learning CT from Awodey's book, and if I understand correctly, the foundations that are being used there are set theory (To be very precise, ZFC + there is a model of ZFC). In this case, the category Sets has as objects the sets contained in the model. <br>\nI also think that it's possible to use other Set theories, maybe like ETCS. I'm not sure how you'd handle the category <code>Set</code> in this case, but I am assuming that you'd make a similar axiom ( \"there is a category of Sets\")?<br>\nHowever, people ask talk about CT as foundations.. I'm not sure what this is? Are people talking about a formal system for the category of all categories?</p>",
+        "id": 445885831,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1718898744
+    },
+    {
+        "content": "<p>If you want to encode all of mathematics in the same language, the classical way of doing it is to use first order logic + axiomatic set theory, like ZFC.</p>\n<p>Then you can encode category theory in this kind of language. But you need a richer axiomatic set theory because of size issues.</p>\n<p>The approaches using category theory directly in the foundations are based on type theory. They follow the constructivist trend in the foundations on mathematics. These logical systems are also foundations for computer science at the same time. Type theories are linked to category theory in the sense that you can interpret the proofs = programs = morphisms that they encode in some kind of categorical structures.</p>\n<p>An important point is that you can do mathematics without encoding it in a formal logical system and it works pretty well (without being absolutely perfect). In this sense, I don't think Awodey was thinking whether he's working with ZFC or something else in his book. He's  explaining category theory without formal foundations, as is done most of the time.</p>",
+        "id": 445890347,
+        "sender_full_name": "Jean-Baptiste Vienney",
+        "timestamp": 1718900052
+    },
+    {
+        "content": "<p>As Jean-Baptitse said, Awodey mostly just uses naive set theory, which is to say he assumes you know what a set is \"more or less\", defines functions between them, and moves on to the stuff he wants to talk about.  (Most math is this way.)</p>\n<p>If you want to see category theory and ETCS developed in parallel, one axiom at a time, without being unreadably formal, Lawvere &amp; Roseburgh's <a href=\"https://www.amazon.com/Sets-Mathematics-F-William-Lawvere/dp/0521010608/\">Sets for Mathematics</a> is what I personally like.  It starts out deceptively basic, but by the end you have learned ETCS, category theory at about the level of Awodey, and are then learning topos theory, with a clear sense of exactly how generalized elements are different than elements in set, etc.</p>",
+        "id": 445891115,
+        "sender_full_name": "Eric M Downes",
+        "timestamp": 1718900237
+    },
+    {
+        "content": "<p>(My only warning is that they use some non-standard syntax concerning quantifiers; <br>\n<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∀</mi><mo stretchy=\"false\">[</mo><mi>x</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>B</mi><mo separator=\"true\">,</mo><mtext> </mtext><mi>f</mi><mo separator=\"true\">,</mo><mi>g</mi><mo>:</mo><mi>B</mi><mo>→</mo><mi>C</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>x</mi><mo>∘</mo><mi>f</mi><mo>=</mo><mi>x</mi><mo>∘</mo><mi>g</mi><mo stretchy=\"false\">]</mo><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>f</mi><mo>=</mo><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">\\forall[x:A\\to B, ~f,g:B\\to C\\implies x\\circ f= x\\circ g]\\implies f=g</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">∀</span><span class=\"mopen\">[</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mpunct\">,</span><span class=\"mspace nobreak\"> </span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7073em;vertical-align:-0.024em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⟹</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4445em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4445em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⟹</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span> instead of something like<br>\n<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∀</mi><mi>x</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>B</mi><mo separator=\"true\">,</mo><mtext> </mtext><mi>f</mi><mo separator=\"true\">,</mo><mi>g</mi><mo>:</mo><mi>B</mi><mo>→</mo><mi>C</mi><mo separator=\"true\">;</mo><mtext>  </mtext><mi>x</mi><mo>∘</mo><mi>f</mi><mo>=</mo><mi>x</mi><mo>∘</mo><mi>g</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>f</mi><mo>=</mo><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">\\forall x:A\\to B, ~f,g:B\\to C;~~x\\circ f=x\\circ g\\implies f=g</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">∀</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mpunct\">,</span><span class=\"mspace nobreak\"> </span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mpunct\">;</span><span class=\"mspace nobreak\"> </span><span class=\"mspace nobreak\"> </span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4445em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7194em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⟹</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span> (more \"standard\")</p>\n<p>If it makes sense to you, no problem!  If however you find yourself scratching your head, especially when you go to distribute <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">¬</mi></mrow><annotation encoding=\"application/x-tex\">\\lnot</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">¬</span></span></span></span> over quantifiers, an excellent and free resource for basic logic and set theory that uses more standard notation is <a href=\"https://infinitedescent.xyz\">Clive Newstead's book</a>; once you understand how to negate existential quantifiers and the like, which you can learn from the relevant sections in Newstead in about a week, I expect you'll find you can figure out what L&amp;R mean.</p>",
+        "id": 445893362,
+        "sender_full_name": "Eric M Downes",
+        "timestamp": 1718900953
+    },
+    {
+        "content": "<p>Thanks a lot for your responses..</p>\n<p><span class=\"user-mention silent\" data-user-id=\"428716\">Jean-Baptiste Vienney</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/445890347\">said</a>:</p>\n<blockquote>\n<p>The approaches using category theory directly in the foundations are based on type theory. They follow the constructivist trend in the foundations on mathematics. These logical systems are also foundations for computer science at the same time. Type theories are linked to category theory in the sense that you can interpret the proofs = programs = morphisms that they encode in some kind of categorical structures.</p>\n</blockquote>\n<p>So do you think it's better to say that type theory, as opposed to category theory is an alternative foundation for math?</p>",
+        "id": 445897591,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1718901727
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"726654\">@Suraaj K S</span> Also, to answer some of your precise questions, in the ETCS case, Set is as much only meta or only informal as in the ZFC case <em>without a self-model</em>: it is there only the ambient universe, as you guessed: it’s just that in the ETCS case, which is a structural set theory based on the axiomatic theory of a category itself, it is more straightforward.</p>\n<p>As for CT as a foundation, yes a structural theory of the category of categories was tried, ETCC, but even better (less evil) is Shulman’s ET2CC, since Cat is a 2-Cat!</p>",
+        "id": 445899488,
+        "sender_full_name": "Vincent R.B. Blazy",
+        "timestamp": 1718901962
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"726654\">Suraaj K S</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/445897591\">said</a>:</p>\n<blockquote>\n<p>Thanks a lot for your responses..</p>\n<p><span class=\"user-mention silent\" data-user-id=\"428716\">Jean-Baptiste Vienney</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/445890347\">said</a>:</p>\n<blockquote>\n<p>The approaches using category theory directly in the foundations are based on type theory. They follow the constructivist trend in the foundations on mathematics. These logical systems are also foundations for computer science at the same time. Type theories are linked to category theory in the sense that you can interpret the proofs = programs = morphisms that they encode in some kind of categorical structures.</p>\n</blockquote>\n<p>So do you think it's better to say that type theory, as opposed to category theory is an alternative foundation for math?</p>\n</blockquote>\n<p>I think type theory as a foundation is much more common and well-known that category theory as a foundation, but cf. what <span class=\"user-mention\" data-user-id=\"492072\">@Vincent R.B. Blazy</span> just said.</p>",
+        "id": 445901574,
+        "sender_full_name": "Jean-Baptiste Vienney",
+        "timestamp": 1718902223
+    },
+    {
+        "content": "<p>Thanks for your responses. I have a small follow-up question.<br>\nWhen we say type-theory as foundations, will something like Martin Lof Type theory suffice?</p>\n<p>I ask because I keep hearing that Homotopy Type theory can be the new foundation of mathematics. However, people seem to prove almost all math theorems in Coq / Agda / Lean just fine...</p>",
+        "id": 446746629,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1719275154
+    },
+    {
+        "content": "<p>Martin-Lof type theory is a common sub-system of Coq, Lean, Agda, and Homotopy Type Theory.</p>\n<p>Coq and Agda are compatible with homotopy type theory. In Coq this is done adding an extra axiom to the system called the univalence axiom, in Agda there is a compiler flag <code>--cubical</code> which turns on homotopy type theory features. Lean 3 was compatible with homotopy type theory, Lean 4 is not.</p>\n<p>You can prove a lot of interesting math without the univalence axiom, just like you can prove a lot of math working constructively without the law of excluded middle or the Axiom of Choice. Some people assume the law of excluded middle because it squares nicely with their mental model of the universe of discourse of mathematics (whether they have one or many.) Similarly some people assume the univalence axiom for the exact same reason.</p>",
+        "id": 446767950,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1719286117
+    },
+    {
+        "content": "<p>Honestly, the vast majority of mathematics can be proved in a weak subsystem of second order arithmetic. You might even say, do we really need Coq?</p>\n<p>People who want to prove theorems in homotopy type theory are interested in the world that is described by the axioms of homotopy type theory. It's not really important for you or me to have an opinion on whether \"homotopy theory will be the next foundation of mathematics\". The important thing here is whether you are interested in the world described by the homotopy type theory axioms.</p>",
+        "id": 446768396,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1719286358
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"424412\">Patrick Nicodemus</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/446767950\">said</a>:</p>\n<blockquote>\n<p>Lean 3 was compatible with homotopy type theory, Lean 4 is not.</p>\n</blockquote>\n<p>Lean 2 was the one compatible with homotopy type theory.</p>",
+        "id": 446784707,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1719294928
+    },
+    {
+        "content": "<p>What happened to make Lean incompatible with homotopy type theory?   Or what <em>didn't</em> happen that would have made it <em>stay</em> compatible?</p>",
+        "id": 446809399,
+        "sender_full_name": "John Baez",
+        "timestamp": 1719303805
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/446809399\">said</a>:</p>\n<blockquote>\n<p>What happened to make Lean incompatible with homotopy type theory?   Or what <em>didn't</em> happen that would have made it <em>stay</em> compatible?</p>\n</blockquote>\n<p>The lean developpers decided to gear the development of their proof assistant towards more classically flavoured mathematics. To do so, they introduced a type (universe) <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">P</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{P}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">P</span></span></span></span> of (definitionally) proof-irrelevant propositions, meaning that two proofs <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo separator=\"true\">,</mo><mi>q</mi><mo>:</mo><mi>P</mi></mrow><annotation encoding=\"application/x-tex\">p,q : P</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">q</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span></span></span></span> of a proposition <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>:</mo><mi mathvariant=\"double-struck\">P</mi></mrow><annotation encoding=\"application/x-tex\">P : \\mathbb{P}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">P</span></span></span></span> are identified <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo>≡</mo><mi>q</mi><mo>:</mo><mi>P</mi></mrow><annotation encoding=\"application/x-tex\">p \\equiv q : P</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6582em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≡</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">q</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span></span></span></span>,  and declared that identity types are always propositions <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">d</mi></mrow><mtext> </mtext><mi>A</mi><mtext> </mtext><mi>x</mi><mtext> </mtext><mi>y</mi><mtext> </mtext><mo>:</mo><mtext> </mtext><mi mathvariant=\"double-struck\">P</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Id}~A~x~y~:~\\mathbb{P}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Id</span></span><span class=\"mspace nobreak\"> </span><span class=\"mord mathnormal\">A</span><span class=\"mspace nobreak\"> </span><span class=\"mord mathnormal\">x</span><span class=\"mspace nobreak\"> </span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace nobreak\"> </span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace nobreak\"> </span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathbb\">P</span></span></span></span> (so any two proof of equality are conflated by definition), together with a substitution principle (or dependent eliminator) <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>J</mi></mrow><annotation encoding=\"application/x-tex\">J</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.09618em;\">J</span></span></span></span> whose type is (a more complex version of)</p>\n<p><span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">∀</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo>:</mo><mrow><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">y</mi><mi mathvariant=\"normal\">p</mi><mi mathvariant=\"normal\">e</mi></mrow><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>x</mi><mo>:</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>B</mi><mo>:</mo><mi>A</mi><mo>→</mo><mrow><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">y</mi><mi mathvariant=\"normal\">p</mi><mi mathvariant=\"normal\">e</mi></mrow><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>y</mi><mo>:</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>e</mi><mi>q</mi><mo>:</mo><mrow><mi mathvariant=\"normal\">I</mi><mi mathvariant=\"normal\">d</mi></mrow><mtext> </mtext><mi>A</mi><mtext> </mtext><mi>x</mi><mtext> </mtext><mi>y</mi><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mtext> </mtext><mi>B</mi><mtext> </mtext><mi>x</mi><mo>→</mo><mi>B</mi><mtext> </mtext><mi>y</mi><mi mathvariant=\"normal\">.</mi></mrow><annotation encoding=\"application/x-tex\">\\forall (A : \\mathrm{Type})(x : A)(B : A \\to \\mathrm{Type}) (y : A)(eq : \\mathrm{Id}~A~x~y), ~B\\,x \\to B\\,y.</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">∀</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Type</span></span><span class=\"mclose\">)</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mclose\">)</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Type</span></span><span class=\"mclose\">)</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mclose\">)</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">q</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Id</span></span><span class=\"mspace nobreak\"> </span><span class=\"mord mathnormal\">A</span><span class=\"mspace nobreak\"> </span><span class=\"mord mathnormal\">x</span><span class=\"mspace nobreak\"> </span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace nobreak\"> </span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mord\">.</span></span></span></span></span></p>\n<p>Since this substitution principle can eliminate into arbitrary type families (the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> can be Type-valued at any universe level), one can show that any other identity type (even non-propositional) in the theory with a similar elimination principle will be isomorphic to the one we started with, and two proofs of identity for this new type will also be identified, contradicting univalence (and HoTT).</p>",
+        "id": 446816996,
+        "sender_full_name": "Kenji Maillard",
+        "timestamp": 1719305836
+    },
+    {
+        "content": "<p>So lean (versions 3 and 4) cannot be realistically used for Homotopy type theory, but on the other hand its theory is much closer to what one can find in the internal language of a topos for instance, and the definitional proof irrelevance can be really useful in practice.</p>",
+        "id": 446818264,
+        "sender_full_name": "Kenji Maillard",
+        "timestamp": 1719306152
+    },
+    {
+        "content": "<p>Thanks for the explanation!</p>",
+        "id": 446825754,
+        "sender_full_name": "John Baez",
+        "timestamp": 1719307757
+    },
+    {
+        "content": "<p>I was wondering about the following question:<br>\nIt seems to me that traditionally, people seem to use ZFC + Grothendieck universes as their 'ambient' mathematical foundation, and CT as a language / framework on top of this.</p>\n<p>And these foundations are 'classical'. I was wondering if it is possible to use some kind of constructive foundation? Do a lot of things change?</p>",
+        "id": 454374078,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1722028254
+    },
+    {
+        "content": "<p>Some things change significantly, while other things stay the same. </p>\n<p>Think about the real numbers for a second. In classical mathematics one can prove trichotomy for the real numbers; i.e. that for all real numbers <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">x &gt; y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">&gt;</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span> or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">x = y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span> or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">x &lt; y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">&lt;</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span>. However, in constructive mathematics one cannot prove this for all real numbers. This has to be assumed as a separate axiom, called the <a href=\"https://ncatlab.org/nlab/show/analytic%20limited%20principle%20of%20omniscience\">[[analytic limited principle of omniscience]]</a> in constructive analysis. Not to mention that there are multiple notions of real numbers which are equivalent in classical mathematics but cannot be proven to coincide in constructive mathematics. </p>\n<p>Similarly, in classical mathematics, one can prove that ordinals satisfy trichotomy. However, in constructive ordinal theory, one cannot prove trichotomy for all ordinals, and that trichotomy holds for all ordinals is equivalent to excluded middle if I remember correctly. Not to mention that there are multiple notions of ordinals which are equivalent in classical mathematics but cannot be proven to coincide in constructive mathematics. </p>\n<p>On the other hand, most basic facts about elementary number theory and algebra and category theory are constructive and so remain the same in classical foundations and in constructive foundations.</p>",
+        "id": 454375729,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1722029177
+    },
+    {
+        "content": "<blockquote>\n<p>I was wondering if it is possible to use some kind of constructive foundation?</p>\n</blockquote>\n<p>Madeleine answered this implicitly, but in case you were still wondering: <em>yes!</em>  Many people do, and many people here are know a lot about this.    (Not me.)</p>",
+        "id": 454467575,
+        "sender_full_name": "John Baez",
+        "timestamp": 1722082850
+    },
+    {
+        "content": "<p>Thanks for your responses!</p>\n<p>I'm a little curious about the following fact - Suppose we use a constructive variant of ZFC (+ universes) as our foundational metalogic, and use CT as a language / framework on top. Can we have both: the category of constructive Sets, and the category of classical Sets, which are distinct?</p>\n<p>Perhaps what I am just asking is whether we can have a model of classical set theory in a constructive metalogic....</p>",
+        "id": 454649795,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1722191788
+    },
+    {
+        "content": "<p>I'm no expert, but from what I've heard the answers are yes, and yes.</p>",
+        "id": 454769246,
+        "sender_full_name": "John Baez",
+        "timestamp": 1722243895
+    },
+    {
+        "content": "<p>Note however that using CT as your framework doesn't commit you to working constructively: you can use category theory constructively or classically (and it's not just a binary choice).</p>",
+        "id": 454774203,
+        "sender_full_name": "John Baez",
+        "timestamp": 1722245074
+    },
+    {
+        "content": "<p>So your second question is different from the first.</p>",
+        "id": 454774690,
+        "sender_full_name": "John Baez",
+        "timestamp": 1722245184
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> , thanks a lot for your response! <br>\n<span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/454774203\">said</a>:</p>\n<blockquote>\n<p>You can use category theory constructively or classically (and it's not just a binary choice).</p>\n</blockquote>\n<p>I was wondering it means to 'use CT constructively or classically'? Where can I learn more about this?</p>",
+        "id": 454908662,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1722276315
+    },
+    {
+        "content": "<p>An expert would be better at references.  But many sorts of mathematics can be done either classically or constructively.    So suppose you are trying to study set theory in a categorical framework - or as you put it, \"use CT as a language / framework on top\".   There are many ways to do this.  But here's one aspect: you can do it  classically (where you assume the law of excluded middle and the axiom of choice) or constructively (where you don't, and any existence proof gives an actual construction of the entity whose existence is proved).</p>",
+        "id": 454938736,
+        "sender_full_name": "John Baez",
+        "timestamp": 1722284276
+    },
+    {
+        "content": "<p>You can also not assume full excluded middle or the axiom of choice, just merely enough axioms to do whatever specific sort of mathematics classically but where everything else is still constructive.</p>",
+        "id": 454939844,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1722284554
+    },
+    {
+        "content": "<p>for example, the <a href=\"https://ncatlab.org/nlab/show/limited%20principle%20of%20omniscience\">[[limited principle of omniscience]]</a> + <a href=\"https://ncatlab.org/nlab/show/countable%20choice\">[[countable choice]]</a> for real analysis.</p>",
+        "id": 454940419,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1722284713
+    },
+    {
+        "content": "<p>I think Suraaj wants to know where they can learn basic stuff about, say \"studying classical set theory in a constructive metalogic formulated using categories\".   I don't know who has written about that!</p>",
+        "id": 454940852,
+        "sender_full_name": "John Baez",
+        "timestamp": 1722284826
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/454940852\">said</a>:</p>\n<blockquote>\n<p>I think Suraaj wants to know where they can learn basic stuff about, say \"studying classical set theory in a constructive metalogic formulated using categories\".   I don't know who has written about that!</p>\n</blockquote>\n<p>Mike Shulman presents various classical set theories using constructive logic in <a href=\"https://arxiv.org/abs/1808.05204\">https://arxiv.org/abs/1808.05204</a>. I don't see how the metalogic being formulated using categories vs some other framework is relevant here.</p>",
+        "id": 454942048,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1722285124
+    },
+    {
+        "content": "<p>The relevance is that Suraaj wants to learn about studying set theory in a category-based framework.  Luckily, the paper you pointed us to does just that.</p>",
+        "id": 454951589,
+        "sender_full_name": "John Baez",
+        "timestamp": 1722287728
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/454951589\">said</a>:</p>\n<blockquote>\n<p>The relevance is that Suraaj wants to learn about studying set theory in a category-based framework. </p>\n</blockquote>\n<p>Okay, but that category-based framework doesn't really occur at the level of the metalogic, but at the level of the set theory itself.</p>",
+        "id": 454953223,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1722288336
+    },
+    {
+        "content": "<p>Okay, thanks.    So, <span class=\"user-mention\" data-user-id=\"726654\">@Suraaj K S</span>, here's what I think is going on in Shulman's paper.  It's studying various axioms for both classical and constructive set theory, which are all phrased in the language of intuitionistic first-order logic, and comparing the resulting categories of sets.  As far as I can tell, the comparison is being done in a constructive metatheory.</p>",
+        "id": 454954872,
+        "sender_full_name": "John Baez",
+        "timestamp": 1722288930
+    },
+    {
+        "content": "<p>I just want to point out Colin McLarty's talk \"Why is so much Category Theory Constructive?\" <a href=\"https://www.youtube.com/watch?v=5JlrauplT4k\">https://www.youtube.com/watch?v=5JlrauplT4k</a> I don't have a lot to add, it might spark some useful ideas.</p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"5JlrauplT4k\" href=\"https://www.youtube.com/watch?v=5JlrauplT4k\"><img src=\"https://uploads.zulipusercontent.net/15060bef0227ccc61137db9b7fd103311a8600d6/68747470733a2f2f692e7974696d672e636f6d2f76692f354a6c726175706c54346b2f64656661756c742e6a7067\"></a></div>",
+        "id": 454983088,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1722300277
+    },
+    {
+        "content": "<p>It's been a while, and thanks everyone for their time and answers. </p>\n<p>Is it fair to say, in some sense, that it does not matter whether your foundational metalogic is classical / constructive? It seems to me that we could study classical sets in both cases (we have categories that satisfy axioms of classical set theory), and constructive sets in both cases, and several other 'intermediate' theories too! Maybe what I am saying is that we could totally have whatever fancy internal logic / type theory we want, irrespective of what foundations we are using...</p>\n<p>Moreover, one could argue that constructive logics are more useful than classical logics (which is true, I think, because we can extract more useful things from proofs), and thus advocate to always use a constructive metalogic?</p>",
+        "id": 461977982,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1723506238
+    },
+    {
+        "content": "<blockquote>\n<p>Is it fair to say, in some sense, that it does not matter whether your foundational metalogic is classical / constructive?</p>\n</blockquote>\n<p>It certainly <em>matters</em>, because there are differences between the two approaches.</p>\n<blockquote>\n<p>Moreover, one could argue that constructive logics are more useful than classical logics (which is true, I think, because we can extract more useful things from proofs).</p>\n</blockquote>\n<p>Here's one way in which it matters.</p>",
+        "id": 462047519,
+        "sender_full_name": "John Baez",
+        "timestamp": 1723536352
+    },
+    {
+        "content": "<p>Isabelle/HOL can be thought of as a foundation for math.<br>\nCoq can be thought of as a foundation for math.<br>\nSet Theory (Metamath0, etc.) can be thought as a foundation of math as well.</p>\n<p>And I think that the way one establishes the 'equivalence' of these foundations is by 'constructing models' of one foundation in another (whatever that means).</p>\n<p>And IIRC, it is possible to construct models of foundations in foundations (I'm thinking of papers like 'Sets in Types, Types in Sets'). </p>\n<p>I'm guessing that we could construct models of Isabelle/HOL in Coq and vice versa (maybe with some axioms). </p>\n<p>What I am curious about is the following: People say that you can 'almost always' prove everything you could in coq, in Isabelle/HOL, but the proof will be harder.</p>\n<p>What I'm curious about is the 'almost always' part... I'm guessing that if you can construct a model (whatever that means), then it should be just 'always'...</p>\n<p>I'm curious where my gap in understanding is?</p>",
+        "id": 471964540,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1726943617
+    },
+    {
+        "content": "<p>I'm not an expert on HOL, but does it have analogue of universes?</p>",
+        "id": 471969709,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1726948253
+    },
+    {
+        "content": "<p>I don't know anything about this stuff, but I assume Mike is hinting that if HOL doesn't have <a href=\"https://en.wikipedia.org/wiki/Grothendieck_universe\">universes</a> there are things you can't state (much less prove) in HOL that you can prove in systems that have universes.</p>",
+        "id": 471972140,
+        "sender_full_name": "John Baez",
+        "timestamp": 1726950305
+    },
+    {
+        "content": "<p>Looking up HOL, I see an <a href=\"https://sigma.yildiz.edu.tr/storage/upload/pdfs/1635927463-en.pdf\">introduction to HOL4</a> that describes it as handling higher-order logic but not set theory at all.   Then I see <a href=\"https://link.springer.com/article/10.1007/s10817-023-09663-5\">an article</a> that says:</p>\n<blockquote>\n<p>Among the various foundations for formal proofs, set theory on top of higher-order logic has been tried a number of times in systems such as HOLZF [<a href=\"https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR42\">42</a>], ProofPeer [<a href=\"https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR43\">43</a>], Egal [<a href=\"https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR10\">10</a>], and Isabelle/Mizar [<a href=\"https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR28\">28</a>]. This foundation is attractive for formalization, as it offers a natural mathematical foundation combined with the automation present in HOL.</p>\n</blockquote>\n<blockquote>\n<p>The formal proof libraries of Isabelle/HOL [<a href=\"https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR55\">55</a>] and that of Mizar [<a href=\"https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR4\">4</a>, <a href=\"https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR16\">16</a>] are among the largest proof libraries in existence today. Indeed, the HOL library together with the Archive of Formal Proofs consist of more than 100,000 theorems [<a href=\"https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR6\">6</a>], while the Mizar Mathematical Library (MML) contains 59,000 theorems. Furthermore, the results contained in the libraries are incomparable: Almost all of the Mizar library concerns itself with mathematics, while the majority of the Isabelle/AFP library are results closer to computer science [<a href=\"https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR6\">6</a>]. For example, the Mizar library includes results about lattice theory [<a href=\"https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR9\">9</a>], topology, and manifolds [<a href=\"https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR46\">46</a>] not present in the Isabelle library, while the Isabelle library has many results related to algorithms not in the MML [<a href=\"https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR13\">13</a>, <a href=\"https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR36\">36</a>, <a href=\"https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR37\">37</a>].</p>\n</blockquote>\n<blockquote>\n<p>In our previous work [<a href=\"https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR7\">7</a>], we have presented a model of higher-order Tarski–Grothendieck, which justifies the use of higher-order logic formalizations with set theory-based ones simultaneously. This model will allow us to combine the results present in these two major Isabelle libraries.</p>\n</blockquote>",
+        "id": 471972314,
+        "sender_full_name": "John Baez",
+        "timestamp": 1726950451
+    },
+    {
+        "content": "<p>I don't know what \"higher-order Tarski–Grothendieck\" is.  It looks like to develop set theory on top of HOL4 people use other systems, most notably Isabelle or Mizar.  But I don't know anything about those.</p>\n<p>I now see <a href=\"https://link.springer.com/article/10.1007/s10817-023-09663-5\">the article I pointed to</a> has information about all these things.</p>",
+        "id": 471972459,
+        "sender_full_name": "John Baez",
+        "timestamp": 1726950584
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/471972140\">said</a>:</p>\n<blockquote>\n<p>I assume Mike is hinting that if HOL doesn't have <a href=\"https://en.wikipedia.org/wiki/Grothendieck_universe\">universes</a> there are things you can't state (much less prove) in HOL that you can prove in systems that have universes.</p>\n</blockquote>\n<p>I see. I'm definitely know nothing about all this stuff... However, I'm curious about the following question then - If Isabelle/HOL doesn't have universes, is it safe to say that you cannot construct a model of Coq (which does have universes) in it?</p>",
+        "id": 471977001,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1726954480
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/471969709\">said</a>:</p>\n<blockquote>\n<p>I'm not an expert on HOL, but does it have analogue of universes?</p>\n</blockquote>\n<p>HOL (and in particular Isabelle/HOL) does not have universes. You can posit the existence of objects coding universes as an assumption in order to prove relative statements, but I think this might be pretty messy to do in practice.</p>",
+        "id": 471978005,
+        "sender_full_name": "James E Hanson",
+        "timestamp": 1726955441
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"726654\">Suraaj K S</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/471977001\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/471972140\">said</a>:</p>\n<blockquote>\n<p>I assume Mike is hinting that if HOL doesn't have <a href=\"https://en.wikipedia.org/wiki/Grothendieck_universe\">universes</a> there are things you can't state (much less prove) in HOL that you can prove in systems that have universes.</p>\n</blockquote>\n<p>I see. I'm definitely know nothing about all this stuff... However, I'm curious about the following question then - If Isabelle/HOL doesn't have universes, is it safe to say that you cannot construct a model of Coq (which does have universes) in it?</p>\n</blockquote>\n<p>My understanding is that Coq's consistency strength is supposed to be roughly the same as that of CIC, and although the exact consistency strength of CIC is (I think) open, a lower bound is Z + <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">{</mo><mtext>“there are </mtext><mi>n</mi><mtext> Zermelo universes&quot;</mtext><mo>:</mo><mi>n</mi><mo>∈</mo><mi mathvariant=\"double-struck\">N</mi><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">\\{\\text{``there are }n\\text{ Zermelo universes&quot;} : n \\in \\mathbb{N}\\}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord text\"><span class=\"mord\">“there are </span></span><span class=\"mord mathnormal\">n</span><span class=\"mord text\"><span class=\"mord\"> Zermelo universes&quot;</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathbb\">N</span><span class=\"mclose\">}</span></span></span></span>. Isabelle/HOL's strength should be the same as Z set theory (or equivalently <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi><mtext>th</mtext></mrow><annotation encoding=\"application/x-tex\">\\omega\\text{th}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span><span class=\"mord text\"><span class=\"mord\">th</span></span></span></span></span>-order arithmetic or the theory of a Boolean topos with NNO), which is strictly weaker, so you aren't going to be able to build a model of Coq in Isabelle/HOL unconditionally.</p>",
+        "id": 471978832,
+        "sender_full_name": "James E Hanson",
+        "timestamp": 1726956228
+    },
+    {
+        "content": "<p>I recently had a conversation where someone told me that you cannot write an interpreter for Agda in Agda (or Coq in Coq), and I found that a little hard to believe. A quick google search also yielded nothing. I was wondering if the statement is true? Apparently, it is because of Godel's theorems..</p>",
+        "id": 474115358,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1727812108
+    },
+    {
+        "content": "<p>You can't write a program in Agda that will decide if Agda programs will halt (or Coq programs will halt), but you must be able to write a program in Agda that runs programs in Agda entered in a suitable manner, or it's not a computationally universal programming language - which would be utterly shocking, since most programming languages are.</p>\n<p>Did you ask your conversation partner to state Godel's theorems precisely?  <span aria-label=\"smiling imp\" class=\"emoji emoji-1f608\" role=\"img\" title=\"smiling imp\">:smiling_imp:</span></p>",
+        "id": 474122546,
+        "sender_full_name": "John Baez",
+        "timestamp": 1727814843
+    },
+    {
+        "content": "<p>Agda is not computationally universal as it is a total language—however, it’s worth saying universality has little to do with what you can actually build with the language</p>",
+        "id": 474124064,
+        "sender_full_name": "Nathan Corbyn",
+        "timestamp": 1727815415
+    },
+    {
+        "content": "<p>You can write an Agda program that checks if Agda programs halt: it always returns true, as they always halt</p>",
+        "id": 474124167,
+        "sender_full_name": "Nathan Corbyn",
+        "timestamp": 1727815448
+    },
+    {
+        "content": "<p>I guess the heart of the question is can you <strong>prove</strong> - <code>All agda programs halt</code> in Agda</p>",
+        "id": 474124496,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1727815571
+    },
+    {
+        "content": "<p>If you can, I think you can write an agda interpreter in agda</p>",
+        "id": 474124677,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1727815629
+    },
+    {
+        "content": "<p>Correct, yes: you can’t prove all Agda programs halt in Agda</p>",
+        "id": 474125021,
+        "sender_full_name": "Nathan Corbyn",
+        "timestamp": 1727815753
+    },
+    {
+        "content": "<p>In fact, there’s an ongoing project to formalise the correctness of Coq in Coq (it’s called MetaCoq) and it requires an axiom akin to “all Coq programs halt”</p>",
+        "id": 474125097,
+        "sender_full_name": "Nathan Corbyn",
+        "timestamp": 1727815792
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"460737\">Nathan Corbyn</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/474125021\">said</a>:</p>\n<blockquote>\n<p>Correct, yes: you can’t prove all Agda programs halt in Agda</p>\n</blockquote>\n<p>Okay. I was wondering if this is because of Godel's second incompleteness theorem?<br>\nThat is,  does the fact that <code>all agda programs halt</code> imply <code>agda is consistent</code>? Moreover, can you prove this implication in Agda?</p>",
+        "id": 474127606,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1727816713
+    },
+    {
+        "content": "<p>I’m not sure Gödel’s theorems apply directly (I’m not an expert at all), but I imagine it’s a similar idea.</p>",
+        "id": 474129830,
+        "sender_full_name": "Nathan Corbyn",
+        "timestamp": 1727817673
+    },
+    {
+        "content": "<p>The fact that all closed Agda programs halt at a value means that there are no closed programs of type <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span>, because there are no values of type <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span>. (How consistency is defined.)</p>",
+        "id": 474129887,
+        "sender_full_name": "Nathan Corbyn",
+        "timestamp": 1727817702
+    },
+    {
+        "content": "<p>I’ve no idea if anyone has proven this implication in Agda for the case of Agda but you can certainly prove similar statements for weaker systems in Agda (e.g., STLC)</p>",
+        "id": 474130210,
+        "sender_full_name": "Nathan Corbyn",
+        "timestamp": 1727817845
+    },
+    {
+        "content": "<p>I see. Then I would say that Godel's second incompleteness theorem would apply here (No sufficiently powerful formal system can prove its own consistency).</p>\n<p><span class=\"user-mention silent\" data-user-id=\"460737\">Nathan Corbyn</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/474130210\">said</a>:</p>\n<blockquote>\n<p>I’ve no idea if anyone has proven this implication in Agda for the case of Agda but you can certainly prove similar statements for weaker systems in Agda (e.g., STLC)</p>\n</blockquote>\n<p>I do think that the argument you spelt out is simple enough to be proven in Agda.</p>",
+        "id": 474134073,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1727819563
+    },
+    {
+        "content": "<p>The incompleteness theorem and the halting problem are birds of a feather in any case.  (The feather being \"diagonalization\".)</p>",
+        "id": 474141882,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1727823513
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"460737\">Nathan Corbyn</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/474124064\">said</a>:</p>\n<blockquote>\n<p>Agda is not computationally universal as it is a total language...</p>\n</blockquote>\n<p>Oh wow, I didn't know anyone did anything like 'general programming' with non-universal languages, though they make sense for lots of specialized purposes.   (E.g. people <em>complain</em> that LaTeX is computationally universal, because you may not want the typesetting of your document to halt iff some Diophantine equation has a solution.)</p>",
+        "id": 474143963,
+        "sender_full_name": "John Baez",
+        "timestamp": 1727824627
+    },
+    {
+        "content": "<p>If you want your programming language to also be a proof assistant, where every well-typed program is a proof, then it has to be a total language, since otherwise you could \"prove\" false with an infinite loop:</p>\n<div class=\"codehilite\" data-code-language=\"Agda\"><pre><span></span><code><span class=\"nf\">oops</span><span class=\"w\"> </span><span class=\"ow\">:</span><span class=\"w\"> </span>⊥\noops<span class=\"w\"> </span><span class=\"ow\">=</span><span class=\"w\"> </span>oops\n</code></pre></div>",
+        "id": 474148083,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1727826764
+    },
+    {
+        "content": "<p>Some people say, \"Pacman completeness is more useful than turing completeness\"</p>",
+        "id": 474148290,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1727826836
+    },
+    {
+        "content": "<p>While that means the language is technically not Turing-complete, so there are terminating functions that it cannot express, in practice dependently typed programming languages are powerful enough to write almost any actually-terminating function.  For instance, you can manually introduce whatever well-founded termination measure is necessary for any particular application.</p>\n<p>Coding \"Agda in Agda\" and related stuff is, I think, the only real exception I'm aware of.</p>",
+        "id": 474148856,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1727827010
+    },
+    {
+        "content": "<p>Of course, rewriting a function to induct over a well-founded termination measure can be tedious and obscure the important ideas.  So for practical programming, Agda also allows you to give a flag to turn off the termination-checker and make it Turing-complete, either globally or locally to a particular definition.</p>",
+        "id": 474148987,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1727827082
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"645679\">James E Hanson</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/471978832\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"726654\">Suraaj K S</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/471977001\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/471972140\">said</a>:</p>\n<blockquote>\n<p>I assume Mike is hinting that if HOL doesn't have <a href=\"https://en.wikipedia.org/wiki/Grothendieck_universe\">universes</a> there are things you can't state (much less prove) in HOL that you can prove in systems that have universes.</p>\n</blockquote>\n<p>I see. I'm definitely know nothing about all this stuff... However, I'm curious about the following question then - If Isabelle/HOL doesn't have universes, is it safe to say that you cannot construct a model of Coq (which does have universes) in it?</p>\n</blockquote>\n<p>My understanding is that Coq's consistency strength is supposed to be roughly the same as that of CIC, and although the exact consistency strength of CIC is (I think) open, a lower bound is Z + <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">{</mo><mtext>“there are </mtext><mi>n</mi><mtext> Zermelo universes&quot;</mtext><mo>:</mo><mi>n</mi><mo>∈</mo><mi mathvariant=\"double-struck\">N</mi><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">\\{\\text{``there are }n\\text{ Zermelo universes&quot;} : n \\in \\mathbb{N}\\}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord text\"><span class=\"mord\">“there are </span></span><span class=\"mord mathnormal\">n</span><span class=\"mord text\"><span class=\"mord\"> Zermelo universes&quot;</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathbb\">N</span><span class=\"mclose\">}</span></span></span></span>. Isabelle/HOL's strength should be the same as Z set theory (or equivalently <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi><mtext>th</mtext></mrow><annotation encoding=\"application/x-tex\">\\omega\\text{th}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span><span class=\"mord text\"><span class=\"mord\">th</span></span></span></span></span>-order arithmetic or the theory of a Boolean topos with NNO), which is strictly weaker, so you aren't going to be able to build a model of Coq in Isabelle/HOL unconditionally.</p>\n</blockquote>\n<p>I'm a little bit curious what the various notions of comparing two doctrines/theories/logics/type theories are... That is, when does one say that one is stronger than another..</p>\n<p>I can think of the following ways:</p>\n<ul>\n<li>Constructing models - If you can construct a 'model' (whatever that means) of T1 in T2, you say T2 is more powerful than T1. Here, I think that T2 will also be the metalogic</li>\n<li>As a (syntactic) metalogic - You could use one logic as a metalogic for another, just for 'syntactic proofs'. However, in general, this does not seem like a hard thing to do at all. I think that you could use a very simple logic like PA as a metalogic for any other logic. That is, you can encode and prove things like <code>ZFC_proves(φ)</code> in PA.</li>\n<li>Proving consistency - If one logic can prove that another is consistent, it is stronger than the other</li>\n<li>Interpretations - As mentioned in <a href=\"https://en.wikipedia.org/wiki/Interpretability\">https://en.wikipedia.org/wiki/Interpretability</a>. I think that this is linked very closely with 'constructing models' (or they might be the same thing), as we discussed here: <a href=\"#narrow/stream/229199-learning.3A-questions/topic/On.20Categorical.20Logic/near/472077762\">https://categorytheory.zulipchat.com/#narrow/stream/229199-learning.3A-questions/topic/On.20Categorical.20Logic/near/472077762</a>.</li>\n</ul>\n<p>I'm curious whether there are other 'obvious ways' one compares one logic to another? I'd also be curious to know how these notions of comparing one logic to another relate?</p>",
+        "id": 474149794,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1727827569
+    },
+    {
+        "content": "<p>If you can construct a model of T1 <em>in</em> T2, in the sense that using T2 as the metatheory you can build a model of T1 (for example, in ZFC the set <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>V</mi><mrow><mi>ω</mi><mo>+</mo><mi>ω</mi></mrow></msub></mrow><annotation encoding=\"application/x-tex\">V_{\\omega+\\omega}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8917em;vertical-align:-0.2083em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2583em;\"><span style=\"top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.03588em;\">ω</span><span class=\"mbin mtight\">+</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.03588em;\">ω</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2083em;\"><span></span></span></span></span></span></span></span></span></span> is a model of Z), then in particular T2 proves the consistency of T1, since a theory with a model is consistent.  Conversely, at least in a sufficiently powerful metatheory, any consistent theory has a model (Godel's completeness theorem), so often proving consistency is the same as constructing internal models.</p>",
+        "id": 474150636,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1727828142
+    },
+    {
+        "content": "<p>As we discussed in the other thread, interpretability is more or less the same as constructing a model of T1 <em>from</em> a model of T2, which is different than constructing a model of T1 <em>in</em> a model of T2.  For instance, we can construct a model of ETCS+R from a model of ZFC by taking the objects to be the sets and the morphisms to be the functions.  But the entire category that models ETCS+R is not a thing <em>in</em> ZFC (i.e. a set) because it is a proper class (the proper class of all sets).  So what this shows is that ETCS+R is <em>no stronger than</em> ZFC.  In this case, there is also a converse construction, so the two theories are equiconsistent (of equal strength).</p>",
+        "id": 474150941,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1727828321
+    },
+    {
+        "content": "<p>So it's the difference between <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>&lt;</mo></mrow><annotation encoding=\"application/x-tex\">&lt;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mrel\">&lt;</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>≤</mo></mrow><annotation encoding=\"application/x-tex\">\\le</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719em;vertical-align:-0.136em;\"></span><span class=\"mrel\">≤</span></span></span></span>.</p>",
+        "id": 474150972,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1727828359
+    },
+    {
+        "content": "<p>I see. Just to confirm - constructing a model of T1 in T2 is the same thing as constructing a model of T1 in a model of T2... right?</p>",
+        "id": 474319459,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1727880869
+    },
+    {
+        "content": "<p>As long as the latter construction is definable.</p>",
+        "id": 474321632,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1727881430
+    },
+    {
+        "content": "<p>wrt. proving consistency of proof assistant X in X can be done in an axiom-free way as long as you use a <em>slightly</em> weaker version of that system. One simple way of doing this is just postulating a finite number of universes, rather than the usual countable family. <a href=\"https://github.com/mr-ohman/logrel-mltt\">logrel-mltt</a> does this for Agda with one universe, and <a href=\"https://github.com/CoqHott/logrel-coq\">logrel-coq</a> for Coq. Usually, you expect these arguments to require a small number of additional universes in the meta-theory.</p>",
+        "id": 475309719,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1728311010
+    },
+    {
+        "content": "<p>and yes it is exactly Gödel's 2nd theorem that would apply here</p>",
+        "id": 475311672,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1728311554
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"726654\">Suraaj K S</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/474149794\">said</a>:</p>\n<blockquote>\n<p>I'm a little bit curious what the various notions of comparing two doctrines/theories/logics/type theories are... That is, when does one say that one is stronger than another..</p>\n<p>I can think of the following ways:</p>\n<ul>\n<li>Constructing models - If you can construct a 'model' (whatever that means) of T1 in T2, you say T2 is more powerful than T1. Here, I think that T2 will also be the metalogic</li>\n<li>As a (syntactic) metalogic - You could use one logic as a metalogic for another, just for 'syntactic proofs'. However, in general, this does not seem like a hard thing to do at all. I think that you could use a very simple logic like PA as a metalogic for any other logic. That is, you can encode and prove things like <code>ZFC_proves(φ)</code> in PA.</li>\n<li>Proving consistency - If one logic can prove that another is consistent, it is stronger than the other</li>\n<li>Interpretations - As mentioned in <a href=\"https://en.wikipedia.org/wiki/Interpretability\">https://en.wikipedia.org/wiki/Interpretability</a>. I think that this is linked very closely with 'constructing models' (or they might be the same thing), as we discussed here: <a href=\"#narrow/stream/229199-learning.3A-questions/topic/On.20Categorical.20Logic/near/472077762\">https://categorytheory.zulipchat.com/#narrow/stream/229199-learning.3A-questions/topic/On.20Categorical.20Logic/near/472077762</a>.</li>\n</ul>\n<p>I'm curious whether there are other 'obvious ways' one compares one logic to another? I'd also be curious to know how these notions of comparing one logic to another relate?</p>\n</blockquote>\n<p>I was doing some reading, and I was wondering about a few more things along these lines. To be specific, I was curious about how one compares 'doctrines' (like equational logic, λ→), etc.</p>\n<p>'Obviously', λ→ is 'more powerful' than equational logic. All the axioms and inference rules of equational logic are 'present' in λ→. That is, if you can do a proof in equational logic, you can do 'the same proof' in λ→. Another concept that one talks about is 'conservativity', which is roughly the converse - If you can prove an equation between algebraic terms in λ→, you can prove that in equational logic too.</p>\n<p>I'm wondering if there are 'standard definitions' that summarize this relationship between equational logic and λ→? <br>\nWe have also spoken about other ways of relating theories/logics- constructing models, interpretations, etc. I'm curious if those ideas apply here? That is, is the relation between equational logic and λ→ just a 'special case' of one of the previous ideas? To me, it doesn't look like that's the case, because we're talking about 'comparing doctrines' now. But I might be wrong...</p>",
+        "id": 475996092,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1728525440
+    },
+    {
+        "content": "<p>Semantically this kind of relationship between doctrines is represented by an adjunction between their categories of models.  Every model of  λ→ has an underlying model of equational logic.  And any model of equational logic -- which in this case we usually think of as a \"theory\" -- gives rise to a \"freely generated\" model of  λ→ -- which we think of as \"the same theory in an expanded doctrine\", this being left adjoint to the \"underlying\" functor in the other direction.</p>",
+        "id": 476026380,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1728533674
+    },
+    {
+        "content": "<p>Conservativity of one doctrine over another is a statement about the units of that adjunction being faithful or fully faithful.  That is, if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">T</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span> is a theory in equational logic, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">FT</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">FT</span></span></span></span> its freely generated theory in  λ→, and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi><mi>F</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">UFT</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">FT</span></span></span></span> the underlying theory in equational logic of that, then the unit map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>→</mo><mi>U</mi><mi>F</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">T\\to UFT</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">FT</span></span></span></span> being faithful would mean that if two terms in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">T</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span> become (i.e. \"can be proven\") equal in  λ→ (i.e. in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">FT</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">FT</span></span></span></span>), then they were already equal (i.e. \"can be proven equal\") in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">T</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span>.  Full-faithfulness would say furthermore that given a type in a context in equational logic, any term that <em>exists</em> in that type in  λ→ already exists in equational logic.</p>",
+        "id": 476026770,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1728533829
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/476026380\">said</a>:</p>\n<blockquote>\n<p>Semantically this kind of relationship between doctrines is represented by an adjunction between their categories of models.  Every model of  λ→ has an underlying model of equational logic.  And any model of equational logic -- which in this case we usually think of as a \"theory\" -- gives rise to a \"freely generated\" model of  λ→ -- which we think of as \"the same theory in an expanded doctrine\", this being left adjoint to the \"underlying\" functor in the other direction.</p>\n</blockquote>\n<p>That makes sense. Just to be clear, is 'the category of models' the same thing as 'the category of structured categories' that one talks about in the InternalLanguage/TermModel adjunction?</p>",
+        "id": 476118839,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1728562696
+    },
+    {
+        "content": "<p>Yes, that's what I meant.</p>",
+        "id": 476160717,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1728573845
+    },
+    {
+        "content": "<p>E.g. each CCC is a model of the doctrine STLC, as distinct from a model of a particular <em>theory of</em> STLC <em>in</em> a <em>particular</em> CCC.</p>",
+        "id": 476161027,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1728573933
+    }
+]
