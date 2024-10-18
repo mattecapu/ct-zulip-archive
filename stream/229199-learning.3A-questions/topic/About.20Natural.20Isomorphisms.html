@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>About Natural Isomorphisms · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html">About Natural Isomorphisms</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="476229043"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/476229043" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#476229043">(Oct 10 2024 at 21:35)</a>:</h4>
+<p>I'm sure this is a pretty basic question, but here it goes.</p>
+<p>I was watching some CT lectures, and there was a segment where they had to prove two functors <code>F: C → Set</code> and <code>G: C → Set</code> to be isomorphic. The proof went a little bit like follows:</p>
+<ul>
+<li>Let X ∈ C. <br>
+       + We can see that FX ≡ GX. </li>
+<li>Therefore F≡G</li>
+</ul>
+<p>( I think that the exact functors were <code>Hom(AxB, _)</code> and <code>Hom(A,_) x Hom(B,_)</code> or something similar).</p>
+<p>I think that, that argument demonstrates: <code>∀X∈C: FX≡GX</code>.<br>
+I don't think that for arbitrary functors F and G, this implies that F≡G. For example, I think that I can construct categories where <code>∀X∈C: FX≡GX</code>, but F and G are not isomorphic.</p>
+<p>However, when the target category is Set, does this implication hold?</p>
+
+
+
+<a name="476229621"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/476229621" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#476229621">(Oct 10 2024 at 21:39)</a>:</h4>
+<p>You also have to show that the isomorphisms between each <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>X</mi></mrow><annotation encoding="application/x-tex">FX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">FX</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>X</mi></mrow><annotation encoding="application/x-tex">GX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">GX</span></span></span></span> are natural. This is what it means for two functors to be isomorphic: that there is a natural isomorphism between them.</p>
+
+
+
+<a name="476233445"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/476233445" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#476233445">(Oct 10 2024 at 22:04)</a>:</h4>
+<p>And no, objectwise isomorphic functors need not be naturally isomorphic, even in case the target category is Set. The most famous example of an unnatural isomorphism, that between a finite-dimensional vector space and its dual, is such a case, if you just add an underlying-set functor.</p>
+
+
+
+<a name="476236605"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/476236605" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#476236605">(Oct 10 2024 at 22:28)</a>:</h4>
+<p>With that said, there's a reason natural transformations are called "natural": in many, many, cases, when you define some transformation in a "natural" way (in the informal sense), it turns out to be natural in the formal sense as well.  And so, mathematicians frequently omit to verify naturality explicitly because it is "obvious".</p>
+
+
+
+<a name="476253444"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/476253444" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#476253444">(Oct 11 2024 at 00:52)</a>:</h4>
+<p>Right, that's presumably what happened in this lecture. "Natural" examples of unnatural isomorphisms are rare!</p>
+
+
+
+<a name="476253661"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/476253661" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#476253661">(Oct 11 2024 at 00:55)</a>:</h4>
+<p>In the particular case, where the functors must have been something more like <code>Hom(A+B,-)</code> and <code>Hom(A,-) x Hom(B,-)</code> for the claim to be correct, the point is that the way your mind notices that <code>Hom(A+B,X)</code> is isomorphic to <code>Hom(A,X) x Hom(B,X)</code> is by observing a <em>specific</em> isomorphism, not a random one, and the specific isomorphism you've observed happens to be natural, which semi-justifies not discussing the naturality.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Oct 18 2024 at 12:08 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>
