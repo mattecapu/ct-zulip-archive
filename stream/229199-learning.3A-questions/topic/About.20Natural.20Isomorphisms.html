@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>About Natural Isomorphisms · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html">About Natural Isomorphisms</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="476229043"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/476229043" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#476229043">(Oct 10 2024 at 21:35)</a>:</h4>
+<p>I'm sure this is a pretty basic question, but here it goes.</p>
+<p>I was watching some CT lectures, and there was a segment where they had to prove two functors <code>F: C → Set</code> and <code>G: C → Set</code> to be isomorphic. The proof went a little bit like follows:</p>
+<ul>
+<li>Let X ∈ C. <br>
+       + We can see that FX ≡ GX. </li>
+<li>Therefore F≡G</li>
+</ul>
+<p>( I think that the exact functors were <code>Hom(AxB, _)</code> and <code>Hom(A,_) x Hom(B,_)</code> or something similar).</p>
+<p>I think that, that argument demonstrates: <code>∀X∈C: FX≡GX</code>.<br>
+I don't think that for arbitrary functors F and G, this implies that F≡G. For example, I think that I can construct categories where <code>∀X∈C: FX≡GX</code>, but F and G are not isomorphic.</p>
+<p>However, when the target category is Set, does this implication hold?</p>
+
+
+
+<a name="476229621"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/476229621" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#476229621">(Oct 10 2024 at 21:39)</a>:</h4>
+<p>You also have to show that the isomorphisms between each <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>X</mi></mrow><annotation encoding="application/x-tex">FX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">FX</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>X</mi></mrow><annotation encoding="application/x-tex">GX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">GX</span></span></span></span> are natural. This is what it means for two functors to be isomorphic: that there is a natural isomorphism between them.</p>
+
+
+
+<a name="476233445"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/476233445" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#476233445">(Oct 10 2024 at 22:04)</a>:</h4>
+<p>And no, objectwise isomorphic functors need not be naturally isomorphic, even in case the target category is Set. The most famous example of an unnatural isomorphism, that between a finite-dimensional vector space and its dual, is such a case, if you just add an underlying-set functor.</p>
+
+
+
+<a name="476236605"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/476236605" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#476236605">(Oct 10 2024 at 22:28)</a>:</h4>
+<p>With that said, there's a reason natural transformations are called "natural": in many, many, cases, when you define some transformation in a "natural" way (in the informal sense), it turns out to be natural in the formal sense as well.  And so, mathematicians frequently omit to verify naturality explicitly because it is "obvious".</p>
+
+
+
+<a name="476253444"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/476253444" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#476253444">(Oct 11 2024 at 00:52)</a>:</h4>
+<p>Right, that's presumably what happened in this lecture. "Natural" examples of unnatural isomorphisms are rare!</p>
+
+
+
+<a name="476253661"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/476253661" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#476253661">(Oct 11 2024 at 00:55)</a>:</h4>
+<p>In the particular case, where the functors must have been something more like <code>Hom(A+B,-)</code> and <code>Hom(A,-) x Hom(B,-)</code> for the claim to be correct, the point is that the way your mind notices that <code>Hom(A+B,X)</code> is isomorphic to <code>Hom(A,X) x Hom(B,X)</code> is by observing a <em>specific</em> isomorphism, not a random one, and the specific isomorphism you've observed happens to be natural, which semi-justifies not discussing the naturality.</p>
+
+
+
+<a name="478489372"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/478489372" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Max New <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#478489372">(Oct 23 2024 at 12:56)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="609515">Kevin Carlson</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms/near/476253661">said</a>:</p>
+<blockquote>
+<p>In the particular case, where the functors must have been something more like <code>Hom(A+B,-)</code> and <code>Hom(A,-) x Hom(B,-)</code> for the claim to be correct, the point is that the way your mind notices that <code>Hom(A+B,X)</code> is isomorphic to <code>Hom(A,X) x Hom(B,X)</code> is by observing a <em>specific</em> isomorphism, not a random one, and the specific isomorphism you've observed happens to be natural, which semi-justifies not discussing the naturality.</p>
+</blockquote>
+<p>To add to this example, any time you are showing that a functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>:</mo><mi>C</mi><mo>→</mo><mtext>Set</mtext></mrow><annotation encoding="application/x-tex">F : C \to \textrm{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord textrm">Set</span></span></span></span></span> is representable by constructing a natural isomorphism <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false">(</mo><mi>c</mi><mo separator="true">,</mo><mo>−</mo><mo stretchy="false">)</mo><mo>≅</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">C(c, -) \cong F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mopen">(</span><span class="mord mathnormal">c</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">−</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≅</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span> for some <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span>, you don't need to check <em>any</em> naturality conditions. By the Yoneda lemma, the natural transformation <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false">(</mo><mi>c</mi><mo separator="true">,</mo><mo>−</mo><mo stretchy="false">)</mo><mo>→</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">C(c,-) \to F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mopen">(</span><span class="mord mathnormal">c</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">−</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span> always arises as the functorial action of $F$ on a "universal element" of $F(c)$, and such a functorial action is natural. So as long as you present that morphism by an action on a universal element, there is no actual manual verification necessary</p>
+
+
+
+<a name="478489955"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/478489955" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Max New <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#478489955">(Oct 23 2024 at 12:58)</a>:</h4>
+<p>And if it's not clear you don't have to check that the inverse <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>→</mo><mi>C</mi><mo stretchy="false">(</mo><mi>c</mi><mo separator="true">,</mo><mo>−</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">F \to C(c,-)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mopen">(</span><span class="mord mathnormal">c</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">−</span><span class="mclose">)</span></span></span></span> is natural because inverses of natural transformations are natural. This is one of my favorite practical motivations for the Yoneda lemma, without something like it category theory really would have an insane proliferation of side-conditions that would all need to be manually verified.</p>
+
+
+
+<a name="478534563"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/478534563" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#478534563">(Oct 23 2024 at 16:16)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="609515">Kevin Carlson</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms/near/476233445">said</a>:</p>
+<blockquote>
+<p>The most famous example of an unnatural isomorphism, that between a finite-dimensional vector space and its dual....</p>
+</blockquote>
+<p>By the way, the unfortunate thing about this claimed example is that taking the dual is not a functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">V</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">t</mi></mrow><mo>→</mo><mrow><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">V</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">t</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{FinVect} \to \mathsf{FinVect}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">FinVect</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">FinVect</span></span></span></span></span>, so the idea of a natural isomorphism between this functor and the identity <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>:</mo><mrow><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">V</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">t</mi></mrow><mo>→</mo><mrow><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">V</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">t</mi></mrow></mrow><annotation encoding="application/x-tex">1: \mathsf{FinVect} \to \mathsf{FinVect}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">FinVect</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">FinVect</span></span></span></span></span> doesn't even parse!</p>
+<p>Taking the dual gives a functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∗</mo><mo>:</mo><mrow><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">V</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">t</mi></mrow><mo>→</mo><msup><mrow><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">V</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">t</mi></mrow><mtext>op</mtext></msup><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\ast: \mathsf{FinVect} \to \mathsf{FinVect}^{\text{op}}.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">FinVect</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7487em;"></span><span class="mord"><span class="mord"><span class="mord mathsf">FinVect</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7487em;"><span style="top:-3.1473em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">op</span></span></span></span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></p>
+<p>I owe this observation to my friend Bill Schmitt.</p>
+
+
+
+<a name="478537170"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/478537170" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#478537170">(Oct 23 2024 at 16:29)</a>:</h4>
+<p>One of my favorite examples of an unnatural isomorphism where the statement of naturality <em>would</em> typecheck is between an <a href="https://ncatlab.org/nlab/show/affine%20space">[[affine space]]</a> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> and the underlying affine space of the vector space of displacements in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>.  This is important because if the isomorphism <em>were</em> natural, the categories of vector spaces and affine spaces would be equivalent, which they're not.  (The other isomorphism, between a vector space <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi></mrow><annotation encoding="application/x-tex">V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span></span></span></span> and the vector space of displacements in the underlying affine space of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi></mrow><annotation encoding="application/x-tex">V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span></span></span></span>, <em>is</em> natural.)  You can also postcompose it with an underlying-set functor to get a pair of unnaturally isomorphic functors to Set.</p>
+<p>A simpler version of the same thing is between a <a href="https://ncatlab.org/nlab/show/heap">[[heap]]</a> and the underlying heap of its structure group.</p>
+
+
+
+<a name="478542364"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/478542364" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#478542364">(Oct 23 2024 at 16:59)</a>:</h4>
+<p>Ah, that's a really nice example, Mike! So nice, you (or demons in the Zulip server) posted it wice :)</p>
+
+
+
+<a name="478545202"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/About%20Natural%20Isomorphisms/near/478545202" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/About.20Natural.20Isomorphisms.html#478545202">(Oct 23 2024 at 17:16)</a>:</h4>
+<p>Begone, Zulip demons; I banish you with the arcane Delete button!</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Oct 24 2024 at 12:09 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>
