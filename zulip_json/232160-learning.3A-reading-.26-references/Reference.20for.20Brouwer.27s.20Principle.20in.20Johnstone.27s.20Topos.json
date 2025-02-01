@@ -1,0 +1,104 @@
+[
+    {
+        "content": "<p>It seems to be folklore that Johnstone's topological topos validates Brouwer's \"continuity principle\" that every function <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">R</mi><mo>→</mo><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R} \\to \\mathbb{R}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span></span></span></span> is continuous. In fact, it might validate more: that for every pair of spaces, all maps between them are continuous.</p>\n<p>Does anyone have a reference for this? Maybe it's not hard to prove directly, in which case I'd also be interested in just seeing a proof here.</p>\n<p>Thanks in advance ^_^</p>",
+        "id": 432419366,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1712730696
+    },
+    {
+        "content": "<p>Actually, it wasn't as annoying as I expected to just prove it... I think, haha. I'll try to remember to post a proof here tomorrow if nobody beats me to it. Of course, I would still be interested in a reference that's already in the literature!</p>",
+        "id": 432423885,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1712732073
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"278546\">Chris Grossack (they/them)</span> <a href=\"#narrow/stream/232160-learning.3A-reading-.26-references/topic/Reference.20for.20Brouwer's.20Principle.20in.20Johnstone's.20Topos/near/432419366\">said</a>:</p>\n<blockquote>\n<p>for every pair of spaces, all maps between them are continuous.</p>\n</blockquote>\n<p>What do you mean by space, map and continuous?</p>",
+        "id": 432744176,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1712852672
+    },
+    {
+        "content": "<p>in particular, are you looking for an internal or external statement?</p>",
+        "id": 432745707,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1712853158
+    },
+    {
+        "content": "<p>If an external statement, this is basically Proposition 4.4 of Johnstone's original paper (together with Lemma 2.1 to identify sequential topological spaces with a full subcategory of the topological topos).</p>",
+        "id": 432746408,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1712853367
+    },
+    {
+        "content": "<p>I want an internal statement, in the sense of Mac Lane and Moerdijk VI.9, but I'm pretty sure their construction doesn't work for the topological topos. Unless there's another site I'm unaware of (there could easily be)</p>",
+        "id": 432772086,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1712863224
+    },
+    {
+        "content": "<p>I was able to prove it for functions from the reals to the reals (and I've written it in full. It'll be in an upcoming blog post) but I'm still curious if you can say something for other spaces</p>",
+        "id": 432772270,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1712863305
+    },
+    {
+        "content": "<p>If you want an internal statement, then you have to say what you mean by \"other spaces\".  It's certainly not true internally in any topos that \"every function between two topological spaces is continuous\" if \"topological space\" is also defined internally in an ordinary explicit way, e.g. using open sets.</p>",
+        "id": 432780309,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1712866447
+    },
+    {
+        "content": "<p>Right, there is also the internal statement that every function from the reals to the reals is continuous in the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding=\"application/x-tex\">\\epsilon</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">ϵ</span></span></span></span>-<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>δ</mi></mrow><annotation encoding=\"application/x-tex\">\\delta</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03785em;\">δ</span></span></span></span> sense, and we can make up some analogous statements for e.g. <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>2</mn><mi mathvariant=\"double-struck\">N</mi></msup></mrow><annotation encoding=\"application/x-tex\">2^\\mathbb{N}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8452em;\"></span><span class=\"mord\"><span class=\"mord\">2</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8452em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathbb mtight\">N</span></span></span></span></span></span></span></span></span></span></span>, but it's not clear what \"continuity\" would mean for a general object.</p>",
+        "id": 432780767,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1712866680
+    },
+    {
+        "content": "<p>Understanding what one might mean by this is part of what I'm looking for</p>",
+        "id": 432781078,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1712866805
+    },
+    {
+        "content": "<p>For instance, if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Σ</mi></mrow><annotation encoding=\"application/x-tex\">\\Sigma</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\">Σ</span></span></span></span> is the sierpinski space, then <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"normal\">Σ</mi><mi>X</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\Sigma^X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8413em;\"></span><span class=\"mord\"><span class=\"mord\">Σ</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.07847em;\">X</span></span></span></span></span></span></span></span></span></span></span> is an internal representation of the lattice of opens. But this is \"too easy\" because then just pullback gives you the claim. In fact, maybe that's what people mean. It's certainly simple enough to not require a proof</p>",
+        "id": 432781387,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1712866926
+    },
+    {
+        "content": "<p>Who are the \"people\"?</p>",
+        "id": 432782026,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1712867215
+    },
+    {
+        "content": "<p>There is a subject called synthetic topology where you postulate an \"open subobject/proposition classifier\" <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Σ</mi></mrow><annotation encoding=\"application/x-tex\">\\Sigma</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\">Σ</span></span></span></span> and this induces a sort of internal topology on each object with respect to which all functions are automatically continuous, just like you say.</p>\n<p>But this is a different thing from Brouwer's Principle about functions from the reals to the reals, which doesn't depend on any extra postulated constants like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Σ</mi></mrow><annotation encoding=\"application/x-tex\">\\Sigma</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\">Σ</span></span></span></span>, but instead is based on the traditional definition of the topology of the real numbers (in terms of open intervals).</p>",
+        "id": 432784193,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1712868149
+    },
+    {
+        "content": "<p>The reference I'm able to find quickly is Jem's answer <a href=\"https://mathoverflow.net/questions/402262/are-the-topologies-arising-from-constructive-type-theories-with-quotients-actu\">here</a>, which is only for complete metric spaces. I understand this case since we can ask for the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>δ</mi></mrow><annotation encoding=\"application/x-tex\">\\delta</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03785em;\">δ</span></span></span></span>-<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ϵ</mi></mrow><annotation encoding=\"application/x-tex\">\\epsilon</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">ϵ</span></span></span></span> definition to be true, and probably some version of the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">R</mi><mo>→</mo><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R} \\to \\mathbb{R}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span></span></span></span> argument works in this setting.</p>",
+        "id": 432784281,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1712868189
+    },
+    {
+        "content": "<p>That said, I'm sure that I've seen the claim made for \"spaces\" more broadly, but I don't have a reference on hand. Maybe someone was speaking imprecisely, or maybe they were just mistaken. Or maybe some statement of this form is true, but I don't know what that statement is. I'm not sure</p>",
+        "id": 432784462,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1712868271
+    },
+    {
+        "content": "<p>I would guess that the only statements like this that are going to be true are those that use a synthetic notion of space, as Reid mentioned, and those with some completeness and separation conditions, as in the answer you linked to.</p>",
+        "id": 432785197,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1712868628
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"278546\">@Chris Grossack (they/them)</span> Are you aware of Davorin Lešnik‘s thesis (<a href=\"https://arxiv.org/pdf/2104.10399.pdf\">https://arxiv.org/pdf/2104.10399.pdf</a>). It shows what you are looking for, for \"other spaces\" = complete metric spaces, and for different topoi.</p>",
+        "id": 432792520,
+        "sender_full_name": "Benedikt Peterseim",
+        "timestamp": 1712871755
+    }
+]
