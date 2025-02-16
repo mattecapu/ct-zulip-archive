@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Concatenation and piecewise analytic functions · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions.html">Concatenation and piecewise analytic functions</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="499945572"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Concatenation%20and%20piecewise%20analytic%20functions/near/499945572" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions.html#499945572">(Feb 15 2025 at 19:55)</a>:</h4>
+<p>This is the second of five examples I'm formalizing, to distill a common abstraction.</p>
+<p>The example I'm formalizing, is drawn lines on paper. This could be thought of as extending the discussion on melody line diagrams from my accordion post. The upshot is I want to think of a single drawn line, as a piecewise analytic path. This is a common thread through a lot of my examples. <strong>If you don't think you need my context, you're welcome to go to the end of the post to see my questions.</strong></p>
+<p>I think about my line drawings as concatenated curves, that individually don't have inflections. I was encouraged to think this why by my art teacher Jacobo via the "how to draw book" by Fialetti:</p>
+<p><a href="/user_uploads/21317/N6tF_WH4yGEUftFa452IMmj4/odoardo_fialetti_limbs_and_the_human_body-4.jpg">odoardo_fialetti_limbs_and_the_human_body-4.jpg</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/N6tF_WH4yGEUftFa452IMmj4/odoardo_fialetti_limbs_and_the_human_body-4.jpg" title="odoardo_fialetti_limbs_and_the_human_body-4.jpg"><img data-original-content-type="image/jpeg" data-original-dimensions="3412x2730" src="/user_uploads/thumbnail/21317/N6tF_WH4yGEUftFa452IMmj4/odoardo_fialetti_limbs_and_the_human_body-4.jpg/840x560.webp"></a></div><p>I wanted to think about drawing segments as morphisms, with concatenation as the composition operation. You can concatenate equivalence classes of paths in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi><mtext>hTop</mtext></mi></mrow><annotation encoding="application/x-tex">\bm{\text{hTop}}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord"><span class="mord text"><span class="mord">hTop</span></span></span></span></span></span></span>; but, I was more excited to learn about <a href="https://ncatlab.org/nlab/show/Moore+path+category">[[Moore path categories]]</a>, because the paths themselves, not equivalence classes of them, defined a category. </p>
+<p>When I shared that I was excited about this feature in a previous thread, Baez gave an example of a <strong>groupoid</strong> of paths, called lazy paths. I want to pull out a specific observation Baez makes in his paper <a href="https://arxiv.org/abs/1003.4485">An Invitation to Higher Gauge Theory</a>:</p>
+<blockquote>
+<p>Since we are studying paths in a smooth manifold, we want them to be smooth. But the<br>
+path <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mi>δ</mi></mrow><annotation encoding="application/x-tex">\gamma \delta</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05556em;">γ</span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span></span></span></span> may not be smooth: there could be a ‘kink’ at the point y.</p>
+<p>There are different ways to get around this problem. One is to work with<br>
+piecewise smooth paths. But here is another approach...</p>
+</blockquote>
+<p>After this point Baez goes on to discuss lazy paths.</p>
+<p>But it seems my intuition is fixated on piecewise smooth, or even piecewise analytic, paths. This fixation was validated after reading Trefethen, a numerical analyst, argue the most common functions were piecewise analytic(Note when Trefethen says "functions" they are following Euler's usage):</p>
+<p><a href="/user_uploads/21317/GvxWzb5qLRIOzR1TGjFW0uts/Three-sorts-of-curves.jpg">Three sorts of curves.jpg</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/GvxWzb5qLRIOzR1TGjFW0uts/Three-sorts-of-curves.jpg" title="Three sorts of curves.jpg"><img data-original-content-type="image/jpeg" data-original-dimensions="1993x488" src="/user_uploads/thumbnail/21317/GvxWzb5qLRIOzR1TGjFW0uts/Three-sorts-of-curves.jpg/840x560.webp"></a></div><p>If I look at mathematics from Trefethen's point of view, it's clear that many of the images I had in mind superficially match. </p>
+<p>A square is four straight lines connected at points, a regular <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>-gone is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> lines connected at points.</p>
+<p>If I have a lattice of squares, and I only travel vertically or horizontally, then the smallest number of straight lines between two points is the taxi cab distance. I could consider more exotic movement if I restricted movements on the lattice to knight moves. In this case the movement is simple enough I can classify the sort of line segments I want to use. For example, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>↱</mtext></mrow><annotation encoding="application/x-tex">\text{↱}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0em;"></span><span class="mord text"><span class="mord">↱</span></span></span></span></span> could be a knight move that adds <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(1, 2)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span><span class="mclose">)</span></span></span></span> to its current position. Then a translation invariant description of a knight's movement might look like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>↱ ↰ ↳</mtext></mrow><annotation encoding="application/x-tex">\text{↱ ↰ ↳}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0em;"></span><span class="mord text"><span class="mord">↱ ↰ ↳</span></span></span></span></span>. </p>
+<p>A lot of the algebraic examples I've gotten excited about, including the ones in the accordion post, are mutually convertible between linear piecewise functions. I bet with just a bit of care this could be made into a functor from monoids to piecewise linear paths. I was particularly excited about the possibility of these algebraic structures being "generated" from a base set of moves in a certain sense, but really I think I just find these drawings really compelling, and "piecewise analytic" covers a ton of ground.</p>
+<p>I could play a melody on my accordion with one finger. If you took a long exposure photo of its movement over time then it would move discretely between the buttons of the melody. But if you watched a video of my finger moving, it would patiently rest on each note, so really the movement is described by lazy paths.</p>
+<p>And again, as a drawing, although a drawing of a box can have sharp corners, if I were to draw it in the real world, I would take a break at each of the corners, so lazy paths actually model drawing well.</p>
+<p>Trefethen I think would argue that piecewise analytic functions were still critical however, because he is interested in modeling differential equations of real world systems with sharp corners.</p>
+<p>When I tried to organize chess games into a sort of category, <span class="user-mention" data-user-id="276777">@Mike Shulman</span> pointed out that individual chess moves couldn't compose into larger moves. And that therefore I was more interested in a quiver instead of a category. I've been thinking a lot about this idea, that a category is really what you get when the composition of two things is another example of whatever they are. </p>
+<p><strong>Questions start here</strong></p>
+<p>Straight lines are deeply special, unfortunately concatenating them together <em>does not guarantee a straight line</em>. Similarly, analytic paths are special, again unfortunately concatenating them doesn't guarantee an analytic parh. At the same time, allowing concatenation without preserving properties, seems to be immensely practical and common. But maybe concatenation in this sense isn't modeled well by categories. In which case do I want quivers instead? Are quivers appropriate for modeling piecewise analytic functions? If not those then what?</p>
+<p>And further, are quivers(or whatever is appropriate here) "worse" than categories, which are also "worse" than groupoids? What are the reasons to be disappointed when I realize I'm working with piecewise functions?</p>
+
+
+
+<a name="499946283"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Concatenation%20and%20piecewise%20analytic%20functions/near/499946283" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Egolf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions.html#499946283">(Feb 15 2025 at 20:06)</a>:</h4>
+<p>If you start with a directed graph, you can always make a <a href="https://ncatlab.org/nlab/show/free%20category">"free" category</a> from it! So I could imagine a graph where:</p>
+<ul>
+<li>the vertices are locations on a piece of paper</li>
+<li>you put a directed edge <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>:</mo><mi>a</mi><mo>→</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">l:a \to b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> for any line from <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span> to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span></li>
+</ul>
+<p>Then the free category induced by this will have:</p>
+<ul>
+<li>objects corresponding to locations on your piece of paper</li>
+<li>morphisms corresponding to tuples of "composable edges" - basically a morphism <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>:</mo><mi>a</mi><mo>→</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">:a \to b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> will be a sequence of lines (with each one ending where the next one starts) that starts at <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span> and end at <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span></li>
+</ul>
+
+
+
+<a name="499946407"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Concatenation%20and%20piecewise%20analytic%20functions/near/499946407" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Egolf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions.html#499946407">(Feb 15 2025 at 20:08)</a>:</h4>
+<p>In this case, the morphisms are not just straight lines, but rather sequences of straight lines - where each line in the sequence ends where the next one starts. And composing two such compatible sequences indeed gives us another such sequence.</p>
+
+
+
+<a name="499947123"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Concatenation%20and%20piecewise%20analytic%20functions/near/499947123" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Egolf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions.html#499947123">(Feb 15 2025 at 20:18)</a>:</h4>
+<p>I could also imagine a category where the objects are the different possible states of a piece of paper (in terms of what is drawn on it), and a morphism <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>a</mi><mo>→</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">f:a \to b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> is a sequence of "valid" drawing steps that converts state <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span> to state <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span>. To connect this to the discussion above, you could define a "valid drawing step" to involve drawing a straight line between two points.</p>
+
+
+
+<a name="499947312"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Concatenation%20and%20piecewise%20analytic%20functions/near/499947312" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions.html#499947312">(Feb 15 2025 at 20:21)</a>:</h4>
+<p>Yeah, and if "lines" here can be either straight lines, or analytic paths between the ends, I think this free category covers all of these examples.</p>
+<p>So before we get the free category, it starts as a graph. We could also probably make that into a free groupoid by imagining each path having a formal "inverse" when we swap the objects.</p>
+<p>I guess my confusion here, is I have a definition of graph in my head that allows at most one edge between two vertices, but quivers are more general than that. Also calling an analytic curve between two points of an edge of a graph feels like a ton of information is being thrown away, but it must not be right?</p>
+
+
+
+<a name="499947586"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Concatenation%20and%20piecewise%20analytic%20functions/near/499947586" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions.html#499947586">(Feb 15 2025 at 20:25)</a>:</h4>
+<p>From the free category article you linked "...whence free categories are also called path categories." I see sentences like this and wonder if I've read them before, but only now have an intuition for what they mean XD.</p>
+
+
+
+<a name="499947726"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Concatenation%20and%20piecewise%20analytic%20functions/near/499947726" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Egolf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions.html#499947726">(Feb 15 2025 at 20:27)</a>:</h4>
+<p>When I say "graph" I mean a quiver. The <a href="https://ncatlab.org/nlab/show/directed+graph">nLab</a> has this to say about the term "directed graph":</p>
+<blockquote>
+<p>In graph theory, directed graph (often abbreviated to the contraction digraph) nowadays usually means a digraph, while in category theory, directed graph generally means a quiver. The basic difference is: quivers may have multiple arrows in the same direction (often called “parallel”), and also loops, while digraphs may not have any of those.</p>
+</blockquote>
+
+
+
+<a name="499947781"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Concatenation%20and%20piecewise%20analytic%20functions/near/499947781" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Egolf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions.html#499947781">(Feb 15 2025 at 20:28)</a>:</h4>
+<p>So this terminology can be rather confusing! But yes, for the graphs I have in mind you are allowed to have multiple parallel directed edges between two vertices, as well as loops.</p>
+
+
+
+<a name="499947994"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Concatenation%20and%20piecewise%20analytic%20functions/near/499947994" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions.html#499947994">(Feb 15 2025 at 20:31)</a>:</h4>
+<p>Right, I interpreted what you said as a quiver, I'm just debugging my own confusion with the definitions.</p>
+<p>I feel like I'm "getting" it, but am consistently surprised at the level of abstraction these definitions are working at. Does the Free category of piecewise analytic paths, when viewed as a category keep track that it consists of analytic paths? Does that make sense?</p>
+
+
+
+<a name="499948136"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Concatenation%20and%20piecewise%20analytic%20functions/near/499948136" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Egolf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions.html#499948136">(Feb 15 2025 at 20:33)</a>:</h4>
+<p>I think the question of how much information is lost in this way is interesting. In general, I think a major component of the philosophy of category theory is this: we can understand a thing by how it relates to other things, and how those relationships relate to one another. So the question that occurs to me is: how do piecewise analytic paths relate to one another, and to what extent are those relationships modelled in this free category?</p>
+
+
+
+<a name="499948226"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Concatenation%20and%20piecewise%20analytic%20functions/near/499948226" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Egolf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions.html#499948226">(Feb 15 2025 at 20:34)</a>:</h4>
+<p>One could imagine trying to introduce "homotopies" that gradually deform one piecewise analytic/linear path to another (subject to some rules probably), to incorporate more information about how such paths relate to one another.</p>
+
+
+
+<a name="499948315"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Concatenation%20and%20piecewise%20analytic%20functions/near/499948315" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Egolf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions.html#499948315">(Feb 15 2025 at 20:35)</a>:</h4>
+<p>In general, I'm interested in this question: how can we measure the extent to which a category models the thing we started out considering?</p>
+
+
+
+<a name="499948378"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Concatenation%20and%20piecewise%20analytic%20functions/near/499948378" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Egolf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions.html#499948378">(Feb 15 2025 at 20:36)</a>:</h4>
+<p>Someone who knows more about piecewise analytic/linear paths than me would probably  be able to contribute more specific insight to this particular case!</p>
+
+
+
+<a name="499949076"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Concatenation%20and%20piecewise%20analytic%20functions/near/499949076" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions.html#499949076">(Feb 15 2025 at 20:44)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277503">David Egolf</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions/near/499948226">said</a>:</p>
+<blockquote>
+<p>One could imagine trying to introduce "homotopies" that gradually deform one piecewise analytic/linear path to another (subject to some rules probably), to incorporate more information about how such paths relate to one another.</p>
+</blockquote>
+<p>For higher Moore-Path categories, you can define 2D surfaces that concatenate strictly on common boundary paths, and then you can concatenate 3D volumes on boundary surfaces. The higher compositions then make your category into a 2-category and 3-category respectively. So the 2-cells in this case aren't natural transformations, I guess they're like homotopies but I imagine the whole surface as existing, rather than a transformation identifying the boundaries.</p>
+<p>I'm sure there is a way to extend the free-category of piecewise analytic paths into a 2-category or a 3-category in this manner. And these levels all feel like various nested free-categories to my intuition.</p>
+
+
+
+<a name="499949156"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Concatenation%20and%20piecewise%20analytic%20functions/near/499949156" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions.html#499949156">(Feb 15 2025 at 20:45)</a>:</h4>
+<p>I also get this from art. When I'm drawing, I think of the surfaces as implied by key structure lines of the models.</p>
+<p>Like a surface of revolution defined by a single path.</p>
+
+
+
+<a name="499949355"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Concatenation%20and%20piecewise%20analytic%20functions/near/499949355" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions.html#499949355">(Feb 15 2025 at 20:48)</a>:</h4>
+<p>(I don't normally think of chess moves this way though, maybe I should? Food for thought...)</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 16 2025 at 12:10 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>
