@@ -1,0 +1,866 @@
+[
+    {
+        "content": "<p>This is the second of five examples I'm formalizing, to distill a common abstraction.</p>\n<p>The example I'm formalizing, is drawn lines on paper. This could be thought of as extending the discussion on melody line diagrams from my accordion post. The upshot is I want to think of a single drawn line, as a piecewise analytic path. This is a common thread through a lot of my examples. <strong>If you don't think you need my context, you're welcome to go to the end of the post to see my questions.</strong></p>\n<p>I think about my line drawings as concatenated curves, that individually don't have inflections. I was encouraged to think this why by my art teacher Jacobo via the \"how to draw book\" by Fialetti:</p>\n<p><a href=\"/user_uploads/21317/N6tF_WH4yGEUftFa452IMmj4/odoardo_fialetti_limbs_and_the_human_body-4.jpg\">odoardo_fialetti_limbs_and_the_human_body-4.jpg</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/N6tF_WH4yGEUftFa452IMmj4/odoardo_fialetti_limbs_and_the_human_body-4.jpg\" title=\"odoardo_fialetti_limbs_and_the_human_body-4.jpg\"><img data-original-content-type=\"image/jpeg\" data-original-dimensions=\"3412x2730\" src=\"/user_uploads/thumbnail/21317/N6tF_WH4yGEUftFa452IMmj4/odoardo_fialetti_limbs_and_the_human_body-4.jpg/840x560.webp\"></a></div><p>I wanted to think about drawing segments as morphisms, with concatenation as the composition operation. You can concatenate equivalence classes of paths in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi><mtext>hTop</mtext></mi></mrow><annotation encoding=\"application/x-tex\">\\bm{\\text{hTop}}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord text\"><span class=\"mord\">hTop</span></span></span></span></span></span></span>; but, I was more excited to learn about <a href=\"https://ncatlab.org/nlab/show/Moore+path+category\">[[Moore path categories]]</a>, because the paths themselves, not equivalence classes of them, defined a category. </p>\n<p>When I shared that I was excited about this feature in a previous thread, Baez gave an example of a <strong>groupoid</strong> of paths, called lazy paths. I want to pull out a specific observation Baez makes in his paper <a href=\"https://arxiv.org/abs/1003.4485\">An Invitation to Higher Gauge Theory</a>:</p>\n<blockquote>\n<p>Since we are studying paths in a smooth manifold, we want them to be smooth. But the<br>\npath <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>γ</mi><mi>δ</mi></mrow><annotation encoding=\"application/x-tex\">\\gamma \\delta</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05556em;\">γ</span><span class=\"mord mathnormal\" style=\"margin-right:0.03785em;\">δ</span></span></span></span> may not be smooth: there could be a ‘kink’ at the point y.</p>\n<p>There are different ways to get around this problem. One is to work with<br>\npiecewise smooth paths. But here is another approach...</p>\n</blockquote>\n<p>After this point Baez goes on to discuss lazy paths.</p>\n<p>But it seems my intuition is fixated on piecewise smooth, or even piecewise analytic, paths. This fixation was validated after reading Trefethen, a numerical analyst, argue the most common functions were piecewise analytic(Note when Trefethen says \"functions\" they are following Euler's usage):</p>\n<p><a href=\"/user_uploads/21317/GvxWzb5qLRIOzR1TGjFW0uts/Three-sorts-of-curves.jpg\">Three sorts of curves.jpg</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/GvxWzb5qLRIOzR1TGjFW0uts/Three-sorts-of-curves.jpg\" title=\"Three sorts of curves.jpg\"><img data-original-content-type=\"image/jpeg\" data-original-dimensions=\"1993x488\" src=\"/user_uploads/thumbnail/21317/GvxWzb5qLRIOzR1TGjFW0uts/Three-sorts-of-curves.jpg/840x560.webp\"></a></div><p>If I look at mathematics from Trefethen's point of view, it's clear that many of the images I had in mind superficially match. </p>\n<p>A square is four straight lines connected at points, a regular <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-gone is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> lines connected at points.</p>\n<p>If I have a lattice of squares, and I only travel vertically or horizontally, then the smallest number of straight lines between two points is the taxi cab distance. I could consider more exotic movement if I restricted movements on the lattice to knight moves. In this case the movement is simple enough I can classify the sort of line segments I want to use. For example, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext>↱</mtext></mrow><annotation encoding=\"application/x-tex\">\\text{↱}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0em;\"></span><span class=\"mord text\"><span class=\"mord\">↱</span></span></span></span></span> could be a knight move that adds <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mn>1</mn><mo separator=\"true\">,</mo><mn>2</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(1, 2)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">2</span><span class=\"mclose\">)</span></span></span></span> to its current position. Then a translation invariant description of a knight's movement might look like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext>↱ ↰ ↳</mtext></mrow><annotation encoding=\"application/x-tex\">\\text{↱ ↰ ↳}</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0em;\"></span><span class=\"mord text\"><span class=\"mord\">↱ ↰ ↳</span></span></span></span></span>. </p>\n<p>A lot of the algebraic examples I've gotten excited about, including the ones in the accordion post, are mutually convertible between linear piecewise functions. I bet with just a bit of care this could be made into a functor from monoids to piecewise linear paths. I was particularly excited about the possibility of these algebraic structures being \"generated\" from a base set of moves in a certain sense, but really I think I just find these drawings really compelling, and \"piecewise analytic\" covers a ton of ground.</p>\n<p>I could play a melody on my accordion with one finger. If you took a long exposure photo of its movement over time then it would move discretely between the buttons of the melody. But if you watched a video of my finger moving, it would patiently rest on each note, so really the movement is described by lazy paths.</p>\n<p>And again, as a drawing, although a drawing of a box can have sharp corners, if I were to draw it in the real world, I would take a break at each of the corners, so lazy paths actually model drawing well.</p>\n<p>Trefethen I think would argue that piecewise analytic functions were still critical however, because he is interested in modeling differential equations of real world systems with sharp corners.</p>\n<p>When I tried to organize chess games into a sort of category, <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> pointed out that individual chess moves couldn't compose into larger moves. And that therefore I was more interested in a quiver instead of a category. I've been thinking a lot about this idea, that a category is really what you get when the composition of two things is another example of whatever they are. </p>\n<p><strong>Questions start here</strong></p>\n<p>Straight lines are deeply special, unfortunately concatenating them together <em>does not guarantee a straight line</em>. Similarly, analytic paths are special, again unfortunately concatenating them doesn't guarantee an analytic parh. At the same time, allowing concatenation without preserving properties, seems to be immensely practical and common. But maybe concatenation in this sense isn't modeled well by categories. In which case do I want quivers instead? Are quivers appropriate for modeling piecewise analytic functions? If not those then what?</p>\n<p>And further, are quivers(or whatever is appropriate here) \"worse\" than categories, which are also \"worse\" than groupoids? What are the reasons to be disappointed when I realize I'm working with piecewise functions?</p>",
+        "id": 499945572,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739649339
+    },
+    {
+        "content": "<p>If you start with a directed graph, you can always make a <a href=\"https://ncatlab.org/nlab/show/free%20category\">\"free\" category</a> from it! So I could imagine a graph where:</p>\n<ul>\n<li>the vertices are locations on a piece of paper</li>\n<li>you put a directed edge <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>l</mi><mo>:</mo><mi>a</mi><mo>→</mo><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">l:a \\to b</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.01968em;\">l</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">b</span></span></span></span> for any line from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi></mrow><annotation encoding=\"application/x-tex\">a</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">a</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">b</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">b</span></span></span></span></li>\n</ul>\n<p>Then the free category induced by this will have:</p>\n<ul>\n<li>objects corresponding to locations on your piece of paper</li>\n<li>morphisms corresponding to tuples of \"composable edges\" - basically a morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>:</mo><mi>a</mi><mo>→</mo><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">:a \\to b</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">b</span></span></span></span> will be a sequence of lines (with each one ending where the next one starts) that starts at <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi></mrow><annotation encoding=\"application/x-tex\">a</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">a</span></span></span></span> and end at <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">b</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">b</span></span></span></span></li>\n</ul>",
+        "id": 499946283,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739649971
+    },
+    {
+        "content": "<p>In this case, the morphisms are not just straight lines, but rather sequences of straight lines - where each line in the sequence ends where the next one starts. And composing two such compatible sequences indeed gives us another such sequence.</p>",
+        "id": 499946407,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739650085
+    },
+    {
+        "content": "<p>I could also imagine a category where the objects are the different possible states of a piece of paper (in terms of what is drawn on it), and a morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mi>a</mi><mo>→</mo><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">f:a \\to b</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">b</span></span></span></span> is a sequence of \"valid\" drawing steps that converts state <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi></mrow><annotation encoding=\"application/x-tex\">a</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">a</span></span></span></span> to state <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">b</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">b</span></span></span></span>. To connect this to the discussion above, you could define a \"valid drawing step\" to involve drawing a straight line between two points.</p>",
+        "id": 499947123,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739650718
+    },
+    {
+        "content": "<p>Yeah, and if \"lines\" here can be either straight lines, or analytic paths between the ends, I think this free category covers all of these examples.</p>\n<p>So before we get the free category, it starts as a graph. We could also probably make that into a free groupoid by imagining each path having a formal \"inverse\" when we swap the objects.</p>\n<p>I guess my confusion here, is I have a definition of graph in my head that allows at most one edge between two vertices, but quivers are more general than that. Also calling an analytic curve between two points of an edge of a graph feels like a ton of information is being thrown away, but it must not be right?</p>",
+        "id": 499947312,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739650893
+    },
+    {
+        "content": "<p>From the free category article you linked \"...whence free categories are also called path categories.\" I see sentences like this and wonder if I've read them before, but only now have an intuition for what they mean XD.</p>",
+        "id": 499947586,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739651143
+    },
+    {
+        "content": "<p>When I say \"graph\" I mean a quiver. The <a href=\"https://ncatlab.org/nlab/show/directed+graph\">nLab</a> has this to say about the term \"directed graph\":</p>\n<blockquote>\n<p>In graph theory, directed graph (often abbreviated to the contraction digraph) nowadays usually means a digraph, while in category theory, directed graph generally means a quiver. The basic difference is: quivers may have multiple arrows in the same direction (often called “parallel”), and also loops, while digraphs may not have any of those.</p>\n</blockquote>",
+        "id": 499947726,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739651242
+    },
+    {
+        "content": "<p>So this terminology can be rather confusing! But yes, for the graphs I have in mind you are allowed to have multiple parallel directed edges between two vertices, as well as loops.</p>",
+        "id": 499947781,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739651283
+    },
+    {
+        "content": "<p>Right, I interpreted what you said as a quiver, I'm just debugging my own confusion with the definitions.</p>\n<p>I feel like I'm \"getting\" it, but am consistently surprised at the level of abstraction these definitions are working at. Does the Free category of piecewise analytic paths, when viewed as a category keep track that it consists of analytic paths? Does that make sense?</p>",
+        "id": 499947994,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739651486
+    },
+    {
+        "content": "<p>I think the question of how much information is lost in this way is interesting. In general, I think a major component of the philosophy of category theory is this: we can understand a thing by how it relates to other things, and how those relationships relate to one another. So the question that occurs to me is: how do piecewise analytic paths relate to one another, and to what extent are those relationships modelled in this free category?</p>",
+        "id": 499948136,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739651608
+    },
+    {
+        "content": "<p>One could imagine trying to introduce \"homotopies\" that gradually deform one piecewise analytic/linear path to another (subject to some rules probably), to incorporate more information about how such paths relate to one another.</p>",
+        "id": 499948226,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739651655
+    },
+    {
+        "content": "<p>In general, I'm interested in this question: how can we measure the extent to which a category models the thing we started out considering?</p>",
+        "id": 499948315,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739651751
+    },
+    {
+        "content": "<p>Someone who knows more about piecewise analytic/linear paths than me would probably  be able to contribute more specific insight to this particular case!</p>",
+        "id": 499948378,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739651790
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277503\">David Egolf</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions/near/499948226\">said</a>:</p>\n<blockquote>\n<p>One could imagine trying to introduce \"homotopies\" that gradually deform one piecewise analytic/linear path to another (subject to some rules probably), to incorporate more information about how such paths relate to one another.</p>\n</blockquote>\n<p>For higher Moore-Path categories, you can define 2D surfaces that concatenate strictly on common boundary paths, and then you can concatenate 3D volumes on boundary surfaces. The higher compositions then make your category into a 2-category and 3-category respectively. So the 2-cells in this case aren't natural transformations, I guess they're like homotopies but I imagine the whole surface as existing, rather than a transformation identifying the boundaries.</p>\n<p>I'm sure there is a way to extend the free-category of piecewise analytic paths into a 2-category or a 3-category in this manner. And these levels all feel like various nested free-categories to my intuition.</p>",
+        "id": 499949076,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739652245
+    },
+    {
+        "content": "<p>I also get this from art. When I'm drawing, I think of the surfaces as implied by key structure lines of the models.</p>\n<p>Like a surface of revolution defined by a single path.</p>",
+        "id": 499949156,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739652342
+    },
+    {
+        "content": "<p>(I don't normally think of chess moves this way though, maybe I should? Food for thought...)</p>",
+        "id": 499949355,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739652502
+    },
+    {
+        "content": "<p>I was thinking about this, and I noticed an issue with trying to abstract this in terms of quivers the way we did.</p>\n<p>If there is a path <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> via <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span>, then it's composed of two paths <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi><mo>:</mo><mi>B</mi><mo>→</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">g : B \\rightarrow C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">h : A \\rightarrow B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">h</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span>, that is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>=</mo><mi>g</mi><mo>∘</mo><mi>h</mi></mrow><annotation encoding=\"application/x-tex\"> f = g \\circ h</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6389em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">h</span></span></span></span></p>\n<p>If we generate a free category on a quiver with paths as edges, then we have <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo mathvariant=\"normal\">≠</mo><mi>g</mi><mo>∘</mo><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">f \\neq g \\circ h</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\"><span class=\"mrel\"><span class=\"mord vbox\"><span class=\"thinbox\"><span class=\"rlap\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"inner\"><span class=\"mord\"><span class=\"mrel\"></span></span></span><span class=\"fix\"></span></span></span></span></span><span class=\"mrel\">=</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6389em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">h</span></span></span></span>.</p>\n<p>So I think the way to formalize piecewise analytic paths as a category is to use the Moore path category construction, while restricting the morphisms in the homsets to piecewise analytic paths, rather than all continuous maps. </p>\n<p>There is still a useful property preserved, the paths are analytic everywhere except at a finite number of points, composing two such paths only adds one point of non differentiability.</p>\n<p>If you're careful you can get free categories to coincide with some subcategory of this piecewise analytic path category, but in general I think piecewise analytic paths are different from free constructions.</p>",
+        "id": 500030687,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739728785
+    },
+    {
+        "content": "<p>I'm unsure how much it matters that we compose two paths to a sequence of two paths, as compared to a single path that does one path and then the other. It seems to me that the basic idea - at least with respect to composition - is still being respected: you make this morphism by composing these two.</p>",
+        "id": 500032367,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739730081
+    },
+    {
+        "content": "<p>Well the free category is making more paths is my point. There will be paths that coincide but aren't equal.</p>\n<p>I don't think this happens for the special case of lattices, with a generating basis.</p>",
+        "id": 500032519,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739730236
+    },
+    {
+        "content": "<p>What would be an example of two paths that coincide but are not equal?</p>",
+        "id": 500032588,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739730271
+    },
+    {
+        "content": "<p>Imagine a top half of a circle, with points (objects) at <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>90</mn></mrow><annotation encoding=\"application/x-tex\">90</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">90</span></span></span></span>, and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>180</mn></mrow><annotation encoding=\"application/x-tex\">180</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">180</span></span></span></span>, call them <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo separator=\"true\">,</mo></mrow><annotation encoding=\"application/x-tex\">A, B,</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mpunct\">,</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>.</p>\n<p>We have a few analytic paths, one from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span>, one from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>, and one from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>. If you generate a category freely with each of these analytic paths as part of our quiver, then the arc from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>, will not be equal to the free composition of the arc from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span>, with the arc from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>.</p>",
+        "id": 500033166,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739730671
+    },
+    {
+        "content": "<p>Ah, that makes sense! Thanks for sharing that example.</p>",
+        "id": 500033303,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739730774
+    },
+    {
+        "content": "<p>This also occurs even in the piecewise-linear case. If you have a line that goes from A to C through B, this will happen.</p>",
+        "id": 500033403,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739730844
+    },
+    {
+        "content": "<p>I guess you are saying that the <a href=\"https://ncatlab.org/nlab/show/Moore+path+category\">Moore path category</a> avoids this problem. Composition in that category isn't \"free\" but rather involves doing one path after the other, while keeping track of path length.</p>",
+        "id": 500033719,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739731128
+    },
+    {
+        "content": "<p>To reflect on why the free category didn't do what we wanted: in that category we kept track of <em>how</em> we built up curves. But we don't care about how we built up two curves; we just care about the final resulting shape drawn on paper. In a way, the free category was keeping track of the drawing process involved for each curve, while we wanted to just model the resulting shapes on paper.</p>",
+        "id": 500034197,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739731560
+    },
+    {
+        "content": "<p>I think the Moore path category will also have nonequal morphisms that correspond to the same resulting shape drawn on paper. That's because we keep track of \"how long\" it took us to draw a curve in that category. (You can draw the same shape at two different speeds, and those will count as different in this category).</p>",
+        "id": 500034472,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739731785
+    },
+    {
+        "content": "<p>So that might be a criticism of modelling the situation with the Moore path category, in a similar spirit to the one you provided above relating to the free category.</p>",
+        "id": 500034669,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739731941
+    },
+    {
+        "content": "<p>I think all of the coinciding stuff gets identified if you note that equality is determined by their equality as functions, and if you parameterize by arc length instead of time.</p>\n<p>Otherwise I agree. That said I'm way less \"uncomfortable\" with two paths being distinct because they're different as functions, even though they have the same image (where image here isn't the target object, but the set of the path)</p>",
+        "id": 500034999,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739732244
+    },
+    {
+        "content": "<p>I might want to model someone playing slowely vs someone playing quickly etc.</p>",
+        "id": 500035206,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739732415
+    },
+    {
+        "content": "<p>You could apply the same intuition to the free category. Imagine that each \"basic\" morphism (not built up from others) corresponds to drawing that shape in one time unit. Then various composites corresponding to the same shape correspond to drawing different parts of that shape at different speeds.</p>",
+        "id": 500035419,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739732568
+    },
+    {
+        "content": "<p>But that wouldn't have analytic functions as a basis graph though right? That would have analytic functions that took one unit of time to travel between their ends as a basis graph(which actually is really interesting to think about, but I think it's something else).</p>",
+        "id": 500035581,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739732709
+    },
+    {
+        "content": "<p>I think what you just said is correct.</p>",
+        "id": 500035681,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739732805
+    },
+    {
+        "content": "<p>That's a really interesting category to think about though.</p>\n<p>Because you'll have increasing tiers of morphisms using up more integral units of time</p>",
+        "id": 500035789,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739732885
+    },
+    {
+        "content": "<p>One other idea that comes to mind: you could try to consider a category where objects are points and morphisms are equivalence classes of paths. We consider two paths <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>:</mo><mi>a</mi><mo>→</mo><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">:a \\to b</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">b</span></span></span></span> to be equivalent iff one is a reparametrisation of the other.</p>",
+        "id": 500035863,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739732980
+    },
+    {
+        "content": "<p>A reparametrisation of the unit interval is a continuous function <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mo stretchy=\"false\">[</mo><mn>0</mn><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">]</mo><mo>→</mo><mo stretchy=\"false\">[</mo><mn>0</mn><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">f:[0,1] \\to [0,1]</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">]</span></span></span></span> with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mn>0</mn><mo stretchy=\"false\">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">f(0)=0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord\">0</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo stretchy=\"false\">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">f(1)=1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>. Then given a path <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>:</mo><mo stretchy=\"false\">[</mo><mn>0</mn><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">]</mo><mo>→</mo><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">a:[0,1] \\to X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> and a reparametrisation <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span>, we get a reparametrised path <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>∘</mo><mi>f</mi><mo>:</mo><mo stretchy=\"false\">[</mo><mn>0</mn><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">]</mo><mo>→</mo><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">a \\circ f:[0,1] \\to X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4445em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span>.</p>",
+        "id": 500035988,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739733086
+    },
+    {
+        "content": "<p>Anyways, I should probably stop throwing more ideas out there if you're already happy with the category you've got <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span>. But I find it really fun to think about how to model stuff, so sometimes I can't help myself!</p>",
+        "id": 500036123,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739733165
+    },
+    {
+        "content": "<p>Have you read up on Baez's Lazy paths? He encouraged me to look into those. What you just said reminds me of them. Because Baez pointed me that way means the reparameterizing is probably a really good idea.</p>\n<p>So I guess that circles us back to my last question, why are lazy paths better than piecewise smooth paths? Or are they?</p>",
+        "id": 500036139,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739733174
+    },
+    {
+        "content": "<p>How do you pick between two categories like that?</p>",
+        "id": 500036247,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739733252
+    },
+    {
+        "content": "<p>I have not read about lazy paths before! Taking a look at \"An invitation to higher gauge theory\" I see we have this:</p>\n<ul>\n<li>a path <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>γ</mi><mo>:</mo><mo stretchy=\"false\">[</mo><mn>0</mn><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">]</mo><mo>→</mo><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">\\gamma:[0,1] \\to M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05556em;\">γ</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span> is lazy iff it is smooth and constant in a neighbourhood of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">t=0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">t=1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span></li>\n<li>and apparently this ensures that the composite of lazy paths is smooth (and also lazy)</li>\n</ul>",
+        "id": 500036422,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739733376
+    },
+    {
+        "content": "<p>It's not exactly what you said, but If I remember correctly it uses reparameterization, and more, to identify paths</p>",
+        "id": 500036489,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739733461
+    },
+    {
+        "content": "<p>Specifically any \"area preserving change\" identifies the paths, which includes reparameterizations.</p>",
+        "id": 500036691,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739733508
+    },
+    {
+        "content": "<p>Ah, I see! They talk about \"thin\" homotopies: a homotopy is thin iff it sweeps out a surface of zero area. So intuitively it doesn't \"move around\" the path we care about. Then that paper considers a category where morphisms are thin homotopy classes of lazy paths.</p>",
+        "id": 500036930,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739733598
+    },
+    {
+        "content": "<p>They mention that smooth reparametrizations provide examples of thin homotopies, but there are other examples too.</p>",
+        "id": 500037018,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739733642
+    },
+    {
+        "content": "<p>Right, one neat thing that extra flexibility buys you is you can make the category into a groupioid</p>",
+        "id": 500037055,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739733667
+    },
+    {
+        "content": "<p>Because if you concatenate the reverse of the path, you can shrink the full length along itself back to the starting object, making it into an identity path.</p>",
+        "id": 500037103,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739733717
+    },
+    {
+        "content": "<p>So it's a groupoid like homotopy categories, but it's also a bit more structured, like a piecewise smooth category.</p>",
+        "id": 500037167,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739733754
+    },
+    {
+        "content": "<p>That's a notable difference compared to the free category or Moore path category: in those settings going along a path and back will I think generally be different from such just sitting at the start/end point.</p>",
+        "id": 500037175,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739733763
+    },
+    {
+        "content": "<p>Do you really want a groupoid like this for modelling drawing though? If you draw with your pencil from A and to B and then back to A along the same line, that's not the same as leaving the pencil at A.</p>",
+        "id": 500037251,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739733819
+    },
+    {
+        "content": "<p>I don't know XD, why would I want a groupoid in general?</p>\n<p>Maybe that'd be a useful thing to add to a digital painting program.</p>",
+        "id": 500037340,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739733867
+    },
+    {
+        "content": "<p>So yeah, are groupoids better than categories? Are groups better than monoids?</p>",
+        "id": 500037372,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739733899
+    },
+    {
+        "content": "<p>I guess they are, but I always struggle with questions of this sort.</p>",
+        "id": 500037401,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739733917
+    },
+    {
+        "content": "<p>Maybe \"Ctrl-Z\" is a poor man's groupoid in digital painting programs XD</p>",
+        "id": 500037426,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739733945
+    },
+    {
+        "content": "<p>Oh, reading more carefully there is some subtlety to how the groupoid stuff works for lazy paths. I might have misinterpreted it.</p>",
+        "id": 500037502,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739733986
+    },
+    {
+        "content": "<p>Well now you got me nervous lol, how you used the inverse is how I understood it.</p>",
+        "id": 500037524,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739734007
+    },
+    {
+        "content": "<p>Now I see what was confusing me! The thin homotopies <em>are</em> allowed to move around a path - my intuition above was wrong. It's just that the way in which the path moves needs to sweep out a region of area zero.</p>",
+        "id": 500038038,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739734339
+    },
+    {
+        "content": "<p>So we are indeed allowed to shrink a \"out and back\" path along itself - that's a valid thin homotopy.</p>",
+        "id": 500038083,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739734370
+    },
+    {
+        "content": "<p>Yes exactly! Your previous explanation was consistent with this I think.</p>",
+        "id": 500038138,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739734411
+    },
+    {
+        "content": "<p>But if you have a path that's a loop from some origin point, you're stuck with the loop</p>",
+        "id": 500038249,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739734468
+    },
+    {
+        "content": "<p>Which is actually sort of weird, because if your path works around the loop, and back, then it can be undone. But if it just loops around and stops, then I think you're stuck.</p>",
+        "id": 500038313,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739734535
+    },
+    {
+        "content": "<p>We can go along any path in reverse - even if it's a loop. So I think every (equivalence class) of path should indeed have an inverse.</p>",
+        "id": 500038413,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739734595
+    },
+    {
+        "content": "<p>So the \"out and back\" in this case would be - \"go along our loop\" and then \"go along that loop backwards\".</p>",
+        "id": 500038463,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739734637
+    },
+    {
+        "content": "<p>I'm kind of imagining that you have a magical pencil that \"undraws\" when you trace back over the curve you just drew.</p>",
+        "id": 500038539,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739734687
+    },
+    {
+        "content": "<p>Maybe the way I said that was confusing. Here's how the paper puts it:</p>\n<blockquote>\n<p>...the composites <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>γ</mi><msup><mi>γ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding=\"application/x-tex\">\\gamma \\gamma^{-1}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0085em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05556em;\">γ</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.05556em;\">γ</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mtight\">1</span></span></span></span></span></span></span></span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>γ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>γ</mi></mrow><annotation encoding=\"application/x-tex\">\\gamma^{-1} \\gamma</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0085em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.05556em;\">γ</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mtight\">1</span></span></span></span></span></span></span></span></span><span class=\"mord mathnormal\" style=\"margin-right:0.05556em;\">γ</span></span></span></span> are not constant paths, but they are thinly homotopic to constant paths</p>\n</blockquote>",
+        "id": 500038744,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739734830
+    },
+    {
+        "content": "<p>It has an inverse, but it itself isn't thin homotopic with the identity.</p>\n<p>So <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">(</mo><mi>cos</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mi>sin</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mo stretchy=\"false\">[</mo><mn>0</mn><mo separator=\"true\">,</mo><mn>2</mn><mi>π</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">f(\\theta) = (\\cos(\\theta), \\sin(\\theta)), [0, 2\\pi]</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">θ</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mop\">cos</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">θ</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mop\">sin</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">θ</span><span class=\"mclose\">))</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">2</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">π</span><span class=\"mclose\">]</span></span></span></span> isn't equal to the identity. You have to concatenate it with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy=\"false\">(</mo><mi>θ</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mo>−</mo><mi>θ</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">f^{-1}(\\theta) = f(-\\theta)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0641em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mtight\">1</span></span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">θ</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">θ</span><span class=\"mclose\">)</span></span></span></span></p>",
+        "id": 500038756,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739734838
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277503\">David Egolf</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions/near/500038539\">said</a>:</p>\n<blockquote>\n<p>I'm kind of imagining that you have a magical pencil that \"undraws\" when you trace back over the curve you just drew.</p>\n</blockquote>\n<p>That's how I'm thinking of it as well.</p>",
+        "id": 500038798,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739734872
+    },
+    {
+        "content": "<p>Ah, I think we are on the same page then.</p>",
+        "id": 500038806,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739734884
+    },
+    {
+        "content": "<p>Regarding \"is a groupoid 'better' than a category?\" - I don't know. In general I would assume it can be good to add in more structure to a model, provided that structure reflects something about the thing you want to model.</p>",
+        "id": 500038969,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739734988
+    },
+    {
+        "content": "<p>So if you think of \"drawing\" as a setting where you can undraw anything that you draw, then maybe using a groupoid is good!</p>",
+        "id": 500039008,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739735028
+    },
+    {
+        "content": "<p>But it can also be good to <em>not</em> add in structure, I think, if it makes things simpler to study. Or sometimes this can be good for studying things in greater generality.</p>",
+        "id": 500039246,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739735168
+    },
+    {
+        "content": "<p>At least, that's the rough impression I get!</p>",
+        "id": 500039290,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739735213
+    },
+    {
+        "content": "<p>I suspect, making it a groupoid makes it \"a lot\" better somehow. I'd love some intuition for why.</p>\n<p>It's not uncommon to paint over previous parts of a work, and if it were possible, drawing backwards over something you already drew would be the most efficient way mechanically. Think of an eraser.</p>",
+        "id": 500039309,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739735230
+    },
+    {
+        "content": "<p>If you stop with an eraser halfway it'll even describe an image of something thin homotopic to the identity.</p>",
+        "id": 500039440,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739735311
+    },
+    {
+        "content": "<p>Generality wise, lazy paths feel like a lateral move relative to piecewise smooth paths.</p>\n<p>Generality is an advantage of a theory, not a model. We want to prove as much as possible in a category, but sometimes we need a groupoid. </p>\n<p>But if we're making an example to describe something, we want as much structure as possible. So we want it to be a groupoid, but sometimes the best we can get away with is a category.</p>\n<p>At least that's how I think about it.</p>",
+        "id": 500039630,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739735451
+    },
+    {
+        "content": "<p>I like the idea that having a groupoid corresponds to being able to erase things!</p>",
+        "id": 500040848,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739736402
+    },
+    {
+        "content": "<p>Regarding piecewise smooth/linear/analytic: if you have in mind some software for drawing, you might want something different. Piecewise smooth or analytic sounds really hard to implement, and piecewise linear sounds too restrictive. Maybe you could consider things built out of Bezier curves for example?</p>",
+        "id": 500040964,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739736495
+    },
+    {
+        "content": "<p>\"splines\" also come to mind</p>",
+        "id": 500041008,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739736551
+    },
+    {
+        "content": "<p>A bezier spline is a sort of piecewise analytic curve. In software I just wouldn't be afraid of locking curves end to end, even if they weren't the same sort of curve.</p>",
+        "id": 500041094,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739736625
+    },
+    {
+        "content": "<p>You have to work really hard to make something that isn't differentiable in uncountably many places</p>",
+        "id": 500041166,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739736704
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277352\">Alex Kreitzberg</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions/near/500041094\">said</a>:</p>\n<blockquote>\n<p>A bezier spline is a sort of piecewise analytic curve. In software I just wouldn't be afraid of locking curves end to end, even if they weren't the same sort of curve.</p>\n</blockquote>\n<p>The idea of connecting curves of different kinds is interesting. For example, we could imagine snapping the end of a curve to a vertex of a polygon. This makes me start to wonder if each curve should come with a set of \"attachment points\". But perhaps this is getting a bit tangential to your current focus.</p>",
+        "id": 500041370,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739736850
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277352\">Alex Kreitzberg</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions/near/500041166\">said</a>:</p>\n<blockquote>\n<p>You have to work really hard to make something that isn't differentiable in uncountably many places</p>\n</blockquote>\n<p>I guess what I'm trying to say: you might get enough flexibility while restricting attention to the simpler case of combinations of linked Bezier curves.</p>",
+        "id": 500041441,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1739736923
+    },
+    {
+        "content": "<p>That's a tangent related to what I'm exploring here XD. Where your head is going is exactly how I think about stuff.</p>",
+        "id": 500041445,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739736925
+    },
+    {
+        "content": "<p>I was really impressed with Trefethen, so I'm planning on looking through his stuff on numerics, regarding modeling this stuff on a computer. I'm following his lead by thinking of these things as piecewise analytic.</p>\n<p>What that amounts to is I'm open to using complex analysis to understand these curves eventually.</p>",
+        "id": 500041592,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739737066
+    },
+    {
+        "content": "<p>Specifically, I was really impressed with Trefethen's takedown of \"myths in numerical analysis\" <a href=\"https://people.maths.ox.ac.uk/trefethen/mythspaper.pdf\">https://people.maths.ox.ac.uk/trefethen/mythspaper.pdf</a></p>",
+        "id": 500041705,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739737178
+    },
+    {
+        "content": "<p>It's funny, to build an intuition for why categories are worse than groupoids, I wanted to look up whether we had classification theorems for monoids (understanding that groups are classified) </p>\n<p>And found this helpful question by Baez:</p>\n<p><a href=\"https://mathoverflow.net/questions/131110/what-are-the-main-structure-theorems-on-finitely-generated-commutative-monoids\">https://mathoverflow.net/questions/131110/what-are-the-main-structure-theorems-on-finitely-generated-commutative-monoids</a></p>",
+        "id": 500062370,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739754775
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277352\">Alex Kreitzberg</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions/near/500062370\">said</a>:</p>\n<blockquote>\n<p>I guess my confusion here, is I have a definition of graph in my head that allows at most one edge between two vertices,</p>\n</blockquote>\n<p>When a graph theorist says 'graph' they often mean a 'simple graph', and I bet you're thinking about those.  A simple graph has at most one edge between two vertices, no edges from a vertex to itself, and no direction on the edges.   A better way to say this is that  simple graph is a set with a symmetric reflexive relation.</p>\n<blockquote>\n<p>It's funny, to build an intuition for why categories are worse than groupoids, I wanted to look up whether we had classification theorems for monoids (understanding that groups are classified) .</p>\n</blockquote>\n<p><span aria-label=\"shock\" class=\"emoji emoji-1f628\" role=\"img\" title=\"shock\">:shock:</span>   Groups are very much not classified.  If you could classify all finite groups you'd instantly get a job in the math department at any university you want.</p>",
+        "id": 500085974,
+        "sender_full_name": "John Baez",
+        "timestamp": 1739770194
+    },
+    {
+        "content": "<p>Right, finite simple groups are classified <span aria-label=\"man facepalming\" class=\"emoji emoji-1f926-200d-2642\" role=\"img\" title=\"man facepalming\">:man_facepalming:</span>, good catch.</p>",
+        "id": 500086269,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739770323
+    },
+    {
+        "content": "<p>The process of building up more general finite groups from finite simple groups uses cohomology.  It's a fascinating business, but <em>classifying</em> finite gorups is provably a <a href=\"https://mathoverflow.net/questions/180355/in-what-sense-is-the-classification-of-all-finite-groups-impossible\">'wild problem'</a>, meaning at least as hard as a bunch of problems that are considered intractable.</p>",
+        "id": 500087135,
+        "sender_full_name": "John Baez",
+        "timestamp": 1739770744
+    },
+    {
+        "content": "<p>Would you be up for expanding on why Lazy paths are nicer than piecewise smooth paths? Or why you chose lazy paths in \"An Invitation to Higher Gauge Theory\"?</p>",
+        "id": 500093102,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739773523
+    },
+    {
+        "content": "<p>For starters, it's nicer for a path to be smooth everywhere than just piecewise smooth: its derivative, second derivative, etc. make sense everywhere, and you don't have to fuss about places where they're not defined.</p>\n<p>The problem is that if you compose two smooth paths you don't get a smooth path, just a piecewise smooth path.</p>\n<p>But lazy paths are smooth paths with this nice property: if you compose two lazy paths, you get another lazy (and thus smooth) path.</p>\n<p>Finally, you can take any smooth path and reparametrize in a way that turns it into a lazy path.   So if you're mainly interested in paths up to reparametrization (as one is, in gauge thoery), you don't lose anything by restricting to lazy paths.</p>",
+        "id": 500094560,
+        "sender_full_name": "John Baez",
+        "timestamp": 1739774177
+    },
+    {
+        "content": "<p>Okay cool, that makes sense. In all the examples I mentioned (moving chess pieces, playing accordion, drawing) I think reparameterization doesn't lose too much. So I'll try to think more about lazy paths.</p>\n<p>I guess, analytic curves are too rigid for there to be a lazy analog for them, because of analytic continuation, any interval will determine the rest of the curve. So I think you're stuck with piecewise analytic if you want to concatenate arbitrary analytic curves. Maybe that's why Trefethen defends them, because they want to use complex analysis. But maybe this is getting into \"nice morphism, bad category\" territory.</p>",
+        "id": 500098639,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739775974
+    },
+    {
+        "content": "<p>What you just posted was interesting Baez, you can leave it there!</p>",
+        "id": 500101514,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739777255
+    },
+    {
+        "content": "<p>I didn't like it; it was too vague.   Anyway, you're right, there aren't any \"analytic lazy paths\" except constant paths (paths that don't move at all).</p>",
+        "id": 500101673,
+        "sender_full_name": "John Baez",
+        "timestamp": 1739777318
+    },
+    {
+        "content": "<p>Maybe, as a way to engage with your deleted thought, I might try and come up with an application that uses lazy paths in a natural way, and an application that uses piecewise analytic paths in a natural way. </p>\n<p>Maybe bonus points if it's the same physical system but in different contexts XD</p>",
+        "id": 500107313,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739779155
+    },
+    {
+        "content": "<p>Because I've noticed I keep wanting to identify these real world systems with one abstract presentation, and I think that's not quite right, or it at least isn't always right.</p>",
+        "id": 500107746,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739779279
+    },
+    {
+        "content": "<p>Okay, the main point of my deleted comment was that in applied mathematics or mathematical physics it's usually good to postpone technical decisions like what kind of paths you want to work with until you have a really good idea.  The challenge of getting the idea to work will often tell you how to make the technical decisions.</p>",
+        "id": 500109528,
+        "sender_full_name": "John Baez",
+        "timestamp": 1739779815
+    },
+    {
+        "content": "<p>For example, I introduced lazy paths because I was studying gauge theory and I wanted to to show that a connection can be seen as a functor sending reparametrization equivalence classes of paths to elements of a group or morphisms in a groupoid.   This is an old idea but previous attempts to do it were awkward in various ways.   Lazy paths make things work nicely, I think.    Whether or not I did the best possible job, I was trying to let the goal dictate my tools rather than the other way around.</p>\n<p>I wanted to optimize the technical decisions because my real goal was to categorify the existing theory and describe '2-connections' using paths in the space of paths, and things can get really ugly if you try to build a fancy structure using awkward tools.</p>",
+        "id": 500110894,
+        "sender_full_name": "John Baez",
+        "timestamp": 1739780215
+    },
+    {
+        "content": "<p>Thank you for this heuristic, I'm thinking about it and my goals. </p>\n<p>This is an aside, but honestly the way you explained this is making me wonder how hard it would be to \"reprove\" Stokes' theorem by working backwards from the theorem statement.</p>",
+        "id": 500271907,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739825295
+    },
+    {
+        "content": "<p>If we can't reprove something we don't fully understand it.  It's okay to use math we don't fully understand, because there's too much to fully understand all of it (especially all at once).  But for Stokes' theorem, for example, I've had to prove it a few times, so I remember some of the key insights, so I wouldn't be scared if someone would lock me in a cell and only let me out after I gave them a proof of Stokes' theorem.  Some other results would be more scary.</p>",
+        "id": 500290212,
+        "sender_full_name": "John Baez",
+        "timestamp": 1739835429
+    },
+    {
+        "content": "<p>So, while thinking about \"What is my goal?\", I happened to read a bit of MacLane's \"Mathematics Form and Function.\" His argument, that there are multiple formalisms corresponding to elementary ideas, has startled me.</p>\n<p>To overstate my mistake for clarity, while trying to formalize drawing, I dreamed of finding a unique formalism for the act of drawing; But there isn't one. There isn't even a unique formalism for paths.</p>\n<p>I'm making a painting program, I loath telling the artist how to draw. So bezier splines and line stabilizers <em>which are required because you're interpolating sampled analog data</em>, felt like an overreach. I wanted to give control of lines back to the artist.</p>\n<p>But, unless I'm misunderstanding MacLane's argument, I stepped on a philosophical land mine. I can't give artists the idea of a line, I can only give them a formal definition. So because formal definitions aren't unique - I'm forced to make a choice for the artist.</p>\n<p>Any of the above paths I mentioned, and many others, could be useful for art.</p>",
+        "id": 500963583,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740083319
+    },
+    {
+        "content": "<p>Good art relies on limitations.   I understand this most for music since I spend most of my time on that.   Digital audio workstations open a vast range of options for musicians, but musicians still like instruments, in part because they have <em>fewer</em> options and by practice you work those options into your muscle memory so you can eventually transmit what you're feeling without having to consciously think about all the details of sound production.  There are infinitely many possible instruments, but some have emerged, by a kind of process of mutation and natural selection, as providing particularly nice sets of options and limitations.   People who use DAWs a lot tend to make up their own systems of limitations.</p>\n<p>The same happens in math: there's an infinite landscape of possible formalisms, each of which makes some things quick and easy to say, and makes other things long and hard to say, but some are more attractive than others.</p>",
+        "id": 500976132,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740088480
+    },
+    {
+        "content": "<p>Right, if I programmed a proof assistant for mathematics, I would have to settle on some collection of formal definitions that captured some aspects of what it's like to do mathematics, I couldn't capture all aspects, or all formalisms.</p>\n<p>Therefore, there would still be a reason to do math without a proof assistant, if the mathematician needed maximum flexibility for whatever reason.</p>\n<p>Some folks are upset with \"Lean\" becoming the default proof assistant. I think a big part of the frustration is because you can't change the definitions Lean, or any language, settles on.</p>\n<p>What's throwing me for a loop is the possibility this is a \"philosophical limitation\" and not a technical one. Whether this annoys me or not, this isn't something I can fix.</p>\n<p>It's like the xkcd joke about standards(<a href=\"https://xkcd.com/927/\">https://xkcd.com/927/</a>), you'll never have a winning standard because no standard will be able to express all programs easily at the same time.</p>",
+        "id": 500981123,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740090387
+    },
+    {
+        "content": "<p>Welcome to reality.   We were born with a nose: we didn't choose that, it's just standard equipment.</p>",
+        "id": 500981694,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740090625
+    },
+    {
+        "content": "<p>Even if we could have infinitely flexible tools that don't shape our actions in any particular way (which is impossible), our <em>brains</em> would not be infinitely flexible.</p>",
+        "id": 500982055,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740090770
+    },
+    {
+        "content": "<p>In math you <em>can</em> change your definitions or formalism, but if you don't settle down and work within some framework you'll never do anything interesting.  So choose a good framework for what you want to do, do lots of cool stuff, and only change the framework when it becomes evident that a different framework would help you a lot.</p>",
+        "id": 500982770,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740091077
+    },
+    {
+        "content": "<p>For what it's worth, what I said above is my interpretation of the consequences implied by the following passage of MacLane's \"Mathematics Form and Function:</p>\n<blockquote>\n<p>This use of axioms... allows for the view that the formal systems studied in Mathematics come in a great variety and are intended primarily to help organize and understand selected aspects of the \"real world\" without being necessarily exact descriptions of a part of that unique world. For example, our presentation allows that the first step in the formalization of space could be the description of figures and chunks of space as models of metric space and not as subsets of Euclidean space. This is by no means the conventional view. </p>\n</blockquote>\n<p>I was looking for descriptions of physical features of the world, in this case of a path, that behaved the way mathematicians historically treated Euclidean Geometry - as a definite \"description of the world\". In a way, a historical answer to my attempted formalization would be to settle on Euclidean curves. The Greeks were good at art!</p>\n<p>MacLane convinced me this \"conventional view\" is false, and I'm trying to interpret his argument in ways that make this as obvious as possible.</p>\n<blockquote>\n<p>Our position is rather that congruence and geometric ratios on the one hand and Dedekind cuts on the other are just two different careful formalizations of the same underlying idea of magnitude-and that this point exemplifies the unity of idea behind the inevitably varied form. </p>\n</blockquote>\n<p>So you could do physics with a bunch of geometric axioms, or you could do it with differential equations of formulas. But they both depend on the same idea of \"magnitude\".</p>\n<p>Its not that I want a maximally flexible brain, it's that my intuition of  \"line\", \"circle\", \"triangle\", \"path\", isn't something I can put into a computer. I can only put a formalism of such into a computer. And I'll admit, I'm a bit embarrassed I didn't understand this point much sooner. </p>\n<p>I'm reflecting on a lot of my thoughts on mathematics and computing, and noticing many errors that amount to confusing an idea with a formalization of the idea.</p>\n<p>This seems related to the discussion a bit ago with Onstead about whether you could have a definite definition for \"space\" - you can't because \"space\" is an \"idea\", according to my understanding of MacLanes' argument.</p>",
+        "id": 500989232,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740093867
+    },
+    {
+        "content": "<p>All that said, I believe there are many definite things I'm trying to do, and I'll refocus my energy on that.</p>\n<p>It's a bit embarrassing to me how easy it is to get confused when trying to apply mathematics to things in the world.</p>",
+        "id": 500990242,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740094389
+    },
+    {
+        "content": "<blockquote>\n<p>I'm reflecting on a lot of my thoughts on mathematics and computing, and noticing many errors that amount to confusing an idea with a formalization of the idea.</p>\n</blockquote>\n<p>That's interesting.  </p>\n<p>The reason we can't capture the concept of 'space' in a definition feels a bit different than why we can't completely capture the concept of \"triangle\".    The word 'space' is used in an extremely flexible way, and people are constantly making up entirely new kinds of space.   If we limit ourselves to triangles on the Euclidean plane, the concept of 'triangle' is comparatively much more limited.   </p>\n<p>I can still list many different formalizations of 'the Euclidean plane': axioms for Euclidean geometry in terms of points and lines, of which there are at least 3 really famous one, coordinate-based Cartesian geometry, and coordinate-free Cartesian geometry using algebra.  And within each one of these, there are multiple formal concepts of what counts as a 'triangle': a triple of points, an ordered triple of points, etc.   However, all of this seems quite tame and typical of how math works: we can easily prove theorems relating all these different concepts of triangle, and any good mathematician is expected to know some of this stuff, or at least not get into a tizzy about it.</p>",
+        "id": 500990352,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740094449
+    },
+    {
+        "content": "<p>On the other hand, you mentioned your 'intuition' of a triangle!   <em>THAT</em> is a completely mysterious thing.</p>",
+        "id": 500990392,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740094482
+    },
+    {
+        "content": "<p>I find it hard to apply math for the purpose of thinking about things in the real world. I really want to do so (in order to think about medical imaging more deeply!), but it's much easier to just keep learning more math instead <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span>.</p>\n<p>So I find the thoughts in this thread quite interesting - and I feel somewhat consoled: it's not just me who finds this process challenging!</p>",
+        "id": 500991173,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1740094900
+    },
+    {
+        "content": "<p>I'll admit I have trouble seeing why it's hard to apply math to the real world!   But I'm probably just used to doing it.   I've been doing it for a long time, so when I think about the real world, it's almost automatic to filter out aspects that I don't know how to formalize - and there's still plenty left.</p>",
+        "id": 500993189,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740095941
+    },
+    {
+        "content": "<p>Years ago I was exhausted with trying to keep track of how various software libraries defined the \"same idea\" in dramatically different ways. To understand the choices I analogized this business logic situation in terms of various definitions of circles. </p>\n<p>And after doing so I easily could list over five different definitions of circles with varying degrees of superficiality. And I got really exasperated, because those definitions implied a need to convert between all the representations. And then if you included small errors, you could get even more definitions, with even harder conversions to track. Or if the definition is in an external library, I might not be allowed to convert from it in a simple way.</p>\n<p><em>And then</em> if it became important to shift categories, say when you want to project a circle in perspective for computer graphics, you now have even more \"circles\" you have to track conversions between.</p>\n<p>I had a moment where I just felt defeated keeping all these definitions under control. I remember thinking \"It's just circles, why is this so hard\".</p>\n<p>Part of what I find compelling about category theory is that it claims to organize all the various mathematical subjects. People like to pick on the subject as just being about \"stamp collecting\", but even if that false assessment were true - I'd still be impressed! Organizing knowledge is about one of the hardest things I've ever tried to do (at least in a software context).</p>",
+        "id": 500993242,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740095975
+    },
+    {
+        "content": "<p>I agree that it's annoying that there are lots of software packages for dealing with circles, and it's difficult to convert between the different representations.  This is why I don't program!   It's much easier for me to control what's going on in my own brain, and convert between my own personal ways of thinking about circles. That's why I like math.</p>",
+        "id": 500993881,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740096204
+    },
+    {
+        "content": "<p>I'm very glad there are people who like to program.  Luckily there are so many of them that the world doesn't need yet another one.</p>\n<p>So when you mentioned different concepts of circle, I automatically thought of different mathematical definitions of circle, not different software approaches.  I'm completely ignorant of those, and I don't feel sad about that.</p>",
+        "id": 500993982,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740096245
+    },
+    {
+        "content": "<p>I think Mathematicians are at risk of the same problems, but are somehow much better at keeping it at bay.</p>",
+        "id": 500994129,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740096323
+    },
+    {
+        "content": "<p>If all mathematicians were forced to do everything in Lean, then everything would grind to a halt, I think for reasons that involve some of the aspects of what I said above.</p>",
+        "id": 500994309,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740096404
+    },
+    {
+        "content": "<p>Well I don't know if things would grind to a halt, but I suspect the formalization burden could increase the number of things that have to be tracked. Including things mathematicians don't generally care about.</p>",
+        "id": 500994462,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740096482
+    },
+    {
+        "content": "<p>If all mathematicians were forced to do everything in Lean, I would become.... <em>not a mathematician, but a guy who does math without using Lean!</em></p>",
+        "id": 500994650,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740096580
+    },
+    {
+        "content": "<p>I would talk to the official \"mathematicians\" and tell them cool ideas, which they could implement in Lean.</p>",
+        "id": 500994778,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740096630
+    },
+    {
+        "content": "<p>I already feel like that in our project for using category theory to design better epidemiological software.  I'm the guy who doesn't know how to program... but I still have cool ideas, which the team members who <em>do</em> program find useful.</p>",
+        "id": 500994895,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740096716
+    },
+    {
+        "content": "<p>I'm worried artists are accidentally signing themselves up for this hypothetical world, by using digital painting programs. But they don't realize they're doing that.</p>\n<p>Because they have to track, how does RGB work, what are vector graphics, how do digital pens and stabilizers work, blah blah blah.</p>\n<p>But it's a hard argument to make because, like you said, they learn how brushes and paper works, which inherently have limits, how's that different than a computer?</p>",
+        "id": 500995111,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740096836
+    },
+    {
+        "content": "<p>It makes me feel like a Luddite, but that's not true, I love computers</p>",
+        "id": 500995272,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740096916
+    },
+    {
+        "content": "<p>Brushes and paper are definitely different than a computer, because they are more limited in what they can do, they take more advantage of your motor skills, and when you are using them you don't have a bunch of symbolic representations floating around in your mind - just like playing a flute is really different from creating flute sounds on a computer.  The more traditional technologies are more about your <em>body</em>.</p>",
+        "id": 500995915,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740097263
+    },
+    {
+        "content": "<p>Ideally we will get good at blending the more traditional technologies with the computer technologies and create art that's better than either could do alone.</p>",
+        "id": 500996076,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740097359
+    },
+    {
+        "content": "<p>I actually think paper is more flexible in a way.</p>\n<p>In the real world, I can do projective geometry by folding the paper in fun ways, and then use water colors to paint on the paper - the paper doesn't care. I could use French curves, to play up \"bezier curves\" or I could use a ruler and make \"piecewise linear paths\".</p>\n<p>But when I formalize the paper on a computer, I have to make choices about what aspects of the paper I want to model.</p>\n<p>You only get more flexibility in principle <em>if you can program</em>. But even then you only get back what you are able to formalize.</p>",
+        "id": 500996512,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740097633
+    },
+    {
+        "content": "<p>In my program I was trying to figure out how to let the artist define programs to define whatever curves they want, part of what I'm grokking right now is if I'm not really careful about what I mean by that, it's a fools errand</p>",
+        "id": 500996700,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740097715
+    },
+    {
+        "content": "<p>Is \"crocking\" like \"grokking\"?</p>",
+        "id": 500996721,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740097739
+    },
+    {
+        "content": "<p>Typo sorry</p>",
+        "id": 500996737,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740097750
+    },
+    {
+        "content": "<p>Artists can already program whatever curves they want.... if they are good enough at programming.  But if you're doing the programming, you can try to figure out what curves artists <em>would like</em> to draw.</p>",
+        "id": 500996889,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740097825
+    },
+    {
+        "content": "<p>So then you make a tool that does something people like, not a tool that does \"everything\".</p>",
+        "id": 500996938,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740097854
+    },
+    {
+        "content": "<p>And now you know why I've been studying drawing for the past three years XD</p>",
+        "id": 500996977,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740097871
+    },
+    {
+        "content": "<p>But that's why I brought up Lean, I don't think it's possible to make a program that can do everything anybody might want to do, you can only make programs that help most people do most of what they want to do.</p>\n<p>But in a way, I think analog paper, although it can't do everything, really can be used \"for whatever you want\".</p>\n<p>That's why both mathematicians and artists use papers and pencils.</p>",
+        "id": 500997373,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740098108
+    },
+    {
+        "content": "<p>But then on a computer, most mathematicians spend their time in LaTeX, and most artists spend their time in Photoshop.</p>\n<p>They're seperate formalisms that capture two different aspects of how paper is used.</p>",
+        "id": 500997680,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740098285
+    },
+    {
+        "content": "<blockquote>\n<p>But that's why I brought up Lean, I don't think it's possible to make a program that can do everything anybody might want to do, you can only make programs that help most people do most of what they want to do.</p>\n</blockquote>\n<p>I agree, except I wouldn't even try for \"most people\" unless I was trying to make a lot of money.  I would try for the cool people - the people who do things I like.</p>",
+        "id": 500997869,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740098407
+    },
+    {
+        "content": "<p>It's like when I'm trying to explain math, the very first thing I do is figure out who my audience is.  It's never \"most people\".    It's always some more specific audience, and that lets me know what to do.</p>",
+        "id": 500998718,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740098936
+    },
+    {
+        "content": "<p>I guess, to bring this back to the ground then, I should pick something about drawing I find cool, and maybe try to imagine a program that would make that easier. </p>\n<p>And then maybe use that as an opportunity to define a useful theorem that would make that program easier to write or understand.</p>",
+        "id": 500999447,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740099359
+    },
+    {
+        "content": "<p>I'm reading Durer's book on measuring and painting, it's very interesting. I'm sure there's something in it I could say something about</p>",
+        "id": 500999775,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740099506
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277352\">Alex Kreitzberg</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions/near/500997373\">said</a>:</p>\n<blockquote>\n<p>But in a way, I think analog paper, although it can't do everything, really can be used \"for whatever you want\".</p>\n</blockquote>\n<p>What if you want to make videos or 3D images?</p>",
+        "id": 501003108,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740101515
+    },
+    {
+        "content": "<p>You could make a Zoetrope for simple animations, I make solids out of paper with polyhedral nets to practice drawing. Origami has been developed to an extremely high level, so you can even have programs generate folds that fit near arbitrary models, within a given error.</p>\n<p>But if I were to solve those problems without computers, I wouldn't necessarily use paper. I might use clay for 3D models for example. <br>\nBut my goal isn't to kill computers.</p>\n<p>And, I would never suggest you can do <em>literally anything</em> with paper. But a real piece of paper can do more than any one formal model of paper.</p>\n<p>The situation with computers is the reverse.</p>\n<p>I fully believe in a real sense you <em>can</em> do literally anything with a computer. But on a computer:</p>\n<p>\"If you wish to make an apple pie from scratch, you must first invent the universe\"</p>\n<p>Anything you want to do needs to be formalized, and these formalizations will be limited to what they were built for. </p>\n<p>Rebelle is a paint program that pretends to mix paint, but paint is more complicated than RGB, so it makes a bunch of subtle compromises and assumptions.</p>\n<p>I don't bring up this example to suggest computers are worse than paper for modeling water colors on paper, that isn't fair. I'm trying to communicate the tension that occurs when one tries to pretend an array of RGB values is a model of paper. I'm sensitive to this tension.</p>",
+        "id": 501007325,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740104169
+    },
+    {
+        "content": "<p>I have all these math toys in the real world I enjoy playing with. They reduce the burden on my imagination. </p>\n<p>What I'm learning is I can't formally model \"the toy\", I can only formally model aspects of the toys. I can't have a formal model of \"paper\" I have to formalize the specific quirk of paper I'm trying to prove things about.</p>",
+        "id": 501007955,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740104617
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277352\">Alex Kreitzberg</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions/near/500989232\">said</a>:</p>\n<blockquote>\n<p>Its not that I want a maximally flexible brain, it's that my intuition of  \"line\", \"circle\", \"triangle\", \"path\", isn't something I can put into a computer. I can only put a formalism of such into a computer. And I'll admit, I'm a bit embarrassed I didn't understand this point much sooner. </p>\n</blockquote>\n<p>Plato would be proud.</p>",
+        "id": 501079274,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1740136020
+    },
+    {
+        "content": "<p>I don't think of myself as a platonist XD.</p>\n<p>I want to use my real world toys and widgets to do math. I hope to use toys as \"formal mechanisms\" to track rules for me.</p>",
+        "id": 501155939,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740159942
+    },
+    {
+        "content": "<p>I think the world is more basic than my intuitions, I think my intuitions are impressions of the world.</p>",
+        "id": 501159068,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740161041
+    },
+    {
+        "content": "<p>Here's a diagram of stick figures from Desargues' book on drawing:</p>\n<p><a href=\"/user_uploads/21317/dkhSmAbVbWhBELSPMjFyxA6V/Stick_Figures.PNG\">Stick_Figures.PNG</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/dkhSmAbVbWhBELSPMjFyxA6V/Stick_Figures.PNG\" title=\"Stick_Figures.PNG\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"677x1077\" src=\"/user_uploads/thumbnail/21317/dkhSmAbVbWhBELSPMjFyxA6V/Stick_Figures.PNG/840x560.webp\"></a></div><p>I've already linked to Fialetti's \"How to draw an eye\":</p>\n<p><a href=\"user_uploads/21317/N6tF_WH4yGEUftFa452IMmj4/odoardo_fialetti_limbs_and_the_human_body-4.jpg\">odoardo_fialetti</a></p>\n<div class=\"message_inline_image\"><a href=\"user_uploads/21317/N6tF_WH4yGEUftFa452IMmj4/odoardo_fialetti_limbs_and_the_human_body-4.jpg\" title=\"odoardo_fialetti\"><img src=\"user_uploads/21317/N6tF_WH4yGEUftFa452IMmj4/odoardo_fialetti_limbs_and_the_human_body-4.jpg\"></a></div><p>And here are examples of \"gesture drawings\" by Glenn Vilpuu, a famous animator in art education circles:</p>\n<p><a href=\"/user_uploads/21317/2EmQfp6EdWRPT_iNkCn-Gmij/Glenn-Vilpuu.jpg\">Glenn Vilpuu.jpg</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/2EmQfp6EdWRPT_iNkCn-Gmij/Glenn-Vilpuu.jpg\" title=\"Glenn Vilpuu.jpg\"><img data-original-content-type=\"image/jpeg\" data-original-dimensions=\"2250x4000\" src=\"/user_uploads/thumbnail/21317/2EmQfp6EdWRPT_iNkCn-Gmij/Glenn-Vilpuu.jpg/840x560.webp\"></a></div><p>I could call all of these \"drawings\", that are built up out of \"lines\" and nobody would be confused - and nobody should be.</p>\n<p>But if I want to formalize these in order to make mathematical conclusions, or if I want to make drawing programs that are convenient to use for each of these artists, then each drawing suggests a completely different family of approaches.</p>\n<p>Sometimes we're in the category of topological spaces, and sometimes we're in the category of vector spaces, even though all of these spaces can be \"visualized\". Being \"visualizable\" doesn't imply the formal descriptions, or tools, should all be the same.</p>",
+        "id": 501183377,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1740170456
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277352\">Alex Kreitzberg</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Concatenation.20and.20piecewise.20analytic.20functions/near/500999447\">said</a>:</p>\n<blockquote>\n<p>I guess, to bring this back to the ground then, I should pick something about drawing I find cool, and maybe try to imagine a program that would make that easier. </p>\n<p>And then maybe use that as an opportunity to define a useful theorem that would make that program easier to write or understand.</p>\n</blockquote>\n<p>Good, good!  There's nothing like a specific goal to focus one's thoughts.</p>",
+        "id": 501184951,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740171100
+    }
+]
