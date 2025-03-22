@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Locally closed cartesian categories · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories.html">Locally closed cartesian categories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="506206495"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Locally%20closed%20cartesian%20categories/near/506206495" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories.html#506206495">(Mar 17 2025 at 16:39)</a>:</h4>
+<p><a href="https://mathstodon.xyz/@juli/114175592791722085">On Mastodon</a>, Juli O'Connor asked:</p>
+<blockquote>
+<p>Why is it usually said that the internal language of a LCCC is extensional dependent type theory (that is, dependent type theory with a rewrite rule making typal equalities judgemental), and not that the internal language of a LCCC is a dependent type theory where all equality types are propositions?</p>
+<p>Like, I get that in such a setting you can assume the rewrite rule and not create any contradictions. But with the rewrite rule you have don't have decidable type checking, and without the rule you do. I mean, you're basically just left with something like Lean, where you have to explicitly rewrite over any equalities.</p>
+<p>I don't know. I feel like I shied away from the undecidability of it all, but after thinking about it some more, I don't see why that part is even mentioned much. It just seems distracting compared to the actual utility of knowing that this is the internal language of an LCCC.</p>
+</blockquote>
+
+
+
+<a name="506218739"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Locally%20closed%20cartesian%20categories/near/506218739" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories.html#506218739">(Mar 17 2025 at 17:31)</a>:</h4>
+<p>To my way of thinking, to have a type of propositions at all requires a subobject classifier in the categorical model, which LCCCs do not necessarily have; without that, you can instead perform "equality reflection" to turn equalities in the type theory into equalities in the model, which makes the models extensional.</p>
+
+
+
+<a name="506223162"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Locally%20closed%20cartesian%20categories/near/506223162" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Madeleine Birchfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories.html#506223162">(Mar 17 2025 at 17:52)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="281326">Ryan Wisnesky</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories/near/506218739">said</a>:</p>
+<blockquote>
+<p>To my way of thinking, to have a type of propositions at all requires a subobject classifier in the categorical model, which LCCCs do not necessarily have. </p>
+</blockquote>
+<p>Juli O'Connor's question is not about having a type of propositions, it's about having axiom K/UIP (equalities are propositions) vs equality reflection.</p>
+
+
+
+<a name="506241673"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Locally%20closed%20cartesian%20categories/near/506241673" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories.html#506241673">(Mar 17 2025 at 19:21)</a>:</h4>
+<p>Indeed: if you don't have a type of propositions / subobject classifer in your LCCC, you must take equality reflection as a meta-theoretic axiom to interpret equality.  If you do have a type of propositions, because say you are in a topos, then you don't need to use a meta-theoretic rule such as equality reflection, you can use an actual proposition (object level) such as K/UIP as an axiom (or not an axiom).</p>
+
+
+
+<a name="506244523"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Locally%20closed%20cartesian%20categories/near/506244523" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories.html#506244523">(Mar 17 2025 at 19:35)</a>:</h4>
+<p>To put it another way, in my opinion the reason LCCCs are a model of extensional dependent type theory (no type Prop), rather than intensional dependent type theory (with a type Prop), is that the latter requires the structure of a sub-object classifier to interpret the type of propositions (which isn't present in an arbitrary LCCC).  Whereas the former can still interpret equalities, but not Prop itself, using equality reflection.  But maybe I'm not understanding the question, or rusty with my type theory.</p>
+
+
+
+<a name="506245272"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Locally%20closed%20cartesian%20categories/near/506245272" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Madeleine Birchfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories.html#506245272">(Mar 17 2025 at 19:39)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="281326">Ryan Wisnesky</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories/near/506244523">said</a>:</p>
+<blockquote>
+<p>To put it another way, in my opinion the reason LCCCs are a model of extensional dependent type theory (no type Prop), rather than intensional dependent type theory (with a type Prop)</p>
+</blockquote>
+<p>Intensional dependent type theories don't need to have universes or a type Prop either.</p>
+
+
+
+<a name="506247535"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Locally%20closed%20cartesian%20categories/near/506247535" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories.html#506247535">(Mar 17 2025 at 19:53)</a>:</h4>
+<p>Ok, sure, you don't necessarily need all Props in an intensional type theory but there should at least be an identity prop; to interpret the identity prop without a sub-object classifier (such as in an LCCC) you need a rule like equality reflection.</p>
+
+
+
+<a name="506305308"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Locally%20closed%20cartesian%20categories/near/506305308" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories.html#506305308">(Mar 18 2025 at 02:14)</a>:</h4>
+<p>Axiom K doesn't mention a type of propositions; nor does UIP.  UIP explicitly spells out that equality types are (-1)-truncated.</p>
+
+
+
+<a name="506525405"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Locally%20closed%20cartesian%20categories/near/506525405" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories.html#506525405">(Mar 18 2025 at 16:23)</a>:</h4>
+<p>Correct; dependent type theory with identity types (defined by J) and UIP but no universes or subobject classifier is a perfectly good theory that can serve as an internal language for LCCCs.</p>
+
+
+
+<a name="506525737"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Locally%20closed%20cartesian%20categories/near/506525737" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories.html#506525737">(Mar 18 2025 at 16:25)</a>:</h4>
+<p>As to Juli's original question, I would respond: why do you think that</p>
+<blockquote>
+<p>it [is] usually said that the internal language of a LCCC is extensional dependent type theory</p>
+</blockquote>
+<p>?</p>
+
+
+
+<a name="506527875"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Locally%20closed%20cartesian%20categories/near/506527875" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Madeleine Birchfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories.html#506527875">(Mar 18 2025 at 16:34)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories/near/506525405">said</a>:</p>
+<blockquote>
+<p>Correct; dependent type theory with identity types (defined by J) and UIP but no universes or subobject classifier is a perfectly good theory that can serve as an internal language for LCCCs.</p>
+</blockquote>
+<p>There's also this paper which proves the equivalence of extensional type theory and intensional type theory with UIP and function extensionality</p>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S0304397524006686">https://www.sciencedirect.com/science/article/pii/S0304397524006686</a></p>
+
+
+
+<a name="506528620"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Locally%20closed%20cartesian%20categories/near/506528620" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories.html#506528620">(Mar 18 2025 at 16:37)</a>:</h4>
+<p><em>Morita</em> equivalence.</p>
+
+
+
+<a name="506528942"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Locally%20closed%20cartesian%20categories/near/506528942" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Madeleine Birchfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories.html#506528942">(Mar 18 2025 at 16:39)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Locally.20closed.20cartesian.20categories/near/506525737">said</a>:</p>
+<blockquote>
+<p>As to Juli's original question, I would respond: why do you think that</p>
+<blockquote>
+<p>it [is] usually said that the internal language of a LCCC is extensional dependent type theory</p>
+</blockquote>
+<p>?</p>
+</blockquote>
+<p>I wonder, how much of this confusion comes from the nLab previously using "extensional type theory" to refer to type theories with UIP? From the <a href="https://ncatlab.org/nlab/show/extensional%20type%20theory">[[extensional type theory]]</a> article:</p>
+<blockquote>
+<p>Note: For a while, the nLab incorrectly used “extensional type theory” to refer to what we now call set-level type theory. If you encounter uses of this sort, please correct them.</p>
+</blockquote>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Mar 22 2025 at 12:08 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

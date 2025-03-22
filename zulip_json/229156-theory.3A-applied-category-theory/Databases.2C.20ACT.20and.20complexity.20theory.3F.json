@@ -1,0 +1,50 @@
+[
+    {
+        "content": "<p>I'm working on complexity theory for databases, which is what led me to ACT: I'm trying to see whether category theory can say something interesting about my problems.<br>\nThere is a notion of dynamic complexity formulated by Immermann and Patnaik. Essentially, for a relational database that is subject to change, auxiliary relations are maintained in another database over the same domain with the intention to help answering a query.  When an update to the database (for simplicity, an insertion or deletion of a tuple) occurs, every auxiliary relation is updated through a first-order query that can refer to the database as well as to the auxiliary relations. The typical example is maintaining an st- graph (say, representing users of a social network who follow and unfollow one another over time) and trying to answer the query \"is t reachable from s\"?</p>\n<p>The class of all queries maintainable in this way with first-order update formulas, is called Dyn-FO.<br>\nThe actual formalization can be a bit finicky: see e.g. the introductory sections of <a href=\"https://informatik-rub.de/wp-content/uploads/2021/03/SchwentickZ2016-siglog.pdf\">this</a> survey for one approach.<br>\nI believe this complexity class may admit a good categorical interpretation, and this would allow questions like the inexpressibility of certain problems within this class to be formulated and perhaps answered via sheaf theory and such, but I don't yet see how to carry this out. Am I barking up the wrong tree?</p>",
+        "id": 462095248,
+        "sender_full_name": "Martin",
+        "timestamp": 1723550593
+    },
+    {
+        "content": "<p>This is the kind of question I am very interested in! I’ve been studying categorical database theory, but have been learning some complexity theory lately. Feel free to DM me</p>",
+        "id": 462106640,
+        "sender_full_name": "Emilio Minichiello",
+        "timestamp": 1723553584
+    },
+    {
+        "content": "<p>Some possibly related work that may be of some interest: </p>\n<ul>\n<li><a href=\"https://arxiv.org/abs/2402.00206\">Towards a Unified Theory of Time Varying Data </a></li>\n<li><a href=\"https://arxiv.org/abs/2302.05575\">Compositional Algorithms on Compositional Data: Deciding Sheaves on Presheaves</a></li>\n<li><a href=\"https://ed-galilee.univ-paris13.fr/PDF/contrats%20doctoraux%202022/Mazza1_LIPN_2022_5.pdf\">A Categorical Approach to Descriptive Complexity Theory</a></li>\n</ul>",
+        "id": 462114863,
+        "sender_full_name": "Emilio Minichiello",
+        "timestamp": 1723555886
+    },
+    {
+        "content": "<p>Hi! I am reading about CQL and a point I keep coming across is that CQL checks for data integrity at compile time using automated theorem provers. How exactly does this work and what are these provers?</p>",
+        "id": 504645896,
+        "sender_full_name": "babu",
+        "timestamp": 1741627093
+    },
+    {
+        "content": "<p>The document <a href=\"https://arxiv.org/abs/1503.03571\">https://arxiv.org/abs/1503.03571</a> describes how CQL is implemented in terms functional programmers would understand, but the basic idea is that CQL is pluggable: it can use any theorem prover to accomplish its tasks, and we have implemented both our own provers and use open-source ones such as E and Vampire and Egglog.  The need to check functoriality abounds in computational category theory; if people write what they think is a functor, that needs to be check to actually be a functor; not all assignments of objects to objects and morphisms to morphisms that people can write down actually define functors.   But this functoriality check is undecidable, because categories can represent so many kinds of algebraic structure.  Hence, CQL uses a theorem prover to tackle this undecidable problem as best it can</p>",
+        "id": 504648048,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1741627764
+    },
+    {
+        "content": "<p>to elaborate a little bit, if you can decide the \"word problem\" (entailment) associated to a presentation of a category, then you can do pretty much anything with that category on a computer; but if you can't do that, then it is really hard (But not impossible) to get a computer to manipulate your category.  So every category input into CQL has an associated decision procedure constructed for it (which fails sometimes dues to undecidability, but not usually on real world examples)</p>",
+        "id": 504648587,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1741627918
+    },
+    {
+        "content": "<p>oh, and of course, in the context of co-pre-sheaves (categorical databases) functoriality of a functor C-&gt;Set indicates adherence to the \"data integrity constraints\" of C, that's how data integrity comes in</p>",
+        "id": 504649091,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1741628063
+    },
+    {
+        "content": "<p>thank you so much! it is very interesting, I'll take a look</p>",
+        "id": 504652851,
+        "sender_full_name": "babu",
+        "timestamp": 1741629216
+    }
+]

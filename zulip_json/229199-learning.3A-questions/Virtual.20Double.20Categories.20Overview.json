@@ -1,0 +1,176 @@
+[
+    {
+        "content": "<p>Recently I have been doing a lot of research into virtual double categories, enough to finally appreciate how \"naturally\" they arise, in spite of the rather complex explicit construction. Specifically, virtual double categories, especially virtual equipments, are a sort of natural place in which to do formal category theory: given a 2-category of categories (1-categories, categories enriched in 1-monoidal categories, categories internal to 1-categories) as the vertical component of the VDC, one can interpret the horizontal arrows as profunctors and thus have a notion of representability that is harder or even impossible to define without these data. <br>\nHowever, I want to categorify the situation and ask: what is the corresponding most \"natural\" place to do formal 2-category theory instead of just formal 1-category theory? In which construction do I have some vertical component that forms a 3-category (instead of a 2-category like in a VDC), such that if this is a 3-category of categories (2-categories, 2-categories enriched in 2-monoidal categories, categories internal to 2-categories), there is some similar/analogous notion of \"horizontal arrows\" that can be interpreted as 2-profunctors and yield the \"correct\" notion of representability for every such context? What about the same question for 3-category theory, n-category theory, or even infinity category theory?</p>",
+        "id": 421062118,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1707751920
+    },
+    {
+        "content": "<p>As <a href=\"#narrow/stream/348484-practice.3A-terminology-.26-notation/topic/naming.20loose.20arrows.20in.20triple.20categories/near/416769631\">mentioned in this thread</a>, there is a natural notion of \"virtual triple category\" defined analogously to virtual double categories, as one further iteration of an inductive definition. It is natural to conjecture that \"formal 2-dimensional category theory\" should take place inside a suitably structured virtual triple category, and similarly for higher n. But such a treatment does not yet exist in the literature.</p>",
+        "id": 421069620,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1707753685
+    },
+    {
+        "content": "<p>This is interesting, I had a look at the thread, though there may be a few things I'm still a little confused with there. One of the posts motivates needing a 3-dimensional structure by saying that every double functor induces two kinds of profunctor: an h-profunctor and v-profunctor. These along with the double functors then form the \"virtual triple category\" of double categories. However, I thought it was that a functor (and so a double functor) induces two \"representable profunctors\", but these two are just the same kind of \"thing\". For instance, in a \"typical\" proarrow equipment, one would consider them to be the same kinds of morphisms, but adjoint to one another in some way. For double categories, one can define a virtual double category/virtual equipment of double categories, where vertical morphisms are double functors and horizontal morphisms are all the double profunctors, no three dimensional structure needed. So then why would it be necessary to split double profunctors into two separate \"things\", the h and v profunctors?</p>",
+        "id": 421265903,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1707837780
+    },
+    {
+        "content": "<p>A functor induces two profunctors, in opposite directions. A double functor induces two different kinds of \"double profunctor\" in the same direction (and presumably also the same kind of double profunctor in the opposite direction too). \"h-profunctors\" and \"v-profunctors\" are different definitions.</p>",
+        "id": 421278152,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1707840955
+    },
+    {
+        "content": "<p>This is a general phenomenon in double category theory: e.g. there are various kinds of transformations of double functors.</p>",
+        "id": 421278281,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1707840980
+    },
+    {
+        "content": "<blockquote>\n<p>For double categories, one can define a virtual double category/virtual equipment of double categories, where vertical morphisms are double functors and horizontal morphisms are all the double profunctors, no three dimensional structure needed.</p>\n</blockquote>\n<p>The \"double profunctors\" you mention here are just one of the kinds of profunctors of double categories. So yes, you can define a 2-dimensional structure, but you're missing out on the richer structure that double categories actually possess. It's analogous to just considering a 2-category of categories, rather than a double category: you don't need to consider the extra structure, but you have a much richer setting in which to work if you do.</p>",
+        "id": 421278798,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1707841113
+    },
+    {
+        "content": "<p>However, this three-dimensional structure has only recently been investigated in <span class=\"user-mention\" data-user-id=\"275899\">@Christian Williams</span>'s thesis, and so there aren't yet very many concrete examples to motivate each of the definitions; the definition is motivated primarily by formal considerations.</p>",
+        "id": 421279148,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1707841211
+    },
+    {
+        "content": "<p>Vertical profunctors generalize monoidal profunctors; horizontal profunctors generalize (bi)actegories; and <a href=\"https://www.localcharts.org/t/tambara-modules-are-modules/12745\">double profunctors generalize Tambara modules</a>.</p>",
+        "id": 421299647,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1707848323
+    },
+    {
+        "content": "<p>Thanks for the clarifications! With this better understanding I now see what nlab means under \"double profunctor\"... the v-profunctors are meant to give the vertical heteromorphisms and the h-profunctors give the horizontal heteromorphisms. I assume this extends to virtual double categories where v-profunctors give the \"composable heteromorphisms\" between the VDCs and the h-profunctors give the \"virtual heteromorphisms\" between the VDCs. I also assume this extends to higher n-tuple categories to continue the analogies. That is, in order to understand triple categories in the best detail, one needs a quadruple virtual category where the objects are triple categories, the strongest morphism are the triple functors, and the three weaker morphisms represent profunctors for each of the three kinds of morphism in the triple category.<br>\nI have so many more questions about these higher tuple categories, though maybe I'll save them for another day. I do have more questions about VDCs I may ask in the meantime later.</p>",
+        "id": 421351622,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1707872428
+    },
+    {
+        "content": "<p>Here's a related question about VDCs: The nlab states \"from the monad fc on the virtual equipment Span = Span(Set) we can construct a new virtual equipment vDblProf = KMod(Span,fc) whose objects are virtual double categories, whose arrows are functors between them, whose proarrows are profunctors between them, and whose cells are transformations\". Which proarrows are these: the vertical or horizontal ones? I suspect it's the V-profunctors since under \"explicit definition\" it states a virtual profunctor of this form \"contains\" a profunctor between the underlying vertical categories, but then the question becomes, how can we get the virtual equipment where the proarrows are the horizontal ones?</p>",
+        "id": 421465080,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1707923220
+    },
+    {
+        "content": "<p>I only know of one kind of profunctor between <em>virtual</em> double categories.</p>",
+        "id": 421489567,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1707929816
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"673117\">John Onstead</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Virtual.20Double.20Categories.20Overview/near/421351622\">said</a>:</p>\n<blockquote>\n<p>I have so many more questions about these higher tuple categories, though maybe I'll save them for another day. I do have more questions about VDCs I may ask in the meantime later.</p>\n</blockquote>\n<p>Do be aware that you're essentially asking research questions: no-one has written about these concepts yet. So it may be that no-one knows the answers to the questions you're asking, or may be reluctant to give detailed answers without being able to point to a paper (you may have seen the recent discussion on this topic...).</p>",
+        "id": 421500785,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1707933255
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"673117\">John Onstead</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Virtual.20Double.20Categories.20Overview/near/421465080\">said</a>:</p>\n<blockquote>\n<p>Which proarrows are these: the vertical or horizontal ones? I suspect it's the V-profunctors since under \"explicit definition\" it states a virtual profunctor of this form \"contains\" a profunctor between the underlying vertical categories, but then the question becomes, how can we get the virtual equipment where the proarrows are the horizontal ones?</p>\n</blockquote>\n<p>Yes, it's the vertical/tight profunctors. The horizontal/loose profunctors do not form the loose-cells of a virtual double category whose tight-cells are functors of virtual double categories. (You can see this by looking at the <a href=\"#narrow/stream/348484-practice.3A-terminology-.26-notation/topic/naming.20loose.20arrows.20in.20triple.20categories/near/416837813\">image I posted</a>, at least assuming you believe that such definitions arrange themselves into a virtual triple category.)</p>",
+        "id": 421501240,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1707933393
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Virtual.20Double.20Categories.20Overview/near/421500785\">said</a>:</p>\n<blockquote>\n<p>Do be aware that you're essentially asking research questions: no-one has written about these concepts yet. So it may be that no-one knows the answers to the questions you're asking, or may be reluctant to give detailed answers without being able to point to a paper (you may have seen the recent discussion on this topic...).</p>\n</blockquote>\n<p>(That said, I hope I won't draw too much ire if I say that I am optimistic at least some of your questions on this topic will be answered in the literature in the not-too-distant future.)</p>",
+        "id": 421505130,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1707934700
+    },
+    {
+        "content": "<p>Here's a visual definition of vertical, horizontal, and double profunctors of VDCs:<br>\n<a href=\"/user_uploads/21317/78sBs7OzAKNkd55uT8V7QAyC/MultiMnd.pdf\">MultiMnd.pdf</a>, <br>\nfrom a few weeks ago <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/yoneda.20for.20virtual.20double.20categories/near/415932400\">in this thread</a>.</p>",
+        "id": 421521211,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1707940466
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> It's interesting that so much work has been done so far on n-categories over the years, but not as much attention has been paid to n-fold categories until recently. I'm starting to think of n-categories as being a sort of \"shadow\" of n-fold categories, with a good motivation for their definition being realizing them as n-fold categories with all morphism types but the \"tightest\" morphism being identities, which collapses double categories into 2-categories, triple categories into 3-categories, and so on. This is why I want to pursue n-fold categories for a project that I'm working on where I would need to define virtual n-fold categories and monads in virtual n-fold categories, going up to virtual infinity-fold categories. Would you think it wise to wait on this part of my project until the relevant papers come out?</p>",
+        "id": 421524966,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1707941714
+    },
+    {
+        "content": "<p>In the setting of strict n-fold categories, there is a lot of work (<a href=\"https://ncatlab.org/nlab/show/n-fold%20category\">[[n-fold category]]</a> has some references). But the notion of virtual double category is only recently attracting renewed interest (primarily due to the <a href=\"https://arxiv.org/abs/0907.2460\">paper</a> of Mike and Geoff, and subsequent work building upon theirs). My impression is that, previously, people found the concept too complicated to be taken seriously. However, there are now many compelling examples.</p>",
+        "id": 421525927,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1707942099
+    },
+    {
+        "content": "<p>That said, I do find it surprising that no-one studied further iterations of Leinster's plus-construction (including Leinster) previously.</p>",
+        "id": 421526073,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1707942146
+    },
+    {
+        "content": "<blockquote>\n<p>This is why I want to pursue n-fold categories for a project that I'm working on where I would need to define virtual n-fold categories and monads in virtual n-fold categories, going up to virtual infinity-fold categories. Would you think it wise to wait on this part of my project until the relevant papers come out?</p>\n</blockquote>\n<p>I agree this is an interesting question. I would not want to dissuade you from thinking about these topics. However, I know there are people who are also working on such questions, so that is worth bearing that in mind. One such person is Keisuke Hoshino, who wrote a master's thesis on this topic; my understanding was that he intended to continue working on the topic for his PhD.</p>",
+        "id": 421527447,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1707942638
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/d32hTkJoIQYmFji7Ad0sGh9S/Towards-structures-of-higher-categorical-structures.pdf\">Towards-structures-of-higher-categorical-structures.pdf</a></p>",
+        "id": 421527545,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1707942673
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> As part of my project, I've been trying to find a good motivation for virtual n-fold categories that makes their complexity seem less complex and more obvious in a way. My final goal would be to find a way to directly introduce these categories to someone who hasn't even studied \"typical\" categories yet and still have it seem like an obvious thing to do. I haven't figured it out completely yet, but I have an idea that might work!<br>\nI will also have a look at the thesis, maybe it can answer some of my future questions on the subject!</p>",
+        "id": 421527879,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1707942801
+    },
+    {
+        "content": "<p>This has been one of my hobbyhorses for a while: that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-categories (including <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mi>n</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty,n)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mclose\">)</span></span></span></span>-categories and so on) get more press, but actually they are just one family (albeit a very important one) among a much larger zoo of higher categorical structures.  Two other important families are the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-fold categories and various kinds of \"virtual\" structures.  But I would argue that no one family of higher structures is the \"one true way\" -- each of them is important for different purposes.</p>",
+        "id": 421527948,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1707942828
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275899\">@Christian Williams</span> Thanks for the resource! One of my future questions was actually how to extend the theory of generalized multicategories (monads in span categories) to virtual triple categories. In a sense this makes viewing VDCs as multimonads in SpanCat as a more \"natural\" way of defining them as opposed to via the usual fc monad, since one can then derive the virtual triple category of virtual double categories as MultiMod(SpanCat)<br>\nMakes me wonder what the most \"natural\" way of defining a virtual triple category is. Maybe its a multimonad in some virtual quadruple category!</p>",
+        "id": 421528386,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1707942976
+    },
+    {
+        "content": "<p>exactly; I'm glad you see it too. <br>\nthe language of pseudomonads, i.e. double categories, generalizes to the language of multi-monads (VDCs), and moreover <em>poly-monads</em>, with inferences many-in and many-out, unifying lax and colax structures in a richer shared universe. and this should generalise to all dimensions.</p>",
+        "id": 421533389,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1707945015
+    },
+    {
+        "content": "<p>Thanks for the help so far! Moving on from n-fold categories, I wanted to discuss something more concrete in double categories and VDCs: universal properties. For instance, a proarrow equipment can be characterized as a double category such that every \"niche\" has a \"filler square\" satisfying a universal property. In virtual double categories, we have cartesian cells which define restrictions and opcartesian cells which define composition and units. <br>\nI understand the explicit definition just fine for universal properties in these settings (in terms of factorization and uniqueness and all that). What I want to know is if there exists a \"slick\" definition for universal properties in these settings. For what I mean, in 1-category theory there exists two main \"slick\" ways of defining a universal property: via representability (since for 1-category theory, representability and universal properties are intrinsically tied together due to the category of elements) and via finding a terminal/initial object in some relevant category (most usually a comma category). Do any analogues of these slick definitions from 1-category theory carry over to DCs and VDCs, and if not, is there any other \"slick\" definitions for universal properties in DCs and VDCs?</p>",
+        "id": 421677756,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1708010340
+    },
+    {
+        "content": "<p>Yes, have you heard of this fact? from <a href=\"https://arxiv.org/abs/0706.1286\">Framed bicategories and monoidal fibrations</a>: an equipment is (equivalent to) a double category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">C</span></span></span></span> so that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"double-struck\">C</mi><mn mathvariant=\"double-struck\">1</mn></msub><mo>→</mo><msub><mi mathvariant=\"double-struck\">C</mi><mn mathvariant=\"double-struck\">0</mn></msub><mo>×</mo><msub><mi mathvariant=\"double-struck\">C</mi><mn mathvariant=\"double-struck\">0</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\mathbb{C_1\\to C_0\\times C_0}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8389em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbb\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">C</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span></span> is a bifibration; this gives op/cartesian cells for each co/niche.</p>\n<p>This should generalize to VDCs: we could define a virtual equipment to be a (unital) multi-monad in the same setting in which equipments are pseudomonads: \"two-sided bifibrations\", defined in Chapter 2 of my thesis. <a href=\"/user_uploads/21317/VkYjCpUtd9aFoReUNrQl6SET/Logic-in-2D-Metalogic-in-3D.pdf\">Logic-in-2D-Metalogic-in-3D.pdf</a> </p>\n<p>But the tricky part is that while VEqus have both cartesian and opcartesian cells, from the discussion in <a href=\"https://arxiv.org/abs/0907.2460\">Generalized multicategories</a> it seems that we should only expect functors to preserve the cartesian cells. So, I'm not yet sure of the right construction. Probably someone has an idea.</p>",
+        "id": 421703277,
+        "sender_full_name": "Christian Williams",
+        "timestamp": 1708017260
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275899\">@Christian Williams</span> Thanks! I do have a quick question: I believe opcartesian cells give rise to composites and units, and functors preserve composites and units. Therefore, shouldn't it be that functors preserve opcartesian cells, while not necessarily preserving cartesian ones? I'm probably getting confused on something, maybe it's the terminology?<br>\nIn addition, I'm wondering how to cleanly define universal constructions like cartesian cells even when the ambient category does not have all of that type of universal construction. Kind of like how you can have a relative adjoint rather than a full adjoint?</p>",
+        "id": 421750897,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1708035653
+    },
+    {
+        "content": "<blockquote>\n<p>Therefore, shouldn't it be that functors preserve opcartesian cells, while not necessarily preserving cartesian ones?</p>\n</blockquote>\n<p>Lax functors preserve cartesian cells, whereas oplax functors preserve opcartesian cells (this is explained on page 25 of \"Framed bicategories and monoidal fibrations\"). The appropriate notion of functor between virtual double categories is essentially lax (just as functors between multicategories correspond to lax monoidal functors).</p>",
+        "id": 421751160,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1708035806
+    },
+    {
+        "content": "<p>When looking back at the double profunctor page, it states that an h-double profunctor can be represented as a Span(Set) valued lax double bifunctor. This seems analogous to how a V-enriched profunctor can be seen as a V-valued bifunctor. I want to know how far this analogy goes: is it possible, from some perspective, to see a double category as being \"enriched\" in Span(Set)? Are there \"enriched double categories\" whose double profunctors can be represented by Span(V) valued lax double bifunctors, for V some other category than Set? And can any of this be tied to enrichment in a virtual double category as consisting of a functor from a \"codiscrete\" VDC on some set to the VDC one wishes to enrich within?</p>",
+        "id": 421884674,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1708098360
+    }
+]
