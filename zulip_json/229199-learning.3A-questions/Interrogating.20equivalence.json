@@ -1,0 +1,86 @@
+[
+    {
+        "content": "<p>I want a simple way to get myself in trouble with equivalence. </p>\n<p>Define a \"finite\" category to be a category with a finite number of objects and morphisms.</p>\n<p>This is problematic because you could have an infinite number of objects all isomorphic, and therefore, equivalent to one object.</p>\n<p>So \"number of objects\" isn't equivalence invariant.</p>\n<p>But you could maybe define a Functor on an \"essentially finite\" category, by returning the number of objects in the \"essentially finite\" categories skeleton.</p>\n<p>I saw \"Finite category\" was defined to be a category internal to FinSet on the nlab, which is very fun! This seems to me, to be phrased carefully in an equivalence invariant way. In particular, this implies a finite number of objects and morphisms.</p>\n<p>In any case, could somebody help me see how \"essentially finite\" is safe and useful, where simply \"finite\", in the sense introduced, gets me into trouble?</p>\n<p>The point here is to understand equivalence, not finite categories, so if folks have better examples to clarify equivalence feel free to share them.</p>",
+        "id": 508846561,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743196489
+    },
+    {
+        "content": "<p>It's hard for me to deliberately come up with ways to get in trouble by ignoring the fact that the finiteness of the set of objects is not invariant under equivalence.</p>",
+        "id": 508866812,
+        "sender_full_name": "John Baez",
+        "timestamp": 1743208880
+    },
+    {
+        "content": "<p>There are some interesting concepts of the cardinality of an essentially finite category that <em>are</em> invariant under equivalence.  Of course it's easy to come up with ones that <em>aren't</em>.</p>",
+        "id": 508867171,
+        "sender_full_name": "John Baez",
+        "timestamp": 1743209142
+    },
+    {
+        "content": "<p>In my experience, equivalence of categories is less a case of \"if you work with isomorphism bad things happen\" and more a case of \"if you work with isomorphism good things DON'T happen\".</p>",
+        "id": 508882738,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1743220876
+    },
+    {
+        "content": "<p>I see, interesting, so it's more a device to discover useful definitions?</p>",
+        "id": 508883008,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743221068
+    },
+    {
+        "content": "<p>Like I could focus on isomorphisms, but I'll just keep banging my head against a wall to make interesting conclusions?</p>",
+        "id": 508883041,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743221113
+    },
+    {
+        "content": "<p>For example, we informally think of the category whose objects are the \"model vector spaces\" <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"double-struck\">R</mi><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}^n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span></span></span></span> (one for each <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>) and whose arrows are linear maps as being \"the same\" as the category whose objects are <em>all</em> vector spaces <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span></span></span></span> whose arrows are linear maps. But here \"sameness\" has to mean equivalence. For concreteness say that the map from model vector spaces to all vector spaces is the inclusion, and the map the other way is defined by dimension. Then if you start with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span></span></span></span>, go to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"double-struck\">R</mi><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}^n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span></span></span></span> and then back, you end up at <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"double-struck\">R</mi><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}^n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span></span></span></span> which is <em>not</em> the vector space <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span></span></span></span> you started with! It's merely <em>isomorphic</em> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span></span></span></span></p>",
+        "id": 508883045,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1743221115
+    },
+    {
+        "content": "<p>So if you want these categories to be the same, and morally they <em>should be</em>, then you need equivalence</p>",
+        "id": 508883072,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1743221136
+    },
+    {
+        "content": "<p>Here's another example:</p>",
+        "id": 508883084,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1743221148
+    },
+    {
+        "content": "<p>You probably want syntax and semantics to be \"dual\" to each other in some sense... How might one make this precise? Well you can start with a (cauchy complete) finite product category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">T</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{T}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">T</span></span></span></span> (thought of as a <a href=\"https://ncatlab.org/nlab/show/lawvere%20theory\">[[lawvere theory]]</a>) then go to its category of models (finite product functors <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">T</mi><mo>→</mo><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">\\mathbb{T} \\to \\mathsf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">T</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span></span></span></span>). From its category of models you can look at the (opposite of the ) full subcategory of free models to recover <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">T</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{T}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">T</span></span></span></span>.... But not on the nose! You only recover something <em>equivalent</em> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">T</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{T}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">T</span></span></span></span>!</p>",
+        "id": 508883293,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1743221302
+    },
+    {
+        "content": "<p>So if you want to be able to say that going from syntax to semantics and back gets you to the \"same place you started\", you're forced into considering equivalence as \"the right notion of sameness\". Isomorphism just doesn't work, since in general the full subcategory of free models might have more objects than the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">T</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{T}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">T</span></span></span></span> you started with (for basically the same reason Vect has more objects than the category of \"model vector spaces\" in the previous example)</p>",
+        "id": 508883364,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1743221391
+    },
+    {
+        "content": "<p>What you're saying makes a ton of sense, I'm going to think on it a bit.</p>\n<p>But I like the framing that \"I want to\" think up to isomorphism. This is very clarifying, it underscores how not problematic many would be aspects are, they're just \"boring\".</p>",
+        "id": 508884047,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743222049
+    },
+    {
+        "content": "<p>Re-stating a bit to introduce the concept of \"evil\" into this thread, asking that two categories be isomorphic is \"evil\" in that it requires comparing functors up to equality rather than natural isomorphism.  Whereas equivalence of categories is not evil.</p>",
+        "id": 508893270,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1743229404
+    },
+    {
+        "content": "<p>I would really warn against using the term \"evil\", as in my experience it causes more confusion than it avoids (discussed a little in this previous thread: <a class=\"message-link\" href=\"/#narrow/channel/229199-learning.3A-questions/topic/Question.20about.20reflector/near/468921111\">#learning: questions &gt; Question about reflector @ 💬</a> ).</p>",
+        "id": 508905123,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1743240185
+    }
+]

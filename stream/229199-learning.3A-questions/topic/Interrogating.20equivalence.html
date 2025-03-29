@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Interrogating equivalence · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Interrogating.20equivalence.html">Interrogating equivalence</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="508846561"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Interrogating%20equivalence/near/508846561" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Interrogating.20equivalence.html#508846561">(Mar 28 2025 at 21:14)</a>:</h4>
+<p>I want a simple way to get myself in trouble with equivalence. </p>
+<p>Define a "finite" category to be a category with a finite number of objects and morphisms.</p>
+<p>This is problematic because you could have an infinite number of objects all isomorphic, and therefore, equivalent to one object.</p>
+<p>So "number of objects" isn't equivalence invariant.</p>
+<p>But you could maybe define a Functor on an "essentially finite" category, by returning the number of objects in the "essentially finite" categories skeleton.</p>
+<p>I saw "Finite category" was defined to be a category internal to FinSet on the nlab, which is very fun! This seems to me, to be phrased carefully in an equivalence invariant way. In particular, this implies a finite number of objects and morphisms.</p>
+<p>In any case, could somebody help me see how "essentially finite" is safe and useful, where simply "finite", in the sense introduced, gets me into trouble?</p>
+<p>The point here is to understand equivalence, not finite categories, so if folks have better examples to clarify equivalence feel free to share them.</p>
+
+
+
+<a name="508866812"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Interrogating%20equivalence/near/508866812" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Interrogating.20equivalence.html#508866812">(Mar 29 2025 at 00:41)</a>:</h4>
+<p>It's hard for me to deliberately come up with ways to get in trouble by ignoring the fact that the finiteness of the set of objects is not invariant under equivalence.</p>
+
+
+
+<a name="508867171"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Interrogating%20equivalence/near/508867171" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Interrogating.20equivalence.html#508867171">(Mar 29 2025 at 00:45)</a>:</h4>
+<p>There are some interesting concepts of the cardinality of an essentially finite category that <em>are</em> invariant under equivalence.  Of course it's easy to come up with ones that <em>aren't</em>.</p>
+
+
+
+<a name="508882738"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Interrogating%20equivalence/near/508882738" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Grossack (she/they) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Interrogating.20equivalence.html#508882738">(Mar 29 2025 at 04:01)</a>:</h4>
+<p>In my experience, equivalence of categories is less a case of "if you work with isomorphism bad things happen" and more a case of "if you work with isomorphism good things DON'T happen".</p>
+
+
+
+<a name="508883008"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Interrogating%20equivalence/near/508883008" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Interrogating.20equivalence.html#508883008">(Mar 29 2025 at 04:04)</a>:</h4>
+<p>I see, interesting, so it's more a device to discover useful definitions?</p>
+
+
+
+<a name="508883041"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Interrogating%20equivalence/near/508883041" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Interrogating.20equivalence.html#508883041">(Mar 29 2025 at 04:05)</a>:</h4>
+<p>Like I could focus on isomorphisms, but I'll just keep banging my head against a wall to make interesting conclusions?</p>
+
+
+
+<a name="508883045"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Interrogating%20equivalence/near/508883045" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Grossack (she/they) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Interrogating.20equivalence.html#508883045">(Mar 29 2025 at 04:05)</a>:</h4>
+<p>For example, we informally think of the category whose objects are the "model vector spaces" <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="double-struck">R</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\mathbb{R}^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord"><span class="mord mathbb">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span> (one for each <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>) and whose arrows are linear maps as being "the same" as the category whose objects are <em>all</em> vector spaces <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi></mrow><annotation encoding="application/x-tex">V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span></span></span></span> whose arrows are linear maps. But here "sameness" has to mean equivalence. For concreteness say that the map from model vector spaces to all vector spaces is the inclusion, and the map the other way is defined by dimension. Then if you start with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi></mrow><annotation encoding="application/x-tex">V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span></span></span></span>, go to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="double-struck">R</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\mathbb{R}^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord"><span class="mord mathbb">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span> and then back, you end up at <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="double-struck">R</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\mathbb{R}^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord"><span class="mord mathbb">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span> which is <em>not</em> the vector space <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi></mrow><annotation encoding="application/x-tex">V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span></span></span></span> you started with! It's merely <em>isomorphic</em> to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi></mrow><annotation encoding="application/x-tex">V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span></span></span></span></p>
+
+
+
+<a name="508883072"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Interrogating%20equivalence/near/508883072" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Grossack (she/they) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Interrogating.20equivalence.html#508883072">(Mar 29 2025 at 04:05)</a>:</h4>
+<p>So if you want these categories to be the same, and morally they <em>should be</em>, then you need equivalence</p>
+
+
+
+<a name="508883084"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Interrogating%20equivalence/near/508883084" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Grossack (she/they) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Interrogating.20equivalence.html#508883084">(Mar 29 2025 at 04:05)</a>:</h4>
+<p>Here's another example:</p>
+
+
+
+<a name="508883293"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Interrogating%20equivalence/near/508883293" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Grossack (she/they) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Interrogating.20equivalence.html#508883293">(Mar 29 2025 at 04:08)</a>:</h4>
+<p>You probably want syntax and semantics to be "dual" to each other in some sense... How might one make this precise? Well you can start with a (cauchy complete) finite product category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">T</mi></mrow><annotation encoding="application/x-tex">\mathbb{T}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">T</span></span></span></span> (thought of as a <a href="https://ncatlab.org/nlab/show/lawvere%20theory">[[lawvere theory]]</a>) then go to its category of models (finite product functors <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">T</mi><mo>→</mo><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow></mrow><annotation encoding="application/x-tex">\mathbb{T} \to \mathsf{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">T</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">Set</span></span></span></span></span>). From its category of models you can look at the (opposite of the ) full subcategory of free models to recover <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">T</mi></mrow><annotation encoding="application/x-tex">\mathbb{T}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">T</span></span></span></span>.... But not on the nose! You only recover something <em>equivalent</em> to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">T</mi></mrow><annotation encoding="application/x-tex">\mathbb{T}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">T</span></span></span></span>!</p>
+
+
+
+<a name="508883364"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Interrogating%20equivalence/near/508883364" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Grossack (she/they) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Interrogating.20equivalence.html#508883364">(Mar 29 2025 at 04:09)</a>:</h4>
+<p>So if you want to be able to say that going from syntax to semantics and back gets you to the "same place you started", you're forced into considering equivalence as "the right notion of sameness". Isomorphism just doesn't work, since in general the full subcategory of free models might have more objects than the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">T</mi></mrow><annotation encoding="application/x-tex">\mathbb{T}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">T</span></span></span></span> you started with (for basically the same reason Vect has more objects than the category of "model vector spaces" in the previous example)</p>
+
+
+
+<a name="508884047"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Interrogating%20equivalence/near/508884047" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Interrogating.20equivalence.html#508884047">(Mar 29 2025 at 04:20)</a>:</h4>
+<p>What you're saying makes a ton of sense, I'm going to think on it a bit.</p>
+<p>But I like the framing that "I want to" think up to isomorphism. This is very clarifying, it underscores how not problematic many would be aspects are, they're just "boring".</p>
+
+
+
+<a name="508893270"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Interrogating%20equivalence/near/508893270" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Interrogating.20equivalence.html#508893270">(Mar 29 2025 at 06:23)</a>:</h4>
+<p>Re-stating a bit to introduce the concept of "evil" into this thread, asking that two categories be isomorphic is "evil" in that it requires comparing functors up to equality rather than natural isomorphism.  Whereas equivalence of categories is not evil.</p>
+
+
+
+<a name="508905123"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Interrogating%20equivalence/near/508905123" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Interrogating.20equivalence.html#508905123">(Mar 29 2025 at 09:23)</a>:</h4>
+<p>I would really warn against using the term "evil", as in my experience it causes more confusion than it avoids (discussed a little in this previous thread: <a class="message-link" href="/#narrow/channel/229199-learning.3A-questions/topic/Question.20about.20reflector/near/468921111">#learning: questions &gt; Question about reflector @ 💬</a> ).</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Mar 29 2025 at 12:08 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>
