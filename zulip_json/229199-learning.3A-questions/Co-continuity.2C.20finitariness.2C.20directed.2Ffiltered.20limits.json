@@ -1,0 +1,38 @@
+[
+    {
+        "content": "<p>Smyth and Plotkin (1979,1982) and Wand (1979) explored the existence of the initial algebra of a functor F. It basically boils down to requiring \"co-continuity\" of F: preservation of colimits of right chains.</p>\n<p>Taylor (1999), Capretta et al (2005), Adamek et al (2007) discussed recursive coalgebras for a functor F: F-coalgebras c such that for any F-algebra a, the equation h = a . Fh . c has a unique solution in h. There's an important result identifying three separate sufficient conditions for c to be a recursive coalgebra (informally, variant functions, finite unfoldings, coalgebra homomorphism to the inverse of the initial algebra), stating that these coincide when F is a \"finitary\" functor, ie F preserves directed colimits, sometimes stated as \"preserving filtered colimits\".</p>\n<p>Are these two things - preservation of colimits of right chains, and preservation of directed/filtered colimits - the same? If so, is there a good reason to give them different names, or is that just some historical accident? If not, why not? Counterexamples in SET-like categories are most helpful for me (since I'm using these notions in the context of types and programs). </p>\n<p>I've always felt comfortable with the relevance of co-continuity; but now I come to reflect on it, I don't think I have a good grasp of why a functor (in particular, an endofunctor on SET) might fail to be co-continuous. Knowing that co-continuity is the same as finitariness might help. Is the Stream endofunctor on SET (taking A to infinite sequences of As) non-finitary, and non-co-continuous? What is the difference between F(colim&lt;X_i&gt;) and colim&lt;F(X_i)&gt;, in particular when F=Stream and X_i=F^i(0)?</p>",
+        "id": 505374206,
+        "sender_full_name": "Jeremy Gibbons",
+        "timestamp": 1741860121
+    },
+    {
+        "content": "<p>See Locally Presentable and Accessible categories Thm 1.5, its immediate corollary, Subsection 1.6 and finally Corollary 1.7.</p>",
+        "id": 505421202,
+        "sender_full_name": "Ivan Di Liberti",
+        "timestamp": 1741872477
+    },
+    {
+        "content": "<p>Aha - perfect! Thank you.</p>",
+        "id": 505437518,
+        "sender_full_name": "Jeremy Gibbons",
+        "timestamp": 1741876081
+    },
+    {
+        "content": "<p>the stream functor is basically <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">N</mi><mo separator=\"true\">,</mo><mo>−</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\"> \\mathrm{Hom}(ℕ,-) </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Hom</span></span><span class=\"mopen\">(</span><span class=\"mord amsrm\">N</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">−</span><span class=\"mclose\">)</span></span></span></span>, and notice that maps <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">N</mi><mo>→</mo><mi mathvariant=\"normal\">N</mi></mrow><annotation encoding=\"application/x-tex\"> ℕ → ℕ </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord amsrm\">N</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord amsrm\">N</span></span></span></span> don't necessarily factor through one of the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">N</mi><mrow><mo>≤</mo><mi>i</mi></mrow></msub></mrow><annotation encoding=\"application/x-tex\"> ℕ_{≤i} </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9341em;vertical-align:-0.2452em;\"></span><span class=\"mord\"><span class=\"mord amsrm\">N</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mrel mtight\">≤</span><span class=\"mord mathnormal mtight\">i</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2452em;\"><span></span></span></span></span></span></span></span></span></span>, which is what co-continuity would entail.</p>",
+        "id": 505447301,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1741878228
+    },
+    {
+        "content": "<p>Another example of non-cocontinuous functor is given by the ultrafilter monad <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>β</mi></mrow><annotation encoding=\"application/x-tex\">\\beta</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05278em;\">β</span></span></span></span> on Set, whose algebras are compact Hausdorff spaces. It is the identity on finite sets. The map colim&lt;F(X_i)&gt; → F(colim&lt;X_i&gt;) for X_i the collection of finite subsets of some set X can be understood as the unit of this monad, which sends an element on its principal ultrafilter.</p>",
+        "id": 505454210,
+        "sender_full_name": "Vincent Moreau",
+        "timestamp": 1741879730
+    },
+    {
+        "content": "<p>Thanks, both. The Stream example is helpful to me, but I'm afraid I'm no topologist...</p>",
+        "id": 505500377,
+        "sender_full_name": "Jeremy Gibbons",
+        "timestamp": 1741891386
+    }
+]
