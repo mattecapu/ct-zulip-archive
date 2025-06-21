@@ -1,0 +1,80 @@
+[
+    {
+        "content": "<p>Glancing at Bartosz's blog post referenced <a href=\"\">here</a> </p>\n<blockquote>\n<p>If we want to allow for extreme shrinkage, as with a torus shrinking down to a circle, we have to relax the identity conditions.</p>\n</blockquote>\n<p>Drawing a torus in 3-space, I can easily visualize how to shrink a torus to a circle by shrinking along one factor, but not the other. Am I alone in my limited spatial intuition, or is there a topological obstruction at play here?</p>",
+        "id": 525059266,
+        "sender_full_name": "JR",
+        "timestamp": 1750431957
+    },
+    {
+        "content": "<p>The solid torus is not homeomorphic to a circle, but it sounds like you're correctly imagining a continuous map from the solid torus to a circle which is a homotopy equivalence.</p>",
+        "id": 525072946,
+        "sender_full_name": "John Baez",
+        "timestamp": 1750437527
+    },
+    {
+        "content": "<p>Or, alternatively, a homotopy from the standard embedding <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>S</mi><mn>1</mn></msup><mo>×</mo><msup><mi>S</mi><mn>1</mn></msup><mo>→</mo><msup><mi mathvariant=\"double-struck\">R</mi><mn>3</mn></msup></mrow><annotation encoding=\"application/x-tex\">S^1\\times S^1\\to \\mathbb{R}^3</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8974em;vertical-align:-0.0833em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span></span></span></span></span></span></span></span> to a map which is constant on one factor. Since <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"double-struck\">R</mi><mn>3</mn></msup></mrow><annotation encoding=\"application/x-tex\">\\mathbb R^3</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span></span></span></span></span></span></span></span> is homotopy-theoretically trivial (\"contractible\"), any two maps into it from any domain are homotopic, so you have to think about homotopies that don't move a space around in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"double-struck\">R</mi><mn>3</mn></msup></mrow><annotation encoding=\"application/x-tex\">\\mathbb R^3</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span></span></span></span></span></span></span></span> to start to get at the intrinsic topology.</p>",
+        "id": 525079067,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1750440440
+    },
+    {
+        "content": "<p>More simply, you can certainly imagine continuously contracting a circle to a point in the plane, but you can't imagine doing so without moving any of its points off the original circle.</p>",
+        "id": 525079125,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1750440471
+    },
+    {
+        "content": "<p>Right, but I'm saying that a homotopy to a circle is easier to visualize along one factor than the other. Is there some invariant (or more generally, reason) that captures this?</p>",
+        "id": 525094694,
+        "sender_full_name": "JR",
+        "timestamp": 1750448109
+    },
+    {
+        "content": "<p>Are you talking about a solid torus or the surface of a torus?  A solid torus is not a product space, and is homotopy-equivalent to a circle, but only in one \"direction\".  A surface torus is a product of two circles, and as such admits two projections to a circle, but neither is a homotopy equivalence.  In the latter case, one of the projections is indeed easier to visualize once you fix an embedding of the torus in 3-space; the other is abstractly equivalent but looks more natural if you embed it 'inside-out' in a different 3-space.</p>",
+        "id": 525097921,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1750449972
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/241590-theory.3A-algebraic-topology/topic/Homotopy.20question/near/525097921\">said</a>:</p>\n<blockquote>\n<p>Are you talking about a solid torus or the surface of a torus?  </p>\n</blockquote>\n<p><a href=\"https://bartoszmilewski.com/2025/06/20/weak-homotopy-equivalences/\">Bartosz's blog article</a> is trying to explain homotopy equivalence and how it's more general than homeomorphism, so when he says \"torus\" he must mean \"solid torus\" - since only a solid torus, not a torus, is homotopy equivalent to a circle.   He's not a topologist, and this is a hand-wavy introduction to a more carefully written post:</p>\n<blockquote>\n<p>In topology, we say that two shapes are the same if there is a homeomorphism– an invertible continuous map– between them. Continuity means that nothing is broken and nothing is glued together. This is how we can turn a coffee cup into a torus. A homeomorphism, however, won’t let us shrink a torus to a circle. So if we are only interested in how many holes the shapes have, we have to relax our notion of equivalence.</p>\n</blockquote>\n<p>He's taken the old \"coffee cup and doughnut\" joke and made it less accurate by replacing \"doughnut\" by the more technical sounding but less technically correct term \"torus\".</p>",
+        "id": 525100277,
+        "sender_full_name": "John Baez",
+        "timestamp": 1750451598
+    },
+    {
+        "content": "<p>That makes sense.  But I wonder if Bartosz's use of \"torus\" for \"solid torus\" is what has confused JR, since JR is talking about the \"two factors\" of a torus which doesn't make sense in the solid case.</p>",
+        "id": 525105046,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1750454649
+    },
+    {
+        "content": "<p>Yes, possibly.</p>",
+        "id": 525105849,
+        "sender_full_name": "John Baez",
+        "timestamp": 1750455130
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/241590-theory.3A-algebraic-topology/topic/Homotopy.20question/near/525097921\">said</a>:</p>\n<blockquote>\n<p>A solid torus is not a product space</p>\n</blockquote>\n<p>Isn't the solid torus the product of a circle and a disk? Sorry I don't mean to nitpick, I just want to check that I'm not losing my mind.</p>",
+        "id": 525106201,
+        "sender_full_name": "Oscar Cunningham",
+        "timestamp": 1750455352
+    },
+    {
+        "content": "<p>Haha, yes, you're right.  I should have said, it's not a product of two circles.</p>",
+        "id": 525106335,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1750455420
+    },
+    {
+        "content": "<p>(Of course, if we really want to get into it, <em>every</em> space \"is a product space\", namely of itself and a point...)</p>",
+        "id": 525106437,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1750455479
+    },
+    {
+        "content": "<p>Thanks, that makes sense.</p>",
+        "id": 525106468,
+        "sender_full_name": "Oscar Cunningham",
+        "timestamp": 1750455502
+    }
+]
