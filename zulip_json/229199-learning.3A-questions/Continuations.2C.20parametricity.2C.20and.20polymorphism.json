@@ -1,0 +1,572 @@
+[
+    {
+        "content": "<p>Are you all requiring function extensionality (not just eta) for both -&gt; and forall in your definition of model for system F?  I usually don't but some of these older papers do</p>",
+        "id": 527056316,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751568396
+    },
+    {
+        "content": "<p>I wouldn't.</p>",
+        "id": 527058413,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751569298
+    },
+    {
+        "content": "<p>Section 3 of Tannen Coquand ('Extensional Models for Polymorphism', <a href=\"https://repository.upenn.edu/server/api/core/bitstreams/4eed61a9-05c6-453e-be1e-58b5f5f47bbd/content\">https://repository.upenn.edu/server/api/core/bitstreams/4eed61a9-05c6-453e-be1e-58b5f5f47bbd/content</a>) gives a (the?) closed term model of system F, shows that it is not extensional, and shows how you can quotient it to get extensionality (section 4).  (That it satisfies betais stated earlier on page 11.)  So it seems like the closed term model may be parametric but not extensional, if that's even possible?  Anyway, is the Tannen Coquand model equivalent to what people understand as the system F term model?  FWIW I think both this thread and the HRR conclusion paragraph use \"true in the term model\" accidentally instead of \"true in all models/provable from beta/eta alone\" in many places</p>",
+        "id": 527064108,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751572243
+    },
+    {
+        "content": "<p>Hang on, I don't even know what funext means in a non-dependent type theory.</p>",
+        "id": 527065691,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751573040
+    },
+    {
+        "content": "<p>Oh, do you mean the axioms on p12 of TC, that functions are determined by their action on \"elements\"? That doesn't even make sense for a category theoretic model where types don't have \"elements\".</p>",
+        "id": 527066266,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751573314
+    },
+    {
+        "content": "<p>You could interpret elements as global elements i.e. maps from the terminal object, which in the term model are closed terms, but I certainly wouldn't expect functions in the term model to be determined by their action on closed terms.</p>",
+        "id": 527066528,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751573452
+    },
+    {
+        "content": "<p>The paper writes the condition semantically, but you can just as easily add proof rules to the system F calculus (from x:T |- f x = g x for fresh var x infer |- f = g), which is usually what I've seen</p>",
+        "id": 527066582,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751573480
+    },
+    {
+        "content": "<p>That's a different condition, that's just eta-conversion.</p>",
+        "id": 527066898,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751573649
+    },
+    {
+        "content": "<p>I do not believe funext and eta are equivalent here, or even in dependent type theories, although eta is a special case of funext</p>",
+        "id": 527066962,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751573682
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281326\">Ryan Wisnesky</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/synthetic.20algebraic.20geometry.20vs.20continuation.20passing.20style/near/527064108\">said</a>:</p>\n<blockquote>\n<p>I think both this thread and the HRR conclusion paragraph use \"true in the term model\" accidentally instead of \"true in all models/provable from beta/eta alone\" in many places</p>\n</blockquote>\n<p>Those should always be the same.  That's part of the point of the term model, that it satisfies only the provable equations and hence gives you completeness of the semantics.</p>",
+        "id": 527066978,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751573691
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281326\">Ryan Wisnesky</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/synthetic.20algebraic.20geometry.20vs.20continuation.20passing.20style/near/527066962\">said</a>:</p>\n<blockquote>\n<p>I do not believe funext and eta are equivalent here, or even in dependent type theories, although eta is a special case of funext</p>\n</blockquote>\n<p>Correct.  But this rule:</p>\n<p><span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi>x</mi><mo>:</mo><mi>T</mi><mo>⊢</mo><mi>f</mi><mtext> </mtext><mi>x</mi><mo>=</mo><mi>g</mi><mtext> </mtext><mi>x</mi></mrow><mrow><mo>⊢</mo><mi>f</mi><mo>=</mo><mi>g</mi></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{x:T \\vdash f\\,x = g\\,x}{\\vdash f =g }</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:2.2519em;vertical-align:-0.8804em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.3714em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8804em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span></span></span></p>\n<p>is eta, not funext.</p>",
+        "id": 527067038,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751573720
+    },
+    {
+        "content": "<p>(As long as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>=</mo></mrow><annotation encoding=\"application/x-tex\">=</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.3669em;\"></span><span class=\"mrel\">=</span></span></span></span> means definitional equality, and in a non-dependent type theory there's nothing else for it to mean.)</p>",
+        "id": 527067090,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751573745
+    },
+    {
+        "content": "<p>hm, I grabbed the phrasing from Coq: Lemma functional_extensionality {A B} (f g : A -&gt; B) :<br>\n  (forall x, f x = g x) -&gt; f = g.  What did I do wrong?  (it's a lemma b/c uses the dependent ext axiom)</p>",
+        "id": 527067842,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751574143
+    },
+    {
+        "content": "<p>also: the term model should satisfy a lot more equations than just what is provable in the rules for system F.   (The Tannen Coquand paper talks about this a bit).  For example, the term model of O:nat and S:nat-&gt;nat and + proves x+y=y+x for variable x, whereas an arbitrary model does not.  (at least if we're talking in Set, following Baader and Nipkow.). I thought this was the reason initial model semantics was \"good\" - you get all these extra properties not found in arbitrary models.</p>",
+        "id": 527068845,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751574685
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281326\">Ryan Wisnesky</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/synthetic.20algebraic.20geometry.20vs.20continuation.20passing.20style/near/527067842\">said</a>:</p>\n<blockquote>\n<p>hm, I grabbed the phrasing from Coq: Lemma functional_extensionality {A B} (f g : A -&gt; B) :  (forall x, f x = g x) -&gt; f = g.  What did I do wrong?  (it's a lemma b/c uses the dependent ext axiom)</p>\n</blockquote>\n<p>In that axiom <code>=</code> means <em>propositional</em> equality.</p>",
+        "id": 527069428,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751574999
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281326\">Ryan Wisnesky</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/synthetic.20algebraic.20geometry.20vs.20continuation.20passing.20style/near/527068845\">said</a>:</p>\n<blockquote>\n<p>For example, the term model of O:nat and S:nat-&gt;nat and + proves x+y=y+x for variable x, whereas an arbitrary model does not.</p>\n</blockquote>\n<p>Not in any term model I'm familiar with.  What is your definition of \"term model\"?  I have always understood the term model to consist <em>by definition</em> of the terms modulo definitional equality.</p>\n<p>Remember we are talking about term models with <em>open</em> terms.</p>",
+        "id": 527069597,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751575097
+    },
+    {
+        "content": "<p>It looks to me like that's exactly what TC do in their section 3.</p>",
+        "id": 527069790,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751575201
+    },
+    {
+        "content": "<p>They don't call it a \"model\" because they want to save that word for something that satisfies their additional semantic extensionality property, which of course the term model doesn't.  But their section 3 is really the \"term model\".</p>",
+        "id": 527069887,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751575253
+    },
+    {
+        "content": "<p>I'm following Baader and Nipkow re: term algebras.  <br>\n<a href=\"/user_uploads/21317/JOELAzAdZYJjMHWErgyMiHNE/Screenshot-2025-07-03-at-1.46.44PM.png\">Screenshot 2025-07-03 at 1.46.44 PM.png</a><br>\n<a href=\"/user_uploads/21317/FeaDdSklzNQwclYkEPhtN2BJ/Screenshot-2025-07-03-at-1.48.37PM.png\">Screenshot 2025-07-03 at 1.48.37 PM.png</a><br>\n<a href=\"/user_uploads/21317/0YZCaWmrJ1sQ0A3jD7qyky-E/Screenshot-2025-07-03-at-1.48.28PM.png\">Screenshot 2025-07-03 at 1.48.28 PM.png</a><br>\n<a href=\"/user_uploads/21317/zpsFoQA6HuOrCpvdMQ0UDcZO/Screenshot-2025-07-03-at-1.47.58PM.png\">Screenshot 2025-07-03 at 1.47.58 PM.png</a><br>\n<a href=\"/user_uploads/21317/8VV7iRVVuutcUNbU0-8Qdewq/Screenshot-2025-07-03-at-1.47.32PM.png\">Screenshot 2025-07-03 at 1.47.32 PM.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/JOELAzAdZYJjMHWErgyMiHNE/Screenshot-2025-07-03-at-1.46.44PM.png\" title=\"Screenshot 2025-07-03 at 1.46.44 PM.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1274x406\" src=\"/user_uploads/thumbnail/21317/JOELAzAdZYJjMHWErgyMiHNE/Screenshot-2025-07-03-at-1.46.44PM.png/840x560.webp\"></a></div><div class=\"message_inline_image\"><a href=\"/user_uploads/21317/FeaDdSklzNQwclYkEPhtN2BJ/Screenshot-2025-07-03-at-1.48.37PM.png\" title=\"Screenshot 2025-07-03 at 1.48.37 PM.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1284x274\" src=\"/user_uploads/thumbnail/21317/FeaDdSklzNQwclYkEPhtN2BJ/Screenshot-2025-07-03-at-1.48.37PM.png/840x560.webp\"></a></div><div class=\"message_inline_image\"><a href=\"/user_uploads/21317/0YZCaWmrJ1sQ0A3jD7qyky-E/Screenshot-2025-07-03-at-1.48.28PM.png\" title=\"Screenshot 2025-07-03 at 1.48.28 PM.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1290x210\" src=\"/user_uploads/thumbnail/21317/0YZCaWmrJ1sQ0A3jD7qyky-E/Screenshot-2025-07-03-at-1.48.28PM.png/840x560.webp\"></a></div><div class=\"message_inline_image\"><a href=\"/user_uploads/21317/zpsFoQA6HuOrCpvdMQ0UDcZO/Screenshot-2025-07-03-at-1.47.58PM.png\" title=\"Screenshot 2025-07-03 at 1.47.58 PM.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1300x650\" src=\"/user_uploads/thumbnail/21317/zpsFoQA6HuOrCpvdMQ0UDcZO/Screenshot-2025-07-03-at-1.47.58PM.png/840x560.webp\"></a></div><div class=\"message_inline_image\"><a href=\"/user_uploads/21317/8VV7iRVVuutcUNbU0-8Qdewq/Screenshot-2025-07-03-at-1.47.32PM.png\" title=\"Screenshot 2025-07-03 at 1.47.32 PM.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1314x1728\" src=\"/user_uploads/thumbnail/21317/8VV7iRVVuutcUNbU0-8Qdewq/Screenshot-2025-07-03-at-1.47.32PM.png/840x560.webp\"></a></div>",
+        "id": 527070869,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751575767
+    },
+    {
+        "content": "<p>example 3.5.9 shows there are equations that hold in the term algebra that don't hold in arbitrary algebras</p>",
+        "id": 527071084,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751575876
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/VQaSZazKwK66xKFtcKCsOk3o/Screenshot-2025-07-03-at-1.53.58PM.png\">Screenshot 2025-07-03 at 1.53.58 PM.png</a><br>\nBaader and Nipkow even define and name the theory of the term model (showing it is more than just the theory started with)</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/VQaSZazKwK66xKFtcKCsOk3o/Screenshot-2025-07-03-at-1.53.58PM.png\" title=\"Screenshot 2025-07-03 at 1.53.58 PM.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1278x256\" src=\"/user_uploads/thumbnail/21317/VQaSZazKwK66xKFtcKCsOk3o/Screenshot-2025-07-03-at-1.53.58PM.png/840x560.webp\"></a></div>",
+        "id": 527071552,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751576123
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/synthetic.20algebraic.20geometry.20vs.20continuation.20passing.20style/near/527069597\">said</a>:</p>\n<blockquote>\n<p>Remember we are talking about term models with <em>open</em> terms.</p>\n</blockquote>",
+        "id": 527072005,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751576365
+    },
+    {
+        "content": "<p>I thought the TC section 3 builds a model out of closed terms?  that's why they need all the environment machinery?  <br>\n<a href=\"/user_uploads/21317/VlXvN-M6mTLofcAY3uRQAPq-/Screenshot-2025-07-03-at-1.59.15PM.png\">Screenshot 2025-07-03 at 1.59.15 PM.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/VlXvN-M6mTLofcAY3uRQAPq-/Screenshot-2025-07-03-at-1.59.15PM.png\" title=\"Screenshot 2025-07-03 at 1.59.15 PM.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1778x716\" src=\"/user_uploads/thumbnail/21317/VlXvN-M6mTLofcAY3uRQAPq-/Screenshot-2025-07-03-at-1.59.15PM.png/840x560.webp\"></a></div>",
+        "id": 527072057,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751576392
+    },
+    {
+        "content": "<p>In a theory with function-types, you can get away with using only closed terms because an open term can be abstracted over its free variables to yield a closed term.</p>",
+        "id": 527072216,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751576454
+    },
+    {
+        "content": "<p>certainly they claim in the conclusion that their model \"C\" is made entirely of closed terms</p>",
+        "id": 527072241,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751576468
+    },
+    {
+        "content": "<p>But for instance the observation you quoted about <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mo>≈</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>y</mi><mo separator=\"true\">,</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">f(x,y)\\approx f(y,x)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≈</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span></span></span></span> is not true in a term model with open terms, if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span> are free variables.</p>",
+        "id": 527072305,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751576501
+    },
+    {
+        "content": "<p>sure, but I don't see how TC section 3 has free variables or open terms anywhere in its definition.  This is why I think the term model for system F should have all kinds of equations true in it that aren't implied by the theory of F.  The interpretation of a sequent that has variables in context uses the \"environment\" rather than an open term (a trick from closed term models of simply typed lambda calculus).  I'd also be surprised they'd call it the \"closed term/closed type construction\" if it used open terms.</p>",
+        "id": 527072489,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751576609
+    },
+    {
+        "content": "<p>I will agree that a model of system F with open terms as carrier will prove a lot less things than one with closed terms as carrier, according to my intuition</p>",
+        "id": 527072634,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751576688
+    },
+    {
+        "content": "<p>Okay, let's back up.  Really explaining this in depth is going to require a broader view.</p>",
+        "id": 527083809,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751583369
+    },
+    {
+        "content": "<p>I'm going to write to Prof Tannen.  I think he might be able to settle some questions (eg is there an equation true in his term model of system F that doesn't follow from beta/eta) faster than us trying to work through his definitions</p>",
+        "id": 527083866,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751583412
+    },
+    {
+        "content": "<p>(The answer to that specific question is that it depends on what you mean by \"equation\" and \"true\", which I'll get to in a bit.)</p>",
+        "id": 527083903,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751583446
+    },
+    {
+        "content": "<p>I do want to keep pressing on the (a?) closed term model of system F (instead of the open model), however, because to me that is what formalizes \"idealized haskell w/o recursion\"; it's what I have in my head when I write a big step operational semantics (the target is the closed term model)</p>",
+        "id": 527083924,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751583461
+    },
+    {
+        "content": "<p>Every theory is written in a \"doctrine\" that specifies the allowable judgment forms.  You can extend a theory to a more expressive doctrine, and we often blur the distinction between a theory and its extension, but formally they are different and it's sometimes important to distinguish.</p>",
+        "id": 527083967,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751583483
+    },
+    {
+        "content": "<p>In particular, the term model of a theory is built out of the judgment forms that are derivable in its syntax.  But what those are depends also on the doctrine, and thus the term model for a theory is different depending on what doctrine you write it in.</p>",
+        "id": 527084093,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751583577
+    },
+    {
+        "content": "<p>Theories like STLC and System F are written in doctrines whose judgment forms include contexts of variables, such as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>:</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>y</mi><mo>:</mo><mi>B</mi><mo>⊢</mo><mi>t</mi><mo>:</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">x:A, y:B \\vdash t:C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>.  Thus, their term models are built out of judgments of that sort, which are of course open terms.</p>",
+        "id": 527084150,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751583607
+    },
+    {
+        "content": "<p>The doctrine of STLC, with only \"term variables\", can be called \"simple type theory\", while the doctrine of System F, which also has type variables, could be called \"polymorphic type theory\".</p>",
+        "id": 527084277,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751583660
+    },
+    {
+        "content": "<p>well sure, the closed term model of TC interprets judgements with variables in context, but the carrier for their interpretation is not open terms</p>",
+        "id": 527084373,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751583734
+    },
+    {
+        "content": "<p>Let me finish please.</p>",
+        "id": 527084389,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751583743
+    },
+    {
+        "content": "<p>The term model of a simple type theory is most directly viewed as some kind of multicategory, whose objects are the types and whose multi-morphisms such as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>→</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">(A,B) \\to C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> are terms <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>:</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>y</mi><mo>:</mo><mi>B</mi><mo>⊢</mo><mi>t</mi><mo>:</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">x:A ,y:B \\vdash t:C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>.  However, it's common to view it instead as an ordinary category whose objects are contexts (lists of types), and whose morphisms are substitutions (lists of terms).</p>\n<p>If the theory has product types, this is equivalent to a category whose objects are single types and whose morphisms are terms in a singleton context such as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>:</mo><mi>A</mi><mo>⊢</mo><mi>t</mi><mo>:</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">x:A \\vdash t:C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>.  And even if the theory doesn't have product types, we can consider that category for simplicity.</p>",
+        "id": 527084559,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751583864
+    },
+    {
+        "content": "<p>If the theory has <em>function</em> types, then there is a bijection between open terms such as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>:</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>y</mi><mo>:</mo><mi>B</mi><mo>⊢</mo><mi>t</mi><mo>:</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">x:A, y:B \\vdash t:C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> and closed terms of type <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>→</mo><mi>B</mi><mo>→</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">A\\to B\\to C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>.  Thus, <em>in this case</em> we could equivalently build the term model using only closed terms.  This is what TC do in section 3, modulo some rearranging of their presentation to become a category, and ignoring the relation <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊨</mo></mrow><annotation encoding=\"application/x-tex\">\\vDash</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6922em;\"></span><span class=\"mrel amsrm\">⊨</span></span></span></span> which I haven't gotten to yet.</p>",
+        "id": 527084714,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751583995
+    },
+    {
+        "content": "<p>In particular, the <em>equality</em> between terms in the section 3 model is the equivalence relation that they call <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>G</mi><mi>ω</mi></msub></mrow><annotation encoding=\"application/x-tex\">G_\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">G</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.03588em;\">ω</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>, which is defined to be the definitional equality of syntax.  Thus, their term model <em>qua</em> category, like every term model, validates all and only the statements <em>in the doctrine</em> that are derivable in the theory.</p>",
+        "id": 527084869,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751584108
+    },
+    {
+        "content": "<p>So what about <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊨</mo></mrow><annotation encoding=\"application/x-tex\">\\vDash</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6922em;\"></span><span class=\"mrel amsrm\">⊨</span></span></span></span>.</p>",
+        "id": 527084886,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751584121
+    },
+    {
+        "content": "<p>In general it is true that a term model can satisfy additional statements that are <em>not in its doctrine</em>.</p>",
+        "id": 527084918,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751584147
+    },
+    {
+        "content": "<p>in Baader-Nipkow example 3.5.9, the extra equations it satisfies are not part of the doctrine of the original equational theory?</p>",
+        "id": 527085118,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751584312
+    },
+    {
+        "content": "<p>Right!</p>",
+        "id": 527085173,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751584362
+    },
+    {
+        "content": "<p>Ok, I'll need to pause to consider that.  I've never really used doctrines before, and Baader/Nipkow don't talk about that point at all</p>",
+        "id": 527085218,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751584402
+    },
+    {
+        "content": "<p>If we formulate a simple algebraic theory in a doctrine <em>without</em> contexts, there is just one judgment <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mtext> </mtext><mrow><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">m</mi></mrow></mrow><annotation encoding=\"application/x-tex\">t\\, \\mathrm{term}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">term</span></span></span></span></span>, with rules such as</p>\n<p><span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mfrac><mrow><mi>s</mi><mtext> </mtext><mrow><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">m</mi></mrow><mspace width=\"1em\"/><mi>t</mi><mtext> </mtext><mrow><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">m</mi></mrow></mrow><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>s</mi><mo separator=\"true\">,</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mtext> </mtext><mrow><mi mathvariant=\"normal\">t</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">m</mi></mrow></mrow></mfrac></mrow><annotation encoding=\"application/x-tex\">\\frac{s\\,\\mathrm{term} \\quad t\\,\\mathrm{term}}{f(s,t) \\,\\mathrm{term}}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:2.2281em;vertical-align:-0.936em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.2921em;\"><span style=\"top:-2.314em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">s</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">term</span></span></span></span><span style=\"top:-3.23em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width:0.04em;\"></span></span><span style=\"top:-3.677em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">s</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">term</span></span><span class=\"mspace\" style=\"margin-right:1em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">term</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.936em;\"><span></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span></span></span></span></span></p>",
+        "id": 527085257,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751584429
+    },
+    {
+        "content": "<p>(Doctrines are indeed under-explained!)</p>",
+        "id": 527085325,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751584491
+    },
+    {
+        "content": "<p>here you are talking about ground terms only (b/c no contexts)?</p>",
+        "id": 527085331,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751584498
+    },
+    {
+        "content": "<p>Exactly.</p>",
+        "id": 527085342,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751584503
+    },
+    {
+        "content": "<p>Then the term model in this doctrine is the set of all (\"closed\") terms such as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo separator=\"true\">,</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>b</mi><mo separator=\"true\">,</mo><mi>a</mi><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mi>b</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">f(a,f(f(b,a),b)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">a</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">b</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">b</span><span class=\"mclose\">)</span></span></span></span> built only from the constants <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo separator=\"true\">,</mo><mi>b</mi><mo separator=\"true\">,</mo><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">a,b,f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">b</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> and no \"variables\".</p>",
+        "id": 527085358,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751584524
+    },
+    {
+        "content": "<p>right</p>",
+        "id": 527085379,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751584548
+    },
+    {
+        "content": "<p>A statement like \"for all <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span> we have <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>y</mi><mo separator=\"true\">,</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">f(x,y)=f(y,x)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span></span></span></span>\" is not in this doctrine, and so it can hold in the term model even though it isn't \"derivable from the theory\".</p>",
+        "id": 527085405,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751584567
+    },
+    {
+        "content": "<p>However, we can also extend this theory to the doctrine of a simple type theory with judgments in context like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>:</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>y</mi><mo>:</mo><mi>A</mi><mo>⊢</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mo>:</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">x:A, y:A \\vdash f(x,y):A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊢</mo><mi>a</mi><mo>:</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">\\vdash a:A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span>, where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> is the unique type.  In this case, the term model will be the (multi)category freely generated by a semigroup object containing two elements that commute with each other.  Of course such a semigroup need not be abelian, and therefore the two morphisms <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mo>→</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">(A,A)\\to A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> determined by the terms <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>:</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>y</mi><mo>:</mo><mi>A</mi><mo>⊢</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mo>:</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">x:A, y:A \\vdash f(x,y):A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>:</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>y</mi><mo>:</mo><mi>A</mi><mo>⊢</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>y</mi><mo separator=\"true\">,</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>:</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">x:A, y:A \\vdash f(y,x):A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> are not the same, and so this term model does <em>not</em> satisfy the equation <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>:</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>y</mi><mo>:</mo><mi>A</mi><mo>⊢</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>y</mi><mo separator=\"true\">,</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">x:A, y:A \\vdash f(x,y)=f(y,x)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span></span></span></span>, which <em>is</em> in its doctrine.</p>",
+        "id": 527085425,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751584591
+    },
+    {
+        "content": "<p>right, I'm still following.  But for example 3.5.9, why isn't that equation that is only true in the term model not in the original doctrine (which had variables in context in its initial set of equations)</p>",
+        "id": 527085552,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751584719
+    },
+    {
+        "content": "<p>It <em>will</em> satisfy a statement like \"for all closed terms <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊢</mo><mi>s</mi><mo>:</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">\\vdash s:A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">s</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊢</mo><mi>t</mi><mo>:</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">\\vdash t:A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> we have <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊢</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>s</mi><mo separator=\"true\">,</mo><mi>t</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>t</mi><mo separator=\"true\">,</mo><mi>s</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\vdash f(s,t) = f(t,s)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">s</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">t</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">s</span><span class=\"mclose\">)</span></span></span></span>\", but this is <em>not</em> in its doctrine, since simple type theory does not include a way to quantify over <em>closed</em> terms.</p>",
+        "id": 527085568,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751584729
+    },
+    {
+        "content": "<p>(also, I understand why function extensionality as I wrote it doesn't fit with system's F equational logic (it just follows from eta), albeit not b/c of a hyper doctrine reason.  I'd never tried writing fun-ext outside of coq before)</p>",
+        "id": 527085733,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751584902
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281326\">Ryan Wisnesky</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/synthetic.20algebraic.20geometry.20vs.20continuation.20passing.20style/near/527085552\">said</a>:</p>\n<blockquote>\n<p>But for example 3.5.9, why isn't that equation that is only true in the term model not in the original doctrine (which had variables in context in its initial set of equations)</p>\n</blockquote>\n<p>Yes, good point.  If we want to capture that whole example in a doctrine without contexts, we would have to include associativity in the doctrine itself rather than in the theory.  So it would be in the doctrine of semigroups, and the theory in that doctrine would be the theory of two commuting elements, and so the term model would be the free semigroup generated by two commuting elements.  (This is just like how associativity for morphism composition in a category, i.e. substitution of terms, is included in the doctrine of simple type theory, but not expressible <em>in</em> any theory in that doctrine.)</p>",
+        "id": 527085905,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751585052
+    },
+    {
+        "content": "<p>So, to conclude, the TC relation <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊨</mo></mrow><annotation encoding=\"application/x-tex\">\\vDash</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6922em;\"></span><span class=\"mrel amsrm\">⊨</span></span></span></span> is a way of expressing statements about closed terms, which is not in the doctrine of simple type theory, and so the term model can satisfy statements of that form that are not derivable from the theory.</p>",
+        "id": 527085968,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751585113
+    },
+    {
+        "content": "<p>ooh, heh, I get it now... I think.  the \"doctrine\" defines what freeness is relative to.  In which case, example 3.5.9 is \"different\" when you view it as the three axiom equational theory over the empty theory (as I do), or as a single ground equation over two (universally quantified) equations... right?</p>",
+        "id": 527086072,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751585203
+    },
+    {
+        "content": "<p>Yes!</p>",
+        "id": 527086332,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751585425
+    },
+    {
+        "content": "<p>I wrote a longish blog post about doctrines, and more general \"<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-theories\", <a href=\"https://golem.ph.utexas.edu/category/2018/04/what_is_an_ntheory.html\">here</a>.</p>",
+        "id": 527086352,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751585441
+    },
+    {
+        "content": "<p>ok, that explains (some of) the confusion with term models.  For me (and I'd imagine TC), we just assume every statement in first order logic about the model is fair game to distinguish the models</p>",
+        "id": 527086459,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751585526
+    },
+    {
+        "content": "<p>incidentally, CQL may provide a good example of \"stacking\" doctrines, its \"instances\" are theories in the doctrine of its schema which is a theory in the doctrine of its \"typeside\", if I understand correctly.  Implementation-wise these are just theories that extend each other, but there are very specific rules about what kind of equations can be written where in this stack.</p>",
+        "id": 527086573,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751585627
+    },
+    {
+        "content": "<p>The confusion is that the TC syntax for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊨</mo></mrow><annotation encoding=\"application/x-tex\">\\vDash</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6922em;\"></span><span class=\"mrel amsrm\">⊨</span></span></span></span> <em>looks</em> the same as the syntax for definitional equality <em>in</em> the doctrine.  It would be better if instead of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊨</mo><mi>x</mi><mo>:</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>y</mi><mo>:</mo><mi>B</mi><mo separator=\"true\">;</mo><mi>M</mi><mo>=</mo><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">\\vDash x:A, y:B ; M = N </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6922em;\"></span><span class=\"mrel amsrm\">⊨</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span> they wrote something like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mo>⊢</mo><mi>x</mi><mo>:</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mo stretchy=\"false\">(</mo><mo>⊢</mo><mi>y</mi><mo>:</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>⊨</mo><mo stretchy=\"false\">(</mo><mo>⊢</mo><mi>M</mi><mo>=</mo><mi>N</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\vdash x:A), (\\vdash y:B) \\vDash (\\vdash M = N)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mopen\">(</span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel amsrm\">⊨</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span><span class=\"mclose\">)</span></span></span></span>.</p>",
+        "id": 527086602,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751585656
+    },
+    {
+        "content": "<p>Yes, a doctrine is a 2-theory, which is a 2-theory in some 2-doctrine (= 3-theory), and so on.</p>",
+        "id": 527086692,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751585737
+    },
+    {
+        "content": "<p>I think im still going to write to prof. tannen asking about properties true in his closed term model that don't follow from beta/eta, but then we can check them to see if they fall into the expected doctrine or not.  does that sound like a good next step?</p>",
+        "id": 527086791,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751585822
+    },
+    {
+        "content": "<p>What's the goal?</p>",
+        "id": 527086885,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751585900
+    },
+    {
+        "content": "<p>I want to know if HRR's Q = S is true in the closed TC model, even if that question is ill-posed doctrinally.  It's true in the closed TC model after they collapse it, because collapse creates a PER model</p>",
+        "id": 527086939,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751585946
+    },
+    {
+        "content": "<p>Do they say that?</p>",
+        "id": 527087073,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751586066
+    },
+    {
+        "content": "<p>no one has made that claim, it's a claim I need to figure out to check my understanding</p>",
+        "id": 527087102,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751586091
+    },
+    {
+        "content": "<p>I mean, do they claim that it's true after the collapse?</p>",
+        "id": 527087110,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751586100
+    },
+    {
+        "content": "<p>I think they say collapse results in a PER somewhere, I'll go find the reference</p>",
+        "id": 527087170,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751586139
+    },
+    {
+        "content": "<p>I want to not be too blithe about it, because there could be multiple meanings of what \"being a PER model\" is, and it doesn't seem to me that simply <em>quotienting</em> the term model could create the kind of \"PER model\" that makes Q=S.</p>",
+        "id": 527087269,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751586224
+    },
+    {
+        "content": "<p>lemma 4.3 says something is a PER, although maybe not the kind of PER HRR talk about</p>",
+        "id": 527087271,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751586226
+    },
+    {
+        "content": "<p>I'll ask prof tannen the question both pre-collapse and post-collapse</p>",
+        "id": 527087299,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751586254
+    },
+    {
+        "content": "<p>Okay.  Pre-collapse we know that it is not true in the ordinary sense as a statement about the term model <em>qua</em> category, because of the HRR counterexample.  But I guess there may be a way to interpret it as a different statement involving <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊨</mo></mrow><annotation encoding=\"application/x-tex\">\\vDash</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6922em;\"></span><span class=\"mrel amsrm\">⊨</span></span></span></span>, which might be true.</p>",
+        "id": 527087435,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751586371
+    },
+    {
+        "content": "<p>my hunch is all these properties that are ruled out doctrinally actually do conspire to equate Q=S in the specific closed term model of TC, and HRR meant open term model or \"all models\"</p>",
+        "id": 527087525,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751586463
+    },
+    {
+        "content": "<p>I'm not sure what you mean by hyper-doctrinally.  I haven't been talking about any hyperdoctrines.</p>",
+        "id": 527087663,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751586582
+    },
+    {
+        "content": "<p>oh, sorry, I've been saying hyper doctrine on accident, I just mean \"doctrine\"</p>",
+        "id": 527087716,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751586627
+    },
+    {
+        "content": "<p>I also don't know what you mean by distinguishing the closed term model and open term model.  As I said, I think there is no difference between them in a theory with function types; what makes the difference is what's in the doctrine.</p>",
+        "id": 527087753,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751586659
+    },
+    {
+        "content": "<p>Oh, I see.  It's very confusing that a \"hyperdoctrine\" is totally unrelated to a \"doctrine\" in this sense.</p>",
+        "id": 527087776,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751586674
+    },
+    {
+        "content": "<p>I'll find the reference - I think it was hasegawa - who was talking about the differences between the open and closed term models of system F</p>",
+        "id": 527087816,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751586721
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/wMitl2iz97bP7V06Tnb_zWHo/Screenshot-2025-07-03-at-4.53.29PM.png\">Screenshot 2025-07-03 at 4.53.29 PM.png</a><br>\nYeah, it hasegawa (Parametricity of extensionally collapsed term models of polymorphism and their categorical properties) from here: <a href=\"https://link.springer.com/chapter/10.1007/3-540-54415-1_61\">https://link.springer.com/chapter/10.1007/3-540-54415-1_61</a> .  so a priori I claim open and closed models can be different, even if those differences may not be visible doctrinally.  Paper attached<br>\n<a href=\"/user_uploads/21317/5W0lFvopS5ghJfPMHgNjHA88/3-540-54415-1_61.pdf\">3-540-54415-1_61.pdf</a>.  It also \"proves\" an identity extension lemma without giving the proof</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/wMitl2iz97bP7V06Tnb_zWHo/Screenshot-2025-07-03-at-4.53.29PM.png\" title=\"Screenshot 2025-07-03 at 4.53.29 PM.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1144x312\" src=\"/user_uploads/thumbnail/21317/wMitl2iz97bP7V06Tnb_zWHo/Screenshot-2025-07-03-at-4.53.29PM.png/840x560.webp\"></a></div>",
+        "id": 527087920,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751586828
+    },
+    {
+        "content": "<p>while we're revisiting very basic assumptions, I always thought the logical relations lemma was proved by induction on closed terms or types, so it surprises me when a closed term model isn't parametric.  but as this thread makes clear, I'm full of erroneous assumptions if someone wants to correct this one too</p>",
+        "id": 527088367,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751587247
+    },
+    {
+        "content": "<p>I can't get to that paper either, so I don't know what this putative closed term model might mean.  But I do know that it's nearly impossible to prove anything by induction only over closed terms: when you get to the case for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>λ</mi><mi>x</mi><mi mathvariant=\"normal\">.</mi><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">\\lambda x. M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">λ</span><span class=\"mord mathnormal\">x</span><span class=\"mord\">.</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span>, you don't have an inductive hypothesis since <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span> isn't a closed term any more.  The logical relations lemma that I know is proved by induction (i.e. by the universal property) on the ordinary (open) term model.  (And, remember that that's only external parametricity.)</p>",
+        "id": 527093185,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751591906
+    },
+    {
+        "content": "<p>Oh, I see you attached the paper now, let me see.</p>",
+        "id": 527093206,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751591931
+    },
+    {
+        "content": "<p>fyi: hasegawa's remark 4.8 mentions something quite similar to HRR's a ~ CPS a</p>",
+        "id": 527093760,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751592418
+    },
+    {
+        "content": "<p>Well, I can't make heads or tails of Hasegawa's introduction, and nowhere in the paper do I see a definition of what he means by a model of open terms.  His model of \"closed terms\" (which he calls just an \"interpretation\") looks to me like it is equivalent to I would call the ordinary term model, by the trick that I mentioned of abstracting open terms to make them closed.</p>",
+        "id": 527094165,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751592748
+    },
+    {
+        "content": "<p>Ohh... maybe by \"open terms\" he means a model in which the \"elements\" of a type are the <em>union</em> of the terms of that type in <em>all</em> contexts?  Or, put more categorically, in which the morphisms <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>:</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo>→</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">t:(A,B)\\to C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> are terms of the form <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">Γ</mi><mi>t</mi></msub><mo separator=\"true\">,</mo><mi>x</mi><mo>:</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>y</mi><mo>:</mo><mi>B</mi><mo>⊢</mo><mi>t</mi><mo>:</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">\\Gamma_t, x:A, y:B \\vdash t:C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord\">Γ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2806em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">t</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"></span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> for some additional context <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">Γ</mi><mi>t</mi></msub></mrow><annotation encoding=\"application/x-tex\">\\Gamma_t</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\">Γ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2806em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">t</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>, which could be different for different morphisms <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">t</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"></span><span class=\"mord mathnormal\">t</span></span></span></span>?</p>",
+        "id": 527094298,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751592893
+    },
+    {
+        "content": "<p>I've seen people do things like that for untyped lambda-calculus, so maybe people do it for typed lambda-calculus too.  It certainly wouldn't be the initial model, but it might be useful for some things.</p>",
+        "id": 527094362,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751592946
+    },
+    {
+        "content": "<p>if the trick of an interpreting a term in context via its corresponding closed lambda term really set up an equivalence of models, why would the closed one fail to be extensional but the open would not?  my intuition is that these closed models must be doing something differently than just using the equivalent lambda term or there wouldn't be all these papers by well-known authors about how to turn the closed model extensional... but we might be approaching the point where it's easiest to ask the authors</p>",
+        "id": 527094611,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751593184
+    },
+    {
+        "content": "<p>It's an equivalence between what TC and Hasegawa call the \"closed term model\" and what I call \"the term model\" which involves terms in context that only use the variables from that context.  I don't think the latter is what Hasegawa means by an \"open term model\" -- I think he means what I suggested above, where the terms can also involve additional free variables that <em>aren't</em> in the context.  That model can be \"extensional\" for trivial reasons because you can always apply two functions <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo separator=\"true\">,</mo><mi>g</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">f,g:A\\to B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> to a free variable <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>:</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">x:A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> and then if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mtext> </mtext><mi>x</mi><mo>=</mo><mi>g</mi><mtext> </mtext><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">f\\,x = g\\,x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span> it must be that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>=</mo><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">f=g</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span> by eta.</p>",
+        "id": 527096442,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751594901
+    },
+    {
+        "content": "<p>I renamed this discussion because it has veered far from the original topic of comparing synthetic algebraic geometry to continuations. This deviation happened at the beginning of the discussion once it became clear that the SQC axiom wasn't all that similar to the axioms that types are isomorphic to its continuations.</p>",
+        "id": 527097219,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1751595726
+    },
+    {
+        "content": "<p>I found and attached the paper hasegawa cites when he says \"the open model is used to prove completeness\".  section 3 uses an argument like you just made, but I can't settle your question from reading it quite yet.  <br>\n<a href=\"/user_uploads/21317/5I8Bv2ep8mdkE0HPbSRVcMpW/second-order-semantics.pdf\">second-order-semantics.pdf</a></p>",
+        "id": 527097499,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1751596069
+    }
+]
