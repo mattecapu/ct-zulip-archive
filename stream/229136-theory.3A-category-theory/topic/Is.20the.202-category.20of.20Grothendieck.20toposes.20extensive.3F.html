@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Is the 2-category of Grothendieck toposes extensive? · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html">Is the 2-category of Grothendieck toposes extensive?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="527537235"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/527537235" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#527537235">(Jul 07 2025 at 18:36)</a>:</h4>
+<p>[You can replace "Grothendieck toposes" with "toposes bounded over S" for your favourite elementary topos S if you like.]<br>
+The initial topos (the degenerate one) is a strict 2-initial object. One can construct coproducts of toposes as the product of their underlying categories. The boundedness/Grothendieck restriction is enough to guarantee the existence of pullbacks, and the pullback of the coproduct inclusions is the initial category, so coproducts are disjoint (two toposes are complementary clopen subtoposes in their coproduct). We're in good shape, so the question is, is this 2-category extensive (in the most straightforward sense that one can generalize extensivity to this setting)? Has anyone written about this?</p>
+<p>A related question whose answer is not necessarily determined by the above: are unions of subtoposes preserved by pullbacks in this topos? They are stable by pullback along inclusions, but what about surjections?</p>
+
+
+
+<a name="527543087"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/527543087" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#527543087">(Jul 07 2025 at 19:07)</a>:</h4>
+<p>After showing that the product of logoses is the coproduct of toposes (B3.4.1), <em>Sketches of an Elephant</em> remarks </p>
+<blockquote>
+<p>Also, coproducts are disjoint and stable under pullback; for we can identify <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">E</mi></mrow><annotation encoding="application/x-tex">\mathcal{E}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.08944em;">E</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">F</mi></mrow><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.09931em;">F</span></span></span></span> with the complementary open subtoposes <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="script">E</mi><mo>×</mo><mi mathvariant="script">F</mi><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\mathcal{E}\times\mathcal{F})/(1,0)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathcal" style="margin-right:0.08944em;">E</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.09931em;">F</span><span class="mclose">)</span><span class="mord">/</span><span class="mopen">(</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0</span><span class="mclose">)</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="script">E</mi><mo>×</mo><mi mathvariant="script">F</mi><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\mathcal{E}\times\mathcal{F})/(0,1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathcal" style="margin-right:0.08944em;">E</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.09931em;">F</span><span class="mclose">)</span><span class="mord">/</span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span> of the coproduct, and any geometric morphism <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi mathvariant="script">G</mi><mo>→</mo><mi mathvariant="script">E</mi><mo>×</mo><mi mathvariant="script">F</mi></mrow><annotation encoding="application/x-tex">f:\mathcal{G} \to \mathcal{E}\times\mathcal{F}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7805em;vertical-align:-0.0972em;"></span><span class="mord mathcal" style="margin-right:0.0593em;">G</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathcal" style="margin-right:0.08944em;">E</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.09931em;">F</span></span></span></span> induces a corresponding decomposition <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">G</mi><mo>≃</mo><mi mathvariant="script">G</mi><mi mathvariant="normal">/</mi><msup><mi>f</mi><mo>∗</mo></msup><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">)</mo><mo>×</mo><mi mathvariant="script">G</mi><mi mathvariant="normal">/</mi><msup><mi>f</mi><mo>∗</mo></msup><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal{G} \simeq \mathcal{G}/f^*(1,0) \times \mathcal{G}/f^*(0,1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7805em;vertical-align:-0.0972em;"></span><span class="mord mathcal" style="margin-right:0.0593em;">G</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≃</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.0593em;">G</span><span class="mord">/</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6887em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∗</span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.0593em;">G</span><span class="mord">/</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6887em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∗</span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span> of its domain.</p>
+</blockquote>
+
+
+
+<a name="527543491"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/527543491" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#527543491">(Jul 07 2025 at 19:08)</a>:</h4>
+<p>"Coproducts are disjoint and pullback-stable" is one definition of extensive for 1-categories.  I don't know offhand whether that is equivalent to something about slice categories as in the 1-categorical case, is that more what you had in mind?</p>
+
+
+
+<a name="527626886"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/527626886" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#527626886">(Jul 08 2025 at 08:11)</a>:</h4>
+<p>That is what I had in mind, thanks; I suppose the term extensive for this property was popularised after the Elephant was published. I'm still interested in unions of subtoposes though!</p>
+
+
+
+<a name="527741934"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/527741934" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#527741934">(Jul 08 2025 at 17:22)</a>:</h4>
+<p>I would expect that you can construct the union of subtoposes by taking their coproduct and then the (surjection, inclusion) factorization.  In which case, pullback-stability of unions should follow from pullback-stability of coproducts and surjections.</p>
+
+
+
+<a name="527838056"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/527838056" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#527838056">(Jul 09 2025 at 08:49)</a>:</h4>
+<p>Surjections are not stable under pullback(!)</p>
+
+
+
+<a name="527838506"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/527838506" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#527838506">(Jul 09 2025 at 08:51)</a>:</h4>
+<p>Some classes of surjection are stable, but which of the properties ensuring stability will be inherited by the surjection part of the universal morphism from the coproduct is not obvious (some of them might be checkable manually though)</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Jul 19 2025 at 12:09 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>
