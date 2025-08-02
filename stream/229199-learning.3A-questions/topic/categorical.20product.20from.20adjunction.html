@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>categorical product from adjunction · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/categorical.20product.20from.20adjunction.html">categorical product from adjunction</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="532441266"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/categorical%20product%20from%20adjunction/near/532441266" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> simon <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/categorical.20product.20from.20adjunction.html#532441266">(Aug 02 2025 at 10:38)</a>:</h4>
+<p>Greetings, currently I try to learn about adjunctions as I came across them in the video series "Programming with Categories". I went back to Milewski's videos and found (<a href="https://youtu.be/7Q8E2ZBS7pQ?si=K9uj4oxM8NeYfY4p&amp;t=2126">https://youtu.be/7Q8E2ZBS7pQ?si=K9uj4oxM8NeYfY4p&amp;t=2126</a>):</p>
+<div class="youtube-video message_inline_image"><a data-id="7Q8E2ZBS7pQ" href="https://youtu.be/7Q8E2ZBS7pQ?si=K9uj4oxM8NeYfY4p&amp;t=2126"><img src="https://uploads.zulipusercontent.net/16ca703b000fa6bbe07d9931fa1b2aac9c200044/68747470733a2f2f692e7974696d672e636f6d2f76692f37513845325a42533770512f6d7164656661756c742e6a7067"></a></div><p><a href="/user_uploads/21317/ovBVy6GJbBkhkTOPCCwzcIHB/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/ovBVy6GJbBkhkTOPCCwzcIHB/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="1166x520" src="/user_uploads/thumbnail/21317/ovBVy6GJbBkhkTOPCCwzcIHB/image.png/840x560.webp"></a></div><p>He talks about the unique morphism <em>h</em> and prepending (at 37:49 in the vid). My understanding from <a href="https://en.wikipedia.org/wiki/Adjoint_functors#Definition_via_Hom-sets">https://en.wikipedia.org/wiki/Adjoint_functors#Definition_via_Hom-sets</a> and <a href="https://en.wikipedia.org/wiki/Hom_functor">https://en.wikipedia.org/wiki/Hom_functor</a> is that I would go from <em>C×C(Δa×b,&lt;a,b&gt;)</em> to <em>C×C(Δc,&lt;a,b&gt;)</em> via <em>C×C(Δh,&lt;a,b&gt;)</em>, i.e. prepending <em>Δh</em> to <em>&lt;fst,snd&gt;</em>. I searched the web but did not find examples for the naturality condition with the hom-set definition and products. <br>
+Am I getting something wrong or is it a mistake in the video?</p>
+
+
+
+<a name="532441939"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/categorical%20product%20from%20adjunction/near/532441939" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ruby Khondaker (she/her) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/categorical.20product.20from.20adjunction.html#532441939">(Aug 02 2025 at 10:49)</a>:</h4>
+<p>The relevant adjunction here is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Hom</mtext><mo stretchy="false">(</mo><mo stretchy="false">(</mo><mi>Z</mi><mo separator="true">,</mo><mi>Z</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mo stretchy="false">(</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>≅</mo><mtext>Hom</mtext><mo stretchy="false">(</mo><mi>Z</mi><mo separator="true">,</mo><mi>A</mi><mo>×</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{Hom}((Z, Z), (A, B)) \cong \text{Hom}(Z, A \times B)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Hom</span></span><span class="mopen">((</span><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">))</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≅</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Hom</span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span></span></span></span></p>
+<p>I.e. you can “package” two arrows Z -&gt; A, Z -&gt; B into a single arrow Z -&gt; A x B, reversibly!</p>
+
+
+
+<a name="532442978"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/categorical%20product%20from%20adjunction/near/532442978" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> simon <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/categorical.20product.20from.20adjunction.html#532442978">(Aug 02 2025 at 11:04)</a>:</h4>
+<p>That makes sense; I want to see how to 'recover' the universal construction definition of the product from the hom-functor definition. So in your example, how does it look if you add the unique morphism that 'condenses' (Z,Z) into (A×B,A×B)?</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Aug 02 2025 at 12:10 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

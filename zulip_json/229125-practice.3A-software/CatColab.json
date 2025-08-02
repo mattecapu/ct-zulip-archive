@@ -1,0 +1,596 @@
+[
+    {
+        "content": "<p>I'm pleased to annouce a new open source software project that we're developing at Topos Institute: <a href=\"https://catcolab.org/\">CatColab</a>. The tool is under heavy development but you can play with a demo at the link above.</p>",
+        "id": 474662547,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1727981752
+    },
+    {
+        "content": "<p>In one sentence, the aim is to make modeling in category-theoretic domain-specific languages accessible to people who do not necessarily have any training in category theory or mathematics generally. For more, <span class=\"user-mention\" data-user-id=\"609515\">@Kevin Carlson</span> has written a nice blog post explaining the project and where we hope to go with it: <a href=\"https://topos.site/blog/2024-10-02-introducing-catcolab/\">Introducing CatColab</a></p>",
+        "id": 474662558,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1727981757
+    },
+    {
+        "content": "<p>Great work! I can't wait to play with it when I find some time</p>",
+        "id": 474772735,
+        "sender_full_name": "Georgios Bakirtzis",
+        "timestamp": 1728031524
+    },
+    {
+        "content": "<p>CatColab is software based on double categories (or more precisely double theories), created by <span class=\"user-mention\" data-user-id=\"275965\">@Evan Patterson</span>, <span class=\"user-mention\" data-user-id=\"609515\">@Kevin Carlson</span>  and perhaps others at the Topos Institute.</p>\n<p>v0.2 is out - read about it here:</p>\n<ul>\n<li><a href=\"https://topos.institute/blog/2025-02-05-catcolab-0-2-wren/\"># CatColab 0.2: Wren</a></li>\n</ul>\n<p>New features include:</p>\n<ul>\n<li>User accounts, permissions, and ownership</li>\n<li>Support for diagrams of models (e/g. instances of ologs/schemas; diagrams in <a href=\"https://en.wikipedia.org/wiki/Discrete_exterior_calculus\">discrete exterior calculus</a>)</li>\n<li>Further systems dynamics features (e.g. ODE simulation for stock-flow diagrams; new <a href=\"https://johncarlosbaez.wordpress.com/2024/11/14/polarities-part-5/\">variants of causal loop diagrams</a>)</li>\n<li>Complete rewrite of the backend in Rust</li>\n</ul>\n<p>CatColab is now a usable, but not polished, tool for co-authoring and publishing both ologs and systems dynamics models.</p>",
+        "id": 498189471,
+        "sender_full_name": "John Baez",
+        "timestamp": 1738867780
+    },
+    {
+        "content": "<p>Thanks for posting, John!</p>",
+        "id": 498194279,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1738869640
+    },
+    {
+        "content": "<p>Thanks for making this! I feel like I've been looking for something like this and all its cool things for years. I have just started to play in it. Is this channel the best place to get updates, or is there a listserv that I can sign up for, or something else?</p>",
+        "id": 499924105,
+        "sender_full_name": "JR Learnstomath",
+        "timestamp": 1739633936
+    },
+    {
+        "content": "<p>Thanks for this, JR! We haven't advertised it much yet, but we have a public Zulip instance where we post more regular updates: <a href=\"https://catcolab.zulipchat.com\">https://catcolab.zulipchat.com</a></p>",
+        "id": 499940634,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1739644919
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275965\">@Evan Patterson</span> - I was showing <span class=\"user-mention\" data-user-id=\"520375\">@Adittya Chaudhuri</span> the feature where Catcolab uses Kleisli morphisms between signed graphs to detect balancing loops and other motifs, and when I tried to do it for the <a href=\"https://catcolab.org/analysis/01952463-c5e0-7fe3-99ee-7299023ef748\">Sustainable Peace</a> signed graph, my browser emitted a warning that the program was taking a long time to run and was slowing things down.   He replied:</p>\n<blockquote>\n<p>I have one question \"the usual causal loop diagrams/regulatory networks that I have seen from biologists here are very very large (like disease pathways). Can this software find feedback loops/feedforward loops for them in a reasonable time?</p>\n</blockquote>\n<blockquote>\n<p>I mean the question is \"if the graph size is very large, can this software still find the feedback loops in a reasonable time\"?</p>\n</blockquote>",
+        "id": 500936466,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740073278
+    },
+    {
+        "content": "<p>Ack, caught! It runs fine on the cap and trade example but unfortunately sustainable peace currently produces a combinatorial explosion we haven’t set up to manage gracefully. Working on it.</p>",
+        "id": 500944566,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740076119
+    },
+    {
+        "content": "<p>The first thing we have to figure out is whether the algorithm or the Rust code itself is too inefficient or whether, after having compiled it to Web Assembly, the web browser is simply getting mad that we're asking it to do a big computation.</p>",
+        "id": 500944959,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1740076265
+    },
+    {
+        "content": "<p>In general we haven’t put essentially any work into the algorithmics of morphism search in CatColab yet, but the theoretical complexity should be <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Θ</mi></mrow><annotation encoding=\"application/x-tex\">\\Theta</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\">Θ</span></span></span></span> with the problem of finding subgraphs of a fixed shape in a given graph.</p>",
+        "id": 500944992,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740076275
+    },
+    {
+        "content": "<p>Hmm, do I mean that? I might not.</p>",
+        "id": 500945090,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740076312
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229125-practice.3A-software/topic/CatColab/near/500936466\">said</a>:</p>\n<blockquote>\n<p>the usual causal loop diagrams/regulatory networks that I have seen from biologists here are very very large (like disease pathways). Can this software find feedback loops/feedforward loops for them in a reasonable time?</p>\n</blockquote>\n<p>It would be fun to get our hands on one of these big disease pathways.</p>",
+        "id": 500945583,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1740076488
+    },
+    {
+        "content": "<p>At least for this particular problem I should say the complexity can be reduced to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mo stretchy=\"false\">(</mo><mi>n</mi><mo>+</mo><mi>e</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>c</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">O(n+e)(c+1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">O</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">e</span><span class=\"mclose\">)</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">c</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span> where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo separator=\"true\">,</mo><mi>e</mi><mo separator=\"true\">,</mo><mi>c</mi></mrow><annotation encoding=\"application/x-tex\">n,e,c</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">e</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">c</span></span></span></span> are the numbers of vertices, edges, and indecomposable loops-to-be-found. Hopefully there are analogous results for more general morphism domain shapes. There might be interesting algorithms work here, or maybe it all basically reduces down to loops and paths in graphs.</p>\n<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/stream/229125-practice.3A-software/topic/CatColab/near/500944992\">said</a>:</p>\n<blockquote>\n<p>In general we haven’t put essentially any work into the algorithmics of morphism search in CatColab yet, but the theoretical complexity should be <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Θ</mi></mrow><annotation encoding=\"application/x-tex\">\\Theta</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\">Θ</span></span></span></span> with the problem of finding subgraphs of a fixed shape in a given graph.</p>\n</blockquote>",
+        "id": 500945665,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740076527
+    },
+    {
+        "content": "<p>But I think that complexity seems nonthreatening, in most cases.</p>",
+        "id": 500945717,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740076550
+    },
+    {
+        "content": "<blockquote>\n<p>unfortunately sustainable peace currently produces a combinatorial explosion</p>\n</blockquote>\n<p>Ironic, ain't it?  <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 500946222,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740076743
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275965\">Evan Patterson</span> <a href=\"#narrow/channel/229125-practice.3A-software/topic/CatColab/near/500945583\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"520375\">Adittya Chaudhuri</span> wrote:</p>\n<blockquote>\n<p>the usual causal loop diagrams/regulatory networks that I have seen from biologists here are very very large (like disease pathways). Can this software find feedback loops/feedforward loops for them in a reasonable time?</p>\n</blockquote>\n<p>It would be fun to get our hands on one of these big disease pathways.</p>\n</blockquote>\n<p>Can you get one, <span class=\"user-mention\" data-user-id=\"520375\">@Adittya Chaudhuri</span>?</p>",
+        "id": 500946371,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740076790
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/stream/229125-practice.3A-software/topic/CatColab/near/500945717\">said</a>:</p>\n<blockquote>\n<p>But I think that complexity seems nonthreatening, in most cases.</p>\n</blockquote>\n<p>Just to finish the loudly echoing “but” there, if the graph is sufficiently dense then the number of circuits can be factorial in the number of edges, so we’re not going to be able to guarantee fast results in <em>all</em> cases. I suspect that in realistic cases the graphs are large but relatively sparse and so <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi></mrow><annotation encoding=\"application/x-tex\">c</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">c</span></span></span></span> will probably not be asymptotically much bigger than <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>+</mo><mi>e</mi></mrow><annotation encoding=\"application/x-tex\">n+e</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">e</span></span></span></span>, but that’s just vibes.</p>",
+        "id": 500947670,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740077212
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229125-practice.3A-software/topic/CatColab/near/500946371\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275965\">Evan Patterson</span> <a href=\"#narrow/channel/229125-practice.3A-software/topic/CatColab/near/500945583\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"520375\">Adittya Chaudhuri</span> wrote:</p>\n<blockquote>\n<p>the usual causal loop diagrams/regulatory networks that I have seen from biologists here are very very large (like disease pathways). Can this software find feedback loops/feedforward loops for them in a reasonable time?</p>\n</blockquote>\n<p>It would be fun to get our hands on one of these big disease pathways.</p>\n</blockquote>\n<p>Can you get one, <span class=\"user-mention silent\" data-user-id=\"520375\">Adittya Chaudhuri</span>?</p>\n</blockquote>\n<p><a href=\"/user_uploads/21317/7ZClFkQwG2dY__UtETdqN_Tr/IMG_8675.HEIC\">IMG_8675.HEIC</a><br>\nThis is the photo of a pathway in my current office in Rostock. I am talking about these \"sizes\". Although the diagram is not exactly like signed graphs, it is somewhat informal (that's what I am trying to formalise using the \"Mathematics of graphs with generalised polarities with <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span>\" ).</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/7ZClFkQwG2dY__UtETdqN_Tr/IMG_8675.HEIC\" title=\"IMG_8675.HEIC\"><img data-original-content-type=\"image/heic\" data-original-dimensions=\"4032x3024\" data-transcoded-image=\"4032x3024.webp\" src=\"/user_uploads/thumbnail/21317/7ZClFkQwG2dY__UtETdqN_Tr/IMG_8675.HEIC/840x560.webp\"></a></div>",
+        "id": 500949813,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740077930
+    },
+    {
+        "content": "<p>Wow! It'd be very interesting to get our hands fully on something like this as we consider what further features regnets need. Another optimistic thought on complexity is that presumably biological pathways will generally be largely decomposable into sub-pathways with no long loops jumping between these components.</p>",
+        "id": 500950429,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740078134
+    },
+    {
+        "content": "<p><a href=\"https://www.kegg.jp/kegg-bin/show_pathway?hsa05200\">https://www.kegg.jp/kegg-bin/show_pathway?hsa05200</a> this is a pathway in cancer</p>",
+        "id": 500950816,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740078269
+    },
+    {
+        "content": "<p>Thanks, this is great! (In case it helps anyone else, if you click the \"Help\" button on the top, it shows you a legend for what all the different graphical notations mean.)</p>",
+        "id": 500952201,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1740078778
+    },
+    {
+        "content": "<p>Welcome :)</p>",
+        "id": 500952375,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740078849
+    },
+    {
+        "content": "<p>First of all, thanks for the discussion. I have a point to talk about. I work with some biologists who are not well equipped with abstract pure maths but are quite successful in their field. They often (I think almost in every meeting) ask me \"How ACT-based frameworks\" are better than their \"Hand-drawn simulation-based  frameworks?\" I say to them \" rewording what   <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span>  said  </p>\n<p>\"<em>So, people are already trying to systematize the use of diagrams. But mathematicians should join the fray. Why? Because mathematicians are especially good at soaring above the particulars and seeing general patterns. Also, they know ways to think of diagrams, not just as handy tools, but as rigorously defined structures that you can prove theorems about… with the help of category theory.</em>\" in <a href=\"https://johncarlosbaez.wordpress.com/2011/03/04/network-theory-part-1/\">https://johncarlosbaez.wordpress.com/2011/03/04/network-theory-part-1/</a></p>\n<p>Still they are not very happy and want concrete proofs which I can not provide them beacuse of my inexperience in Biology. Then, I said  them about  Softwares based on Algebraic Julia, CatColab etc. Now, of course finding motifs/feedback loops/feed forward loops are very important for Systems biologists. If I can tell them that ACT provides a way using compositionality \"to find important motifs in a very large scale network\", then that would definitely be a good convincing point for them. Also, even if it takes 15 days to find the all possible loops in a very very big diagram, still I think they would be happy about ACT frameworks. Basically, I also want an answer that I want to tell them when they will ask me next time again.</p>\n<p>Thanks again!!</p>",
+        "id": 501001765,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740100769
+    },
+    {
+        "content": "<p>Great! So getting motif search working on arbitrarilylarge-scale diagrams should be a high priority for us soon, then. It's really nice to know that people would find this impressive.</p>",
+        "id": 501002846,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740101368
+    },
+    {
+        "content": "<p>Thank you!! Then, I would tell them about it!!</p>",
+        "id": 501002963,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740101417
+    },
+    {
+        "content": "<p>Basically, to me, principles of compositionality should give us the liberty to \"break down a very big complex  diagram\" into \"small understandable parts\", and then an analysis of all the small parts should give us an analysis of the big part. From this point of view, yes, ACT makes great sense for analysing large scale diagrams. The problem is about  \"concrete demonstrations using very big diagrams \", <strong>which they will  not be able to do by using hand-drawn simulation models.</strong></p>",
+        "id": 501003389,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740101692
+    },
+    {
+        "content": "<p>I'm very glad you're having this conversation.  I think getting biologists to care about CatColab would be very beneficial to both biologists and Topos, and this might be a place to start.</p>",
+        "id": 501187491,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740172197
+    },
+    {
+        "content": "<p>Thank you very much! I completely agree with your point, and I am truly excited about this venture.</p>",
+        "id": 501202823,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740180335
+    },
+    {
+        "content": "<p>Thanks again, Adittya. The cancer pathway diagram is proving very helpful in thinking about how to refine the logics we implement relating to regulatory networks. It'll also provide a nice example of compositionality as we get some capabilities on colimits of notebooks. However, it's not going to be that interesting for finding motifs, is it? As far  as I can tell there aren't any loops in the diagram. Do you have any advice on finding a large example with more interesting motifs to search for, other than digging around the KEGG repository at random?</p>",
+        "id": 501203069,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740180507
+    },
+    {
+        "content": "<p>Thanks Kevin. I will definitely search for  an example of a  large diagram with interesting motifs. However, biologists often use this site a lot <a href=\"https://www.ebi.ac.uk/biomodels/\">https://www.ebi.ac.uk/biomodels/</a></p>",
+        "id": 501203626,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740180910
+    },
+    {
+        "content": "<p>This is Covid 19 <a href=\"https://www.kegg.jp/kegg-bin/show_pathway?hsa05171\">https://www.kegg.jp/kegg-bin/show_pathway?hsa05171</a>. Is it interesting?</p>",
+        "id": 501203980,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740181162
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/channel/229125-practice.3A-software/topic/CatColab/near/501203069\">said</a>:</p>\n<blockquote>\n<p>Thanks again, Adittya. The cancer pathway diagram is proving very helpful in thinking about how to refine the logics we implement relating to regulatory networks. It'll also provide a nice example of compositionality as we get some capabilities on colimits of notebooks. However, it's not going to be that interesting for finding motifs, is it? As far  as I can tell there aren't any loops in the diagram. Do you have any advice on finding a large example with more interesting motifs to search for, other than digging around the KEGG repository at random?</p>\n</blockquote>\n<p>Hi, can you please explain a bit on what you meant by \"<strong>colimits of notebooks</strong>\"?</p>",
+        "id": 501278474,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740239464
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229125-practice.3A-software/topic/CatColab/near/500936466\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275965\">Evan Patterson</span> - I was showing <span class=\"user-mention silent\" data-user-id=\"520375\">Adittya Chaudhuri</span> the feature where Catcolab uses Kleisli morphisms between signed graphs to detect balancing loops and other motifs, and when I tried to do it for the <a href=\"https://catcolab.org/analysis/01952463-c5e0-7fe3-99ee-7299023ef748\">Sustainable Peace</a> signed graph, my browser emitted a warning that the program was taking a long time to run and was slowing things down.</p>\n</blockquote>\n<p>I've pushed an update that fixes, or rather side steps, this issue by putting a user-configurable upper bound on the length of the paths considered by the motif finder. By default, this number is now set to 5. On the example above, you can see that there are 366 (!) reinforcing feedback loops of length at most 5.</p>",
+        "id": 501309574,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1740264622
+    },
+    {
+        "content": "<p>You can still blow up the app by setting this parameter unfavorably on a big example. There is a <a href=\"https://github.com/ToposInstitute/CatColab/issues/424\">separate issue</a> about performing such long-running computations in a separate thread to avoid hosing the browser tab, but that's a task for the future.</p>",
+        "id": 501309776,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1740264810
+    },
+    {
+        "content": "<p>So now I'd like to get a large and interesting biological example into the tool. Besides the data entry, that might involve figuring out (1) what theory is appropriate for these signaling networks and (2) what motifs biologists might care to look for. I still need to look more closely at the examples you've posted.</p>",
+        "id": 501310172,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1740265096
+    },
+    {
+        "content": "<p>Thanks for all this, Evan!</p>\n<p>Does this search for reinforcing feedback loops only report <em>minimal-length</em> ones, or also composite ones?   If we don't exclude composite ones the number of reinforcing loops of length <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> will typically grow exponentially with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>.   E.g. if you have one minimal such loop of length 1 and one of length 2, both based at the same point, the number of loops of length n will be the (n-1)st Fibonacci number</p>",
+        "id": 501314668,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740269132
+    },
+    {
+        "content": "<p>Thanks!! <span class=\"user-mention\" data-user-id=\"275965\">@Evan Patterson</span>  I just checked the sustainable peace example!! It's amazing!!</p>",
+        "id": 501315010,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740269455
+    },
+    {
+        "content": "<p>\"<em>what theory is appropriate for these signaling networks</em>\"</p>\n<p>I was thinking actually about graphs with polarities whose labelling sets has a monoid structure(as in most biological setting they have room more kinds of influences other than  positve and negative)</p>",
+        "id": 501315229,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740269666
+    },
+    {
+        "content": "<p><em>So now I'd like to get a large and interesting biological example into the tool</em></p>\n<p>My colleagues here built the <em>Atlas of Inflammation resolution</em> <a href=\"https://air.bio.informatik.uni-rostock.de\">https://air.bio.informatik.uni-rostock.de</a>. It may have the kind of interesting biological example you are asking,\" though I am not sure. But I can ask them about it.</p>",
+        "id": 501315543,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740269956
+    },
+    {
+        "content": "<p><em>(2) what motifs biologists might care to look for.</em></p>\n<p>I am not fully sure. But I can ask my colleagues here this exact question.</p>",
+        "id": 501315762,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740270128
+    },
+    {
+        "content": "<p>Adittya, what are you thinking of as the monoid of polarities in something like the big example you sent? Is the composition of a “phosphorylation” edge and a “ubiquitination” edge just going to be taken in a free monoid?</p>",
+        "id": 501316603,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740270909
+    },
+    {
+        "content": "<p>Yes, in the free category of the associated graph. (For that, first, I think it is essential to \"choose an appropriate monoid\" suitable for the purpose)</p>",
+        "id": 501316812,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740271094
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229125-practice.3A-software/topic/CatColab/near/501314668\">said</a>:</p>\n<blockquote>\n<p>Does this search for reinforcing feedback loops only report <em>minimal-length</em> ones, or also composite ones?   If we don't exclude composite ones the number of reinforcing loops of length <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> will typically grow exponentially with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>.   E.g. if you have one minimal such loop of length 1 and one of length 2, both based at the same point, the number of loops of length n will be the (n-1)st Fibonacci number</p>\n</blockquote>\n<p>As you can see <a href=\"https://catcolab.org/model/0195303a-d4b4-79d1-a264-b6a0bd664b8b\">by building your suggested example</a>, we currently provide \"simple\" loops in the sense that edges aren't allowed to repeat in a returned loop. However, this definition does permit compound loops in a certain sense--you can build a loop by composing subloops without repeating edges. Thus John's example is currently counted as having <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">3</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">3</span></span></span></span> total reinforcing loops in it. </p>\n<p>I personally suspect that the third loop, combining the length-1 and length-2 loops into one grand loop, shouldn't really be counted, but at least we definitely aren't getting Fibonacci!</p>",
+        "id": 501316869,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740271194
+    },
+    {
+        "content": "<p>I do not know. Free monoid can be a good choice. But in a way I think \"we can loose some biological significance\" with such a generality!</p>",
+        "id": 501316871,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740271197
+    },
+    {
+        "content": "<p>I just don't know what you're supposed to call a path that phosphorylates, then ubiquitates, other than a \"phosphorylation-then-ubiquitation\" path, which is basically combining in the free monoid!</p>",
+        "id": 501316931,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740271237
+    },
+    {
+        "content": "<p>Unless, I suppose, there's an actual name for the biochemical process of phosphorylation followed by ubiquitation.</p>",
+        "id": 501316984,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740271316
+    },
+    {
+        "content": "<p>Yes, I agree with your point. It is the most natural choice. In that case Free monoid is probably the right choice. I was just thinking about \"adding some semantics\" while labelling by \"finding a right monoid\". But, I am not sure, whether such thing can actually be possible</p>",
+        "id": 501317081,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740271390
+    },
+    {
+        "content": "<p>But, yes, I agree, of course, from the perspective of  <strong>only syntax</strong>, Free monoid is the most natural choice</p>",
+        "id": 501317236,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740271530
+    },
+    {
+        "content": "<p>However, if we do refinements can there be a problem with free monoids? (like when we move from signed graphs to categories), as, I think usually refinements come with semantics (for example in usual regulatory networks +.-=-, -.-=+.. so on), but for free monoids, we may loose that kind of significance. Am I understanding correctly here?</p>",
+        "id": 501317602,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740271872
+    },
+    {
+        "content": "<p>The example of moving <em>from</em> signed graphs <em>to</em> categories seems both backwards and non-type-checked to me; are you thinking of moving from categories to signed categories? (Or, equivalently, for the free modles, from graphs to signed graphs?) I wouldn't call the forgetful process from signed graphs to graphs a <em>refinement</em>!</p>",
+        "id": 501317735,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740272010
+    },
+    {
+        "content": "<p>Yes I meant signed categories.</p>",
+        "id": 501317796,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740272050
+    },
+    {
+        "content": "<p>And you're thinking of refining as in, for example, adding signs where there weren't any before?</p>",
+        "id": 501317821,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740272085
+    },
+    {
+        "content": "<p>Yes, \"signs assigned to paths by composing the signs on edges by the monoid structure\" .  Actually, I am currently working on the \"<em>general theory of these kinds of structures</em>\" with <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span>  on a paper about graphs with polarities.</p>",
+        "id": 501317965,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740272224
+    },
+    {
+        "content": "<p>Well, I don't think I'm following what your concern is about the free monoids, all in all. If there's a monoid homomorphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>→</mo><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">M\\to N</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span> then you'll always be able to refine <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">N</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span>-signed graphs to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span>-signed ones, and if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span> is free then that's easy to arrange.</p>",
+        "id": 501318061,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740272286
+    },
+    {
+        "content": "<p>Of course. Yes, I agree. Thanks. But  I am talking about finding the right <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">N</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span> here suitable in specific biological setting.</p>",
+        "id": 501318282,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740272444
+    },
+    {
+        "content": "<p>Sure; you could start with something free and then, if you learn there really <em>is</em> a good name for \"phosphorylation then ubiquitation\", use a map from the free guy to the guy in which <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo>⋅</mo><mi>u</mi></mrow><annotation encoding=\"application/x-tex\">p\\cdot u</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6389em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">u</span></span></span></span> is that new name to improve your theory.</p>",
+        "id": 501318407,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740272527
+    },
+    {
+        "content": "<p>Yes, that's a nice way to approach. Thanks!</p>",
+        "id": 501318463,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740272615
+    },
+    {
+        "content": "<p>I am curious about a situation \"<strong>when a loop in a very big diagram  is \"too big\".</strong>. using ACT tools like structured cospans/decorted cosspans, we can decompose  the whole big diagram into small parts, each containing a small portion of the loop. <strong>But the loop is only identified when we compose all the small parts together.</strong> For example, the yellow loop in the attached hand drawn diagram !<br>\n<a href=\"/user_uploads/21317/Pn21rNj61-5Zp3dxhzkUhsTs/Composition-of-loop.png\">Composition of loop.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/Pn21rNj61-5Zp3dxhzkUhsTs/Composition-of-loop.png\" title=\"Composition of loop.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"2156x1612\" src=\"/user_uploads/thumbnail/21317/Pn21rNj61-5Zp3dxhzkUhsTs/Composition-of-loop.png/840x560.webp\"></a></div>",
+        "id": 501320035,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740274073
+    },
+    {
+        "content": "<p>Is such thing possible in CatColab?</p>",
+        "id": 501320131,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740274150
+    },
+    {
+        "content": "<p>More precisely, is the \"searching process for a loop in CatColab\" compatible with the underlying compositional structure (for eg: symmetric monoidal double categories)?</p>",
+        "id": 501320929,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740274862
+    },
+    {
+        "content": "<p>This hits on a broad and general issue of compositionality that we’ll have to consider: how to decide when it’s algorithmically worthwhile to try to divide and conquer to find loops across components of a composed model via their pieces, versus search globally. There’s no general answer or magic bullet here; it just is the case that there can be loops in a composed model that don’t come from loops in any of the pieces, as you say.</p>",
+        "id": 501321702,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740275578
+    },
+    {
+        "content": "<p>For the moment we don’t support the composition of models in that manner anyway, so it’s not yet a live issue.</p>",
+        "id": 501321737,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740275630
+    },
+    {
+        "content": "<p>I see! Thanks!!</p>",
+        "id": 501322439,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740276246
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/channel/229125-practice.3A-software/topic/CatColab/near/501316931\">said</a>:</p>\n<blockquote>\n<p>I just don't know what you're supposed to call a path that phosphorylates, then ubiquitates, other than a \"phosphorylation-then-ubiquitation\" path, which is basically combining in the free monoid!</p>\n</blockquote>\n<p>Freely generating the composite is always an option, but I suspect that interactions will often come with a taxonomy that let you do better. In this example, the <a href=\"https://www.kegg.jp/kegg/document/help_pathway.html\">legend</a> taxonomizes the arrows into enzyme-enzyme relations, gene expression relations, protein-protein interactions, etc. And it turns out that phosphorylation and ubiquitination are both protein-protein interactions! So perhaps you should define \"phosphorylation <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⋅</mo></mrow><annotation encoding=\"application/x-tex\">\\cdot</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4445em;\"></span><span class=\"mord\">⋅</span></span></span></span> ubiquitination <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>=</mo></mrow><annotation encoding=\"application/x-tex\">=</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.3669em;\"></span><span class=\"mrel\">=</span></span></span></span> protein-protein interaction\".</p>",
+        "id": 501323659,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1740277496
+    },
+    {
+        "content": "<p>The idea here is that a sequence of protein-protein interactions is again a (compound) protein-protein interaction. What the formalism of a category sliced over a monoid of \"types\" can't quite capture is that \"phosphorylation\" is a \"subtype\" of \"protein-protein interaction\". Happily, you <em>can</em> capture this with the more general formalism of simple double theories, namely by introducing a <a href=\"https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hdGhybXttb2xlY3VsZX0iXSxbMiwwLCJcXG1hdGhybXttb2xlY3VsZX0iXSxbMCwxLCJcXG1hdGhybXttb2xlY3VsZX0iXSxbMiwxLCJcXG1hdGhybXttb2xlY3VsZX0iXSxbMCwxLCJcXG1hdGhybXtwaG9zcGhvcnlsYXRpb259IiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiYmFycmVkIn19fV0sWzAsMiwiIiwyLHsibGV2ZWwiOjIsInN0eWxlIjp7ImhlYWQiOnsibmFtZSI6Im5vbmUifX19XSxbMSwzLCIiLDAseyJsZXZlbCI6Miwic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyLDMsIlxcdGV4dHtwcm90ZWluLXByb3RlaW4gaW50ZXJhY3Rpb259IiwyLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiYmFycmVkIn19fV0sWzQsNywiXFxMb25ncmlnaHRhcnJvdyIsMyx7InNob3J0ZW4iOnsic291cmNlIjoyMCwidGFyZ2V0IjoyMH0sInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6Im5vbmUifSwiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dXQ==\">cell like this</a> into your theory. The cell acts as a coercion operation. CatColab doesn't yet let you do this, but it will!</p>",
+        "id": 501324563,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1740278304
+    },
+    {
+        "content": "<p>Now I'm aware that this might not make much sense if you don't know about double theories, but the idea here is the same as that of a promonad. See, for example, this blog post: <a href=\"https://topos.institute/blog/2024-01-29-algebras-are-promonads/\">https://topos.institute/blog/2024-01-29-algebras-are-promonads/</a></p>",
+        "id": 501325322,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1740278541
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275965\">@Evan Patterson</span>  Thanks a lot!!   Yes, I agree that the formalism of category sliced over a \"monoid of types\" can not capture the idea of a subtype, and for that, we need a more general formalism like \"simple double theories\"  as you explained.  From your explanation, now it makes a lot more sense to use \"such ideas\" than \"the natural interpretation as free monoids as <span class=\"user-mention\" data-user-id=\"609515\">@Kevin Carlson</span>  suggested previously\"  when we want to formalise diagrams (like in KEGG) as \"<em>labeled graphs like objects where the labels of the edges can be composed</em>\".</p>\n<p>Also, thank you very much for sharing your article on promonads. It's very interesting!!</p>",
+        "id": 501374687,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740317280
+    },
+    {
+        "content": "<p>I talked to one of my colleagues, Shailendra Gupta (Systems Biologist), regarding \"the large example\" and about \"finding out the motifs\". Below, I am trying to summarise the discussion that I had with him regarding the topic:</p>\n<p>He referred to this paper: <a href=\"https://www.nature.com/articles/s41467-017-00268-2#Sec22\">https://www.nature.com/articles/s41467-017-00268-2#Sec22</a> (he is a coauthor in it). He said <strong>Figure 1</strong> can be a good candidate for the case study (It contains more than thousands of nodes.) Although \"finding out the motifs\" is interesting from the perspective of Systems Biology, he said there are already good softwares which can identify motifs (of size 3-4-5-may be more)  in large-scale networks (like more than 1000 nodes ) in directed signed graphs in reasonable time. In fact, in the paper he referred (<a href=\"https://www.nature.com/articles/s41467-017-00268-2#Sec22\">https://www.nature.com/articles/s41467-017-00268-2#Sec22</a>), he said they have found out the number of important motifs (like the ones in <a href=\"https://www.nature.com/articles/nrg2102\">https://www.nature.com/articles/nrg2102</a>) for the network shown in <strong>Figure 1</strong>  by converting the KEGG like diagrams into regulatory networks, and then, they did the feedback loop analysis using the software Cytoscape <a href=\"https://cytoscape.org\">https://cytoscape.org</a> by using NetDs (version 2.8) (see Figure 9 in his paper <a href=\"https://www.nature.com/articles/s41467-017-00268-2#Sec22\">https://www.nature.com/articles/s41467-017-00268-2#Sec22</a>) (although according to him version 2.8  may not be not available now).</p>\n<p>This discussion again made me think about \"how software built on ACT\" is better than \"normal software available, which usual systems biologists use for network analysis\"  from the point of a biologist? Of course, as a mathematician, I am fascinated by ACT-based software, but I am still not able to ignore this question.</p>",
+        "id": 501660475,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740435677
+    },
+    {
+        "content": "<p>Unfortunately, almost everything about the supplementary information in that paper is now broken (their main model 404s and NetDS is long dead), so it's impossible to reproduce the workflow. That said, it's helpful to know that finding motifs in a large network won't in itself be particularly impressive.</p>",
+        "id": 501683466,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740444088
+    },
+    {
+        "content": "<p>\"Converting the KEGG-like diagrams into regulatory networks\" is something we can do in an automated and verifiable way, whereas I might guess that it was quite laborious for them. Shifting across logics in this way will be a particular strength of CatColab.</p>",
+        "id": 501683575,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740444129
+    },
+    {
+        "content": "<p>\"Not having everything bitrot in less than a decade\" is also a problem we intend to improve on state-of-the-art on, though of course it's hard to sell people on this as a high priority. If the big model had been built in CatColab, then rather than (or in addition to) posting a complicated, interactive diagram on a webpage, the kind of thing that classically rots quickly, they could have provided a simple JSON dump that could be revitalized by a live version of CatColab in a single click with no downloading, or in the worst case, would have been reasonably easy to parse in some other piece of software, as opposed to this visualization which would  be essentially non-replicable even if we had the full version, without several days of manual work, and which is now seemingly entirely lost to the public. Even better than the JSON dump, the CatColab model could be directly shared at a link which would stay live as long at CatColab does, saving the researcher the responsibility to supervise their shared models, which is too much to ask.</p>",
+        "id": 501684161,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740444407
+    },
+    {
+        "content": "<p>It's likely our algorithms for finding feedback loops are no better than the much-lamented NetDS's, but the fact that we see this as a special case of a highly multi-disciplinary problem means that biologists don't have to shoulder the whole burden of building and maintaining software for this narrow problem, a burden which is apparently heavier than the level of need justifies. This is unfortunately another strength that doesn't instantly benefit biologists, of the \"maintainability and reliability\" kind; I'm just thinking out loud here to see whether I land on anything good.</p>",
+        "id": 501684486,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740444576
+    },
+    {
+        "content": "<p>All of the detailed points above are downstream of the fact that in CatColab, all models are well-defined mathematical objects that we can manipulate formally and uniformly, rather than all this highly manual passing around of complicated files through a long stack of independent tools. This sort of write-only, non-reproducible data analysis seems highly characteristic of scientific computing and we would really like to help improve the situation.</p>",
+        "id": 501684671,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740444654
+    },
+    {
+        "content": "<p>Thank you so much, <span class=\"user-mention\" data-user-id=\"609515\">@Kevin Carlson</span>, for explaining the vital differences between ACT-based software and others. I understand your point of view on it, and from your explanation, I am convinced that  ACT-based software is a really exciting object, even for working biologists!!</p>",
+        "id": 501770122,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740481125
+    },
+    {
+        "content": "<p>I’m glad, and thanks for your attention! I hope we can keeping work through you to figure out how to convince some working biologists of the same.</p>",
+        "id": 501922255,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1740522747
+    },
+    {
+        "content": "<p>Thanks!! I am also very glad to learn so much about CatColab, ACT-based software in general, and the interesting ideas for labelling KEGG diagrams.  I am very happy and looking forward to working with you to figure out how to convince regular biologists of the usefulness of both ACT and ACT-based software.</p>",
+        "id": 501931598,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740527365
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"520375\">Adittya Chaudhuri</span> <a href=\"#narrow/channel/229125-practice.3A-software/topic/CatColab/near/500950816\">said</a>:</p>\n<blockquote>\n<p><a href=\"https://www.kegg.jp/kegg-bin/show_pathway?hsa05200\">https://www.kegg.jp/kegg-bin/show_pathway?hsa05200</a> this is a pathway in cancer</p>\n</blockquote>\n<p>nothing useful to add to the discussion but this caught my eye lol <br>\n<a href=\"/user_uploads/21317/gBmpFR-vz0aonXYG1LL3muQJ/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/gBmpFR-vz0aonXYG1LL3muQJ/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"324x144\" src=\"/user_uploads/thumbnail/21317/gBmpFR-vz0aonXYG1LL3muQJ/image.png/840x560.webp\"></a></div>",
+        "id": 502749296,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1740837792
+    },
+    {
+        "content": "<p>A stairway to immortality!! lol</p>",
+        "id": 502749856,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740838148
+    },
+    {
+        "content": "<p>I believe cancer cells are immortal, and that's a big part of the problem.</p>",
+        "id": 502772177,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740852683
+    },
+    {
+        "content": "<p>Yes, I agree.</p>",
+        "id": 502796766,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740870029
+    },
+    {
+        "content": "<p>Btw this reminds me of how some people now are seeking immortality, in fact using the same method - extending the telomeres.  If rich people succeed in getting this, it'll indeed be a form of social cancer.</p>",
+        "id": 502797089,
+        "sender_full_name": "John Baez",
+        "timestamp": 1740870335
+    },
+    {
+        "content": "<p>Ohh!! I never imagined that. Of course, it would create a tremendous social issue as the  number of rich people is just a handful compared to the whole world population.</p>",
+        "id": 502797850,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1740870905
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229125-practice.3A-software/topic/CatColab/near/502797089\">said</a>:</p>\n<blockquote>\n<p>Btw this reminds me of how some people now are seeking immortality, in fact using the same method - extending the telomeres.  If rich people succeed in getting this, it'll indeed be a form of social cancer.</p>\n</blockquote>\n<p>I pray every day God doesn't take his best invention away from us---mortality.</p>",
+        "id": 503326584,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1741109964
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/channel/229125-practice.3A-software/topic/CatColab/near/501321737\">said</a>:</p>\n<blockquote>\n<p>For the moment we don’t support the composition of models in that manner anyway, so it’s not yet a live issue.</p>\n</blockquote>\n<p>Hi!! Has there been any new  development in the last few months in the direction of the question that I asked here <a class=\"message-link\" href=\"/#narrow/channel/229125-practice.3A-software/topic/CatColab/near/501320035\">#practice: software &gt; CatColab @ 💬</a> ?</p>",
+        "id": 526445712,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1751302878
+    },
+    {
+        "content": "<p>Hi Adittya, Owen Lynch is actively working on composition models in a pushouty/decorated cospanny fashion as we speak, but it might be as much as six weeks before we have much to show publicly.</p>",
+        "id": 526446716,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1751303289
+    },
+    {
+        "content": "<p>Thanks very much Kevin!! I am glad to hear that!!!  Actually, next week I am meeting with a systems biologist <em>in person</em> and would discuss about possible applications  of ACT (in particular via ACT based software) in finding feedback loops in regulatory networks. <em>I want to tell him about \"this compositional approach for finding motifs via software\"</em>. That's why I asked you about it!! Thanks !!</p>",
+        "id": 526464212,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1751308881
+    },
+    {
+        "content": "<p>Great! Feel free to ask anything it’d be helpful to understand better ahead of that.</p>",
+        "id": 526468754,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1751310257
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/channel/229125-practice.3A-software/topic/CatColab/near/526468754\">said</a>:</p>\n<blockquote>\n<p>Great! Feel free to ask anything it’d be helpful to understand better ahead of that.</p>\n</blockquote>\n<p>Thanks very much!!</p>",
+        "id": 526534947,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1751352265
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/channel/229125-practice.3A-software/topic/CatColab/near/526446716\">said</a>:</p>\n<blockquote>\n<p>Hi Adittya, Owen Lynch is actively working on composition [of] models in a pushouty/decorated cospanny fashion as we speak, but it might be as much as six weeks before we have much to show publicly.</p>\n</blockquote>\n<p>Wow, cool!    What class of decorated cospan (double) categories is he planning to handle?</p>",
+        "id": 526539759,
+        "sender_full_name": "John Baez",
+        "timestamp": 1751354205
+    },
+    {
+        "content": "<p>I'm not sure I can give a faithful-to-Owen answer to this, but at least part of what he'll produce is decorated cospan structures on categories of models of double theories where the cospans let you pick out inclusions of some \"discrete\" models, in a sense that generalizes the inclusion of, say, discrete graphs/categories into general ones.</p>",
+        "id": 526687099,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1751406068
+    },
+    {
+        "content": "<p>That's basically the plan as I understand it. For this application, it should suffice to use structured cospans (just like you can in the familiar example of open graphs), which are a bit simpler than decorated cospans.</p>",
+        "id": 526699930,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1751415442
+    },
+    {
+        "content": "<p>I'll have to ask Owen about the details.   It sounds great.   I'm very curious whether he's trying to handle decorated cospans or only structured cospans.  As you folks know, there are some practical examples of open systems that seem to require decorated cospans, though Evan and coauthors have found a clever way to avoid them in one case (replacing dynamical systems by <a href=\"https://arxiv.org/abs/2301.01445\">parametrized dynamical systems</a>).</p>",
+        "id": 526753603,
+        "sender_full_name": "John Baez",
+        "timestamp": 1751446918
+    },
+    {
+        "content": "<p>TIL Decapodes can only solve problems in 1- and 2d. </p>\n<p>Here's me hoping to look at simulating a PDE on a 10-dimensional manifold.....</p>",
+        "id": 531997728,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1753945995
+    },
+    {
+        "content": "<p>(Well, perhaps I can get away R^3 or R^4, but even the first of these is still a PR to the main Decapodes repo)</p>",
+        "id": 531997959,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1753946077
+    },
+    {
+        "content": "<p>I had a look at the <a href=\"https://github.com/ToposInstitute/CatColab\">project</a>. I thought CatColab would be built on Catlab.jl (julia), but it has been built from the ground up in rust (if I understood correctly). Does it mean that Catlab.jl is on hold?</p>",
+        "id": 531998959,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1753946412
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"619003\">@Peva Blanchard</span> - Catlab.jl is not on hold: for example our team is using it to design agent-based models in epidemiology.   Catcolab is a separate project, built from the ground up using Rust rather than Julia and based on double categorical doctrines rather than the category-theoretic infrastructure of Catlab.jl.     Catcolab is supposed to be better for web-based applications.</p>\n<p>Our team is also doing some preliminary work on epidemiological modeling in Catcolab, but it's not ready for serious modeling yet.</p>",
+        "id": 532014016,
+        "sender_full_name": "John Baez",
+        "timestamp": 1753951237
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276422\">@David Michael Roberts</span> - as far as I know, Decapodes is no longer being developed because the DARPA grant supporting that work is done.    If DARPA had wanted to fund further work on this project, it would be continuing.</p>\n<p>Decapodes was funded by a grant from a DARPA project called <a href=\"https://darpa-askem.github.io/\">ASKEM</a>: Automating Scientific Knowledge Extraction and Modeling .   <a href=\"https://darpa-askem.github.io/climate/decapodes.html\">It sounded good</a>:</p>\n<blockquote>\n<p><em>Target Users</em>:</p>\n<p>Decapodes can be used by modelers or researchers focused on physical climate models, and who are interested in developing and testing hypotheses to better understand fundamental mechanisms of the climate system through multiphysics modeling. This includes the ability to do rapid model composition with physics equations, apply various boundary conditions, and apply models to complex geographic/geometric meshes, etc.</p>\n<p><em>Features Supported</em>:</p>\n<p>Users can use Decapodes to:</p>\n<ul>\n<li>Start from a pre-populated library of canonical physics, chemistry, biology, and environmental models in exterior calculus form, and a library of commonly used boundary conditions,</li>\n<li>Do multiphysics model composition</li>\n<li>Apply different boundary conditions,</li>\n<li>Do multiphysics model simulations with complex and arbitrary geographic or geometric meshes</li>\n</ul>\n</blockquote>\n<p>However, my impression is that DARPA gave up on it.</p>\n<p>It's quite difficult to get sources of funding stable enough to develop such ambitious systems.</p>",
+        "id": 532015001,
+        "sender_full_name": "John Baez",
+        "timestamp": 1753951503
+    },
+    {
+        "content": "<p>Decapodes still has a finishing grad student and a mid-stream grad student focused on it, though it’s true that ASKEM just wrapped up. But while CombinatorialSpaces.jl was designed to support spaces of arbitrary dimension, there’s never been any funding to flesh out the high-dimensional capabilities. It seems to me, though I’m not super knowledgeable here, that high-D numerical PDE is a small and crazy hard field and you mostly have to use one of the standard libraries, of which there’s about one each in Python, Julia, and C++, and probably do a lot of implementation work building a solver customized to your particular problem.</p>",
+        "id": 532127372,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1753981765
+    }
+]
