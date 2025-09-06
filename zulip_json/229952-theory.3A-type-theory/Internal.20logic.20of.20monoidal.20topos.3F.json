@@ -1,0 +1,68 @@
+[
+    {
+        "content": "<p>Hi!</p>\n<p>If I want to reason internally to a topos, I can work in the internal logic.<br>\nThis looks like a fairly standard type theory, with axioms for funext, propositional extensionality, and quotients. I then add axioms specific to the topos I'm working with, such as the Kock-Lawvere axioms for smooth toposes, or the law of excluded middle for boolean toposes.</p>\n<p>Now say my topos is a monoidal topos, such as presheaves on a monoidal category under Day convolution. Say I'll be working with the monoidal product and function type as extensively as regular products and functions. Then I'll want the monoidal product and function types to feel \"built in\" to the language, rather than axiomatized. How do I do this?</p>\n<p>Presumably, what I want is some sort of linear dependent type theory. But <em>which</em> linear dependent type theory, exactly? I'd like a fairly detailed description, so a link to a paper would be preferable.</p>\n<p>I'm happy to work informally, so I don't require that the type theory actually be implemented as a proof assistant. As long as the type theory is clearly defined, and preferably fairly simple, I'm happy.</p>\n<p>Thanks!</p>",
+        "id": 471149476,
+        "sender_full_name": "finegeometer",
+        "timestamp": 1726627893
+    },
+    {
+        "content": "<p>Linear dependent type theory doesn't fully exist yet, though there's some considerable effort toward it (I'd just point you to the nLab, no specific knowledge of references.) That said, I think it's far from obvious that the linear type theory you get from sticking a monoidal structure onto a topos should be dependent just because the topos is dependent!</p>",
+        "id": 471166936,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1726635164
+    },
+    {
+        "content": "<p>I would say rather that there are a bunch of <em>different</em> linear dependent type theories, probably incomparable with each other, and it's not clear that any of them is uniformly better than the others.</p>",
+        "id": 471183576,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1726642862
+    },
+    {
+        "content": "<p>There may or may not be one in the literature that does exactly what you want; I'm not thinking of one off the top of my head.</p>",
+        "id": 471183673,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1726642901
+    },
+    {
+        "content": "<p>Hi monoidal toposes with Day convolution, if that's what you have in mind, come up in models of \"bunched type theory\". An older reference is <a href=\"http://www0.cs.ucl.ac.uk/staff/p.ohearn/papers/BunchedTyping.pdf\">Peter O'Hearn's paper</a>, and then Uli Schöpp and Ian Stark looked at dependently typed versions. More recently I am slightly out of the loop on the state of the art in dependent bunched type theory, I've seen <span class=\"user-mention\" data-user-id=\"276633\">@Mitchell Riley</span>'s <a href=\"https://mvr.hosting.nyu.edu/pubs/thesis.pdf\">thesis</a>, but I don't yet know it well enough to say how much it connects to Day convolution or ordinary topos theory.</p>",
+        "id": 471184118,
+        "sender_full_name": "Sam Staton",
+        "timestamp": 1726643065
+    },
+    {
+        "content": "<p>Oh nice, I didn't realize there was a dependently typed version of the original bunched type theory (although I knew about Mitchell's work, which is bunched in a different way IIRC).</p>",
+        "id": 471185980,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1726643721
+    },
+    {
+        "content": "<p>Do you have a reference for the work of Schöpp and Stark?</p>",
+        "id": 471186053,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1726643751
+    },
+    {
+        "content": "<p>Yes, I was thinking about Uli's thesis, <a href=\"https://ulrichschoepp.de/Docs/th.pdf\">Names and Binding in Type Theory</a>.</p>",
+        "id": 471189516,
+        "sender_full_name": "Sam Staton",
+        "timestamp": 1726644961
+    },
+    {
+        "content": "<p>If I remember right the Schöpp and Stark type theory builds in the assumption that the monoidal unit is terminal, because variables in any bunch are always usable. But it still might match your intended application.</p>",
+        "id": 471204316,
+        "sender_full_name": "Mitchell Riley",
+        "timestamp": 1726649400
+    },
+    {
+        "content": "<p>Good point, you're right.</p>",
+        "id": 471299385,
+        "sender_full_name": "Sam Staton",
+        "timestamp": 1726676199
+    },
+    {
+        "content": "<p>Thank you! My intended application does, in fact, have the monoidal unit be the terminal object. So that should work.</p>",
+        "id": 471374823,
+        "sender_full_name": "finegeometer",
+        "timestamp": 1726707776
+    }
+]
