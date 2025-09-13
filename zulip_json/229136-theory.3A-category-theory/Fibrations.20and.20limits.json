@@ -1,0 +1,80 @@
+[
+    {
+        "content": "<p>If <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo>:</mo><mi>E</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">p: E\\to B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> is a Grothendieck fibration, and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> has limits, and the fibers of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi></mrow><annotation encoding=\"application/x-tex\">E</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span></span></span></span> have limits that are preserved by reindexing functors, then <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi></mrow><annotation encoding=\"application/x-tex\">E</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span></span></span></span> has all limits.</p>\n<p>I've been trying to generalize this to 2-categories but I am realizing now that of course many interesting 2-limits are weighted rather than conical. <br>\nIs there a variant of this theorem for weighted limits, with a proof that doesn't just involve reducing it to the conical case?<br>\nAre all 2-limits reducible to conical limits via the Grothendieck construction? I assume so but I have not checked.</p>",
+        "id": 523411454,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1749616932
+    },
+    {
+        "content": "<blockquote>\n<p>Are all 2-limits reducible to conical limits via the Grothendieck construction?</p>\n</blockquote>\n<p>No, it is necessary to enhance the domain of a 2-functor to something more expressive. This is the motivation for <a href=\"https://ncatlab.org/nlab/show/double%20limits\">[[double limits]]</a> and <a href=\"https://ncatlab.org/nlab/show/marked%202-limits\">[[marked 2-limits]]</a>.</p>",
+        "id": 523493320,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1749625741
+    },
+    {
+        "content": "<p>Ah, alright, cool. I've never heard of this theorem that they're equivalent, I'll check it out.</p>",
+        "id": 523641380,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1749677385
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> the original paper by Grandis and Pare proves that a 2-category is complete iff its double category of quintets is complete. I was hoping for a more precise theorem in the form of a kind of double Grothendieck construction: given a diagram 2-category P with Cat valued presheaf of weights J, and F : P -&gt; A, construct a double category and a functor in quintets of A whose limit is the weighted limit of F with weights in J.</p>\n<p>Does such a theorem exist or should I prove this</p>",
+        "id": 526288837,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1751224273
+    },
+    {
+        "content": "<p>Yes, this does exist, though for some reason it's not recorded in the Grandis–Paré paper. It was first presented by Paré in <a href=\"https://www.mscs.dal.ca/~pare/July1989.pdf\">a talk</a>, and is written up as Proposition 1.4 of Grandis–Paré's <a href=\"https://www.mscs.dal.ca/~pare/DblPrs2.pdf\">Persistent double limits and flexible weighted limits</a>. I believe it's also covered in Chapter 2 of Verity's thesis <a href=\"http://www.tac.mta.ca/tac/reprints/articles/20/tr20.pdf\">Enriched Categories, Internal Categories and Change of Base</a>.</p>",
+        "id": 526297514,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1751234413
+    },
+    {
+        "content": "<p>Note that, for these purposes, it is more appropriate to view a 2-category as a loosely-discrete double category, rather than via the quintet construction.</p>",
+        "id": 526297622,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1751234507
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits/near/526297622\">said</a>:</p>\n<blockquote>\n<p>Note that, for these purposes, it is more appropriate to view a 2-category as a loosely-discrete double category, rather than via the quintet construction.</p>\n</blockquote>\n<p>Ah, I was worried you might say something like that! This paper gives a definition of fibrations between double categories and proves that a functor between 2-categories is a 2-fibration iff it's a fibration as a functor between the associated double categories of quintets. <a href=\"https://arxiv.orgabs/2205.15240\">https://arxiv.orgabs/2205.15240</a>. I had hoped to use this theorem here, but based on what you are saying, I will still have to do a little work in order to prove this limit lifting theorem.</p>",
+        "id": 526305190,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1751244520
+    },
+    {
+        "content": "<p>I think the discussion in CLPS misses an important point, which is that it is not really reasonable to compare fibrations of double categories and 2-fibrations directly in the way they do (although it is elucidating that they do so, to demonstrate this point). Suppose we have a <a href=\"https://arxiv.org/abs/2001.11477\">discrete 2-fibration</a>. This corresponds to a 2-functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"script\">K</mi><mtext>op</mtext></msup><mo>→</mo><mtext>Cat</mtext></mrow><annotation encoding=\"application/x-tex\">\\mathcal K^{\\text{op}} \\to \\text{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\"><span class=\"mord mathcal\" style=\"margin-right:0.01445em;\">K</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord text mtight\"><span class=\"mord mtight\">op</span></span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord text\"><span class=\"mord\">Cat</span></span></span></span></span>. We can then take the double category of elements of this 2-functor to get a fibration of double categories.</p>",
+        "id": 526349348,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1751273158
+    },
+    {
+        "content": "<p>However, if you care about general 2-fibrations, which correspond to 2-functors into <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext>2-Cat</mtext></mrow><annotation encoding=\"application/x-tex\">\\text{2-Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord text\"><span class=\"mord\">2-Cat</span></span></span></span></span>, then I suspect fibrations of double categories are insufficient, since these take values in spans of categories, and that one really needs a three-dimensional notion.</p>",
+        "id": 526349719,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1751273286
+    },
+    {
+        "content": "<p>Well, it seems okay to restrict to discrete 2-fibrations/2-presheaves of categories here if I am interested in weighted limits, right?</p>",
+        "id": 526444043,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1751302232
+    },
+    {
+        "content": "<p>Fibrations appear in two different roles in your setting: the 2-fibration along which you want to lift limits; and the discrete 2-fibrations associated with the weights for the limits.</p>",
+        "id": 526446526,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1751303209
+    },
+    {
+        "content": "<p>Presumably you don't just want to lift limits along discrete 2-fibrations?</p>",
+        "id": 526446595,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1751303236
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits/near/526446595\">said</a>:</p>\n<blockquote>\n<p>Presumably you don't just want to lift limits along discrete 2-fibrations?</p>\n</blockquote>\n<p>Yes, this is true. I will work this out and see if there are problems. Thank you</p>",
+        "id": 527345987,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1751807203
+    }
+]
