@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Mathematical objects internal to theories · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories.html">Mathematical objects internal to theories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="543506337"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Mathematical%20objects%20internal%20to%20theories/near/543506337" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories.html#543506337">(Oct 07 2025 at 11:29)</a>:</h4>
+<p>Doing math from the category theoretic and from the materialist perspective offer two independent ways of defining a mathematical object. In category theory, a mathematical object can be defined internally to any category with sufficient properties to express it, via a structure-preserving functor into that category (IE, a group is a finite product functor from the Lawvere theory into Set). In material mathematics, a mathematical object is instead defined internally to an appropriate theory (like ZFC) by simply "building up" the object inside of that theory (IE, defining a group as a certain kind of set you can build in ZFC).</p>
+
+
+
+<a name="543506494"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Mathematical%20objects%20internal%20to%20theories/near/543506494" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories.html#543506494">(Oct 07 2025 at 11:30)</a>:</h4>
+<p>While these appear to be independent worlds, in some set theories, one can use a "material-structural adjunction" to go from a model of set theory to a category Set of sets. Oftentimes, objects you can define in a consistent way within the model of set theory can then be given as appropriate structure-preserving functors into that corresponding Set category. However, set theory isn't the only way of doing math in a materialist way. For instance, in reverse mathematics, the idea of a second order arithmetic is used, and instead of ZF or ZFC, we instead consider theories such as RCA, WKL, ACA, ATR, and so on.</p>
+
+
+
+<a name="543506671"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Mathematical%20objects%20internal%20to%20theories/near/543506671" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories.html#543506671">(Oct 07 2025 at 11:31)</a>:</h4>
+<p>So here's my question. Is there any way to "translate" doing mathematics internally to a model of second order arithmetic into doing mathematics internally to some corresponding category, as we can when moving between set theory models and categories of sets? It seems more difficult- for instance, there doesn't seem to be an obvious way to code the abstract idea of a "group" inside of RCA, and yet if there is some category corresponding to a model of RCA, one should be able to define a group object internally to it. Might there be some sort of "material-structural" adjunction for second order arithmetic just like with set theory, or does this not exist?</p>
+
+
+
+<a name="543508924"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Mathematical%20objects%20internal%20to%20theories/near/543508924" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories.html#543508924">(Oct 07 2025 at 11:43)</a>:</h4>
+<p>This is a nice question!  I think if I were going to tackle it, I'd try to find some 2-category of categories - i.e. some 'doctrine' - whose internal logic can somehow be seen as <a href="https://en.wikipedia.org/wiki/Reverse_mathematics#The_base_system_RCA0">RCA</a>, or more precisely <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>RCA</mtext><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\text{RCA}_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord text"><span class="mord">RCA</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>.</p>
+
+
+
+<a name="543509531"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Mathematical%20objects%20internal%20to%20theories/near/543509531" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories.html#543509531">(Oct 07 2025 at 11:46)</a>:</h4>
+<p>I don't know of work along these lines, but I hope someone tries (or even better, has done it).</p>
+<p>The closest thing I know concerns <a href="https://ncatlab.org/nlab/show/primitive%20recursive%20functions">[[primitive recursive functions]]</a>, which are less general than recursive functions.  These are related to <a href="https://ncatlab.org/nlab/show/natural+numbers+object#withparams">parametrized natural numbers objects</a> and arithmetic pretoposes:</p>
+<blockquote>
+<p>The functions which are constructible out of the structure of a category with finite products and such a “parametrized NNO” are precisely the primitive recursive ones. Specifically, the unique structure-preserving functor from the free such category F into Set yields a bijection between <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>Hom</mtext><mi>F</mi></msub><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mi mathvariant="double-struck">N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{Hom}_F(1,\mathbb{N})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord text"><span class="mord">Hom</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">F</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathbb">N</span><span class="mclose">)</span></span></span></span> and the actual natural numbers, as well as surjections from <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>Hom</mtext><mi>F</mi></msub><mo stretchy="false">(</mo><msup><mi mathvariant="double-struck">N</mi><mi>m</mi></msup><mo separator="true">,</mo><mi mathvariant="double-struck">N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{Hom}_F(\mathbb{N}^m, \mathbb{N})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord text"><span class="mord">Hom</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">F</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathbb">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathbb">N</span><span class="mclose">)</span></span></span></span> onto the primitive recursive functions of arity m for each finite m. With cartesian closure, however, this identification no longer holds, since some non-primitive recursive functions (such as the Ackermann function) become definable as well.</p>
+</blockquote>
+<blockquote>
+<p>In this context an important class is the class of pretoposes with a parametrized NNO - the so called arithmetic pretoposes.</p>
+</blockquote>
+<p>But all this is only vaguely related to your specific question about RCA.</p>
+
+
+
+<a name="543600455"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Mathematical%20objects%20internal%20to%20theories/near/543600455" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories.html#543600455">(Oct 07 2025 at 18:46)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories/near/543508924">said</a>:</p>
+<blockquote>
+<p>whose internal logic can somehow be seen as <a href="https://en.wikipedia.org/wiki/Reverse_mathematics#The_base_system_RCA0">RCA</a>, or more precisely <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>RCA</mtext><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\text{RCA}_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord text"><span class="mord">RCA</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>.<br>
+...<br>
+These are related to <a href="https://ncatlab.org/nlab/show/natural+numbers+object#withparams">parametrized natural numbers objects</a> and arithmetic pretoposes:</p>
+</blockquote>
+<p>That's interesting! The article on arithmetic pretopos did mention finding a syntactic category for PA, so maybe it's as simple as trying to find the syntactic category for RCA.</p>
+
+
+
+<a name="543699653"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Mathematical%20objects%20internal%20to%20theories/near/543699653" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories.html#543699653">(Oct 08 2025 at 09:26)</a>:</h4>
+<p>Or as difficult as that.</p>
+
+
+
+<a name="543933033"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Mathematical%20objects%20internal%20to%20theories/near/543933033" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories.html#543933033">(Oct 09 2025 at 11:22)</a>:</h4>
+<p>This also makes me wonder, what it even "means" to be able to define a mathematical object internal to some theory. For instance, one can easily define mathematical objects internal to ZFC (most mathematical objects can be) and to RCA (for instance, I believe there's coding mechanisms that allow even complete separable metric spaces to be definable within that context). However, there are also theories like the theory of groups or the theory of topological spaces that we don't usually consider as theories we can define mathematical objects internally to.</p>
+
+
+
+<a name="543933210"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Mathematical%20objects%20internal%20to%20theories/near/543933210" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories.html#543933210">(Oct 09 2025 at 11:23)</a>:</h4>
+<p>Here's my question about this. Which of the following two possibilities is the correct one: 1. There is a clear cut dividing line between theories in which one can define mathematical objects (like ZFC and RCA) and those in which one cannot (such as groups and topological spaces). If this is the case, then what is the nature of this dividing line? 2. There is a spectrum of theories: the "weaker" the theory, the less mathematical objects you can define internal to it, and the "stronger" it is, the more you can define internal to it. If this is the case, then what exactly determines this sort of "strength" of a theory?</p>
+
+
+
+<a name="543938841"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Mathematical%20objects%20internal%20to%20theories/near/543938841" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories.html#543938841">(Oct 09 2025 at 11:54)</a>:</h4>
+<blockquote>
+<p>However, there are also theories like the theory of groups or the theory of topological spaces that we don't usually consider as theories we can define mathematical objects internally to.</p>
+</blockquote>
+<p>Classical logicians call these theories <a href="https://en.wikipedia.org/wiki/Structure_(mathematical_logic)">structures</a> and talk a lot about <a href="https://en.wikipedia.org/wiki/Structure_(mathematical_logic)#Definable_relations">definable relations</a> in these theories.  That's probably because they're focused on "untyped" theories, i.e. theories with one basic type <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span>, so they less focused on defining <em>objects</em> other than subobjects of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>X</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">X^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span>, which are the relations they're talking about.</p>
+
+
+
+<a name="543939588"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Mathematical%20objects%20internal%20to%20theories/near/543939588" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories.html#543939588">(Oct 09 2025 at 11:58)</a>:</h4>
+<p>But knowing some category theory we can easily talk about "objects definable in the Lawvere theory of groups" or "objects definable in the finite limits theory of groups" or "objects definable in the first-order theory of groups", etc.   Here I've taken the same concept, "group", and imagined theories of in 3 different doctrines.  As we increase the power of the doctrine, more objects become definable.</p>
+
+
+
+<a name="543939978"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Mathematical%20objects%20internal%20to%20theories/near/543939978" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories.html#543939978">(Oct 09 2025 at 12:00)</a>:</h4>
+<blockquote>
+<p>Here's my question about this. Which of the following two possibilities is the correct one: 1. There is a clear cut dividing line between theories in which one can define mathematical objects (like ZFC and RCA) and those in which one cannot (such as groups and topological spaces). If this is the case, then what is the nature of this dividing line? 2. There is a spectrum of theories: the "weaker" the theory, the less mathematical objects you can define internal to it, and the "stronger" it is, the more you can define internal to it. </p>
+</blockquote>
+<p>I guess I'm coming down on side 2 of this question.</p>
+<blockquote>
+<p>If this is the case, then what exactly determines this sort of "strength" of a theory?</p>
+</blockquote>
+<p>I'm more used to think about the strength of a <em>doctrine</em>, as above, but I don't think  I have it nicely formalized.   Something about adjunctions between stronger doctrines and weaker ones?</p>
+
+
+
+<a name="544025442"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Mathematical%20objects%20internal%20to%20theories/near/544025442" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories.html#544025442">(Oct 09 2025 at 18:35)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories/near/543939588">said</a>:</p>
+<blockquote>
+<p>But knowing some category theory we can easily talk about "objects definable in the Lawvere theory of groups" or "objects definable in the finite limits theory of groups" or "objects definable in the first-order theory of groups", etc.   Here I've taken the same concept, "group", and imagined theories of in 3 different doctrines.  As we increase the power of the doctrine, more objects become definable.</p>
+</blockquote>
+<p>I'm a little bit confused by this. Shouldn't there be a difference between the concepts "mathematical object defined in a theory" and "object internal to the syntactic category of the theory"? For instance, let's consider a set theory. A "group" in the set theory is simply an element of some "universe" of that set theory satisfying certain properties. On the other hand, the syntactic category of a set theory isn't itself some category of sets, and so it's unlikely a group object internal to it has anything to do with the actual groups one can define within that theory of sets. (Though that does raise the question of what exactly a group object internal to the syntactic category is supposed to be, if anything.)</p>
+
+
+
+<a name="544025839"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Mathematical%20objects%20internal%20to%20theories/near/544025839" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories.html#544025839">(Oct 09 2025 at 18:37)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories/near/543939978">said</a>:</p>
+<blockquote>
+<p>I'm more used to think about the strength of a <em>doctrine</em>, as above, but I don't think I have it nicely formalized. Something about adjunctions between stronger doctrines and weaker ones?</p>
+</blockquote>
+<p>I think I understand. I remember seeing somewhere a spectrum of doctrines, something like finite products -&gt; finite limits -&gt; regular -&gt; coherent -&gt; geometric -&gt; first order or something like that.</p>
+
+
+
+<a name="544032787"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Mathematical%20objects%20internal%20to%20theories/near/544032787" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories.html#544032787">(Oct 09 2025 at 19:25)</a>:</h4>
+<blockquote>
+<p>On the other hand, the syntactic category of a set theory isn't itself some category of sets, and so it's unlikely a group object internal to it has anything to do with the actual groups one can define within that theory of sets.</p>
+</blockquote>
+<p>They're not the same, but I think there's a strong relation.   If you take a group object internal to the syntactic category of a theory <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span>, and then take a model of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow><annotation encoding="application/x-tex">\mathsf{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">Set</span></span></span></span></span>, you should get a group object in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow><annotation encoding="application/x-tex">\mathsf{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">Set</span></span></span></span></span>, which is just a group.</p>
+
+
+
+<a name="544033107"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Mathematical%20objects%20internal%20to%20theories/near/544033107" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Mathematical.20objects.20internal.20to.20theories.html#544033107">(Oct 09 2025 at 19:27)</a>:</h4>
+<p>By the way, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> can even be some theory of sets, like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mtext>ZFC</mtext></mrow><annotation encoding="application/x-tex">T = \text{ZFC}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">ZFC</span></span></span></span></span>.   This example is perhaps confusing, because the concept of set is showing up in two different ways, but people study models of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>ZFC</mtext></mrow><annotation encoding="application/x-tex">\text{ZFC}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">ZFC</span></span></span></span></span> in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow><annotation encoding="application/x-tex">\mathsf{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">Set</span></span></span></span></span> all the time in set theory.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Oct 11 2025 at 12:09 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

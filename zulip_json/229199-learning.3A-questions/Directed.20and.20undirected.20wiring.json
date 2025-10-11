@@ -1,0 +1,140 @@
+[
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/DOTS.2C.20TQFTs.20and.20n-theories/near/541398408\">said</a>:</p>\n<blockquote>\n<p>Sophie Libkind has already unified the input-output doctrine and variable sharing doctrine (which she called the resource sharing doctrine) in her paper</p>\n<ul>\n<li>Sophie Libkind, <a href=\"https://arxiv.org/abs/2007.14442\">An algebra of resource sharing machines</a>.</li>\n</ul>\n<p>By the way, this paper has a good explanation of the <em>distinction</em> between the two doctrines, starting in the abstract:</p>\n<blockquote>\n<p>To some, open dynamical systems are input-output machines which interact by feeding the input of one system with the output of another. To others, open dynamical systems are input-output agnostic and interact through a shared pool of resources. In this paper, we define an algebra of open dynamical systems which unifies these two perspectives.</p>\n</blockquote>\n</blockquote>\n<p>I'm getting very interested in this issue. Consider Sophie's discussion of the difference. First, the machine/input-out/directed wiring paradigm:</p>\n<blockquote>\n<p>When two machines compose, one machine is the designated sender and the other is the designated receiver. The sender emits information which directs the evolution of the receiver.<br>\nIn the special case where a system is both the sender and the receiver, this interaction describes feedback. When machines compose:</p>\n<ol>\n<li><em>communication is uni-directional.</em> Information travels from the sender to the receiver but not vice versa.</li>\n<li><em>interaction is active</em>. The communication channel from sender to receiver is specifically engineered to enable the passing of information. The receiver does not evolve without input from the sender.</li>\n</ol>\n<p>When people communicate by passing notes, they are composing as machines where the note plays the role of the engineered communication channel.</p>\n</blockquote>\n<p>Now the variable-sharing/undirected wiring paradigm:</p>\n<blockquote>\n<p>Two resource sharers compose by simultaneously affecting and reacting to a shared pool of resources. When resource sharers compose:</p>\n<ol>\n<li><em>communication is undirected.</em> Each system may both affect and be affected by the state of the shared pool of resources. Through this medium, they may both affect and be affected by each other.</li>\n<li><em>interaction is passive.</em> The communication channel is incidental to the fact that the systems refer to the same resource. The rules for how each system affects and reacts to state of the resource is independent of the action of other systems on the pool.</li>\n</ol>\n<p>When people communicate verbally, they are composing as resource sharers where the shared resource is \"vibrations in the air space.\" All participants in a conversation affect and are affected by the changing<br>\nstate of the air between them.</p>\n</blockquote>",
+        "id": 543682901,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1759910695
+    },
+    {
+        "content": "<p>It seems to me a little odd to distinguish sharply between people sending each other written messages and people having an in-person conversation as belonging to different paradigms. </p>\n<p>If I play chess, especially with a computer, it might seem right to view it in directed terms: I make a move and receive an update as to the position once the computer has responded. But I might take the board position as a shared resource between the two players.</p>\n<p>Perhaps she's chosen such an illustration to hint at the somewhat conventional nature of the distinction.</p>",
+        "id": 543684080,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1759911064
+    },
+    {
+        "content": "<p>I see in Sophie and Keri D'Angelo's recent <a href=\"https://arxiv.org/abs/2503.05457\">Dependent Directed Wiring Diagrams for Composing Instantaneous Systems</a> that they're bringing Mealy machines and stock-flow diagrams into contact with each other, especially sec. 5.2. </p>\n<p>They're normally seen as belonging to different paradigms.</p>",
+        "id": 543685339,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1759911431
+    },
+    {
+        "content": "<p>It's not that stock-flow diagrams belong to some paradigm (directed or undirected), it's how you compose them that belongs to some paradigm.</p>\n<p>Our first batch of papers on stock-flow diagrams composed them in an undirected way, by identifying stocks.    I believe all the software we have so far uses only this method.  But Nate Osgood is constantly militating for also composing them in a directed way, where the value in a stock of one determines a flow function in another.  (The 'flow function' says how the value of a flow is a function of the values of various stocks and other variables.)</p>\n<p>Sophie has created software that lets you compose Petri nets in both directed and undirected ways, and the same ideas should work for stock-flow diagrams.</p>\n<p>The only reason we haven't yet introduced directed composition for stock-flow diagrams is simply that software takes time to write and there are not enough people who can write the software.  We need more people who know category theory, can program in AlgebraicJulia, and want to work on this project!</p>",
+        "id": 543690840,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759913015
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Directed.20and.20undirected.20wiring/near/543690840\">said</a>:</p>\n<blockquote>\n<p>The only reason we haven't yet introduced directed composition for stock-flow diagrams is simply that software takes time to write and there are not enough people who can write the software.  We need more people who know category theory, can program in AlgebraicJulia, and want to work on this project!</p>\n</blockquote>\n<p>oh, really? I could be interested, depending on the expected time commitment. Is there a page (or github?) for the project?</p>",
+        "id": 543692674,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1759913539
+    },
+    {
+        "content": "<p>Sure, there's a github for StockFlow.jl:</p>\n<p><a href=\"https://github.com/AlgebraicJulia/StockFlow.jl\">https://github.com/AlgebraicJulia/StockFlow.jl</a></p>\n<p>(read the long description near the bottom).   There are also papers describing it.   The first paper is short:</p>\n<ul>\n<li>John Baez, Xiaoyan Li, Sophie Libkind and Evan Patterson, <a href=\"https://arxiv.org/abs/2205.08373\">Compositional Modeling with Stock and Flow Diagrams</a>.</li>\n</ul>\n<p>The second goes into a lot more detail, and discusses newer features, with a lot of code shown at the end, but is aimed at an audience who knows little category theory:</p>\n<ul>\n<li>John C. Baez, Xiaoyan Li, Sophie Libkind, Nathaniel D. Osgood, Eric Redekopp, <a href=\"https://arxiv.org/abs/2211.01290\">A Categorical Framework for Modeling with Stock and Flow Diagrams</a>.</li>\n</ul>\n<p>The time commitment would be up to you, at least if you're doing something that nobody else relies on yet.  You'd probably need to talk to us sometimes.</p>",
+        "id": 543695088,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759914243
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Directed.20and.20undirected.20wiring/near/543690840\">said</a>:</p>\n<blockquote>\n<p>It's not that stock-flow diagrams belong to some paradigm (directed or undirected), it's how you compose them that belongs to some paradigm.</p>\n</blockquote>\n<p>Ok, so then one issue is whether there's a good combination:</p>\n<blockquote>\n<p>The main theorem of this paper (Theorem 5.3) unites these two flavors of composition in a single framework for open dynamical systems.</p>\n</blockquote>\n<p>But maybe there's something more I'm after, not just a question of being able to compose in either of two ways, but of how we carve up the world into kinds of interacting subsystems.</p>",
+        "id": 543698535,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1759915279
+    },
+    {
+        "content": "<p>I guess my intuition is that the directed form of communication is the more fundamental, and that undirected sharing is a limit case. The motion of one end of rod needs to be transmitted down its length. </p>\n<p>But maybe there's space for an undirected composition of pure identification.</p>",
+        "id": 543704365,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1759917064
+    },
+    {
+        "content": "<p>In physical systems interaction is always bidirectional and there is no notion of \"input\" and \"output\", as I briefly explain in Section 2 of my paper <a href=\"https://math.ucr.edu/home/baez/double.pdf\">Double categories of open systems: the cospan approach</a>.   Directed wiring diagrams don't capture these features.    That's why I take the cospan approach (which is closely allied to the operad of undirected wiring diagrams).   I consider this fundamental to understanding the physical world - so it's interesting that people are able in some situations to act as if causation is directional.   I examine an example.</p>",
+        "id": 543728070,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759924581
+    },
+    {
+        "content": "<p>It's interesting that the \"arrows of space\" people construct to embed unidirectional communication in the physical world all ultimately devolve to the arrow of time.</p>",
+        "id": 543734487,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1759926392
+    },
+    {
+        "content": "<p>However, I think even in the physical paradigm, there's a distinction (perhaps again ultimately only conventional) between interaction by sharing a resource and direct <em>bidirectional</em> interaction (coupling) between systems.</p>",
+        "id": 543734962,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1759926517
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"438995\">James Deikun</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Directed.20and.20undirected.20wiring/near/543734487\">said</a>:</p>\n<blockquote>\n<p>It's interesting that the \"arrows of space\" people construct to embed unidirectional communication in the physical world all ultimately devolve to the arrow of time.</p>\n</blockquote>\n<p>Yes!   I didn't come out and say that in my paper, for some reason, but my example should make that clear.   Maybe I should say \"arrow of time\" out loud, or maybe that would just open another Pandora's can of worms.</p>",
+        "id": 543737748,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759927280
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"438995\">James Deikun</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Directed.20and.20undirected.20wiring/near/543734962\">said</a>:</p>\n<blockquote>\n<p>However, I think even in the physical paradigm, there's a distinction (perhaps again ultimately only conventional) between interaction by sharing a resource and direct <em>bidirectional</em> interaction (coupling) between systems.</p>\n</blockquote>\n<p>Agreed!  We could take particles in two subsystems and \"couple\" them by letting them interact gravitationally (or admitting that they do, in fact, interact gravitationally).  Or we could take particles in two subsystems and decree that they are the same (or admit that they are the same, since the subsystems overlap) - that's the \"resource sharing\" approach.  </p>\n<p>The second seems mathematically simpler since you don't need to specify a <em>way</em> the two particles are interacting.  That's why we've focused on the second so far.   </p>\n<p>When you start specifying <em>ways</em> that two parts of two subsystems can interact, it seems you need a hand-crafted operad that has operations for all these ways.  I'm not opposed to that.   It would be fun to try it.</p>",
+        "id": 543738477,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759927434
+    },
+    {
+        "content": "<p>I tend to think that directed representations are good for processes (temporal networks). Semantics for these tend to involve <em>states</em> of resources as input/output wires and transformations (interactions) of those states as nodes.</p>\n<p>Undirected directed diagrams are good for representing spatial networks, with the nodes representing <em>persistent</em> resources and edges (or often higher simplices) representing interactions. Semantics for these diagrams tend to be dynamical systems and/or their orbits, tracking change over time (sometimes obscured by a focus on fixed points).</p>\n<p>Ultimately, these should interact, with processes modifying spatial networks, and process transitions triggered by dynamical changes to persistent variable. The Carnot engine is a good example, with process steps corresponding to different network arrangements of the engine and reservoirs.</p>",
+        "id": 543858350,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1759975113
+    },
+    {
+        "content": "<p>Another point in the interrelation of doctrines: <a href=\"https://www.youtube.com/watch?v=qpWD16mOwr0\">Lecture 10</a> in <span class=\"user-mention\" data-user-id=\"751249\">@David Jaz Myers</span>'s DOTS lecture series sees him use \"clocks\" to turn the compositional theory of Moore machines via lenses into a behavioral system theorem (Jan Willems style) composing by sharing variables. </p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"qpWD16mOwr0\" href=\"https://www.youtube.com/watch?v=qpWD16mOwr0\"><img src=\"https://uploads.zulipusercontent.net/df9744c1a6bc1a9bd9056db2e94b48348116ba19/68747470733a2f2f692e7974696d672e636f6d2f76692f7170574431366d4f7772302f6d7164656661756c742e6a7067\"></a></div><p>This is part of the Future Work announced in the DOTS paper:</p>\n<blockquote>\n<p>Examine the Yoneda theory of systems theories (extending the work on representable morphisms of systems theories in Chapter 5 of [Mye21]). We will show that the simplest form of Willems’ behavioral approach to systems theory, as categorified in the sheaf approach of Schultz, Spivak, and Vasilakopolous [SSV19], is a discrete opfibration classifier in the 2-category of systems theories. In particular, features of systems theories representable by maps (such as trajectories, steady states, etc. but also control-barrier functions and cocycles) give (sometimes lax) morphisms of systems theories into Willems’ style behavioral systems theories (as demonstrated in the manuscript [Mye21]). This gives a robust class of compositionality theorems. We will explore how time variation in system behaviors arises out of a choice of a category of clock-systems which represent time-varying behavior, and connect this with the sheaf theoretic approach of [SSV19].</p>\n</blockquote>",
+        "id": 543883007,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1759993052
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Directed.20and.20undirected.20wiring/near/543728070\">said</a>:</p>\n<blockquote>\n<p>That's why I take the cospan approach (which is closely allied to the operad of undirected wiring diagrams).</p>\n</blockquote>\n<p>And allied to <em>properads</em> too:</p>\n<ul>\n<li>Jonathan Beardsley, Philip Hackney, <em>Labelled cospan categories and properads</em>, <a href=\"https://arxiv.org/abs/2206.00698\">arXiv:2206.00698</a></li>\n</ul>",
+        "id": 543883899,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1759993387
+    },
+    {
+        "content": "<p>Hmm, why not  a 'Double <em>Properadic</em> Theory of Systems'? Can't we run these wiring diagrams backwards ?(Unwiring diagrams?)</p>\n<p><a href=\"/user_uploads/21317/kQJsPKqbpVVdNaIKG7NaOEwP/image.png\">image.png</a><br>\n<a href=\"/user_uploads/21317/NUOsSqhNaiGKx0IUvFcxGe3I/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/kQJsPKqbpVVdNaIKG7NaOEwP/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"296x181\" src=\"/user_uploads/thumbnail/21317/kQJsPKqbpVVdNaIKG7NaOEwP/image.png/840x560.webp\"></a></div><div class=\"message_inline_image\"><a href=\"/user_uploads/21317/NUOsSqhNaiGKx0IUvFcxGe3I/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"277x245\" src=\"/user_uploads/thumbnail/21317/NUOsSqhNaiGKx0IUvFcxGe3I/image.png/840x560.webp\"></a></div>",
+        "id": 543888736,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1759995180
+    },
+    {
+        "content": "<p>There's plenty of interest in <em>variable sharing</em>, do people look at de-identifying variables? A couple of financially independent people come together and pool resources, then later separate. A community of people who can each carry out many tasks starts to specialise. </p>\n<p>I guess this is just along the lines of:</p>\n<p><span class=\"user-mention silent\" data-user-id=\"278008\">Spencer Breiner</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Directed.20and.20undirected.20wiring/near/543858350\">said</a>:</p>\n<blockquote>\n<p>Ultimately, these should interact, with processes modifying spatial networks, and process transitions triggered by dynamical changes to persistent variable.</p>\n</blockquote>",
+        "id": 543911681,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1760002025
+    },
+    {
+        "content": "<p>I guess just like multiplication is easier than factorization, and marrying fortunes is easier than divorce settlements, that decomposition of systems is generally less tractable.</p>",
+        "id": 543989816,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1760023490
+    },
+    {
+        "content": "<p>Yes, one should probably become an expert on composition first.</p>",
+        "id": 544051737,
+        "sender_full_name": "John Baez",
+        "timestamp": 1760046258
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"302507\">David Corfield</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Directed.20and.20undirected.20wiring/near/543911681\">said</a>:</p>\n<blockquote>\n<p>There's plenty of interest in <em>variable sharing</em>, do people look at de-identifying variables? A couple of financially independent people come together and pool resources, then later separate. A community of people who can each carry out many tasks starts to specialise. </p>\n</blockquote>\n<p>In environmental impact analysis, there is an interesting example. As a biophysical process, a cow can be seen as producing meat and milk. Say 1 cow produces 200kg of meat, and 1ton of milk. But raising the cow, and maintaining her space, veterinary checks, etc. all that has an environmental impact of, say, 100 kgCO2 equivalent. Now, how do we allocate the responsibilities of this impact on the meat and milk products? Since they both \"share the cow\", and since a cow cannot be physically separated into a \"meat production\" and a \"milk production\" process, this question cannot be settled by \"biophysical\" arguments.</p>\n<p>Here, experts spend a lot of time discussing which allocation method is the best. (they mostly rely on economic principles and models).</p>",
+        "id": 544053248,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1760047097
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"619003\">Peva Blanchard</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Directed.20and.20undirected.20wiring/near/544053248\">said</a>:</p>\n<blockquote>\n<p>In environmental impact analysis, there is an interesting example.</p>\n</blockquote>\n<p>Yes, interesting. I wonder if we can think of parallel examples in biology, where Nature in effect has to solve the problem of the benefits of dividing or combining functions in an organism. On another thread, we were talking about the mechanism discussed in <a href=\"https://arxiv.org/abs/2502.18713\">Symmetries of Living Systems</a> where there's gene duplication in a gene regulatory network. So long as the input trees to two nodes remain isomorphic, they belong to the same fibre of the symmetry fibration, and their dynamics will be synchronised. But then new connections to one may occur to allow for symmetry breaking, desynchronisation and differentiation of function.</p>",
+        "id": 544103187,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1760081375
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Directed.20and.20undirected.20wiring/near/544051737\">said</a>:</p>\n<blockquote>\n<p>one should probably become an expert on composition first.</p>\n</blockquote>\n<p>Sound advice, I'm sure.</p>",
+        "id": 544105457,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1760082186
+    }
+]
