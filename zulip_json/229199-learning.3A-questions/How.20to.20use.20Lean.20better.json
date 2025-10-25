@@ -1,0 +1,62 @@
+[
+    {
+        "content": "<p>Whenever I use Lean, my code always ends up swamped in bookkeeping because the compiler raises errors like <code>Expected type X but received type (X, X).fst</code>, even though my code in actual programming languages doesn't really have this issue. Are there bad habits I'm falling into unknowingly, or do other theorem provers make this easier?</p>",
+        "id": 546511563,
+        "sender_full_name": "Elisha Goldman",
+        "timestamp": 1761153428
+    },
+    {
+        "content": "<p>I imagine you will have more success asking this kind of question on <a href=\"https://leanprover.zulipchat.com/\">https://leanprover.zulipchat.com/</a>.</p>",
+        "id": 546514368,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1761154353
+    },
+    {
+        "content": "<p>In my experience it’s a very active Zulip and a very welcoming community</p>",
+        "id": 546519445,
+        "sender_full_name": "Nathan Corbyn",
+        "timestamp": 1761156004
+    },
+    {
+        "content": "<p>That's a peculiar error in any dependent type theory; one would expect X and (X,X).fst to be convertible in any context by the beta rule for products</p>",
+        "id": 546562598,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1761173303
+    },
+    {
+        "content": "<p>Lean may be like Rocq and hold off applying the conversion rule until explicitly asked.</p>",
+        "id": 546563240,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1761173677
+    },
+    {
+        "content": "<p>I think James is probably right, those errors only occur when it needs to implicitly convert while doing something else, and writing <code>by simp</code> fixes them 99% of the time, it's just that rewriting so much code to fit <code>by simp</code> in is not ideal</p>",
+        "id": 546567124,
+        "sender_full_name": "Elisha Goldman",
+        "timestamp": 1761176105
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"438995\">James Deikun</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/How.20to.20use.20Lean.20better/near/546563240\">said</a>:</p>\n<blockquote>\n<p>Lean may be like Rocq and hold off applying the conversion rule until explicitly asked.</p>\n</blockquote>\n<p>Rocq does not do what you describe: if two things are convertible (such as <code>x</code> and <code>(x, y).fst</code>), the kernel will always find that these are convertible. The typechecking and conversion algorithms are <em>not</em> interactive in Rocq (and that's the same in Lean).</p>",
+        "id": 546635103,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1761212676
+    },
+    {
+        "content": "<p>one difference is that Lean's conversion is in general undecidable, so that the implemented algorithm may sometimes fail to see that two things are convertible, but I don't think a simple problem such as <code>X ≡ (X, X).fst</code> would fail</p>",
+        "id": 546635467,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1761212791
+    },
+    {
+        "content": "<p>However, one \"gotcha\" in Rocq is that not everything happens \"up to convertibility\", such as typeclass inference.  If two types are convertible, it doesn't follow that a typeclass instance belonging to one of them will necessarily be found when searching based on the other.  I don't know if Lean also has this issue.</p>",
+        "id": 546773399,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1761255888
+    },
+    {
+        "content": "<p>same for tactics: lots of them will only be up to syntactic equality, not conversion. These are all part of the higher layers of Rocq that build terms for the kernel though, so you will never get a complaint from the kernel saying that two specific things are not convertible, only that some tactic or typeclass search failed.</p>",
+        "id": 546846775,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1761296719
+    }
+]

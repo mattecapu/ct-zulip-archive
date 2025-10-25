@@ -1,0 +1,110 @@
+[
+    {
+        "content": "<p>In the recent \"Urs Schreiber Podcast\" thread, <span class=\"user-mention\" data-user-id=\"671813\">@Madeleine Birchfield</span>  talked briefly about \"differential cohesion\" being enough for most physics... I assume this is related to these cohesive topoi I've heard about, but I haven't taken the time to really learn what they are and why one might care (though I do remember when I was younger hearing about some work about \"cohesion\" letting you pass back and forth between synthetic and \"classical\" topological objects, for applications of Brouwer's fixed point theorem etc... I found that really exciting at the time, and still do!).</p>\n<p>I'm obviously interested in (oo-)topoi, so I hope this doesn't come off the way people can when they ask why they should care about various category theoretic concepts... But earnestly, I'm sure most physicists don't know about differential cohesive oo-topoi, so I'm curious what might make them useful, how one might go about using them, etc. </p>\n<p>I could probably write up some guesses here, or clarify some things I already know, but maybe I'll just listen for a while, since I'm not totally sure if any of my guesses and assumptions are relevant</p>",
+        "id": 507121010,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1742529076
+    },
+    {
+        "content": "<p>I believe this stuff about <em>cohesive</em> infinity-topoi is an outgrowth of old problems in 'higher gauge theory' which require defining Lie 2-groups, Lie 3-groups... Lie infinity-groups, Lie infinity-groupoids, etc.    The useful concept of 'infinity-groupoid internal to a topos of smooth spaces' is a bit subtle, but if you do it right you get a 'cohesive' infinity-topos <em>of</em> them.</p>",
+        "id": 507130936,
+        "sender_full_name": "John Baez",
+        "timestamp": 1742534963
+    },
+    {
+        "content": "<p>If you ever want to see some baby steps toward these ideas, you could try</p>\n<ul>\n<li>John Baez and John Huerta, <a href=\"https://arxiv.org/abs/1003.4485\">An invitation to higher gauge theory</a>.</li>\n</ul>\n<p>This is hopelessly unsophisticated by Urs' standards, but it gets cited in a bunch of condensed matter physics papers so I guess those low-brow sorts get something out of it.</p>",
+        "id": 507131259,
+        "sender_full_name": "John Baez",
+        "timestamp": 1742535183
+    },
+    {
+        "content": "<blockquote>\n<p>In this easy introduction to higher gauge theory</p>\n</blockquote>\n<p>Now THAT'S a quote, haha</p>",
+        "id": 507153123,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1742536860
+    },
+    {
+        "content": "<p>Coincidentally, John H is sitting at the table next to me :-)</p>",
+        "id": 507164115,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1742537274
+    },
+    {
+        "content": "<p>Can I ask, while we're here, what condensed matter physics is and why they might care about higher gauge theory? I know so little physics that even the wikipedia article is a bit hard for me (at least it is this late at night), and I wouldn't expect it to say anything concrete about higher gauge theory anyways</p>",
+        "id": 507169556,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1742537480
+    },
+    {
+        "content": "<p>If this is in the paper you already linked, you can also just say that and I'll find out when I read it soon, haha</p>",
+        "id": 507170186,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1742537504
+    },
+    {
+        "content": "<p>Condensed matter physics extends beyond what was called solid matter physics to include any condensed states, such as liquids. </p>\n<p>But I imagine your real question comes next, why on earth would people working on, say, graphene or superfluids have any interest in higher gauge theory?</p>\n<p>One pointer is that string theoretic 'dualities' (in their sense, more like our equivalences) provides means to translate between strongly-interacting systems and weakly-interacting systems. Condensed matter physics is evidently about the former and thus immensely difficult to compute on its own terms. Translation, if only approximate, to a weakly-interacting system provides computational benefits.</p>\n<p>String dualities translate between apparently very different systems, e.g., changing dimension, adding gravitation. In <a href=\"https://ncatlab.org/nlab/show/AdS-CFT+in+condensed+matter+physics\">[[AdS-CFT in condensed matter physics]]</a>, physicists are looking to find approximate use of the precise dualities of higher-dimensional theories as in <a href=\"https://ncatlab.org/nlab/show/AdS-CFT+correspondence\">[[AdS-CFT correspondence]]</a>.</p>\n<p>Even in the latter case of considering high-dimensional theories, such as string theory, the treatment is usually done perturbatively (like through a series expansion). Urs and Hisham's dream is to pin down a non-perturbative 11d-theory which goes by the name, M-theory. One would expect consequences of this for condensed matter physics.</p>\n<p>Works such as </p>\n<ul>\n<li><a href=\"https://ncatlab.org/schreiber/show/Anyonic+topological+order+in+TED+K-theory\">Anyonic topological order in TED K-theory</a><br>\n(TED = twisted equivariant differential)</li>\n</ul>\n<p>points in this direction.</p>",
+        "id": 507207176,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1742541971
+    },
+    {
+        "content": "<p>Then this latter kind of work feeds into ideas of topological quantum circuit compilation (it being considered that topologically-protected quantum gates is only way to carry out quantum computing at scale), which is to be organised in the language of linear HoTT. That then also provides the quantum computing language. </p>\n<p>There's plenty on these last two steps in: </p>\n<ul>\n<li><a href=\"https://ncatlab.org/schreiber/show/Topological+Quantum+Gates+in+Homotopy+Type+Theory\">Topological Quantum Gates in Homotopy Type Theory</a></li>\n</ul>\n<p>and</p>\n<ul>\n<li><a href=\"https://ncatlab.org/schreiber/show/The+Quantum+Monadology\">The Quantum Monadology</a></li>\n</ul>",
+        "id": 507209650,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1742542998
+    },
+    {
+        "content": "<p>As for your initial question on differential cohesion, whether you care is probably dependent on what you think of these \"synthetic\" approaches to mathematics, <a href=\"https://ncatlab.org/nlab/show/synthetic+homotopy+theory\">[[synthetic homotopy theory]]</a>, <a href=\"https://ncatlab.org/nlab/show/synthetic+algebraic+geometry\">[[synthetic algebraic geometry]]</a>, etc. </p>\n<p>But even if you don't think much of working with internal languages, such as varieties of modal HoTT, I've seen in action that thinking with these modalities has helped with the construction of explicitly mathematical concepts. A case in point is <a href=\"https://ncatlab.org/schreiber/show/Twisted+Equivariant+Differential+non-abelian+generalized+cohomology\">Twisted Equivariant Differential non-abelian generalized cohomology</a>. </p>\n<p>From Urs's perspective any <a href=\"https://ncatlab.org/nlab/show/cohomology\">[[cohomology]]</a> theory lives in some kind of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-topos. Modalities correspond to systems of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-toposes. Seeing the interplay between the modalities then helps form the relevant constructions externally.</p>",
+        "id": 507237461,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1742552038
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"278546\">Chris Grossack (she/they)</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Why.20care.20about.20differential.20cohesive.20.28oo-.29topoi.3F/near/507169556\">said</a>:</p>\n<blockquote>\n<p>Can I ask, while we're here, what condensed matter physics is and why they might care about higher gauge theory? I know so little physics that even the wikipedia article is a bit hard for me (at least it is this late at night), and I wouldn't expect it to say anything concrete about higher gauge theory anyways</p>\n</blockquote>\n<p>Some years back, here in Zulip, I had a very interesting and helpful discussion with  <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span>   <span class=\"user-mention\" data-user-id=\"296639\">@Arthur Parzygnat</span>  regarding the topic \"condensed matter physics-Higher gauge Theory\", but somehow, later due to \"many different things in life\", my research area moved in a different direction over the years.  I am sharing the discussion  <a class=\"message-link\" href=\"/#narrow/channel/229156-theory.3A-applied-category-theory/topic/Higher.20Gauge.20Theory/near/202881592\">#theory: applied category theory &gt; Higher Gauge Theory @ 💬</a> . Hope it may help in answering the question you asked :)</p>",
+        "id": 507253156,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1742556713
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"302507\">David Corfield</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Why.20care.20about.20differential.20cohesive.20.28oo-.29topoi.3F/near/507207176\">said</a>:</p>\n<blockquote>\n<p>Condensed matter physics extends beyond what was called solid matter physics to include any condensed states, such as liquids. <br>\n</p>\n</blockquote>\n<p>The old term, still important, was <a href=\"https://en.wikipedia.org/wiki/Solid-state_physics\">solid state physics</a>.   This focuses on <em>crystals</em> and became especially important as the foundation of our theory of semiconductors, used in transistors.  </p>\n<p>Condensed matter physics goes beyond this in studying other states of matter like glasses, Bose-Einstein condensates, traditional liquids, superfluids, superconductors and many more exotic states like spin glasses, supersolids, quantum Hall states, topological insulators, and the quasiparticles that are found in these states, like magnons, spinons, polarons, polaritons, etc.     Many of these only exist at very cold temperatures, because they are delicate and easily disrupted by random thermal motion.  Many of these are only possible in 1- or 2-dimensional systems (meaning wires and thin films, which can be modeled as 1- or 2-dimensional).</p>\n<p>A lot of interesting math - algebraic topology, conformal field theory, modular tensor categories, etc - shows up in the study of these states and their quasiparticles.    This is why condensed matter physics is the most interesting branch of physics if you want to use fancy math but apply it to systems that can actually be studied in the lab.  Lots of people are working on it.</p>",
+        "id": 507313124,
+        "sender_full_name": "John Baez",
+        "timestamp": 1742572952
+    },
+    {
+        "content": "<p>Wow, thanks everyone!</p>",
+        "id": 507327272,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1742576712
+    },
+    {
+        "content": "<blockquote>\n<p>As for your initial question on differential cohesion, whether you care is probably dependent on what you think of these \"synthetic\" approaches to mathematics, <a href=\"https://ncatlab.org/nlab/show/synthetic+homotopy+theory\">[[synthetic homotopy theory]]</a>, <a href=\"https://ncatlab.org/nlab/show/synthetic+algebraic+geometry\">[[synthetic algebraic geometry]]</a>, etc.</p>\n</blockquote>\n<p>I've been sold on internal languages for a LONG time now (and use them in my research and have done research <em>about</em> them in the past), so I guess I was partially curious what the internal logic of a \"differential cohesive\" oo-topos has then regular HoTT doesn't. </p>\n<p>I guess I'll come out and say what my guess is, which is that the \"differential\" makes the 0-truncated 1-topos look like a model of synthetic differential geoemtry, so that objects of the whole oo-topos look like some kind of \"higher differential stack\"... That part is the less naive part of my guess, I think.</p>\n<p>The more naive part is what I suspect \"cohesive\" is all about, and here really the only insight I have is that result about Brouwer's fixed point theorem in HoTT, so even though I still have guesses (maybe the cohesion is useful for moving back and forth between homotopy types and honest manifolds, etc) I'll go read about cohesion on the nlab for a bit</p>",
+        "id": 507328314,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1742577041
+    },
+    {
+        "content": "<blockquote>\n<p>There's plenty on these last two steps in:<br>\n* <a href=\"https://ncatlab.org/schreiber/show/Topological+Quantum+Gates+in+Homotopy+Type+Theory\">Topological Quantum Gates in Homotopy Type Theory</a></p>\n<p>and<br>\n* <a href=\"https://ncatlab.org/schreiber/show/The+Quantum+Monadology\">The Quantum Monadology</a></p>\n</blockquote>\n<p>Thanks! I'll take a look ^_^</p>",
+        "id": 507328441,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1742577091
+    },
+    {
+        "content": "<blockquote>\n<p>I am sharing the discussion <a href=\"#narrow/channel/229156-theory.3A-applied-category-theory/topic/Higher.20Gauge.20Theory/near/202881592\">#theory: applied category theory &gt; Higher Gauge Theory @ 💬</a> . Hope it may help in answering the question you asked :)</p>\n</blockquote>\n<p>Thank you, I appreciate it ^_^. I hope you're happy doing what you're doing now, and I'll take a look at this later today</p>",
+        "id": 507328661,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1742577150
+    },
+    {
+        "content": "<p>A message was moved from this topic to <a class=\"stream-topic\" data-stream-id=\"229199\" href=\"/#narrow/channel/229199-learning.3A-questions/topic/Motivation.20for.20modal.20HoTT/with/507328622\">#learning: questions &gt; Motivation for modal HoTT</a> by <span class=\"user-mention silent\" data-user-id=\"671813\">Madeleine Birchfield</span>.</p>",
+        "id": 507355994,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1742586816
+    },
+    {
+        "content": "<p>6 messages were moved from this topic to <a class=\"stream-topic\" data-stream-id=\"229199\" href=\"/#narrow/channel/229199-learning.3A-questions/topic/Motivation.20for.20modal.20HoTT/with/507328622\">#learning: questions &gt; Motivation for modal HoTT</a> by <span class=\"user-mention silent\" data-user-id=\"671813\">Madeleine Birchfield</span>.</p>",
+        "id": 507356060,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1742586838
+    }
+]
