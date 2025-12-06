@@ -1,0 +1,98 @@
+[
+    {
+        "content": "<p>As is well-known, limits in Set can be constructed in a 'canonical' manner: <a href=\"https://ncatlab.org/nlab/show/limit#limit_of_a_setvalued_functor\">https://ncatlab.org/nlab/show/limit#limit_of_a_setvalued_functor</a></p>\n<p>For functors valued in certain concrete categories this construction should also work, or at least lift uniquely. For instance, I'm fairly sure that the limit of an Ab-valued functor (with small domain) could be similarly constructed.</p>\n<p>But what about more abstract categories that are nonetheless rather concrete? Say one has a <a href=\"https://ncatlab.org/nlab/show/Grothendieck%20category\">[[Grothendieck category]]</a> with a chosen generator. Can arbitrary limits be constructed 'canonically'?</p>",
+        "id": 496532954,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1738152424
+    },
+    {
+        "content": "<p>Presumably you don't just mean that all limits can be constructed from products and equalizers...</p>",
+        "id": 496587210,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1738167711
+    },
+    {
+        "content": "<p>Correct. I meant like how one has explicit sets that  are limits in ZFC (I should have mentioned I'm happy to work relative to a material set theory, or else use something like the hom-set formula at the nLab)</p>",
+        "id": 496633941,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1738181012
+    },
+    {
+        "content": "<p>But what does it mean to have an explicit object of an arbitrary Grothendieck category?</p>",
+        "id": 496634806,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1738181340
+    },
+    {
+        "content": "<p>Like, if you choose limit functors, the standard construction Mike suggested <em>does</em> give an explicit object, which happens to coincide on the nose with the construction you asked about for Set for usual choices of limit-functors on Set.</p>",
+        "id": 496634996,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1738181404
+    },
+    {
+        "content": "<p>I appreciate this, I was wanting the \"choose limit functors\" step to be Choice-free. Given a Grothendieck category with a generator, its objects 'are' sets with structure, so the underlying set of the limit can be constructed explicitly. The question is whether the structure is then not just determined up to isomorphism, but there is a canonical representative such. I'm trying to walk a very fine line, for mysterious reasons of my own.</p>",
+        "id": 496644039,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1738185180
+    },
+    {
+        "content": "<p>Obviously we just need a way of equipping products with said structure, and ideally this might come unqiuely from some kind of pre-existing data/properties, like how the hom-set can give a limit in Set.</p>",
+        "id": 496644281,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1738185306
+    },
+    {
+        "content": "<p>It seems to me that a lot depends on what you mean by 'are' in \"its objects 'are' sets with structure\".  In general, most notions of \"set with structure\" come with a forgetful functor to Set that is not just faithful but also an <a href=\"https://ncatlab.org/nlab/show/amnestic%20functor\">[[amnestic functor]]</a>, in which case given a set any two isomorphic structures on that set are in fact equal.</p>",
+        "id": 496646553,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1738186345
+    },
+    {
+        "content": "<p>Well, the <a href=\"https://ncatlab.org/nlab/show/Gabriel-Popescu%20theorem\">[[Gabriel-Popescu theorem]]</a> identifies Grothendieck categories (up to equivalence) as certain reflective subcategories of categories of modules. Assuming that my Grothendieck category with generator is such a subcategory (by which I'm happy just for an injective-on-objects functor), and because RMod -&gt; Set is amnestic, this is why I was wondering if we can make a stronger statement about limits.</p>",
+        "id": 496653188,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1738189016
+    },
+    {
+        "content": "<p>Otherwise I'm interested in delineating when the result works, rather than trying to claim too strong a result.</p>",
+        "id": 496653240,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1738189040
+    },
+    {
+        "content": "<p>Well, now you're effectively just asking about constructing limits in a category of modules, right? And we know the same formula works as in Set there. I guess any amnestic forgetful functor into Set that creates limits will permit the same construction. So I think I may still not understand where exactly is the thin line you're trying to toe.</p>",
+        "id": 496653555,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1738189180
+    },
+    {
+        "content": "<p>I was after a sanity check, and I'm thinking this through as we write!</p>\n<p>One would have to ask that the reflective subcategory is replete in order for the construction of the limit of modules to live inside the subcategory. Or else one should apply the reflector, but I'm also feeling slightly allergic to asserting the existence of that merely from the Groth. cat. + generator. Feels like more global choice. Yes, I could use anafunctors, but I'm literally asking for the sake of someone else at present, who isn't about to cart out anafunctors for their construction.</p>",
+        "id": 496654387,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1738189503
+    },
+    {
+        "content": "<p>But, as you say, the Grothendieck category is only identified as a reflective subcategory of modules up to equivalence, so as the equivalent subcategory you might as well take the replete version.</p>",
+        "id": 496656441,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1738190440
+    },
+    {
+        "content": "<p>Yes, I'm guessing that's the best way. Since ultimately the intended construction is starting with a functor <em>to</em> a Grothendieck category, we might as well compose with the functor that goes from that codomain into a slightly larger Grothendieck category that is a full and replete subcategory of a module category.</p>",
+        "id": 496658625,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1738191434
+    },
+    {
+        "content": "<p>One thing I should note is that limits in the Grothendieck category really are calculated as in the module category, since the inclusion of the former into the latter is monadic and hence creates all limits (as RMod is complete). [EDIT: this is apparently standard, but if I ever knew it, I had forgotten]</p>",
+        "id": 496691325,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1738211251
+    },
+    {
+        "content": "<p>I would just say it’s reflective, rather than viewing the reflection as a monad, but whatever works!</p>",
+        "id": 496832898,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1738258797
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "content": "<p>The gluing lemma is the following statement, taken from Villani's monograph on optimal transport:<br>\n<a href=\"/user_uploads/21317/ik-CbxggbImf37F55otH83F7/image.png\">image.png</a><br>\n<a href=\"/user_uploads/21317/QCp-KGerPSdvred_IRCrNXlF/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/ik-CbxggbImf37F55otH83F7/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"609x70\" src=\"/user_uploads/thumbnail/21317/ik-CbxggbImf37F55otH83F7/image.png/840x560.webp\"></a></div><div class=\"message_inline_image\"><a href=\"/user_uploads/21317/QCp-KGerPSdvred_IRCrNXlF/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"580x362\" src=\"/user_uploads/thumbnail/21317/QCp-KGerPSdvred_IRCrNXlF/image.png/840x560.webp\"></a></div><p>I wonder if a formalization in Markov categories with conditionals is known?</p>",
+        "id": 553815173,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1762338203
+    },
+    {
+        "content": "<p>Yes! See for example <a href=\"https://arxiv.org/abs/1908.07021\">here</a>, sections 11 and 12.</p>",
+        "id": 553815793,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1762338379
+    },
+    {
+        "content": "<p>(I think the construction is exactly the one in Definition 12.8, at least if you want the <em>law</em> of those random variables, which is what matters for optimal transport.)</p>",
+        "id": 553816260,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1762338497
+    },
+    {
+        "content": "<p>Ah nice! The remark about the category of couplings is what I was looking for!</p>",
+        "id": 553817225,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1762338790
+    },
+    {
+        "content": "<p>It's so good to have the necessary hypotheses for these results neatly figured out..!</p>",
+        "id": 553817476,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1762338864
+    },
+    {
+        "content": "<p>Oh. Take a look at Definition 13.8 then.<br>\n(There is quite a big line of work on that category by the way, starting <a href=\"https://ncatlab.org/nlab/show/category+of+couplings\">here</a>.)</p>",
+        "id": 553817639,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1762338900
+    },
+    {
+        "content": "<p>By the way, the fact that categories of couplings (i.e. joint distributions with specified marginals) and of transport plans (i.e. particular kernels/probabilistic relations) are one and the same thing, is a generalization of the very famous correspondence between regular categories and tabular allegories.<br>\nSee for example <a href=\"https://arxiv.org/abs/2508.01146\">this recent preprint</a> and <a href=\"https://youtu.be/ls6zOX8L1eI?si=lsu8IArL4Co1FHKr\">my talk at CT</a>.<br>\n(There is for sure a double-categorical story as well.)</p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"ls6zOX8L1eI\" href=\"https://youtu.be/ls6zOX8L1eI?si=lsu8IArL4Co1FHKr\"><img src=\"https://uploads.zulipusercontent.net/b512dce4a9def0ac0b745d56924657eb283bde1f/68747470733a2f2f692e7974696d672e636f6d2f76692f6c73367a4f58384c3165492f6d7164656661756c742e6a7067\"></a></div>",
+        "id": 553819856,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1762339524
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275989\">Paolo Perrone</span> <a href=\"#narrow/channel/253118-theory.3A-categorical-probability/topic/gluing.20lemma/near/553819856\">said</a>:</p>\n<blockquote>\n<p>By the way, the fact that categories of couplings (i.e. joint distributions with specified marginals) and of transport plans (i.e. particular kernels/probabilistic relations) are one and the same thing, is a generalization of the very famous correspondence between regular categories and tabular allegories.<br>\nSee for example <a href=\"https://arxiv.org/abs/2508.01146\">this recent preprint</a> and <a href=\"https://youtu.be/ls6zOX8L1eI?si=lsu8IArL4Co1FHKr\">my talk at CT</a>.<br>\n(There is for sure a double-categorical story as well.)</p>\n</blockquote>\n<p>Wow, that's neat.  I haven't looked at those things yet.  Do you find a general abstract result that includes those two correspondences as special cases?</p>",
+        "id": 553822146,
+        "sender_full_name": "John Baez",
+        "timestamp": 1762340130
+    },
+    {
+        "content": "<p>Not quite but almost. But I think that general abstract result exists.<br>\n(The correspondence for now uses a strong version of 'maps', which in particular must be split epi. This is good enough e.g. for probability, but too strong for relations.)</p>",
+        "id": 553822890,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1762340352
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275989\">Paolo Perrone</span> <a href=\"#narrow/channel/253118-theory.3A-categorical-probability/topic/gluing.20lemma/near/553819856\">said</a>:</p>\n<blockquote>\n<p>By the way, the fact that categories of couplings (i.e. joint distributions with specified marginals) and of transport plans (i.e. particular kernels/probabilistic relations) are one and the same thing, is a generalization of the very famous correspondence between regular categories and tabular allegories.<br>\nSee for example <a href=\"https://arxiv.org/abs/2508.01146\">this recent preprint</a> and <a href=\"https://youtu.be/ls6zOX8L1eI?si=lsu8IArL4Co1FHKr\">my talk at CT</a>.<br>\n(There is for sure a double-categorical story as well.)</p>\n</blockquote>\n<p>Oh, right :)</p>",
+        "id": 553870172,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1762352695
+    },
+    {
+        "content": "<p>Actually, 'coupling' and 'transport plan' are usualy synonym (see e.g. <a href=\"https://ncatlab.org/nlab/show/coupling\">[[coupling]]</a>). Is the theorem that any coupling <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding=\"application/x-tex\">X \\to Y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span></span></span></span> corresponds to a kernel <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding=\"application/x-tex\">X \\to Y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span></span></span></span>, by disintegration?</p>",
+        "id": 553871100,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1762352946
+    },
+    {
+        "content": "<p>There are two levels.</p>\n<p>1) A joint distribution and an a.s. equivalence class of measure-preserving kernel amount to the same data (provided disintegrations exist). Hence they are both referred to as 'couplings' or 'transport plans' interchangeably.</p>\n<p>2) There is a more general notion of coupling: a span of (eq. classes of) measure-preserving functions between probability spaces. (And the joint distribution is a terminal such span, in an appropriate sense.)</p>\n<p>What we have here is that the category of kernels is equivalent to a category of spans of functions (=deterministic kernels). And this parallels how the category of relations is a category of spans of functions (=deterministic relations).</p>",
+        "id": 553873625,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1762353536
+    },
+    {
+        "content": "<p>Nice!</p>",
+        "id": 553874128,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1762353656
+    },
+    {
+        "content": "<p>The neat thing is that not only do kernels correspond to joint distributions, but also, and mostly, the composition of kernels corresponds to the 'gluing' of joint distributions (followed by marginalization on the middle variable).<br>\nThis has to do with the fact that Markov kernels compose in a 'Markov' way (hence the name): in a composite kernel, the two probabilistic transitions happen independently of one another.</p>",
+        "id": 553874841,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1762353822
+    },
+    {
+        "content": "<p>(This happens with relations too, and it's exactly what the Beck-Chevalley condition is about.)</p>",
+        "id": 553875050,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1762353875
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/p9xyKu3XTmo8T12bGYf0T7WH/image.png\">image.png</a><br>\nI only just saw this paper, but I found this part very intersting. I recently had cause to use this fact (that a square is independent in this sense if and only if the square obtained after replacing the vertical maps with their Bayesian inverses is still commutative), in some work on stochastic processes. This condition is basically the one-step version of what probability theorists call an <em>immersion of filtrations</em> (formally this means that any martingale for the smaller filtration is still a martingale when considered with respect to the larger filtration). Very interesting stuff!</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/p9xyKu3XTmo8T12bGYf0T7WH/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"584x207\" src=\"/user_uploads/thumbnail/21317/p9xyKu3XTmo8T12bGYf0T7WH/image.png/840x560.webp\"></a></div>",
+        "id": 554351055,
+        "sender_full_name": "Eigil Rischel",
+        "timestamp": 1762529722
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276165\">Eigil Rischel</span> <a href=\"#narrow/channel/253118-theory.3A-categorical-probability/topic/gluing.20lemma/near/554351055\">said</a>:</p>\n<blockquote>\n<p><a href=\"/user_uploads/21317/p9xyKu3XTmo8T12bGYf0T7WH/image.png\">image.png</a></p>\n</blockquote>\n<p>I find this very fascinating too.<br>\n(By the way I recently gave a short talk focusing on just that: <a href=\"https://www.youtube.com/watch?v=mUPJEt3FeiU\">https://www.youtube.com/watch?v=mUPJEt3FeiU</a>)</p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"mUPJEt3FeiU\" href=\"https://www.youtube.com/watch?v=mUPJEt3FeiU\"><img src=\"https://uploads.zulipusercontent.net/5060564f8b3b805cce3bc45006eb33105f071ce5/68747470733a2f2f692e7974696d672e636f6d2f76692f6d55504a457433466569552f6d7164656661756c742e6a7067\"></a></div>",
+        "id": 554472406,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1762598334
+    }
+]
