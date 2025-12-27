@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Naturality vs “no arbitrary choices” · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Naturality.20vs.20.E2.80.9Cno.20arbitrary.20choices.E2.80.9D.html">Naturality vs “no arbitrary choices”</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="564893583"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Naturality%20vs%20%E2%80%9Cno%20arbitrary%20choices%E2%80%9D/near/564893583" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ruby Khondaker (she/her) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Naturality.20vs.20.E2.80.9Cno.20arbitrary.20choices.E2.80.9D.html#564893583">(Dec 21 2025 at 13:05)</a>:</h4>
+<p>I came across an interesting counterexample recently that I wanted to hear people’s opinions of.</p>
+<p>Let FinOrd be the category of finite ordered sets, with morphisms as order-preserving maps. Ordinal sum gives us two functors FinOrd^2 -&gt; FinOrd, given by (x, y) -&gt; x + y and (x, y) -&gt; y + x on objects.</p>
+<p>Then, there is a unique isomorphism between x + y and y + x (owing to finiteness). However, this is not a natural transformation! One way to see this is by considering constant maps.</p>
+<p>So, what gives? We’ve made no arbitrary choices (in fact, no choices at all!) obtaining this isomorphism, yet we still have a failure of naturality.</p>
+<p>While I’m here, I may as well give an example of the reverse. The usual proof of “full, faithful and essentially surjective =&gt; part of an equivalence” seems to make judicious use of the axiom of choice - namely, for each object X in the codomain, choosing an object A in the domain and an isomorphism F(A) -&gt; X.</p>
+<p>The isos can be chosen independently for each object in the codomain, so to me this feels like we have naturality with lots of arbitrary choices!</p>
+
+
+
+<a name="565077493"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Naturality%20vs%20%E2%80%9Cno%20arbitrary%20choices%E2%80%9D/near/565077493" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Naturality.20vs.20.E2.80.9Cno.20arbitrary.20choices.E2.80.9D.html#565077493">(Dec 22 2025 at 22:27)</a>:</h4>
+<p>Is it a <a href="https://ncatlab.org/nlab/show/core-natural%20transformation">[[core-natural transformation]]</a>, though?</p>
+
+
+
+<a name="565077584"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Naturality%20vs%20%E2%80%9Cno%20arbitrary%20choices%E2%80%9D/near/565077584" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Naturality.20vs.20.E2.80.9Cno.20arbitrary.20choices.E2.80.9D.html#565077584">(Dec 22 2025 at 22:28)</a>:</h4>
+<p>And yes, ff+eso =&gt; existence of pseudo-inverse is equivalent to some level of AC</p>
+
+
+
+<a name="565077668"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Naturality%20vs%20%E2%80%9Cno%20arbitrary%20choices%E2%80%9D/near/565077668" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Naturality.20vs.20.E2.80.9Cno.20arbitrary.20choices.E2.80.9D.html#565077668">(Dec 22 2025 at 22:29)</a>:</h4>
+<p>At, least, in the ordinary 2-cat of categories and functors and nat transformations. Hence <a href="https://ncatlab.org/nlab/show/anafunctors">[[anafunctors]]</a>.</p>
+
+
+
+<a name="565078091"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Naturality%20vs%20%E2%80%9Cno%20arbitrary%20choices%E2%80%9D/near/565078091" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Naturality.20vs.20.E2.80.9Cno.20arbitrary.20choices.E2.80.9D.html#565078091">(Dec 22 2025 at 22:34)</a>:</h4>
+<p>David is hinting that the meaning of "no arbitrary choices" is closer to "core-natural", sometimes called "canonical", than to "natural".</p>
+
+
+
+<a name="565097553"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Naturality%20vs%20%E2%80%9Cno%20arbitrary%20choices%E2%80%9D/near/565097553" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ruby Khondaker (she/her) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Naturality.20vs.20.E2.80.9Cno.20arbitrary.20choices.E2.80.9D.html#565097553">(Dec 23 2025 at 04:32)</a>:</h4>
+<p>I think the only automorphism of an ordered set here is the identity, so it is a core-natural transformation?</p>
+<p>Since “no arbitrary choices” seems to be neither necessary nor sufficient for naturality, how else should i think about it?</p>
+
+
+
+<a name="565106711"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Naturality%20vs%20%E2%80%9Cno%20arbitrary%20choices%E2%80%9D/near/565106711" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Naturality.20vs.20.E2.80.9Cno.20arbitrary.20choices.E2.80.9D.html#565106711">(Dec 23 2025 at 06:59)</a>:</h4>
+<p>In the case of an equivalence, you end up making arbitrary choices, but since whatever you choose is connected with whatever you didn't choose by a unique isomorphism, in a real sense the choices don't matter.</p>
+<p>That said, "no arbitrary choices" was never anything but a heuristic.  The definition of natural transformation is, well, the definition of natural transformation.  If the category and the situation are sufficiently <em>nice</em>, the heuristic applies as stated.</p>
+<p><em>That</em> said, there is often an underlying truth in the heuristic even when it doesn't literally apply.  For example, in the ordinal sum situation, even though no choices were made, there is still something "arbitrary" about the isomorphism, as it only holds when the underlying sets are (Kuratowski, I think) finite, and when the ordering is total.  Specifically, it exists because of the pigeonhole principle, and the fact that total orderings of finite sets are unique.  It specifically does not use, nor does it respect, the actual ordering structure on the finite ordered sets, so it is an "arbitrary" facet of the structure of finite sets peeking through into the theory of ordered sets.  This is reflected in the lack of naturality.</p>
+
+
+
+<a name="565118690"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Naturality%20vs%20%E2%80%9Cno%20arbitrary%20choices%E2%80%9D/near/565118690" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Naturality.20vs.20.E2.80.9Cno.20arbitrary.20choices.E2.80.9D.html#565118690">(Dec 23 2025 at 08:48)</a>:</h4>
+<p>Something weird: FinOrd is by no means a symmetric monoidal category but if you take Z[FinOrd], which has the same objects and formal linear combinations of morphisms, it should be a symmetric Ab-enriched monoidal category. I have been meaning to write up a description of the symmetry isomorphism here. Since join of simplicial abelian groups is the Day convolution, the join of simplicial Abelian groups is also symmetric, and since Dold-Kan is strong monoidal for appropriately chosen definitions of "Dold" and "Kan" this gives the symmetry isomorphism for the tensor product of chain complexes.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Dec 27 2025 at 12:10 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>
