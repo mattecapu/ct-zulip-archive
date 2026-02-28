@@ -1,0 +1,50 @@
+[
+    {
+        "content": "<p>If I am not misunderstanding, then, the discussion after Theorem 2.3 in the <a href=\"https://arxiv.org/pdf/2304.00447\">paper</a> clearly stated that a <em>cocartesian equipment</em> is a  stronger property of double categories than the property \"<em>symmetric monoidal</em>\".</p>\n<p>I went through the defnition of an equipment (Definition A.2 <a href=\"https://arxiv.org/pdf/2304.00447\">here</a> ) and its illustration there, and I found both the definition and the illustration very interesting (<em>at least Mathematically</em>).</p>\n<p>If I understood correctly, I remember some months back <span class=\"user-mention\" data-user-id=\"275965\">@Evan Patterson</span>  explained me one of it's real world applications: namely capturing the <em>subtypes of an influence type</em> <a class=\"message-link\" href=\"/#narrow/channel/229125-practice.3A-software/topic/CatColab/near/501324563\">#practice: software &gt; CatColab @ 💬</a>, which I find very interesting. However, I would also like to know about more possiblities of the real world applications of the stronger condition <em>cocartesian equipment</em>, and \"why and how\" the weaker condition \"symmetric monoidal\" is not sufficient/<em>not nice</em> for that purpose of <em>that</em> real world application?</p>\n<p>Thanks in advance.</p>",
+        "id": 519295906,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1747720131
+    },
+    {
+        "content": "<p>It’s a bit of a strange question. “Equipment” and “cocartesian” are orthogonal properties of a double category. I would never find myself going “oh geez, I thought I’d be able to get away with a symmetric monoidal double category here but I need [something] so I’d better upgrade to an equipment!”</p>",
+        "id": 519436854,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1747761006
+    },
+    {
+        "content": "<p>In any case, I don’t think I know any direct applications of equipments to the real world. It’s much likelier to find yourself using objects of some equipment, like sets and relations, to model something in the world. You could also, similarly, imagine using an equipment as a flavor of double Lawvere theory whose models might then be systems of interest in the world; at least for implementation in software this has actually seemed like a bad idea, but <em>finite product double theories</em> have <em>some</em> of the restrictions required of an equipment, namely those along structure maps of products, and there are examples of those that get you kinds of models, such as Cartesian multicategories, you can’t get with plain Cartesian double theories. Cartesian multicategories are the natural semantics of nonlinear type theories, ie the type theories used implicitly or explicitly by all ordinary programming languages, so that’s one point of connection with an arguably “real” part of the world <span aria-label=\"smiling face\" class=\"emoji emoji-263a\" role=\"img\" title=\"smiling face\">:smiling_face:</span></p>",
+        "id": 519437905,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1747761350
+    },
+    {
+        "content": "<p>Thank you!!</p>",
+        "id": 519460249,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1747769436
+    },
+    {
+        "content": "<blockquote>\n<p>“Equipment” and “cocartesian” are orthogonal properties of a double category. I would never find myself going “oh geez, I thought I’d be able to get away with a symmetric monoidal double category here but I need [something] so I’d better upgrade to an equipment!”</p>\n</blockquote>\n<p>I think Adittya was influenced something I claim <span class=\"user-mention\" data-user-id=\"275965\">@Evan Patterson</span> said: a cocartesian equipment is an especially nice kind of symmetric monoidal category.</p>",
+        "id": 519470275,
+        "sender_full_name": "John Baez",
+        "timestamp": 1747773491
+    },
+    {
+        "content": "<p>I think yes :)</p>",
+        "id": 519470389,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1747773557
+    },
+    {
+        "content": "<p>More precisely, two theorems from <a href=\"https://arxiv.org/abs/2304.00447\">Structured and decorated cospans from the viewpoint of double category theory</a>:</p>\n<blockquote>\n<p>Let L : A → X be a functor into a category X with pushouts. Then the double category<br>\nof L-structured cospans is an equipment.</p>\n</blockquote>\n<p>and</p>\n<blockquote>\n<p>Suppose A is a category with finite coproducts, X is a category with finite colimits, and<br>\nL : A → X is a functor that preserves finite coproducts. Then the double category of L-structured cospans is cocartesian, hence also a cocartesian equipment.</p>\n</blockquote>",
+        "id": 519471822,
+        "sender_full_name": "John Baez",
+        "timestamp": 1747774108
+    },
+    {
+        "content": "<p>add up to a strengthening of the old theorem that if A is a category with finite coproducts, X is a category with finite colimits, and L : A → X is a functor that preserves finite coproducts, then the double category of L-structured cospans is symmetric monoidal.</p>",
+        "id": 519471994,
+        "sender_full_name": "John Baez",
+        "timestamp": 1747774184
+    }
+]

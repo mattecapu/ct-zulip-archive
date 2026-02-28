@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Equivalent or insightful definitions of partial monoids. · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html">Equivalent or insightful definitions of partial monoids.</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="466387419"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/466387419" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#466387419">(Aug 31 2024 at 00:04)</a>:</h4>
+<p>It seems like we often refer to the Hom-sets of a category individually, but do not often talk about the collection of all Hom-sets as a single named entity.</p>
+<p>I’m wondering if this makes it awkward to formally define the composition operation or not. Normally, since the composition operation applies to <strong>the type of arrows</strong>, you would think it could be defined as <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Arrows</mtext><mo>×</mo><mtext>Arrows</mtext><mo>→</mo><mtext>Arrows</mtext></mrow><annotation encoding="application/x-tex">\text{Arrows} \times \text{Arrows} \to \text{Arrows}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord text"><span class="mord">Arrows</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">Arrows</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">Arrows</span></span></span></span></span>; but it would have to be a partial function, and it would need further conditions to specify which arrows are composable.</p>
+<p>It seems like this is suggesting that there are some very different ways to define and conceptualize about partial monoids. You can think of the binary operation as partially defined, or you can group the elements into sub-collections (like Hom-sets). Even then, it seems hard to escape the need for partial functions. </p>
+<p>The nlab shows another very cool way to define partial monoids, where it seems like you introduce a binary relation <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mi mathvariant="normal">⊥</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">x \bot y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">x</span><span class="mord">⊥</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span> to mean “<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">xy</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">x</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span> is defined”, and a zero element. <a href="https://ncatlab.org/nlab/show/effect%20algebra">[[effect algebra]]</a></p>
+<p>None of these seem perfectly elegant, though. </p>
+<p>There is also the way of defining categories as two objects, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Objects</mtext></mrow><annotation encoding="application/x-tex">\text{Objects}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">Objects</span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Arrows</mtext></mrow><annotation encoding="application/x-tex">\text{Arrows}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">Arrows</span></span></span></span></span>, three arrows <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>o</mi><mi>u</mi><mi>r</mi><mi>c</mi><mi>e</mi><mo separator="true">,</mo><mi>t</mi><mi>a</mi><mi>r</mi><mi>g</mi><mi>e</mi><mi>t</mi><mo separator="true">,</mo><mi>i</mi><mi>d</mi><mo>:</mo><mtext>Objects</mtext><mo>→</mo><mtext>Arrows</mtext></mrow><annotation encoding="application/x-tex">source, target, id: \text{Objects} \to \text{Arrows}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">so</span><span class="mord mathnormal">u</span><span class="mord mathnormal">rce</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">t</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">i</span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">Objects</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">Arrows</span></span></span></span></span>, with the conditions expressed via pullbacks.</p>
+<p>Is there a theory which helps us look at all the different ways we can define partial monoids, to gain insight into them?</p>
+
+
+
+<a name="466879146"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/466879146" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#466879146">(Sep 02 2024 at 08:56)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="699750">Julius Hamilton</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E/near/466387419">said</a>:</p>
+<blockquote>
+<p>It seems like we often refer to the Hom-sets of a category individually, but do not often talk about the collection of all Hom-sets as a single named entity.</p>
+</blockquote>
+<p>This is because there are often "too many" morphisms when we try and put them all together. Consider the category of sets and functions. Between any pair of objects, we have a set of morphisms. But the collection of all morphisms doesn't form a set (we run into a variant of Russell's paradox). This is an instance of the kind of "size issues" that one sometimes has to be wary of in category theory.<br>
+However, for a "small" category (where there is only a set of morphisms by definition), this problem goes away, and your questions are still relevant :)</p>
+
+
+
+<a name="466879458"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/466879458" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#466879458">(Sep 02 2024 at 08:57)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="699750">Julius Hamilton</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E/near/466387419">said</a>:</p>
+<blockquote>
+<p>Is there a theory which helps us look at all the different ways we can define partial monoids, to gain insight into them?</p>
+</blockquote>
+<p>What kind of theory are you after here? Would it be interesting to know the different contexts which these perspectives generalize toward?</p>
+
+
+
+<a name="466957354"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/466957354" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#466957354">(Sep 02 2024 at 13:45)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E/near/466879146">said</a>:</p>
+<blockquote>
+<p>This is because there are often "too many" morphisms when we try and put them all together. Consider the category of sets and functions. Between any pair of objects, we have a set of morphisms. But the collection of all morphisms doesn't form a set (we run into a variant of Russell's paradox).</p>
+</blockquote>
+<p>I'm not convinced that's why.  There are already "too many" objects in most categories like this, so why should it matter whether there are also too many morphisms?</p>
+
+
+
+<a name="466958195"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/466958195" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#466958195">(Sep 02 2024 at 13:49)</a>:</h4>
+<p>I would tend to say rather than it's just that very often, when we consider a morphism, we already know what its source and target must be.  So it makes the most sense to have a set of morphisms for each fixed source and target, rather than one big amorphous set of morphisms and have to constantly impose conditions on sources and targets being equal to some object we already know.</p>
+
+
+
+<a name="466958544"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/466958544" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#466958544">(Sep 02 2024 at 13:50)</a>:</h4>
+<p>If there is a set-theoretic issue, I would say it's that the "natural" sets of morphisms with fixed source and target may not be disjoint, so you can't just take their union to be the set of all morphisms.  For instance, under the usual set-theoretic encoding of functions, the set <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mo stretchy="false">(</mo><mi>n</mi><mo separator="true">,</mo><mi>n</mi><mo stretchy="false">)</mo><mo>∣</mo><mi>n</mi><mo>∈</mo><mi mathvariant="double-struck">N</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{ (n,n) \mid n\in \mathbb{N} \}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{(</span><span class="mord mathnormal">n</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathbb">N</span><span class="mclose">}</span></span></span></span> is both a function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi><mo>→</mo><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">\mathbb{N}\to\mathbb{N}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">N</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">N</span></span></span></span> and a function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi><mo>→</mo><mi mathvariant="double-struck">Q</mi></mrow><annotation encoding="application/x-tex">\mathbb{N}\to\mathbb{Q}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">N</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8556em;vertical-align:-0.1667em;"></span><span class="mord mathbb">Q</span></span></span></span> and a function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi><mo>→</mo><mi mathvariant="double-struck">R</mi></mrow><annotation encoding="application/x-tex">\mathbb{N}\to\mathbb{R}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">N</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">R</span></span></span></span> (assuming that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi><mo>⊆</mo><mi mathvariant="double-struck">Q</mi><mo>⊆</mo><mi mathvariant="double-struck">R</mi></mrow><annotation encoding="application/x-tex">\mathbb{N}\subseteq\mathbb{Q} \subseteq\mathbb{R}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8249em;vertical-align:-0.136em;"></span><span class="mord mathbb">N</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⊆</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8556em;vertical-align:-0.1667em;"></span><span class="mord mathbb">Q</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⊆</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">R</span></span></span></span>), but in the category of sets those must be three different morphisms (and many more besides).</p>
+
+
+
+<a name="466958755"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/466958755" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#466958755">(Sep 02 2024 at 13:51)</a>:</h4>
+<p>But this "dependently typed" definition of a category does not cause any problems in defining composition; you just have one composition function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>hom</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>y</mi><mo separator="true">,</mo><mi>z</mi><mo stretchy="false">)</mo><mo>×</mo><mi>hom</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">)</mo><mo>→</mo><mi>hom</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\hom(y,z)\times\hom(x,y) \to \hom(x,z)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">hom</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">hom</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">hom</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mclose">)</span></span></span></span> for each triple of objects.</p>
+
+
+
+<a name="466960702"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/466960702" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#466960702">(Sep 02 2024 at 13:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E/near/466957354">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E/near/466879146">said</a>:</p>
+<blockquote>
+<p>This is because there are often "too many" morphisms when we try and put them all together. The collection of all morphisms doesn't form a set (we run into a variant of Russell's paradox).</p>
+</blockquote>
+<p>I'm not convinced that's why.  There are already "too many" objects in most categories like this, so why should it matter whether there are also too many morphisms?</p>
+</blockquote>
+<p>Good point <span aria-label="sweat smile" class="emoji emoji-1f605" role="img" title="sweat smile">:sweat_smile:</span></p>
+
+
+
+<a name="466982998"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/466982998" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#466982998">(Sep 02 2024 at 15:21)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E/near/466879458">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="699750">Julius Hamilton</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E/near/466387419">said</a>:</p>
+<blockquote>
+<p>Is there a theory which helps us look at all the different ways we can define partial monoids, to gain insight into them?</p>
+</blockquote>
+<p>What kind of theory are you after here? Would it be interesting to know the different contexts which these perspectives generalize toward?</p>
+</blockquote>
+<p>Probably.</p>
+<p>I feel like I’ve often been made aware of how there are all these quite different ways of establishing a certain structure, but they are all logically equivalent, describing the same thing. I’m interested in a set of all logically equivalent definitions of a given structure. I don’t know if there could be a “definition algebra” where we show how one definition can be transformed into another. Or if quotienting the category of sets in a certain way could collapse equivalent definitions into their single representing categorical definitions?</p>
+
+
+
+<a name="466987531"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/466987531" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#466987531">(Sep 02 2024 at 15:43)</a>:</h4>
+<p>That’s a fun idea! By and large mathematical logic doesn’t have the definition-making process as a central topic of interest, though it’s quite arguable that it should. I know there are some relevant programs but references are escaping me at the moment.</p>
+
+
+
+<a name="467009320"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467009320" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467009320">(Sep 02 2024 at 17:32)</a>:</h4>
+<p>Thanks.</p>
+<p>A specific scenario regarding this could be the mathematical formalization of <a href="https://en.m.wikipedia.org/wiki/JSON">JSON</a>. </p>
+<p>The tree-structures of JSON can be defined as graphs in terms of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">c</mi><mo separator="true">,</mo><mi mathvariant="normal">t</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">t</mi></mrow><mo>:</mo><mi>E</mi><mo>→</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">\mathrm{src, tgt}: E \to V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8095em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathrm">src</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathrm">tgt</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span></span></span></span>. Viewing JSON as nested dictionaries, JSON is a series of nested functions. </p>
+<p>Is there a mathematical argument for why it would be better to find a universal property the equivalent definitions have?</p>
+
+
+
+<a name="467017384"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467017384" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467017384">(Sep 02 2024 at 18:12)</a>:</h4>
+<p>I don't have anything to say about partial monoids, but if we're talking about categories, then Jonas Frey has <a href="https://arxiv.org/abs/2308.11967">observed</a> that each of the two definitions induces, and can be recovered from (in a suitable sense), a weak factorization system on the resulting category Cat.  For the two-sorted definition, the wfs is (all, isos), while for the dependently-typed definition it is (injective on objects and relatively free, full and surjective on objects).</p>
+<p>There are also at least two intermediate wfs of the sort that are "induced by a definition" ("clan-algebraic" wfs): (relatively free, full and bijective on objects), and (injective on objects, fully faithful and surjective on objects).  To describe the corresponding "definitions", we have to first observe that the two-sorted definition is "equivalent" (in the sense of inducing the same wfs) to a definition that <em>augments</em> the dependently-typed definition by explicit equality relations on both objects and arrows.  Then these two other wfs arise by instead adding only an equality relation on objects, or only an equality relation on arrows.</p>
+<p>This is probably higher-powered than you had in mind, but I do think it can be regarded as an example of studying a sort of "algebra of definitions" -- the poset of clan-algebraic wfs on a given locally presentable category is a sort of "extensional" representation of "all the possible generalized-algebraic definitions" of the objects of that category.  And it has interesting uses, e.g. all these equivalent definitions of Cat become inequivalent when generalized to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>-categories.</p>
+
+
+
+<a name="467017468"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467017468" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467017468">(Sep 02 2024 at 18:13)</a>:</h4>
+<p>Forgot to tag <span class="user-mention" data-user-id="277289">@Jonas Frey</span>.</p>
+
+
+
+<a name="467056077"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467056077" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467056077">(Sep 02 2024 at 22:04)</a>:</h4>
+<p>That sounds interesting but difficult.</p>
+
+
+
+<a name="467107284"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467107284" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467107284">(Sep 03 2024 at 04:20)</a>:</h4>
+<p>So in that paper, Frey presents a two-sorted definition, and a dependently typed definition, of Cat, each of which induces a weak factorization system on Cat?</p>
+
+
+
+<a name="467107572"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467107572" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467107572">(Sep 03 2024 at 04:22)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E/near/466958755">said</a>:</p>
+<blockquote>
+<p>But this "dependently typed" definition of a category does not cause any problems in defining composition; you just have one composition function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>hom</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>y</mi><mo separator="true">,</mo><mi>z</mi><mo stretchy="false">)</mo><mo>×</mo><mi>hom</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">)</mo><mo>→</mo><mi>hom</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\hom(y,z)\times\hom(x,y) \to \hom(x,z)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">hom</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">hom</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">hom</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mclose">)</span></span></span></span> for each triple of objects.</p>
+</blockquote>
+<p>I was thinking about this, how the composition operation could be seen as a family of operations.</p>
+
+
+
+<a name="467149064"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467149064" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467149064">(Sep 03 2024 at 07:14)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="699750">Julius Hamilton</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E/near/467107284">said</a>:</p>
+<blockquote>
+<p>So in that paper, Frey presents a two-sorted definition, and a dependently typed definition, of Cat, each of which induces a weak factorization system on Cat?</p>
+</blockquote>
+<p>Yes, I believe that's right.</p>
+
+
+
+<a name="467181483"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467181483" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martti Karvonen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467181483">(Sep 03 2024 at 09:09)</a>:</h4>
+<p>You might be also interested in <a href="https://ncatlab.org/nlab/show/single-sorted%20definition%20of%20categories">[[single-sorted definition of categories]]</a> which basically lets you define a category only based on a collection of morphisms, a partial composition map (and source and target maps that send a morphism to the identity morphism on its source and target respectively)</p>
+
+
+
+<a name="467296984"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467296984" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467296984">(Sep 03 2024 at 15:48)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E/near/467149064">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="699750">Julius Hamilton</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E/near/467107284">said</a>:</p>
+<blockquote>
+<p>So in that paper, Frey presents a two-sorted definition, and a dependently typed definition, of Cat, each of which induces a weak factorization system on Cat?</p>
+</blockquote>
+<p>Yes, I believe that's right.</p>
+</blockquote>
+<p>Can you show me how the two-sorted definition induces the “all isos” weak factorization system?</p>
+
+
+
+<a name="467374827"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467374827" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467374827">(Sep 03 2024 at 23:18)</a>:</h4>
+<p>Since the two-sorted definition is essentially algebraic, its corresponding "clan" is actually a finite-limit category in which every morphism is a fibration/display-map.  In general, the opposites of the fibrations in a clan are the generators of the left class of the factorization system, so here the left class consists of all maps.</p>
+
+
+
+<a name="467616669"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467616669" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467616669">(Sep 04 2024 at 17:39)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E/near/467374827">said</a>:</p>
+<blockquote>
+<p>Since the two-sorted definition is essentially algebraic, its corresponding "clan" is a finite-limit category in which every morphism is a fibration.</p>
+</blockquote>
+<p>Why?</p>
+
+
+
+<a name="467651967"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467651967" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467651967">(Sep 04 2024 at 20:15)</a>:</h4>
+<p>That's the way that essentially algebraic theories are embedded in clans.</p>
+
+
+
+<a name="467660979"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467660979" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467660979">(Sep 04 2024 at 21:08)</a>:</h4>
+<p>Can you prove it?</p>
+
+
+
+<a name="467685678"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467685678" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467685678">(Sep 05 2024 at 00:31)</a>:</h4>
+<p>It's kind of a definition.</p>
+
+
+
+<a name="467688170"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467688170" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467688170">(Sep 05 2024 at 00:56)</a>:</h4>
+<p>What’s a fibration?</p>
+
+
+
+<a name="467689231"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467689231" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467689231">(Sep 05 2024 at 01:06)</a>:</h4>
+<p>Have you checked the nLab article on clans, at least? It's a bit unreasonable to ask people to repeat definitions to you; if the motivation or properties of fibrations aren't clear after looking at the definition, that's a better moment for a question to a human.</p>
+
+
+
+<a name="467690781"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467690781" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467690781">(Sep 05 2024 at 01:18)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="609515">Kevin Carlson</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E/near/467689231">said</a>:</p>
+<blockquote>
+<p>Have you checked the nLab article on clans, at least?</p>
+</blockquote>
+<p>Yes</p>
+
+
+
+<a name="467692163"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467692163" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467692163">(Sep 05 2024 at 01:32)</a>:</h4>
+<p>Fibrations are defined on there--they're just any chosen class of map satisfying certain properties. So it's not entirely clear what would count to you as an answer to the question "what's a fibration?"</p>
+
+
+
+<a name="467692212"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467692212" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467692212">(Sep 05 2024 at 01:32)</a>:</h4>
+<p>This is a perfectly natural situation to get into; it's very mathematician-brained to actually believe you know what something means just because you've seen a definition. But it would still help if you could be any more specific about what kind of response you're looking for.</p>
+
+
+
+<a name="467698065"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467698065" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467698065">(Sep 05 2024 at 02:01)</a>:</h4>
+<ul>
+<li>Why is a clan a “minimum notion of a fibration category”?</li>
+<li>How does a clan “provide categorical semantics for dependent types”?</li>
+<li>Why does a clan need a terminal object?</li>
+<li>Why is the special class of morphisms called the “fibrations”?</li>
+<li>Why should every isomorphism be included in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">b</mi></mrow><annotation encoding="application/x-tex">\mathsf{Fib}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">Fib</span></span></span></span></span>?</li>
+<li>Why should all the terminal maps be in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">b</mi></mrow><annotation encoding="application/x-tex">\mathsf{Fib}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">Fib</span></span></span></span></span>?</li>
+<li>How does the pullback <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>∗</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">h * f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span> “interpret context extension”?</li>
+<li>How do we construct a clan out of an essentially algebraic theory?</li>
+<li>What are the opposites of the fibrations?</li>
+<li>Why are the opposites of fibrations generators?</li>
+<li>Why does them being generators of the left class imply the left class consists of all maps?</li>
+<li>What is the usefulness of the finding that the two definitions of a category induce weak-factorization systems on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">C</mi><mi mathvariant="sans-serif">a</mi><mi mathvariant="sans-serif">t</mi></mrow><annotation encoding="application/x-tex">\mathsf{Cat}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">Cat</span></span></span></span></span>?</li>
+</ul>
+
+
+
+<a name="467902056"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467902056" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathan Corbyn <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467902056">(Sep 05 2024 at 15:44)</a>:</h4>
+<p>To answer these questions properly would be to write a course on locally presentable categories, weak factorisation systems and the semantics of type dependency. Most of the answers are contained in the paper: <a href="https://arxiv.org/abs/2308.11967">https://arxiv.org/abs/2308.11967</a>.</p>
+
+
+
+<a name="467948110"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467948110" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467948110">(Sep 05 2024 at 18:36)</a>:</h4>
+<p>I feel annoyed by the response to a request to narrow your question being  instead a dozen questions. As Nathan said it would take hours to even begin to answer them. In practice I'd need a whole day talking to you in person to have a reasonable expectation of sufficient bandwidth. If you're learning remotely/asynchronously, the cost of getting to talk to a wide range of people who know a lot about your subject is that you only get a relatively narrow communication band. That's best used by putting in relatively more effort on your end and asking questions primarily after you've made a reasonable effort to understand something by reading on your own, and then communicating as specifically as you're able where it is you're stuck and what it is you'd like to know. In contrast this list comes across as if you looked through the nLab article under discussion and wrote bullets for every sentence that wasn't immediately clear, following no links and looking up no references on your own, and providing no context for whether you know anything about anything nearby the topic. This isn't a very effective way to learn.</p>
+
+
+
+<a name="467948391"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equivalent%20or%20insightful%20definitions%20of%20partial%20monoids./near/467948391" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equivalent.20or.20insightful.20definitions.20of.20partial.20monoids.2E.html#467948391">(Sep 05 2024 at 18:37)</a>:</h4>
+<p>I suggest reading the guidance on how to ask a good question at Math StackExchange. This venue's not quite as formal but most of it is still relevant. <a href="https://math.stackexchange.com/help/how-to-ask">https://math.stackexchange.com/help/how-to-ask</a></p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

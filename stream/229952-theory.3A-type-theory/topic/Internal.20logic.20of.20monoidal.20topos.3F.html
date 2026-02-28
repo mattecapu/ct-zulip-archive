@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Internal logic of monoidal topos? · theory: type theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory/index.html">theory: type theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory/topic/Internal.20logic.20of.20monoidal.20topos.3F.html">Internal logic of monoidal topos?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="471149476"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory/topic/Internal%20logic%20of%20monoidal%20topos%3F/near/471149476" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> finegeometer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory/topic/Internal.20logic.20of.20monoidal.20topos.3F.html#471149476">(Sep 18 2024 at 02:51)</a>:</h4>
+<p>Hi!</p>
+<p>If I want to reason internally to a topos, I can work in the internal logic.<br>
+This looks like a fairly standard type theory, with axioms for funext, propositional extensionality, and quotients. I then add axioms specific to the topos I'm working with, such as the Kock-Lawvere axioms for smooth toposes, or the law of excluded middle for boolean toposes.</p>
+<p>Now say my topos is a monoidal topos, such as presheaves on a monoidal category under Day convolution. Say I'll be working with the monoidal product and function type as extensively as regular products and functions. Then I'll want the monoidal product and function types to feel "built in" to the language, rather than axiomatized. How do I do this?</p>
+<p>Presumably, what I want is some sort of linear dependent type theory. But <em>which</em> linear dependent type theory, exactly? I'd like a fairly detailed description, so a link to a paper would be preferable.</p>
+<p>I'm happy to work informally, so I don't require that the type theory actually be implemented as a proof assistant. As long as the type theory is clearly defined, and preferably fairly simple, I'm happy.</p>
+<p>Thanks!</p>
+
+
+
+<a name="471166936"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory/topic/Internal%20logic%20of%20monoidal%20topos%3F/near/471166936" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory/topic/Internal.20logic.20of.20monoidal.20topos.3F.html#471166936">(Sep 18 2024 at 04:52)</a>:</h4>
+<p>Linear dependent type theory doesn't fully exist yet, though there's some considerable effort toward it (I'd just point you to the nLab, no specific knowledge of references.) That said, I think it's far from obvious that the linear type theory you get from sticking a monoidal structure onto a topos should be dependent just because the topos is dependent!</p>
+
+
+
+<a name="471183576"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory/topic/Internal%20logic%20of%20monoidal%20topos%3F/near/471183576" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory/topic/Internal.20logic.20of.20monoidal.20topos.3F.html#471183576">(Sep 18 2024 at 07:01)</a>:</h4>
+<p>I would say rather that there are a bunch of <em>different</em> linear dependent type theories, probably incomparable with each other, and it's not clear that any of them is uniformly better than the others.</p>
+
+
+
+<a name="471183673"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory/topic/Internal%20logic%20of%20monoidal%20topos%3F/near/471183673" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory/topic/Internal.20logic.20of.20monoidal.20topos.3F.html#471183673">(Sep 18 2024 at 07:01)</a>:</h4>
+<p>There may or may not be one in the literature that does exactly what you want; I'm not thinking of one off the top of my head.</p>
+
+
+
+<a name="471184118"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory/topic/Internal%20logic%20of%20monoidal%20topos%3F/near/471184118" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Staton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory/topic/Internal.20logic.20of.20monoidal.20topos.3F.html#471184118">(Sep 18 2024 at 07:04)</a>:</h4>
+<p>Hi monoidal toposes with Day convolution, if that's what you have in mind, come up in models of "bunched type theory". An older reference is <a href="http://www0.cs.ucl.ac.uk/staff/p.ohearn/papers/BunchedTyping.pdf">Peter O'Hearn's paper</a>, and then Uli Schöpp and Ian Stark looked at dependently typed versions. More recently I am slightly out of the loop on the state of the art in dependent bunched type theory, I've seen <span class="user-mention" data-user-id="276633">@Mitchell Riley</span>'s <a href="https://mvr.hosting.nyu.edu/pubs/thesis.pdf">thesis</a>, but I don't yet know it well enough to say how much it connects to Day convolution or ordinary topos theory.</p>
+
+
+
+<a name="471185980"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory/topic/Internal%20logic%20of%20monoidal%20topos%3F/near/471185980" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory/topic/Internal.20logic.20of.20monoidal.20topos.3F.html#471185980">(Sep 18 2024 at 07:15)</a>:</h4>
+<p>Oh nice, I didn't realize there was a dependently typed version of the original bunched type theory (although I knew about Mitchell's work, which is bunched in a different way IIRC).</p>
+
+
+
+<a name="471186053"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory/topic/Internal%20logic%20of%20monoidal%20topos%3F/near/471186053" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory/topic/Internal.20logic.20of.20monoidal.20topos.3F.html#471186053">(Sep 18 2024 at 07:15)</a>:</h4>
+<p>Do you have a reference for the work of Schöpp and Stark?</p>
+
+
+
+<a name="471189516"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory/topic/Internal%20logic%20of%20monoidal%20topos%3F/near/471189516" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Staton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory/topic/Internal.20logic.20of.20monoidal.20topos.3F.html#471189516">(Sep 18 2024 at 07:36)</a>:</h4>
+<p>Yes, I was thinking about Uli's thesis, <a href="https://ulrichschoepp.de/Docs/th.pdf">Names and Binding in Type Theory</a>.</p>
+
+
+
+<a name="471204316"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory/topic/Internal%20logic%20of%20monoidal%20topos%3F/near/471204316" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mitchell Riley <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory/topic/Internal.20logic.20of.20monoidal.20topos.3F.html#471204316">(Sep 18 2024 at 08:50)</a>:</h4>
+<p>If I remember right the Schöpp and Stark type theory builds in the assumption that the monoidal unit is terminal, because variables in any bunch are always usable. But it still might match your intended application.</p>
+
+
+
+<a name="471299385"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory/topic/Internal%20logic%20of%20monoidal%20topos%3F/near/471299385" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Staton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory/topic/Internal.20logic.20of.20monoidal.20topos.3F.html#471299385">(Sep 18 2024 at 16:16)</a>:</h4>
+<p>Good point, you're right.</p>
+
+
+
+<a name="471374823"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory/topic/Internal%20logic%20of%20monoidal%20topos%3F/near/471374823" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> finegeometer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory/topic/Internal.20logic.20of.20monoidal.20topos.3F.html#471374823">(Sep 19 2024 at 01:02)</a>:</h4>
+<p>Thank you! My intended application does, in fact, have the monoidal unit be the terminal object. So that should work.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

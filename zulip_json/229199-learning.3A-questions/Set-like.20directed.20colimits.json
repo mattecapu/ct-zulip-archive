@@ -1,0 +1,404 @@
+[
+    {
+        "content": "<p>Are there any theorems characterizing which categories have Set-like directed colimits, i.e. directed colimits that are constructed as quotients of sums?</p>",
+        "id": 419613565,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1706970683
+    },
+    {
+        "content": "<p>The fact that you can present a colimit as a quotient of a coproduct is dual to the result that you can express any limit as a subobject of a product: it's true as soon as the respective (co)limits exist, with no further requirements, since the proof is just to check the required universal property.</p>",
+        "id": 419625420,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1706980638
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"277473\">@Morgan Rogers (he/him)</span> Do you have a reference to this result?</p>",
+        "id": 419626014,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1706981233
+    },
+    {
+        "content": "<p>For limits I'm pretty sure it's in <em>Categories for the Working Mathematician</em> or Riehl's <em>Categories in context</em>.</p>",
+        "id": 419626078,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1706981288
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Set-like.20directed.20colimits/near/419625420\">said</a>:</p>\n<blockquote>\n<p>The fact that you can present a colimit as a quotient of a coproduct is dual to the result that you can express any limit as a subobject of a product: it's true as soon as the respective (co)limits exist, with no further requirements, since the proof is just to check the required universal property.</p>\n</blockquote>\n<p>Is there an analogue of this result for limits and colimits in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty, 1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-category theory?</p>",
+        "id": 419626260,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1706981491
+    },
+    {
+        "content": "<p>I believe so, but I'll need someone else to give appropriate pointers for that.</p>",
+        "id": 419626522,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1706981755
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"277473\">@Morgan Rogers (he/him)</span> Are you refering to the construction of limits using products and equalizers?</p>",
+        "id": 419626813,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1706981993
+    },
+    {
+        "content": "<p>That's the one!</p>",
+        "id": 419626885,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1706982039
+    },
+    {
+        "content": "<p>A particular instance of that (stalks of a sheaf) is explained quite well <a href=\"https://stacks.math.columbia.edu/tag/0078\">on the Stacks project</a>.</p>",
+        "id": 419627001,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1706982126
+    },
+    {
+        "content": "<p>Ah, so those equalizers end up being subobjects. I did not realize.</p>",
+        "id": 419627021,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1706982148
+    },
+    {
+        "content": "<p>This is by the result that equalizers are monos, which is also entirely general!</p>",
+        "id": 419627089,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1706982212
+    },
+    {
+        "content": "<p>Another question: If I have a sequence of right adjoint functors <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mover><mo stretchy=\"true\" minsize=\"3.0em\">→</mo><mpadded width=\"+0.6em\" lspace=\"0.3em\"><mi>U</mi></mpadded></mover><mi>B</mi><mover><mo stretchy=\"true\" minsize=\"3.0em\">→</mo><mpadded width=\"+0.6em\" lspace=\"0.3em\"><mi>V</mi></mpadded></mover><mi>C</mi><mover><mo stretchy=\"true\" minsize=\"3.0em\">→</mo><mpadded width=\"+0.6em\" lspace=\"0.3em\"><mi>W</mi></mpadded></mover><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">A \\xrightarrow{U} B \\xrightarrow{V} C \\xrightarrow{W} \\mathbf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.1113em;vertical-align:-0.011em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel x-arrow\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.1003em;\"><span style=\"top:-3.322em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight x-arrow-pad\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.10903em;\">U</span></span></span></span><span class=\"svg-align\" style=\"top:-2.689em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"hide-tail\" style=\"height:0.522em;min-width:1.469em;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128\n-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20\n 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7\n 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85\n-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5\n-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67\n 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.011em;\"><span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.1113em;vertical-align:-0.011em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel x-arrow\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.1003em;\"><span style=\"top:-3.322em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight x-arrow-pad\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.22222em;\">V</span></span></span></span><span class=\"svg-align\" style=\"top:-2.689em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"hide-tail\" style=\"height:0.522em;min-width:1.469em;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128\n-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20\n 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7\n 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85\n-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5\n-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67\n 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.011em;\"><span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.1113em;vertical-align:-0.011em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel x-arrow\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:1.1003em;\"><span style=\"top:-3.322em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight x-arrow-pad\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.13889em;\">W</span></span></span></span><span class=\"svg-align\" style=\"top:-2.689em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"hide-tail\" style=\"height:0.522em;min-width:1.469em;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width='400em' height='0.522em' viewBox='0 0 400000 522' preserveAspectRatio='xMaxYMin slice'><path d='M0 241v40h399891c-47.3 35.3-84 78-110 128\n-16.7 32-27.7 63.7-33 95 0 1.3-.2 2.7-.5 4-.3 1.3-.5 2.3-.5 3 0 7.3 6.7 11 20\n 11 8 0 13.2-.8 15.5-2.5 2.3-1.7 4.2-5.5 5.5-11.5 2-13.3 5.7-27 11-41 14.7-44.7\n 39-84.5 73-119.5s73.7-60.2 119-75.5c6-2 9-5.7 9-11s-3-9-9-11c-45.3-15.3-85\n-40.5-119-75.5s-58.3-74.8-73-119.5c-4.7-14-8.3-27.3-11-40-1.3-6.7-3.2-10.8-5.5\n-12.5-2.3-1.7-7.5-2.5-15.5-2.5-14 0-21 3.7-21 11 0 2 2 10.3 6 25 20.7 83.3 67\n 151.7 139 205zm0 0v40h399900v-40z'/></svg></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.011em;\"><span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Set</span></span></span></span></span>, then I can construct a directed colimit in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> by dropping down to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Set</span></span></span></span></span> via <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>W</mi><mo>∘</mo><mi>V</mi><mo>∘</mo><mi>U</mi></mrow><annotation encoding=\"application/x-tex\">W \\circ V \\circ U</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">W</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span></span></span></span>, constructing the colimit in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Set</span></span></span></span></span>, and then applying the left adjoints, right?</p>",
+        "id": 419640854,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1706993879
+    },
+    {
+        "content": "<p>It depends! This is not a general fact about adjoints.</p>",
+        "id": 419642731,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1706995451
+    },
+    {
+        "content": "<p>Really? I thougth left adjoints preserve colimits.</p>",
+        "id": 419651050,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707002891
+    },
+    {
+        "content": "<p>They do, but the thing you end up with will not typically be a colimit of the original diagram.</p>",
+        "id": 419651402,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1707003301
+    },
+    {
+        "content": "<p>What you really want is for the functors to <em>create</em> colimits, which is a stronger property (and even then the colimit will usually not be constructed by simply applying the left adjoints)</p>",
+        "id": 419651532,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1707003444
+    },
+    {
+        "content": "<p>Hmm... so what is the relationship between having a left adjoint and creating/lifting/reflecting colimits?</p>",
+        "id": 419683549,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707038633
+    },
+    {
+        "content": "<p>If the functors (right adjoints) are full and faithful, the unit of the overall adjunction will be an isomorphism, so your original construction works; this is the exception to what I said above. There is a general result that <em>monadic</em> functors create <em>limits</em>, and so dually comonadic functors create colimits, but those would be functors with right adjoints (worth noting that being comonadic is not preserved by composition but the property of creating (co)limits is).</p>",
+        "id": 419684680,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1707039861
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Set-like.20directed.20colimits/near/419651532\">said</a>:</p>\n<blockquote>\n<p>What you really want is for the functors to <em>create</em> colimits, which is a stronger property (and even then the colimit will usually not be constructed by simply applying the left adjoints)</p>\n</blockquote>\n<p>This confuses me. If the left adjoint can't be used to obtain the colimits, how do you obtain them then? Do you have to investigate the proof of \"U creates colimits\" to figure out what the construction is?</p>",
+        "id": 419696174,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707050818
+    },
+    {
+        "content": "<p>You typically do! For monadic functors you really work with algebras to construct the limits, for instance</p>",
+        "id": 419699690,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1707054176
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Set-like.20directed.20colimits/near/419699690\">said</a>:</p>\n<blockquote>\n<p>You typically do! For monadic functors you really work with algebras to construct the limits, for instance</p>\n</blockquote>\n<p>This is troublesome. Unless there is some kind of central repository or reference for all of category theory, how am I going to find out what the construction is when I read \"U creates colimits\"?</p>",
+        "id": 419700443,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707054891
+    },
+    {
+        "content": "<p>By the way, I think \"creates\" is too strong. For example, U : Top → Set does not create colimits, but I know how to lift colimits in Set to colimits in Top via the final topology.</p>",
+        "id": 419700634,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707055056
+    },
+    {
+        "content": "<p>Can you just post the theorem you're having trouble with? I am optimistic that if somebody here gives you a clear construction of the \"created limit\" you will be more confident about proving it yourself in the future and it will not take you so much time as to be a significant burden</p>",
+        "id": 419713104,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1707066161
+    },
+    {
+        "content": "<p>In theory yes people should give the construction. In practice because the answer is uniquely determined (not just up to isomorphism but up to equality of limit cones) there are extremely strong constraints that guide the search for a solution and make it possible to solve it without prior knowledge</p>",
+        "id": 419713274,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1707066253
+    },
+    {
+        "content": "<p>At this point I'm genuinely curious what your theorem is that apparently is not immediately connected to the standard proof that monadic functors create limits.</p>",
+        "id": 419713315,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1707066296
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"424412\">Patrick Nicodemus</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Set-like.20directed.20colimits/near/419713104\">said</a>:</p>\n<blockquote>\n<p>Can you just post the theorem you're having trouble with?</p>\n</blockquote>\n<p>There is no theorem yet. In my research, I am working with categories Ord, Conv, M-Set and combinations of them and I need to describe how to construct the colimit in all these combinations. At the moment, I literally have to refer to the construction in Set and explain how to modify the proof to get the construction in e.g. M-OrdConv, which I find kind of silly.</p>",
+        "id": 419720943,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707071909
+    },
+    {
+        "content": "<p>If a functor creates limits, then in practice the limits in its domain are constructed by constructing them in the codomain and then adding obvious structure to lift, as in the category of groups. It’s a good observation that the forgetful functor out of topological spaces does not create limits. The possible of initial and final topologies actually makes this forgetful functor what is literally called a <a href=\"https://ncatlab.org/nlab/show/topological+concrete+category\">topological functor</a> in honor of this case. All in all I don’t really understand what exactly it is you’re finding kind of silly—that if you work in a category that hasn’t been studied much, you might have to say a few sentences about what its colimits are if you want to provide an explicit construction?</p>",
+        "id": 419723793,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707074257
+    },
+    {
+        "content": "<p>I find it silly because I feel that there should be a better way of explaining how to construct colimits. Let's suppose I want to formalize my results in proof assistant like Lean. I can't really say \"just tweak the proof from the Set case like this\" in Lean. I need a better approach.</p>",
+        "id": 419724328,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707074697
+    },
+    {
+        "content": "<p>Hmm, I’m not really sure what you mean my tweaking the Set proof. To construct colimits in M-Set, we should observe that M acts naturally on the colimits of the underlying sets of a diagram and check the universal property. For convergences spaces, put the coarsest convergence on the colimits of underlying sets consistent with the convergences on the spaces in the diagram. For orders, take the transitive closure of the relation induces on the colimit, etc. You can give some of the same proofs for many base categories at once, most easily in the case of M-Sets. These kinds of things are done in Lean all the time. Maybe you’d get some more clarity by poking around in the category theory part of Mathlib.</p>",
+        "id": 419725012,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707075339
+    },
+    {
+        "content": "<blockquote>\n<p>I’m not really sure what you mean my tweaking the Set proof.</p>\n</blockquote>\n<p>What you wrote afterwards is exactly what I mean.</p>\n<blockquote>\n<p>These kinds of things are done in Lean all the time. Maybe you’d get some more clarity by poking around in the category theory part of Mathlib.</p>\n</blockquote>\n<p>Really? I was poking around today in fact and I didn't find anything useful for my needs. I will ask in the Lean Zulip for pointers.</p>",
+        "id": 419726564,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707076788
+    },
+    {
+        "content": "<p>I wouldn't personally mess around with Lean for this, though of course tastes very.  If someone tells me \"you can give some of the same proofs for many base categories at once, most easily in the case of M-Sets\" I would try to figure out what features of Set, MSet, etc. make the proof work, and write down the proof using assumptions  that capture these features    It would be a matter of copying the proof for Set but generalizing it as we go.</p>",
+        "id": 419727097,
+        "sender_full_name": "John Baez",
+        "timestamp": 1707077252
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"575698\">@Bernd Losert</span> I agree with Kevin that you shouldn't have to tweak the proof in Set. Instead you should be able to use the construction in Set as a lemma.</p>\n<p>Let U be the forgetful functor from Top to Set and let X be a functor valued in Top regarded as a diagram. Let Z, gamma : UX =&gt; Z be the colimit (and its cocone) of UX. There is a category whose objects are cocones with domain X and which live over (Z, gamma). The colimit of X is exactly the initial cocone in this category. This works for any so called topological functor U. By this interpretation I don't think that we are modifying the construction of the colimit Z, instead we are using it as a lemma, a construction on top of which we add additional structure</p>",
+        "id": 419743759,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1707091076
+    },
+    {
+        "content": "<p>What Patrick said works whenever U preserves colimits, but the construction of the initial object will depend on further hypotheses which are not unique. When the functor creates colimits, the \"category whose objects are cocones under X which live over (Z,gamma)\" is contractible (there is essentially only one choice as long as you can find it), whereas in Top the initial object exists because the fiber over Z is a complete lattice and we can find at least one object in it using the fact that an adjoint preserves the fiber (that is, Z with the discrete topology is an object living over Z).<br>\nBeyond imposing the non-constructive hypothesis that \"the initial object in ... exists\", I don't see a common underlying construction here. (EDIT: This is the same reason that there are several independent Adjoint Functor Theorems.)</p>",
+        "id": 419775021,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1707116371
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"424412\">@Patrick Nicodemus</span> What you wrote is basically the sort of thing I was asking for: If you have a forgetful functor U : C → Set, are there any theorems that say how to build the directed colimit in C based on the directed colimit in Set. If U is monadic or topological, the answer seems to be yes. I need one more theorem to cover the case where C is Pos or something like Pos.</p>",
+        "id": 419789687,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707123128
+    },
+    {
+        "content": "<p>Well if C is Pos then U is still topological, so you dont need one more theorem for that. The monadic and topological cases are also both subsumed by the theory of <a href=\"https://ncatlab.org/nlab/show/solid%20functors\">[[solid functors]]</a>.</p>",
+        "id": 419815657,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1707132025
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"386922\">Graham Manuell</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Set-like.20directed.20colimits/near/419815657\">said</a>:</p>\n<blockquote>\n<p>Well if C is Pos then U is still topological, so you dont need one more theorem for that. The monadic and topological cases are also both subsumed by the theory of <a href=\"https://ncatlab.org/nlab/show/solid%20functors\">[[solid functors]]</a>.</p>\n</blockquote>\n<p>According to Joy of Cats, Examples 21.2, Pos is not topological. But thanks for reminding me about solid functors.</p>",
+        "id": 419820373,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707133684
+    },
+    {
+        "content": "<p>There is the theory of fibrations and opfibrations as well. We have a general theorem how to construct colimits in the total category of an opfibration from colimits in the base category if the total category has all colimits of the right shape and reindexing functors preserve them. Sorry I'm on my phone and don't have paper to check whether posets form an opfibration</p>",
+        "id": 419828874,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1707136428
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"575698\">Bernd Losert</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Set-like.20directed.20colimits/near/419626813\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> Are you refering to the construction of limits using products and equalizers?</p>\n</blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Set-like.20directed.20colimits/near/419626885\">said</a>:</p>\n<blockquote>\n<p>That's the one!</p>\n</blockquote>\n<p>So is this just for finite limits and colimits or does this also extend to the infinitary case as well?</p>",
+        "id": 419864877,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1707146721
+    },
+    {
+        "content": "<p>It extends to the infinitary case (checking this is a good exercise)</p>",
+        "id": 419866113,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1707147053
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"575698\">Bernd Losert</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Set-like.20directed.20colimits/near/419820373\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"386922\">Graham Manuell</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Set-like.20directed.20colimits/near/419815657\">said</a>:</p>\n<blockquote>\n<p>Well if C is Pos then U is still topological, so you dont need one more theorem for that. The monadic and topological cases are also both subsumed by the theory of <a href=\"https://ncatlab.org/nlab/show/solid%20functors\">[[solid functors]]</a>.</p>\n</blockquote>\n<p>According to Joy of Cats, Examples 21.2, Pos is not topological. But thanks for reminding me about solid functors.</p>\n</blockquote>\n<p>Oh. Sorry. I was thinking of preorders. Anyway, the functor is still solid.</p>",
+        "id": 419877385,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1707149916
+    },
+    {
+        "content": "<p>I just wanted to add that it is not the case in general that right adjoints preserve directed colimits. It is true notably that the forgetful functor for a <strong>finitary</strong> algebraic theory preserves directed colimits. It is also true for topological spaces, even though they aren't the models of a finitary algebraic theory.</p>",
+        "id": 419913532,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1707161604
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"671813\">Madeleine Birchfield</span> [said]</p>\n<blockquote>\n<p>So is this just for finite limits and colimits or does this also extend to the infinitary case as well?</p>\n</blockquote>\n<p>Any limit is a reflexive equalizer of a (possibly infinite) product.</p>",
+        "id": 419914200,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707161795
+    },
+    {
+        "content": "<p>I am seeing in a lot of articles that it's enough for U : C → Set to detect directed colimits to construct a colimit in C from a directed colimit in Set (as long as the proof has the construction). And in the cases I am interested in, this construction gives me the directed colimit I am actually interested in.</p>",
+        "id": 420218510,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707300865
+    },
+    {
+        "content": "<p>What does it mean to \"detect\" a colimit?</p>",
+        "id": 420223066,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1707302516
+    },
+    {
+        "content": "<p>Given functors D : I → C and F : C → D, F detects colimits of D if colim (F ∘ D) exists implies colim D exists.</p>",
+        "id": 420229136,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707304530
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Arlin</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Set-like.20directed.20colimits/near/419725012\">said</a>:</p>\n<blockquote>\n<p>For orders, take the transitive closure of the relation induces on the colimit..</p>\n</blockquote>\n<p>Do you have a reference showing the construction of directed colimits of posets?</p>",
+        "id": 420332672,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707336182
+    },
+    {
+        "content": "<p>Also, I think the transitive closure just gives you a preorder, not a partial order.</p>",
+        "id": 420333700,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707336568
+    },
+    {
+        "content": "<p>Sure, you take the transitive closure and then identify mutually comparable objects to get antisymmetry, you’re right. I have trouble respecting the difference between preorders and posets sometimes.</p>",
+        "id": 420334030,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707336693
+    },
+    {
+        "content": "<p>Directed colimits of posets are trivial: the induced relation on the colimit of underlying sets is already transitive. No idea what might be a reference for this, but it’s a very common phenomenon as many important categories are locally finite presentable.</p>",
+        "id": 420334397,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707336838
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Arlin</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Set-like.20directed.20colimits/near/420334030\">said</a>:</p>\n<blockquote>\n<p>Sure, you take the transitive closure and then identify mutually comparable objects to get antisymmetry, you’re right. I have trouble respecting the difference between preorders and posets sometimes.</p>\n</blockquote>\n<p>So basically \"take the colimit in Pre and then apply the free Pre → Pos functor\".</p>",
+        "id": 420334897,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707337027
+    },
+    {
+        "content": "<p>Incidentally, the correction on general colimits of posets is an instance of a very useful and common phenomenon. Posets are a reflective subcategory of preorders, which means a full subcategory such that for any preorder <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> there’s a map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mo>→</mo><mi>X</mi><mtext>’</mtext></mrow><annotation encoding=\"application/x-tex\">X\\to X’</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mord\">’</span></span></span></span> into a poset through which every map from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> to any poset factors uniquely. In any such situation, the reflective subcategory has limits computed exactly as in the supercategory (created by the inclusion functor, formally) and colimits constructed by constructing them in the supercategory, then applying the reflection functor. This reflection functor is the “identify objects that are comparable to each other” operation from above in the case of posets. Very often the inclusion functor also creates directed colimits, as here.</p>",
+        "id": 420334910,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707337031
+    },
+    {
+        "content": "<p>Ah yes, “take the colimit of preorders and then apply the free poset functor” is exactly what I was explaining just as you posted it.</p>",
+        "id": 420334987,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707337061
+    },
+    {
+        "content": "<p>It’s a lot like what you were hoping for at the top of the thread—it’s just that it only works when the forgetful functor is fully faithful.</p>",
+        "id": 420335087,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707337089
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Arlin</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Set-like.20directed.20colimits/near/420334397\">said</a>:</p>\n<blockquote>\n<p>Directed colimits of posets are trivial: the induced relation on the colimit of underlying sets is already transitive. No idea what might be a reference for this, but it’s a very common phenomenon as many important categories are locally finite presentable.</p>\n</blockquote>\n<p>It's trivial enough that even I have a explicit proof of it, but I would like to just have a reference - otherwise I am going to have to spell it out in the paper I am writing.</p>",
+        "id": 420335156,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707337115
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"609515\">@Kevin Arlin</span> What a tick... what relation are we taking the transitive closure of?</p>",
+        "id": 420338291,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707338221
+    },
+    {
+        "content": "<p>In my proof, I construct a partial ordering directly - no futzing around with closures and free constructions.</p>",
+        "id": 420338404,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707338268
+    },
+    {
+        "content": "<p>You shouldn’t have to futz around with directed colimits, if that’s what you mean—as I said there’s no need for a closure in that case, and as I probably didn’t say clearly, the directed colimit taken as in preordered sets is already a poset, so no need for a free construction either. Both steps are for general colimits, where you certainly will need them.</p>",
+        "id": 420338691,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707338373
+    },
+    {
+        "content": "<p>Since I don't have a reference regarding directed colimits of preorders, I am forced to construct the partial order directly for the directed colimit. The construction is basically the one on the Wikipedia page (<a href=\"https://en.wikipedia.org/wiki/Direct_limit\">https://en.wikipedia.org/wiki/Direct_limit</a>) but instead I define <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>≲</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><annotation encoding=\"application/x-tex\">x_i \\lesssim x_j</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9592em;vertical-align:-0.2296em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel amsrm\">≲</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7167em;vertical-align:-0.2861em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span></span></span></span> if and only if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>f</mi><mrow><mi>i</mi><mi>k</mi></mrow></msub><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo><mo>≤</mo><msub><mi>f</mi><mrow><mi>j</mi><mi>k</mi></mrow></msub><mo stretchy=\"false\">(</mo><msub><mi>x</mi><mi>j</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">f_{ik}(x_i) \\le f_{jk}(x_j)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.03148em;\">ik</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0361em;vertical-align:-0.2861em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.03148em;\">jk</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span>. Then you can use that to define the partial ordering on the quotient of the union.</p>",
+        "id": 420341855,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707339667
+    },
+    {
+        "content": "<p>Yes, that sounds like the same idea I’m describing. You could see whether this is given as an example in Adamek and Rosicky’s book on locally presentable categories, it’s just not the kind of thing that would predictably appear in a paper since nobody would ever claim to be the first to prove it.</p>",
+        "id": 420342265,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707339837
+    },
+    {
+        "content": "<p>If it’s in there they’ll probably just assert that it works the way you say, in any case, but that can still be nice sometimes.</p>",
+        "id": 420342386,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707339866
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Set-like.20directed.20colimits/near/419684680\">said</a>:</p>\n<blockquote>\n<p>If the functors (right adjoints) are full and faithful, the unit of the overall adjunction will be an isomorphism, so your original construction works; this is the exception to what I said above. There is a general result that <em>monadic</em> functors create <em>limits</em>, and so dually comonadic functors create colimits, but those would be functors with right adjoints (worth noting that being comonadic is not preserved by composition but the property of creating (co)limits is).</p>\n</blockquote>\n<p>Sorry about bringing this up again. So say A is a full, isomorphism-closed, reflective subcategory of B and let U : A → B be the embedding. Given a diagram D : I → A such that the colim U ∘ D exists,  then F (colim U ∘ D) ≅ colim (F ∘ U ∘ D) ≅ colim D, where the first ≅ follows from F preserving colimits and the last ≅ follows from the full, isomorphism-closed part, right?</p>\n<p>Because A is full, isomorphism-closed and reflective, U is monadic. Being monadic means that U creates all colimits that exist in B and are preserved by UF and UFUF. But in the F (colim U ∘ D) ≅  colim D \"proof\", I didn't make use of the fact that UF and UFUF preserve colimits, so something is not right.</p>",
+        "id": 423502759,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1708989962
+    },
+    {
+        "content": "<p>What do you think is not right? Reflective categories are a special case where you don't need to use monadicity to construct the limits and colimits because the simpler description that you gave works out. Note that it's not necessarily the case that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>U</mi><mo>∘</mo><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">U \\circ F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">U</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> preserves any given colimits: a colimit in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> need not be a colimit in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span>.</p>",
+        "id": 423575161,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1709029366
+    },
+    {
+        "content": "<p>Thanks for the response. I get it now. I guess I was to aiming to say that U creates colimits, but that's not necessarily the case and in fact I think it is enough for my use case that U just lifts colimits uniquely.</p>",
+        "id": 423603593,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1709039748
+    },
+    {
+        "content": "<p>By the way, does \"isomorphism-closed\" translate to some property of the reflector or the inclusion? It seems to be a stronger condition.</p>",
+        "id": 423642308,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1709049547
+    },
+    {
+        "content": "<p>It means the inclusion is an <a href=\"https://ncatlab.org/nlab/show/isofibration\">[[isofibration]]</a>.</p>",
+        "id": 423642691,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1709049617
+    },
+    {
+        "content": "<p>It's a very weak requirement: closing under isomorphisms gives an equivalent subcategory, so it's just for convenience.</p>",
+        "id": 423642926,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1709049676
+    },
+    {
+        "content": "<p>Got it.</p>",
+        "id": 423643785,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1709049884
+    }
+]

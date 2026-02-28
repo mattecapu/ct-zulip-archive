@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>2-monadicity of toposes · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/2-monadicity.20of.20toposes.html">2-monadicity of toposes</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="465315423"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/2-monadicity%20of%20toposes/near/465315423" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/2-monadicity.20of.20toposes.html#465315423">(Aug 27 2024 at 03:36)</a>:</h4>
+<p>How do you actually prove that the 2-category of elementary toposes and logical functors is 2-monadic over categories? I supposedly know this is true (and the nLab agrees) but the BPS 2-monads paper doesn't have it; they just have monadicity of the 1-category and 2-monadicity of the 2-category over <em>groupoids</em>, which is a common cheat for structures that involve some contravariant operations. I'm interested both in a reference and in some general lore if, say, it's actually easy now to upgrade the 1-monadicity result to 2-monadicity.</p>
+
+
+
+<a name="465328172"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/2-monadicity%20of%20toposes/near/465328172" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/2-monadicity.20of.20toposes.html#465328172">(Aug 27 2024 at 05:29)</a>:</h4>
+<p>Elementary toposes are algebras for a 2-monad on the 2-category of categories, functors, and natural <em>isomorphisms</em>, which is sometimes denoted <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>Cat</mtext><mi>g</mi></msub></mrow><annotation encoding="application/x-tex">\text{Cat}_g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord text"><span class="mord">Cat</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">g</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> (which is not the same as a 2-category of groupoids). This is consistent with both what the nLab states and what Blackwell–Kelly–Power state. They're not algebras for a 2-monad on the 2-category of categories, functors, and natural transformations, for the contravariance problems that you mention.</p>
+
+
+
+<a name="465339121"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/2-monadicity%20of%20toposes/near/465339121" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/2-monadicity.20of.20toposes.html#465339121">(Aug 27 2024 at 06:27)</a>:</h4>
+<p>Ah, thanks, I was looking for groupoids in the objects and not the homs and so didn’t read the whole definition. That’s comforting that there’s not some sudden leap back to monadicity over the full 2-category when you go from Cartesian closed to a topos.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

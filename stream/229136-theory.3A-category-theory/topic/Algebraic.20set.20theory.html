@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Algebraic set theory · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Algebraic.20set.20theory.html">Algebraic set theory</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="440725215"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Algebraic%20set%20theory/near/440725215" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Algebraic.20set.20theory.html#440725215">(May 26 2024 at 16:43)</a>:</h4>
+<p>This is a side-question from a different thread.</p>
+<p>It’s more of an invitation to a discussion than a question.</p>
+<p>It seems that <a href="https://ncatlab.org/nlab/show/algebraic%20set%20theory">[[algebraic set theory]]</a> pursues certain goals that I find of prime interest.</p>
+<p>Namely, there are many different set theories, but perhaps that is a way to define “a set theory” in a way that finds the commonality between all of them.</p>
+<p>I have only two small questions to hopefully initiate a conversation.</p>
+<ol>
+<li>
+<p>There are so many formal systems one can choose to work in - homotopy type theory, Zermelo-Fraenkel set theory, lambda calculus, etc. Are there examples of people using algebraic set theory as the formalism in which they develop a mathematical theory in?</p>
+</li>
+<li>
+<p>I heard that an elementary topos can be seen as an abstraction of the category of sets. Does algebraic set theory necessarily make use of topos theory?</p>
+</li>
+</ol>
+<p>Thanks.</p>
+
+
+
+<a name="440732446"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Algebraic%20set%20theory/near/440732446" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Algebraic.20set.20theory.html#440732446">(May 26 2024 at 18:54)</a>:</h4>
+<blockquote>
+<p>There are so many formal systems one can choose to work in - homotopy type theory, Zermelo-Fraenkel set theory, lambda calculus, etc. Are there examples of people using algebraic set theory as the formalism in which they develop a mathematical theory in? </p>
+</blockquote>
+<p>Not really as such, as far as I know. </p>
+<p>Either algebraic set theory or ZFC could function something like a "machine language" in which the referents of a theory are encoded, and if one is super-serious about fully formal mathematics, one could attempt to work with ZFC or GBN or MK or whatever at a foundational level, and build up a library of results from the bedrock there. I think I've heard that something like this is the basis of Mizar, for example. But if you take a textbook on some random mathematical theory, like the theory of several complex variables say, then you'll never find any such set theory invoked at a formal level. You might find some lip service, or some preliminary discussion at the level of "naive set theory" in some cases, but that's about it.</p>
+
+
+
+<a name="440732490"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Algebraic%20set%20theory/near/440732490" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Algebraic.20set.20theory.html#440732490">(May 26 2024 at 18:54)</a>:</h4>
+<blockquote>
+<p>Does algebraic set theory necessarily make use of topos theory? </p>
+</blockquote>
+<p>I'd say "not really". It does make substantial use of category theory. Closer to the point, it does make use of pretopos theory, which has features in common with topos theory, except that you don't have "function space objects" like you do in topos theory. Basically, in algebraic set theory, one wants to discuss categories of classes (thinking here of a class/set distinction), where you can manipulate classes with first-order logic operations but not higher-order operations, such as attempting to take the class of all functions from one class to another. Pretopos theory gives you the first-order fragment of topos theory, roughly speaking. </p>
+<p>But I'll go on to say that I would not recommend any of this as part of a pedagogical program to learn mathematics from the ground up. I would have to regard it as way too hard and way too niche to be any sort of entry-level subject.</p>
+
+
+
+<a name="440734771"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Algebraic%20set%20theory/near/440734771" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Algebraic.20set.20theory.html#440734771">(May 26 2024 at 19:34)</a>:</h4>
+<p>Algebraic set theory sounds interesting, but I'm not sure how well-founded it is. For instance, the nlab page cites "Instead of focusing on categories of sets AST focuses on <a href="https://ncatlab.org/nlab/show/category+of+classes">categories</a> of <a href="https://ncatlab.org/nlab/show/class">class</a>es." But this is impossible by the very definition of a class! If you recall, a class is <em>defined to be</em> a collection of things that can't be an element of another collection of things. But if you were to somehow have a category of classes C, then you'd also have a class Ob(C) whose elements are not only other classes, but <em>all</em> classes! That shouldn't be possible!</p>
+
+
+
+<a name="440735845"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Algebraic%20set%20theory/near/440735845" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Algebraic.20set.20theory.html#440735845">(May 26 2024 at 19:51)</a>:</h4>
+<p><span class="user-mention" data-user-id="673117">@John Onstead</span> You should check out <a href="https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Bernays%E2%80%93G%C3%B6del_set_theory">NBG</a> for example, where classes are part of the object language.</p>
+
+
+
+<a name="440736046"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Algebraic%20set%20theory/near/440736046" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Algebraic.20set.20theory.html#440736046">(May 26 2024 at 19:54)</a>:</h4>
+<p>(What's that quote? “There are more things in heaven and earth, Horatio, than are dreamt of in your philosophy.”)</p>
+
+
+
+<a name="440740977"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Algebraic%20set%20theory/near/440740977" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Algebraic.20set.20theory.html#440740977">(May 26 2024 at 21:16)</a>:</h4>
+<p>But seriously, on occasions when I want to go outside the confines of ordinary ZFC (because I want to consider, for example, functor categories between "large" categories), I often adopt "Mac Lane foundations" and posit a single strongly inaccessible cardinal <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">α</span></span></span></span> in my model of set theory. Sets of cardinality less than <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">α</span></span></span></span> are then called "small sets", and otherwise we can just say "sets". The category of small sets, let's call it <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow><annotation encoding="application/x-tex">\mathrm{set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord"><span class="mord mathrm">set</span></span></span></span></span>, well you could call it a "large" category if you want, but in this framework it has a set of morphisms -- just not a small set of morphisms -- and the functor category construction for categories as structures interpreted within this model can be performed with impunity, so that we can speak of for example <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\mathrm{set}^\mathrm{set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7985em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">set</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7985em;"><span style="top:-3.068em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathrm mtight">set</span></span></span></span></span></span></span></span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow><mrow><mo stretchy="false">(</mo><msup><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow><mrow><mi mathvariant="normal">s</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow></msup><mo stretchy="false">)</mo></mrow></msup></mrow><annotation encoding="application/x-tex">\mathrm{set}^{(\mathrm{set}^\mathrm{set})}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9772em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">set</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9772em;"><span style="top:-3.068em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">set</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8703em;"><span style="top:-2.931em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathrm mtight">set</span></span></span></span></span></span></span></span></span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span></span></span></span> and so on. This maneuver is a bit more dramatic than what is furnished by NBG, but from the viewpoint of professional set theorists, it would be considered just about the most piddlingly small "large cardinal hypothesis".</p>
+
+
+
+<a name="440745007"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Algebraic%20set%20theory/near/440745007" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Algebraic.20set.20theory.html#440745007">(May 26 2024 at 22:16)</a>:</h4>
+<p>This sounds like Grothendieck universes where we define a U-small set to be some set within a particular Grothendieck universe U. In this case, the universe U might in some way be related to the strongly inaccessible cardinal alpha- maybe it helps us build what this universe is. Then any set larger than this cardinal would not be in the U universe and so would be U-large sets. So in this case, a set, class, and Ob(C) for the category of those classes would all exist on different universes, each "larger" than the last. <br>
+Actually, I just re-checked the Grothendieck universe page on nlab and indeed <a href="https://ncatlab.org/nlab/show/Grothendieck+universe#large_cardinals">here</a> it does discuss this relationship!</p>
+
+
+
+<a name="440745078"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Algebraic%20set%20theory/near/440745078" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Algebraic.20set.20theory.html#440745078">(May 26 2024 at 22:17)</a>:</h4>
+<p>Yes, this is exactly the idea.</p>
+
+
+
+<a name="440746519"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Algebraic%20set%20theory/near/440746519" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James E Hanson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Algebraic.20set.20theory.html#440746519">(May 26 2024 at 22:38)</a>:</h4>
+<p>I don't really know the scope of what algebraic set theory talks about, but I think it's going to be hard to really write down a treatment of 'all set theories.'</p>
+<p>Like with type theory, there really isn't a solid consensus regarding what 'a set theory' even is. Aside from the extremely broad notion of 'a set is a "collection" of objects,' I don't know if there are any absolute commonalities:</p>
+<ul>
+<li>There are set theories in which membership is not binary. Obviously there's constructive set theory, but then there's also <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">]</span></span></span></span>-valued set theory which has been studied in various forms for at least around 70 years at this point. People have also looked at set theories in the context of various sub-intuitionistic logics.</li>
+<li>There are many set theories without extensionality. In some cases because it's actually inconsistent with other principles that people are looking at (such as unrestricted comprehension in the context of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">]</span></span></span></span>-valued Łukasiewicz logic). There's also double extension set theory, which I don't even really know how to characterize.</li>
+<li>There are obviously plenty of set theories with atoms, such as <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">Z</mi><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">A</mi></mrow><annotation encoding="application/x-tex">\mathsf{ZFA}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">ZFA</span></span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">N</mi><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">U</mi></mrow><annotation encoding="application/x-tex">\mathsf{NFU}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">NFU</span></span></span></span></span>, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">K</mi><mi mathvariant="sans-serif">P</mi><mi mathvariant="sans-serif">U</mi></mrow><annotation encoding="application/x-tex">\mathsf{KPU}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">KPU</span></span></span></span></span>, but there's also set theories like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">E</mi><mi mathvariant="sans-serif">T</mi><mi mathvariant="sans-serif">C</mi><mi mathvariant="sans-serif">S</mi></mrow><annotation encoding="application/x-tex">\mathsf{ETCS}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">ETCS</span></span></span></span></span> in which sets are not elements of other sets.</li>
+<li>There are set theories in which there are other kinds of compound objects. Obviously some set theories add classes as first-class objects, but there's other stuff too. One of Bourbaki's treatments of set theory took ordered pairs as primitives and in Randall Holmes's <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">N</mi><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">U</mi></mrow><annotation encoding="application/x-tex">\mathsf{NFU}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">NFU</span></span></span></span></span> set theory textbook he did the same. </li>
+<li>There are set theories where the induced category of sets in not particularly nice. Famously <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">N</mi><mi mathvariant="sans-serif">F</mi></mrow><annotation encoding="application/x-tex">\mathsf{NF}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">NF</span></span></span></span></span>-sets aren't cartesian closed (and I suspect this is true of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">N</mi><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">U</mi></mrow><annotation encoding="application/x-tex">\mathsf{NFU}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">NFU</span></span></span></span></span> as well, but I'm not finding a reference at the moment), but there's also <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mrow><mi mathvariant="sans-serif">G</mi><mi mathvariant="sans-serif">P</mi><mi mathvariant="sans-serif">K</mi></mrow><mi mathvariant="normal">∞</mi><mo>+</mo></msubsup></mrow><annotation encoding="application/x-tex">\mathsf{GPK}^+_\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1027em;vertical-align:-0.247em;"></span><span class="mord"><span class="mord"><span class="mord mathsf">GPK</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8557em;"><span style="top:-2.453em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">∞</span></span></span><span style="top:-3.1473em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span></span></span></span>, where in natural models the lattice of sets looks like the lattice of <em>closed</em> subsets of a topological space, rather than the lattice of open sets, as is roughly the case in something like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">I</mi><mi mathvariant="sans-serif">Z</mi><mi mathvariant="sans-serif">F</mi></mrow><annotation encoding="application/x-tex">\mathsf{IZF}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">IZF</span></span></span></span></span>. There's even at least one paper about a set theory in which the partial order of subsets doesn't always have meets (although this is my fault).</li>
+</ul>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

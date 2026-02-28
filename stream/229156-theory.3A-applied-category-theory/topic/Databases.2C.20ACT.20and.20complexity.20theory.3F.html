@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Databases, ACT and complexity theory? · theory: applied category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/index.html">theory: applied category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Databases.2C.20ACT.20and.20complexity.20theory.3F.html">Databases, ACT and complexity theory?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="462095248"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Databases%2C%20ACT%20and%20complexity%20theory%3F/near/462095248" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Databases.2C.20ACT.20and.20complexity.20theory.3F.html#462095248">(Aug 13 2024 at 12:03)</a>:</h4>
+<p>I'm working on complexity theory for databases, which is what led me to ACT: I'm trying to see whether category theory can say something interesting about my problems.<br>
+There is a notion of dynamic complexity formulated by Immermann and Patnaik. Essentially, for a relational database that is subject to change, auxiliary relations are maintained in another database over the same domain with the intention to help answering a query.  When an update to the database (for simplicity, an insertion or deletion of a tuple) occurs, every auxiliary relation is updated through a first-order query that can refer to the database as well as to the auxiliary relations. The typical example is maintaining an st- graph (say, representing users of a social network who follow and unfollow one another over time) and trying to answer the query "is t reachable from s"?</p>
+<p>The class of all queries maintainable in this way with first-order update formulas, is called Dyn-FO.<br>
+The actual formalization can be a bit finicky: see e.g. the introductory sections of <a href="https://informatik-rub.de/wp-content/uploads/2021/03/SchwentickZ2016-siglog.pdf">this</a> survey for one approach.<br>
+I believe this complexity class may admit a good categorical interpretation, and this would allow questions like the inexpressibility of certain problems within this class to be formulated and perhaps answered via sheaf theory and such, but I don't yet see how to carry this out. Am I barking up the wrong tree?</p>
+
+
+
+<a name="462106640"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Databases%2C%20ACT%20and%20complexity%20theory%3F/near/462106640" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Emilio Minichiello <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Databases.2C.20ACT.20and.20complexity.20theory.3F.html#462106640">(Aug 13 2024 at 12:53)</a>:</h4>
+<p>This is the kind of question I am very interested in! I’ve been studying categorical database theory, but have been learning some complexity theory lately. Feel free to DM me</p>
+
+
+
+<a name="462114863"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Databases%2C%20ACT%20and%20complexity%20theory%3F/near/462114863" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Emilio Minichiello <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Databases.2C.20ACT.20and.20complexity.20theory.3F.html#462114863">(Aug 13 2024 at 13:31)</a>:</h4>
+<p>Some possibly related work that may be of some interest: </p>
+<ul>
+<li><a href="https://arxiv.org/abs/2402.00206">Towards a Unified Theory of Time Varying Data </a></li>
+<li><a href="https://arxiv.org/abs/2302.05575">Compositional Algorithms on Compositional Data: Deciding Sheaves on Presheaves</a></li>
+<li><a href="https://ed-galilee.univ-paris13.fr/PDF/contrats%20doctoraux%202022/Mazza1_LIPN_2022_5.pdf">A Categorical Approach to Descriptive Complexity Theory</a></li>
+</ul>
+
+
+
+<a name="504645896"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Databases%2C%20ACT%20and%20complexity%20theory%3F/near/504645896" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> babu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Databases.2C.20ACT.20and.20complexity.20theory.3F.html#504645896">(Mar 10 2025 at 17:18)</a>:</h4>
+<p>Hi! I am reading about CQL and a point I keep coming across is that CQL checks for data integrity at compile time using automated theorem provers. How exactly does this work and what are these provers?</p>
+
+
+
+<a name="504648048"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Databases%2C%20ACT%20and%20complexity%20theory%3F/near/504648048" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Databases.2C.20ACT.20and.20complexity.20theory.3F.html#504648048">(Mar 10 2025 at 17:29)</a>:</h4>
+<p>The document <a href="https://arxiv.org/abs/1503.03571">https://arxiv.org/abs/1503.03571</a> describes how CQL is implemented in terms functional programmers would understand, but the basic idea is that CQL is pluggable: it can use any theorem prover to accomplish its tasks, and we have implemented both our own provers and use open-source ones such as E and Vampire and Egglog.  The need to check functoriality abounds in computational category theory; if people write what they think is a functor, that needs to be check to actually be a functor; not all assignments of objects to objects and morphisms to morphisms that people can write down actually define functors.   But this functoriality check is undecidable, because categories can represent so many kinds of algebraic structure.  Hence, CQL uses a theorem prover to tackle this undecidable problem as best it can</p>
+
+
+
+<a name="504648587"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Databases%2C%20ACT%20and%20complexity%20theory%3F/near/504648587" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Databases.2C.20ACT.20and.20complexity.20theory.3F.html#504648587">(Mar 10 2025 at 17:31)</a>:</h4>
+<p>to elaborate a little bit, if you can decide the "word problem" (entailment) associated to a presentation of a category, then you can do pretty much anything with that category on a computer; but if you can't do that, then it is really hard (But not impossible) to get a computer to manipulate your category.  So every category input into CQL has an associated decision procedure constructed for it (which fails sometimes dues to undecidability, but not usually on real world examples)</p>
+
+
+
+<a name="504649091"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Databases%2C%20ACT%20and%20complexity%20theory%3F/near/504649091" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Databases.2C.20ACT.20and.20complexity.20theory.3F.html#504649091">(Mar 10 2025 at 17:34)</a>:</h4>
+<p>oh, and of course, in the context of co-pre-sheaves (categorical databases) functoriality of a functor C-&gt;Set indicates adherence to the "data integrity constraints" of C, that's how data integrity comes in</p>
+
+
+
+<a name="504652851"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Databases%2C%20ACT%20and%20complexity%20theory%3F/near/504652851" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> babu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Databases.2C.20ACT.20and.20complexity.20theory.3F.html#504652851">(Mar 10 2025 at 17:53)</a>:</h4>
+<p>thank you so much! it is very interesting, I'll take a look</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>cartesian virtual double category · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/cartesian.20virtual.20double.20category.html">cartesian virtual double category</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="479361201"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/cartesian%20virtual%20double%20category/near/479361201" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathaniel Virgo <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/cartesian.20virtual.20double.20category.html#479361201">(Oct 28 2024 at 21:16)</a>:</h4>
+<p>Is there an existing notion of "cartesian virtual double category", analogous to a cartesian double category? If so, is there somewhere I could read about them?</p>
+<p>(It's a fairly idle question because I'm not very knowledgeable about cartesian double categories. I'm mostly asking because the 'virtual' perspective feels like it might be useful for thinking about what they should be like.)</p>
+
+
+
+<a name="479365608"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/cartesian%20virtual%20double%20category/near/479365608" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/cartesian.20virtual.20double.20category.html#479365608">(Oct 28 2024 at 21:55)</a>:</h4>
+<p>The 2-category of virtual double categories has finite products, so one may define a "cartesian virtual double category" to be a <a href="https://ncatlab.org/nlab/show/cartesian%20object">[[cartesian object]]</a> in this 2-category. If you unwind what this means, you get something that looks similar to a cartesian double category, but satisfying a multiary 2-dimensional universal property (as is appropriate for virtual double categories). For virtual double categories <em>with restrictions</em>, the data is explicitly unwound in Proposition 2.8 of Nasu's <a href="https://arxiv.org/abs/2410.06792">An Internal Logic of Virtual Double Categories</a>, but otherwise I don't know of a reference.</p>
+
+
+
+<a name="479376683"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/cartesian%20virtual%20double%20category/near/479376683" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/cartesian.20virtual.20double.20category.html#479376683">(Oct 28 2024 at 23:32)</a>:</h4>
+<p>Looking at that proposition, are you two absolutely <em>sure</em> that without restrictions, a universal property with respect to only special 2-cells is sufficient?  I'd think you would need a stronger version of condition (ii) that allows cells along nontrivial tight arrows.  (EDIT: apparently I was right and the previous comment was amended.)</p>
+
+
+
+<a name="479382354"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/cartesian%20virtual%20double%20category/near/479382354" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/cartesian.20virtual.20double.20category.html#479382354">(Oct 29 2024 at 00:44)</a>:</h4>
+<p>That proposition is only about the case <em>with</em> restrictions, isn't it?  That's what he means by an FVDC.</p>
+
+
+
+<a name="479387818"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/cartesian%20virtual%20double%20category/near/479387818" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/cartesian.20virtual.20double.20category.html#479387818">(Oct 29 2024 at 01:58)</a>:</h4>
+<p>Indeed, that is what the proposition was about in its original context.  I was talking about the modification of taking out condition (iii) to make it work without restrictions.</p>
+
+
+
+<a name="479388851"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/cartesian%20virtual%20double%20category/near/479388851" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/cartesian.20virtual.20double.20category.html#479388851">(Oct 29 2024 at 02:11)</a>:</h4>
+<p>Oh, I see.  Yes, I agree, in the absence of restrictions, in compensation for omitting condition (iii), surely condition (ii)(a) must be strengthened as you suggest to include cells with nontrivial tight boundary.</p>
+
+
+
+<a name="479388877"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/cartesian%20virtual%20double%20category/near/479388877" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/cartesian.20virtual.20double.20category.html#479388877">(Oct 29 2024 at 02:11)</a>:</h4>
+<p>Sorry, I wasn't paying close enough attention.</p>
+
+
+
+<a name="479420000"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/cartesian%20virtual%20double%20category/near/479420000" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/cartesian.20virtual.20double.20category.html#479420000">(Oct 29 2024 at 08:00)</a>:</h4>
+<p>Yes, sorry, my mistake, I didn't look closely enough at the definition. I've amended my previous comment.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

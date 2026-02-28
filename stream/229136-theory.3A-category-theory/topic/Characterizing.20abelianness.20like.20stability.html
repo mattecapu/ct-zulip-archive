@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Characterizing abelianness like stability · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Characterizing.20abelianness.20like.20stability.html">Characterizing abelianness like stability</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="430193915"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Characterizing%20abelianness%20like%20stability/near/430193915" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Characterizing.20abelianness.20like.20stability.html#430193915">(Mar 29 2024 at 02:55)</a>:</h4>
+<p>In Characterizations of Abstract Stable Homotopy Theory by Moritz and Shulman they give the following equivalent conditions for a derivator (eg an infinity category) to be stable <a href="/user_uploads/21317/2MM5HA68hOyXlOfhLuR9AngD/be7b0de7-bb91-4ef6-9955-c01872866648.png">be7b0de7-bb91-4ef6-9955-c01872866648.png</a><br>
+The particular thing I'm interested in here is condition (iii), that stability is equivalent to finite limits and colimits commuting. Is there a similar characterization of abelian categories?</p>
+<div class="message_inline_image"><a href="/user_uploads/21317/2MM5HA68hOyXlOfhLuR9AngD/be7b0de7-bb91-4ef6-9955-c01872866648.png" title="be7b0de7-bb91-4ef6-9955-c01872866648.png"><img src="/user_uploads/21317/2MM5HA68hOyXlOfhLuR9AngD/be7b0de7-bb91-4ef6-9955-c01872866648.png"></a></div>
+
+
+
+<a name="432901493"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Characterizing%20abelianness%20like%20stability/near/432901493" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eigil Rischel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Characterizing.20abelianness.20like.20stability.html#432901493">(Apr 12 2024 at 13:13)</a>:</h4>
+<p>Abelian categories have finite limits and colimits. The condition of having biproducts - that the products and coproducts coincide, which is called either additivity or preadditivity, depending on the source - is equivalent to the condition that products commute with colimits and coproducts commute with limits.</p>
+<p>The further condition of being abelian is that every monomorphism is the kernel of its cokernel, and dually every epimorphism is the cokernel of its kernel. This amounts to a certain compatibility between pushouts and pullbacks - that in a square of this form:</p>
+<p><a href="/user_uploads/21317/35cAgzsZWFr0qgtSA1ZQrgCJ/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/35cAgzsZWFr0qgtSA1ZQrgCJ/image.png" title="image.png"><img src="/user_uploads/21317/35cAgzsZWFr0qgtSA1ZQrgCJ/image.png"></a></div><p>if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \to B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> is a monomorphism and the square is a pushout, then it's a pullback, and dually if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>→</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">B \to C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is an epimorphism, it's a pushout if it's a pullback. This is also some sort of compatibility condition between finite limits and colimits (if it was true for <em>all</em> squares that they were pushouts if and only if pullbacks, then finite limits and colimits would commute), but it's obviously a bit more complicated than the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>-categorical case.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

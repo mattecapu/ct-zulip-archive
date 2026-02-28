@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Ologs: Rigorous Definition of Ologs · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Ologs.3A.20Rigorous.20Definition.20of.20Ologs.html">Ologs: Rigorous Definition of Ologs</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="426200913"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Ologs%3A%20Rigorous%20Definition%20of%20Ologs/near/426200913" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Ologs.3A.20Rigorous.20Definition.20of.20Ologs.html#426200913">(Mar 12 2024 at 19:48)</a>:</h4>
+<p>I am updating my understanding of what an olog is. The most standard notion of what it is, is, you have a sort of “abstract category” where the “objects” are, internally, not really anything. Just as we name objects of a category by variable names like “A”, “B” and “C”, we could consider the “text labels” of an olog to be variable names in the exact same way - an object named “trains”. Necessarily, an olog has a functor to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><annotation encoding="application/x-tex">{\bf Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">Set</span></span></span></span></span></span>. This functor maps exactly a word to the set of real-world referents of that word - like a “denotation functor”, it maps a denotation to what is being denoted.</p>
+<p>I have one issue about this. We are commonly told that sets, as “collections of things”, can be collections of anything, like a paintbrush, a cloud, etc.</p>
+<p>However, when you construct the sets of a set theory, you start with the empty set, and all further sets are defined as sets containing any previously constructed sets. From that perspective, the elements of a set are always other sets. To say there is a “set containing Oscar Wilde” means that there is some specific set, say, ordinal 3, that is taken by convention to represent the person Oscar Wilde. </p>
+<p>How can we justify claiming there is a “set of all trains”? If we are to be mathematically rigorous and use sets as they are actually defined in set theory, there is no “set of all trains”. Do we assume that since there is some finite number of trains in the world, that intuitively, for each element of some ordinal set <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>, we shall associate a specific train with that set?</p>
+<hr>
+<p><a href="https://en.m.wikipedia.org/wiki/Olog#Mathematical_formalism">Wikipedia</a> says there are other options for the “target category” of an olog:</p>
+<blockquote>
+<p>Another target category that can be used is the Kleisli category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi mathvariant="double-struck">P</mi></msub></mrow><annotation encoding="application/x-tex">C_{\mathbb P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3322em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathbb mtight">P</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> of the power set monad. Given an <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∈</mo><mi>O</mi><mi>b</mi><mo stretchy="false">(</mo><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A \in Ob({\bf Set})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mord mathnormal">b</span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathbf">Set</span></span></span><span class="mclose">)</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(A)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mclose">)</span></span></span></span> is the power set of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>. The natural transformation <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi></mrow><annotation encoding="application/x-tex">\eta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">η</span></span></span></span> maps <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">a \in A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> to the singleton <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">a</span><span class="mclose">}</span></span></span></span>, and the natural transformation <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">μ</span></span></span></span> maps a set of sets to its union. (…) The verb phrases used with this target category would need to make sense with objects that are subsets: for example, "is related to" or "is greater than".</p>
+</blockquote>
+<p>I will expand the above definition in an edit to this message asap. I wanted to say I think the idea is that this actually restricts the semantics of an olog rather than broadening them.</p>
+
+
+
+<a name="426201850"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Ologs%3A%20Rigorous%20Definition%20of%20Ologs/near/426201850" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Ologs.3A.20Rigorous.20Definition.20of.20Ologs.html#426201850">(Mar 12 2024 at 19:54)</a>:</h4>
+<p>There's a lot to say about this. </p>
+<blockquote>
+<p>When you construct the sets of a set theory, you start with the empty set, and all further sets are defined as sets containing any previously constructed sets. From that perspective, the elements of a set are always other sets.</p>
+</blockquote>
+<p>That's a certain historically very popular approach called "material set theory".  Most people here like a different approach called <a href="https://ncatlab.org/nlab/show/structural%20set%20theory">[[structural set theory]]</a>.  I think I heard you or someone recently saying something about ETCS.  That's an example of structural set theory.</p>
+
+
+
+<a name="426201899"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Ologs%3A%20Rigorous%20Definition%20of%20Ologs/near/426201899" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Ologs.3A.20Rigorous.20Definition.20of.20Ologs.html#426201899">(Mar 12 2024 at 19:54)</a>:</h4>
+<p>But even structural set theory as most mathematicians do it will not give you a set of trains!</p>
+
+
+
+<a name="426201933"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Ologs%3A%20Rigorous%20Definition%20of%20Ologs/near/426201933" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Ologs.3A.20Rigorous.20Definition.20of.20Ologs.html#426201933">(Mar 12 2024 at 19:55)</a>:</h4>
+<p>Luckily a database does not need to contain an actual train.</p>
+
+
+
+<a name="426202044"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Ologs%3A%20Rigorous%20Definition%20of%20Ologs/near/426202044" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Ologs.3A.20Rigorous.20Definition.20of.20Ologs.html#426202044">(Mar 12 2024 at 19:55)</a>:</h4>
+<p>It's enough for it to contain some data - strings of 0's and 1's, or letters, or numbers, or whatever - which refer to a train.</p>
+
+
+
+<a name="426220106"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Ologs%3A%20Rigorous%20Definition%20of%20Ologs/near/426220106" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Ologs.3A.20Rigorous.20Definition.20of.20Ologs.html#426220106">(Mar 12 2024 at 22:03)</a>:</h4>
+<p>David Spivak develops the theory of ologs for such Kleisli categories here: <a href="https://arxiv.org/abs/1209.1011">https://arxiv.org/abs/1209.1011</a> .  Although nice for modeling "in" the olog, one drawback of this approach is that, using the terminology of institutional model theory, you lose the left and/or right adjoints to the model reduct functor "outside" the olog.  So e.g. in CQL, we would lose at least one of its sigma/pi operations, and hence opted to follow the traditional Set-based approach (and extend it).</p>
+
+
+
+<a name="433400431"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Ologs%3A%20Rigorous%20Definition%20of%20Ologs/near/433400431" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Ologs.3A.20Rigorous.20Definition.20of.20Ologs.html#433400431">(Apr 15 2024 at 22:39)</a>:</h4>
+<p>I have been thinking a lot about ologs and now my view is shifting to consider their expressive power. Spivak has explicitly mentioned that ologs portray “facts”, can be “translated” into natural language “readings”, and are a way of showing the structure of language.</p>
+<p>I am curious how ologs could express “if-then” propositions. </p>
+<p>For example, “if x is a bug, then it has wings y”, is the same as saying “a bug x has a pair of wings y”. Does that mean that all the arrows in an olog can already be read as material implication?</p>
+<p>But what if it is conditional? If a person eats hot sauce, then their mouth will feel spicy. I guess this could go, “a person x” |is associated with|&lt;-- “a person x who eats a hot sauce y” —&gt;|is associated with| “a hot sauce y”</p>
+<p>I feel like ologs are good for talking about atemporal truths, but I am not sure what useful facts they can be used to “prove”, in that case. </p>
+<p>In order to say a person who eats hot sauce will experience spiciness, I have to indicate that as a <em>state</em>, not a defining condition. </p>
+<p>It’s as if the olog has to have a second layer where abstract ideas like “a person” are “instantiated” into time and space. Like, “an instance of a person who eats a hot sauce” is associated with “an instance of a spicy feeling”.</p>
+
+
+
+<a name="433411197"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Ologs%3A%20Rigorous%20Definition%20of%20Ologs/near/433411197" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Ologs.3A.20Rigorous.20Definition.20of.20Ologs.html#433411197">(Apr 16 2024 at 00:10)</a>:</h4>
+<p>for Set-valued ologs, you would need pullbacks or Horn clause logic to specify if-then reasoning.  (Or a type side.)   We see rules like "for every person P such that P.age &gt; 18 there exists an Adult a such that <a href="http://a.id">a.id</a> = <a href="http://p.id">p.id</a>" in data integration all the time; these are if-then rules.  In fact, the datalog language itself is basically nothing but if-then rules.  Anyway, these are called "constraints" in CQL and they admit "model completion" meaning you can take a model that doesn't satisfy the if-then rules and find a unique extension of that model that does satisfy the if-then rules (something that isn't true for arbitrary logic).</p>
+
+
+
+<a name="433411420"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Ologs%3A%20Rigorous%20Definition%20of%20Ologs/near/433411420" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Ologs.3A.20Rigorous.20Definition.20of.20Ologs.html#433411420">(Apr 16 2024 at 00:12)</a>:</h4>
+<p>That’s amazing. I wish I could consult with you more about my attempts to do some formal modeling. Is there any good set of steps for designing one, like, “first define essential nouns, then list possible relations, then start trying to prove properties”?</p>
+
+
+
+<a name="433416783"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Ologs%3A%20Rigorous%20Definition%20of%20Ologs/near/433416783" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Ologs.3A.20Rigorous.20Definition.20of.20Ologs.html#433416783">(Apr 16 2024 at 01:06)</a>:</h4>
+<p>Sure, as a first introduction to data modeling often cs undergrads learn the 'entity relationship model' as well as how to implement such models using SQL.  <a href="https://en.wikipedia.org/wiki/Entity–relationship_model">https://en.wikipedia.org/wiki/Entity–relationship_model</a>  and <a href="http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/er.pdf">http://infolab.stanford.edu/~ullman/fcdb/aut07/slides/er.pdf</a></p>
+
+
+
+<a name="433421751"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Ologs%3A%20Rigorous%20Definition%20of%20Ologs/near/433421751" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Ologs.3A.20Rigorous.20Definition.20of.20Ologs.html#433421751">(Apr 16 2024 at 01:55)</a>:</h4>
+<p>Thanks.<br>
+I’m wondering if there are any reference materials comparing the “expressiveness” of a logic, in a mathematical sense, to what therefore it is suitable for expressing in the real, ontological world.</p>
+<p>For example, David Spivak developed a temporal type theory. This seems to imply that such a system is optimal for expressing temporal phenomena. And yet, why would other formal methods be inadequate for that?</p>
+<p>I’m trying to get a stronger understanding of how things like ologs, description logic, datalog, etc, are better or worse for different kinds of models.</p>
+<p>Most of the models I want to make have some kind of “human” element in them - human experience, perception, emotion, etc. For example, imagine modeling how a certain business organization structure might affect the employees’ well-being. I need to figure out what kinds of concepts are going to be expressed, and which structure has that capability best. I guess it’s partially like a formal ontology. <a href="https://en.m.wikipedia.org/wiki/Formal_ontology">https://en.m.wikipedia.org/wiki/Formal_ontology</a></p>
+
+
+
+<a name="433424719"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Ologs%3A%20Rigorous%20Definition%20of%20Ologs/near/433424719" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Ologs.3A.20Rigorous.20Definition.20of.20Ologs.html#433424719">(Apr 16 2024 at 02:20)</a>:</h4>
+<p>It is indeed possible to translate temporal logic to first order logic: <a href="https://plato.stanford.edu/entries/logic-temporal/#StaTraTLFirOrdLog">https://plato.stanford.edu/entries/logic-temporal/#StaTraTLFirOrdLog</a> .  Gentzen even proved Peano arithmetic consistent by translation to the system of primitive recursive arithmetic + induction on trees.  Sometimes, hierarchies of logics form: <a href="https://ncatlab.org/nlab/show/relation+between+type+theory+and+category+theory">https://ncatlab.org/nlab/show/relation+between+type+theory+and+category+theory</a> .  But asking for an "optimal" logic is like asking for an "optimal" airplane - different logics have different trade-offs.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

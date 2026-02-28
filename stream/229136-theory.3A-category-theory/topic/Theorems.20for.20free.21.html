@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Theorems for free! · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Theorems.20for.20free.21.html">Theorems for free!</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="418948958"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Theorems%20for%20free%21/near/418948958" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Theorems.20for.20free.21.html#418948958">(Jan 31 2024 at 01:05)</a>:</h4>
+<p>In category theory, when teaching the naturality condition for a natural transformation we often say that naturality captures the fact that it is somehow made without reference to any specific properties of the elements involved,  in an ad-hoc way that depends somehow on the set or the elements of the set.<br>
+However, it is difficult to make this intuition precise and rigorous, it is not obvious how to make it a precise mathematical statement that "no ad hoc choices are involved, it is uniform." I do not think that it should be considered a rigorous proof to say "We have made no ad hoc choices, so it is obviously natural".<br>
+Using the axiom of choice we can easily prove the existence of non-natural transformations.<br>
+But in type theory, we can actually express the concept of "abstraction" in a way that we cannot in set theory, we can express that a construction is <em>polymorphic</em> in its input type, which is a kind of abstraction away from the details of the type that cannot be expressed in set theory.<br>
+I was somewhat shocked to come across the following paper by Wadler where he opens with the following theorem:</p>
+<blockquote>
+<p>Every un-natural endo-transformation of the List functor (free monoid monad) in polymorphic type theory (i.e., prima facie not necessarily having to be coherent with the action on morphisms) is automatically natural.</p>
+</blockquote>
+<p>He then goes on to prove a general class of theorems of this form about polymorphic type constructors. I thought this was incredible, it's insane that I was not aware of it.<br>
+<a href="https://dl.acm.org/doi/pdf/10.1145/99370.99404">https://dl.acm.org/doi/pdf/10.1145/99370.99404</a></p>
+
+
+
+<a name="418949194"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Theorems%20for%20free%21/near/418949194" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Theorems.20for.20free.21.html#418949194">(Jan 31 2024 at 01:08)</a>:</h4>
+<p>Yeah, parametricity is mind-blowing!</p>
+
+
+
+<a name="418964878"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Theorems%20for%20free%21/near/418964878" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ralph Sarkis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Theorems.20for.20free.21.html#418964878">(Jan 31 2024 at 04:09)</a>:</h4>
+<p>I also just discovered this in yesterday's stream of <a href="#narrow/stream/229141-community.3A-events/topic/Binary.20Operation">Binary Operation</a>. I found some interesting complementary discussion <a href="https://cs.stackexchange.com/questions/136359/rigorous-proof-that-parametric-polymorphism-implies-naturality-using-parametrici">here</a>.</p>
+
+
+
+<a name="418965892"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Theorems%20for%20free%21/near/418965892" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Theorems.20for.20free.21.html#418965892">(Jan 31 2024 at 04:23)</a>:</h4>
+<p>Oh, I'm sure I must have seen that post and forgotten it but the paper title stuck in my head.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

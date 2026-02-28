@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Generalized polycategories &amp; distributive laws · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Generalized.20polycategories.20.26.20distributive.20laws.html">Generalized polycategories &amp; distributive laws</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="433077525"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Generalized%20polycategories%20%26%20distributive%20laws/near/433077525" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Generalized.20polycategories.20.26.20distributive.20laws.html#433077525">(Apr 13 2024 at 20:49)</a>:</h4>
+<p>The paper "A unified framework for generalized multicategories" has at its heart the construction of the horizontal kleisli virtual double category of a monad on a virtual double category; generalized multicategories are monoids in a horizontal kleisli double category on a virtual equipment satisfying a condition (that they're normalized). Another paper "Polycategories via pseudo-distributive laws" defines a certain type of generalized polycategory (ordinary and symmetric ones) using a kleisli bicategory construction, but this time it's a two sided kleisli category relative to a distributive law of a comonad over a monad. In fact the situation is even more particular: we have a monad on the vertical bicategory of an equipment and by taking companions &amp; conjoints we get both a monad and a comonad on the horizontal bicategory. </p>
+<p>Because I vaguely knew about this polycategory paper I had thought the construction of the horizontal kleisli category in the Crutwell-Shulman paper would generalize easily to a 2 sided kleisli category relative to a distributive law of a comonad over a monad. But I just tried to work out the details and it seems like it breaks down horribly, the arrows for the comonad point in the wrong direction for us to define 2-cells analogous to how we do it for just a monad. However it does seem like (I haven't checked this carefully) the construction goes through for the horizontal kleisli category of a monad distributing over another monad. But this is kinda strange, since (1) for an ordinary category we need a comonad in the domain and a monad in the codomain to define the 2-sided kleisli category and (2) the Garner paper uses both a comonad and a monad. Maybe (1) is a red herring in that we've already given up on having a composition law in a virtual double category and that's where the requirement comes from. But (2) is still confusing to me. Maybe the way the comonad arises, ie by taking a monad and taking conjoints of its structure maps, means we're not "really" working with a comonad at all? I'm not sure.</p>
+<p>If anyone has thought about this or has thoughts on it I'd love to hear</p>
+
+
+
+<a name="433079532"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Generalized%20polycategories%20%26%20distributive%20laws/near/433079532" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Generalized.20polycategories.20.26.20distributive.20laws.html#433079532">(Apr 13 2024 at 21:23)</a>:</h4>
+<p>In Koslowski's <a href="http://www.tac.mta.ca/tac/volumes/14/7/14-07abs.html">A monadic approach to polycategories</a>, he parameterises a generalised polycategory by a distributive law between two monads, not a monad and a comonad.</p>
+
+
+
+<a name="433079735"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Generalized%20polycategories%20%26%20distributive%20laws/near/433079735" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Generalized.20polycategories.20.26.20distributive.20laws.html#433079735">(Apr 13 2024 at 21:26)</a>:</h4>
+<p>I would be interested to know how the approaches relate, though.</p>
+
+
+
+<a name="433094300"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Generalized%20polycategories%20%26%20distributive%20laws/near/433094300" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Generalized.20polycategories.20.26.20distributive.20laws.html#433094300">(Apr 14 2024 at 01:54)</a>:</h4>
+<p>What you want for a virtual-double-categorical version of generalized polycategories is a "horizontal" distributive law relating two <em>vertical</em> monads.  As you noted, in an equipment a vertical monad induces both a horizontal monad and a horizontal comonad, and in Richard's construction he's taken the horizontal monad induced by one of the vertical monads and the horizontal comonad induced by the other one.  I guess this is what you need to do if you want to work purely at the bicategorical level, but at the double-categorical level the natural thing is to have two monads.  The subtle bit though is that the distributive law is <em>horizontal</em> although the monads are vertical; this is the modification that allows you to define a two-sided Kleisli double category.</p>
+
+
+
+<a name="433094322"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Generalized%20polycategories%20%26%20distributive%20laws/near/433094322" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Generalized.20polycategories.20.26.20distributive.20laws.html#433094322">(Apr 14 2024 at 01:54)</a>:</h4>
+<p>(I would be really happy if someone would write down this construction precisely and publish it!  It's been in the back of my mind for years, but I'm probably never going to get around to it.)</p>
+
+
+
+<a name="433095624"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Generalized%20polycategories%20%26%20distributive%20laws/near/433095624" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Generalized.20polycategories.20.26.20distributive.20laws.html#433095624">(Apr 14 2024 at 02:19)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Generalized.20polycategories.20.26.20distributive.20laws/near/433079532">said</a>:</p>
+<blockquote>
+<p>In Koslowski's <a href="http://www.tac.mta.ca/tac/volumes/14/7/14-07abs.html">A monadic approach to polycategories</a>, he parameterises a generalised polycategory by a distributive law between two monads, not a monad and a comonad.</p>
+</blockquote>
+<p>I am just going to warn that a few years ago, I was trying to use this paper and I realised that I couldn't reproduce the main example — that is, that what the author says corresponds to planar polycategories is actually planar polycategories: it seemed to me that composition did not satisfy "interchange", so it was a kind of "premonoidal" version of polycategories. I tried emailing the author but never got a reply (they seem to be doing completely different research nowadays).</p>
+<p>I may have missed something at the time, but all I say is, I wouldn't trust that part unless you are able to reprove it.</p>
+
+
+
+<a name="433095700"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Generalized%20polycategories%20%26%20distributive%20laws/near/433095700" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Generalized.20polycategories.20.26.20distributive.20laws.html#433095700">(Apr 14 2024 at 02:21)</a>:</h4>
+<p>And to clarify, it seemed to me that the technical content on distributive laws of monads was correct, just that it possibly doesn't produce "planar polycategories" as an example in the way that it says it does.</p>
+
+
+
+<a name="433113421"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Generalized%20polycategories%20%26%20distributive%20laws/near/433113421" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Generalized.20polycategories.20.26.20distributive.20laws.html#433113421">(Apr 14 2024 at 07:47)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Generalized.20polycategories.20.26.20distributive.20laws/near/433094322">said</a>:</p>
+<blockquote>
+<p>(I would be really happy if someone would write down this construction precisely and publish it!  It's been in the back of my mind for years, but I'm probably never going to get around to it.)</p>
+</blockquote>
+<p>I'm thinking of writing it down precisely, but I'm not sure I have any interesting applications to put in a paper. I've just been trying to think about what defines a flavor of (higher) category theory and this seemed like an important example to understand for that</p>
+
+
+
+<a name="433114134"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Generalized%20polycategories%20%26%20distributive%20laws/near/433114134" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Generalized.20polycategories.20.26.20distributive.20laws.html#433114134">(Apr 14 2024 at 07:58)</a>:</h4>
+<p>Specifically I was wondering if there are examples that do not fit into this framework (appropriately categorified to handle higher structures, I guess). Eg can we make sense of something like a double category but where the basic cell shape is a hexagon, with three sorts of 1-cells? It seems like this notion of generalized multi/polycategory relative to a distributive law does capture anything where cells have an input and an output and the shape of the inputs/outputs is a reasonably behaved container. But I guess I feel a generalized category should have cells of various dimensions and those cells should have boundaries that are equipped with a partition which for globular things is a partition into an input and an output but eg in double categories the boundary of a 2-cell is a square, with the boundary partitioned into two noncontiguous pairs of 1-cells that all line up correctly</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

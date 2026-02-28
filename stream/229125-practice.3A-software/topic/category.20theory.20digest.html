@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>category theory digest · practice: software · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/index.html">practice: software</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html">category theory digest</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="521725532"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/category%20theory%20digest/near/521725532" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> fosco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html#521725532">(Jun 02 2025 at 11:58)</a>:</h4>
+<p>Yesterday, I watched my old friend <span class="user-mention" data-user-id="279225">@Paolo Brasolin</span> set up a category theory daily digest: every day at 6am arXiv's math.CT feed is scraped by an elf, all submissions of the day are downloaded, parsed, and summarized by GPT-something, which then proceeds to send an email containing a summary of the content of each paper: for example, today's <a href="https://arxiv.org/abs/2505.24010">https://arxiv.org/abs/2505.24010</a> was summarized as:</p>
+<blockquote>
+<h1>Simplicial methods in the resource theory of contextuality</h1>
+<h2>Overview</h2>
+<p>The paper develops a resource theory of quantum contextuality framed in the language of symmetric monoidal categories and enriched by simplicial methods. It generalizes the presheaf-theoretic approach to contextuality using simplicial sets, enabling a incorporation of homotopical and probabilistic structures via the notion of simplicial distributions.</p>
+<h2>Key Concepts Introduced</h2>
+<p>Event Scenarios: A new category generalizing presheaf-based measurement scenarios. Event scenarios are functors from the opposite of a simplicial complex category to sets, satisfying locality, non-triviality, and local surjectivity conditions.<br>
+Bundle Scenarios: Maps of simplicial complexes with properties ensuring local surjectivity and discreteness on vertices, connecting classical and simplicial frameworks. The authors prove equivalence between the category of event scenarios and bundle scenarios using the Grothendieck construction.<br>
+Simplicial Distributions and Empirical Models: Functors that assign convex sets of distributions to scenarios, built using the distribution monad and enriched by homotopy-theoretic structures from simplicial sets.<br>
+Stochastic Simplicial Scenarios: Extension of simplicial scenarios by incorporating stochastic maps constructed using monads with a gluing operation, specifically the distribution monad, to capture probabilistic morphisms coherently across simplicial degrees.<br>
+Resource Theory of Contextuality: The authors formalize the resource theory by forming symmetric monoidal categories of stochastic simplicial scenarios and their distributions, generalizing previous work that treated deterministic simulations and establishing a compositional framework.<br>
+Mapping Scenarios: Internal hom objects providing a natural categorical construction for morphisms between scenarios, enabling a characterization of convex maps between simplicial distributions in terms of noncontextual distributions on the mapping scenario.</p>
+<h2>Main Results and Contributions</h2>
+<p>Equivalence of Categories: They show the category of event scenarios is equivalent to the category of bundle scenarios, bridging two perspectives through categorical methods.<br>
+Extension of Empirical Models: A unified framework for empirical models over event and bundle scenarios via a relative Grothendieck construction, clarifying contextuality notions and their relationships.<br>
+Monoidal Structures: The category of event scenarios is equipped with a symmetric monoidal tensor product, compatible with constructions on bundle and simplicial scenarios, allowing compositional constructions of scenarios and empirical models.<br>
+Stochastic Extensions and Monad Gluing: Introduction of monads with a gluing operation (demonstrated for the distribution monad) enabling stochastic morphisms between scenarios forming a symmetric monoidal category called sScen_D.<br>
+Mapping Scenario Construction: The paper provides a construction of mapping scenarios in event, bundle, and simplicial settings, connecting to classical sheaf-theoretic mapping scenarios and yielding natural isomorphisms.<br>
+Characterization Theorem for Convex Maps: A main technical result characterizes convex maps between simplicial distributions as exactly those induced by noncontextual simplicial distributions on the mapping scenario, extending earlier categorical results in quantum foundations.<br>
+Examples: The authors give explicit examples illustrating contextuality emerging from tensor products of noncontextual factors, demonstrating the expressive power of their monoidal constructions.</p>
+<h2>Structure and Methods</h2>
+<p>The paper is detailed and organized into sections covering the definitions and categorical properties of scenarios, the construction and properties of stochastic simplicial scenarios, and the development of mapping scenarios. Appendices provide background on the Grothendieck construction, properties of the distribution monad, simplicial complexes and their monoidal structures, and comparisons to previous frameworks.</p>
+<h2>Impact and Significance</h2>
+<p>This work advances the categorical understanding of contextuality in quantum theory by fusing simplicial and probabilistic methods within a resource-theoretic framework. It unifies and extends previous approaches, offering new tools for compositional and homotopy-theoretic analysis of contextuality as a resource. The characterization of convex maps via noncontextual distributions on mapping scenarios deepens conceptual clarity and opens pathways for further exploration of quantum foundations and resource theories.</p>
+</blockquote>
+<p>In the long run, my plan is to make n8n fetch my papers' .tex source, dump everything I have ever written in my life in a single text file, compare the content of each digest with my production, and with a massive dataset of resources on category theory; then, our machine overlord outlines what I might need to know about other people's work, and/or what is a keyword also appearing in my research.</p>
+<p>There are still some sharp corners, and probably the tool can be made more ergonomic; but long gone, and ne'er coming back, are the days where research was burdened by the menial task of reading.</p>
+
+
+
+<a name="521733578"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/category%20theory%20digest/near/521733578" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html#521733578">(Jun 02 2025 at 12:31)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="282822">fosco</span> <a href="#narrow/channel/229125-practice.3A-software/topic/category.20theory.20digest/near/521725532">said</a>:</p>
+<blockquote>
+<p>There are still some sharp corners, and probably the tool can be made more ergonomic; but long gone, and ne'er coming back, are the days where research was burdened by the menial task of reading.</p>
+</blockquote>
+<p>The sadness I feel at seeing the phrase "the menial task of reading" is hard to put into words <span aria-label="sad" class="emoji emoji-2639" role="img" title="sad">:sad:</span></p>
+
+
+
+<a name="521736885"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/category%20theory%20digest/near/521736885" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> fosco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html#521736885">(Jun 02 2025 at 12:45)</a>:</h4>
+<p>Let's put this way, better:</p>
+<p>long gone are the days when I had to endure the torture of reading bad prose, in the hope/expectation (often, fortunately not always, unmet) that they contain something interesting, enduring their being written in the haste of XXIth century's publish-or-perish, so I can finally read "Blood Meridian", "Infinite Jest" and Suzuki's "Essays in Zen Buddhism" in the time I freed.</p>
+
+
+
+<a name="521759177"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/category%20theory%20digest/near/521759177" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Romano Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html#521759177">(Jun 02 2025 at 14:18)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="282822">fosco</span> <a href="#narrow/channel/229125-practice.3A-software/topic/category.20theory.20digest/near/521736885">said</a>:</p>
+<blockquote>
+<p>Let's put this way, better:</p>
+<p>long gone are the days when I had to endure the torture of reading bad prose, in the hope/expectation (often, fortunately not always, unmet) that they contain something interesting, enduring their being written in the haste of XXIth century's publish-or-perish, so I can finally read "Blood Meridian", "Infinite Jest" and Suzuki's "Essays in Zen Buddhism" in the time I freed.</p>
+</blockquote>
+<p>I mean, Infinite Jest is not exactly terse...</p>
+
+
+
+<a name="521806675"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/category%20theory%20digest/near/521806675" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html#521806675">(Jun 02 2025 at 17:39)</a>:</h4>
+<p>I guess I'd be pretty worried about hallucinations for this use case, since presumably the whole point is that you generally won't compare the outputs to the actual papers.</p>
+
+
+
+<a name="521813034"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/category%20theory%20digest/near/521813034" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> fosco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html#521813034">(Jun 02 2025 at 18:12)</a>:</h4>
+<p>so far, it's been just a matter to ask it to abstain from introducing anything new to the summary in th prompt ("if for some reason you can't read part of the text, just say so and do not invent anything). Doing so, I have rarely found any substantial difference between the input text and the summary...</p>
+
+
+
+<a name="521813182"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/category%20theory%20digest/near/521813182" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Vincent Moreau <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html#521813182">(Jun 02 2025 at 18:13)</a>:</h4>
+<p>In my own routine, I just open my math.CT bookmark every morning and read the abstracts of the article whose title looks interesting to me. Isn't it the role of the abstract, to provide a short view of what the article is about?</p>
+
+
+
+<a name="521817363"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/category%20theory%20digest/near/521817363" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html#521817363">(Jun 02 2025 at 18:36)</a>:</h4>
+<p>And then the introduction, to provide a somewhat longer view.</p>
+
+
+
+<a name="521817491"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/category%20theory%20digest/near/521817491" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> fosco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html#521817491">(Jun 02 2025 at 18:37)</a>:</h4>
+<p>is this why you don't think it would be useful?</p>
+
+
+
+<a name="521822094"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/category%20theory%20digest/near/521822094" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html#521822094">(Jun 02 2025 at 19:02)</a>:</h4>
+<p>Personally, I'd rather read something written by the authors of the paper, who presumably understand it as well as the larger mathematical context, and have thought about how best to summarize and introduce and motivate it.  (If they haven't thought about it sufficiently to write a good abstract or introduction, that just shows how much they really want me to read their paper.)</p>
+
+
+
+<a name="521851685"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/category%20theory%20digest/near/521851685" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Vincent Moreau <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html#521851685">(Jun 02 2025 at 21:57)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="282822">fosco</span> <a href="#narrow/channel/229125-practice.3A-software/topic/category.20theory.20digest/near/521817491">said</a>:</p>
+<blockquote>
+<p>is this why you don't think it would be useful?</p>
+</blockquote>
+<p>Of course LLMs can be applied in useful ways to synthesize information, but in the case of the summary I would be willing to think that abstracts are probably better for the reasons Mike mentioned. But surely LLMs can produce some other useful information, like detecting patterns across several articles or things of the like, as you seemed to describe in your first post.</p>
+
+
+
+<a name="521916989"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/category%20theory%20digest/near/521916989" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Romano Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html#521916989">(Jun 03 2025 at 06:49)</a>:</h4>
+<p>There are papers that contain results that are interesting for person X and are not necessarily cited in the abstract. It happens often that one needs a paper just to cite a proof of some fact. An LLM that is trained on what someone's working on can provide a better summary than the abstract in this respect. I think it's a useful tool indeed. There are also a lot of other useful applications of this, e.g. expanding sections that have been intentionally mangled to fit into some prescribed page limit, a very common issue in academia.</p>
+
+
+
+<a name="521917117"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/category%20theory%20digest/near/521917117" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fabrizio Romano Genovese <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html#521917117">(Jun 03 2025 at 06:50)</a>:</h4>
+<p>In general "Jesus Christ, this paper seems to be written during a bathroom break" is a comment that I uttered often during my PhD and if there's a tool - any tool - to help me suffer less while I read that's good to me.</p>
+
+
+
+<a name="531997465"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/category%20theory%20digest/near/531997465" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html#531997465">(Jul 31 2025 at 07:11)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="282822">fosco</span> <a href="#narrow/channel/229125-practice.3A-software/topic/category.20theory.20digest/near/521736885">said</a>:</p>
+<blockquote>
+<p>endure the torture of reading bad prose, in the hope/expectation (often, fortunately not always, unmet) that they contain something interesting,</p>
+</blockquote>
+<p>This to me sounds like reading LLM output. Particularly when it's LLM output that's summarising a bunch of LLM-written crank papers on math.CT</p>
+
+
+
+<a name="532043912"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/category%20theory%20digest/near/532043912" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Josh Chen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html#532043912">(Jul 31 2025 at 11:05)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="282822">fosco</span> <a href="#narrow/channel/229125-practice.3A-software/topic/category.20theory.20digest/near/521813034">said</a>:</p>
+<blockquote>
+<p>so far, it's been just a matter to ask it to abstain from introducing anything new to the summary in th prompt ("if for some reason you can't read part of the text, just say so and do not invent anything). Doing so, I have rarely found any substantial difference between the input text and the summary...</p>
+</blockquote>
+<p>Does this prompt actually reliably work? I've never understood how it can, since the entire mechanism of LLMs is basically statement invention. I'm not saying it doesn't help, I can imagine e.g. correlating the LLM output with the paper content for "relatedness". But this is still different from recognizing that no "invention" has taken place and likely to be less reliable precisely in research areas with novel concepts.</p>
+
+
+
+<a name="532385543"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/category%20theory%20digest/near/532385543" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html#532385543">(Aug 01 2025 at 22:07)</a>:</h4>
+<p>I can't resist sharing this <a href="https://xcancel.com/jasonlk/status/1946069562723897802">story</a>. (tl;dr: developer asks ai not to do something, ai does it)</p>
+
+
+
+<a name="532387205"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/category%20theory%20digest/near/532387205" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/category.20theory.20digest.html#532387205">(Aug 01 2025 at 22:25)</a>:</h4>
+<p>The fact that <em>anyone</em> is willing to give a pattern engine the ability to <em>do</em> consequential things on its own frightens me beyond measure.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

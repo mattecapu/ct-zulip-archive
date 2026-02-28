@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Name of this fuzzy logic (1,2)-topos? · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html">Name of this fuzzy logic (1,2)-topos?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="489586745"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489586745" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489586745">(Dec 17 2024 at 23:02)</a>:</h4>
+<p>Maybe the problem is that you describe this "obvious construction" in a very detailed way that would require quite a bit of work to follow.    Maybe you can compress it down to a sentence or two?   Generalizing it might make it easier to understand its key features.  When I read</p>
+<blockquote>
+<p>The subobject classifier has two vertices T and F, and five edges: four for each way of including or excluding the source and target while excluding the edge, plus one more for including source, target, and edge.</p>
+</blockquote>
+<p>my eyes glaze over, because I don't know the 'big picture'.</p>
+
+
+
+<a name="489590137"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489590137" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489590137">(Dec 17 2024 at 23:33)</a>:</h4>
+<p>Thanks for responding.  Sorry if it wasn't clear; I thought the Set-enriched examples would be helpful for contextualizing the construction.  Here's the short version: </p>
+<p>In the arrow topos of functions and commuting squares, the subobject classifier looks like</p>
+<div class="codehilite"><pre><span></span><code>0 1 2  ΩD domain
+| | |
+| |/   Ωf
+| |
+∨ ∨
+⊥ ⊤    ΩC codomain
+</code></pre></div>
+
+<p>ΩD is a totally ordered set, with 0/"false" &lt; 1/"intermediate" &lt; 2/"true".</p>
+
+
+
+<a name="489590396"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489590396" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489590396">(Dec 17 2024 at 23:35)</a>:</h4>
+<p>There's a pretty obvious generalization to a Pos-enriched structure (described above) where the truth values ΩD have an entire open unit interval of intermediate values.  Does the construction have a name?</p>
+
+
+
+<a name="489590689"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489590689" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489590689">(Dec 17 2024 at 23:38)</a>:</h4>
+<p>The particular thing you mentioned your eyes glazing over at is this picture you posted on Azimuth:</p>
+
+
+
+<a name="489590699"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489590699" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489590699">(Dec 17 2024 at 23:38)</a>:</h4>
+<p><a href="/user_uploads/21317/qeuY3LCc9HETU50rCYHVVQtm/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/qeuY3LCc9HETU50rCYHVVQtm/image.png" title="image.png"><img data-original-dimensions="360x173" src="/user_uploads/thumbnail/21317/qeuY3LCc9HETU50rCYHVVQtm/image.png/840x560.webp"></a></div>
+
+
+
+<a name="489591188"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489591188" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489591188">(Dec 17 2024 at 23:42)</a>:</h4>
+<p>When we insist that s ≤ t, the top blue edge gets excluded because T (the green vertex, the source of the top blue edge) is not less than or equal to F (the red vertex, the target of the top blue edge), leaving four totally ordered edges.</p>
+
+
+
+<a name="489592490"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489592490" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489592490">(Dec 17 2024 at 23:54)</a>:</h4>
+<p>We could think of them as the truth values {0, 1/3, 2/3, 1}, though there's no real concept of magnitude beyond the total order.</p>
+
+
+
+<a name="489592699"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489592699" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489592699">(Dec 17 2024 at 23:56)</a>:</h4>
+<p>Thanks!   I bet some of the topos theorists here could comment.</p>
+
+
+
+<a name="489625068"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489625068" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489625068">(Dec 18 2024 at 05:57)</a>:</h4>
+<p>Exactly what construction are you asking whether it has a name?  The (1,2)-topos of presheaves on this specific small (1,2)-category?  Or its subobject classifier?</p>
+
+
+
+<a name="489626501"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489626501" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489626501">(Dec 18 2024 at 06:10)</a>:</h4>
+<p>The (1,2)-topos itself, like "the unit interval topos" or "Fuzz" or something.  (I presume it has a name; it seems too obvious and simple not to have a common name.)</p>
+
+
+
+<a name="489627023"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489627023" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489627023">(Dec 18 2024 at 06:16)</a>:</h4>
+<p>Not a lot of people have studied (1,2)-toposes.</p>
+
+
+
+<a name="489627041"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489627041" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489627041">(Dec 18 2024 at 06:16)</a>:</h4>
+<p>Huh. OK, thanks.</p>
+
+
+
+<a name="489628785"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489628785" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489628785">(Dec 18 2024 at 06:33)</a>:</h4>
+<p>Irrelevantly:<br>
+<span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F/near/489625068">said</a>:</p>
+<blockquote>
+<p>Exactly what construction are you asking whether it has a name?</p>
+</blockquote>
+<p>This is one of those sentences that I can't figure out how to write it grammatically in English.</p>
+<p>The previous sentence should be "This is one of those sentences that I can't figure out how to write grammatically in English" -- the "it" is omitted since "those sentences" were already mentioned earlier.  But the question version "Exactly what construction are you asking whether has a name?" sounds wrong to me, although the version with "it" also sounds wrong, and I can't figure out a way to rephrase it that sounds right.</p>
+
+
+
+<a name="489641124"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489641124" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489641124">(Dec 18 2024 at 06:54)</a>:</h4>
+<p>Ha, I love it!  Maybe, "Whether exactly what construction has a name are you asking?" <br>
+ Or, "About exactly what construction are you asking whether the construction has a name?"</p>
+
+
+
+<a name="489647648"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489647648" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489647648">(Dec 18 2024 at 06:59)</a>:</h4>
+<p>In french, that would be "quelle est cette construction dont tu cherches le nom?"<br>
+A literal translation would be "what is that construction you are looking the name for?"</p>
+
+
+
+<a name="489696497"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489696497" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489696497">(Dec 18 2024 at 07:36)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276048">Mike Stay</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F/near/489641124">said</a>:</p>
+<blockquote>
+<p>Ha, I love it!  Maybe, "Whether exactly what construction has a name are you asking?"</p>
+</blockquote>
+<p>Whoo-ee!  Makes sense in principle, but while I can imagine pronouncing that aloud so that the listener might have a chance of parsing it correctly (with a rising tone on "what", to make it clear that that's the question word in the question <em>I'm</em> asking), even knowing how it is to be parsed my brain rebels at making sense of it written down.  (-:</p>
+<blockquote>
+<p>Or, "About exactly what construction are you asking whether the construction has a name?"</p>
+</blockquote>
+<p>Hmm, that might work.  It's a little awkward, but probably clear.  Could it be just "About exactly what construction are you asking whether it has a name?"</p>
+
+
+
+<a name="489700647"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489700647" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489700647">(Dec 18 2024 at 08:08)</a>:</h4>
+<p>It's an interesting grammatical puzzle. Perhaps rephrasing to avoid "it" (without introducing repetition) is clearest?</p>
+<blockquote>
+<p>Regarding which construction are you asking whether there exists a name?</p>
+</blockquote>
+
+
+
+<a name="489700791"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489700791" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489700791">(Dec 18 2024 at 08:09)</a>:</h4>
+<p>("About which" might be a better, less formal choice.)</p>
+
+
+
+<a name="489703356"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489703356" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489703356">(Dec 18 2024 at 08:26)</a>:</h4>
+<p>Hmm... as a mathematician I feel queasy about a "there exists" that isn't followed by a "such that"... (-:O</p>
+<p>Seriously, with that phrasing it doesn't sound as clear to me that the name being asked about is a name for the construction.</p>
+
+
+
+<a name="489703862"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489703862" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489703862">(Dec 18 2024 at 08:29)</a>:</h4>
+<p>Would "For which" make that clearer, or does it still have the same problem?</p>
+
+
+
+<a name="489704686"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489704686" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489704686">(Dec 18 2024 at 08:34)</a>:</h4>
+<p>Ah, that would help!  "there exists a name for this" is clearer than "there exists a name regarding this".</p>
+
+
+
+<a name="489704839"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489704839" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489704839">(Dec 18 2024 at 08:35)</a>:</h4>
+<p>"For exactly what construction are you asking whether there is a name?"</p>
+
+
+
+<a name="489808303"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489808303" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489808303">(Dec 18 2024 at 17:30)</a>:</h4>
+<p>I think an “it” construction of the form “Of exactly which construction are you asking whether it has a name?” seems to land for me about as well, didn’t see us ruling out that one.</p>
+
+
+
+<a name="489811659"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489811659" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489811659">(Dec 18 2024 at 17:50)</a>:</h4>
+<p>Hmm... I wouldn't say "I am asking of that construction whether it has a name" -- that sounds like I went up to the construction and said "hey, do you have a name"?</p>
+
+
+
+<a name="489811975"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489811975" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489811975">(Dec 18 2024 at 17:52)</a>:</h4>
+<p>But going back to "about" might work: "about which construction are you asking whether it has a name?"  "I am asking about that construction whether it has a name."</p>
+
+
+
+<a name="489812407"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Name%20of%20this%20fuzzy%20logic%20%281%2C2%29-topos%3F/near/489812407" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Name.20of.20this.20fuzzy.20logic.20.281.2C2.29-topos.3F.html#489812407">(Dec 18 2024 at 17:54)</a>:</h4>
+<p>That's a little more awkward to my ear than Nathanael's suggestion, but I think it works.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

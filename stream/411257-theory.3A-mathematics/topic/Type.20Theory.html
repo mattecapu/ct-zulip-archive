@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Type Theory · theory: mathematics · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/index.html">theory: mathematics</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Type.20Theory.html">Type Theory</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="437106240"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Type%20Theory/near/437106240" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Type.20Theory.html#437106240">(May 05 2024 at 12:07)</a>:</h4>
+<p>Working through Ebbinghaus 2021, would enjoy some supplementary conversation.</p>
+<p><a href="/user_uploads/21317/JUywsD6AFdrCwXi6F9xGFAXD/2F436725-4B4D-4992-B307-1642795B593C.jpg">2F436725-4B4D-4992-B307-1642795B593C.jpg</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/JUywsD6AFdrCwXi6F9xGFAXD/2F436725-4B4D-4992-B307-1642795B593C.jpg" title="2F436725-4B4D-4992-B307-1642795B593C.jpg"><img src="/user_uploads/21317/JUywsD6AFdrCwXi6F9xGFAXD/2F436725-4B4D-4992-B307-1642795B593C.jpg"></a></div><p>One thing I have yet to feel comfortable with is why first order logic is standardly presented with exactly those groups of symbols: variables, constants, functions, relations, logical operators, quantifiers, equality, and punctuation.</p>
+<p>I have been thinking it becomes more obvious if you formulate the same thing in type theory.</p>
+<p>“Constants” I believe are terms from any number of atomic types. Thus we begin with the idea of a multi-sorted theory. The only specific type we need is the binary type <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>=</mo><mo stretchy="false">{</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">2 = \{0, 1\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">}</span></span></span></span> (to express truth values).</p>
+<p>I don’t think variables are necessary; they are more like implicit. They are not a type.</p>
+<p>Everything else is definable in terms of function types and the product type. For example, logical symbols like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∧</mo></mrow><annotation encoding="application/x-tex">\wedge</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5556em;"></span><span class="mord">∧</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext></mrow><annotation encoding="application/x-tex">\implies</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2778em;"></span></span></span></span> are functions <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mn>2</mn><mo>×</mo><mn>2</mn><mo>→</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">f: 2 \times 2 \to 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span>.</p>
+<p>I’m wondering if there is a concept of “subtypes”, and I’m wondering how we might define quantifiers.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Categories of Wiring Diagrams · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Categories.20of.20Wiring.20Diagrams.html">Categories of Wiring Diagrams</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="535855098"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Categories%20of%20Wiring%20Diagrams/near/535855098" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Richard Samuelson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Categories.20of.20Wiring.20Diagrams.html#535855098">(Aug 23 2025 at 17:52)</a>:</h4>
+<p>Wiring diagrams in symmetric monoidal categories compose in two ways: end-to-end ("categorically") and via substitution ("operadically"). Is there a (higher) (generalized) (multi-)category of wiring diagrams in which both composition operations appear, along with identities relating them?</p>
+
+
+
+<a name="535855666"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Categories%20of%20Wiring%20Diagrams/near/535855666" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Categories.20of.20Wiring.20Diagrams.html#535855666">(Aug 23 2025 at 18:03)</a>:</h4>
+<p>Note that end-to-end composition is a special case of substitution: take the two diagrams you want to compose end-to-end and substitute them both into the linear diagram with two nodes on a single wire.</p>
+
+
+
+<a name="535855808"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Categories%20of%20Wiring%20Diagrams/near/535855808" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Richard Samuelson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Categories.20of.20Wiring.20Diagrams.html#535855808">(Aug 23 2025 at 18:06)</a>:</h4>
+<p>I see!</p>
+
+
+
+<a name="535857083"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Categories%20of%20Wiring%20Diagrams/near/535857083" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Categories.20of.20Wiring.20Diagrams.html#535857083">(Aug 23 2025 at 18:37)</a>:</h4>
+<p>Given that, we can take substitution as primary, which looks like the multiplication for a monad whose algebras are symmetric monoidal categories.  So one guess would be that we can take the monad on the category of <a href="https://ncatlab.org/nlab/show/pre-nets">[[pre-nets]]</a> whose algebras are symmetric strict monoidal categories, and then consider generalized multicategories for that monad.</p>
+<p>Unfortunately, that doesn't work.  Specifically, that monad is not cartesian, because it "contains" the free abelian monoid monad: the endomorphisms of the unit object in a monoidal category are an abelian monoid, and a pre-net contains events with no input or output places that generate such endomorphisms.</p>
+
+
+
+<a name="535857164"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Categories%20of%20Wiring%20Diagrams/near/535857164" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Categories.20of.20Wiring.20Diagrams.html#535857164">(Aug 23 2025 at 18:39)</a>:</h4>
+<p>I don't know that anyone has worked out a really satisfying solution to that problem.  I and various others have thought about it and tried various things.</p>
+<p>One thing you can do is restrict the allowed pre-nets.  For instance, I think if you require all events to have exactly one place as output, or if you require all events to have at least one place as both input and output, in both of those cases you can get a cartesian monad and hence a notion of generalized multicategory.</p>
+
+
+
+<a name="535920217"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Categories%20of%20Wiring%20Diagrams/near/535920217" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Richard Samuelson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Categories.20of.20Wiring.20Diagrams.html#535920217">(Aug 24 2025 at 19:03)</a>:</h4>
+<p>Thank you for getting back to me <span class="user-mention" data-user-id="276777">@Mike Shulman</span> ! I think that this question has to do with examples 4.2.14 and 4.2.15 in Leinster's <em>Higher Operads, Higher Categories</em>. He says that labelled trees form generalized multi-categories in two different ways: end-to-end and via substitution.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

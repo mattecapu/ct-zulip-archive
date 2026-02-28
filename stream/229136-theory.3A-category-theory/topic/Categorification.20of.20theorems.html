@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Categorification of theorems · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Categorification.20of.20theorems.html">Categorification of theorems</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="422513027"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Categorification%20of%20theorems/near/422513027" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Categorification.20of.20theorems.html#422513027">(Feb 20 2024 at 22:37)</a>:</h4>
+<p>We have some general theories of categorification, for example opetopes seem to provide a general framework for categorification as the slice construction for opetopes automatically gives you these notions of relations between relations. There are many definitions of higher category. Recently in a related thread someone posted Garner's "Homomorphisms of higher categories" paper which gives a general technique to categorify strict functors to give definitions of weak functors between higher categories.</p>
+<p>Do any of these theories of categorification have any associated theorems about categorification of theorems? I.e. if A is the original theory and A' is the categorified theory, some limited fragment of the theory of A is directly translatable to the A' theory, where equalities are weakened to isomorphisms. Are there any such systematic ways of proving that results holding for lower categories hold for higher categories appropriately weakened?</p>
+
+
+
+<a name="422526524"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Categorification%20of%20theorems/near/422526524" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Categorification.20of.20theorems.html#422526524">(Feb 21 2024 at 00:59)</a>:</h4>
+<p>I think there are a few transfer theorems like that in homotopy theory but even there they end up doing most of the work the hard way.  Proving results in homotopy type theory (or rather, if you really want a "transfer theorem", intensional Martin-Lof type theory without Axiom K) is the most powerful method I know of off the top.</p>
+
+
+
+<a name="422527713"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Categorification%20of%20theorems/near/422527713" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Categorification.20of.20theorems.html#422527713">(Feb 21 2024 at 01:13)</a>:</h4>
+<p>It's almost impossible (read: usually actually impossible) to do with theorems as statements without looking at the proof at all because those equalities you were using and throwing away in classical proofs now have content and often to even get the statement you really want there are actual things to be proven <em>about</em> them.  Proofs as mathematical objects often contain enough information to recover what you need, but just the fact that they're true almost never does.</p>
+
+
+
+<a name="422528593"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Categorification%20of%20theorems/near/422528593" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Categorification.20of.20theorems.html#422528593">(Feb 21 2024 at 01:25)</a>:</h4>
+<p>The most efficient thing you can do is to work in a fragment of logic which is powerful enough that you can prove the classical theorem with a classical proof, but weak enough that it can only prove theorems whose "space of truth values" is (-1)-truncated in the categorified world.  (Maybe it can do other <em>constructions</em>, but has a way to separate them syntactically from theorems.)  Then you kind of don't need to know what the proof is, just that it was done in that fragment.  The problem with this is that traditional (pre-Univalent Foundations) mathematical logic outside of some obscure corners didn't really concern itself with most of the fragments of interest for this.  I think a lot of the classical algebraic topologists' interest in operads was exactly concerned with this, so you might want to look into that area.</p>
+
+
+
+<a name="423079413"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Categorification%20of%20theorems/near/423079413" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Categorification.20of.20theorems.html#423079413">(Feb 23 2024 at 19:20)</a>:</h4>
+<p>This is a really good point by the way, thanks for the observation. I agree that certainly the proof itself should be what lifts to the higher setting.</p>
+
+
+
+<a name="423114755"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Categorification%20of%20theorems/near/423114755" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Categorification.20of.20theorems.html#423114755">(Feb 24 2024 at 00:23)</a>:</h4>
+<p>Have you seen this paper? <a href="https://www.cse.chalmers.se/~peterd/papers/Coherence_Monoidal.pdf">https://www.cse.chalmers.se/~peterd/papers/Coherence_Monoidal.pdf</a></p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

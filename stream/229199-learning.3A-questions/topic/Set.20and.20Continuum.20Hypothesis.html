@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Set and Continuum Hypothesis · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Set.20and.20Continuum.20Hypothesis.html">Set and Continuum Hypothesis</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="431330556"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Set%20and%20Continuum%20Hypothesis/near/431330556" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Set.20and.20Continuum.20Hypothesis.html#431330556">(Apr 04 2024 at 14:46)</a>:</h4>
+<p>I don't know any set theory, only a very minor amount of category theory, so most likely this question will seem silly. But a little bit ago I was, in a sense, wondering what the category Set actually "looks like" from the point of view of its underlying directed graph of dots and arrows between them. I then began thinking- wouldn't its structure depend on the Continuum Hypothesis? Let's say TSet is the category Set when the external set theory we are building category theory on has the Continuum Hypothesis as true, and FSet for when it is false. There then should be a fully faithful embedding TSet -&gt; FSet, but this is not an equivalence because some isomorphism classes of objects- namely, the sets of cardinality between the cardinality of the naturals and reals- will be in FSet but not in TSet. </p>
+<p>It's already confusing that Set might "look different" depending on your external set theory. But an even more confusing question, and my question here today, is: what does Set (IE, by way of its underlying directed graph) "look like" when the Continuum Hypothesis is not assumed in either direction? Is "Set" even a validly defined category anymore, or is it some weird object in a "quantum superposition" between being the category FSet AND TSet at the same time? Or, most likely, do I have some misunderstanding of something that is going on here? Any help much appreciated!</p>
+
+
+
+<a name="431337787"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Set%20and%20Continuum%20Hypothesis/near/431337787" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Set.20and.20Continuum.20Hypothesis.html#431337787">(Apr 04 2024 at 15:16)</a>:</h4>
+<p>I'm not sure exactly what you mean by "looks like", but in general the structure of the category Set is essentially equivalent to the properties of the model of set theory it was constructed from.  At least, if your set theory is as strong as ZFC, then the category Set and the model <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>V</mi><mo separator="true">,</mo><mo>∈</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(V,\in)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mclose">)</span></span></span></span> are inter-constructible.</p>
+
+
+
+<a name="431337954"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Set%20and%20Continuum%20Hypothesis/near/431337954" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Set.20and.20Continuum.20Hypothesis.html#431337954">(Apr 04 2024 at 15:16)</a>:</h4>
+<p>In particular, there are as many "categories Set" as there are models of set theory.  So it makes no sense to talk of "the" category Set when CH is assumed, since there are many models of set theory satisfying CH and hence many such categories.</p>
+
+
+
+<a name="431338145"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Set%20and%20Continuum%20Hypothesis/near/431338145" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Set.20and.20Continuum.20Hypothesis.html#431338145">(Apr 04 2024 at 15:17)</a>:</h4>
+<p>In general, by Godel's incompleteness theorem, any reasonably specified set theory will still have many different models, and hence give rise to many different "categories Set".</p>
+
+
+
+<a name="431363875"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Set%20and%20Continuum%20Hypothesis/near/431363875" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Set.20and.20Continuum.20Hypothesis.html#431363875">(Apr 04 2024 at 17:09)</a>:</h4>
+<p>Mike's points should be very helpful, but I'll say a bit more:</p>
+<blockquote>
+<p>It's already confusing that Set might "look different" depending on your external set theory.</p>
+</blockquote>
+<p>I wouldn't put it quite that way, but this confusing stuff was a crucial realization in modern logic: Goedel's first incompleteness theorem, together with his completeness theorem (yeah he had one of those too) imply sufficiently powerful axioms systems never have a unique model.  In particular, there are infinitely many models of ZFC (assuming it's consistent: otherwise there are none at all), and it continues to have infinitely many models if we add any finite set of extra axioms (assuming it's still consistent with those extra axioms).   This is also true of Peano Arithmetic, the most popular axioms for natural numbers.</p>
+
+
+
+<a name="431364449"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Set%20and%20Continuum%20Hypothesis/near/431364449" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Set.20and.20Continuum.20Hypothesis.html#431364449">(Apr 04 2024 at 17:13)</a>:</h4>
+<p>So, I think the best way to deal with this stuff is to learn a tiny bit of model theory, the soundness and completeness theorems for first order logic, Goedel's first and second incompleteness theorems, and just for kicks the Loewenheim-Skolem theorems, and really let them sink deep into your worldview.</p>
+
+
+
+<a name="431365031"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Set%20and%20Continuum%20Hypothesis/near/431365031" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Set.20and.20Continuum.20Hypothesis.html#431365031">(Apr 04 2024 at 17:16)</a>:</h4>
+<p>After you're done, you won't be inclined to say that "Set might look different..." but rather something like "given any background set theory, there are many models of the ZFC axioms, each of which gives its own category".</p>
+
+
+
+<a name="431365438"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Set%20and%20Continuum%20Hypothesis/near/431365438" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Set.20and.20Continuum.20Hypothesis.html#431365438">(Apr 04 2024 at 17:18)</a>:</h4>
+<p>But in your background set theory, Set is the category of all sets.</p>
+
+
+
+<a name="431385785"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Set%20and%20Continuum%20Hypothesis/near/431385785" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Set.20and.20Continuum.20Hypothesis.html#431385785">(Apr 04 2024 at 19:16)</a>:</h4>
+<p>Ah thanks for the help! I didn't expect/know Godel's incompleteness theorem would factor in here, but now I know at least some of the implications it has in category theory.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

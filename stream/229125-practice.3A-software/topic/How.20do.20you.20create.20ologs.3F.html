@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>How do you create ologs? · practice: software · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/index.html">practice: software</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html">How do you create ologs?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="536251542"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536251542" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Csongor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536251542">(Aug 26 2025 at 14:33)</a>:</h4>
+<p>I'm software architect and I use ologs to design the components of a system -- the abstractions and their relationship.</p>
+<p>Since I'm new to ologs I need to use instances to make sure an aspect is valid. If the instances of two types connect well, then the aspect becomes valid.</p>
+<p>For drawing boxes and arrows we have plenty of tools: <a href="http://draw.io/">draw.io</a>, quiver, catcolab etc. But none of them offer instances.</p>
+<p>More, on complex diagrams I use (co)spans, (co)products, facts, universal properties ... also none of these are available in classic diagram creator tools.</p>
+<p>So I was left with a custom homemade React app which does these basics [1].</p>
+<p>But I still wonder if a.) are there people creating ologs with instances b.) how they manage to do it without a dedicated app?</p>
+<p>Thanks a lot!</p>
+
+
+
+<a name="536261225"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536261225" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536261225">(Aug 26 2025 at 15:21)</a>:</h4>
+<p>In principle, most data sets (instances), such as SQL data sets, can be put into 'categorical normal form', so that you can e.g. do functorial data migration on them using e.g. SQL or whatever you'd like.  And checking olog instances against their olog schemas is pretty easy (decidable).  (vs checking morphisms of ologs, which is hard/undecidable.) For tooling that manipulates olog instances, there's the old FQL tool <a href="https://github.com/categoricalData/fql">https://github.com/categoricalData/fql</a> that operates by SQL translation.  The newer CQL tool <a href="https://categoricaldata.net">https://categoricaldata.net</a> will use external engines such as egglog or the E theorem prover to operate.   CQL also contains EASIK and a CQL &lt;-&gt; EASIK bridge for editing olog schemas <a href="https://mta.ca/~rrosebru/project/Easik/">https://mta.ca/~rrosebru/project/Easik/</a> .  CQL is operated primarily by writing formulae in regular logic, to be close to database theory, rather than using graphical notations, and provides data import/export to SQL, CSV, XML, JSON, RDF, etc.  Do please ping me if you want to use it and I can help you set it up!</p>
+
+
+
+<a name="536272471"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536272471" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536272471">(Aug 26 2025 at 16:18)</a>:</h4>
+<p>CatColab does have simple support for instances as "diagrams" in a model, by the way. Facts are in a PR merging pretty soon that will allow for cospan composition of models. I'd be interested to understand more how you use co/products and such in what sounds like a diagram-drawing workflow!</p>
+
+
+
+<a name="536272930"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536272930" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536272930">(Aug 26 2025 at 16:20)</a>:</h4>
+<p>The other software we use at Topos for instances is <a href="https://github.com/AlgebraicJulia/Catlab.jl">CatLab</a> in AlgebraicJulia. It mainly considers instances in terms of data structures, not in terms of drawing diagrams, but has visualization capabilities via export to GraphViz.</p>
+
+
+
+<a name="536370074"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536370074" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Csongor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536370074">(Aug 27 2025 at 08:24)</a>:</h4>
+<p>Thanks <span class="user-mention" data-user-id="281326">@Ryan Wisnesky</span>! The first tool I've met after learning about ologs / functorial migrations was FQL/CQL. That EASIK screenshot triggered, I guess, the idea to have a fully featured olog editor. Something similar, but without the db aspect (schema, sql, db, code, java). A pure thinking / design tool in the browser, so easy to use as pen and paper.</p>
+
+
+
+<a name="536379397"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536379397" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Csongor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536379397">(Aug 27 2025 at 09:19)</a>:</h4>
+<p><span class="user-mention" data-user-id="609515">@Kevin Carlson</span> I've checked the CatColab's olog feature and my impression is that this a tool for advanced ACT practitioners who, by experience, can draw boxes and arrows on the fly, which are always correct (valid aspects, commute). And these olog diagrams together with other diagrams are part of a larger research process. </p>
+<p>In contrast, I'm an olog end-user, somebody who likes to understand the relationships between <code>a person</code> and <code>a car</code>, somebody who wants to draw a person box, a car box, then see why he can't just connect these two things with a <code>has</code> arrow.</p>
+<p>I've re-created all the ologs from Spivak's "OLOGS: A CATEGORICAL FRAMEWORK FOR KNOWLEDGE REPRESENTATION" first with pen and paper, then with my home made app. The biggest hurdle with pen and paper was the instances, that's why I've created the app.</p>
+<p>Now I use this technique to design / architect software [1], and a friend of mine, a political scientist is using ologs to decide the truthiness of a simple sentence, which is usually the end result of a long research of his entire department. </p>
+<p>More, we are playing olog games with friends ... they come up with a mundane / hard / funny question / thing and we put it into the olog editor and see if it's true, how it works, how to twist it to make it true. </p>
+<p>In other words I believe ologs are a general purpose tool, easy to learn as the Pythagoras theorem, and <em>everybody should use it</em>, young and old :D :P</p>
+<p>When posting here I was wondering if anybody else came already to this conclusion, and more, if by chance there is an olog tool for end users like me.</p>
+<p>[1] This is a long article how I've created the <code>list</code> software concept using ologs for structure and finite state machines for behavior.  The olog part, with screenshots featuring product types is here:  <a href="https://www.osequi.com/studies/list/list.html#provably-correct-structure-with-ologs">https://www.osequi.com/studies/list/list.html#provably-correct-structure-with-ologs</a></p>
+
+
+
+<a name="536466762"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536466762" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536466762">(Aug 27 2025 at 17:23)</a>:</h4>
+<p>Thanks! But what is it about CatColab that makes you feel that way? We don't intend it to require any particular brilliance from the practitioner, so it'd be great to understand why it reads like that to you. I don't understand, in particular, why you feel like you need to always come up with "valid aspects" and commutative diagrams in CatColab; I don't particularly even know what you mean by "validity" here, or why you can't back up and change an olog in CatColab as well as in your preferred tool.</p>
+
+
+
+<a name="536468830"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536468830" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536468830">(Aug 27 2025 at 17:37)</a>:</h4>
+<p>Good question, Kevin.    What makes Catcolab feel like it's only for experts, <span class="user-mention" data-user-id="952176">@Csongor</span> </p>
+<p>I'm good at math but terrible at everything to do with software, so let's see how hard it is for me to set up an olog on Catcolab.   I type "olog Catcolab" into a search engine, blunder my way to</p>
+<p><a href="https://catcolab.org/help/logics/simple-olog">Logics / Olog</a></p>
+<p>and try to avoid getting intimidated by not reading anything, just trying to figure out how to start creating an olog.  I don't see anything that tells me how to do it, so I click on an example:</p>
+<p><a href="https://catcolab.org/model/0194d356-a82a-7362-afd2-72e30864ba9d">Novels and novelists</a></p>
+<p>I see an olog: some boxes with arrows going between them, labeled by text.  I don't see how to create new boxes, but I can type new words into the existing boxes.  So it seems to work.</p>
+<p>Okay, there's a weird little gray thing with a plus sign on it near the bottom, so I try that.  Using that I'm able to create a new type "A dog" and a new aspect "A dog has as owner an author".   So it seems to work.</p>
+<p>At top left there's a bunch of gray lines, and if I click on those I get to choose "New model", and if I click on that I see "Informal".  I don't know what that means, but I bet it's the <em>kind</em> of model.  So I click on that and I get a big menu with a lot of choices of <em>kind</em> of model.  To avoid becoming intimidated by all these choices, I just click on "olog".</p>
+<p>Then I get a mostly empty page that says "Untitled" - but luckily, in gray it says "Click button or press Shift-Enter to create a cell", and thanks to the example I sort of know how to create an olog by clicking on this.</p>
+<p>This seems roughly as easy or hard as doing, say, a money transfer on my bank account.</p>
+
+
+
+<a name="536474717"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536474717" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536474717">(Aug 27 2025 at 18:15)</a>:</h4>
+<p>Cool! That's not ideal but it could definitely be worse and we're aware of most of the points at which it was harder than it really needs to be. I do notice that you don't seem to have wandered into the "new analysis" button, which is where you would actually <em>visualize</em> your olog, nor the "new diagram" button, which is where you would instantiate one.</p>
+
+
+
+<a name="536475575"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536475575" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536475575">(Aug 27 2025 at 18:21)</a>:</h4>
+<p>I saw them, actually.   I was just trying to get started....</p>
+
+
+
+<a name="536475683"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536475683" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536475683">(Aug 27 2025 at 18:22)</a>:</h4>
+<p>Sure, I guess I should have said something more like "did you experience any distress at not having drawn or instantiated these ologs yet, or were you just getting started?"</p>
+
+
+
+<a name="536479268"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536479268" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Csongor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536479268">(Aug 27 2025 at 18:47)</a>:</h4>
+<p><span class="user-mention" data-user-id="609515">@Kevin Carlson</span> I guess the keyword is "olog end user" ... a person who reads the Spivak paper and expects a whiteboard where he can draw ologs [1]</p>
+<p>In contrast, when I open CatColab &gt; Get Started &gt; Menu ... I see "New model" ... Me, as an olog practitioner I don't even know what a model would be ... No word about models in the Spivak paper.</p>
+<p>So the key thing is the lens: you, researchers have a tremendous knowledge about CT/ACT, an olog end user knows only types, aspects, instances, facts ... boxes and arrows, and the content (instances) of the boxes defines the validity of the arrows.</p>
+<p>Don't get me wrong, CatColab is perhaps the best tool for research, various modelling, but there are users (hopefully there will be) who needs only to draw boxes, add content, and see how the arrows behave. These users might not even have math education, or heard about category theory, like my political sciences friend who likes using it that simple digital whiteboard.</p>
+<p>[1] A quick screencast of my olog app, a simple whiteboard: <a href="https://drive.google.com/file/d/1NKPk1kMLjWIZNnql4orbLPUm27UmB98Z/view?usp=sharing">https://drive.google.com/file/d/1NKPk1kMLjWIZNnql4orbLPUm27UmB98Z/view?usp=sharing</a></p>
+<p>[2] A screenshot of CatColab / Menu: <a href="https://drive.google.com/file/d/1veuTqPkE7FW1Hvb45z5EPZtvxx1N9ecl/view?usp=sharing">https://drive.google.com/file/d/1veuTqPkE7FW1Hvb45z5EPZtvxx1N9ecl/view?usp=sharing</a></p>
+
+
+
+<a name="536479415"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536479415" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Csongor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536479415">(Aug 27 2025 at 18:49)</a>:</h4>
+<p>One sec, updating the links from Google Drive to something freely accessible</p>
+
+
+
+<a name="536479420"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536479420" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536479420">(Aug 27 2025 at 18:49)</a>:</h4>
+<p>OK, that helps a lot; the most key distinction is that CatColab is not just for building ologs, but also for "models" of many other "theories" (there is a certain "theory" whose models are "ologs") so to make it comfortable for somebody who just wants ologs we ought to have a version of the user interface that hides all the different theories.</p>
+
+
+
+<a name="536479974"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536479974" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Csongor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536479974">(Aug 27 2025 at 18:53)</a>:</h4>
+<p>Great! Those are the two 'free' links: </p>
+<p>[1] - <a href="https://limewire.com/d/DpTKB#7tXc7QWjf6">https://limewire.com/d/DpTKB#7tXc7QWjf6</a><br>
+[2] - <a href="https://limewire.com/d/o2Fao#Gy1HCaZWBA">https://limewire.com/d/o2Fao#Gy1HCaZWBA</a></p>
+
+
+
+<a name="536480278"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536480278" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Csongor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536480278">(Aug 27 2025 at 18:55)</a>:</h4>
+<p>On the other hand John said it perfectly: "try to avoid getting intimidated by not reading anything" ... CatColab would be intimidating for someone who knows only a few things about ologs and nothing about CT/ACT</p>
+
+
+
+<a name="536480474"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536480474" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536480474">(Aug 27 2025 at 18:56)</a>:</h4>
+<p>Thanks for those! I can't really see the whole interface in your app, I guess you use a keyboard interaction to make a new entity type? I like the interface for tables quite a lot.</p>
+
+
+
+<a name="536480742"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536480742" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Csongor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536480742">(Aug 27 2025 at 18:58)</a>:</h4>
+<p>Try it at your own peril :D <a href="https://oe-clean.surge.sh/">https://oe-clean.surge.sh/</a> .... for example pressing 'h' brings up the menu, and drawing arrows is not always successful, it might drop a new type/thing instead</p>
+
+
+
+<a name="536480998"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536480998" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Csongor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536480998">(Aug 27 2025 at 19:00)</a>:</h4>
+<p>hint: double click to get started, aka drop a type/thing <br>
+pro tip: start drawing an arrow from an existing box then drop it for a new box</p>
+
+
+
+<a name="536481432"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536481432" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Csongor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536481432">(Aug 27 2025 at 19:03)</a>:</h4>
+<p>Dark mode is more user friendly ....</p>
+<p><a href="/user_uploads/21317/ckjrwlB0eMzR044qk_TD-mhk/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/ckjrwlB0eMzR044qk_TD-mhk/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="3198x2070" src="/user_uploads/thumbnail/21317/ckjrwlB0eMzR044qk_TD-mhk/image.png/840x560.webp"></a></div>
+
+
+
+<a name="536750424"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/536750424" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#536750424">(Aug 29 2025 at 09:26)</a>:</h4>
+<p>I hope, <span class="user-mention" data-user-id="609515">@Kevin Carlson</span>, that it would be pretty easy to create an interface for Catcolab that <em>only does ologs</em>, or only does some other sort of model.   And maybe it could have a little red dot in the lower right corner (I'm joking, I hate these cryptic icons that are so fashionable nowadays) that if you clicked on it would say "YOU HAVE EATEN THE RED PILL: ALL OF THIS WAS JUST A TINY PORTION OF WHAT CATCOLAB IS CAPABLE OF", or something a bit less ridiculous, and welcome you to a broader framework.</p>
+
+
+
+<a name="537547440"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/How%20do%20you%20create%20ologs%3F/near/537547440" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/How.20do.20you.20create.20ologs.3F.html#537547440">(Sep 03 2025 at 20:13)</a>:</h4>
+<p>Yes, this is a really nice idea! I've recorded it on our issue tracker.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

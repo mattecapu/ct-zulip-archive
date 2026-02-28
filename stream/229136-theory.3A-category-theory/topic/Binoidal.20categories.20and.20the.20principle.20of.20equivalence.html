@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Binoidal categories and the principle of equivalence · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html">Binoidal categories and the principle of equivalence</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="439070835"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439070835" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439070835">(May 16 2024 at 17:43)</a>:</h4>
+<p>The definition of <em>binoidal category</em> as given at <a href="https://ncatlab.org/nlab/show/premonoidal%20category">[[premonoidal category]]</a> seems overly strict and, in fact, seems to not respect the <a href="https://ncatlab.org/nlab/show/principle%20of%20equivalence">[[principle of equivalence]]</a>. So this gives it an air of a not-particular-categorical concept. All the papers that I've seen that define binoidal category give a similar definition that mentions equality on objects.</p>
+<p>Is this inevitable?</p>
+
+
+
+<a name="439072259"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439072259" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kenji Maillard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439072259">(May 16 2024 at 17:52)</a>:</h4>
+<p>Example 13.4 page 111 of <a href="https://arxiv.org/abs/2102.06275">The Univalence Principle</a> by Benedikt Ahrens, Paige Randall North, Michael Shulman, and Dimitris Tsementzis does tackle the case of premonoidal categories.</p>
+
+
+
+<a name="439080467"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439080467" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439080467">(May 16 2024 at 18:44)</a>:</h4>
+<p>Ah, thanks, yes, that does seem better. (Minor point: it is example 13.4 but that's on p.117; I was confused as there's an example 12.4 on p.111 !)</p>
+
+
+
+<a name="439083538"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439083538" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439083538">(May 16 2024 at 19:00)</a>:</h4>
+<p>And I was able to formalize that in Agda in no time, and it looks like it's going to be smooth sailing to work with that.</p>
+
+
+
+<a name="439101011"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439101011" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Saville <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439101011">(May 16 2024 at 21:03)</a>:</h4>
+<p>I would push back a bit on this idea that definitions which don't respect the principle of equivalence should be viewed as "not particularly categorical". My feeling is that we shouldn't get into the habit of automatically making all our definitions weaker just so the principle of equivalence holds, because in some cases it adds work without clarifying the theory.  (Though I accept that when it comes to formalisation things might well be the opposite!) </p>
+<p>For example, I think people would agree Gray-monoids or Gray-categories (see <a href="https://www.sciencedirect.com/science/article/pii/S0001870897916492">e.g. Day and Street</a>) are "categorical", but their definition involves a similar equality to binoidal categories. And this arises very naturally from the enriched category theory. (I strongly suspect similar properties are in play in the binoidal case.)</p>
+<p>Alternatively: Lawvere theories are typically defined using strict preservation of products, but I don't think this is ever an obstacle in developing their theory. In fact I suspect that making the definition weaker but invariant under equivalence would add complication without much gain. Another similar example would be the Kelly-Eilenberg definition of closed categories, which uses an identity of functors but -- so far as I remember -- that doesn't cause any issues with the proofs. (Again, I'm talking here about pen-and-paper mathematics rather than formalisation.)</p>
+<p>For another, perhaps more provocative, example: functors strictly preserving some kind of structure are typically not closed under isomorphism (e.g. a strict product preserving functor can be naturally isomorphic to one that only preserves products up to iso) but it is sometimes very useful to work with strict functors because you can then talk about uniqueness on the nose, and so get (1-dimensional) adjunctions.  This occurs quite often in even in categorical semantics but is especially obvious in higher category theory. For example, in his  book <em>Coherence in three-dimensional category theory</em> Gurski often states free properties using strict pseudofunctors or similar. Taking the idea things ought to be invariant under equivalence completely seriously in this setting would require us to work up to equivalence of pseudofunctors, which would change the universal property from an adjunction to a biadjunction. So we'd have to do a lot more work only to get a property that's much less easy to work with. (And that's before we start on any tricategories!)</p>
+
+
+
+<a name="439102528"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439102528" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439102528">(May 16 2024 at 21:14)</a>:</h4>
+<p>The only reason the definition on the nLab looks non-categorical is that we're used to a bundled definition of "functor" that includes the action on objects, so if you want to have two functors that act the same on objects you have to ask for an equality of objects.  The solution is to view "a functor whose action on objects is F" as a perfectly good and categorical definition, given a function F on objects.  This notion can't be defined categorically in terms of the definition of "functor", but rather the reverse: a functor is a function F on objects together with "a functor whose action on objects is F".</p>
+
+
+
+<a name="439102620"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439102620" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439102620">(May 16 2024 at 21:14)</a>:</h4>
+<p>This is a totally different issue from things like the strictness of strict 2-categories and Gray-categories.</p>
+
+
+
+<a name="439114398"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439114398" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439114398">(May 16 2024 at 22:44)</a>:</h4>
+<p><span class="user-mention" data-user-id="276777">@Mike Shulman</span> 's interpretation seems to me to be of the same flavour as "identity on objects functors" - it is a bunch of data that <em>induces</em> a functor, but not a special kind of functor. As an unbundled definition, IOO makes perfect sense.</p>
+<p>I much prefer that view as also applied to Binoidal.</p>
+
+
+
+<a name="439217110"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439217110" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Saville <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439217110">(May 17 2024 at 12:57)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence/near/439102528">said</a>:</p>
+<blockquote>
+<p>The only reason the definition on the nLab looks non-categorical is that we're used to a bundled definition of "functor" that includes the action on objects, so if you want to have two functors that act the same on objects you have to ask for an equality of objects. The solution is to view "a functor whose action on objects is F" as a perfectly good and categorical definition, given a function F on objects</p>
+</blockquote>
+<p>This is a neat point I've not appreciated before :)</p>
+<p>My worry is that sometimes we give the impression that a definition involving identities should automatically be considered less 'nice' than definitions which are weak enough to be respected by equivalence. I imagine a student writing down the definition of binoidal category and then thinking to themselves it can't be right, so they throw it away and end up writing something much more complicated when they didn't need to.</p>
+<p>So my point is that  </p>
+<ol>
+<li>
+<p>Definitions that at first sight appear 'suspect' can actually arise for good reasons. For me, Mike's argument is a nice example of this: the binoidal definition looks 'off' but is actually quite natural from the right point of view. And I suggested Gray-monoids because they have a very similar equality between functors on objects, which also occurs very naturally because it falls out of the definition of the Gray tensor product on Cat. </p>
+</li>
+<li>
+<p>Even if a definition does involve some equalities that are not preserved by equivalence, that doesn't necessarily make it less good. Perhaps one might have to occasionally take a bit more care but the net simplification in the theory can make this worthwhile. For me, Lawvere theories and closed categories sit in this bracket.</p>
+</li>
+</ol>
+
+
+
+<a name="439222969"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439222969" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439222969">(May 17 2024 at 13:26)</a>:</h4>
+<p>I don't think that definitions that are written using identities (on objects) are necessarily bad - but as software developers says, it is a "code smell". It's not that what you're trying to define (such as Binoidal categories, identity on objects functors, Lawvere theories, etc) are themselves bad, but that the means you've chosen to define them is suspect.</p>
+<p>I think using a variety of different foundations is useful in this regard: certain settings (such as dependent type theory) let you more easily see that some definitions' exact phrasing is suspect. In some foundations (like ZFC), certain utterances are invisibly equivalent.</p>
+<p>In many of the cases that I've encountered, the subtle difference is between <em>is</em> and <em>induces</em> -- a category, a functor, etc. It's a data-flow problem: what data is given a priori, and what data can be extracted a posteriori out of a bundle. Equalities on a posteriori information is problematic, equalities that are pre-witnessed on a priori information is perfectly fine. (This is quite clear IOO Functors, IMHO.)</p>
+
+
+
+<a name="439234453"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439234453" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Philip Saville <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439234453">(May 17 2024 at 14:26)</a>:</h4>
+<p>For me the word 'suspect' is too strong. By which I mean: I can't recall an instance where this 'suspect'ness has actually caused me a problem in a proof (e.g. when working with binoidal categories or Lawvere theories or whatever). In my mind it doesn't reduce the stock of examples but does simplify the theory so I'm happy. Of course, I might just be outing myself as someone who has never tried to persuade a theorem prover of every detail of their definitions, because I know then these issues can really bite!  </p>
+<p>Part of my motivation for being so pernickety is that a lot of people learn CT from Zulip nowadays, and I want to point out that -- while one can be very careful about making everything invariant --  you don't <em>have</em> to do that in order to do good category theory. And there are central concepts in the field where this happens (or at least appears to). We can debate which is better, but I do think both approaches are actually fine.</p>
+<p>(I do agree with your point about different foundations being a useful way to make explicit coercions so we can ask ourselves whether or not we're really happy with them, and also that there's lots of interesting questions about whether one can tweak the phrasing of a definition to make it more invariant. But I think we probably disagree on the extent to which these questions trouble us in our day-to-day research!)</p>
+
+
+
+<a name="439246884"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439246884" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439246884">(May 17 2024 at 15:30)</a>:</h4>
+<p>Gray-monoids do have an equality like binoidal/premonoidal categories that can be dealt with in the same way, but they also have strict associativity and unit laws which can't be removed similarly.  The latter sort of strictness is of a different flavor, and also appears more simply in strict 2-categories.  I would probably argue that Eilenberg-Kelly closed categories are also of that sort, since an EK closed structure is not transportable across an equivalence of categories (but every LaPlaza-Manzyuk closed category is <em>isomorphic</em> to an EK one with different hom-sets -- a sort of "strictification theorem" like "every bicategory is equivalent to a strict 2-category").</p>
+
+
+
+<a name="439247316"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439247316" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439247316">(May 17 2024 at 15:32)</a>:</h4>
+<p>When working in <a href="https://ncatlab.org/nlab/show/set-level%20foundations">[[set-level foundations]]</a>, I agree that definitions that are "too strict" aren't necessarily wrong, and can be very useful on occasion.  When using them one incurs an extra obligation to verify that all the "important" constructions are equivalence-invariant (in addition to the "strictification" result that justifies their use in the first place), but sometimes that can be a worthwhile price to pay for the simplification that accrues from strictness.  <a href="https://ncatlab.org/nlab/show/2-monad">[[2-monad]]</a> theory is one of my favorite examples of this.</p>
+
+
+
+<a name="439247703"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439247703" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439247703">(May 17 2024 at 15:34)</a>:</h4>
+<p>But in <a href="https://ncatlab.org/nlab/show/higher-level%20foundations">[[higher-level foundations]]</a>, the "too strict" definitions usually aren't sufficiently general, e.g. it's no longer true that every bicategory is equivalent to a strict 2-category.</p>
+
+
+
+<a name="439356197"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439356197" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Max New <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439356197">(May 18 2024 at 13:44)</a>:</h4>
+<p>The original article is a bit sloppy, I should probably clean up the writing. A binoidal category is simply a category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> equipped with a "separately functorial bifunctor" <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo separator="true">,</mo><mi>C</mi><mo>→</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">C,C \to C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> (would be nice to have simple terminology for separate vs jointly functorial bifunctors). Separately functorial bifunctors respect equivalence of categories so there's no issue with the principle of equivalence.</p>
+<p>You seem to be complaining that the definition of separately functorial bifunctor (which is basically inlined on this page) says that it is two functors that agree on objects, and that in general imposing equality of functors on objects is not equivalence-respecting. But just because each intermediate step of a construction doesn't follow from a generally applicable equivalence-respecting principle doesn't mean that the final construction is not equivalence respecting.</p>
+
+
+
+<a name="439402315"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439402315" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439402315">(May 19 2024 at 03:28)</a>:</h4>
+<p>It's indeed very sad that bifunctors are not separately functorial functors but jointly functorial functors</p>
+
+
+
+<a name="439402363"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439402363" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439402363">(May 19 2024 at 03:29)</a>:</h4>
+<p>In fact I would push to reappropriate bifunctor for the latter since there is no reason to call bifunctors the first instead of just 'functors of 2 variables' or the suchlike</p>
+
+
+
+<a name="439403618"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439403618" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439403618">(May 19 2024 at 03:51)</a>:</h4>
+<p>I think the word "bifunctor" is just unfortunate and should be retired completely.  It could variously be interpreted as a joint functor of two variables, a separate functor of two variables, a functor between bicategories, or a functor that is also a cofunctor.</p>
+
+
+
+<a name="439599053"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439599053" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439599053">(May 20 2024 at 15:39)</a>:</h4>
+<p>I forgot about the last two. Ugh.</p>
+
+
+
+<a name="439848475"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439848475" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439848475">(May 21 2024 at 15:52)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276642">Max New</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence/near/439356197">said</a>:</p>
+<blockquote>
+<p>The original article is a bit sloppy, I should probably clean up the writing.  [...]<br>
+You seem to be complaining that the definition of separately functorial bifunctor (which is basically inlined on this page) says that it is two functors that agree on objects, and that in general imposing equality of functors on objects is not equivalence-respecting. But just because each intermediate step of a construction doesn't follow from a generally applicable equivalence-respecting principle doesn't mean that the final construction is not equivalence respecting.</p>
+</blockquote>
+<p>You're probably correct that my main complaint is one of "sloppy writing". </p>
+<p>There is definitely an issue of who is the audience: is the nLab purely reference material for people who are assumed to already know all of this intimately, or is it also meant as somewhat pedagogical material for people new to the less standard parts of category theory? I'd say the vast majority of readers belong to the latter class of people.</p>
+<p>So yeah, "sloppy writing" will definitely confuse me. I am not at the level of understanding (yet) where I can tell that apart from 'the definition means what it says <em>exactly</em>'.</p>
+
+
+
+<a name="439879128"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439879128" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439879128">(May 21 2024 at 18:40)</a>:</h4>
+<p>The nLab is whatever people make of it.  There's lots of pedagogical material, but lots of articles don't have a pedagogical aspect just because no one has felt inspired to write it yet.</p>
+
+
+
+<a name="439880254"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/439880254" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#439880254">(May 21 2024 at 18:46)</a>:</h4>
+<p>I don't know why I keep getting myself embroiled in these things. I don't care about binoidal categories... I was trying to help someone else. Next thing I knew, I was way way deep in a rabbit hole that I had no idea even existed, never mind being as this deep.</p>
+
+
+
+<a name="440175864"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440175864" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440175864">(May 22 2024 at 20:21)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276642">Max New</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence/near/439356197">said</a>:</p>
+<blockquote>
+<p>Separately functorial bifunctors respect equivalence of categories so there's no issue with the principle of equivalence.</p>
+</blockquote>
+<p>Maybe I'm misunderstanding some of the words in this sentence, but this surprises me.<br>
+Say <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span> is the "walking isomorphism". Isn't a "separately functorial bifunctor" <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo separator="true">,</mo><mi>I</mi><mo>→</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">I, I \to C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> the same as giving a possibly non-commuting square of isomorphisms in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span>?<br>
+While a "separately functorial bifunctor" <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo separator="true">,</mo><mn>1</mn><mo>→</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">1, 1 \to C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is just an object of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span>; and these aren't equivalent. Unless the natural transformations are also not what I expect, maybe?</p>
+
+
+
+<a name="440175961"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440175961" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440175961">(May 22 2024 at 20:22)</a>:</h4>
+<p>(I'm also open to the possibility that "principle of equivalence" doesn't mean what I expect)</p>
+
+
+
+<a name="440180639"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440180639" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440180639">(May 22 2024 at 20:48)</a>:</h4>
+<p>Yes, I think I agree.  In fact, that's one of the important and subtle things about premonoidal categories and their ilk, that things in them are <em>not</em> invariant under arbitrary isomorphism, but only under central isomorphism.  That's why they were an interesting example for the ANST paper.</p>
+
+
+
+<a name="440180918"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440180918" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440180918">(May 22 2024 at 20:50)</a>:</h4>
+<p>So perhaps the definition is "non-categorical" in that sense.  I was just thinking of the fact that it can be defined without reference to equality of objects.</p>
+
+
+
+<a name="440348046"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440348046" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440348046">(May 23 2024 at 15:32)</a>:</h4>
+<p>There's a tensor product of categories called the <a href="https://ncatlab.org/nlab/show/funny%20tensor%20product">[[funny tensor product]]</a> such that a separately functorial bifunctor from C,D to a category K is the same as a functor from the funny tensor product of C and D to K.  The funny tensor product is a symmetric monoidal structure on the category Cat - in fact, one of the only two symmetric monoidal closed structures on the category Cat! </p>
+<p><span class="user-mention" data-user-id="277473">@Morgan Rogers (he/him)</span> gave an example implying that the funny tensor product can't extend to a monoidal structure on the <em>2-category</em> of categories, functors and natural transformations, because equivalent categories can have inequivalent funny tensor products.</p>
+
+
+
+<a name="440349044"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440349044" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440349044">(May 23 2024 at 15:37)</a>:</h4>
+<p>So, we can conclude that the <em>other</em> symmetric monoidal closed structure on Cat, namely the cartesian product, is the only one that extends to a monoidal structure on the 2-category of categories, functors and natural transformations!</p>
+
+
+
+<a name="440349277"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440349277" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440349277">(May 23 2024 at 15:38)</a>:</h4>
+<p>I wonder if there are any other places in mathematics where the word "funny" has been given a precise meaning.</p>
+
+
+
+<a name="440350707"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440350707" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440350707">(May 23 2024 at 15:46)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence/near/440348046">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> gave an example implying that the funny tensor product can't extend to a monoidal structure on the <em>2-category</em> of categories, functors and natural transformations, because equivalent categories can have inequivalent funny tensor products.</p>
+</blockquote>
+<p>I'd already forgotten that I did that... Someone could put that on the nLab page ;)</p>
+
+
+
+<a name="440351440"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440351440" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440351440">(May 23 2024 at 15:50)</a>:</h4>
+<p>Do it before you forget!  <span aria-label="wink" class="emoji emoji-1f609" role="img" title="wink">:wink:</span></p>
+
+
+
+<a name="440355581"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440355581" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440355581">(May 23 2024 at 16:12)</a>:</h4>
+<p>suggestion for a title: "A Tale of Two Tensors"  </p>
+<p>just kidding, but it would be nice to have it in the nLab.</p>
+
+
+
+<a name="440366173"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440366173" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440366173">(May 23 2024 at 17:14)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence/near/440348046">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> gave an example implying that the funny tensor product can't extend to a monoidal structure on the <em>2-category</em> of categories, functors and natural transformations, because equivalent categories can have inequivalent funny tensor products.</p>
+</blockquote>
+<p>What is the consequence of this? That it's not possible to define "premonoidal natural transformations"?</p>
+
+
+
+<a name="440366413"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440366413" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jules Hedges <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440366413">(May 23 2024 at 17:16)</a>:</h4>
+<p>Around here there's also <a href="https://ncatlab.org/nlab/show/sesquicategory">[[sesquicategory]]</a>, which are to premonoidal categories as 2-categories are to monoidal categories, ie. it's like a 2-category but without the interchange law. Allegedly they are categories enriched in Cat with the funny tensor</p>
+
+
+
+<a name="440401715"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440401715" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440401715">(May 23 2024 at 21:28)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence/near/440351440">said</a>:</p>
+<blockquote>
+<p>Do it before you forget!  <span aria-label="wink" class="emoji emoji-1f609" role="img" title="wink">:wink:</span></p>
+</blockquote>
+<p>Done. It's one of those cases where the simplest possible example of an equivalence gives a counterexample.</p>
+
+
+
+<a name="440457658"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440457658" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440457658">(May 24 2024 at 07:44)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275901">Jules Hedges</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence/near/440366413">said</a>:</p>
+<blockquote>
+<p>Around here there's also <a href="https://ncatlab.org/nlab/show/sesquicategory">[[sesquicategory]]</a>, which are to premonoidal categories as 2-categories are to monoidal categories, ie. it's like a 2-category but without the interchange law. Allegedly they are categories enriched in Cat with the funny tensor</p>
+</blockquote>
+<p>Yes, the allegation is true.    Relatedly, there are 3 important tensor products of 2-categories: the white tensor product (= funny tensor product, where you don't fill in the squares that get formed by pairs of morphisms), the Gray tensor product (where you fill them in, either with a 2-morphism or a 2-isomorphism), and the black tensor product (= cartesian product, where you fill them in with an equation, making the squares commute).</p>
+
+
+
+<a name="440458677"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440458677" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440458677">(May 24 2024 at 07:52)</a>:</h4>
+<p>Although, as you alluded to in the corresponding parenthetical, there are actually 3 Gray tensor products, one where the morphism goes in each way and a third where it's invertible.</p>
+
+
+
+<a name="440459581"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440459581" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440459581">(May 24 2024 at 07:58)</a>:</h4>
+<p>Yes, so we've got a total of 5 tensor products of 2-categories here!</p>
+
+
+
+<a name="440474772"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440474772" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martti Karvonen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440474772">(May 24 2024 at 09:38)</a>:</h4>
+<p>Given that the funny tensor product doesn't extend to the 2-category Cat, I'd expect that some (at least the white tensor product) of these 5 tensor products fail to work for the 3-category of 2-categories (or perhaps issues come up already for 2-cells?). Is that the case?</p>
+
+
+
+<a name="440481200"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440481200" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440481200">(May 24 2024 at 10:23)</a>:</h4>
+<p>A counterexample for even the 2-functoriality of the (lax/colax) Gray tensor product is given <a href="https://mathoverflow.net/a/459360">in this MathOverflow answer</a>.</p>
+
+
+
+<a name="440528587"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440528587" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440528587">(May 24 2024 at 15:11)</a>:</h4>
+<p>However, the lax Gray tensor product is a functor of "lax-Gray 3-categories" and dually, just by abstract enriched category theory.</p>
+
+
+
+<a name="440532591"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440532591" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440532591">(May 24 2024 at 15:37)</a>:</h4>
+<p>To clarify, are you saying that, since the lax Gray tensor product forms a closed structure on the category 2-Cat, we can enrich in it, in which case 2-Cat becomes a (lax Gray)-enriched category, and the lax Gray tensor product is consequently also (lax Gray)-enriched?</p>
+
+
+
+<a name="440532626"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440532626" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440532626">(May 24 2024 at 15:37)</a>:</h4>
+<p>Yes!</p>
+
+
+
+<a name="440532695"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440532695" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440532695">(May 24 2024 at 15:37)</a>:</h4>
+<p>Although actually, I didn't check that that works in the usual way when the tensor product is non-symmetric, so it's possible I just lied.</p>
+
+
+
+<a name="440532807"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440532807" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440532807">(May 24 2024 at 15:38)</a>:</h4>
+<p>Hmm, yes, I think I lied.</p>
+
+
+
+<a name="440532965"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440532965" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440532965">(May 24 2024 at 15:39)</a>:</h4>
+<p>To make the tensor product an enriched functor on a closed monoidal category, you want <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo stretchy="false">]</mo><mo>⊗</mo><mo stretchy="false">[</mo><mi>C</mi><mo separator="true">,</mo><mi>D</mi><mo stretchy="false">]</mo><mo>→</mo><mo stretchy="false">[</mo><mi>A</mi><mo>⊗</mo><mi>C</mi><mo separator="true">,</mo><mi>B</mi><mo>⊗</mo><mi>D</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[A,B] \otimes [C,D] \to [A\otimes C, B\otimes D]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mclose">]</span></span></span></span>, which by adjunction is equivalent to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo stretchy="false">]</mo><mo>⊗</mo><mo stretchy="false">[</mo><mi>C</mi><mo separator="true">,</mo><mi>D</mi><mo stretchy="false">]</mo><mo>⊗</mo><mi>A</mi><mo>⊗</mo><mi>C</mi><mo>→</mo><mi>B</mi><mo>⊗</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">[A,B] \otimes [C,D] \otimes A \otimes C \to B\otimes D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span>, and the obvious thing to do is put together the evaluation maps <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo stretchy="false">]</mo><mo>⊗</mo><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">[A,B]\otimes A \to B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>C</mi><mo separator="true">,</mo><mi>D</mi><mo stretchy="false">]</mo><mo>⊗</mo><mi>C</mi><mo>→</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">[C,D]\otimes C \to D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span>, but it looks like to do that you have to permute <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>C</mi><mo separator="true">,</mo><mi>D</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[C,D]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mclose">]</span></span></span></span> past <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>.</p>
+
+
+
+<a name="440558620"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440558620" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440558620">(May 24 2024 at 18:29)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277285">Martti Karvonen</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence/near/440474772">said</a>:</p>
+<blockquote>
+<p>Given that the funny tensor product doesn't extend to the 2-category Cat, I'd expect that some (at least the white tensor product) of these 5 tensor products fail to work for the 3-category of 2-categories (or perhaps issues come up already for 2-cells?). Is that the case?</p>
+</blockquote>
+<p>Yeah, I'm also a little confused about how it can be that the white tensor product exists but the funny tensor product isn't 2-functorial on Cat, but haven't gotten a chance to actually try to work it out yet.</p>
+
+
+
+<a name="440560161"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440560161" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440560161">(May 24 2024 at 18:41)</a>:</h4>
+<p><span class="user-mention" data-user-id="609515">@Kevin Carlson</span> - When I said there's a white tensor product of 2-categories I didn't say this put a monoidal structure on the 2-category or 3-category 2Cat.   My guess is that it only puts a monoidal structure on the 1-category 2Cat, just like the funny tensor product of 1-categories only puts a monoidal structure on the 1-category Cat, not the 2-category.</p>
+
+
+
+<a name="440560291"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440560291" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440560291">(May 24 2024 at 18:42)</a>:</h4>
+<p>And just like the Gray tensor product is only on the 1-category 2Cat, as we just concluded.</p>
+
+
+
+<a name="440560592"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440560592" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440560592">(May 24 2024 at 18:45)</a>:</h4>
+<p>That breaks down already for the 2-category?   For some reason I didn't see anyone concluding that. </p>
+<p>Do you mean the "iso Gray tensor product" or the "lax Gray tensor product"?</p>
+
+
+
+<a name="440560820"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440560820" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440560820">(May 24 2024 at 18:46)</a>:</h4>
+<p>Unless I misunderstood, Tim Campion's counterexample in the MO link works at the level of the 2-category.  And he stated it only in the lax case, but I think it works in the iso case as well.</p>
+
+
+
+<a name="440564636"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440564636" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440564636">(May 24 2024 at 19:17)</a>:</h4>
+<p>Right, right, so as in Mike's Gray stuff, there's a closure on (the 1-category!) 2Cat whose exponential is the 2-category of 2-functors, <em>un</em>natural transformations, and modifications (where I guess a modification between unnatural transformations is just a family of 2-morphisms satisfying no axioms), and if we set White to be 2-Cat with the white product, then the white product is a White-enriched functor but not a 2-functor. Something like that. Thanks John!</p>
+
+
+
+<a name="440564776"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440564776" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440564776">(May 24 2024 at 19:18)</a>:</h4>
+<p>Right, because unlike Gray, White <em>is</em> symmetric.</p>
+
+
+
+<a name="440564785"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440564785" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440564785">(May 24 2024 at 19:18)</a>:</h4>
+<p>Luckily the white product is symmetric so that weird thing about the lax...yep!</p>
+
+
+
+<a name="440564881"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440564881" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440564881">(May 24 2024 at 19:19)</a>:</h4>
+<p>Pseudo-Gray is symmetric too, right, so that the pseudo-Gray product is a pseudo-Gray enriched functor?</p>
+
+
+
+<a name="440564896"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440564896" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440564896">(May 24 2024 at 19:19)</a>:</h4>
+<p>Yes.</p>
+
+
+
+<a name="440568031"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440568031" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440568031">(May 24 2024 at 19:45)</a>:</h4>
+<p>Thanks for clarifying things, Mike and Kevin.</p>
+<blockquote>
+<p>Right, right, so as in Mike's Gray stuff...</p>
+</blockquote>
+<p>Do you mean <a href="https://link.springer.com/book/10.1007/BFb0061280">John Gray</a>? It would be great if there were three guys named Gray - Lax, Oplax and Pseudo - but I think there's just John.</p>
+
+
+
+<a name="440568150"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440568150" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440568150">(May 24 2024 at 19:46)</a>:</h4>
+<p>Haha, just meant the Gray-related comments Mike made, not crediting the Gray structure to Mike, pseudo-Mike, etc</p>
+
+
+
+<a name="440568509"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440568509" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440568509">(May 24 2024 at 19:49)</a>:</h4>
+<p>Oh wow, I misread that as "Mike Gray's stuff".  <span aria-label="anguished" class="emoji emoji-1f627" role="img" title="anguished">:anguished:</span></p>
+
+
+
+<a name="440586452"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440586452" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440586452">(May 24 2024 at 22:36)</a>:</h4>
+<p>I remember a discussion I had about this a while back. I was wondering if anyone had an answer to this...<br>
+Let's say nCat is the 1-category of n-categories and functors between them. What is the function f(n) that takes in n and outputs the number of tensor products on that category? For instance, f(1) = 2 (the funny and cartesian product), f(2) = 5 (the funny, cartesian, and the 3 Gray tensor products), etc. What is the general equation to calculate f(n) for a general n, and is this exponential, factorial, etc.? Or what is the OEIS sequence number?</p>
+
+
+
+<a name="440589526"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Binoidal%20categories%20and%20the%20principle%20of%20equivalence/near/440589526" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Binoidal.20categories.20and.20the.20principle.20of.20equivalence.html#440589526">(May 24 2024 at 23:13)</a>:</h4>
+<p>Since there are infinitely many symmetric monoidal structures on 0Cat, we'll only get a fun game if we restrict to symmetric monoidal <em>closed</em> structures.  Then we get f(1) = 2 by a theorem of Foltz, Lair and Kenny, and it seems easy to show f(0) = 1 since such a tensor product distributes over colimits and every set is a coproduct of copies of the terminal set.  I don't really know that f(2) = 5, just that f(2) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≥</mo></mrow><annotation encoding="application/x-tex">\ge</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≥</span></span></span></span> 5, but it should be possible to compute the actual answer.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

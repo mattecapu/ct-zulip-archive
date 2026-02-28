@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Abstracting the undecidability of the Halting Problem · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Abstracting.20the.20undecidability.20of.20the.20Halting.20Problem.html">Abstracting the undecidability of the Halting Problem</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="459551284"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Abstracting%20the%20undecidability%20of%20the%20Halting%20Problem/near/459551284" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Abstracting.20the.20undecidability.20of.20the.20Halting.20Problem.html#459551284">(Aug 09 2024 at 18:50)</a>:</h4>
+<p>Note: This is the same question as here: <a href="https://math.stackexchange.com/questions/4956536/abstracting-the-undecidability-of-the-halting-problem">https://math.stackexchange.com/questions/4956536/abstracting-the-undecidability-of-the-halting-problem</a></p>
+<p>The question asks something about abstraction, which is the bread and butter of CT, and I thought it'd be a good fit for here.</p>
+<p>I'm reposting the original question below:</p>
+<hr>
+<p>Let us work in some constructive metalogic (where we have at least the following: Natural numbers, Booleans, Lists, Disjoint Union, and Sets).</p>
+<p>To reason about Turing machines, we could (probably) define the following (metalogical) functions and sets:</p>
+<div class="codehilite"><pre><span></span><code>TMData : Set == Seq(Bool)
+// TMData is the set of all finite boolean sequences
+
+TMEval(alg: TMData, input: TMData) : TMData + &quot;null&quot;
+// TMEval is the &#39;big step operational semantics&#39; of Turing machines.
+// It &#39;executes&#39; `alg` with `input`, and returns &quot;null&quot; on divergence or the answer.
+</code></pre></div>
+<p>Now, we can prove the following metalogical theorem:</p>
+<div class="codehilite"><pre><span></span><code>SolvesHalting(halt_solver: TMData) ==
+               ∀inp_alg: TMData, TMEval(halt_solver, inp_alg) = (TMEval(inp_alg,[]) = &quot;null&quot; ? [0] : [1])
+// SolvesHalting is a metalogical predicate which says whether `halt_solver` can solve the halting problem.
+
+THEOREM HaltingUnsolvable == ∀ alg: TMData : ¬ SolvesHalting(alg)
+// It is possible to prove this theorem in our metalogic. We would have to unfold the definitions of TMEval and TMData.
+</code></pre></div>
+<p>Now, I could define a "new" programming language / notion of computation. For instance, we could define:</p>
+<div class="codehilite"><pre><span></span><code>* PythonData, PythonEval //PythonData is all python programs, which are ASTs
+* GodelData, GodelEval //GodelData is just Nat. These are the traditional partial recursive functions
+* TaggedTMData, TaggedTMEval //This is simply &#39;a copy&#39; of TMData, where each finite boolean sequence has a tag &#39;*&#39;, which makes the set different from TMData.
+</code></pre></div>
+<p>Now, I think that we could prove a version of the Halting problem undecidability for each of these (and more), which are different statements in the metalogic. My question is whether there is a way we can abstract the essence of this problem? The idea is to 'not repeat ourselves' with the proof, and have a single proof.</p>
+<ul>
+<li>Maybe we can define something like a <code>HaltUndecidable</code> to be a set (the data - eg. TMData, TaggedTMData, etc.) and an evaluation function subject to various conditions which are required for the halting problem? <br>
+      * Then <code>&lt;TMData, TMEval&gt;</code>, <code>&lt;PythonData, PythonEval&gt;</code>, etc. are instances of <code>HaltUndeciable</code>, and we don't have to prove anything else..<br>
+      * I'm curious whether one of the well-formedness conditions requires the set to be countably infinite? Could it be possible to prove a version of the halting problem where the set is uncountably infinite?</li>
+<li>Another approach might be to define the notion of a simulation between our different notions of computation, and prove a theorem that says that one version of the Halting problem "lifts" to another version if there is a simulation. Is this the way one typically goes about this?</li>
+<li>Does anything change significantly when our metalogic is classical, instead of constructive?</li>
+</ul>
+
+
+
+<a name="459572956"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Abstracting%20the%20undecidability%20of%20the%20Halting%20Problem/near/459572956" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Abstracting.20the.20undecidability.20of.20the.20Halting.20Problem.html#459572956">(Aug 09 2024 at 20:36)</a>:</h4>
+<p>perhaps you are noticing "oracles and relativization"? <a href="https://faculty.cc.gatech.edu/~ladha/S24/4510/L21.pdf">https://faculty.cc.gatech.edu/~ladha/S24/4510/L21.pdf</a></p>
+
+
+
+<a name="459586579"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Abstracting%20the%20undecidability%20of%20the%20Halting%20Problem/near/459586579" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Abstracting.20the.20undecidability.20of.20the.20Halting.20Problem.html#459586579">(Aug 09 2024 at 22:13)</a>:</h4>
+<p><span class="user-mention" data-user-id="281326">@Ryan Wisnesky</span> , on a cursory glance, it does not look like I am? The link you shared seems to talk about complexity, etc., which was not my concern...</p>
+
+
+
+<a name="459587048"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Abstracting%20the%20undecidability%20of%20the%20Halting%20Problem/near/459587048" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Abstracting.20the.20undecidability.20of.20the.20Halting.20Problem.html#459587048">(Aug 09 2024 at 22:18)</a>:</h4>
+<p>Here is the connection in mind: in complexity theory you assume problems are decidable with a black box called an oracle, and do complexity theory 'relative to an oracle', and as such you actually get an entirely family of results out (called relativized results).  Each of your "new" programming languages struck me as having a 'black box' - not an oracle, but similar idea, imo</p>
+
+
+
+<a name="460039847"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Abstracting%20the%20undecidability%20of%20the%20Halting%20Problem/near/460039847" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Abstracting.20the.20undecidability.20of.20the.20Halting.20Problem.html#460039847">(Aug 12 2024 at 09:32)</a>:</h4>
+<p>I have answered there without using CT. As far as CT is concerned, the halting problem is often considered a special case of <a href="https://ncatlab.org/nlab/show/Lawvere%27s+fixed+point+theorem">Lawvere's fixed point theorem</a>.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

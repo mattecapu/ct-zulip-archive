@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Equality saturation · theory: mathematics · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/index.html">theory: mathematics</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Equality.20saturation.html">Equality saturation</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="541093133"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Equality%20saturation/near/541093133" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Equality.20saturation.html#541093133">(Sep 23 2025 at 20:23)</a>:</h4>
+<p>I haven't read this paper but I'm reading it now. I'm pretty excited about equality saturation.</p>
+<p>e-graphs really clicked for me recently and I'm very happy about how they nicely handle equational reasoning problems that would otherwise lead to infinite loops. I can imagine using e-graphs for proof-search in type theory as well by carrying out a Datalog-like procedure to flood the search space with inhabitants, using e-graphs to control the proliferation of terms.</p>
+<p>Many problems in the equational reasoning of category theory are very simple or even decidable: it would be nice if we could make this formal by showing that equality is "saturating" for common categorical theories in the sense described in this paper.</p>
+<p><a href="/user_uploads/21317/TAkkBLInB_bPoN4ByWbD4m_5/Semantic-foundations-of-equality-saturatio-Unknown.pdf">Semantic foundations of equality saturatio - Unknown.pdf</a></p>
+
+
+
+<a name="541093279"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Equality%20saturation/near/541093279" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Equality.20saturation.html#541093279">(Sep 23 2025 at 20:24)</a>:</h4>
+<p><span class="user-mention" data-user-id="276363">@Amar Hadzihasanovic</span> They use a syntactic acyclicity condition in this paper - seems like a research challenge! "We give a more general <em>contractibility</em> condition" :)</p>
+
+
+
+<a name="541093459"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Equality%20saturation/near/541093459" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Equality.20saturation.html#541093459">(Sep 23 2025 at 20:25)</a>:</h4>
+<p>It's exciting that they say "we still understand very little about equality saturation...We also do not know much about when EqSat terminates." Really, seems like a good research question</p>
+
+
+
+<a name="541094020"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Equality%20saturation/near/541094020" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Equality.20saturation.html#541094020">(Sep 23 2025 at 20:29)</a>:</h4>
+<blockquote>
+<p>With an appropriate cost model, EqSat can further pick<br>
+the optimal program among all programs equivalent to the input, e.g. by using Knuth’s<br>
+algorithm [16].</p>
+</blockquote>
+<p>To me the practical upshot of this is that for formal theorem proving in category theory one can assign a cost model based on syntactic complexity and then once the algorithm finds an equivalence class of terms it can return the term of minimal syntactic compexity, which is the term you would write down by hand, one which is easy to reason about in practice. To me such a guarantee seems really important for practical applications, we cannot automate constructions in category theory unless the construction is simple enough to reason about</p>
+
+
+
+<a name="541113386"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Equality%20saturation/near/541113386" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Equality.20saturation.html#541113386">(Sep 23 2025 at 22:50)</a>:</h4>
+<p>we were able to hook up Egglog, which implements EqSat, to CQL, pretty easily, for use as both an equational theorem prover and a (skolem) chase engine, thanks to many of the nice properties you mention</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

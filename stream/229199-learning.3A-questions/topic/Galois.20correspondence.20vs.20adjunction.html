@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Galois correspondence vs adjunction · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Galois.20correspondence.20vs.20adjunction.html">Galois correspondence vs adjunction</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="493596032"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Galois%20correspondence%20vs%20adjunction/near/493596032" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Galois.20correspondence.20vs.20adjunction.html#493596032">(Jan 14 2025 at 14:21)</a>:</h4>
+<p>The category of preorders has a Cartesian product, so it is a monoidal category and we can talk about the category of preorder-enriched categories. Call this PreOrdCat.</p>
+<p>The category of preorders is enriched over itself. Therefore for any PreOrdCat C we can talk about C shaped diagrams of preorders.</p>
+<p>PreOrdCat includes such categories as the walking closure operator (whose underlying 1 cat is free on one element) and the walking Galois correspondence (whose underlying 1 cat is free on two 1 cells in opposite directions)</p>
+<p>There is a forgetful functor from Cat to PreOrd by 0-truncation of homs. This induces a forgetful functor from 2Cat to PreOrdCat which we can call 1-truncation. The 1-truncation of the walking adjunction is the walking Galois correspondence. The 1-truncation of the walking monad is the walking closure operator.</p>
+<p>Question:<br>
+Can the walking adjunction be defined in any way using the walking Galois correspondence or a particular presentation of it? Similarly can the walking monad be defined using the walking closure operator? What distinguishes the walking adjunction among 2-categories whose 1-truncation is the walking Galois correspondence?</p>
+
+
+
+<a name="494142917"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Galois%20correspondence%20vs%20adjunction/near/494142917" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Galois.20correspondence.20vs.20adjunction.html#494142917">(Jan 16 2025 at 13:12)</a>:</h4>
+<p>Using the adjoint to the forgetful functor, you can compare the respective pairs of things in 2Cat. The walking adjunction admits a 2-functor to the walking Galois connection. There are a lot of things that live over the walking Galois connection, including many which factorize that 2-functor, so to have any chance of characterising it, you need to either place restrictions on the domain, on properties of the functor, or both.</p>
+
+
+
+<a name="494148904"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Galois%20correspondence%20vs%20adjunction/near/494148904" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Galois.20correspondence.20vs.20adjunction.html#494148904">(Jan 16 2025 at 13:40)</a>:</h4>
+<p>I agree. That's a good point. I think part of the reason I'm asking is I'm wondering if there's anything special about the theory of adjunctions specifically among theories that generalize Galois connections to the 2 categorical setting, or special about monads specifically among generalizations of closure operators.</p>
+<p>I think we have a pretty good theory of how to vertically categorify algebraic structures: monoids -&gt; monoidal categories and so on. The paper "Laplaza sets" by Fiore and others gives a good treatment of this for many cases, for example. </p>
+<p>I am not familiar with any theory of how to vertically categorify relational structures. Perhaps this is a red herring or the wrong question. I don't insist that there is a good answer. But, often people do refer to adjunctions as categorified Galois connections or monads as categorified closure operators.</p>
+
+
+
+<a name="494149644"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Galois%20correspondence%20vs%20adjunction/near/494149644" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Galois.20correspondence.20vs.20adjunction.html#494149644">(Jan 16 2025 at 13:44)</a>:</h4>
+<p>As I suggested earlier one could also say not just PreOrdCat but a presentation of a PreOrdCat by a graph G and some 2-cells adjoined to the free category on G, for example.</p>
+
+
+
+<a name="494150027"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Galois%20correspondence%20vs%20adjunction/near/494150027" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Galois.20correspondence.20vs.20adjunction.html#494150027">(Jan 16 2025 at 13:46)</a>:</h4>
+<p>And then the question is whether there are relations between 2 cells which can be derived from the generators.</p>
+
+
+
+<a name="494150714"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Galois%20correspondence%20vs%20adjunction/near/494150714" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Galois.20correspondence.20vs.20adjunction.html#494150714">(Jan 16 2025 at 13:49)</a>:</h4>
+<p>For example the walking adjunction is freely generated by two 1 cells F and G and some 2 cells eta and epsilon subject to the relation that the generators F and G have no nontrivial endomorphisms. Similarly the walking monad has the character that it is generated by a 1 cell T and 2 cells eta, mu subject to the constraint that T has no nontrivial endomorphisms. So perhaps it is sensitive to the choice of generators.</p>
+
+
+
+<a name="494151138"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Galois%20correspondence%20vs%20adjunction/near/494151138" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Galois.20correspondence.20vs.20adjunction.html#494151138">(Jan 16 2025 at 13:51)</a>:</h4>
+<p>This works for the examples here but it doesn't strike me as a particularly robust theory of categorification</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

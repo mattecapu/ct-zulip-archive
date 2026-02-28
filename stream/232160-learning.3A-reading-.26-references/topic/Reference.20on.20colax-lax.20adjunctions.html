@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Reference on colax-lax adjunctions · learning: reading &amp; references · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/index.html">learning: reading &amp; references</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Reference.20on.20colax-lax.20adjunctions.html">Reference on colax-lax adjunctions</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="512699303"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Reference%20on%20colax-lax%20adjunctions/near/512699303" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Reference.20on.20colax-lax.20adjunctions.html#512699303">(Apr 16 2025 at 22:32)</a>:</h4>
+<p>This page <a href="https://ncatlab.org/nlab/show/lax+2-adjunction">https://ncatlab.org/nlab/show/lax+2-adjunction</a> discusses various notions of adjunction between 2-categories, but it seems to be missing one that feels very natural to me and i'm wondering where I can find a reference for it.</p>
+<p>The last paragraph reads:</p>
+<blockquote>
+<p>One might additionally consider allowing the functors to be lax, as in (Betti-Power) (Seely). But lax functors are even harder to incorporate in a 3-category-like structure than lax transformations, since one can’t even whisker any sort of transformation by a lax functor. Seely also seems to say that ϕ^ and ϕˇ are both strict in their first coordinate, rather than one in the first and one in the second as seems (to me) to be necessary for a Yoneda restatement.</p>
+</blockquote>
+<p>I believe that a more natural notion is that, instead of both functors being lax, the right adjoint should be lax and the left adjoint should be colax. In Grandis and Pare's papers on double categories this is what they develop as a notion of adjunction between double categories. But surely Grandis and Pare were not the first to discover this, right? I would think that this notion would have been studied for 2-categories before it was studied for double categories. Where can I find a reference on these colax/lax adjunctions between 2-categories?</p>
+
+
+
+<a name="512700255"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Reference%20on%20colax-lax%20adjunctions/near/512700255" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Reference.20on.20colax-lax.20adjunctions.html#512700255">(Apr 16 2025 at 22:41)</a>:</h4>
+<p>The idea really goes back to Kelly's paper <a href="https://link.springer.com/chapter/10.1007/BFb0063105">Doctrinal adjunction</a>. Kelly doesn't consider the case of colax–lax adjunctions between 2-categories, but it falls out of this general framework.</p>
+
+
+
+<a name="512704245"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Reference%20on%20colax-lax%20adjunctions/near/512704245" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Reference.20on.20colax-lax.20adjunctions.html#512704245">(Apr 16 2025 at 23:16)</a>:</h4>
+<p>In general I think colax/lax adjunctions are under-studied.  One reason is probably that since you can't compose a lax functor and a colax functor and get much of anything sensible, in order to talk about the unit and counit of such an adjunction you need the ambient structure to be some kind of double category.  And I think it's actually easier to define the appropriate double-category-like thing when the objects are also (perhaps pseudo) double categories, because the transformations can be strict in the tight direction, so the whole structure is an ordinary strict double category, rather than some kind of doubly-weak double category or triple category.</p>
+
+
+
+<a name="512704596"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Reference%20on%20colax-lax%20adjunctions/near/512704596" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Reference.20on.20colax-lax.20adjunctions.html#512704596">(Apr 16 2025 at 23:20)</a>:</h4>
+<p>Okay, I see. I get why that's less convenient but even in the 2-categorical setting it's still interesting that it's uniquely defined if it exists, right? Like the unit/counit presentation is one very useful way of presenting it, but there should be a concept of "colax left adjoint" which is unique up to equivalence if it exists.</p>
+
+
+
+<a name="512705807"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Reference%20on%20colax-lax%20adjunctions/near/512705807" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Reference.20on.20colax-lax.20adjunctions.html#512705807">(Apr 16 2025 at 23:33)</a>:</h4>
+<p>Have you proven that?</p>
+
+
+
+<a name="512706162"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Reference%20on%20colax-lax%20adjunctions/near/512706162" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Reference.20on.20colax-lax.20adjunctions.html#512706162">(Apr 16 2025 at 23:37)</a>:</h4>
+<p>Lax functors between 2-categories are pretty weird, I wouldn't trust any intuition about them until I'd double and triple checked it.  To start with, for instance, the notion of lax functor is not invariant under replacing a 2-category by an equivalent one.</p>
+
+
+
+<a name="512716026"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Reference%20on%20colax-lax%20adjunctions/near/512716026" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Reference.20on.20colax-lax.20adjunctions.html#512716026">(Apr 17 2025 at 01:24)</a>:</h4>
+<p>No, I have started proving it but I was hoping to save myself some time by finding a reference</p>
+
+
+
+<a name="512753306"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Reference%20on%20colax-lax%20adjunctions/near/512753306" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Kern <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Reference.20on.20colax-lax.20adjunctions.html#512753306">(Apr 17 2025 at 07:02)</a>:</h4>
+<p>A very recent work on colax adjunctions (but only between pseudofunctors, not co/lax functors) is Miloslav Štěpán's <a href="https://arxiv.org/abs/2504.04467">thesis</a> (or simply the extracted <a href="https://arxiv.org/abs/2405.00488">paper</a>). In particular, he mentions in Remark 2.3.7 that — already in this less general setting — left colax adjoints are not unique.</p>
+
+
+
+<a name="512762779"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Reference%20on%20colax-lax%20adjunctions/near/512762779" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Reference.20on.20colax-lax.20adjunctions.html#512762779">(Apr 17 2025 at 08:00)</a>:</h4>
+<p>The "colax adjunctions" in Miloslav's work are not the same as colax–lax adjunctions: as seen in Definition 2.3.1, the colaxity appears in the unit/counit rather than the functors.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

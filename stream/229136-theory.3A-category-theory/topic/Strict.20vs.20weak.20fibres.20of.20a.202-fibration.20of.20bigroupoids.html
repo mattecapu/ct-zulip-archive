@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Strict vs weak fibres of a 2-fibration of bigroupoids · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Strict.20vs.20weak.20fibres.20of.20a.202-fibration.20of.20bigroupoids.html">Strict vs weak fibres of a 2-fibration of bigroupoids</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="480907444"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Strict%20vs%20weak%20fibres%20of%20a%202-fibration%20of%20bigroupoids/near/480907444" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Strict.20vs.20weak.20fibres.20of.20a.202-fibration.20of.20bigroupoids.html#480907444">(Nov 06 2024 at 12:17)</a>:</h4>
+<p>For reference, I'm talking about notion introduced in the paper "Fibrations of bigroupoids" by Hardie, Kamps and Kieboom (essentially: you can lift n-arrows given a lift of their source, though in my case I'm starting with lifts of targets, for n=1,2)</p>
+<p>I have a consstruction that uses the strict fibre of a surjective-on-objects fibration of bigroupoids, and I am claiming this is equivalent to the weak/homotopy fibre. This feels like something someone might have done, but I'm not entirely sure where. </p>
+<p>In principle one could try something like restricting Lack's <a href="https://access.portico.org/Portico/auView?auId=ark:%2F27927%2Fpgh2h1dc1ns">canonical model structure for bicategories</a> (my 2-functor is in fact strict), and then checking that homotopy fibres correspond to weak fibres in the usual sense, and match up all the concepts, and so on. I don't have easy access to this paper.</p>
+<p>Alternatively, one might imagine that someone has done some fairly nuts-and-bolts computation to check things work out, without resorting to model category tech. This feels unlikely.</p>
+<p>Yet again, someone might have done enough work on (semi?-)model structures on Kan complexes/sSet and how the Duskin/geometric nerve of a bigroupoid is a certain kind of Kan complex, and then general model category stuff in the simplicial world takes over. This is rather far afield from what I am familiar with, and probably overkill.</p>
+<p>Advice?</p>
+
+
+
+<a name="480908307"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Strict%20vs%20weak%20fibres%20of%20a%202-fibration%20of%20bigroupoids/near/480908307" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Strict.20vs.20weak.20fibres.20of.20a.202-fibration.20of.20bigroupoids.html#480908307">(Nov 06 2024 at 12:22)</a>:</h4>
+<p>There is also this paper I just found, giving the model structure on bigroupoids and weak 2-functors: <a href="https://arxiv.org/abs/1809.00963">https://arxiv.org/abs/1809.00963</a></p>
+
+
+
+<a name="480909265"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Strict%20vs%20weak%20fibres%20of%20a%202-fibration%20of%20bigroupoids/near/480909265" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Strict.20vs.20weak.20fibres.20of.20a.202-fibration.20of.20bigroupoids.html#480909265">(Nov 06 2024 at 12:28)</a>:</h4>
+<p>I guess I'm after a reference that I can point to that justifies _some_ approach, because I'm secretly wanting to show that the appropriately weak fibre of a map of 2-stacks of bigroupoids is computed using this much more tractable strict fibre that I can have a good handle on.</p>
+<p>Oh, and I should say that this strict fibre is a legit 1-groupoid, rather than something like a bigroupoid merely equivalent to a 1-groupoid. That's what I'd rather work with!</p>
+
+
+
+<a name="480963088"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Strict%20vs%20weak%20fibres%20of%20a%202-fibration%20of%20bigroupoids/near/480963088" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Strict.20vs.20weak.20fibres.20of.20a.202-fibration.20of.20bigroupoids.html#480963088">(Nov 06 2024 at 16:59)</a>:</h4>
+<p>Lack sounds like the right starting point to me. I’m not sure I know what difference you’re drawing between homotopy fibers and weak fibers so take this as only somewhat confident. Mike would probably know better if he’s around.</p>
+
+
+
+<a name="480964217"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Strict%20vs%20weak%20fibres%20of%20a%202-fibration%20of%20bigroupoids/near/480964217" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Strict.20vs.20weak.20fibres.20of.20a.202-fibration.20of.20bigroupoids.html#480964217">(Nov 06 2024 at 17:05)</a>:</h4>
+<p>Here’s a copy of the paper. <a href="/user_uploads/21317/R3SYaf6IS5Fh3hEk798nDjCb/a-quillen-model-structure-for-bicategories.pdf">a-quillen-model-structure-for-bicategories.pdf</a></p>
+
+
+
+<a name="481007711"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Strict%20vs%20weak%20fibres%20of%20a%202-fibration%20of%20bigroupoids/near/481007711" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Strict.20vs.20weak.20fibres.20of.20a.202-fibration.20of.20bigroupoids.html#481007711">(Nov 06 2024 at 21:59)</a>:</h4>
+<p>Well, either the homotopy fibres (defined using fibrant replacement etc) are equivalent to the weak fibres (defined using a general bicategorical construction), or not. This needs proving, and may well be the core of what needs to be done. I think the strict fibre in this case may well be the same as the homotopy pullback (since I have a fibration to start with and every object in Lack's model structure is fibrant), but this hasn't "solved the problem", since I still need to compare the weak and homotopy fibres.</p>
+
+
+
+<a name="481010424"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Strict%20vs%20weak%20fibres%20of%20a%202-fibration%20of%20bigroupoids/near/481010424" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Strict.20vs.20weak.20fibres.20of.20a.202-fibration.20of.20bigroupoids.html#481010424">(Nov 06 2024 at 22:20)</a>:</h4>
+<p>Hmm. thinking about the path object in Lack's model structure, how every object is fibrant, means if we treat the model structure as a category of fibrant objects, then according to <a href="https://ncatlab.org/nlab/show/category+of+fibrant+objects#PullbacksAlongFibrationsAreCorrectHomotopyPullbacks">this proposition</a>, the using path-object strict construction of the homotopy fibre product (which should be the weak fibre) this will give the homotopically correct limit.</p>
+<p>But then this gives two constructions of the homotopy fibre, I think, and so they should be (bi)equivalent.</p>
+
+
+
+<a name="481025066"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Strict%20vs%20weak%20fibres%20of%20a%202-fibration%20of%20bigroupoids/near/481025066" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Strict.20vs.20weak.20fibres.20of.20a.202-fibration.20of.20bigroupoids.html#481025066">(Nov 07 2024 at 00:48)</a>:</h4>
+<p>So to collect my thoughts:</p>
+<ol>
+<li>In the Lack model structure on bicategories and strict 2-functors, every object is fibrant and the strict 2-functor I have is a fibration. So the strict fibre <em>is</em> the homotopy fibre for this model structure.</li>
+<li>Thinking of the underlying category with fibrant objects, the homotopy fibre for this setting can be computed using a wide (strict) pullback involving the path object, and the result is the weak fibre.</li>
+</ol>
+
+
+
+<a name="481025318"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Strict%20vs%20weak%20fibres%20of%20a%202-fibration%20of%20bigroupoids/near/481025318" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Strict.20vs.20weak.20fibres.20of.20a.202-fibration.20of.20bigroupoids.html#481025318">(Nov 07 2024 at 00:51)</a>:</h4>
+<ol start="3">
+<li>So then one only needs to know that the calculation of the homotopy fibre in 2. is weakly equivalent to the calculation of the homotopy fibre in 1.</li>
+</ol>
+
+
+
+<a name="481026378"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Strict%20vs%20weak%20fibres%20of%20a%202-fibration%20of%20bigroupoids/near/481026378" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Strict.20vs.20weak.20fibres.20of.20a.202-fibration.20of.20bigroupoids.html#481026378">(Nov 07 2024 at 01:02)</a>:</h4>
+<p>OK, so this follows from <a href="https://ncatlab.org/nlab/show/homotopy+pullback#HomotopyPullbackByFactorizationLemma">this corollary</a>, as it should.</p>
+
+
+
+<a name="481028797"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Strict%20vs%20weak%20fibres%20of%20a%202-fibration%20of%20bigroupoids/near/481028797" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Strict.20vs.20weak.20fibres.20of.20a.202-fibration.20of.20bigroupoids.html#481028797">(Nov 07 2024 at 01:31)</a>:</h4>
+<p>Great!</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

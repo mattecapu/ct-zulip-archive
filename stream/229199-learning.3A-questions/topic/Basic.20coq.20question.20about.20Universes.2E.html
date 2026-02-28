@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Basic coq question about Universes. · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Basic.20coq.20question.20about.20Universes.2E.html">Basic coq question about Universes.</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="485468726"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Basic%20coq%20question%20about%20Universes./near/485468726" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Basic.20coq.20question.20about.20Universes.2E.html#485468726">(Dec 01 2024 at 10:12)</a>:</h4>
+<p>I was playing around with the <code>coq</code> theorem prover. If I understand correctly, <code>coq</code>'s core type theory has an infinite hierarchy of universes <code>Set, Type1, Type2, Type3, ...</code>.</p>
+<p>My question boils down to what type the following inductive definition has: </p>
+<div class="codehilite"><pre><span></span><code>Inductive mydata (X:Type) : Type :=
+  | inj (x:X).
+Check mydata. (* :Type@{mydata.u0} -&gt; Type@{mydata.u0} *)
+</code></pre></div>
+<p>Here, if I understand correctly, <code>mydata.u0</code> is a 'universe 'meta-number', and <code>coq</code> will typecheck successfully as long as it can assign concrete universe numbers (and there might be many such assignments) such that you can construct a typing derivation (according to Galina's core calculus)? For instance, one possibility is <code>Set -&gt; Set</code> in this case. </p>
+<p>Informally, it seems like some kind of 'meta'-level polymorphism, and I was wondering if this technique is well-known / has a name? Also, is my understanding correct that the core calculus does not talk about these 'universe number' metavariables, and the unification mechanism is built on top of it? I'm curious if it is possible, to forcefully <strong>pin</strong> a universe number as well (Although I'm not sure when this would be useful)</p>
+
+
+
+<a name="485470182"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Basic%20coq%20question%20about%20Universes./near/485470182" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Basic.20coq.20question.20about.20Universes.2E.html#485470182">(Dec 01 2024 at 10:36)</a>:</h4>
+<p>There's a <a href="https://coq.zulipchat.com/">Coq Zulip</a>, which would be a better place to ask this sort of question.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

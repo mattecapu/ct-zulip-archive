@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Tools for drawing large diagrams · practice: software · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/index.html">practice: software</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Tools.20for.20drawing.20large.20diagrams.html">Tools for drawing large diagrams</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="519285935"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Tools%20for%20drawing%20large%20diagrams/near/519285935" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John T <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Tools.20for.20drawing.20large.20diagrams.html#519285935">(May 20 2025 at 04:02)</a>:</h4>
+<p>I have been using and enjoying quiver, but recently I came across a problem that I might want another tool for. </p>
+<p>I have a category C, some monads on it, a category D of 5-object diagrams in C of a certain form, and an endofunctor Q on D defined as a certain pullback. It takes 20 objects of C to write down what Q(X) looks like- at least 5 more to map anything into it- and I would like to show (or find conditions on C under which I can show) that Q is a comonad on D. I'd be happy to give particulars on the problem if anyone's interested, but for purposes of this question the point is just that the diagrams I have to draw to check the comonad axioms for this are getting to be a bit bigger than I'd consider manageable for my purposes (at least for drawing them out "manually" and not having much experience with tricks that might let me manage the size a bit better). </p>
+<p>Ideally when doing this I'd like to be able to do things like copy and paste large sub-diagrams, quickly apply a functor to all elements of a selection, or perhaps even automatically extract all the unique minimal faces from a diagram so I can more easily get a manageable list of pieces to check commutativity for. I don't see an option to do these things in quiver (though again, it is fantastic for sharing diagrams and for putting them into LaTeX), and I was wondering what other tools I should take a look at, if any, that might let me be a bit lazier about this project. I'm more than open to hearing about more code-based proof-assistant tools as well, but I haven't gotten any experience with those sorts of things yet. </p>
+<p>Thanks! -John</p>
+
+
+
+<a name="519301238"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Tools%20for%20drawing%20large%20diagrams/near/519301238" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ralph Sarkis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Tools.20for.20drawing.20large.20diagrams.html#519301238">(May 20 2025 at 06:30)</a>:</h4>
+<p><span class="user-mention" data-user-id="276696">@Ambroise</span>'s <a href="https://amblafont.github.io/graph-editor/index.html">diagram editor</a> has several features that other editors lack like allowing to copy-paste. I am not sure if it has multicell editing.</p>
+
+
+
+<a name="519306244"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Tools%20for%20drawing%20large%20diagrams/near/519306244" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Tools.20for.20drawing.20large.20diagrams.html#519306244">(May 20 2025 at 07:02)</a>:</h4>
+<p>Copy and pasting is long overdue in <strong>quiver</strong> and I will look into implementing it this week.</p>
+
+
+
+<a name="519306343"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Tools%20for%20drawing%20large%20diagrams/near/519306343" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Tools.20for.20drawing.20large.20diagrams.html#519306343">(May 20 2025 at 07:03)</a>:</h4>
+<blockquote>
+<p>quickly apply a functor to all elements of a selection</p>
+</blockquote>
+<p>This is also something I've thought about, and I have some ideas for making it practical. I'll play around with these ideas later and see whether they seem usable.</p>
+
+
+
+<a name="519439470"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Tools%20for%20drawing%20large%20diagrams/near/519439470" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Tools.20for.20drawing.20large.20diagrams.html#519439470">(May 20 2025 at 17:24)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229125-practice.3A-software/topic/Tools.20for.20drawing.20large.20diagrams/near/519306244">said</a>:</p>
+<blockquote>
+<p>Copy and pasting is long overdue in <strong>quiver</strong> and I will look into implementing it this week.</p>
+</blockquote>
+<p>This is great. I’ve had several instances lately of needing to type large partially duplicative diagrams. Thank you for your invaluable work!</p>
+
+
+
+<a name="519439666"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Tools%20for%20drawing%20large%20diagrams/near/519439666" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Tools.20for.20drawing.20large.20diagrams.html#519439666">(May 20 2025 at 17:25)</a>:</h4>
+<p>On the other hand I discovered the ‘B’ key for moving groups of objects around recently and it’s incredibly useful for laying out a diagram dynamically while actually working out a proof, enabling live-diagramming in some cases rather than just typing out a drawn diagram as I find is usually necessary in tikz.</p>
+
+
+
+<a name="519474717"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Tools%20for%20drawing%20large%20diagrams/near/519474717" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Tools.20for.20drawing.20large.20diagrams.html#519474717">(May 20 2025 at 21:08)</a>:</h4>
+<p>In case it's not obvious, you can also move around groups of object with the mouse too: just click and drag in the region around an object.</p>
+
+
+
+<a name="519474794"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Tools%20for%20drawing%20large%20diagrams/near/519474794" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Tools.20for.20drawing.20large.20diagrams.html#519474794">(May 20 2025 at 21:08)</a>:</h4>
+<p>I have been meaning to write a tutorial for keyboard shortcuts too, and I will also try to get around to this.</p>
+
+
+
+<a name="519486551"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Tools%20for%20drawing%20large%20diagrams/near/519486551" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Tools.20for.20drawing.20large.20diagrams.html#519486551">(May 20 2025 at 22:51)</a>:</h4>
+<p>Yeah, that'd be great; I just realized I don't understand how to actually change the style of an arrow via keyboard, for instance. I can cycle through the three style columns with 'D', but don't see how to cycle through the rows. This is coming up perhaps surprisingly often as I'm typing a lot of "equals signs" as level-2 arrows with no heads.</p>
+
+
+
+<a name="519528359"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Tools%20for%20drawing%20large%20diagrams/near/519528359" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Tools.20for.20drawing.20large.20diagrams.html#519528359">(May 21 2025 at 05:57)</a>:</h4>
+<p>If you turn on keyboard hints from the toolbar, it will tell you which keys to press in this kind of situation.</p>
+
+
+
+<a name="519666508"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Tools%20for%20drawing%20large%20diagrams/near/519666508" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Tools.20for.20drawing.20large.20diagrams.html#519666508">(May 21 2025 at 17:28)</a>:</h4>
+<p>Ah, thanks. I hadn't noticed that keyboard hints apply to the styling panel as well as the main diagram.</p>
+
+
+
+<a name="520289013"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Tools%20for%20drawing%20large%20diagrams/near/520289013" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Tools.20for.20drawing.20large.20diagrams.html#520289013">(May 25 2025 at 12:38)</a>:</h4>
+<p>I've added the ability to copy and paste in <strong>quiver</strong>. I may revisit how it works in the future, but it seems to work well enough for now. I will experiment with the more advanced label editing idea I alluded to above when I have some time.</p>
+
+
+
+<a name="520305295"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Tools%20for%20drawing%20large%20diagrams/near/520305295" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ambroise <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Tools.20for.20drawing.20large.20diagrams.html#520305295">(May 25 2025 at 16:17)</a>:</h4>
+<p>Hello  <span class="user-mention" data-user-id="358283">@John T</span> , I would be happy to talk with you about your use case. My <a href="https://amblafont.github.io/graph-editor/index.html">diagram editor</a> has some mechanization features based on Rocq, typically to build a commutative diagram step-by-step (see <a href="https://github.com/amblafont/vscode-yade-example/releases/download/v0.1/demo-yade-example.mp4">https://github.com/amblafont/vscode-yade-example/releases/download/v0.1/demo-yade-example.mp4</a>, based on <a href="https://github.com/amblafont/vscode-yade-example">this repo</a>). On the editing side, there is a command to select a subface (that you can copy and paste), but let me know ifyou have any other suggestion!</p>
+<div class="message_inline_image message_inline_video"><a href="https://github.com/amblafont/vscode-yade-example/releases/download/v0.1/demo-yade-example.mp4"><video preload="metadata" src="https://uploads.zulipusercontent.net/482a2c29273af3e6016431fbaf8dfa8b13944af0/68747470733a2f2f6769746875622e636f6d2f616d626c61666f6e742f7673636f64652d796164652d6578616d706c652f72656c65617365732f646f776e6c6f61642f76302e312f64656d6f2d796164652d6578616d706c652e6d7034"></video></a></div>
+
+
+
+<a name="521193666"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Tools%20for%20drawing%20large%20diagrams/near/521193666" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John T <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Tools.20for.20drawing.20large.20diagrams.html#521193666">(May 30 2025 at 00:26)</a>:</h4>
+<p><span class="user-mention" data-user-id="276696">@Ambroise</span> Thanks, it looks very interesting from the video and tutorial! I am not particularly familiar with Rocq, should I go read up on that somewhere before getting started if I'm interested in proving everything, or does it mostly come up in places that are simple enough to figure out on the fly? My diagram only has four faces thus far that I've had to assert commutativity for; everything else has followed from naturality or monad laws. I'd include a link to said diagram in quiver, but it's about 10k characters past the message limit <span aria-label="sweat smile" class="emoji emoji-1f605" role="img" title="sweat smile">:sweat_smile:</span></p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

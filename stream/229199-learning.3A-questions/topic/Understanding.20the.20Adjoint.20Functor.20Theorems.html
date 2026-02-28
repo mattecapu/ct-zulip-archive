@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Understanding the Adjoint Functor Theorems · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Understanding.20the.20Adjoint.20Functor.20Theorems.html">Understanding the Adjoint Functor Theorems</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="562326004"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Understanding%20the%20Adjoint%20Functor%20Theorems/near/562326004" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ruby Khondaker (she/her) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Understanding.20the.20Adjoint.20Functor.20Theorems.html#562326004">(Dec 07 2025 at 18:35)</a>:</h4>
+<p>I've recently attempted to understand the statements of the adjoint functor theorems more clearly. As far as I can tell, they're both using the underlying idea of constructing a left adjoint using the right kan extension formula <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∫</mo><mi>y</mi></msub><msup><mi>y</mi><mrow><mtext>Hom</mtext><mo stretchy="false">(</mo><mi>a</mi><mo separator="true">,</mo><mi>G</mi><mi>y</mi><mo stretchy="false">)</mo></mrow></msup></mrow><annotation encoding="application/x-tex">\int_y y^{\text{Hom}(a, Gy)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.3799em;vertical-align:-0.4919em;"></span><span class="mop"><span class="mop op-symbol small-op" style="margin-right:0.19445em;position:relative;top:-0.0006em;">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:-0.0544em;"><span style="top:-2.3442em;margin-left:-0.1945em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4919em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.888em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">Hom</span></span><span class="mopen mtight">(</span><span class="mord mathnormal mtight">a</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">G</span><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span></span></span></span> and cutting down the size of the limit needed.</p>
+<p>In that respect, the solution-set condition (used in the general adjoint functor theorem) makes sense to me - essentially, the inclusion of the subcategory of objects in the solution-set is an initial functor, so you can compute limits using it.</p>
+<p>My intuition for the special adjoint functor theorem is a little more hazy, but here's what I understand so far. We assume that the domain of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">G</span></span></span></span> has a coseparating set - together with completeness, this implies that the unit of the codensity monad is monic. In other words, you can "embed" any object of the domain into a product of objects in the coseparating set. This lets you cut down the weighted limit for the Kan extension in a slightly different way, reducing it to an expression involving only the cogenerators.</p>
+<p>Is that about right? More generally I'm trying to understand the significance of these theorems - it feels like we can separate the proofs into the right kan extension formula, and then various strategies to compute these weighted limits in categories of interest.</p>
+
+
+
+<a name="562419499"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Understanding%20the%20Adjoint%20Functor%20Theorems/near/562419499" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Understanding.20the.20Adjoint.20Functor.20Theorems.html#562419499">(Dec 08 2025 at 09:24)</a>:</h4>
+<p>Regarding the general philosophy of adjoint functor theorems, you may find <a href="http://www.tac.mta.ca/tac/volumes/41/20/41-20abs.html">Adjoint functor theorems for lax-idempotent pseudomonads</a>, or at least the introduction, of interest, as it explains how adjoint functor theorems may be seen as ways to decompose adjointness into cocontinuity and relative adjointness (which acts as a way to control size).</p>
+
+
+
+<a name="562423092"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Understanding%20the%20Adjoint%20Functor%20Theorems/near/562423092" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ruby Khondaker (she/her) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Understanding.20the.20Adjoint.20Functor.20Theorems.html#562423092">(Dec 08 2025 at 09:41)</a>:</h4>
+<p>Ok, I’ll take a look at this! Perhaps what I need to focus on is understanding how “size” is dealt with in category theory more carefully? Since that seems to be somewhat of a common theme:</p>
+<ul>
+<li>The solution set condition controls size through the use of an initial functor from a small category</li>
+<li>The small-admissibility condition controls size through a formulation with relative adjoints</li>
+<li>The special adjoint functor theorem controls size through embedding objects into products of cogenerators</li>
+</ul>
+<p>Admittedly this is an aspect of category theory I mostly ignored on my first pass through, since it appeared that size issues weren’t that relevant. But perhaps now is the time to understand it more properly!</p>
+
+
+
+<a name="562425282"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Understanding%20the%20Adjoint%20Functor%20Theorems/near/562425282" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Understanding.20the.20Adjoint.20Functor.20Theorems.html#562425282">(Dec 08 2025 at 09:52)</a>:</h4>
+<p>The solution set condition can also be expressed in terms of relative adjointness (see footnote 3 ibid.). (I never thought about how the SAFT fits into this perspective, though.)</p>
+
+
+
+<a name="562426288"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Understanding%20the%20Adjoint%20Functor%20Theorems/near/562426288" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ruby Khondaker (she/her) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Understanding.20the.20Adjoint.20Functor.20Theorems.html#562426288">(Dec 08 2025 at 09:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Understanding.20the.20Adjoint.20Functor.20Theorems/near/562425282">said</a>:</p>
+<blockquote>
+<p>The solution set condition can also be expressed in terms of relative adjointness (see footnote 3 ibid.). (I never thought about how the SAFT fits into this perspective, though.)</p>
+</blockquote>
+<p>Ah of course, you can encode solution-set in terms of weak multirepresentability, so you just take the full subcategory of those</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

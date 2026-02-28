@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Tricategories and n-categories · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Tricategories.20and.20n-categories.html">Tricategories and n-categories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="418644586"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Tricategories%20and%20n-categories/near/418644586" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Tricategories.20and.20n-categories.html#418644586">(Jan 29 2024 at 14:09)</a>:</h4>
+<p>What are the known notions of n-category which directly subsume tricategories in an evident way?<br>
+I don't mean up to Quillen equivalence, I mean any theorem I want to prove about tricategories, I can prove about these n-categories and I'll get the result for tricategories. I think this requirement implies that I only care about "algebraic" models here unless there's an obvious way to "bias" the geometric model to become algebraic.</p>
+
+
+
+<a name="418677910"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Tricategories%20and%20n-categories/near/418677910" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Tricategories.20and.20n-categories.html#418677910">(Jan 29 2024 at 16:44)</a>:</h4>
+<p>I think the only one that can do that is a Batanin-Leinster algebra for a suitably chosen globular operad.</p>
+
+
+
+<a name="418798573"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Tricategories%20and%20n-categories/near/418798573" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Tricategories.20and.20n-categories.html#418798573">(Jan 30 2024 at 09:37)</a>:</h4>
+<p>Noob question, but why isn't this 'trivially' the case? I was expecting all definitions of weak n-categories to specialize to tri- and bicategories!</p>
+
+
+
+<a name="418834339"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Tricategories%20and%20n-categories/near/418834339" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Tricategories.20and.20n-categories.html#418834339">(Jan 30 2024 at 13:22)</a>:</h4>
+<p>Some models of higher cats are very different shapes than ordinary cats, like quasicategories are just geometrically very different looking than the usual categories.<br>
+Like say you have a coherence condition in a bi category that asserts that a pasting diagram commutes (two disks with the same boundary are equal)<br>
+and at level 3 you want to weaken this to a 3 cell between the disks (two disks are homotopic by a 3 cell)<br>
+At this point it may not be even necessary to demand that you have a unique composite of the pasting diagrams on both sides (i.e. two well defined disks) before you have a morphism between them, and indeed demanding to choose a composite is kind of awkward because the composite of a pasting diagram involves choosing arbitrary composition orders for the morphisms involved. instead you could define a 3 cell directly in terms of the pasting diagrams themselves. So the shape of a 3 cell is no longer a map between 2 cells but a more complicated structure relating pasting diagrams of 2 cells.</p>
+
+
+
+<a name="418834536"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Tricategories%20and%20n-categories/near/418834536" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Tricategories.20and.20n-categories.html#418834536">(Jan 30 2024 at 13:23)</a>:</h4>
+<p>In quasicategories a 2 cell is a filler for a triangle of 1 cells, a 3 cell is a filler for a tetrahedron whose faces are 2 cells and so on</p>
+
+
+
+<a name="418835985"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Tricategories%20and%20n-categories/near/418835985" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Tricategories.20and.20n-categories.html#418835985">(Jan 30 2024 at 13:31)</a>:</h4>
+<p>Or you could define composition so that we don't have a single designated composite but it's only defined by a universal property. I think opetopes do this.</p>
+
+
+
+<a name="418841524"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Tricategories%20and%20n-categories/near/418841524" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Tricategories.20and.20n-categories.html#418841524">(Jan 30 2024 at 14:02)</a>:</h4>
+<p>Uhm I see, makes sense</p>
+
+
+
+<a name="418883702"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Tricategories%20and%20n-categories/near/418883702" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Tricategories.20and.20n-categories.html#418883702">(Jan 30 2024 at 17:08)</a>:</h4>
+<p>Any correct definition of n-categories has to specialize to tricategories <em>up to "Quillen" equivalence</em>, but Patrick specified that's not the question he's asking now.</p>
+
+
+
+<a name="418883806"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Tricategories%20and%20n-categories/near/418883806" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Tricategories.20and.20n-categories.html#418883806">(Jan 30 2024 at 17:08)</a>:</h4>
+<p>(I put it in quotes because I'm not sure anyone has actually written down a Quillen model structure for tricategories.)</p>
+
+
+
+<a name="418889692"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Tricategories%20and%20n-categories/near/418889692" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Arlin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Tricategories.20and.20n-categories.html#418889692">(Jan 30 2024 at 17:42)</a>:</h4>
+<p>Indeed quasicategories also don't have single designated composites, and to the extent the composites even have universal properties it's quite implicit.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

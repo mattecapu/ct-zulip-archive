@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Categories of algebraic objects · theory: mathematics · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/index.html">theory: mathematics</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Categories.20of.20algebraic.20objects.html">Categories of algebraic objects</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="512128606"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Categories%20of%20algebraic%20objects/near/512128606" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Categories.20of.20algebraic.20objects.html#512128606">(Apr 14 2025 at 16:48)</a>:</h4>
+<p>Looking for examples of categories of familiar (probably but not necessarily algebraic) objects having certain properties.</p>
+<p>Context: I have been working on some model theory recently, and specifically Fraïssé theory. Classically, Fraïssé theory starts with a category of finitely generated structures and embeddings between these. They are assumed to have the following nice properties:</p>
+<ul>
+<li><strong>Joint embedding property</strong>: any pair of structures embeds into a common third structure.</li>
+<li><strong>Amalgamation property</strong>: any span of embeddings of structures can be completed to a square.</li>
+</ul>
+<p>From these, one can construct a "universal" structure containing all of the finitely generated ones in a "homogeneous" way. This may sound obscure if this is your first time hearing about it but there are some important examples in combinatorics that may be familiar (see the <a href="https://en.wikipedia.org/wiki/Fra%C3%AFss%C3%A9_limit">Wikipedia page</a> ).</p>
+<p>Anyhow, I have generalised this construction to relax the amalgamation property requirement on embeddings of structures: I instead consider the larger category of homomorphisms of structures and ask that <em>any span in which one leg is an embedding can be completed to a square in which the opposite side is also an embedding</em> (if in doubt, interpret "embedding" as "monomorphism"). The price of this relaxation is that the properties of the resulting limit object aren't quite as nice (I can explain more if you like; this is work I'm presenting at SYCO next week).</p>
+<p>This is great! except that I currently have very few "natural" examples of categories of structures that satisfy this relaxed condition but which fail to satisfy the stronger/original amalgamation property. So I'm hoping that someone here might have some suggestions.</p>
+
+
+
+<a name="512162855"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Categories%20of%20algebraic%20objects/near/512162855" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ivan Di Liberti <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Categories.20of.20algebraic.20objects.html#512162855">(Apr 14 2025 at 19:59)</a>:</h4>
+<p>In universal algebra this property is called <em>transferable injections</em>. When pushouts exist, this is equivalent to requiring that monos are stable under pushout.</p>
+
+
+
+<a name="512163641"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Categories%20of%20algebraic%20objects/near/512163641" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ivan Di Liberti <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Categories.20of.20algebraic.20objects.html#512163641">(Apr 14 2025 at 20:04)</a>:</h4>
+<p>You may want to read <strong>Categorical algebraic properties. A compendium on amalgamation, congruence extension, epimorphisms, residual smallness, and injectivity</strong> by <em>Tholen et al</em> which I have indeed read in my life, but at the moment I can't find online.</p>
+
+
+
+<a name="512164158"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Categories%20of%20algebraic%20objects/near/512164158" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Categories.20of.20algebraic.20objects.html#512164158">(Apr 14 2025 at 20:06)</a>:</h4>
+<p>There's a copy <a href="https://tholen.mathstats.yorku.ca/files/2022/09/kmpt_pp79-111.pdf">online here</a>.</p>
+
+
+
+<a name="512307860"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Categories%20of%20algebraic%20objects/near/512307860" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Categories.20of.20algebraic.20objects.html#512307860">(Apr 15 2025 at 12:33)</a>:</h4>
+<p>That's extremely helpful in that even at Proposition 1.6 they say that the Transferability Property (TP) implies the Amalgamation Property (AP) as soon as the category has products! The argument is easy and completely general, I'm surprised I hadn't spotted it before. (They also say that it implies the "congruence extension property" (CEP) where the other leg of the span is instead assumed to be an epimorphism; they do not assume the opposite side of the constructed square to be an epimorphism too, but this imposing this results in an equivalent condition as soon as the epimorphisms are strong and one has an epi-mono factorization, which is the case in there general set-up in Section 6.)</p>
+<p>Since varieties have products, I will need to be a lot more constrained in my search than I had guessed with my title "categories of algebraic objects". Unfortunately, the huge table of examples that Kiss, Márki, Pröhle and Tholen is not directly helpful to me because all of the examples that I already know about have finite products (I don't know much about cylindric algebras, but since they have a fully algebraic presentation I think the category of these still has products). But it does at least exclude a lot of naive things I might have tried!</p>
+
+
+
+<a name="513881234"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Categories%20of%20algebraic%20objects/near/513881234" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Categories.20of.20algebraic.20objects.html#513881234">(Apr 23 2025 at 14:05)</a>:</h4>
+<p>I still haven't found any convenient examples (or at least I'm lacking examples with an intrinsic description not related to the monoids that I'm building from them heh). I'll be talking about this at SYCO in London this week, so let me know if you spot an example ;)</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

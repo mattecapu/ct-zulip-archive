@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Laws of large numbers · theory: categorical probability · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/253118-theory.3A-categorical-probability/index.html">theory: categorical probability</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/253118-theory.3A-categorical-probability/topic/Laws.20of.20large.20numbers.html">Laws of large numbers</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="508905267"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/253118-theory%3A%20categorical%20probability/topic/Laws%20of%20large%20numbers/near/508905267" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tobias Fritz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/253118-theory.3A-categorical-probability/topic/Laws.20of.20large.20numbers.html#508905267">(Mar 29 2025 at 09:25)</a>:</h4>
+<p>It's taken a long time, but our paper on strong laws of large numbers in categorical probability is finally out: <a href="https://arxiv.org/abs/2503.21576">https://arxiv.org/abs/2503.21576</a></p>
+
+
+
+<a name="508905279"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/253118-theory%3A%20categorical%20probability/topic/Laws%20of%20large%20numbers/near/508905279" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tobias Fritz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/253118-theory.3A-categorical-probability/topic/Laws.20of.20large.20numbers.html#508905279">(Mar 29 2025 at 09:25)</a>:</h4>
+<p>Since taking limits is a partial operation (defined when the limits exist), this relies on a theory of quasi-Markov categories by <span class="user-mention" data-user-id="318831">@Areeb SM</span>, which has not appeared yet but should also be out soon. (A quasi-Markov category is a CD category in which all morphisms are quasi-total in the sense of <a href="https://arxiv.org/abs/2301.12989">partial Markov categories</a>, and this turns out to be a particularly well-behaved notion of partiality.)</p>
+
+
+
+<a name="508905488"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/253118-theory%3A%20categorical%20probability/topic/Laws%20of%20large%20numbers/near/508905488" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tobias Fritz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/253118-theory.3A-categorical-probability/topic/Laws.20of.20large.20numbers.html#508905488">(Mar 29 2025 at 09:28)</a>:</h4>
+<p>While our typical categorical probability papers in recent years have generalized classical results from probability and statistics to Markov categories and proven them from simple categorical axioms, this one is a bit different: it would be more accurate to say that we use something like a law of large numbers <em>as an axiom</em> and then derive other things from that. Formally, this is encoded in our empirical adequacy axiom for empirical sampling morphisms:<br>
+<a href="/user_uploads/21317/-q0JCjZbn22lGJ6O_RQbRQDn/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/-q0JCjZbn22lGJ6O_RQbRQDn/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="810x455" src="/user_uploads/thumbnail/21317/-q0JCjZbn22lGJ6O_RQbRQDn/image.png/840x560.webp"></a></div>
+
+
+
+<a name="508905798"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/253118-theory%3A%20categorical%20probability/topic/Laws%20of%20large%20numbers/near/508905798" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tobias Fritz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/253118-theory.3A-categorical-probability/topic/Laws.20of.20large.20numbers.html#508905798">(Mar 29 2025 at 09:33)</a>:</h4>
+<p>The idea behind empirical sampling is that such a morphism takes an infinite sequence as input and then returns a <em>uniformly random</em> sample from the sequence as output. Since this doesn't formally make sense for all sequences, it can only be a partial morphism. I think that this idea of empirical sampling is a fundamental concept in probability theory that has been overlooked so far, as we have not seen it considered anywhere else.  We also don't know of any Markov categories other than measure-theoretic probability in which empirical sampling morphisms would exist, so it's tempting to wonder if these can perhaps be turned into a new axiomatization of probability theory as a whole.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

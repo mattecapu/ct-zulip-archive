@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Sheafification expressed in the internal language of the top · theory: type theory &amp; logic · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/index.html">theory: type theory &amp; logic</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/Sheafification.20expressed.20in.20the.20internal.20language.20of.20the.20top.html">Sheafification expressed in the internal language of the top</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="518545142"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/Sheafification%20expressed%20in%20the%20internal%20language%20of%20the%20top/near/518545142" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andrej Bauer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/Sheafification.20expressed.20in.20the.20internal.20language.20of.20the.20top.html#518545142">(May 16 2025 at 13:29)</a>:</h4>
+<p>I am looking for an account of how sheafification with respect to a Lawvere-Tierney topology <code>j : Ω → Ω</code> is expressed in the internal language of a topos. In other words, how does one express the ++-construction. My best guess is that <code>A++ = { u : A → Ω | j (singleton u) }</code> where <code>singleton u := (∀ x y, u x ∧ u y ⇒ x = y) ∧ (∃ x . u x)</code>, but I'd prefer a written account to having it figure out myself.</p>
+
+
+
+<a name="518838175"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/Sheafification%20expressed%20in%20the%20internal%20language%20of%20the%20top/near/518838175" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andrej Bauer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/Sheafification.20expressed.20in.20the.20internal.20language.20of.20the.20top.html#518838175">(May 17 2025 at 17:35)</a>:</h4>
+<p>In case anyone cares, my suggestion is of course too naive. One has to throw in a quotient, or just mimic the +-construction. I am in the process of formalizing this, will post a gist when done.</p>
+
+
+
+<a name="518928312"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/Sheafification%20expressed%20in%20the%20internal%20language%20of%20the%20top/near/518928312" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonas Frey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/Sheafification.20expressed.20in.20the.20internal.20language.20of.20the.20top.html#518928312">(May 18 2025 at 14:46)</a>:</h4>
+<p>Johnstone gives a construction in in terms of elementary toposes in A4.4.4 of the elephant, and I think it translates to <br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>+</mo><mo>+</mo><mo>=</mo><mo stretchy="false">{</mo><mi>p</mi><mo>:</mo><mi>A</mi><mo>→</mo><msub><mi mathvariant="normal">Ω</mi><mi>j</mi></msub><mi mathvariant="normal">∣</mi><mi>j</mi><mo stretchy="false">(</mo><mi mathvariant="normal">∃</mi><mi>a</mi><mo>∈</mo><mi>A</mi><mi mathvariant="normal">.</mi><mi>p</mi><mo>=</mo><mo stretchy="false">{</mo><mi>b</mi><mo>∈</mo><mi>A</mi><mi mathvariant="normal">∣</mi><mi>j</mi><mo stretchy="false">(</mo><mi>a</mi><mo>=</mo><mi>b</mi><mo stretchy="false">)</mo><mo stretchy="false">}</mo><mo stretchy="false">)</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">A++ = \{p : A \to \Omega_j | j(\exists a \in A . p = \{b \in A | j(a=b)\})\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord">+</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord">Ω</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mopen">(</span><span class="mord">∃</span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">A</span><span class="mord">.</span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">b</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mopen">(</span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">b</span><span class="mclose">)})}</span></span></span></span><br>
+in the internal language.</p>
+
+
+
+<a name="519042564"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/Sheafification%20expressed%20in%20the%20internal%20language%20of%20the%20top/near/519042564" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nicola Gambino <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/Sheafification.20expressed.20in.20the.20internal.20language.20of.20the.20top.html#519042564">(May 19 2025 at 09:02)</a>:</h4>
+<p>A reference is Barbara Veit, "A Proof of the Associated Sheaf Theorem by Means of Categorical Logic", JSL Vol. 46, No. 1 (Mar., 1981), pp. 45-55.</p>
+
+
+
+<a name="520087569"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/Sheafification%20expressed%20in%20the%20internal%20language%20of%20the%20top/near/520087569" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Andrej Bauer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/Sheafification.20expressed.20in.20the.20internal.20language.20of.20the.20top.html#520087569">(May 23 2025 at 16:14)</a>:</h4>
+<p>Here is the promised <a href="https://gist.github.com/andrejbauer/6404c64d74526b934dc2d1166adaed03">Coq formalization of sheafification in logical form</a>. I followed Barbara Veit's paper cited by <span class="user-mention" data-user-id="360410">@Nicola Gambino</span>.  A couple of things still remain:</p>
+<ul>
+<li>sheafification is a reflection</li>
+<li>sheafification preserves finite limits</li>
+</ul>
+<p>If anyone has the energy to do these two, please let me know so that I can update the gist.</p>
+
+
+
+<a name="576362632"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/Sheafification%20expressed%20in%20the%20internal%20language%20of%20the%20top/near/576362632" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Gryzlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/Sheafification.20expressed.20in.20the.20internal.20language.20of.20the.20top.html#576362632">(Feb 27 2026 at 22:57)</a>:</h4>
+<p><span class="user-mention" data-user-id="344629">@Andrej Bauer</span> I finished the <a href="https://gist.github.com/clayrat/2e3fd65c17e66be30039b29fda52fb65">reflection part</a>. Could you confirm that this is what you had in mind?</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

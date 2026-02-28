@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Why are fully faithful functors stable under pushouts? · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20are.20fully.20faithful.20functors.20stable.20under.20pushouts.3F.html">Why are fully faithful functors stable under pushouts?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="555438449"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20are%20fully%20faithful%20functors%20stable%20under%20pushouts%3F/near/555438449" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20are.20fully.20faithful.20functors.20stable.20under.20pushouts.3F.html#555438449">(Nov 13 2025 at 19:14)</a>:</h4>
+<p>It is known that fully faithful functors are stable under pushout, in the sense that if we have a pushout square of functors:<br>
+<a href="/user_uploads/21317/E1VyfLADHayBbXx1DpE9bYgR/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/E1VyfLADHayBbXx1DpE9bYgR/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="454x450" src="/user_uploads/thumbnail/21317/E1VyfLADHayBbXx1DpE9bYgR/image.png/840x560.webp"></a></div><p>if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi></mrow><annotation encoding="application/x-tex">g</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span></span></span></span> is fully faithful, then so is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span> (e.g. see the references on <a href="https://ncatlab.org/nlab/show/embedding%20of%20categories">[[embedding of categories]]</a>). I am aware of two flavours of proof for this result: the first makes use of the concrete description of a pushout of categories (which is rather involved), and the second makes use of the presheaf construction to transform the pushout to a pullback, and then analyse that.</p>
+<p>I am interested in analogues of this result in which the structures are more complicated than categories (meaning a concrete description of the pushout is not appealing) and for which there is not an analogue of the presheaf construction. It would therefore be useful to have a different abstract proof of the stability of pushouts in Cat. Does anyone know of any other arguments that establish this property?</p>
+
+
+
+<a name="555444664"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20are%20fully%20faithful%20functors%20stable%20under%20pushouts%3F/near/555444664" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> fosco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20are.20fully.20faithful.20functors.20stable.20under.20pushouts.3F.html#555444664">(Nov 13 2025 at 19:45)</a>:</h4>
+<p>I have no idea if it works, but have you tried with the idea that sometimes, in a category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> with a factorization system <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo separator="true">,</mo><mi>M</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,M)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mclose">)</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span></span></span></span> is stable under pullback? The dual condition is pushout stability of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span></span></span></span> in the sense you need, when <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>=</mo><mi>C</mi><mi>a</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">C=Cat</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal">a</span><span class="mord mathnormal">t</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo separator="true">,</mo><mi>M</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,M)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mclose">)</span></span></span></span> is the bo-ff factorization</p>
+
+
+
+<a name="555444815"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20are%20fully%20faithful%20functors%20stable%20under%20pushouts%3F/near/555444815" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> fosco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20are.20fully.20faithful.20functors.20stable.20under.20pushouts.3F.html#555444815">(Nov 13 2025 at 19:46)</a>:</h4>
+<p>I suspect this path makes things even more difficult, if you don't have access to a way to ensure that the FS you generate, provided it exists, has a pushout-stable right class.</p>
+
+
+
+<a name="555518794"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20are%20fully%20faithful%20functors%20stable%20under%20pushouts%3F/near/555518794" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20are.20fully.20faithful.20functors.20stable.20under.20pushouts.3F.html#555518794">(Nov 14 2025 at 07:17)</a>:</h4>
+<p>Do you have any conditions in mind that guarantee pushout stability?</p>
+
+
+
+<a name="555519015"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20are%20fully%20faithful%20functors%20stable%20under%20pushouts%3F/near/555519015" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20are.20fully.20faithful.20functors.20stable.20under.20pushouts.3F.html#555519015">(Nov 14 2025 at 07:19)</a>:</h4>
+<p>I had thought perhaps there could be a weak factorisation system in which the right class was the fully faithful functors (similarly to those in §4.4 of Bourke–Garner's <a href="https://arxiv.org/abs/1412.6559">Algebraic weak factorisation systems I: accessible AWFS</a>), but I'm not familiar with a tool to check this.</p>
+
+
+
+<a name="555533869"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20are%20fully%20faithful%20functors%20stable%20under%20pushouts%3F/near/555533869" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20are.20fully.20faithful.20functors.20stable.20under.20pushouts.3F.html#555533869">(Nov 14 2025 at 08:55)</a>:</h4>
+<p>I thought at first there would be a factorization system following the above exactly, but it seems not, because fully faithful morphisms are not always exponentiable in Cat.  (This became obvious upon looking at more than just the classifying morphism.)</p>
+
+
+
+<a name="555538400"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20are%20fully%20faithful%20functors%20stable%20under%20pushouts%3F/near/555538400" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20are.20fully.20faithful.20functors.20stable.20under.20pushouts.3F.html#555538400">(Nov 14 2025 at 09:16)</a>:</h4>
+<p>It seems, in fact, that the existence of such a factorisation system (at least an algebraic one) for classifiable maps <em>implies</em> that the maps are exponentiable, because <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="script">P</mi><mi>f</mi></msub></mrow><annotation encoding="application/x-tex">\mathcal P_f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.08222em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0822em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.10764em;">f</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> is in fact identified with the relevant comma category, so you can read pi types off the factorisations.  So if there isn't a problem with that argument, such a factorisation system cannot exist.</p>
+
+
+
+<a name="555540440"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20are%20fully%20faithful%20functors%20stable%20under%20pushouts%3F/near/555540440" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20are.20fully.20faithful.20functors.20stable.20under.20pushouts.3F.html#555540440">(Nov 14 2025 at 09:27)</a>:</h4>
+<p>Right, I should have pointed out that the fully faithful functors can't form a factorisation system by the methods of section 4.4 for exactly the reason you point out. However, as far as I know, this argument doesn't eliminate the possibility there may be a factorisation system nonetheless (simply not constructed in this manner).</p>
+
+
+
+<a name="555541596"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20are%20fully%20faithful%20functors%20stable%20under%20pushouts%3F/near/555541596" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20are.20fully.20faithful.20functors.20stable.20under.20pushouts.3F.html#555541596">(Nov 14 2025 at 09:33)</a>:</h4>
+<p>It would have to be pretty dissimilar as you couldn't use the pullbacks as the squares of a double category at all.</p>
+
+
+
+<a name="555542646"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20are%20fully%20faithful%20functors%20stable%20under%20pushouts%3F/near/555542646" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20are.20fully.20faithful.20functors.20stable.20under.20pushouts.3F.html#555542646">(Nov 14 2025 at 09:38)</a>:</h4>
+<p>Nonetheless, maybe you could lift one somehow from the category of graphs, through the free category monad.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

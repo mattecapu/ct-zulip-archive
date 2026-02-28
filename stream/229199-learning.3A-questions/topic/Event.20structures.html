@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Event structures · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html">Event structures</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="512989073"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/512989073" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#512989073">(Apr 18 2025 at 07:50)</a>:</h4>
+<p>Discussions in which I participated brought up the notion of an <a href="https://ncatlab.org/nlab/show/event+structure">[[event structure]]</a>, something I'd only vaguely known about. Looking into them a little, what a zoo! Mentioned in Pinna's <a href="https://arxiv.org/abs/1910.02521">Representing Dependencies in Event Structures</a> are:</p>
+<blockquote>
+<p>Prime event structure (pes); relaxed primed event structure (rpes); flow event structure (fes); shrinking event structure (ses); growing event structure (ges); bundle event structure; dual event structure; asymmetric event structure; circular event structure; inhibitor event structure (ies); event structure with resolvable conflicts (rces); dynamical causality event structure (dces); context-dependent event structure (cdes).</p>
+</blockquote>
+<p>And there are further varieties: reversible, timed, higher-order dynamic-causality, with symmetry, ...</p>
+<p>The seminal paper  on event structure,</p>
+<ul>
+<li>M. Nielsen, G. D. Plotkin, and G. Winskel, Petri nets, event structures and domains, part I, Theoretical Computer Science, vol. 13, pp. 85–108, 1981,</li>
+</ul>
+<p>already looked to compare them with other formalisms. So we find correspondences, such as between prime event structures and safe Petri nets. Van Glabbeek and Plotkin carry out more such comparison in <a href="https://arxiv.org/abs/0912.4023">Configuration Structures, Event Structures and Petri Nets</a>:</p>
+<p><a href="/user_uploads/21317/UKaViOO4T8hSfgJ1sE2rrKmi/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/UKaViOO4T8hSfgJ1sE2rrKmi/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="283x319" src="/user_uploads/thumbnail/21317/UKaViOO4T8hSfgJ1sE2rrKmi/image.png/840x560.webp"></a></div><p>So how do people in the ACT community view event structures today? They seem to present a kind of unfolding of forms of Petri nets. Are there any advantages to that mode of presentation?</p>
+
+
+
+<a name="513041209"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513041209" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513041209">(Apr 18 2025 at 14:22)</a>:</h4>
+<p>Maybe a better question is "who in the applied category theory knows about event structures?"   I'd never heard of them, but I consider my friend Gordon Plotkin to be an applied category theorist (even if he doesn't), so we could ask him what's going on with event structures.   I also feel <span class="user-mention" data-user-id="281251">@Pawel Sobocinski</span> is the kind of guy who might know about event structures: he's worked on Petri nets from a much more computer-scientific point of view than I ever have.  (I got into them from chemistry, where they're more often used to set up systems of ODE rather than describe discrete events.)</p>
+
+
+
+<a name="513042649"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513042649" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513042649">(Apr 18 2025 at 14:31)</a>:</h4>
+<p>Gordon Plotkin has invented and/or knows about a vast number of simple computer science abstractions that I've never heard of, so whenever I talk to him I hear about a lot of new structures and despair of ever expanding my mental scope enough to incorporate them in my way of thinking.</p>
+
+
+
+<a name="513043598"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513043598" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513043598">(Apr 18 2025 at 14:37)</a>:</h4>
+<p>One thing that goes against my physics training is that event structures have a built-in 'arrow of time': there are at most finitely many events that occur <em>before</em> any event, but we can have infinitely many events <em>after</em> any event.  This may be very practical if the beginning of time is when you start a program running, and you imagine letting it run indefinitely.  </p>
+<p>But there are also radical approaches to physics based on <a href="https://ncatlab.org/nlab/show/causal%20sets">[[causal sets]]</a>, which are simply posets where for any <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≤</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x \le y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span> there are finitely many <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span> with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≤</mo><mi>a</mi><mo>≤</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x \le a \le y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span>.    These <a href="https://en.wikipedia.org/wiki/Causal_sets#Further_reading">radical physicists</a>, like Fay Dowker and Rafael Sorkin, want to use causal sets to describe spacetime, with the elements being points of spacetime.   I've never seen them impose 'arrow of time' axiom, that only finitely many events occur before any given event, but it sounds like positing a Big Bang.  It even reminds me of Aristotle's First Cause, though that could motivate a stronger axiom saying there's a unique event that comes before all others.</p>
+<p>Yes, I'm rambling on - these are just some mental associations.</p>
+
+
+
+<a name="513048010"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513048010" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513048010">(Apr 18 2025 at 15:05)</a>:</h4>
+<p>Rambling's fine. <span aria-label="grinning" class="emoji emoji-1f600" role="img" title="grinning">:grinning:</span> </p>
+<p>Maybe this marks a distinction between communities. Event structures are more likely in a Cambridge (UK) style categorical computer science, whereas ACT has focused on Petri nets.  </p>
+<p>But to show you how close you've come to them, from the bibliography of <a href="https://compositionality.episciences.org/13637/pdf">A compositional account of motifs, mechanisms, and dynamics in biochemical regulatory networks</a>:</p>
+<p><a href="/user_uploads/21317/dmvX-jgQvT8jFPFmOoju1Xnz/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/dmvX-jgQvT8jFPFmOoju1Xnz/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="814x147" src="/user_uploads/thumbnail/21317/dmvX-jgQvT8jFPFmOoju1Xnz/image.png/840x560.webp"></a></div>
+
+
+
+<a name="513048838"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513048838" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513048838">(Apr 18 2025 at 15:09)</a>:</h4>
+<p>So close, and yet so far.</p>
+
+
+
+<a name="513103839"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513103839" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513103839">(Apr 18 2025 at 22:08)</a>:</h4>
+<p>We’ve heard of event structures, but I don’t actually understand them. Maybe <span class="user-mention" data-user-id="275965">@Evan Patterson</span> does.</p>
+
+
+
+<a name="513105003"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513105003" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513105003">(Apr 18 2025 at 22:20)</a>:</h4>
+<p>Hey, I recognize that bibliography! I cited the paper <a href="https://doi.org/10.1016/j.tcs.2004.04.001">"Domain and event structure semantics for Petri nets with read and inhibitor arcs"</a> because the "inhibitor nets" defined there (Def 1) are similar to the "Petri nets with signed links" that we consider. But, as in John's work, we were intererested in applications to chemistry and biology, rather than TCS applications like concurrency. So I confess that I didn't find out what event structures are or how they're related to inhibitor nets. Would be fun to learn about it, though.</p>
+
+
+
+<a name="513115357"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513115357" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513115357">(Apr 19 2025 at 00:42)</a>:</h4>
+<p>Yes, I too was interested in the extra structures that paper slapped on Petri nets, rather than the semantics discussed there.  Even without understanding event structures, I can imagine an 'event structure semantics' for Petri nets where your Petri net has tokens in its places and an 'event' occurs each time there's a 'transition' and the tokens move.   Two such events occur here<a href="/user_uploads/21317/oi0Frgwsn8DzlbMzqONUSlRv/petri.png">:</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/oi0Frgwsn8DzlbMzqONUSlRv/petri.png" title=":"><img data-original-content-type="image/png" data-original-dimensions="1202x257" src="/user_uploads/thumbnail/21317/oi0Frgwsn8DzlbMzqONUSlRv/petri.png/840x560.webp"></a></div><p>but events naturally form a poset, where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\le</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span></span></span></span> means that one can occur after another.</p>
+<p>This would be what computer scientists call a nondeterministic semantics: in each state of the system it's <em>possible</em> for certain events to occur, moving it to another state, and that's all we know.</p>
+
+
+
+<a name="513144641"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513144641" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513144641">(Apr 19 2025 at 07:28)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Event.20structures/near/513115357">said</a>:</p>
+<blockquote>
+<p>I can imagine an 'event structure semantics' for Petri nets where your Petri net has tokens in its places and an 'event' occurs each time there's a 'transition' and the tokens move.</p>
+</blockquote>
+<p>That sounds right. Events to represent the transition firings of nets.</p>
+<p>We need the likes of <span class="user-mention" data-user-id="308397">@Sam Staton</span> to help us. He worked with Winskel himself</p>
+<ul>
+<li><a href="http://www.cs.ox.ac.uk/people/samuel.staton/papers/lics2010.pdf">On the Expressivity of Symmetry in Event Structures</a></li>
+</ul>
+<p>Or <span class="user-mention" data-user-id="276509">@Hugo Paquet</span> who currently works with them, as with </p>
+<ul>
+<li><a href="https://www.cs.ox.ac.uk/people/hugo.paquet/mfps22.pdf">Bi-invariance for uniform strategies on event structures</a>.</li>
+</ul>
+
+
+
+<a name="513145651"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513145651" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513145651">(Apr 19 2025 at 07:43)</a>:</h4>
+<p>By the way, we weren't looking at event structures for fancy things like concurrent programming, rather to specify some medical procedure. </p>
+<p>David Karcher's 'higher-order dynamic-causality event structure' (hdes) are used for a clinical case study in Chap. 5 of his thesis, <a href="https://verlag.tu-berlin.de/en/produkt/978-3-7983-2995-9/">Event Structures with Higher-Order Dynamics</a>:</p>
+<p><a href="/user_uploads/21317/L5Jx6JT2WGrNaOcW2dBpKDje/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/L5Jx6JT2WGrNaOcW2dBpKDje/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="417x351" src="/user_uploads/thumbnail/21317/L5Jx6JT2WGrNaOcW2dBpKDje/image.png/840x560.webp"></a></div><p>A couple of paragraphs on why one might prefer event structures to Petri nets:</p>
+<p><a href="/user_uploads/21317/AHyz5EsXUSPi-GKL07tsyUNt/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/AHyz5EsXUSPi-GKL07tsyUNt/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="501x251" src="/user_uploads/thumbnail/21317/AHyz5EsXUSPi-GKL07tsyUNt/image.png/840x560.webp"></a></div>
+
+
+
+<a name="513146372"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513146372" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Damiano Mazza <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513146372">(Apr 19 2025 at 07:54)</a>:</h4>
+<p>I know event structures relatively well, at least in their incarnation as "prime event structures" (as David mentioned, there are tons of variants).  Petri nets abstract computational processes as certain kinds of machines based on tokens and transitions.  Prime event structures are more algebraic: they abstract a computational process in term of <em>events</em> that may or may not happen, with a causal order saying which events are necessary for a given event to be enabled, and a conflict relation saying which events cannot both happen in a consistent evolution of the system.</p>
+<p>For example, if you have three events <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">a,b,c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">b</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">c</span></span></span></span> with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>≤</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a\leq b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span> in conflict with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span>, then you are saying that, when you run your computational process, one of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span> or <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span> may happen (not <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span>, because it needs <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span>), and if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span> happens, then that's it, nothing else may happen, otherwise, if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span> happens, then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> is allowed to happen (but not <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span>).</p>
+<p>A key notion for event structures is that of a <em>configuration</em>, which is a conflict-free downward-closed set of events.  It is a sort of a possible "snapshot" of the system at some point during its evolution.  In the above example, we have four configurations: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">\emptyset</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">∅</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">a</span><span class="mclose">}</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>c</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{c\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">c</span><span class="mclose">}</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{a,b\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">b</span><span class="mclose">}</span></span></span></span>.</p>
+<p>Intuitively, Petri nets may be assigned an event structure in the way John sketched.  Conversely, one may look for a Petri net "implementing" a certain event structure.  This is where one needs to be precise about what kind of Petri nets and what kind of event structures one is considering.  For example, I'm pretty sure that general Petri nets are "more expressive" than prime event structures, in the sense that there are some Petri nets that you may not faithfully interpret as a prime event structure (but you may interpret them using the more general version of event structures).  This is because prime event structures refuse "disjunctive causation", that is, the fact that an event <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span> may be caused by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span> <em>or</em> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span>.</p>
+<p>Unlike Petri nets, event structures were studied from the categorical viewpoint right from the start.  One may define a category whose objects are (prime) event structures, and the properties/structure of this category (products, coproducts, symmetric monoidal structure, etc.) correspond to ways of building bigger computational systems from smaller ones, so that one may interpret concurrent programming languages compositionally.  In other words, syntactic constructs correspond to categorical operations on event structures, which is something that programming language theorists like very much in general.</p>
+<p>One of the fundamental motivations for assigning an event structure to a concurrent program is to study program equivalence.  For that, several notions of equivalence of event structures have been introduced, all variants of something called <em>bisimilarity</em>.  If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span> are two programs and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo mathvariant="normal" lspace="0em" rspace="0em">⟦</mo><mi>P</mi><mo mathvariant="normal" lspace="0em" rspace="0em">⟧</mo></mrow><annotation encoding="application/x-tex">\llbracket P\rrbracket</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen"><span class="mopen">[</span><span class="mspace" style="margin-right:-0.1778em;"></span><span class="mopen">[</span></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mclose"><span class="mclose">]</span><span class="mspace" style="margin-right:-0.1778em;"></span><span class="mclose">]</span></span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo mathvariant="normal" lspace="0em" rspace="0em">⟦</mo><mi>Q</mi><mo mathvariant="normal" lspace="0em" rspace="0em">⟧</mo></mrow><annotation encoding="application/x-tex">\llbracket Q\rrbracket</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen"><span class="mopen">[</span><span class="mspace" style="margin-right:-0.1778em;"></span><span class="mopen">[</span></span><span class="mord mathnormal">Q</span><span class="mclose"><span class="mclose">]</span><span class="mspace" style="margin-right:-0.1778em;"></span><span class="mclose">]</span></span></span></span></span> their event structures, the fact that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo mathvariant="normal" lspace="0em" rspace="0em">⟦</mo><mi>P</mi><mo mathvariant="normal" lspace="0em" rspace="0em">⟧</mo></mrow><annotation encoding="application/x-tex">\llbracket P\rrbracket</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen"><span class="mopen">[</span><span class="mspace" style="margin-right:-0.1778em;"></span><span class="mopen">[</span></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mclose"><span class="mclose">]</span><span class="mspace" style="margin-right:-0.1778em;"></span><span class="mclose">]</span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo mathvariant="normal" lspace="0em" rspace="0em">⟦</mo><mi>Q</mi><mo mathvariant="normal" lspace="0em" rspace="0em">⟧</mo></mrow><annotation encoding="application/x-tex">\llbracket Q\rrbracket</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen"><span class="mopen">[</span><span class="mspace" style="margin-right:-0.1778em;"></span><span class="mopen">[</span></span><span class="mord mathnormal">Q</span><span class="mclose"><span class="mclose">]</span><span class="mspace" style="margin-right:-0.1778em;"></span><span class="mclose">]</span></span></span></span></span> are bisimilar tells us that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span> behave in the same way, according to a suitable notion of "sameness".  Bisimilarity (or, rather, the key underlying notion, called <em>bisimulation</em>) have been studied from a categorical perspective using the notion of <a href="https://www.sciencedirect.com/science/article/pii/S0890540196900577">"open map"</a>.</p>
+<p>More recently, Winskel and collaborators used event structures as the starting point of a very general kind of games semantics for programming languages, called <em>concurrent games</em>.  But that's another story.</p>
+<p>Back to the main question, I don't know how event structures are viewed in the ACT community, apparently they are not very well known at all!  But there's already a bunch of categorical machinery available for them, which makes them rather immediately accessible to the community.  They are certainly very versatile, because they may describe arbitrary processes, not necessarily coming from the execution of a program.  However, one has to see if and how all the machinery (typically, bisimulations) are still meaningful outside of the context of programming languages.</p>
+
+
+
+<a name="513154186"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513154186" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Hugo Paquet <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513154186">(Apr 19 2025 at 09:42)</a>:</h4>
+<p>A Petri net can be "unfolded" to a particular kind of loop-free Petri net called an occurrence net. This unfolding should be a right adjoint to the inclusion of occurrence nets into Petri nets. Then there is another adjunction between the category of occurrence nets and the category of event structures, described in <a href="https://www.cl.cam.ac.uk/~gw104/Winskel1987_Chapter_EventStructures.pdf">this 1987 paper</a>, where events correspond precisely to transitions. By composing these adjunctions we get an adjunction between Petri nets and event structures. </p>
+<p>But it's a bit hard to make all this precise because of some symmetry issues. So either we can add symmetry to event structures and occurrence nets (like in <a href="https://www.cl.cam.ac.uk/~gw104/genunf.pdf">this paper</a>), or we can give each token a precise identity (like in <a href="https://arxiv.org/abs/2005.05108">this paper</a>). (Or we can restrict the Petri nets to safe Petri nets, but that's a strong restriction.)</p>
+
+
+
+<a name="513156584"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513156584" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Staton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513156584">(Apr 19 2025 at 10:20)</a>:</h4>
+<p>Hi! Just to add an analogy that might or might not be self-evident here: the difference between an automaton, and the language it accepts.</p>
+
+
+
+<a name="513156631"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513156631" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Staton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513156631">(Apr 19 2025 at 10:20)</a>:</h4>
+<p>Event structures are intended as a semantic domain (analogous to regular languages). Petri nets can be ad-hoc / intensional / have unobservable differences e.g. where the loops are (analogous to automata). Of course, automata are still useful! and so are Petri nets.</p>
+
+
+
+<a name="513156662"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513156662" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Staton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513156662">(Apr 19 2025 at 10:20)</a>:</h4>
+<p>I would really like to understand how this fits with the bio and chemistry applications. Is it that you don't yet care about an extensional semantic domain, or is it that loops _are_ observable, or is it that you actually have occurrence nets?</p>
+
+
+
+<a name="513192753"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513192753" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513192753">(Apr 19 2025 at 18:08)</a>:</h4>
+<p>What do you mean by "loops"?   I can imagine a possible example: a transition from a single place to itself.   When this transition fires, the marking of the Petri net does not change.</p>
+<p>In chemistry this would count as "nothing happening" - we don't care about the personal experiences of individual molecules.   So in chemistry nobody would even dream of using a Petri net with a transition from a place to itself.</p>
+<p>In biology the use of Petri nets is not so deeply developed, but people mainly care about the changes in populations, so again they'd probably consider this firing a nonevent.</p>
+
+
+
+<a name="513249584"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513249584" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Staton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513249584">(Apr 20 2025 at 07:41)</a>:</h4>
+<p>Thanks <span class="user-mention" data-user-id="275920">@John Baez</span>, yes I meant that or the sort of thing <a href="https://upload.wikimedia.org/wikipedia/commons/f/fe/Detailed_petri_net.png">in this wikipedia picture</a>, or anything else that would be unfolded into a more canonical shape when converting to event structures. Is this detailed structure important in the applications or can it be unfolded away?</p>
+<div class="message_inline_image"><a href="https://upload.wikimedia.org/wikipedia/commons/f/fe/Detailed_petri_net.png" title="in this wikipedia picture"><img src="https://uploads.zulipusercontent.net/8688da2e8c3ec9fa5c922a682633cb3534d35891/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f662f66652f44657461696c65645f70657472695f6e65742e706e67"></a></div>
+
+
+
+<a name="513297203"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513297203" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513297203">(Apr 20 2025 at 18:50)</a>:</h4>
+<p>I don't understand "unfolding" and I don't see what is weird about the Petri net you just showed me (unlike a Petri net that has a transition going from a place to itself, which would be considered "chemically irrelevant").   I guess I'm missing something.</p>
+
+
+
+<a name="513304373"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513304373" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Hugo Paquet <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513304373">(Apr 20 2025 at 20:29)</a>:</h4>
+<p>Unfolding is about getting an acyclic Petri net out of a Petri net like the one in the picture. That's why an event structure is defined as a partial order (not just a preorder), and there's an induced Scott domain. <br>
+It's interesting that the cycle would be chemically irrelevant, because the semantics would be an infinite chain of events. Probably I don't have the right intuition.</p>
+
+
+
+<a name="513307604"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513307604" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513307604">(Apr 20 2025 at 21:14)</a>:</h4>
+<p>The idea is that transitions that don't change the marking at all are chemically irrelevant.   They don't change how many molecules you have of each kind.</p>
+<p>Chemists mainly care about the rate equation and master equation semantics, which give differential equations from Petri nets where each transition is equipped with a positive real number.  Transitions that don't change the marking can be removed without changing these differential equations.</p>
+
+
+
+<a name="513307702"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513307702" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513307702">(Apr 20 2025 at 21:15)</a>:</h4>
+<p>On the other hand, every transition in the Petri net you just showed us changes the marking when it fires.</p>
+
+
+
+<a name="513363536"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513363536" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Staton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513363536">(Apr 21 2025 at 08:31)</a>:</h4>
+<p>Thanks John. I don't know whether you're still unclear about unfoldings, here is a picture (taken from <a href="https://www.cl.cam.ac.uk/~gw104/genunf.pdf">Hayman and Winskel</a>): <br>
+<a href="/user_uploads/21317/HdA5JGvkbfCarv5k6pMCX67z/image.png">image.png</a><br>
+<a href="/user_uploads/21317/VGNADmT0WmIruMFfponPidnx/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/HdA5JGvkbfCarv5k6pMCX67z/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="326x260" src="/user_uploads/thumbnail/21317/HdA5JGvkbfCarv5k6pMCX67z/image.png/840x560.webp"></a></div><div class="message_inline_image"><a href="/user_uploads/21317/VGNADmT0WmIruMFfponPidnx/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="700x426" src="/user_uploads/thumbnail/21317/VGNADmT0WmIruMFfponPidnx/image.png/840x560.webp"></a></div><p>The first Petri net has cycles, and the second is its unfolding, which happens to be infinite. Do you see what I mean from this illustration?</p>
+<p>(Edit: apologies, that picture of unfolding is maybe the kind you are saying isn't chemically relevant. Maybe this one is clearer (taken from <a href="https://www.cl.cam.ac.uk/teaching/1920/TopConc/Topics2020.pdf">Glynn Winskel's lecture notes</a>):)<br>
+<a href="/user_uploads/21317/YKKZhqQ8q0BdkgZWB1B4OpoW/image.png">image.png</a><br>
+<a href="/user_uploads/21317/1YLySksg17lkrWq_TTdG_6FZ/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/YKKZhqQ8q0BdkgZWB1B4OpoW/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="454x364" src="/user_uploads/thumbnail/21317/YKKZhqQ8q0BdkgZWB1B4OpoW/image.png/840x560.webp"></a></div><div class="message_inline_image"><a href="/user_uploads/21317/1YLySksg17lkrWq_TTdG_6FZ/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="712x586" src="/user_uploads/thumbnail/21317/1YLySksg17lkrWq_TTdG_6FZ/image.png/840x560.webp"></a></div>
+
+
+
+<a name="513363646"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513363646" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Staton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513363646">(Apr 21 2025 at 08:32)</a>:</h4>
+<p>Many nets will unfold to the same thing. In CS applications, a net typically has the same semantics as its unfolding. Is that true in other domains?</p>
+
+
+
+<a name="513363730"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513363730" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Staton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513363730">(Apr 21 2025 at 08:32)</a>:</h4>
+<p>Nets with cycles will be useful for specification and verification, since they are more often finite. But the unfolded structure (~event structure) is typically regarded as the canonical meaning. Perhaps you have no need for this because you immediately go to another mathematical domain for meaning?</p>
+
+
+
+<a name="513434083"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513434083" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513434083">(Apr 21 2025 at 16:49)</a>:</h4>
+<p>Thanks, I think I get unfoldings now, from your pictures.  </p>
+<p>In chemistry we indeed usually treat Petri nets as merely a syntax for writing differential equations: either an ordinary differential equation (rate equation) or stochastic differential equation (master equation).</p>
+<p>In chemistry, Petri nets very often have cycles, and that's not considered a bad thing, since it merely says that some collection of chemicals can be destroyed in some reactions and later created by others.   Unfolding would amount to creating imaginary new chemicals to avoid this, which we don't want - though it might be good for some technical reason I've never seen yet!</p>
+<p>The only cycles that are shunned consist of a single transition whose multiset of input places is exactly equal to its multiset of output places, because firing this transition will not affect the marking.   And they're shunned out of convenience rather than necessity: you can remove them since doing so doesn't affect the semantics, but you can equally well leave them in.   So the <em>theory</em> allows them, but practitioners never use them.</p>
+
+
+
+<a name="513539049"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513539049" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathan Corbyn <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513539049">(Apr 22 2025 at 07:43)</a>:</h4>
+<p>When unfolding, it is normal to record the state in the petri net where a node comes from. That is, one can still label the unfolding with the names of the chemicals, it just may be the case the same chemical occurs multiple times. (These are the ‘imaginary’ chemicals.) The result is that the unfolding is additionally recording something akin to the history of the reactants, rather than just what molecules we have at a given time.</p>
+
+
+
+<a name="513547695"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513547695" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513547695">(Apr 22 2025 at 08:24)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Event.20structures/near/513434083">said</a>:</p>
+<blockquote>
+<p>Unfolding would amount to creating imaginary new chemicals to avoid this, which we don't want - though it might be good for some technical reason I've never seen yet!</p>
+</blockquote>
+<p>To generalise what I see as <span class="user-mention" data-user-id="460737">@Nathan Corbyn</span>'s correct response, just because it's possible to unfold a Petri net to an occurrence net, and we may see the latter as a special kind of the former, doesn't mean that when using occurrence nets we're only dealing with a special version of the kind of thing we're looking to capture with Petri nets.</p>
+<p>Could we liken the difference to that in physics between a phase space and a trajectory space?</p>
+<p>Is it just for historical reasons that we're seeing different domains of use for these constructions? I mentioned above Karcher using an event structure to depict a medical case study. Is there anything to stop some kind of event structure formalism depicting , say, chemical reactions with rates?</p>
+
+
+
+<a name="513555781"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513555781" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513555781">(Apr 22 2025 at 09:04)</a>:</h4>
+<p>Interesting from Joachim Kock in <a href="https://arxiv.org/abs/2005.05108">Whole-grain Petri nets and processes</a>:</p>
+<p><a href="/user_uploads/21317/UysmmuYu7NUQW6dFf6JNNmDa/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/UysmmuYu7NUQW6dFf6JNNmDa/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="740x545" src="/user_uploads/thumbnail/21317/UysmmuYu7NUQW6dFf6JNNmDa/image.png/840x560.webp"></a></div><p>Reminiscent of universal covering spaces. Hmm, is there any interesting <a href="https://ncatlab.org/nlab/show/fundamental+theorem+of+covering+spaces">[[covering space theory]]</a> for Petri nets?</p>
+
+
+
+<a name="513830985"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513830985" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513830985">(Apr 23 2025 at 10:14)</a>:</h4>
+<p>If whole-grain Petri nets are the image of pre-nets inside <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Σ</mi><mtext>-</mtext><mi>n</mi><mi>e</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\Sigma\text{-}net</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Σ</span><span class="mord text"><span class="mord">-</span></span><span class="mord mathnormal">n</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span></span></span></span> (<a href="https://arxiv.org/abs/2101.04238">Categories of Nets, p. 3</a>) and whole-grain Petri nets can be unfolded to a universal unfolding, is the same true of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Σ</mi></mrow><annotation encoding="application/x-tex">\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Σ</span></span></span></span>-nets? </p>
+<p>But Kock attributes the capacity to find a universal unfolding for all Petri nets to the whole-grain setting, </p>
+<blockquote>
+<p>the symmetry problems simply disappear: Winskel’s ideas, notions and proof arguments in the safe case now work in full generality.</p>
+</blockquote>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Σ</mi></mrow><annotation encoding="application/x-tex">\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Σ</span></span></span></span>-nets seem to be combining individual and collective token styles, so does the symmetry problem for universal unfolding return here? </p>
+<p>And then what, if any, is the relation between Winskel-style unfolding and the execution semantics of the monoidal category of a net's “executions”?</p>
+
+
+
+<a name="513833545"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513833545" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Hugo Paquet <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513833545">(Apr 23 2025 at 10:28)</a>:</h4>
+<p>I'm not sure about <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Σ</mi></mrow><annotation encoding="application/x-tex">\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Σ</span></span></span></span>-nets, but for your last question, one difference is that the unfolding only looks at executions from a fixed initial marking, whereas the monoidal category consists of all executions between arbitrary markings.</p>
+
+
+
+<a name="513838867"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/513838867" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#513838867">(Apr 23 2025 at 10:58)</a>:</h4>
+<p>Thanks. So perhaps the latter is the more natural construction, like the fundamental groupoid over the fundamental group, etc.</p>
+
+
+
+<a name="514637800"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/514637800" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#514637800">(Apr 27 2025 at 11:40)</a>:</h4>
+<p>Has there been any ACT interest in the <em>Business Process Modelling Notation</em> (BPMN)? In this paper</p>
+<ul>
+<li>J. Bowles, M.B. Caminati, S. Cha, J. Mendoza, [A framework for automated conflict detection and resolution in medical guidelines] (<a href="https://doi.org/10.1016/j.scico.2019.07.002">https://doi.org/10.1016/j.scico.2019.07.002</a>),</li>
+</ul>
+<p>the authors are using it to specify clinical guidelines. <em>Labelled event structures</em> form the trace semantics, and are in turn taken as the unfolding of certain Petri nets. </p>
+<p><a href="/user_uploads/21317/rB8IpaIOj7IR9R8x6tdxf_4H/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/rB8IpaIOj7IR9R8x6tdxf_4H/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="857x97" src="/user_uploads/thumbnail/21317/rB8IpaIOj7IR9R8x6tdxf_4H/image.png/840x560.webp"></a></div><p>Meanwhile in this paper</p>
+<ul>
+<li>Remco M. Dijkman, Marlon Dumas, Chun Ouyang, <a href="https://doi-org.chain.kent.ac.uk/10.1016/j.infsof.2008.02.006">Semantics and analysis of business process models in BPMN</a></li>
+</ul>
+<p>BPMN is being mapped into Petri nets.</p>
+<p><a href="/user_uploads/21317/QZNRavl4kdc8Kk41DkYl8FT4/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/QZNRavl4kdc8Kk41DkYl8FT4/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="606x502" src="/user_uploads/thumbnail/21317/QZNRavl4kdc8Kk41DkYl8FT4/image.png/840x560.webp"></a></div><p><a href="/user_uploads/21317/RMTDiYzhYmkJxMQToHFEbiAf/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/RMTDiYzhYmkJxMQToHFEbiAf/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="500x331" src="/user_uploads/thumbnail/21317/RMTDiYzhYmkJxMQToHFEbiAf/image.png/840x560.webp"></a></div>
+
+
+
+<a name="514671181"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/514671181" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#514671181">(Apr 27 2025 at 18:25)</a>:</h4>
+<p>I've never heard of Business Process Modelling Notation, thanks!</p>
+<p>Maybe you explained already, but why are you thinking about things like this now?   I like all these homegrown diagrammatic notations.   ("Homegrown" sounds pretty condescending, but I mean "without the benefit of the modern categorical understanding of diagrammatic notations".  I keep telling everyone that there's a lot of math to be learned from understanding these, since people obviously find them useful and this usefulness should have mathematical wisdom hidden in it.)</p>
+
+
+
+<a name="514681697"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/514681697" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#514681697">(Apr 27 2025 at 20:31)</a>:</h4>
+<p>Being asked to look at a concrete problem in clinical trial management for ARIA led me to look at a bunch of formalisms in this area. My inclination is to take a deep dive into existing attempts to represent this kind of process.</p>
+<p>Nothing seems very far from Petri nets of some kind. But you might think there'd be some interesting lessons from adjacent formalisms. </p>
+<p>Then one might relate these to the latest ACT understanding.</p>
+
+
+
+<a name="514685557"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/514685557" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#514685557">(Apr 27 2025 at 21:18)</a>:</h4>
+<p>Great!  I guess this ain't news, but Petri nets and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Σ</mi></mrow><annotation encoding="application/x-tex">\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Σ</span></span></span></span>-nets feel to me like cogently formulated and deliberately very limited <em>syntaxes</em>, since they present precisely free commutative monoidal and symmetric monoidal categories, respectively, while event structures feel like a useful <em>semantics</em> for those and other syntaxes.  It's easy to come up with more expressive syntaxes, but once you hit the threshold of Turing completeness you're essentially competing with all programming languages.  I prefer to stay well below that level of complexity, since I feel a lot of interesting systems are simpler, and it's nice not hitting the fogbank of undecidability.</p>
+
+
+
+<a name="514802369"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/514802369" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#514802369">(Apr 28 2025 at 12:35)</a>:</h4>
+<p>Hopefully I can come up with some questions for you then. I'm intrigued by Joachim Kock here in his whole-grain paper:</p>
+<p><a href="/user_uploads/21317/bxMFitYdCMph271wjgN_HcKW/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/bxMFitYdCMph271wjgN_HcKW/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="719x213" src="/user_uploads/thumbnail/21317/bxMFitYdCMph271wjgN_HcKW/image.png/840x560.webp"></a></div>
+
+
+
+<a name="514820240"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/514820240" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#514820240">(Apr 28 2025 at 13:51)</a>:</h4>
+<p>I'm confused because Joachim wrote his whole-grain paper before we wrote ours and we referred to it.  Now he's referring to ours.  Did he update his?</p>
+
+
+
+<a name="514820460"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/514820460" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#514820460">(Apr 28 2025 at 13:52)</a>:</h4>
+<p>I don't know anything about digraphical species!</p>
+
+
+
+<a name="514849659"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/514849659" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#514849659">(Apr 28 2025 at 15:54)</a>:</h4>
+<p>Yes, updated</p>
+<p><a href="/user_uploads/21317/0s3ws48lSzZrZxw5fjvFdA31/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/0s3ws48lSzZrZxw5fjvFdA31/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="398x52" src="/user_uploads/thumbnail/21317/0s3ws48lSzZrZxw5fjvFdA31/image.png/840x560.webp"></a></div><p><a href="/user_uploads/21317/7h9iTDBmiSFi8rn9NJ94XbHy/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/7h9iTDBmiSFi8rn9NJ94XbHy/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="734x181" src="/user_uploads/thumbnail/21317/7h9iTDBmiSFi8rn9NJ94XbHy/image.png/840x560.webp"></a></div>
+
+
+
+<a name="514858347"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Event%20structures/near/514858347" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Event.20structures.html#514858347">(Apr 28 2025 at 16:36)</a>:</h4>
+<p>Thanks - very nice of him!</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

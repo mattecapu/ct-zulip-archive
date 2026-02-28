@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Is the 2-category of Grothendieck toposes extensive? · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html">Is the 2-category of Grothendieck toposes extensive?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="527537235"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/527537235" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#527537235">(Jul 07 2025 at 18:36)</a>:</h4>
+<p>[You can replace "Grothendieck toposes" with "toposes bounded over S" for your favourite elementary topos S if you like.]<br>
+The initial topos (the degenerate one) is a strict 2-initial object. One can construct coproducts of toposes as the product of their underlying categories. The boundedness/Grothendieck restriction is enough to guarantee the existence of pullbacks, and the pullback of the coproduct inclusions is the initial category, so coproducts are disjoint (two toposes are complementary clopen subtoposes in their coproduct). We're in good shape, so the question is, is this 2-category extensive (in the most straightforward sense that one can generalize extensivity to this setting)? Has anyone written about this?</p>
+<p>A related question whose answer is not necessarily determined by the above: are unions of subtoposes preserved by pullbacks in this topos? They are stable by pullback along inclusions, but what about surjections?</p>
+
+
+
+<a name="527543087"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/527543087" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#527543087">(Jul 07 2025 at 19:07)</a>:</h4>
+<p>After showing that the product of logoses is the coproduct of toposes (B3.4.1), <em>Sketches of an Elephant</em> remarks </p>
+<blockquote>
+<p>Also, coproducts are disjoint and stable under pullback; for we can identify <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">E</mi></mrow><annotation encoding="application/x-tex">\mathcal{E}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.08944em;">E</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">F</mi></mrow><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.09931em;">F</span></span></span></span> with the complementary open subtoposes <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="script">E</mi><mo>×</mo><mi mathvariant="script">F</mi><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\mathcal{E}\times\mathcal{F})/(1,0)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathcal" style="margin-right:0.08944em;">E</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.09931em;">F</span><span class="mclose">)</span><span class="mord">/</span><span class="mopen">(</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0</span><span class="mclose">)</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="script">E</mi><mo>×</mo><mi mathvariant="script">F</mi><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\mathcal{E}\times\mathcal{F})/(0,1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathcal" style="margin-right:0.08944em;">E</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.09931em;">F</span><span class="mclose">)</span><span class="mord">/</span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span> of the coproduct, and any geometric morphism <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi mathvariant="script">G</mi><mo>→</mo><mi mathvariant="script">E</mi><mo>×</mo><mi mathvariant="script">F</mi></mrow><annotation encoding="application/x-tex">f:\mathcal{G} \to \mathcal{E}\times\mathcal{F}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7805em;vertical-align:-0.0972em;"></span><span class="mord mathcal" style="margin-right:0.0593em;">G</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathcal" style="margin-right:0.08944em;">E</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.09931em;">F</span></span></span></span> induces a corresponding decomposition <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">G</mi><mo>≃</mo><mi mathvariant="script">G</mi><mi mathvariant="normal">/</mi><msup><mi>f</mi><mo>∗</mo></msup><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">)</mo><mo>×</mo><mi mathvariant="script">G</mi><mi mathvariant="normal">/</mi><msup><mi>f</mi><mo>∗</mo></msup><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal{G} \simeq \mathcal{G}/f^*(1,0) \times \mathcal{G}/f^*(0,1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7805em;vertical-align:-0.0972em;"></span><span class="mord mathcal" style="margin-right:0.0593em;">G</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≃</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.0593em;">G</span><span class="mord">/</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6887em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∗</span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.0593em;">G</span><span class="mord">/</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6887em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∗</span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span> of its domain.</p>
+</blockquote>
+
+
+
+<a name="527543491"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/527543491" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#527543491">(Jul 07 2025 at 19:08)</a>:</h4>
+<p>"Coproducts are disjoint and pullback-stable" is one definition of extensive for 1-categories.  I don't know offhand whether that is equivalent to something about slice categories as in the 1-categorical case, is that more what you had in mind?</p>
+
+
+
+<a name="527626886"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/527626886" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#527626886">(Jul 08 2025 at 08:11)</a>:</h4>
+<p>That is what I had in mind, thanks; I suppose the term extensive for this property was popularised after the Elephant was published. I'm still interested in unions of subtoposes though!</p>
+
+
+
+<a name="527741934"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/527741934" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#527741934">(Jul 08 2025 at 17:22)</a>:</h4>
+<p>I would expect that you can construct the union of subtoposes by taking their coproduct and then the (surjection, inclusion) factorization.  In which case, pullback-stability of unions should follow from pullback-stability of coproducts and surjections.</p>
+
+
+
+<a name="527838056"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/527838056" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#527838056">(Jul 09 2025 at 08:49)</a>:</h4>
+<p>Surjections are not stable under pullback(!)</p>
+
+
+
+<a name="527838506"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/527838506" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#527838506">(Jul 09 2025 at 08:51)</a>:</h4>
+<p>Some classes of surjection are stable, but which of the properties ensuring stability will be inherited by the surjection part of the universal morphism from the coproduct is not obvious (some of them might be checkable manually though)</p>
+
+
+
+<a name="531773688"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/531773688" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Graham Manuell <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#531773688">(Jul 30 2025 at 07:56)</a>:</h4>
+<p><span class="user-mention" data-user-id="277473">@Morgan Rogers (he/him)</span>  I think joins of subtoposes should be stable under pullback. I haven't checked this carefully, but here's an attempt at a proof sketch:</p>
+<p>All toposes are localic over the classifying topos of the theory of objects. The embeddings into an object of this slice 2-category should be the same as embeddings of the underlying topos without considering the geometric morphism. Also pullbacks should be computed in the same way. So the question reduces to that for locales internal to this topos and the result is true for locales.</p>
+
+
+
+<a name="531780390"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/531780390" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#531780390">(Jul 30 2025 at 08:26)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/channel/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/527838056">said</a>:</p>
+<blockquote>
+<p>Surjections are not stable under pullback(!)</p>
+</blockquote>
+<p>!!!</p>
+<p>I guess I more or less knew that, because I knew theorems that, say, open surjections and proper surjections are pullback-stable, and if all surjections were pullback-stable those theorems wouldn't be as important.  But I hadn't really internalized it.</p>
+<p>What's a simple example of a pullback of a surjection that's not a surjection?</p>
+
+
+
+<a name="531787735"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/531787735" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#531787735">(Jul 30 2025 at 09:00)</a>:</h4>
+<p><span class="user-mention" data-user-id="386922">@Graham Manuell</span> wrote:</p>
+<blockquote>
+<p>All toposes are localic over the classifying topos of the theory of objects.</p>
+</blockquote>
+<p>I wish I understood this, and I think I could, despite my general ignorance of topos theory.   </p>
+<ol>
+<li>What's the classifying topos of the theory of objects?  <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow><annotation encoding="application/x-tex">\mathsf{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">Set</span></span></span></span></span>???</li>
+<li>What does it mean to say all toposes are localic over this?</li>
+<li>Why is it true?  I'm actually more interested in a hand-wavy intuitive answer, like "why it's obvious when you have the right mental picture", rather than a proof.</li>
+</ol>
+
+
+
+<a name="531787806"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/531787806" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Graham Manuell <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#531787806">(Jul 30 2025 at 09:01)</a>:</h4>
+<p><span class="user-mention" data-user-id="276777">@Mike Shulman</span> I'll give you an example in locales. Let <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span> be the extended natural numbers with the Scott topology and let <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mspace></mspace><mspace width="0.1111em"/><mo lspace="0em" rspace="0.17em"></mo><mtext> ⁣</mtext><mo lspace="0em" rspace="0em">:</mo><mspace width="0.3333em"/><mi mathvariant="double-struck">N</mi><mo>→</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">f\colon \mathbb{N} \to N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace nobreak"></span><span class="mspace" style="margin-right:0.1111em;"></span><span class="mpunct"></span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mrel">:</span></span><span class="mspace" style="margin-right:0.3333em;"></span><span class="mord mathbb">N</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span> be the obvious map from the natural numbers with the discrete topology. This map is an epimorphism in locales (essentially since infinity is a directed join of points in the image). Let <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mspace></mspace><mspace width="0.1111em"/><mo lspace="0em" rspace="0.17em"></mo><mtext> ⁣</mtext><mo lspace="0em" rspace="0em">:</mo><mspace width="0.3333em"/><mn>1</mn><mo>→</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">g\colon 1 \to N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mspace nobreak"></span><span class="mspace" style="margin-right:0.1111em;"></span><span class="mpunct"></span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mrel">:</span></span><span class="mspace" style="margin-right:0.3333em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span> pick out infinity. Then the pullback is 0, and of course, $$0 \to 1$ $is not an epi.</p>
+
+
+
+<a name="531788394"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/531788394" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#531788394">(Jul 30 2025 at 09:03)</a>:</h4>
+<p>Thanks!  So why do we use the word "surjection" for this class of geometric morphisms?  In the light of examples like that it seems singularly inappropriate.  Wouldn't "epimorphism" be better?</p>
+
+
+
+<a name="531788707"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/531788707" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Graham Manuell <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#531788707">(Jul 30 2025 at 09:05)</a>:</h4>
+<p><span class="user-mention" data-user-id="275920">@John Baez</span> The classifying topos of objects, call it O, is the functor category from finite sets to sets. Every topos admits a localic geometirc morphism to this topos. Every topos classifies a geometric theory which without loss of generality involves only one sort. The single sort if given by O. Then to get the geometric theory we don't need to add any any more objects, just more relations. Adding relations corresponds giving a localic geometric morphism.</p>
+
+
+
+<a name="531789494"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/531789494" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Graham Manuell <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#531789494">(Jul 30 2025 at 09:09)</a>:</h4>
+<p><span class="user-mention" data-user-id="276777">@Mike Shulman</span> General epis are usual called surjections cause they form a nice factorisation system with the embeddings / regular monos. Surjections of topological spaces are just epis, not quotients so I think this terminology is appropriate.</p>
+<p>But regular epis also are not pullback stable. These examples are harder to describe easily, but you can get them taking products with non-exponentiable locales.</p>
+
+
+
+<a name="531790343"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/531790343" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#531790343">(Jul 30 2025 at 09:13)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="386922">Graham Manuell</span> <a href="#narrow/channel/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/531789494">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> General epis are usual called surjections cause they form a nice factorisation system with the embeddings / regular monos.</p>
+</blockquote>
+<p>But the word "surjection" means in other contexts that it maps onto every point of the codomain, which is evidently not true here.  We don't say that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">Z</mi><mo>→</mo><mi mathvariant="double-struck">Q</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z}\to \mathbb{Q}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">Z</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8556em;vertical-align:-0.1667em;"></span><span class="mord mathbb">Q</span></span></span></span> is a "surjection" of rings, because it's not, even though it is an epimorphism.  I don't see that a factorization system justifies it, and I didn't suggest anything about quotients or regular epis so I don't think those are relevant.  I'm just saying I think <em>this</em> class of morphisms should be called "epimorphisms" rather than "surjections" since they are not "surjective" in the intuitive sense.</p>
+
+
+
+<a name="531790516"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/531790516" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#531790516">(Jul 30 2025 at 09:14)</a>:</h4>
+<p>In particular, your example shows that the inclusion of sober spaces into locales does not reflect "surjections", so it is not a good generalization of the standard notion for topological spaces.</p>
+
+
+
+<a name="531790521"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/531790521" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Graham Manuell <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#531790521">(Jul 30 2025 at 09:14)</a>:</h4>
+<p>I guess I'm not too concerned that points don't behave well in the pointfree setting.</p>
+
+
+
+<a name="531790635"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/531790635" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#531790635">(Jul 30 2025 at 09:14)</a>:</h4>
+<p>That's fair, but pullbacks not behaving well is more problematic.</p>
+
+
+
+<a name="531790841"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/531790841" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#531790841">(Jul 30 2025 at 09:15)</a>:</h4>
+<p>If some function "maps onto every element of the codomain" even in some pointfree sense, that ought to remain true under pullback.</p>
+
+
+
+<a name="531798733"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/531798733" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Graham Manuell <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#531798733">(Jul 30 2025 at 09:52)</a>:</h4>
+<p>Sure. Whatever they are called they definitely are badly behaved.</p>
+
+
+
+<a name="531874131"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/531874131" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#531874131">(Jul 30 2025 at 15:40)</a>:</h4>
+<p>And because of that, I think they shouldn't be called "surjections".</p>
+
+
+
+<a name="531930470"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/531930470" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#531930470">(Jul 30 2025 at 21:05)</a>:</h4>
+<p>For me, the point-free notion captured by surjections is "the pushforward of the maximal subtopos/sublocale in the domain is the maximal subthing of the codomain". Put this way, it's intuitive that some kind of descent condition would be needed to ensure stability under pullback.</p>
+
+
+
+<a name="531952092"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/531952092" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#531952092">(Jul 30 2025 at 23:50)</a>:</h4>
+<p>I don't get the intuition.  It's also true in topological spaces that a map is a surjection if and only if the pushforward of the maximal subspace in the domain is the maximal subspace of the codomain.</p>
+
+
+
+<a name="532031726"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/532031726" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#532031726">(Jul 31 2025 at 10:04)</a>:</h4>
+<p>The intuition being that pushforwards don't inherently interact well with pullbacks. If I take the map from the real numbers with the discrete topology to the realms with their usual topology and pull back along the inclusion of the dense sublocale of the latter, the domain is again the trivial locale; that's another example of a surjection that is not stable under pullback (even though it is pointwise surjective), so you can't expect surjections of topological spaces to be well-behaved as surjections of locales.</p>
+
+
+
+<a name="532089050"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/532089050" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#532089050">(Jul 31 2025 at 14:24)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/channel/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532031726">said</a>:</p>
+<blockquote>
+<p>you can't expect surjections of topological spaces to be well-behaved as surjections of locales.</p>
+</blockquote>
+<p>Do you mean that the other way around?</p>
+
+
+
+<a name="532089277"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/532089277" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#532089277">(Jul 31 2025 at 14:25)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/channel/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532031726">said</a>:</p>
+<blockquote>
+<p>the dense sublocale of the latter</p>
+</blockquote>
+<p>And did you mean the maximal dense sublocale?</p>
+
+
+
+<a name="532090025"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/532090025" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#532090025">(Jul 31 2025 at 14:28)</a>:</h4>
+<p>How far does that example generalize?  If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> is any topological space, what can you say about the pullback of its discrete retopologization to its maximal dense sublocale?  Obviously if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> is already discrete the pullback is surjective.</p>
+
+
+
+<a name="532095939"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/532095939" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#532095939">(Jul 31 2025 at 14:53)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532089050">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/channel/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532031726">said</a>:</p>
+<blockquote>
+<p>you can't expect surjections of topological spaces to be well-behaved as surjections of locales.</p>
+</blockquote>
+<p>Do you mean that the other way around?</p>
+</blockquote>
+<p>No: I meant that a surjection of (sober) spaces, when viewed in the category of locales, loses the pullback property you described.</p>
+
+
+
+<a name="532098032"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/532098032" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#532098032">(Jul 31 2025 at 15:01)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532089277">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/channel/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532031726">said</a>:</p>
+<blockquote>
+<p>the dense sublocale of the latter</p>
+</blockquote>
+<p>And did you mean the maximal dense sublocale?</p>
+</blockquote>
+<p>The minimal dense sublocale, ie the double-negation sublocale.<br>
+Regarding generality, any non-discrete space will have a frame of opens which is not Boolean, so the double-negation sublocale will be a non-trivial sublocale. I don't know off the top of my head under what conditions this sublocale might be spatial (equivalently, when the pullback of the surjection from the distectization remains a surjection). <span class="user-mention" data-user-id="386922">@Graham Manuell</span> do you know?</p>
+
+
+
+<a name="532103206"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/532103206" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Graham Manuell <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#532103206">(Jul 31 2025 at 15:21)</a>:</h4>
+<p>Well, it'll be iff the space has a dense discrete subspace.</p>
+
+
+
+<a name="532106136"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Is%20the%202-category%20of%20Grothendieck%20toposes%20extensive%3F/near/532106136" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F.html#532106136">(Jul 31 2025 at 15:34)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/channel/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532095939">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532089050">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/channel/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532031726">said</a>:</p>
+<blockquote>
+<p>you can't expect surjections of topological spaces to be well-behaved as surjections of locales.</p>
+</blockquote>
+<p>Do you mean that the other way around?</p>
+</blockquote>
+<p>No: I meant that a surjection of (sober) spaces, when viewed in the category of locales, loses the pullback property you described.</p>
+</blockquote>
+<p>Right -- that sounds like saying that surjections of locales are <em>not</em> as well-behaved as surjections of spaces.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

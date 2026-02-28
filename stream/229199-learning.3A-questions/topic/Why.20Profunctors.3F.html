@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Why Profunctors? · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20Profunctors.3F.html">Why Profunctors?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="534818427"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20Profunctors%3F/near/534818427" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ruby Khondaker (she/her) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20Profunctors.3F.html#534818427">(Aug 17 2025 at 11:45)</a>:</h4>
+<p>I've been learning a bunch about profunctors recently (e.g. my recent question about <a class="stream-topic" data-stream-id="229199" href="/#narrow/channel/229199-learning.3A-questions/topic/.E2.9C.94.20Comma.20Categories.20vs.20Categories.20of.20Elements/with/531779789">#learning: questions &gt; ✔ Comma Categories vs Categories of Elements</a> ), and I wanted to ask a "soft" question about why they end up being so useful.</p>
+<p>It seems that most forms of formal category theory need a way to include profunctors within them, whether that be with a yoneda structure, or with something like a virtual equipment. I've also heard that in the enriched setting, they're vital for talking about weighted limits and pointwise kan extensions!</p>
+<p>These feel like pretty sophisticated/"high-level" reasons to care about profunctors. A low-level reason might be that they naturally correspond to "categorified relations". Yet (perhaps naively) it feels like profunctors play a much larger role in category theory than relations do in ordinary math - the biggest use-case for ordinary relations are equivalence relations, which can also be modelled with e.g. coequalizers. But "relations between groups" or "linear relations" or "relations between modules" seem to be far less common? (Of course, this could just be my lack of math experience!).</p>
+<p>So to me, it feels like there's some kind of "unreasonable effectiveness" of profunctors within category theory, beyond them just being categorified relations. For people who work with them often, what would you say is a soft, "intuitive" reason for why this is the case?</p>
+
+
+
+<a name="534821775"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20Profunctors%3F/near/534821775" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20Profunctors.3F.html#534821775">(Aug 17 2025 at 12:50)</a>:</h4>
+<p>Much of linear algebra can framed in the internal language of linear relations. For example, a linear subspace is not a morphism in FVect, nor an object; but rather a subobject.  It is natural to think of linear subspaces as linear relations.</p>
+<p>Linear algebra developed before regular categories were invented, so classical results in linear algebra were not originally framed in this language.</p>
+<p>However, mathematical abstraction can be very useful. So if we already have the tools at our disposal, and we are developing new mathematics, why not use them?</p>
+
+
+
+<a name="534822331"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20Profunctors%3F/near/534822331" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ruby Khondaker (she/her) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20Profunctors.3F.html#534822331">(Aug 17 2025 at 13:01)</a>:</h4>
+<p>I see, so in some sense this is more a historical accident rather than something intrinsic to category theory?</p>
+
+
+
+<a name="534823348"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20Profunctors%3F/near/534823348" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20Profunctors.3F.html#534823348">(Aug 17 2025 at 13:20)</a>:</h4>
+<p>That is just my personal opinion, but I don't think that linear relations are less useful for linear algebra than profunctors are for category theory.  Even in category theory, profunctors are relatively niche, but it doesn't mean that they aren't useful.</p>
+
+
+
+<a name="534830199"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20Profunctors%3F/near/534830199" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20Profunctors.3F.html#534830199">(Aug 17 2025 at 15:32)</a>:</h4>
+<p>I think relations are very important in ordinary math.  For one thing, one shouldn't restrict artificially to the case of binary relations (or profunctors), even though many contexts for formalizing them require such a structure: usually the (bi/double/virtual/etc.) category of relations or profunctors is compact closed, so you can talk about relations of other arities by tensoring in the domain and codomain.  And unary relations are, of course, just subsets (subobjects) which are important.  Even binary relations include inequalities, which are also very important.</p>
+
+
+
+<a name="534838296"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20Profunctors%3F/near/534838296" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20Profunctors.3F.html#534838296">(Aug 17 2025 at 18:08)</a>:</h4>
+<p>presentations of pro functors have the same syntax as 'naturally' related families of conjunctive (select/from/where) queries in SQL, that's one reason <a href="http://categoricaldata.net">categoricaldata.net</a> uses them and certainly select/from/where queries have been quite useful in computer science so I'd expect the same of pro functors within math more generally.</p>
+
+
+
+<a name="534838615"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20Profunctors%3F/near/534838615" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ruby Khondaker (she/her) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20Profunctors.3F.html#534838615">(Aug 17 2025 at 18:14)</a>:</h4>
+<p>Ooh, that’s a use case I hadn’t even come across before!</p>
+
+
+
+<a name="534841942"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20Profunctors%3F/near/534841942" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20Profunctors.3F.html#534841942">(Aug 17 2025 at 19:20)</a>:</h4>
+<p>I think I've told Ruby this before, but I think mysterious effectiveness of profunctors in category-based math is deeply analogous to the equally mysterious effectiveness of linear operators (or matrices) in set-based math.    Linear algebra has a lot of benefits - for example that's why group representations are so much nicer than actions of groups on sets.  So it would be a shame not to bring some of those benefits to category theory!</p>
+
+
+
+<a name="534842251"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20Profunctors%3F/near/534842251" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20Profunctors.3F.html#534842251">(Aug 17 2025 at 19:29)</a>:</h4>
+<p>Btw, control theory is nicely phrased in terms of linear relations, as Jason Erbele and I worked out in our paper <a href="http://math.ucr.edu/home/baez/control.pdf">Categories in control</a>, and the same is true for electrical circuits, as Brendan Fong and I discovered in <a href="http://math.ucr.edu/home/baez/circuits.pdf">A compositional framework for passive linear networks</a>.  Cole has also done a lot of work on linear relations.  The category of linear relations is so rich that Pawel Sobocinski has a blog about it... not a blog post, an entire blog.</p>
+
+
+
+<a name="534842608"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20Profunctors%3F/near/534842608" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ruby Khondaker (she/her) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20Profunctors.3F.html#534842608">(Aug 17 2025 at 19:39)</a>:</h4>
+<p>Is that <a href="https://graphicallinearalgebra.net/">Graphical Linear Algebra</a>? I came across that a while back and quite enjoyed it (though admittedly the early sections were a little slow-going); it definitely helped me significantly in understanding Hopf algebras!</p>
+
+
+
+<a name="534901907"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20Profunctors%3F/near/534901907" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20Profunctors.3F.html#534901907">(Aug 18 2025 at 08:57)</a>:</h4>
+<p>Yes, that's it.   Two teams independently characterized the category LinRel: one being Bonchi-Sobocinski-Zanasi and the other being Baez-Erbele.   In LinRel, every object is a commutative Frobenius monoid and a bicommutative Hopf monoid in two ways, and these interact in a nice way!   So Pawel got very excited about this and blogged about it.</p>
+
+
+
+<a name="534949727"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20Profunctors%3F/near/534949727" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alonso Perez-Lona <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20Profunctors.3F.html#534949727">(Aug 18 2025 at 13:14)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Why.20Profunctors.3F/near/534841942">said</a>:</p>
+<blockquote>
+<p>I think mysterious effectiveness of profunctors in category-based math is deeply analogous to the equally mysterious effectiveness of linear operators (or matrices) in set-based math</p>
+</blockquote>
+<p>This sounds like a statement comparing pre- and fully-quantum field theory, is there an article that elaborates on this phenomenon from a more general perspective (as oppose to through concrete examples)?</p>
+
+
+
+<a name="534952221"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20Profunctors%3F/near/534952221" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20Profunctors.3F.html#534952221">(Aug 18 2025 at 13:26)</a>:</h4>
+<p>I don't really know what "pre- and fully quantum field theory", though I know about <a href="https://ncatlab.org/nlab/show/prequantization">[[prequantization]]</a> as the first step in <a href="https://ncatlab.org/nlab/show/geometric%20quantization">[[geometric quantization]]</a>.  Anyway, I don't know anything written from the perspective you want, though Urs Schreiber may have written something, which may be visible on those nLab articles I just linked to.   Prequantization is like 'linearization' of a classical phase space.</p>
+
+
+
+<a name="534952657"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Why%20Profunctors%3F/near/534952657" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Why.20Profunctors.3F.html#534952657">(Aug 18 2025 at 13:28)</a>:</h4>
+<p>Okay, Urs talks about <a href="https://ncatlab.org/nlab/show/prequantum%20field%20theory">[[prequantum field theory]]</a>.  I suspect he invented that term.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

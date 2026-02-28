@@ -1,0 +1,158 @@
+[
+    {
+        "content": "<p>Is there a way to recognize gluings in the strict sense, i.e. unions with identifications of subobjects, from general colimits, by the presheaves they generate?  I can recognize them in their conical presentation: they're the ones where all the arrows in the diagram map to monos.  But do \"gluings of representables\" have any interesting property?</p>",
+        "id": 416038206,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1705501140
+    },
+    {
+        "content": "<p>For an <a href=\"https://ncatlab.org/nlab/show/Eilenberg-Zilber%20category\">[[Eilenberg-Zilber category]]</a>, gluing constructs presheaves where every cell with a degenerate face is itself degenerate.  This shows that there at least is a distinction.  But it would be nice to have something in a more general setting.</p>",
+        "id": 416340400,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1705527554
+    },
+    {
+        "content": "<p>I don't quite understand what you mean by \"gluings\".</p>",
+        "id": 416341756,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1705528146
+    },
+    {
+        "content": "<p>\"Gluings of representables\" means a colimit (possibly one of the large ones that happens to exist) where the objects in the diagram are representables and the arrows are monomorphisms.</p>",
+        "id": 416451648,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1705528394
+    },
+    {
+        "content": "<p>The arrows <em>in</em> the diagram, but not necessarily the cone coprojections from the objects in the diagram to the colimit?</p>",
+        "id": 416452304,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1705528680
+    },
+    {
+        "content": "<p>That's right.</p>",
+        "id": 416452553,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1705528796
+    },
+    {
+        "content": "<p>Interesting.  I guess how many presheaves you can get this way depends a lot on how many monomorphisms there are in the domain category.  For instance, if the only monomorphisms therein are identities, I expect the only presheaves you can get this way are coproducts of representables; while if all morphisms therein are monomorphisms you should be able to get all presheaves this way.</p>",
+        "id": 416453567,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1705529175
+    },
+    {
+        "content": "<p>Yeah.  The intermediate situations like EZ-categories are the most interesting to me, but both those extremes are definitely possible.</p>",
+        "id": 416454525,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1705529634
+    },
+    {
+        "content": "<p>It seems surprising to me that one can say much about presheaves corresponding to diagrams whose image satisfies some property (since, intuitively, it is primarily the shape of the diagram that controls the \"appearance\" of the colimit). Are there analogous classes of diagrams (i.e. whose image satisfies some property that can't be expressed as a property of the domain) whose corresponding presheaves do have a nice characterisation?</p>",
+        "id": 416456176,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1705530462
+    },
+    {
+        "content": "<p>Well, there are plenty of cases where a condition on the image of a diagram <em>of a particular shape</em> controls the behavior of the colimit, e.g. quotients of equivalence relations, pushouts of monos, and more general \"lex colimits\".</p>",
+        "id": 416456508,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1705530608
+    },
+    {
+        "content": "<p>I recalled there were some analogous conditions in the theory of lex colimits. But in these cases, it is not possible to characterise the presheaves corresponding to such diagrams, right? At least, not without using a different notion of colimit?</p>",
+        "id": 416456882,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1705530822
+    },
+    {
+        "content": "<p>I don't know of such a characterization.</p>",
+        "id": 416457088,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1705530940
+    },
+    {
+        "content": "<p>(The question seems interesting, in any case.)</p>",
+        "id": 416457635,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1705531221
+    },
+    {
+        "content": "<p>I'm also a little curious about this. I know a diagram in C can be represented as a functor F: J -&gt; C from an index category J (and the conical limit of this diagram can be expressed as a universal property/natural transformation in the functor category). Let's say for example that J is the category 2, the \"walking arrow\", so the diagram will be a morphism A -&gt; B in C. But what if we then wanted to specify that the morphism was a monomorphism? Would it be possible to \"convert\" our functor F: 2 -&gt; C into a functor G: WM -&gt; C where \"WM\" represents some hypothetical \"walking monomorphism\" category (if that even exists), so that we now have a diagram that satisfies the monomorphism property explicitly? More generally, if we had some diagram F: J -&gt; C and wanted to specify some of the morphisms were monomorphisms, could we find some index category K and functor G such that G: K -&gt; C would only select diagrams in C with monomorphisms where we want them?</p>",
+        "id": 416483179,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1705545514
+    },
+    {
+        "content": "<p>There isn't a \"walking monomorphism\" in the world of ordinary categories, since not all functors preserve monomorphisms, but you can do something similar in other worlds.  For instance, an <a href=\"https://ncatlab.org/nlab/show/M-category\">[[M-category]]</a> has a specified subclass of morphisms that you can treat like monomorphisms, and then there's a walking one of those.  Or in the world of categories with finite limits and finitely continuous functors, since finitely continuous functors preserve monomorphisms there is a walking monomorphism; this leads in the direction of <a href=\"https://ncatlab.org/nlab/show/lex%20colimits\">[[lex colimits]]</a>.</p>",
+        "id": 416486872,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1705547554
+    },
+    {
+        "content": "<p>That's very interesting! I assume the dual is true, that in the category of categories with finite colimits and finitely cocontinuous functors one has a \"walking epimorphism\". Also, since pullbacks preserve monomorphisms, it seems that one can find some category of categories with all pullbacks and pullback-preserving functors, which may also work. <br>\nI guess I'm just wondering what the walking monomorphism category in this context \"looks like\", if that's known? The walking arrow and isomorphism have two objects, but I doubt that's enough to define the walking monomorphism?</p>",
+        "id": 416500563,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1705555885
+    },
+    {
+        "content": "<p>I don't know; it seems like it might be kind of large because it has to have all finite limits.</p>",
+        "id": 416500808,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1705556082
+    },
+    {
+        "content": "<p>Maybe a nice picture of a \"walking monomorphism\" is in the category of categories with merely pullbacks, rather than all finite limits. I think that the classic sketch of a mono, a category containing a map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mi>a</mi><mo>→</mo><mi>b</mi></mrow><annotation encoding=\"application/x-tex\">f:a\\to b</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">b</span></span></span></span> such that the projections out of the pullback of along itself are both the identity of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi></mrow><annotation encoding=\"application/x-tex\">a</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">a</span></span></span></span>, already has pullbacks since a cospan has to be built out of two <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span>'s, an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> and an identity, or two identities.</p>",
+        "id": 416654489,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1705614206
+    },
+    {
+        "content": "<p>That sounds plausible.</p>",
+        "id": 416665865,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1705619719
+    },
+    {
+        "content": "<p>I found <a href=\"https://golem.ph.utexas.edu/category/2010/07/homological_algebra_puzzle.html\">this</a> article today on the n-cat cafe where they discuss a puzzle to find the walking epimorphism (I think!). They did so within the category of finitely complete linear categories and found it to be the category of monos over FinVect via \"Gabriel-Ulmer duality\". If one drops the \"linear\" and works with just Set-enriched categories, in the category of finitely complete categories, it may be that the walking epimorphism is the category of monos over FinSet. So it indeed isn't \"small\". However, Kevin Arlin's walking mono is within a different category of categories, that of categories with pullbacks, so it indeed might be as small as two objects as he indicated within that setting.</p>",
+        "id": 416668097,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1705620877
+    },
+    {
+        "content": "<p>Going back to the original question: given a presheaf <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><msup><mi>C</mi><mrow><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow></msup><mo>→</mo><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">F : C^\\mathrm{op} \\to \\mathsf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">op</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span></span></span></span> and the comma category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi mathvariant=\"normal\">/</mi><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">y/F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mord\">/</span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span>, call an object <em>nondegenerate</em> if all the arrows out of it lie over monomorphisms in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>.  Yoneda of the canonical projection from the (full) subcategory of nondegenerate objects then forms a gluing diagram, and the nondegenerate objects themselves form a cocone under this diagram.  When is this cocone colimiting?  Exactly when the inclusion of the nondegenerate objects, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi></mrow><annotation encoding=\"application/x-tex\">d</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">d</span></span></span></span>, is a final functor.  But what does this mean?</p>\n<p>Well, it means, for each object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi mathvariant=\"normal\">/</mi><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">y/F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mord\">/</span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span>, the comma category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mi mathvariant=\"normal\">/</mi><mi>d</mi></mrow><annotation encoding=\"application/x-tex\">X/d</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mord\">/</span><span class=\"mord mathnormal\">d</span></span></span></span> is (non-empty and) connected.  In particular:</p>\n<ul>\n<li>Every object of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi mathvariant=\"normal\">/</mi><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">y/F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mord\">/</span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> has an arrow to a nondegenerate object, and</li>\n<li>any two arrows from an object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> to nondegenerate objects are connected by a zigzag of arrows between nondegenerate objects that form commutative triangles under <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span>.</li>\n</ul>",
+        "id": 417080331,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1705837939
+    },
+    {
+        "content": "<p>Now, given that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> is the colimit of a gluing diagram, are these conditions true?  I haven't got so far on that part.</p>",
+        "id": 417080784,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1705838297
+    },
+    {
+        "content": "<p>What is an object of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi mathvariant=\"normal\">/</mi><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">y/F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mord\">/</span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> in this case?  Well, whenever there's an object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> of shape <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi></mrow><annotation encoding=\"application/x-tex\">c</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">c</span></span></span></span> in the diagram, and an arrow <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> into <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi></mrow><annotation encoding=\"application/x-tex\">c</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">c</span></span></span></span>, there's an object of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi mathvariant=\"normal\">/</mi><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">y/F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mord\">/</span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span>, but these aren't all distinct.  They get identified whenever there is an arrow in the diagram <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi><mo>:</mo><mi>c</mi><mo>→</mo><msup><mi>c</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">g : c \\to c&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">c</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">c</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> so that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi><mi>f</mi><mo>=</mo><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">gf = f&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.9463em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>, and this is closed under zigzags.</p>\n<p>When all the arrows in the diagram are monomorphisms, then the \"root objects\" for each node in the diagram all end up becoming nondegenerate, because they start out nondegenerate, and only get identified with other nondegenerate objects.</p>",
+        "id": 417083406,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1705840647
+    },
+    {
+        "content": "<p>Before identifications, every object has an arrow to a nondegenerate object: the root for its node.  Any other such arrow is obviously connected to this one.  And when objects are identified, it's always root object to nondegenerate object and creates connections for all the recursively identified objects.  Because the identifications are along monos there are no \"bonus\" identifications created to interfere with this nice story.</p>",
+        "id": 417084197,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1705841373
+    },
+    {
+        "content": "<p>Therefore, I think the above conditions are necessary and sufficient for being a gluing.</p>",
+        "id": 417084259,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1705841411
+    },
+    {
+        "content": "<p>If I made a mistake in this argument, though, it's probably believing that root objects are nondegenerate in the above sense.</p>",
+        "id": 417085338,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1705842373
+    }
+]

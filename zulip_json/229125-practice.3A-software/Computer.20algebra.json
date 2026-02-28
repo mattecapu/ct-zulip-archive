@@ -1,0 +1,44 @@
+[
+    {
+        "content": "<p>How useful are Sage, Mathematica and other computer algebra systems (or symbolic algebra systems) for doing category theory?</p>\n<p>I do not know much about computer algebra. Here is my rough stereotyped understanding:</p>\n<ul>\n<li>there are computer algebra systems which deal with finitely presented algebraic structures</li>\n<li>there are symbolic algebra systems which can deal with abstract, not necessarily finite structures, and they can do things like equational rewriting between words in a group, or integration/differentiation; maybe they can even do conditional rewriting (a = b under hypothesis H where H is something decidable)</li>\n<li>there are theorem provers and proof assistants, which are maximally flexible and can encode arbitrary reasoning</li>\n</ul>\n<p>I use Rocq to formalize category theory but I'm wondering if there is a less time intensive way to use computers to help me do long computations in category theory.</p>",
+        "id": 522974640,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1749385463
+    },
+    {
+        "content": "<p>You might also check out <a href=\"https://github.com/homalg-project/CAP_project\">CAP - Categories, Algorithms, and Programming</a>. I haven't tried it yet myself but the system looks quite impressive. It seems to have a focus on additive and abelian categories, though there's also plenty of stuff for ordinary category theory.</p>",
+        "id": 522974862,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1749385783
+    },
+    {
+        "content": "<p>Thank you. This is not the first time that GAP has come up here. I recall this conversation - <a class=\"message-link\" href=\"/#narrow/channel/229136-theory.3A-category-theory/topic/software.20packages.20for.20computer-assisted.20category.20theory/near/247380219\">#theory: category theory &gt; software packages for computer-assisted category theory @ 💬</a></p>",
+        "id": 522974905,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1749385843
+    },
+    {
+        "content": "<p>I will check out GAP I guess and try to understand what it can be useful for</p>",
+        "id": 522974935,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1749385869
+    },
+    {
+        "content": "<p>Though CAP is written in GAP, from what I understand, it's best understood as its own system.</p>",
+        "id": 522975121,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1749386130
+    },
+    {
+        "content": "<p>The \"old school\" CASes (Maple, Mathematica) are largely useless for CT. Oh, you can program them with what you want, but out of the box, there is nothing.</p>\n<p>It would be nice to see the area of \"computational category theory\" get reborn. With even more types than the original.</p>",
+        "id": 522977548,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1749389320
+    },
+    {
+        "content": "<p>When we originally stated building CQL (<a href=\"http://categoricaldata.net\">http://categoricaldata.net</a>) we looked at a bunch of computer algebra systems to power it.  But none of them had sufficient automated theorem proving capability to be able to routinely decide word problems in finite presentations.  For example, Mathematica's Knuth-Bendix completion algorithm was (is?)  from the 90s and simply didn't perform.  On the other hand, our survey was ten years ago; perhaps CAS systems have improved.</p>",
+        "id": 522991068,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1749404930
+    }
+]

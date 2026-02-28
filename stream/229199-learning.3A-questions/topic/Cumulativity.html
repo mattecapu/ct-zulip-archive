@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Cumulativity · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Cumulativity.html">Cumulativity</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="485462572"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Cumulativity/near/485462572" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Cumulativity.html#485462572">(Dec 01 2024 at 08:53)</a>:</h4>
+<p>I was thinking about a particular situation where there's an indexing collection equipped with some kind of partial ordering, which is indexing some collection of quantities. What then is the advantage to packaging things in a cumulative way?</p>
+<p>For instance, in probability theory one can work with either the probability density function or the cumulative density function. I know here there are representational benefits to the latter when combining discrete and continuous distributions, but I'm looking for a category-theoretic understanding of the difference, if one is possible. </p>
+<p>It seems one gains in the representational theory of the symmetric groups by looking at <a href="https://ncatlab.org/nlab/show/FI-representation">FI-representations</a> of the category of finite sets and injections. This allows for the study of certain 'stability' phenomena. </p>
+<p>One might imagine that the benefits of cumulativity lie in the use of information relating to inclusion and colimits. Is there anything sufficiently generic to say that would speak also to the probability theory case?</p>
+<p>Any other examples in this ballpark?</p>
+
+
+
+<a name="485499763"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Cumulativity/near/485499763" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Cumulativity.html#485499763">(Dec 01 2024 at 17:31)</a>:</h4>
+<p>Before I saw your "for instance", I thought you were talking about 'cumulative hierarchies' in set theory, like the von Neumann hierarchy!   Those must be an example of what you're talking about. </p>
+<ul>
+<li>Wikipedia, <a href="https://en.wikipedia.org/wiki/Cumulative_hierarchy">Cumulative hierarchy</a>.</li>
+</ul>
+<p>Structural set theorists may mock the 'cumulative' approach to the universe of sets, but most working set theorists cling to it with a passion that is surely not purely wrongheaded.  Somehow the cumulative approach lets us get a tight grip on things in certain ways....</p>
+<p>I had never thought of 'cumulative density functions' and the 'cumulative hierarchy' at the same time before!</p>
+
+
+
+<a name="485506702"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Cumulativity/near/485506702" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Cumulativity.html#485506702">(Dec 01 2024 at 19:08)</a>:</h4>
+<p>Good example. Presumably the gain there is through certain colimits. </p>
+<p>I was thinking what makes for the least likely advantage. A totally ordered indexing set for starters, maybe. In the FI-representation case, the multiplicity of inclusions/endomorphisms is key. </p>
+<p>Maybe the way to think about it is whether it's possible to pass back and forth between an assignment and its 'integral'.  I wonder if the categorical probabilists have anything to say about cdf's and pdf's.</p>
+
+
+
+<a name="485522211"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Cumulativity/near/485522211" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Egolf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Cumulativity.html#485522211">(Dec 01 2024 at 23:14)</a>:</h4>
+<p>I had never heard of FI-representations before! Interesting!</p>
+<p>To try and get more examples of attaching data to ordered/nested structures, perhaps one could consider functors from categories of the form <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="sans-serif">m</mi><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">n</mi></mrow><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathsf{mon}(C)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathsf">mon</span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span>, where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> is a category and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="sans-serif">m</mi><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">n</mi></mrow><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathsf{mon}(C)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathsf">mon</span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span> refers to the subcategory of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> obtained by keeping only monomorphisms. I think we recover the notion of FI-representation by letting <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>=</mo><mrow><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow></mrow><annotation encoding="application/x-tex">C = \mathsf{FinSet}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">FinSet</span></span></span></span></span>, and letting our functor map to some category of vector spaces or modules.</p>
+<p>Any presheaf or sheaf on a topological space can be viewed as a functor from a thin category. In a thin category, every morphism is a monomorphism, so a presheaf or a sheaf on a topological space is a functor from a category of the form <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="sans-serif">m</mi><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">n</mi></mrow><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathsf{mon}(C)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathsf">mon</span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span>.</p>
+<p>Maybe this level of generality is not specific enough to the cases of interest, though.</p>
+
+
+
+<a name="485564374"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Cumulativity/near/485564374" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Cumulativity.html#485564374">(Dec 02 2024 at 08:01)</a>:</h4>
+<p>I see just today there's further work categorifying integration:</p>
+<ul>
+<li>Miantao Liu, Yu-Zhe Liu, Shengda Liu, <a href="https://arxiv.org/abs/2411.19904">Normed modules, integral sequences, and integrals with variable upper limits</a></li>
+</ul>
+
+
+
+<a name="485671283"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Cumulativity/near/485671283" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Cumulativity.html#485671283">(Dec 02 2024 at 17:08)</a>:</h4>
+<p>"Categorizing".   <span aria-label="unamused" class="emoji emoji-1f612" role="img" title="unamused">:unamused:</span></p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>How to get Poly from Groth. construction on dependent sets? · theory: applied category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/index.html">theory: applied category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/How.20to.20get.20Poly.20from.20Groth.2E.20construction.20on.20dependent.20sets.3F.html">How to get Poly from Groth. construction on dependent sets?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="435633415"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/How%20to%20get%20Poly%20from%20Groth.%20construction%20on%20dependent%20sets%3F/near/435633415" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> André Muricy Santos <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/How.20to.20get.20Poly.20from.20Groth.2E.20construction.20on.20dependent.20sets.3F.html#435633415">(Apr 26 2024 at 17:51)</a>:</h4>
+<p>Hi, I and a few others are going through the categorical systems theory book (<a href="http://davidjaz.com/Papers/DynamicalBook.pdf">http://davidjaz.com/Papers/DynamicalBook.pdf</a>) and Example 2.6.2.8 claims that the Grothendieck construction on the indexed category of dependent sets (Set^- : Set^op -&gt; Cat) gives one dependent lenses (morphisms in Poly) but I am struggling to recover this for myself; my map on directions is going FORWARD somehow.</p>
+<p>See here, say we have two sets and one bundle living on top of each. A map in the grothendieck construction will consist of a function f : A -&gt; B and a map from S : Set^A to T <code>∘</code> f : Set^A (in the CST book, the notation is given two pairs (C, A(C)) and (C', A(C')), a map in the grothendieck construction is given by a function f : C -&gt; C' and a map A(C) -&gt; f<em>(A(C'))). My issue is exactly this: the map A(C) -&gt; f</em>(A(C')) goes <em>forward</em>.<br>
+<a href="/user_uploads/21317/GPBzSDlSB7UwhtTsp0yQXSZO/attempt1.jpeg">attempt1.jpeg</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/GPBzSDlSB7UwhtTsp0yQXSZO/attempt1.jpeg" title="attempt1.jpeg"><img src="/user_uploads/21317/GPBzSDlSB7UwhtTsp0yQXSZO/attempt1.jpeg"></a></div><p>Here's another drawing I came to while attempting to construct another minimal example:<br>
+<a href="/user_uploads/21317/HACd7cCXd5k3txaSY8DScoe1/attempt2.png">attempt2.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/HACd7cCXd5k3txaSY8DScoe1/attempt2.png" title="attempt2.png"><img src="/user_uploads/21317/HACd7cCXd5k3txaSY8DScoe1/attempt2.png"></a></div><p>In this one I drew the indexing (the dependent sets T and T') explicitly: I see how the f* functor given by T' <code>∘</code> f works as a reindexing just fine, but <em>where does one get the map backwards</em> from the bundle on the right to the bundle on the left? This is the question expressed by the orange arrow. That's what would give a map in Poly, right?</p>
+
+
+
+<a name="435633547"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/How%20to%20get%20Poly%20from%20Groth.%20construction%20on%20dependent%20sets%3F/near/435633547" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> André Muricy Santos <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/How.20to.20get.20Poly.20from.20Groth.2E.20construction.20on.20dependent.20sets.3F.html#435633547">(Apr 26 2024 at 17:52)</a>:</h4>
+<p>(sorry that in the first drawing i start by referring to the bundles as X and Y then change to S and T)</p>
+
+
+
+<a name="435638048"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/How%20to%20get%20Poly%20from%20Groth.%20construction%20on%20dependent%20sets%3F/near/435638048" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/How.20to.20get.20Poly.20from.20Groth.2E.20construction.20on.20dependent.20sets.3F.html#435638048">(Apr 26 2024 at 18:23)</a>:</h4>
+<p>Your maps are indeed going in the wrong direction. From Prop. 2.6.2.5:</p>
+<blockquote>
+<p>The category of lenses in C is the Grothendieck construction of the indexed category of <strong>opposites</strong> of the categories of maps with context...</p>
+</blockquote>
+
+
+
+<a name="435640705"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/How%20to%20get%20Poly%20from%20Groth.%20construction%20on%20dependent%20sets%3F/near/435640705" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> André Muricy Santos <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/How.20to.20get.20Poly.20from.20Groth.2E.20construction.20on.20dependent.20sets.3F.html#435640705">(Apr 26 2024 at 18:43)</a>:</h4>
+<p>omg, yes. I always forget that second opposite. Thanks Spencer. Interesting that this leads to charts/arrow category though...</p>
+
+
+
+<a name="435782144"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/How%20to%20get%20Poly%20from%20Groth.%20construction%20on%20dependent%20sets%3F/near/435782144" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dylan Braithwaite <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/How.20to.20get.20Poly.20from.20Groth.2E.20construction.20on.20dependent.20sets.3F.html#435782144">(Apr 27 2024 at 18:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="502092">André Muricy Santos</span> <a href="#narrow/stream/229156-theory.3A-applied-category-theory/topic/How.20to.20get.20Poly.20from.20Groth.2E.20construction.20on.20dependent.20sets.3F/near/435640705">said</a>:</p>
+<blockquote>
+<p>Interesting that this leads to charts/arrow category though...</p>
+</blockquote>
+<p>Yeah that's a good observation! David's book uses this later (in definition 3.5.0.8) to define a generalised version of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">A</mi></mrow><annotation encoding="application/x-tex">\mathcal A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal">A</span></span></span></span>-charts and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">A</mi></mrow><annotation encoding="application/x-tex">\mathcal A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal">A</span></span></span></span>-lenses for any indexed category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">A</mi></mrow><annotation encoding="application/x-tex">\mathcal A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal">A</span></span></span></span></p>
+
+
+
+<a name="435789861"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/How%20to%20get%20Poly%20from%20Groth.%20construction%20on%20dependent%20sets%3F/near/435789861" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bruno Gavranović <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/How.20to.20get.20Poly.20from.20Groth.2E.20construction.20on.20dependent.20sets.3F.html#435789861">(Apr 27 2024 at 21:09)</a>:</h4>
+<p>In case it helps, in <a href="https://arxiv.org/abs/2403.13001">my thesis</a> (specifically Appendix D, Definition D.10 onwards) I carefully unpack all of this:  I define the different variants of the Grothendieck construction, relate them via the 2-functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">p</mi></mrow><annotation encoding="application/x-tex">\mathsf{op}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6389em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathsf">op</span></span></span></span></span> on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">C</mi><mi mathvariant="bold">a</mi><mi mathvariant="bold">t</mi></mrow><annotation encoding="application/x-tex">\mathbf{Cat}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord mathbf">Cat</span></span></span></span></span> (which is the culprit behind the 'opposite category 'confusion), and unpack the details of how <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">P</mi><mi mathvariant="bold">o</mi><mi mathvariant="bold">l</mi><mi mathvariant="bold">y</mi></mrow><annotation encoding="application/x-tex">\mathbf{Poly}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathbf" style="margin-right:0.01597em;">Poly</span></span></span></span></span> and its close cousins arise from these Grothendieck constructions.</p>
+<p><a href="/user_uploads/21317/KPu0suTWzrOmTqj0tiToGZBe/Screenshot_20240427_220243.png">Screenshot_20240427_220243.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/KPu0suTWzrOmTqj0tiToGZBe/Screenshot_20240427_220243.png" title="Screenshot_20240427_220243.png"><img src="/user_uploads/21317/KPu0suTWzrOmTqj0tiToGZBe/Screenshot_20240427_220243.png"></a></div>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Analog computation/functors in physics? · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Analog.20computation.2Ffunctors.20in.20physics.3F.html">Analog computation/functors in physics?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="534788782"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Analog%20computation/functors%20in%20physics%3F/near/534788782" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Analog.20computation.2Ffunctors.20in.20physics.3F.html#534788782">(Aug 16 2025 at 23:02)</a>:</h4>
+<p>Is there a careful definition of "Analog computer" with a level of precision comparable to a "Turing machine"? Or how do category theorists generally define functors into, or out of, physical systems?</p>
+<p>The "analogy" in the name makes me think these sorts of computers could be a source of interesting categories, but I'm struggling to keep my definitions useful when trying to be inspired by them.</p>
+
+
+
+<a name="534809327"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Analog%20computation/functors%20in%20physics%3F/near/534809327" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Analog.20computation.2Ffunctors.20in.20physics.3F.html#534809327">(Aug 17 2025 at 08:07)</a>:</h4>
+<p>I've been writing lots of papers on categories (and double categories) of open physical systems, and functors between these.  But maybe I'll point you to this:</p>
+<ul>
+<li>Sophie Libkind, <a href="https://arxiv.org/abs/2007.14442">An algebra of resource sharing machines</a>.</li>
+</ul>
+<blockquote>
+<p><strong>Abstract.</strong> Dynamical systems are a broad class of mathematical tools used to describe the evolution of physical and computational processes. Traditionally these processes model changing entities in a static world. Picture a ball rolling on an empty table. In contrast, open dynamical systems model changing entities in a changing world. Picture a ball in an ongoing game of billiards. In the literature, there is ambiguity about the interpretation of the "open" in open dynamical systems. In other words, there is ambiguity in the mechanism by which open dynamical systems interact. To some, open dynamical systems are input-output machines which interact by feeding the input of one system with the output of another. To others, open dynamical systems are input-output agnostic and interact through a shared pool of resources. In this paper, we define an algebra of open dynamical systems which unifies these two perspectives. We consider in detail two concrete instances of dynamical systems -- continuous flows on manifolds and non-deterministic automata.</p>
+</blockquote>
+<p>I don't know any definition of 'analog computer'; I could make one up.   You could say any dynamical system is an analog computer (and there are tons of precise definitions of 'dynamical system'), or you could say a dynamical system counts as an analog computer only if it comes with something else, like an 'input' and 'output'.    Libkind's paper has some things to say about inputs and outputs.</p>
+
+
+
+<a name="534857105"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Analog%20computation/functors%20in%20physics%3F/near/534857105" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Analog.20computation.2Ffunctors.20in.20physics.3F.html#534857105">(Aug 18 2025 at 00:56)</a>:</h4>
+<p>It's funny, for unrelated reasons I was thinking about lenses so</p>
+<p>"The data of an open dynamical system is given by a lens"</p>
+<p>Made me chuckle</p>
+<p>This looks like a really nice paper, I want to talk a bit more about this but I'll read the article you shared first</p>
+
+
+
+<a name="534900892"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Analog%20computation/functors%20in%20physics%3F/near/534900892" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Damiano Mazza <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Analog.20computation.2Ffunctors.20in.20physics.3F.html#534900892">(Aug 18 2025 at 08:52)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277352">Alex Kreitzberg</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Analog.20computation.2Ffunctors.20in.20physics.3F/near/534788782">said</a>:</p>
+<blockquote>
+<p>Is there a careful definition of "Analog computer" with a level of precision comparable to a "Turing machine"?</p>
+</blockquote>
+<p>There's Shannon's <a href="https://en.wikipedia.org/wiki/General_purpose_analog_computer">general purpose analog computer</a> (GPAC).  Olivier Bournez and collaborators have worked a lot on this in recent years (by "recent" I mean the 21st century <span aria-label="slight smile" class="emoji emoji-1f642" role="img" title="slight smile">:slight_smile:</span>).  You will find links to surveys and other relevant papers on the Wikipedia page.</p>
+
+
+
+<a name="535003520"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Analog%20computation/functors%20in%20physics%3F/near/535003520" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Analog.20computation.2Ffunctors.20in.20physics.3F.html#535003520">(Aug 18 2025 at 18:44)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277352">Alex Kreitzberg</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Analog.20computation.2Ffunctors.20in.20physics.3F/near/534857105">said</a>:</p>
+<blockquote>
+<p>This looks like a really nice paper, I want to talk a bit more about this but I'll read the article you shared first</p>
+</blockquote>
+<p>There's also some good videos on youtube of Sophie talking about this work.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

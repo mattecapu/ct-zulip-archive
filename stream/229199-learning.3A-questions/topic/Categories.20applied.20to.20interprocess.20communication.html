@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Categories applied to interprocess communication · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Categories.20applied.20to.20interprocess.20communication.html">Categories applied to interprocess communication</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="436348671"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Categories%20applied%20to%20interprocess%20communication/near/436348671" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Schwiebert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Categories.20applied.20to.20interprocess.20communication.html#436348671">(Apr 30 2024 at 20:28)</a>:</h4>
+<p>I think someone must have already probed how to use category theory to frame interprocess communication, or messaging schemes.</p>
+<p>What I have in mind is like communication via AMQP or maybe within a ROS2 graph.</p>
+<p>There are nodes which can send each other messages. There are different ways to send messages. Sometimes it's enough that one node attempts to message another and is done with the task. At other times, the sending node wants an acknowledgement (or nack) before it finishes the transaction.</p>
+<p>And possibly either side of the communication may want to do something differently depending on the success of the transaction.</p>
+<p>Has anyone seen any exploration of this kind of the whole ecosystem of messaging?  I would appreciate pointers to the most basic parts of it.</p>
+
+
+
+<a name="436368916"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Categories%20applied%20to%20interprocess%20communication/near/436368916" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Categories.20applied.20to.20interprocess.20communication.html#436368916">(Apr 30 2024 at 23:18)</a>:</h4>
+<p>Here's one: <br>
+The Produoidal Algebra of Process Decomposition</p>
+<p>Matt Earnshaw, James Hefford, Mario Román<br>
+<a href="https://arxiv.org/abs/2301.11867v1">https://arxiv.org/abs/2301.11867v1</a></p>
+
+
+
+<a name="436384052"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Categories%20applied%20to%20interprocess%20communication/near/436384052" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Schwiebert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Categories.20applied.20to.20interprocess.20communication.html#436384052">(May 01 2024 at 02:46)</a>:</h4>
+<p>Nice!  How familiar are you with this article <span class="user-mention" data-user-id="278008">@Spencer Breiner</span></p>
+
+
+
+<a name="436479443"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Categories%20applied%20to%20interprocess%20communication/near/436479443" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chad Nester <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Categories.20applied.20to.20interprocess.20communication.html#436479443">(May 01 2024 at 10:26)</a>:</h4>
+<p>Isolating individual agents (nodes) is, if you ask me, a bit awkward in a compositional setting. Loosely, if my systems are composable then a composite system needs to be the same sort of thing as a single node.</p>
+
+
+
+<a name="436479829"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Categories%20applied%20to%20interprocess%20communication/near/436479829" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chad Nester <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Categories.20applied.20to.20interprocess.20communication.html#436479829">(May 01 2024 at 10:30)</a>:</h4>
+<p>I really like Span(RGraph) model of Walters et al.  (<a href="https://link.springer.com/content/pdf/10.1007/BFb0000479.pdf">This, for example</a>)</p>
+<p>I'll also mention the Logic of Message Passing (<a href="https://arxiv.org/abs/math/0703713">This</a>) and my own work on the free cornering of a monoidal category, which is similar. (For example, <a href="https://link.springer.com/chapter/10.1007/978-3-030-78142-2_13">this</a> and <a href="https://arxiv.org/abs/2305.16899">this</a>).</p>
+
+
+
+<a name="436479898"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Categories%20applied%20to%20interprocess%20communication/near/436479898" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chad Nester <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Categories.20applied.20to.20interprocess.20communication.html#436479898">(May 01 2024 at 10:31)</a>:</h4>
+<p>Oh also Milner's <em>bigraphs</em> come to mind, although personally I find them unsatisfying.</p>
+
+
+
+<a name="436486685"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Categories%20applied%20to%20interprocess%20communication/near/436486685" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Categories.20applied.20to.20interprocess.20communication.html#436486685">(May 01 2024 at 11:42)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="685603">Ryan Schwiebert</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Categories.20applied.20to.20interprocess.20communication/near/436384052">said</a>:</p>
+<blockquote>
+<p>Nice!  How familiar are you with this article <span class="user-mention silent" data-user-id="278008">Spencer Breiner</span></p>
+</blockquote>
+<p>Only a bit. If I remember correctly, the main idea is that you can use the machinery of optics (based on coends) to include "holes" in a process that correspond to sending/receiving messages from other nodes in a network.</p>
+
+
+
+<a name="436671086"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Categories%20applied%20to%20interprocess%20communication/near/436671086" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Schwiebert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Categories.20applied.20to.20interprocess.20communication.html#436671086">(May 02 2024 at 11:24)</a>:</h4>
+<p>The bigger picture is that I am trying to understand what "Applied" category theory can do in different contexts.  As a mathematician now working in software, I can see lots of places where it might be applied, but I have little feel for what kind of benefit is available, or how to spot a potential application.</p>
+
+
+
+<a name="437950359"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Categories%20applied%20to%20interprocess%20communication/near/437950359" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dylan Braithwaite <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Categories.20applied.20to.20interprocess.20communication.html#437950359">(May 10 2024 at 09:10)</a>:</h4>
+<p>I've had this paper on my to-read pile for a while, it seems like it might also be relevant: <a href="https://www.sciencedirect.com/science/article/pii/S1571066105803068">On the Semantics of Message Passing Processes - Lindsay Errington</a></p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

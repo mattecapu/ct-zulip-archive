@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Pullbacks of Cartesian-closed categories · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Pullbacks.20of.20Cartesian-closed.20categories.html">Pullbacks of Cartesian-closed categories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="475088322"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Pullbacks%20of%20Cartesian-closed%20categories/near/475088322" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bernd Losert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Pullbacks.20of.20Cartesian-closed.20categories.html#475088322">(Oct 06 2024 at 10:55)</a>:</h4>
+<p>Say you have two concrete categories (A, U) and (B, V) over some category X and you take the pullback of U and V. If A and B are Cartesian-closed, I was wondering if the pullback is also Cartesian-closed.</p>
+<p>One problem I immediately ran into when trying to prove this was that the pullback is too strict and it's better to work with weak pullbacks to avoid issues with equality when you only have isomorphisms.</p>
+<p>However, I haven't been able to make any progress. Can't think of an obvious counterexample either.</p>
+<p>I'm particularly interested in the pullback of Pos (partially ordered sets and monotone functions) and Conv (convergence spaces and continuous functions) with respect to the forgetful functors into Set. Both of them are Cartesian-closed and I feel that the pullback (call it PosConv, which consists of partially ordered convergence spaces and monotone continuous maps), should also be Cartesian closed.</p>
+
+
+
+<a name="475089567"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Pullbacks%20of%20Cartesian-closed%20categories/near/475089567" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Vincent Moreau <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Pullbacks.20of.20Cartesian-closed.20categories.html#475089567">(Oct 06 2024 at 11:17)</a>:</h4>
+<p>In general, if you do not assume anything on the functors U : A → X and V : B → X, then you won't get a good property on the pullback: already, basic properties like the existence of a terminal object may fail. For instance, for any categories A and B, consider X = A + B and U and V be the two canonical inclusions, which are faithful. Then, the pullback is going to be empty, and also the version of the pullback where you take isomorphisms instead of equalities.</p>
+
+
+
+<a name="475089723"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Pullbacks%20of%20Cartesian-closed%20categories/near/475089723" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Vincent Moreau <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Pullbacks.20of.20Cartesian-closed.20categories.html#475089723">(Oct 06 2024 at 11:19)</a>:</h4>
+<p>On the other extreme, if you assume X to also be cartesian closed and the functors U : A → X and V : B → X to respect finite products and exponentials, then the pullback is a CCC, and actually it is a sub-CCC of the product A × B.</p>
+
+
+
+<a name="475090320"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Pullbacks%20of%20Cartesian-closed%20categories/near/475090320" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Vincent Moreau <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Pullbacks.20of.20Cartesian-closed.20categories.html#475090320">(Oct 06 2024 at 11:22)</a>:</h4>
+<p>I am not knowledgeable about convergence spaces, but what I can say is that the functor Pos → Set which sends a poset on its underlying set preserves finite products, but not exponentials, so it is an in-between situation. If the other one Conv → Set also preserves finite products, then the pullback has finite products.</p>
+
+
+
+<a name="475091824"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Pullbacks%20of%20Cartesian-closed%20categories/near/475091824" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bernd Losert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Pullbacks.20of.20Cartesian-closed.20categories.html#475091824">(Oct 06 2024 at 11:32)</a>:</h4>
+<p>Thanks for the reply. Conv is like a CCC-version of Top. In any case V : Conv → Set will not preserve exponentials either since <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo stretchy="false">(</mo><msup><mi>B</mi><mi>A</mi></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">V(B^A)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0913em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">A</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> will be a subset of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><msup><mi>B</mi><mrow><mi>V</mi><mi>A</mi></mrow></msup></mrow><annotation encoding="application/x-tex">VB^{VA}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8413em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.22222em;">V</span><span class="mord mathnormal mtight">A</span></span></span></span></span></span></span></span></span></span></span></span>, just like in the Pos case.</p>
+
+
+
+<a name="475092002"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Pullbacks%20of%20Cartesian-closed%20categories/near/475092002" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bernd Losert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Pullbacks.20of.20Cartesian-closed.20categories.html#475092002">(Oct 06 2024 at 11:33)</a>:</h4>
+<p>So I guess the "in-between" situation is kind of special and has to be handled on an adhoc basis, i.e. I can't just apply a result from category theory to conclude yes/no.</p>
+
+
+
+<a name="475092080"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Pullbacks%20of%20Cartesian-closed%20categories/near/475092080" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Vincent Moreau <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Pullbacks.20of.20Cartesian-closed.20categories.html#475092080">(Oct 06 2024 at 11:33)</a>:</h4>
+<p>I agree</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

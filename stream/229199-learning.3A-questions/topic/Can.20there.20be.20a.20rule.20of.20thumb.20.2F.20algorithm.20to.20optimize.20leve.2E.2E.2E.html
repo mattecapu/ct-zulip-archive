@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Can there be a rule of thumb / algorithm to optimize leve... · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Can.20there.20be.20a.20rule.20of.20thumb.20.2F.20algorithm.20to.20optimize.20leve.2E.2E.2E.html">Can there be a rule of thumb / algorithm to optimize leve...</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="430045870"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Can%20there%20be%20a%20rule%20of%20thumb%20/%20algorithm%20to%20optimize%20leve.../near/430045870" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Can.20there.20be.20a.20rule.20of.20thumb.20.2F.20algorithm.20to.20optimize.20leve.2E.2E.2E.html#430045870">(Mar 28 2024 at 11:28)</a>:</h4>
+<p>I thought this would be an interesting question from Philosophy Stack Exchange to pose here: <a href="https://philosophy.stackexchange.com/questions/80908/can-there-be-a-rule-of-thumb-algorithm-to-optimize-level-of-generality">https://philosophy.stackexchange.com/questions/80908/can-there-be-a-rule-of-thumb-algorithm-to-optimize-level-of-generality</a></p>
+<p>I’m pretty active over there, so it would be cool to see someone post an answer there, or here.</p>
+<blockquote>
+<p>When we define an abstract structure, establish theories or theorems, or build models, etc., we tend to want them to be "general" enough so they can be applied to a variety of situations. However, of course, more generality is not always better. Once generality passes a certain threshold, things become vague and useless.</p>
+<p>Of course, we could treat this on a case-by-case, topic-by-topic basis. However, I wonder, is there or can there ever be a generalized / systematic approach to decide the optimal level of generality?</p>
+</blockquote>
+<p>I am wondering if there is some way to express, categorically, how for some idea, there could be a chain of hypothetical levels of “generality”, and we could show how one of those levels is “optimal” in a quantifiable way, because it “organizes the most amount of information”.</p>
+
+
+
+<a name="430049479"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Can%20there%20be%20a%20rule%20of%20thumb%20/%20algorithm%20to%20optimize%20leve.../near/430049479" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Can.20there.20be.20a.20rule.20of.20thumb.20.2F.20algorithm.20to.20optimize.20leve.2E.2E.2E.html#430049479">(Mar 28 2024 at 11:49)</a>:</h4>
+<p>There are ways in category theory to mimic this "chain of hypothetical levels of generality": use morphisms to compare, co/limits, universal properties, etc. But I'm not sure it is what you are after.</p>
+<p>Looking at the chosen example of a (classic) metric space, it turns out that Lawvere did generalize the concept. It amounts to considering only the following axioms:</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">d(x, x)=0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">)</mo><mo>+</mo><mi>d</mi><mo stretchy="false">(</mo><mi>y</mi><mo separator="true">,</mo><mi>z</mi><mo stretchy="false">)</mo><mo>≥</mo><mi>d</mi><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">d(x, y) + d(y, z) \geq d(x, z)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mclose">)</span></span></span></span></li>
+</ul>
+<p>Now, it would be very difficult to notice from the list of axioms of classic metric spaces which axiom would be interesting to drop or relax. I guess it is the whole Lawvere's experience of category theory that led him to a fruitful generalization. In that case I find it very difficult to propose a rule of thumb that would have produced Lawvere's metric space without knowing anything about category theory.</p>
+<p>In other words, I believe fruitful generalization can only happen once we have enough instances that "look the same". And CT can provide tools to formalize the situation, but I don't think it can provide those instances out of the blue.</p>
+
+
+
+<a name="430144039"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Can%20there%20be%20a%20rule%20of%20thumb%20/%20algorithm%20to%20optimize%20leve.../near/430144039" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Can.20there.20be.20a.20rule.20of.20thumb.20.2F.20algorithm.20to.20optimize.20leve.2E.2E.2E.html#430144039">(Mar 28 2024 at 18:52)</a>:</h4>
+<p>I thought about this a bit before, but I'm not sure if it is possible to entirely remove the context from this kind of problem- that is, what level of generality will be "optimal" depends significantly on what would be most useful in some particular situation. For instance, metric spaces are useful with all their axioms because they most resemble our familiar concept of distance in physical space. Removing some of the axioms and "generalizing" the idea of a metric space in the process will lead to constructions that someone may not consider as useful, but only because they wouldn't be good models for reasoning about "distance" any longer. They may still be useful for an entirely different purpose potentially unrelated to reasoning about distance, in which case they would be the most "optimal" generalizations, and ordinary metric spaces would be seen as too restrictive. </p>
+<p>Though I do also agree that there are some cases that are universally too restrictive or too general. Here's what I mean: in category theory, specialization and generalization are given respectively by embedding functors into and out of a certain category (you can decide whether "embedding" in this context means the functor is faithful/injective on objects, or is fully faithful). For instance, the category of groups embeds into the category of monoids, and the category of metric spaces embeds into the category of Lawvere metric spaces. So a chain of generality can be given by a chain of categories linked by embedding functors. If you follow the chain down enough, you'll just get an embedding out of a one object category, which can be done into any category and so is maximally "trivial". This happens when you demand an object satisfy so many properties that only one object does satisfy all those properties, which can be seen as too restrictive in an objective sense. At the other end of the scale, you can have a category that is so large that "too many" other categories embed into it, leading one to the sense that the category does not have a strong "central identity" and so the objects themselves are viewed as being more vacuous.</p>
+
+
+
+<a name="430146505"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Can%20there%20be%20a%20rule%20of%20thumb%20/%20algorithm%20to%20optimize%20leve.../near/430146505" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Can.20there.20be.20a.20rule.20of.20thumb.20.2F.20algorithm.20to.20optimize.20leve.2E.2E.2E.html#430146505">(Mar 28 2024 at 19:08)</a>:</h4>
+<p>This reminds me of a (unrelated) <a href="https://scottaaronson.blog/?p=762">article</a> by Scott Aaronson.</p>
+<p><a href="/user_uploads/21317/3iN3B8ya5GMs87vUcqPu3o3t/image.png">image.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/3iN3B8ya5GMs87vUcqPu3o3t/image.png" title="image.png"><img src="/user_uploads/21317/3iN3B8ya5GMs87vUcqPu3o3t/image.png"></a></div><p>We see in this image a similar pattern. The entropy is increasing, but the interesting part is in the middle. If we go too fast with the slogan "entropy = complexity", we may miss the point. Scott Aaronson invokes instead the concept of "sophistication", drawn from algorithmic complexity theory.</p>
+<p>I am clearly not saying that this should be used to measure "optimal level of generality". I'm just pointing out to some situation in another domain where Julius's question may make sense and find an answer.</p>
+
+
+
+<a name="430257355"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Can%20there%20be%20a%20rule%20of%20thumb%20/%20algorithm%20to%20optimize%20leve.../near/430257355" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Can.20there.20be.20a.20rule.20of.20thumb.20.2F.20algorithm.20to.20optimize.20leve.2E.2E.2E.html#430257355">(Mar 29 2024 at 13:37)</a>:</h4>
+<p>Those are all really nice answers. I’m slow to absorb new mathematical ideas. I’ll respond when I can. Thanks <span aria-label="smile" class="emoji emoji-1f642" role="img" title="smile">:smile:</span></p>
+
+
+
+<a name="430267545"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Can%20there%20be%20a%20rule%20of%20thumb%20/%20algorithm%20to%20optimize%20leve.../near/430267545" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Can.20there.20be.20a.20rule.20of.20thumb.20.2F.20algorithm.20to.20optimize.20leve.2E.2E.2E.html#430267545">(Mar 29 2024 at 14:51)</a>:</h4>
+<p>I left an answer on the Philosophy SE question.</p>
+
+
+
+<a name="430267597"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Can%20there%20be%20a%20rule%20of%20thumb%20/%20algorithm%20to%20optimize%20leve.../near/430267597" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Can.20there.20be.20a.20rule.20of.20thumb.20.2F.20algorithm.20to.20optimize.20leve.2E.2E.2E.html#430267597">(Mar 29 2024 at 14:51)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Can.20there.20be.20a.20rule.20of.20thumb.20.2F.20algorithm.20to.20optimize.20leve.2E.2E.2E/near/430267545">said</a>:</p>
+<blockquote>
+<p>I left an answer on the Philosophy SE question.</p>
+</blockquote>
+<p>Way to go! Really appreciated.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

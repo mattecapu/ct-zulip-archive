@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Generalized elements &amp; sections of presheaves · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Generalized.20elements.20.26.20sections.20of.20presheaves.html">Generalized elements &amp; sections of presheaves</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="454466204"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Generalized%20elements%20%26%20sections%20of%20presheaves/near/454466204" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sidney Congard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Generalized.20elements.20.26.20sections.20of.20presheaves.html#454466204">(Jul 27 2024 at 12:00)</a>:</h4>
+<p>Hello!</p>
+<p>I started reading Sheaves in Geometry and Logic and encountered the definition of a global section of a presheaf. I then wandered on the nlab I got confused about some terminology:</p>
+<p>For any category 𝓒 and object A: 𝓒, we have the following definitions:</p>
+<ul>
+<li>Its <a href="https://ncatlab.org/nlab/show/global+element">global elements</a> := 𝓒(1, A), morphisms from the terminal object,</li>
+<li>Its <a href="https://ncatlab.org/nlab/show/generalized+element">generalized elements</a> := (U: 𝓒) × 𝓒(U, A), morphisms from any object.</li>
+</ul>
+<p>However, for any presheaf F: 𝓒ᵒᵖ→Set, we are given <a href="https://ncatlab.org/nlab/show/limit#limit_of_a_setvalued_functor">here</a> synonyms for limF := 𝓒ᵒᵖ→Set(1, F) as:</p>
+<ul>
+<li>Its generalized elements, instead of talking about global elements like before.</li>
+<li>Its <a href="https://ncatlab.org/nlab/show/global+section#GeneralTopos">global sections</a>, where they indeed talk about the hom-set of global elements.</li>
+</ul>
+<p>I thought it may be a typo, but <a href="https://ncatlab.org/nlab/show/generalized+element#in_presheaf_categories">here</a> they say that "the generalized elements of a presheaf F are the global sections of this presheaf".</p>
+<p>So, do I miss something?</p>
+<p>Also, do local sections of F correspond to transformations U ⇒ F (what I'd call generalized elements)?</p>
+
+
+
+<a name="454467721"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Generalized%20elements%20%26%20sections%20of%20presheaves/near/454467721" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Generalized.20elements.20.26.20sections.20of.20presheaves.html#454467721">(Jul 27 2024 at 12:22)</a>:</h4>
+<p>They mean in each case the generalized elements having the specified domain <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span>. So if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span> is the terminal presheaf, you get global elements. But if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mi mathvariant="script">C</mi><mo stretchy="false">(</mo><mo>−</mo><mo separator="true">,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">I = \mathcal{C}(-, c)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.05834em;">C</span><span class="mopen">(</span><span class="mord">−</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">c</span><span class="mclose">)</span></span></span></span>, then generalized elements over <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span> are in natural bijection with elements of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">F(c)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">c</span><span class="mclose">)</span></span></span></span>, by the Yoneda lemma.</p>
+
+
+
+<a name="454467861"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Generalized%20elements%20%26%20sections%20of%20presheaves/near/454467861" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Generalized.20elements.20.26.20sections.20of.20presheaves.html#454467861">(Jul 27 2024 at 12:24)</a>:</h4>
+<p>Usually the term "local section", as in the case of sheaves over a space, would refer to a generalized element whose domain <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi></mrow><annotation encoding="application/x-tex">U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span></span></span></span> is a subobject of the terminal object.</p>
+
+
+
+<a name="454469945"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Generalized%20elements%20%26%20sections%20of%20presheaves/near/454469945" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sidney Congard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Generalized.20elements.20.26.20sections.20of.20presheaves.html#454469945">(Jul 27 2024 at 12:52)</a>:</h4>
+<p>Thank you for your answer! It still feels wrong to me to read e.g. "The set limF is equivalently called [...] the set of generalized elements of F" or "the generalized elements of a presheaf F are the global sections of this presheaf", where in both case we could (should?) say global elements instead...<br>
+For representables, I take it that "the generalized elements of F at stage d" means the same as generalized elements over d i.e. with domain d?</p>
+
+
+
+<a name="454470259"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Generalized%20elements%20%26%20sections%20of%20presheaves/near/454470259" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Generalized.20elements.20.26.20sections.20of.20presheaves.html#454470259">(Jul 27 2024 at 12:57)</a>:</h4>
+<p>But they <em>are</em> global sections!  Sections of what? Sections of the unique map <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>→</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">F \to t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span> where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span> denotes the terminal object. Every global element <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>:</mo><mi>t</mi><mo>→</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">x: t \to F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span> is a section of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">!</mo><mo>:</mo><mi>F</mi><mo>→</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">!: F \to t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span>, i.e., the composite <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∘</mo><mo stretchy="false">!</mo></mrow><annotation encoding="application/x-tex">x \circ !</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">x</span><span class="mord">∘</span><span class="mclose">!</span></span></span></span> is the identity on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span>, by terminality of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span>. </p>
+<p>It's just using different words to describe the same thing.</p>
+
+
+
+<a name="454479392"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Generalized%20elements%20%26%20sections%20of%20presheaves/near/454479392" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sidney Congard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Generalized.20elements.20.26.20sections.20of.20presheaves.html#454479392">(Jul 27 2024 at 14:45)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277611">Todd Trimble</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Generalized.20elements.20.26.20sections.20of.20presheaves/near/454470259">said</a>:</p>
+<blockquote>
+<p>But they <em>are</em> global sections!  Sections of what? Sections of the unique map <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>→</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">F \to t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span> where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span> denotes the terminal object. Every global element <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>:</mo><mi>t</mi><mo>→</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">x: t \to F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span> is a section of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">!</mo><mo>:</mo><mi>F</mi><mo>→</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">!: F \to t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mclose">!</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span>, i.e., the composite <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∘</mo><mo stretchy="false">!</mo></mrow><annotation encoding="application/x-tex">x \circ !</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">x</span><span class="mord">∘</span><span class="mclose">!</span></span></span></span> is the identity on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span>, by terminality of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span>. </p>
+<p>It's just using different words to describe the same thing.</p>
+</blockquote>
+<p>Yeah I agree with that and I understand the correspondance between global elements &amp; global sections, what I don't understand is when "the generalized elements" is used to speak about global sections, or global elements. Do we agree that <em>generalized</em> elements are not the same as global sections?</p>
+
+
+
+<a name="454479847"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Generalized%20elements%20%26%20sections%20of%20presheaves/near/454479847" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sidney Congard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Generalized.20elements.20.26.20sections.20of.20presheaves.html#454479847">(Jul 27 2024 at 14:48)</a>:</h4>
+<p>E.g. I can take a presheaf that has no global elements i.e. no global sections, it still has generalized elements</p>
+
+
+
+<a name="454480102"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Generalized%20elements%20%26%20sections%20of%20presheaves/near/454480102" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sidney Congard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Generalized.20elements.20.26.20sections.20of.20presheaves.html#454480102">(Jul 27 2024 at 14:50)</a>:</h4>
+<p>So the sentence "The set limF is equivalently called [...] the set of generalized elements of F" from the nlab sounds wrong to me</p>
+
+
+
+<a name="454490274"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Generalized%20elements%20%26%20sections%20of%20presheaves/near/454490274" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Generalized.20elements.20.26.20sections.20of.20presheaves.html#454490274">(Jul 27 2024 at 16:10)</a>:</h4>
+<blockquote>
+<p>Do we agree that <em>generalized</em> elements are not the same as global sections?</p>
+</blockquote>
+<p>Yes, of course, but what I was trying to say in my first comment is that you clipped out some context from the nLab discussion, like the specific examples of $I$ being discussed. I mean, I think you're right that the exposition could be slightly improved, but if you read the entirety of the subsection <em>In Presheaf Categories</em>, and the two subsections before that, it's clear from context that when they say "generalized elements" within a paragraph, they mean over the domain $I$ currently under discussion, not generalized elements over arbitrary domains. For example, in the first paragraph of <em>In Presheaf Categories</em>, read that as generalized elements over <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span> = terminal presheaf.</p>
+
+
+
+<a name="454491067"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Generalized%20elements%20%26%20sections%20of%20presheaves/near/454491067" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sidney Congard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Generalized.20elements.20.26.20sections.20of.20presheaves.html#454491067">(Jul 27 2024 at 16:15)</a>:</h4>
+<p>Oh okay, reading it again that seems right indeed. However, in <a href="https://ncatlab.org/nlab/show/limit#limit_of_a_setvalued_functor">the section from limits</a>, I don't think I've removed important context here no?</p>
+
+
+
+<a name="454491314"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Generalized%20elements%20%26%20sections%20of%20presheaves/near/454491314" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sidney Congard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Generalized.20elements.20.26.20sections.20of.20presheaves.html#454491314">(Jul 27 2024 at 16:17)</a>:</h4>
+<blockquote>
+<p>The limit of a Set-valued functor F:Dᵒᵖ→Set is the hom-set (pt, F) where pt is the functor constant on the point, i.e. the terminal diagram.<br>
+The set limF is equivalently called<br>
+ - the set of global sections of F;<br>
+ - the set of generalized elements of F.</p>
+</blockquote>
+
+
+
+<a name="454492297"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Generalized%20elements%20%26%20sections%20of%20presheaves/near/454492297" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Generalized.20elements.20.26.20sections.20of.20presheaves.html#454492297">(Jul 27 2024 at 16:21)</a>:</h4>
+<p>Oof. No, you haven't missed anything; that last bullet point really ought to be reworded, because it is very likely to confuse some people (even if we generously supply some context mentally). Thanks for bringing to attention. I need to get on the road, but if no one edits it first, I'll fix it later.</p>
+
+
+
+<a name="454492766"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Generalized%20elements%20%26%20sections%20of%20presheaves/near/454492766" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sidney Congard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Generalized.20elements.20.26.20sections.20of.20presheaves.html#454492766">(Jul 27 2024 at 16:25)</a>:</h4>
+<p>Aaah I was definitely among the confused people <span aria-label="sweat smile" class="emoji emoji-1f605" role="img" title="sweat smile">:sweat_smile:</span> <span aria-label="relieved" class="emoji emoji-1f60c" role="img" title="relieved">:relieved:</span></p>
+
+
+
+<a name="454492945"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Generalized%20elements%20%26%20sections%20of%20presheaves/near/454492945" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sidney Congard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Generalized.20elements.20.26.20sections.20of.20presheaves.html#454492945">(Jul 27 2024 at 16:26)</a>:</h4>
+<p>I can edit it I guess - should I also add the link for global sections (it's their first mention)?</p>
+
+
+
+<a name="454585042"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Generalized%20elements%20%26%20sections%20of%20presheaves/near/454585042" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sidney Congard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Generalized.20elements.20.26.20sections.20of.20presheaves.html#454585042">(Jul 28 2024 at 08:21)</a>:</h4>
+<p>I edited it ^^</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

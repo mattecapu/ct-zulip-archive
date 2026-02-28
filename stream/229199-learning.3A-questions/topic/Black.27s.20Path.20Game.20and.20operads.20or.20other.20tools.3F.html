@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Black&#x27;s Path Game and operads or other tools? · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html">Black&#x27;s Path Game and operads or other tools?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="536480538"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536480538" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536480538">(Aug 27 2025 at 18:57)</a>:</h4>
+<p>There is a game with "a notion of composition" that I've been trying to understand with category theory for awhile called "Black's Path Game"</p>
+<p>In this game you have three tiles with paths:<a href="/user_uploads/21317/m1bySb3K6ZXfs4BhqU27gWKR/Square_02_12-34.svg.png">Square_(02)_12-34.svg.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/m1bySb3K6ZXfs4BhqU27gWKR/Square_02_12-34.svg.png" title="Square_(02)_12-34.svg.png"><img data-original-content-type="image/png" data-original-dimensions="240x240" src="/user_uploads/thumbnail/21317/m1bySb3K6ZXfs4BhqU27gWKR/Square_02_12-34.svg.png/840x560.webp"></a></div><p><a href="/user_uploads/21317/tOAaV5ZxUu9daQsQeBDjP1YM/Square_02_14-23.svg.png">Square_(02)_14-23.svg.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/tOAaV5ZxUu9daQsQeBDjP1YM/Square_02_14-23.svg.png" title="Square_(02)_14-23.svg.png"><img data-original-content-type="image/png" data-original-dimensions="240x240" src="/user_uploads/thumbnail/21317/tOAaV5ZxUu9daQsQeBDjP1YM/Square_02_14-23.svg.png/840x560.webp"></a></div><p><a href="/user_uploads/21317/D6zarFazjha6uDl7zS2Yh61v/Square_20_13-24.svg.png">Square_(20)_13-24.svg.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/D6zarFazjha6uDl7zS2Yh61v/Square_20_13-24.svg.png" title="Square_(20)_13-24.svg.png"><img data-original-content-type="image/png" data-original-dimensions="240x240" src="/user_uploads/thumbnail/21317/D6zarFazjha6uDl7zS2Yh61v/Square_20_13-24.svg.png/840x560.webp"></a></div><p>Players alternate placing tiles on the board, connecting them to tiles that have already been placed down. The first person to place a tile that connects a path between two edges of the board loses.</p>
+<p>There are a ton of variations on this basic idea, a simple one mentioned by the Wikipedia article, generates art by randomly tiling with two of the tiles:<br>
+<a href="/user_uploads/21317/At8r-ENjYBMDmnXF47M_39xx/Screenshot_20250827_113740_Chrome.jpg">Screenshot_20250827_113740_Chrome.jpg</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/At8r-ENjYBMDmnXF47M_39xx/Screenshot_20250827_113740_Chrome.jpg" title="Screenshot_20250827_113740_Chrome.jpg"><img data-original-content-type="image/jpeg" data-original-dimensions="1044x1067" src="/user_uploads/thumbnail/21317/At8r-ENjYBMDmnXF47M_39xx/Screenshot_20250827_113740_Chrome.jpg/840x560.webp"></a></div><p>I'm part of the way through trying to understand operads for modeling circuit diagrams and open dynamical systems. I once considered trying to use operads for modeling these tiles, but after playing with them for a bit decided they were too flexible. Recently while trying to understand "compositionality" I found Baez suggest <a href="https://golem.ph.utexas.edu/category/2018/05/compositionality.html">here</a> this should bring to mind functorial semantics, monoidal functors, and operad algebras. </p>
+<p>So I figured maybe I discounted operads to soon. If they capture "n-ary" multiplication maybe they're the right tool for the job. But I'm not sure how to proceed with them if they are the right tool.</p>
+<p>What do folks think? As a first impression do operads seem like a good way to model the board state for "Black's Path Game"? Or are there other categorical gadgets that could be more appropriate?</p>
+
+
+
+<a name="536482906"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536482906" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536482906">(Aug 27 2025 at 19:13)</a>:</h4>
+<p>The one dimensional version doesn't seem too bad to me, you have the freely generated monoid on two generators (imagine two horizontal paths that either do or don't flip). Then the last person to move, filling the board, loses. So the game is just Nim. So it didn't seem too out of reach to come up with a "two dimensional" multiplication, but I'm not sure.</p>
+
+
+
+<a name="536498592"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536498592" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536498592">(Aug 27 2025 at 21:28)</a>:</h4>
+<p>Another idea I've been playing with that I see as connected to this, is I'll imagine a "2D free monoid generated over {x, y, z}"</p>
+<p>So one element might be:</p>
+<div class="codehilite" data-code-language="Text only"><pre><span></span><code>      y
+x y y z x
+  z x   z
+</code></pre></div>
+<p>And then a homomorphism would replace the generators with elements that can also be composed in this grid aware way. So if I choose which of the above tiles correspond to each generator, the output of the map would be the tile board state. Or I could map to a different tiling game, like <a href="https://en.m.wikipedia.org/wiki/Tsuro">Tsuro</a></p>
+
+
+
+<a name="536525812"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536525812" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536525812">(Aug 28 2025 at 03:44)</a>:</h4>
+<p>It seems like "compose" means "place side by side" (along some axis) here. If so, how do you decide where exactly to place the 2D monoid elements you described above? As a simple example, if I take xx and y, even if I decide that the grids have to be connected I have 6 ways to compose these (assuming only relative positions in the grid matter).<br>
+An operad would be more obviously applicable if the composition was instead a kind of "substitution", where a tile is replaced with a grid. While it might be possible to argue that such structure is applicable here with some clever grid transformations, it doesn't feel to me like it corresponds to actually playing the games you describe.</p>
+
+
+
+<a name="536527330"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536527330" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536527330">(Aug 28 2025 at 04:07)</a>:</h4>
+<p>That reminds me of a nested tic tac toe game concept I've seen people play occasionally (you have to win tic tac toe in a square to win that square.</p>
+<p>Anyways thank you, that answer actually really helps me understand operads a lot better, which was a motivating goal for sharing this.</p>
+<p>Now that I actually wrote out what I'm trying to play with here maybe it'll help me get more ideas.</p>
+<p>I want gluing tiles to be a sort of push out, if their edges match you simply glue them and the paths together. But you can't always "multiply" along one edge - sometimes you need to do two or three, which makes it weirder.</p>
+<p>If I let myself place the tiles in a grid, then it's a lot easier, it's just an array of the tiles and null spots, and each tile added, except the first, has at least one neighbor. But I dunno, it seems to me like "2D adjoining" could be a really fun primitive to figure out.</p>
+
+
+
+<a name="536539135"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536539135" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536539135">(Aug 28 2025 at 06:33)</a>:</h4>
+<p>Wait, so does my "free monoid" example not make sense then, or is suggesting a borked interpretation?</p>
+<p>It being a "free monoid" suggests it should be legal to replace an x with some sub expression right? Because if I'm thinking of this as an algebra, shouldn't that be legal?</p>
+<p>Maybe I'm confusing myself by trying to think of it as an algebra, because algebras/languages want to be arbitrarily recursive, but I'm trying to understand tiling paths, which maybe aren't?</p>
+
+
+
+<a name="536556318"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536556318" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536556318">(Aug 28 2025 at 08:34)</a>:</h4>
+<p>I don't see how an operad or a 2-category or a double category are fully able to formalize your game - basically, there's too much geometry involved in your game, because you're interested in gluing together squares to form regions in the plane.</p>
+<p>If you were only interested in gluing together squares to form larger <em>rectangles</em>, then double category theory would be perfect for your question!   You'd then be discussing the free strict double category on one object, one vertical arrow, one horizontal arrow, and three 2-morphisms.   (Or maybe more 2-morphisms if we're allowed to rotate your squares.)</p>
+<p>If I were you, you would be willing to adjust your focus slightly to make it fit into the subject of double category theory.   There's already been work on double categories and tilings, by Robert Dawson.</p>
+
+
+
+<a name="536649655"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536649655" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536649655">(Aug 28 2025 at 16:59)</a>:</h4>
+<p>Thank you for mentioning Dawson, his papers look extremely relevant. Especially for the Truchet tilings, the procedurally generated art.</p>
+<p>I guess now I know why most painting's canvases are rectangles! /Joke</p>
+<p>It's satisfying knowing that stuff like the following "pinwheel" from Dawson's paper, are a nuisance in this abstract setting:</p>
+<p><a href="/user_uploads/21317/xnF7q9KMZb3t5uvUQkbgQOME/Screenshot_20250828_085920_Chrome.jpg">Screenshot_20250828_085920_Chrome.jpg</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/xnF7q9KMZb3t5uvUQkbgQOME/Screenshot_20250828_085920_Chrome.jpg" title="Screenshot_20250828_085920_Chrome.jpg"><img data-original-content-type="image/jpeg" data-original-dimensions="1080x1092" src="/user_uploads/thumbnail/21317/xnF7q9KMZb3t5uvUQkbgQOME/Screenshot_20250828_085920_Chrome.jpg/840x560.webp"></a></div><p>Another example in the back of my mind are <a href="https://en.m.wikipedia.org/wiki/Kolam">Kolam tiles</a>. I think the rectangle requirement is modest enough, we don't have to rule them out:</p>
+<p><a href="/user_uploads/21317/ngp8KUId_J55RokY2dId-PUj/Kolam-tile-example.jpg">Kolam tile example.jpg</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/ngp8KUId_J55RokY2dId-PUj/Kolam-tile-example.jpg" title="Kolam tile example.jpg"><img data-original-content-type="image/jpeg" data-original-dimensions="3000x4000" src="/user_uploads/thumbnail/21317/ngp8KUId_J55RokY2dId-PUj/Kolam-tile-example.jpg/840x560.webp"></a></div><p><a href="/user_uploads/21317/dM-OvxSonX1haX5oZpQoGKXV/Kolam-Tile-Rules.jpg">Kolam Tile Rules.jpg</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/dM-OvxSonX1haX5oZpQoGKXV/Kolam-Tile-Rules.jpg" title="Kolam Tile Rules.jpg"><img data-original-content-type="image/jpeg" data-original-dimensions="3000x4000" src="/user_uploads/thumbnail/21317/dM-OvxSonX1haX5oZpQoGKXV/Kolam-Tile-Rules.jpg/840x560.webp"></a></div><p>They even allow closed tiles, as circles, in the official rules so I can always fill in gaps. That's funny that works.</p>
+<p>I guess I'll say one last thing about the game as I change focus.</p>
+<p>We imagine starting with one tile, which has four edges for a new tile.</p>
+<div class="codehilite" data-code-language="Text only"><pre><span></span><code>  *
+* T *
+  *
+</code></pre></div>
+<p>Adding a new tile lays down an asterisk on each side without a T or an asterisk, so if we added a tile on the right we'd get</p>
+<div class="codehilite" data-code-language="tile"><pre><span></span><code>  * *
+* T T *
+  * *
+</code></pre></div>
+<p>I think this can be made into an efficient algorithm for representing a sparse tile "composition". But the algorithms coming to my mind don't seem "categorical". Most of the algorithmic work I can come up with involves juggling properties of elements.</p>
+<p>When Bartosz taught me category theory he played up how it was about "composition". This seems like an okay slogan, but not a bullet proof intuition. It gets my head <em>close</em> to the right ideas, but I'm not getting anything for free.</p>
+
+
+
+<a name="536797039"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536797039" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536797039">(Aug 29 2025 at 14:09)</a>:</h4>
+<p>If you like, you could see a tile configuration as having four composition surfaces (this is a different, less rectangular way to turn them into a double category). The downside is that this only keeps track of the outer edges, so you can't meaningfully keep track of any operation for plugging holes without some higher-dimensional data.</p>
+
+
+
+<a name="536814774"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536814774" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536814774">(Aug 29 2025 at 15:36)</a>:</h4>
+<p>The way you're thinking about that, are you imagining the "left edge" of some configuration is a sort of path, and we can glue this to a "right edge" of a different tile configuration if one path is a sub-path of the other, or do the paths have to be the same? (Or am I missing what you're trying to do? What's a "composition surface"?)</p>
+
+
+
+<a name="536823923"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536823923" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536823923">(Aug 29 2025 at 16:25)</a>:</h4>
+<p>If you're going for a double category those paths have to be <em>equal</em>: 2-morphisms compose when the target of one <em>equals</em> the source of the other.   So you can't just have one path be merely sub-path of another, unless you're willing to use an extra trick, which this screen is too narrow to contain.   It's probably best to start by going along with what's mathematically easy, instead of fighting against it.</p>
+<p>By 'composition surface' Morgan surely doesn't mean a 2-dimensional surface.  He's saying you can take a tiled region without holes in it and subdivide its boundary into four paths, which (going counterclockwise) you call the 'top', 'left', 'bottom' and 'right' even though they can snake around in quite complicated ways.</p>
+<p>At least that's my reading of his remark.</p>
+
+
+
+<a name="536828975"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536828975" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536828975">(Aug 29 2025 at 16:57)</a>:</h4>
+<p>Okay, that makes sense. That was my read as well. That is an interesting generalization, but it still doesn't permit adding one tile to a larger configuration, so I was making sure I didn't misunderstand. It's very similar to the rectangle example (though it breaks my rectangular canvas joke!)</p>
+<p>Which is fine, I'm just trying to get a feeling for what is and isn't natural. I had a feeling "adding one tile" was a forced fit at the 2-category level, but I wasn't sure. It's cool combining rectangles (and jagged regions) works and is natural, that's news to me.</p>
+<p>Category theory seems to "want" to be topological and I'm curious how much I can push back against that. I'll see Lego blocks brought up as a metaphor or analogy occasionally for example, but the metaphor feels forced. The rectangle composition double category makes this analogy seem much less forced.</p>
+<p>I guess another angle on this I've thought about some, is the topos of graphs is often explained as the free cocompletions of edges and verticies. In this tiling vein I considered adding squares to that and wondered if I could restrict how the completion process worked by specifying a more restricted category than Set or something.</p>
+<p>But that felt like working against the subject, like "degenerate" graphs actually help you do useful stuff.</p>
+
+
+
+<a name="536829456"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536829456" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536829456">(Aug 29 2025 at 17:00)</a>:</h4>
+<blockquote>
+<p>That is an interesting generalization, but it still doesn't permit adding one tile to a larger configuration.</p>
+</blockquote>
+<p>It does if one of the four paths in the larger configuration has just a single edge.</p>
+
+
+
+<a name="536829589"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536829589" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536829589">(Aug 29 2025 at 17:01)</a>:</h4>
+<blockquote>
+<p>I had a feeling "adding one tile" was a forced fit at the 2-category level, but I wasn't sure.</p>
+</blockquote>
+<p>We're talking about double categories now, not 2-categories.  At least I didn't notice anyone mentioning 2-categories until you did right now.</p>
+
+
+
+<a name="536832660"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536832660" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536832660">(Aug 29 2025 at 17:21)</a>:</h4>
+<p>Sorry, 2-categories and double categories are both in my head as "two dimensional" is this a conflation?  That's why I misspoke in any case.</p>
+<p>Once you decide the boundary types of your four edges for a given configuration you're stuck with that right? So there is one jagged "visual" arrangement with multiple ways to equip it with four distinct paths? So if your configuration doesn't have any one edge length path, then you can't add a single tile?</p>
+
+
+
+<a name="536836745"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536836745" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536836745">(Aug 29 2025 at 17:50)</a>:</h4>
+<p>(I don't want to get in the weeds in these examples, ya'll have given plenty of examples of double categories to think about now, I'll play with them more so I can be more definite and careful with what I say)</p>
+
+
+
+<a name="536839102"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536839102" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536839102">(Aug 29 2025 at 18:06)</a>:</h4>
+<blockquote>
+<p>Sorry, 2-categories and double categories are both in my head as "two dimensional" is this a conflation?</p>
+</blockquote>
+<p>They're both 2-dimensional, but they're different.   Double categories are fundamentally about squares, while 2-categories are about bigons.   </p>
+<blockquote>
+<p>Once you decide the boundary types of your four edges for a given configuration you're stuck with that right?</p>
+</blockquote>
+<p>Well, you are unless you decide to introduce some math that lets you change your mind about how much of the boundary of your tiling is included in each of the four edges!    You may want to work with double categories that have features that let you change your mind.  </p>
+<p>For example you might want to work with 'symmetric' strict double categories, meaning those where the category of vertical arrows is fundamentally the same as the category of horizontal arrows.  At that point maybe you want to use a 2-category, or maybe a 2-category where the 1-morphisms are invertible.</p>
+<p>This could become a research project, and as long as you have some good examples and do a good job in formalizing them, you might come up with some nice new math.   </p>
+<p>Or maybe someone has already done all this.   A one-minute search turns up </p>
+<ul>
+<li>Ronnie Brown and Ghafar Mosa, <a href="http://www.tac.mta.ca/tac/volumes/1999/n7/n7.pdf">Double categories, 2-categories, thin structures and connections</a>.</li>
+</ul>
+<p>which probably <em>doesn't</em> solve your problems for you, but <em>does</em> describes some of the extra bells and whistles people have considered for double categories.  Some of these are relevant to what we're talking about.</p>
+
+
+
+<a name="536839635"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536839635" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536839635">(Aug 29 2025 at 18:10)</a>:</h4>
+<p>That is encouraging, thanks for sharing that context</p>
+
+
+
+<a name="536839936"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536839936" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536839936">(Aug 29 2025 at 18:12)</a>:</h4>
+<p>Sure!   Brown and Dawson have written a lot of stuff that comes to mind, vaguely, when I think about the issues you're raising.   But I forget most of the details.</p>
+
+
+
+<a name="536903700"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536903700" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536903700">(Aug 30 2025 at 09:53)</a>:</h4>
+<p><span class="user-mention" data-user-id="277352">@Alex Kreitzberg</span> have you thought about monoidal categories before? If I have an arrow <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">f: A\to B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> and an arrow <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>⊗</mo><mi>C</mi><mo>→</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">B \otimes C \to D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span>, these aren't composable <em>but</em> I can compose the latter with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⊗</mo><msub><mrow><mi mathvariant="normal">i</mi><mi mathvariant="normal">d</mi></mrow><mi>C</mi></msub></mrow><annotation encoding="application/x-tex">f \otimes \mathrm{id}_C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">id</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.07153em;">C</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> a similar kind of padding could allow you to add a single tile to a larger configuration in two dimensions, although there are lots of details you would need to figure out.</p>
+
+
+
+<a name="536904457"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536904457" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536904457">(Aug 30 2025 at 10:09)</a>:</h4>
+<p>I have but I clearly need to think about them more! In a very vague sense I interpreted Baez's comment as implying I needed to add the analogs of "unitors", "associators", etc to a double category.</p>
+<p>I definitely don't have an intuition for what's convenient or possible in this respect. Which in retrospect is why I had the impression one couldn't always add individual tiles.</p>
+
+
+
+<a name="536915247"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536915247" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536915247">(Aug 30 2025 at 13:34)</a>:</h4>
+<p>No, that's not what I meant.  I meant adding some features to a double category that would help solve your problem: for example, a feature that could change a square with top equal to fg and right side equal to h to a square with top equal to f and right side equal to gh... in a reversible way.   </p>
+<p>This sort of thing makes the four points where you chop up the boundary of your patch of tiles movable, solving your problem of not being able to add individual tiles.</p>
+<p>You were correct that in the double category framework you can't in general add individual tiles to a large patch of tiles without some extra trick like this.</p>
+
+
+
+<a name="536927510"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536927510" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536927510">(Aug 30 2025 at 17:05)</a>:</h4>
+<p>Oh! Is that something "connections", from the paper you linked, would make easier or possible?</p>
+
+
+
+<a name="536970295"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536970295" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536970295">(Aug 31 2025 at 09:23)</a>:</h4>
+<p>Mainly connections let you turn vertical arrows into horizontal ones and vice versa, which is just <em>part</em> of what you're demanding.    Connections may help you a bit, but it may be faster for you to just make up the desired structure from scratch.   I mainly recommended connections to you so you can see how people introduce extra structures of this general sort on double categories.</p>
+<p>I believe the structure you want is the ability to change a square with top equal to fg and right side equal to h to a square with top equal to f and right side equal to gh... in a reversible way... and similarly with the words "bottom" and "left", "left" and "top", or "right" and "bottom" replacing "top" and "right".</p>
+<p>If I were you (or technically: if you were me) I'd start by:</p>
+<p>1) clearly specifying some examples of what I'm trying to axiomatize,<br>
+2) writing down the axioms that capture what's going on in these examples.</p>
+<p>The resulting axioms may look a bit clunky, but in consultation with practicing category theorists, double category theorists, and 2-category theorists you may be able to make them look nicer.</p>
+<p>In fact, come to think of it, I might start by writing down axioms that don't mention double categories at all, because the insistence that your region have a boundary subdivided into four parts (arbitrarily called top, right, botttom and left), fundamental to double category theory, is not so important to you.</p>
+
+
+
+<a name="536985415"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Black%27s%20Path%20Game%20and%20operads%20or%20other%20tools%3F/near/536985415" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Black.27s.20Path.20Game.20and.20operads.20or.20other.20tools.3F.html#536985415">(Aug 31 2025 at 14:03)</a>:</h4>
+<p>Okay thank you, you've provided plenty of stuff to get me started, I'll try and axiomatize some of these examples.</p>
+<p>I think the main motivation for framing everything in category theory, is these tiles have paths on them. So I'm hoping after everything is in its proper place I'll have functors, or some structure preserving map, taking the tile configurations to path configurations.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>✔ comonoid uniqueness implies cartesian · theory: mathematics · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/index.html">theory: mathematics</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/.E2.9C.94.20comonoid.20uniqueness.20implies.20cartesian.html">✔ comonoid uniqueness implies cartesian</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="523292929"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/%E2%9C%94%20comonoid%20uniqueness%20implies%20cartesian/near/523292929" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eduardo Hoefel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/.E2.9C.94.20comonoid.20uniqueness.20implies.20cartesian.html#523292929">(Jun 10 2025 at 13:31)</a>:</h4>
+<p>Dear all,</p>
+<p>Does anyone know a reference for a proof of the following statement? It seems to be correct.</p>
+<p><em>Consider a monoidal category in which every object admits exactly one comonoid structure. Then the monoidal structure in the category is necessarily cartesian.</em></p>
+<p>This statement appears to hold without additional assumptions, but I am open to adding some if needed. For instance, I don’t mind assuming that the category is braided, even though that doesn’t seem strictly necessary.</p>
+<p>Best regards,<br>
+Eduardo</p>
+
+
+
+<a name="523294064"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/%E2%9C%94%20comonoid%20uniqueness%20implies%20cartesian/near/523294064" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Paolo Perrone <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/.E2.9C.94.20comonoid.20uniqueness.20implies.20cartesian.html#523294064">(Jun 10 2025 at 13:37)</a>:</h4>
+<p>A similar result to this is <a href="https://ncatlab.org/nlab/show/Fox%27s+theorem">Fox' theorem</a>.<br>
+It also needs the additional assumption that every morphism is a homomorphism of comonoids.</p>
+
+
+
+<a name="523295291"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/%E2%9C%94%20comonoid%20uniqueness%20implies%20cartesian/near/523295291" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Paolo Perrone <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/.E2.9C.94.20comonoid.20uniqueness.20implies.20cartesian.html#523295291">(Jun 10 2025 at 13:42)</a>:</h4>
+<p>In case you are familiar with <a href="https://ncatlab.org/nlab/show/Markov+category">Markov categories</a>, you can interpret (and prove) the idea in the following way:<br>
+1) Morphisms of comonoids are exactly the deterministic maps.<br>
+2) Deterministic maps always make their outputs conditionally independent given their inputs.<br>
+3) Therefore, their outputs are completely determined by their projections.<br>
+4) Therefore, the universal property of the product holds.</p>
+
+
+
+<a name="523296461"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/%E2%9C%94%20comonoid%20uniqueness%20implies%20cartesian/near/523296461" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eduardo Hoefel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/.E2.9C.94.20comonoid.20uniqueness.20implies.20cartesian.html#523296461">(Jun 10 2025 at 13:48)</a>:</h4>
+<p>Thank you Paolo ! I didn't know about Markov Categories, but it sounds like a quite interesting solution to this question.</p>
+<p><span class="user-mention silent" data-user-id="275989">Paolo Perrone</span> <a href="#narrow/channel/411257-theory.3A-mathematics/topic/comonoid.20uniqueness.20implies.20cartesian/near/523294064">said</a>:</p>
+<blockquote>
+<p>A similar result to this is <a href="https://ncatlab.org/nlab/show/Fox%27s+theorem">Fox' theorem</a>.<br>
+It also needs the additional assumption that every morphism is a homomorphism of comonoids.</p>
+</blockquote>
+
+
+
+<a name="523296873"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/%E2%9C%94%20comonoid%20uniqueness%20implies%20cartesian/near/523296873" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Paolo Perrone <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/.E2.9C.94.20comonoid.20uniqueness.20implies.20cartesian.html#523296873">(Jun 10 2025 at 13:50)</a>:</h4>
+<p>A nice thing about Markov categories is that they allow to transfer ideas from probability to other areas of math. The idea of <em>independence</em> (and <em>conditional independence</em>) is particularly useful, also outside of probability.</p>
+
+
+
+<a name="523299418"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/%E2%9C%94%20comonoid%20uniqueness%20implies%20cartesian/near/523299418" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tobias Fritz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/.E2.9C.94.20comonoid.20uniqueness.20implies.20cartesian.html#523299418">(Jun 10 2025 at 14:01)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="927130">Eduardo Hoefel</span> <a href="#narrow/channel/411257-theory.3A-mathematics/topic/comonoid.20uniqueness.20implies.20cartesian/near/523292929">said</a>:</p>
+<blockquote>
+<p><em>Consider a monoidal category in which every object admits exactly one comonoid structure. Then the monoidal structure in the category is necessarily cartesian.</em></p>
+</blockquote>
+<p>That is actually not true, and many Markov categories are counterexamples to this! See Remark 11.29 <a href="https://arxiv.org/abs/1908.07021">here</a>, which implies for example that <a href="https://ncatlab.org/nlab/show/FinStoch">[[FinStoch]]</a> is a monoidal category in which every object has a unique comonoid structure.</p>
+<p>The fact that FinStoch is not cartesian is in a sense what probability is all about, namely the fact that a joint distribution of two random variables is not uniquely determined by its two marginals.</p>
+
+
+
+<a name="523303554"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/%E2%9C%94%20comonoid%20uniqueness%20implies%20cartesian/near/523303554" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tobias Fritz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/.E2.9C.94.20comonoid.20uniqueness.20implies.20cartesian.html#523303554">(Jun 10 2025 at 14:19)</a>:</h4>
+<p>For people less familiar with probability theory, a simpler counterexample is SetMulti, by which we mean the category of sets and multivalued functions, or in other words the subcategory of Rel consisting of the <a href="https://en.wikipedia.org/wiki/Total_relation">total relations</a>. This is also a positive Markov category and hence my previous statement applies.</p>
+<p>It seems plausible that even (Rel,x) itself, which is not quite a Markov category, has unique comonoids. But I haven't checked the details of that.</p>
+
+
+
+<a name="523305047"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/%E2%9C%94%20comonoid%20uniqueness%20implies%20cartesian/near/523305047" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eduardo Hoefel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/.E2.9C.94.20comonoid.20uniqueness.20implies.20cartesian.html#523305047">(Jun 10 2025 at 14:25)</a>:</h4>
+<p>Thank you Tobias ! I will check your counter examples and read more about Markov Categories.</p>
+
+
+
+<a name="523346658"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/%E2%9C%94%20comonoid%20uniqueness%20implies%20cartesian/near/523346658" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Notification Bot <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/.E2.9C.94.20comonoid.20uniqueness.20implies.20cartesian.html#523346658">(Jun 10 2025 at 18:15)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="927130">Eduardo Hoefel</span> has marked this topic as resolved.</p>
+
+
+
+<a name="523720890"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/%E2%9C%94%20comonoid%20uniqueness%20implies%20cartesian/near/523720890" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/.E2.9C.94.20comonoid.20uniqueness.20implies.20cartesian.html#523720890">(Jun 12 2025 at 10:01)</a>:</h4>
+<p>You also need to assume they are <em>commutative</em>, as far as I remember.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>How to model judgements of equality in inference rules? · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20model.20judgements.20of.20equality.20in.20inference.20rules.3F.html">How to model judgements of equality in inference rules?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="490235746"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20model%20judgements%20of%20equality%20in%20inference%20rules%3F/near/490235746" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20model.20judgements.20of.20equality.20in.20inference.20rules.3F.html#490235746">(Dec 20 2024 at 21:54)</a>:</h4>
+<p>I would like to model judgements of equality. The inference rule expressing <a href="https://en.wikipedia.org/wiki/Subject_reduction">subject reduction</a>, i.e. that terms preserve their types under reduction, uses such judgements.</p>
+<div class="codehilite"><pre><span></span><code>Γ ⊢ A: B    Γ ⊢ C: ⊤     Γ ⊢ s(C) = A    Γ ⊢ t(C) = A&#39;    Γ ⊢ A&#39;: B&#39;
+—————————————————————————————————————————————————————————————————————
+Γ ⊢ A: B&#39;
+</code></pre></div>
+
+<p>where <code>B, B'</code> are types refining the sort of terms and <code>⊤</code> is the type that trivially refines the sort of reductions.  The function symbols <code>s</code> and <code>t</code> pick out the source and target of a reduction, respectively.</p>
+<p>In the absence of the equality judgements, I could model this as a natural transformation between profunctors.  What's the right way to model the equality judgements?</p>
+
+
+
+<a name="490235795"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20model%20judgements%20of%20equality%20in%20inference%20rules%3F/near/490235795" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20model.20judgements.20of.20equality.20in.20inference.20rules.3F.html#490235795">(Dec 20 2024 at 21:54)</a>:</h4>
+<p>Details:</p>
+<p>I'm modeling lambda calculus using a graph-structured lambda theory.  I'll use a reduction strategy where we only reduce lambdas in the head position of an application, resulting in weak head normal form.  (Modeling lambda calculus in a lambda theory is kind of silly, but it lets me reason about the number of steps in a reduction and lets the theory handle bound variables and substitution.)</p>
+
+
+
+<a name="490235809"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20model%20judgements%20of%20equality%20in%20inference%20rules%3F/near/490235809" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20model.20judgements.20of.20equality.20in.20inference.20rules.3F.html#490235809">(Dec 20 2024 at 21:55)</a>:</h4>
+<ul>
+<li>The graph structure<ul>
+<li>One generating sort T for terms</li>
+<li>One generating sort R for reductions</li>
+<li>Two generating morphisms s, t: R -&gt; T for the source and target of a reduction</li>
+</ul>
+</li>
+<li>Two generating function symbols for terms<ul>
+<li>App: T x T -&gt; T</li>
+<li>Lam: (T -&gt; T) -&gt; T</li>
+</ul>
+</li>
+<li>Two generating function symbols for reductions<ul>
+<li>Beta: ((T -&gt; T) x T) -&gt; T</li>
+<li>Head: R x T -&gt; R</li>
+</ul>
+</li>
+<li>Two equations for the source and target of Beta<ul>
+<li>s(Beta(a, b)) = App(Lam(a), b)</li>
+<li>t(Beta(a, b)) = eval(a, b)</li>
+</ul>
+</li>
+<li>Two equations for the source and target of Head<ul>
+<li>s(Head(a, b)) = App(s(a), b)</li>
+<li>t(Head(a, b)) = App(t(a), b)</li>
+</ul>
+</li>
+</ul>
+
+
+
+<a name="490245272"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20model%20judgements%20of%20equality%20in%20inference%20rules%3F/near/490245272" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20model.20judgements.20of.20equality.20in.20inference.20rules.3F.html#490245272">(Dec 20 2024 at 23:34)</a>:</h4>
+<p>Is modeling this without pro-functors an option?  Just treating G |- t1 = t2 : T to mean that morphisms G |- t1 : T and G |- t2 : T are equal?  A priori I'd expect most inference rules not to turn into equations in a lambda theory, but into more general formulae (implications, etc).</p>
+
+
+
+<a name="490246308"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20model%20judgements%20of%20equality%20in%20inference%20rules%3F/near/490246308" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20model.20judgements.20of.20equality.20in.20inference.20rules.3F.html#490246308">(Dec 20 2024 at 23:48)</a>:</h4>
+<p>Most inference rules actually turn out to be natural and dinatural transformations between profunctors.  For example,</p>
+<div class="codehilite"><pre><span></span><code>Γ ⊢ v: A    Γ, x: A ⊢ B: C
+——————————————————————————
+Γ ⊢ B[v/x]: C
+</code></pre></div>
+
+<p>is natural in Γ and C and dinatural in A.  The dinatural part is α: F =&gt; G, where</p>
+<div class="codehilite"><pre><span></span><code>F, G: T^op x T x T^op x T -&gt; Set
+F = (Γ, A, A&#39;, C) --∆AA&#39;C--&gt; (Γ, Γ, A, A&#39;, C) --iso--&gt; ((Γ, A), ((Γ, A&#39;), C)) --hom x hom--&gt; Γ ⊢ A    Γ, A&#39; ⊢ C
+G = (Γ, A, A&#39;, C) --ΓδδC--&gt; (Γ, 1, 1, C) --iso--&gt; (Γ, C) --hom--&gt; Γ ⊢ C
+α(m, n) = n ⚬ (Γ x m)
+</code></pre></div>
+
+<p>and the commuting hexagon says that given <code>f:A -&gt; A',  h: Γ -&gt; A,  j: Γ, A' -&gt; C</code>,</p>
+<div class="codehilite"><pre><span></span><code>(j ⚬ Γh) ⚬ Γf = j ⚬ Γ(h ⚬ f).
+</code></pre></div>
+
+
+
+<a name="490278922"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20model%20judgements%20of%20equality%20in%20inference%20rules%3F/near/490278922" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20model.20judgements.20of.20equality.20in.20inference.20rules.3F.html#490278922">(Dec 21 2024 at 08:15)</a>:</h4>
+<p>In this particular case, I guess I can write something like</p>
+<div class="codehilite"><pre><span></span><code>Γ ⊢ s(A): B    Γ ⊢ t(A): B&#39;
+———————————————————————————
+Γ ⊢ s(A): B&#39;
+</code></pre></div>
+<p>But I'd still like to understand what categorical machinery would let me say <code>Γ ⊢ x(A) = y(B)</code>.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

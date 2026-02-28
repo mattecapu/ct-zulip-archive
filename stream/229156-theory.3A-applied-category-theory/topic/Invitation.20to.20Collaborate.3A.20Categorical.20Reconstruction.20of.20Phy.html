@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Invitation to Collaborate: Categorical Reconstruction of Phy · theory: applied category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/index.html">theory: applied category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Invitation.20to.20Collaborate.3A.20Categorical.20Reconstruction.20of.20Phy.html">Invitation to Collaborate: Categorical Reconstruction of Phy</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="532364892"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Invitation%20to%20Collaborate%3A%20Categorical%20Reconstruction%20of%20Phy/near/532364892" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ben Sprott <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Invitation.20to.20Collaborate.3A.20Categorical.20Reconstruction.20of.20Phy.html#532364892">(Aug 01 2025 at 19:15)</a>:</h4>
+<p>Dear Fellow Category Theorists,</p>
+<p>I’m working on a program that reconstructs the algebraic structure of physical quantities (like mass, angle, and eventually Hilbert spaces) starting from <em>primitive symbolic measurements</em>, using monads and their compositions. The aim is to remove the lingering "black art" in physics — where assumptions such as “mass is a real number” or “states live in a Hilbert space” are adopted pragmatically, without justification from first principles.</p>
+<p>Instead of treating real-valued quantities as givens, I start with primitive observations — e.g., multisets like <code>{"grain", "grain", "grain"}</code> — and then construct, via monad maps and Eilenberg–Moore algebras, the structures that justify operations like averaging. A key result is that quantities like mass only <em>must</em> be real numbers if the monadic structure (e.g., multiset → distribution) is available. If it isn’t, then real-valued assumptions are unjustified.</p>
+<p>This work draws inspiration from Lucien Hardy’s operational approach, but differs in being strictly categorical: measurement operations, data symmetries, and derived quantities are all built compositionally from categorical primitives, with no appeal to background physics.</p>
+<p>The broader goal is to provide a foundational framework for physics — especially quantum gravity — that is epistemologically transparent and structurally sound, by unpacking all the assumed algebraic baggage of physics through categorical semantics.</p>
+<p>If you’re interested in monads, monad composition, enriched category theory, or categorical approaches to physics, I’d love to collaborate or even just exchange ideas. I’m especially looking for insight into:</p>
+<ul>
+<li>
+<p>Monad composition as a formal model of experimental processes</p>
+</li>
+<li>
+<p>The semantics of measurement data in terms of free algebras and EM categories</p>
+</li>
+<li>
+<p>Reconstructing inner products and Hilbert spaces from symbolic data symmetries</p>
+</li>
+</ul>
+<p>Let me know if you’d like a copy of the 3-pager or one-pager summaries I’ve written up, or if you’d be open to a conversation. I’d be excited to hear your thoughts.</p>
+<p>Warmly,</p>
+<p>Ben Sprott<br>
+<a href="mailto:bensprott@gmail.com">bensprott@gmail.com</a></p>
+<p>Here is a deeper outline:</p>
+<p>Reconstructing Physical Quantities from Primitive Data via Monads — Invitation to Collaborate</p>
+<p>Motivation: Replacing Black Magic with Structure</p>
+<p>Much of modern physics is built upon pragmatic assumptions that worked but were never derived from first principles. Quantities like mass, angle, or energy are treated as real numbers. Hilbert spaces, probabilities, and operators are just assumed. This "black art" of layering structure onto experimental results without justification has worked surprisingly well — but it has led to a patchwork theory ill-suited for deep unification (for example, in quantum gravity).</p>
+<p>I believe we can do better by reconstructing these structures categorically from symbolic data, using monads and their composition. Instead of taking real numbers and Hilbert spaces as primitive, we can derive them from functorial and algebraic structure over raw measurements.</p>
+<p>Step 1: From Raw Measurement to Algebra</p>
+<p>Consider the primitive data of an experiment:</p>
+<ul>
+<li>
+<p>Observation: "3 grains in a pan" is recorded as something like a ket symbol for 3 grains</p>
+</li>
+<li>
+<p>Another: "angle to star A" is recorded as a symbol like 43 degrees</p>
+</li>
+</ul>
+<p>We record these as multisets of symbols, modeled as elements of the multiset monad M(X), where X is a set of raw measurement labels.</p>
+<p>We then construct a monad map from M to D, where D is the distribution monad. This is not assumed — it’s explicitly built by normalizing multiplicities. It is functorial, monad-compatible, and compatible with expectation via Eilenberg-Moore algebras.</p>
+<p>Only if this structure exists do physical quantities gain an averaging operation — meaning the familiar real-valued behavior of quantities like mass or angle becomes justified rather than assumed.</p>
+<p>Monad Composition and Cardinality</p>
+<p>A subtle additional assumption in measurement is cardinality. For instance, going from "3 grains" to the number 3 requires interpreting a multiset as a set of objects with cardinality. This is a nontrivial move.</p>
+<p>I model this explicitly via a second monad C for cardinality, making the overall structure M tensor C — that is, multisets over cardinalities, where C is a monad modeling the process of counting or abstracting numerical extent from symbolic data. This removes a key source of pragmatic sleight-of-hand and makes cardinality itself an effectful construction.</p>
+<p>Toward Foundations of Quantum Gravity</p>
+<p>Every text on quantum gravity makes background assumptions like: energy is a real number, length is a real number, and states live in Hilbert space. But these are carryovers from incompatible legacy formalisms — general relativity and quantum mechanics.</p>
+<p>Instead of combining two broken tools, I argue we should rederive all structure from compositional measurement semantics. This approach starts with no real numbers or Hilbert spaces, builds structure only when justified via data symmetry, treats algebraic properties as effects of monad composition, and seeks a foundational formulation compatible with both quantum and gravitational regimes.</p>
+<p>Invitation</p>
+<p>This project is rooted in categorical semantics, but I would love to have input from others experienced in:</p>
+<ul>
+<li>
+<p>Monad composition and Eilenberg-Moore semantics</p>
+</li>
+<li>
+<p>Modeling measurement and experimental processes categorically</p>
+</li>
+<li>
+<p>Reconstructing algebraic and topological structure from symbolic data</p>
+</li>
+</ul>
+
+
+
+<a name="533026253"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Invitation%20to%20Collaborate%3A%20Categorical%20Reconstruction%20of%20Phy/near/533026253" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ben Sprott <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Invitation.20to.20Collaborate.3A.20Categorical.20Reconstruction.20of.20Phy.html#533026253">(Aug 06 2025 at 05:13)</a>:</h4>
+<p><a href="/user_uploads/21317/wtYZ9QIikNnwMO_wTm8xdfvP/cardinality_fossils.tex">cardinality_fossils.tex</a></p>
+<p>This is an attempt to give a rigorous definition of Barbour's fossils without pragmatic assumptions.</p>
+
+
+
+<a name="533026878"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Invitation%20to%20Collaborate%3A%20Categorical%20Reconstruction%20of%20Phy/near/533026878" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Invitation.20to.20Collaborate.3A.20Categorical.20Reconstruction.20of.20Phy.html#533026878">(Aug 06 2025 at 05:22)</a>:</h4>
+<p>I would encourage you to think how you _actually define_ the functor by choosing, for every set, 1) a representative set of that size and 2) a fixed bijection between that set any every other set of that size. To do i the context of ZFC you are actually well-ordering every set in existence simultaneously, with the smallest ordering possible on that size (this is because in ZFC step 1 is done for you, but not step 2). If you aren't in ZFC but an arbitrary category modelling set theory, then you are doing both steps without the help of 'canonical' representatives of cardinalities.</p>
+<p>In particular, this assumes a global choice axiom. Even if you are thinking only about finite sets, then by choosing say the standard ordinal number n as representative, this amounts to choosing in advance a _counting_ of every finite set you want to consider, namely an order on its elements (first element, second element,....). This I think has philosophical commitments.</p>
+
+
+
+<a name="533029576"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Invitation%20to%20Collaborate%3A%20Categorical%20Reconstruction%20of%20Phy/near/533029576" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ben Sprott <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Invitation.20to.20Collaborate.3A.20Categorical.20Reconstruction.20of.20Phy.html#533029576">(Aug 06 2025 at 05:59)</a>:</h4>
+<p>In <em>Lost in Math</em>, Sabine Hossenfelder diagnoses a profound crisis in modern physics: a drift away from empirical grounding and conceptual clarity, toward speculative constructions guided more by aesthetic sensibilities than by necessity. She argues that physicists increasingly pursue models that are “beautiful,” “natural,” or “elegant,” often without testable predictions or foundational justifications. What she exposes is not merely a methodological lapse, but a deeper failure of epistemic discipline — a willingness to assume the very mathematical structures we should be explaining.</p>
+<p>The work I am pursuing responds directly to that failure, by asking: what structural features of mathematics and measurement truly arise from observable configurations, without being presupposed? Where most of physics begins with real numbers, spacetime, or Hilbert spaces, I begin with the raw data of the world: finite sets of distinguishable physical entities — such as grains in a pan. From these, using categorical tools like the cardinality monad, I extract the concept of number not as an assumed primitive, but as a <em>fossilized image</em> of configuration, functorially derived from the act of collapsing identity. This is not abstraction for its own sake, but structure that emerges as a consequence of the data itself — and whose side effects can be interpreted as records of apparent time and measurement.</p>
+<p>This approach does not rely on aesthetic judgment. It does not assume number, nor space, nor temporal evolution. Instead, it reconstructs these concepts as natural images under functorial transformations. In particular, the cardinality monad provides a concrete realization of what Julian Barbour called “fossils” — configurations that appear to encode temporal history. But unlike Barbour, who left the notion undefined, this work gives fossils categorical substance: they are the structured side effects of losing identity under functorial collapse. What results is a physics that begins not in mystified abstraction, but in the compositional semantics of observation itself.</p>
+<p>If <em>Lost in Math</em> is a call to rebuild physics on firmer conceptual ground, this work takes up that call at the most fundamental level. It does not beautify the edifice; it excavates its foundations. It treats the transition from raw configuration to perceived number as a structured computation — not an assumption, but an effect. In doing so, it opens a path toward a physics that does not need to be beautiful to be justified — a physics that earns its structure by deriving it from the only thing we can be sure of: the configurations we observe.</p>
+
+
+
+<a name="533035068"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Invitation%20to%20Collaborate%3A%20Categorical%20Reconstruction%20of%20Phy/near/533035068" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Invitation.20to.20Collaborate.3A.20Categorical.20Reconstruction.20of.20Phy.html#533035068">(Aug 06 2025 at 06:47)</a>:</h4>
+<p>How are you choosing a bijection S -&gt; {1,2,...,n} for every finite set?</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

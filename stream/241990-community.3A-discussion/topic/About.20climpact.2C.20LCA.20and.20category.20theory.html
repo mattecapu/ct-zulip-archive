@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>About climpact, LCA and category theory · community: discussion · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/index.html">community: discussion</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/About.20climpact.2C.20LCA.20and.20category.20theory.html">About climpact, LCA and category theory</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="457115017"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/About%20climpact%2C%20LCA%20and%20category%20theory/near/457115017" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/About.20climpact.2C.20LCA.20and.20category.20theory.html#457115017">(Aug 07 2024 at 13:49)</a>:</h4>
+<p>I'm replying here (<span class="user-mention" data-user-id="275920">@John Baez</span> <span class="user-mention" data-user-id="609515">@Kevin Carlson</span> and <span class="user-mention" data-user-id="275932">@Matteo Capucci (he/him)</span>) about some points/questions raised in the topic <a href="#narrow/stream/229156-theory.3A-applied-category-theory/topic/Evil">Evil</a>.</p>
+<p><em>About Climpact, and the difficulty of the questions.</em> </p>
+<p>Point taken. If I meet again with the people behind it, I'll forward the feedback. Thanks!</p>
+<p><em>About the dubious CO2 estimations, and LCA</em>. </p>
+<p>I think that a lot of LCA practitioners will agree on that one. And there are many reasons to not trust blindly LCA results:</p>
+<ul>
+<li>what are the implicit assumptions?</li>
+<li>how data has been collected?</li>
+<li>how the numbers have been communicated? </li>
+<li>etc. </li>
+</ul>
+<p>There is, however, a deeper reason for me. Roughly speaking, LCA is a body of knowledge that has grown trying to answer, in the most rigorous way <strong>possible</strong>, the question "what is the environmental impact of X?". For that, people have developed various methods, and the most used is called "attributional LCA". With this method, you try to answer the following question. <em>While doing X, a total amount of Y kg CO2 eq has been released: what share of this total amount should be attributed to you specifically?</em> I.e., <em>what is your responsibility in this impact?</em>. This question is different than: <em>what share of this total amount is causally related to you?</em></p>
+<p>It's a nuance that took me some time to grasp. Attributional LCA aims at computing numbers that are "fair", that "incentivizes" in the good direction. Hence, it is always on the normative side of things. I remember an LCA expert challenging his colleagues: "with this methodology, are we confident to defend our numbers in a court?"</p>
+<p>Of course, there are best practices: whenever possible, physics-based allocation is preferred. But, as we move up the ladder of human activities, the distinction between economical activities and physical processes gets blurrier. For instance, you need a cow to produce meat and milk. How do you allocate the impact of raising a cow to the meat and milk respectively? Should it be based on the mass, market price or xyz? This question is not about physics but about economic policy design.</p>
+<p>My current position is that, whatever the choices are made in the process of computing numbers, they should be as transparent, open and accessible as possible. And, by default, I don't think of a LCA result, e.g. "the impact of 1 kWh of electricity is 0.7 kgCO2-eq" as a fact about nature.</p>
+<p>(I have to mention another method, called "consequential LCA", which try to adopt a "causality-based" reasoning. Conceptually, I prefer this method. I have no experience with it though, and in practice, it is rarely used. I think that's because it is harder to implement and interpret.)</p>
+<p><em>About categorical modeling of LCA</em></p>
+<p>I did experiment with AlgebraicJulia, I think 3 years ago. Actually, that's how I discovered ACT, the Topos institute and so on. In my company, I developed a DSL (<a href="https://github.com/kleis-technology/lcaac">https://github.com/kleis-technology/lcaac</a>) for LCA modeling. However, I started designing it before knowing enough about CT. Then, I had big dreams of applying CT to get a sound design for my DSL, and well ... reality happened ^^ I realized I thought I knew how, but actually I didn't know enough. So for now, on this track, I'm slowly incorporating categorical Petri nets and the related stuff (double category).</p>
+
+
+
+<a name="457119941"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/About%20climpact%2C%20LCA%20and%20category%20theory/near/457119941" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/About.20climpact.2C.20LCA.20and.20category.20theory.html#457119941">(Aug 07 2024 at 14:09)</a>:</h4>
+<p>Thanks for the explanation! The difference between attributional and consequential is something I've been pondering when confronted with LCAs in the past. Good to have names attached to this. Also, really interesting problem: I wonder if things like Shapley values can be used to attribute shared emissions.</p>
+
+
+
+<a name="457121738"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/About%20climpact%2C%20LCA%20and%20category%20theory/near/457121738" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/About.20climpact.2C.20LCA.20and.20category.20theory.html#457121738">(Aug 07 2024 at 14:19)</a>:</h4>
+<p>oh interesting! A friend recently told me about Shapley values, but I never connected the notion to the "sharing of burden" in LCA. Thanks!</p>
+
+
+
+<a name="457164592"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/About%20climpact%2C%20LCA%20and%20category%20theory/near/457164592" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/About.20climpact.2C.20LCA.20and.20category.20theory.html#457164592">(Aug 07 2024 at 18:00)</a>:</h4>
+<p>Thanks for this, Peva! Yes, with that further context, and hopefully without seeming to be piling on people who are trying to do good work, I think a quiz on the topic of "can you accurately guess our answer to the question 'what attribution of CO2 emissions to each of the following possible actions would strike the optimal balance in justification between getting the physical explanation right, getting the social explanation right, and maximizing the positive policy outcomes of causing people to have the resulting belief' " is probably really hard to execute successfully.</p>
+
+
+
+<a name="457318162"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/About%20climpact%2C%20LCA%20and%20category%20theory/near/457318162" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/About.20climpact.2C.20LCA.20and.20category.20theory.html#457318162">(Aug 08 2024 at 09:39)</a>:</h4>
+<p>Yes, it's hard to create a good quiz of this form - and even harder to do well answering such a quiz, which was my complaint while taking the quiz.  </p>
+<p>I think a better quiz would replace questions like </p>
+<p>"how does the amount of CO2 released from eating a year's worth of tomatoes hand-picked in Spain compare to the amount of CO2 released from taking a train from Berlin to Lausanne and going on a week-long ski trip?" </p>
+<p>with questions having fewer sources of uncertainty.    For example, some of us eat a lot more tomatoes in a year than others!   Also, I've never been on a ski trip, so I don't know much about the CO2 released in such acitivities, though ski lifts come to mind.   So I have to second-guess what the questioners were thinking about <em>both</em> these issues - and also many others.</p>
+
+
+
+<a name="457318431"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/About%20climpact%2C%20LCA%20and%20category%20theory/near/457318431" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/About.20climpact.2C.20LCA.20and.20category.20theory.html#457318431">(Aug 08 2024 at 09:41)</a>:</h4>
+<p>It would simplify things to make <em>one</em> of the comparanda be something with a very clear, unarguable carbon emissions, like "burning one liter of petrol" or "burning 50 liters of petrol", not including the extra CO2 created in the process of drilling for the oil, or the extra CO2 created in the process of building the road to the oil well, or... any of that.</p>
+
+
+
+<a name="457318815"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/About%20climpact%2C%20LCA%20and%20category%20theory/near/457318815" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/About.20climpact.2C.20LCA.20and.20category.20theory.html#457318815">(Aug 08 2024 at 09:44)</a>:</h4>
+<p>I can imagine why the quiz-makers would find questions like this unpleasantly nerdy:</p>
+<p>"If you eat one tomato hand-picked in Spain and shipped to London once a week, how much CO2 emissions are you responsible for, as measured in liters of petrol burnt?"</p>
+
+
+
+<a name="457319134"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/About%20climpact%2C%20LCA%20and%20category%20theory/near/457319134" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/About.20climpact.2C.20LCA.20and.20category.20theory.html#457319134">(Aug 08 2024 at 09:45)</a>:</h4>
+<p>But being a nerd, I would greatly prefer such questions, and as I took a quiz like this I would feel I was learning useful facts, much more useful than, say</p>
+<p>"The amount of CO2 released from eating a year's worth of tomatoes hand-picked in Spain is 1/25th the amount of CO2 released from taking a train from Berlin to Lausanne and going on a week-long ski trip."</p>
+
+
+
+<a name="457319522"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/About%20climpact%2C%20LCA%20and%20category%20theory/near/457319522" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/About.20climpact.2C.20LCA.20and.20category.20theory.html#457319522">(Aug 08 2024 at 09:48)</a>:</h4>
+<p>I would be learning to estimate CO2 emissions as measured in liters of petrol.</p>
+
+
+
+<a name="457319690"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/About%20climpact%2C%20LCA%20and%20category%20theory/near/457319690" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/About.20climpact.2C.20LCA.20and.20category.20theory.html#457319690">(Aug 08 2024 at 09:48)</a>:</h4>
+<p>(In fact I'm so nerdy that I'd rather just know the amount of CO2 released, measured in kilos.)</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

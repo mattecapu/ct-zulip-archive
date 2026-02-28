@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Where do functors and nat. transformations live? · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F.html">Where do functors and nat. transformations live?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="495808904"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Where%20do%20functors%20and%20nat.%20transformations%20live%3F/near/495808904" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Yuri <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F.html#495808904">(Jan 24 2025 at 23:20)</a>:</h4>
+<p>I’m relatively new to category theory, so please be gentle! <span aria-label="blush" class="emoji emoji-1f60a" role="img" title="blush">:blush:</span></p>
+<p>As I understand it, objects and morphisms exist within a category. Since functors map between categories, they themselves must reside in another (higher?) category where categories are the objects and functors are the morphisms. This leads to the question: where do natural transformations reside, since they are maps between functors?</p>
+<ol>
+<li>
+<p>Do they perhaps exist in yet another category, where functors are the objects and natural transformations are the morphisms?</p>
+</li>
+<li>
+<p>Or do they belong to a 2-category (which I recently learned about)?</p>
+</li>
+</ol>
+<p>On a related note, are there examples of 2-morphisms in a 2-category that are not natural transformations (assuming the second option above is correct)?</p>
+
+
+
+<a name="495811339"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Where%20do%20functors%20and%20nat.%20transformations%20live%3F/near/495811339" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F.html#495811339">(Jan 24 2025 at 23:47)</a>:</h4>
+<p>Natural transformations are the 2-morhpisms in the 2-category <a href="https://ncatlab.org/nlab/show/Cat">[[Cat]]</a>.</p>
+<blockquote>
+<p>Are there examples of 2-morphisms in a 2-category that are not natural transformations (assuming the second option above is correct)?</p>
+</blockquote>
+<p>Yes, there are many examples of 2-categories.  Here's one: there's a 2-category with one object,  sets as 1-morphisms, with cartesian product of sets as composition of 1-morphisms, and functions between sets as 2-morphisms.</p>
+
+
+
+<a name="496007163"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Where%20do%20functors%20and%20nat.%20transformations%20live%3F/near/496007163" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F.html#496007163">(Jan 26 2025 at 22:18)</a>:</h4>
+<p>It's worth commenting that the first option is <em>also</em> correct. Functor categories are important, and you'll likely meet special cases of these when you learn about presheaves.</p>
+<p>The connection between these is that, just as in a 1-category C every pair of objects x,y has a <em>set</em> of morphisms between them C(x,y), in a 2-category each pair of objects has a <em>category</em> of morphisms between them.</p>
+
+
+
+<a name="496126506"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Where%20do%20functors%20and%20nat.%20transformations%20live%3F/near/496126506" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Josselin Poiret <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F.html#496126506">(Jan 27 2025 at 13:48)</a>:</h4>
+<p>let's maybe roll back a bit, what do you mean by <em>must</em> in </p>
+<p><span class="user-mention silent" data-user-id="312586">Yuri</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F/near/495808904">said</a>:</p>
+<blockquote>
+<p>they themselves must reside in another (higher?) category</p>
+</blockquote>
+<p>? do you mean “requirement” or rather that you expect it to be the case ?</p>
+
+
+
+<a name="496468160"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Where%20do%20functors%20and%20nat.%20transformations%20live%3F/near/496468160" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Yuri <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F.html#496468160">(Jan 29 2025 at 04:19)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="284453">Josselin Poiret</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F/near/496126506">said</a>:</p>
+<blockquote>
+<p>let's maybe roll back a bit, what do you mean by <em>must</em> in <br>
+...<br>
+? do you mean “requirement” or rather that you expect it to be the case ?</p>
+</blockquote>
+<p>I rather expect it (intuitively) to be the case. If a functor maps from a category to another, it may well not be part of domain category nor the codomain category but one that includes both?</p>
+
+
+
+<a name="496600141"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Where%20do%20functors%20and%20nat.%20transformations%20live%3F/near/496600141" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F.html#496600141">(Jan 29 2025 at 17:24)</a>:</h4>
+<p>Yes, a functor is a morphism in the category <a href="https://ncatlab.org/nlab/show/Cat">[[Cat]]</a>.</p>
+
+
+
+<a name="496616628"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Where%20do%20functors%20and%20nat.%20transformations%20live%3F/near/496616628" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F.html#496616628">(Jan 29 2025 at 18:19)</a>:</h4>
+<p>It sounds like you assume "everything is in some category", but that's not the case.</p>
+<p>If you have a collection of objects, for each pair of objects a collection of morphisms, an associative partial operation defined on composable morphisms, and for each object an identity morphism that acts as a unit, then you have a category. But it's not the case that in category theory, every concept has to be located in some category. A category is an axiomatizable structure, like a group. We don't need to say, "in group theory, a group has a set and an operation. But there are also group homomorphisms; what group are they in?"</p>
+
+
+
+<a name="496643022"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Where%20do%20functors%20and%20nat.%20transformations%20live%3F/near/496643022" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Yuri <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F.html#496643022">(Jan 29 2025 at 21:05)</a>:</h4>
+<p>Yes, I guess coming from a programming background I expect all things to have a place so that they can be uniquely identified and referenced.</p>
+
+
+
+<a name="496646120"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Where%20do%20functors%20and%20nat.%20transformations%20live%3F/near/496646120" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F.html#496646120">(Jan 29 2025 at 21:29)</a>:</h4>
+<p>all things will be defined in the "meta theory" one is working in.  So if one is doing category theory in zfc (or type theory), then all things will be definable in zfc (or type theory), but not all things will be a morphism in a category.  Sometimes  failure to be a morphism/object happens because of "size issues" - the category of categories cannot be an object of itself, and sometimes one postulates axioms to make this be so ('let every set be an element of another set called a Grothendieck universe').  And sometimes, extra structure can indeed be placed on a collection of homomorphisms (a natural transformation is a morphism in a functor category, for example)</p>
+
+
+
+<a name="496671933"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Where%20do%20functors%20and%20nat.%20transformations%20live%3F/near/496671933" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Yuri <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F.html#496671933">(Jan 30 2025 at 00:47)</a>:</h4>
+<p>This “meta theory” was the bigger picture behind my specific question about where natural transformations fit in category theory. I’m trying to understand if category theory (CT) has its own basic framework that can describe itself. This idea comes from my experience with Unified Modeling Language (UML) and the Meta Object Facility (MOF), which is a tool that defines and organizes UML models. I want to know if category theory has something similar that lets it describe and manage its own structures and ideas, just like MOF does for UML. Basically, I’m looking into whether CT has a foundational layer that allows it to model and refer to its own categorical concepts internally, even though this self-referential aspect might lead to some inconsistencies.</p>
+
+
+
+<a name="496672493"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Where%20do%20functors%20and%20nat.%20transformations%20live%3F/near/496672493" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Yuri <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F.html#496672493">(Jan 30 2025 at 00:53)</a>:</h4>
+<p>After learning a bit about functorial semantics from Lawvere, I was wondering if it could serve as a mechanism for layering different meta-levels within category theory like in MOF? However, I might be approaching this incorrectly ...</p>
+
+
+
+<a name="496673070"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Where%20do%20functors%20and%20nat.%20transformations%20live%3F/near/496673070" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F.html#496673070">(Jan 30 2025 at 00:59)</a>:</h4>
+<p>Certainly one can define a 'category object' in any category with enough pullbacks, with a category object in Set being a normal category.  Similarly, one can define a 'group object' etc.</p>
+
+
+
+<a name="496776338"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Where%20do%20functors%20and%20nat.%20transformations%20live%3F/near/496776338" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F.html#496776338">(Jan 30 2025 at 13:27)</a>:</h4>
+<p>I think these resources could help:</p>
+<p><a href="https://arxiv.org/abs/2210.08663">A Formal Logic for Formal Category Theory</a></p>
+<p><a href="https://ncatlab.org/nlab/show/formal%20category%20theory">[[formal category theory]]</a></p>
+<p><a href="https://ncatlab.org/nlab/show/category%20theory%20and%20foundations">[[category theory and foundations]]</a></p>
+
+
+
+<a name="496778730"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Where%20do%20functors%20and%20nat.%20transformations%20live%3F/near/496778730" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F.html#496778730">(Jan 30 2025 at 13:39)</a>:</h4>
+<blockquote>
+<p>This “meta theory” was the bigger picture behind my specific question about where natural transformations fit in category theory. I’m trying to understand if category theory (CT) has its own basic framework that can describe itself. This idea comes from my experience with Unified Modeling Language (UML) and the Meta Object Facility (MOF), which is a tool that defines and organizes UML models. I want to know if category theory has something similar that lets it describe and manage its own structures and ideas, just like MOF does for UML. Basically, I’m looking into whether CT has a foundational layer that allows it to model and refer to its own categorical concepts internally, even though this self-referential aspect might lead to some inconsistencies.</p>
+</blockquote>
+<p>It sounds like you should study <a href="https://ncatlab.org/nlab/show/model%20theory">[[model theory]]</a>.</p>
+
+
+
+<a name="496850927"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Where%20do%20functors%20and%20nat.%20transformations%20live%3F/near/496850927" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Yuri <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F.html#496850927">(Jan 30 2025 at 19:19)</a>:</h4>
+<p>There is a lot to learn here and it will definitely take some time!</p>
+<p>I appreciate all the inputs I got here!</p>
+
+
+
+<a name="496872663"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Where%20do%20functors%20and%20nat.%20transformations%20live%3F/near/496872663" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Where.20do.20functors.20and.20nat.2E.20transformations.20live.3F.html#496872663">(Jan 30 2025 at 21:33)</a>:</h4>
+<p>I don't think you need to study model theory if you're mainly interested in "where do functors and natural transformations live".  I think you mainly need to study the 2-category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">C</mi><mi mathvariant="bold">a</mi><mi mathvariant="bold">t</mi></mrow><annotation encoding="application/x-tex">\mathbf{Cat}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord mathbf">Cat</span></span></span></span></span>.  That's the 2-category where</p>
+<ul>
+<li>objects are categories</li>
+<li>morphisms are functors</li>
+<li>2-morphisms are natural transformations.</li>
+</ul>
+<p>That's where functors and natural transformations live!</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

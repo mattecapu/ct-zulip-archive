@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Coherence theorems for monoidal (oo,1)-categories · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html">Coherence theorems for monoidal (oo,1)-categories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="431776176"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/431776176" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#431776176">(Apr 07 2024 at 14:23)</a>:</h4>
+<p>I'm looking for an (oo,1)-categorical version of MacLane's coherence theorem. Now I don't actually care for the strictification aspect, but rather the ability to produce a 2-cell. Essentially I'm looking for a reference for: Suppose f and f' are morphsisms consisting of only unitors, associators, inverses and various morphsisms between objects, then there exists a 2-cell between them.</p>
+<p>The closest thing I've found is example 1.6.19 in Lurie's Derived Algebraic Geometry II: Noncommutative algebra. But this produces an equivalence of (oo,1)-categories to one where associativity holds strictly. Whilst nice, it doesn't tell me (at least not directly) how to produce a 2-cell between arbitrary "formal" morphisms in a monoidal category.</p>
+<p>Does anybody know if what I am asking for is even true or doable, and if so where is it written down?</p>
+
+
+
+<a name="431776316"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/431776316" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#431776316">(Apr 07 2024 at 14:25)</a>:</h4>
+<p>My background motivation for this is that I've managed to almost prove such a statement in HoTT for wild categories (oo-cats with higher coherence omitted) however the final step of the proof seems to require that my original category is a 1-category. I'm interested to know if there is a way to generalise MacLanes coherence with an oo-categorical version which I am looking for.</p>
+
+
+
+<a name="431829462"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/431829462" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#431829462">(Apr 08 2024 at 00:37)</a>:</h4>
+<p>I think you can take the homotopy category and apply coherence theorem there? The classes of f, f' are the same composites of unitors, associators, and inverses (I'm not sure what you have in mind for the other morphisms?) in the monoidal structure on the homotopy category and so by the coherence theorem they are equal. By defintion of the homotopy category we get that f, f' are isomorphic via a 2 cell</p>
+
+
+
+<a name="431829547"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/431829547" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#431829547">(Apr 08 2024 at 00:38)</a>:</h4>
+<p>And maybe this explains why you have a almost working proof for wild categories? After set-truncation you should get an ordinary monoidal category and can apply the coherence theorem. This may be wrong, I don't think about HoTT much</p>
+
+
+
+<a name="431830869"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/431830869" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#431830869">(Apr 08 2024 at 01:00)</a>:</h4>
+<p>There should be a way of thinking about this in terms of monoidal categories = algebras over the (degreewise contractible) A_oo operad but I'm not entirely sure what the formal statement would be (and passing to homotopy categories is much simpler anyways)</p>
+
+
+
+<a name="432503213"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432503213" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432503213">(Apr 10 2024 at 13:23)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="556202">Brendan Murphy</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories/near/431829547">said</a>:</p>
+<blockquote>
+<p>And maybe this explains why you have a almost working proof for wild categories? After set-truncation you should get an ordinary monoidal category and can apply the coherence theorem. This may be wrong, I don't think about HoTT much</p>
+</blockquote>
+<p>Right, after set truncation everything works. But that also means I cannot get that 2-cell out untruncated. I'm a bit confused as to why the homotopy category is sufficient to get the 2-cell outside of HoTT. I suppose that these "homotopy category captures all the important info at this level" theorems aren't very constructive and don't have a crank you can turn in order to get the 2-cell out.</p>
+
+
+
+<a name="432503591"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432503591" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432503591">(Apr 10 2024 at 13:25)</a>:</h4>
+<p>So basically I'm asking is there a way to get an explicit description? I guess with the homotopy category suggestion the answer is no, but I'm wondering what else can be done.</p>
+
+
+
+<a name="432559338"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432559338" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432559338">(Apr 10 2024 at 18:06)</a>:</h4>
+<p>Ah okay yeah I think I see the issue about doing this internal to HoTT. You don't just want a 2 cell but a 2 cell unique up to contractible choice (if you don't want to truncate anything). This should the case for honest monoidal (oo, 1)-categories, by the operad thing, but it seems very infinitary and thus hard to do in HoTT. Maybe some A_n-monoidal category for low n would have enough coherence to get an essentially unique 2 cell but I'm not sure if that's how it works</p>
+
+
+
+<a name="432559495"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432559495" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432559495">(Apr 10 2024 at 18:07)</a>:</h4>
+<p>Yeah I don't think the last thing I said works, you'll always have some nontrivial behavior at the top level</p>
+
+
+
+<a name="432559730"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432559730" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432559730">(Apr 10 2024 at 18:08)</a>:</h4>
+<p>Well actually I don't need it to be unique, just for it to exist. I'm not even sure in general if it can be unique.</p>
+
+
+
+<a name="432559787"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432559787" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432559787">(Apr 10 2024 at 18:09)</a>:</h4>
+<p>I think it will be unique in general because of the coherence theorem one dimension up</p>
+
+
+
+<a name="432560097"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432560097" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432560097">(Apr 10 2024 at 18:11)</a>:</h4>
+<p>So how does your attempted proof for wild categories go? Do you try to run the proof for the coherence theorem in a proof relevant way basically? I'd like to see it if you can post a github gist or smth</p>
+
+
+
+<a name="432560278"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432560278" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432560278">(Apr 10 2024 at 18:13)</a>:</h4>
+<p>Specifically about the proof in question. I have a functor Nf : M -&gt; [N, N] -&gt; N -&gt; M where the monoidal structure on M is translated to a monoidal structure on [N, N] where N consists of normalised words, i.e. one way associated tensor products. The issue is showing that for any two morhpisms f and f' Nf(f) and Nf(f') has a two-cell between them. In HoTT langauge a sufficient condition for this is for M to be a set. The issue is that in practice M is never a set if I want to have interesting applications.</p>
+
+
+
+<a name="432560361"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432560361" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432560361">(Apr 10 2024 at 18:13)</a>:</h4>
+<p>This is the paper I used: <a href="https://www.cse.chalmers.se/~peterd/papers/Coherence_Monoidal.pdf">https://www.cse.chalmers.se/~peterd/papers/Coherence_Monoidal.pdf</a></p>
+
+
+
+<a name="432560391"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432560391" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432560391">(Apr 10 2024 at 18:14)</a>:</h4>
+<p>This paper however implicitly assumes UIP even if they claim not to use it.</p>
+
+
+
+<a name="432560485"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432560485" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432560485">(Apr 10 2024 at 18:14)</a>:</h4>
+<p>Lol I had that exact paper in mind</p>
+
+
+
+<a name="432560607"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432560607" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432560607">(Apr 10 2024 at 18:15)</a>:</h4>
+<p>The reason I am asking on the categories Zulip is I want to know if anything like this already exists in the literature for monoidal oo-cats. It seems like MacLane's proof should go through without needing to assume too much coherence.</p>
+
+
+
+<a name="432560711"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432560711" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432560711">(Apr 10 2024 at 18:16)</a>:</h4>
+<p>I can put my proof on GitHub if you want to take a look.</p>
+
+
+
+<a name="432560879"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432560879" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432560879">(Apr 10 2024 at 18:17)</a>:</h4>
+<p><a href="https://github.com/Alizter/HoTT/blob/monoidal-coherence-demo/theories/FreeMonoidalCategory.v">https://github.com/Alizter/HoTT/blob/monoidal-coherence-demo/theories/FreeMonoidalCategory.v</a></p>
+
+
+
+<a name="432561007"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432561007" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432561007">(Apr 10 2024 at 18:18)</a>:</h4>
+<p>I think it's not something people think much about because the coherence is usually encoded in the definition. Eg the operadic defintion says a monoidal category is an algebra over a (non symmeteic) operad with a contractible space of n-ary operations for each n, so any of the two formal composites you're talking about (lifted to be natural transformations) live in a contractible space</p>
+
+
+
+<a name="432561070"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432561070" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432561070">(Apr 10 2024 at 18:19)</a>:</h4>
+<p>At some point I switched from a definition of [N, N] as a mapping space between groupoids to one as a functor category but I don't think any information is gained or lost. But it does mean I haven't finished some of the proof of the naturality between Nf and id.</p>
+
+
+
+<a name="432561142"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432561142" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432561142">(Apr 10 2024 at 18:19)</a>:</h4>
+<p>If you look at the end you will see that the only real blocker is showing the functorial action of Nf is unique upto a 2-morphism.</p>
+
+
+
+<a name="432561285"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432561285" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432561285">(Apr 10 2024 at 18:20)</a>:</h4>
+<p>Obviously if we knew f == f' to begin with then Nf would just have a 2-functorial action and we would be done. But that's exactly what we are trying to show.</p>
+
+
+
+<a name="432561348"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432561348" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432561348">(Apr 10 2024 at 18:20)</a>:</h4>
+<p>Also ignore anything that says HSet i avoided any truncation in the proof that final mention was me experimenting a bit.</p>
+
+
+
+<a name="432561739"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432561739" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432561739">(Apr 10 2024 at 18:23)</a>:</h4>
+<p>Basically this is extracting coherence of monoidal oo-cats from the coherence of the underlying monoidal bicat. Not really true, but an intuition of what I'm trying to do.</p>
+
+
+
+<a name="432561945"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432561945" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432561945">(Apr 10 2024 at 18:24)</a>:</h4>
+<p>So if somebody has a machine that fills monoidal pasting diagram in an oo-category let me know. :)</p>
+
+
+
+<a name="432562188"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432562188" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432562188">(Apr 10 2024 at 18:26)</a>:</h4>
+<p>Oh maybe it's worth looking at the (oo, 2)-categorical pasting theorem paper by Hackney, Ozornova, Riehl, and Rovelli? I don't know if it's applicable to your situation though</p>
+
+
+
+<a name="432562510"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Coherence%20theorems%20for%20monoidal%20%28oo%2C1%29-categories/near/432562510" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ali Caglayan <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Coherence.20theorems.20for.20monoidal.20.28oo.2C1.29-categories.html#432562510">(Apr 10 2024 at 18:28)</a>:</h4>
+<p>I hadn't seen that before. I'll take a look at it later.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

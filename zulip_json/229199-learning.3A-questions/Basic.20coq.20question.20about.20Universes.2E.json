@@ -1,0 +1,14 @@
+[
+    {
+        "content": "<p>I was playing around with the <code>coq</code> theorem prover. If I understand correctly, <code>coq</code>'s core type theory has an infinite hierarchy of universes <code>Set, Type1, Type2, Type3, ...</code>.</p>\n<p>My question boils down to what type the following inductive definition has: </p>\n<div class=\"codehilite\"><pre><span></span><code>Inductive mydata (X:Type) : Type :=\n  | inj (x:X).\nCheck mydata. (* :Type@{mydata.u0} -&gt; Type@{mydata.u0} *)\n</code></pre></div>\n<p>Here, if I understand correctly, <code>mydata.u0</code> is a 'universe 'meta-number', and <code>coq</code> will typecheck successfully as long as it can assign concrete universe numbers (and there might be many such assignments) such that you can construct a typing derivation (according to Galina's core calculus)? For instance, one possibility is <code>Set -&gt; Set</code> in this case. </p>\n<p>Informally, it seems like some kind of 'meta'-level polymorphism, and I was wondering if this technique is well-known / has a name? Also, is my understanding correct that the core calculus does not talk about these 'universe number' metavariables, and the unification mechanism is built on top of it? I'm curious if it is possible, to forcefully <strong>pin</strong> a universe number as well (Although I'm not sure when this would be useful)</p>",
+        "id": 485468726,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1733047955
+    },
+    {
+        "content": "<p>There's a <a href=\"https://coq.zulipchat.com/\">Coq Zulip</a>, which would be a better place to ask this sort of question.</p>",
+        "id": 485470182,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1733049386
+    }
+]

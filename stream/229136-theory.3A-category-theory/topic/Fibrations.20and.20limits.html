@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Fibrations and limits · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits.html">Fibrations and limits</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="523411454"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Fibrations%20and%20limits/near/523411454" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits.html#523411454">(Jun 11 2025 at 04:42)</a>:</h4>
+<p>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>:</mo><mi>E</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">p: E\to B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> is a Grothendieck fibration, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> has limits, and the fibers of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span></span></span></span> have limits that are preserved by reindexing functors, then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span></span></span></span> has all limits.</p>
+<p>I've been trying to generalize this to 2-categories but I am realizing now that of course many interesting 2-limits are weighted rather than conical. <br>
+Is there a variant of this theorem for weighted limits, with a proof that doesn't just involve reducing it to the conical case?<br>
+Are all 2-limits reducible to conical limits via the Grothendieck construction? I assume so but I have not checked.</p>
+
+
+
+<a name="523493320"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Fibrations%20and%20limits/near/523493320" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits.html#523493320">(Jun 11 2025 at 07:09)</a>:</h4>
+<blockquote>
+<p>Are all 2-limits reducible to conical limits via the Grothendieck construction?</p>
+</blockquote>
+<p>No, it is necessary to enhance the domain of a 2-functor to something more expressive. This is the motivation for <a href="https://ncatlab.org/nlab/show/double%20limits">[[double limits]]</a> and <a href="https://ncatlab.org/nlab/show/marked%202-limits">[[marked 2-limits]]</a>.</p>
+
+
+
+<a name="523641380"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Fibrations%20and%20limits/near/523641380" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits.html#523641380">(Jun 11 2025 at 21:29)</a>:</h4>
+<p>Ah, alright, cool. I've never heard of this theorem that they're equivalent, I'll check it out.</p>
+
+
+
+<a name="526288837"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Fibrations%20and%20limits/near/526288837" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits.html#526288837">(Jun 29 2025 at 19:11)</a>:</h4>
+<p><span class="user-mention" data-user-id="276092">@Nathanael Arkor</span> the original paper by Grandis and Pare proves that a 2-category is complete iff its double category of quintets is complete. I was hoping for a more precise theorem in the form of a kind of double Grothendieck construction: given a diagram 2-category P with Cat valued presheaf of weights J, and F : P -&gt; A, construct a double category and a functor in quintets of A whose limit is the weighted limit of F with weights in J.</p>
+<p>Does such a theorem exist or should I prove this</p>
+
+
+
+<a name="526297514"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Fibrations%20and%20limits/near/526297514" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits.html#526297514">(Jun 29 2025 at 22:00)</a>:</h4>
+<p>Yes, this does exist, though for some reason it's not recorded in the Grandis–Paré paper. It was first presented by Paré in <a href="https://www.mscs.dal.ca/~pare/July1989.pdf">a talk</a>, and is written up as Proposition 1.4 of Grandis–Paré's <a href="https://www.mscs.dal.ca/~pare/DblPrs2.pdf">Persistent double limits and flexible weighted limits</a>. I believe it's also covered in Chapter 2 of Verity's thesis <a href="http://www.tac.mta.ca/tac/reprints/articles/20/tr20.pdf">Enriched Categories, Internal Categories and Change of Base</a>.</p>
+
+
+
+<a name="526297622"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Fibrations%20and%20limits/near/526297622" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits.html#526297622">(Jun 29 2025 at 22:01)</a>:</h4>
+<p>Note that, for these purposes, it is more appropriate to view a 2-category as a loosely-discrete double category, rather than via the quintet construction.</p>
+
+
+
+<a name="526305190"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Fibrations%20and%20limits/near/526305190" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits.html#526305190">(Jun 30 2025 at 00:48)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/channel/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits/near/526297622">said</a>:</p>
+<blockquote>
+<p>Note that, for these purposes, it is more appropriate to view a 2-category as a loosely-discrete double category, rather than via the quintet construction.</p>
+</blockquote>
+<p>Ah, I was worried you might say something like that! This paper gives a definition of fibrations between double categories and proves that a functor between 2-categories is a 2-fibration iff it's a fibration as a functor between the associated double categories of quintets. <a href="https://arxiv.orgabs/2205.15240">https://arxiv.orgabs/2205.15240</a>. I had hoped to use this theorem here, but based on what you are saying, I will still have to do a little work in order to prove this limit lifting theorem.</p>
+
+
+
+<a name="526349348"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Fibrations%20and%20limits/near/526349348" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits.html#526349348">(Jun 30 2025 at 08:45)</a>:</h4>
+<p>I think the discussion in CLPS misses an important point, which is that it is not really reasonable to compare fibrations of double categories and 2-fibrations directly in the way they do (although it is elucidating that they do so, to demonstrate this point). Suppose we have a <a href="https://arxiv.org/abs/2001.11477">discrete 2-fibration</a>. This corresponds to a 2-functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="script">K</mi><mtext>op</mtext></msup><mo>→</mo><mtext>Cat</mtext></mrow><annotation encoding="application/x-tex">\mathcal K^{\text{op}} \to \text{Cat}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.01445em;">K</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">op</span></span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">Cat</span></span></span></span></span>. We can then take the double category of elements of this 2-functor to get a fibration of double categories.</p>
+
+
+
+<a name="526349719"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Fibrations%20and%20limits/near/526349719" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits.html#526349719">(Jun 30 2025 at 08:48)</a>:</h4>
+<p>However, if you care about general 2-fibrations, which correspond to 2-functors into <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>2-Cat</mtext></mrow><annotation encoding="application/x-tex">\text{2-Cat}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">2-Cat</span></span></span></span></span>, then I suspect fibrations of double categories are insufficient, since these take values in spans of categories, and that one really needs a three-dimensional notion.</p>
+
+
+
+<a name="526444043"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Fibrations%20and%20limits/near/526444043" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits.html#526444043">(Jun 30 2025 at 16:50)</a>:</h4>
+<p>Well, it seems okay to restrict to discrete 2-fibrations/2-presheaves of categories here if I am interested in weighted limits, right?</p>
+
+
+
+<a name="526446526"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Fibrations%20and%20limits/near/526446526" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits.html#526446526">(Jun 30 2025 at 17:06)</a>:</h4>
+<p>Fibrations appear in two different roles in your setting: the 2-fibration along which you want to lift limits; and the discrete 2-fibrations associated with the weights for the limits.</p>
+
+
+
+<a name="526446595"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Fibrations%20and%20limits/near/526446595" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits.html#526446595">(Jun 30 2025 at 17:07)</a>:</h4>
+<p>Presumably you don't just want to lift limits along discrete 2-fibrations?</p>
+
+
+
+<a name="527345987"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Fibrations%20and%20limits/near/527345987" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits.html#527345987">(Jul 06 2025 at 13:06)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/channel/229136-theory.3A-category-theory/topic/Fibrations.20and.20limits/near/526446595">said</a>:</p>
+<blockquote>
+<p>Presumably you don't just want to lift limits along discrete 2-fibrations?</p>
+</blockquote>
+<p>Yes, this is true. I will work this out and see if there are problems. Thank you</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

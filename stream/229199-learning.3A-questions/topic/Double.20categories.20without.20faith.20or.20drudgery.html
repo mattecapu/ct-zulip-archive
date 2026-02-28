@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Double categories without faith or drudgery · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html">Double categories without faith or drudgery</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="423191848"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423191848" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joshua Meyers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423191848">(Feb 24 2024 at 17:54)</a>:</h4>
+<p>Kind of a special case of <a href="#narrow/stream/229136-theory.3A-category-theory/topic/coherence.20for.20categorical.20constructions/near/327773591">this question by <span class="user-mention" data-user-id="275932">@Matteo Capucci (he/him)</span> </a>...</p>
+<p>I am trying to learn about double categories.  It seems that most double categories that we care about in practice, e.g. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="bold">Prof</mtext></mrow><annotation encoding="application/x-tex">\textbf{Prof}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord text"><span class="mord textbf">Prof</span></span></span></span></span>, are actually weak double categories, i.e. pseudo categories internal to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="bold">Cat</mtext></mrow><annotation encoding="application/x-tex">\textbf{Cat}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord text"><span class="mord textbf">Cat</span></span></span></span></span>.  I found the paper <a href="https://arxiv.org/pdf/math/0604549.pdf">*Pseudo-Categories* by N. Martins-Ferreira</a>, which gives a formal definition of these, along with pseudo functors and pseudo natural transformations between them.  However, there are a lot of extremely involved coherences to even define these things, and what seems like way more involved coherences to check basic things like composition of pseudo functors giving a pseudo functor.  I imagine that if I wanted then to begin to study "double category theory" just as I have studied "category theory", exploring the double categorical analogues for limits, adjunctions, Kan extensions, presheafs, profunctors, etc. every single step of the way would require checking a ton of coherences.  It would probably move at least 10x slower than for category theory.</p>
+<p>Of course there is the option to, every time I am confronted with a coherence, say "oh yeah it probably works out", and it seems that this is what most people do, but as <span class="user-mention" data-user-id="276363">@Amar Hadzihasanovic</span> points out in the above question, category theory is full of cases where it actually doesn't work out.</p>
+<p>So I don't know what to do.  How do I enter into double category theory without either making unfounded assumptions that "it all works out" or spending hours checking coherences for every tiny step I want to make?</p>
+
+
+
+<a name="423192896"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423192896" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423192896">(Feb 24 2024 at 18:11)</a>:</h4>
+<p>One thing you can do is get other people to check the coherence laws.    You can get a grad student to do it... </p>
+<p>... oh wait, <em>you're</em> a grad student, or at least you were.  (Are you now?) </p>
+<p>... or you can write papers with coauthors where you come up with theorems so delightful that they're willing to help out by checking the coherence laws.</p>
+<p>Another thing you can do is use existing work to the maximum extent.  There are various papers that provide "power tools" for working with double categories.  For example, Mike Shulman's <a href="https://arxiv.org/abs/0706.1286">Framed bicategories and monoidal fibrations</a> has let me avoid massive coherence law verifications.  So - read the literature deeply and learn the state of the art!</p>
+
+
+
+<a name="423193023"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423193023" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423193023">(Feb 24 2024 at 18:13)</a>:</h4>
+<p>Another thing you can do is build your own power tools.   If you do this you may have to start by checking lots of coherence laws, but you'll prove theorems that can let you work at a higher level and not have to go down to the "machine code" of the fundamental definitions so often.</p>
+
+
+
+<a name="423193253"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423193253" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joshua Meyers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423193253">(Feb 24 2024 at 18:16)</a>:</h4>
+<p>OK let's say I want to convince myself that weak double categories form a bicategory, or double category, or weak double category, or whatever they form.  What are the power tools for that?  The Martins-Ferreira paper has a whole bunch of scary coherences that look like they will take me a really long time to check.</p>
+
+
+
+<a name="423193312"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423193312" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joshua Meyers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423193312">(Feb 24 2024 at 18:17)</a>:</h4>
+<p>I'm not currently a grad student, I just work part-time at Conexus now.</p>
+
+
+
+<a name="423193445"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423193445" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423193445">(Feb 24 2024 at 18:19)</a>:</h4>
+<p>This is an area where virtual double categories are surprisingly better than pseudo double categories.  There's a lot of stuff you can prove about them at a high level by working with Cartesian monads.  Monads have a much better-developed theory than pseudocategories.</p>
+
+
+
+<a name="423193551"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423193551" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423193551">(Feb 24 2024 at 18:21)</a>:</h4>
+<p>Not to necessarily disagree, but pseudo double categories are the algebras for a 2-monad, and you can get lots of mileage out of that.  For instance, pseudo double categories form a 2-category because the algebras for any 2-monad form a 2-category.</p>
+
+
+
+<a name="423193694"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423193694" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joshua Meyers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423193694">(Feb 24 2024 at 18:23)</a>:</h4>
+<p>Where can I read about this stuff?</p>
+
+
+
+<a name="423193705"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423193705" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423193705">(Feb 24 2024 at 18:23)</a>:</h4>
+<p>Okay, yes Christian told me you work at Conexus but I wasn't sure if you'd left grad school.</p>
+<blockquote>
+<p>OK let's say I want to convince myself that weak double categories form a bicategory, or double category, or weak double category, or whatever they form. What are the power tools for that? </p>
+</blockquote>
+<p>I'd read <a href="https://ncatlab.org/nlab/show/double+category#higher_categories_of_double_categories">Higher categories of double categories</a> on the nLab, and then, since there's a shortage of references for details, I'd ask Mike Shulman where I can learn more details.</p>
+<blockquote>
+<p>The Martins-Ferreira paper has a whole bunch of scary coherences that look like they will take me a really long time to check.</p>
+</blockquote>
+<p>So you still think you need to check every step of a paper you're reading, even if the end result seems obvious?  I.e. none of the work other people have done can save you from repeating that work?   If this is your attitude I think you'll have to check a lot of coherence laws at some point, because often the way to get to a higher level of abstraction involves proving theorems where the proofs use a lower level of abstraction: you do grungy work at first so you don't have to do it later.</p>
+
+
+
+<a name="423193777"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423193777" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423193777">(Feb 24 2024 at 18:24)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="280784">Joshua Meyers</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery/near/423193694">said</a>:</p>
+<blockquote>
+<p>Where can I read about this stuff?</p>
+</blockquote>
+<p>I think you should be more specific, unless you're trying to get people to list <em>lots</em> of papers.</p>
+
+
+
+<a name="423193829"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423193829" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joshua Meyers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423193829">(Feb 24 2024 at 18:25)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery/near/423193777">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="280784">Joshua Meyers</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery/near/423193694">said</a>:</p>
+<blockquote>
+<p>Where can I read about this stuff?</p>
+</blockquote>
+<p>I think you should be more specific, unless you're trying to get people to list <em>lots</em> of papers.</p>
+</blockquote>
+<p>I just meant the two suggestions, (1) of <span class="user-mention" data-user-id="438995">@James Deikun</span> to look into virtual double categories and Cartesian monads, and (2) of <span class="user-mention" data-user-id="276777">@Mike Shulman</span> to look into how pseudo double categories are the algebras for a 2-monad</p>
+
+
+
+<a name="423193897"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423193897" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423193897">(Feb 24 2024 at 18:26)</a>:</h4>
+<p>Okay, they can answer those.</p>
+
+
+
+<a name="423193937"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423193937" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423193937">(Feb 24 2024 at 18:27)</a>:</h4>
+<p>Obviously you should read the nLab articles <a href="https://ncatlab.org/nlab/show/double%20category">[[double category]]</a>, <a href="https://ncatlab.org/nlab/show/virtual%20double%20category">[[virtual double category]]</a> and lots of the papers in the references, but maybe there's more.</p>
+
+
+
+<a name="423194018"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423194018" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423194018">(Feb 24 2024 at 18:28)</a>:</h4>
+<p>I think you should read lots of papers without verifying all results, just to get the "lay of the land".</p>
+
+
+
+<a name="423194150"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423194150" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423194150">(Feb 24 2024 at 18:30)</a>:</h4>
+<p>Well, the tutorial introduction to virtual double categories as Cartesian monads is Leinster's <a href="https://arxiv.org/abs/math/0305049">Higher operads, Higher Categories</a> and then there's so much on monads in general I don't know where to begin, you're best off just searching for anything you think might be helpful for the stuff you're actually working on.</p>
+
+
+
+<a name="423194250"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423194250" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423194250">(Feb 24 2024 at 18:32)</a>:</h4>
+<p>I don't think <span class="user-mention" data-user-id="280784">@Joshua Meyers</span> is talking about verifying the coherences being scary because he wants to verify the results, but rather because they're part of the definition of pseudocategory and the coherences need to hold when <em>applying</em> the results.</p>
+
+
+
+<a name="423194272"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423194272" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423194272">(Feb 24 2024 at 18:32)</a>:</h4>
+<p>For learning 2-monad machinery in general I would recommend Steve Lack's <a href="https://arxiv.org/abs/math/0702535">2-categories companion</a>.  I don't know of somewhere that a construction of the 2-monad for pseudo double categories is written down explicitly, unfortunately, but I think that's true for many monads.  The general machinery of presentations of monads ensures that it exists.</p>
+
+
+
+<a name="423194359"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423194359" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joshua Meyers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423194359">(Feb 24 2024 at 18:34)</a>:</h4>
+<p>Thanks!  I'll look into this stuff</p>
+
+
+
+<a name="423197095"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423197095" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423197095">(Feb 24 2024 at 19:20)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="438995">James Deikun</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery/near/423194250">said</a>:</p>
+<blockquote>
+<p>I don't think <span class="user-mention silent" data-user-id="280784">Joshua Meyers</span> is talking about verifying the coherences being scary because he wants to verify the results, but rather because they're part of the definition of pseudocategory and the coherences need to hold when <em>applying</em> the results.</p>
+</blockquote>
+<p>When I last spoke to Joshua he wanted to personally verify all the theorems he used.  At least that was my impression - maybe I got it wrong.  But I think this is why he said:</p>
+<blockquote>
+<p>I imagine that if I wanted then to begin to study "double category theory" just as I have studied "category theory", exploring the double categorical analogues for limits, adjunctions, Kan extensions, presheafs, profunctors, etc. every single step of the way would require checking a ton of coherences. It would probably move at least 10x slower than for category theory.</p>
+</blockquote>
+
+
+
+<a name="423197540"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423197540" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Deikun <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423197540">(Feb 24 2024 at 19:27)</a>:</h4>
+<p>Ah, that would certainly be laborious!  <span aria-label="shock" class="emoji emoji-1f628" role="img" title="shock">:shock:</span>  Yeah, that's something to get over right quick.  If someone really feels like shoring up the foundations, it would be much better to formalize a few of the theorems than to check them all by hand.</p>
+
+
+
+<a name="423296094"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423296094" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Arlin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423296094">(Feb 25 2024 at 22:16)</a>:</h4>
+<p>Yes, if you really wanted to verify everything you use I think that clearly implies that you want to work in a proof assistant and not on paper. Then at least other people as careful as you can rely on your stuff.  New and Licata have a type theory for double categories; as far as I know it doesn’t interact with the main proof assistants, but I don’t know very far. <a href="https://maxsnew.com/docs/virtual-equipments.pdf">https://maxsnew.com/docs/virtual-equipments.pdf</a></p>
+
+
+
+<a name="423299506"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423299506" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423299506">(Feb 25 2024 at 23:12)</a>:</h4>
+<p>Oh this is very neat!</p>
+
+
+
+<a name="423299525"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423299525" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423299525">(Feb 25 2024 at 23:13)</a>:</h4>
+<p>(also, if anyone is interested in formalizing double categories then please message me! I'm about to start working on adding them to mathlib)</p>
+
+
+
+<a name="423299812"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423299812" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423299812">(Feb 25 2024 at 23:18)</a>:</h4>
+<p>Double categories have recently been formalized in Coq UniMath: <a href="https://arxiv.org/abs/2402.05265">https://arxiv.org/abs/2402.05265</a>.  That may or may not be applicable to how you'll do it in Lean, though.</p>
+
+
+
+<a name="423299881"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423299881" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423299881">(Feb 25 2024 at 23:19)</a>:</h4>
+<p>Yeah, I'm definitely going to take a look at that paper. But I expect the final product will end up pretty different in the absence of univalence</p>
+
+
+
+<a name="423300250"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423300250" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423300250">(Feb 25 2024 at 23:25)</a>:</h4>
+<p>(and because mathlib's category theory library tries to design everything to play nicely with lean's simplifier &amp; like everything in mathlib makes extensive use of type classes)</p>
+
+
+
+<a name="423301326"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423301326" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423301326">(Feb 25 2024 at 23:44)</a>:</h4>
+<p>By the way, AlgebraicJulia relies pretty heavily on decorated and structured cospans for its epidemiological modeling software, which may also be repurposed for other modeling tasks.  So far it doesn't treat those cospans using double categories.   Mathematically speaking it 'should' - though one must always strike a balance between idealism and practicality.    Luckily Evan Patterson, one of the main developers of AlgebraicJulia, is becoming an expert on double categories.  So I'm hoping that eventually the AlgebraicJulia ecosystem will use double categories.   </p>
+<p>This is different than formalizing theorems about double categories: it's about putting the math of double categories to practical use.   But that may boost interest in double categories, which could speed up getting their theory worked out well, and even getting it formalized.  And eventually, if our civilization doesn't collapse first, the formalization could feed back to help the practical applications.</p>
+
+
+
+<a name="423328483"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423328483" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Arlin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423328483">(Feb 26 2024 at 06:03)</a>:</h4>
+<p>Double categories are also how one “should”/hopefully soon will be doing categorical database theory, for instance, to allow for both relational and functional database structures on an equal footing.</p>
+
+
+
+<a name="423410701"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423410701" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Max New <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423410701">(Feb 26 2024 at 14:44)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="609515">Kevin Arlin</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery/near/423296094">said</a>:</p>
+<blockquote>
+<p>Yes, if you really wanted to verify everything you use I think that clearly implies that you want to work in a proof assistant and not on paper. Then at least other people as careful as you can rely on your stuff.  New and Licata have a type theory for double categories; as far as I know it doesn’t interact with the main proof assistants, but I don’t know very far. <a href="https://maxsnew.com/docs/virtual-equipments.pdf">https://maxsnew.com/docs/virtual-equipments.pdf</a></p>
+</blockquote>
+<p>The type theory Dan and I developed is what I like to call a "domain-specific type theory". In theory some version might be implemented as an embedded DSL in a proof assistant but it's certainly not a trivial task to do so. Dan did make a kind of <a href="https://github.com/maxsnew/virtual-equipments/blob/41a00668c662116e147559b1aa86dd52d76c0e1b/agda/STC.agda">shallow embedding of the syntax in Agda</a> so that we could get some machine-checked proofs but you can't instantiate them to prove things about, say some double category you construct in the proof assistant:</p>
+
+
+
+<a name="423458020"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423458020" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Arlin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423458020">(Feb 26 2024 at 18:23)</a>:</h4>
+<p>Thanks for the explanation Max. Do you have a particular vision about how so-called DSTTs would best be used?</p>
+
+
+
+<a name="423471662"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423471662" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Max New <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423471662">(Feb 26 2024 at 19:47)</a>:</h4>
+<p>I do, and I should probably get to writing a grant about it...</p>
+
+
+
+<a name="423476581"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423476581" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423476581">(Feb 26 2024 at 20:18)</a>:</h4>
+<p>I would really love to work on making edsl's in proof assistants easier to use. The only thoughts I've had towards this are to try and use Lean4's macro system to implement the "Type Systems as Macros" paper/the turnstile racket library, but it's not clear how this would handle integrating the host type system and the domain language type system</p>
+
+
+
+<a name="423486486"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Double%20categories%20without%20faith%20or%20drudgery/near/423486486" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Max New <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery.html#423486486">(Feb 26 2024 at 21:28)</a>:</h4>
+<p>You should probably talk to William Bowman: <a href="https://www.youtube.com/watch?v=vPYgzEdCxt8">https://www.youtube.com/watch?v=vPYgzEdCxt8</a></p>
+<div class="youtube-video message_inline_image"><a data-id="vPYgzEdCxt8" href="https://www.youtube.com/watch?v=vPYgzEdCxt8"><img src="https://uploads.zulipusercontent.net/ec3c9c07ff829e8fef0bd4ca47ba1b2420773d5b/68747470733a2f2f692e7974696d672e636f6d2f76692f765059677a4564437874382f64656661756c742e6a7067"></a></div>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

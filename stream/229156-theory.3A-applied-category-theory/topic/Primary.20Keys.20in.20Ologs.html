@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Primary Keys in Ologs · theory: applied category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/index.html">theory: applied category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Primary.20Keys.20in.20Ologs.html">Primary Keys in Ologs</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="494563033"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Primary%20Keys%20in%20Ologs/near/494563033" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Primary.20Keys.20in.20Ologs.html#494563033">(Jan 18 2025 at 21:57)</a>:</h4>
+<p>This is a schema:</p>
+<p><a href="/user_uploads/21317/YCnMe1F-rC06rKJOQct1ZajP/Screenshot-2025-01-18-at-2.43.18PM.png">schema-a</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/YCnMe1F-rC06rKJOQct1ZajP/Screenshot-2025-01-18-at-2.43.18PM.png" title="schema-a"><img data-original-content-type="image/png" data-original-dimensions="476x182" src="/user_uploads/thumbnail/21317/YCnMe1F-rC06rKJOQct1ZajP/Screenshot-2025-01-18-at-2.43.18PM.png/840x560.webp"></a></div><p>In SQL, we can write:</p>
+<div class="codehilite"><pre><span></span><code>CREATE TABLE Human (
+    name TEXT PRIMARY KEY,
+    mom TEXT,
+    FOREIGN KEY (mom) REFERENCES Human(name)
+);
+</code></pre></div>
+<p>When I look at the olog, I would like to say that "mom" is a morphism from Human to Human, such that mom(h), <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>∈</mo><mtext>Human</mtext></mrow><annotation encoding="application/x-tex">h \in \text{Human}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.7335em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">Human</span></span></span></span></span> is h's mom. So the codomain of mom is Human.</p>
+<p>In SQL, "Human" would not be an acceptable data type:</p>
+<div class="codehilite"><pre><span></span><code>CREATE TABLE Human (
+    name TEXT PRIMARY KEY,
+    mom HUMAN,
+);
+</code></pre></div>
+<p>and as I understand it, we use primary keys as a way to refer to an entity that a row of a table represents. Instead of referring to a mom in general, we refer to them by their name. Thus, name becomes a primary key for the table, and the data type of attribute mom is TEXT.</p>
+<p>In the olog format, I think this means my diagram is wrong. Actually, the morphism mom is from Human to Text. It denotes the name of a person's mom:</p>
+<p><a href="/user_uploads/21317/j04mJL6UpxQ5TUq6bG4pTNeC/Screenshot-2025-01-18-at-3.10.07PM.png">schema-b</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/j04mJL6UpxQ5TUq6bG4pTNeC/Screenshot-2025-01-18-at-3.10.07PM.png" title="schema-b"><img data-original-content-type="image/png" data-original-dimensions="1598x454" src="/user_uploads/thumbnail/21317/j04mJL6UpxQ5TUq6bG4pTNeC/Screenshot-2025-01-18-at-3.10.07PM.png/840x560.webp"></a></div><p>I feel like this means that in the olog, we can compose the morphism <code>name</code> with <code>mom: Human -&gt; Human</code>, to get a morphism <code>mom_name: Human -&gt; Text</code>.</p>
+<p><a href="/user_uploads/21317/UXKCFXYl_dGcK5rJI-SEbiGR/Screenshot-2025-01-18-at-3.10.13PM.png">schema-c.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/UXKCFXYl_dGcK5rJI-SEbiGR/Screenshot-2025-01-18-at-3.10.13PM.png" title="schema-c.png"><img data-original-content-type="image/png" data-original-dimensions="1520x674" src="/user_uploads/thumbnail/21317/UXKCFXYl_dGcK5rJI-SEbiGR/Screenshot-2025-01-18-at-3.10.13PM.png/840x560.webp"></a></div><p>I feel like what stands out here is that in the olog, we would be more inclined to denote the morphism mom and name, and let the morphism mom_name be implicit. But in SQL, we make the morphisms name and mom_name explicit, and the 'foreign key' keyword implies there is a morphism mom : Human -&gt; Human with the equation name(mom(h)) = mom_name(h).</p>
+<p><a href="/user_uploads/21317/Sf0uU9kRjnzLxpjmeiKUB70J/Screenshot-2025-01-18-at-3.10.28PM.png">schema-d</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/Sf0uU9kRjnzLxpjmeiKUB70J/Screenshot-2025-01-18-at-3.10.28PM.png" title="schema-d"><img data-original-content-type="image/png" data-original-dimensions="1674x706" src="/user_uploads/thumbnail/21317/Sf0uU9kRjnzLxpjmeiKUB70J/Screenshot-2025-01-18-at-3.10.28PM.png/840x560.webp"></a></div><p>Would anyone like to comment on this?</p>
+
+
+
+<a name="494585153"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Primary%20Keys%20in%20Ologs/near/494585153" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Primary.20Keys.20in.20Ologs.html#494585153">(Jan 19 2025 at 00:24)</a>:</h4>
+<p>As far as I am aware, primary keys (even unary ones) in schemas are not possible in the original, purely equational functional olog formalism (functors to Set).  You need more than equational logic: you need cartesian logic / pullbacks : "forall x y : Person, <a href="http://x.name">x.name</a> = <a href="http://y.name">y.name</a> -&gt; x = y" states that name is a key of Person.  David talks about this in "Database queries and constraints as lifting problems" and this is why CQL's "constraints" rather than "schemas" are the main abstraction.  For functors into Rel, the story is different - there, I think you can express primary keys as equations.  Evan Patterson would know more about the Rel story presumably.</p>
+
+
+
+<a name="494589590"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Primary%20Keys%20in%20Ologs/near/494589590" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Primary.20Keys.20in.20Ologs.html#494589590">(Jan 19 2025 at 01:28)</a>:</h4>
+<p>Amazing thank you</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

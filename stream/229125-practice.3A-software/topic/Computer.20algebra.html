@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Computer algebra · practice: software · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/index.html">practice: software</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html">Computer algebra</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="522974640"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/522974640" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#522974640">(Jun 08 2025 at 12:24)</a>:</h4>
+<p>How useful are Sage, Mathematica and other computer algebra systems (or symbolic algebra systems) for doing category theory?</p>
+<p>I do not know much about computer algebra. Here is my rough stereotyped understanding:</p>
+<ul>
+<li>there are computer algebra systems which deal with finitely presented algebraic structures</li>
+<li>there are symbolic algebra systems which can deal with abstract, not necessarily finite structures, and they can do things like equational rewriting between words in a group, or integration/differentiation; maybe they can even do conditional rewriting (a = b under hypothesis H where H is something decidable)</li>
+<li>there are theorem provers and proof assistants, which are maximally flexible and can encode arbitrary reasoning</li>
+</ul>
+<p>I use Rocq to formalize category theory but I'm wondering if there is a less time intensive way to use computers to help me do long computations in category theory.</p>
+
+
+
+<a name="522974862"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/522974862" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#522974862">(Jun 08 2025 at 12:29)</a>:</h4>
+<p>You might also check out <a href="https://github.com/homalg-project/CAP_project">CAP - Categories, Algorithms, and Programming</a>. I haven't tried it yet myself but the system looks quite impressive. It seems to have a focus on additive and abelian categories, though there's also plenty of stuff for ordinary category theory.</p>
+
+
+
+<a name="522974905"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/522974905" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#522974905">(Jun 08 2025 at 12:30)</a>:</h4>
+<p>Thank you. This is not the first time that GAP has come up here. I recall this conversation - <a class="message-link" href="/#narrow/channel/229136-theory.3A-category-theory/topic/software.20packages.20for.20computer-assisted.20category.20theory/near/247380219">#theory: category theory &gt; software packages for computer-assisted category theory @ 💬</a></p>
+
+
+
+<a name="522974935"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/522974935" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#522974935">(Jun 08 2025 at 12:31)</a>:</h4>
+<p>I will check out GAP I guess and try to understand what it can be useful for</p>
+
+
+
+<a name="522975121"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/522975121" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#522975121">(Jun 08 2025 at 12:35)</a>:</h4>
+<p>Though CAP is written in GAP, from what I understand, it's best understood as its own system.</p>
+
+
+
+<a name="522977548"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/522977548" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#522977548">(Jun 08 2025 at 13:28)</a>:</h4>
+<p>The "old school" CASes (Maple, Mathematica) are largely useless for CT. Oh, you can program them with what you want, but out of the box, there is nothing.</p>
+<p>It would be nice to see the area of "computational category theory" get reborn. With even more types than the original.</p>
+
+
+
+<a name="522991068"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/522991068" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#522991068">(Jun 08 2025 at 17:48)</a>:</h4>
+<p>When we originally stated building CQL (<a href="http://categoricaldata.net">http://categoricaldata.net</a>) we looked at a bunch of computer algebra systems to power it.  But none of them had sufficient automated theorem proving capability to be able to routinely decide word problems in finite presentations.  For example, Mathematica's Knuth-Bendix completion algorithm was (is?)  from the 90s and simply didn't perform.  On the other hand, our survey was ten years ago; perhaps CAS systems have improved.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

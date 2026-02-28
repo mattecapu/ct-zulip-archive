@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Life-Cycle Analysis · theory: applied category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/index.html">theory: applied category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html">Life-Cycle Analysis</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="421550411"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/421550411" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#421550411">(Feb 14 2024 at 23:20)</a>:</h4>
+<p><span class="user-mention" data-user-id="275920">@John Baez</span> </p>
+<p>I'll continue here so that I don't spam the other topic.</p>
+<p>I'm really flattered that you to want to know more! </p>
+<p>I'll try to make here a short post about some of the mathematical aspects of our DSL (it's called LCAAC, for LCA as Code), ending with the ones I struggle with. For the sake of brevity, I'll probably skip the big picture (e.g., what is LCA about exactly, or why we chose not to go for a GUI-based tool) and do a lot of hand waving.</p>
+<h1>"Static" LCA</h1>
+<h2>Syntax</h2>
+<p>In LCA, you analyze your product by describing how it is produced. For instance, to produce <code>1 kg</code> of bread, you need <code>1 kg</code> of flour, and <code>1 l</code> of water. Also, cooking the breadrequires <code>1 kWh</code> of electricity from some power station. Another process produces <code>1 kg</code> of flour by consuming <code>1 kWh</code> of electricity from the same power station. Here's the code:</p>
+<div class="codehilite" data-code-language="lca"><pre><span></span><code>process bakery {
+    products {
+        1 kg bread
+    }
+    inputs {
+        1 kg flour
+        1 kWh electricity
+    }
+}
+
+process mill {
+    products {
+        1 kg flour
+    }
+    inputs {
+        1 kWh electricity
+    }
+}
+
+process power_station {
+    products {
+        1 kWh electricity
+    }
+    impacts {
+        1 kg co2
+    }
+}
+</code></pre></div>
+<p>Semi-formally, my model consists in:</p>
+<ul>
+<li>a set of processes (bakery, mill)</li>
+<li>a set of products (bread, flour) and indicators (gwp)</li>
+<li>legs (output or input) connecting processes to products/indicators</li>
+<li>each leg being weighted (<code>1 kg</code>, <code>1 l</code>)</li>
+</ul>
+<p>This fits particularly well with the formalism of attributed C-Sets or structured cospans(not really surprising since I first experimented with Catlab.jl).My "LCA" (syntactical) category has finite sets of products/indicators as objects,and processes as morphisms. In the code above, the processes are implicitly composedby matching on product names. </p>
+<p>Note also that it is possible to have circular dependencies between processes: this occurs when we have recycling processes.</p>
+<h2>Semantics</h2>
+<p>The classic big question is: what is the impact of <code>1 kg</code> of bread in terms of co2? The example above is so simple that it's not hard to see that it must be <code>2 kg</code> of co2.</p>
+<p>But, for the general case, what we do behind the scene reduces to running a functor from this "LCA" category to the category of linear relations. There are actually two functors, depending on whether you focus on processes or products (like Kirchoff's voltage vs current stuff). Here's one way. </p>
+<p>Let <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ϕ</mi><mrow><mi>b</mi><mi>r</mi><mi>e</mi><mi>a</mi><mi>d</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\phi_{bread}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">ϕ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">b</span><span class="mord mathnormal mtight">re</span><span class="mord mathnormal mtight">a</span><span class="mord mathnormal mtight">d</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> (resp. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ϕ</mi><mrow><mi>f</mi><mi>l</mi><mi>o</mi><mi>u</mi><mi>r</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\phi_{flour}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">ϕ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.10764em;">f</span><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span>, etc.) the quantity of co2 per kg of bread (per kg of flour, etc.). Each process is interpreted as a conservation equation, e.g.:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>1</mn><mtext> </mtext><mtext mathvariant="monospace">kg</mtext><mo>⋅</mo><msub><mi>ϕ</mi><mrow><mi>b</mi><mi>r</mi><mi>e</mi><mi>a</mi><mi>d</mi></mrow></msub><mo>−</mo><mn>1</mn><mtext> </mtext><mtext mathvariant="monospace">kg</mtext><mo>⋅</mo><msub><mi>ϕ</mi><mrow><mi>f</mi><mi>l</mi><mi>o</mi><mi>u</mi><mi>r</mi></mrow></msub><mo>−</mo><mn>1</mn><mtext> </mtext><mtext mathvariant="monospace">kWh</mtext><mo>⋅</mo><msub><mi>ϕ</mi><mrow><mi>e</mi><mi>l</mi><mi>e</mi><mi>c</mi><mi>t</mi><mi>r</mi><mi>i</mi><mi>c</mi><mi>i</mi><mi>t</mi><mi>y</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">    1~\texttt{kg}\cdot\phi_{bread} - 1~\texttt{kg}\cdot\phi_{flour} - 1~\texttt{kWh}\cdot\phi_{electricity} = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8667em;vertical-align:-0.2222em;"></span><span class="mord">1</span><span class="mspace nobreak"> </span><span class="mord text"><span class="mord texttt">kg</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">ϕ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">b</span><span class="mord mathnormal mtight">re</span><span class="mord mathnormal mtight">a</span><span class="mord mathnormal mtight">d</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8667em;vertical-align:-0.2222em;"></span><span class="mord">1</span><span class="mspace nobreak"> </span><span class="mord text"><span class="mord texttt">kg</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">ϕ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.10764em;">f</span><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">u</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace nobreak"> </span><span class="mord text"><span class="mord texttt">kWh</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">ϕ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">e</span><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mord mathnormal mtight">ec</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight">c</span><span class="mord mathnormal mtight">i</span><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></span></p>
+<p>Combining everything, I get a linear system that relates <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ϕ</mi><mrow><mi>b</mi><mi>r</mi><mi>e</mi><mi>a</mi><mi>d</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\phi_{bread}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">ϕ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">b</span><span class="mord mathnormal mtight">re</span><span class="mord mathnormal mtight">a</span><span class="mord mathnormal mtight">d</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ϕ</mi><mrow><mi>c</mi><mi>o</mi><mn>2</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\phi_{co2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">ϕ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">co</span><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> (and possibly other variables depending the system's rank).</p>
+<h1>Dynamic LCA</h1>
+<p>So far, it is relatively easy because our models are static.But, in LCAAC, processes are parametrized, and composition may depend onthe value of some parameters.</p>
+<h2>Syntax</h2>
+<p>In the example below, the bakery process has two parameters: a geographic location, and the efficiency of the power generation process. It produces 1 kg bread,and requires 1 kWh of electricity. But here the connection is explicit:the electricity comes from the process power_station, thereby passing the efficiency value.But also, depending on where the bakery is located ("FR" or "DE"), a different case will be selected.After all, the impact of 1 kWh of electricity depends on the electricity mix of your country.</p>
+<div class="codehilite" data-code-language="lca"><pre><span></span><code>process bakery {
+    params {
+        geo = "FR" // default value for geography
+        efficiency = 80 percent // default value for power generation
+    }
+    products {
+        1 kg bread
+    }
+    inputs {
+        1 kWh electricity from power_station( efficiency = efficiency ) match geo = geo
+    }
+}
+
+process power_station {
+    labels {
+        geo = "FR"
+    }
+    params {
+        efficiency = 100 percent
+    }
+    products {
+        1 kWh * efficiency electricity
+    }
+    impacts {
+        1 kg co2
+    }
+}
+
+process power_station {
+    labels {
+        geo = "DE"
+    }
+    params {
+        efficiency = 100 percent
+    }
+    products {
+        1 kWh * efficiency electricity
+    }
+    impacts {
+        2 kg co2
+    }
+}
+</code></pre></div>
+<h2>Semantics</h2>
+<p>Now, I will be even more hand-wavy. The code cannot represent a static composition of processes as before, because parameter values are known at run time. The way I picture it (and implemented it) is inspired by game semantics. There are two players: the Learner (who wants to know the impact of1 kg of bread) and the Oracle (who knows all about the processes in the world).The interaction goes as follows:</p>
+<ul>
+<li>The Learner requests 1 kg of bread, providing values for geo and efficiency</li>
+<li>The Oracle fetches in the code base the relevant process, evaluates any formula if needed, and return the evaluated process to the Learner.</li>
+<li>The Learner inspects the process, and requests 1 kWh of electricity, along with the appropriate value for the geogrpahy.</li>
+<li>The Oracle again looks for a process that matches the requests, evaluate it if needed, and so on.</li>
+</ul>
+<p>The Learner stops requesting when it does not learn anything new.</p>
+<p>At the end of the interaction, the Learner is given a (static) set of processes connected together along products. She can analyze the system the way she prefers.</p>
+<h1>Conclusion</h1>
+<p>Ok, it is much longer than I expected. There are other funny topics I haven't covered(sensitivity/uncertainty analysis, type checking, black-boxing a group of processes, etc.), but what I struggle with is formalizing the semantics of the dynamic thingy. It feels a bit too "operational" to my taste. A nice-to-have property for instance would be a type system that would allow me to guarantee, under certain circumstances, the termination of learner-oracle interaction. This kind of things.</p>
+<p>Voilà! Let me know if you want more details about the LCA context.</p>
+
+
+
+<a name="421741383"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/421741383" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#421741383">(Feb 15 2024 at 21:10)</a>:</h4>
+<p>Thanks!  So far it sounds like the basic idea is that for each product (e.g. a kilogram of bread) you have a process that makes it and then a finite collection of products used as inputs to this process (e.g. 1 kilogram of flour and 1 kWh of electricity).</p>
+
+
+
+<a name="421742133"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/421742133" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#421742133">(Feb 15 2024 at 21:15)</a>:</h4>
+<p>Are all the processes you care about many-input, one-output processes as in this particular example?  Or are some of them many-input, many-output processes?   As you must know, n real life processes typically have multiple outputs - including some considered as "waste", which can still in fact be used for other processes as in <a href="https://www.sciencedirect.com/science/article/pii/S2352550922000306">circular manufacturing</a>.</p>
+
+
+
+<a name="421750950"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/421750950" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#421750950">(Feb 15 2024 at 22:21)</a>:</h4>
+<p>Multi-input multi-output processes do occur indeed, and this is a very big question in LCA. The general advice is: "try to avoid multi-output processes". The solution will depend on the "physics" of the problem, but also on "fair" allocation of responsibilities.</p>
+<p>For instance, maybe physics will tell you that your multi-output process can be split into sub-processes. A big factory producing different brands of products while consuming different kinds of things can surely be decomposed. But there are cases where it is not obvious. </p>
+<p>The classic example is the "cow" process. From a cow, you can produce meat and milk. But the cow also requires food, treatment, housing etc. Let's say that all of these inputs amount to 100 kg CO2 eq. Physics-wise, there is no obvious way to split the cow into "meat production" and "milk production" subprocesses.</p>
+<p>Thus, the decision to allocate, e.g., 80 kg CO2 eq to the meat, and 20 kg CO2 eq, is normative: it relies on arguments that try to justify what is "fair". For instance, analysts look at the economic value of the products, or incentives  for producers, etc. This is also the kind of place where there is opportunity for green washing, so it is very important that these choices are made explicit and transparent.</p>
+<p>In LCAAC, the analyst can describe a multi-output process, but must specify explicitly the allocation ratios. Behind the scene, this two-output process is then rewritten as two single-output processes, each of them with inputs scaled by the corresponding allocation ratio.</p>
+<p>Waste treatment is quite funny. Take a factory that produces 100 cars, but also 1 ton of waste. You could be tempted to write a multi-output process e.g. like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>→</mo><mn>100</mn><mtext> </mtext><mtext mathvariant="monospace">cars</mtext><mo>+</mo><mn>1</mn><mtext> </mtext><mrow><mtext mathvariant="monospace">ton</mtext><mtext> </mtext><mtext mathvariant="monospace">waste</mtext></mrow></mrow><annotation encoding="application/x-tex"> X \rightarrow 100~\texttt{cars} + 1~\texttt{ton waste}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">100</span><span class="mspace nobreak"> </span><span class="mord text"><span class="mord texttt">cars</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace nobreak"> </span><span class="mord text"><span class="mord texttt">ton waste</span></span></span></span></span>.</p>
+<p>But this waste has low economic value, so the factory owner cannot really sell it. He has to treat its waste, e.g.,  incinerating them. But incinerating 1 ton of waste clearly has an environmental impact, and the factory should be responsible for it!</p>
+<p>So what the analyst does is taking the "dual" of the waste: the factory does not produce waste, but requires "anti-waste", aka, waste treatment. Something like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>+</mo><mn>1</mn><mtext> </mtext><mrow><mtext mathvariant="monospace">ton</mtext><mtext> </mtext><mtext mathvariant="monospace">waste</mtext><mtext> </mtext><mtext mathvariant="monospace">treatment</mtext></mrow><mo>→</mo><mn>100</mn><mtext> </mtext><mtext mathvariant="monospace">cars</mtext></mrow><annotation encoding="application/x-tex">X + 1~\texttt{ton waste treatment} \rightarrow 100~\texttt{cars}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace nobreak"> </span><span class="mord text"><span class="mord texttt">ton waste treatment</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">100</span><span class="mspace nobreak"> </span><span class="mord text"><span class="mord texttt">cars</span></span></span></span></span>. So the environmental impact of a car produced by this factory includes the impact of treating the waste. </p>
+<p>Cases like circular manufacturing you mention are modelled with variants of these techniques (explicit allocation factors, dualization).</p>
+<p>It's true that in the first examples I gave, it looks like describing physical processes. But LCA is more about delineating environmental responsibilities.</p>
+
+
+
+<a name="421961493"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/421961493" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#421961493">(Feb 17 2024 at 00:52)</a>:</h4>
+<p><span class="user-mention" data-user-id="619003">@Peva Blanchard</span> wrote:</p>
+<blockquote>
+<p>The general advice is: "try to avoid multi-output processes".</p>
+</blockquote>
+<p>What does that mean?   Avoiding them in the mathematics, or avoiding them in real life?</p>
+<p>There are very few processes in real life that don't have multiple outputs, as long as we don't deliberately <em>ignore</em> some of the outputs like waste heat, carbon dioxide, and other forms of waste.    These outputs may have negative value, but they're still economically important.    </p>
+<p>I've been running around giving talks like this, where I argue that to save the planet we need to stop ignoring outputs that we consider "waste":</p>
+<ul>
+<li><a href="https://math.ucr.edu/home/baez/math_in_the_21st/">Mathematics in the 21st Century</a>.</li>
+</ul>
+<p>(See my talk starting on minute 48, or slide 22.)</p>
+
+
+
+<a name="421961625"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/421961625" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#421961625">(Feb 17 2024 at 00:55)</a>:</h4>
+<blockquote>
+<p>For instance, maybe physics will tell you that your multi-output process can be split into sub-processes.</p>
+</blockquote>
+<p>Okay, so that's about <em>mathematically</em> avoiding treating processes with lots of outputs as <em>primitives</em>, by breaking them into sub-processes when possible.  That makes sense to me.</p>
+
+
+
+<a name="421961870"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/421961870" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#421961870">(Feb 17 2024 at 00:59)</a>:</h4>
+<blockquote>
+<p>Waste treatment is quite funny. Take a factory that produces 100 cars, but also 1 ton of waste. You could be tempted to write a multi-output process e.g. like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>→</mo><mn>100</mn><mtext> </mtext><mtext mathvariant="monospace">cars</mtext><mo>+</mo><mn>1</mn><mtext> </mtext><mrow><mtext mathvariant="monospace">ton</mtext><mtext> </mtext><mtext mathvariant="monospace">waste</mtext></mrow></mrow><annotation encoding="application/x-tex"> X \rightarrow 100~\texttt{cars} + 1~\texttt{ton waste}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">100</span><span class="mspace nobreak"> </span><span class="mord text"><span class="mord texttt">cars</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace nobreak"> </span><span class="mord text"><span class="mord texttt">ton waste</span></span></span></span></span>.</p>
+<p>But this waste has low economic value, so the factory owner cannot really sell it. He has to treat its waste, e.g.,  incinerating them. But incinerating 1 ton of waste clearly has an environmental impact, and the factory should be responsible for it!</p>
+<p>So what the analyst does is taking the "dual" of the waste: the factory does not produce waste, but requires "anti-waste", aka, waste treatment. Something like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>+</mo><mn>1</mn><mtext> </mtext><mrow><mtext mathvariant="monospace">ton</mtext><mtext> </mtext><mtext mathvariant="monospace">waste</mtext><mtext> </mtext><mtext mathvariant="monospace">treatment</mtext></mrow><mo>→</mo><mn>100</mn><mtext> </mtext><mtext mathvariant="monospace">cars</mtext></mrow><annotation encoding="application/x-tex">X + 1~\texttt{ton waste treatment} \rightarrow 100~\texttt{cars}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace nobreak"> </span><span class="mord text"><span class="mord texttt">ton waste treatment</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">100</span><span class="mspace nobreak"> </span><span class="mord text"><span class="mord texttt">cars</span></span></span></span></span>. So the environmental impact of a car produced by this factory includes the impact of treating the waste. </p>
+</blockquote>
+
+
+
+<a name="421962096"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/421962096" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#421962096">(Feb 17 2024 at 01:02)</a>:</h4>
+<p>The idea of "dualizing" waste to convert an output to an input is indeed a classic string diagram trick - nice!     But I don't see why we should avoid talking about the process</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>→</mo><mn>100</mn><mtext> </mtext><mtext mathvariant="monospace">cars</mtext><mo>+</mo><mn>1</mn><mtext> </mtext><mrow><mtext mathvariant="monospace">ton</mtext><mtext> </mtext><mtext mathvariant="monospace">waste</mtext></mrow></mrow><annotation encoding="application/x-tex"> X \rightarrow 100~\texttt{cars} + 1~\texttt{ton waste}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">100</span><span class="mspace nobreak"> </span><span class="mord text"><span class="mord texttt">cars</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace nobreak"> </span><span class="mord text"><span class="mord texttt">ton waste</span></span></span></span></span></p>
+<p>if that's really what's going on.  E.g. lots of industrial processes spew carbon dioxide into the air or hot water into rivers.  We can argue that they shouldn't, but as long as they <em>do</em>, it's something I want to model.</p>
+
+
+
+<a name="421962126"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/421962126" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#421962126">(Feb 17 2024 at 01:03)</a>:</h4>
+<p>Perhaps my motives are different from those of most people engaging in life cycle analysis.</p>
+
+
+
+<a name="421963044"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/421963044" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#421963044">(Feb 17 2024 at 01:17)</a>:</h4>
+<p>But if it's a matter of avoiding multi-output processes because they are mathematically annoying in some way, I'd like to understand why they are.</p>
+
+
+
+<a name="421963089"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/421963089" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#421963089">(Feb 17 2024 at 01:18)</a>:</h4>
+<p>This whole subject is fascinating to me!</p>
+
+
+
+<a name="421993837"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/421993837" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> davidad (David Dalrymple) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#421993837">(Feb 17 2024 at 08:45)</a>:</h4>
+<p>It seems to me like this LCAAC is really a way of defining Petri nets. The processes are transitions, the products are places, and the legs are arcs. In your “static” case, the semantics of Petri nets as linear relations has been studied by John and his former student Blake Pollard <a href="https://arxiv.org/pdf/1704.02051.pdf">https://arxiv.org/pdf/1704.02051.pdf</a></p>
+
+
+
+<a name="421994816"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/421994816" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> davidad (David Dalrymple) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#421994816">(Feb 17 2024 at 08:59)</a>:</h4>
+<p>In the dynamic case there are two big differences. One is that you no longer want to assume that every transition runs at the same constant rate - instead you want to discover a particular trace that results in a particular product from a certain initial condition. The algorithm you described is a lot like “backward reachability”. Related semantics have been studied by John with a different student, Jade Master, e.g. <a href="https://arxiv.org/abs/1808.05415">https://arxiv.org/abs/1808.05415</a></p>
+
+
+
+<a name="421995214"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/421995214" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> davidad (David Dalrymple) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#421995214">(Feb 17 2024 at 09:05)</a>:</h4>
+<p>The other big difference in the dynamic case is that the transitions have labels and params. I think this is really a way of expressing the type of Transitions as—instead of a finite set—an algebraic data type. For example power_station(efficiency=100%) is a transition but so is power_station(efficiency=99.9%). There is a sort of infinite (although hopefully compact) space of transitions which could be defined as a coproduct of products. This is a bit unusual in the Petri net world. The reachability semantics becomes confused because it’s as if the scheduler can choose the parameters freely.</p>
+
+
+
+<a name="421995590"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/421995590" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> davidad (David Dalrymple) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#421995590">(Feb 17 2024 at 09:10)</a>:</h4>
+<p>Here’s how I would suggest resolving it. Use Coloured Petri Nets, in which each <em>token</em> has a “color” (funny name but it’s just a state vector/value). Then, to each parameterized transition, associate a place where the tokens have colors that determine the parameters. For example, there could be just one power_station_run transition, but it requires an input from a power_station <em>place</em>, and in that place you have some finite multiset of tokens like {(efficiency=80%, geo=“DE”)↦2, (efficiency=90%, geo=“DE”)↦1, (efficiency=90%, geo=“FR”)↦3}. Then, when the scheduler choose to fire the power_station_run transition, they also choose which of the available tokens to pick up as the particular power station parameters to use. When the transition fires, it should deposit the power station parameters back in the power_station place (probably unchanged, although for some processes it might be useful to model the aging of the processing device by making the parameters a little worse with each use).</p>
+
+
+
+<a name="421996264"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/421996264" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> davidad (David Dalrymple) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#421996264">(Feb 17 2024 at 09:20)</a>:</h4>
+<p>In terms of an efficient algorithm for backward reachability in Petri nets, check out <a href="https://discovery.ucl.ac.uk/id/eprint/10088921/7/Haase_bfhh-17.pdf">https://discovery.ucl.ac.uk/id/eprint/10088921/7/Haase_bfhh-17.pdf</a></p>
+
+
+
+<a name="422025792"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/422025792" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#422025792">(Feb 17 2024 at 16:37)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="282874">davidad (David Dalrymple)</span> <a href="#narrow/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis/near/421996264">said</a>:</p>
+<blockquote>
+<p>In terms of an efficient algorithm for backward reachability in Petri nets, check out <a href="https://discovery.ucl.ac.uk/id/eprint/10088921/7/Haase_bfhh-17.pdf">https://discovery.ucl.ac.uk/id/eprint/10088921/7/Haase_bfhh-17.pdf</a></p>
+</blockquote>
+<p>Thank you for all the inputs! I never thought about LCA models as Petri nets. I'll definitely check out the links.</p>
+
+
+
+<a name="422028818"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/422028818" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#422028818">(Feb 17 2024 at 17:19)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis/near/421963044">said</a>:</p>
+<blockquote>
+<p>But if it's a matter of avoiding multi-output processes because they are mathematically annoying in some way, I'd like to understand why they are.</p>
+</blockquote>
+<p>I think I see where the confusion comes from: I forgot to talk about the difference in LCA between the technosphere and the biosphere. Let me refine the definitions I gave at the beginning.</p>
+<p>The technosphere refers to the set of goods and services are exchanged, produced and consumed by humans. A "product", in the LCA jargon, is synonym for a such a good or service. </p>
+<p>The biosphere, on the other hand, stands for "Nature", or the environment. It is the place where chemical substances are released or captured.</p>
+<p>A process (a.k.a. activity in the LCA jargon) describes a sort of balance sheet. It lists all the exchanges with the technosphere, and with the biosphere. In my first post, I used the term "leg", but LCA people usually use the word "exchange". </p>
+<p>For instance, let's refine a bit the "bakery" process. The process produces 1 kg of bread, and requires 1 kg of flour, and 1 kWh of electricity. These are the exchanges with the technosphere: I need to buy the flour and the electricity, and I plan to sell the bread. But, it is possible that my oven is leaking some chemical, say, carbon monoxide in the environment. This is an exchange with the biosphere.</p>
+<div class="codehilite" data-code-language="Text only"><pre><span></span><code>process bakery {
+  products {
+    1 kg bread
+  }
+  inputs {
+    1 kg flour
+    1 kWh electricity
+  }
+  emissions {
+    100 g carbon_monoxide
+  }
+}
+</code></pre></div>
+<p>So in principle, every process has exchanges with the technosphere and biosphere. Now, let's say you want to assess the impact of producing 1 kg of bread with respect to climate change. You first start by computing the inventory of all the substances that were released to (or captured from) the biosphere. So you count 100 g of carbon monoxide from the bakery process. But, maybe the processes that produce flour and electricity also release carbon monoxide, or methane, or carbon dioxide, and so on. You need to add everything.</p>
+<p>At the end you have a "reduced process" that looks like</p>
+<div class="codehilite" data-code-language="Text only"><pre><span></span><code>process bakery_reduced {
+  products {
+    1 kg bread
+  }
+  emissions {
+    150 g carbon_monoxide
+    300 mg methane
+    200 g carbon_dioxide
+  }
+}
+</code></pre></div>
+<p>It is a "bill of materials" but with respect to the biosphere. </p>
+<p>The last step is to compute the climate change impact. For that, we rely on the work of chemists/physicists/etc. who run the experiments and characterized each substance with respect to climate change (aka global warming potential). For instance</p>
+<ul>
+<li>1 kg of carbon monoxide is equivalent to 1 kg CO2</li>
+<li>1 kg of methane is equivalent to 29 kg CO2</li>
+</ul>
+<p>and so on. It's like giving a price on each substance. You combine those prices with the bill of materials to get your impact.</p>
+
+
+
+<a name="422029447"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/422029447" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#422029447">(Feb 17 2024 at 17:30)</a>:</h4>
+<p>You can see LCA as a way to build the bill, to make explicit for a given product (technosphere) how much it costs with respect to, e.g., climate change.</p>
+<p>So you're right: processes do have multiple outputs. But the slogan "try to avoid multi-product process" actually refers to products from the technosphere.  You can see the issue of multiple (technosphere) products in the example of the cow, or waste treatment. The modelling choices introduce normative decisions, which are difficult to justify, especially when you can't rely on physics. </p>
+<p>So the slogan really means "try to avoid putting yourself in a situation where you introduce unjustified normative decisions".</p>
+
+
+
+<a name="422049608"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/422049608" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#422049608">(Feb 17 2024 at 23:12)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="282874">davidad (David Dalrymple)</span> <a href="#narrow/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis/near/421993837">said</a>:</p>
+<blockquote>
+<p>It seems to me like this LCAAC is really a way of defining Petri nets. The processes are transitions, the products are places, and the legs are arcs. In your “static” case, the semantics of Petri nets as linear relations has been studied by John and his former student Blake Pollard <a href="https://arxiv.org/pdf/1704.02051.pdf">https://arxiv.org/pdf/1704.02051.pdf</a></p>
+</blockquote>
+<p>This is extremely helpful!  Thanks!    It sounds exactly right if products are treated discretely, e.g. you can only have no cows, one cow, two cows, three cows, etc.  Furthermore, we've already worked out a category of "open" Petri nets that make the ideas of treating Petri nets like string diagrams, and "dualizing inputs to become outputs", precise:</p>
+<ul>
+<li>Jade Master and John Baez, <a href="https://arxiv.org/abs/1808.05415">Open Petri nets</a>.</li>
+<li>John Baez, Kenny Courser and Christina Vasilakopoulou, <a href="https://arxiv.org/abs/2101.09363">Structured versus decorated cospans</a>.  (Section 6.3 is about Petri nets.)</li>
+</ul>
+<p>Even better, AlgebraicJulia is already set up to handle Petri nets, though these are slightly different than the Petri nets discussed above - they are instead Joachim Kock's "whole-grain Petri nets":</p>
+<ul>
+<li>Joachim Kock, <a href="https://arxiv.org/abs/2005.05108">Whole-grain Petri nets and processes</a>.</li>
+</ul>
+<p>Luckily, the difference is unimportant enough that we can gloss over it for now.  But if we ever need to get into it there's a whole paper about these nuances:</p>
+<ul>
+<li>John Baez, Fabrizio Genovese, Jade Master and Michael Shulman, <a href="https://arxiv.org/abs/2101.04238">Categories of nets</a>.</li>
+</ul>
+
+
+
+<a name="422049797"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/422049797" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#422049797">(Feb 17 2024 at 23:15)</a>:</h4>
+<p>If we want to talk about things like</p>
+<p>1.8 liters of methanol + 0.00035 kilograms of naphthalene </p>
+<p>it would be more convenient to use a slight generalization of Petri nets where instead of natural numbers we can use <em>real numbers</em> to describe amounts of products.  Luckily <span class="user-mention" data-user-id="276037">@Jade Master</span>  has already worked out the theory of these, and various other generalized Petri nets:</p>
+<ul>
+<li>Jade Master, <a href="https://arxiv.org/abs/1904.09091">Petri nets based on Lawvere theories</a>.</li>
+</ul>
+
+
+
+<a name="422049982"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/422049982" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#422049982">(Feb 17 2024 at 23:19)</a>:</h4>
+<p>I know this is way too many references to absorb - but in summary, the good news is that the theory and a lot of relevant software is already there!</p>
+
+
+
+<a name="422050084"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/422050084" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#422050084">(Feb 17 2024 at 23:21)</a>:</h4>
+<p><span class="user-mention" data-user-id="619003">@Peva Blanchard</span>'s idea about one Petri net describing processes in the biosphere and another  describing processes in the technosphere (where we ignore inputs and outputs that we don't give a damn about until the planet starts dying <span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span>) should be quite nice to describe using category theory.</p>
+
+
+
+<a name="422050143"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/422050143" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#422050143">(Feb 17 2024 at 23:22)</a>:</h4>
+<p>We could even work with multiple "spheres of concern", not just two.</p>
+
+
+
+<a name="422079880"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/422079880" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#422079880">(Feb 18 2024 at 08:39)</a>:</h4>
+<p>Wow, thank you both for all the references!</p>
+
+
+
+<a name="422080991"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/422080991" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#422080991">(Feb 18 2024 at 08:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis/near/422050143">said</a>:</p>
+<blockquote>
+<p>We could even work with multiple "spheres of concern", not just two.</p>
+</blockquote>
+<p>Yes ! There is actually a 3rd sphere, the sociosphere, in a sub-field of LCA called "Social LCA". </p>
+<p>There is a nice bird-eye overview of LCA given by the <a href="https://www.lifecycleinitiative.org/starting-life-cycle-thinking/">Lifecycle Initiative</a>, and its different <a href="https://www.lifecycleinitiative.org/starting-life-cycle-thinking/life-cycle-approaches/">flavors</a>.</p>
+<p>Less of an introduction, Bo Weidema made a series of videos on specific modelling kinds in LCA. The <a href="https://youtu.be/IcR1WXsO1PE?si=NVUxJTPl_Ae9tUVw">first video</a> of the series explains well the different intentions.</p>
+<div class="youtube-video message_inline_image"><a data-id="IcR1WXsO1PE" href="https://youtu.be/IcR1WXsO1PE?si=NVUxJTPl_Ae9tUVw"><img src="https://uploads.zulipusercontent.net/79f64fada22ff7ae859e36c223df35b1ab4d149c/68747470733a2f2f692e7974696d672e636f6d2f76692f496352315758734f3150452f64656661756c742e6a7067"></a></div>
+
+
+
+<a name="422115807"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/422115807" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#422115807">(Feb 18 2024 at 17:54)</a>:</h4>
+<p>Thanks!   I'll learn about this stuff.   I feel this subject is really important and is well suited to a category-theoretic description.  But could you remind me why <em>you</em> want to apply category theory?   Is there some particular problem in the subject that's bugging you?</p>
+
+
+
+<a name="422139206"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/Life-Cycle%20Analysis/near/422139206" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis.html#422139206">(Feb 18 2024 at 23:42)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229156-theory.3A-applied-category-theory/topic/Life-Cycle.20Analysis/near/422115807">said</a>:</p>
+<blockquote>
+<p>Thanks!   I'll learn about this stuff.   I feel this subject is really important and is well suited to a category-theoretic description.  But could you remind me why <em>you</em> want to apply category theory?   Is there some particular problem in the subject that's bugging you?</p>
+</blockquote>
+<p>Oh, this one is not easy to answer, because there is a bundle of problems that are bugging me, but I'll give it a try.</p>
+<p>Just a little bit more of context before. First you have to know that it is very hard to perform, in the real-world, lifecycle assessments that are fully meaningful, correct, reproducible, and traceable. Recall that, in principle, an LCA study requires to build the inventory of <em>all</em> the substances exchanged with the biosphere. By "all", I mean all the emissions from all the processes in the whole value chain for all the lifecycle phases of your product. </p>
+<p>This is huge, and people usually rely on collected data:</p>
+<ul>
+<li>Directly, from the entities in the value chain. Very rare because of confidentiality issues.</li>
+<li>More often on existing databases. E.g., <a href="https://ecoinvent.org/">Ecoinvent</a> maintains a reference database of 20K+ processes. There are more specialized databases that may contain up to 100K+ processes. Also, each process may be subject to some validity condition that does not match with your case.</li>
+</ul>
+<p>And then people assemble everything into a joyful mixture of Excel sheets, proprietary software and copy-pasted values...</p>
+<p>I believe software engineering practices (using the right abstractions, as code approach, testing, etc.) can help tame this complexity; whence the DSL. Besides making sure that the DSL features are meaningful, I have three "ongoing" questioning.</p>
+<h1>How to separate "model" and "data"</h1>
+<p>Many processes found in databases are just variants of one another. The database size could be reduced by one or two orders of magnitude if they just used parametrized processes. </p>
+<p>That's why in LCAAC, you see parametrized processes. Currently, it is a very basic form so far: process parameters values are passed down from parent to children. It's not ideal: there is no reason for a process to know about all the parameters of all its potential children.</p>
+<p>But most importantly, parameters, possibly from different processes, must be coherent altogether. Indeed, data for parameters is very often presented as an instance of database schema (in the sense of Spivak). For instance, let's say that I have a parametrized model of an IT server, and a parametrized model of datacenter. You collected the data for all the servers in a table SERVER, and the data for all the different datacenters in a table DATACENTER, with the constraint that each server belongs to exactly one datacenter.</p>
+<p>Now you want to assess the environmental of one datacenter. For that you need to invoke the corresponding model, with the appropriate data, and also all the servers that belong to that datacenter, each of them with them with the appropriate data, each of them correctly plugged in the datacenter process. I did find an ad-hoc solution in the DSL, but it feels wrong.</p>
+<p>On this topic, I think ACT may help, because it looks like I want something like a "functor" out of the "parameter database schema" to the "LCA category" (really not sure if it makes sense). I have in mind the way CQL specifies data migration using functors.</p>
+<h1>Distribute the model parts</h1>
+<p>As mentioned above, in principle, LCA requires you to model the whole supply/value chain. So we need to split the job. Here, your work on open systems also clicks in. It is theoretically possible to decompose the chain in multiple open systems that you plug in together. Now, you can imagine each actor in the supply chain managing its own LCA model and exposing the endpoints.</p>
+<p>Now the difficulty lies in ensuring that the "plugging in" is correct. In LCAAC, we have basic checks, e.g. the physical dimensions of the requested quantity must match that of the product. But, the matching conditions could be more involved, e.g., matching on the specific variant of the circular footprint formula, etc. On this topic, it is mostly about finding a relevant type system.</p>
+<p>On the sideways, another interesting venue is confidentiality. Most industrial actors will rarely be open to sharing the details of their manufacturing processes, and it is really a big issue in LCA. This is more of a political issue, but I'm still interested in finding ways of still being able to run the LCA without seeing the details, in the spirit of the zero-knowledge proofs. For instance, is it possible to black-box an open system, using it and still have guarantees on the impossibility to infer the inner details?</p>
+<h1>Decision-oriented results</h1>
+<p>So far, I just explained how to compute, e.g., the total impact, with respect to climate change, of a given quantity of product. But, in LCA there are at least three kinds of questions at the end:</p>
+<ul>
+<li>Contribution analysis: how much of this impact comes from that subsystem? what are the hot spots?</li>
+<li>Sensitivity analysis: how is this impact sensitive to these controls? what are my key levers?</li>
+<li>Uncertainty analysis: how robust is my conclusion, given my assumptions? am I confident enough?</li>
+</ul>
+<p>Uncertainty analysis is a bit tricky. Of course, I could use independent random numbers in the exchanges (and that's what most software do), and then compute usual statistics. But,  to me the independence conditions on the random quantities should be defined explicitly by the analyst.</p>
+<p>I had quite some fun with sensitivity analysis. A basic solution consisted in replacing the real numbers in the exchanges with dual numbers (one infinitesimal per parameter). </p>
+<p>Contribution analysis is somehow about counting all the paths in a specific subset of paths when I unfold my products and processes. For instance, when assessing the impact of 1 kg of bread, computing the contribution due to deforestation: deforestation is usually to a whole set of processes, so we want to compute the "size" of all the paths that traverse those processes. The implementations I've seen were always specific to a particular impact group. I believe though we could have a query language to select a "logical combination of subsets of paths", thereby being able to compute any contribution decomposition.</p>
+<p>Voilà. Again, my response turned out much longer than I expected. But, these are the main  topics that occupy my mind currently. I don't know if CT/ACT will be the right answer to every issue, but some topics seem very similar. (It could also be that I see nails everywhere because of my hammer-like nature).</p>
+<p>In any case, I'm really glad that you want to know more about LCA :)</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

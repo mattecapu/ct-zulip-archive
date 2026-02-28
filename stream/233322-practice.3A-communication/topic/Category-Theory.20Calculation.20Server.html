@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Category-Theory Calculation Server · practice: communication · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233322-practice.3A-communication/index.html">practice: communication</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233322-practice.3A-communication/topic/Category-Theory.20Calculation.20Server.html">Category-Theory Calculation Server</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="497927667"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/233322-practice%3A%20communication/topic/Category-Theory%20Calculation%20Server/near/497927667" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jocelyn Ireson-Paine <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233322-practice.3A-communication/topic/Category-Theory.20Calculation.20Server.html#497927667">(Feb 05 2025 at 15:59)</a>:</h4>
+<p>By which I mean a program running on a remote computer, usually communicating via web protocols, which you can ask for category-theoretic calculations, and which will return the results as data structures for the requesting computer to use, rather than for a human to read. I put a script onto my online category-theory demonstrator which makes it do this. It can be seen working at <a href="http://www.j-paine.org/lds/sheaves1/test_catserver.html">www.j-paine.org/lds/sheaves1/test_catserver.html</a> . (Don't let your browser put an https:// in the URL, or it will fail.) </p>
+<p>On this page, the final form requests a pullback and renders it locally; other forms request sets and functions to check that these features work. This is a proof of concept, but surely would be useful as a resource for examples for stuff like teaching and diagram generation.</p>
+
+
+
+<a name="497945957"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/233322-practice%3A%20communication/topic/Category-Theory%20Calculation%20Server/near/497945957" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233322-practice.3A-communication/topic/Category-Theory.20Calculation.20Server.html#497945957">(Feb 05 2025 at 17:25)</a>:</h4>
+<p>Cool idea. Do you use an existing symbolic algebra engine on the back end?</p>
+
+
+
+<a name="497964107"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/233322-practice%3A%20communication/topic/Category-Theory%20Calculation%20Server/near/497964107" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jocelyn Ireson-Paine <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233322-practice.3A-communication/topic/Category-Theory.20Calculation.20Server.html#497964107">(Feb 05 2025 at 19:05)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/channel/233322-practice.3A-communication/topic/Category-Theory.20Calculation.20Server/near/497945957">said</a>:</p>
+<blockquote>
+<p>Cool idea. Do you use an existing symbolic algebra engine on the back end?</p>
+</blockquote>
+<p>No. I coded the algorithms in SWI-Prolog, based on Rydeheard and Burstall's <em>Computational Category Theory</em>. I originally used them in an experimental compiler for Joseph Goguen's sheaf semantics of concurrent interacting objects, and then repurposed them for the online demonstrator at <a href="http://www.j-paine.org/cgi-bin/webcats/webcats.php">http://www.j-paine.org/cgi-bin/webcats/webcats.php</a> . </p>
+<p>That's quite a big program, as you can see from the list of modules at the end. These include: a compiler that translates functional notation into predicates; sets and maps; objects and arrows; functors; code for randomly generating example sets and maps (vital to any good Truth Mine); error-checking for sets and maps as inputs; fundamental categorical constructions; another compiler for translating English text with embedded examples in into predicates that serve the text over the web; formatting for numbers, pairs, maplets, Unicode maths symbols, HTML elements and so on; colours, for colouring different components of compositions to be more intelligible; file naming for scratch files to hold GraphViz representations of diagrams, and also the images thereby generated; code for calling GraphViz itself; assorted stuff for translating URLs to filenames within the document root and back; the explanatory pages themselves, as predicates; some experimental stuff for demonstrating analogy and semiotics; more experimental stuff, unfinished, for Yoneda; a demo page I once posted to nLab; and a built-in SWI-Prolog library for converting to and from JSON. Outside Prolog, there are also some PHP scripts, the guestbook which I've still not had time to fix, a Ubuntu batch file for clearing up old images, and a .htaccess file for rewriting URLs to overcome the hosting company's server's odd ideas about MIME types.</p>
+<p>The server I started this thread with uses most of the above except for the GraphViz stuff, server-side images, and explanatory pages, as those are rendered in the browser using HTML, CSS and JavaScript. I've got a slowly-growing collection of JavaScript files which draw images client-side in SVG for that. That's where the pullback diagram comes from. </p>
+<p>And here's the full list of server-side SWI-Prolog modules. "Grips2" is the compiler from functional notation to predicates; wc_random generates the random sets and maps; set_arrows builds on a general object-and-arrow module to implement arrows in FiniteSet; set_specs and function_specs check sets and functions sent by the user; output and pet_runtime deal with formatting; most of the rest is categorical and obvious from its name. If I were calling a symbolic algebra engine, I'd need to implement a lot of this anyway, but I'd be interested to hear from anyone who has tried it.</p>
+<blockquote>
+<p>:- use_module( functional(grips2) ).<br>
+:- use_module( general(errors) ).</p>
+<p>:- use_module( general(sets) ).<br>
+:- use_module( general(maps) ).</p>
+<p>:- use_module( webcats(set_arrows) ).</p>
+<p>:- use_module( general(random) ).<br>
+:- use_module( webcats(wc_random) ).</p>
+<p>:- use_module( webcats(set_specs) ).<br>
+:- use_module( webcats(function_specs) ).</p>
+<p>:- use_module( webcats(set_prodcone) ).<br>
+:- use_module( webcats(set_coprodcone) ).<br>
+:- use_module( webcats(set_eqcone) ).<br>
+:- use_module( webcats(set_coeqcone) ).<br>
+:- use_module( webcats(set_iobj) ).<br>
+:- use_module( webcats(set_tobj) ).</p>
+<p>:- use_module( webcats(constant_map) ).</p>
+<p>:- use_module( general(output) ).<br>
+:- use_module( pet(pet_runtime) ).<br>
+:- use_module( webcats(colours) ).<br>
+:- use_module( general(gen_timestamp) ).<br>
+:- use_module( webcats(page_bits) ).</p>
+<p>:- use_module( webcats(set_iobj_is_initial_and_universal_page) ).<br>
+:- use_module( webcats(set_tobj_is_terminal_and_universal_page) ).<br>
+:- use_module( webcats(set_prod_is_universal_page) ).<br>
+:- use_module( webcats(set_prod_is_nonunique_page) ).<br>
+:- use_module( webcats(set_prod_is_terminal_page) ).<br>
+:- use_module( webcats(set_prod_nlab_page) ).<br>
+:- use_module( webcats(set_coprod_is_universal_page) ).<br>
+:- use_module( webcats(set_eq_page) ).<br>
+:- use_module( webcats(set_coeq_page) ).<br>
+:- use_module( webcats(set_ternary_product_page) ).<br>
+:- use_module( webcats(set_ternary_coproduct_page) ).<br>
+:- use_module( webcats(set_pullback_page) ).<br>
+:- use_module( webcats(set_pushout_page) ).<br>
+:- use_module( webcats(set_limit_page) ).<br>
+:- use_module( webcats(set_colimit_page) ).<br>
+:- use_module( webcats(set_exp_is_universal_page) ).</p>
+<p>:- use_module(library(http/json)).</p>
+</blockquote>
+
+
+
+<a name="498171984"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/233322-practice%3A%20communication/topic/Category-Theory%20Calculation%20Server/near/498171984" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233322-practice.3A-communication/topic/Category-Theory.20Calculation.20Server.html#498171984">(Feb 06 2025 at 17:13)</a>:</h4>
+<p>Wow! That is a big program!</p>
+
+
+
+<a name="498172367"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/233322-practice%3A%20communication/topic/Category-Theory%20Calculation%20Server/near/498172367" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233322-practice.3A-communication/topic/Category-Theory.20Calculation.20Server.html#498172367">(Feb 06 2025 at 17:15)</a>:</h4>
+<p>My best suggestion is to encourage some students to play with it to see if it helps them find and understand examples.</p>
+
+
+
+<a name="499248200"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/233322-practice%3A%20communication/topic/Category-Theory%20Calculation%20Server/near/499248200" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jocelyn Ireson-Paine <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233322-practice.3A-communication/topic/Category-Theory.20Calculation.20Server.html#499248200">(Feb 12 2025 at 14:29)</a>:</h4>
+<p>I don't have students. I'm not at a university: the program is a spare-time effort. I always wanted to get it funded and established, so that I could work on it more, making it robust enough to withstand students bashing away — and because it would fit my skills and interests better than the stuff I currently do to earn money — but I never managed that. Hence the downtime, erratic guestbook, non-working exponential object, and so on.</p>
+<p>John Baez once suggested augmenting it to handle categories that behave very differently from Set (*). That wouldn't be too hard structurally, as the code is functorial in nature. So I could write a new functor from diagrams, plug in definitions for (co)product and (co)equaliser, and do the graphic design for picturing whatever kind of entities make up the new category. It would be interesting to see whether the resulting demonstrations would help users understand the difference between phenomena that are common to all categories from those unique to Set or Set-like ones.</p>
+<p>(*)  Indeed, this is what the original sheaf-semantics code did, calculating limits in a category of objects that were, in essence, sets of behaviours represented as Prolog clauses. No Set in sight.</p>
+
+
+
+<a name="499254416"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/233322-practice%3A%20communication/topic/Category-Theory%20Calculation%20Server/near/499254416" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233322-practice.3A-communication/topic/Category-Theory.20Calculation.20Server.html#499254416">(Feb 12 2025 at 14:56)</a>:</h4>
+<p>They don't have to be <em>your</em> students, they just need to be learning CT. Perhaps someone reading this who happens to be teaching a course this semester could pass it on?<br>
+By the way, what country are you based in? Someone local to you might have some idea of an avenue for you to get a job in the direction you would like :')</p>
+
+
+
+<a name="520298004"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/233322-practice%3A%20communication/topic/Category-Theory%20Calculation%20Server/near/520298004" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric M Downes <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233322-practice.3A-communication/topic/Category-Theory.20Calculation.20Server.html#520298004">(May 25 2025 at 14:40)</a>:</h4>
+<p>This is a very exciting idea <span class="user-mention" data-user-id="278729">@Jocelyn Ireson-Paine</span> -- I am no prolog expert but I think I can use this for a project I am working on, or at least try, and would be happy to contribute code to address limitations, as I encounter them.  Is this open-sourced anywhere that others can contribute, like on github or gitlab?</p>
+
+
+
+<a name="522644857"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/233322-practice%3A%20communication/topic/Category-Theory%20Calculation%20Server/near/522644857" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jocelyn Ireson-Paine <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233322-practice.3A-communication/topic/Category-Theory.20Calculation.20Server.html#522644857">(Jun 05 2025 at 18:00)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/channel/233322-practice.3A-communication/topic/Category-Theory.20Calculation.20Server/near/499254416">said</a>:</p>
+<blockquote>
+<p>They don't have to be <em>your</em> students, they just need to be learning CT. Perhaps someone reading this who happens to be teaching a course this semester could pass it on?<br>
+By the way, what country are you based in? Someone local to you might have some idea of an avenue for you to get a job in the direction you would like :')</p>
+</blockquote>
+<p>I'm in the UK. Trying to survive amidst the constantly rising prices and an economy wrecked by Brexit and Boris Johnson.</p>
+
+
+
+<a name="522646660"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/233322-practice%3A%20communication/topic/Category-Theory%20Calculation%20Server/near/522646660" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jocelyn Ireson-Paine <a href="https://mattecapu.github.io/ct-zulip-archive/stream/233322-practice.3A-communication/topic/Category-Theory.20Calculation.20Server.html#522646660">(Jun 05 2025 at 18:11)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="280788">Eric M Downes</span> <a href="#narrow/channel/233322-practice.3A-communication/topic/Category-Theory.20Calculation.20Server/near/520298004">said</a>:</p>
+<blockquote>
+<p>This is a very exciting idea <span class="user-mention silent" data-user-id="278729">Jocelyn Ireson-Paine</span> -- I am no prolog expert but I think I can use this for a project I am working on, or at least try, and would be happy to contribute code to address limitations, as I encounter them.  Is this open-sourced anywhere that others can contribute, like on github or gitlab?</p>
+</blockquote>
+<p>Hi Eric, and thanks. It isn't open-sourced. I would love to, but -- in the state the UK economy is in nowadays -- I need to keep control of the code until I can get some advantage from it. It's a matter of survival these days, with living costs going up all the time. I put a lot of effort into that code and the diagrams and texts, and I want to recoup that. Early admirers were indeed admiring, but I never managed to find anyone who liked it enough to want to fund it. Likewise for the more recent stuff with sheaves and JavaScript. Part of it, actually, would have been a project in depicting category theory as art, but the &lt;obscenity&gt; UK universities charge so much for art degrees that I couldn't even get started on that.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

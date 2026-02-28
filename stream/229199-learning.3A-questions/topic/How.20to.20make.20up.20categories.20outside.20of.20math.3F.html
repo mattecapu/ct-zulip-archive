@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>How to make up categories outside of math? · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html">How to make up categories outside of math?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="471128524"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471128524" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471128524">(Sep 18 2024 at 00:21)</a>:</h4>
+<p>Years ago Bartosz Milewski told me "Categories are about composition." Even going so far as to claim category theory "is how our mind works." This seemed way too general, but it's hard for me to avoid "running too far" with intuitions.</p>
+<p>After many years I came up with a few categories that I'll share, one for chess, one for an accordion, and one for drawing - that seem "small". However it's hard to do much with them outside of the context of their original subjects. I was hoping for feedback on whether the categories I'm making up can be manipulated with category theory in interesting ways.</p>
+<p>Chess games as a category:</p>
+<p>Chess games are notated in an "algebraic notation" ( <a href="https://en.wikipedia.org/wiki/Algebraic_notation_(chess)">https://en.wikipedia.org/wiki/Algebraic_notation_(chess)</a> ). For example the Italian game, an opening in chess, is notated:</p>
+<ol>
+<li>e4 e5</li>
+<li>Nf3 Nc6</li>
+<li>Bc4</li>
+</ol>
+<p>If board states are objects, and arrows are allowed moves (plus an arrow for "nobody has moved yet" to stand for the identity) then I believe the above moves are a morphism in a category whose objects are valid chess positions.</p>
+<p>Here's a way I've tried to explore this. If I forget most of the rules of chess, who alternates turns, how pieces capture, etc. But keep how individual pieces are allowed to move, then all a single piece cares about are which squares it can move to.</p>
+<p>So in following game of Kasporav vs Topalov, If I apply an "only White Queen moves" Functor,</p>
+<p>The following below transforms...</p>
+<ol>
+<li>e4 d6 2. d4 Nf6 3. Nc3 g6 4. Be3 Bg7 5. Qd2 c6 6. f3 b5</li>
+<li>Nge2 Nbd7 8. Bh6 Bxh6 9. Qxh6 Bb7 10. a3 e5 11. O-O-O Qe7</li>
+<li>Kb1 a6 13. Nc1 O-O-O 14. Nb3 exd4 15. Rxd4 c5 16. Rd1 Nb6</li>
+<li>g3 Kb8 18. Na5 Ba8 19. Bh3 d5 20. Qf4+ Ka7 21. Rhe1 d4</li>
+<li>Nd5 Nbxd5 23. exd5 Qd6 24. Rxd4 cxd4 25. Re7+ Kb6</li>
+<li>Qxd4+ Kxa5 27. b4+ Ka4 28. Qc3 Qxd5 29. Ra7 Bb7 30. Rxb7<br>
+Qc4 31. Qxf6 Kxa3 32. Qxa6+ Kxb4 33. c3+ Kxc3 34. Qa1+ Kd2</li>
+<li>Qb2+ Kd1 36. Bf1 Rd2 37. Rd7 Rxd7 38. Bxc4 bxc4 39. Qxh8<br>
+Rd3 40. Qa8 c3 41. Qa4+ Ke1 42. f4 f5 43. Kc1 Rd2 44. Qa7 1-0</li>
+</ol>
+<p>into...</p>
+<p>Qd2 Qxh6 Qf4+ Qxd4+ Qc3 Qxf6 Qxa6+ Qa1+ Qb2+ Qxh8 Qa8 Qa4+ Qa7</p>
+<p>A history of the queens moves. To me this reads like, Qd2 is really a morphism <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mi>u</mi><mi>e</mi><mi>e</mi><mi>n</mi><mo>:</mo><mi>d</mi><mn>1</mn><mo>→</mo><mi>d</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">Queen : d1 \rightarrow d2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span><span class="mord mathnormal">u</span><span class="mord mathnormal">ee</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mord">2</span></span></span></span>, and the above is a chain of morphisms between chess squares:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>d</mi><mn>1</mn><mo>→</mo><mi>d</mi><mn>2</mn><mo>→</mo><mi>h</mi><mn>6</mn><mo>→</mo><mi>f</mi><mn>4</mn><mo>→</mo><mi>d</mi><mn>4</mn><mo>→</mo><mi>c</mi><mn>3</mn><mo>→</mo><mi>f</mi><mn>6</mn><mo>→</mo><mi>a</mi><mn>6</mn><mo>→</mo><mi>a</mi><mn>1</mn><mo>→</mo><mi>b</mi><mn>2</mn><mo>→</mo><mi>h</mi><mn>8</mn><mo>→</mo><mi>a</mi><mn>8</mn><mo>→</mo><mi>a</mi><mn>4</mn><mo>→</mo><mi>a</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">d1 \rightarrow d2 \rightarrow h6 \rightarrow f4 \rightarrow d4 \rightarrow c3 \rightarrow f6 \rightarrow a6 \rightarrow a1 \rightarrow b2 \rightarrow h8 \rightarrow a8 \rightarrow a4 \rightarrow a7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mord">6</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord">4</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mord">4</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord mathnormal">c</span><span class="mord">3</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord">6</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord mathnormal">a</span><span class="mord">6</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord mathnormal">a</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mord">8</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord mathnormal">a</span><span class="mord">8</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord mathnormal">a</span><span class="mord">4</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord mathnormal">a</span><span class="mord">7</span></span></span></span></span></p>
+<p>With Q being the arrow.</p>
+<p>I think this is just a preorder, a queen's basic movement can either move between two squares or it can't.</p>
+<p>A category for drawing:</p>
+<p>I had been trying to draw for years and a common piece of advice was to conceive of your drawings as being composed of simple forms, like cylinders spheres and boxes. Phrasing this categorically seemed possible but beside the point - most of my ideas here gave the impression category theory could model drawing by virtue of how extremely expressive some categories are, like Set.</p>
+<p>But I liked how Category theory had arrows, and diagrams, I really wanted to think of these as drawings in a very verbatim way.</p>
+<p>An art teacher of mine, Joshua Jacobo, introduced an idea that gave me an excuse to do exactly that. He has very specific ideas of what traditional drawing is supposed to be.</p>
+<p>To him, figures are composed of surfaces, the surfaces have boundaries on critical structural curves, these structural curves are composed of many simple C curves that you can chain together on well chosen points.</p>
+<p>This was perfect! If I could find a category where objects were points, morphisms were curves, and surfaces were some higher dimensional gadget, then I'd have a category whose diagrams were drawings in this sense defined by Jacobo.</p>
+<p>After sniffing around online, I found out about Moore path categories (<a href="https://ncatlab.org/nlab/show/Moore+path+category">https://ncatlab.org/nlab/show/Moore+path+category</a>) these seemed to do exactly what I wanted. My surfaces are 2-morphisms!</p>
+<p>This was very exciting to me, even the interchange law had a straightforward interpretation. If I have four "squares" that share curves horizontally and vertically, then "erasing" horizontal lines and vertical lines gives the same result as "erasing" vertical lines and then horizontal lines.</p>
+<p>This was a much easier 2-category to wrap my head around than the usual 2-category of small categories.</p>
+<p>An accordion category:<br>
+This idea is newer, but I believe is essentially sound. There is a variant of an accordion called a "Chromatic button accordion" where the buttons on the melody side are arranged in a hexagonal grid.</p>
+<p>Moving one dimension on this grid increase the note by the same number of half steps. On my accordion, a C System, moving down the long direction increases in three half-step units. Moving the diagonal to the left increases the half step by 1, and moving a diagonal to the right increases the half step by 2.</p>
+<p>These layouts are sometimes called "isomorphic", because no matter where you place your hand, provided it's "the same shape" your chord will have the same quality (minor, major, etc.)</p>
+<p>The Euler "Tonnetz"(<a href="https://en.wikipedia.org/wiki/Tonnetz">https://en.wikipedia.org/wiki/Tonnetz</a>) can be thought of as an isomorphic layout, it's used on an instrument called the Harmonetta (<a href="https://en.wikipedia.org/wiki/Harmonetta">https://en.wikipedia.org/wiki/Harmonetta</a>).</p>
+<p>Songs are typically written by concatenating chords, or individual notes. But to play the instrument you have to physically move your hand between the specific chords on the instrument.</p>
+<p>I want to think of the hand shapes and positions as objects, and the way I move my hand between these different positions, as the arrows, of an accordion category. I haven't made this formal, but intuitively it feels like  it can at least start as 5 Moore path categories glued together (one path for each finger).</p>
+<p>So this category would encode the physical act of playing. Then a Functor could map the specific objects to chords in music theory, and the hand motions to voice leading tracking transforms between these chords. So the physical act of playing the accordion gets mapped to morphisms like the Parallel chord transform, the Relative chord transform, and the Leading tone transform (explained in the Tonnetz article I linked).</p>
+<p>Are my ideas with these subjects reasonable? Or am I sticking category theory into places where it doesn't belong? There's a theme here of possible physical motions forming a sort of basic initial, but very strict category (I've been wondering if I should treat the way you can physically move chess pieces as a sort of strict initial category, for example).</p>
+<p>I've been thinking of my "physical movements" as a sort of "syntax" and I'm trying to embed these different activities into abstract semantic structures. Giving abstract meaning to physical tools. Is this at all a reasonable thing to do?</p>
+
+
+
+<a name="471134754"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471134754" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Egolf <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471134754">(Sep 18 2024 at 01:06)</a>:</h4>
+<p>I'm also interested in the question "How to make up categories outside of math?". A couple rough thoughts:</p>
+<ul>
+<li>It probably makes sense to first review how a system in question is studied without using categories.  This may give one a collection of ideas and procedures that are thought to be interesting or important in that context. Then, one could try to create a categorical setting that allows discussion of those ideas and procedures.</li>
+<li>One probably would like to aim for a category that isn't just any old category, but one that has some nice properties. For example, you might like your category to have "products" or "pullbacks", so that it supports some notions of "sticking things together". You might also want your category to be a monoidal category, so that - for example - you can study monoids in that setting. (It's amazing how many interesting things are secretly monoids of some flavour!)</li>
+<li>One way to get interesting categories is to view objects as "states" and a morphism as a "way" to go from one state to another. If you want a category that is not just a preorder, ideally there will be multiple ways to travel between a pair of states. For example, one could imagine a category where the objects are different "canvas states", and a morphism is a sequence of "drawing actions" that convert one canvas state to another. In general there will be many different ways to get from one canvas state to another.</li>
+</ul>
+<p>I'm sure there is a LOT that could be said about the process of moving from a system of interest to a categorical setting that allows for discussion of important concepts in that setting. On a broadly related topic, you may enjoy the book <a href="https://arxiv.org/abs/1803.05316">"Seven Sketches in Compositionality"</a>.</p>
+
+
+
+<a name="471135132"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471135132" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471135132">(Sep 18 2024 at 01:10)</a>:</h4>
+<blockquote>
+<p>An accordion category: this idea is newer, but I believe is essentially sound.</p>
+</blockquote>
+<p>Accordion.  Essentially <em>sound</em>.   <span aria-label="laughing" class="emoji emoji-1f606" role="img" title="laughing">:laughing:</span></p>
+
+
+
+<a name="471135552"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471135552" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471135552">(Sep 18 2024 at 01:14)</a>:</h4>
+<blockquote>
+<p>I want to think of the hand shapes and positions as objects, and the way I move my hand between these different positions, as the arrows, of an accordion category.</p>
+</blockquote>
+<p>Guerino Mazzola's book <em>The Topos of Music: Geometric Logic of Concepts, Theory, and Performance</em> is all about trying to use category theory in music, and he quite generally wants to develop categories of 'gestures', which could be many things, ranging from a hand gesture to a musical phrase.    From my limited readings, I find this book unsatisfying in terms of how much benefit he gets versus how much work he puts in.  (The book is 1335 pages long.)   But the descriptions of music and of category theory seem accurate to me.</p>
+
+
+
+<a name="471135998"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471135998" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471135998">(Sep 18 2024 at 01:18)</a>:</h4>
+<blockquote>
+<p>Are my ideas with these subjects reasonable? Or am I sticking category theory into places where it doesn't belong?</p>
+</blockquote>
+<p>They seem reasonable.   I've spent a lot of time trying to apply category theory to subjects ranging from topological quantum field theory to electrical circuits to chemistry to (most recently) software for epidemiological modeling.  From doing this, I think there are very many patterns in the world that we can describe with the help of category theory.  So to me the big question is: which subjects would most <em>benefit</em> from this sort of description?  What exactly am I hoping to achieve?</p>
+
+
+
+<a name="471136321"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471136321" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471136321">(Sep 18 2024 at 01:21)</a>:</h4>
+<p>If the main goal is to learn math and have fun, the stakes are fairly low and the range of topics one can apply category theory to is enormous.   This may be a good way to start!  Then as one gets better at this game, one may - or may not - decide to look for 'killer apps', where category theory helps to achieve something really impressive.</p>
+
+
+
+<a name="471136548"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471136548" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471136548">(Sep 18 2024 at 01:23)</a>:</h4>
+<p>Sometimes when you see "objects and arrows" and try to think of it as a category, what you're really seeing is a <a href="https://ncatlab.org/nlab/show/quiver">[[quiver]]</a>, and the only way to make it into a category is basically to generate the free category on that quiver since the arrows don't intrinsically have a notion of composition.  It seems to me this is the case with chess moves: you can't compose two <em>single</em> moves and get another move, so the arrows in a category have to be <em>sequences</em> of moves, which are the morphisms in the free category generated by the quiver of positions and single moves.</p>
+<p>There's nothing wrong with free categories, but sometimes when what you "really" have is a quiver, it's more useful to work directly with that.</p>
+
+
+
+<a name="471137784"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471137784" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471137784">(Sep 18 2024 at 01:33)</a>:</h4>
+<p>Btw, I think if you want to see nice applications of high-powered math to music I recommend things like Tymoczko's <em>A Geometry of Music</em> and Crans, Fiore and Satyarenda's <a href="http://www-personal.umd.umich.edu/~tmfiore/1/mathmusiccolloquiumslides.pdf">Group actions in neo-Riemannian music theory</a>.  These bring in orbifolds and group theory.   And I think they make a broader point: if your goal is to understand something using math, it can be very limiting to only use category theory.   I prefer to let the subject tell me what math it wants me to use.  </p>
+<p>On the other hand if your main goal is to apply category theory, and you don't really care what you're applying it to, it pays to run around and try applying it to everything you can, and get a sense for what works.</p>
+<p>It's sort of like the difference between "I want to fix this table with wobbly legs" and "I've got a hammer and I want to use it for something".</p>
+
+
+
+<a name="471138125"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471138125" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471138125">(Sep 18 2024 at 01:36)</a>:</h4>
+<p>People tend to say "when all you have is a hammer everything looks like a nail" as if it's a bad thing to be tool-centered.   But in math it can actually be good to run around with your latest tool and see what it can do.   Just don't break anything.  <span aria-label="wink" class="emoji emoji-1f609" role="img" title="wink">:wink:</span></p>
+
+
+
+<a name="471140140"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471140140" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471140140">(Sep 18 2024 at 01:55)</a>:</h4>
+<p>As it stands, the subject where I feel most successful using Category Theory in surprising ways is programming, and I'm a bit embarrassed about this, because I have a math undergrad.</p>
+<p>So I'm trying to use CT creatively, with purpose on various things I find interesting, beyond programming, but like you said it's hard.</p>
+<p>The Moore Path category for example, I think it's about as good of a model for drawing as one could hope from CT. But now what? It's hard to find stuff written about it, and if I really wanted to use these ideas for art, you're right it seems like a lot more is "closer to the ground" in differential geometry.</p>
+<p>But in programming, all I have to do is slap a Monad on something and now I can pretend my computer exists in a multiverse.</p>
+<p>So, which widgets in category theory am I not taking for granted, that makes it obvious it'll be hard to get very far in a Moore Path Category - if my goal is to model drawing with it?</p>
+<p>Does that make sense? It's the sort of question that answers itself as I gain more experience, but until I get that experience some applications of applied category appear random (to me as a beginner).</p>
+
+
+
+<a name="471140724"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471140724" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471140724">(Sep 18 2024 at 02:00)</a>:</h4>
+<p>I like David's answer with respect to that last question.</p>
+<p>I guess I am trying to gain experience using a hammer.</p>
+
+
+
+<a name="471140842"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471140842" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471140842">(Sep 18 2024 at 02:00)</a>:</h4>
+<p>Just that slogan "Category Theory models composition" is so punchy, it's hard for me to not try to apply that to literally everything <span aria-label="joy" class="emoji emoji-1f602" role="img" title="joy">:joy:</span></p>
+
+
+
+<a name="471140999"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471140999" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471140999">(Sep 18 2024 at 02:01)</a>:</h4>
+<p>I have more dramatic dreams than what I shared, but I'm trying to be a responsible adult and not move forward with claims I can't prove</p>
+
+
+
+<a name="471142273"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471142273" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471142273">(Sep 18 2024 at 02:10)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F/near/471136548">said</a>:</p>
+<blockquote>
+<p>Sometimes when you see "objects and arrows" and try to think of it as a category, what you're really seeing is a <a href="https://ncatlab.org/nlab/show/quiver">[[quiver]]</a>, and the only way to make it into a category is basically to generate the free category on that quiver since the arrows don't intrinsically have a notion of composition.  It seems to me this is the case with chess moves: you can't compose two <em>single</em> moves and get another move, so the arrows in a category have to be <em>sequences</em> of moves, which are the morphisms in the free category generated by the quiver of positions and single moves.</p>
+<p>There's nothing wrong with free categories, but sometimes when what you "really" have is a quiver, it's more useful to work directly with that.</p>
+</blockquote>
+<p>You know I think I noticed this technical issue once and then decided the arrows were "games" rather than moves. But was unnerved by the difference between individual moves and whole games. Whether you could start a game from a random position, etc. </p>
+<p>I'm embarrassed I forgot how forced my thinking felt here.</p>
+<p>But if you are okay with this, then an opening book of games would have "openings" with branching moves organized into more specific sections.</p>
+<p>But you're right all the levels here feel uncomfortable and forced, thanks for pointing out I should probably think about quivers if I really am concerned with individual moves.</p>
+
+
+
+<a name="471142474"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471142474" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471142474">(Sep 18 2024 at 02:11)</a>:</h4>
+<blockquote>
+<p>The Moore Path category for example, I think it's about as good of a model for drawing as one could hope from CT. But now what? It's hard to find stuff written about it, and if I really wanted to use these ideas for art, you're right it seems like a lot more is "closer to the ground" in differential geometry.</p>
+</blockquote>
+<p>Moore paths were invented for use in homotopy theory.  There are other closely related categories, 2-categories and bicategories whose 1-morphisms are paths, or equivalence classes of paths - perhaps <em>smooth</em> paths if we're doing differential geometry.  A couple are discussed in my paper with John Huerta, <a href="https://arxiv.org/abs/1003.4485">An invitation to higher gauge theory</a>, and the papers we discuss there.   The description on page 5 should be pretty readable.</p>
+<p>So there's a lot to say about this.   It would be hard to catch up with all this stuff if you were trying to do gauge theory.   But for a new application, like drawing, it could be a lot easier.</p>
+
+
+
+<a name="471143733"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471143733" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471143733">(Sep 18 2024 at 02:20)</a>:</h4>
+<p>The concept of 'lazy path' discussed on page 5 might actually be nice for drawing, because it's a path that's smooth (infinitely differentiable) and constant in a neighborhood of each end of the path - as if your pen started and ended at rest, and moved smoothly.</p>
+
+
+
+<a name="471144691"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471144691" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471144691">(Sep 18 2024 at 02:26)</a>:</h4>
+<p>It's on my to-do list to learn Homotopy theory, I got Fomenko's book because the illustrations are so beautiful.</p>
+<p>Thank you for the suggestion to look into lazy paths, I'll read up on them!</p>
+<p>Here's something that I think I'm doing wrong, or am deeply confused about.</p>
+<p>If I have two paths that share ends, but aren't strictly equal, I want to think of them as different lines. Like the top and bottom of an eye lid (to oversimplify). But if they're both smooth, then there's probably a smooth Homotopy taking one to the other - so they're both "the same" relative to theory about smooth lines. I don't like that.</p>
+<p>So in all my categories above I was trying to make sure all the arrows were strictly different. That is, in my mind, I'm avoiding Homotopy theory.</p>
+<p>I think this is deeply misguided somehow, but I'm not sure in what way.</p>
+
+
+
+<a name="471152034"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471152034" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471152034">(Sep 18 2024 at 03:08)</a>:</h4>
+<p>You don't need to mod out by smooth homotopies to get a category where the objects are points and the morphisms are piecewise smooth Moore path.</p>
+
+
+
+<a name="471152202"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471152202" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471152202">(Sep 18 2024 at 03:09)</a>:</h4>
+<p>So, paths that look different will give different morphisms in this category.</p>
+
+
+
+<a name="471152637"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471152637" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471152637">(Sep 18 2024 at 03:13)</a>:</h4>
+<p>But should I be in the habit of modding out by smooth homotopies if I want to talk about smooth stuff?</p>
+<p>Like how we're okay rotating triangles when we talk about angles?</p>
+<p>I guess I'm asking if I'm making my life way harder in a subtle way by avoiding equivalence classes?</p>
+
+
+
+<a name="471153273"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471153273" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471153273">(Sep 18 2024 at 03:19)</a>:</h4>
+<p>I looked for Moore paths to avoid Homotopy theory, but the Homotopy theorists made them up to do Homotopy theory. So I think I'm confused somewhere, and I'm trying to find out where.</p>
+
+
+
+<a name="471153280"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471153280" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471153280">(Sep 18 2024 at 03:19)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277352">Alex Kreitzberg</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F/near/471152637">said</a>:</p>
+<blockquote>
+<p>But should I be in the habit of modding out by smooth homotopies if I want to talk about smooth stuff?</p>
+</blockquote>
+<p>You should be in the habit of doing what you need to for the task at hand.  If we're trying to describe connections in gauge theory, we definitely <em>don't</em> want to use paths mod all smooth homotopies - see my paper.   But if you're trying to describe 'flat' conectoins you should.</p>
+
+
+
+<a name="471153369"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471153369" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471153369">(Sep 18 2024 at 03:20)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277352">Alex Kreitzberg</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F/near/471153273">said</a>:</p>
+<blockquote>
+<p>I looked for Moore paths to avoid Homotopy theory, but the Homotopy theorists made them up to do Homotopy theory. So I think I'm confused somewhere, and I'm trying to find out where.</p>
+</blockquote>
+<p>Homotopy theorists, or at least Moore, didn't want to be forced to take homotopy classes of paths just to get a category.</p>
+
+
+
+<a name="471153463"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471153463" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471153463">(Sep 18 2024 at 03:20)</a>:</h4>
+<p>Alright than I guess we had the same goal XD</p>
+
+
+
+<a name="471153464"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471153464" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471153464">(Sep 18 2024 at 03:20)</a>:</h4>
+<p>Just because you do homotopy theory for a living doesn't mean you always want to mod out by homotopies all the time.</p>
+
+
+
+<a name="471153518"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/471153518" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#471153518">(Sep 18 2024 at 03:20)</a>:</h4>
+<p>I'll stop overthinking this point then, thank you for your time.</p>
+
+
+
+<a name="485211860"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/How%20to%20make%20up%20categories%20outside%20of%20math%3F/near/485211860" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Posina Venkata Rayudu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/How.20to.20make.20up.20categories.20outside.20of.20math.3F.html#485211860">(Nov 30 2024 at 09:37)</a>:</h4>
+<p><span class="user-mention" data-user-id="277352">@Alex Kreitzberg</span> The claim "category theory is how our mind works" is kind of sort of OK if we associate concepts with the mind and category theory as involving concepts, along with their objectifications.</p>
+<p>Pop Quiz: Divide-and-rule works, but why?<br>
+Hint: It involves categories and morphisms, no more technical than any that you'd actually encounter in Lawvere &amp; Schanuel, Conceptual Mathematics.<br>
+Prize: I'll solve any exercise of your choice from Lawvere &amp; Schanuel, <a href="https://conceptualmathematics.wordpress.com/wp-content/uploads/2013/02/conceptual-mathematics-2.pdf">Conceptual Mathematics</a>, or Lawvere &amp; Rosebrugh, <a href="https://conceptualmathematics.wordpress.com/wp-content/uploads/2013/02/sets-for-mathematics.pdf">Sets for Mathematics</a>.<br>
+P.S. Identities constrict humanity (cf. Helen Vendler).</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>What exactly is a sylleptic monoidal 2-category? · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html">What exactly is a sylleptic monoidal 2-category?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="492644829"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20exactly%20is%20a%20sylleptic%20monoidal%202-category%3F/near/492644829" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Keith Elliott Peterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html#492644829">(Jan 09 2025 at 06:43)</a>:</h4>
+<p>The nlab page (<a href="https://ncatlab.org/nlab/show/sylleptic+monoidal+2-category">https://ncatlab.org/nlab/show/sylleptic+monoidal+2-category</a>) is rather sparse.</p>
+<p>What does it mean for a transformation to be "in-between" a symmetry and a braiding? What kind of generalized string (surface maybe?) diagrams do they form? What dimension does it naturally occur in (if we consider braidings to occur in 3D space, and symmetries to occur in 4D space)? To my brain used to 3D Euclidean space, the idea throws me a loop. Can a syllepsis be visualized?</p>
+<p>Generalizing up, is there a kind of monoidal 4-category that has transforms that are in between a syllepsis and a braiding, or are they in between being a syllepsis and a symmetry? Is this an open question?</p>
+
+
+
+<a name="492659177"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20exactly%20is%20a%20sylleptic%20monoidal%202-category%3F/near/492659177" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html#492659177">(Jan 09 2025 at 08:15)</a>:</h4>
+<p>Larry Breen, James Dolan and I thought about up these ideas as part of the "periodic table of n-categories".    You can definitely visualize what's going on if you work at it.</p>
+<p>The reason braided monoidal categories are relevant to 3d space is that in 3d space one piece of string can cross another in two different ways: over or under.   These are the braiding</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mrow><mi>x</mi><mo separator="true">,</mo><mi>y</mi></mrow></msub><mo>:</mo><mi>x</mi><mo>⊗</mo><mi>y</mi><mo>→</mo><mi>y</mi><mo>⊗</mo><mi>x</mi></mrow><annotation encoding="application/x-tex"> B_{x,y} : x \otimes y \to y \otimes x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0502em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span></p>
+<p>and the inverse braiding</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>B</mi><mrow><mi>y</mi><mo separator="true">,</mo><mi>x</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo>:</mo><mi>x</mi><mo>⊗</mo><mi>y</mi><mo>→</mo><mi>y</mi><mo>⊗</mo><mi>x</mi></mrow><annotation encoding="application/x-tex"> B^{-1}_{y,x} :  x \otimes y \to y \otimes x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1972em;vertical-align:-0.3831em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-2.453em;margin-left:-0.0502em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">x</span></span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3831em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span></p>
+<p>In 4d space this distinction goes away because there's enough room to continuously deform one of the crossings to the other.  Thus, we get symmetric monoidal categories, where</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mrow><mi>x</mi><mo separator="true">,</mo><mi>y</mi></mrow></msub><mo>=</mo><msubsup><mi>B</mi><mrow><mi>y</mi><mo separator="true">,</mo><mi>x</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msubsup></mrow><annotation encoding="application/x-tex"> B_{x,y} =  B^{-1}_{y,x} </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0502em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1972em;vertical-align:-0.3831em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-2.453em;margin-left:-0.0502em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">x</span></span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3831em;"><span></span></span></span></span></span></span></span></span></span></p>
+<p>However, a 2-categorical viewpoint goes deeper.   In 4d space there are <em>two fundamentally different ways</em> to continuously deform one of the crossings to the other: we can push one of the strings a bit 'up' into the 4th dimension, or 'down'.    Either deformation gives an <em>2-isomorphism</em> </p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mrow><mi>x</mi><mo separator="true">,</mo><mi>y</mi></mrow></msub><mo><mover><mo><mo>⇒</mo></mo><mo lspace="0em" rspace="0em">∼</mo></mover></mo><msubsup><mi>B</mi><mrow><mi>y</mi><mo separator="true">,</mo><mi>x</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msubsup></mrow><annotation encoding="application/x-tex"> B_{x,y} \stackrel{\sim}{\Rightarrow}  B^{-1}_{y,x} </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.2098em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0502em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mop op-limits"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9237em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop">⇒</span></span></span><span style="top:-3.5669em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mrel mtight">∼</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1972em;vertical-align:-0.3831em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-2.453em;margin-left:-0.0502em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">x</span></span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3831em;"><span></span></span></span></span></span></span></span></span></span></p>
+<p>If we pick one of these, we can call it the <em>syllepsis</em>.</p>
+
+
+
+<a name="492659850"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20exactly%20is%20a%20sylleptic%20monoidal%202-category%3F/near/492659850" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html#492659850">(Jan 09 2025 at 08:19)</a>:</h4>
+<p>In 4d space the syllepsis and the 'inverse syllepsis' are different.  When we go two 4d space there is a 3-isomorphism between them... but in fact there are two.   And so on: the pattern keeps repeating itself.   This is a way to think about why the periodic table has the zig-zag shape it does<a href="/user_uploads/21317/fKLLTtHQKhntnvSoDWDDpQQU/periodic_table.jpg">:</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/fKLLTtHQKhntnvSoDWDDpQQU/periodic_table.jpg" title=":"><img data-original-dimensions="829x769" src="/user_uploads/thumbnail/21317/fKLLTtHQKhntnvSoDWDDpQQU/periodic_table.jpg/840x560.webp"></a></div>
+
+
+
+<a name="492659955"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20exactly%20is%20a%20sylleptic%20monoidal%202-category%3F/near/492659955" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html#492659955">(Jan 09 2025 at 08:20)</a>:</h4>
+<p>This chart shows just 3 columns, but there are infinitely many columns and the pattern keeps going on.</p>
+
+
+
+<a name="492787979"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20exactly%20is%20a%20sylleptic%20monoidal%202-category%3F/near/492787979" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html#492787979">(Jan 09 2025 at 18:15)</a>:</h4>
+<p>In the last paragraph did you mean a 3-isomorphism when we go to 5d space?</p>
+
+
+
+<a name="492812237"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20exactly%20is%20a%20sylleptic%20monoidal%202-category%3F/near/492812237" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Keith Elliott Peterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html#492812237">(Jan 09 2025 at 20:29)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F/near/492659177">said</a>:</p>
+<blockquote>
+<p>Larry Breen, James Dolan and I thought about up these ideas as part of the "periodic table of n-categories".    You can definitely visualize what's going on if you work at it.</p>
+<p>[...]</p>
+<p>If we pick one of these, we can call it the <em>syllepsis</em>.</p>
+</blockquote>
+<p>Why was the name <em>syllepsis</em> chosen?</p>
+
+
+
+<a name="492822411"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20exactly%20is%20a%20sylleptic%20monoidal%202-category%3F/near/492822411" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html#492822411">(Jan 09 2025 at 21:32)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="609515">Kevin Carlson</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F/near/492787979">said</a>:</p>
+<blockquote>
+<p>In the last paragraph did you mean a 3-isomorphism when we go to 5d space?</p>
+</blockquote>
+<p>Yes, I seem to have been falling asleep: "When we go two 4d space" should have been "When we go to 5d space".</p>
+
+
+
+<a name="492824005"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20exactly%20is%20a%20sylleptic%20monoidal%202-category%3F/near/492824005" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html#492824005">(Jan 09 2025 at 21:42)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="389450">Keith Elliott Peterson</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F/near/492812237">said</a>:</p>
+<blockquote>
+<p>Why was the name <em>syllepsis</em> chosen?</p>
+</blockquote>
+<p>In our <a href="https://arxiv.org/abs/q-alg/9503002">original paper introducing the periodic table of n-categories</a>, James and I called them "weakly involutory 2-categories".   But "involution" means too many things, so later <a href="https://www.sciencedirect.com/science/article/pii/S0001870897916492?via%3Dihub">Ross Street</a>, who has a way with words, called them "sylleptic monoidal 2-categories".   </p>
+<p>Syllepsis is a <a href="https://www.merriam-webster.com/dictionary/syllepsis">real word</a> that has something to do with the number 2.   It comes from the Greek word <em>syllēpsis</em>, which means "a putting together".  But I don't think either of these really justify its new use in math.  Probably the fact that it sounds like "symmetric" is the key here: in the category column of the periodic table we have</p>
+<p>monoidal, braided, symmetric</p>
+<p>while in the 2-category column we have</p>
+<p>monoidal, braided, sylleptic, symmetric.</p>
+<p>I'm glad to see Wikipedia has <a href="https://en.wikipedia.org/wiki/Zeugma_and_syllepsis">an article distinguishing syllepsis from zeugma</a>.  You wouldn't want to get those mixed up!  <span aria-label="crazy" class="emoji emoji-1f61c" role="img" title="crazy">:crazy:</span></p>
+
+
+
+<a name="492872755"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20exactly%20is%20a%20sylleptic%20monoidal%202-category%3F/near/492872755" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html#492872755">(Jan 10 2025 at 04:02)</a>:</h4>
+<p>I wouldn't be surprised if Ross consulted with Max Kelly on the Greek...</p>
+
+
+
+<a name="493002926"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20exactly%20is%20a%20sylleptic%20monoidal%202-category%3F/near/493002926" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html#493002926">(Jan 10 2025 at 18:21)</a>:</h4>
+<p>Is there a name for the new kind of monoidal tricategory that appears between sylleptic and symmetric yet? Perhaps it should be zeugmatic, to be rather impishly indifferent to the actual meaning of the words.</p>
+
+
+
+<a name="493003444"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20exactly%20is%20a%20sylleptic%20monoidal%202-category%3F/near/493003444" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html#493003444">(Jan 10 2025 at 18:25)</a>:</h4>
+<p>At that point I'd probably just start saying "<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mn>4</mn></msub></mrow><annotation encoding="application/x-tex">E_4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>".</p>
+
+
+
+<a name="493005234"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20exactly%20is%20a%20sylleptic%20monoidal%202-category%3F/near/493005234" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html#493005234">(Jan 10 2025 at 18:36)</a>:</h4>
+<p>I would say "quadruply monoidal", but even this doesn't scale well.   However, I <em>do</em> like the idea of using "zeugma" in mathematics: it's as scary as "syzygy" and "plethysm".   <span aria-label="smiling imp" class="emoji emoji-1f608" role="img" title="smiling imp">:smiling_imp:</span></p>
+
+
+
+<a name="493128280"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20exactly%20is%20a%20sylleptic%20monoidal%202-category%3F/near/493128280" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Keith Elliott Peterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html#493128280">(Jan 11 2025 at 21:19)</a>:</h4>
+<p>I think I will just stick with 4-tuply monoidal 3-category (assuming a "zeugma monoidal 3-category" is just 4-tuply monoidal 3-category, and a sylleptic monoidal 3-category is a 3-tuply monoidal 3-category).</p>
+<p>You can't make me learn Greek!</p>
+
+
+
+<a name="493128583"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20exactly%20is%20a%20sylleptic%20monoidal%202-category%3F/near/493128583" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html#493128583">(Jan 11 2025 at 21:24)</a>:</h4>
+<p>But you should at least say "zeugmatic" if you're going to use "zeugma" as an adjective.</p>
+
+
+
+<a name="493183836"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20exactly%20is%20a%20sylleptic%20monoidal%202-category%3F/near/493183836" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html#493183836">(Jan 12 2025 at 12:01)</a>:</h4>
+<p>"Zeugmoidal" <span aria-label="upside down" class="emoji emoji-1f643" role="img" title="upside down">:upside_down:</span></p>
+
+
+
+<a name="493234248"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20exactly%20is%20a%20sylleptic%20monoidal%202-category%3F/near/493234248" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html#493234248">(Jan 13 2025 at 00:04)</a>:</h4>
+<p>Gorgeous!</p>
+
+
+
+<a name="495413080"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20exactly%20is%20a%20sylleptic%20monoidal%202-category%3F/near/495413080" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Keith Elliott Peterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20exactly.20is.20a.20sylleptic.20monoidal.202-category.3F.html#495413080">(Jan 23 2025 at 02:49)</a>:</h4>
+<p>From <a href="#narrow/channel/229451-meta.3A-off-topic/topic/Funny.20linguistic.20fact">Funny linguistic fact</a>, <strong><em>metathetic</em></strong> would be a good term, since it <strong><strong><em>is</em></strong></strong> about a kind of non-symmetric swapping.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

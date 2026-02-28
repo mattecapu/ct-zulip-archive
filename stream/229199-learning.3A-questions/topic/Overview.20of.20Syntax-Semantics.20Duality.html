@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Overview of Syntax-Semantics Duality · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html">Overview of Syntax-Semantics Duality</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="419872026"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419872026" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419872026">(Feb 05 2024 at 15:56)</a>:</h4>
+<p>I am currently learning about syntax-semantics duality and related concepts and I wanted to verify my understanding of the concepts as well as get a good overview of the subject.<br>
+Mainly, I want to find out how exactly syntax-semantics duality and the Computational Trinity relate. My understanding is: computational trinity = syntax-semantics duality (category &lt;-&gt; type theory) + Curry-Howard correspondence (type theory &lt;-&gt; logical system). Is this a good assessment of their relationship? Secondly, as I understand it, there is a plurality of both- that is, there isn't a single "THE Curry-Howard correspondence" or "THE syntax-semantics duality" and thus no "THE computational trinity". Instead, there exist multiple such correspondences, each one dealing with a particular class of categories, type theories, and logical systems. This can be stated in categorical language as having each main class of categories, type theories, and logical systems form categories, in which case there is then an adjunction between these corresponding categories. Is all this correct- if not, what did I get wrong, and if it is correct, is there any key detail I am overlooking?</p>
+
+
+
+<a name="419872280"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419872280" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419872280">(Feb 05 2024 at 15:57)</a>:</h4>
+<p>One additional question I have is: does the computational trinity always exist- that is, given any syntax-semantics duality, is it always possible to "complete the triangle" to get a full computational trinity? If not, what are the conditions on the classes involved? In addition, is the triangle of adjunctions formed between some category of categories, type theories, and logical systems in some computational trinity a commutative triangle? If so, then which adjunction is the composition of which other two? I was thinking that it's the adjunction between categories and logical systems which is given by composing the syntax-semantics duality adjunction between categories and type theories with the Curry-Howard adjunction between type theories and logical systems, but is this true/always true? Or is there more independence of the adjunctions (IE, perhaps there is a separate "syntax-semantics adjunction" between categories and logical systems independent of any mention of type theories?)</p>
+
+
+
+<a name="419883279"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419883279" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ralph Sarkis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419883279">(Feb 05 2024 at 16:42)</a>:</h4>
+<p>I don't know if you already stumbled upon <span class="user-mention" data-user-id="277318">@Ivan Di Liberti</span> 's <a href="https://arxiv.org/abs/2009.07320">thesis</a> but its introduction helped me clear up some fog (it is not exactly about computational trinity).</p>
+
+
+
+<a name="419895359"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419895359" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419895359">(Feb 05 2024 at 17:46)</a>:</h4>
+<p>The term "syntax–semantics duality" usually refers to some kind of connection (typically an adjunction or equivalence) between a (2-)category of "theories" and a (2-)category whose objects are the categories of models of such theories, e.g. Gabriel–Ulmer duality is referred to as a syntax–semantics duality between essentially algebraic theories and locally finitely presentable categories.</p>
+<p>This is of a different nature to the kind of correspondence described by the nLab page on the <a href="https://ncatlab.org/nlab/show/computational%20trilogy">[[computational trilogy]]</a> (which is not a standard term). There, the different components are all on the side of "syntax" (loosely speaking), and the distinction is primarily in the presentation (e.g. logic, type theory, category theory).</p>
+
+
+
+<a name="419895516"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419895516" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419895516">(Feb 05 2024 at 17:47)</a>:</h4>
+<p>To be honest, I think it's a little misleading that <a href="https://ncatlab.org/nlab/show/syntax-semantics%20duality">[[syntax-semantics duality]]</a> and <a href="https://ncatlab.org/nlab/show/computational%20trilogy">[[computational trilogy]]</a> are treated as "related concepts" on their nLab pages. They are only very loose related.</p>
+
+
+
+<a name="419896042"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419896042" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419896042">(Feb 05 2024 at 17:50)</a>:</h4>
+<p><em>The</em> Curry–Howard correspondence traditionally refers to a <a href="https://en.wikipedia.org/wiki/Curry%E2%80%93Howard_correspondence">specific correspondence</a>, but you do also see some people using it more generally. I think a better generic term is <a href="https://ncatlab.org/nlab/show/propositions%20as%20types">[[propositions as types]]</a>.</p>
+
+
+
+<a name="419896485"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419896485" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419896485">(Feb 05 2024 at 17:52)</a>:</h4>
+<blockquote>
+<p>One additional question I have is: does the computational trinity always exist- that is, given any syntax-semantics duality, is it always possible to "complete the triangle" to get a full computational trinity?</p>
+</blockquote>
+<p>The problem with this question is that "computational trinity" doesn't have a well-defined meaning. It's a series of analogies, some with precise statements, others simply giving an intuition (at least for the examples on the nLab page). However, one should certainly hope that any well-behaved type theory has a categorical interpretation (and a logic can be obtained essentially by throwing out the terms).</p>
+
+
+
+<a name="419896774"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419896774" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419896774">(Feb 05 2024 at 17:54)</a>:</h4>
+<p>I think the best way to understand these ideas is to read a textbook account that covers various examples, e.g. Lambek &amp; Scott's <em>Introduction to higher order categorical logic</em>, Crole's <em>Categories for Types</em>, etc.</p>
+
+
+
+<a name="419910160"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419910160" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419910160">(Feb 05 2024 at 19:13)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419895359">said</a>:</p>
+<blockquote>
+<p>This is of a different nature to the kind of correspondence described by the nLab page on the <a href="https://ncatlab.org/nlab/show/computational%20trilogy">[[computational trilogy]]</a> (which is not a standard term). There, the different components are all on the side of "syntax" (loosely speaking), and the distinction is primarily in the presentation (e.g. logic, type theory, category theory).</p>
+</blockquote>
+<p>I don't think I agree.  I would say that a computational trilogy is a sort of refinement of syntax/structure, where logic and type theory are two different faces of syntax, while category theory is semantic.</p>
+
+
+
+<a name="419914338"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419914338" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Madeleine Birchfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419914338">(Feb 05 2024 at 19:37)</a>:</h4>
+<p>I'm not sure there is much of a distinction between logic and type theory. </p>
+<p>Typed first order logic with equality can be defined as a dependent type theory with identity types; empty types; unit types; product types; disjunctions and existential quantifiers as HITs; types <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∏</mo><mrow><mi>y</mi><mo>:</mo><mi>A</mi></mrow></msub><mi>x</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\prod_{y:A} x = y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1858em;vertical-align:-0.4358em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∏</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1786em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span><span class="mrel mtight">:</span><span class="mord mathnormal mtight">A</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4358em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span> which say that an element <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>:</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">x:A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> of a type <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> is a center of contraction; dependent product types of propositions (i.e. types <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> with a family of witnesses <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>:</mo><msub><mo>∏</mo><mrow><mi>y</mi><mo>:</mo><mi>A</mi></mrow></msub><mi>x</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">p(x):\prod_{y:A} x = y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1858em;vertical-align:-0.4358em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∏</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1786em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">y</span><span class="mrel mtight">:</span><span class="mord mathnormal mtight">A</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4358em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span> that each element <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>:</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">x:A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> is a center of contraction), from which one can derive logical implication and negation; weak function extensionality, which says that dependent products of propositions are themselves propositions; and if needed, excluded middle and/or UIP. </p>
+<p>Typed higher order logic with equality can be defined as a dependent type theory with identity types, dependent sum types, dependent product types, weak function extensionality, a unit type, a Coquand universe of all propositions in the type theory, and if needed, excluded middle and/or UIP.</p>
+
+
+
+<a name="419917147"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419917147" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419917147">(Feb 05 2024 at 19:53)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419910160">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419895359">said</a>:</p>
+<blockquote>
+<p>This is of a different nature to the kind of correspondence described by the nLab page on the <a href="https://ncatlab.org/nlab/show/computational%20trilogy">[[computational trilogy]]</a> (which is not a standard term). There, the different components are all on the side of "syntax" (loosely speaking), and the distinction is primarily in the presentation (e.g. logic, type theory, category theory).</p>
+</blockquote>
+<p>I don't think I agree.  I would say that a computational trilogy is a sort of refinement of syntax/structure, where logic and type theory are two different faces of syntax, while category theory is semantic.</p>
+</blockquote>
+<p>Would you say that algebraic theories are semantic, then? My impression is that the general consensus is that algebraic theories are syntactic (albeit presentation-free) notions.</p>
+
+
+
+<a name="419917411"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419917411" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419917411">(Feb 05 2024 at 19:55)</a>:</h4>
+<p>(To be honest, I feel the community is not exactly unanimous on exactly where the split between syntax and semantics is, which can make these kinds of discussions particularly confusing. I remember us discussing something related on the Types Zulip at some point.)</p>
+
+
+
+<a name="419917924"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419917924" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Arlin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419917924">(Feb 05 2024 at 19:58)</a>:</h4>
+<p>An algebraic theory is the initial model of itself, so it's quite natural that whether it's syntactic or semantic is a bit of a vexed question: maybe the whole Lawverian philosophy is precisely to <em>eliminate</em> the clean distinction between syntax and semantics and see how great that is.</p>
+
+
+
+<a name="419918044"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419918044" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Arlin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419918044">(Feb 05 2024 at 19:59)</a>:</h4>
+<p>Of course a category with finite limits is still somehow much more syntaxy than its category of models, but I think that might be essentially a metaphorical position.</p>
+
+
+
+<a name="419918277"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419918277" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419918277">(Feb 05 2024 at 20:00)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="671813">Madeleine Birchfield</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419914338">said</a>:</p>
+<blockquote>
+<p>I'm not sure there is much of a distinction between logic and type theory.</p>
+</blockquote>
+<p>In my view, the crucial difference between a logic and a type theory is that a type theory has terms that completely describe their derivational structure. Generally speaking, logics have no terms. But many people are happy to call things type theories that have some ambiguity (that is, you cannot reconstruct their derivations from their terms), so this is by no means the generally agreed upon distinction.</p>
+
+
+
+<a name="419918752"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419918752" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419918752">(Feb 05 2024 at 20:03)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="609515">Kevin Arlin</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419917924">said</a>:</p>
+<blockquote>
+<p>An algebraic theory is the initial model of itself, so it's quite natural that whether it's syntactic or semantic is a bit of a vexed question: maybe the whole Lawverian philosophy is precisely to <em>eliminate</em> the clean distinction between syntax and semantics and see how great that is.</p>
+</blockquote>
+<p>On one hand, I think the initial model of any "theory" should be syntactic in a suitable sense, without making it any less semantic, but on the other hand, I also think that the line between syntax and semantics is rather blurry (perhaps even entirely artificial).</p>
+
+
+
+<a name="419918871"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419918871" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419918871">(Feb 05 2024 at 20:04)</a>:</h4>
+<p>For instance, in the algebraic setting, one can always construct a theory from a model, such that the initial model of the reconstructed theory is precisely the model you started with.</p>
+
+
+
+<a name="419925860"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419925860" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419925860">(Feb 05 2024 at 20:50)</a>:</h4>
+<p>There are <a href="https://golem.ph.utexas.edu/category/2010/07/what_is_a_theory.html">a lot of different meanings of "theory"</a>.  I would say that a "presentation" of a theory is a syntactic object, whereas the "walking model" of that theory is a semantic object obtained from the adjunction between syntax and semantics.  One can then argue untill doomsday about whether the presentation or the walking model is more deserving of the name "theory".  But I've always interpreted the leg "category theory" in a computational trilogy as referring to <em>general</em> semantics, not just the particular semantic objects that are freely built out of syntax.</p>
+
+
+
+<a name="419927627"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419927627" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419927627">(Feb 05 2024 at 21:02)</a>:</h4>
+<p><span class="user-mention" data-user-id="673117">@John Onstead</span>  In case you are not aware of it yet, I want to recommend the paper <em><a href="https://arxiv.org/pdf/1703.03007.pdf">Homotopy type theory: the logic of space</a></em> by Mike Shulman. This is one of the masterpieces of mathematical exposition. It explains both the "syntax-semantics duality" and "propositions as types" in the context of homotopy type theory.</p>
+
+
+
+<a name="419929867"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419929867" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419929867">(Feb 05 2024 at 21:19)</a>:</h4>
+<p>By the way, as <span class="user-mention" data-user-id="276092">@Nathanael Arkor</span> I would use the term "syntax-semantics duality" differently than you do. In my opinion, theorems such as Makkai duality and Gabriel-Ulmer duality should be called "syntax-semantics dualities".  But the theorems you have in mind, like the equivalence between theories in typed <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span>-calculus and cartesian closed categories, are not even "dualities", and they are not really about semantics in the sense of model theory.</p>
+
+
+
+<a name="419931085"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419931085" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419931085">(Feb 05 2024 at 21:27)</a>:</h4>
+<p>I don't know why <span class="user-mention" data-user-id="276777">@Mike Shulman</span> disagrees. For instance, the cartesian closed categories in the above equivalence really play the role of a different presentation of the <em>syntax</em> of a theory in typed <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span>-calculus.</p>
+
+
+
+<a name="419931362"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419931362" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419931362">(Feb 05 2024 at 21:29)</a>:</h4>
+<p>In my idiolect, a cartesian closed category is not syntax, but semantics.</p>
+
+
+
+<a name="419931379"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419931379" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419931379">(Feb 05 2024 at 21:29)</a>:</h4>
+<p>Syntax is about strings of symbols.</p>
+
+
+
+<a name="419931634"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419931634" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419931634">(Feb 05 2024 at 21:31)</a>:</h4>
+<p>So, for instance, Gabriel-Ulmer duality is a relation between two different categories of semantic objects.</p>
+
+
+
+<a name="419931730"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419931730" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419931730">(Feb 05 2024 at 21:32)</a>:</h4>
+<p>(But I'm glad you like my paper!  (-: )</p>
+
+
+
+<a name="419934720"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419934720" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419934720">(Feb 05 2024 at 21:52)</a>:</h4>
+<p>I understand your point of view, but from my limited understanding, at least in classical logic I would say "syntax" refers to <em>theories</em> and "semantics" to the <em>models</em> of these theories.<br>
+So for instance, categorical logicians consider the notion of a Lawvere theory (as you know). If you go as far as calling them "theories", then I think it's only fair to refer to them as "syntax" also - after all, we can assign models <em>to</em> them!</p>
+
+
+
+<a name="419935029"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419935029" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419935029">(Feb 05 2024 at 21:54)</a>:</h4>
+<p>I suspect this is not a discussion we will ever all come to an agreement on :)</p>
+<p>(However, I hope we can all agree that the current state of affairs, with a proliferation of technical terms whose meanings people do not agree upon, is entirely unideal.)</p>
+
+
+
+<a name="419935374"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419935374" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419935374">(Feb 05 2024 at 21:57)</a>:</h4>
+<p>Well, as discussed in the blog post I linked to (and particularly its comments), there is a whole continuum of notions of "theory" from the totally syntactic to the somewhat more semantic.  A syntactic purist could very well take issue with using the word "theory" for Lawvere's notion.</p>
+
+
+
+<a name="419935649"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419935649" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Arlin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419935649">(Feb 05 2024 at 21:59)</a>:</h4>
+<p>I agree that this is likely to be an infinite debate. That said! Leopold, a Lawvere theory is just a category with finite products. So, I mean…that’s an awful lot of syntax, and in particular many categories are <em>both</em> syntax and semantics in this sense.</p>
+
+
+
+<a name="419935668"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419935668" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419935668">(Feb 05 2024 at 21:59)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="408864">Leopold Schlicht</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419934720">said</a>:</p>
+<blockquote>
+<p>So for instance, categorical logicians consider the notion of a Lawvere theory (as you know). </p>
+</blockquote>
+<p>Beware of generalizing about categorical logicians, many of them are here <span aria-label="yum" class="emoji emoji-1f60b" role="img" title="yum">:yum:</span></p>
+
+
+
+<a name="419936036"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419936036" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419936036">(Feb 05 2024 at 22:01)</a>:</h4>
+<p>I only now see that the syntax/semantics issue was debated even after <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419910160">this message</a>. To be honest I had read the thread only to this message and now I feel sorry for reinforcing this infinite discussion which is just about different conventions people have! <span aria-label="sweat smile" class="emoji emoji-1f605" role="img" title="sweat smile">:sweat_smile:</span></p>
+
+
+
+<a name="419936049"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419936049" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419936049">(Feb 05 2024 at 22:02)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="609515">Kevin Arlin</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419935649">said</a>:</p>
+<blockquote>
+<p>I agree that this is likely to be an infinite debate. That said! Leopold, a Lawvere theory is just a category with finite products. So, I mean…that’s an awful lot of syntax, and in particular many categories are <em>both</em> syntax and semantics in this sense.</p>
+</blockquote>
+<p>I think algebraic theories are a good example of one of the subtleties many people overlook or dismiss an unimportant in these discussions (though is mentioned in the blog post comments Mike linked to). There is an important distinction between algebraic theories à la Lawvere (comprising a certain class of identity-on-objects functors) and cartesian categories. Yet these notions are often conflated.</p>
+
+
+
+<a name="419936432"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419936432" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419936432">(Feb 05 2024 at 22:04)</a>:</h4>
+<p>I find it quite interesting that there is disagreement on what is meant by syntax vs semantics! I guess to clarify my original question a little more, I am interested more in the raw structural aspects of the systems. That is, in discussing the phenomena of "category-type theory duality", which I'll take as any kind of adjunction or equivalence that exists between a class of type theories and categories (regardless of the interpretation of such an adjunction).</p>
+
+
+
+<a name="419936554"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419936554" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419936554">(Feb 05 2024 at 22:05)</a>:</h4>
+<p>Why do you say "duality", though? :)</p>
+
+
+
+<a name="419936731"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419936731" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Arlin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419936731">(Feb 05 2024 at 22:06)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419936049">said</a>:</p>
+<blockquote>
+<p>I think algebraic theories are a good example of one of the subtleties many people overlook or dismiss an unimportant in these discussions (though is mentioned in the blog post comments Mike linked to). There is an important distinction between algebraic theories à la Lawvere (comprising a certain class of identity-on-objects functors) and cartesian categories. Yet these notions are often conflated.</p>
+</blockquote>
+<p>That’s a good point—would you want to claim that fixing that identity-on-objects functor instantiates the shift to syntax? This rules out Cartesian categories without a nice generating set of objects from being viewed as syntax, as far as I understand…not sure whether that might be desirable.</p>
+
+
+
+<a name="419936928"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419936928" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ivan Di Liberti <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419936928">(Feb 05 2024 at 22:08)</a>:</h4>
+<p>There is no disagreement. The debate you are watching  is a debate on nuances. They agree essentially on everything and are showing each one of their feathers. Please guys, let's try to not turn this into misinformation.</p>
+
+
+
+<a name="419936945"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419936945" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419936945">(Feb 05 2024 at 22:08)</a>:</h4>
+<p>Up to equivalence, every cartesian category has a generating set of objects...</p>
+
+
+
+<a name="419937308"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419937308" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419937308">(Feb 05 2024 at 22:10)</a>:</h4>
+<p>Also it's worth noting that "duality" is often/usually used to refer to a <em>contravariant</em> adjunction or equivalence.</p>
+
+
+
+<a name="419937354"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419937354" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Arlin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419937354">(Feb 05 2024 at 22:11)</a>:</h4>
+<p>Ah, yes, hmm…I was thinking of Adamek-Rosicky-Vitalé’s book, which focuses on arbitrary Cartesian categories as theories.</p>
+
+
+
+<a name="419937851"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419937851" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419937851">(Feb 05 2024 at 22:15)</a>:</h4>
+<p>I guess I should provide a more detailed breakdown of some confusions I have... here's my current understanding of the matter: In the (or maybe "an") adjunction/equivalence between (some class of) categories and type theories, there is a "Lang" functor that sends a category to its "internal language" type theory, with objects in the category interpreted as types in the corresponding type theory. Its adjoint "Syn" sends a type theory to its syntactic category, but it is the contexts, not necessarily types, that become the objects of the syntactic category. When it comes to the computational trilogy (at least from the "Rosetta stone" under the nlab article for computational trinity), objects and types are associated to one another like with the Lang functor, but in a way that aligns with the "propositions as types", and so by composition objects are associated to propositions. This differs in the original adjunction with internal languages, where propositions are interpreted to be subobjects, not objects of the category. Still, there does seem to be similarity between the two: for instance, the logical conjunction is interpreted to be a meet of subobjects with Lang and a product of objects with the trinity. I am thus wondering what the connection is between all this?</p>
+
+
+
+<a name="419937967"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419937967" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419937967">(Feb 05 2024 at 22:16)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="609515">Kevin Arlin</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419936731">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419936049">said</a>:</p>
+<blockquote>
+<p>I think algebraic theories are a good example of one of the subtleties many people overlook or dismiss an unimportant in these discussions (though is mentioned in the blog post comments Mike linked to). There is an important distinction between algebraic theories à la Lawvere (comprising a certain class of identity-on-objects functors) and cartesian categories. Yet these notions are often conflated.</p>
+</blockquote>
+<p>That’s a good point—would you want to claim that fixing that identity-on-objects functor instantiates the shift to syntax? This rules out Cartesian categories without a nice generating set of objects from being viewed as syntax, as far as I understand…not sure whether that might be desirable.</p>
+</blockquote>
+<p>As Mike says, it doesn't rule out viewing cartesian categories as syntactic, if one is so inclined. However, there are situations where it is useful to fix a set of generating sorts.</p>
+
+
+
+<a name="419938367"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419938367" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419938367">(Feb 05 2024 at 22:19)</a>:</h4>
+<p>(One such situation is when you want control over the finiteness of presentations, e.g. you want a finite set of sorts. If you start with a cartesian category and form a set of sorts, that set will generally be infinite, even if you started with something generated by a finite set of sorts, because you have all the objects generated by finite products of the base sorts, etc.)</p>
+
+
+
+<a name="419938964"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419938964" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonas Frey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419938964">(Feb 05 2024 at 22:24)</a>:</h4>
+<p>I remember that Lawvere, when asked about syntax-semantics duality, said "I never spoke of syntax-semantics duality, but of <em>theory-model duality</em>". I think that's an important point, since the term "syntacs-semantics-duality" lumps together two separate correspondences, which I think it is helpful to differentiate:</p>
+<ul>
+<li>
+<p>on the one hand, there's theory-model duality such as Gabriel-Ulmer, or the more basic observation that when one adds axioms to a theory (making it "larger"), one gets fewer models. The fact that one gets a contravariant equivalence here in good cases can be viewed as a kind of completeness theorem, and to get a clean presentation, it is best to formulate such dualities syntax-free, using categorical presentations of theories.</p>
+</li>
+<li>
+<p>on the other hand, there's the correspondence between representations of theories as categories (pioneered by Lawvere), and syntactic representations of theories by function symbols, logical connectives, axioms etc. This correspondence is sometimes formulated as a (bi)equivalence of (bi)categories, but I find that somewhat artificial since once one has a class of syntactic presentations of theories and an essentially surjective mapping from this class to a bicategory of categorical theories, one can always upgrade this mapping to a biequivalence by "pulling back" the morphisms.</p>
+</li>
+</ul>
+
+
+
+<a name="419938968"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419938968" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419938968">(Feb 05 2024 at 22:24)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="673117">John Onstead</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419937851">said</a>:</p>
+<blockquote>
+<p>there is a "Lang" functor that sends a category to its "internal language" type theory, with objects in the category interpreted as types in the corresponding type theory. Its adjoint "Syn" sends a type theory to its syntactic category, but it is the contexts, not necessarily types, that become the objects of the syntactic category.</p>
+</blockquote>
+<p>There are various ways of slicing this pie.  If you're working with a syntactic theory where contexts are literally lists of types, then you can't specify the "contexts" directly, so you do have to take the types of Lang(C) to be the objects of C.  Then when defining Syn(T) the most natural choice is to take the objects to be contexts of T, which means for instance that Syn and Lang are not inverse equivalences of categories.  Personally I prefer to say they are just adjoint anyway, but you can make them equivalences by working in a situation where, for instance, Syn(Lang(C)) is <em>equivalent</em> to C even though it has more objects, e.g. when there are finite products (or <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Σ</mi></mrow><annotation encoding="application/x-tex">\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Σ</span></span></span></span>-types, in the dependently typed case) any context (that's a finite list of types) is equivalent to a single typet.</p>
+
+
+
+<a name="419939333"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419939333" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419939333">(Feb 05 2024 at 22:27)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277289">Jonas Frey</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419938964">said</a>:</p>
+<blockquote>
+<p>This correspondence is sometimes formulated as a (bi)equivalence of (bi)categories, but I find that somewhat artificial since once one has a class of syntactic presentations of theories and an essentially surjective mapping from this class to a bicategory of categorical theories, one can always upgrade this mapping to a biequivalence by "pulling back" the morphisms.</p>
+</blockquote>
+<p>(I agree that biequivalences of categorical theories and syntactic presentations are artifical, but I think equivalences are natural, so long as one defines translations of presentations syntactically too, rather than "cheating" by defining morphisms of presentations in terms of morphisms of categorical theories, as you describe, which is unfortunately how it often appears in the literature.)</p>
+
+
+
+<a name="419939380"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419939380" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419939380">(Feb 05 2024 at 22:27)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="673117">John Onstead</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419937851">said</a>:</p>
+<blockquote>
+<p>objects and types are associated to one another like with the Lang functor, but in a way that aligns with the "propositions as types", and so by composition objects are associated to propositions. This differs in the original adjunction with internal languages, where propositions are interpreted to be subobjects, not objects of the category.</p>
+</blockquote>
+<p>This is just mixing up doctrines.  In the doctrine of first-order logic, the syntax has separate notions of "type" and "proposition", and when this is interpreted into a category the types are interpreted as objects and the propositions as subobjects.  But in the doctrine of dependent type theory, the syntax has only types, some of which are viewed as, or used as, propositions (propositions as types), and when this is interpreted in a category, the types are interpreted as objects in a slice category, some of which may happen to be subobjects</p>
+
+
+
+<a name="419940073"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419940073" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonas Frey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419940073">(Feb 05 2024 at 22:32)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419939333">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="277289">Jonas Frey</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419938964">said</a>:</p>
+<blockquote>
+<p>This correspondence is sometimes formulated as a (bi)equivalence of (bi)categories, but I find that somewhat artificial since once one has a class of syntactic presentations of theories and an essentially surjective mapping from this class to a bicategory of categorical theories, one can always upgrade this mapping to a biequivalence by "pulling back" the morphisms.</p>
+</blockquote>
+<p>(I agree that biequivalences of categorical theories and syntactic presentations are artifical, but I think equivalences are natural, so long as one defines translations of presentations syntactically too, rather than "cheating" by defining morphisms of presentations in terms of morphisms of categorical theories, as you describe, which is unfortunately how it often appears in the literature.)</p>
+</blockquote>
+<p>Yes, it can be interesting to try to find an explicit definition of morphisms/translations on the syntactic side, and probably this can even serve as a guiding principle in the design of syntactic calculi. So I shouldn't say it's artificial.</p>
+
+
+
+<a name="419941545"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419941545" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Frank Tsai <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419941545">(Feb 05 2024 at 22:42)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277289">Jonas Frey</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419938964">said</a>:</p>
+<blockquote>
+<ul>
+<li>on the other hand, there's the correspondence between representations of theories as categories (pioneered by Lawvere), and syntactic representations of theories by function symbols, logical connectives, axioms etc. This correspondence is sometimes formulated as a (bi)equivalence of (bi)categories, but I find that somewhat artificial since once one has a class of syntactic presentations of theories and an essentially surjective mapping from this class to a bicategory of categorical theories, one can always upgrade this mapping to a biequivalence by "pulling back" the morphisms.</li>
+</ul>
+</blockquote>
+<p>Is there a name for the "pulled back" morphisms? I'm reading a book (called algebraic theories) by J. Ad ́amek, J. Rosicky ́, E. M. Vitale and they have this exact construction.</p>
+
+
+
+<a name="419941800"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419941800" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonas Frey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419941800">(Feb 05 2024 at 22:43)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="618050">Frank Tsai</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419941545">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="277289">Jonas Frey</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419938964">said</a>:</p>
+<blockquote>
+<ul>
+<li>on the other hand, there's the correspondence between representations of theories as categories (pioneered by Lawvere), and syntactic representations of theories by function symbols, logical connectives, axioms etc. This correspondence is sometimes formulated as a (bi)equivalence of (bi)categories, but I find that somewhat artificial since once one has a class of syntactic presentations of theories and an essentially surjective mapping from this class to a bicategory of categorical theories, one can always upgrade this mapping to a biequivalence by "pulling back" the morphisms.</li>
+</ul>
+</blockquote>
+<p>Is there a name for the "pulled back" morphisms? I'm reading a book (called algebraic theories) by J. Ad ́amek, J. Rosicky ́, E. M. Vitale and they have this exact construction.</p>
+</blockquote>
+<p>Are you sure they have this construction in the book? I've spent a lot of time with this book while working on clans, and as far as I know it doesn't contain any syntax at all?</p>
+
+
+
+<a name="419941991"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419941991" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419941991">(Feb 05 2024 at 22:44)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="618050">Frank Tsai</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419941545">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="277289">Jonas Frey</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419938964">said</a>:</p>
+<blockquote>
+<ul>
+<li>on the other hand, there's the correspondence between representations of theories as categories (pioneered by Lawvere), and syntactic representations of theories by function symbols, logical connectives, axioms etc. This correspondence is sometimes formulated as a (bi)equivalence of (bi)categories, but I find that somewhat artificial since once one has a class of syntactic presentations of theories and an essentially surjective mapping from this class to a bicategory of categorical theories, one can always upgrade this mapping to a biequivalence by "pulling back" the morphisms.</li>
+</ul>
+</blockquote>
+<p>Is there a name for the "pulled back" morphisms?</p>
+</blockquote>
+<p>I'm not sure whether it has a specific name in the context of type theory, but categorically, the construction is the <a href="https://ncatlab.org/nlab/show/full+image">full image</a> of the function sending each presentation to its corresponding categorical theory.</p>
+
+
+
+<a name="419942265"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419942265" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Frank Tsai <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419942265">(Feb 05 2024 at 22:47)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277289">Jonas Frey</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419941800">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="618050">Frank Tsai</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419941545">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="277289">Jonas Frey</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419938964">said</a>:</p>
+<blockquote>
+<ul>
+<li>on the other hand, there's the correspondence between representations of theories as categories (pioneered by Lawvere), and syntactic representations of theories by function symbols, logical connectives, axioms etc. This correspondence is sometimes formulated as a (bi)equivalence of (bi)categories, but I find that somewhat artificial since once one has a class of syntactic presentations of theories and an essentially surjective mapping from this class to a bicategory of categorical theories, one can always upgrade this mapping to a biequivalence by "pulling back" the morphisms.</li>
+</ul>
+</blockquote>
+<p>Is there a name for the "pulled back" morphisms? I'm reading a book (called algebraic theories) by J. Ad ́amek, J. Rosicky ́, E. M. Vitale and they have this exact construction.</p>
+</blockquote>
+<p>Are you sure they have this construction in the book? I've spent a lot of time with this book while working on clans, and as far as I know it doesn't contain any syntax at all?</p>
+</blockquote>
+<p>Maybe I misunderstood what you meant by "pulling back" morphisms. I was referring to the proof of theorem 9.15 (Duality of algebraic categories and theories).</p>
+
+
+
+<a name="419942453"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419942453" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419942453">(Feb 05 2024 at 22:48)</a>:</h4>
+<p>Note that on Zulip, if no one else has commented after the message you are replying to, then your message will appear immediately below it, so there is no need to also quote the message, unless you want to emphasize only part of it as being the bit you're responding to.</p>
+
+
+
+<a name="419942578"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419942578" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Frank Tsai <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419942578">(Feb 05 2024 at 22:49)</a>:</h4>
+<p>I see. Thanks for the FYI</p>
+
+
+
+<a name="419942965"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419942965" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonas Frey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419942965">(Feb 05 2024 at 22:52)</a>:</h4>
+<p>Thanks for the reminder Mike. </p>
+<p>Anyway <span class="user-mention" data-user-id="618050">@Frank Tsai</span> I think the result you're referring to is a "theory-model duality", so it falls under the first bullet point in my list. the "pullback" comes up in the second bullet point.</p>
+
+
+
+<a name="419945007"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419945007" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419945007">(Feb 05 2024 at 23:08)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419939380">said</a>:</p>
+<blockquote>
+<p>This is just mixing up doctrines.  In the doctrine of first-order logic, the syntax has separate notions of "type" and "proposition", and when this is interpreted into a category the types are interpreted as objects and the propositions as subobjects.  But in the doctrine of dependent type theory, the syntax has only types, some of which are viewed as, or used as, propositions (propositions as types), and when this is interpreted in a category, the types are interpreted as objects in a slice category, some of which may happen to be subobjects</p>
+</blockquote>
+<p>This clears things up... I think I'm mainly being thrown off by the nlab where I do most of my learning (and so I will definitely take a look at some of the other resources listed above). Checking again, the nlab page for "internal logic" does indeed (eventually) clarify all this, and so I guess the adjunction category under discussion there is more of a "category of logical systems" (in this case the category of first order logics) than a "category of type theories". Revisiting "relation between type theory and category theory" shows that for dependent type theories under Lang and with the category of locally cartesian closed categories, non-dependent types are objects of LCCCs while the dependent types (which can double as propositions under propositions as types) are morphisms (and so indeed objects of the slice category). However, this makes the table given under "overview" on that same page misleading, given that the table corresponds generalized elements (which in the context of dependent type theories should correspond with dependent types and thus propositions) with terms/programs instead. Maybe the table means to talk about objects and morphisms in slice categories instead, but it doesn't seem to make that distinction clear...</p>
+
+
+
+<a name="419945863"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419945863" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Arlin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419945863">(Feb 05 2024 at 23:16)</a>:</h4>
+<p>The nLab's an incredible resource but I don't think it's a good place to do most of your learning, definitely recommend looking at more fleshed-out resources, including those linked on most nLab pages themselves.</p>
+
+
+
+<a name="419945964"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419945964" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419945964">(Feb 05 2024 at 23:17)</a>:</h4>
+<p>Yes, the fact that nLab pages have often been put together out of small edits and additions by many people over time means that they aren't always internally consistent or coherent.</p>
+
+
+
+<a name="419949953"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419949953" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419949953">(Feb 05 2024 at 23:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277289">Jonas Frey</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419941800">said</a>:</p>
+<blockquote>
+<p>I've spent a lot of time with this book while working on clans, and as far as I know it doesn't contain any syntax at all?</p>
+</blockquote>
+<p>A book that contains no syntax:</p>
+<p><a href="/user_uploads/21317/GWh2hiiVWE3PC40jGKpj4ve4/istockphoto-119243239-612x612.jpg">.</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/GWh2hiiVWE3PC40jGKpj4ve4/istockphoto-119243239-612x612.jpg" title="."><img src="/user_uploads/21317/GWh2hiiVWE3PC40jGKpj4ve4/istockphoto-119243239-612x612.jpg"></a></div>
+
+
+
+<a name="419950174"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/419950174" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonas Frey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#419950174">(Feb 06 2024 at 00:00)</a>:</h4>
+<p>Haha, at least for this book we know that there are no mistakes!</p>
+
+
+
+<a name="420075179"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/420075179" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#420075179">(Feb 06 2024 at 15:41)</a>:</h4>
+<p>Thanks for all your help yesterday! I realized perhaps I could understand the situation a lot better too if I knew what a category of type theories or logical systems was, which would follow from how such categories are constructed. This would of course make the differences between type theories and logical systems a lot clearer. For instance, I know the category of monoids is constructed from Mon(Set), which can also be thought of as the category of models of the theory of monoids modeled in Set. Thus, it can be constructed from a certain functor category from the syntactic category of the theory of monoids, as functors into Set from this category are models of monoids in Set, and thus monoid objects internal to Set. <br>
+What would be extremely meta is if there's actually a such thing as a "theory of type theories" or "theory of logical systems" that works a similar way. That is, a type theory of a certain class can be thought of as a model of the theory of type theories of that particular class, and so also a functor from Syn(theory of type theories of that class) into, say, Set. Then, the appropriate functor category would give the category of type theories of that class. Even if this exists, I'm not sure, however, how to extend this to bicategories (IE, to find a 2-category of type theories), since functor categories between 1-categories are also 1-categories.</p>
+
+
+
+<a name="420075966"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/420075966" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#420075966">(Feb 06 2024 at 15:44)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="673117">John Onstead</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/420075179">said</a>:</p>
+<blockquote>
+<p>What would be extremely meta is if there's actually a such thing as a "theory of type theories" or "theory of logical systems" that works a similar way.</p>
+</blockquote>
+<p>You'll be pleased to hear that such things exist <span aria-label="cowboy" class="emoji emoji-1f920" role="img" title="cowboy">:cowboy:</span> I'll send you to <a href="https://ncatlab.org/nlab/show/doctrine">[[doctrine]]</a> for the time being, but I'm sure there will be plenty of folks here willing to explain the nuances in more depth than I am able to.</p>
+
+
+
+<a name="420110711"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/420110711" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#420110711">(Feb 06 2024 at 18:39)</a>:</h4>
+<p>Following the above, <span class="user-mention" data-user-id="276777">@Mike Shulman</span>  linked to a blog post, which <span class="user-mention" data-user-id="277318">@Ivan Di Liberti</span> objected to; that discussion has been <a href="#narrow/stream/241990-community.3A-discussion/topic/Blog.20Posts.20and.20Attribution/near/420078840">moved here</a>. The end result was:<br>
+<span class="user-mention silent" data-user-id="277318">Ivan Di Liberti</span> <a href="#narrow/stream/241990-community.3A-discussion/topic/Blog.20Posts.20and.20Attribution/near/420107160">said</a>:</p>
+<blockquote>
+<p>I do not think there is any way to improve the situation. It's very important though to clarify that such theory does not exist (!) at the moment (which is what I am doing) and that it is at best in the process of being developed.</p>
+</blockquote>
+
+
+
+<a name="420135874"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/420135874" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#420135874">(Feb 06 2024 at 21:07)</a>:</h4>
+<p>More precisely, <em>some</em> versions of the theory do exist, and others are in the process of being developed.  The blog post that I linked to is a discussion of what I believed at the time (2018) that the general picture <em>should</em> look like, and a summary of the partial work we had done on some versions of it and what we had in mind for future steps (some of which have since been obviated by later work of others').</p>
+
+
+
+<a name="420146234"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/420146234" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#420146234">(Feb 06 2024 at 22:22)</a>:</h4>
+<p>I think it's very interesting that my question of having a "theory of theories" leads to research that is still being conducted! In any case, what I was mainly interested in with my question was about how one would go about "building" a type theory or logical system. For instance, I brought up the theory of monoids because a model of it in Set tells you to take an object M, an operation M x M -&gt; M, and commutative diagrams in Set representing associativity and identity of this monoid operation. I was wondering what "instructions" a theory of type theories or logical systems would give.<br>
+For instance, I was imagining a type theory to consist of a set Term of all terms of that type theory, along with a monomorphism Type -&gt; Powerset(Term), satisfying some properties. The set Type is the set of types of the type theory, and is a subset of the powerset where elements are subsets of Term because you can imagine a type in the type theory to be represented by some subset of Term containing all terms of that type. The properties you would want this to satisfy would then depend on the kind of type theory, though there should be some minimum requirements such as non-overlapping (IE, all subsets of Term in Type must have empty intersections, so no term has multiple types). In addition, if one wants to add on the structure of a product type, sum type, or function type, the set Type must be closed under the operations of forming the cartesian product, disjoint union, and internal hom/function space between the subsets in Type, viewed as objects in the category. For instance, for the product type, if I have two subsets of Term, A and B, that are elements of Type, I want to make sure that A x B is also in Type. Of course this is just my personal conjecture for how I think a type theory could be constructed and I'm likely very wrong about it, but I wanted to share for illustrative purposes!</p>
+
+
+
+<a name="420671778"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/420671778" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#420671778">(Feb 09 2024 at 15:13)</a>:</h4>
+<p>Here's a question I still have after going through that material... Given categories C and D, one can tell if C is a category of algebras for some monad on D if there exists a monadic adjunction between them. Does a similar principle exist for models- that is, given C and D, can one tell if C is a category of models of some theory in D, and if so, what that theory is?</p>
+
+
+
+<a name="420704544"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/420704544" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Arlin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#420704544">(Feb 09 2024 at 18:04)</a>:</h4>
+<p>These are to a great extent the same question--for an appropriate notion of "theory", categories of algebras of a monad and categories of models of a theory are the same thing! So you'll start in all but a very strange set of cases by looking for a monadic adjunction again. Then, if you want a finitary theory, you'll want the monadic functor to preserve filtered colimits. And to actually find the theory--in that case, it can be given as the opposite of the category of finitely presentable objects.</p>
+
+
+
+<a name="420719191"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/420719191" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#420719191">(Feb 09 2024 at 19:40)</a>:</h4>
+<p><span class="user-mention" data-user-id="609515">@Kevin Arlin</span> Interesting; I know for sure that models of Lawvere theories/algebraic theories (with "small signature") are equivalent to algebras over monads, though I am not sure if this holds in any more generality beyond Lawvere theories. There exist "essentially algebraic" and "generalized algebraic" theories, for instance including a "generalized algebraic theory of categories" whose models in certain categories C are internal categories in C, and so would constitute a small category in Set. In addition, there also exist non-algebraic theories like the theory of fields. Neither of these examples corresponds to a monad over Set. Given just the category of fields and Set, would there be any way of telling that the category of fields represents models of the theory of fields modeled in Set?</p>
+
+
+
+<a name="420721620"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/420721620" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Arlin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#420721620">(Feb 09 2024 at 19:58)</a>:</h4>
+<p>A category such as that of fields is <em>accessible</em>, and in general any accessible category is the category of models of a first-order theory in a certain infinitary language (and conversely.) Categories of models of essentially algebraic theories and of generalized algebraic theories (set-valued models, at least) are exactly the locally presentable categories. Neither of these observations generalizes completely smoothly to non-set-valued models, although it's true that models of an essentially algebraic theory in <em>any</em> locally presentable category are again locally presentable and similarly for first-order theories, if I understand correctly.</p>
+
+
+
+<a name="420725605"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/420725605" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#420725605">(Feb 09 2024 at 20:26)</a>:</h4>
+<p>I'm not quite sure what it means to talk about models of an arbitrary first-order theory in an arbitrary locally presentable category.  Usually you need the category to have extra structure in order to interpret operations like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∨</mo></mrow><annotation encoding="application/x-tex">\vee</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5556em;"></span><span class="mord">∨</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∃</mi></mrow><annotation encoding="application/x-tex">\exists</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">∃</span></span></span></span>, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi></mrow><annotation encoding="application/x-tex">\forall</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">∀</span></span></span></span>.</p>
+
+
+
+<a name="420731038"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/420731038" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Arlin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#420731038">(Feb 09 2024 at 21:01)</a>:</h4>
+<p>Mmm, I was thinking of models of sketches. I don’t know the accessible categories book too well but I was trying to recall the theorem from there about accessible categories as models of theories in, I think <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mrow><mi mathvariant="normal">∞</mi><mo separator="true">,</mo><mi mathvariant="normal">∞</mi></mrow></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">L_{\infty,\infty}.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∞</span><span class="mpunct mtight">,</span><span class="mord mtight">∞</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord">.</span></span></span></span> Maybe those theories aren’t using arbitrary first order syntax?</p>
+
+
+
+<a name="420731423"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/420731423" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#420731423">(Feb 09 2024 at 21:04)</a>:</h4>
+<p>Ah, yes, that's true you can talk about models of a limit-colimit sketch in an arbitrary category.  I don't have the book at hand right now, but my guess is that they have a particular class of first-order theories that correspond to sketches in some specific way, which happens to coincide with the general method of interpreting arbitrary first-order theories <em>if</em> the category in question supports the latter.</p>
+
+
+
+<a name="420809529"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/420809529" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#420809529">(Feb 10 2024 at 15:41)</a>:</h4>
+<p>I think this makes sense; after a little more reflection I realized this also seems to connect with another topic brought up above about Gabriel-Ulmer duality. In that case, one has an equivalence between the category of finitely complete categories (interpreted as syntactic categories of essentially algebraic theories) and the category of locally presentable categories (interpreted as the category of models of those essentially algebraic theories). So if I start with some locally presentable category, I can travel back along this equivalence and find the theory whose models are the objects in that locally presentable category. There appears to be a more general analogue of this between geometric categories (interpreted as syntactic categories of geometric theories) and accessible categories (interpreted as categories of models of those geometric theories), though I'm not sure if this is proven to be an equivalence or not.</p>
+
+
+
+<a name="420809749"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/420809749" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#420809749">(Feb 10 2024 at 15:44)</a>:</h4>
+<p>As for why I think this is useful, I wanted to know if there was any connection between stuff, structure, property and categorical logic. For instance, any category with a faithful functor to Set is a concrete category, and objects of this category can thus be considered sets with extra structure. The question then becomes trying to determine what that "extra structure" actually looks like and entails internal to Set. Realizing a concrete category as a category of models in Set of some theory (I guess, provided it is locally presentable or accessible) can help in answering this, though I do wonder if there's any deeper connections or insights into this!</p>
+
+
+
+<a name="421032230"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/421032230" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#421032230">(Feb 12 2024 at 13:37)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/419917147">said</a>:</p>
+<blockquote>
+<div class="codehilite"><pre><span></span><code>Would you say that algebraic theories are semantic, then? My impression is that the general consensus is that algebraic theories are syntactic (albeit presentation-free) notions.
+</code></pre></div>
+<p>I think I agree with what Mike has said so far. In my opinion the syntax of a theory should be in most cases presentable as something like an inductive type and this definition excludes quotienting out by the equational rules of the algebraic theory from being part of the syntax, if (Omega,E) is an algebraic theory (Omega the function symbols, E equations) then Omega presents a monad which I would call syntactic but the quotient Omega/E is not syntactic, I cannot think of an equivalence classes of terms under an arbitrary equivalence relation as being syntactic.<br>
+With higher inductive types there is some gray area here but still I think of higher inductive types as incorporating both the generators and relations, after all they are homotopy colimits rather than true colimits. A presentation of an algebraic structure by generators and relations is not the algebraic structure itself. The generators and relations would be the syntactic objects, and the resulting quotient is its semantics. The syntax must be tractable to work with. For example you can define functions on trees and other inductive types by structural recursion.</p>
+</blockquote>
+
+
+
+<a name="421032940"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/421032940" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#421032940">(Feb 12 2024 at 13:40)</a>:</h4>
+<p>Speaking more loosely they are syntactic, for example we can speak of a syntactic model of a theory which is defined as the free widget on the syntax tree modded out by the equations, but this is a model defined using the syntax, it is inappropriate imo to say that this model precisely is the syntax or that this is somehow the correct definition of what it means to give syntax for an algebraic theory.</p>
+
+
+
+<a name="421039631"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/421039631" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#421039631">(Feb 12 2024 at 14:05)</a>:</h4>
+<p>I should clarify I'm not opposed to the term syntax-semantics duality as it's used for example in AG to refer to polynomial rings and varieties even though rings may be quotiented by ideals. It's informal language after all and cannot be expected to be used consistently. I just want to stress that flattening the relations which define the quotient inherently abstracts away from those relations and makes it harder to study them.</p>
+
+
+
+<a name="423632201"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423632201" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423632201">(Feb 27 2024 at 15:29)</a>:</h4>
+<p>As mentioned above I am interested in establishing a clear correspondence between Stuff, Structure, Property (SSP) and Categorical Logic. I gave it some more thought recently but am having massive trouble in getting it to work the way I want it, so any advice would be helpful. Given a forgetful functor U: C -&gt; D, objects in C can be seen as "D objects with extra structure". What I need to know is, for any given forgetful functor, what this "extra structure" actually IS- in fact, I want to have an explicit diagrammatic representation for this extra structure within the codomain of the forgetful functor (almost as if the forgetful functor "unpacks" the objects in the domain into diagrams in the codomain). <br>
+To do this, I used sketches because they are basically generalized diagrams, and so a model of a sketch is essentially a diagram in the target category that can involve limits. I then conjectured a canonical functor Faithful -&gt; Sketch that sends a faithful functor (the objects of Faithful) to the sketch (the objects of Sketch) such that the category of models of that sketch in the codomain is equivalent to the domain category. For example, given the faithful functor U: Grp -&gt; Set, it would send U to the sketch of groups (where a group object is a model of this sketch in some category) since Grp is equivalent to the category of models of that sketch in Set, thus allowing us to recover the diagrammatic definition of a group object in Set purely from the forgetful functor.  However, if such a functor existed, then all concrete categories (categories with a forgetful functor to Set) would be equivalent to a category of sketch models in Set. But those are precisely the accessible categories, meaning every concrete category would be equivalent to some accessible category. I haven't seen any proofs that concrete categories are a special case of accessible category and so I am doubting this is true, but then I don't get where my reasoning went astray. Again, any help is very greatly appreciated as creating a bridge between categorical logic and SSP is a major part of my project!!</p>
+
+
+
+<a name="423642257"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423642257" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423642257">(Feb 27 2024 at 15:58)</a>:</h4>
+<p>Two points:</p>
+<ol>
+<li>Your "functor" doesn't look very functorial. Even if you had a way of finding a sketch presenting your faithful functors, it's not unique (there are many possible sketches for the theory of groups) and it's not at all clear how whatever choice of morphisms between faithful functors that you choose will be mapped to morphisms of sketches (there are choices on this side too).</li>
+<li>Indeed, it is not the case that arbitrary faithful functors are forgetful functors for models of sketches. Top -&gt; Set is the typical example (Top is not accessible). In this particular case the problem is that limits don't suffice to construct the powerset. More generally there are other sorts of "further adjoint" structure that the objects of D might be constructed from over C. I would be surprised if a complete characterization is possible, to be honest.</li>
+</ol>
+
+
+
+<a name="423660221"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423660221" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423660221">(Feb 27 2024 at 17:23)</a>:</h4>
+<p>It's not surprising that this fails, because sketches are nowhere near powerful enough to describe arbitrary structures on finite set.  James Dolan has thought about how to implement the stuff/structure/property distinction in logic.  I don't remember all the details, but here are a couple of lessons I remember:</p>
+<p>1) It's a lot easier to use groupoids than general categories: so, the goal becomes studying groupoids equipped with a functor to the groupoid of sets and bijections, which following nLab I'll call <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">e</mi></mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathsf{core}(\mathsf{Set})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathsf">core</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathsf">Set</span></span><span class="mclose">)</span></span></span></span>.</p>
+
+
+
+<a name="423660663"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423660663" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423660663">(Feb 27 2024 at 17:25)</a>:</h4>
+<p>2) We have to decide whether we'll be using classical logic or something else like constructive logic.  James used classical logic; the problem is already interesting with that.</p>
+
+
+
+<a name="423662715"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423662715" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423662715">(Feb 27 2024 at 17:37)</a>:</h4>
+<p>3) Any theory in traditional first-order logic has a groupoid of models <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">G</mi></mrow><annotation encoding="application/x-tex">\mathsf{G}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathsf">G</span></span></span></span> which is equipped with a faithful functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>:</mo><mi mathvariant="sans-serif">G</mi><mo>→</mo><mrow><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">e</mi><mo stretchy="false">(</mo><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">U: \mathsf{G} \to \mathsf{core(Set)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathsf">G</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathsf">core</span><span class="mopen">(</span><span class="mord mathsf">Set</span><span class="mclose">)</span></span></span></span></span>.   But we don't get get all such <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>:</mo><mi mathvariant="sans-serif">G</mi><mo>→</mo><mrow><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">e</mi><mo stretchy="false">(</mo><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">U: \mathsf{G} \to \mathsf{core(Set)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathsf">G</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathsf">core</span><span class="mopen">(</span><span class="mord mathsf">Set</span><span class="mclose">)</span></span></span></span></span> (up to equivalence I guess), because we get more by going up to <a href="https://plato.stanford.edu/ENTRIES/logic-infinitary/">infinitary logic</a>.   These are versions of logic that allow sentences with infinite conjunctions and infinite strings of quantifiers.</p>
+<p>I believe James told me that every faithful functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>:</mo><mi mathvariant="sans-serif">G</mi><mo>→</mo><mrow><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">e</mi><mo stretchy="false">(</mo><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">U: \mathsf{G} \to \mathsf{core(Set)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathsf">G</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathsf">core</span><span class="mopen">(</span><span class="mord mathsf">Set</span><span class="mclose">)</span></span></span></span></span> can be obtained from some theory in infinitary first-order logic, but I don't know a precise theorem to this effect.   Usually people in infinitary logic put bounds on the number of conjunctions and on the number of quantifiers in a sentence, but we can't do this if we want to get <em>all</em> faithful <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi></mrow><annotation encoding="application/x-tex">U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span></span></span></span>.</p>
+
+
+
+<a name="423663429"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423663429" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423663429">(Feb 27 2024 at 17:41)</a>:</h4>
+<p>The subject of infinitary logic is a rich one, as you can see from the linked article.  It gives some nice examples, e.g. axioms that characterize finite sets, and thus the functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>:</mo><mrow><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">e</mi><mo stretchy="false">(</mo><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi><mo stretchy="false">)</mo></mrow><mo>→</mo><mrow><mi mathvariant="sans-serif">c</mi><mi mathvariant="sans-serif">o</mi><mi mathvariant="sans-serif">r</mi><mi mathvariant="sans-serif">e</mi><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">U : \mathsf{core(FinSet)} \to \mathsf{core{Set}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathsf">core</span><span class="mopen">(</span><span class="mord mathsf">FinSet</span><span class="mclose">)</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">core</span><span class="mord"><span class="mord mathsf">Set</span></span></span></span></span></span>.   This is a nice example of a faithful functor that can't be described using a sketch.</p>
+
+
+
+<a name="423663863"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423663863" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423663863">(Feb 27 2024 at 17:44)</a>:</h4>
+<p>Another nice example they give: the groupoid of models of Peano arithmetic that are isomorphic to the standard model.  (Note the "standard model" is defined relative to the set theory that we are using to define models of our axioms.)</p>
+
+
+
+<a name="423665255"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423665255" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423665255">(Feb 27 2024 at 17:52)</a>:</h4>
+<p>4) If you could work out all the details, there could be a theorem saying which kinds of theories give full and/or essentially surjective functors.   However to describe functors that aren't faithful we should generalize and consider <em>multi-sorted</em> infinitary first-order logic.   For a set <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> of sorts, theories have models in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow><mi>S</mi></msup></mrow><annotation encoding="application/x-tex">\mathsf{Set}^S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9257em;"></span><span class="mord"><span class="mord"><span class="mord mathsf">Set</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9257em;"><span style="top:-3.1473em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span></span></span></span></span></span></span></span></span></span></span>, which we can project down to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow><annotation encoding="application/x-tex">\mathsf{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">Set</span></span></span></span></span> in many ways, typically unfaithfully - since we are forgetting <em>stuff</em>.</p>
+
+
+
+<a name="423666263"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423666263" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423666263">(Feb 27 2024 at 17:58)</a>:</h4>
+<p>There's a lot more to say about this, and it would be great if someone has already worked a lot of it out in a rigorous way.   This business sets up a nice correspondence between logic and groupoid theory.</p>
+
+
+
+<a name="423670365"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423670365" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423670365">(Feb 27 2024 at 18:21)</a>:</h4>
+<p>By the way, James said that <a href="https://www.princeton.edu/~hhalvors/teaching/phi520_f2012/beth-theorem.pdf">Beth's definability theorem</a> is important in this business.</p>
+
+
+
+<a name="423682566"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423682566" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423682566">(Feb 27 2024 at 19:37)</a>:</h4>
+<p>Surely you need some higher order logic for topological spaces?</p>
+
+
+
+<a name="423686630"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423686630" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Arlin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423686630">(Feb 27 2024 at 20:03)</a>:</h4>
+<p>No, you can just have <em>lots</em> of relation symbols, see 5.4 here for instance: [see John's message below]</p>
+
+
+
+<a name="423687058"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423687058" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423687058">(Feb 27 2024 at 20:06)</a>:</h4>
+<p><span class="user-mention" data-user-id="277473">@Morgan Rogers (he/him)</span> The powerset can be given in two main ways: through a universal property (it is an exponential object in Set) or through an endofunctor/monad (the powerset monad). Is there some generalization of a sketch that allows one to select diagrams in categories that would be able to encode either of these? Perhaps some "walking universal construction" entity that can select any universally constructed object within some category with "all" of that universal property with a functor that preserves said universal property? Then maybe a topological space can be given in terms of models of one of these entities.</p>
+
+
+
+<a name="423687449"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423687449" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423687449">(Feb 27 2024 at 20:08)</a>:</h4>
+<p><span class="user-mention" data-user-id="609515">@Kevin Arlin</span> I wish I would have seen this paper earlier, thanks for the link!</p>
+
+
+
+<a name="423690387"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423690387" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423690387">(Feb 27 2024 at 20:28)</a>:</h4>
+<p>By the way, most of that enormous URL is probably Elsevier's method of tracking us.  You can also get the paper here:</p>
+<p><a href="https://www.sciencedirect.com/science/article/pii/0022404981901055?ref=pdf_download">https://www.sciencedirect.com/science/article/pii/0022404981901055?ref=pdf_download</a></p>
+
+
+
+<a name="423693126"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423693126" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423693126">(Feb 27 2024 at 20:46)</a>:</h4>
+<p>Excellent - that paper seems to rigorously tackle a lot of what I was discussing, e.g.:</p>
+<blockquote>
+<p>By definition, a concrete category is a category of sets which are endowed with an<br>
+unspecified structure. There have been some attempts to make this structure<br>
+specific. For example, Blanchard [6] used Bourbaki-type structures and Kurera and<br>
+Pultr [17] have determined the structure by a functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow><mo>→</mo><mrow><mi mathvariant="sans-serif">S</mi><mi mathvariant="sans-serif">e</mi><mi mathvariant="sans-serif">t</mi></mrow></mrow><annotation encoding="application/x-tex">\mathsf{Set} \to \mathsf{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">Set</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">Set</span></span></span></span></span>. Our aim is to<br>
+consider concrete categories as categories of models of first-order theories.<br>
+However, for these theories to be a syntactic counterpart of concrete categories,<br>
+they must exceed the usual ones in the following three points: nonlogical symbols<br>
+are of arbitrary arities, there may be a proper class of them and infinitary logical<br>
+symbols are admitted. This language might be called "an unrestricted <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mrow><mi mathvariant="normal">∞</mi><mo separator="true">,</mo><mi mathvariant="normal">∞</mi></mrow></msub></mrow><annotation encoding="application/x-tex">L_{\infty,\infty}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∞</span><span class="mpunct mtight">,</span><span class="mord mtight">∞</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span>". Its<br>
+strength is illustrated by the fact that we may imagine any concrete category as a<br>
+category consisting of models of this language.</p>
+</blockquote>
+
+
+
+<a name="423693935"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423693935" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423693935">(Feb 27 2024 at 20:52)</a>:</h4>
+<p>The notation <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mrow><mi mathvariant="normal">∞</mi><mo separator="true">,</mo><mi mathvariant="normal">∞</mi></mrow></msub></mrow><annotation encoding="application/x-tex">L_{\infty, \infty}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∞</span><span class="mpunct mtight">,</span><span class="mord mtight">∞</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> is clarified (though perhaps not actually used) in that article I mentioned on <a href="https://plato.stanford.edu/ENTRIES/logic-infinitary/">Infinitary logic</a>.    There they mainly discuss <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mrow><mi>κ</mi><mo separator="true">,</mo><mi>λ</mi></mrow></msub></mrow><annotation encoding="application/x-tex">L_{\kappa,\lambda}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">κ</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">λ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> for cardinals <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo separator="true">,</mo><mi>λ</mi></mrow><annotation encoding="application/x-tex">\kappa, \lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">κ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">λ</span></span></span></span> which are bounds on how big our conjunctions can be and how many quantifiers our formulas can have.   We have to drop those to describe <em>all</em> concrete categories.  And I hadn't known we also need function symbols or predicates of arbitarily large arity!</p>
+
+
+
+<a name="423694392"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423694392" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423694392">(Feb 27 2024 at 20:54)</a>:</h4>
+<p>If one wants to study the duality between syntax and groupoids (or categories) of models without sinking into the morass of large cardinals, proper classes and such, one can also go to the other extreme and study <em>finite</em> groupoids.</p>
+
+
+
+<a name="423696580"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423696580" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423696580">(Feb 27 2024 at 21:07)</a>:</h4>
+<p><span class="user-mention" data-user-id="275920">@John Baez</span> I also think it's interesting that to fully "unpack" any given arbitrary concrete category into the exact structure and properties it is describing onto sets, one needs infinitary language. Perhaps we can consider any concrete category generated by a finitary version of L to be a "nice" concrete category under this sense</p>
+
+
+
+<a name="423698147"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423698147" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423698147">(Feb 27 2024 at 21:17)</a>:</h4>
+<p>There are certainly many "nice" structures described by finitary languages, like fields, etc.    Interestingly "finite sets" is not one, thanks to the compactness theorem.  But we can say what it means for a set to be finite using an infinitary language, where you can use this:</p>
+<p>either there exists x such that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi></mrow><annotation encoding="application/x-tex">\forall </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">∀</span></span></span></span> y we have y = x,<br>
+or there exist x, x' such that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi></mrow><annotation encoding="application/x-tex">\forall </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">∀</span></span></span></span> y we have y = x or y = x', <br>
+or there exist x, x', x'' such that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi></mrow><annotation encoding="application/x-tex">\forall </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">∀</span></span></span></span> y we have y = x or y = x' or y = x'',<br>
+or... </p>
+<p>etc.</p>
+
+
+
+<a name="423702446"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423702446" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423702446">(Feb 27 2024 at 21:47)</a>:</h4>
+<p>The above infinitary definition of a finite set may be infinitely long, but it seems to me that one could use some form of recursion, where one can generate the next part of the definition in terms of previous parts, to "compress" it into a finite statement. In that sense it reminds me of induction, where we can prove an infinite series of statements all at once without needing to use infinite reasoning to do so, by first proving a base case and then showing that the n+1 case follows from the n case. I don't know how this works out formally however. In any case, if such "compression" does make sense, maybe there's a way to extend the definition of "nice" concrete category to those generated by those infinitary L theories which are "compressible" in some way.</p>
+
+
+
+<a name="423702543"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423702543" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423702543">(Feb 27 2024 at 21:48)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="673117">John Onstead</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/423702446">said</a>:</p>
+<blockquote>
+<p>The above infinitary definition of a finite set may be infinitely long, but it seems to me that one could use some form of recursion, where one can generate the next part of the definition in terms of previous parts, to "compress" it into a finite statement.</p>
+</blockquote>
+<p>I think that's what John did when he wrote "... etc."  (-;</p>
+
+
+
+<a name="423702618"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423702618" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423702618">(Feb 27 2024 at 21:49)</a>:</h4>
+<p>(By which I mean that we can never actually write infinitely many statements, so whenever we talk about anything infinite, basically our only tool to do it precisely reduces to some form of induction or recursion.)</p>
+
+
+
+<a name="423704405"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423704405" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423704405">(Feb 27 2024 at 21:58)</a>:</h4>
+<p>That makes sense, although it does make me wonder if there's some "recursive/inductive language" in which to formally write down a recursive or inductive statement. That is, such that a finite statement in this language can be shown to be equivalent to some statement (potentially infinitely long) in First Order Logic (or some variant of FOL) that acts as the "expanded out" form of that recursive statement. So basically a logic in which "etc." has a real mathematical meaning!</p>
+
+
+
+<a name="423704653"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423704653" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423704653">(Feb 27 2024 at 21:59)</a>:</h4>
+<p>How about the metalanguage in which you define your infinitary language?</p>
+
+
+
+<a name="423711144"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423711144" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423711144">(Feb 27 2024 at 22:36)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="673117">John Onstead</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality/near/423702446">said</a>:</p>
+<blockquote>
+<p>The above infinitary definition of a finite set may be infinitely long, but it seems to me that one could use some form of recursion, where one can generate the next part of the definition in terms of previous parts, to "compress" it into a finite statement.</p>
+</blockquote>
+<p>Of course a more common way to define a finite set is first to write down some axioms of set theory like ZFC in first-order logic, and in them define the natural numbers (or more precisely <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi></mrow><annotation encoding="application/x-tex">\omega</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ω</span></span></span></span>), and then say a set finite if there's a bijection between it and the set of natural numbers <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">\le n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> for some <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>.</p>
+<p>All this is done in ordinary <em>finitary</em> first-order logic -  the most common set of axioms for ZFC is infinite since it involves an "axiom schema", but that's a completely different sort of infiniteness; each axiom is finitely long.</p>
+<p>If we look at models of the resulting axiom system "ZFC + <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> is a finite set", where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> is some constant, we get a lot of models, because there are many models of set theory, and then within each one there are lots of finite sets.    This leads to the phenomenon of "nonstandard finite sets".</p>
+<p>Anyway, given problems like this, the approach using infinitary first-order logic seems like a reasonably clean way to get a perfect duality between "theories" and "concrete groupoids", so I'm not surprised Rosicky pursued it.   But it would be fun to tackle this using a more category-flavored approach to logic.</p>
+
+
+
+<a name="423841402"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/423841402" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#423841402">(Feb 28 2024 at 15:21)</a>:</h4>
+<p>As they are interesting constructions, I looked more into sketches, particularly in ways they can be generalized to get even more "powerful" notions of categorical diagram. I found two main ways: the Wells "<a href="https://arxiv.org/abs/0809.3023">forms</a>" and the Makkai "<a href="https://doi.org/10.1016/S0022-4049(96)00007-2">generalized sketches</a>". Both papers go into detail about how to define these generalized sketches, what they are useful for, what their models are, and even what the model morphisms are so that a category of models can be defined. However, they seem to stop short of actually describing any properties of these categories of models (or maybe they didn't, and I missed it since these papers can be a little dense and I miss things all the time anyways)<br>
+So, I'm wondering if anyone knows what kinds of properties that a category of models of forms and a category of models of generalized sketches (in Set) might have, maybe including something analogous to the correspondence between categories of models of normal sketches and accessible categories. Of course, accessible categories would be special cases of these types of categories, but I want to know how many other important classes of categories are subsumed by these, since that will help me determine just how "powerful" these constructions are.</p>
+
+
+
+<a name="426152896"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/426152896" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#426152896">(Mar 12 2024 at 15:30)</a>:</h4>
+<p>Both the paper on concrete categories attached above as well as a book titled "Locally Presentable and Accessible Categories" (which discusses the connection between sketches and accessible categories) were written by Jiří Rosický, so I figured that if anyone would know the answer to my (numerous) questions on these subjects it would be him! So, I decided to reach out to him with a question about categories of models of generalized sketches. However, that was around five days ago, I haven't heard back yet. Does anyone have any advice about what I should do? I really want to find the answer to this question, but I searched for hours in the literature to no avail, nobody else I've asked knows, and there's no way I could do it myself since I wouldn't even know where to start. Any advice on how to resolve this situation is greatly appreciated!</p>
+
+
+
+<a name="426166455"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/426166455" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#426166455">(Mar 12 2024 at 16:28)</a>:</h4>
+<p>You should know that Jiří Rosický is almost 80 years old, so understandably he might not check his email regularly!<br>
+In response to your "if anyone knows"... to understand them, you need to find at least one<br>
+<strong>example of a generalized sketch whose models are not sketchable</strong><br>
+(in other words, they don't form an accessible category). I personally don't know of any examples, but you're more likely to get responses here if you make it clear (visually, I mean) what you're asking and include sufficient information (e.g. a definition of generalized sketch) for the question to be self-contained. Only a very motivated person will go to the trouble of chasing up definitions even given a link to a paper containing them <span aria-label="sweat smile" class="emoji emoji-1f605" role="img" title="sweat smile">:sweat_smile:</span> .</p>
+
+
+
+<a name="426207687"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/426207687" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#426207687">(Mar 12 2024 at 20:33)</a>:</h4>
+<p><span class="user-mention" data-user-id="277473">@Morgan Rogers (he/him)</span> Thanks for the advice!<br>
+A common emphasis in these generalized sketch papers is that sketches cannot describe power/exponential objects in cartesian closed categories, with these generalized sketches constructed so that they can express power objects. This would, for instance, include the powerset in Set, which is itself necessary to define a topological space (since we need to identify a set of subsets). Thus, topological spaces are a concept that generalized sketches can express. It is known that Top is not accessible, therefore topological spaces give a good example of a generalized sketch whose models are not sketchable.</p>
+
+
+
+<a name="426207851"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/426207851" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson (aka Arlin) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#426207851">(Mar 12 2024 at 20:35)</a>:</h4>
+<p>Eh, spaces are sketchable by a large sketch, though. So it's not as convincing as possible an example.</p>
+
+
+
+<a name="426208471"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/426208471" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#426208471">(Mar 12 2024 at 20:39)</a>:</h4>
+<p><span class="user-mention" data-user-id="609515">@Kevin Carlson (aka Arlin)</span> but is which categories can be presented as models of these large sketches? Are they distinct from those presentable using the generalization that John is pointing to?</p>
+
+
+
+<a name="426218601"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Overview%20of%20Syntax-Semantics%20Duality/near/426218601" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Overview.20of.20Syntax-Semantics.20Duality.html#426218601">(Mar 12 2024 at 21:52)</a>:</h4>
+<p>I am not sure what the analogue of accessible categories is for large sketches. The closest I could find is the analogue of locally presentable categories for large limit sketches in the paper "<a href="https://arxiv.org/abs/2106.11115">Large Limit Sketches and Topological Space Objects</a>" by Martin Brandenburg. In fact, I believe it is this exact paper that Kevin is citing in the claim that spaces are sketchable by a large sketch, since this is one of the results of the paper. In this work the category of models of a large realized limit sketch is a "strongly compact category". I guess you could just define a name for categories sketchable by any large sketch (maybe we could call them "super-accessible categories") but this is just a label and wouldn't tell us anything about the properties these categories have (that would be needed to prove if a given category is sketchable).</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

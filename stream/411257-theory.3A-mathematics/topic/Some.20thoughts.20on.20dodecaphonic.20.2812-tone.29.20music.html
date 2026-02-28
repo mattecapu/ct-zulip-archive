@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Some thoughts on dodecaphonic (12-tone) music · theory: mathematics · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/index.html">theory: mathematics</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Some.20thoughts.20on.20dodecaphonic.20.2812-tone.29.20music.html">Some thoughts on dodecaphonic (12-tone) music</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="432276257"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Some%20thoughts%20on%20dodecaphonic%20%2812-tone%29%20music/near/432276257" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Some.20thoughts.20on.20dodecaphonic.20.2812-tone.29.20music.html#432276257">(Apr 09 2024 at 15:44)</a>:</h4>
+<p>It would be common to model “pitch” - the frequency of an oscillation - as being a continuous phenomenon. </p>
+<p>Therefore, someone may assume it should take values in the real numbers.</p>
+<p>There are multiple sizes of infinity.</p>
+<p>We often take the real numbers to represent continuity, as opposed to the rationals.</p>
+<p>Is this a mistake? If the reals represent continuity as compared to rationals, couldn’t a number set of greater cardinality than the reals appear even <em>more</em> “continuous”, than the reals? (Because there are even <em>more</em> points, in any given interval).</p>
+<p>(Do the hyperreal or superreal numbers have this property?)</p>
+<p>Should the idea of “continuity” be reformulated, so that there are even continuous functions on rational numbers, or natural numbers?</p>
+<p>It seems like in modern physics people generally take nature as “discrete”.</p>
+<p>If space and/or time are “quantized”, does this imply a more accurate model of the frequency of a soundwave would be rational numbers, not reals?</p>
+<p>One of the key ideas in Schönbergian dodecaphonic music is that by enforcing the use of all twelve tones in a measure (a “measure” is a rhythmic unit, essentially), you force the ear to never highlight certain groups of notes as “prominent”. This (allegedly) prevents the human mind from finding a “tonal center” which it hears the other notes as “relative to”. (A non-repeating sequence of the 12 tones is called a “tone row”; in mathematics, they are called “permutations”).</p>
+<p>I have been thinking how many mathematical ideas there are to explore, regarding this.</p>
+<p>We normally count the number of permutations of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> elements as <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo stretchy="false">!</mo></mrow><annotation encoding="application/x-tex">n!</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">n</span><span class="mclose">!</span></span></span></span>. </p>
+<p>This comes from a simple argument of thinking about “choices” - “12 options for the first choice, 11 options for the second choice, …”.</p>
+<p>I have been wondering lately if there is a more systematic way to formulate combinatorial expressions.</p>
+<p>All the techniques I have seen require that a human can make a sound assessment of a given situation. There is not a single “routine” you can follow to always write the correct combinatorial expression of a given situation.</p>
+<p>What if there was? For example, what if there were a “semantics” of counting, where just by writing the situation in those semantics, you could apply logical axioms to derive a formula for calculating a number they are equivalent to?</p>
+<p>Those semantics would express some of the basic ideas we encounter when “counting” things, like, “for each…”, “options”, and so on.</p>
+<p>For example, in the case of choosing <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mo stretchy="false">!</mo></mrow><annotation encoding="application/x-tex">12!</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">12</span><span class="mclose">!</span></span></span></span> as the “correct” expression for “how many unique tone rows are there?”, maybe we could break it apart into some “cognitive steps”, like:</p>
+<ul>
+<li>there is a background set <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> of “12 unique things”</li>
+<li>my question is about sub-collections of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> with 12 elements</li>
+<li>repetition of the elements is not allowed</li>
+<li>there are no other constraints (no requirements on the arrangement of the elements, no function or property they must fulfill)</li>
+</ul>
+<p>Then we could maybe think:</p>
+<p>We have a set of cardinality 12. </p>
+<p>The most elemental operation we can take on it (in this context) is the cartesian product. I know that I want 12 “instances” or “copies” of the set, so this is a “12-ary” cartesian product of sets.</p>
+<p>This reminds me of diagrams in category theory, where the Cartesian product would be replaced by a “product object”. Is there a name for a unique morphism that maps an object to a product object? An “inclusion” mapping? A “product” <em>map</em>?</p>
+<p>Sets also have the disjoint union, which is the “categorical sum” or “coproduct” (I think). </p>
+<p>Disjoint unions are like cartesian products, except every element retains an “index” to differentiate it.</p>
+<p>Could disjoint unions be defined in terms of cartesian products? You just need to pair each element of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> with a value <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span></span></span></span> to differentiate it from the second copy of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>, paired with arbitrary element <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span></span></span></span>.</p>
+<p>I think that a lot of the time, a category does not assume the existence of “numbers”. If the categories are concrete (defined as sets), it makes sense to say “the cardinality of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mi>b</mi><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Ob(C)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mord mathnormal">b</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span> is 7”. But in an abstract category, we need a categorical way, internal to the category, to say that. Do we say there is an arrow from a natural numbers object to the object, with a property like being isomorphic?</p>
+<p>What does a factorial object look like, in a category? Could we talk about the <em>number</em> of permutations of 12 elements as an object in a category, without ever needing to compute the integer value?</p>
+<p>If a purely dodecaphonic composition is an arrangement of tone rows, then for each measure, we can have <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> tone rows playing simultaneously, and we can have a sequence of any number of such “bundles” of tone rows.</p>
+<p>The simultaneous tone rows must be unique. (We do not count identical simultaneous tone rows as distinct).</p>
+<p>The consecutive tone row collections do not need to be distinct. We can repeat the same tone row collection again.</p>
+<p>As a function of <em>up to</em> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">m</span></span></span></span> simultaneous tone rows (1, 2, …, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">m</span></span></span></span>), and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span> <em>measures</em>, how many unique dodecaphonic compositions are there?</p>
+<p>The “<em>purpose</em>” of dodecaphonic music is to enforce “perfect harmonic suspension”. </p>
+<p>We can apply counting or statistical measures to compute how “balanced” any given interval of a dodecaphonic composition is.</p>
+<p>What is the maximum possible degree of “equal distributedness” of the tones?</p>
+<p>How should we write expressions for “higher order” requirements on the compositions, where we require the <em>intervals</em> between tones to always be unique?</p>
+<p>Or, if we realize that there are going to be varying levels of “harmonic prominence” in any given interval (i.e., an interval in which there are more notes in the key of D minor than any other key), what other structuring principles could we require on the composition? </p>
+<p>For example, could we define a requirement on how the “harmonic character” of all possible intervals (subdivisions of the composition, which do not have to be “within” one given measure) relate to each other?</p>
+<p>The harmonic character of an interval could be defined in terms of <em>kind</em> (i.e., D minor) and <em>degree</em> (i.e., 50%, “weak” evocation).</p>
+<p>The strange thing is, the mind does not necessarily hear a tonal center in a predictable way. A sequence of 4ths (which is 0 + 5 mod 12: 0, 5, 10, 3, 8, 1, 6, 11, 4, 9, 2, 7, 0) sounds way more “diatonic” than some other tone rows.</p>
+<p>I want to catch up with David Egolf’s thread about sheaf theory. I am interested in the idea that a sheaf tracks instances of local data and ensures they correspond to a global representation of the data. I wonder if the idea of a “tonal center” having “levels of scope”, from the smallest locality, to the total scope of the composition, could be modeled this way.</p>
+<p>I appreciate any clear simple answers to my above questions. Thanks very much.</p>
+
+
+
+<a name="432277767"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Some%20thoughts%20on%20dodecaphonic%20%2812-tone%29%20music/near/432277767" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson (Arlin) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Some.20thoughts.20on.20dodecaphonic.20.2812-tone.29.20music.html#432277767">(Apr 09 2024 at 15:51)</a>:</h4>
+<p>This is really a bit bewildering, Julius--you're asking about twelve-tone music, the nature of continuity, quantum physics, and whether there could be a different paradigm for combinatorial expressions, all mixed up in a long stream of consciousness. Maybe you could pick out some more specific questions to talk about, since all of these could and have been answered with entire books.</p>
+
+
+
+<a name="432278632"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Some%20thoughts%20on%20dodecaphonic%20%2812-tone%29%20music/near/432278632" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Some.20thoughts.20on.20dodecaphonic.20.2812-tone.29.20music.html#432278632">(Apr 09 2024 at 15:54)</a>:</h4>
+<p>I’m sorry dude, it honestly might be cos I have ADHD, my mind thinks more in terms of connections than just moving ahead in a straight line. It’s really hard for me to just study one book unfortunately, I have to kind of go back and forth between things. That’s why forums are so helpful to me.</p>
+
+
+
+<a name="432279095"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Some%20thoughts%20on%20dodecaphonic%20%2812-tone%29%20music/near/432279095" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Some.20thoughts.20on.20dodecaphonic.20.2812-tone.29.20music.html#432279095">(Apr 09 2024 at 15:56)</a>:</h4>
+<p>Whenever I verbalize a bunch of thoughts like above it helps me so much clarify to myself what my dependent sub-questions are. The <a href="https://en.m.wikipedia.org/wiki/Rubber_duck_debugging">rubber duck principle</a> is my life.</p>
+
+
+
+<a name="432279179"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Some%20thoughts%20on%20dodecaphonic%20%2812-tone%29%20music/near/432279179" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Some.20thoughts.20on.20dodecaphonic.20.2812-tone.29.20music.html#432279179">(Apr 09 2024 at 15:57)</a>:</h4>
+<p>It actually helps me enormously.</p>
+
+
+
+<a name="432284636"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Some%20thoughts%20on%20dodecaphonic%20%2812-tone%29%20music/near/432284636" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Some.20thoughts.20on.20dodecaphonic.20.2812-tone.29.20music.html#432284636">(Apr 09 2024 at 16:19)</a>:</h4>
+<p>I think what <span class="user-mention" data-user-id="609515">@Kevin Carlson (Arlin)</span> meant is that it is difficult to get what you expect from the other members. The rubber duck usually don't reply, whereas when someone posts something here, she is usually implicitly asking for help or a reaction with respect to a specific topic.</p>
+<p>But, maybe what you are looking for is more like "echoes" from the other members here, or a "ping/pong"-like interaction with your stream of consciousness. I have to say that it is quite unusual, so you may face bewildered reactions quite often. </p>
+<p>(Of course, it does not mean that you should change your way of thinking!)</p>
+
+
+
+<a name="432284990"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Some%20thoughts%20on%20dodecaphonic%20%2812-tone%29%20music/near/432284990" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson (Arlin) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Some.20thoughts.20on.20dodecaphonic.20.2812-tone.29.20music.html#432284990">(Apr 09 2024 at 16:20)</a>:</h4>
+<p>Yes, it’s fine if you just want to rubber duck the server, but then you asked for “clear simple answers” to your exceedingly non-clear and non-simple list of lots of thoughts that were mostly not questions—that’s too much to ask for that kind of post.</p>
+
+
+
+<a name="432285089"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Some%20thoughts%20on%20dodecaphonic%20%2812-tone%29%20music/near/432285089" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson (Arlin) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Some.20thoughts.20on.20dodecaphonic.20.2812-tone.29.20music.html#432285089">(Apr 09 2024 at 16:21)</a>:</h4>
+<p>In particular, if you’ve clarified dependent sub-questions that you actually want an answer to, then you should ask them separately.</p>
+
+
+
+<a name="432313043"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Some%20thoughts%20on%20dodecaphonic%20%2812-tone%29%20music/near/432313043" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dylan Braithwaite <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Some.20thoughts.20on.20dodecaphonic.20.2812-tone.29.20music.html#432313043">(Apr 09 2024 at 18:27)</a>:</h4>
+<p>I often find it helpful to DM myself here with stream-of-consciousness thoughts then try to pick out points from it that I can turn into a concrete question. </p>
+<p>More often than not, in the process I find that I can answer my own question.  But when not, I'm able to pick out a more direct question (or start separate threads for separable questions) that will likely get better responses.</p>
+<p>As the others said, if you prefer to do this in a public stream I think that's fine, but it might be helpful to others to preface it by saying something like "I'm going to ramble here, and might post separate questions later when I refine my thoughts, but I'd welcome comments now if you have any"</p>
+
+
+
+<a name="432322931"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Some%20thoughts%20on%20dodecaphonic%20%2812-tone%29%20music/near/432322931" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Some.20thoughts.20on.20dodecaphonic.20.2812-tone.29.20music.html#432322931">(Apr 09 2024 at 19:25)</a>:</h4>
+<p>As a moderator I would prefer you take up one of the above suggestions <span class="user-mention" data-user-id="699750">@Julius Hamilton</span> , not least because only about half of your stream of consciousness was on-topic for <a class="stream" data-stream-id="411257" href="/#narrow/stream/411257-theory.3A-mathematics">#theory: mathematics</a> .</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

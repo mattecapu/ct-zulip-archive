@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Logic programming · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Logic.20programming.html">Logic programming</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="419650189"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Logic%20programming/near/419650189" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Logic.20programming.html#419650189">(Feb 03 2024 at 23:12)</a>:</h4>
+<p>From a purely logical point of view, category theory is "easy" in some sense, a lot of the reasoning is just equational reasoning. There are universal quantifiers in universal properties, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>x</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">∃</mi><mo stretchy="false">!</mo><mi>y</mi><mi mathvariant="normal">.</mi><mi>R</mi><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\forall x. \exists! y.R(x,y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∀</span><span class="mord mathnormal">x</span><span class="mord">.∃</span><span class="mclose">!</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mord">.</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span> but these are rarely nested in a way that leads to deep chains of alternating quantifiers. On another hand, it is hard in the sense that it seems to fundamentally involve dependent types. This makes it unfortunately seemingly not a good candidate for automated theorem provers using first order logic because an explosion of predicates is necessary to control the type dependency.</p>
+<p>It seems very plausible that, for example, some of the theory of pure categories or bicategories is decidable, i.e., we can write down a theory encompassing much of of pure non-applied elementary theory of categories or bicategories, and there is an algorithm to decide whether this is a theorem.</p>
+<p>This led me to ask a more specific question. Mathematicians have a notion of a "follow-your-nose" proof, where the next step is obvious from the current one, and the proof is merely a mechanical matter of doing the obvious next thing. For example, to prove <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∨</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \lor B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> you should pick one of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo separator="true">,</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A, B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> and try to prove it (trying to prove <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> first and then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> if this fails); to prove <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>B</mi></mrow><annotation encoding="application/x-tex">A\implies B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7073em;vertical-align:-0.024em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> you should assume <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> and try to prove <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span>; to prove <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∧</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A\land B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> you should try and prove <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo separator="true">,</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A, B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> separately, and so on. Of course this does not always work, for example if you try to prove <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∨</mo><mi>B</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>B</mi><mo>∨</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A\lor B \implies B \lor A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7073em;vertical-align:-0.024em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> by following these rules, you will assume <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∨</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A\lor B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> and then try to either prove <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> or <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>, which is a dead-end. But it is of interest to write down exactly the logical structure of formulas for which the "naive" proof procedure does work, and the field of logic programming is in part about identifying a good class of logical formulas for which the naive "follow-your-nose" method works, and trying to encode interesting practical algorithms into the direct proof-search procedure for this class of formulas. So my question is, is there a known fragment of category theory which falls into the logic fragment supported by a logic programming language such as Lambda Prolog or Twelf? If such a fragment was identified it would give a very simple and easy to implement proof procedure for theorems in the fragment, just by essentially writing down the axioms and the goal to be proved and telling Lambda Prolog / Twelf to prove it.</p>
+
+
+
+<a name="419650419"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Logic%20programming/near/419650419" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Logic.20programming.html#419650419">(Feb 03 2024 at 23:16)</a>:</h4>
+<p>As a starting point, although we commonly say that category theory uses only intuitionistic reasoning, we can probably say something stronger: it uses only minimal logic, i.e., most category theory proofs do not rely on the principle of explosion in a fundamental way.</p>
+
+
+
+<a name="419650519"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Logic%20programming/near/419650519" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Logic.20programming.html#419650519">(Feb 03 2024 at 23:19)</a>:</h4>
+<p>(Twelf is unique in being a dependently typed logic programming language, and it is tempting to try and encode a decision procedure for category theory theorems in it.)</p>
+
+
+
+<a name="419652122"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Logic%20programming/near/419652122" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Logic.20programming.html#419652122">(Feb 03 2024 at 23:48)</a>:</h4>
+<p>FWIW, Coq's typeclass-search mechanism is also a kind of dependently typed logic programming language.</p>
+
+
+
+<a name="419652407"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Logic%20programming/near/419652407" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Logic.20programming.html#419652407">(Feb 03 2024 at 23:54)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Logic.20programming/near/419652122">said</a>:</p>
+<blockquote>
+<p>FWIW, Coq's typeclass-search mechanism is also a kind of dependently typed logic programming language.</p>
+</blockquote>
+<p>Yes, that's a good point. I think that understanding Coq's typeclasses helped me to understand logic programming better. It seems like Enrico Tassi, one of the Coq developers, has really bought into the idea expressed by Dale Miller here <a href="https://link.springer.com/article/10.1007/s10817-018-9483-3">https://link.springer.com/article/10.1007/s10817-018-9483-3</a> that for things like type inference and type class resolution it is best to have a dedicated logic programming language to explicitly write such functionality, viewing it as a natural generalization of typeclass resolution and canonical structures. I think that a long term goal is to implement a full elaborator for the calculus of inductive constructions in Lambda Prolog, ideally giving users the ability to extend the elaborator with additional unification hints.<br>
+<a href="https://github.com/LPCIC/">https://github.com/LPCIC/</a><br>
+I'm not sure it's practical to manually assemble functors in Coq using the typeclass system, but with a dedicated user extensible language for the elaborator I feel like it might be.</p>
+
+
+
+<a name="419652948"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Logic%20programming/near/419652948" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Logic.20programming.html#419652948">(Feb 04 2024 at 00:03)</a>:</h4>
+<p>I'm fond of that idea as well.</p>
+
+
+
+<a name="419663973"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Logic%20programming/near/419663973" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Washington <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Logic.20programming.html#419663973">(Feb 04 2024 at 03:08)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="424412">Patrick Nicodemus</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Logic.20programming/near/419650189">said</a>:</p>
+<blockquote>
+<p>It seems very plausible that, for example, some of the theory of pure categories or bicategories is decidable, i.e., we can write down a theory encompassing much of of pure non-applied elementary theory of categories or bicategories, and there is an algorithm to decide whether this is a theorem.<br>
+</p>
+</blockquote>
+<p>I was struck by this seeming rather implausible, since one-object categories aren't even decidable (because the theory of groups isn't decidable). Then I came across <a href="https://mishap.sdf.org/mints-a-decidable-fragment-of-category-theory-without-automorphisms.pdf">this paper draft</a> which skirts around the worry by considering equational theories of categories without any automorphisms (so that you cannot interpret the theory of groups).</p>
+
+
+
+<a name="419701690"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Logic%20programming/near/419701690" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Logic.20programming.html#419701690">(Feb 04 2024 at 14:15)</a>:</h4>
+<p>That's a good point, yeah. The example in the paper of a localization in a model category was more complicated than I had in mind, obviously a localization often gives categories for which the word problem is impossible to solve, along with other foundational issues. Maybe one way to make the problem more tractable would be to eliminate arbitrary equalities from the list of possible hypotheses, considering only equality hypotheses of the form "a morphism with this universal property is unique", so one does not have the ability to encode arbitrary problems from group theory.</p>
+
+
+
+<a name="419701958"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Logic%20programming/near/419701958" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Logic.20programming.html#419701958">(Feb 04 2024 at 14:19)</a>:</h4>
+<p>The functor laws and naturality laws aren't of this form, it's not obvious that there's a subset of equational reasoning which includes these without including much more complicated things.</p>
+
+
+
+<a name="419712258"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Logic%20programming/near/419712258" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Logic.20programming.html#419712258">(Feb 04 2024 at 16:52)</a>:</h4>
+<p>I don't mean to trivialize your point here by saying "well, pathological examples aside...". I did make a mistake in conflating equational reasoning with easy. But, I think experience does tell us that categorical proofs are often straightforward and direct, even if it is not obvious what would be a convenient formal language which is capable of expressing many of these arguments and does not encode the halting problem.</p>
+
+
+
+<a name="419732774"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Logic%20programming/near/419732774" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Logic.20programming.html#419732774">(Feb 04 2024 at 21:28)</a>:</h4>
+<p>there's a fast decision procedure  from the 1980s for the word problem for any finitely presented category that admits an equivalent non-length-increasing  re-write/Thue system.  <a href="https://www.proquest.com/openview/1e022b58b2f1b944c3bb775cdf98f98d/">https://www.proquest.com/openview/1e022b58b2f1b944c3bb775cdf98f98d/</a></p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

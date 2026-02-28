@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>What is a term? · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html">What is a term?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="528703354"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528703354" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ruby Khondaker (she/her) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528703354">(Jul 14 2025 at 16:51)</a>:</h4>
+<p>Is this the "term model" of the type theory? I've often found it psychologically easier to pretend I'm working in the term model when doing type-theoretic things, since then I have an actual concrete idea for what an arbitrary term should be - something one can obtain in a finite sequence of steps from applying the introduction and elimination rules of the types in your theory. At least, if I've understood correctly!</p>
+
+
+
+<a name="528714352"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528714352" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528714352">(Jul 14 2025 at 18:00)</a>:</h4>
+<p>Yes, this is the term model.  But I actually think it's misleading to think too much about the term model when you're working <em>in</em> type theory, since type theory has much wider semantics than that.  If you have the term model too much in mind you may have too limited an idea of what exists.  For instance, it's true that in the term model all the objects are built from a finite sequence of steps of rules, but in a general model that isn't the case, so if you think too hard about that you may get misled.</p>
+
+
+
+<a name="528714539"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528714539" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528714539">(Jul 14 2025 at 18:01)</a>:</h4>
+<p>People think type theory is more "syntactic" than set theory, but it really isn't.  When we write <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mi>x</mi><mo>∣</mo><mi>x</mi><mo>&gt;</mo><mn>3</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{x \mid x &gt; 3\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3</span><span class="mclose">}</span></span></span></span> we don't think of it as a "term", we think of it as just representing an actual <em>set</em>, and we can do the same for the syntax of type theory.</p>
+
+
+
+<a name="528733231"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528733231" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ruby Khondaker (she/her) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528733231">(Jul 14 2025 at 20:17)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Continuations.2C.20parametricity.2C.20and.20polymorphism/near/528714352">said</a>:</p>
+<blockquote>
+<p>Yes, this is the term model.  But I actually think it's misleading to think too much about the term model when you're working <em>in</em> type theory, since type theory has much wider semantics than that.  If you have the term model too much in mind you may have too limited an idea of what exists.  For instance, it's true that in the term model all the objects are built from a finite sequence of steps of rules, but in a general model that isn't the case, so if you think too hard about that you may get misled.</p>
+</blockquote>
+<p>Ooh ok, in what senses would this kind of thinking mislead you? I remember in the past being very confused because I had no intuition for what a "term" in type theory was supposed to be, whereas I had a good idea that a "set" was a collection of things. Thinking in terms of the term model gave me that intuition of what "terms" should be - so if I abandon it, I run into the same problem of not really knowing what a "term" is...</p>
+
+
+
+<a name="528736124"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528736124" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528736124">(Jul 14 2025 at 20:36)</a>:</h4>
+<p>When working <em>in</em> type theory (as opposed to <em>on</em> type theory, i.e. doing metatheory), I don't like to use the word "term".  To me "term" suggests a syntactic object.  When working <em>in</em> type theory I generally use words like "element" instead.  Then the intution is just like for set theory: a type is a collection of things, and its elements are the things it is a collection of.</p>
+
+
+
+<a name="528736187"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528736187" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Notification Bot <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528736187">(Jul 14 2025 at 20:37)</a>:</h4>
+<p>5 messages were moved here from <a class="stream-topic" data-stream-id="229199" href="/#narrow/channel/229199-learning.3A-questions/topic/Continuations.2C.20parametricity.2C.20and.20polymorphism/with/528702400">#learning: questions &gt; Continuations, parametricity, and polymorphism</a> by <span class="user-mention silent" data-user-id="276777">Mike Shulman</span>.</p>
+
+
+
+<a name="528736644"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528736644" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ruby Khondaker (she/her) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528736644">(Jul 14 2025 at 20:40)</a>:</h4>
+<p>Hm, ok... so then, why do people use "terms" in type theory so often, as opposed to just "element"?</p>
+
+
+
+<a name="528737500"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528737500" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Vincent R.B. Blazy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528737500">(Jul 14 2025 at 20:46)</a>:</h4>
+<p>I like <em>inhabitant</em>, in type theory! Precisely to remain with type-theoretic intuition and not to get confused with set-theoretic intuition</p>
+
+
+
+<a name="528738435"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528738435" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528738435">(Jul 14 2025 at 20:52)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="934428">Ruby Khondaker (she/her)</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/What.20is.20a.20term.3F/near/528736644">said</a>:</p>
+<blockquote>
+<p>Hm, ok... so then, why do people use "terms" in type theory so often, as opposed to just "element"?</p>
+</blockquote>
+<p>I don't know, who are these people?  (-:</p>
+
+
+
+<a name="528738509"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528738509" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528738509">(Jul 14 2025 at 20:53)</a>:</h4>
+<p>in equational and Horn logic, initial models can be constructed from terms.  the terminology is prevalent there.  but once you move to more expressive logics, this property breaks down.</p>
+
+
+
+<a name="528738917"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528738917" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528738917">(Jul 14 2025 at 20:55)</a>:</h4>
+<p><em>Initial</em> models can <em>always</em> be constructed from terms (meaning syntactic objects).</p>
+
+
+
+<a name="528738963"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528738963" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528738963">(Jul 14 2025 at 20:56)</a>:</h4>
+<p>This is the central fact of categorical logic and the syntax/semantics adjunction.</p>
+
+
+
+<a name="528740514"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528740514" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528740514">(Jul 14 2025 at 21:06)</a>:</h4>
+<p>terms in the same signature of the theory you're starting with?  How do you witness existential quantifiers (that aren't "exists unique")?<br>
+<a href="/user_uploads/21317/wFXUbKjQJiTz0ohHNV6s72xJ/why-horn-formulas-matter-in-computer-science-initial-4rtnikvejv.pdf">why-horn-formulas-matter-in-computer-science-initial-4rtnikvejv.pdf</a></p>
+
+
+
+<a name="528740845"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528740845" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528740845">(Jul 14 2025 at 21:08)</a>:</h4>
+<p>this is could be a difference in terminology again.  I'm quoting from e.g. <a href="https://link.springer.com/chapter/10.1007/3-540-15198-2_24">https://link.springer.com/chapter/10.1007/3-540-15198-2_24</a> , which I'll try to find a free version for.</p>
+
+
+
+<a name="528740887"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528740887" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528740887">(Jul 14 2025 at 21:09)</a>:</h4>
+<p>Yeah, the initial model is doctrine-relative.</p>
+
+
+
+<a name="528741024"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528741024" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528741024">(Jul 14 2025 at 21:10)</a>:</h4>
+<p>Equational and Horn theories can be stated context-free, so it makes sense to talk about an initial model in a contextless doctrine, which is just a set.  But more general type theories with contexts are in a doctrine with contexts, and so their initial models have to be categories, not sets.</p>
+
+
+
+<a name="528743374"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528743374" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ruby Khondaker (she/her) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528743374">(Jul 14 2025 at 21:27)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/What.20is.20a.20term.3F/near/528738435">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="934428">Ruby Khondaker (she/her)</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/What.20is.20a.20term.3F/near/528736644">said</a>:</p>
+<blockquote>
+<p>Hm, ok... so then, why do people use "terms" in type theory so often, as opposed to just "element"?</p>
+</blockquote>
+<p>I don't know, who are these people?  (-:</p>
+</blockquote>
+<p>Hm, basically every type theory resource I've seen...?</p>
+
+
+
+<a name="528744156"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528744156" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528744156">(Jul 14 2025 at 21:33)</a>:</h4>
+<p>It's hard for me to comment on it without a specific reference.</p>
+
+
+
+<a name="528744200"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528744200" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528744200">(Jul 14 2025 at 21:34)</a>:</h4>
+<p>If they're writing about the <em>syntax</em> of type theory, as many people are, then of course they're going to say "term".</p>
+
+
+
+<a name="528744381"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20a%20term%3F/near/528744381" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20a.20term.3F.html#528744381">(Jul 14 2025 at 21:35)</a>:</h4>
+<p>It's possible I misinterpreted what you meant when you said</p>
+<p><span class="user-mention silent" data-user-id="934428">Ruby Khondaker (she/her)</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/What.20is.20a.20term.3F/near/528703354">said</a>:</p>
+<blockquote>
+<p>I've often found it psychologically easier to pretend I'm working in the term model when doing type-theoretic things</p>
+</blockquote>
+<p>If by "doing type-theoretic things" you meant "working with the syntax of type theory", then there's absolutely nothing wrong with "working in the term model", since that's really synonymous with working with syntax since the term model is built out of syntax.  I thought you meant instead "doing mathematics inside a type-theoretic foundation".</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

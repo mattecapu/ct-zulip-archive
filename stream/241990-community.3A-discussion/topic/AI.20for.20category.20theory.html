@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>AI for category theory · community: discussion · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/index.html">community: discussion</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html">AI for category theory</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="514935792"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/514935792" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#514935792">(Apr 29 2025 at 01:58)</a>:</h4>
+<p>My old friend Bruce Smith said:</p>
+<blockquote>
+<p>If you haven't tried the big LLM AIs lately, you should try them again, since they've recently gotten a lot smarter and more helpful. My favorites are Google's Gemini 2.5 Pro (experimental), and Anthropic's Claude (Sonnet 3.7), both free for limited usage.</p>
+</blockquote>
+<p>So I tried Gemini 2.5 Pro and asked it:</p>
+<blockquote>
+<p>Could you please summarize the idea of "Quillen homology" of a monoid?</p>
+</blockquote>
+<p>Its 'thoughts' before actually answering are interesting, since it didn't know how much category theory I know.   Here are its 'thoughts':</p>
+<blockquote>
+<p>Here's a thinking process that could lead to the explanation of Quillen homology of a monoid:</p>
+<ul>
+<li>
+<p><strong>Understand the Goal:</strong> The request is to summarize the idea of Quillen homology of a monoid. This means focusing on the motivation, construction, and significance, rather than getting bogged down in extreme technical details (like simplicial sets unless necessary). The target audience is likely someone with some background in algebra or topology, but not necessarily an expert in homological algebra or category theory.</p>
+</li>
+<li>
+<p><strong>Identify the Core Concept:</strong> Quillen homology is a type of homology theory. What does homology do? It measures "holes" or algebraic invariants. It often arises from chain complexes. It's usually defined for algebraic structures (groups, rings, modules, algebras) or topological spaces.</p>
+</li>
+<li>
+<p><strong>Connect to the Object:</strong> The object is a monoid. What's a monoid? It's like a group, but without the requirement of inverses (associative binary operation, identity element). Examples: (ℕ, +), (strings, concatenation), endomorphism monoids.</p>
+</li>
+<li>
+<p><strong>Motivation: Why Homology for Monoids?</strong></p>
+<ul>
+<li>
+<p><strong>Generalization:</strong> Group homology (Eilenberg-MacLane homology) is well-established. Monoids are generalizations of groups. Can we generalize group homology to monoids?</p>
+</li>
+<li>
+<p><strong>Algebraic K-theory:</strong> Quillen's original motivation was algebraic K-theory. He defined K-groups K_i(R) for a ring R using the classifying space BGL(R). The fundamental group π₁(BGL(R)) is related to K₁(R), and the homology groups H_n(BGL(R), ℤ) are related to K_n(R) via the Hurewicz map. The group GL(R) = ∪_n GL_n(R) is built from matrices. Can we relate this to simpler algebraic structures? Quillen homology provides tools to compute homology of related algebraic structures, including groups and potentially monoids arising in K-theory contexts (though the direct link for monoids themselves in K-theory is perhaps less direct than for groups or categories).</p>
+</li>
+<li>
+<p><strong>Understanding Monoid Structure:</strong> Just like group homology reveals information about group structure (extensions, relations, etc.), monoid homology should reveal information about monoid structure.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>How is it Constructed? (The Quillen Way)</strong></p>
+<ul>
+<li>
+<p><strong>Key Idea: Simplicial Resolution.</strong> Quillen's approach often involves constructing a resolution of the object in a suitable category, often using simplicial objects.</p>
+</li>
+<li>
+<p><strong>The Bar Construction Analogy:</strong> Recall group homology. It can be computed using the bar resolution. This is a standard simplicial resolution of ℤ by free G-modules. Can we adapt this?</p>
+</li>
+<li>
+<p><strong>Category Theory Perspective:</strong> Quillen often worked with model categories and derived functors. Homology theories are often derived functors of abelianization or similar functors.</p>
+</li>
+<li>
+<p><strong>Quillen's Specific Construction (for algebras/rings initially, adapted for monoids):</strong></p>
+<ul>
+<li>
+<p>Associate a simplicial set (or simplicial object in some category) to the monoid M. A standard choice is the nerve of the monoid, viewed as a one-object category. Let's call this category C(M). The nerve N(C(M)) is a simplicial set.</p>
+</li>
+<li>
+<p>Alternatively, and more directly related to the "bar construction" idea: Construct a simplicial resolution of the monoid itself within a suitable category (e.g., simplicial monoids).</p>
+</li>
+<li>
+<p><strong>The André-Quillen Homology Connection:</strong> Quillen homology for commutative rings is closely related to André-Quillen homology, which measures deviations from smoothness/freeness using cotangent complexes. This suggests the idea of "resolving" the structure.</p>
+</li>
+<li>
+<p><strong>Simpler Approach (Derived Functor):</strong> Define a functor from monoids to abelian groups (e.g., abelianization, but that's too simple for higher homology). Consider the functor that takes a monoid M to a module (e.g., ℤ, or a general M-bimodule). Homology is often the derived functor of Tor or Ext.</p>
+</li>
+<li>
+<p><strong>The "Standard" Construction for Monoids (Adapting Bar):</strong></p>
+<ul>
+<li>
+<p>Consider the category of M-sets (sets with a left M-action).</p>
+</li>
+<li>
+<p>We want to derive the functor M ↦ ℤ ⊗_{M} ℤ (where ℤ has trivial M-action). This is analogous to H_n(G, ℤ) = Tor_n^ℤ<a href="http://ℤ,%20ℤ">G</a>.</p>
+</li>
+<li>
+<p>To compute this derived functor (Tor), we need a projective resolution of ℤ in the category of M-sets or, more typically, M-modules (if M acts on abelian groups).</p>
+</li>
+<li>
+<p><strong>Bar Resolution Adaptation:</strong> Construct a simplicial object (often a simplicial abelian group or module) B_*(M).</p>
+<ul>
+<li>
+<p>B_n(M) is typically the free abelian group generated by (n+1)-tuples (m_0, ..., m_n) where m_i ∈ M. Or perhaps n-tuples (m_1, ..., m_n)? Let's check the standard bar construction for groups: B_n(G) = ℤ[G^{n+1}] with faces/degeneracies based on multiplication. For monoids, it's similar: the free ℤ-module generated by M^{n+1}.</p>
+</li>
+<li>
+<p>Define face maps d_i: B_n(M) → B_{n-1}(M).</p>
+<ul>
+<li>
+<p>d_i(m_0, ..., m_n) = (m_0, ..., m_i m_{i+1}, ..., m_n) for 0 ≤ i &lt; n</p>
+</li>
+<li>
+<p>d_n(m_0, ..., m_n) = (m_0, ..., m_{n-1}) &lt;-- Wait, this is for the two-sided bar construction B(A, M, B). Need the one for H_n(M, ℤ).</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Let's use the standard normalized bar resolution for H_n(M, A) where A is a left M-module. The complex C_n(M, A) is A ⊗_{ℤ[M]} P_n, where P_n is a projective resolution of ℤ as a trivial M-module.</p>
+</li>
+<li>
+<p>The standard resolution P_* uses P_n = ℤ[M^{n+1}] with M acting on the first factor: m • (m_0, ..., m_n) = (m m_0, ..., m_n). The differential ∂: P_n -&gt; P_{n-1} is ∑ (-1)^i d_i, where d_i drops the i-th element: d_i(m_0, ..., m_n) = (m_0, ..., ^m_i, ..., m_n).</p>
+</li>
+<li>
+<p>Then H_n(M, A) = H_n(A ⊗_{ℤ[M]} P_*). For A = ℤ (trivial action), we tensor with ℤ over ℤ[M]. This essentially kills the first factor action.</p>
+</li>
+<li>
+<p>ℤ ⊗_{ℤ[M]} P_n ≈ ℤ[M^n] generated by [m_1|...|m_n]. The differential becomes the standard bar differential:<br>
+  ∂[m_1|...|m_n] = m_1 • [m_2|...|m_n] + ∑ (-1)^i [m_1|...|m_i m_{i+1}|...|m_n] + (-1)^n [m_1|...|m_{n-1]].<br>
+  If the action on ℤ is trivial, m_1 • [m_2|...|m_n] becomes just [m_2|...|m_n].</p>
+</li>
+<li>
+<p>This looks exactly like the standard definition of group homology!</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Is there something different for Quillen homology?</strong> The standard bar construction defines Eilenberg-MacLane homology. Quillen homology often refers to the homology derived from simplicial resolutions in a more abstract setting, particularly for non-additive categories or algebraic theories.</p>
+</li>
+<li>
+<p><strong>Connecting to Quillen's K-theory:</strong> Quillen defined higher K-theory using the plus construction on BGL(R) or using the Q-construction on exact categories. These involve constructing specific spaces/simplicial sets whose homology/homotopy groups give K-theory.</p>
+</li>
+<li>
+<p><strong>Revisiting André-Quillen Homology:</strong> This is defined for commutative algebras S over a ring R. It measures the non-exactness of S ⊗_R - applied to a simplicial free R-algebra resolution of S. It uses the cotangent complex.</p>
+</li>
+<li>
+<p><strong>Quillen Homology for Algebraic Theories:</strong> Quillen also defined homology for objects in categories defined by algebraic theories (like groups, rings, Lie algebras, monoids). Let T be the theory for monoids. One considers simplicial T-algebras (simplicial monoids). The homology H_n(M) can be defined as the homotopy groups of the abelianization of a simplicial free resolution of M.</p>
+<ul>
+<li>
+<p>Let F_* -&gt; M be a resolution of M by simplicially free monoids.</p>
+</li>
+<li>
+<p>Apply the abelianization functor (-)&lt;sub&gt;ab&lt;/sub&gt;: Monoid -&gt; AbGroup. M&lt;sub&gt;ab&lt;/sub&gt; = M / [M, M] (if M were a group). For a monoid, it's often M / ~ where m n ~ n m. More accurately, it's the target of the universal map to an abelian group. Let's denote it Ab(M).</p>
+</li>
+<li>
+<p>Compute the homotopy groups π_n(Ab(F_*)). These are the Quillen homology groups Q_n(M).</p>
+</li>
+<li>
+<p>H_1(M) = Q_1(M) = M&lt;sub&gt;ab&lt;/sub&gt; (for groups). For monoids, Q_1(M) is the standard abelianization.</p>
+</li>
+<li>
+<p>H_2(M) relates to presentations (Hopf's formula for groups). Q_2(M) should play a similar role.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Key Properties and Significance:</strong></p>
+<ul>
+<li>
+<p><strong>Generalizes Group Homology:</strong> If M is a group, Quillen homology Q_n(M) coincides with the standard Eilenberg-MacLane homology H_n(M, ℤ).</p>
+</li>
+<li>
+<p><strong>Relation to Derived Functors:</strong> It can be viewed as the derived functors of the abelianization functor in the context of simplicial resolutions or model categories.</p>
+</li>
+<li>
+<p><strong>Low Dimensions:</strong></p>
+<ul>
+<li>
+<p>Q_0(M) = ℤ (if M is non-empty, similar to H_0). Or maybe Ab(M)? No, H_0(G, ℤ) = ℤ. Let's stick with ℤ. Correction: H_0(M, ℤ) = ℤ. Q_0(M) is likely ℤ too, related to connected components.</p>
+</li>
+<li>
+<p>Q_1(M) = M&lt;sub&gt;ab&lt;/sub&gt;, the universal abelian group receiving a homomorphism from M.</p>
+</li>
+<li>
+<p>Q_2(M) relates to relations/syzygies, analogous to Hopf's formula for H_2(G, ℤ).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Computations:</strong> Often difficult to compute directly. Uses spectral sequences or specific resolutions.</p>
+</li>
+<li>
+<p><strong>Applications:</strong> Understanding monoid structure, connections to algebraic K-theory (though maybe less direct than group homology), homotopy theory of algebraic structures.<br>
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+
+
+<a name="514935806"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/514935806" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#514935806">(Apr 29 2025 at 01:58)</a>:</h4>
+<blockquote>
+<ul>
+<li>
+<p><strong>Structure the Summary:</strong></p>
+<ul>
+<li>
+<p><strong>Introduction:</strong> Define what it is (homology theory for monoids), mention Quillen's name and context (generalization, K-theory).</p>
+</li>
+<li>
+<p><strong>Motivation:</strong> Why study it? Generalize group homology, understand monoid structure.</p>
+</li>
+<li>
+<p><strong>Core Idea (Construction):</strong></p>
+<ul>
+<li>
+<p>Analogy with group homology (bar construction).</p>
+</li>
+<li>
+<p>Quillen's approach: Simplicial resolutions + Abelianization.</p>
+</li>
+<li>
+<p>Explain the concept of resolving M by "freer" monoids (simplicially).</p>
+</li>
+<li>
+<p>Explain applying the abelianization functor dimension-wise.</p>
+</li>
+<li>
+<p>Mention homotopy groups give the homology.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Relationship to Eilenberg-MacLane Homology:</strong> Coincides for groups. Explain that the standard bar construction is one way to compute it for groups, and Quillen's framework provides a more general viewpoint.</p>
+<ul>
+<li>
+<p><strong>Low-Dimensional Interpretations:</strong> Q_1 (abelianization), Q_2 (relations).</p>
+</li>
+<li>
+<p><strong>Significance/Applications:</strong> Theoretical tool, understanding structure, K-theory links.</p>
+</li>
+<li>
+<p><strong>Caveat:</strong> Often technically complex, uses tools from simplicial homotopy theory/model categories.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Refine Language:</strong> Use clear terms. Avoid jargon where possible, or explain it briefly (e.g., simplicial resolution). Ensure the flow is logical. Emphasize the idea over the intricate formulas unless a simple one (like abelianization) illustrates the point. Make sure the distinction/connection between Quillen homology and standard Eilenberg-MacLane homology is clear (Quillen provides a broader framework). Double-check the low-dimensional groups. Q_1(M) = M&lt;sub&gt;ab&lt;/sub&gt; is correct. Q_0(M) should be ℤ, as it corresponds to π_0 of the abelianized resolution.</p>
+</li>
+<li>
+<p><strong>Final Review:</strong> Does the summary capture the essence? Is it accessible? Is it accurate? Yes, seems reasonable. It highlights the generalization, the simplicial/homotopical construction method (abelianization of a resolution), the connection to group homology, and the low-dimensional interpretations.</p>
+</li>
+</ul>
+</blockquote>
+
+
+
+<a name="514936432"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/514936432" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#514936432">(Apr 29 2025 at 02:04)</a>:</h4>
+<p>Then here's how it actually answered my question:</p>
+<blockquote>
+<p>Okay, let's break down the idea of Quillen homology for a monoid.</p>
+<p>In essence, <strong>Quillen homology is a way to assign a sequence of abelian groups (homology groups) Hₙ(M) to a monoid M, extending the familiar concept of group homology (Eilenberg-MacLane homology) from groups to monoids.</strong> It uses techniques from algebraic topology (specifically, simplicial methods) to probe the algebraic structure of the monoid.</p>
+<p>Here are the key ideas:</p>
+<ul>
+<li>
+<p><strong>Motivation: Generalizing Group Homology:</strong></p>
+<ul>
+<li>
+<p>For a group G, Eilenberg-MacLane homology Hₙ(G, ℤ) provides important algebraic invariants. H₁(G, ℤ) is the abelianization of G (G/[G,G]), H₂(G, ℤ) relates to presentations and group extensions (Schur multiplier), and higher groups capture more subtle information.</p>
+</li>
+<li>
+<p>Monoids are like groups but without inverses. It's natural to ask if we can define analogous invariants for them.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Quillen's Approach: Simplicial Resolutions and Abelianization:</strong></p>
+<ul>
+<li>
+<p>Quillen's general method for defining homology for various algebraic structures (like rings, Lie algebras, and monoids) involves using simplicial resolutions.</p>
+</li>
+<li>
+<p><strong>Step 1: Resolution:</strong> Find a special kind of "resolution" of the monoid M. This isn't a resolution by modules, but a simplicial monoid F_* which is "freely" generated in some sense (technically, cofibrant in a model category structure on simplicial monoids) and maps to M (viewed as a constant simplicial monoid) via a weak equivalence (roughly, inducing isomorphisms on homotopy groups π₀, π₁...). Think of F_* as a sequence of monoids F₀, F₁, F₂, ... connected by face and degeneracy maps, encoding M in a homotopically meaningful way using "freer" building blocks.</p>
+</li>
+<li>
+<p><strong>Step 2: Abelianization:</strong> Apply the abelianization functor dimension-wise to this simplicial resolution F_. The abelianization M&lt;sub&gt;ab&lt;/sub&gt; of a monoid M is the universal abelian group receiving a homomorphism from M (obtained by forcing mn=nm for all m,n ∈ M). Applying this gives a simplicial abelian group Ab(F_).</p>
+</li>
+<li>
+<p><strong>Step 3: Homotopy Groups:</strong> The Quillen homology groups Hₙ(M) (often denoted Qₙ(M)) are defined as the homotopy groups of the resulting simplicial abelian group Ab(F_):<br>
+  Hₙ(M) := πₙ(Ab(F_))</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Connection to Eilenberg-MacLane Homology:</strong></p>
+<ul>
+<li>
+<p>A crucial property is that <strong>if the monoid M is actually a group G, then Quillen homology Hₙ(G) coincides with the standard Eilenberg-MacLane homology Hₙ(G, ℤ).</strong></p>
+</li>
+<li>
+<p>This means Quillen homology is a genuine generalization. The standard bar construction used for group homology can be seen as arising from a specific simplicial resolution within this framework.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Low-Dimensional Interpretations:</strong></p>
+<ul>
+<li>
+<p><strong>H₀(M):</strong> This is typically isomorphic to ℤ, the integers (assuming M is non-empty), similar to H₀ for groups. It reflects the "connected component".</p>
+</li>
+<li>
+<p><strong>H₁(M):</strong> This is the abelianization of the monoid M, denoted M&lt;sub&gt;ab&lt;/sub&gt;. This is analogous to H₁(G, ℤ) = G&lt;sub&gt;ab&lt;/sub&gt; for a group G.</p>
+</li>
+<li>
+<p><strong>H₂(M):</strong> Like H₂(G, ℤ), this group relates to "relations" or "syzygies" within the monoid, analogous to Hopf's formula for groups, providing information beyond simple abelianization.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Significance:</strong></p>
+<ul>
+<li>
+<p>Provides a robust homological theory for monoids.</p>
+</li>
+<li>
+<p>Offers deeper invariants for studying monoid structure than simple approaches.</p>
+</li>
+<li>
+<p>Connects monoid theory to techniques from simplicial homotopy theory.</p>
+</li>
+<li>
+<p>Has connections (though sometimes indirect) to algebraic K-theory, which was a major motivation for Quillen's work in homology of algebraic structures.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>In simple terms:</strong> Quillen homology uses tools from topology (simplicial objects, homotopy groups) applied to an algebraic construction (abelianization of a free resolution) to extract sophisticated algebraic invariants (homology groups) from a monoid, generalizing what we already do for groups.</p>
+</blockquote>
+
+
+
+<a name="514937116"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/514937116" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#514937116">(Apr 29 2025 at 02:11)</a>:</h4>
+<p>I replied:</p>
+<blockquote>
+<p>Thanks!  You said that "The Quillen homology groups Hₙ(M) (often denoted Qₙ(M)) are defined as the homotopy groups of the resulting simplicial abelian group Ab(F_): Hₙ(M) := πₙ(Ab(F_))".  But a simplicial abelian group can also be seen as a chain complex, thanks to the Dold-Kan theorem, and the homotopy groups of the simplicial abelian group are then the homology groups of this chain complex.   Is there a nice description of the chain complex whose homology groups are the Quillen homology groups of the monoid M?</p>
+</blockquote>
+<p>(I should have said <em>a</em> chain complex.)</p>
+
+
+
+<a name="514937237"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/514937237" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#514937237">(Apr 29 2025 at 02:12)</a>:</h4>
+<p>Here are its thoughts on this question:</p>
+<blockquote>
+<p>Here's a thinking process to arrive at the description of the chain complex for Quillen homology:</p>
+<ol>
+<li>
+<p><strong>Analyze the Request:</strong> The user correctly points out the Dold-Kan correspondence: Simplicial Abelian Groups &lt;=&gt; Non-negatively Graded Chain Complexes. The user wants an explicit description of the chain complex C_* corresponding to the simplicial abelian group Ab(F_) whose homology Hₙ(C_) is the Quillen homology Hₙ(M).</p>
+</li>
+<li>
+<p><strong>Recall the Core Definition:</strong> Quillen homology Hₙ(M) = πₙ(Ab(F_)), where F_ → M is a cofibrant resolution (simplicial monoid) of M.</p>
+</li>
+<li>
+<p><strong>Apply Dold-Kan:</strong> The Dold-Kan theorem gives an explicit functor from simplicial abelian groups to chain complexes. Let A_* be a simplicial abelian group. The corresponding chain complex C_(A_) is given by:</p>
+<ul>
+<li>
+<p>Cₙ(A_) = Aₙ / Dₙ(A_) where Dₙ(A_*) is the subgroup generated by degenerate simplices (images of sᵢ maps). This is the normalized chain complex.</p>
+</li>
+<li>
+<p>The boundary map ∂: Cₙ(A_) → Cₙ₋₁(A_) is given by the alternating sum of the face maps: ∂ = ∑ᵢ&lt;0xC2&gt;&lt;0xA0&gt;(-1)ⁱ dᵢ.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Substitute:</strong> We need to apply this to A_* = Ab(F_*).</p>
+<ul>
+<li>
+<p>The n-th group in the chain complex is Cₙ = Ab(Fₙ) / Dₙ(Ab(Fₙ)).</p>
+</li>
+<li>
+<p>The boundary map ∂: Cₙ → Cₙ₋₁ is induced by ∑ᵢ&lt;0xC2&gt;&lt;0xA0&gt;(-1)ⁱ Ab(dᵢ), where dᵢ: Fₙ → Fₙ₋₁ are the face maps of the simplicial monoid F_*.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>The Problem of "F_*":</strong> The definition uses any cofibrant resolution F_. This is abstract. Can we find a canonical or standard choice for F_? Yes, the bar construction is often used in these contexts, although it needs adaptation for monoids.</p>
+</li>
+<li>
+<p><strong>The Monoid Bar Construction (Standard Resolution?):</strong> Let's consider a potential standard resolution B_*(M).</p>
+<ul>
+<li>
+<p>B₀(M) = M (viewed as a monoid) - wait, this needs to be freer. The standard resolution often involves free monoids.</p>
+</li>
+<li>
+<p>Let FM(S) be the free monoid on a set S.</p>
+</li>
+<li>
+<p>Consider the standard simplicial set associated with M, often called the nerve N(M) or B(M). Its k-simplices are sequences (m₁, ..., mₖ) of elements from M. This isn't a simplicial monoid resolution in the required sense.</p>
+</li>
+<li>
+<p>Quillen's approach often uses the two-sided bar construction B(F, M, F) where F is the free monoid on the elements of M. Let S be the set of elements of M. Let F = FM(S) be the free monoid on S. There's a canonical surjective map ε: F → M.</p>
+</li>
+<li>
+<p>Consider the simplicial monoid B_*(F, F, M):</p>
+<ul>
+<li>
+<p>Bₙ(F, F, M) = F ⊗ F&lt;sup&gt;⊗n&lt;/sup&gt; ⊗ M (tensor product over ℤ, maybe? No, this is for modules. In monoids, this is more like iterated free products or direct products depending on the context).</p>
+</li>
+<li>
+<p>Let's try a simpler approach. Consider the simplicial set which is the nerve of the category associated to M. Let C(M) be the category with one object * and morphisms M. Its nerve N(C(M)) has Nₙ(C(M)) = Mⁿ. This is not a simplicial monoid resolution.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Revisit Quillen's Original Work/Standard Texts:</strong> Quillen's "+ construction" relates K-theory to group homology. His general framework for homology of algebraic theories uses derived functors of abelianization. For monoids, this specializes. What's the standard cofibrant resolution often used implicitly?</p>
+<ul>
+<li>
+<p>It's often related to the bar resolution associated with the adjunction between Monoids and Sets (Forgetful functor U: Mon → Set, Free functor F: Set → Mon).</p>
+</li>
+<li>
+<p>Let F: Set → Mon be the free monoid functor. Let U: Mon → Set be the forgetful functor. The composition FU: Mon → Mon gives a comonad. The standard simplicial resolution associated to this comonad applied to M is F_*M:</p>
+<ul>
+<li>
+<p>(F_*M)ₙ = (FU)ⁿ⁺¹(M) = F(U(F(U(...F(U(M))...)))) (n+1 times FU)</p>
+</li>
+<li>
+<p>(F_*M)ₙ = F(Mⁿ⁺¹), where Mⁿ⁺¹ is the (n+1)-fold cartesian product of the underlying set of M.</p>
+</li>
+<li>
+<p>The face maps dᵢ involve applying F to projections and multiplications within M. The degeneracy maps sᵢ involve applying F to diagonals/inserting identities.</p>
+</li>
+<li>
+<p>This F_*M is indeed a simplicial free monoid mapping to M (via F(multiplication) composed appropriately) and is cofibrant.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+
+
+
+<a name="514937276"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/514937276" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#514937276">(Apr 29 2025 at 02:12)</a>:</h4>
+<blockquote>
+<ol start="8">
+<li>
+<p><strong>Construct the Chain Complex Explicitly:</strong></p>
+<ul>
+<li>
+<p>Apply the abelianization functor Ab dimension-wise to F_<em>M: Ab((F_</em>M)ₙ) = Ab(F(Mⁿ⁺¹)).</p>
+</li>
+<li>
+<p>Abelianization of a free monoid F(S) is the free abelian group ℤ[S] on the set S. So, Ab(F(Mⁿ⁺¹)) = ℤ[Mⁿ⁺¹], the free abelian group on the set of (n+1)-tuples of elements from M.</p>
+</li>
+<li>
+<p>The simplicial abelian group is Aₙ = ℤ[Mⁿ⁺¹].</p>
+</li>
+<li>
+<p>The face maps dᵢ: Aₙ → Aₙ₋₁ are induced by the monoid face maps dᵢ: F(Mⁿ⁺¹) → F(Mⁿ).</p>
+<ul>
+<li>
+<p>d₀: F(Mⁿ⁺¹) → F(Mⁿ) maps F applied to (m₀, m₁, ..., mₙ) to F applied to (m₁, ..., mₙ). So, Ab(d₀) sends [m₀, ..., mₙ] to [m₁, ..., mₙ].</p>
+</li>
+<li>
+<p>dᵢ: F(Mⁿ⁺¹) → F(Mⁿ) for 0 &lt; i &lt; n maps F applied to (m₀, ..., mₙ) to F applied to (m₀, ..., mᵢ₋₁mᵢ, ..., mₙ). So, Ab(dᵢ) sends [m₀, ..., mₙ] to [m₀, ..., mᵢ₋₁mᵢ, ..., mₙ]. (This looks wrong - abelianization should happen after the monoid map).</p>
+</li>
+<li>
+<p>Let's re-evaluate the face maps on F(Mⁿ⁺¹). The map dᵢ: F(Mⁿ⁺¹) → F(Mⁿ) is induced by a set map Mⁿ⁺¹ → Mⁿ.</p>
+<ul>
+<li>
+<p>For i=0: (m₀, ..., mₙ) ↦ (m₁, ..., mₙ)</p>
+</li>
+<li>
+<p>For 0&lt;i&lt;n: (m₀, ..., mₙ) ↦ (m₀, ..., mᵢ₋₁mᵢ, ..., mₙ) ??? No, that's the nerve of the category. Let's use the standard bar resolution structure.</p>
+</li>
+<li>
+<p>Consider the simplicial object B_<em>(M) where Bₙ(M) = Mⁿ⁺¹ (as sets). The monoid resolution F_</em>M has (F_*M)ₙ = F(Mⁿ⁺¹).</p>
+</li>
+<li>
+<p>The face map dᵢ: F(Mⁿ⁺¹) → F(Mⁿ) is F(δᵢ), where δᵢ: Mⁿ⁺¹ → Mⁿ are the standard bar construction maps for sets but adapted for the monoid structure resolution.</p>
+</li>
+<li>
+<p>Let's use the two-sided bar construction B(F, F, M) where F=F(M). Bₙ = F ⊗ F&lt;sup&gt;⊗n&lt;/sup&gt; ⊗ F? No, that's for algebras.</p>
+</li>
+<li>
+<p>Let's try the diagonal bar construction B(M): Bₙ(M) = Mⁿ⁺¹. This is a simplicial set. We need a simplicial monoid.</p>
+</li>
+<li>
+<p>Okay, back to F_<em>M where (F_</em>M)ₙ = F(Mⁿ⁺¹). The face map dᵢ: F(Mⁿ⁺¹) → F(Mⁿ) is the unique monoid homomorphism induced by the set map δᵢ: Mⁿ⁺¹ → Mⁿ.</p>
+<ul>
+<li>
+<p>δ₀(m₀, ..., mₙ) = (m₁, ..., mₙ)</p>
+</li>
+<li>
+<p>δᵢ(m₀, ..., mₙ) = (m₀, ..., mᵢ₋₁mᵢ, ..., mₙ) for 1 ≤ i ≤ n ??? No, this is still wrong. This seems to be related to Hochschild homology structure.</p>
+</li>
+<li>
+<p>The standard simplicial resolution for a monoid M (related to the classifying space BM) often involves F(Mⁿ⁺¹), where the face maps are:</p>
+<ul>
+<li>
+<p>d₀: sends generator (m₀, ..., mₙ) to (m₁, ..., mₙ)</p>
+</li>
+<li>
+<p>dᵢ: sends generator (m₀, ..., mₙ) to (m₀, ..., mᵢ₋₁mᵢ, ..., mₙ) for 1 ≤ i &lt; n ??? Still feels off.</p>
+</li>
+<li>
+<p>Let's reconsider the definition of the simplicial monoid resolution F_* → M. Maybe it's simpler.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Alternative Viewpoint: Derived Functor:</strong> Quillen homology is the left derived functor of the abelianization functor Ab: Mon → AbGrp.</p>
+<ul>
+<li>
+<p>LₙAb(M) = Hₙ(Ab(F_<em>M)) where F_</em>M → M is a projective (cofibrant) resolution.</p>
+</li>
+<li>
+<p>We used F_*M = F(M&lt;sup&gt;•+1&lt;/sup&gt;).</p>
+</li>
+<li>
+<p>So Hₙ(M) = Hₙ( Dold-Kan( Ab(F(M&lt;sup&gt;•+1&lt;/sup&gt;)) ) ).</p>
+</li>
+<li>
+<p>The simplicial abelian group is A_* with Aₙ = Ab(F(Mⁿ⁺¹)) = ℤ[Mⁿ⁺¹] (free abelian group on (n+1)-tuples).</p>
+</li>
+<li>
+<p>What are the face maps dᵢ: ℤ[Mⁿ⁺¹] → ℤ[Mⁿ]? They are induced by the monoid homomorphisms dᵢ: F(Mⁿ⁺¹) → F(Mⁿ).</p>
+</li>
+<li>
+<p>These monoid maps are determined by their action on the generators Mⁿ⁺¹.</p>
+<ul>
+<li>d₀ sends (m₀, ..., mₙ) ∈ Mⁿ⁺¹ to the element (m₁, ..., mₙ) ∈ F(Mⁿ). Wait, F(Mⁿ) is the free monoid. Its elements are words. This seems too complex.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Revisit Group Homology Analogy:</strong> For a group G, Hₙ(G, ℤ) = Hₙ(C_(G)), where C_(G) is the standard bar resolution chain complex:</p>
+<ul>
+<li>
+<p>Cₙ(G) = ℤ[Gⁿ⁺¹] (free abelian group on (n+1)-tuples).</p>
+</li>
+<li>
+<p>∂([g₀|...|gₙ]) = ∑ᵢ&lt;0xC2&gt;&lt;0xA0&gt;(-1)ⁱ dᵢ([g₀|...|gₙ])</p>
+</li>
+<li>
+<p>dᵢ([g₀|...|gₙ]) = [g₀|...|gᵢgᵢ₊₁|...|gₙ] for 0 ≤ i &lt; n (action often written on the left)</p>
+</li>
+<li>
+<p>dₙ([g₀|...|gₙ]) = [g₀|...|gₙ₋₁] (action often written on the left)</p>
+</li>
+<li>
+<p>Let's use the unnormalized version often defined via the nerve: C'ₙ = ℤ[Gⁿ] with basis [g₁|...|gₙ].</p>
+</li>
+<li>
+<p>∂[g₁|...|gₙ] = g₁[g₂|...|gₙ] + ∑ᵢ&lt;0xC2&gt;&lt;0xA0&gt;(-1)ⁱ [g₁|...|gᵢgᵢ₊₁|...|gₙ] + (-1)ⁿ[g₁|...|gₙ₋₁].</p>
+</li>
+<li>
+<p>The Quillen homology for groups is this Eilenberg-MacLane homology. So the chain complex must be related to this.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Hypothesis:</strong> Maybe the chain complex for Quillen homology Hₙ(M) is directly analogous to the bar complex for groups, but using the monoid multiplication?</p>
+<ul>
+<li>
+<p>Let Cₙ(M) = ℤ[Mⁿ⁺¹], the free abelian group generated by symbols (m₀, m₁, ..., mₙ) where mᵢ ∈ M.</p>
+</li>
+<li>
+<p>Define boundary map ∂: Cₙ(M) → Cₙ₋₁(M) by ∂ = ∑ᵢ&lt;0xC2&gt;&lt;0xA0&gt;(-1)ⁱ dᵢ, where:</p>
+<ul>
+<li>
+<p>dᵢ(m₀, ..., mₙ) = (m₀, ..., mᵢmᵢ₊₁, ..., mₙ) for 0 ≤ i &lt; n</p>
+</li>
+<li>
+<p>dₙ(m₀, ..., mₙ) = (m₀, ..., mₙ₋₁) ??? This doesn't seem right for monoids. It implicitly uses the group action g₀ applied to [g₁|...|gₙ] in the group case.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Consult Sources (e.g., Loday, Goerss-Jardine):</strong></p>
+<ul>
+<li>
+<p>Goerss-Jardine, Simplicial Homotopy Theory, Chapter III, Section 3: Homology. They define Hₙ(C) = πₙ(K) where K is the Dold-Kan complex of Ab(F_) where F_ is a cofibrant simplicial monoid resolution.</p>
+</li>
+<li>
+<p>They confirm that the standard choice for F_* is the bar construction F(M&lt;sup&gt;•+1&lt;/sup&gt;).</p>
+</li>
+<li>
+<p>So the simplicial abelian group A_* has Aₙ = Ab(F(Mⁿ⁺¹)) = ℤ[Mⁿ⁺¹].</p>
+</li>
+<li>
+<p>The face maps dᵢ: ℤ[Mⁿ⁺¹] → ℤ[Mⁿ] are Ab(F(δᵢ)), where δᵢ are the structure maps of the bar construction.</p>
+<ul>
+<li>
+<p>Let x = (m₀, ..., mₙ) ∈ Mⁿ⁺¹.</p>
+</li>
+<li>
+<p>d₀(x) = Ab(F(δ₀))(x) = Ab(F(m₁, ..., mₙ)) - This isn't quite right. The map F(Mⁿ⁺¹) -&gt; F(Mⁿ) sends the generator (m₀,...,mₙ) to the generator (m₁,...,mₙ). So Ab(d₀) sends the basis element [(m₀,...,mₙ)] to [(m₁,...,mₙ)].</p>
+</li>
+<li>
+<p>dᵢ(x) = Ab(F(δᵢ))(x) for i &gt; 0. The map δᵢ: Mⁿ⁺¹ → Mⁿ sends (m₀, ..., mₙ) to (m₀, ..., mᵢ₋₁mᵢ, ..., mₙ). So Ab(dᵢ) sends [(m₀,...,mₙ)] to [(m₀, ..., mᵢ₋₁mᵢ, ..., mₙ)]. This is the structure.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The chain complex (via Dold-Kan) is the homology of the associated normalized chain complex N(A_*).</p>
+</li>
+<li>
+<p>Nₙ(A_*) = Aₙ / Degenerate Simplices = ℤ[Mⁿ⁺¹] / Dₙ.</p>
+</li>
+<li>
+<p>∂ = ∑ (-1)ⁱ dᵢ restricted to Nₙ(A_*).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Simplified Description? The Baues-Wirsching Complex:</strong> There is a related complex often used for the homology of small categories (a monoid M is a category with one object). The homology Hₙ(C, A) of a category C with coefficients in a functor A: C → Ab is defined via a bar-like resolution. For a monoid M (category C(M)), we are looking for Hₙ(C(M), ℤ) where ℤ is the constant functor? No, that's Eilenberg-MacLane homology of the category, which isn't quite Quillen homology.</p>
+</li>
+<li>
+<p><strong>Focus on the Derived Functor Definition:</strong> Hₙ(M) = LₙAb(M). We need the chain complex that computes this. Standard technique: use a projective resolution of M in the category of monoids. But that's not what Quillen uses. He uses a simplicial resolution which is cofibrant in the model category of simplicial monoids.</p>
+<ul>
+<li>
+<p>The standard simplicial resolution F_*M = F(M&lt;sup&gt;•+1&lt;/sup&gt;) works.</p>
+</li>
+<li>
+<p>The resulting simplicial abelian group is A_* = Ab(F(M&lt;sup&gt;•+1&lt;/sup&gt;)). Aₙ = ℤ[Mⁿ⁺¹].</p>
+</li>
+<li>
+<p>The Dold-Kan theorem gives the normalized chain complex N(A_*).</p>
+</li>
+<li>
+<p>Nₙ(A_) = (Intersection over i of Ker sᵢ) where sᵢ: Aₙ → Aₙ₊₁ are degeneracy maps? No, Nₙ(A_) = Aₙ / Sum(Im sᵢ).</p>
+</li>
+<li>
+<p>The boundary map ∂ = ∑ (-1)ⁱ dᵢ is defined on A_* and restricts/descends to N(A_*).</p>
+</li>
+<li>
+<p>dᵢ: ℤ[Mⁿ⁺¹] → ℤ[Mⁿ] acts on basis elements [(m₀, ..., mₙ)] as:</p>
+<ul>
+<li>
+<p>d₀: [(m₀, ..., mₙ)] ↦ [(m₁, ..., mₙ)]</p>
+</li>
+<li>
+<p>dᵢ: [(m₀, ..., mₙ)] ↦ [(m₀, ..., mᵢ₋₁mᵢ, ..., mₙ)] for 1 ≤ i ≤ n.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Checking ∂²=0:</strong> Let's compute ∂² on a generator [(m₀, m₁, m₂)] in C₃(A_*):</p>
+<ul>
+<li>
+<p>∂([(m₀, m₁, m₂)]) = d₀ - d₁ + d₂ = [(m₁, m₂)] - [(m₀m₁, m₂)] + [(m₀, m₁m₂)]</p>
+</li>
+<li>
+<p>∂²([(m₀, m₁, m₂)]) = ∂([(m₁, m₂)] - [(m₀m₁, m₂)] + [(m₀, m₁m₂)])</p>
+<ul>
+<li>
+<p>∂([(m₁, m₂)]) = d₀([(m₁, m₂)]) - d₁([(m₁, m₂)]) = [(m₂)] - [(m₁m₂)]</p>
+</li>
+<li>
+<p>∂([(m₀m₁, m₂)]) = d₀([(m₀m₁, m₂)]) - d₁([(m₀m₁, m₂)]) = [(m₂)] - [(m₀m₁m₂)]</p>
+</li>
+<li>
+<p>∂([(m₀, m₁m₂)]) = d₀([(m₀, m₁m₂)]) - d₁([(m₀, m₁m₂)]) = [(m₁m₂)] - [(m₀(m₁m₂))]</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Summing with signs: ([(m₂)] - [(m₁m₂)]) - ([(m₂)] - [(m₀m₁m₂)]) + ([(m₁m₂)] - [(m₀m₁m₂)])</p>
+</li>
+<li>
+<p>= [(m₂)] - [(m₁m₂)] - [(m₂)] + [(m₀m₁m₂)] + [(m₁m₂)] - [(m₀(m₁m₂))]</p>
+</li>
+<li>
+<p>= [(m₀m₁m₂)] - [(m₀(m₁m₂))]</p>
+</li>
+<li>
+<p>This is not zero unless the monoid is associative! Okay, associativity is given. So [(m₀m₁m₂)] = [(m₀(m₁m₂))] and ∂²=0 holds.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Final Complex Description:</strong></p>
+<ul>
+<li>
+<p>The chain complex C_*(M) has Cₙ(M) = ℤ[Mⁿ⁺¹], the free abelian group with basis the set of (n+1)-tuples (m₀, ..., mₙ) of elements from M.</p>
+</li>
+<li>
+<p>The boundary map ∂: Cₙ(M) → Cₙ₋₁(M) is given by the alternating sum ∂ = ∑ᵢ&lt;0xC2&gt;&lt;0xA0&gt;(-1)ⁱ dᵢ, where dᵢ acts on basis elements as:</p>
+<ul>
+<li>
+<p>d₀(m₀, m₁, ..., mₙ) = (m₁, ..., mₙ)</p>
+</li>
+<li>
+<p>dᵢ(m₀, m₁, ..., mₙ) = (m₀, ..., mᵢ₋₁mᵢ, ..., mₙ) for 1 ≤ i ≤ n.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>This complex C_*(M) is the unnormalized chain complex associated via Dold-Kan to the simplicial abelian group Ab(F(M&lt;sup&gt;•+1&lt;/sup&gt;)).</p>
+</li>
+<li>
+<p>Its homology groups Hₙ(C_*(M)) are naturally isomorphic to the homology groups of the normalized complex N(Ab(F(M&lt;sup&gt;•+1&lt;/sup&gt;))) (which are πₙ(Ab(F(M&lt;sup&gt;•+1&lt;/sup&gt;)))), and thus are the Quillen homology groups Hₙ(M).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Refine the Explanation:</strong> Explain the connection clearly: Quillen Hₙ(M) = πₙ(Ab(F_)). Use the standard resolution F_M = F(M&lt;sup&gt;•+1&lt;/sup&gt;). Apply Ab to get the simplicial abelian group A_ with Aₙ = ℤ[Mⁿ⁺¹]. Apply Dold-Kan. State that the homology can be computed using either the normalized or the unnormalized complex derived from A_. Describe the unnormalized complex C_*(M) explicitly as above, as it's simpler to write down than the normalized one. Mention its relation to the group bar complex. Acknowledge that while this specific complex computes Hₙ(M), the definition relies on the more abstract notion of any cofibrant resolution.</p>
+</li>
+</ol>
+</blockquote>
+
+
+
+<a name="514937461"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/514937461" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#514937461">(Apr 29 2025 at 02:14)</a>:</h4>
+<p>It's rather painful for me to read this in detail (like most things mathematicians write), but it's interesting to see it claiming to check that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="normal">∂</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\partial^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord" style="margin-right:0.05556em;">∂</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> is zero in an example, and then saying "This is not zero unless the monoid is associative! Okay, associativity is given."</p>
+
+
+
+<a name="514943550"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/514943550" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#514943550">(Apr 29 2025 at 03:17)</a>:</h4>
+<p>Here's how it actually replied:</p>
+<blockquote>
+<p>Yes, you are absolutely right! The Dold-Kan correspondence provides an equivalence between the category of simplicial abelian groups and the category of non-negatively graded chain complexes of abelian groups.</p>
+<p>Applying this to the definition of Quillen homology:</p>
+<ul>
+<li>
+<p><strong>Starting Point:</strong> Hₙ(M) = πₙ(Ab(F_)), where F_ → M is a cofibrant simplicial monoid resolution of M.</p>
+</li>
+<li>
+<p><strong>Standard Resolution:</strong> A standard and convenient choice for F_* is the simplicial monoid derived from the free monoid functor F: Set → Mon and the forgetful functor U: Mon → Set. Explicitly, (F_*)ₙ = F(Mⁿ⁺¹), where Mⁿ⁺¹ is the (n+1)-fold Cartesian product of the underlying set of M, and F(S) denotes the free monoid on a set S. The face and degeneracy maps are induced functorially by the standard simplicial structure on M&lt;sup&gt;•+1&lt;/sup&gt; (projections, diagonals, and multiplications within M).</p>
+</li>
+<li>
+<p><strong>Simplicial Abelian Group:</strong> Applying the abelianization functor Ab dimension-wise gives a simplicial abelian group A_* = Ab(F_*). Since the abelianization of a free monoid F(S) is the free abelian group ℤ[S] on the set S, we have:<br>
+  Aₙ = Ab(F(Mⁿ⁺¹)) = ℤ[Mⁿ⁺¹]<br>
+  This is the free abelian group generated by (n+1)-tuples (m₀, m₁, ..., mₙ) of elements from M.</p>
+</li>
+<li>
+<p><strong>Dold-Kan Chain Complex:</strong> The Dold-Kan theorem associates a chain complex C_(A_) to the simplicial abelian group A_. The homology groups of this chain complex are precisely the homotopy groups of A_: Hₙ(C_(A_)) ≅ πₙ(A_*).<br>
+  There are two standard versions of this chain complex:</p>
+<ul>
+<li>
+<p><strong>Unnormalized Complex:</strong> Often easier to write down.</p>
+</li>
+<li>
+<p><strong>Normalized Complex:</strong> Sometimes computationally simpler, obtained by quotienting out degenerate chains.<br>
+  Crucially, both complexes have the same homology groups.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Explicit Description of the (Unnormalized) Chain Complex:</strong></p>
+<p>Let Cₙ(M) = ℤ[Mⁿ⁺¹], the free abelian group generated by symbols (m₀, m₁, ..., mₙ), where mᵢ ∈ M.</p>
+<p>The boundary map ∂ : Cₙ(M) → Cₙ₋₁(M) is defined as the alternating sum of face maps ∂ = ∑ᵢ&lt;0xC2&gt;&lt;0xA0&gt;(-1)ⁱ dᵢ, where the face maps dᵢ : Cₙ(M) → Cₙ₋₁(M) are induced by the simplicial structure maps of A_* = Ab(F(M&lt;sup&gt;•+1&lt;/sup&gt;)). They act on the basis elements as follows:</p>
+<ul>
+<li>
+<p><strong>d₀(m₀, m₁, ..., mₙ) = (m₁, ..., mₙ)</strong></p>
+</li>
+<li>
+<p><strong>dᵢ(m₀, m₁, ..., mₙ) = (m₀, ..., mᵢ₋₁mᵢ, ..., mₙ)</strong> for 1 ≤ i ≤ n</p>
+</li>
+</ul>
+<p>(Here, mᵢ₋₁mᵢ denotes the product within the monoid M).<br>
+<strong>The Quillen homology groups of the monoid M are the homology groups of this chain complex C_*(M):</strong><br>
+<strong>Hₙ(M) ≅ Hₙ(C_*(M), ∂)</strong><br>
+<strong>Connection to Group Homology:</strong></p>
+<p>Notice the strong similarity to the standard (unnormalized) bar complex used to compute group homology Hₙ(G, ℤ). If M is a group G, this complex C_*(G) is precisely that bar complex (sometimes written with generators like g₀[g₁|...|gₙ]), and its homology yields the Eilenberg-MacLane homology of the group G with integer coefficients. This confirms that Quillen homology generalizes group homology via this explicit chain complex construction.</p>
+<p>So, yes, there is a very nice and concrete description of the chain complex whose homology is the Quillen homology of the monoid M, and it's a direct generalization of the bar complex for groups.</p>
+</blockquote>
+
+
+
+<a name="514944200"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/514944200" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#514944200">(Apr 29 2025 at 03:24)</a>:</h4>
+<p>That's a nice clear explanation of an explicit chain complex built from a monoid.  I frankly don't know if its homology groups are what people call Quillen homology!</p>
+
+
+
+<a name="514988132"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/514988132" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#514988132">(Apr 29 2025 at 07:55)</a>:</h4>
+<p>I hope you had fun <span aria-label="man shrugging" class="emoji emoji-1f937-200d-2642" role="img" title="man shrugging">:man_shrugging:</span></p>
+
+
+
+<a name="515143550"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/515143550" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#515143550">(Apr 29 2025 at 19:33)</a>:</h4>
+<p>Could you expand on your remark?  I'm reading it as expressing distaste, but without any explanation it doesn't convey much information: it comes across as just a little splash of negativity.   I could list many possible reasons for not wanting to ask LLMs questions about math - which is why I've never done it before - so maybe I can guess what you're thinking... but also maybe not.</p>
+
+
+
+<a name="515238393"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/515238393" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#515238393">(Apr 30 2025 at 08:21)</a>:</h4>
+<p>Sure! Above you posted a large volume of AI generated content. I don't like that, but we don't (yet) have a particular policy about it so I don't have grounds for telling you not to.<br>
+Also, you posted it in <a class="stream" data-stream-id="241990" href="/#narrow/channel/241990-community.3A-discussion">#community: discussion</a> , which is fine from the point of view of being one of the places we explicitly allow more varied content, but it's not clear what you wanted to discuss (maybe your idea is that you're sharing a "discussion" you had with an AI?)</p>
+
+
+
+<a name="515254113"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/515254113" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric M Downes <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#515254113">(Apr 30 2025 at 09:36)</a>:</h4>
+<p>(I liked reading it!  absolutely crazy times we live in... age of wonders and horrors.  But yes please lets try to keep AI-content confined to a certain space, at least for now; thanks mods, for your efforts.)</p>
+
+
+
+<a name="515256071"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/515256071" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#515256071">(Apr 30 2025 at 09:45)</a>:</h4>
+<p>I'd certainly be interested to hear of John's and others' views on the quality of the output. The thread was introduced by someone recommending John tries something out. We didn't get to hear what he made of the experience.</p>
+
+
+
+<a name="515349451"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/515349451" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#515349451">(Apr 30 2025 at 16:27)</a>:</h4>
+<p>Yes, I'm also curious what you thought, John.</p>
+
+
+
+<a name="515365962"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/515365962" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#515365962">(Apr 30 2025 at 17:52)</a>:</h4>
+<p>I was just wanting to test out Gemini 2.5 on a nontrivial math question and share what happened.</p>
+<p>My description of what I made of the experience was, I suppose, rather terse:</p>
+<blockquote>
+<p>That's a nice clear explanation of an explicit chain complex built from a monoid. I frankly don't know if its homology groups are what people call Quillen homology!</p>
+</blockquote>
+<p>Less laconically:</p>
+<p>I think I got a very clear answer to my question, though I'm not sure I trust it.     Especially after I asked it to translate its answer from the language of simplicial abelian groups to the language of chain complexes using Dold-Kan, Gemini 2.5 gave a very clear description of the homology theory that I would I would most naturally attach to a monoid, and it correctly pointed out that it's an obvious generalization of group homology.    But I don't know the name of this homology theory associated to a monoid, so I don't know if Gemini 2.5 is correct when it says this is called "Quillen homology".   </p>
+<p>I was quite impressed by Gemini 2.5's internal "thoughts".  I don't want to take any stance on whether they deserve to be called "thoughts", or whether this additional output accurately reflects internal processes that the software engaged in!   Both those questions are above my pay grade.   I just think that these "thoughts" contained interesting information worth looking at, while being harder to follow than the more snappy official answer.  I like how they contained remarks like:</p>
+<blockquote>
+<p>The request is to summarize the idea of Quillen homology of a monoid. This means focusing on the motivation, construction, and significance, rather than getting bogged down in extreme technical details (like simplicial sets unless necessary). The target audience is likely someone with some background in algebra or topology, but not necessarily an expert in homological algebra or category theory.</p>
+</blockquote>
+<p>Someday I may repeat my request adding that I know a fair amount of homological algebra and enjoy category theory, and see how this changes its "thoughts".</p>
+
+
+
+<a name="515370098"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/515370098" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#515370098">(Apr 30 2025 at 18:14)</a>:</h4>
+<p>Terry Tao, who worked on one of Biden's AI committees, is <a href="https://www.scientificamerican.com/article/ai-will-become-mathematicians-co-pilot/">all in</a> on using AI in his work.   I've resisted it, owing to a certain desire to do all the thinking myself, and avoid excessive carbon emissions.  I think this will eventually be seen as a fringe stance.  </p>
+<p>And then, 6 months later, <a href="https://ai-2027.com/">AI will take over the world and kill all of us</a>.   <span aria-label="wink" class="emoji emoji-1f609" role="img" title="wink">:wink:</span></p>
+
+
+
+<a name="515371460"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/515371460" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#515371460">(Apr 30 2025 at 18:23)</a>:</h4>
+<p>I find the carbon emissions concerns a bit overblown--querying an AI takes maybe 5 times the carbon that querying Google does, which is to say something around what happens when you briefly have a thought about a Prius in hybrid mode. Training AIs takes a lot of energy so I suppose you could be concerned about second-order effects of using them encouraging more training, although I personally think the third-order effect of "there's no way to possibly build all these data centers without building an awful lot of new renewable energy plants" plausibly dominates that anyway.</p>
+
+
+
+<a name="515372024"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/515372024" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#515372024">(Apr 30 2025 at 18:26)</a>:</h4>
+<p>I think there's <em>enormous</em> scope for making AI less power-hungry, and that future generations, if there are any, will laugh at us.  After all <em>my</em> brain uses just 90 watts, equal to a not terribly bright incandescent lightbulb.</p>
+
+
+
+<a name="515372435"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/515372435" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#515372435">(Apr 30 2025 at 18:28)</a>:</h4>
+<p>Nonetheless right now AI-related data centers are scrambling for new power plants.</p>
+
+
+
+<a name="515376872"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/515376872" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#515376872">(Apr 30 2025 at 18:53)</a>:</h4>
+<p>I certainly count the energy for training AI when considering my personal lifestyle decisions.   I'm also not one of those guys who says the plane would have flown regardless of whether I was on it.  I figure most of what we're doing in life is virtue signalling, whether or not we intend it - especially for an 'influencer' like me, but really for everyone.   Our actions get copied and multiplied.   So we should model the life we wish people would live.</p>
+
+
+
+<a name="515400523"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/515400523" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#515400523">(Apr 30 2025 at 21:15)</a>:</h4>
+<p>Efficiency will improve, but your brain isn't trained on 80% of all English text ever written, or every book ever scanned; the learning model is different. To be totally accurate in comparison I think one would have to count all the energy used to "train" your 90W brain.</p>
+
+
+
+<a name="515429139"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/515429139" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#515429139">(May 01 2025 at 01:30)</a>:</h4>
+<p>Btw, not that this is so important, 90 watts is the average total power consumption of a person - I wasn't separating the brain from the rest of me!   But yeah, you might want to count other things.  For people who live up north I imagine the greatest power consumption may be central heating and hot water.</p>
+
+
+
+<a name="515535262"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/515535262" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#515535262">(May 01 2025 at 16:09)</a>:</h4>
+<p>Yeah, I feel like there’s sometimes a fair bit of sniffing from greens about southerners who use a lot of air conditioning, but IIRC it’s not substantially more energy intensive to produce a cooling degree than a warming degree, so it’s optimal on that front to live somewhere with a really very warm average annual temperature around your desired room temperature.</p>
+
+
+
+<a name="515556377"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/515556377" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#515556377">(May 01 2025 at 18:20)</a>:</h4>
+<p>I meant more, to compare a 90W human brain that is thinking against a 300W video card that is running a prompt, isn't really the comparison; the comparison is the total amount of energy required to train the LLM model the 300W video card is hitting (which costs megawatts), and total amount of energy required to train the human mind up to middle age (which is also a lot).  In both cases, almost all of the energy cost is "in the past" and part of "training", rather than "thinking", which makes it harder to say which is more efficient - if for example more people can re-use the LLM training than the training of a human mind, perhaps LLMs become more efficient, when amortized.</p>
+
+
+
+<a name="515651810"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/AI%20for%20category%20theory/near/515651810" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/AI.20for.20category.20theory.html#515651810">(May 02 2025 at 06:59)</a>:</h4>
+<p>What I mainly like about your comment is the admission that anyone not yet middle-aged isn't fully trained.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

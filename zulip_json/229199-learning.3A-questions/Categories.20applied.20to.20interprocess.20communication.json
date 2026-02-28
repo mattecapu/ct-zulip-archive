@@ -1,0 +1,56 @@
+[
+    {
+        "content": "<p>I think someone must have already probed how to use category theory to frame interprocess communication, or messaging schemes.</p>\n<p>What I have in mind is like communication via AMQP or maybe within a ROS2 graph.</p>\n<p>There are nodes which can send each other messages. There are different ways to send messages. Sometimes it's enough that one node attempts to message another and is done with the task. At other times, the sending node wants an acknowledgement (or nack) before it finishes the transaction.</p>\n<p>And possibly either side of the communication may want to do something differently depending on the success of the transaction.</p>\n<p>Has anyone seen any exploration of this kind of the whole ecosystem of messaging?  I would appreciate pointers to the most basic parts of it.</p>",
+        "id": 436348671,
+        "sender_full_name": "Ryan Schwiebert",
+        "timestamp": 1714508922
+    },
+    {
+        "content": "<p>Here's one: <br>\nThe Produoidal Algebra of Process Decomposition</p>\n<p>Matt Earnshaw, James Hefford, Mario Román<br>\n<a href=\"https://arxiv.org/abs/2301.11867v1\">https://arxiv.org/abs/2301.11867v1</a></p>",
+        "id": 436368916,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1714519136
+    },
+    {
+        "content": "<p>Nice!  How familiar are you with this article <span class=\"user-mention\" data-user-id=\"278008\">@Spencer Breiner</span></p>",
+        "id": 436384052,
+        "sender_full_name": "Ryan Schwiebert",
+        "timestamp": 1714531616
+    },
+    {
+        "content": "<p>Isolating individual agents (nodes) is, if you ask me, a bit awkward in a compositional setting. Loosely, if my systems are composable then a composite system needs to be the same sort of thing as a single node.</p>",
+        "id": 436479443,
+        "sender_full_name": "Chad Nester",
+        "timestamp": 1714559184
+    },
+    {
+        "content": "<p>I really like Span(RGraph) model of Walters et al.  (<a href=\"https://link.springer.com/content/pdf/10.1007/BFb0000479.pdf\">This, for example</a>)</p>\n<p>I'll also mention the Logic of Message Passing (<a href=\"https://arxiv.org/abs/math/0703713\">This</a>) and my own work on the free cornering of a monoidal category, which is similar. (For example, <a href=\"https://link.springer.com/chapter/10.1007/978-3-030-78142-2_13\">this</a> and <a href=\"https://arxiv.org/abs/2305.16899\">this</a>).</p>",
+        "id": 436479829,
+        "sender_full_name": "Chad Nester",
+        "timestamp": 1714559427
+    },
+    {
+        "content": "<p>Oh also Milner's <em>bigraphs</em> come to mind, although personally I find them unsatisfying.</p>",
+        "id": 436479898,
+        "sender_full_name": "Chad Nester",
+        "timestamp": 1714559485
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"685603\">Ryan Schwiebert</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Categories.20applied.20to.20interprocess.20communication/near/436384052\">said</a>:</p>\n<blockquote>\n<p>Nice!  How familiar are you with this article <span class=\"user-mention silent\" data-user-id=\"278008\">Spencer Breiner</span></p>\n</blockquote>\n<p>Only a bit. If I remember correctly, the main idea is that you can use the machinery of optics (based on coends) to include \"holes\" in a process that correspond to sending/receiving messages from other nodes in a network.</p>",
+        "id": 436486685,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1714563776
+    },
+    {
+        "content": "<p>The bigger picture is that I am trying to understand what \"Applied\" category theory can do in different contexts.  As a mathematician now working in software, I can see lots of places where it might be applied, but I have little feel for what kind of benefit is available, or how to spot a potential application.</p>",
+        "id": 436671086,
+        "sender_full_name": "Ryan Schwiebert",
+        "timestamp": 1714649053
+    },
+    {
+        "content": "<p>I've had this paper on my to-read pile for a while, it seems like it might also be relevant: <a href=\"https://www.sciencedirect.com/science/article/pii/S1571066105803068\">On the Semantics of Message Passing Processes - Lindsay Errington</a></p>",
+        "id": 437950359,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1715332223
+    }
+]

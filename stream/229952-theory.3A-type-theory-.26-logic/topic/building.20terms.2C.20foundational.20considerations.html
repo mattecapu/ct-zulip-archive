@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>building terms, foundational considerations · theory: type theory &amp; logic · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/index.html">theory: type theory &amp; logic</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations.html">building terms, foundational considerations</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="499251190"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/building%20terms%2C%20foundational%20considerations/near/499251190" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations.html#499251190">(Feb 12 2025 at 14:42)</a>:</h4>
+<p>To hazard a guess at what Mike was referring to, it's that no matter what syntax you're dealing with, the <em>subject</em> of results in logic are collections of syntactic structures such as strings of symbols; formalizing any reasoning we do about these collections (such as inductive arguments) produces set-theory-like mathematics.</p>
+<p>That said, I learned a few years ago that philosophers of computer science are happy to avoid the "holism" that the above assertion imposes. There may be no need in practice to make statements about the collection of all well-formed formulas. A proof by induction on the structure of syntax can be seen 'reductionistically' as a proof schema that allows us to prove some property only once we are provided with a specific instance of that syntax, rather than 'holistically' proving a statement about the collection of all strings all at once. (Here I am using a dichotomy/contrast that I first saw in Hofstadter's book <em>GEB</em>.)</p>
+<p>Holism is so conceptually useful to me in my mathematical practice (indeed, it underlies the effectiveness of category theory imo) that I struggle to sympathise with the reductionist viewpoint, but it's clearly out there!</p>
+
+
+
+<a name="499259192"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/building%20terms%2C%20foundational%20considerations/near/499259192" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Vincent R.B. Blazy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations.html#499259192">(Feb 12 2025 at 15:15)</a>:</h4>
+<p><span class="user-mention" data-user-id="277473">@Morgan Rogers (he/him)</span> Yes, we agree on that! The circularity isn’t ontologically necessary, but indeed collections happen everywhere when conceptualising anything and so, that’s why holism is so useful in practice and set theories are so nice to analytically found mathematics, after all! <span aria-label="blush" class="emoji emoji-1f60a" role="img" title="blush">:blush:</span></p>
+
+
+
+<a name="499319787"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/building%20terms%2C%20foundational%20considerations/near/499319787" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations.html#499319787">(Feb 12 2025 at 20:10)</a>:</h4>
+<p><span class="user-mention" data-user-id="510824">@Zoltan A. Kocsis (Z.A.K.)</span> I meant basically your first weaker version.  By saying "set-theory-like" I meant that I think you need a general sort of mathematics in which you can talk about "collections of things".  So I don't think your example of axiomatic projective geometry works, because I don't see how one could define variables and terms purely in terms of points and lines.  Maybe there's a way, but it would be pretty artificial.  I <em>don't</em> mean formal set theory, just the "informal" kind of set theory that most people learn in their first proof-based math classes.</p>
+
+
+
+<a name="499321804"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/building%20terms%2C%20foundational%20considerations/near/499321804" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations.html#499321804">(Feb 12 2025 at 20:23)</a>:</h4>
+<p>As you said with your example of first-graders, depending on how much logic you want to do, you may need more or less sophistication in this ambient informal mathematics, and for the very basic stuff you can get by with elementary-school math.  But for more advanced logic you need to be able to talk about collections of things, functions between them, and so on -- the stuff that all mathematicians do, whether or not they understand a formal set theory like ZFC.</p>
+
+
+
+<a name="499324174"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/building%20terms%2C%20foundational%20considerations/near/499324174" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations.html#499324174">(Feb 12 2025 at 20:37)</a>:</h4>
+<p>I think the <a href="https://www.google.com/books/edition/Mathematical_Logic/zDrqGvJhSPIC?hl=en&amp;gbpv=1&amp;pg=PA1&amp;printsec=frontcover">introduction</a> to the book *Mathematical Logic: Part I" by Cori and Lascar does a good job describing the status of logic as a field of mathematics.</p>
+
+
+
+<a name="499361414"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/building%20terms%2C%20foundational%20considerations/near/499361414" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alex Kreitzberg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations.html#499361414">(Feb 13 2025 at 01:45)</a>:</h4>
+<p>I'm going to have to sit with that introduction, that's quite a dramatic, and exciting, reframing of how I understand logic.</p>
+
+
+
+<a name="499361793"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/building%20terms%2C%20foundational%20considerations/near/499361793" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Washington <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations.html#499361793">(Feb 13 2025 at 01:49)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/channel/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations/near/499062046">said</a>:</p>
+<blockquote>
+<p>I think in my childhood search for maximum certainty I should have learned about the <a href="https://en.wikipedia.org/wiki/Chomsky_hierarchy">Chomsky hierarchy</a> and wondered how high up this hierarchy we need to climb, to get a formalism powerful enough to describe the set of provable sentences in some version of first-order logic. I liked the idea that ultimately to do math you just needed to understand some purely syntactic rules for manipulating strings of symbols, so I was curious about what exactly is a "rule for manipulating strings of symbols". I realized that a rule like "if the string is a <em>true</em> sentence, then..." is not purely syntactic (unless you have a syntactic definition of truth!), but I would have loved learning about the Chomsky hierarchy.</p>
+</blockquote>
+<p>How far up do you need to climb in Chomsky's hierarchy to describe the theorems of first-order logic? The answer to this is actually rather straightforward: you need to climb all the way up! (to the recursively enumerable languages). </p>
+<p>And to the original question:</p>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/channel/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations/near/499057266">said</a>:</p>
+<blockquote>
+<p>can you use BNF to describe the well-formed formulae in a language that has infinitely many function symbols of each arity 0,1,2,3,... ? Or can it only handle something less, like finitely (or infinitely) many function symbols of some finite collection of arities, which is already enough for the mathematics I do?</p>
+</blockquote>
+<p>Well, in theory no, not really (unless you want to help yourself to infinitely long clauses in the BNF definition). In practice, though, you're going to presumably want to use those symbols to write down terms and formulas, so you'll probably use some nice computable/recursive definition of those symbols (like we do with numerals, for instance).</p>
+
+
+
+<a name="499364242"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/building%20terms%2C%20foundational%20considerations/near/499364242" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations.html#499364242">(Feb 13 2025 at 02:17)</a>:</h4>
+<p>Thanks!  Yes, it makes sense that to describe theorems you need the full power of a recursively enumerable language.</p>
+
+
+
+<a name="499441687"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/building%20terms%2C%20foundational%20considerations/near/499441687" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Vincent R.B. Blazy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations.html#499441687">(Feb 13 2025 at 10:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/channel/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations/near/499319787">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="510824">Zoltan A. Kocsis (Z.A.K.)</span> I don't think your example of axiomatic projective geometry works, because I don't see how one could define variables and terms purely in terms of points and lines.</p>
+</blockquote>
+<p>Well, that would introduce back a circularity, since points and lines already need syntax to deine and even talk about them at all? But,the point precisely was to avoid circularity, not to get it back... <span aria-label="thinking" class="emoji emoji-1f914" role="img" title="thinking">:thinking:</span></p>
+
+
+
+<a name="499442996"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/building%20terms%2C%20foundational%20considerations/near/499442996" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Vincent R.B. Blazy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations.html#499442996">(Feb 13 2025 at 11:04)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="278070">Evan Washington</span> <a href="#narrow/channel/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations/near/499361793">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/channel/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations/near/499057266">said</a>:</p>
+<blockquote>
+<p>can you use BNF to describe the well-formed formulae in a language that has infinitely many function symbols of each arity 0,1,2,3,... ? Or can it only handle something less, like finitely (or infinitely) many function symbols of some finite collection of arities, which is already enough for the mathematics I do?</p>
+</blockquote>
+<p>Well, in theory no, not really (unless you want to help yourself to infinitely long clauses in the BNF definition). In practice, though, you're going to presumably want to use those symbols to write down terms and formulas, so you'll probably use some nice computable/recursive definition of those symbols (like we do with numerals, for instance).</p>
+</blockquote>
+<p>Well, that's pretty what I described here, right? After all, even in theory, metamathematical infinities can only be potential, so, finitely describable only with some kind of recursion;  and that's precisely already the core of what BNFs allow :)</p>
+
+
+
+<a name="517451342"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/building%20terms%2C%20foundational%20considerations/near/517451342" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jencel Panic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations.html#517451342">(May 12 2025 at 07:28)</a>:</h4>
+<p>In CS we have the concept of term-rewriting systems (<a href="https://en.wikipedia.org/wiki/Rewriting">https://en.wikipedia.org/wiki/Rewriting</a>) informally, languages that can only do search and replace.</p>
+<p>It seems that you can do everything with those, except (here is why I think it is connected) free and bound variables.</p>
+<p>I remember, I was messing with a term rewriting system and I suddenly realized why some longer mathematical proofs that aren't separated in different lemmas use so many letters.</p>
+
+
+
+<a name="518105626"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/building%20terms%2C%20foundational%20considerations/near/518105626" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tom Hirschowitz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations.html#518105626">(May 14 2025 at 16:02)</a>:</h4>
+<p>For the record, <a href="https://pure.hw.ac.uk/ws/portalfiles/portal/25224227/paper_23.pdf">here</a> is a reflection about what standard BNF is, and how it has evolved into a more mathematical version.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

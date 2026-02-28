@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>free cocompletions and existing limits · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits.html">free cocompletions and existing limits</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="450647490"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/free%20cocompletions%20and%20existing%20limits/near/450647490" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits.html#450647490">(Jul 11 2024 at 08:25)</a>:</h4>
+<p>Do free <strong>cocompletions</strong> under a chosen class of weights preserve existing <strong>limits</strong>? My guess is yes (e.g. taking presheaves does) but I can't think of a formal justification.</p>
+
+
+
+<a name="450654508"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/free%20cocompletions%20and%20existing%20limits/near/450654508" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits.html#450654508">(Jul 11 2024 at 08:58)</a>:</h4>
+<p>One way to see this in the presheaf case is to consider the Isbell adjunction between the free completion and cocompletion; both adjoints commute with the respective Yoneda embeddings. However, it's a non-trivial fact that the free cocompletion is complete and vice-versa, which leads me to suspect that the preservation of limits should not be taken for granted.</p>
+
+
+
+<a name="450656383"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/free%20cocompletions%20and%20existing%20limits/near/450656383" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ivan Di Liberti <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits.html#450656383">(Jul 11 2024 at 09:04)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275932">Matteo Capucci (he/him)</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits/near/450647490">said</a>:</p>
+<blockquote>
+<p>Do free <strong>cocompletions</strong> under a chosen class of weights preserve existing <strong>limits</strong>? My guess is yes (e.g. taking presheaves does) but I can't think of a formal justification.</p>
+</blockquote>
+<p>Yes. They do. The justification can be given by "direct inspection", in the sense that they can all be realised as full subcategories of presheaves, and simply nothing changes with respect to the argument that works for presheaves, everything "happens" in presheaves.</p>
+<p>I do not have a reference (<span class="user-mention" data-user-id="276092">@Nathanael Arkor</span> ). Notice that it is (!) true for cocompletions preserving a certain class of existing colimits.</p>
+
+
+
+<a name="450657185"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/free%20cocompletions%20and%20existing%20limits/near/450657185" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ivan Di Liberti <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits.html#450657185">(Jul 11 2024 at 09:09)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits/near/450654508">said</a>:</p>
+<blockquote>
+<p>One way to see this in the presheaf case is to consider the Isbell adjunction between the free completion and cocompletion; both adjoints commute with the respective Yoneda embeddings. However, it's a non-trivial fact that the free cocompletion is complete and vice-versa, which leads me to suspect that the preservation of limits should not be taken for granted.</p>
+</blockquote>
+<p>You "preserve the limits that exists", or if you want, the inclusion is as flat as it gets.</p>
+
+
+
+<a name="450657192"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/free%20cocompletions%20and%20existing%20limits/near/450657192" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits.html#450657192">(Jul 11 2024 at 09:09)</a>:</h4>
+<p>So <span class="user-mention" data-user-id="277318">@Ivan Di Liberti</span> you don't need to, say, be enriching/considering presheaves enriched over an accessible/lfp category for it to hold?</p>
+
+
+
+<a name="450657441"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/free%20cocompletions%20and%20existing%20limits/near/450657441" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ivan Di Liberti <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits.html#450657441">(Jul 11 2024 at 09:10)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits/near/450657192">said</a>:</p>
+<blockquote>
+<p>So <span class="user-mention silent" data-user-id="277318">Ivan Di Liberti</span> you don't need to, say, be enriching/considering presheaves enriched over an accessible/lfp category for it to hold?</p>
+</blockquote>
+<p>No, the point is really, at the end of the day, that Yoneda preserve all existing limits. This has no size constraints.</p>
+
+
+
+<a name="450658947"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/free%20cocompletions%20and%20existing%20limits/near/450658947" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits.html#450658947">(Jul 11 2024 at 09:17)</a>:</h4>
+<p>Oh of course, it's just the fact that <em>essentially by definition</em>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">C</mi><mo stretchy="false">(</mo><mo>−</mo><mo separator="true">,</mo><msub><mrow><mi>lim</mi><mo>⁡</mo></mrow><mi>i</mi></msub><msub><mi>X</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo>≅</mo><msub><mrow><mi>lim</mi><mo>⁡</mo></mrow><mi>i</mi></msub><mi mathvariant="script">C</mi><mo stretchy="false">(</mo><mo>−</mo><mo separator="true">,</mo><msub><mi>X</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal{C}(-,\lim_i X_i) \cong \lim_i \mathcal{C}(-,X_i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.05834em;">C</span><span class="mopen">(</span><span class="mord">−</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop">lim</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≅</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop"><span class="mop">lim</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathcal" style="margin-right:0.05834em;">C</span><span class="mopen">(</span><span class="mord">−</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> ; this is how the universal property of (weighted) limits is usually given!</p>
+
+
+
+<a name="450659264"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/free%20cocompletions%20and%20existing%20limits/near/450659264" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits.html#450659264">(Jul 11 2024 at 09:20)</a>:</h4>
+<p>Thinking about the Isbell adjunction (which really might be hard to show exists in full generality, I suppose) was way overkill.</p>
+
+
+
+<a name="450659554"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/free%20cocompletions%20and%20existing%20limits/near/450659554" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ivan Di Liberti <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits.html#450659554">(Jul 11 2024 at 09:21)</a>:</h4>
+<p>Indeed for the Isbell adjunction to exist you do need that (small) presheaves are complete, and this is a constraint on both V (that needs to be bicomplete) and on the domain of the presheaves (accessibility will be sufficient when V locally presentable).</p>
+
+
+
+<a name="450659777"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/free%20cocompletions%20and%20existing%20limits/near/450659777" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits.html#450659777">(Jul 11 2024 at 09:23)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277318">Ivan Di Liberti</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits/near/450656383">said</a>:</p>
+<blockquote>
+<p>in the sense that they can all be realised as full subcategories of presheaves, and simply nothing changes with respect to the argument that works for presheaves,</p>
+</blockquote>
+<p>ah, of course!</p>
+
+
+
+<a name="450659895"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/free%20cocompletions%20and%20existing%20limits/near/450659895" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits.html#450659895">(Jul 11 2024 at 09:23)</a>:</h4>
+<p>thanks :D</p>
+
+
+
+<a name="450699087"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/free%20cocompletions%20and%20existing%20limits/near/450699087" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits.html#450699087">(Jul 11 2024 at 12:40)</a>:</h4>
+<p>A particularly simple abstract proof of this fact is that every dense and fully faithful functor creates limits: this follows from the fact that fully faithful functors are right <a href="https://ncatlab.org/nlab/show/relative%20adjoints">[[relative adjoints]]</a>, and right relative adjoints preserve limits if the root is dense.</p>
+
+
+
+<a name="450699224"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/free%20cocompletions%20and%20existing%20limits/near/450699224" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits.html#450699224">(Jul 11 2024 at 12:41)</a>:</h4>
+<p>(And every free cocompletion (under any class of weights) is dense and fully faithful, essentially by definition.)</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

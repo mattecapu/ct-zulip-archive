@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>AlgebraicJulia Blog: Graphs and C-Sets I · learning: reading &amp; references · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/index.html">learning: reading &amp; references</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I.html">AlgebraicJulia Blog: Graphs and C-Sets I</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="434612477"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/AlgebraicJulia%20Blog%3A%20Graphs%20and%20C-Sets%20I/near/434612477" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacob Zelko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I.html#434612477">(Apr 21 2024 at 19:17)</a>:</h4>
+<p>Hi folks!</p>
+<p>I've been tinkering a bit with putting some pen to paper as well as thought to code and have been trying to read and understand some of the blog posts from the AlgebraicJulia blog. Evan Patterson wrote a really nice blog post, <a href="https://blog.algebraicjulia.org/post/2020/09/cset-graphs-1/">"What Is a Graph?"</a>, in a series of posts on that blog discussing Catlab's approach to understanding graphs. </p>
+<p>I understood the majority of the blog when it was discussing graphs but got lost a bit in the nuance when we started discussing graphs as C-Sets. I had a few questions in the blog post that I have extracted below (the sections I am most curious about are the ones: <a href="https://blog.algebraicjulia.org/post/2020/09/cset-graphs-1/#graphs-as-c-sets">Graphs as C-Sets</a> and <a href="https://blog.algebraicjulia.org/post/2020/09/cset-graphs-1/#symmetric-graphs">Symmetric Graphs</a>)</p>
+<hr>
+<p>Here are the questions I had:</p>
+<blockquote>
+<p>In this context, the category C is interpreted as a schema<br>
+~ Graphs as C-Sets</p>
+</blockquote>
+<p>What is a schema in this context here? Where can I read more about it? I wasn't sure if this was relating to a programming schema or a mathematical idea of a schema.</p>
+<blockquote>
+<p>parts in the structure and the subpart relations between them<br>
+~ Graphs as C-Sets</p>
+</blockquote>
+<p>What are parts and subparts? This is what was making me think that a schema is a sort of mathematical object.</p>
+<blockquote>
+<p>there are two kinds of parts, of type V and E<br>
+~ Graphs as C-Sets</p>
+</blockquote>
+<p>What are types in this context?</p>
+<blockquote>
+<p>schema for graphs is the category Sch(Graph) [...] In particular, when  C=Sch(Graph), a C-set is exactly a graph as previously defined.<br>
+~ Graphs as C-Sets</p>
+</blockquote>
+<p>How are these two things isomorphic to one another? Does this encode some sort of functor or natural transformation? Struggling a bit to parse this out fully.</p>
+<blockquote>
+<p>Unpacking this, a symmetric graph is a graph G together with an orientation-reversing involution on edges<br>
+Symmetric Graphs</p>
+</blockquote>
+<p>What is an involution in this situation? I realized I may not be very familiar with this idea and even after trying to read about it, I am struggling to understand it from a category theoretic perspective -- an involution switches out arrows? Or switches the direction of errors?</p>
+<hr>
+<p>Thanks folks and looking forward to discussing further if folks can help me parsing out these ideas! Additionally, I am happy to provide more clarification or thoughts as needed. Thank you!!!</p>
+
+
+
+<a name="434615734"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/AlgebraicJulia%20Blog%3A%20Graphs%20and%20C-Sets%20I/near/434615734" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I.html#434615734">(Apr 21 2024 at 20:07)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="483329">Jacob Zelko</span> <a href="#narrow/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I/near/434612477">said</a>:</p>
+<blockquote>
+<blockquote>
+<p>In this context, the category C is interpreted as a schema<br>
+~ Graphs as C-Sets</p>
+</blockquote>
+<p>What is a schema in this context here? Where can I read more about it? I wasn't sure if this was relating to a programming schema or a mathematical idea of a schema.</p>
+</blockquote>
+<p>The "schema" terminology comes (I think) from databases, where it specifies the tables and their columns. This is pretty close to the categorical version, except that foreign keys (columns representing functional relations between tables) are sometimes implicit, whereas in the categorical story they are strongly distinguished from "attributes" that represent actual data (i.e. strings, numbers, etc.)</p>
+<p>Formally, the difference is that the unique identifier (key) marking a row in a table has no semantic meaning. You would get an equivalent DB if you changed the keys to a different format, as long as you changed the let values stored in other tables at the same time. This is very different from names, birth dates, etc., which can't be modified without changing the meaning of the data.</p>
+
+
+
+<a name="434616046"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/AlgebraicJulia%20Blog%3A%20Graphs%20and%20C-Sets%20I/near/434616046" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I.html#434616046">(Apr 21 2024 at 20:12)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="483329">Jacob Zelko</span> <a href="#narrow/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I/near/434612477">said</a>:</p>
+<blockquote>
+<blockquote>
+<p>parts in the structure and the subpart relations between them<br>
+~ Graphs as C-Sets</p>
+</blockquote>
+<p>What are parts and subparts? This is what was making me think that a schema is a sort of mathematical object.</p>
+</blockquote>
+<p>"Parts" and "subparts" are the AlgebraicJulia lingo for the rows in the tables and the values in the columns, respectively. (Not my favorite terminology). In categorical terms, an instance is a set-valued functor, the parts are the elements of the sets in the image, and the subparts are the values of the functions in the image. </p>
+<p>For example, an edge or a vertex is a part, and the source vertex of an edge is a subpart.</p>
+
+
+
+<a name="434617198"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/AlgebraicJulia%20Blog%3A%20Graphs%20and%20C-Sets%20I/near/434617198" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I.html#434617198">(Apr 21 2024 at 20:31)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="483329">Jacob Zelko</span> <a href="#narrow/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I/near/434612477">said</a>:</p>
+<blockquote>
+<blockquote>
+<p>there are two kinds of parts, of type V and E<br>
+~ Graphs as C-Sets</p>
+</blockquote>
+<p>What are types in this context?</p>
+</blockquote>
+<p>The types are the objects in the schema category, or the tables in the database schema.</p>
+
+
+
+<a name="434617367"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/AlgebraicJulia%20Blog%3A%20Graphs%20and%20C-Sets%20I/near/434617367" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacob Zelko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I.html#434617367">(Apr 21 2024 at 20:34)</a>:</h4>
+<p>Ah thanks <span class="user-mention" data-user-id="278008">@Spencer Breiner</span> ! I thought "schema" was some sort of other mathematical terminology but being as it is mostly from database terminology, I'll take more of a look at Spivak's _Relational Foundations For Functorial Data Migration_.</p>
+<p>But since you mentioned it, is there a categorical notion of a schema separate from databases? It seems like there is based on what you are saying -- where can I read more about that categorical treatment of schemas?</p>
+
+
+
+<a name="434617510"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/AlgebraicJulia%20Blog%3A%20Graphs%20and%20C-Sets%20I/near/434617510" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacob Zelko <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I.html#434617510">(Apr 21 2024 at 20:36)</a>:</h4>
+<p>Ah thanks for clarifying on types -- sometimes it can be hard to disentangle the software/implementation terminology from the mathematical nomenclature. I was wondering if type was being used in the sense that you can have a <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">D</mi><mi mathvariant="bold">i</mi><mi mathvariant="bold">a</mi><mi mathvariant="bold">g</mi><mi mathvariant="bold">r</mi><mi mathvariant="bold">a</mi><mi mathvariant="bold">m</mi></mrow><annotation encoding="application/x-tex">\mathbf{Diagram}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathbf">Diagram</span></span></span></span></span> of a type "whatever" within category theory.</p>
+
+
+
+<a name="434617860"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/AlgebraicJulia%20Blog%3A%20Graphs%20and%20C-Sets%20I/near/434617860" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I.html#434617860">(Apr 21 2024 at 20:41)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="483329">Jacob Zelko</span> <a href="#narrow/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I/near/434612477">said</a>:</p>
+<blockquote>
+<blockquote>
+<p>schema for graphs is the category Sch(Graph) [...] In particular, when  C=Sch(Graph), a C-set is exactly a graph as previously defined.<br>
+~ Graphs as C-Sets</p>
+</blockquote>
+<p>How are these two things isomorphic to one another? Does this encode some sort of functor or natural transformation? Struggling a bit to parse this out fully.</p>
+</blockquote>
+<p>To make this a formal statement, you would need to spell out a different definition of (directed, multi-)graph (and graph homomorphism). Then you could define functors back and forth, and natural transformations establishing an equivalence of categories. </p>
+<p>However, it's probably more convincing to just draw a directed graph on paper and then figure out how to represent it as a C-set. Ditto on graph homomorphisms and natural transformations between C-set functors.</p>
+
+
+
+<a name="434618272"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/AlgebraicJulia%20Blog%3A%20Graphs%20and%20C-Sets%20I/near/434618272" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I.html#434618272">(Apr 21 2024 at 20:47)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="483329">Jacob Zelko</span> <a href="#narrow/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I/near/434617367">said</a>:</p>
+<blockquote>
+<p>But since you mentioned it, is there a categorical notion of a schema separate from databases? It seems like there is based on what you are saying -- where can I read more about that categorical treatment of schemas?</p>
+</blockquote>
+<p>David's book <em>Category theory for the sciences</em>, a draft of which is also available online, explains in detail how to think about schemas as categories. (Attributes are not treated specially in this simple picture, but the simplicity is what makes it the best place to start to get the general idea. Then you can start putting bells and whistles on it.)</p>
+
+
+
+<a name="434618282"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/AlgebraicJulia%20Blog%3A%20Graphs%20and%20C-Sets%20I/near/434618282" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I.html#434618282">(Apr 21 2024 at 20:47)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="483329">Jacob Zelko</span> <a href="#narrow/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I/near/434612477">said</a>:</p>
+<blockquote>
+<blockquote>
+<p>Unpacking this, a symmetric graph is a graph G together with an orientation-reversing involution on edges<br>
+Symmetric Graphs</p>
+</blockquote>
+<p>What is an involution in this situation? I realized I may not be very familiar with this idea and even after trying to read about it, I am struggling to understand it from a category theoretic perspective -- an involution switches out arrows? Or switches the direction of errors?</p>
+</blockquote>
+<p>This one is easy to Google. An involution is a function that is it's own inverse (so necessarily an endomorphism). </p>
+<p>In this case, categorical schemas don't have a good way of <em>not</em> distinguishing the source and target of an edge (the usual way would be a two element subset, but subsets require power objects, and that is a big step up in logical strength), so instead we just put in two edges pointing either way, and regard the undirected edges as orbits of the involution.</p>
+
+
+
+<a name="434618361"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/AlgebraicJulia%20Blog%3A%20Graphs%20and%20C-Sets%20I/near/434618361" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I.html#434618361">(Apr 21 2024 at 20:48)</a>:</h4>
+<p>PS. If you ask each question in a different post, that makes it easier to quote and reply.</p>
+
+
+
+<a name="434645775"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/AlgebraicJulia%20Blog%3A%20Graphs%20and%20C-Sets%20I/near/434645775" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I.html#434645775">(Apr 22 2024 at 04:01)</a>:</h4>
+<p>the study of generic 'categories of schemas' from a data migration POV using institutional model theory is here, it foreshadows much of functorial data migration etc: <a href="https://www.semanticscholar.org/paper/A-Model-Theory-for-Generic-Schema-Management-Alagic-Bernstein/8ca873192a72bdd1148d04f7850befa1f45d9535">https://www.semanticscholar.org/paper/A-Model-Theory-for-Generic-Schema-Management-Alagic-Bernstein/8ca873192a72bdd1148d04f7850befa1f45d9535</a></p>
+
+
+
+<a name="434734664"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/AlgebraicJulia%20Blog%3A%20Graphs%20and%20C-Sets%20I/near/434734664" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I.html#434734664">(Apr 22 2024 at 12:23)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="483329">Jacob Zelko</span> <a href="#narrow/stream/232160-learning.3A-reading-.26-references/topic/AlgebraicJulia.20Blog.3A.20Graphs.20and.20C-Sets.20I/near/434612477">said</a>:</p>
+<blockquote>
+<blockquote>
+<p>In this context, the category C is interpreted as a schema</p>
+</blockquote>
+<p>What is a schema in this context here? Where can I read more about it? I wasn't sure if this was relating to a programming schema or a mathematical idea of a schema.</p>
+</blockquote>
+<p>To be really precise, though perhaps not very helpful, I think <strong>schema</strong> here is defined to mean exactly 'category'!</p>
+<p>You can read a lot more about this use of the term schema here:</p>
+<ul>
+<li>Patrick Schultz, David I. Spivak, Christina Vasilakopoulou, and Ryan Wisnesky,  <a href="https://arxiv.org/abs/1602.03501">Algebraic databases</a>.</li>
+</ul>
+<p>They refer to an earlier paper:</p>
+<blockquote>
+<p>In [Spi12], Spivak puts emphasis on the ability to move data from one format, or database schema, to another.   To enable that, he proposes defining schemas to be mere categories [....]</p>
+</blockquote>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

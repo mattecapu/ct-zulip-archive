@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Higher inductive types · theory: type theory &amp; logic · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/index.html">theory: type theory &amp; logic</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/Higher.20inductive.20types.html">Higher inductive types</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="249749257"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/Higher%20inductive%20types/near/249749257" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/Higher.20inductive.20types.html#249749257">(Aug 17 2021 at 17:12)</a>:</h4>
+<p>As far as I can see, the HoTT book gives two applications of higher inductive types in normal (i.e., non-homotopical) math: the construction of the Cauchy reals and the construction of the surreal numbers. Both definitions use the principle of "inductive-inductive" definitions as well. I wonder: Is this really an application of <em>higher</em> inductive types? After all, both definitions contain only point and path constructors, but not any homotopy constructors. So would both definitions also work in, say, a type theory with a notion of "quotient type" and inductive-inductive definitions?<br>
+Also, aren't Theorem 11.3.9 and Corollary 11.6.5 (stating that these types are sets) trivial in some sense, because both definitions contain only point and path constructors, but not any homotopy constructors?<br>
+The introduction to chapter 6 gives an explanation of the phenomenon of an inductive type being a higher groupoid while being defined only using point and path constructors: if the domain of some constructor has higher paths, these will carry over. But if all domains of all constructors are sets, I believe this can't happen. Do Theorem 11.3.9 and Corollary 11.6.5 also fall in some class of higher inductive types that yield sets "for trivial reasons"?</p>
+
+
+
+<a name="249749608"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/Higher%20inductive%20types/near/249749608" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/Higher.20inductive.20types.html#249749608">(Aug 17 2021 at 17:15)</a>:</h4>
+<p>What's the difference between a "path constructor" and a "homotopy constructor"?</p>
+
+
+
+<a name="249751067"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/Higher%20inductive%20types/near/249751067" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/Higher.20inductive.20types.html#249751067">(Aug 17 2021 at 17:27)</a>:</h4>
+<p>It seems like the circle-as-inductive-type (section 6.4) is a counterexample to your claim, right?</p>
+
+
+
+<a name="249752520"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/Higher%20inductive%20types/near/249752520" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Leopold Schlicht <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/Higher.20inductive.20types.html#249752520">(Aug 17 2021 at 17:37)</a>:</h4>
+<p>I call the things between points "paths" and the things between paths "homotopies" (but not "paths" anymore).<br>
+I don't know what claim you are referring to, because I asked a lot of things. :-)</p>
+
+
+
+<a name="249752730"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/Higher%20inductive%20types/near/249752730" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Reid Barton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/Higher.20inductive.20types.html#249752730">(Aug 17 2021 at 17:39)</a>:</h4>
+<p>I mean the last one "But if all domains of all constructors are sets, I believe this can't happen."</p>
+
+
+
+<a name="249776415"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/Higher%20inductive%20types/near/249776415" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/Higher.20inductive.20types.html#249776415">(Aug 17 2021 at 20:45)</a>:</h4>
+<p>IIRC, you can recover a similar theorem if you prove that the path constructors are cycle-free. That is, consider a higher inductive type <code>T</code> generated from constructors <code>point : P → T</code> and <code>path : (x y : P) → R x y → point x = point y</code>, where <code>P : Set</code> and <code>R : P → P → Prop</code>. Then, if <code>R</code> is cycle-free in some suitable graph-theoretic sense, <code>T</code> will be a set. The circle fails the latter condition in the simplest way possible – the whole idea of the circle is that the path forms a cycle.</p>
+<p>I'd appreciate a reference, if anyone knows one, because it's not immediately clear to me how it works when <code>P</code> has large cardinality and cycle-free paths can be infinitely long.</p>
+
+
+
+<a name="249777410"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229952-theory%3A%20type%20theory%20%26%20logic/topic/Higher%20inductive%20types/near/249777410" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James Wood <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229952-theory.3A-type-theory-.26-logic/topic/Higher.20inductive.20types.html#249777410">(Aug 17 2021 at 20:54)</a>:</h4>
+<p>For the broader question, <em>quotient inductive-inductive types</em> have been studied. As far as I can tell, the Cauchy reals are a prime motivating example, along with similar cases where QIITs are enough to get around countable choice.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

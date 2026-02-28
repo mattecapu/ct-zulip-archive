@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>enriching in premonoidal categories · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html">enriching in premonoidal categories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="482485161"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/enriching%20in%20premonoidal%20categories/near/482485161" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html#482485161">(Nov 14 2024 at 21:22)</a>:</h4>
+<p>Does anybody know at what point some kind of problems arise in attempting to enrich a category in premonoidal categories or sesquicategories? It doesn’t seem that the composition in the enrichment base really ever comes in at the same time as the tensor of morphisms, so I’m having trouble understanding when (if ever!) full monoidality is necessary.</p>
+
+
+
+<a name="482575205"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/enriching%20in%20premonoidal%20categories/near/482575205" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html#482575205">(Nov 15 2024 at 10:06)</a>:</h4>
+<p>You can enrich in a multicategory, so certainly monoidal is stronger than required. Composition in the base of enrichment is used to express associativity and unitality axioms, so you need something there. (I am not familiar enough with sesquicategories to answer that specific query)</p>
+
+
+
+<a name="482644545"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/enriching%20in%20premonoidal%20categories/near/482644545" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html#482644545">(Nov 15 2024 at 16:00)</a>:</h4>
+<p>Yeah, the thought is just that you never seem to have to tensor two arbitrary morphisms together, which is the thing that you lose in a premonoidal setting—you can’t slide parallel boxes past each other in terms of string diagrams</p>
+
+
+
+<a name="482647258"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/enriching%20in%20premonoidal%20categories/near/482647258" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html#482647258">(Nov 15 2024 at 16:14)</a>:</h4>
+<p>So my first thought on reading this question was that while you don't have to tensor two morphisms together in phrasing, say, the associativity axiom for composing <em>three</em> morphisms, you do in talking about the associativity pentagon for composing <em>four</em> morphisms.  However, then I thought about how that manifests in the 1-category world where associativity is just a property, and I think that while one of the sides of the pentagon comes from sliding parallel boxes past each other, the other four sides are all true in the premonoidal setting (assuming 3-morphism associativity holds), and thus all five vertices are still just equal.</p>
+
+
+
+<a name="482647365"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/enriching%20in%20premonoidal%20categories/near/482647365" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html#482647365">(Nov 15 2024 at 16:15)</a>:</h4>
+<p>I still have the gut reaction that something is going to fail somewhere, but I'm not sure exactly where.</p>
+
+
+
+<a name="482652063"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/enriching%20in%20premonoidal%20categories/near/482652063" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html#482652063">(Nov 15 2024 at 16:40)</a>:</h4>
+<p>It's an interesting question, and I would be curious to know what fails if you end up working through this <span class="user-mention" data-user-id="609515">@Kevin Carlson</span>. It could be that some of the basic definitions make sense, but one cannot talk about some aspects of enriched category theory (in which case it would be interesting to know which ones), similar to how you can enrich in skew-monoidal categories, but you need to assume left-normality for certain constructions, e.g. presheaves (see Example 12 of <a href="https://arxiv.org/abs/1205.6522">Skew-closed categories</a>).</p>
+
+
+
+<a name="484324756"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/enriching%20in%20premonoidal%20categories/near/484324756" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nayan Rajesh <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html#484324756">(Nov 25 2024 at 15:03)</a>:</h4>
+<p>Whiskering two V-natural transformations needs one to take the tensor of two morphisms in parallel, so I'm wondering if the resulting V-Cat for a premonoidal V would be a sesquicategory instead of a 2-category.</p>
+
+
+
+<a name="484341550"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/enriching%20in%20premonoidal%20categories/near/484341550" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html#484341550">(Nov 25 2024 at 16:14)</a>:</h4>
+<p>Do you mean horizontally composing two V-natural transformations?</p>
+
+
+
+<a name="484490124"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/enriching%20in%20premonoidal%20categories/near/484490124" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nayan Rajesh <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html#484490124">(Nov 26 2024 at 11:23)</a>:</h4>
+<p>Oh yes, apologies. I did mean horizontal composition.</p>
+
+
+
+<a name="484576564"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/enriching%20in%20premonoidal%20categories/near/484576564" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html#484576564">(Nov 26 2024 at 18:53)</a>:</h4>
+<p>That does sound like a plausible conjecture!</p>
+
+
+
+<a name="484589024"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/enriching%20in%20premonoidal%20categories/near/484589024" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html#484589024">(Nov 26 2024 at 20:15)</a>:</h4>
+<p>Thanks for the thought, Nayan! That sounds just right, macrocosmically speaking.</p>
+
+
+
+<a name="484593479"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/enriching%20in%20premonoidal%20categories/near/484593479" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html#484593479">(Nov 26 2024 at 20:47)</a>:</h4>
+<p>So, assuming the conjecture is true, then the next question would be, what concrete things do we want to do with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">t</mi></mrow></mrow><annotation encoding="application/x-tex">V \rm Cat</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mord"><span class="mord mathrm">Cat</span></span></span></span></span> that require it to be a 2-category rather than a sesquicategory?</p>
+
+
+
+<a name="484595169"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/enriching%20in%20premonoidal%20categories/near/484595169" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html#484595169">(Nov 26 2024 at 20:58)</a>:</h4>
+<p>One aspect that one could consider is the theory of monads in V-Cat. My recollection is that it is possible to carry out at least a reasonable amount of the theory of monads and adjunctions in a sesquicategory, but that some of the definitions require one to impose additional laws, over the usual laws in a 2-category, to address the loss of the interchange law.</p>
+<p>Perhaps it would be interesting to study the kind of (virtual) double category one gets in this situation (whose structure is presumably analogous to a <a href="https://ncatlab.org/nlab/show/premulticategory">[[premulticategory]]</a>), where it would be possible to at least attempt to express many more of the fundamental concepts of V-category theory.</p>
+
+
+
+<a name="484595292"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/enriching%20in%20premonoidal%20categories/near/484595292" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html#484595292">(Nov 26 2024 at 20:59)</a>:</h4>
+<p>I'm curious what sort of examples motivated the original question?</p>
+
+
+
+<a name="484596810"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/enriching%20in%20premonoidal%20categories/near/484596810" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html#484596810">(Nov 26 2024 at 21:09)</a>:</h4>
+<p>David Spivak asked me about this because he wanted to enrich in…the Kleisli category of the free monad monad extended from the ordinary category of univariate polynomials to a certain enrichment of polynomials in categories and retrofunctors he and collaborators call Org. I think I got that mouthful right. Anyway, he and Sophie Libkind just recently <a href="https://arxiv.org/abs/2410.08373">claimed</a> they have this Kleisli category monoidal but they noticed a gap (which will be updated on ArXiv soon) and so that brought up the question. </p>
+<p>I guess a much shorter and possibly more useful answer is that the motivating examples are Kleisli categories of non-monoidal monads on monoidal categories.</p>
+
+
+
+<a name="484597538"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/enriching%20in%20premonoidal%20categories/near/484597538" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html#484597538">(Nov 26 2024 at 21:14)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories/near/484595169">said</a>:</p>
+<blockquote>
+<p>Perhaps it would be interesting to study the kind of (virtual) double category one gets in this situation (whose structure is presumably analogous to a <a href="https://ncatlab.org/nlab/show/premulticategory">[[premulticategory]]</a>), where it would be possible to at least attempt to express many more of the fundamental concepts of V-category theory.</p>
+</blockquote>
+<p>That’s a nice thought! Virtualization in the first place can be partly motivated by non-associativity of composition, as in the case of double profunctors. I like this motivation better than missing colimits to define the compositions, personally. And then if we’re going to allow for non-associative composites of loose morphisms in that way, it seems quite natural to loosen up associativity composites of cells at the same time. Nobody’s ever given such a definition, have they?</p>
+
+
+
+<a name="484600087"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/enriching%20in%20premonoidal%20categories/near/484600087" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/enriching.20in.20premonoidal.20categories.html#484600087">(Nov 26 2024 at 21:33)</a>:</h4>
+<p>Certainly not that I'm aware of.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

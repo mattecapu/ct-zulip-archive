@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Polycategories and PROPs; common generalization ? · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html">Polycategories and PROPs; common generalization ?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="433330039"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433330039" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alexander Gietelink Oldenziel <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433330039">(Apr 15 2024 at 16:04)</a>:</h4>
+<p>Both PROPs and Poly-categories are gadgets formalizing multi-input multi-output processes. <br>
+In PROPs there is extra  structure than in poly-categories in that you can compose along multiple objects at the same time. </p>
+<p>So... which one (if any) is the more general concept? Is there some common generalization?</p>
+<p>One way I could imagine thinking about it is that for a given PROP one can consider the subPolyCategory of morphisms that are composed out of morphisms that are only composed along a single object. </p>
+<p>I'm not sure how natural, canonical this is. <br>
+How should I think about common generalization of multi-input multi-output processes?</p>
+
+
+
+<a name="433337026"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433337026" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433337026">(Apr 15 2024 at 16:35)</a>:</h4>
+<p>PROPs generalise properads which generalise polycategories.</p>
+
+
+
+<a name="433337166"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433337166" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433337166">(Apr 15 2024 at 16:35)</a>:</h4>
+<p>In properads you may also compose along multiple objects at once. The difference in a PROP is that you can also compose along zero objects.</p>
+
+
+
+<a name="433357625"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433357625" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433357625">(Apr 15 2024 at 18:20)</a>:</h4>
+<p>I would say that polycategories are more general than PROPs, since every PROP has an underlying polycategory in which you remember only the composition along single objects, but not conversely.</p>
+
+
+
+<a name="433357718"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433357718" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433357718">(Apr 15 2024 at 18:20)</a>:</h4>
+<p>In the same way that, say, abelian groups are more general than rings.</p>
+
+
+
+<a name="433364218"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433364218" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433364218">(Apr 15 2024 at 18:58)</a>:</h4>
+<p>Yes, I suppose I was thinking that one has a wider range of operations at one's disposal, but I think "generalise" is probably misleading in this context.</p>
+
+
+
+<a name="433455125"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433455125" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Barrett <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433455125">(Apr 16 2024 at 07:02)</a>:</h4>
+<p>I think of PROPs and polycategories as very roughly analogous to monoidal categories and linearly distributive categories, respectively (the latter being, iirc, the representable polycategories). In this case, linearly distributive categories are more general, because they assume less structure and you can recover monoidal categories by identifying the two "tensor" and "parr" monoidal structures.</p>
+
+
+
+<a name="433461831"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433461831" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Cole Comfort <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433461831">(Apr 16 2024 at 07:46)</a>:</h4>
+<p>Linearly distributive categories actually generalize monoidal categories: by setting both monoidal structures to be equal, then all of the operations of monoidal categories live within linearly distributive categories.</p>
+<p>This can not be said for PROPs and polycategories because there is no tensor.</p>
+
+
+
+<a name="433463208"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433463208" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433463208">(Apr 16 2024 at 07:55)</a>:</h4>
+<p>I think what Chris said is fine, in the sense that there is a commutative (up to natural isomorphism) diagram of functors<br>
+<a href="/user_uploads/21317/x1lx2dWjN6_oJyPEC6hH4caN/3223f01d-0e85-451d-8019-477fb4c2dd61.jpg">3223f01d-0e85-451d-8019-477fb4c2dd61.jpg</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/x1lx2dWjN6_oJyPEC6hH4caN/3223f01d-0e85-451d-8019-477fb4c2dd61.jpg" title="3223f01d-0e85-451d-8019-477fb4c2dd61.jpg"><img src="/user_uploads/21317/x1lx2dWjN6_oJyPEC6hH4caN/3223f01d-0e85-451d-8019-477fb4c2dd61.jpg"></a></div>
+
+
+
+<a name="433463583"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433463583" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433463583">(Apr 16 2024 at 07:58)</a>:</h4>
+<p>(Actually should be <em>symmetric</em> monoidal categories and l.d. categories on top, or pros and planar polycategories on the bottom, sorry for the confusion)</p>
+
+
+
+<a name="433463823"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433463823" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433463823">(Apr 16 2024 at 07:59)</a>:</h4>
+<p>The top functor identifies a (symmetric) monoidal category with a "degenerate" (symmetric) linearly distributive category with tensor = par</p>
+<p>The bottom functor forgets the composition operations that are not allowed in a (non-planar) polycategory</p>
+<p>The left one embeds (symmetric) monoidal categories as the representable pro(p)s</p>
+<p>The right one embeds (symmetric) l.d. categories as the representable (non-planar) polycategories</p>
+
+
+
+<a name="433464479"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433464479" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433464479">(Apr 16 2024 at 08:03)</a>:</h4>
+<p>I didn't say what the morphisms are in the top row; it should be strong (symmetric) monoidal functors on the top left, and functors that are lax wrt tensor and oplax wrt par on the top right, I think.</p>
+
+
+
+<a name="433465800"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433465800" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433465800">(Apr 16 2024 at 08:10)</a>:</h4>
+<p>In what sense are monoidal categories representable PROs? This seems suspicious, because PROs encode more general composition than polycategories, so I would expect that a representable PRO would encode more general tensors than a representable polycategory.</p>
+
+
+
+<a name="433465886"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433465886" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433465886">(Apr 16 2024 at 08:11)</a>:</h4>
+<p>A PRO has multiary domain and multiary codomain of morphisms, so a representable PRO should have two tensor products, no?</p>
+
+
+
+<a name="433466108"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433466108" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433466108">(Apr 16 2024 at 08:12)</a>:</h4>
+<p>If there is a sense in which representable PROs are monoidal categories, it seems in a different sense to that in which linearly distributive categories are representable polycategories.</p>
+
+
+
+<a name="433467308"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433467308" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433467308">(Apr 16 2024 at 08:20)</a>:</h4>
+<p>A universal morphism in a PRO is the same as an invertible morphism, so when a PRO is representable the "two" tensor products coincide up to isomorphism (the inverse of a universal morphism for "tensor" is a universal morphism for "par").</p>
+<p>But it is true that we need to adjust the definitions on the two sides if we want to end up with "a single monoidal structure" instead of "a pair of naturally isomorphic monoidal structures".</p>
+
+
+
+<a name="433467568"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433467568" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433467568">(Apr 16 2024 at 08:21)</a>:</h4>
+<p>The coincidence of universal with invertible in a PRO follows from the same argument as the proof that an isomorphism in a category is the same as a morphism that is split epi and mono.</p>
+
+
+
+<a name="433472919"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433472919" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433472919">(Apr 16 2024 at 08:51)</a>:</h4>
+<p>By "universal morphism", you mean a morphism <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo>→</mo><mi>A</mi><mo>⊗</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A, B \to A \otimes B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> such that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">C</mi><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><mi>A</mi><mo>⊗</mo><mi>B</mi><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>X</mi><mi>m</mi></msub><mo separator="true">;</mo><msub><mi>Y</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><msub><mi>Y</mi><mi>m</mi></msub><mo stretchy="false">)</mo><mo>→</mo><mi mathvariant="script">C</mi><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>X</mi><mi>m</mi></msub><mo separator="true">;</mo><msub><mi>Y</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><msub><mi>Y</mi><mi>m</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal C(X_1, \ldots, A \otimes B, \ldots, X_m; Y_1, \ldots Y_m) \to \mathcal C(X_1, \ldots, A, B, \ldots, X_m; Y_1, \ldots Y_m)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.05834em;">C</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.05834em;">C</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> is invertible, or something else?</p>
+
+
+
+<a name="433475848"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433475848" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433475848">(Apr 16 2024 at 09:08)</a>:</h4>
+<p>Yes, that's what I mean. In a pro it also makes no difference if you include the "context" <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>X</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">X_1, \ldots, X_m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> or not. </p>
+<p>(In a polycategory your definition would correspond to what is called "strongly universal", which is the notion of universality that is stable under composition).</p>
+
+
+
+<a name="433476587"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433476587" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433476587">(Apr 16 2024 at 09:12)</a>:</h4>
+<p>In a pro you have "binary" and "n-ary" identities, so the inverse image of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">i</mi><mi mathvariant="normal">d</mi></mrow><mrow><mi>A</mi><mo separator="true">,</mo><mi>B</mi></mrow></msub><mo>∈</mo><mi mathvariant="script">C</mi><mo stretchy="false">(</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo separator="true">;</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{id}_{A,B} \in \mathcal{C}(A, B; A, B)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9805em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">id</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">A</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.05017em;">B</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.05834em;">C</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span></span></span></span>, which is a morphism <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⊗</mo><mi>B</mi><mo>→</mo><mi>A</mi><mo separator="true">,</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \otimes B \to A, B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span>, turns out to be an inverse for your universal morphism <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo>→</mo><mi>A</mi><mo>⊗</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A, B \to A \otimes B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span>.</p>
+
+
+
+<a name="433479065"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433479065" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433479065">(Apr 16 2024 at 09:25)</a>:</h4>
+<p>Right, I see. The way I should have been thinking about it is that, by having more general composition operations, the constraints on the tensor products are stronger, and so the more general the composition, the closer one gets to trivialising the induced monoidal structure(s).</p>
+
+
+
+<a name="433479201"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433479201" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433479201">(Apr 16 2024 at 09:26)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276363">Amar Hadzihasanovic</span> <a href="#narrow/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F/near/433475848">said</a>:</p>
+<blockquote>
+<p>Yes, that's what I mean. In a pro it also makes no difference if you include the "context" <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>X</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">X_1, \ldots, X_m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> or not.</p>
+</blockquote>
+<p>Are these observations written out anywhere?</p>
+
+
+
+<a name="433479296"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433479296" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433479296">(Apr 16 2024 at 09:26)</a>:</h4>
+<p>It seems like it would be useful to have a reference for representability of these different structures somewhere. (Probably this has even been mentioned on Zulip before.)</p>
+
+
+
+<a name="433479386"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433479386" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433479386">(Apr 16 2024 at 09:27)</a>:</h4>
+<p><span class="user-mention" data-user-id="546041">@Aaron David Fairbanks</span> is working on it.</p>
+
+
+
+<a name="433567630"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433567630" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433567630">(Apr 16 2024 at 16:53)</a>:</h4>
+<p>Representability of PROPs was mentioned on Zulip recently and someone cited my paper <a href="https://arxiv.org/abs/1911.00818">A practical type theory for symmetric monoidal categories</a>.  I claim no originality, but at least it's written out there with a sketch of a proof that representable PROPs are equivalent to symmetric monoidal categories.</p>
+
+
+
+<a name="433594746"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433594746" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433594746">(Apr 16 2024 at 19:54)</a>:</h4>
+<p>One thing that it would be nice to have a reference for in the literature is the fact that representability in the sense of Definition 2.2 of "A practical type theory for symmetric monoidal categories" does coincide with representability in the polycategorical sense, i.e. a notion of strong universality.</p>
+
+
+
+<a name="433597729"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Polycategories%20and%20PROPs%3B%20common%20generalization%20%3F/near/433597729" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F.html#433597729">(Apr 16 2024 at 20:15)</a>:</h4>
+<p>Yes.  Although it's a 1-line proof by the Yoneda lemma.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Idempotent strong monads and diagonals · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Idempotent.20strong.20monads.20and.20diagonals.html">Idempotent strong monads and diagonals</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="421877164"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Idempotent%20strong%20monads%20and%20diagonals/near/421877164" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Naïm Favier <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Idempotent.20strong.20monads.20and.20diagonals.html#421877164">(Feb 16 2024 at 15:09)</a>:</h4>
+<p>Let <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>T</mi><mo separator="true">,</mo><mi>η</mi><mo separator="true">,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(T, \eta, \mu)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">η</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">μ</span><span class="mclose">)</span></span></span></span>  be an idempotent monad in a cartesian monoidal category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">C</mi></mrow><annotation encoding="application/x-tex">\mathcal{C}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.05834em;">C</span></span></span></span> (I may want to consider monoidal categories with diagonals more generally, but let's keep it simple), with left and right monoidal strengths <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">s</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span>. I am trying, and miserably failing, to prove that the following (outer) diagram commutes:</p>
+<p><a href="/user_uploads/21317/LjYZ4IED1yTQL-ahbNw4YHvY/screenshot-2024-02-16-160553.png">screenshot-2024-02-16-160553.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/LjYZ4IED1yTQL-ahbNw4YHvY/screenshot-2024-02-16-160553.png" title="screenshot-2024-02-16-160553.png"><img src="/user_uploads/21317/LjYZ4IED1yTQL-ahbNw4YHvY/screenshot-2024-02-16-160553.png"></a></div><p>That is, in pseudo-Haskell, <code>liftM2 (,) a a = fmap (λ x → (x, x)) a</code> (which is the usual definition of an "idempotent applicative functor"). The triangles are my attempts, but I still have no idea whether the remaining square commutes. Any ideas?</p>
+
+
+
+<a name="421945371"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Idempotent%20strong%20monads%20and%20diagonals/near/421945371" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Naïm Favier <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Idempotent.20strong.20monads.20and.20diagonals.html#421945371">(Feb 16 2024 at 22:00)</a>:</h4>
+<p>I figured it out:<br>
+<a href="/user_uploads/21317/t-nBAcPxMUzXrGzcDJZERmgJ/screenshot-2024-02-16-225953.png">screenshot-2024-02-16-225953.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/t-nBAcPxMUzXrGzcDJZERmgJ/screenshot-2024-02-16-225953.png" title="screenshot-2024-02-16-225953.png"><img src="/user_uploads/21317/t-nBAcPxMUzXrGzcDJZERmgJ/screenshot-2024-02-16-225953.png"></a></div>
+
+
+
+<a name="421947073"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Idempotent%20strong%20monads%20and%20diagonals/near/421947073" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Naïm Favier <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Idempotent.20strong.20monads.20and.20diagonals.html#421947073">(Feb 16 2024 at 22:14)</a>:</h4>
+<p>I wonder if there's a general strategy for proving this sort of things... I sort of just stared at nlab's proof that <a href="https://ncatlab.org/nlab/show/idempotent+monad#idempotent_strong_monads_are_commutative">idempotent strong monads are commutative</a> until inspiration struck</p>
+
+
+
+<a name="422109494"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Idempotent%20strong%20monads%20and%20diagonals/near/422109494" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Hugo Paquet <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Idempotent.20strong.20monads.20and.20diagonals.html#422109494">(Feb 18 2024 at 16:24)</a>:</h4>
+<p>I don't think this diagram is well-formed (maximal paths don't all end in the same place). <br>
+I'd also like to know if this property is true. "Idempotent" in this context seems a bit ambiguous, e.g. the Maybe monad is idempotent as an applicative functor but not as a monad.</p>
+
+
+
+<a name="422110478"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Idempotent%20strong%20monads%20and%20diagonals/near/422110478" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Naïm Favier <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Idempotent.20strong.20monads.20and.20diagonals.html#422110478">(Feb 18 2024 at 16:36)</a>:</h4>
+<p>Oops, you're right. I thought I had convinced myself it worked despite the wonkiness, but now I'm not so sure. I'll see if I can salvage it.</p>
+<p>Yes, "idempotent" is ambiguous and not a great name anyway since this does not correspond to the notion of an idempotent monoid in any way. I think a better name would be "diagonal monoidal functor", but oh well (the name "idempotent monoidal functor" is already established in <em>Programming contextual computations</em>).</p>
+
+
+
+<a name="422115875"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Idempotent%20strong%20monads%20and%20diagonals/near/422115875" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Naïm Favier <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Idempotent.20strong.20monads.20and.20diagonals.html#422115875">(Feb 18 2024 at 17:55)</a>:</h4>
+<p>Fixed it:</p>
+<p><a href="/user_uploads/21317/Z1ar-QuTi91Bnya-KjhHdzkc/screenshot-2024-02-18-184753.png">screenshot-2024-02-18-184753.png</a></p>
+<div class="message_inline_image"><a href="/user_uploads/21317/Z1ar-QuTi91Bnya-KjhHdzkc/screenshot-2024-02-18-184753.png" title="screenshot-2024-02-18-184753.png"><img src="/user_uploads/21317/Z1ar-QuTi91Bnya-KjhHdzkc/screenshot-2024-02-18-184753.png"></a></div><p>It's still <span aria-label="woozy face" class="emoji emoji-1f974" role="img" title="woozy face">:woozy_face:</span> but at least I can translate it into an equational chain now:</p>
+<p>Tδ<br>
+= Tδ ; Tη ; μ (monad law)<br>
+= Tδ ; T (A × η) ; Ts ; μ (η is left-strong)<br>
+= Tδ ; T (A × η) ; η ; μ ; Ts ; μ (monad law)<br>
+= Tδ ; T (A × η) ; T (η × TA) ; Tt ; μ ; Ts ; μ (η is right-strong)<br>
+= Tδ ; Т (η × η) ; Tt ; μ ; Ts ; μ<br>
+= Tη ; Tδ ; Tt ; μ ; Ts ; μ (naturality of Tδ)<br>
+= η ; Tδ ; Tt ; μ ; Ts ; μ (idempotence)<br>
+= δ ; t ; η ; μ ; Ts ; μ (naturality of η)<br>
+= δ ; t ; Ts ; μ (monad law)</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

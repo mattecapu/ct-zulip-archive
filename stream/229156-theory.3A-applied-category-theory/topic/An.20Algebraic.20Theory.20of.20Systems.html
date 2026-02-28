@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>An Algebraic Theory of Systems · theory: applied category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/index.html">theory: applied category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/An.20Algebraic.20Theory.20of.20Systems.html">An Algebraic Theory of Systems</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="465782866"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/An%20Algebraic%20Theory%20of%20Systems/near/465782866" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/An.20Algebraic.20Theory.20of.20Systems.html#465782866">(Aug 28 2024 at 14:26)</a>:</h4>
+<p>My question has to do with defining a notion of an "Algebra of Open Systems", similar to how we have Group theory for symmetries. </p>
+<p>Informally, a system should have a set (usually finite?) of interfaces, and we should be able to compose systems in parallel and sequentially. One paper which seems to do this is: <a href="https://www.sciencedirect.com/science/article/pii/S0304397518304092">https://www.sciencedirect.com/science/article/pii/S0304397518304092</a>. An overview of their system algebra is, informally, as follows:</p>
+<p>We have:</p>
+<ul>
+<li>A set of systems</li>
+<li>A (partial) parallel composition binary operation - What system do you get when you have two systems in parallel</li>
+<li>An interface connection operation - Given a system, what system do you get if you connect two of its interfaces</li>
+</ul>
+<p>Moreover, they need to satisfy some axioms (given in the paper). (PS: IMO, these are the main ideas. In order to define these, you need other auxillary functions. For example, you need a function mapping a system to its set of interfaces).</p>
+<p>However, CT already seems to give us a notion of an algebraic theory of systems - Symmetric Monoidal Categories.<br>
+What I am curious about is - what extra structure to we need to impose on SMCs to make them 'almost equivalent' to the ideas in the paper? For instance, </p>
+<ul>
+<li>In the paper, there is an interface connection operation, which just connects two interfaces of a system. In fact, sequential composition <strong>is defined</strong> in terms of this operation.</li>
+<li>In the paper, an interface is 'reactive', and do both inputs and outputs. What extra structure do we need to impose on SMCs to model this?</li>
+</ul>
+
+
+
+<a name="465791934"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/An%20Algebraic%20Theory%20of%20Systems/near/465791934" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/An.20Algebraic.20Theory.20of.20Systems.html#465791934">(Aug 28 2024 at 14:58)</a>:</h4>
+<p>I haven't read the paper, so take this reply with a grain of salt <span aria-label="sweat smile" class="emoji emoji-1f605" role="img" title="sweat smile">:sweat_smile:</span> </p>
+<p>1) First, I would usually prefer to say that SMCs are theory of processes, rather than of systems, because they are inherently directed. For some extensions to get around this you could look at <a href="https://ncatlab.org/nlab/show/compact%20closed%20category">[[compact closed category]]</a>, <a href="https://ncatlab.org/nlab/show/dagger-compact%20category">[[dagger-compact category]]</a> and <a href="https://ncatlab.org/nlab/show/hypergraph%20category">[[hypergraph category]]</a>.</p>
+<p>2) These will often be categories of <a href="https://ncatlab.org/nlab/show/span">[[span]]</a> or <a href="https://ncatlab.org/nlab/show/relation">[[relation]]</a> (sic, plurals break links), in which case we usually think of a morphism as some kind of joint constraint over inputs and outputs. In particular, this doesn't directly address the bi-directionality of sequential interfaces, though it doesn't forbid it either.</p>
+<p>3) There is by now a fairly large literature on CT for bidirectional processes. Some relevant topics here are <a href="https://ncatlab.org/nlab/show/lens%20%28in%20computer%20science%29%20">[[lens (in computer science) ]]</a>, <a href="https://ncatlab.org/nlab/show/optic%20%28in%20computer%20science%29">[[optic (in computer science)]]</a> and <a href="https://ncatlab.org/nlab/show/polynomial%20functor">[[polynomial functor]]</a>. Very roughly, </p>
+<ul>
+<li>lenses are getters and setters with fixed (Cartesian) types</li>
+<li>(morphisms between) polynomial functors are getters and setters with variable (Cartesian) types (possible inputs depend on current states/outputs)</li>
+<li>optics are getters and setters in more general monoidal settings.</li>
+</ul>
+<p>4) From an SMC perspective, it is strange that parallel composition is a partial operation. Do the authors provide intuitions about when this is expected to fail? One possible example that comes to mind is systems located in space(time), where we might not be able to parallel-compose two different systems located at the same place.</p>
+
+
+
+<a name="465796427"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/An%20Algebraic%20Theory%20of%20Systems/near/465796427" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/An.20Algebraic.20Theory.20of.20Systems.html#465796427">(Aug 28 2024 at 15:20)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="278008">Spencer Breiner</span> <a href="#narrow/stream/229156-theory.3A-applied-category-theory/topic/An.20Algebraic.20Theory.20of.20Systems/near/465791934">said</a>:</p>
+<blockquote>
+<p>From an SMC perspective, it is strange that parallel composition is a partial operation. Do the authors provide intuitions about when this is expected to fail?</p>
+</blockquote>
+<p>I think that parallel composition is only defined if the interfaces of the two systems are disjoint</p>
+
+
+
+<a name="465797372"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/An%20Algebraic%20Theory%20of%20Systems/near/465797372" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/An.20Algebraic.20Theory.20of.20Systems.html#465797372">(Aug 28 2024 at 15:23)</a>:</h4>
+<p>That makes sense. This is already enforced by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding="application/x-tex">\otimes</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord">⊗</span></span></span></span>, since <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>⊗</mo><mi>g</mi><mo>:</mo><mi>X</mi><mo>⊗</mo><mi>Y</mi><mo>→</mo><msup><mi>X</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo>⊗</mo><msup><mi>Y</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><annotation encoding="application/x-tex">f\otimes g: X\otimes Y\to X&#x27;\otimes Y&#x27;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8352em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7519em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span>.</p>
+
+
+
+<a name="465797506"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/An%20Algebraic%20Theory%20of%20Systems/near/465797506" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/An.20Algebraic.20Theory.20of.20Systems.html#465797506">(Aug 28 2024 at 15:24)</a>:</h4>
+<p>I.e., the inputs/outputs of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi></mrow><annotation encoding="application/x-tex">g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span></span></span></span> are automatically disjoint.</p>
+
+
+
+<a name="465802203"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/An%20Algebraic%20Theory%20of%20Systems/near/465802203" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/An.20Algebraic.20Theory.20of.20Systems.html#465802203">(Aug 28 2024 at 15:47)</a>:</h4>
+<p>What I think I'd really want is a CT variant of that paper - where we could model distributed systems, etc. I don't know if lenses, etc. do that</p>
+
+
+
+<a name="465804065"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/An%20Algebraic%20Theory%20of%20Systems/near/465804065" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/An.20Algebraic.20Theory.20of.20Systems.html#465804065">(Aug 28 2024 at 15:58)</a>:</h4>
+<p>One other topic that I intended to mention is <a href="https://ncatlab.org/nlab/show/duoidal%20category">[[duoidal category]]</a>. There are a couple of recent papers by <a href="https://mroman42.github.io/notes/pieces/The-Produoidal-Algebra-of-Process-Decomposition-Earnshaw-Hefford-Rom%C3%A1n-2023/">Earnshaw, et al</a> and <a href="https://arxiv.org/abs/2210.01962">Shapiro &amp; Spivak</a> in this direction.</p>
+
+
+
+<a name="465805184"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/An%20Algebraic%20Theory%20of%20Systems/near/465805184" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/An.20Algebraic.20Theory.20of.20Systems.html#465805184">(Aug 28 2024 at 16:04)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="726654">Suraaj K S</span> <a href="#narrow/stream/229156-theory.3A-applied-category-theory/topic/An.20Algebraic.20Theory.20of.20Systems/near/465802203">said</a>:</p>
+<blockquote>
+<p>What I think I'd really want is a CT variant of that paper - where we could model distributed systems, etc. I don't know if lenses, etc. do that</p>
+</blockquote>
+<p>The basic idea is that a <a href="https://ncatlab.org/nlab/show/Moore%20machine">[[Moore machine]]</a> with state set <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>, inputs <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span> and outputs <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mclose">)</span></span></span></span> can be viewed as a lens mapping <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo fence="true">(</mo><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>S</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>S</mi></mstyle></mtd></mtr></mtable><mo fence="true">)</mo></mrow><mo>⇆</mo><mrow><mo fence="true">(</mo><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>I</mi></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mi>O</mi></mstyle></mtd></mtr></mtable><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">\begin{pmatrix}S\\S\end{pmatrix}\leftrightarrows\begin{pmatrix}I\\O\end{pmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm">⇆</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">O</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span></span></span></span>. You can think of these as stream transducers, which can compose via wiring diagrams to form "larger" transducers. </p>
+<p>I'm not sure if that will meet your needs or not. Do you have a toy example to play with?</p>
+
+
+
+<a name="465805715"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/An%20Algebraic%20Theory%20of%20Systems/near/465805715" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/An.20Algebraic.20Theory.20of.20Systems.html#465805715">(Aug 28 2024 at 16:07)</a>:</h4>
+<p>Some other good (if lengthy) places to look are the books by <a href="https://arxiv.org/abs/2312.00990">Niu &amp; Spivak</a> or <a href="http://davidjaz.com/Papers/DynamicalBook.pdf">Myers</a>.</p>
+
+
+
+<a name="465807083"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/An%20Algebraic%20Theory%20of%20Systems/near/465807083" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/An.20Algebraic.20Theory.20of.20Systems.html#465807083">(Aug 28 2024 at 16:13)</a>:</h4>
+<div class="codehilite"><pre><span></span><code>@_**Spencer Breiner|278008** [said]
+I&#39;m not sure if that will meet your needs or not. Do you have a toy example to play with?
+</code></pre></div>
+<p>I think <a href="https://en.wikipedia.org/wiki/Kahn_process_networks">https://en.wikipedia.org/wiki/Kahn_process_networks</a> </p>
+<p>(which are also mentioned in the paper) are a good toy example</p>
+
+
+
+<a name="465807508"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/An%20Algebraic%20Theory%20of%20Systems/near/465807508" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/An.20Algebraic.20Theory.20of.20Systems.html#465807508">(Aug 28 2024 at 16:15)</a>:</h4>
+<p>Kahn Networks are a little limited though. There are systems which cannot be modeled as KPNs..</p>
+<p>For instance, a system with 2 input interfaces, and one output interface, which "merges" messages (whichever come first in time) cannot be modelled via a Kahn Network</p>
+
+
+
+<a name="465852924"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229156-theory%3A%20applied%20category%20theory/topic/An%20Algebraic%20Theory%20of%20Systems/near/465852924" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Owen Lynch <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229156-theory.3A-applied-category-theory/topic/An.20Algebraic.20Theory.20of.20Systems.html#465852924">(Aug 28 2024 at 21:29)</a>:</h4>
+<p>I think that the philosophy given by David Jaz's book on systems theory might fit the bill here: <a href="http://davidjaz.com/Papers/DynamicalBook.pdf">http://davidjaz.com/Papers/DynamicalBook.pdf</a>.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

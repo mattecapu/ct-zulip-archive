@@ -1,0 +1,74 @@
+[
+    {
+        "content": "<p>To hazard a guess at what Mike was referring to, it's that no matter what syntax you're dealing with, the <em>subject</em> of results in logic are collections of syntactic structures such as strings of symbols; formalizing any reasoning we do about these collections (such as inductive arguments) produces set-theory-like mathematics.</p>\n<p>That said, I learned a few years ago that philosophers of computer science are happy to avoid the \"holism\" that the above assertion imposes. There may be no need in practice to make statements about the collection of all well-formed formulas. A proof by induction on the structure of syntax can be seen 'reductionistically' as a proof schema that allows us to prove some property only once we are provided with a specific instance of that syntax, rather than 'holistically' proving a statement about the collection of all strings all at once. (Here I am using a dichotomy/contrast that I first saw in Hofstadter's book <em>GEB</em>.)</p>\n<p>Holism is so conceptually useful to me in my mathematical practice (indeed, it underlies the effectiveness of category theory imo) that I struggle to sympathise with the reductionist viewpoint, but it's clearly out there!</p>",
+        "id": 499251190,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1739371374
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"277473\">@Morgan Rogers (he/him)</span> Yes, we agree on that! The circularity isn’t ontologically necessary, but indeed collections happen everywhere when conceptualising anything and so, that’s why holism is so useful in practice and set theories are so nice to analytically found mathematics, after all! <span aria-label=\"blush\" class=\"emoji emoji-1f60a\" role=\"img\" title=\"blush\">:blush:</span></p>",
+        "id": 499259192,
+        "sender_full_name": "Vincent R.B. Blazy",
+        "timestamp": 1739373338
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"510824\">@Zoltan A. Kocsis (Z.A.K.)</span> I meant basically your first weaker version.  By saying \"set-theory-like\" I meant that I think you need a general sort of mathematics in which you can talk about \"collections of things\".  So I don't think your example of axiomatic projective geometry works, because I don't see how one could define variables and terms purely in terms of points and lines.  Maybe there's a way, but it would be pretty artificial.  I <em>don't</em> mean formal set theory, just the \"informal\" kind of set theory that most people learn in their first proof-based math classes.</p>",
+        "id": 499319787,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1739391057
+    },
+    {
+        "content": "<p>As you said with your example of first-graders, depending on how much logic you want to do, you may need more or less sophistication in this ambient informal mathematics, and for the very basic stuff you can get by with elementary-school math.  But for more advanced logic you need to be able to talk about collections of things, functions between them, and so on -- the stuff that all mathematicians do, whether or not they understand a formal set theory like ZFC.</p>",
+        "id": 499321804,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1739391782
+    },
+    {
+        "content": "<p>I think the <a href=\"https://www.google.com/books/edition/Mathematical_Logic/zDrqGvJhSPIC?hl=en&amp;gbpv=1&amp;pg=PA1&amp;printsec=frontcover\">introduction</a> to the book *Mathematical Logic: Part I\" by Cori and Lascar does a good job describing the status of logic as a field of mathematics.</p>",
+        "id": 499324174,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1739392646
+    },
+    {
+        "content": "<p>I'm going to have to sit with that introduction, that's quite a dramatic, and exciting, reframing of how I understand logic.</p>",
+        "id": 499361414,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1739411124
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations/near/499062046\">said</a>:</p>\n<blockquote>\n<p>I think in my childhood search for maximum certainty I should have learned about the <a href=\"https://en.wikipedia.org/wiki/Chomsky_hierarchy\">Chomsky hierarchy</a> and wondered how high up this hierarchy we need to climb, to get a formalism powerful enough to describe the set of provable sentences in some version of first-order logic. I liked the idea that ultimately to do math you just needed to understand some purely syntactic rules for manipulating strings of symbols, so I was curious about what exactly is a \"rule for manipulating strings of symbols\". I realized that a rule like \"if the string is a <em>true</em> sentence, then...\" is not purely syntactic (unless you have a syntactic definition of truth!), but I would have loved learning about the Chomsky hierarchy.</p>\n</blockquote>\n<p>How far up do you need to climb in Chomsky's hierarchy to describe the theorems of first-order logic? The answer to this is actually rather straightforward: you need to climb all the way up! (to the recursively enumerable languages). </p>\n<p>And to the original question:</p>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations/near/499057266\">said</a>:</p>\n<blockquote>\n<p>can you use BNF to describe the well-formed formulae in a language that has infinitely many function symbols of each arity 0,1,2,3,... ? Or can it only handle something less, like finitely (or infinitely) many function symbols of some finite collection of arities, which is already enough for the mathematics I do?</p>\n</blockquote>\n<p>Well, in theory no, not really (unless you want to help yourself to infinitely long clauses in the BNF definition). In practice, though, you're going to presumably want to use those symbols to write down terms and formulas, so you'll probably use some nice computable/recursive definition of those symbols (like we do with numerals, for instance).</p>",
+        "id": 499361793,
+        "sender_full_name": "Evan Washington",
+        "timestamp": 1739411376
+    },
+    {
+        "content": "<p>Thanks!  Yes, it makes sense that to describe theorems you need the full power of a recursively enumerable language.</p>",
+        "id": 499364242,
+        "sender_full_name": "John Baez",
+        "timestamp": 1739413076
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations/near/499319787\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"510824\">Zoltan A. Kocsis (Z.A.K.)</span> I don't think your example of axiomatic projective geometry works, because I don't see how one could define variables and terms purely in terms of points and lines.</p>\n</blockquote>\n<p>Well, that would introduce back a circularity, since points and lines already need syntax to deine and even talk about them at all? But,the point precisely was to avoid circularity, not to get it back... <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span></p>",
+        "id": 499441687,
+        "sender_full_name": "Vincent R.B. Blazy",
+        "timestamp": 1739444290
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"278070\">Evan Washington</span> <a href=\"#narrow/channel/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations/near/499361793\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229952-theory.3A-type-theory-.26-logic/topic/building.20terms.2C.20foundational.20considerations/near/499057266\">said</a>:</p>\n<blockquote>\n<p>can you use BNF to describe the well-formed formulae in a language that has infinitely many function symbols of each arity 0,1,2,3,... ? Or can it only handle something less, like finitely (or infinitely) many function symbols of some finite collection of arities, which is already enough for the mathematics I do?</p>\n</blockquote>\n<p>Well, in theory no, not really (unless you want to help yourself to infinitely long clauses in the BNF definition). In practice, though, you're going to presumably want to use those symbols to write down terms and formulas, so you'll probably use some nice computable/recursive definition of those symbols (like we do with numerals, for instance).</p>\n</blockquote>\n<p>Well, that's pretty what I described here, right? After all, even in theory, metamathematical infinities can only be potential, so, finitely describable only with some kind of recursion;  and that's precisely already the core of what BNFs allow :)</p>",
+        "id": 499442996,
+        "sender_full_name": "Vincent R.B. Blazy",
+        "timestamp": 1739444681
+    },
+    {
+        "content": "<p>In CS we have the concept of term-rewriting systems (<a href=\"https://en.wikipedia.org/wiki/Rewriting\">https://en.wikipedia.org/wiki/Rewriting</a>) informally, languages that can only do search and replace.</p>\n<p>It seems that you can do everything with those, except (here is why I think it is connected) free and bound variables.</p>\n<p>I remember, I was messing with a term rewriting system and I suddenly realized why some longer mathematical proofs that aren't separated in different lemmas use so many letters.</p>",
+        "id": 517451342,
+        "sender_full_name": "Jencel Panic",
+        "timestamp": 1747034904
+    },
+    {
+        "content": "<p>For the record, <a href=\"https://pure.hw.ac.uk/ws/portalfiles/portal/25224227/paper_23.pdf\">here</a> is a reflection about what standard BNF is, and how it has evolved into a more mathematical version.</p>",
+        "id": 518105626,
+        "sender_full_name": "Tom Hirschowitz",
+        "timestamp": 1747238538
+    }
+]

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Strong monads and symmetry · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monads.20and.20symmetry.html">Strong monads and symmetry</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="495493919"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monads%20and%20symmetry/near/495493919" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jeremy Gibbons <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monads.20and.20symmetry.html#495493919">(Jan 23 2025 at 13:07)</a>:</h4>
+<p>I'm trying to understand why people tell the story of strong monads in the order they usually do - in particular, the relationship between strength and symmetry of the monoidal category setting. Strong monads are of course central to Moggi's computational lambda calculus. The stories I've found all seem to first specialise to a symmetric monoidal category, then introduce strength; is symmetry necessary?</p>
+<p>Actually, it seems that people mostly don't tell the story of strong monads at all. Awodey, Barr &amp; Wells TTT, Milewski, Pierce, Riehl, Fong &amp; Spivak, Schalk &amp; Simmons, Leinster, Perrone, Rydeheard &amp; Burstall, Smith, Bell, all I think do not even mention strong functors or strength (at least not by those names). </p>
+<p>I believe that strong monads are due to Kock (1972), who worked only in a symmetric monoidal setting. Mac Lane defines "closed" (p184, 2nd ed) only for <em>symmetric</em> monoidal categories, and a "strong" monoidal functor (p258) only in the context of a symmetric monoidal category. I think there is no explicit mention of strong monads.</p>
+<p>Moggi uses only strength with respect to products (obviously symmetric), not to an arbitrary monoidal category. Barr &amp; Wells CT4CS mentions Mulry in passing. But in "Strong Monads, Algebras and Fixed Points" (LMS Lecture Notes 171, 1991) Mulry defines strong monads only with respect to product; in "Monads in Semantics" (ENTCS 14:275-286, 1998) and "Notions of Monad Strength" (EPTCS 129, 2013) he generalizes to strong monads in symmetric monoidal categories.</p>
+<p>Why are all these restricted to <em>symmetric</em> monoidal categories? I don't see why one cannot define the notions of monad, strength, strong functor, and strong monad in monoidal categories more generally (but I confess that I have not worked through the details). Does something go wrong? Does it all work, but for some reason it is not very useful or very interesting?</p>
+
+
+
+<a name="495552652"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monads%20and%20symmetry/near/495552652" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Paolo Perrone <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monads.20and.20symmetry.html#495552652">(Jan 23 2025 at 17:32)</a>:</h4>
+<p>I now do mention strong monads :)<br>
+My "notes" are now a book with an extra chapter on monoidal categories, here are the contents:<br>
+<a href="/user_uploads/21317/uLyq4Wo250Gn05faaOAVAb4f/image.png">image.png</a><br>
+I require <em>symmetric</em> monoidal categories only later, when I talk about relating left and right strengths (and obtaining commutative monads).</p>
+<div class="message_inline_image"><a href="/user_uploads/21317/uLyq4Wo250Gn05faaOAVAb4f/image.png" title="image.png"><img data-original-content-type="image/png" data-original-dimensions="689x861" src="/user_uploads/thumbnail/21317/uLyq4Wo250Gn05faaOAVAb4f/image.png/840x560.webp"></a></div>
+
+
+
+<a name="495555425"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monads%20and%20symmetry/near/495555425" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jeremy Gibbons <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monads.20and.20symmetry.html#495555425">(Jan 23 2025 at 17:49)</a>:</h4>
+<p>Marvellous - thanks! I will take a look.</p>
+
+
+
+<a name="495555801"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monads%20and%20symmetry/near/495555801" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Paolo Perrone <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monads.20and.20symmetry.html#495555801">(Jan 23 2025 at 17:51)</a>:</h4>
+<p>(Sorry that, at least for the time being, I'm not allowed to share the entire chapter here. The Oxford library has it, also in electronic form.)</p>
+
+
+
+<a name="495558350"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monads%20and%20symmetry/near/495558350" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jeremy Gibbons <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monads.20and.20symmetry.html#495558350">(Jan 23 2025 at 18:05)</a>:</h4>
+<p>No problem. I found our e-subscription.</p>
+
+
+
+<a name="495559158"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monads%20and%20symmetry/near/495559158" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jeremy Gibbons <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monads.20and.20symmetry.html#495559158">(Jan 23 2025 at 18:10)</a>:</h4>
+<p>Apparently I ought also to reread McDermott &amp; Uustalu's "What Makes a Strong Monad?". Which was in "my" workshop (MSFP 2022).</p>
+
+
+
+<a name="495569107"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monads%20and%20symmetry/near/495569107" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monads.20and.20symmetry.html#495569107">(Jan 23 2025 at 19:11)</a>:</h4>
+<p>The nLab treatment of <a href="https://ncatlab.org/nlab/show/strong%20monads">[[strong monads]]</a> doesn't require symmetry and distinguishes left and right strengths.  I was involved in setting up the <a href="https://ncatlab.org/nlab/show/strong+monad#abstractly">abstract definition</a> given there.  I was trying to understand the definition of 'strength' and having trouble stomaching the commutative diagrams in the <a href="https://ncatlab.org/nlab/show/strong+monad#ConcreteDefinition">concrete definition</a>, and I guessed that a (left) strong monad in a monoidal category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi></mrow><annotation encoding="application/x-tex">V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span></span></span></span> was a monad in the 2-category of (left) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi></mrow><annotation encoding="application/x-tex">V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span></span></span></span>-actegories:</p>
+<ul>
+<li>John Baez, <a href="https://golem.ph.utexas.edu/category/2009/07/the_monads_hurt_my_head_but_no.html#c025476">The monads hurt my head - but not anymore</a>.</li>
+</ul>
+<p>It's possible this was already known by experts... but anyway, it's now been extensively developed in the nLab article, though someone still has a question about one of the coherence laws for a left-strong monad.</p>
+
+
+
+<a name="495581230"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monads%20and%20symmetry/near/495581230" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monads.20and.20symmetry.html#495581230">(Jan 23 2025 at 20:36)</a>:</h4>
+<p>The McDermott–Uustalu paper is very good, and shows that symmetry is not required for any of the theory (including commutativity). My understanding is that the frequent assumption of symmetry elsewhere in the literature is purely historical, since Kock assumed it in the original papers.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

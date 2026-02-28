@@ -1,0 +1,296 @@
+[
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Continuations.2C.20parametricity.2C.20and.20polymorphism/near/527734153\">said</a>:</p>\n<blockquote>\n<p>That isn't the case for any other type constructors that I know of, because they all have a universal property</p>\n</blockquote>\n<p>that isn't the case for positive types though! I don't have anything formal here, but you could probably add some exception in the model that bubbles up to positive types</p>",
+        "id": 527737174,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751993647
+    },
+    {
+        "content": "<p>Um, yes it is?  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A+B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> is a coproduct?</p>",
+        "id": 527737209,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751993660
+    },
+    {
+        "content": "<p>the syntactic rules don't force uniqueness: it's a weak colimit</p>",
+        "id": 527737330,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751993710
+    },
+    {
+        "content": "<p>In dependent type theory you can prove that it's a strong colimit, propositionally.</p>",
+        "id": 527737403,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751993745
+    },
+    {
+        "content": "<p>yes, but the propositional here is the key: definitionally, the type doesn't have to behave as a strong colimit</p>",
+        "id": 527737462,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751993769
+    },
+    {
+        "content": "<p>But that's irrelevant to my point.  The propositional universal property characterizes the type up to equivalence, so you don't have any freedom in choosing what it should be semantically.</p>",
+        "id": 527737641,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751993822
+    },
+    {
+        "content": "<p>I still disagree about positive types being forced to be colimits in the model: in MLTT with a universe, negative dependent pairs, dependent function types and ⊥, you can surely add an extra inhabitant in the model to the interpretation of ⊥, and propagate it to other type formers by just bubbling it up</p>",
+        "id": 527738963,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751994289
+    },
+    {
+        "content": "<p>Do you mean that for an interpretation of MLTT in Set, for instance, you can choose <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">⊥</mi></mrow><annotation encoding=\"application/x-tex\">\\bot</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">⊥</span></span></span></span> to be interpreted by a 1-element set rather than a 0-element set?  In that case it won't satisfy the elimination rule, since there won't be a map out of it into an empty set.</p>",
+        "id": 527739389,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751994426
+    },
+    {
+        "content": "<p>but what if you can't access any empty set in the model using the syntax? all my types are inhabited, so you won't be able to test for that</p>",
+        "id": 527739500,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751994464
+    },
+    {
+        "content": "<p>the eliminator in the syntax won't let you talk about the empty set of the semantics</p>",
+        "id": 527739574,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751994493
+    },
+    {
+        "content": "<p>A \"model\" has to satisfy all the rules of the theory.  In a model of the theory of groups, you have to be able to multiply <em>any</em> two elements, not just any two elements that are \"describable using syntax\".</p>",
+        "id": 527739621,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751994513
+    },
+    {
+        "content": "<p>that depends on your interpretation of the universe!</p>",
+        "id": 527739695,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751994541
+    },
+    {
+        "content": "<p>You can try to define a model in some category other than Set that contains only nonempty sets.  Maybe that's what you mean by \"the intepretation of the universe\".  But if your definition satisfies the rules of the theory, then your interpretation of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">⊥</mi></mrow><annotation encoding=\"application/x-tex\">\\bot</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">⊥</span></span></span></span> will be initial <em>in that category</em>.</p>",
+        "id": 527739837,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751994593
+    },
+    {
+        "content": "<p>you're saying that the eliminator has to be able to talk about \"all types\", but no, it only talks about things that are in the interpretation of the universe. This in turn is something that you have control over</p>",
+        "id": 527739865,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751994602
+    },
+    {
+        "content": "<p>what's your notion of model for a type theory? CwF?</p>",
+        "id": 527740662,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751994864
+    },
+    {
+        "content": "<p>I don't know if you wrote that before my last comment or afterwards, but my reply to it is what I just said: defining the interpretation of the universe means specifying what category you're working in, and whatever that category is, the interpretation of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">⊥</mi></mrow><annotation encoding=\"application/x-tex\">\\bot</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">⊥</span></span></span></span> must be initial in it, even if from an \"outside\" point of view it has an element.</p>",
+        "id": 527740679,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751994869
+    },
+    {
+        "content": "<p>I think we're talking past each other: when you say it must be initial, you mean that it's initial when \"viewed from the inside\". But when defining a model, you're defining the interpretation of everyone externally</p>",
+        "id": 527740908,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751994953
+    },
+    {
+        "content": "<p>Being initial is a statement from the outside about some category.</p>",
+        "id": 527740974,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751994974
+    },
+    {
+        "content": "<p>In case this is the confusion, it's true that even semantically there can be a distinction between strict equality (which interprets definitional equality) and homotopy equality (which interprets propositional equality).  That usually only starts to matter when you're doing homotopy type theory, but some unusual models could have different equalities even if you don't have homotopy theory in mind.  However, in that case the universal property I'm talking about is relative to the homotopy equality, that is relative to the (perhaps <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-)category that the model describes.</p>",
+        "id": 527741206,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751995052
+    },
+    {
+        "content": "<p>sure, but it's only initial in a category that has \"syntactical\" flavor: its objects are closed types, morphisms are functions quotiented by propositional proofs of equality</p>",
+        "id": 527741226,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751995060
+    },
+    {
+        "content": "<p>No!</p>\n<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Continuations.2C.20parametricity.2C.20and.20polymorphism/near/527739621\">said</a>:</p>\n<blockquote>\n<p>A \"model\" has to satisfy all the rules of the theory.  In a model of the theory of groups, you have to be able to multiply <em>any</em> two elements, not just any two elements that are \"describable using syntax\".</p>\n</blockquote>",
+        "id": 527741329,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751995099
+    },
+    {
+        "content": "<p>So what's your notion of model? CwFs?</p>",
+        "id": 527741399,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751995126
+    },
+    {
+        "content": "<p>Sure, say a CwF.</p>",
+        "id": 527741430,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751995141
+    },
+    {
+        "content": "<p>Of course, the underlying category of contexts involves \"strict equality\", so the relevant notion of \"initial\" is in the category \"presented\" by this category and the identity types.</p>",
+        "id": 527741676,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751995215
+    },
+    {
+        "content": "<p>then the trivial CwF if i'm not mistaken gives you a model where the interpretation of the empty type in the empty context is semantically inhabited</p>",
+        "id": 527742077,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751995374
+    },
+    {
+        "content": "<p>you just interpret the base category as 1, the Ty family as 1 and the Tm family as ... also 1. You should be able to interpret the eliminator of ⊥ in there without any issues</p>",
+        "id": 527742214,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751995429
+    },
+    {
+        "content": "<p>The unique object of the trivial category is initial.</p>",
+        "id": 527742364,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751995485
+    },
+    {
+        "content": "<p>(as well as terminal)</p>",
+        "id": 527742376,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751995489
+    },
+    {
+        "content": "<p>right, but that doesn't constrain its semantic inhabitants, right?</p>",
+        "id": 527742415,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751995505
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Continuations.2C.20parametricity.2C.20and.20polymorphism/near/527740679\">said</a>:</p>\n<blockquote>\n<p>whatever that category is, the interpretation of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">⊥</mi></mrow><annotation encoding=\"application/x-tex\">\\bot</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">⊥</span></span></span></span> must be initial in it, even if from an \"outside\" point of view it has an element.</p>\n</blockquote>",
+        "id": 527742465,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751995526
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Continuations.2C.20parametricity.2C.20and.20polymorphism/near/527734153\">said</a>:</p>\n<blockquote>\n<p>It's interesting that there are multiple ways to construct a universe semantically.  That isn't the case for any other type constructors that I know of, because they all have a universal property and hence are uniquely determined up to isomorphism.</p>\n</blockquote>\n<p>Here, you say that to construct semantics for a type theory, all other type formers are completely constrained by their universal properties. I'm arguing that there is freedom when choosing semantic inhabitants of positive types, as opposed to negative types</p>",
+        "id": 527742648,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751995599
+    },
+    {
+        "content": "<p>There are lots of \"trivial categories\".  There's a trivial category where the unique object is the empty set.  There's a trivial category where the unique object is a 923-element set.  There's a trivial category where the unique object is the real numbers.  But what matters categorically is the structure of the category, and saying that an object is initial is a statement only about the structure of the category.  It has nothing to do with what the \"elements\" of that object are in some set-theoretic sense, only about how it is related to other objects of the category by morphisms.</p>",
+        "id": 527742756,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751995635
+    },
+    {
+        "content": "<p>type theories aren't completely reducible to their category of contexts, there is extra structure on top</p>",
+        "id": 527742887,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751995688
+    },
+    {
+        "content": "<p>What do you mean by \"semantic inhabitants\"?</p>",
+        "id": 527742901,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751995693
+    },
+    {
+        "content": "<p>In CwF-language, do you mean elements of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">Γ</mi><mi mathvariant=\"normal\">.</mi><mi>A</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Tm}(\\Gamma.A)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Tm</span></span><span class=\"mopen\">(</span><span class=\"mord\">Γ.</span><span class=\"mord mathnormal\">A</span><span class=\"mclose\">)</span></span></span></span>?</p>",
+        "id": 527742979,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751995723
+    },
+    {
+        "content": "<p>it's getting late here but I'll be happy to continue this conversation tomorrow</p>",
+        "id": 527742995,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751995729
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Continuations.2C.20parametricity.2C.20and.20polymorphism/near/527742979\">said</a>:</p>\n<blockquote>\n<p>In CwF-language, do you mean elements of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">Γ</mi><mi mathvariant=\"normal\">.</mi><mi>A</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Tm}(\\Gamma.A)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Tm</span></span><span class=\"mopen\">(</span><span class=\"mord\">Γ.</span><span class=\"mord mathnormal\">A</span><span class=\"mclose\">)</span></span></span></span>?</p>\n</blockquote>\n<p>yes</p>",
+        "id": 527743012,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751995734
+    },
+    {
+        "content": "<p>Okay.  I was not making any claim about that.</p>",
+        "id": 527743032,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751995742
+    },
+    {
+        "content": "<p>What I was claiming is that the interpretation of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">⊥</mi></mrow><annotation encoding=\"application/x-tex\">\\bot</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">⊥</span></span></span></span> <em>is an initial object</em> of the category of types, which determines it up to isomorphism <em>in that category</em>.</p>",
+        "id": 527743122,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751995774
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284453\">Josselin Poiret</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Continuations.2C.20parametricity.2C.20and.20polymorphism/near/527742995\">said</a>:</p>\n<blockquote>\n<p>it's getting late here but I'll be happy to continue this conversation tomorrow</p>\n</blockquote>\n<p>Okay, good night!</p>",
+        "id": 527743184,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751995794
+    },
+    {
+        "content": "<p>this is the only meaning I can assign to \"semantics\" in our case, up to any other equivalent notion of model like natural models</p>",
+        "id": 527743281,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1751995825
+    },
+    {
+        "content": "<p>It might be the case in some model that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">Γ</mi><mi mathvariant=\"normal\">.</mi><mi>A</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Tm}(\\Gamma.A)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Tm</span></span><span class=\"mopen\">(</span><span class=\"mord\">Γ.</span><span class=\"mord mathnormal\">A</span><span class=\"mclose\">)</span></span></span></span> is nonempty even if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> is initial.  But in that case, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">Γ</mi><mi mathvariant=\"normal\">.</mi><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Tm}(\\Gamma.B)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Tm</span></span><span class=\"mopen\">(</span><span class=\"mord\">Γ.</span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span></span></span></span> would also be nonempty for any <em>other</em> initial object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> since we would have <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>≅</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A\\cong B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≅</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span>.  I was not making any claim about <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">Γ</mi><mi mathvariant=\"normal\">.</mi><mi>A</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Tm}(\\Gamma.A)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Tm</span></span><span class=\"mopen\">(</span><span class=\"mord\">Γ.</span><span class=\"mord mathnormal\">A</span><span class=\"mclose\">)</span></span></span></span> being determined in any \"absolute\" sense, only that <em>once you fix a model</em>, the interpretation of any given type, including a positive type, is fixed up to isomorphism by its universal property, including the value of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">Γ</mi><mi mathvariant=\"normal\">.</mi><mi>A</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Tm}(\\Gamma.A)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Tm</span></span><span class=\"mopen\">(</span><span class=\"mord\">Γ.</span><span class=\"mord mathnormal\">A</span><span class=\"mclose\">)</span></span></span></span> <em>in that model</em> (which might, of course, be different from its value in some other model).</p>",
+        "id": 527744489,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751996276
+    },
+    {
+        "content": "<p>36 messages were moved here from <a class=\"stream-topic\" data-stream-id=\"229199\" href=\"/#narrow/channel/229199-learning.3A-questions/topic/Continuations.2C.20parametricity.2C.20and.20polymorphism/with/525407940\">#learning: questions &gt; Continuations, parametricity, and polymorphism</a> by <span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span>.</p>",
+        "id": 527745086,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1751996499
+    },
+    {
+        "content": "<p>but the notion of isomorphism here is internal as well, i.e. you care about having an inhabitant of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>ε</mi><mi mathvariant=\"normal\">.</mi><mi>f</mi><mtext> </mtext><mtext>is an isomorphism</mtext><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\"> \\mathrm{Tm}(ε.f\\,\\text{is an isomorphism}) </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Tm</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">ε</span><span class=\"mord\">.</span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord text\"><span class=\"mord\">is an isomorphism</span></span><span class=\"mclose\">)</span></span></span></span>, for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>ε</mi><mi mathvariant=\"normal\">.</mi><mi>A</mi><mo>→</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\"> f : \\mathrm{Tm}(ε.A→B) </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Tm</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">ε</span><span class=\"mord\">.</span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span></span></span></span>, no?</p>",
+        "id": 527837241,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1752050686
+    },
+    {
+        "content": "<p>we agree with each other i think, just not with how to intuitively interpret</p>\n<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Continuations.2C.20parametricity.2C.20and.20polymorphism/near/527734153\">said</a>:</p>\n<blockquote>\n<p>It's interesting that there are multiple ways to construct a universe semantically.  That isn't the case for any other type constructors that I know of, because they all have a universal property and hence are uniquely determined up to isomorphism.</p>\n</blockquote>",
+        "id": 527837608,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1752050792
+    },
+    {
+        "content": "<p>my intuition was more from an \"implementer\" side, where when making normalization models, you have some choice in how you implement positives (even though from the internal pov all the choices are equivalent (but that fact hinges on precisely what kind of semantic equality you choose))</p>",
+        "id": 527838329,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1752051030
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284453\">Josselin Poiret</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/universal.20properties.20for.20positive.20types/near/527837241\">said</a>:</p>\n<blockquote>\n<p>but the notion of isomorphism here is internal as well, i.e. you care about having an inhabitant of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>ε</mi><mi mathvariant=\"normal\">.</mi><mi>f</mi><mtext> </mtext><mtext>is an isomorphism</mtext><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\"> \\mathrm{Tm}(ε.f\\,\\text{is an isomorphism}) </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Tm</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">ε</span><span class=\"mord\">.</span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord text\"><span class=\"mord\">is an isomorphism</span></span><span class=\"mclose\">)</span></span></span></span>, for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mrow><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>ε</mi><mi mathvariant=\"normal\">.</mi><mi>A</mi><mo>→</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\"> f : \\mathrm{Tm}(ε.A→B) </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Tm</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">ε</span><span class=\"mord\">.</span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span></span></span></span>, no?</p>\n</blockquote>\n<p>You could say that, sure, but by <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>β</mi><mi>η</mi></mrow><annotation encoding=\"application/x-tex\">\\beta\\eta</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05278em;\">β</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">η</span></span></span></span> that's equivalent to having a context iso <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>x</mi><mo>:</mo><mi>A</mi><mo stretchy=\"false\">)</mo><mo>≅</mo><mo stretchy=\"false\">(</mo><mi>y</mi><mo>:</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(x:A) \\cong (y:B)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≅</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span></span></span></span>.</p>",
+        "id": 527907890,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1752073091
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284453\">Josselin Poiret</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/universal.20properties.20for.20positive.20types/near/527838329\">said</a>:</p>\n<blockquote>\n<p>you have some choice in how you implement positives (even though from the internal pov all the choices are equivalent (but that fact hinges on precisely what kind of semantic equality you choose))</p>\n</blockquote>\n<p>So is this the point then?</p>\n<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/universal.20properties.20for.20positive.20types/near/527741206\">said</a>:</p>\n<blockquote>\n<p>In case this is the confusion, it's true that even semantically there can be a distinction between strict equality (which interprets definitional equality) and homotopy equality (which interprets propositional equality).  That usually only starts to matter when you're doing homotopy type theory, but some unusual models could have different equalities even if you don't have homotopy theory in mind.  However, in that case the universal property I'm talking about is relative to the homotopy equality, that is relative to the (perhaps <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-)category that the model describes.</p>\n</blockquote>",
+        "id": 527908202,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1752073181
+    },
+    {
+        "content": "<p>Anyway, whether or not you agree with that phrasing of it, I think your statement that \"from the internal pov all the choices are equivalent\" is sufficient for my point.  All I was saying is that universes are <em>different</em> from other type formers, because for universes there are multiple choices that are <em>not</em> equivalent even from the internal pov.</p>",
+        "id": 527926492,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1752078828
+    }
+]

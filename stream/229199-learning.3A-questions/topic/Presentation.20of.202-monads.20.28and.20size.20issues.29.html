@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Presentation of 2-monads (and size issues) · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html">Presentation of 2-monads (and size issues)</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="464651820"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Presentation%20of%202-monads%20%28and%20size%20issues%29/near/464651820" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ambroise <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html#464651820">(Aug 23 2024 at 13:38)</a>:</h4>
+<p>The left adjoint of a monoidal functor is oplax monoidal: this can be proven directly, or one can use Kelly's general setting of doctrinal adjunction, but for that one needs to show that monoidal categories are algebras of a 2-monad. I looked  a bit at the literature for presentations of 2-monads from generators and relations, but they mainly seem to focus on 2-monads on the category of small categories. In the end you get doctrinal adjunction but only for small monoidal categories, while the direct proof does not have this restriction. Is there a satisfying way of getting rid of this size restriction?</p>
+
+
+
+<a name="464662462"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Presentation%20of%202-monads%20%28and%20size%20issues%29/near/464662462" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html#464662462">(Aug 23 2024 at 14:40)</a>:</h4>
+<p>I imagine so (but how satisfying it is I don't know): if the 2-monad is finitary in nature, extend the 2-monad to locally small categories by expressing any such as a union of small full subcategories, apply the 2-monad, and take the union of the result. Something similar should apply for 2-monads of bounded rank. </p>
+<p>I'm thinking this should be easy to formalize under a one-universe assumption currently being discussed elsewhere. :-) </p>
+<p>Obviously I don't know where to find this in the literature.</p>
+
+
+
+<a name="464706934"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Presentation%20of%202-monads%20%28and%20size%20issues%29/near/464706934" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html#464706934">(Aug 23 2024 at 17:46)</a>:</h4>
+<p>Conceptually, there's nothing size-specific going on with the free monoidal category construction: the 2-monad on the 2-category of small categories extends to a 2-monad on the 2-category of large categories, assuming you can quantify over classes. So Kelly's general result applies directly. Perhaps the simplest solution to avoid worrying about classes is to assume a single universe, and call things in that universe "small", and things not in the universe "large", as Todd suggests. Then you can simply use the usual 2-monad on set-sized categories.</p>
+
+
+
+<a name="465637278"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Presentation%20of%202-monads%20%28and%20size%20issues%29/near/465637278" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ambroise <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html#465637278">(Aug 28 2024 at 05:40)</a>:</h4>
+<p>Thank you for your explanations! It would be nice if Todd's statement that accessible 2-monads extend to 2-monads on CAT was explicitly proven somewhere :) Anyway, assuming a universe may indeed be the simplest way to solve my question, although I was hoping for another solution (afterall, the direct proof of doctrinal adjunction for monoidal categories does not require a universe)</p>
+
+
+
+<a name="465836768"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Presentation%20of%202-monads%20%28and%20size%20issues%29/near/465836768" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html#465836768">(Aug 28 2024 at 19:34)</a>:</h4>
+<p>The proof of doctrinal adjunction doesn't require a universe because you have allowed yourself to quantify over all large categories: this is also a foundational assumption you have made. Similarly, one can define a 2-monad without actually being able to construct a huge categories of large categories: you simply specify all the data of the 2-monad (i.e. for every large category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>, a large category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">TA</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord mathnormal">A</span></span></span></span>, etc.). This uses the same foundational assumptions you use for doctrinal adjunction.</p>
+
+
+
+<a name="465836894"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Presentation%20of%202-monads%20%28and%20size%20issues%29/near/465836894" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html#465836894">(Aug 28 2024 at 19:35)</a>:</h4>
+<p>As far as I can see, Todd's approach does not avoid the need for universes, because in order to construct the 2-monad in question from smaller pieces, you still need to have a huge category of large categories.</p>
+
+
+
+<a name="465837101"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Presentation%20of%202-monads%20%28and%20size%20issues%29/near/465837101" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html#465837101">(Aug 28 2024 at 19:37)</a>:</h4>
+<p>But I don't really see that allowing quantification over classes has many advantages over simply using a universe. It's not more general in any practical sense.</p>
+
+
+
+<a name="465856376"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Presentation%20of%202-monads%20%28and%20size%20issues%29/near/465856376" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html#465856376">(Aug 28 2024 at 21:59)</a>:</h4>
+<p>I sort of generally assume that mathematicians in the street feel a little uneasy around classes (what operations are or are not allowed), but much less uneasy around sets, so that they can relax a little if the only thing to keep straight is sets versus small sets. That would be mostly a pedagogical or psychological thing. (Plus, a one-universe assumption feels so piddlingly modest, compared to what real set theorists are willing to consider.) </p>
+<p>(Of course, my general assumption might be wrong.) </p>
+<p>The one-universe assumption is the tack Mac Lane takes in his Categories for the Working Mathematician.</p>
+
+
+
+<a name="465880236"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Presentation%20of%202-monads%20%28and%20size%20issues%29/near/465880236" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Madeleine Birchfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html#465880236">(Aug 29 2024 at 02:29)</a>:</h4>
+<p>Classes feel like a concept that only exists in set theory, whether via class-set theories like Morse-Kelley or via algebraic set theory or as first-order formulas which are not sets. </p>
+<p>In dependent type theory, one would just explicitly postulate a universe of some sort as part of the inference rules, and I think the same might be true of simply typed higher order logics.</p>
+
+
+
+<a name="465999637"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Presentation%20of%202-monads%20%28and%20size%20issues%29/near/465999637" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ambroise <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html#465999637">(Aug 29 2024 at 12:21)</a>:</h4>
+<p>Thanks for the clarification <span class="user-mention" data-user-id="276092">@Nathanael Arkor</span> ! Actually, there may be a way of avoiding the detour through 2-monads by exploiting a "construction" of the 2-category of monoidal categories from inserters and equifiers, starting from Cat in 2-Cat. Kelly's doctrinal adjunction can certainly be adapted for inserters (and maybe for a wide class of marked 2-limits), for example.</p>
+
+
+
+<a name="466068321"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Presentation%20of%202-monads%20%28and%20size%20issues%29/near/466068321" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html#466068321">(Aug 29 2024 at 16:58)</a>:</h4>
+<p>Put differently, it should be possible to prove doctrinal adjunction generally for the 2-category of algebras for any suitable kind of "theory", independently of whether free algebras for that theory exist.</p>
+
+
+
+<a name="466086776"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Presentation%20of%202-monads%20%28and%20size%20issues%29/near/466086776" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ambroise <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html#466086776">(Aug 29 2024 at 18:35)</a>:</h4>
+<p>when you say "theory", do you have something precise in mind?</p>
+
+
+
+<a name="466132794"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Presentation%20of%202-monads%20%28and%20size%20issues%29/near/466132794" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html#466132794">(Aug 30 2024 at 00:16)</a>:</h4>
+<p>There are many ways one could make it precise, such as a Cat-operad or Cat-enriched Lawvere theory.  I didn't have a particular one in mind.</p>
+
+
+
+<a name="466250364"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Presentation%20of%202-monads%20%28and%20size%20issues%29/near/466250364" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tom Hirschowitz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html#466250364">(Aug 30 2024 at 11:52)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276696">Ambroise</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29/near/465999637">said</a>:</p>
+<blockquote>
+<p>Actually, there may be a way of avoiding the detour through 2-monads by exploiting a "construction" of the 2-category of monoidal categories from inserters and equifiers, starting from Cat in 2-Cat. Kelly's doctrinal adjunction can certainly be adapted for inserters (and maybe for a wide class of marked 2-limits), for example.</p>
+</blockquote>
+<p>This sounds really cool, but I don't understand. What would the statement look like, e.g., for inserters?</p>
+
+
+
+<a name="466283765"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Presentation%20of%202-monads%20%28and%20size%20issues%29/near/466283765" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ambroise <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html#466283765">(Aug 30 2024 at 14:43)</a>:</h4>
+<p>I haven't checked the details, but here is the idea. An inserter diagram in 2-Cat consists in two parallel 2-functors F and G. From this data, you can define the 2-category of strict/lax/colax algebras: the objects are always the same (an object consists of a 1-cell Fa --&gt; Ga) but the 1-cells are squared filled with identites/2-cells(in one direction or another). Then you can state doctrinal adjunction as in the usual 2-monadic case.</p>
+
+
+
+<a name="466283984"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Presentation%20of%202-monads%20%28and%20size%20issues%29/near/466283984" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ambroise <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html#466283984">(Aug 30 2024 at 14:44)</a>:</h4>
+<p>I think that those 2-categories of algebras are all marked limits in some (generalised) sense, so they make sense for any inserter diagram in any 3-category, but I don't know how to state doctrinal adjunction in this more general situation</p>
+
+
+
+<a name="466299115"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Presentation%20of%202-monads%20%28and%20size%20issues%29/near/466299115" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tom Hirschowitz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29.html#466299115">(Aug 30 2024 at 15:52)</a>:</h4>
+<p>Oh, nice, thanks. I'd never heard of marked limits before.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

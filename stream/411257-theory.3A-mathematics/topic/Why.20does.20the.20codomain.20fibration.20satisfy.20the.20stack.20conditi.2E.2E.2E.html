@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Why does the codomain fibration satisfy the stack conditi... · theory: mathematics · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/index.html">theory: mathematics</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html">Why does the codomain fibration satisfy the stack conditi...</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="451377842"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451377842" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451377842">(Jul 14 2024 at 19:53)</a>:</h4>
+<p>I am not actually 100% sure the statement in my title is correct. It's definitely true for the tangent category of the category of commutative rings: this says a descent morphism is an effective descent, as proven at <a href="https://stacks.math.columbia.edu/tag/08XA">https://stacks.math.columbia.edu/tag/08XA</a>. We might be able to deduce the case of the codomain fibration from this if the operation of forming the category of commutative monoid objects preserves limits, but I'm not sure that's true.</p>
+<p>Something strange is that I'm not talking about the fibration being a stack for the entire canonical topology (whose existence I'm not entirely certain of due to size issues) only that it's a stack with respect to "unary covers" <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Spec</mi><mo>⁡</mo><mi>B</mi><mo>→</mo><mi mathvariant="normal">Spec</mi><mo>⁡</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\operatorname{Spec} B \to \operatorname{Spec} A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mop"><span class="mord mathrm">Spec</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mop"><span class="mord mathrm">Spec</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">A</span></span></span></span>. It may be the case that it is a stack on the whole topology, but infinite coproducts of affine schemes aren't pullback stable and so it seems messy. </p>
+<p>Of course the codomain fibration is a stack for the canonical topology on a grothendieck topos, but <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">A</mi><mi mathvariant="sans-serif">f</mi><mi mathvariant="sans-serif">f</mi></mrow><annotation encoding="application/x-tex">\mathsf{Aff}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf" style="margin-right:0.06944em;">Aff</span></span></span></span></span> is a much worse category than a Grothendieck topos! It seems like most of the literature related to this stuff is focused on the lex/regular/exact/topos hierarchy, but <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">A</mi><mi mathvariant="sans-serif">f</mi><mi mathvariant="sans-serif">f</mi></mrow><annotation encoding="application/x-tex">\mathsf{Aff}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf" style="margin-right:0.06944em;">Aff</span></span></span></span></span> is too messy to fit into any of these. So the question is <em>why</em> we still have this result about descent =&gt; effective descent in a category which is poorly behaved from the pov of categorical logic</p>
+
+
+
+<a name="451379282"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451379282" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fernando Yamauti <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451379282">(Jul 14 2024 at 20:18)</a>:</h4>
+<p>For some reason I cannot see the full title. Are you claiming that the codomain fibration of the cat of comm rings with unity satisfy Cech descent (along morphisms of descent for modules)? I think that's true by the same argument that descent for suplattices implies descent for monoids in suplattices (p.19 and p.20 in Joyal-Tierney's monograph on  Galois theory).</p>
+
+
+
+<a name="451379613"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451379613" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451379613">(Jul 14 2024 at 20:24)</a>:</h4>
+<p>Oh I'm sorry, and yes that's what I'm claiming. I know an explicit argument (see the stacks project link) but I was hoping for something more high level/categorical. I'll take a look at Joyal-Tierney</p>
+
+
+
+<a name="451379745"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451379745" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451379745">(Jul 14 2024 at 20:26)</a>:</h4>
+<p>Er sorry, since posting this question I figured out how to deduce descent for the codomain fibration from descent for the module fibration. The functor SymmMonCat -&gt; Cat taking categories of commutative algbera objects is corepresented by FinSet and so it'll preserve the diagram of module categories which states the stack condition (all the functors in that diagram are base-change and so strong symmetric monoidal)</p>
+
+
+
+<a name="451380319"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451380319" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fernando Yamauti <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451380319">(Jul 14 2024 at 20:36)</a>:</h4>
+<p>A more interesting question would be classifying all morphisms of effective descent for algebras. I don't think anyone made that before...</p>
+
+
+
+<a name="451380533"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451380533" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451380533">(Jul 14 2024 at 20:40)</a>:</h4>
+<p>It's been done, they're the universally injective maps</p>
+
+
+
+<a name="451380558"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451380558" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451380558">(Jul 14 2024 at 20:40)</a>:</h4>
+<p>(deleted)</p>
+
+
+
+<a name="451380569"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451380569" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451380569">(Jul 14 2024 at 20:40)</a>:</h4>
+<p>Oops, didn't mean to delete that</p>
+
+
+
+<a name="451380642"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451380642" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451380642">(Jul 14 2024 at 20:42)</a>:</h4>
+<p>If a map is effective descent for algebras it's descent for algebras, and then it's such for modules bc every module is a retract of some algebra (the trivial square zero extension). And for modules descent =&gt; effective descent, and we've just discussed why effective descent for modules implies effective descent for algebras</p>
+
+
+
+<a name="451380655"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451380655" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451380655">(Jul 14 2024 at 20:42)</a>:</h4>
+<p>So they're the same as the maps which are (effective) descent for modules, which have been classified as the pure embeddings or universally injective homomorphisms</p>
+
+
+
+<a name="451380894"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451380894" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451380894">(Jul 14 2024 at 20:46)</a>:</h4>
+<p>My motivation here is that I would like to show descent implies effective descent commutative ring spectra, and the proofs I've seen of this fact for discrete rings do not seem to generalize well (while hopefully a purely categorical argument would)</p>
+
+
+
+<a name="451385796"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451385796" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fernando Yamauti <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451385796">(Jul 14 2024 at 22:22)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="556202">Brendan Murphy</span> <a href="#narrow/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E/near/451380894">said</a>:</p>
+<blockquote>
+<p>My motivation here is that I would like to show descent implies effective descent commutative ring spectra, and the proofs I've seen of this fact for discrete rings do not seem to generalize well (while hopefully a purely categorical argument would)</p>
+</blockquote>
+<p>Hmm...Is it even the case that an (effective) descent morphism of ordinary comm rings induces an (effective) descent morphism of the respective discrete ring spectra?</p>
+
+
+
+<a name="451385820"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451385820" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451385820">(Jul 14 2024 at 22:23)</a>:</h4>
+<p>I thought about this briefly and decided it wasn't clear either way</p>
+
+
+
+<a name="451385837"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451385837" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451385837">(Jul 14 2024 at 22:23)</a>:</h4>
+<p>It's probably worth thinking through harder</p>
+
+
+
+<a name="451386005"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451386005" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451386005">(Jul 14 2024 at 22:26)</a>:</h4>
+<p>It is (a priori) very different situation because your cech nerve has derived tensor products everywhere instead of underived tensor products</p>
+
+
+
+<a name="451386151"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451386151" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451386151">(Jul 14 2024 at 22:28)</a>:</h4>
+<p>Or well, even worse than that is that descent morphisms are <em>universal</em> effective monomorphisms and so we immediately leave the world of discrete rings (because we need to base change to arbitrary algebra spectra)</p>
+
+
+
+<a name="451386367"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451386367" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451386367">(Jul 14 2024 at 22:32)</a>:</h4>
+<p>Gunnar Carlsson has a paper which discusses nilpotent completion (A -&gt; B being a descent map is equivalent to every A-module being B-nilpotent complete) in the case of a map of discrete rings (this paper is actually what started me thinking about all of this business) but I don't recall any results there that are directly relevant to this</p>
+
+
+
+<a name="451387170"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451387170" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451387170">(Jul 14 2024 at 22:48)</a>:</h4>
+<p>You can prove pure =&gt; (discrete) descent map using a result that pure &lt;=&gt; some ultrapower is a split ring map, but it seems like FOL or ultrapower based methods work a lot less well in the derived case because the descent limit is no longer finite. If we could witness a failure of derived descent by some sort of "finite counterexample" then I'd be hopeful, but so far it seems unlikely to me</p>
+
+
+
+<a name="451387291"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451387291" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451387291">(Jul 14 2024 at 22:51)</a>:</h4>
+<p>(notably, even in the discrete case, the ultrapower of the Cech nerve is not the Cech nerve of the ultrapower. Ultrapowers play poorly with tensor products, and it's a bit tricky to compare these two in the way you need to make the argument work)</p>
+
+
+
+<a name="451387352"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451387352" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451387352">(Jul 14 2024 at 22:52)</a>:</h4>
+<p>I guess the point is that descent is really easy for split ring maps and we want a way to say every other descent map is basically split. But it's not clear how to do this in a useful way in the derived setting</p>
+
+
+
+<a name="451387658"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451387658" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451387658">(Jul 14 2024 at 22:58)</a>:</h4>
+<p>(there are three ways we can characterize descent maps in terms of split maps in the discrete setting: they are the maps which have an ultrapower that is split, are the filtered colimits of split maps in the arrow category, and and are those whose pontryagin dual is a split epi. The first and third are equivalent in the derived setting when suitably stated, but I haven't been able to make anything work using them. And the second seems awkward once the descent limit is no longer finite)</p>
+
+
+
+<a name="451574172"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451574172" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451574172">(Jul 15 2024 at 17:56)</a>:</h4>
+<p>I guess what I'm really asking is whether there's a categorical proof of the following: if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X \to Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span> is a universal effective epimorphism in the category of affine schemes then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><msub><mo>×</mo><mi>Y</mi></msub><mi>X</mi><mo>⇉</mo><mi>X</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X \times_Y X \rightrightarrows X \to Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin"><span class="mbin">×</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.22222em;">Y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8641em;vertical-align:-0.1808em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm">⇉</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span> is a Van Kampen colimit. This is a very weak kind of Barr-exactness of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">A</mi><mi mathvariant="sans-serif">f</mi><mi mathvariant="sans-serif">f</mi></mrow><annotation encoding="application/x-tex">\mathsf{Aff}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf" style="margin-right:0.06944em;">Aff</span></span></span></span></span> and if there was a "good reason" for it then that might show us how to generalize to the spectral AG setting</p>
+
+
+
+<a name="451596245"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451596245" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fernando Yamauti <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451596245">(Jul 15 2024 at 18:59)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="556202">Brendan Murphy</span> <a href="#narrow/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E/near/451574172">said</a>:</p>
+<blockquote>
+<p>I guess what I'm really asking is whether there's a categorical proof of the following: if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X \to Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span> is a universal effective epimorphism in the category of affine schemes then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><msub><mo>×</mo><mi>Y</mi></msub><mi>X</mi><mo>⇉</mo><mi>X</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X \times_Y X \rightrightarrows X \to Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin"><span class="mbin">×</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.22222em;">Y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8641em;vertical-align:-0.1808em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm">⇉</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span> is a Van Kampen colimit. This is a very weak kind of Barr-exactness of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">A</mi><mi mathvariant="sans-serif">f</mi><mi mathvariant="sans-serif">f</mi></mrow><annotation encoding="application/x-tex">\mathsf{Aff}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf" style="margin-right:0.06944em;">Aff</span></span></span></span></span> and if there was a "good reason" for it then that might show us how to generalize to the spectral AG setting</p>
+</blockquote>
+<p>You are going to want at least the triple intersection. The annoying thing about Van Kampeness is that it only coincides with Cech descent when the source cat has dimension greater or equal than the target cat (because you can always truncate the diagram of the full Cech nerve and still get the same colimit depending on the dimension of the cat you are in).</p>
+
+
+
+<a name="451596848"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451596848" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fernando Yamauti <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451596848">(Jul 15 2024 at 19:00)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="556202">Brendan Murphy</span> <a href="#narrow/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E/near/451387658">said</a>:</p>
+<blockquote>
+<p>(there are three ways we can characterize descent maps in terms of split maps in the discrete setting: they are the maps which have an ultrapower that is split, are the filtered colimits of split maps in the arrow category, and and are those whose pontryagin dual is a split epi. The first and third are equivalent in the derived setting when suitably stated, but I haven't been able to make anything work using them. And the second seems awkward once the descent limit is no longer finite)</p>
+</blockquote>
+<p>Where can I find a written proof of those equivalences? I mean the cofilt limit characterisation and the ultrapower one.</p>
+
+
+
+<a name="451602007"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451602007" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451602007">(Jul 15 2024 at 19:15)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="557567">Fernando Yamauti</span> <a href="#narrow/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E/near/451596245">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="556202">Brendan Murphy</span> <a href="#narrow/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E/near/451574172">said</a>:</p>
+<blockquote>
+<p>I guess what I'm really asking is whether there's a categorical proof of the following: if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X \to Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span> is a universal effective epimorphism in the category of affine schemes then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><msub><mo>×</mo><mi>Y</mi></msub><mi>X</mi><mo>⇉</mo><mi>X</mi><mo>→</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X \times_Y X \rightrightarrows X \to Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin"><span class="mbin">×</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.22222em;">Y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8641em;vertical-align:-0.1808em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm">⇉</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">Y</span></span></span></span> is a Van Kampen colimit. This is a very weak kind of Barr-exactness of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">A</mi><mi mathvariant="sans-serif">f</mi><mi mathvariant="sans-serif">f</mi></mrow><annotation encoding="application/x-tex">\mathsf{Aff}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf" style="margin-right:0.06944em;">Aff</span></span></span></span></span> and if there was a "good reason" for it then that might show us how to generalize to the spectral AG setting</p>
+</blockquote>
+<p>You are going to want at least the triple intersection. The annoying thing about Van Kampeness is that it only coincides with Cech descent when the source cat has dimension greater or equal than the target cat (because you can always truncate the diagram of the full Cech nerve and still get the same colimit depending on the dimension of the cat you are in).</p>
+</blockquote>
+<p>Oh duh, thank you. I should just say the whole cech nerve (since that's what we want in the derived setting)</p>
+
+
+
+<a name="451604706"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451604706" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451604706">(Jul 15 2024 at 19:23)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="557567">Fernando Yamauti</span> <a href="#narrow/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E/near/451596848">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="556202">Brendan Murphy</span> <a href="#narrow/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E/near/451387658">said</a>:</p>
+<blockquote>
+<p>(there are three ways we can characterize descent maps in terms of split maps in the discrete setting: they are the maps which have an ultrapower that is split, are the filtered colimits of split maps in the arrow category, and and are those whose pontryagin dual is a split epi. The first and third are equivalent in the derived setting when suitably stated, but I haven't been able to make anything work using them. And the second seems awkward once the descent limit is no longer finite)</p>
+</blockquote>
+<p>Where can I find a written proof of those equivalences? I mean the cofilt limit characterisation and the ultrapower one.</p>
+</blockquote>
+<p>The filtered colimit characterization of pure maps should be in Adamek-Rosický. I learned the ultrapower stuff from a paper by Mike Prest. I'll try to track down better/more specific references later, sorry about that. One subtle thing I might be mixing up is whether we can write it as a filtered colim of <em>ring</em> maps with a linear splitting or just split linear maps. I think it's the first but I'm realizing I might have misremembered</p>
+
+
+
+<a name="451835296"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451835296" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451835296">(Jul 16 2024 at 18:46)</a>:</h4>
+<p>I'm sorry, I think I was wrong about the direct limit thing. I was confused because it is true that any "pure morphism" in a locally finitely presentable category is a direct limit of split monomorphisms, and this is proven in Adamek-Rosický. But it's not so clear that a pure morphism of commutative rings in the ordinary sense is a pure morphisms in the category of commutative rings (rather than being a pure morphism of modules over the domain). I don't see a way to prove pure =&gt; pure in CRing. So a pure map A -&gt; B of rings is a direct limit of A-linear split maps X -&gt; Y, but the X's and Y's may not themselves be rings</p>
+
+
+
+<a name="451837107"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451837107" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451837107">(Jul 16 2024 at 19:00)</a>:</h4>
+<p>For the ultrapower thing I'm not sure if we get a *A-linear splitting or just an A-linear splitting... For an A-linear splitting we take k &gt; |A| + |ℵ₀| and an ultrafilter such that the ultrapower of any structure in a languag of cardinality &lt; k is k-saturated. Then the ultrapower of B as an A-module is sufficiently saturated that it is algebraically compact = pure-injective and any pure map into a pure-injective thing is split. But I expect it wouldn't be pure-injective over *A, just A. It seems like we can't use saturation to get a splitting over *A because we're increasing the cardinality of the domain as well :(</p>
+
+
+
+<a name="451837264"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451837264" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451837264">(Jul 16 2024 at 19:00)</a>:</h4>
+<p>Sorry about the misleading statements. It is true that a ring map is pure iff some ultrapower of it is split <em>over Z</em> or over any other fixed base ring, but it won't be split over the domain</p>
+
+
+
+<a name="451837349"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451837349" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451837349">(Jul 16 2024 at 19:01)</a>:</h4>
+<p>See chapter 4 of Mike Prest's "Purity, Spectra, and Localization" for more about this</p>
+
+
+
+<a name="451860962"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451860962" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451860962">(Jul 16 2024 at 20:54)</a>:</h4>
+<p>Is there an example of a regular monomorphism of rings which is not pure? I've been saying "universal regular monomorphism" because a priori that's what we have, and I see no reason that regular monomorphisms should be stable under pushout, but I can't actually come up with an example</p>
+
+
+
+<a name="451888449"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451888449" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451888449">(Jul 16 2024 at 23:12)</a>:</h4>
+<p>If the map <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo stretchy="false">[</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">]</mo><mo>→</mo><mi>k</mi><mo stretchy="false">[</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo separator="true">,</mo><mi>z</mi><mo separator="true">,</mo><mi>w</mi><mo stretchy="false">]</mo><mi mathvariant="normal">/</mi><mo stretchy="false">(</mo><mi>x</mi><mi>z</mi><mo>−</mo><mi>w</mi><mi>y</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">k[x, y] \to k[x, y, z, w]/(xz-wy-1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mopen">[</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mopen">[</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="mclose">]</span><span class="mord">/</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span> were an effective monomorphism, as conjectured here <a href="https://math.stackexchange.com/a/2414181/408287">https://math.stackexchange.com/a/2414181/408287</a>, that would give an example (the base change to any nonzero <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo stretchy="false">[</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">k[x, y]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mopen">[</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">]</span></span></span></span>-algebra with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>↦</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x, y \mapsto 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7054em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">↦</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span> is non injective)</p>
+
+
+
+<a name="451918115"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/451918115" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#451918115">(Jul 17 2024 at 02:44)</a>:</h4>
+<p>I figured out a proof</p>
+
+
+
+<a name="452169878"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/452169878" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fernando Yamauti <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#452169878">(Jul 17 2024 at 19:33)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="556202">Brendan Murphy</span> <a href="#narrow/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E/near/451860962">said</a>:</p>
+<blockquote>
+<p>Is there an example of a regular monomorphism of rings which is not pure? I've been saying "universal regular monomorphism" because a priori that's what we have, and I see no reason that regular monomorphisms should be stable under pushout, but I can't actually come up with an example</p>
+</blockquote>
+<p>Thanks for all the clarifications!</p>
+<p>I haven't checked thoroughly your example. But just some comments. A universal effective (or regular) mono must be pure. Also, usually effective epis (monos) are usually not stable by base change pretty much for the same reason exact sequences are not preserved by base change.</p>
+<p>Anyways. I think if you want to go derived/animated/spectral, it's probably a good idea to start from scratch using the good old (co)monadic descent. If everything satisfies Beck-Chevalley, which is usually the case for module categories, we just to check (co)monadicity. Then conservativity will likely be the unique challenge. Section 4.7.5 of HA might be useful here.</p>
+
+
+
+<a name="452170089"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/452170089" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#452170089">(Jul 17 2024 at 19:34)</a>:</h4>
+<p>No, the issue is preservation of split cosimplicial limits</p>
+
+
+
+<a name="452171178"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/452171178" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#452171178">(Jul 17 2024 at 19:38)</a>:</h4>
+<p>"descent morphism of Eoo ring spectra" is a pretty robust definition, whether we define it in terms of monadic descent, fibrational descent, modules, algebras, being a universal effective monomorphism, or that the amitsur cosimplicial diagram/co-cech nerve is a limit diagram after tensoring with any module over the base. This condition implies that the comparison functor from modules over the base to the category of descent data is a fully faithful left adjoint. The thing I'm uncertain about is whether this implies the comparison map is essentially surjective</p>
+
+
+
+<a name="452171701"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/411257-theory%3A%20mathematics/topic/Why%20does%20the%20codomain%20fibration%20satisfy%20the%20stack%20conditi.../near/452171701" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/411257-theory.3A-mathematics/topic/Why.20does.20the.20codomain.20fibration.20satisfy.20the.20stack.20conditi.2E.2E.2E.html#452171701">(Jul 17 2024 at 19:40)</a>:</h4>
+<p>Beck-Chevalley and e.g. nil-complete =&gt; local (this is one form of conservativity) are in the literature. It's just not clear how to generalize the argument descent =&gt; effective descent, or if it generalizes</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

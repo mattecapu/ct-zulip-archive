@@ -1,0 +1,80 @@
+[
+    {
+        "content": "<p>Hi everyone,</p>\n<p>I’m currently doing my MSc in quantum information and entanglement, but I’m planning to pursue a PhD exploring a more foundational line. My focus is on contextuality: presheaves already capture the tension between local coherence (consistent distributions within commuting sets of observables) and global impossibility (no single assignment works for all contexts).</p>\n<p>What I want to explore is how to go beyond descriptive power, towards <strong>formal certification of quantum advantage</strong>. The idea is to develop <strong>computable cohomological invariants</strong> within a topos-theoretic framework, which could act as <em>certificates</em> of contextuality and be directly testable in simulations and quantum learning experiments (e.g., Q-learners).</p>\n<p>In short: can we frame “quantum learning advantage” not just as an empirical observation, but as something we can <em>prove</em> and <em>verify</em> through categorical and cohomological methods?</p>\n<p>What do you think? Any suggestions, references, or directions you would recommend?</p>",
+        "id": 538291561,
+        "sender_full_name": "Samuel Fernando Faria da Silva",
+        "timestamp": 1757356229
+    },
+    {
+        "content": "<p>I have a basic question: has anyone shown that the contextuality of quantum mechanics gives a \"quantum learning advantage\"?</p>",
+        "id": 538312168,
+        "sender_full_name": "John Baez",
+        "timestamp": 1757364308
+    },
+    {
+        "content": "<p>When talking about quantum properties expressed in terms of presheaves, were you thinking of the old work by Isham and Döring or more recent work by people including <span class=\"user-mention\" data-user-id=\"308397\">@Sam Staton</span> ?</p>",
+        "id": 538479293,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1757435576
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/From.20Presheaves.20to.20Proofs.3A.20Certifying.20Quantum.20Advantage/near/538312168\">said</a>:</p>\n<blockquote>\n<p>I have a basic question: has anyone shown that the contextuality of quantum mechanics gives a \"quantum learning advantage\"?</p>\n</blockquote>\n<p>Hi John, thanks for the question, yes, see: <a href=\"https://arxiv.org/abs/1401.4174\">https://arxiv.org/abs/1401.4174</a></p>",
+        "id": 538496962,
+        "sender_full_name": "Samuel Fernando Faria da Silva",
+        "timestamp": 1757440289
+    },
+    {
+        "content": "<p>Also: <br>\nContextuality and Quantum Learning Advantage</p>\n<p>Neural Sequence Learning: A study showed that quantum contextuality enables a separation in memory capacity between quantum and classical recurrent models. This leads to quantum models outperforming classical ones on tasks like language translation, which inherently involve contextual dependencies <a href=\"https://arxiv.org/abs/2209.14353\">arXiv</a></p>\n<p>Inductive Bias and Expressivity: Research demonstrated that contextuality in quantum models allows them to encode conserved quantities in their label space, enhancing their expressivity. This was shown through a toy problem involving zero-sum games, where quantum models outperformed classical counterparts <a href=\"https://arxiv.org/abs/2302.01365\">arXiv</a>.</p>\n<p>Communication Complexity: Quantum contextuality has been linked to advantages in communication tasks. For instance, certain quantum protocols exhibit reduced communication complexity compared to classical ones, highlighting the role of contextuality in efficient information processing <a href=\"https://arxiv.org/abs/2205.03308\">arXiv</a>.</p>",
+        "id": 538497725,
+        "sender_full_name": "Samuel Fernando Faria da Silva",
+        "timestamp": 1757440518
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/From.20Presheaves.20to.20Proofs.3A.20Certifying.20Quantum.20Advantage/near/538479293\">said</a>:</p>\n<blockquote>\n<p>When talking about quantum properties expressed in terms of presheaves, were you thinking of the old work by Isham and Döring or more recent work by people including <span class=\"user-mention silent\" data-user-id=\"308397\">Sam Staton</span> ?</p>\n</blockquote>\n<p>Interesting, I didn’t know about those works!!</p>",
+        "id": 538506865,
+        "sender_full_name": "Samuel Fernando Faria da Silva",
+        "timestamp": 1757443422
+    },
+    {
+        "content": "<p>The old work by Isham and Döring is practically all I know, except for Abramsky's later paper.    I wrote about their work <a href=\"https://math.ucr.edu/home/baez/week257.html\">back in 2007</a>, starting here and then getting into details:</p>\n<blockquote>\n<p>I also spoke to Andreas Döring and Chris Isham about their work on topos theory and quantum physics. Andreas Döring lives near Greenwich, while Isham lives across the Thames in London proper. So, I talked to Döring a couple times, and once we visited Isham at his house.</p>\n<p>I mainly mention this because Isham is one of the gurus of quantum gravity, profoundly interested in philosophy... so I was surprised, at the end of our talk, when he showed me into a room with a huge rack of computers hooked up to a bank of about 8 video monitors, and controls reminiscent of an airplane cockpit.</p>\n<p>It turned out to be his homemade flight simulator! He's been a hobbyist electrical engineer for years - the kind of guy who loves nothing more than a soldering iron in his hand. He'd just gotten a big 750-watt power supply, since he'd blown out his previous one.</p>\n<p>Anyway, he and Döring have just come out with a series of papers:</p>\n</blockquote>",
+        "id": 538521607,
+        "sender_full_name": "John Baez",
+        "timestamp": 1757447963
+    },
+    {
+        "content": "<p>Thanks for the mention! fwiw <a href=\"https://www.cs.ox.ac.uk/people/samuel.staton/papers/infocomp2017.pdf\">our idea</a> that perhaps you're referring to was just to try to bring different things together in one topos, including Isham et al, Abramsky and Brandenburger, and effect algebras from quantum logic. They all sit inside the presheaf category [FinSet,Set] as a sort of \"gros topos\". Flori and Fritz also looked at [KHaus,Set].</p>",
+        "id": 538529985,
+        "sender_full_name": "Sam Staton",
+        "timestamp": 1757450899
+    },
+    {
+        "content": "<p>By the way <span class=\"user-mention\" data-user-id=\"757275\">@Samuel Fernando Faria da Silva</span> , you mentioned cohomology. Various people (not me) did look at cohomology and contextuality, perhaps you know, but if not happy to give some suggestions.</p>",
+        "id": 538530153,
+        "sender_full_name": "Sam Staton",
+        "timestamp": 1757450988
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/From.20Presheaves.20to.20Proofs.3A.20Certifying.20Quantum.20Advantage/near/538521607\">said</a>:</p>\n<blockquote>\n<p>The old work by Isham and Döring is practically all I know, except for Abramsky's later paper.    I wrote about their work <a href=\"https://math.ucr.edu/home/baez/week257.html\">back in 2007</a>, starting here and then getting into details:</p>\n<blockquote>\n<p>I also spoke to Andreas Döring and Chris Isham about their work on topos theory and quantum physics. Andreas Döring lives near Greenwich, while Isham lives across the Thames in London proper. So, I talked to Döring a couple times, and once we visited Isham at his house.</p>\n<p>I mainly mention this because Isham is one of the gurus of quantum gravity, profoundly interested in philosophy... so I was surprised, at the end of our talk, when he showed me into a room with a huge rack of computers hooked up to a bank of about 8 video monitors, and controls reminiscent of an airplane cockpit.</p>\n<p>It turned out to be his homemade flight simulator! He's been a hobbyist electrical engineer for years - the kind of guy who loves nothing more than a soldering iron in his hand. He'd just gotten a big 750-watt power supply, since he'd blown out his previous one.</p>\n<p>Anyway, he and Döring have just come out with a series of papers:<br>\n</p>\n</blockquote>\n</blockquote>\n<p>Excellent notes as always, much appreciated. I still have much to learn from the work of Isham and Döring!!</p>",
+        "id": 538539612,
+        "sender_full_name": "Samuel Fernando Faria da Silva",
+        "timestamp": 1757456097
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"308397\">Sam Staton</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/From.20Presheaves.20to.20Proofs.3A.20Certifying.20Quantum.20Advantage/near/538530153\">said</a>:</p>\n<blockquote>\n<p>By the way <span class=\"user-mention silent\" data-user-id=\"757275\">Samuel Fernando Faria da Silva</span> , you mentioned cohomology. Various people (not me) did look at cohomology and contextuality, perhaps you know, but if not happy to give some suggestions.</p>\n</blockquote>\n<p>Thank you very much for the excellent suggestions. My impression is that there are very few researchers working at the categorical or cohomological level who are simultaneously engaged, or even interested, in applied research in what is now being called 'quantum learning theory'. These domains still appear rather distant from one another</p>",
+        "id": 538540519,
+        "sender_full_name": "Samuel Fernando Faria da Silva",
+        "timestamp": 1757456367
+    },
+    {
+        "content": "<p>I understood that the mentions of presheaves and cohomology referred to the work in the Abramsky-Brandenburger framework (<a href=\"https://arxiv.org/abs/1102.0264\">founding paper</a>, some cohomology <a href=\"https://arxiv.org/abs/1111.3620\">here</a> and <a href=\"https://arxiv.org/abs/1502.03097\">here</a>). There's also the cohomological stuff by Raussendorf and others (e.g. <a href=\"https://arxiv.org/abs/2110.11631\">this</a>). However, I don't know of works where either of these strands is connected specifically to learning.</p>",
+        "id": 538603682,
+        "sender_full_name": "Martti Karvonen",
+        "timestamp": 1757496037
+    },
+    {
+        "content": "<p>Yes, that's what I thought. I would be a bit nervous because I don't know of much categorical analysis of ordinary computational learning theory. But maybe there's something different to analyze about the quantum case.</p>",
+        "id": 538609167,
+        "sender_full_name": "Sam Staton",
+        "timestamp": 1757497905
+    }
+]

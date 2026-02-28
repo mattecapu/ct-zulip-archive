@@ -1,0 +1,86 @@
+[
+    {
+        "content": "<p>I have been using and enjoying quiver, but recently I came across a problem that I might want another tool for. </p>\n<p>I have a category C, some monads on it, a category D of 5-object diagrams in C of a certain form, and an endofunctor Q on D defined as a certain pullback. It takes 20 objects of C to write down what Q(X) looks like- at least 5 more to map anything into it- and I would like to show (or find conditions on C under which I can show) that Q is a comonad on D. I'd be happy to give particulars on the problem if anyone's interested, but for purposes of this question the point is just that the diagrams I have to draw to check the comonad axioms for this are getting to be a bit bigger than I'd consider manageable for my purposes (at least for drawing them out \"manually\" and not having much experience with tricks that might let me manage the size a bit better). </p>\n<p>Ideally when doing this I'd like to be able to do things like copy and paste large sub-diagrams, quickly apply a functor to all elements of a selection, or perhaps even automatically extract all the unique minimal faces from a diagram so I can more easily get a manageable list of pieces to check commutativity for. I don't see an option to do these things in quiver (though again, it is fantastic for sharing diagrams and for putting them into LaTeX), and I was wondering what other tools I should take a look at, if any, that might let me be a bit lazier about this project. I'm more than open to hearing about more code-based proof-assistant tools as well, but I haven't gotten any experience with those sorts of things yet. </p>\n<p>Thanks! -John</p>",
+        "id": 519285935,
+        "sender_full_name": "John T",
+        "timestamp": 1747713726
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276696\">@Ambroise</span>'s <a href=\"https://amblafont.github.io/graph-editor/index.html\">diagram editor</a> has several features that other editors lack like allowing to copy-paste. I am not sure if it has multicell editing.</p>",
+        "id": 519301238,
+        "sender_full_name": "Ralph Sarkis",
+        "timestamp": 1747722612
+    },
+    {
+        "content": "<p>Copy and pasting is long overdue in <strong>quiver</strong> and I will look into implementing it this week.</p>",
+        "id": 519306244,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1747724571
+    },
+    {
+        "content": "<blockquote>\n<p>quickly apply a functor to all elements of a selection</p>\n</blockquote>\n<p>This is also something I've thought about, and I have some ideas for making it practical. I'll play around with these ideas later and see whether they seem usable.</p>",
+        "id": 519306343,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1747724620
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229125-practice.3A-software/topic/Tools.20for.20drawing.20large.20diagrams/near/519306244\">said</a>:</p>\n<blockquote>\n<p>Copy and pasting is long overdue in <strong>quiver</strong> and I will look into implementing it this week.</p>\n</blockquote>\n<p>This is great. I’ve had several instances lately of needing to type large partially duplicative diagrams. Thank you for your invaluable work!</p>",
+        "id": 519439470,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1747761890
+    },
+    {
+        "content": "<p>On the other hand I discovered the ‘B’ key for moving groups of objects around recently and it’s incredibly useful for laying out a diagram dynamically while actually working out a proof, enabling live-diagramming in some cases rather than just typing out a drawn diagram as I find is usually necessary in tikz.</p>",
+        "id": 519439666,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1747761958
+    },
+    {
+        "content": "<p>In case it's not obvious, you can also move around groups of object with the mouse too: just click and drag in the region around an object.</p>",
+        "id": 519474717,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1747775285
+    },
+    {
+        "content": "<p>I have been meaning to write a tutorial for keyboard shortcuts too, and I will also try to get around to this.</p>",
+        "id": 519474794,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1747775318
+    },
+    {
+        "content": "<p>Yeah, that'd be great; I just realized I don't understand how to actually change the style of an arrow via keyboard, for instance. I can cycle through the three style columns with 'D', but don't see how to cycle through the rows. This is coming up perhaps surprisingly often as I'm typing a lot of \"equals signs\" as level-2 arrows with no heads.</p>",
+        "id": 519486551,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1747781471
+    },
+    {
+        "content": "<p>If you turn on keyboard hints from the toolbar, it will tell you which keys to press in this kind of situation.</p>",
+        "id": 519528359,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1747807062
+    },
+    {
+        "content": "<p>Ah, thanks. I hadn't noticed that keyboard hints apply to the styling panel as well as the main diagram.</p>",
+        "id": 519666508,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1747848501
+    },
+    {
+        "content": "<p>I've added the ability to copy and paste in <strong>quiver</strong>. I may revisit how it works in the future, but it seems to work well enough for now. I will experiment with the more advanced label editing idea I alluded to above when I have some time.</p>",
+        "id": 520289013,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1748176707
+    },
+    {
+        "content": "<p>Hello  <span class=\"user-mention\" data-user-id=\"358283\">@John T</span> , I would be happy to talk with you about your use case. My <a href=\"https://amblafont.github.io/graph-editor/index.html\">diagram editor</a> has some mechanization features based on Rocq, typically to build a commutative diagram step-by-step (see <a href=\"https://github.com/amblafont/vscode-yade-example/releases/download/v0.1/demo-yade-example.mp4\">https://github.com/amblafont/vscode-yade-example/releases/download/v0.1/demo-yade-example.mp4</a>, based on <a href=\"https://github.com/amblafont/vscode-yade-example\">this repo</a>). On the editing side, there is a command to select a subface (that you can copy and paste), but let me know ifyou have any other suggestion!</p>\n<div class=\"message_inline_image message_inline_video\"><a href=\"https://github.com/amblafont/vscode-yade-example/releases/download/v0.1/demo-yade-example.mp4\"><video preload=\"metadata\" src=\"https://uploads.zulipusercontent.net/482a2c29273af3e6016431fbaf8dfa8b13944af0/68747470733a2f2f6769746875622e636f6d2f616d626c61666f6e742f7673636f64652d796164652d6578616d706c652f72656c65617365732f646f776e6c6f61642f76302e312f64656d6f2d796164652d6578616d706c652e6d7034\"></video></a></div>",
+        "id": 520305295,
+        "sender_full_name": "Ambroise",
+        "timestamp": 1748189857
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276696\">@Ambroise</span> Thanks, it looks very interesting from the video and tutorial! I am not particularly familiar with Rocq, should I go read up on that somewhere before getting started if I'm interested in proving everything, or does it mostly come up in places that are simple enough to figure out on the fly? My diagram only has four faces thus far that I've had to assert commutativity for; everything else has followed from naturality or monad laws. I'd include a link to said diagram in quiver, but it's about 10k characters past the message limit <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 521193666,
+        "sender_full_name": "John T",
+        "timestamp": 1748564815
+    }
+]

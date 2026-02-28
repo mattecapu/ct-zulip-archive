@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Foundations · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html">Foundations</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="445885831"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/445885831" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#445885831">(Jun 20 2024 at 15:52)</a>:</h4>
+<p>I've been learning CT from Awodey's book, and if I understand correctly, the foundations that are being used there are set theory (To be very precise, ZFC + there is a model of ZFC). In this case, the category Sets has as objects the sets contained in the model. <br>
+I also think that it's possible to use other Set theories, maybe like ETCS. I'm not sure how you'd handle the category <code>Set</code> in this case, but I am assuming that you'd make a similar axiom ( "there is a category of Sets")?<br>
+However, people ask talk about CT as foundations.. I'm not sure what this is? Are people talking about a formal system for the category of all categories?</p>
+
+
+
+<a name="445890347"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/445890347" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jean-Baptiste Vienney <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#445890347">(Jun 20 2024 at 16:14)</a>:</h4>
+<p>If you want to encode all of mathematics in the same language, the classical way of doing it is to use first order logic + axiomatic set theory, like ZFC.</p>
+<p>Then you can encode category theory in this kind of language. But you need a richer axiomatic set theory because of size issues.</p>
+<p>The approaches using category theory directly in the foundations are based on type theory. They follow the constructivist trend in the foundations on mathematics. These logical systems are also foundations for computer science at the same time. Type theories are linked to category theory in the sense that you can interpret the proofs = programs = morphisms that they encode in some kind of categorical structures.</p>
+<p>An important point is that you can do mathematics without encoding it in a formal logical system and it works pretty well (without being absolutely perfect). In this sense, I don't think Awodey was thinking whether he's working with ZFC or something else in his book. He's  explaining category theory without formal foundations, as is done most of the time.</p>
+
+
+
+<a name="445891115"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/445891115" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric M Downes <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#445891115">(Jun 20 2024 at 16:17)</a>:</h4>
+<p>As Jean-Baptitse said, Awodey mostly just uses naive set theory, which is to say he assumes you know what a set is "more or less", defines functions between them, and moves on to the stuff he wants to talk about.  (Most math is this way.)</p>
+<p>If you want to see category theory and ETCS developed in parallel, one axiom at a time, without being unreadably formal, Lawvere &amp; Roseburgh's <a href="https://www.amazon.com/Sets-Mathematics-F-William-Lawvere/dp/0521010608/">Sets for Mathematics</a> is what I personally like.  It starts out deceptively basic, but by the end you have learned ETCS, category theory at about the level of Awodey, and are then learning topos theory, with a clear sense of exactly how generalized elements are different than elements in set, etc.</p>
+
+
+
+<a name="445893362"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/445893362" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Eric M Downes <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#445893362">(Jun 20 2024 at 16:29)</a>:</h4>
+<p>(My only warning is that they use some non-standard syntax concerning quantifiers; <br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi><mo stretchy="false">[</mo><mi>x</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>B</mi><mo separator="true">,</mo><mtext> </mtext><mi>f</mi><mo separator="true">,</mo><mi>g</mi><mo>:</mo><mi>B</mi><mo>→</mo><mi>C</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>x</mi><mo>∘</mo><mi>f</mi><mo>=</mo><mi>x</mi><mo>∘</mo><mi>g</mi><mo stretchy="false">]</mo><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>f</mi><mo>=</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">\forall[x:A\to B, ~f,g:B\to C\implies x\circ f= x\circ g]\implies f=g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∀</span><span class="mopen">[</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mpunct">,</span><span class="mspace nobreak"> </span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7073em;vertical-align:-0.024em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4445em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4445em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span></span></span></span> instead of something like<br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∀</mi><mi>x</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>B</mi><mo separator="true">,</mo><mtext> </mtext><mi>f</mi><mo separator="true">,</mo><mi>g</mi><mo>:</mo><mi>B</mi><mo>→</mo><mi>C</mi><mo separator="true">;</mo><mtext>  </mtext><mi>x</mi><mo>∘</mo><mi>f</mi><mo>=</mo><mi>x</mi><mo>∘</mo><mi>g</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>f</mi><mo>=</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">\forall x:A\to B, ~f,g:B\to C;~~x\circ f=x\circ g\implies f=g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">∀</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mpunct">,</span><span class="mspace nobreak"> </span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mpunct">;</span><span class="mspace nobreak"> </span><span class="mspace nobreak"> </span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4445em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7194em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span></span></span></span> (more "standard")</p>
+<p>If it makes sense to you, no problem!  If however you find yourself scratching your head, especially when you go to distribute <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi></mrow><annotation encoding="application/x-tex">\lnot</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">¬</span></span></span></span> over quantifiers, an excellent and free resource for basic logic and set theory that uses more standard notation is <a href="https://infinitedescent.xyz">Clive Newstead's book</a>; once you understand how to negate existential quantifiers and the like, which you can learn from the relevant sections in Newstead in about a week, I expect you'll find you can figure out what L&amp;R mean.</p>
+
+
+
+<a name="445897591"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/445897591" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#445897591">(Jun 20 2024 at 16:42)</a>:</h4>
+<p>Thanks a lot for your responses..</p>
+<p><span class="user-mention silent" data-user-id="428716">Jean-Baptiste Vienney</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/445890347">said</a>:</p>
+<blockquote>
+<p>The approaches using category theory directly in the foundations are based on type theory. They follow the constructivist trend in the foundations on mathematics. These logical systems are also foundations for computer science at the same time. Type theories are linked to category theory in the sense that you can interpret the proofs = programs = morphisms that they encode in some kind of categorical structures.</p>
+</blockquote>
+<p>So do you think it's better to say that type theory, as opposed to category theory is an alternative foundation for math?</p>
+
+
+
+<a name="445899488"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/445899488" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Vincent R.B. Blazy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#445899488">(Jun 20 2024 at 16:46)</a>:</h4>
+<p><span class="user-mention" data-user-id="726654">@Suraaj K S</span> Also, to answer some of your precise questions, in the ETCS case, Set is as much only meta or only informal as in the ZFC case <em>without a self-model</em>: it is there only the ambient universe, as you guessed: it’s just that in the ETCS case, which is a structural set theory based on the axiomatic theory of a category itself, it is more straightforward.</p>
+<p>As for CT as a foundation, yes a structural theory of the category of categories was tried, ETCC, but even better (less evil) is Shulman’s ET2CC, since Cat is a 2-Cat!</p>
+
+
+
+<a name="445901574"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/445901574" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jean-Baptiste Vienney <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#445901574">(Jun 20 2024 at 16:50)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="726654">Suraaj K S</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/445897591">said</a>:</p>
+<blockquote>
+<p>Thanks a lot for your responses..</p>
+<p><span class="user-mention silent" data-user-id="428716">Jean-Baptiste Vienney</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/445890347">said</a>:</p>
+<blockquote>
+<p>The approaches using category theory directly in the foundations are based on type theory. They follow the constructivist trend in the foundations on mathematics. These logical systems are also foundations for computer science at the same time. Type theories are linked to category theory in the sense that you can interpret the proofs = programs = morphisms that they encode in some kind of categorical structures.</p>
+</blockquote>
+<p>So do you think it's better to say that type theory, as opposed to category theory is an alternative foundation for math?</p>
+</blockquote>
+<p>I think type theory as a foundation is much more common and well-known that category theory as a foundation, but cf. what <span class="user-mention" data-user-id="492072">@Vincent R.B. Blazy</span> just said.</p>
+
+
+
+<a name="446746629"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/446746629" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#446746629">(Jun 25 2024 at 00:25)</a>:</h4>
+<p>Thanks for your responses. I have a small follow-up question.<br>
+When we say type-theory as foundations, will something like Martin Lof Type theory suffice?</p>
+<p>I ask because I keep hearing that Homotopy Type theory can be the new foundation of mathematics. However, people seem to prove almost all math theorems in Coq / Agda / Lean just fine...</p>
+
+
+
+<a name="446767950"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/446767950" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#446767950">(Jun 25 2024 at 03:28)</a>:</h4>
+<p>Martin-Lof type theory is a common sub-system of Coq, Lean, Agda, and Homotopy Type Theory.</p>
+<p>Coq and Agda are compatible with homotopy type theory. In Coq this is done adding an extra axiom to the system called the univalence axiom, in Agda there is a compiler flag <code>--cubical</code> which turns on homotopy type theory features. Lean 3 was compatible with homotopy type theory, Lean 4 is not.</p>
+<p>You can prove a lot of interesting math without the univalence axiom, just like you can prove a lot of math working constructively without the law of excluded middle or the Axiom of Choice. Some people assume the law of excluded middle because it squares nicely with their mental model of the universe of discourse of mathematics (whether they have one or many.) Similarly some people assume the univalence axiom for the exact same reason.</p>
+
+
+
+<a name="446768396"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/446768396" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#446768396">(Jun 25 2024 at 03:32)</a>:</h4>
+<p>Honestly, the vast majority of mathematics can be proved in a weak subsystem of second order arithmetic. You might even say, do we really need Coq?</p>
+<p>People who want to prove theorems in homotopy type theory are interested in the world that is described by the axioms of homotopy type theory. It's not really important for you or me to have an opinion on whether "homotopy theory will be the next foundation of mathematics". The important thing here is whether you are interested in the world described by the homotopy type theory axioms.</p>
+
+
+
+<a name="446784707"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/446784707" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Madeleine Birchfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#446784707">(Jun 25 2024 at 05:55)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="424412">Patrick Nicodemus</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/446767950">said</a>:</p>
+<blockquote>
+<p>Lean 3 was compatible with homotopy type theory, Lean 4 is not.</p>
+</blockquote>
+<p>Lean 2 was the one compatible with homotopy type theory.</p>
+
+
+
+<a name="446809399"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/446809399" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#446809399">(Jun 25 2024 at 08:23)</a>:</h4>
+<p>What happened to make Lean incompatible with homotopy type theory?   Or what <em>didn't</em> happen that would have made it <em>stay</em> compatible?</p>
+
+
+
+<a name="446816996"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/446816996" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kenji Maillard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#446816996">(Jun 25 2024 at 08:57)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/446809399">said</a>:</p>
+<blockquote>
+<p>What happened to make Lean incompatible with homotopy type theory?   Or what <em>didn't</em> happen that would have made it <em>stay</em> compatible?</p>
+</blockquote>
+<p>The lean developpers decided to gear the development of their proof assistant towards more classically flavoured mathematics. To do so, they introduced a type (universe) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">P</mi></mrow><annotation encoding="application/x-tex">\mathbb{P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">P</span></span></span></span> of (definitionally) proof-irrelevant propositions, meaning that two proofs <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo separator="true">,</mo><mi>q</mi><mo>:</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">p,q : P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">q</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span> of a proposition <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>:</mo><mi mathvariant="double-struck">P</mi></mrow><annotation encoding="application/x-tex">P : \mathbb{P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">P</span></span></span></span> are identified <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>≡</mo><mi>q</mi><mo>:</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">p \equiv q : P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6582em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≡</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">q</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span>,  and declared that identity types are always propositions <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><mi>A</mi><mtext> </mtext><mi>x</mi><mtext> </mtext><mi>y</mi><mtext> </mtext><mo>:</mo><mtext> </mtext><mi mathvariant="double-struck">P</mi></mrow><annotation encoding="application/x-tex">\mathrm{Id}~A~x~y~:~\mathbb{P}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathrm">Id</span></span><span class="mspace nobreak"> </span><span class="mord mathnormal">A</span><span class="mspace nobreak"> </span><span class="mord mathnormal">x</span><span class="mspace nobreak"> </span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace nobreak"> </span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace nobreak"> </span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathbb">P</span></span></span></span> (so any two proof of equality are conflated by definition), together with a substitution principle (or dependent eliminator) <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi></mrow><annotation encoding="application/x-tex">J</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span></span></span></span> whose type is (a more complex version of)</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">∀</mi><mo stretchy="false">(</mo><mi>A</mi><mo>:</mo><mrow><mi mathvariant="normal">T</mi><mi mathvariant="normal">y</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">e</mi></mrow><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>x</mi><mo>:</mo><mi>A</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>B</mi><mo>:</mo><mi>A</mi><mo>→</mo><mrow><mi mathvariant="normal">T</mi><mi mathvariant="normal">y</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">e</mi></mrow><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>y</mi><mo>:</mo><mi>A</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>e</mi><mi>q</mi><mo>:</mo><mrow><mi mathvariant="normal">I</mi><mi mathvariant="normal">d</mi></mrow><mtext> </mtext><mi>A</mi><mtext> </mtext><mi>x</mi><mtext> </mtext><mi>y</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mtext> </mtext><mi>B</mi><mtext> </mtext><mi>x</mi><mo>→</mo><mi>B</mi><mtext> </mtext><mi>y</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">\forall (A : \mathrm{Type})(x : A)(B : A \to \mathrm{Type}) (y : A)(eq : \mathrm{Id}~A~x~y), ~B\,x \to B\,y.</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∀</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathrm">Type</span></span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathrm">Type</span></span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.03588em;">q</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathrm">Id</span></span><span class="mspace nobreak"> </span><span class="mord mathnormal">A</span><span class="mspace nobreak"> </span><span class="mord mathnormal">x</span><span class="mspace nobreak"> </span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace nobreak"> </span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mord">.</span></span></span></span></span></p>
+<p>Since this substitution principle can eliminate into arbitrary type families (the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span> can be Type-valued at any universe level), one can show that any other identity type (even non-propositional) in the theory with a similar elimination principle will be isomorphic to the one we started with, and two proofs of identity for this new type will also be identified, contradicting univalence (and HoTT).</p>
+
+
+
+<a name="446818264"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/446818264" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kenji Maillard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#446818264">(Jun 25 2024 at 09:02)</a>:</h4>
+<p>So lean (versions 3 and 4) cannot be realistically used for Homotopy type theory, but on the other hand its theory is much closer to what one can find in the internal language of a topos for instance, and the definitional proof irrelevance can be really useful in practice.</p>
+
+
+
+<a name="446825754"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/446825754" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#446825754">(Jun 25 2024 at 09:29)</a>:</h4>
+<p>Thanks for the explanation!</p>
+
+
+
+<a name="454374078"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/454374078" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#454374078">(Jul 26 2024 at 21:10)</a>:</h4>
+<p>I was wondering about the following question:<br>
+It seems to me that traditionally, people seem to use ZFC + Grothendieck universes as their 'ambient' mathematical foundation, and CT as a language / framework on top of this.</p>
+<p>And these foundations are 'classical'. I was wondering if it is possible to use some kind of constructive foundation? Do a lot of things change?</p>
+
+
+
+<a name="454375729"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/454375729" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Madeleine Birchfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#454375729">(Jul 26 2024 at 21:26)</a>:</h4>
+<p>Some things change significantly, while other things stay the same. </p>
+<p>Think about the real numbers for a second. In classical mathematics one can prove trichotomy for the real numbers; i.e. that for all real numbers <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x &gt; y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span> or <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x = y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span> or <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x &lt; y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span>. However, in constructive mathematics one cannot prove this for all real numbers. This has to be assumed as a separate axiom, called the <a href="https://ncatlab.org/nlab/show/analytic%20limited%20principle%20of%20omniscience">[[analytic limited principle of omniscience]]</a> in constructive analysis. Not to mention that there are multiple notions of real numbers which are equivalent in classical mathematics but cannot be proven to coincide in constructive mathematics. </p>
+<p>Similarly, in classical mathematics, one can prove that ordinals satisfy trichotomy. However, in constructive ordinal theory, one cannot prove trichotomy for all ordinals, and that trichotomy holds for all ordinals is equivalent to excluded middle if I remember correctly. Not to mention that there are multiple notions of ordinals which are equivalent in classical mathematics but cannot be proven to coincide in constructive mathematics. </p>
+<p>On the other hand, most basic facts about elementary number theory and algebra and category theory are constructive and so remain the same in classical foundations and in constructive foundations.</p>
+
+
+
+<a name="454467575"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/454467575" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#454467575">(Jul 27 2024 at 12:20)</a>:</h4>
+<blockquote>
+<p>I was wondering if it is possible to use some kind of constructive foundation?</p>
+</blockquote>
+<p>Madeleine answered this implicitly, but in case you were still wondering: <em>yes!</em>  Many people do, and many people here are know a lot about this.    (Not me.)</p>
+
+
+
+<a name="454649795"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/454649795" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#454649795">(Jul 28 2024 at 18:36)</a>:</h4>
+<p>Thanks for your responses!</p>
+<p>I'm a little curious about the following fact - Suppose we use a constructive variant of ZFC (+ universes) as our foundational metalogic, and use CT as a language / framework on top. Can we have both: the category of constructive Sets, and the category of classical Sets, which are distinct?</p>
+<p>Perhaps what I am just asking is whether we can have a model of classical set theory in a constructive metalogic....</p>
+
+
+
+<a name="454769246"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/454769246" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#454769246">(Jul 29 2024 at 09:04)</a>:</h4>
+<p>I'm no expert, but from what I've heard the answers are yes, and yes.</p>
+
+
+
+<a name="454774203"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/454774203" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#454774203">(Jul 29 2024 at 09:24)</a>:</h4>
+<p>Note however that using CT as your framework doesn't commit you to working constructively: you can use category theory constructively or classically (and it's not just a binary choice).</p>
+
+
+
+<a name="454774690"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/454774690" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#454774690">(Jul 29 2024 at 09:26)</a>:</h4>
+<p>So your second question is different from the first.</p>
+
+
+
+<a name="454908662"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/454908662" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#454908662">(Jul 29 2024 at 18:05)</a>:</h4>
+<p><span class="user-mention" data-user-id="275920">@John Baez</span> , thanks a lot for your response! <br>
+<span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/454774203">said</a>:</p>
+<blockquote>
+<p>You can use category theory constructively or classically (and it's not just a binary choice).</p>
+</blockquote>
+<p>I was wondering it means to 'use CT constructively or classically'? Where can I learn more about this?</p>
+
+
+
+<a name="454938736"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/454938736" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#454938736">(Jul 29 2024 at 20:17)</a>:</h4>
+<p>An expert would be better at references.  But many sorts of mathematics can be done either classically or constructively.    So suppose you are trying to study set theory in a categorical framework - or as you put it, "use CT as a language / framework on top".   There are many ways to do this.  But here's one aspect: you can do it  classically (where you assume the law of excluded middle and the axiom of choice) or constructively (where you don't, and any existence proof gives an actual construction of the entity whose existence is proved).</p>
+
+
+
+<a name="454939844"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/454939844" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Madeleine Birchfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#454939844">(Jul 29 2024 at 20:22)</a>:</h4>
+<p>You can also not assume full excluded middle or the axiom of choice, just merely enough axioms to do whatever specific sort of mathematics classically but where everything else is still constructive.</p>
+
+
+
+<a name="454940419"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/454940419" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Madeleine Birchfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#454940419">(Jul 29 2024 at 20:25)</a>:</h4>
+<p>for example, the <a href="https://ncatlab.org/nlab/show/limited%20principle%20of%20omniscience">[[limited principle of omniscience]]</a> + <a href="https://ncatlab.org/nlab/show/countable%20choice">[[countable choice]]</a> for real analysis.</p>
+
+
+
+<a name="454940852"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/454940852" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#454940852">(Jul 29 2024 at 20:27)</a>:</h4>
+<p>I think Suraaj wants to know where they can learn basic stuff about, say "studying classical set theory in a constructive metalogic formulated using categories".   I don't know who has written about that!</p>
+
+
+
+<a name="454942048"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/454942048" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Madeleine Birchfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#454942048">(Jul 29 2024 at 20:32)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/454940852">said</a>:</p>
+<blockquote>
+<p>I think Suraaj wants to know where they can learn basic stuff about, say "studying classical set theory in a constructive metalogic formulated using categories".   I don't know who has written about that!</p>
+</blockquote>
+<p>Mike Shulman presents various classical set theories using constructive logic in <a href="https://arxiv.org/abs/1808.05204">https://arxiv.org/abs/1808.05204</a>. I don't see how the metalogic being formulated using categories vs some other framework is relevant here.</p>
+
+
+
+<a name="454951589"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/454951589" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#454951589">(Jul 29 2024 at 21:15)</a>:</h4>
+<p>The relevance is that Suraaj wants to learn about studying set theory in a category-based framework.  Luckily, the paper you pointed us to does just that.</p>
+
+
+
+<a name="454953223"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/454953223" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Madeleine Birchfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#454953223">(Jul 29 2024 at 21:25)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/454951589">said</a>:</p>
+<blockquote>
+<p>The relevance is that Suraaj wants to learn about studying set theory in a category-based framework. </p>
+</blockquote>
+<p>Okay, but that category-based framework doesn't really occur at the level of the metalogic, but at the level of the set theory itself.</p>
+
+
+
+<a name="454954872"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/454954872" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#454954872">(Jul 29 2024 at 21:35)</a>:</h4>
+<p>Okay, thanks.    So, <span class="user-mention" data-user-id="726654">@Suraaj K S</span>, here's what I think is going on in Shulman's paper.  It's studying various axioms for both classical and constructive set theory, which are all phrased in the language of intuitionistic first-order logic, and comparing the resulting categories of sets.  As far as I can tell, the comparison is being done in a constructive metatheory.</p>
+
+
+
+<a name="454983088"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/454983088" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#454983088">(Jul 30 2024 at 00:44)</a>:</h4>
+<p>I just want to point out Colin McLarty's talk "Why is so much Category Theory Constructive?" <a href="https://www.youtube.com/watch?v=5JlrauplT4k">https://www.youtube.com/watch?v=5JlrauplT4k</a> I don't have a lot to add, it might spark some useful ideas.</p>
+<div class="youtube-video message_inline_image"><a data-id="5JlrauplT4k" href="https://www.youtube.com/watch?v=5JlrauplT4k"><img src="https://uploads.zulipusercontent.net/15060bef0227ccc61137db9b7fd103311a8600d6/68747470733a2f2f692e7974696d672e636f6d2f76692f354a6c726175706c54346b2f64656661756c742e6a7067"></a></div>
+
+
+
+<a name="461977982"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/461977982" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#461977982">(Aug 12 2024 at 23:43)</a>:</h4>
+<p>It's been a while, and thanks everyone for their time and answers. </p>
+<p>Is it fair to say, in some sense, that it does not matter whether your foundational metalogic is classical / constructive? It seems to me that we could study classical sets in both cases (we have categories that satisfy axioms of classical set theory), and constructive sets in both cases, and several other 'intermediate' theories too! Maybe what I am saying is that we could totally have whatever fancy internal logic / type theory we want, irrespective of what foundations we are using...</p>
+<p>Moreover, one could argue that constructive logics are more useful than classical logics (which is true, I think, because we can extract more useful things from proofs), and thus advocate to always use a constructive metalogic?</p>
+
+
+
+<a name="462047519"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/462047519" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#462047519">(Aug 13 2024 at 08:05)</a>:</h4>
+<blockquote>
+<p>Is it fair to say, in some sense, that it does not matter whether your foundational metalogic is classical / constructive?</p>
+</blockquote>
+<p>It certainly <em>matters</em>, because there are differences between the two approaches.</p>
+<blockquote>
+<p>Moreover, one could argue that constructive logics are more useful than classical logics (which is true, I think, because we can extract more useful things from proofs).</p>
+</blockquote>
+<p>Here's one way in which it matters.</p>
+
+
+
+<a name="471964540"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/471964540" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#471964540">(Sep 21 2024 at 18:33)</a>:</h4>
+<p>Isabelle/HOL can be thought of as a foundation for math.<br>
+Coq can be thought of as a foundation for math.<br>
+Set Theory (Metamath0, etc.) can be thought as a foundation of math as well.</p>
+<p>And I think that the way one establishes the 'equivalence' of these foundations is by 'constructing models' of one foundation in another (whatever that means).</p>
+<p>And IIRC, it is possible to construct models of foundations in foundations (I'm thinking of papers like 'Sets in Types, Types in Sets'). </p>
+<p>I'm guessing that we could construct models of Isabelle/HOL in Coq and vice versa (maybe with some axioms). </p>
+<p>What I am curious about is the following: People say that you can 'almost always' prove everything you could in coq, in Isabelle/HOL, but the proof will be harder.</p>
+<p>What I'm curious about is the 'almost always' part... I'm guessing that if you can construct a model (whatever that means), then it should be just 'always'...</p>
+<p>I'm curious where my gap in understanding is?</p>
+
+
+
+<a name="471969709"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/471969709" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#471969709">(Sep 21 2024 at 19:50)</a>:</h4>
+<p>I'm not an expert on HOL, but does it have analogue of universes?</p>
+
+
+
+<a name="471972140"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/471972140" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#471972140">(Sep 21 2024 at 20:25)</a>:</h4>
+<p>I don't know anything about this stuff, but I assume Mike is hinting that if HOL doesn't have <a href="https://en.wikipedia.org/wiki/Grothendieck_universe">universes</a> there are things you can't state (much less prove) in HOL that you can prove in systems that have universes.</p>
+
+
+
+<a name="471972314"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/471972314" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#471972314">(Sep 21 2024 at 20:27)</a>:</h4>
+<p>Looking up HOL, I see an <a href="https://sigma.yildiz.edu.tr/storage/upload/pdfs/1635927463-en.pdf">introduction to HOL4</a> that describes it as handling higher-order logic but not set theory at all.   Then I see <a href="https://link.springer.com/article/10.1007/s10817-023-09663-5">an article</a> that says:</p>
+<blockquote>
+<p>Among the various foundations for formal proofs, set theory on top of higher-order logic has been tried a number of times in systems such as HOLZF [<a href="https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR42">42</a>], ProofPeer [<a href="https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR43">43</a>], Egal [<a href="https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR10">10</a>], and Isabelle/Mizar [<a href="https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR28">28</a>]. This foundation is attractive for formalization, as it offers a natural mathematical foundation combined with the automation present in HOL.</p>
+</blockquote>
+<blockquote>
+<p>The formal proof libraries of Isabelle/HOL [<a href="https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR55">55</a>] and that of Mizar [<a href="https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR4">4</a>, <a href="https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR16">16</a>] are among the largest proof libraries in existence today. Indeed, the HOL library together with the Archive of Formal Proofs consist of more than 100,000 theorems [<a href="https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR6">6</a>], while the Mizar Mathematical Library (MML) contains 59,000 theorems. Furthermore, the results contained in the libraries are incomparable: Almost all of the Mizar library concerns itself with mathematics, while the majority of the Isabelle/AFP library are results closer to computer science [<a href="https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR6">6</a>]. For example, the Mizar library includes results about lattice theory [<a href="https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR9">9</a>], topology, and manifolds [<a href="https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR46">46</a>] not present in the Isabelle library, while the Isabelle library has many results related to algorithms not in the MML [<a href="https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR13">13</a>, <a href="https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR36">36</a>, <a href="https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR37">37</a>].</p>
+</blockquote>
+<blockquote>
+<p>In our previous work [<a href="https://link.springer.com/article/10.1007/s10817-023-09663-5#ref-CR7">7</a>], we have presented a model of higher-order Tarski–Grothendieck, which justifies the use of higher-order logic formalizations with set theory-based ones simultaneously. This model will allow us to combine the results present in these two major Isabelle libraries.</p>
+</blockquote>
+
+
+
+<a name="471972459"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/471972459" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#471972459">(Sep 21 2024 at 20:29)</a>:</h4>
+<p>I don't know what "higher-order Tarski–Grothendieck" is.  It looks like to develop set theory on top of HOL4 people use other systems, most notably Isabelle or Mizar.  But I don't know anything about those.</p>
+<p>I now see <a href="https://link.springer.com/article/10.1007/s10817-023-09663-5">the article I pointed to</a> has information about all these things.</p>
+
+
+
+<a name="471977001"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/471977001" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#471977001">(Sep 21 2024 at 21:34)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/471972140">said</a>:</p>
+<blockquote>
+<p>I assume Mike is hinting that if HOL doesn't have <a href="https://en.wikipedia.org/wiki/Grothendieck_universe">universes</a> there are things you can't state (much less prove) in HOL that you can prove in systems that have universes.</p>
+</blockquote>
+<p>I see. I'm definitely know nothing about all this stuff... However, I'm curious about the following question then - If Isabelle/HOL doesn't have universes, is it safe to say that you cannot construct a model of Coq (which does have universes) in it?</p>
+
+
+
+<a name="471978005"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/471978005" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James E Hanson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#471978005">(Sep 21 2024 at 21:50)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/471969709">said</a>:</p>
+<blockquote>
+<p>I'm not an expert on HOL, but does it have analogue of universes?</p>
+</blockquote>
+<p>HOL (and in particular Isabelle/HOL) does not have universes. You can posit the existence of objects coding universes as an assumption in order to prove relative statements, but I think this might be pretty messy to do in practice.</p>
+
+
+
+<a name="471978832"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/471978832" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James E Hanson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#471978832">(Sep 21 2024 at 22:03)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="726654">Suraaj K S</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/471977001">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/471972140">said</a>:</p>
+<blockquote>
+<p>I assume Mike is hinting that if HOL doesn't have <a href="https://en.wikipedia.org/wiki/Grothendieck_universe">universes</a> there are things you can't state (much less prove) in HOL that you can prove in systems that have universes.</p>
+</blockquote>
+<p>I see. I'm definitely know nothing about all this stuff... However, I'm curious about the following question then - If Isabelle/HOL doesn't have universes, is it safe to say that you cannot construct a model of Coq (which does have universes) in it?</p>
+</blockquote>
+<p>My understanding is that Coq's consistency strength is supposed to be roughly the same as that of CIC, and although the exact consistency strength of CIC is (I think) open, a lower bound is Z + <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mtext>“there are </mtext><mi>n</mi><mtext> Zermelo universes&quot;</mtext><mo>:</mo><mi>n</mi><mo>∈</mo><mi mathvariant="double-struck">N</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{\text{``there are }n\text{ Zermelo universes&quot;} : n \in \mathbb{N}\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord text"><span class="mord">“there are </span></span><span class="mord mathnormal">n</span><span class="mord text"><span class="mord"> Zermelo universes&quot;</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathbb">N</span><span class="mclose">}</span></span></span></span>. Isabelle/HOL's strength should be the same as Z set theory (or equivalently <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mtext>th</mtext></mrow><annotation encoding="application/x-tex">\omega\text{th}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ω</span><span class="mord text"><span class="mord">th</span></span></span></span></span>-order arithmetic or the theory of a Boolean topos with NNO), which is strictly weaker, so you aren't going to be able to build a model of Coq in Isabelle/HOL unconditionally.</p>
+
+
+
+<a name="474115358"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474115358" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474115358">(Oct 01 2024 at 19:48)</a>:</h4>
+<p>I recently had a conversation where someone told me that you cannot write an interpreter for Agda in Agda (or Coq in Coq), and I found that a little hard to believe. A quick google search also yielded nothing. I was wondering if the statement is true? Apparently, it is because of Godel's theorems..</p>
+
+
+
+<a name="474122546"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474122546" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474122546">(Oct 01 2024 at 20:34)</a>:</h4>
+<p>You can't write a program in Agda that will decide if Agda programs will halt (or Coq programs will halt), but you must be able to write a program in Agda that runs programs in Agda entered in a suitable manner, or it's not a computationally universal programming language - which would be utterly shocking, since most programming languages are.</p>
+<p>Did you ask your conversation partner to state Godel's theorems precisely?  <span aria-label="smiling imp" class="emoji emoji-1f608" role="img" title="smiling imp">:smiling_imp:</span></p>
+
+
+
+<a name="474124064"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474124064" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathan Corbyn <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474124064">(Oct 01 2024 at 20:43)</a>:</h4>
+<p>Agda is not computationally universal as it is a total language—however, it’s worth saying universality has little to do with what you can actually build with the language</p>
+
+
+
+<a name="474124167"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474124167" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathan Corbyn <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474124167">(Oct 01 2024 at 20:44)</a>:</h4>
+<p>You can write an Agda program that checks if Agda programs halt: it always returns true, as they always halt</p>
+
+
+
+<a name="474124496"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474124496" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474124496">(Oct 01 2024 at 20:46)</a>:</h4>
+<p>I guess the heart of the question is can you <strong>prove</strong> - <code>All agda programs halt</code> in Agda</p>
+
+
+
+<a name="474124677"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474124677" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474124677">(Oct 01 2024 at 20:47)</a>:</h4>
+<p>If you can, I think you can write an agda interpreter in agda</p>
+
+
+
+<a name="474125021"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474125021" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathan Corbyn <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474125021">(Oct 01 2024 at 20:49)</a>:</h4>
+<p>Correct, yes: you can’t prove all Agda programs halt in Agda</p>
+
+
+
+<a name="474125097"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474125097" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathan Corbyn <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474125097">(Oct 01 2024 at 20:49)</a>:</h4>
+<p>In fact, there’s an ongoing project to formalise the correctness of Coq in Coq (it’s called MetaCoq) and it requires an axiom akin to “all Coq programs halt”</p>
+
+
+
+<a name="474127606"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474127606" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474127606">(Oct 01 2024 at 21:05)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="460737">Nathan Corbyn</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/474125021">said</a>:</p>
+<blockquote>
+<p>Correct, yes: you can’t prove all Agda programs halt in Agda</p>
+</blockquote>
+<p>Okay. I was wondering if this is because of Godel's second incompleteness theorem?<br>
+That is,  does the fact that <code>all agda programs halt</code> imply <code>agda is consistent</code>? Moreover, can you prove this implication in Agda?</p>
+
+
+
+<a name="474129830"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474129830" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathan Corbyn <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474129830">(Oct 01 2024 at 21:21)</a>:</h4>
+<p>I’m not sure Gödel’s theorems apply directly (I’m not an expert at all), but I imagine it’s a similar idea.</p>
+
+
+
+<a name="474129887"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474129887" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathan Corbyn <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474129887">(Oct 01 2024 at 21:21)</a>:</h4>
+<p>The fact that all closed Agda programs halt at a value means that there are no closed programs of type <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>, because there are no values of type <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>. (How consistency is defined.)</p>
+
+
+
+<a name="474130210"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474130210" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathan Corbyn <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474130210">(Oct 01 2024 at 21:24)</a>:</h4>
+<p>I’ve no idea if anyone has proven this implication in Agda for the case of Agda but you can certainly prove similar statements for weaker systems in Agda (e.g., STLC)</p>
+
+
+
+<a name="474134073"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474134073" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474134073">(Oct 01 2024 at 21:52)</a>:</h4>
+<p>I see. Then I would say that Godel's second incompleteness theorem would apply here (No sufficiently powerful formal system can prove its own consistency).</p>
+<p><span class="user-mention silent" data-user-id="460737">Nathan Corbyn</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/474130210">said</a>:</p>
+<blockquote>
+<p>I’ve no idea if anyone has proven this implication in Agda for the case of Agda but you can certainly prove similar statements for weaker systems in Agda (e.g., STLC)</p>
+</blockquote>
+<p>I do think that the argument you spelt out is simple enough to be proven in Agda.</p>
+
+
+
+<a name="474141882"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474141882" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474141882">(Oct 01 2024 at 22:58)</a>:</h4>
+<p>The incompleteness theorem and the halting problem are birds of a feather in any case.  (The feather being "diagonalization".)</p>
+
+
+
+<a name="474143963"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474143963" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474143963">(Oct 01 2024 at 23:17)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="460737">Nathan Corbyn</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/474124064">said</a>:</p>
+<blockquote>
+<p>Agda is not computationally universal as it is a total language...</p>
+</blockquote>
+<p>Oh wow, I didn't know anyone did anything like 'general programming' with non-universal languages, though they make sense for lots of specialized purposes.   (E.g. people <em>complain</em> that LaTeX is computationally universal, because you may not want the typesetting of your document to halt iff some Diophantine equation has a solution.)</p>
+
+
+
+<a name="474148083"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474148083" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474148083">(Oct 01 2024 at 23:52)</a>:</h4>
+<p>If you want your programming language to also be a proof assistant, where every well-typed program is a proof, then it has to be a total language, since otherwise you could "prove" false with an infinite loop:</p>
+<div class="codehilite" data-code-language="Agda"><pre><span></span><code><span class="nf">oops</span><span class="w"> </span><span class="ow">:</span><span class="w"> </span>⊥
+oops<span class="w"> </span><span class="ow">=</span><span class="w"> </span>oops
+</code></pre></div>
+
+
+
+<a name="474148290"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474148290" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474148290">(Oct 01 2024 at 23:53)</a>:</h4>
+<p>Some people say, "Pacman completeness is more useful than turing completeness"</p>
+
+
+
+<a name="474148856"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474148856" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474148856">(Oct 01 2024 at 23:56)</a>:</h4>
+<p>While that means the language is technically not Turing-complete, so there are terminating functions that it cannot express, in practice dependently typed programming languages are powerful enough to write almost any actually-terminating function.  For instance, you can manually introduce whatever well-founded termination measure is necessary for any particular application.</p>
+<p>Coding "Agda in Agda" and related stuff is, I think, the only real exception I'm aware of.</p>
+
+
+
+<a name="474148987"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474148987" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474148987">(Oct 01 2024 at 23:58)</a>:</h4>
+<p>Of course, rewriting a function to induct over a well-founded termination measure can be tedious and obscure the important ideas.  So for practical programming, Agda also allows you to give a flag to turn off the termination-checker and make it Turing-complete, either globally or locally to a particular definition.</p>
+
+
+
+<a name="474149794"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474149794" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474149794">(Oct 02 2024 at 00:06)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="645679">James E Hanson</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/471978832">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="726654">Suraaj K S</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/471977001">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/471972140">said</a>:</p>
+<blockquote>
+<p>I assume Mike is hinting that if HOL doesn't have <a href="https://en.wikipedia.org/wiki/Grothendieck_universe">universes</a> there are things you can't state (much less prove) in HOL that you can prove in systems that have universes.</p>
+</blockquote>
+<p>I see. I'm definitely know nothing about all this stuff... However, I'm curious about the following question then - If Isabelle/HOL doesn't have universes, is it safe to say that you cannot construct a model of Coq (which does have universes) in it?</p>
+</blockquote>
+<p>My understanding is that Coq's consistency strength is supposed to be roughly the same as that of CIC, and although the exact consistency strength of CIC is (I think) open, a lower bound is Z + <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mtext>“there are </mtext><mi>n</mi><mtext> Zermelo universes&quot;</mtext><mo>:</mo><mi>n</mi><mo>∈</mo><mi mathvariant="double-struck">N</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{\text{``there are }n\text{ Zermelo universes&quot;} : n \in \mathbb{N}\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord text"><span class="mord">“there are </span></span><span class="mord mathnormal">n</span><span class="mord text"><span class="mord"> Zermelo universes&quot;</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathbb">N</span><span class="mclose">}</span></span></span></span>. Isabelle/HOL's strength should be the same as Z set theory (or equivalently <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mtext>th</mtext></mrow><annotation encoding="application/x-tex">\omega\text{th}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">ω</span><span class="mord text"><span class="mord">th</span></span></span></span></span>-order arithmetic or the theory of a Boolean topos with NNO), which is strictly weaker, so you aren't going to be able to build a model of Coq in Isabelle/HOL unconditionally.</p>
+</blockquote>
+<p>I'm a little bit curious what the various notions of comparing two doctrines/theories/logics/type theories are... That is, when does one say that one is stronger than another..</p>
+<p>I can think of the following ways:</p>
+<ul>
+<li>Constructing models - If you can construct a 'model' (whatever that means) of T1 in T2, you say T2 is more powerful than T1. Here, I think that T2 will also be the metalogic</li>
+<li>As a (syntactic) metalogic - You could use one logic as a metalogic for another, just for 'syntactic proofs'. However, in general, this does not seem like a hard thing to do at all. I think that you could use a very simple logic like PA as a metalogic for any other logic. That is, you can encode and prove things like <code>ZFC_proves(φ)</code> in PA.</li>
+<li>Proving consistency - If one logic can prove that another is consistent, it is stronger than the other</li>
+<li>Interpretations - As mentioned in <a href="https://en.wikipedia.org/wiki/Interpretability">https://en.wikipedia.org/wiki/Interpretability</a>. I think that this is linked very closely with 'constructing models' (or they might be the same thing), as we discussed here: <a href="#narrow/stream/229199-learning.3A-questions/topic/On.20Categorical.20Logic/near/472077762">https://categorytheory.zulipchat.com/#narrow/stream/229199-learning.3A-questions/topic/On.20Categorical.20Logic/near/472077762</a>.</li>
+</ul>
+<p>I'm curious whether there are other 'obvious ways' one compares one logic to another? I'd also be curious to know how these notions of comparing one logic to another relate?</p>
+
+
+
+<a name="474150636"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474150636" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474150636">(Oct 02 2024 at 00:15)</a>:</h4>
+<p>If you can construct a model of T1 <em>in</em> T2, in the sense that using T2 as the metatheory you can build a model of T1 (for example, in ZFC the set <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mrow><mi>ω</mi><mo>+</mo><mi>ω</mi></mrow></msub></mrow><annotation encoding="application/x-tex">V_{\omega+\omega}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8917em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2583em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">ω</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight" style="margin-right:0.03588em;">ω</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span></span></span></span> is a model of Z), then in particular T2 proves the consistency of T1, since a theory with a model is consistent.  Conversely, at least in a sufficiently powerful metatheory, any consistent theory has a model (Godel's completeness theorem), so often proving consistency is the same as constructing internal models.</p>
+
+
+
+<a name="474150941"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474150941" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474150941">(Oct 02 2024 at 00:18)</a>:</h4>
+<p>As we discussed in the other thread, interpretability is more or less the same as constructing a model of T1 <em>from</em> a model of T2, which is different than constructing a model of T1 <em>in</em> a model of T2.  For instance, we can construct a model of ETCS+R from a model of ZFC by taking the objects to be the sets and the morphisms to be the functions.  But the entire category that models ETCS+R is not a thing <em>in</em> ZFC (i.e. a set) because it is a proper class (the proper class of all sets).  So what this shows is that ETCS+R is <em>no stronger than</em> ZFC.  In this case, there is also a converse construction, so the two theories are equiconsistent (of equal strength).</p>
+
+
+
+<a name="474150972"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474150972" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474150972">(Oct 02 2024 at 00:19)</a>:</h4>
+<p>So it's the difference between <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo></mrow><annotation encoding="application/x-tex">&lt;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&lt;</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\le</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span></span></span></span>.</p>
+
+
+
+<a name="474319459"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474319459" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474319459">(Oct 02 2024 at 14:54)</a>:</h4>
+<p>I see. Just to confirm - constructing a model of T1 in T2 is the same thing as constructing a model of T1 in a model of T2... right?</p>
+
+
+
+<a name="474321632"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/474321632" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#474321632">(Oct 02 2024 at 15:03)</a>:</h4>
+<p>As long as the latter construction is definable.</p>
+
+
+
+<a name="475309719"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/475309719" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Josselin Poiret <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#475309719">(Oct 07 2024 at 14:23)</a>:</h4>
+<p>wrt. proving consistency of proof assistant X in X can be done in an axiom-free way as long as you use a <em>slightly</em> weaker version of that system. One simple way of doing this is just postulating a finite number of universes, rather than the usual countable family. <a href="https://github.com/mr-ohman/logrel-mltt">logrel-mltt</a> does this for Agda with one universe, and <a href="https://github.com/CoqHott/logrel-coq">logrel-coq</a> for Coq. Usually, you expect these arguments to require a small number of additional universes in the meta-theory.</p>
+
+
+
+<a name="475311672"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/475311672" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Josselin Poiret <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#475311672">(Oct 07 2024 at 14:32)</a>:</h4>
+<p>and yes it is exactly Gödel's 2nd theorem that would apply here</p>
+
+
+
+<a name="475996092"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/475996092" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#475996092">(Oct 10 2024 at 01:57)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="726654">Suraaj K S</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/474149794">said</a>:</p>
+<blockquote>
+<p>I'm a little bit curious what the various notions of comparing two doctrines/theories/logics/type theories are... That is, when does one say that one is stronger than another..</p>
+<p>I can think of the following ways:</p>
+<ul>
+<li>Constructing models - If you can construct a 'model' (whatever that means) of T1 in T2, you say T2 is more powerful than T1. Here, I think that T2 will also be the metalogic</li>
+<li>As a (syntactic) metalogic - You could use one logic as a metalogic for another, just for 'syntactic proofs'. However, in general, this does not seem like a hard thing to do at all. I think that you could use a very simple logic like PA as a metalogic for any other logic. That is, you can encode and prove things like <code>ZFC_proves(φ)</code> in PA.</li>
+<li>Proving consistency - If one logic can prove that another is consistent, it is stronger than the other</li>
+<li>Interpretations - As mentioned in <a href="https://en.wikipedia.org/wiki/Interpretability">https://en.wikipedia.org/wiki/Interpretability</a>. I think that this is linked very closely with 'constructing models' (or they might be the same thing), as we discussed here: <a href="#narrow/stream/229199-learning.3A-questions/topic/On.20Categorical.20Logic/near/472077762">https://categorytheory.zulipchat.com/#narrow/stream/229199-learning.3A-questions/topic/On.20Categorical.20Logic/near/472077762</a>.</li>
+</ul>
+<p>I'm curious whether there are other 'obvious ways' one compares one logic to another? I'd also be curious to know how these notions of comparing one logic to another relate?</p>
+</blockquote>
+<p>I was doing some reading, and I was wondering about a few more things along these lines. To be specific, I was curious about how one compares 'doctrines' (like equational logic, λ→), etc.</p>
+<p>'Obviously', λ→ is 'more powerful' than equational logic. All the axioms and inference rules of equational logic are 'present' in λ→. That is, if you can do a proof in equational logic, you can do 'the same proof' in λ→. Another concept that one talks about is 'conservativity', which is roughly the converse - If you can prove an equation between algebraic terms in λ→, you can prove that in equational logic too.</p>
+<p>I'm wondering if there are 'standard definitions' that summarize this relationship between equational logic and λ→? <br>
+We have also spoken about other ways of relating theories/logics- constructing models, interpretations, etc. I'm curious if those ideas apply here? That is, is the relation between equational logic and λ→ just a 'special case' of one of the previous ideas? To me, it doesn't look like that's the case, because we're talking about 'comparing doctrines' now. But I might be wrong...</p>
+
+
+
+<a name="476026380"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/476026380" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#476026380">(Oct 10 2024 at 04:14)</a>:</h4>
+<p>Semantically this kind of relationship between doctrines is represented by an adjunction between their categories of models.  Every model of  λ→ has an underlying model of equational logic.  And any model of equational logic -- which in this case we usually think of as a "theory" -- gives rise to a "freely generated" model of  λ→ -- which we think of as "the same theory in an expanded doctrine", this being left adjoint to the "underlying" functor in the other direction.</p>
+
+
+
+<a name="476026770"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/476026770" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#476026770">(Oct 10 2024 at 04:17)</a>:</h4>
+<p>Conservativity of one doctrine over another is a statement about the units of that adjunction being faithful or fully faithful.  That is, if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> is a theory in equational logic, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">FT</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">FT</span></span></span></span> its freely generated theory in  λ→, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mi>F</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">UFT</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mord mathnormal" style="margin-right:0.13889em;">FT</span></span></span></span> the underlying theory in equational logic of that, then the unit map <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>→</mo><mi>U</mi><mi>F</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">T\to UFT</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mord mathnormal" style="margin-right:0.13889em;">FT</span></span></span></span> being faithful would mean that if two terms in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> become (i.e. "can be proven") equal in  λ→ (i.e. in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">FT</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">FT</span></span></span></span>), then they were already equal (i.e. "can be proven equal") in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span>.  Full-faithfulness would say furthermore that given a type in a context in equational logic, any term that <em>exists</em> in that type in  λ→ already exists in equational logic.</p>
+
+
+
+<a name="476118839"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/476118839" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Suraaj K S <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#476118839">(Oct 10 2024 at 12:18)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Foundations/near/476026380">said</a>:</p>
+<blockquote>
+<p>Semantically this kind of relationship between doctrines is represented by an adjunction between their categories of models.  Every model of  λ→ has an underlying model of equational logic.  And any model of equational logic -- which in this case we usually think of as a "theory" -- gives rise to a "freely generated" model of  λ→ -- which we think of as "the same theory in an expanded doctrine", this being left adjoint to the "underlying" functor in the other direction.</p>
+</blockquote>
+<p>That makes sense. Just to be clear, is 'the category of models' the same thing as 'the category of structured categories' that one talks about in the InternalLanguage/TermModel adjunction?</p>
+
+
+
+<a name="476160717"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/476160717" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#476160717">(Oct 10 2024 at 15:24)</a>:</h4>
+<p>Yes, that's what I meant.</p>
+
+
+
+<a name="476161027"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Foundations/near/476161027" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Foundations.html#476161027">(Oct 10 2024 at 15:25)</a>:</h4>
+<p>E.g. each CCC is a model of the doctrine STLC, as distinct from a model of a particular <em>theory of</em> STLC <em>in</em> a <em>particular</em> CCC.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

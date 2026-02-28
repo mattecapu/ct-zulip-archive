@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Strong monoidal functors preserve monoids · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html">Strong monoidal functors preserve monoids</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="431661922"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431661922" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bernd Losert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431661922">(Apr 06 2024 at 10:32)</a>:</h4>
+<p>I am looking for a reference that states that if you have a strong monoidal functor F : <strong>A</strong> → <strong>B</strong> between monoidal categories, then if M is a monoid object in <strong>A</strong>, then FM is a monoid object in <strong>B</strong> and if a : M × A → A is a monoid action in <strong>A</strong>, then Fa ∘ μ, where μ : FA ⊗ FB → F(A ⊗ B), is a monoid action in <strong>B</strong>.</p>
+
+
+
+<a name="431668537"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431668537" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Vincent Moreau <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431668537">(Apr 06 2024 at 12:22)</a>:</h4>
+<p>Having only a lax functor is sufficient. It is explained in the case of monoids for example in section 6.2 of <a href="https://www.irif.fr/~mellies/mpri/mpri-ens/biblio/categorical-semantics-of-linear-logic.pdf">Categorical semantics of linear logic</a> by Paul-André Melliès.</p>
+
+
+
+<a name="431671734"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431671734" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bernd Losert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431671734">(Apr 06 2024 at 13:01)</a>:</h4>
+<p>Thanks for the reference. It does not seem to deal with monoid actions though. Also, I think you need the functor to be strong monoidal to preserve monoid actions.</p>
+
+
+
+<a name="431676505"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431676505" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Aaron David Fairbanks <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431676505">(Apr 06 2024 at 14:09)</a>:</h4>
+<p>Lax monoidal functors preserve monoid actions. One explanation is that a lax monoidal functor between monoidal categories is the same as a map between their underlying multicategories (and monoids as well as monoid actions live in multicategories). This correspondence appears as Example 2.1.10 in Tom Leinster's book Higher Operads, Higher Categories.</p>
+
+
+
+<a name="431682944"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431682944" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bernd Losert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431682944">(Apr 06 2024 at 15:37)</a>:</h4>
+<p>I don't think I can get away with that explanation at my current level of understanding. Proving part of the associativity of the action requires going from FM ⊗ (FM ⊗ FA) → FM ⊗ FA and I don't see how you can argue this without invoking μ⁻¹.</p>
+
+
+
+<a name="431683248"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431683248" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431683248">(Apr 06 2024 at 15:42)</a>:</h4>
+<p>You can prove the associativity of the image of an action in exactly the same way you prove associativity of the image of a monoid itself, just using the three objects M,M,A instead of the three objects M,M,M.</p>
+
+
+
+<a name="431683254"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431683254" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bernd Losert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431683254">(Apr 06 2024 at 15:42)</a>:</h4>
+<p>Hmm... I guess I can use associativity of ⊗ first, combine FM ⊗ FM using μ, and then end up with FM ⊗ FA.</p>
+
+
+
+<a name="431683257"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431683257" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Josselin Poiret <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431683257">(Apr 06 2024 at 15:42)</a>:</h4>
+<p>building the two morphisms doesn't require using <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>μ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex"> \mu^{-1} </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">μ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span> though, you just use the lax structure morphisms of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex"> F </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span> either on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>M</mi><mo>⊗</mo><mi>F</mi><mi>M</mi></mrow><annotation encoding="application/x-tex"> FM \otimes FM </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">FM</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">FM</span></span></span></span> or <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>M</mi><mo>⊗</mo><mi>F</mi><mi>A</mi></mrow><annotation encoding="application/x-tex"> FM \otimes FA </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">FM</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mord mathnormal">A</span></span></span></span></p>
+
+
+
+<a name="431683285"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431683285" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bernd Losert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431683285">(Apr 06 2024 at 15:43)</a>:</h4>
+<p>OK, I'm convinced that it's enough with F being lax.</p>
+
+
+
+<a name="431683345"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431683345" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bernd Losert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431683345">(Apr 06 2024 at 15:44)</a>:</h4>
+<p>I wanted to quote a reference, but I guess I can just say "(exercise for the reader)".</p>
+
+
+
+<a name="431689126"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431689126" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431689126">(Apr 06 2024 at 17:07)</a>:</h4>
+<p>There has got to be a reference somewhere that not only states these results but proves them!  I'm in favor of citing references with proofs even if the proofs are "well-known", because nobody knows all "well-known" results.  </p>
+<p>Unfortunately while <em>Categories For The Working Mathematician</em> defines lax monoidal functors (which Mac Lane calls simply "monoidal functors"!) and monoids in monoidal categories, it doesn't seem to state the facts we're talking about, not even that lax monoidal functors send monoids to monoids.</p>
+
+
+
+<a name="431689798"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431689798" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431689798">(Apr 06 2024 at 17:16)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids/near/431689126">said</a>:</p>
+<blockquote>
+<p>Unfortunately while <em>Categories For The Working Mathematician</em> defines lax monoidal functors (which Mac Lane calls simply "monoidal functors"!)</p>
+</blockquote>
+<p>That terminology is pretty common in older literature particularly.</p>
+
+
+
+<a name="431690305"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431690305" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431690305">(Apr 06 2024 at 17:23)</a>:</h4>
+<p>Another place one might look for "standard facts" is Borceux's 3-volume handbook, but I forget how much he says about monoidal categories and I've run out of energy for looking up references.</p>
+
+
+
+<a name="431691058"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431691058" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bernd Losert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431691058">(Apr 06 2024 at 17:34)</a>:</h4>
+<p>I just checked Vol. 1 and 2 - there is nothing about monoidal functors. I doubt Vol. 3 would have anything in this regard given that it's about sheaf theory.</p>
+
+
+
+<a name="431691871"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431691871" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431691871">(Apr 06 2024 at 17:48)</a>:</h4>
+<p>Okay, thanks.  There should be a good reference book on monoidal categories that proves these basic facts, but I don't know if it exists yet!</p>
+
+
+
+<a name="431692991"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431692991" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bernd Losert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431692991">(Apr 06 2024 at 18:04)</a>:</h4>
+<p>I thought Tholen's book Monoidal Topology would have it, but it does not talk about monoidal functors weirdly enough.</p>
+
+
+
+<a name="431694793"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431694793" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431694793">(Apr 06 2024 at 18:29)</a>:</h4>
+<p>The massive book <a href="https://pi.math.cornell.edu/~maguiar/a.pdf">Monoidal functors, species and Hopf algebras</a> states and proves that lax monoidal functors preserve monoids in Proposition 3.29.</p>
+
+
+
+<a name="431694892"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431694892" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431694892">(Apr 06 2024 at 18:30)</a>:</h4>
+<p>They do it the slick way, by observing that a monoid <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span></span></span></span> in a monoidal category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">C</mi></mrow><annotation encoding="application/x-tex">\mathcal{C}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.05834em;">C</span></span></span></span> can be identified with a lax monoidal functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>:</mo><mn>1</mn><mo>→</mo><mi mathvariant="script">C</mi></mrow><annotation encoding="application/x-tex">M: 1 \to \mathcal{C}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.05834em;">C</span></span></span></span> and post-composing.</p>
+
+
+
+<a name="431696081"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431696081" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431696081">(Apr 06 2024 at 18:45)</a>:</h4>
+<p>Oh, great!  I like that book.  So there's a good reference... just remember to point out the actual proposition number so readers don't need to look through the whole book.  <span aria-label="wink" class="emoji emoji-1f609" role="img" title="wink">:wink:</span></p>
+
+
+
+<a name="431697002"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431697002" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bernd Losert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431697002">(Apr 06 2024 at 18:54)</a>:</h4>
+<p>I will check that book out. Thanks.</p>
+
+
+
+<a name="431703112"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431703112" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431703112">(Apr 06 2024 at 20:21)</a>:</h4>
+<p>I don't know if that book tackles your other question: whether lax monoidal functors preserve monoid <em>actions</em>.  Please let me know if you find out!</p>
+
+
+
+<a name="431710981"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431710981" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bernd Losert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431710981">(Apr 06 2024 at 22:36)</a>:</h4>
+<p>I had a look. Unfortunately, it does not have the result about preserving monoid actions.</p>
+
+
+
+<a name="431734919"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431734919" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ralph Sarkis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431734919">(Apr 07 2024 at 05:52)</a>:</h4>
+<p>Can you instantiate Lemma 3.3.7 in <a href="https://arxiv.org/abs/2203.16351">Actegories for the Working Amthematician</a> to get what you want?</p>
+
+
+
+<a name="431747269"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431747269" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bernd Losert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431747269">(Apr 07 2024 at 09:09)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="284005">Ralph Sarkis</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids/near/431734919">said</a>:</p>
+<blockquote>
+<p>Can you instantiate Lemma 3.3.7 in <a href="https://arxiv.org/abs/2203.16351">Actegories for the Working Amthematician</a> to get what you want?</p>
+</blockquote>
+<p>Oh, that's interesting. It says "Any action of a monoid M on a set X is a 'discrete actegory', but it does not deal with the general case of monoid actions in a monoidal category.</p>
+
+
+
+<a name="431775126"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431775126" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dylan Braithwaite <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431775126">(Apr 07 2024 at 14:06)</a>:</h4>
+<p>Maybe you could find references for the following points and piece it together from them:</p>
+<ul>
+<li>Monad structures on the functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>⊗</mo><mo stretchy="false">(</mo><mo>−</mo><mo stretchy="false">)</mo><mo>:</mo><mi mathvariant="script">M</mi><mo>→</mo><mi mathvariant="script">M</mi></mrow><annotation encoding="application/x-tex">M \otimes (-) : \mathcal M \to \mathcal M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal">M</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal">M</span></span></span></span> are equivalent to monoid structures on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span></span></span></span></li>
+<li>Lax monoidal functors <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>:</mo><mi mathvariant="script">M</mi><mo>→</mo><mi mathvariant="script">N</mi></mrow><annotation encoding="application/x-tex">F : \mathcal M \to \mathcal N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal">M</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.14736em;">N</span></span></span></span> send monoids to monoids, and so induce monad morphisms <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="script">M</mi><mo separator="true">,</mo><mi>M</mi><mo>⊗</mo><mo stretchy="false">(</mo><mo>−</mo><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>→</mo><mo stretchy="false">(</mo><mi mathvariant="script">N</mi><mo separator="true">,</mo><mi>F</mi><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo><mo>⊗</mo><mo stretchy="false">(</mo><mo>−</mo><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\mathcal M, M \otimes (-)) \to (\mathcal N, F(M) \otimes (-))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathcal">M</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mclose">))</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathcal" style="margin-right:0.14736em;">N</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mclose">))</span></span></span></span></li>
+<li>Monad morphisms induce functors between their categories of algebras, so <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span> induces a functor <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="bold">A</mi><mi mathvariant="bold">l</mi><mi mathvariant="bold">g</mi></mrow><mi mathvariant="script">M</mi></msub><mo stretchy="false">(</mo><mi>M</mi><mo>⊗</mo><mo stretchy="false">(</mo><mo>−</mo><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>→</mo><msub><mrow><mi mathvariant="bold">A</mi><mi mathvariant="bold">l</mi><mi mathvariant="bold">g</mi></mrow><mi mathvariant="script">N</mi></msub><mo stretchy="false">(</mo><mi>F</mi><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo><mo>⊗</mo><mo stretchy="false">(</mo><mo>−</mo><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathbf{Alg}_{\mathcal M}(M \otimes (-)) \to \mathbf{Alg}_{\mathcal N}(F(M) \otimes (-))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord"><span class="mord mathbf" style="margin-right:0.01597em;">Alg</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2342em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight">M</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mclose">))</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord"><span class="mord mathbf" style="margin-right:0.01597em;">Alg</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2342em;"><span style="top:-2.4559em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathcal mtight" style="margin-right:0.14736em;">N</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2441em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mclose">))</span></span></span></span></li>
+<li>An algebra for a monad <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>⊗</mo><mo stretchy="false">(</mo><mo>−</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">M \otimes (-)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mclose">)</span></span></span></span> is equivalently an monoid action of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span></span></span></span></li>
+</ul>
+
+
+
+<a name="431808264"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431808264" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431808264">(Apr 07 2024 at 19:16)</a>:</h4>
+<p>Of course another approach is to write a little appendix proving the results you need, so future generations can cite it!</p>
+
+
+
+<a name="431808687"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Strong%20monoidal%20functors%20preserve%20monoids/near/431808687" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids.html#431808687">(Apr 07 2024 at 19:19)</a>:</h4>
+<p>I think it's really helpful to turn "folklore" into citable propositions with numbers like Prop. 39.  When I do this, I admit that the results are well-known (by those who know them well).</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

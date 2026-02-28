@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Equality in infinity categories · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories.html">Equality in infinity categories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="490163867"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equality%20in%20infinity%20categories/near/490163867" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Arnoult <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories.html#490163867">(Dec 20 2024 at 13:46)</a>:</h4>
+<p>That's a simple one, but: what is the notion of equality in infinity-categories? Do we need to have any? I thought the goal of having infinity-categories was precisely to get rid of (non proof-relevent) equalities, but I guess there is still a notion of equality since in the Riehl-Verity paper, they speak of equality of morphisms and of invertible cells. In that case, what do we endow with a notion of equality, is it just morphisms for $k&gt;1$?</p>
+
+
+
+<a name="490172091"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equality%20in%20infinity%20categories/near/490172091" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Rémy Tuyéras <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories.html#490172091">(Dec 20 2024 at 14:30)</a>:</h4>
+<p>I don't think the goal of infinity-categories is to get rid of equalities. It is more about allowing a spectrum of weaker equalities in your toolbox. I am pretty sure that, in any model for infinity-categories, you would define the majority of your homotopy-based comparisons with equalities. </p>
+<p>For instance, defining an isomorphism <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>a</mi><mo>↔</mo><mi>b</mi><mo>:</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f:a \leftrightarrow b: g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">↔</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">b</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span></span></span></span> would require equalities when writing the axioms:</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∘</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f \circ g</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span></span></span></span> must be <strong>equal</strong> to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">d</mi></mrow><mi>b</mi></msub></mrow><annotation encoding="application/x-tex">\mathsf{id}_b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathsf">id</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>;</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>∘</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">g \circ f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6389em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span> must be <strong>equal</strong> to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">d</mi></mrow><mi>a</mi></msub></mrow><annotation encoding="application/x-tex">\mathsf{id}_a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathsf">id</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>;</li>
+</ul>
+
+
+
+<a name="490173141"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equality%20in%20infinity%20categories/near/490173141" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Rémy Tuyéras <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories.html#490173141">(Dec 20 2024 at 14:36)</a>:</h4>
+<p>Now, there are theories for infinity-categories that may rely on spheres and discs, so that equalities would be abstracted away, but even for these, you would usually have retractions that would model equalities.</p>
+<p>Edit: Also add to this that you have to define the sources and targets of your homotopies, which are based on equalities that relate discs of different dimensions</p>
+
+
+
+<a name="490173317"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equality%20in%20infinity%20categories/near/490173317" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Josselin Poiret <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories.html#490173317">(Dec 20 2024 at 14:37)</a>:</h4>
+<p>the situation is quite similar to that of 1-categories: there are some statements that are evil but can appear with specific choices of presentations of the theories. In 1-category theory, you <em>can</em> talk about equality of objects, but it's evil. This is the same with ∞-categories: in most presentations of the concept, like with quasi-categories, you can talk about equality of morphisms, but it's stricter than what you probably want (and it's also evil).</p>
+
+
+
+<a name="490173409"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equality%20in%20infinity%20categories/near/490173409" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Josselin Poiret <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories.html#490173409">(Dec 20 2024 at 14:37)</a>:</h4>
+<p>you could say it's part of the presentation but not of the language of ∞-categories</p>
+
+
+
+<a name="490182809"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equality%20in%20infinity%20categories/near/490182809" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jonathan Arnoult <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories.html#490182809">(Dec 20 2024 at 15:27)</a>:</h4>
+<p>Okay thanks!</p>
+<p><span class="user-mention silent" data-user-id="284453">Josselin Poiret</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories/near/490173317">said</a>:</p>
+<blockquote>
+<p>the situation is quite similar to that of 1-categories: there are some statements that are evil but can appear with specific choices of presentations of the theories. In 1-category theory, you <em>can</em> talk about equality of objects, but it's evil. This is the same with ∞-categories: in most presentations of the concept, like with quasi-categories, you can talk about equality of morphisms, but it's stricter than what you probably want (and it's also evil).</p>
+</blockquote>
+<p>In the case of categories, equality of morphisms is part of the definition, while equality of objects is not necesssarily given, but here I guess that in the actual definition we still require to have a definition of equality (or an equivalence relation) on morphisms, even if we don't use it?</p>
+
+
+
+<a name="490185073"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equality%20in%20infinity%20categories/near/490185073" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Madeleine Birchfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories.html#490185073">(Dec 20 2024 at 15:39)</a>:</h4>
+<p>Everything said above really only applies if we work in a set theory as our foundations of mathematics, where everything comes with a propositional-valued equality, including <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>-categories and their hom-sets. </p>
+<p>In dependent type theory, equality in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>-categories (i.e. Rezk types in dependent type theory) and their hom-types is given by the identity type, but identity types are not required to be (-1)-truncated (i.e. proposition-valued) and instead they can be untruncated (i.e. valued in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>-groupoids). So people working in an ambient dependent type theory don't really run into problem of evil with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>-categories that people working in set theory do.</p>
+
+
+
+<a name="490193054"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equality%20in%20infinity%20categories/near/490193054" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories.html#490193054">(Dec 20 2024 at 16:24)</a>:</h4>
+<p>They do, however, run into problems <em>defining</em> untruncated <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>-categories.</p>
+
+
+
+<a name="490195276"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equality%20in%20infinity%20categories/near/490195276" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Josselin Poiret <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories.html#490195276">(Dec 20 2024 at 16:37)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="636743">Jonathan Arnoult</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories/near/490182809">said</a>:</p>
+<blockquote>
+<p>In the case of categories, equality of morphisms is part of the definition, while equality of objects is not necesssarily given, but here I guess that in the actual definition we still require to have a definition of equality (or an equivalence relation) on morphisms, even if we don't use it?</p>
+</blockquote>
+<p>If you suppose that you have a given equivalence relation on morphisms that is not just the ambient equality, you are working with E-categories and not the usual 1-categories. This is actually something that comes up a lot when formalizing category theory in proof assistants, especially when one doesn't want to postulate extensionality properties like funext</p>
+
+
+
+<a name="490195406"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equality%20in%20infinity%20categories/near/490195406" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Josselin Poiret <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories.html#490195406">(Dec 20 2024 at 16:37)</a>:</h4>
+<p>in any case, your ambient language lets you still ask whether two morphisms are equal propositionally, without any regard to your chosen equality relation. The same can be said for objects</p>
+
+
+
+<a name="490196312"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equality%20in%20infinity%20categories/near/490196312" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Madeleine Birchfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories.html#490196312">(Dec 20 2024 at 16:42)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories/near/490193054">said</a>:</p>
+<blockquote>
+<p>They do, however, run into problems <em>defining</em> untruncated <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>-categories.</p>
+</blockquote>
+<p>Not really. Daniel Gratzer, Jonathan Weinberger, and Ulrik Buchholtz in section 2.1 of their paper <a href="https://arxiv.org/pdf/2407.09146">Directed univalence in simplicial homotopy type theory</a> defined hom-types, Segal types, and Rezk types in terms of an arbitrary distributive lattice <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span> in ordinary dependent type theory. What becomes hard to do is proving various properties of untruncated <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>-categories since you have to transport identifications in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span> everywhere.</p>
+
+
+
+<a name="490212975"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equality%20in%20infinity%20categories/near/490212975" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories.html#490212975">(Dec 20 2024 at 18:42)</a>:</h4>
+<p>I didn't say the problems have no solutions!  Just that they exist.</p>
+
+
+
+<a name="490213076"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equality%20in%20infinity%20categories/near/490213076" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories.html#490213076">(Dec 20 2024 at 18:43)</a>:</h4>
+<p>And for the record, I wouldn't regard those as "definitions of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>-categories" in the ordinary way that people use the word "definition", as they are primarily synthetic rather than analytic.</p>
+
+
+
+<a name="490245312"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equality%20in%20infinity%20categories/near/490245312" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> daniel gratzer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories.html#490245312">(Dec 20 2024 at 23:35)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="671813">Madeleine Birchfield</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories/near/490196312">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories/near/490193054">said</a>:</p>
+<blockquote>
+<p>They do, however, run into problems <em>defining</em> untruncated <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>-categories.</p>
+</blockquote>
+<p>Not really. Daniel Gratzer, Jonathan Weinberger, and Ulrik Buchholtz in section 2.1 of their paper <a href="https://arxiv.org/pdf/2407.09146">Directed univalence in simplicial homotopy type theory</a> defined hom-types, Segal types, and Rezk types in terms of an arbitrary distributive lattice <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span> in ordinary dependent type theory.</p>
+</blockquote>
+<p>Just as a remark, this portion of the paper is summarizing the work by Emily Riehl and Mike Shulman in <a href="https://higher-structures.math.cas.cz/api/files/issues/Vol1Iss1/RiehlShulman">their paper</a> on the matter. There they also included <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">I</mi></mrow><annotation encoding="application/x-tex">\mathbb{I}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">I</span></span></span></span> as an additional sort of judgmental structure precisely to avoid needing quite so many transports. In our setting (with modalities and what not), including this judgmental structure was more headache than it was worth.</p>
+
+
+
+<a name="490271139"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Equality%20in%20infinity%20categories/near/490271139" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Equality.20in.20infinity.20categories.html#490271139">(Dec 21 2024 at 06:05)</a>:</h4>
+<p>There are "definitions" of untruncated <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>-category that can be given in type theories, but not, so far as is known, in "ordinary" dependent type theory.  It's possible in <a href="https://arxiv.org/abs/1705.03307">two-level type theory</a>, for instance, and ought to be possible in <a href="https://arxiv.org/abs/2311.18781">displayed type theory</a>.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

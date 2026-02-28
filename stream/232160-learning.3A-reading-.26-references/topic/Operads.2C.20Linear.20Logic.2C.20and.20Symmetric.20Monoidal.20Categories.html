@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Operads, Linear Logic, and Symmetric Monoidal Categories · learning: reading &amp; references · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/index.html">learning: reading &amp; references</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html">Operads, Linear Logic, and Symmetric Monoidal Categories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="489612127"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489612127" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Grossack (they/them) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489612127">(Dec 18 2024 at 03:28)</a>:</h4>
+<p>I'm (finally) learning about operads in a more serious way, and I think it's time to make precise a vague intuition that I've had for a long time (which I'm sure lots of other people have had). If people want, I can explain why I feel this way, but I think it will be obvious to most people who know all the words I'm about to say (and ideally, it should be so obvious that it's in the literature somewhere... But I've looked around, and I can't find anything).</p>
+<p>Is there a way to directly relate Operads, Linear Logic, and Symmetric Monoidal Categories? Perhaps after perturbing each of these slightly (for instance, maybe we want PROPs? Or we should specify that we mean the purely multiplicative fragement of linear logic? Or something else?)</p>
+<p>I know that there's an "enveloping symmetric monoidal category" attached to an operad. And I know that symmetric monoidal categories have linear logics as their internal logic... But has anybody written this up cleanly somewhere I can read about it? I would be interested in blog posts in addition to published literature.</p>
+<p>Thanks in advance! ^_^</p>
+
+
+
+<a name="489613869"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489613869" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489613869">(Dec 18 2024 at 03:48)</a>:</h4>
+<p>The internal language of symmetric monoidal categories is not linear logic, only a fragment of linear logic.  I think in our <a href="http://math.ucr.edu/home/baez/rosetta.pdf">Rosetta Stone paper</a>, Mike Stay and I gave a clear exposition of how symmetric monoidal <em>closed</em> categories have as their internal language a somewhat larger fragment called 'multiplicative intuitionistic linear logic' or MILL.   </p>
+<p>You can easily rip off the parts that come from the <em>closed</em> structure to get the internal language that works for any symmetric monoidal category.  But I believe most logicians would scarcely deign to call this a 'logic', because it's lacking 'implication'.</p>
+
+
+
+<a name="489614013"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489614013" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489614013">(Dec 18 2024 at 03:50)</a>:</h4>
+<p>Quite separately, there should be some reference that clearly explains the adjunction between (typed, aka 'colored') operads and symmetric monoidal categories.   This is something that everyone knows when they get old enough, but I don't know where it's written down.</p>
+
+
+
+<a name="489614105"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489614105" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489614105">(Dec 18 2024 at 03:51)</a>:</h4>
+<p>If you also rip off the tensor product, so you have a "logic" with no "connectives" at all, only structural rules, you get something corresponding to a colored operad.</p>
+
+
+
+<a name="489614201"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489614201" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489614201">(Dec 18 2024 at 03:52)</a>:</h4>
+<p>You might be interested in chapter 2 of my <a href="http://mikeshulman.github.io/catlog/catlog.pdf">categorical logic notes</a>.</p>
+
+
+
+<a name="489614344"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489614344" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489614344">(Dec 18 2024 at 03:54)</a>:</h4>
+<p>Or the first two sections of my blog post about <a href="https://golem.ph.utexas.edu/category/2009/10/generalized_operads_in_classic.html">Generalized Operads in Classical Algebraic Topology</a>.</p>
+
+
+
+<a name="489615769"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489615769" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489615769">(Dec 18 2024 at 04:08)</a>:</h4>
+<p>Representable Multicategories by Hermida details a very important relationship between operads and monoidal categories. I don’t know if this is the same as the enveloping SMC of an operad.</p>
+
+
+
+<a name="489618730"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489618730" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jean-Baptiste Vienney <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489618730">(Dec 18 2024 at 04:45)</a>:</h4>
+<p>Last summer I gave a talk about a generalization of monads and lax unbiased monoidal categories which is parametrized by a <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><annotation encoding="application/x-tex">\mathbf{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord mathbf">Set</span></span></span></span></span>-operad <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">O</mi></mrow><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.02778em;">O</span></span></span></span> (you get each of these notions for two special choices of the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><annotation encoding="application/x-tex">\mathbf{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord mathbf">Set</span></span></span></span></span>-operad <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">O</mi></mrow><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.02778em;">O</span></span></span></span>). I called this an <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">O</mi></mrow><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.02778em;">O</span></span></span></span>-category. I've almost forgotten about this but there are still my slides online. Maybe you will find this fun and useful, or not. Anyway, this is here:<br>
+<a href="https://cspages.ucalgary.ca/~robin/FMCS/FMCS2024/slides/FMCS2024-Vienney.pdf">slides</a><br>
+(the main def is on slide 7)</p>
+
+
+
+<a name="489619424"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489619424" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Grossack (they/them) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489619424">(Dec 18 2024 at 04:55)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/channel/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories/near/489613869">said</a>:</p>
+<blockquote>
+<p>You can easily rip off the parts that come from the <em>closed</em> structure to get the internal language that works for any symmetric monoidal category.  But I believe most logicians would scarcely deign to call this a 'logic', because it's lacking 'implication'.</p>
+</blockquote>
+<p>Yeah, this is what I meant by the "purely multiplicative fragment" in my initial post.</p>
+
+
+
+<a name="489619580"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489619580" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Grossack (they/them) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489619580">(Dec 18 2024 at 04:56)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/channel/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories/near/489614013">said</a>:</p>
+<blockquote>
+<p>Quite separately, there should be some reference that clearly explains the adjunction between (typed, aka 'colored') operads and symmetric monoidal categories.   This is something that everyone knows when they get old enough, but I don't know where it's written down.</p>
+</blockquote>
+<p>Yeah, I can intuit its existence and what it should roughly look like... And I think Todd actually told me some stuff about it when we were talking. But I would still love a reference if possible. If there <em>isn't</em> one, I might figure all this stuff out and write a blog post or a TAC:E paper on it... Or maybe once I'm a postdoc I'll get an undergrad to write one as a project.</p>
+
+
+
+<a name="489619667"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489619667" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Grossack (they/them) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489619667">(Dec 18 2024 at 04:57)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/channel/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories/near/489614201">said</a>:</p>
+<blockquote>
+<p>You might be interested in chapter 2 of my <a href="http://mikeshulman.github.io/catlog/catlog.pdf">categorical logic notes</a>.</p>
+<p>Or the first two sections of my blog post about <a href="https://golem.ph.utexas.edu/category/2009/10/generalized_operads_in_classic.html">Generalized Operads in Classical Algebraic Topology</a>.</p>
+</blockquote>
+<p>Amazing! I'll look into these tomorrow, thanks!</p>
+
+
+
+<a name="489620381"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489620381" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jean-Baptiste Vienney <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489620381">(Dec 18 2024 at 05:02)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="278546">Chris Grossack (they/them)</span> <a href="#narrow/channel/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories/near/489619424">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/channel/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories/near/489613869">said</a>:</p>
+<blockquote>
+<p>You can easily rip off the parts that come from the <em>closed</em> structure to get the internal language that works for any symmetric monoidal category.  But I believe most logicians would scarcely deign to call this a 'logic', because it's lacking 'implication'.</p>
+</blockquote>
+<p>Yeah, this is what I meant by the "purely multiplicative fragment" in my initial post.</p>
+</blockquote>
+<p>The difficulty with using this terminology is that multiplicative linear logic usually refers to the fragment which is the syntax for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∗</mo></mrow><annotation encoding="application/x-tex">*</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span></span></span></span>-autonomous categories.</p>
+
+
+
+<a name="489620480"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489620480" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jean-Baptiste Vienney <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489620480">(Dec 18 2024 at 05:03)</a>:</h4>
+<p>I would say "the fragment <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⊗</mo><mo separator="true">,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\otimes,1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">⊗</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span></span></span></span>" of linear logic I think.</p>
+
+
+
+<a name="489625275"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489625275" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489625275">(Dec 18 2024 at 05:59)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275914">Joe Moeller</span> <a href="#narrow/channel/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories/near/489615769">said</a>:</p>
+<blockquote>
+<p>Representable Multicategories by Hermida details a very important relationship between operads and monoidal categories. I don’t know if this is the same as the enveloping SMC of an operad.</p>
+</blockquote>
+<p>Yes, I think it is.</p>
+
+
+
+<a name="489626316"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489626316" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489626316">(Dec 18 2024 at 06:08)</a>:</h4>
+<p>Here's a paper that cites a theorem in which Lurie set up an adjunction between the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>-categories of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>-operads and symmetric monoidal <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span>-categories:</p>
+<ul>
+<li>Rune Haugesang and Joachim Kock, <a href="https://mat.uab.cat/pubmat/fitxers/download/FileType:pdf/FolderName:v68%281%29/FileName:6812406.pdf">∞-operads as symmetric monoidal ∞-categories</a>.</li>
+</ul>
+<p>Of course <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord">∞</span></span></span></span> here means <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∞</mi><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(\infty,1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">∞</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span>.</p>
+
+
+
+<a name="489626963"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489626963" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489626963">(Dec 18 2024 at 06:15)</a>:</h4>
+<p>The 1-categorical version is certainly folklore.  I don't know the earliest reference, unfortunately.</p>
+
+
+
+<a name="489703094"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489703094" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489703094">(Dec 18 2024 at 08:24)</a>:</h4>
+<p>In the "multicategory" literature, Hermida's paper is the usual reference for the relationship between nonsymmetric monoidal categories and nonsymmetric multicategories. (I'm not familiar enough with the "operad" literature to be sure it wasn't observed in the literature there earlier, but Hermida's analysis is certainly the most thorough.) For the relationship between symmetric monoidal categories and symmetric multicategories, my impression is that the earliest reference is Weber's <a href="https://arxiv.org/abs/0909.4722">Free products of higher operad algebras</a>.</p>
+
+
+
+<a name="489703636"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489703636" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489703636">(Dec 18 2024 at 08:28)</a>:</h4>
+<p>(Ssimply the existence of the adjunction without any study of representability is present earlier than Weber's paper, e.g. in Elmendorf and Mandell's <a href="https://arxiv.org/abs/0710.0082">Permutative categories, multicategories, and algebraic K-theory</a>.)</p>
+
+
+
+<a name="489704108"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489704108" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489704108">(Dec 18 2024 at 08:31)</a>:</h4>
+<p>I thought of Elmendorf and Mandell, but when I glanced back at it I didn't see the whole adjunction, only the inclusion from monoidal categories to multicategories.  Do they also construct its adjoint?</p>
+
+
+
+<a name="489704285"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489704285" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489704285">(Dec 18 2024 at 08:32)</a>:</h4>
+<p>They give the left adjoint in Theorem 4.2.</p>
+
+
+
+<a name="489704300"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489704300" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489704300">(Dec 18 2024 at 08:32)</a>:</h4>
+<p>Ah, ok, thanks.</p>
+
+
+
+<a name="489704359"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489704359" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489704359">(Dec 18 2024 at 08:32)</a>:</h4>
+<p>There's also a general study of representability in Geoff Cruttwell's and my paper <a href="https://arxiv.org/abs/0907.2460">A unified framework for generalized multicategories</a>, with symmetric multicategories discussed briefly as an example.</p>
+
+
+
+<a name="489704371"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489704371" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489704371">(Dec 18 2024 at 08:32)</a>:</h4>
+<p>(They also observe the adjunction is comonadic, which is something that Hermida doesn't observe.)</p>
+
+
+
+<a name="489818012"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489818012" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489818012">(Dec 18 2024 at 18:29)</a>:</h4>
+<p>I'm going to put some of these references into the nLab.   I want to make it easier for people to learn about the adjunction between operads / multicategories and symmetric / monoidal categories.</p>
+
+
+
+<a name="489823320"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489823320" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489823320">(Dec 18 2024 at 19:02)</a>:</h4>
+<p>I already added the properties in the nonsymmetric setting to the multicategories page (<a href="https://ncatlab.org/nlab/show/multicategory#relation_to_monoidal_categories">multicategory#relation to monoidal categories</a>), though it would be good also to mention the symmetric case.</p>
+
+
+
+<a name="489826404"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489826404" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> philip hackney <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489826404">(Dec 18 2024 at 19:20)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/channel/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories/near/489626963">said</a>:</p>
+<blockquote>
+<p>The 1-categorical version is certainly folklore.  I don't know the earliest reference, unfortunately.</p>
+</blockquote>
+<p>When <span class="user-mention" data-user-id="276679">@Jonathan Beardsley</span>  and I were working on <a href="https://arxiv.org/abs/2206.00698">Labelled cospan categories and properads</a> together, I tried so had to track down early references to this adjunction. I don't think we had a satisfying conclusion though.</p>
+
+
+
+<a name="489826810"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489826810" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489826810">(Dec 18 2024 at 19:23)</a>:</h4>
+<p>Did you find any earlier references than those mentioned already?</p>
+
+
+
+<a name="489832748"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489832748" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> philip hackney <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489832748">(Dec 18 2024 at 20:05)</a>:</h4>
+<p>Looking back, I think my previous message was not quite right: we were instead looking for characterizations of operads among symmetric monoidal categories.</p>
+
+
+
+<a name="489854594"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489854594" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489854594">(Dec 18 2024 at 22:48)</a>:</h4>
+<p>I <a href="https://ncatlab.org/nlab/show/operad#relation_to_monoidal_categories">added some references to the nLab</a> about the adjunction between operads and monoidal categories, but I haven't managed to extract any information from Weber's paper yet.</p>
+
+
+
+<a name="489855475"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489855475" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489855475">(Dec 18 2024 at 22:55)</a>:</h4>
+<p>It's a little awkward that the pages for <a href="https://ncatlab.org/nlab/show/operad">[[operad]]</a> and <a href="https://ncatlab.org/nlab/show/multicategory">[[multicategory]]</a> are separate, as they repeat content at the moment.</p>
+
+
+
+<a name="489857525"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489857525" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489857525">(Dec 18 2024 at 23:11)</a>:</h4>
+<p>Yup, but I'm too lazy to deal with that.  I will kick the can down the road and copy my additions to the <a href="https://ncatlab.org/nlab/show/multicategory">[[multicategory]]</a> page.</p>
+
+
+
+<a name="489894935"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Operads%2C%20Linear%20Logic%2C%20and%20Symmetric%20Monoidal%20Categories/near/489894935" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Operads.2C.20Linear.20Logic.2C.20and.20Symmetric.20Monoidal.20Categories.html#489894935">(Dec 19 2024 at 06:32)</a>:</h4>
+<p>Okay, I dug into Weber's paper a bit, and used this to bridge the gap between the nLab sections</p>
+<ul>
+<li><a href="https://ncatlab.org/nlab/show/operad#relation_to_symmetric_monoidal_categories">Operad: relation to symmetric monoidal categories</a> </li>
+</ul>
+<p>and </p>
+<ul>
+<li><a href="https://ncatlab.org/nlab/show/multicategory#relation_to_monoidal_categories">Multicategory: relation to monoidal categories</a>.  </li>
+</ul>
+<p>I think the references in these sections should give you a lot to chew on regarding the "enveloping symmetric monoidal category" of an operad, <span class="user-mention" data-user-id="278546">@Chris Grossack (they/them)</span> - and also the corresponding non-symmetric story.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+[
+    {
+        "content": "<p>I am looking for a reference that states that if you have a strong monoidal functor F : <strong>A</strong> → <strong>B</strong> between monoidal categories, then if M is a monoid object in <strong>A</strong>, then FM is a monoid object in <strong>B</strong> and if a : M × A → A is a monoid action in <strong>A</strong>, then Fa ∘ μ, where μ : FA ⊗ FB → F(A ⊗ B), is a monoid action in <strong>B</strong>.</p>",
+        "id": 431661922,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1712399534
+    },
+    {
+        "content": "<p>Having only a lax functor is sufficient. It is explained in the case of monoids for example in section 6.2 of <a href=\"https://www.irif.fr/~mellies/mpri/mpri-ens/biblio/categorical-semantics-of-linear-logic.pdf\">Categorical semantics of linear logic</a> by Paul-André Melliès.</p>",
+        "id": 431668537,
+        "sender_full_name": "Vincent Moreau",
+        "timestamp": 1712406163
+    },
+    {
+        "content": "<p>Thanks for the reference. It does not seem to deal with monoid actions though. Also, I think you need the functor to be strong monoidal to preserve monoid actions.</p>",
+        "id": 431671734,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1712408519
+    },
+    {
+        "content": "<p>Lax monoidal functors preserve monoid actions. One explanation is that a lax monoidal functor between monoidal categories is the same as a map between their underlying multicategories (and monoids as well as monoid actions live in multicategories). This correspondence appears as Example 2.1.10 in Tom Leinster's book Higher Operads, Higher Categories.</p>",
+        "id": 431676505,
+        "sender_full_name": "Aaron David Fairbanks",
+        "timestamp": 1712412586
+    },
+    {
+        "content": "<p>I don't think I can get away with that explanation at my current level of understanding. Proving part of the associativity of the action requires going from FM ⊗ (FM ⊗ FA) → FM ⊗ FA and I don't see how you can argue this without invoking μ⁻¹.</p>",
+        "id": 431682944,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1712417877
+    },
+    {
+        "content": "<p>You can prove the associativity of the image of an action in exactly the same way you prove associativity of the image of a monoid itself, just using the three objects M,M,A instead of the three objects M,M,M.</p>",
+        "id": 431683248,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1712418150
+    },
+    {
+        "content": "<p>Hmm... I guess I can use associativity of ⊗ first, combine FM ⊗ FM using μ, and then end up with FM ⊗ FA.</p>",
+        "id": 431683254,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1712418161
+    },
+    {
+        "content": "<p>building the two morphisms doesn't require using <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>μ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding=\"application/x-tex\"> \\mu^{-1} </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0085em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">μ</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">−</span><span class=\"mord mtight\">1</span></span></span></span></span></span></span></span></span></span></span></span> though, you just use the lax structure morphisms of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\"> F </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> either on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mi>M</mi><mo>⊗</mo><mi>F</mi><mi>M</mi></mrow><annotation encoding=\"application/x-tex\"> FM \\otimes FM </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">FM</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">FM</span></span></span></span> or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mi>M</mi><mo>⊗</mo><mi>F</mi><mi>A</mi></mrow><annotation encoding=\"application/x-tex\"> FM \\otimes FA </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">FM</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mord mathnormal\">A</span></span></span></span></p>",
+        "id": 431683257,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1712418163
+    },
+    {
+        "content": "<p>OK, I'm convinced that it's enough with F being lax.</p>",
+        "id": 431683285,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1712418202
+    },
+    {
+        "content": "<p>I wanted to quote a reference, but I guess I can just say \"(exercise for the reader)\".</p>",
+        "id": 431683345,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1712418243
+    },
+    {
+        "content": "<p>There has got to be a reference somewhere that not only states these results but proves them!  I'm in favor of citing references with proofs even if the proofs are \"well-known\", because nobody knows all \"well-known\" results.  </p>\n<p>Unfortunately while <em>Categories For The Working Mathematician</em> defines lax monoidal functors (which Mac Lane calls simply \"monoidal functors\"!) and monoids in monoidal categories, it doesn't seem to state the facts we're talking about, not even that lax monoidal functors send monoids to monoids.</p>",
+        "id": 431689126,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712423255
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids/near/431689126\">said</a>:</p>\n<blockquote>\n<p>Unfortunately while <em>Categories For The Working Mathematician</em> defines lax monoidal functors (which Mac Lane calls simply \"monoidal functors\"!)</p>\n</blockquote>\n<p>That terminology is pretty common in older literature particularly.</p>",
+        "id": 431689798,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1712423786
+    },
+    {
+        "content": "<p>Another place one might look for \"standard facts\" is Borceux's 3-volume handbook, but I forget how much he says about monoidal categories and I've run out of energy for looking up references.</p>",
+        "id": 431690305,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712424234
+    },
+    {
+        "content": "<p>I just checked Vol. 1 and 2 - there is nothing about monoidal functors. I doubt Vol. 3 would have anything in this regard given that it's about sheaf theory.</p>",
+        "id": 431691058,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1712424875
+    },
+    {
+        "content": "<p>Okay, thanks.  There should be a good reference book on monoidal categories that proves these basic facts, but I don't know if it exists yet!</p>",
+        "id": 431691871,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712425686
+    },
+    {
+        "content": "<p>I thought Tholen's book Monoidal Topology would have it, but it does not talk about monoidal functors weirdly enough.</p>",
+        "id": 431692991,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1712426660
+    },
+    {
+        "content": "<p>The massive book <a href=\"https://pi.math.cornell.edu/~maguiar/a.pdf\">Monoidal functors, species and Hopf algebras</a> states and proves that lax monoidal functors preserve monoids in Proposition 3.29.</p>",
+        "id": 431694793,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1712428181
+    },
+    {
+        "content": "<p>They do it the slick way, by observing that a monoid <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span> in a monoidal category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span> can be identified with a lax monoidal functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>:</mo><mn>1</mn><mo>→</mo><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">M: 1 \\to \\mathcal{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span> and post-composing.</p>",
+        "id": 431694892,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1712428239
+    },
+    {
+        "content": "<p>Oh, great!  I like that book.  So there's a good reference... just remember to point out the actual proposition number so readers don't need to look through the whole book.  <span aria-label=\"wink\" class=\"emoji emoji-1f609\" role=\"img\" title=\"wink\">:wink:</span></p>",
+        "id": 431696081,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712429103
+    },
+    {
+        "content": "<p>I will check that book out. Thanks.</p>",
+        "id": 431697002,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1712429689
+    },
+    {
+        "content": "<p>I don't know if that book tackles your other question: whether lax monoidal functors preserve monoid <em>actions</em>.  Please let me know if you find out!</p>",
+        "id": 431703112,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712434910
+    },
+    {
+        "content": "<p>I had a look. Unfortunately, it does not have the result about preserving monoid actions.</p>",
+        "id": 431710981,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1712442996
+    },
+    {
+        "content": "<p>Can you instantiate Lemma 3.3.7 in <a href=\"https://arxiv.org/abs/2203.16351\">Actegories for the Working Amthematician</a> to get what you want?</p>",
+        "id": 431734919,
+        "sender_full_name": "Ralph Sarkis",
+        "timestamp": 1712469150
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284005\">Ralph Sarkis</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Strong.20monoidal.20functors.20preserve.20monoids/near/431734919\">said</a>:</p>\n<blockquote>\n<p>Can you instantiate Lemma 3.3.7 in <a href=\"https://arxiv.org/abs/2203.16351\">Actegories for the Working Amthematician</a> to get what you want?</p>\n</blockquote>\n<p>Oh, that's interesting. It says \"Any action of a monoid M on a set X is a 'discrete actegory', but it does not deal with the general case of monoid actions in a monoidal category.</p>",
+        "id": 431747269,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1712480978
+    },
+    {
+        "content": "<p>Maybe you could find references for the following points and piece it together from them:</p>\n<ul>\n<li>Monad structures on the functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>⊗</mo><mo stretchy=\"false\">(</mo><mo>−</mo><mo stretchy=\"false\">)</mo><mo>:</mo><mi mathvariant=\"script\">M</mi><mo>→</mo><mi mathvariant=\"script\">M</mi></mrow><annotation encoding=\"application/x-tex\">M \\otimes (-) : \\mathcal M \\to \\mathcal M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\">M</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\">M</span></span></span></span> are equivalent to monoid structures on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span></li>\n<li>Lax monoidal functors <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><mi mathvariant=\"script\">M</mi><mo>→</mo><mi mathvariant=\"script\">N</mi></mrow><annotation encoding=\"application/x-tex\">F : \\mathcal M \\to \\mathcal N</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\">M</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.14736em;\">N</span></span></span></span> send monoids to monoids, and so induce monad morphisms <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"script\">M</mi><mo separator=\"true\">,</mo><mi>M</mi><mo>⊗</mo><mo stretchy=\"false\">(</mo><mo>−</mo><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo><mo>→</mo><mo stretchy=\"false\">(</mo><mi mathvariant=\"script\">N</mi><mo separator=\"true\">,</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>M</mi><mo stretchy=\"false\">)</mo><mo>⊗</mo><mo stretchy=\"false\">(</mo><mo>−</mo><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\mathcal M, M \\otimes (-)) \\to (\\mathcal N, F(M) \\otimes (-))</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathcal\">M</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mclose\">))</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathcal\" style=\"margin-right:0.14736em;\">N</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mclose\">))</span></span></span></span></li>\n<li>Monad morphisms induce functors between their categories of algebras, so <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> induces a functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"bold\">A</mi><mi mathvariant=\"bold\">l</mi><mi mathvariant=\"bold\">g</mi></mrow><mi mathvariant=\"script\">M</mi></msub><mo stretchy=\"false\">(</mo><mi>M</mi><mo>⊗</mo><mo stretchy=\"false\">(</mo><mo>−</mo><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo><mo>→</mo><msub><mrow><mi mathvariant=\"bold\">A</mi><mi mathvariant=\"bold\">l</mi><mi mathvariant=\"bold\">g</mi></mrow><mi mathvariant=\"script\">N</mi></msub><mo stretchy=\"false\">(</mo><mi>F</mi><mo stretchy=\"false\">(</mo><mi>M</mi><mo stretchy=\"false\">)</mo><mo>⊗</mo><mo stretchy=\"false\">(</mo><mo>−</mo><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Alg}_{\\mathcal M}(M \\otimes (-)) \\to \\mathbf{Alg}_{\\mathcal N}(F(M) \\otimes (-))</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbf\" style=\"margin-right:0.01597em;\">Alg</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2342em;\"><span style=\"top:-2.4559em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathcal mtight\">M</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2441em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mclose\">))</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathbf\" style=\"margin-right:0.01597em;\">Alg</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2342em;\"><span style=\"top:-2.4559em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathcal mtight\" style=\"margin-right:0.14736em;\">N</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2441em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mclose\">))</span></span></span></span></li>\n<li>An algebra for a monad <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>⊗</mo><mo stretchy=\"false\">(</mo><mo>−</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">M \\otimes (-)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mclose\">)</span></span></span></span> is equivalently an monoid action of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span></li>\n</ul>",
+        "id": 431775126,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1712498814
+    },
+    {
+        "content": "<p>Of course another approach is to write a little appendix proving the results you need, so future generations can cite it!</p>",
+        "id": 431808264,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712517404
+    },
+    {
+        "content": "<p>I think it's really helpful to turn \"folklore\" into citable propositions with numbers like Prop. 39.  When I do this, I admit that the results are well-known (by those who know them well).</p>",
+        "id": 431808687,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712517598
+    }
+]

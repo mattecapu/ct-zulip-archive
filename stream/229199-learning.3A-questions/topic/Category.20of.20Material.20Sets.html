@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Category of Material Sets · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Category.20of.20Material.20Sets.html">Category of Material Sets</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="424683877"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Category%20of%20Material%20Sets/near/424683877" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Category.20of.20Material.20Sets.html#424683877">(Mar 04 2024 at 15:37)</a>:</h4>
+<p>When we learn about category theory, we typically view it as a structuralist way of approaching math. For instance, in Set, the elements of a set are abstract points and so two sets with the same number of elements, regardless of what those elements represent, are isomorphic (essentially the same). This contrasts with material set theory and material sets, in which membership is well defined and the elements of sets are sets themselves.<br>
+That said, I recently thought of a way of potentially doing material set theory in category theory! First, consider a set is actually a kind of category- more precisely, a set can be viewed as a discrete category where the only morphisms are the identities on the objects, which represent the elements of that set. Now consider a functor from a discrete category to a category C: the functor represents an assignment of an object in C to each element of the discrete category. In essence, it is a relabeling of the abstract points of the set with more "concrete" structures, those being the objects in C, and so we can view the functor itself as a set of objects of C. If we let C = Set, then we get a functor assigning each element/object of our set/discrete category to a set in Set, and thus we end up with a "set of sets". We can then take a presheaf category [Discrete, Set] to be a "category of sets of sets". Of course, we can do this process over and over again: [Discrete, [Discrete, Set]] is a category of sets of sets of sets, and so on. The morphisms in such categories of material sets are not functions, but rather seem to be hierarchical maps between all layers of these material sets. Still, I believe one can define membership of a set S into a set of sets T internally to a category of sets of sets by considering S as [S], a set of sets with one element that is S (so for instance we would make the set [A, B, C] into the set of sets <a href="https://ncatlab.org/nlab/show/A%2C%20B%2C%20C">[[A, B, C]]</a>) and then identify an injection (monomorphism?) of [S] into T. In addition, there's probably some functor from these categories back to Set that "forgets" the set structure of the elements of the top level set and returns them to being abstract points again.<br>
+I'm just curious about whether I've stumbled into anything important or relevant. Has this construction been done before, what are its uses and limitations, and what are some of its properties? Also, how do size issues factor in (since after all we are constructing sets of sets, and Russell's paradox deals with a particular set of sets, so it's probably bound to come into play in some fashion!)</p>
+
+
+
+<a name="424740598"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Category%20of%20Material%20Sets/near/424740598" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Category.20of.20Material.20Sets.html#424740598">(Mar 04 2024 at 20:24)</a>:</h4>
+<p>What does "Discrete" represent in your description? Is it a single fixed discrete category? Or is it a category of discrete categories?</p>
+
+
+
+<a name="424768388"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Category%20of%20Material%20Sets/near/424768388" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Category.20of.20Material.20Sets.html#424768388">(Mar 04 2024 at 23:49)</a>:</h4>
+<p>I will point out that a functor from a set S, considered as a discrete category, to Set, gives a function whose codomain is S: the fibre over a element of S is the value of the functor at that element.</p>
+<p>I suspect that the second stage of what you have described gives another such map, and together these define a certain tree structure (of  low height: branches of length no more than 2). The idea that material sets can be considered as certain tree structures goes back to when people in the 1970s were thinking about how to model the class of pure sets using a topos.</p>
+
+
+
+<a name="424787391"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Category%20of%20Material%20Sets/near/424787391" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Category.20of.20Material.20Sets.html#424787391">(Mar 05 2024 at 03:21)</a>:</h4>
+<p><span class="user-mention" data-user-id="277473">@Morgan Rogers (he/him)</span> It would be a single fixed discrete category. I wasn't sure how one would be able to define a category of all sets of sets, only categories of sets of sets with some number of elements (which would be given by the number of objects of the discrete category). Maybe there's some way of defining it through a Grothendieck construction, since those are good at combining categories together in coherent ways. Perhaps it could be expressed as the Grothendieck construction of a pseudofunctor from Set to Cat that sends a set Disc to the category [Disc, Set]? However I'm sure there's some size issue involved there, so let me know if this even makes any sense to do!<br>
+<span class="user-mention" data-user-id="276422">@David Michael Roberts</span> That's interesting! Is this interpretation of a functor from a discrete category complementary or contradictory to my interpretation of it being a set of sets? Also, I've never heard of sets being considered as tree structures, would you have any more info on this?</p>
+
+
+
+<a name="424789678"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Category%20of%20Material%20Sets/near/424789678" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Category.20of.20Material.20Sets.html#424789678">(Mar 05 2024 at 03:50)</a>:</h4>
+<p><a href="https://ncatlab.org/nlab/show/pure+set#membership_trees">https://ncatlab.org/nlab/show/pure+set#membership_trees</a></p>
+
+
+
+<a name="424790208"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Category%20of%20Material%20Sets/near/424790208" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Category.20of.20Material.20Sets.html#424790208">(Mar 05 2024 at 03:58)</a>:</h4>
+<p>This goes back to Cole (near impossible to find), Mitchell (<a href="https://doi.org/10.1016/0022-4049(72)90006-0">https://doi.org/10.1016/0022-4049(72)90006-0</a>) and Osius (<a href="https://doi.org/10.1016/0022-4049(74)90032-2">https://doi.org/10.1016/0022-4049(74)90032-2</a>). You can see a treatment in <span class="user-mention" data-user-id="276777">@Mike Shulman</span> 's <a href="https://arxiv.org/abs/1808.05204">https://arxiv.org/abs/1808.05204</a>, section 8.</p>
+
+
+
+<a name="424790736"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Category%20of%20Material%20Sets/near/424790736" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Category.20of.20Material.20Sets.html#424790736">(Mar 05 2024 at 04:05)</a>:</h4>
+<p>If you have a function p: X -&gt; Y between sets, then you can consider Y to "be" the multiset of the sets {X_y}. The conditions people place on the map p to correspond to an actual set (and not a multiset) more-or-less tell you that the fibres X_y = p^{-1}(y) are distinct, in some appropriate way. If you subsequently have a functor X --&gt; Set, then you get a further function q: W -&gt; X, and then the fibres W_x of this are sets. And then you can consider {W_x | x \in X_y} as being the set of sets corresponding to X_y (again, really a multiset, but it can have conditions to pin it down to a set), and then you have encoded a little bit of the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>∈</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">∈</span></span></span></span>-tree attached to Y, namely each y labels a set X_y, and then each x \in X_y labels a set W_x. </p>
+<p>One needs to do a bit of work to connect this to both what you are describing (but I think one might hit the limits of what is workable at some point) and the more standard viewpoint as described in Mike's article. But I hope the idea is reasonable.</p>
+
+
+
+<a name="424796194"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Category%20of%20Material%20Sets/near/424796194" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Category.20of.20Material.20Sets.html#424796194">(Mar 05 2024 at 04:57)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="673117">John Onstead</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Category.20of.20Material.20Sets/near/424787391">said</a>:</p>
+<blockquote>
+<p>Also, I've never heard of sets being considered as tree structures, would you have any more info on this?</p>
+</blockquote>
+<p>The idea is is that in Zermelo-Fraenkel set theory and other forms of "material" set theory, a set <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> is determined by its members, which are also sets, and thus determined by their members, and so on... so we get a <a href="https://en.wikipedia.org/wiki/Tree_(graph_theory)#Rooted_tree">rooted tree</a> where the root is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>, its children are its elements, their children are their elements, and so on, with the leaves all being copies of the empty set.  In material set theory this is what a set <em>is</em>.</p>
+
+
+
+<a name="424895868"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Category%20of%20Material%20Sets/near/424895868" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Category.20of.20Material.20Sets.html#424895868">(Mar 05 2024 at 15:34)</a>:</h4>
+<p>This all is very interesting, I've had a bit of a look so far and will be examining this further. The way of depicting material sets in graph form is a very natural and intuitive way of representing them, and it seems from the papers (from what I saw so far, and from my limited understanding) that it opens up connections when it comes to discussing internal logic- that is, relating the internal structural set theories of certain topoi to corresponding material formulations. Thus it makes more sense why this would be the "standard viewpoint" as opposed to the construction I outlined. <br>
+I thought a bit about the function vs graph/tree way of representing sets. The connection might be related to some form of "graph" of a function- not in the usual sense (the pullback) but rather a directed graph. For a function A -&gt; B one can imagine a graph whose vertices are the elements of both A and B and the edges have an element in A as their source and an element in B as their target if the function maps that element of A to that element of B. In a category theory way, it is the graph s,t: A -&gt; A + B such that s is the inclusion of A into A + B and t is the composition of the function A -&gt; B we are "graphing" with the inclusion of B into A + B. In this case, one can imagine any set A as a graph by getting the "graph" of the constant function A -&gt; *. The vertices that are elements of A represent precisely the elements of A, and the single vertex for * represents the set A itself and so the "root" of the tree, so the arrows from the elements of A to * in this graph represent the inclusions. One can add another layer to the tree by considering a function into A from another set, in which case one can draw the three-way "graph" (of course, where this function follows the appropriate distinction condition as mentioned) and then continue for arbitrarily long chains of functions. I'm hoping this makes sense and that I did indeed properly understand everything!</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

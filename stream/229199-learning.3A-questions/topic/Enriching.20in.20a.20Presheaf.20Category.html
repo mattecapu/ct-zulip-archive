@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Enriching in a Presheaf Category · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Enriching.20in.20a.20Presheaf.20Category.html">Enriching in a Presheaf Category</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="436706732"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Enriching%20in%20a%20Presheaf%20Category/near/436706732" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Enriching.20in.20a.20Presheaf.20Category.html#436706732">(May 02 2024 at 14:25)</a>:</h4>
+<p>When you want to enrich in a category, a good base of enrichment usually consists of a symmetric closed monoidal category, perhaps also requiring limits or colimits. If the category you want to enrich in lacks this structure, it becomes difficult to describe a consistent Yoneda theory for categories enriched in it, and do all the things you ordinarily would want to do in category theory. </p>
+<p>So here's my question: why can't you "enrich" in an arbitrary category C, perhaps a monoidal category without these key structures, simply by enriching instead in its presheaf category [C^op, Set]? After all, presheaf categories are toposes, so they have all the good properties you would want from a base of enrichment. The only requirement would then to ensure that all hom functors from categories enriched in [C^op, Set] into [C^op, Set] land in the image of the yoneda embedding C -&gt; [C^op, Set] so that all hom objects can be thought of as being objects of C.</p>
+
+
+
+<a name="436721592"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Enriching%20in%20a%20Presheaf%20Category/near/436721592" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Enriching.20in.20a.20Presheaf.20Category.html#436721592">(May 02 2024 at 15:35)</a>:</h4>
+<blockquote>
+<p>So here's my question: why can't you "enrich" in an arbitrary category C, perhaps a monoidal category without these key structures, simply by enriching instead in its presheaf category [C^op, Set]?</p>
+</blockquote>
+<p>You can, and this leads naturally to the notion of <a href="https://ncatlab.org/nlab/show/locally%20graded%20category">[[locally graded category]]</a>.</p>
+
+
+
+<a name="436722220"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Enriching%20in%20a%20Presheaf%20Category/near/436722220" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Enriching.20in.20a.20Presheaf.20Category.html#436722220">(May 02 2024 at 15:38)</a>:</h4>
+<blockquote>
+<p>If the category you want to enrich in lacks this structure, it becomes difficult to describe a consistent Yoneda theory for categories enriched in it, and do all the things you ordinarily would want to do in category theory.</p>
+</blockquote>
+<p>Although I would also counter this: I think it is an easy impression to get, because most authors work with a lot of structure on their bases of enrichment for convenience, but category theory behaves well even without all of these assumptions. One of the main obstructions it that a lot of the basic theory has not been developed (e.g. to the level of Kelly's <em>Basic concepts</em>), which makes it inconvenient to do.</p>
+
+
+
+<a name="436722348"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Enriching%20in%20a%20Presheaf%20Category/near/436722348" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Enriching.20in.20a.20Presheaf.20Category.html#436722348">(May 02 2024 at 15:39)</a>:</h4>
+<p>(This is one of the motivations for developing formal category theory.)</p>
+
+
+
+<a name="436783616"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Enriching%20in%20a%20Presheaf%20Category/near/436783616" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Onstead <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Enriching.20in.20a.20Presheaf.20Category.html#436783616">(May 02 2024 at 22:01)</a>:</h4>
+<p>Thanks, this seems to answer the question. I have heard of a "locally graded category" before. but I suppose I hadn't connected these two ideas together! I'll certainly have to check out more about them and what they can be used for.</p>
+
+
+
+<a name="436823262"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Enriching%20in%20a%20Presheaf%20Category/near/436823262" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Enriching.20in.20a.20Presheaf.20Category.html#436823262">(May 03 2024 at 06:12)</a>:</h4>
+<p>It's not true that you can enrich in an interesting way over an arbitrary monoidal category, and I expect that may remain the case even if one extends to presheaves. See <a href="https://mathoverflow.net/a/452029/95129">this MO answer</a> I wrote about the fact that enrichment sometimes trivialises. Of course there will be at least some morphisms to consider once you take presheaves on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi></mrow><annotation encoding="application/x-tex">V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span></span></span></span>, so I'll be interested to hear if that gives some non-trivial categories or if you just end up being essentially Set-enriched.</p>
+
+
+
+<a name="438746765"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Enriching%20in%20a%20Presheaf%20Category/near/438746765" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Staton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Enriching.20in.20a.20Presheaf.20Category.html#438746765">(May 15 2024 at 08:02)</a>:</h4>
+<p>Sorry I'm late. Just to note following your original question <span class="user-mention" data-user-id="673117">@John Onstead</span> that even Kelly does indeed suggest to use this Yoneda universe enlargement at the end of Ch 2 and spelt out in 3.11 of <a href="http://www.tac.mta.ca/tac/reprints/articles/10/tr10.pdf">Basic concepts</a>.</p>
+
+
+
+<a name="438747923"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Enriching%20in%20a%20Presheaf%20Category/near/438747923" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Sam Staton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Enriching.20in.20a.20Presheaf.20Category.html#438747923">(May 15 2024 at 08:09)</a>:</h4>
+<p><span class="user-mention" data-user-id="277473">@Morgan Rogers (he/him)</span> it's a nice illustration in your MO post. I agree that enrichment in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">S</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow><mrow><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\mathrm{FinSet}_{\mathrm{bij}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">FinSet</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">bij</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> is useless. However, enrichment in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><msub><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">S</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow><mrow><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">j</mi></mrow></msub><mo separator="true">,</mo><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[\mathrm{FinSet}_{\mathrm{bij}},\mathbf{Set}]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mopen">[</span><span class="mord"><span class="mord"><span class="mord mathrm">FinSet</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">bij</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathbf">Set</span></span><span class="mclose">]</span></span></span></span> is really useful. For example, a <a href="https://ncatlab.org/nlab/show/PROP">PROP</a> can be regarded as the same thing as an <a href="https://ncatlab.org/nlab/show/enriched+monad">enriched monad</a> on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><msub><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">S</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow><mrow><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">j</mi></mrow></msub><mo separator="true">,</mo><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[\mathrm{FinSet}_{\mathrm{bij}},\mathbf{Set}]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mopen">[</span><span class="mord"><span class="mord"><span class="mord mathrm">FinSet</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">bij</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathbf">Set</span></span><span class="mclose">]</span></span></span></span> that is commutative and preserves colimits. Maybe this is the kind of non-trivial example you were looking for.<br>
+(I found this angle on PROPs useful because it suggested to weaken the colimit preservation requirement to sifted-colimit preservation. This gives an algebraic framework combining features of both Lawvere theories and PROPs, which I used for presenting quantum theory, <a href="http://www.cs.ox.ac.uk/people/samuel.staton/papers/popl2015.pdf">here</a>. That set-up is also <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><msub><mrow><mi mathvariant="normal">F</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">S</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">t</mi></mrow><mrow><mi mathvariant="normal">b</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">j</mi></mrow></msub><mo separator="true">,</mo><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[\mathrm{FinSet}_{\mathrm{bij}},\mathbf{Set}]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0361em;vertical-align:-0.2861em;"></span><span class="mopen">[</span><span class="mord"><span class="mord"><span class="mord mathrm">FinSet</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">bij</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathbf">Set</span></span><span class="mclose">]</span></span></span></span>-enriched.)</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

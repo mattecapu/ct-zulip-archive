@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Bialgebras and their uses · learning: reading &amp; references · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/index.html">learning: reading &amp; references</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html">Bialgebras and their uses</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="489460533"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/489460533" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#489460533">(Dec 17 2024 at 11:15)</a>:</h4>
+<p><span class="user-mention" data-user-id="276777">@Mike Shulman</span> brought up on another <a href="#narrow/channel/229199-learning.3A-questions/topic/How.20do.20you.20work.20out.20its.20input.20category.20and.20output.20categor.2E.2E.2E/near/489281628">thread</a> the work of Harper et al. on a language for computational cost. Three relevant articles are:</p>
+<ul>
+<li><a href="https://arxiv.org/abs/2107.04663">A cost-aware logical framework</a></li>
+<li><a href="https://arxiv.org/abs/2307.05938">Decalf: A Directed, Effectful Cost-Aware Logical Framework</a></li>
+<li><a href="https://arxiv.org/abs/2404.03641">Amortized Analysis via Coalgebra</a></li>
+</ul>
+
+
+
+<a name="489460599"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/489460599" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#489460599">(Dec 17 2024 at 11:16)</a>:</h4>
+<p>The first and the second of these take an ‘algebraic’ approach to provide a language which captures the ‘cost’ of a program via, in turn, a graded cost monad and then an ordered graded cost monad. The third article then looks at coalgebras within categories of cost algebras. One can provide cost (amortized) analysis via coalgebra morphisms to simpler cost algebras.</p>
+
+
+
+<a name="489460706"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/489460706" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#489460706">(Dec 17 2024 at 11:16)</a>:</h4>
+<p>The authors hint at the end that a more even-handed bialgebraic approach might be fruitful. I know a little about this in terms of Bartek Klin’s <a href="https://www.cs.ox.ac.uk/people/bartek.klin/papers/tcs11.pdf">Bialgebras for Structural Operational Semantics</a></p>
+<p>So via a [<a href="https://ncatlab.org/nlab/show/distributive+law#monad_distributing_over_a_comonad">[distributivity law]</a>] between the relevant algebra and coalgebra functors, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Σ</mi></mrow><annotation encoding="application/x-tex">\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Σ</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span>, one may study “the interplay between the structure (syntax) and the dynamics (behavior) of systems” via bialgebras, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Σ</mi><mi>X</mi><mo>→</mo><mi>X</mi><mo>→</mo><mi>B</mi><mi>X</mi></mrow><annotation encoding="application/x-tex">\Sigma X \to X \to B X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Σ</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">BX</span></span></span></span>.</p>
+
+
+
+<a name="489460765"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/489460765" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#489460765">(Dec 17 2024 at 11:17)</a>:</h4>
+<p>So my question: What do people see as the best results of this bialgebraic outlook? Of course, I can hunt out articles that have referred to Klin’s, but I’d be interested in assessments of this approach.</p>
+
+
+
+<a name="489462540"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/489462540" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#489462540">(Dec 17 2024 at 11:27)</a>:</h4>
+<p>I know many people around these parts have taken the study of systems in a Spivakian <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mi>o</mi><mi>l</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">Poly</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span> direction. But even here, of course, a coalgebraic framing is possible, e.g.,</p>
+<ul>
+<li>Toby St. Clere Smithe, <a href="https://arxiv.org/abs/2206.03868">Open Dynamical Systems as Coalgebras for Polynomial Functors, with Application to Predictive Processing</a></li>
+</ul>
+
+
+
+<a name="489995084"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/489995084" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#489995084">(Dec 19 2024 at 16:03)</a>:</h4>
+<p>There's plenty of nice work on bialgebraic semantics. They've been a popular medium to study (various phenomena on) various flavors of process calculi at an abstract level, or come up with new flavors altogether. Few highlights:</p>
+<ul>
+<li>F. Bartels, On generalised coinduction and probabilistic specification formats: Distributive laws in coalgebraic modelling, 2004</li>
+<li>B. Klin, From Bialgebraic Semantics to Congruence Formats, 2004</li>
+<li>B. Klin, V. Sassone, Structural operational semantics for stochastic process calculi, 2008</li>
+<li>F. Bonchi et al. Lax Bialgebras and Up-To Techniques for Weak Bisimulations, 2015</li>
+<li>M. Miculan, M. Peressotti, Structural operational semantics for non-deterministic processes with quantitative aspects, 2016</li>
+<li>Bonchi et al., A General Account of Coinduction Up-To, 2016</li>
+</ul>
+<p>My biggest gripe with bialgebraic semantics semantics used to be that they can't do higher-order at all, as well as imperative languages in a satisfactory way. Luckily, in 2023 we extended the original bialgebraic framework to higher-order languages:</p>
+<ul>
+<li>Goncharov et al. Towards a Higher-order Mathematical Operational Semantics, 2023</li>
+</ul>
+<p>HIgher-order bialgebraic semantics is what I mostly do on my research time these days. Since the nice result above, we have been unifying and simplifying important "operational" (i.e. methods that apply to operational semantics) reasoning methods in higher-order languages, as well as applying them to new languages e.g.</p>
+<ul>
+<li>Goncharov et al. Bialgebraic Reasoning on Higher-Order Program Equivalence, 2024,</li>
+<li>Goncharov et al. Abstract Operational Methods for Call-by-Push-Value, 2025.</li>
+</ul>
+
+
+
+<a name="489995539"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/489995539" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#489995539">(Dec 19 2024 at 16:05)</a>:</h4>
+<p>Generally speaking, if a certain class of coalgebras accurately model a certain type of dynamical systems (in this case cost-awareness I suppose), then the bialgebraic perspective should be useful in studying programming languages of said type.</p>
+
+
+
+<a name="490646710"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490646710" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490646710">(Dec 24 2024 at 08:19)</a>:</h4>
+<p>Great, thanks for this <span class="user-mention" data-user-id="275900">@Stelios Tsampas</span>. As a newcomer to this topic, it feels like this approach should have very wide application, outside computing too.</p>
+
+
+
+<a name="490648791"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490648791" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490648791">(Dec 24 2024 at 08:41)</a>:</h4>
+<p>Yeah, might as well! After all, bialgebras, be it higher-order or first-order, broadly express something fundamental: the compositional interaction between a syntax and a behavior (or <em>semantics</em>).</p>
+<p>Personally speaking, so far I am enjoying generalizing and simplifying operational phenomena; I have also caught myself wondering just how many mathematical phenomena are operational to begin with. This might be a pretty deep rabbit hole, one I would be excited to dig into. Currently I am working on parametricity within HO Abstract GSOS, and at some point I am looking to do dependent types within the framework. If this happens, then it would open interesting foundational possibilities.</p>
+
+
+
+<a name="490648816"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490648816" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490648816">(Dec 24 2024 at 08:42)</a>:</h4>
+<p><span class="user-mention" data-user-id="302507">@David Corfield</span> Are you working on bialgebras as part of a thesis or?</p>
+
+
+
+<a name="490661614"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490661614" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490661614">(Dec 24 2024 at 10:50)</a>:</h4>
+<p><span class="user-mention" data-user-id="275900">@Stelios Tsampas</span> No, I'm just a philosopher (co-founder of the n-Category Cafe) whose department was closed, and who has been lucky enough to find some ARIA safeguarded AI funding. </p>
+<p>I'm working with a couple of guys on amortization and graded monads, and through the references I mentioned have seen a larger story.</p>
+
+
+
+<a name="490666236"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490666236" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490666236">(Dec 24 2024 at 11:36)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="302507">David Corfield</span> <a href="#narrow/channel/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses/near/490661614">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="275900">Stelios Tsampas</span> No, I'm just a philosopher (co-founder of the n-Category Cafe) whose department was closed, and who has been lucky enough to find some ARIA safeguarded AI funding. </p>
+<p>I'm working with a couple of guys on amortization and graded monads, and through the references I mentioned have seen a larger story.</p>
+</blockquote>
+<p>Geez, the least I could have done is know the co-founder of the website I am visiting multiple times a day!  Guess I live under a rock <span aria-label="man facepalming" class="emoji emoji-1f926-200d-2642" role="img" title="man facepalming">:man_facepalming:</span>.</p>
+<p>My current group at FAU Erlangen-Nuremberg (although I'm leaving next month) does a lot of work on  graded monads, e.g. Lutz Schröder and Stefan Milius. I have been thinking about bialgebraic semantics on graded monads but I never found the time to give it a closer look. To me, it looks like a natural question.</p>
+
+
+
+<a name="490668203"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490668203" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490668203">(Dec 24 2024 at 11:57)</a>:</h4>
+<p>Well, my focus moved more to the nForum/nLab after around 2014 (<a href="https://golem.ph.utexas.edu/category/david.html">my nCafe posts</a>). </p>
+<p>I think the graded cost monad story works best by taking a 2-functor from the delooped thin monoidal category corresponding to an ordered monoid. Then the graded algebras for this graded monad are the things Uustalu is talking about in <a href="https://conferences.inf.ed.ac.uk/clapscotland/uustalu.pdf">these slides</a>. </p>
+<p>Then presumably it would need some form of distributivity with the program coalgebra endofunctors that Grodin and Harper are studying in <a href="https://arxiv.org/abs/2404.03641">Amortized Analysis via Coalgebra</a>.</p>
+
+
+
+<a name="490669917"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490669917" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490669917">(Dec 24 2024 at 12:15)</a>:</h4>
+<p>Post-2014, I was focusing more on modal HoTT, and potential applications in physics (the Urs Schreiber program). But even here there are probably opportunities from what we're talking about.</p>
+<p>Something that's been worked out in linear HoTT is the <a href="https://ncatlab.org/nlab/show/deferred+measurement+principle">[[deferred measurement principle]]</a>, establishing that in</p>
+<blockquote>
+<p>any <a href="https://ncatlab.org/nlab/show/quantum+circuit">quantum circuit</a> involving <a href="https://ncatlab.org/nlab/show/quantum+measurement">quantum measurement</a> of some of the <a href="https://ncatlab.org/nlab/show/qbits">qbits</a> followed by <a href="https://ncatlab.org/nlab/show/quantum+gates">quantum gates</a> <a href="https://ncatlab.org/nlab/show/controlled+quantum+gate">controlled</a> by the respective measurement outcomes</p>
+</blockquote>
+<p>is equivalent as a function from given input to output as</p>
+<blockquote>
+<p>a <a href="https://ncatlab.org/nlab/show/quantum+circuit">quantum circuit</a> in which all <a href="https://ncatlab.org/nlab/show/quantum+measurement">quantum measurement</a> happens “at the end”.</p>
+</blockquote>
+<p>The nLab page states</p>
+<blockquote>
+<p>The principle can be useful in practice for optimizing quantum circuits. </p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Deferred_measurement_principle">Wikipedia</a> adds this detail:</p>
+<blockquote>
+<p>Thanks to the deferred measurement principle, measurements in a quantum circuit can often be shifted around so they happen at better times. For example, measuring qubits as early as possible can reduce the maximum number of simultaneously stored qubits; potentially enabling an algorithm to be run on a smaller quantum computer or to be simulated more efficiently. Alternatively, deferring all measurements until the end of circuits allows them to be analyzed using only pure states.</p>
+</blockquote>
+<p>Maybe something for a later date when you've worked through dependent type theory.</p>
+
+
+
+<a name="490672838"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490672838" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490672838">(Dec 24 2024 at 12:48)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="302507">David Corfield</span> <a href="#narrow/channel/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses/near/490668203">said</a>:</p>
+<blockquote>
+<p>I think the graded cost monad story works best by taking a 2-functor from the delooped thin monoidal category corresponding to an ordered monoid. Then the graded algebras for this graded monad are the things Uustalu is talking about in <a href="https://conferences.inf.ed.ac.uk/clapscotland/uustalu.pdf">these slides</a>.</p>
+</blockquote>
+<p>I see. This is the dual take to what I had in mind; I was thinking of ordinary algebras mixing with coalgebras for a graded monad. Either way, I have not encountered any definition of a distributive law/GSOS law of a graded monad over an endofunctor or a distributive law of an endofunctor over a graded monad. I expect one will be able to come up with a definition for either, but I wonder how strong the underlying commutativity conditions would be. They might even be unrealistic.</p>
+<p><span class="user-mention silent" data-user-id="302507">David Corfield</span> <a href="#narrow/channel/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses/near/490668203">said</a>:</p>
+<blockquote>
+<p>Then presumably it would need some form of distributivity with the program coalgebra endofunctors that Grodin and Harper are studying in <a href="https://arxiv.org/abs/2404.03641">Amortized Analysis via Coalgebra</a>.</p>
+</blockquote>
+<p>From what I can tell, they have coalgebras in a category of algebras, which immediately raises the question if there is something bialgebraic going on (they are also acknowledging this in the last section).</p>
+
+
+
+<a name="490683114"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490683114" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490683114">(Dec 24 2024 at 14:38)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275900">Stelios Tsampas</span> <a href="#narrow/channel/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses/near/490672838">said</a>:</p>
+<blockquote>
+<p>...they are also acknowledging this in the last section</p>
+</blockquote>
+<p>Yes, that's what prompted me to look in this direction. </p>
+<p>Think I'd better go and do some holiday reading on bialgebras.</p>
+
+
+
+<a name="490699696"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490699696" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Stelios Tsampas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490699696">(Dec 24 2024 at 17:48)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="302507">David Corfield</span> <a href="#narrow/channel/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses/near/490683114">said</a>:</p>
+<blockquote>
+<p>Think I'd better go and do some holiday reading on bialgebras.</p>
+</blockquote>
+<p>I forgot to add one of my favorite papers on the topic:</p>
+<p>M. Lenisa, J. Power, H. Watanabe: <em>Distributivity for endofunctors, pointed and co-pointed endofunctors, monads and comonads</em> (<a href="https://www.sciencedirect.com/science/article/pii/S1571066105803500">link</a>)</p>
+<p>I suggest this for your holiday reading. It gives a much more complete, bird's eye view on the kind of categories that bialgebras form. Distributive laws are, as expected, crucial.</p>
+
+
+
+<a name="490705914"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490705914" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490705914">(Dec 24 2024 at 19:06)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="302507">David Corfield</span> <a href="#narrow/channel/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses/near/490661614">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="275900">Stelios Tsampas</span> No, I'm just a philosopher (co-founder of the n-Category Cafe) whose department was closed, and who has been lucky enough to find some ARIA safeguarded AI funding. </p>
+</blockquote>
+<p>Do you interact at all with the Oxford branch of the Topos Institute, who are apparently getting <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">£</mi><mn>10</mn></mrow><annotation encoding="application/x-tex">\pounds 10</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">£10</span></span></span></span> million from ARIA for "Double Categorical Systems Theory for Safeguarded AI"?  The people who wrote this proposal are <span class="user-mention" data-user-id="751249">@David Jaz Myers</span>, <span class="user-mention" data-user-id="276589">@Sophie Libkind</span> and <span class="user-mention" data-user-id="280755">@Owen Lynch</span>.</p>
+
+
+
+<a name="490718624"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490718624" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490718624">(Dec 24 2024 at 22:17)</a>:</h4>
+<p>I met all three in Berkeley last year and have spoken a bit with David Jaz. There's no doubt a way to bring what Stelios and I were discussing in a double categorical direction. Indeed, Grodin and Harper write:</p>
+<blockquote>
+<p>In the pioneering works on amortized analysis, Sleator and Tarjan [28,25] describe the “move-to-front” paging algorithm and prove that it is competitive relative to <em>any</em> other algorithm. This argument, while also using amortization, does not immediately appear to fit into our coalgebraic framework. The potential is computed by comparing the move-to-front algorithm to another algorithm; we conjecture that the potential is behaving like a generalized bisimulation relation rather than a morphism. While we view amortized analysis as a directed simulation here (i.e., a morphism of coalgebras), <strong>we suspect that a double categorical approach may be valuable for understanding a symmetric generalization more akin to bisimulation</strong>. Cospans of coalgebras have been used to generalize bisimulations [27], which can serve as vertical morphisms to add to the bicategory of colax coalgebras. Additionally, Goncharov et al. [7] propose a double category of (co)lax coalgebras of a lax-double functor, generalizing from a fundamentally double categorical perspective.</p>
+</blockquote>
+
+
+
+<a name="490720206"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490720206" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490720206">(Dec 24 2024 at 22:44)</a>:</h4>
+<p>Nice!  Also, on a less technical level, it would be good for all  category theorists getting paid by ARIA to develop safeguarded AI to talk a lot with each other - because those are three quite unusual things to have in common!   You all have to deal with ARIA, you all like to talk about similar sorts of math, and I hope you're all eager to save the world from nasty AI.</p>
+
+
+
+<a name="490740575"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490740575" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Owen Lynch <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490740575">(Dec 25 2024 at 04:19)</a>:</h4>
+<p>I'm not sure what the exact amount is, but I'm fairly sure it's not £10 million...</p>
+
+
+
+<a name="490747881"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490747881" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490747881">(Dec 25 2024 at 06:19)</a>:</h4>
+<p>Okay, maybe dollars?   I heard it somewhere....</p>
+
+
+
+<a name="490793842"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490793842" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Jaz Myers <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490793842">(Dec 25 2024 at 17:04)</a>:</h4>
+<p>We got under £1m for DCST this year. But Topos is looking towards further funding for using double categories in systems modelling and modelling software</p>
+
+
+
+<a name="490802901"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490802901" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490802901">(Dec 25 2024 at 19:24)</a>:</h4>
+<p>Don't tell me I accidentally slipped an extra zero in there.  Sorry, folks!</p>
+
+
+
+<a name="490803695"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/490803695" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#490803695">(Dec 25 2024 at 19:36)</a>:</h4>
+<p>While I remove my foot from my mouth.... my main point was that I hope you can dream up an excuse to talk to <span class="user-mention" data-user-id="302507">@David Corfield</span> about safeguarded AI, category theory... and many other things.  Much good could come from this.</p>
+
+
+
+<a name="491400728"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/491400728" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#491400728">(Dec 31 2024 at 12:45)</a>:</h4>
+<p>I realise now that there people on Zulip I should have tagged whose papers I've mentioned: <span class="user-mention" data-user-id="510490">@Harrison Grodin</span>, <span class="user-mention" data-user-id="277632">@Robert Harper</span>, <span class="user-mention" data-user-id="297784">@Jon Sterling</span>, <span class="user-mention" data-user-id="319786">@Tarmo Uustalu</span>.</p>
+
+
+
+<a name="491401640"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/491401640" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Corfield <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#491401640">(Dec 31 2024 at 12:56)</a>:</h4>
+<p>There are plenty of good ideas in the slides of <span class="user-mention" data-user-id="319786">@Tarmo Uustalu</span> that I mentioned:</p>
+<p><span class="user-mention silent" data-user-id="302507">David Corfield</span> <a href="#narrow/channel/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses/near/490668203">said</a>:</p>
+<blockquote>
+<p>Then the graded algebras for this graded monad are the things Uustalu is talking about in <a href="https://conferences.inf.ed.ac.uk/clapscotland/uustalu.pdf">these slides</a>.</p>
+</blockquote>
+<p>His 'matching pair of actions' (slide 16) allows for a dual to the graded cost monad, which appears in </p>
+<ul>
+<li>V. Rajani et al., A Unifying Type-Theory for Higher-Order (Amortized) Cost Analysis, (<a href="https://dl.acm.org/doi/10.1145/3434308">article</a>)</li>
+</ul>
+<p>as a graded 'potential' type operator.</p>
+
+
+
+<a name="491428321"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Bialgebras%20and%20their%20uses/near/491428321" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tori Vollmer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses.html#491428321">(Dec 31 2024 at 18:13)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275900">Stelios Tsampas</span> <a href="#narrow/channel/232160-learning.3A-reading-.26-references/topic/Bialgebras.20and.20their.20uses/near/490672838">said</a>:</p>
+<blockquote>
+<p>Either way, I have not encountered any definition of a distributive law/GSOS law of a graded monad over an endofunctor or a distributive law of an endofunctor over a graded monad. I expect one will be able to come up with a definition for either, but I wonder how strong the underlying commutativity conditions would be. They might even be unrealistic.</p>
+</blockquote>
+<p><span class="user-mention" data-user-id="302507">@David Corfield</span> </p>
+<p>Re a definition for distributive laws to do with a graded monad:<br>
+You can just look at the category of graded monads, similar to <a href="https://ncatlab.org/nlab/show/monad#BicategoryOfMonads">monads</a> but with the added condition that you need to map the grade index as well. That is no so important because if you just look at endomorphisms in this category , say for some graded monad <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>C</mi><mo separator="true">,</mo><mi>T</mi><mo separator="true">,</mo><mi>I</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(C, T, I)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mclose">)</span></span></span></span> (better know as  <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>:</mo><mi>I</mi><mo>→</mo><mo stretchy="false">[</mo><mi>C</mi><mo separator="true">,</mo><mi>C</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">T: I \rightarrow [C, C]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">]</span></span></span></span>), you should get things like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>x</mi><mo separator="true">,</mo><mi>λ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex"> (x, \lambda) </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">λ</span><span class="mclose">)</span></span></span></span> where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>:</mo><mi>C</mi><mo>→</mo><mi>C</mi></mrow><annotation encoding="application/x-tex"> x: C\rightarrow C </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mi>i</mi></msub><mo>:</mo><msub><mi>T</mi><mi>i</mi></msub><mi>x</mi><mo>→</mo><mi>x</mi><msub><mi>T</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex"> \lambda_i : T_i x \rightarrow x T_i </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">λ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord mathnormal">x</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> The direction of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span> is a bit arbitrary (as in you can define your category such that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span> points the other way). From here, just playing around in that category should tell you everything you need to know about what distributive laws for graded monads are. (My gut tells me that distributive laws are just graded monads intenal to this category)</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

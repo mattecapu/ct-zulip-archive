@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>composing models · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/composing.20models.html">composing models</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="569070347"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/composing%20models/near/569070347" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> JR Learnstomath <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/composing.20models.html#569070347">(Jan 20 2026 at 16:12)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="405160">ww</span> <a href="#narrow/channel/274877-community.3A-our-work/topic/John.20Baez/near/524052593">said</a>:</p>
+<blockquote>
+<p>We did some work, jesus, it's 10 years ago now, on annotation of rule-based models (by which I mean graph rewriting). The idea there was to have a way (probably a functor) of relating the schema of the rewriting system to a schema in RDF in order to facilitate model composition. If you want to compose models, you need to be able to identify objects at least, and you can do this if you can say that they correspond to some standard thing in Uniprot, GO, etc.</p>
+</blockquote>
+<p>I'm interested in studying models of different systems that can compose and <span class="user-mention" data-user-id="275920">@John Baez</span>  posted this in his Our Work channel. I'm not familiar with "RDF" and "Uniprot, GO, etc.". </p>
+<p>Where might I find more information, maybe more generically/abstractly, about:</p>
+<ol>
+<li>"a way (probably a functor) of relating the schema of the rewriting system to a schema in RDF in order to facilitate model composition"?</li>
+<li>How to compose models, and how "being able to identify objects", works?</li>
+</ol>
+
+
+
+<a name="569144418"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/composing%20models/near/569144418" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/composing.20models.html#569144418">(Jan 20 2026 at 23:18)</a>:</h4>
+<p>I wrote a polemic comparing CT (more specifically, regular logic) against RDF for the purposes of data exchange; it has technical details relating them: <a href="https://arxiv.org/abs/2407.19095">https://arxiv.org/abs/2407.19095</a> .  David Spivak's lifting problem paper is also a good place to look.  Basically, an RDF database is just a giant collection of triples, interpreted as (subject, predicate, object), along with a bunch of questionable design decisions on top.  Nowadays "triple stores" seem to be more popular but similar idea</p>
+
+
+
+<a name="569159305"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/composing%20models/near/569159305" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/composing.20models.html#569159305">(Jan 21 2026 at 02:10)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="700428">JR Learnstomath</span> <a href="#narrow/channel/229199-learning.3A-questions/topic/composing.20models/near/569070347">said</a>:</p>
+<blockquote>
+<p>Where might I find more information, maybe more generically/abstractly, about:</p>
+<ol>
+<li>"a way (probably a functor) of relating the schema of the rewriting system to a schema in RDF in order to facilitate model composition"?</li>
+<li>How to compose models, and how "being able to identify objects", works?</li>
+</ol>
+</blockquote>
+<p>I know of no source that answers these questions in a simple way: one needs a lot of category-theoretic background.  So I'll recommend that you start by reading David Spivak's <em><a href="https://arxiv.org/abs/1302.6946">Category Theory for Scientists</a></em>.   It won't answer these particular questions, but it will move you closer to being able to understand the answers.</p>
+
+
+
+<a name="569210318"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/composing%20models/near/569210318" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> JR Learnstomath <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/composing.20models.html#569210318">(Jan 21 2026 at 09:49)</a>:</h4>
+<p>Many thanks to you both! As ever, all I can ever hope for is "less lost"...</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

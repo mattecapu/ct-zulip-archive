@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Applications of sheaves · learning: reading &amp; references · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/index.html">learning: reading &amp; references</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html">Applications of sheaves</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="431155608"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431155608" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Tanzer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431155608">(Apr 03 2024 at 18:57)</a>:</h4>
+<p>This is a spinoff from <a class="stream-topic" data-stream-id="232160" href="/#narrow/stream/232160-learning.3A-reading-.26-references/topic/reading.20through.20Baez.27s.20topos.20theory.20blog.20posts">#learning: reading &amp; references &gt; reading through Baez's topos theory blog posts</a>, for continued discussion of applications of sheaves.</p>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/232160-learning.3A-reading-.26-references/topic/reading.20through.20Baez's.20topos.20theory.20blog.20posts/near/431134688">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="276143">David Tanzer</span> <a href="#narrow/stream/232160-learning.3A-reading-.26-references/topic/reading.20through.20Baez's.20topos.20theory.20blog.20posts/near/430936321">said</a>:</p>
+<blockquote>
+<p>Cool, thanks for the reminder about the separated aspect. All these examples put a good spotlight on the glueing condition. Now that we've solidly established the definition of a sheaf, which feels rather substantive, I'll ask: what are a couple of cool things that we can do with sheaves, in at least a semi-applied sense?  I'm sure there are many; just fishing around here for some favorites.</p>
+</blockquote>
+<p>My own favorite applications of sheaves are the ones that made people invent sheaves in the first place - applications to algebraic geometry and toplogy. I don't know how deeply we want to get into those here.  But it's not surprising that some of the most exciting applications of a concept are the ones that made people take the trouble to develop it in the first place! </p>
+<p>Briefly, since a bounded analytic function must be constant, there are no everywhere defined analytic functions on the Riemann sphere except constants - all the interesting ones have poles.   This issue affects all of complex analysis and algebraic geometry.   This puts pressure on us to either accept 'partially defined' functions as full-fledged mathematical objects or work with <em>sheaves</em> of functions, e.g. work with lots of different open sets <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi></mrow><annotation encoding="application/x-tex">U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span></span></span></span> in the Riemann sphere and let <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">F(U)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mclose">)</span></span></span></span> be the set of analytic functions everywhere defined on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi></mrow><annotation encoding="application/x-tex">U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span></span></span></span>.</p>
+<p>Mathematicians took the second course, because partially defined functions where you haven't specified the domain of definition are a pain to work with.   So nowadays all of algebraic geometry (subsuming chunks of complex analysis, and much much more) is founded on sheaves.   In this subject one can do a lot of amazing things with sheaves.   Later on these tricks expanded to algebraic topology.  And this is how a typical math grad student (like me) is likely to encounter sheaves.</p>
+<p>Needless to say, I'm happy to get into more detail about what we actually do with sheaves.  But it's quite extensive: the proof of Fermat's Last Theorem and pretty much all the other big results in algebraic geometry relies heavily on sheaves.</p>
+</blockquote>
+<p>Great application, thanks!</p>
+
+
+
+<a name="431156088"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431156088" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Tanzer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431156088">(Apr 03 2024 at 19:00)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277503">David Egolf</span> <a href="#narrow/stream/232160-learning.3A-reading-.26-references/topic/reading.20through.20Baez's.20topos.20theory.20blog.20posts/near/431130528">said</a>:</p>
+<blockquote>
+<p>This paper, which I want to read someday, also comes to mind: <a href="https://arxiv.org/abs/1603.01446">Sheaves are the canonical data structure for sensor integration</a></p>
+<blockquote>
+<p>A sensor integration framework should be sufficiently general to accurately represent all information sources, and also be able to summarize information in a faithful way that emphasizes important, actionable information. Few approaches adequately address these two discordant requirements. The purpose of this expository paper is to explain why sheaves are the canonical data structure for sensor integration and how the mathematics of sheaves satisfies our two requirements. We outline some of the powerful inferential tools that are not available to other representational frameworks. <br>
+</p>
+</blockquote>
+</blockquote>
+
+
+
+<a name="431156179"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431156179" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Tanzer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431156179">(Apr 03 2024 at 19:00)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="619003">Peva Blanchard</span> <a href="#narrow/stream/232160-learning.3A-reading-.26-references/topic/reading.20through.20Baez's.20topos.20theory.20blog.20posts/near/430949255">said</a>:</p>
+<blockquote>
+<p>Here is one example of application in network dynamic theory: <a href="https://arxiv.org/abs/2005.12798">Opinion dynamics on discourse sheaves</a>.</p>
+</blockquote>
+
+
+
+<a name="431199262"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431199262" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431199262">(Apr 04 2024 at 00:17)</a>:</h4>
+<p>I find the paper <a href="https://arxiv.org/abs/2005.12798">Opinion dynamics on discourse sheaves</a> unsatisfying as an application of sheaves, because you'll see that what they call a "sheaf" is really a presheaf on a certain poset.</p>
+
+
+
+<a name="431199732"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431199732" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431199732">(Apr 04 2024 at 00:22)</a>:</h4>
+<p>One can think of any presheaf as a sheaf in a certain way, but I get excited about sheaves when they are sheaves on a topological space or sheaves on a category equipped with a nontrivial Grothendieck topology (meaning not just <em>presheaves</em> on a category).</p>
+
+
+
+<a name="431200190"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431200190" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431200190">(Apr 04 2024 at 00:27)</a>:</h4>
+<p>So, the paper could be great but I'm not convinced it really illustrates the power of sheaves.  (I could be wrong.)</p>
+
+
+
+<a name="431236011"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431236011" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431236011">(Apr 04 2024 at 06:49)</a>:</h4>
+<p>Oh, I see. I read that paper back when I knew very little about sheaves, and it sticked in my mind as "a concrete application of sheaves". I should have been more careful before posting it.</p>
+
+
+
+<a name="431237453"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431237453" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431237453">(Apr 04 2024 at 07:01)</a>:</h4>
+<p>This is really unfortunate, the authors should have called their concept "Discourse pre-sheaves".</p>
+
+
+
+<a name="431237663"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431237663" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431237663">(Apr 04 2024 at 07:03)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves/near/431199262">said</a>:</p>
+<blockquote>
+<p>I find the paper <a href="https://arxiv.org/abs/2005.12798">Opinion dynamics on discourse sheaves</a> unsatisfying as an application of sheaves, because you'll see that what they call a "sheaf" is really a presheaf on a certain poset.</p>
+</blockquote>
+<p>In my experience in ACT, most of the time people want to work with sheaves because of cohomology measuring local-to-global obstructions and so are actually interested in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>H</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">H^{-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>H</mi><mn>0</mn></msup></mrow><annotation encoding="application/x-tex">H^0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span></span></span></span>---meaning one is actually interested in the <em>failure of being a sheaf</em>, and not really in sheaves. So there is this absurd situation in which applied sheaf theory often ends up meaning applying the exact opposite, i.e. the theory of how-not-to-be-a-sheaf.</p>
+
+
+
+<a name="431239489"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431239489" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431239489">(Apr 04 2024 at 07:15)</a>:</h4>
+<p>So it's more about mis-sheaf theory :)</p>
+
+
+
+<a name="431366495"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431366495" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431366495">(Apr 04 2024 at 17:23)</a>:</h4>
+<p>Mischief with mis-sheaves.</p>
+
+
+
+<a name="431366829"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431366829" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431366829">(Apr 04 2024 at 17:25)</a>:</h4>
+<p>I'm glad I'm not the only one feels people are saying they're using sheaves when they're using presheaves.  I'm a bit grumpy about this, because I have a suspicion they're trying to cash in on the glamour of saying they're using sheaves.</p>
+
+
+
+<a name="431367219"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431367219" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431367219">(Apr 04 2024 at 17:27)</a>:</h4>
+<p>I love presheaf categories; I don't think there's anything wrong with using presheaves.   I think it's better to call them what they are.</p>
+
+
+
+<a name="431367391"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431367391" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431367391">(Apr 04 2024 at 17:28)</a>:</h4>
+<p>I took a peek and it seems this paper is actually using sheaves:</p>
+<ul>
+<li><a href="https://arxiv.org/abs/1603.01446">Sheaves are the canonical data structure for sensor integration</a></li>
+</ul>
+
+
+
+<a name="431367816"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431367816" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431367816">(Apr 04 2024 at 17:31)</a>:</h4>
+<p>On page 17 they give the definition of a "sheaf of pseudometric spaces".</p>
+
+
+
+<a name="431368041"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431368041" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431368041">(Apr 04 2024 at 17:32)</a>:</h4>
+<p>The examples of these remind me of <span class="user-mention" data-user-id="277503">@David Egolf</span>'s reflections on images and the idea of approximately equal images.</p>
+
+
+
+<a name="431368252"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431368252" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431368252">(Apr 04 2024 at 17:33)</a>:</h4>
+<p>The article says</p>
+<blockquote>
+<p>In his Appendix on sheaf theory, Hubbard states [53] “It is fairly easy to<br>
+understand what a sheaf is, especially after looking at a few examples. Under-<br>
+standing what they are good for is rather harder; indeed, without cohomology<br>
+theory, they aren’t good for much."</p>
+</blockquote>
+
+
+
+<a name="431368427"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431368427" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431368427">(Apr 04 2024 at 17:34)</a>:</h4>
+<p>That's certainly true in applications to algebraic geometry and algebraic topology!</p>
+
+
+
+<a name="431368517"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431368517" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Notification Bot <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431368517">(Apr 04 2024 at 17:35)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276702">Tobias Fritz</span> has marked this topic as resolved.</p>
+
+
+
+<a name="431368539"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431368539" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431368539">(Apr 04 2024 at 17:35)</a>:</h4>
+<p>So then the author tries to apply sheaf cohomology to his subject - integrating data collected from different sensors.</p>
+
+
+
+<a name="431368569"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431368569" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Notification Bot <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431368569">(Apr 04 2024 at 17:35)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> has marked this topic as unresolved.</p>
+
+
+
+<a name="431368627"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431368627" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tobias Fritz <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431368627">(Apr 04 2024 at 17:35)</a>:</h4>
+<p>(Whoops, I was just reading this and accidentally clicked on something...)</p>
+
+
+
+<a name="431433826"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431433826" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Tanzer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431433826">(Apr 05 2024 at 02:26)</a>:</h4>
+<p>Here's an <a href="https://ncatlab.org/nlab/show/sheaf+semantics+of+concurrent+interacting+objects">nLab page</a> on this paper:</p>
+<ul>
+<li>Joseph Goguen, <a href="https://www.cambridge.org/core/journals/mathematical-structures-in-computer-science/article/abs/sheaf-semantics-for-concurrent-interacting-objects/604DA5071EA19CDD65293205C066929B">Sheaf semantics for concurrent interacting objects</a>, Cambridge University Press, 2009.  [paywall]</li>
+</ul>
+<p>Abstract.  This paper uses concepts from sheaf theory to explain phenomena in concurrent systems, including object, inheritance, deadlock, and non-interference, as used in computer security. The approach is very general, and applies not only to concurrent object oriented systems, but also to systems of differential equations, electrical circuits, hardware description languages, and much more. Time can be discrete or continuous, linear or branching, and distribution is allowed over space as well as time. Concepts from category theory help to achieve this generality: objects are modelled by sheaves; inheritance by sheaf morphisms; systems by diagrams; and interconnection by diagrams of diagrams. In addition, behaviour is given by limit, and the result of interconnection by colimit. The approach is illustrated with many examples, including a semantics for a simple concurrent object-based programming language.</p>
+
+
+
+<a name="431434240"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431434240" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Tanzer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431434240">(Apr 05 2024 at 02:32)</a>:</h4>
+<p>Note: I didn't purchase it, so I can't vouch for whether it is about presheaf or sheaf semantics.  Sounds interesting, in any case.</p>
+
+
+
+<a name="431437062"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431437062" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Tanzer <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431437062">(Apr 05 2024 at 03:07)</a>:</h4>
+<p>It looks like the term "cellular sheaf" has become established as a presheaf-based structure. E.g.,</p>
+<p>Jakob Hansen and Robert Ghrist, <a href="https://arxiv.org/pdf/1808.01513.pdf">Towards a spectral theory of cellular sheaves</a></p>
+<blockquote>
+<p>Let X be a regular cell complex. A cellular sheaf attaches data spaces to the<br>
+cells of X together with relations that specify when assignments to these data<br>
+spaces are consistent.</p>
+</blockquote>
+<blockquote>
+<p>Definition 2.4  A cellular sheaf of vector spaces on a regular cell complex X<br>
+is an assignment of a vector space F(σ) to each cell σ of X together with a<br>
+linear transformation for each incident cell pair .<br>
+These must satisfy both an identity relation and the composition condition...</p>
+</blockquote>
+
+
+
+<a name="431458226"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431458226" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431458226">(Apr 05 2024 at 06:57)</a>:</h4>
+<p>Yeah that's a pretty questionable terminological choice</p>
+
+
+
+<a name="431471716"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431471716" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431471716">(Apr 05 2024 at 08:20)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276143">David Tanzer</span> <a href="#narrow/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves/near/431434240">said</a>:</p>
+<blockquote>
+<p>Note: I didn't purchase it, so I can't vouch for whether it is about presheaf or sheaf semantics.  Sounds interesting, in any case.</p>
+</blockquote>
+<p>I read that paper a long time ago (my academia background is distributed algorithms). Here is a copy <a href="/user_uploads/21317/qIF-9uNq6liisk4Ugji4Etph/1989-09-01-Joseph-A.-Goguen-Sheaf-semantics-for-concurrent-interacting-objects.pdf">sheaf semantics for concurrent interacting objects</a>.</p>
+<p>I glanced at it now, and the author does mention the difference between presheaves and sheaves.</p>
+
+
+
+<a name="431590210"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431590210" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431590210">(Apr 05 2024 at 19:22)</a>:</h4>
+<p>I think that in many cases if one works with combinatorial/discretised structures, one naturally turns a sheaf structure into a presheaf structure, because in fact the “discretisation” is in itself a process of turning some “wobbly” gluings/colimits into some “rigid” colimits that can be seen as free on some category of “pieces”. </p>
+<p>That seems to be the case for the “cellular sheaves” mentioned above -- in a discretised world “overlaps between open sets” are turned into something like “common faces of combinatorial cells”.</p>
+
+
+
+<a name="431590321"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431590321" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431590321">(Apr 05 2024 at 19:23)</a>:</h4>
+<p>So I think that this disapproval for “calling a presheaf a sheaf” may turn out to be penalising for discrete mathematics, like “you don't get to use the cool name” even though you are trying to model the exact same thing.</p>
+
+
+
+<a name="431632214"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431632214" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zoltan A. Kocsis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431632214">(Apr 06 2024 at 02:58)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276363">Amar Hadzihasanovic</span> <a href="#narrow/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves/near/431590321">said</a>:</p>
+<blockquote>
+<p>So I think that this disapproval for “calling a presheaf a sheaf” may turn out to be penalising for discrete mathematics</p>
+</blockquote>
+<p>Purely arguendo, without the implication that anyone actually does it in this case, even subconsciously: I find this plausible.</p>
+<p>I doubt that anyone voiced concerns about synthetic algebraic geometers having sheaves on lattices which are not only not sheaves in the traditional sense, but are sometimes on lattices that lack infinite joins altogether (so are very unlike open set lattices), or similarly o-minimal geometers who call anything a sheaf that has finite gluings only (I preemptively apologize to the SAG people if I got that wrong, I am far from an expert on the topic; as for o-minimal geometers, I spent a lot of time with them and know that they do this routinely, seemingly without objection).</p>
+<p>With all that said, I _can_ imagine that learning o-minimal topology is not a good way to learn about how sheaves are used in their usual contexts, and vice versa.</p>
+
+
+
+<a name="431632442"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431632442" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431632442">(Apr 06 2024 at 03:01)</a>:</h4>
+<p>Are you sure those notions of sheaf aren't just sheaves on some site that isn't an open-set lattice?</p>
+
+
+
+<a name="431632502"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431632502" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431632502">(Apr 06 2024 at 03:02)</a>:</h4>
+<p>There's no problem in principle with writing down a site that has only finite coverings.</p>
+
+
+
+<a name="431632571"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431632571" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431632571">(Apr 06 2024 at 03:03)</a>:</h4>
+<p>(And for the same reason, I don't see any reason in principle that sheaves-that-aren't-presheaves couldn't appear in discrete mathematics.)</p>
+
+
+
+<a name="431632681"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431632681" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zoltan A. Kocsis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431632681">(Apr 06 2024 at 03:05)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves/near/431632442">said</a>:</p>
+<blockquote>
+<p>Are you sure those notions of sheaf aren't just sheaves on some site that isn't an open-set lattice?</p>
+</blockquote>
+<p>I'm reflecting mostly on John's comments above, about ehat kinds of honest examples he'd like to give: cfrom what I understand, chiefly ones coming from open set lattices, but in any case freely sheafifying a presheaf would not qualify.</p>
+<p>In the SAG case: yeah, I can't rule that out, but it's also not immediately clear, and that's why I hedged a bit. Reflecting on John's examples, I assumed these wouldn't fit, being very unlike open set lattices.</p>
+<p>In the o-minimal case: the topologies involved would have to be "essentially discrete", so this is a definite example.</p>
+
+
+
+<a name="431634122"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431634122" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431634122">(Apr 06 2024 at 03:28)</a>:</h4>
+<p>I assumed what John meant is that he just wanted to see sheaves on a nontrivial site.</p>
+
+
+
+<a name="431634132"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431634132" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431634132">(Apr 06 2024 at 03:29)</a>:</h4>
+<p>What do you mean by "essentially discrete"?</p>
+
+
+
+<a name="431635331"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431635331" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zoltan A. Kocsis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431635331">(Apr 06 2024 at 03:47)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276777">Mike Shulman</span> <a href="#narrow/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves/near/431634122">said</a>:</p>
+<blockquote>
+<p>I assumed what John meant is that he just wanted to see sheaves on a nontrivial site.</p>
+</blockquote>
+<p>Then I must be missing something.</p>
+<p>AFAICT, the "cellular sheaves" criticized above _can_ simply be turned into sheaves over Alexandroff spaces, and it is my understanding that a sheaf on a topological space X arises as a sheaf on the site Op(X), which certainly has nontrivial topology. This gave me the impression that an indirect correspondence like this is regarded as "cashing in on the glamour of sheaves" and we're looking for more "honest" examples: arbitrary sheaves on a site won't qualify. Or I made a mistake in my reasoning above (corrections appreciated).</p>
+
+
+
+<a name="431636545"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431636545" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431636545">(Apr 06 2024 at 04:04)</a>:</h4>
+<p>Well, here's what John said:<br>
+<span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves/near/431199732">said</a>:</p>
+<blockquote>
+<p>One can think of any presheaf as a sheaf in a certain way, but I get excited about sheaves when they are sheaves on a topological space or sheaves on a category equipped with a nontrivial Grothendieck topology (meaning not just <em>presheaves</em> on a category).</p>
+</blockquote>
+
+
+
+<a name="431636646"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431636646" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431636646">(Apr 06 2024 at 04:05)</a>:</h4>
+<p>It's also true of course that every category of presheaves is <em>equivalent</em> to a category of sheaves on some nontrivial site.  Speaking for myself, what would satisfy me as an application of "sheaves" would be a nontrivial site appearing "naturally".</p>
+
+
+
+<a name="431636943"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431636943" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431636943">(Apr 06 2024 at 04:11)</a>:</h4>
+<p>I guess one might ask more strongly for a nontrivial site whose category of sheaves is not equivalent to <em>any</em> category of presheaves.</p>
+
+
+
+<a name="431637027"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431637027" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431637027">(Apr 06 2024 at 04:12)</a>:</h4>
+<p>By the way, what do you mean by "synthetic algebraic geometry"?  <a href="https://arxiv.org/abs/2307.00073">This paper</a>, for instance, is absolutely using the usual notion of sheaf on a site, and I'm pretty confident that sheaves on that site are not equivalent to any category of presheaves.</p>
+
+
+
+<a name="431637270"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431637270" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431637270">(Apr 06 2024 at 04:17)</a>:</h4>
+<p>And I don't know much about o-minimal geometry, but a bit of googling led me to a paper called "Sheaf cohomology in o-minimal structures" which does certainly also appear to be defining a site in the ordinary sense.  Are you saying that the category of sheaves on this site is equivalent to some category of presheaves?</p>
+
+
+
+<a name="431647098"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431647098" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zoltan A. Kocsis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431647098">(Apr 06 2024 at 06:48)</a>:</h4>
+<blockquote>
+<p>I guess one might ask more strongly for a nontrivial site whose category of sheaves is not equivalent to <em>any</em> category of presheaves.</p>
+</blockquote>
+<p>This rules out sheaves of modules on a finite site, so if one were to insist on this stronger condition, then one cannot expect sheaves-that-aren't-presheaves to appear in discrete mathematics at all.</p>
+<p>I defer to your insight on the SAG case [3]. As for o-minimal geometry, let me briefly explain what I meant. It's usual to consider sheaves of definable functions on the lattice of definable sets of a given dimension (e.g. as done from p155 onward in <em>Tame topology and o-minimal structures</em>). The definable sets always form a Boolean algebra; if the underlying o-minimal structure has type I according to the trichotomy theorem of Peterzil and Starchenko, then the category of sheaves of parameter-free definables <em>is</em> equivalent to a presheaf category; the same sort of presheaves on a finite poset as in cellular sheaves above. I don't know whether that's good or bad, but if we would regard criticizing the o-minimal geometers for their terminological choice weird, then perhaps we shouldn't criticize the applied topologists for it either.</p>
+<p>With that said, let's not dwell too much more on these examples. Maybe the SAG one was just wrong, maybe somebody else will bring better examples of the phenomenon I'm after, but in any case, my point wasn't meant to be "let's scrutinize the geometers too", I aimed to address some broader phenomenon.</p>
+<blockquote>
+<p>Speaking for myself, what would satisfy me as an application of "sheaves" would be a nontrivial site appearing "naturally".</p>
+</blockquote>
+<p>I understand that, and I think both you Matteo and John have a fair stance here. I too don't think cellular sheaves (or for that matter, the sheaves in o-minimal geometry mentioned above) are good examples for explaining the uses of sheaves to somebody. They're not merely <a href="https://en.wikipedia.org/wiki/Exemplar_theory#Typicality_and_exemplars">atypical exemplars</a>, but they lack precisely those properties that make sheaves very useful in the central/typical areas of algebraic geometry and topology that one might want to illustrate! Essentially, I'm fully on board with John's summary above: "<em>I'm not convinced it really illustrates the power of sheaves</em>".</p>
+<p>But this is akin to considering cassowaries an odd choice for representing birds to someone unfamiliar with the diversity of bird species. Absolutely true, and yet no reason to think that the taxonomists who classified cassowaries as birds were "<em>trying to cash in on the glamour of saying they're studying birds</em>".</p>
+<p>It's only the latter, "trying to cash in on the glamour" characterization specifically that I find troubling, in the sense that I don't think we could apply such a criterion fairly across various disciplines.</p>
+<p>For instance, if a sheaf F constructed over the course of an algebraic geometry proof turns out to a sheaf of modules based on a finite site (I'm quite sure this has happened before), all would readily accept F as natural due to its role in the proof, and nobody ( except perhaps Reviewer 2 ;) ) would worry that the author is merely trying to cash in on the glamour of sheaves. Whereas if the proof happens to be in a discrete mathematics or applied topology textbook, the standards are suddenly much more stringent, “you don't get to use the cool name” unless your example is very "natural", sometimes with conditions that finite structures cannot possibly meet. Which is exactly my reading of <span class="user-mention" data-user-id="276363">@Amar Hadzihasanovic</span> 's point about <em>penalizing discrete mathematics</em>, the one that I find very plausible. It's not about whether we have a precise standard of what counts as natural [1] but about whether we apply such a standard consistently to practitioners of all fields, or only ever subject practitioners of certain subfields to it [2]. </p>
+<p>I hope that makes sense.</p>
+<p>[1] And it's quite possible that there's a reasonable standard, stricter than just technically being a sheaf, and my suggested examples don't actually qualify under this standard! I'm fine with "it counts as an honest example as long as it's not equivalent to a category of presheaves".</p>
+<p>[2] But I do doubt that algebraic geometers or topologists had their choice of terminology subjected to any such standard. E.g. if we argue that the standard should exclude sheaves on Alexandroff spaces from the class of honest examples, then before we adopt the standard I'd like to see some evidence that we previously reprimanded e.g. the noncommutative geometers for studying certain sheaves on Alexandroff spaces qua sheaves, and not qua presheaves.</p>
+<p>[3] But I don't think "having a nontrivial Grothendieck topology" is the sensible standard we're looking for, nor a good approximation to a "naturally arising" site. It leads to a situation where if we study sheaves on certain open set lattices (even one which some geometers and topologists care about), we have a dishonest example. But as soon as we artificially restrict the allowed covers to only the finite ones, while retaining the very same open set lattice, thereby making the structure both more artificial and nastier in every mathematical sense (including in senses that geometers and topologists care about) we somehow get a more honest example. Presumably, if one is not excited about certain sheaves because they are merely presheaves in disguise, one would get less, not more excited about these ones?</p>
+
+
+
+<a name="431683636"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431683636" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431683636">(Apr 06 2024 at 15:48)</a>:</h4>
+<p>I don't think anything that appears in discrete mathematics must be finite.  Discrete mathematicians use plenty of infinite things.  Generating functions and species come to mind.</p>
+
+
+
+<a name="431683815"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431683815" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431683815">(Apr 06 2024 at 15:50)</a>:</h4>
+<p>I don't have much else to add, and I don't think we disagree a lot, but let me just repeat, in case it wasn't clear, that what I see a difference between is (1) studying sheaves on some site that arises naturally and is nontrivial (nontriviality and naturality are orthogonal properties of a site) and that later <em>turn out</em> to be equivalent to presheaves on some other category, and (2) studying a category of presheaves from the get-go and nevertheless <em>calling</em> them "sheaves".</p>
+
+
+
+<a name="431687052"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431687052" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431687052">(Apr 06 2024 at 16:37)</a>:</h4>
+<p>Oh, and in case it seems relevant to the charge of unequal treatment of disciplines, there's some work in theoretical physics starting with <a href="https://arxiv.org/abs/0709.4364">https://arxiv.org/abs/0709.4364</a> that applies topos theory, using a topos that happens to be a presheaf category from the get-go.  Its authors do also observe that the category of presheaves on a poset is equivalent to sheaves on its Alexandrov topology, but  they don't refer to the work as an application of "sheaves" (and I would be equally uncomfortable if they did).</p>
+
+
+
+<a name="431687157"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431687157" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431687157">(Apr 06 2024 at 16:38)</a>:</h4>
+<p>So perhaps speaking of an application of "toposes" is a more general solution?</p>
+
+
+
+<a name="431688279"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431688279" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431688279">(Apr 06 2024 at 16:56)</a>:</h4>
+<p>Also (I guess I was wrong that I didn't have much else to add), FWIW my own concern is not so much with people cashing in on the glamour of sheaves (which has an implicit assertion of <em>mens rea</em>) but just with clarity of exposition and truth in advertising.</p>
+<p>The definition of "sheaf", as a general concept, is significantly more complicated than that of "presheaf", and results about sheaves tend to be significantly more nontrivial than corresponding results about presheaves.  So if someone asks "what is an application of sheaves?" and someone gives them an application of presheaves, I don't think it's a very good answer to the question, because it doesn't answer the <em>implied</em> question of "why should someone care about the complication in the definitions and proofs about sheaves?"  It as if someone asked "what is an application of rings?" and someone answers with an application of the integers: yes, the integers are a ring, but it's not really a good way to convince someone that the abstract machinery of ring theory is useful.</p>
+
+
+
+<a name="431688324"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431688324" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431688324">(Apr 06 2024 at 16:56)</a>:</h4>
+<p>And dually, if an application of presheaves is presented as an application of sheaves, then someone who reads it and understands it may come away thinking they have some understanding of sheaves, when in fact they haven't even engaged at all with the real notion of sheaf.</p>
+
+
+
+<a name="431689932"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431689932" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431689932">(Apr 06 2024 at 17:18)</a>:</h4>
+<p>One situation that I thought could arise, when I commented on this, is the following — although I do not have a concrete, precise example, it is just something that seems plausible to me, thinking of some related situations.</p>
+<p>Namely, that when trying to "discretise" some sheaf structure, for example by passing from some space to a combinatorial cell complex, it turns out that the <em>possibility</em> of "discretising" in such a way that the sheaf becomes a presheaf on the discretised space <em>relies</em> on the fact that the sheaf was a genuine sheaf — that is, an obstruction to a presheaf being a sheaf in the original setup would have showed up as an obstruction to the discretisation of this setup.</p>
+<p>In this case, I think it would be fair to say that the "genuine" sheaf-theoretic aspects have not vanished, they simply appear at a different stage of the modelling.</p>
+
+
+
+<a name="431690094"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431690094" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431690094">(Apr 06 2024 at 17:20)</a>:</h4>
+<p>Sure!  As I said, the thing I don't like is starting with presheaves from the get-go and still calling them sheaves.</p>
+
+
+
+<a name="431690113"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431690113" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Amar Hadzihasanovic <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431690113">(Apr 06 2024 at 17:21)</a>:</h4>
+<p>That's fair!</p>
+
+
+
+<a name="431692085"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431692085" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431692085">(Apr 06 2024 at 17:51)</a>:</h4>
+<p>I agree with everything Mike just said; in fact I'm really relieved he wrote all this stuff because it sounds like a clearer, more patient way of saying what I was attempting to telegraph in my earlier comments.</p>
+
+
+
+<a name="431692155"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431692155" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431692155">(Apr 06 2024 at 17:52)</a>:</h4>
+<p>So: ignore what I said; he said it better.</p>
+
+
+
+<a name="431752533"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Applications%20of%20sheaves/near/431752533" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Josselin Poiret <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Applications.20of.20sheaves.html#431752533">(Apr 07 2024 at 09:58)</a>:</h4>
+<p>Maybe I'm side-tracking a bit here, but since you're talking of presheaves vs. sheaves here, I was wondering something: what intrinsic properties are true of presheaves but fail to be true for sheaves, or put another way, does the extra structure of being "just a presheaf category" give you anything extra? I'm thinking more in terms of internal language/topos theoretic stuff.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

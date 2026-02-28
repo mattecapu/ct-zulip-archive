@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>What is the cardinality of Cat? · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20the.20cardinality.20of.20Cat.3F.html">What is the cardinality of Cat?</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="430326878"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20the%20cardinality%20of%20Cat%3F/near/430326878" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20the.20cardinality.20of.20Cat.3F.html#430326878">(Mar 29 2024 at 22:41)</a>:</h4>
+<blockquote>
+<p>If U is a Grothendieck universe such that Set is the category of all U-small sets, then you can define <br>
+Cat to be the 2-category of all U′-small categories, where U′ is some Grothendieck universe containing <br>
+U. That way, you have Set∈Cat without contradiction. By the axiom of choice, the two definitions of Cat as a 2-category are equivalent.</p>
+</blockquote>
+<p>A Grothendieck universe is a transitive set with power sets and the union of the image of any function (Is this the axiom of replacement? Why do we need it, in general?)</p>
+<blockquote>
+<p>If  U is a Grothendieck universe, then it is easy to show that U is itself a model of ZFC (minus the axiom of infinity unless you modify (3) to rule out countable universes). <strong>(1) Therefore, one cannot prove in ZFC the existence of a Grothendieck universe containing ℕ,</strong> and so we need extra set-theoretic axioms to ensure that uncountable universes exist. Grothendieck’s original proposal was to add the following axiom of universes to the usual axioms of set theory: <em>For every set s, there exists a universe U that contains s, i.e., s ∈ U.</em></p>
+</blockquote>
+<p>Why (1)? You can prove U is a model of ZFC minus infinity. Does that mean Grothendieck universes would always be finite until you added the axiom of universes?</p>
+<p>I wanted to know if the category of all small categories is countable. I think it would be really cool to assign a numerical index to all categories, to be able to say, “the category of lattices is category 12,367”. If Cat is not countable, why?</p>
+
+
+
+<a name="430327466"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20the%20cardinality%20of%20Cat%3F/near/430327466" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20the.20cardinality.20of.20Cat.3F.html#430327466">(Mar 29 2024 at 22:47)</a>:</h4>
+<p>I was reading how people initially suggested the existence of only one additional “super-container”, the “class” of all sets (to avoid Russell’s paradox). Then people considered hierarchies of such “super-containers” (under various names). Grothendieck was able to abstract this where in fact the container of a given collection of sets is still a set, yet, you can express this idea that there <em>is</em> always a “higher container” with the axiom of universes.</p>
+<p>It seems like a solution. But, does it have the exact same problem? In general, it seems that there can never be any largest set. But if you define a new concept which is conceptually “one level up”, then don’t we have to ask ourselves about “the universe of all universes”? Or is there some reason why the axioms escape that question?</p>
+
+
+
+<a name="430330900"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20the%20cardinality%20of%20Cat%3F/near/430330900" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20the.20cardinality.20of.20Cat.3F.html#430330900">(Mar 29 2024 at 23:23)</a>:</h4>
+<p>(1) isn't about finite universes but the universe of all (hereditarily) finite sets. That is, the collection of all sets which are finite, whose elements are themselves finite, whose elements' elements are finite and so on forms a set and is a Grothendieck universe (furthermore it is countable).</p>
+<p>The category of all small categories relative to this universe will be countable. Up to equivalence we can think of it as the category of all finite categories. But Cat itself won't be countable for any other universe (any universe containing ω). This is because Set (meaning the category of sets in that universe) embeds into it: any small set defines a "discrete" category with only identity morphisms. And if N is small then so are all of its subsets, so Set (and thus Cat) has to have cardinality at least 2^|N|.</p>
+<p>There is no universe of all universes, but for each universe there is a larger one containing it. I would say grothendieck universes do have the same problem as ZFC, in that we can't collect all universes into a universe simultaneously, the problem just occurs "higher up the chain". This isn't a contradiction, it's simply that there is no such universe (like how there's no largest set). What we can do is bound any set of universes by another universe (eg any countably family of them) and this is good enough most of the time</p>
+
+
+
+<a name="430330928"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20the%20cardinality%20of%20Cat%3F/near/430330928" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20the.20cardinality.20of.20Cat.3F.html#430330928">(Mar 29 2024 at 23:23)</a>:</h4>
+<p>Also, I don't know where the quotes you posted are from so I'm worried I'm missing some context</p>
+
+
+
+<a name="430331538"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20the%20cardinality%20of%20Cat%3F/near/430331538" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20the.20cardinality.20of.20Cat.3F.html#430331538">(Mar 29 2024 at 23:29)</a>:</h4>
+<p>Here you go <a href="https://ncatlab.org/nlab/show/Grothendieck+universe">https://ncatlab.org/nlab/show/Grothendieck+universe</a></p>
+
+
+
+<a name="430332938"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20the%20cardinality%20of%20Cat%3F/near/430332938" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20the.20cardinality.20of.20Cat.3F.html#430332938">(Mar 29 2024 at 23:43)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="556202">Brendan Murphy</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/What.20is.20the.20cardinality.20of.20Cat.3F/near/430330900">said</a>:</p>
+<blockquote>
+<p>(1) isn't about finite universes but the universe of all (hereditarily) finite sets. That is, the collection of all sets which are finite, whose elements are themselves finite, whose elements' elements are finite and so on forms a set and is a Grothendieck universe (furthermore it is countable).</p>
+<p>The category of all small categories relative to this universe will be countable. Up to equivalence we can think of it as the category of all finite categories. But Cat itself won't be countable for any other universe (any universe containing ω). This is because Set (meaning the category of sets in that universe) embeds into it: any small set defines a "discrete" category with only identity morphisms. And if N is small then so are all of its subsets, so Set (and thus Cat) has to have cardinality at least 2^|N|.</p>
+<p>There is no universe of all universes, but for each universe there is a larger one containing it. I would say grothendieck universes do have the same problem as ZFC, in that we can't collect all universes into a universe simultaneously, the problem just occurs "higher up the chain". This isn't a contradiction, it's simply that there is no such universe (like how there's no largest set). What we can do is bound any set of universes by another universe (eg any countably family of them) and this is good enough most of the time</p>
+</blockquote>
+<p>Alright. It’ll take me a while to digest that. But I think I’ll undertake a study of finite categories to see some details clearer.</p>
+
+
+
+<a name="430340432"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20the%20cardinality%20of%20Cat%3F/near/430340432" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Washington <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20the.20cardinality.20of.20Cat.3F.html#430340432">(Mar 30 2024 at 01:00)</a>:</h4>
+<p>re: (1). as stated on the nLab, a Grothendieck universe is a transitive model of ZFC - Infinity (that's essentially all the conditions are saying). what's happening here is that ZFC proves there is a model of ZFC - Infinity (i.e. that ZFC - Infinity is consistent). this means ZFC can prove that there is a Grothendieck universe (in the nLab's sense). this is different from (ZFC - Infinity) + ¬Infinity, but ZFC can also prove that a model of those axioms exist (the HF sets, as Brendan points out). so I think a confusion here might be just noticing that difference: ZFC - Infinity is different from ZFC - Infinity plus the negation of Infinity (like how ZF is different from ZF + ¬Choice).  </p>
+<p>ZFC cannot prove there is a Grothendieck universe satisfying Infinity, because that's equivalent to proving that ZFC is consistent, which cannot be by Gödel's incompleteness theorem. but we can prove that <em>if</em> a Grothendieck universe satisfying Infinity exists, it's a model of ZFC; that's straightforward and does not require the axiom of universes.  </p>
+<p>the idea about "super-containers" is connected to the notion of <a href="https://projecteuclid.org/journals/notre-dame-journal-of-formal-logic/volume-56/issue-1/Varieties-of-Indefinite-Extensibility/10.1215/00294527-2835056.pdf">indefinite extensibility</a> and there's no escape from it here. remember that universes are sets. the axiom of universes says that every set (including universes) is contained in some universe, but that's not to say that some universe contains every set. (and there's no universe of all universes, because universes are transitive sets, so a universe of all universes would also be a set of all sets.)</p>
+
+
+
+<a name="430341410"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20the%20cardinality%20of%20Cat%3F/near/430341410" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Julius Hamilton <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20the.20cardinality.20of.20Cat.3F.html#430341410">(Mar 30 2024 at 01:10)</a>:</h4>
+<p>Awesome thank you so much that article is perfect. I’ll strive to understand more of your post soon.</p>
+
+
+
+<a name="430350921"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20the%20cardinality%20of%20Cat%3F/near/430350921" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20the.20cardinality.20of.20Cat.3F.html#430350921">(Mar 30 2024 at 03:11)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="278070">Evan Washington</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/What.20is.20the.20cardinality.20of.20Cat.3F/near/430340432">said</a>:</p>
+<blockquote>
+<p>re: (1). as stated on the nLab, a Grothendieck universe is a transitive model of ZFC - Infinity (that's essentially all the conditions are saying).... ZFC cannot prove there is a Grothendieck universe satisfying Infinity, because that's equivalent to proving that ZFC is consistent</p>
+</blockquote>
+<p>This is a very common misconception that turns on some technical details of set theory.  In fact, having a Grothendieck universe is much stronger than having a transitive model of ZFC or knowing that ZFC is consistent.  A Grothendieck universe satifies the "second-order replacement axiom" that <em>every</em> function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>A</mi><mo>→</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">f:A\to U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span></span></span></span>, with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∈</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">A\in U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span></span></span></span>, has an image in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi></mrow><annotation encoding="application/x-tex">U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span></span></span></span>, whereas a model of ZFC only needs to satisfy the "first-order replacement axiom schema" which asserts this only when <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span> is definable by a logical formula.  In fact one can prove that if there is a Grothendieck universe <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi></mrow><annotation encoding="application/x-tex">U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span></span></span></span> of cardinality <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi></mrow><annotation encoding="application/x-tex">\kappa</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">κ</span></span></span></span>, then there are <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi></mrow><annotation encoding="application/x-tex">\kappa</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">κ</span></span></span></span>-many transitive models of ZFC contained in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi></mrow><annotation encoding="application/x-tex">U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span></span></span></span>!</p>
+
+
+
+<a name="430354960"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20the%20cardinality%20of%20Cat%3F/near/430354960" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20the.20cardinality.20of.20Cat.3F.html#430354960">(Mar 30 2024 at 04:17)</a>:</h4>
+<p>Just to elaborate on the difference between first and second order replacement: if we assume ZFC has a countable transitive model M (this is implied by ZFC having any transitive model whatsoever by downward LS) then ω^M is the external ω while the powerset P(ω)^M cannot be the external powerset P(ω), because P(ω)^M is externally countable (as a subset of the countable set M). But we do have that P(ω)^M is a subset of P(ω). So there must be a set of natural numbers X (in fact, continuum many) which is undefinable in the model. Note X is not finite and so externally there exists a bijection ω -&gt; X. Composing with the inclusion we get a function ω -&gt; M which is necessarily not definable, because if it was then its image X would be an element of M. This kind of thing is ruled out by a grothendieck universe. It's extremely important if we want to pass back and forth between grothendieck universes that "the small powerset of a small set is its actual powerset", and this is not captured by just a transitive model of ZFC</p>
+
+
+
+<a name="430355447"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20the%20cardinality%20of%20Cat%3F/near/430355447" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20the.20cardinality.20of.20Cat.3F.html#430355447">(Mar 30 2024 at 04:22)</a>:</h4>
+<p>However, I believe that a Grothendieck universe of cardinality <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi></mrow><annotation encoding="application/x-tex">\kappa</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">κ</span></span></span></span> (i.e. an inaccessible cardinal <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi></mrow><annotation encoding="application/x-tex">\kappa</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">κ</span></span></span></span>) even contains <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi></mrow><annotation encoding="application/x-tex">\kappa</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">κ</span></span></span></span>-many "natural models", i.e. transitive models that are a level of the von Neumann hierarchy, hence in which powersets do coincide with "real" powersets.</p>
+
+
+
+<a name="430355715"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20the%20cardinality%20of%20Cat%3F/near/430355715" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20the.20cardinality.20of.20Cat.3F.html#430355715">(Mar 30 2024 at 04:27)</a>:</h4>
+<p>Huh, that's very interesting. I had no idea</p>
+
+
+
+<a name="430355782"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20the%20cardinality%20of%20Cat%3F/near/430355782" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Brendan Murphy <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20the.20cardinality.20of.20Cat.3F.html#430355782">(Mar 30 2024 at 04:28)</a>:</h4>
+<p>I thought you could conclude 2nd order replacement from this but clearly not</p>
+
+
+
+<a name="430356061"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/What%20is%20the%20cardinality%20of%20Cat%3F/near/430356061" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/What.20is.20the.20cardinality.20of.20Cat.3F.html#430356061">(Mar 30 2024 at 04:33)</a>:</h4>
+<p>I learned this from the paper "Natural models of set theories" by Montague and Vaught.  But I'm not an expert on ZFC and the paper is rather old, so it's conceivable I misinterpreted it.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

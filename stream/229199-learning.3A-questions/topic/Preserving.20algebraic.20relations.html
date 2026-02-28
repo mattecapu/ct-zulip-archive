@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Preserving algebraic relations · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html">Preserving algebraic relations</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="437539356"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Preserving%20algebraic%20relations/near/437539356" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html#437539356">(May 07 2024 at 22:02)</a>:</h4>
+<p>The Galois group of a polynomial is the group of permutations of the roots that preserve all algebraic relations. In CT we talk about functors that preserve limits or homomorphisms that preserve structure.  What's the right way to think about preserving an algebraic relation?</p>
+
+
+
+<a name="437544183"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Preserving%20algebraic%20relations/near/437544183" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html#437544183">(May 07 2024 at 22:43)</a>:</h4>
+<p>How come "homomorphisms" doesn't solve this problem, insofar as the Galois group is a group of automorphisms?</p>
+
+
+
+<a name="437643767"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Preserving%20algebraic%20relations/near/437643767" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html#437643767">(May 08 2024 at 12:50)</a>:</h4>
+<p>Well, it's a <em>theorem</em> that the automorphisms of the splitting field are in bijection with the permutations that preserve all algebraic relations.  My question was more about whether there's a more abstract way to describe what it means for a set of roots to satisfy a set of algebraic relations.  The set of roots don't form a field; instead they're field elements.  But the relations seem to capture the whole relevant structure of the field itself and how the roots fit into it.  It seems like one could put an "algebraic structure" on an arbitrary finite set.  Is that algebraic structure necessarily connected to fields, or does it make sense to consider rings or monoids, or arbitrary models of a Lawvere theory, or even a finite sum sketch?</p>
+
+
+
+<a name="438054577"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Preserving%20algebraic%20relations/near/438054577" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html#438054577">(May 10 2024 at 22:23)</a>:</h4>
+<p>For example, suppose I've got a single-sorted theory <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span> of some kind—algebraic theory, finite limits theory, geometric theory, whatever—a model <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span></span></span></span> of the theory in Set, and an equation <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><mi>Q</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">P(x) = Q(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">Q</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span>, where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span> are term constructors of arity 1.  There'll be some set of solutions in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span></span></span></span>, but we can also adjoin formal solutions, which gives us a model <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo stretchy="false">[</mo><msub><mi>α</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>α</mi><mi>n</mi></msub><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">M[\alpha_1, \ldots, \alpha_n]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mopen">[</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0037em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0037em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">]</span></span></span></span>.  We can consider the group of automorphisms of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo stretchy="false">[</mo><msub><mi>α</mi><mn>1</mn></msub><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><msub><mi>α</mi><mi>n</mi></msub><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">M[\alpha_1, \ldots, \alpha_n]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mopen">[</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0037em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0037em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">]</span></span></span></span> that fix <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span></span></span></span>.  Has anyone looked at doing this for any theory other than that of fields?</p>
+
+
+
+<a name="438090421"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Preserving%20algebraic%20relations/near/438090421" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html#438090421">(May 11 2024 at 08:22)</a>:</h4>
+<p>There are various generalizations of Galois theory.  Borceux and Janelidze wrote a book called <em>Galois Theories</em> which should be interesting.  I haven't read it, but here's the abstract:</p>
+<blockquote>
+<p>Starting from the classical finite-dimensional Galois theory of fields, this book develops Galois theory in a much more general context, presenting work by Grothendieck in terms of separable algebras and then proceeding to the infinite-dimensional case, which requires considering topological Galois groups. In the core of the book, the authors first formalize the categorical context in which a general Galois theorem holds, and then give applications to Galois theory for commutative rings, central extensions of groups, the topological theory of covering maps and a Galois theorem for toposes. The book is designed to be accessible to a wide audience: the prerequisites are first courses in algebra and general topology, together with some familiarity with the categorical notions of limit and adjoint functors. The first chapters are accessible to advanced undergraduates, with later ones at a graduate level. For all algebraists and category theorists this book will be a rewarding read.</p>
+</blockquote>
+
+
+
+<a name="438090975"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Preserving%20algebraic%20relations/near/438090975" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html#438090975">(May 11 2024 at 08:29)</a>:</h4>
+<p>I don't know if they tackle algebras of Lawvere theories.  Here's a paper that covers the Galois theory of algebras of Lawvere theories:</p>
+<ul>
+<li>Janelidze and Kelly, <a href="https://www.sciencedirect.com/science/article/pii/0022404994900574/">Galois theory and a general notion of central extension</a>, <em>Journal of Pure and Applied Algebra</em>, <strong>97</strong> (1994), 135-161.</li>
+</ul>
+
+
+
+<a name="438091081"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Preserving%20algebraic%20relations/near/438091081" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html#438091081">(May 11 2024 at 08:30)</a>:</h4>
+<p>Interestingly it uses the language of universal algebra and "varieties" rather than Lawvere theories, but they're essentially the same thing.</p>
+
+
+
+<a name="438091477"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Preserving%20algebraic%20relations/near/438091477" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html#438091477">(May 11 2024 at 08:37)</a>:</h4>
+<p>Almost everything Kelly does proceeds at a level of technical sophistication and generality that makes it hard for me to find the answers to the simple questions I have until I take a long time to absorb his deeper thoughts.  This looks like no exception.   </p>
+<p>One thing I see right away is that to generalize Galois theory smoothly, they consider not <em>arbitrary</em> extensions of algebraic gadgets, but <em>central</em> extensions, which they define.  Every extension of a field is a central extension so this concept is invisible in classical Galois theory.</p>
+
+
+
+<a name="438138895"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Preserving%20algebraic%20relations/near/438138895" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Grossack (they/them) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html#438138895">(May 11 2024 at 22:34)</a>:</h4>
+<p>This is also studied in what's appropriately called "Model Theoretic Galois Theory".  See <a href="https://www.jstor.org/stable/27805178">this survey</a>, for instance.  In general, you can define a notion of "algebraic closure" model theoretically, and then one naturally studies the group of automorphisms of the algebraic closure as a kind of "absolute galois group" of your model.</p>
+
+
+
+<a name="438139074"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Preserving%20algebraic%20relations/near/438139074" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Grossack (they/them) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html#438139074">(May 11 2024 at 22:38)</a>:</h4>
+<p>I know that there are interesting things to say about this, but I don't know them... I think I remember reading a few years ago that this stuff is related to "existentially closed models" and "stable theories" but that's some ESPECIALLY heavy duty model theory, and I might be misremembering.</p>
+
+
+
+<a name="438139186"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Preserving%20algebraic%20relations/near/438139186" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Grossack (they/them) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html#438139186">(May 11 2024 at 22:41)</a>:</h4>
+<p>You might be interested in a textbook account of this algebraic closure stuff in Marker's "Model Theory: An Introduction" (Chapter 6), or another survey <a href="https://www.karlin.mff.cuni.cz/~krajicek/vddries-stable.pdf">here</a></p>
+
+
+
+<a name="438170517"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Preserving%20algebraic%20relations/near/438170517" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html#438170517">(May 12 2024 at 09:05)</a>:</h4>
+<p>This work sounds like it's going above the power of Lawvere theories into full-fledged classical first-order logic.   Right?  That should be lots of fun.   Jim Dolan thinks <a href="https://en.wikipedia.org/wiki/Beth_definability">Beth's definability theorem</a> is a key result in <em>this</em> sort of Galois theory.</p>
+
+
+
+<a name="438370042"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Preserving%20algebraic%20relations/near/438370042" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Stay <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html#438370042">(May 13 2024 at 14:00)</a>:</h4>
+<p>Wow, thanks to both of you!  That's plenty to go read up on.</p>
+
+
+
+<a name="438481905"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Preserving%20algebraic%20relations/near/438481905" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Grossack (they/them) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html#438481905">(May 14 2024 at 01:42)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations/near/438170517">said</a>:</p>
+<blockquote>
+<p>This work sounds like it's going above the power of Lawvere theories into full-fledged classical first-order logic.   Right?  That should be lots of fun.   Jim Dolan thinks <a href="https://en.wikipedia.org/wiki/Beth_definability">Beth's definability theorem</a> is a key result in <em>this</em> sort of Galois theory.</p>
+</blockquote>
+<p>I was actually thinking about Beth's definability theorem just a few weeks ago! (And the closely related <a href="https://en.wikipedia.org/wiki/Craig_interpolation">craig interpolation theorem</a>). I wrote about this on <a href="https://sunny.garden/@hallasurvivor/112349959135624885">mastodon</a> recently, since I had to kill my blog post when I felt it getting long, haha. I have a lot to say about it, and maybe I'll write that up.... sometime that isn't now, lol</p>
+
+
+
+<a name="438482014"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Preserving%20algebraic%20relations/near/438482014" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Chris Grossack (they/them) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html#438482014">(May 14 2024 at 01:43)</a>:</h4>
+<p>Anyways, I would love to chat about some of this stuff sometime. Categorical model theory is a pet topic of mine, and I would love to hear Jim's thoughts on model theoretic galois theory and beth definability (I can loosely see the connection)</p>
+
+
+
+<a name="438556582"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Preserving%20algebraic%20relations/near/438556582" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html#438556582">(May 14 2024 at 11:35)</a>:</h4>
+<p>Jim could talk about this much better than I could.  I think his idea is roughly: under some conditions, the <em>definable</em> aspects of a model of a theory in first-order logic are precisely those that are invariant under the group of automorphisms of that model.</p>
+
+
+
+<a name="438556838"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Preserving%20algebraic%20relations/near/438556838" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations.html#438556838">(May 14 2024 at 11:37)</a>:</h4>
+<p>The easy direction is that definable aspects of our model (e.g. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>-ary predicates that we can express in the language of our model) are preserved by automorphisms of the model - this is just the <em>definition</em> of 'automorphism'.  The fun direction is the converse: anything invariant is definable.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>The subobject functors in regular categories · learning: reading &amp; references · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/index.html">learning: reading &amp; references</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/The.20subobject.20functors.20in.20regular.20categories.html">The subobject functors in regular categories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="518190168"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/The%20subobject%20functors%20in%20regular%20categories/near/518190168" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Forsman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/The.20subobject.20functors.20in.20regular.20categories.html#518190168">(May 15 2025 at 01:45)</a>:</h4>
+<p>Hey all,<br>
+Consider a well-powered category C and the associated subobject functor Sub: C^{op}-&gt; Set which maps an object to the equivalence class of monomorphism arriving to it. To fish out the subboject classifier, in some cases it suffices to prove that this functor maps colimits in C to limits in Set. </p>
+<p>Let's assume that C is a cocomplete category. For continuity of Sub, it then reduces to checking that the coproducts and the coequalizers are respected. I found something intriguing: In regular categories the subobject functor respects coequalizers, where the pair being coequalized is a kernel pair. I suspect it could be possible that in all regular categories with coequalizers, the functor Sub respects coequalizers, but this has been quite difficult to show.</p>
+<p>I considered using the following meta-theorem in <a href="https://www.math.mcgill.ca/barr/papers/embed.pdf">https://www.math.mcgill.ca/barr/papers/embed.pdf</a>:<br>
+Theorem C. Let X be a small category. Then there is a family {Ut},<br>
+iel of exact set-valued functors on X which collectively are faithful and<br>
+reflect finite limits and universal regular epimorphisms.</p>
+<p>This doesn't help in my setting, since even if these functors preserve stable regular epis and jointly reflect them, the family of functors might not preserve the coequalizer the regular epis come with. Maybe there is an upgraded version of this theorem.</p>
+<p>I would appreciate it, if someone could help me solve this problem. Perhaps this is studied in some papers or books. If you have a reference to share, that would be excellent as well.<br>
+Thanks</p>
+
+
+
+<a name="518215106"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/The%20subobject%20functors%20in%20regular%20categories/near/518215106" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/The.20subobject.20functors.20in.20regular.20categories.html#518215106">(May 15 2025 at 06:22)</a>:</h4>
+<p>Just to restate the theorem without the mangled OCR:</p>
+<blockquote>
+<p>Theorem C. Let <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> be a small category. Then there is a family <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>U</mi><mi>i</mi></msub><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{U_i\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>∈</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">i\in I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6986em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span> of exact set-valued functors on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> which collectively are faithful and reflect finite limits and universal regular epimorphisms.</p>
+</blockquote>
+
+
+
+<a name="518215202"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/The%20subobject%20functors%20in%20regular%20categories/near/518215202" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/The.20subobject.20functors.20in.20regular.20categories.html#518215202">(May 15 2025 at 06:23)</a>:</h4>
+<p>Is your setting a cocomplete regular category? Or just a cocomplete category?</p>
+
+
+
+<a name="518217672"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/The%20subobject%20functors%20in%20regular%20categories/near/518217672" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/The.20subobject.20functors.20in.20regular.20categories.html#518217672">(May 15 2025 at 06:40)</a>:</h4>
+<p>Oh, wait, is it "regular category with coequalisers"?</p>
+
+
+
+<a name="518252691"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/The%20subobject%20functors%20in%20regular%20categories/near/518252691" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Forsman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/The.20subobject.20functors.20in.20regular.20categories.html#518252691">(May 15 2025 at 09:34)</a>:</h4>
+<p>Thanks for correcting the statement. I was able to prove the following:<br>
+Let C be a regular category and consider the subobject functor Sub:C^{op}\to SET. If h coequlizes its kernel pair (f,g) in C, then Sub(h) is the equalizer of the parallel pair (Sub(f), Sub(g)). </p>
+<p>Here I required nothing else than regularity. For convenience we may assume the existence of coequalizers in C, but so far I haven't needed this assumption. I would like to be able to drop the assumption that (f,g) is a kernel pair. </p>
+<p>The context can be assumed to be a regular category with coequalizers. It by itself is an interesting question which assumptions are really needed for this theorem to go through. Changing the assumption of (f,g) being a kernel pair to a parallel pair having a joint section suffices for my purposes.</p>
+
+
+
+<a name="518736201"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/The%20subobject%20functors%20in%20regular%20categories/near/518736201" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Forsman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/The.20subobject.20functors.20in.20regular.20categories.html#518736201">(May 16 2025 at 19:43)</a>:</h4>
+<p>I did some calculations and found out that the subobject functor Sub doesn't map the coequalizers in Ab of abelian groups to equalizers in Set. This Barr-Kock theorem-style property can be seen to fail in Ab by choosing the homomorphisms on integers  $x\mapsto x, 2x$ and a subgroup M consisting of the integers divisible by 3. The inverse images of M agree along the chosen homomorphisms but M is not saturated with respect to the induced congruence. The subobject functor Sub does however respect reflexive coequalizers in Ab and more generally in R-mod of R-modules for any commutative ring R. By the Freyd-Mitchell embedding theorem of small abelian categories, we have that all abelian categories have this property. (Sub maps reflexive coequalizers in any abelian category to equalizers.)</p>
+<p>If the category C has pullbacks, coproducts and image factorizations, then the condition that the subobject functor Sub:C^{op}\to SET preserves coproducts reduces to the case that in the possibly large subobject lattices binary intersections commute with small unions. In other words, the subobject lattices are infinitarily distributive.</p>
+<p>The upshot of all this is that if C is a regular locally presentable category, where coproduct inclusions are monic, then C has a subobject classifier if and only if this Barr-Kock-theorem-styled property holds and in the subobject lattices the binary intersection distributes over small unions. I wonder if this result is already known or not.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Feb 28 2026 at 12:12 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>
