@@ -1,0 +1,404 @@
+[
+    {
+        "content": "<p>I would like to write a book in LaTeX and have the chapters appear as web pages or blog articles.  I want to be able to keep editing each chapter over and over, and update the corresponding chapter each time this happens.  I want the webpages to look fairly good.  I also want the final result to be printable as a single PDF file.   I want all of this to be quite easy to do.</p>\n<p>What's a good way to do this?</p>\n<p>Right now I could write in LaTeX, convert some formatting commands to HTML by hand, and create either a blog article or a web page.    This would not work well for references (to theorems in other chapters, for example) or citations (of previous literature).   </p>\n<p>I could probably get someone to help me do the format conversion using  some automated system.   <span class=\"user-mention\" data-user-id=\"277321\">@Simon Burton</span> is already doing something like this for my <em><a href=\"https://math.ucr.edu/home/baez/act_course/\">Applied Category Theory Course</a></em>, and that works quite well.</p>\n<p>But I'm wondering if there are other frameworks for doing what I want.</p>",
+        "id": 526778074,
+        "sender_full_name": "John Baez",
+        "timestamp": 1751455110
+    },
+    {
+        "content": "<p>You could fork the repo of <a href=\"https://github.com/stacks/stacks-project\">the Stacks project</a> or <a href=\"https://github.com/The-Clowder-Project/the-clowder-project\">the Clowder project</a> and customize it to your liking or use it as is.</p>",
+        "id": 526779367,
+        "sender_full_name": "Ralph Sarkis",
+        "timestamp": 1751455591
+    },
+    {
+        "content": "<p>I tried latexml recently, it converts latex to html.. This is what the arxiv is using to generate html pages for papers. It was looking pretty good, even though it involved a lot of fiddling with css files. But I gave up when I saw the output on commutative diagrams from tikzcd... Maybe it's worth pursuing, i found the developers on github quite helpful when i had problems..</p>",
+        "id": 526782153,
+        "sender_full_name": "Simon Burton",
+        "timestamp": 1751456676
+    },
+    {
+        "content": "<p>I'm essentially ignorant of programming, and prefer to remain as close as possible to that state of ignorance, but will accept a certain amount of learning if necessary.   For the Clowder project, it starts by saying</p>\n<blockquote>\n<p><strong>Requirements.</strong> This project uses <a href=\"https://anaconda.org/anaconda/conda\">Conda</a> as Gerby requires <code>python3.6</code>. It also requires <code>inkscape</code> for <code>make pictures</code> to run properly.</p>\n</blockquote>\n<p>Then it describes the \"initial setup\".   It doesn't say if the initial setup requires that I've first do something to get the \"requirements\", or whether the initial setup automatically gives me the requirements.   I'm afraid I need to first do something to get the \"requirements\".   I have no idea how to install python3.6 or inkscape.   So do I need to learn that?</p>",
+        "id": 526782528,
+        "sender_full_name": "John Baez",
+        "timestamp": 1751456792
+    },
+    {
+        "content": "<p>The Stacks project is even less clear about what I actually need to do.</p>",
+        "id": 526782765,
+        "sender_full_name": "John Baez",
+        "timestamp": 1751456868
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277321\">Simon Burton</span> <a href=\"#narrow/channel/229111-community.3A-general/topic/Writing.20a.20book.20in.20LaTeX.20on.20the.20web/near/526782153\">said</a>:</p>\n<blockquote>\n<p>I tried latexml recently, it converts latex to html.. This is what the arxiv is using to generate html pages for papers</p>\n</blockquote>\n<p>I used to use something called latex2html - it allowed me to easily create a <a href=\"https://math.ucr.edu/home/baez/octonions/node1.html\">website based on my paper \"The octonions\"</a>.   The math symbols are stored as tiny gifs, and they don't look very good.  But latex2html was very easy for an idiot like me to use, and the results were quite useful, at least to me.</p>\n<p>The output of latexml <a href=\"https://arxiv.org/html/2502.01833v2\">looks a lot better</a>, at least in some cases.</p>\n<blockquote>\n<p>But I gave up when I saw the output on commutative diagrams from tikzcd...</p>\n</blockquote>\n<p>For some books I might write, this wouldn't matter much.   I don't mind creating one or two tikz pictures \"by hand\" for a website version of a book, and including them as jpegs.  For other books, the number of tikz diagrams would be very large.</p>",
+        "id": 526783544,
+        "sender_full_name": "John Baez",
+        "timestamp": 1751457166
+    },
+    {
+        "content": "<p>I'm also wondering if <a href=\"https://www.forester-notes.org/0052/index.xml\">forester</a> would be suitable. Is <span class=\"user-mention\" data-user-id=\"297784\">@Jon Sterling</span> here?</p>",
+        "id": 526785456,
+        "sender_full_name": "Simon Burton",
+        "timestamp": 1751457838
+    },
+    {
+        "content": "<p>What are the downsides of your system, the one we're using for <em>Lectures in Applied Category Theory</em>, <span class=\"user-mention\" data-user-id=\"277321\">@Simon Burton</span> - apart from the fact that currently I rely on you every time I want to make a change?  Presumably I could be trained to do that stuff myself?</p>",
+        "id": 526787132,
+        "sender_full_name": "John Baez",
+        "timestamp": 1751458356
+    },
+    {
+        "content": "<p>(Jon Sterling left this Zulip a long time ago due to personal conflicts; he is allegedly easier to reach elsewhere.)</p>",
+        "id": 526789045,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1751458927
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/channel/229111-community.3A-general/topic/Writing.20a.20book.20in.20LaTeX.20on.20the.20web/near/526789045\">said</a>:</p>\n<blockquote>\n<p>(Jon Sterling left this Zulip a long time ago due to personal conflicts; he is allegedly easier to reach elsewhere.)</p>\n</blockquote>\n<p>He's fairly active on mathstodon, where I believe <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> also has an account.</p>",
+        "id": 526791350,
+        "sender_full_name": "daniel gratzer",
+        "timestamp": 1751459744
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229111-community.3A-general/topic/Writing.20a.20book.20in.20LaTeX.20on.20the.20web/near/526787132\">said</a>:</p>\n<blockquote>\n<p>What are the downsides of your system, the one we're using for <em>Lectures in Applied Category Theory</em></p>\n</blockquote>\n<p>Well we never figured out how to get latex or pdf out of it... so that would be step 1 to try and get that to work...<br>\n(A big part of this is what file format do you write in, in this case it's some kind of markdown. For latexml it would be latex... )</p>",
+        "id": 526791484,
+        "sender_full_name": "Simon Burton",
+        "timestamp": 1751459786
+    },
+    {
+        "content": "<p>Okay, I didn't notice we (= you) never managed to get latex or PDF out of it.  For my book projects that will be essential.</p>\n<blockquote>\n<p>A big part of this is what file format do you write in...</p>\n</blockquote>\n<p>I'd prefer to write in something close to LaTeX.   I can stomach using MathJax for equations and markdown for section headers, etc., and <em>when I'm finished writing the book</em> converting everything to pure LaTeX.</p>",
+        "id": 526797822,
+        "sender_full_name": "John Baez",
+        "timestamp": 1751461698
+    },
+    {
+        "content": "<p>I should start by trying latexml.</p>",
+        "id": 526797858,
+        "sender_full_name": "John Baez",
+        "timestamp": 1751461711
+    },
+    {
+        "content": "<p>A simple infrastructure produced these pages <a href=\"https://tetrapharmakon.github.io/species/\">https://tetrapharmakon.github.io/species/</a><br>\nThe repo is public <a href=\"https://github.com/tetrapharmakon/species\">https://github.com/tetrapharmakon/species</a> for anyone who wants to clone and tinker</p>\n<p>Pro: one can write arbitrary latex, yes, tikz; yes, quiver; yes, xymatrices; yes, whatever perversion one has can be impelemented. On the other hand, latexml has limitations</p>\n<p>Con: it might be a tiny bit counterintuitive in the beginning, because there are idiomatic ways to place the image where you really want. Nothing that doesn't come natural after a couple days.</p>\n<p>Btw, I will eventually continue writing those notes... it's been a while...</p>",
+        "id": 526803806,
+        "sender_full_name": "fosco",
+        "timestamp": 1751463443
+    },
+    {
+        "content": "<p>these images are plain tikz</p>\n<p><a href=\"/user_uploads/21317/k-RECh2MkVUIxZZRGmZAh1CL/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/k-RECh2MkVUIxZZRGmZAh1CL/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1092x676\" src=\"/user_uploads/thumbnail/21317/k-RECh2MkVUIxZZRGmZAh1CL/image.png/840x560.webp\"></a></div>",
+        "id": 526804029,
+        "sender_full_name": "fosco",
+        "timestamp": 1751463509
+    },
+    {
+        "content": "<p>produced as follows:</p>\n<div class=\"codehilite\"><pre><span></span><code>{% tex classes: [antex, display] %}\n\\begin{tikzpicture}\n\\draw (0,0) circle (1cm);\n\\draw[-&gt;] (70:1.15cm) arc (70:35:1.15cm);\n\\foreach[count=\\j] \\i in {4,3,2,1,0}{\n  \\node[draw, fill=white, circle, inner sep=1pt] at (\\i*360/5+90+72:1cm) {\\footnotesize $x_{\\j}$};\n  }\n\\begin{scope}[xshift=3cm]\n\\draw (0,0) circle (1cm);\n\\draw[-&gt;] (70:1.15cm) arc (70:35:1.15cm);\n\\foreach[count=\\j] \\i in {4,3,2,1,0}{\n  \\node[draw, fill=white, circle, inner sep=1pt] at (\\i*360/5+90:1cm) {\\footnotesize $x_{\\j}$};\n  }\n\\end{scope}\n\\begin{scope}[xshift=7cm]\n\\draw (0,0) circle (1cm);\n% \\draw[-&gt;] (70:1.15cm) arc (70:35:1.15cm);\n\\foreach[count=\\j] \\i in {0,1,2,3,4}{\n  \\node[draw, fill=white, circle, inner sep=1pt] at (\\i*360/5+90:1cm) {\\footnotesize $x_{\\j}$};\n  }\n\\end{scope}\n\\end{tikzpicture}\n{% endtex %}\n</code></pre></div>",
+        "id": 526804160,
+        "sender_full_name": "fosco",
+        "timestamp": 1751463543
+    },
+    {
+        "content": "<p>Another option that seems to be better documented is <a href=\"https://www.chirun.org.uk/docs/en/latest/index.html\">chirun</a>. It also has a web-based frontend which may allow you to skip any coding (except what is necessary to publish the website you create).</p>",
+        "id": 526806044,
+        "sender_full_name": "Ralph Sarkis",
+        "timestamp": 1751464083
+    },
+    {
+        "content": "<p>Besides the stacks project, Lurie's <a href=\"https://kerodon.net/\">Kerodon</a> also uses  Gerby. But the set-up instructions (eg <a href=\"https://gerby-project.github.io/stacks-instructions\">here</a> to clone the stack project) are really non-trivial.</p>",
+        "id": 526812309,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1751465693
+    },
+    {
+        "content": "<p>I’ll mention pretext even though I don’t know a ton about it.  <a href=\"https://pretextbook.org/\">https://pretextbook.org/</a></p>",
+        "id": 526845295,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1751475623
+    },
+    {
+        "content": "<p>My understanding is that pretext is not actually written <em>in</em> latex, but rather some kind of XML, which is kind of a dealbreaker for me.  (But if I'm wrong, someone please correct me.)</p>",
+        "id": 526845631,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751475748
+    },
+    {
+        "content": "<p>It would be great if we could assemble all the suggestions in this thread into a list that summarizes the pros and cons of each, not just for John but for others who might be interested (which might include me, someday).  Perhaps on an nLab page?</p>",
+        "id": 526845845,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751475838
+    },
+    {
+        "content": "<p>Oh yeah, that would be a dealbreaker for me too.</p>",
+        "id": 526846169,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1751475964
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229111-community.3A-general/topic/Writing.20a.20book.20in.20LaTeX.20on.20the.20web/near/526782528\">said</a>:</p>\n<blockquote>\n<p>I'm essentially ignorant of programming, and prefer to remain as close as possible to that state of ignorance, but will accept a certain amount of learning if necessary.   For the Clowder project, it starts by saying</p>\n<blockquote>\n<p><strong>Requirements.</strong> This project uses <a href=\"https://anaconda.org/anaconda/conda\">Conda</a> as Gerby requires <code>python3.6</code>. It also requires <code>inkscape</code> for <code>make pictures</code> to run properly.</p>\n</blockquote>\n<p>Then it describes the \"initial setup\".   It doesn't say if the initial setup requires that I've first do something to get the \"requirements\", or whether the initial setup automatically gives me the requirements.   I'm afraid I need to first do something to get the \"requirements\".   I have no idea how to install python3.6 or inkscape.   So do I need to learn that?</p>\n</blockquote>\n<p>For Clowder you need to separately install Conda and inkscape, but python3.6 will be installed automatically when you run the <code>make conda-create</code> command.</p>",
+        "id": 526850035,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1751477497
+    },
+    {
+        "content": "<p>I've tried documenting how to build it as much as I could; there's even a “GitHub action” that automatically compiles the website to <a href=\"https://the-clowder-project.github.io/the-clowder-project/\">here</a> whenever a new update is pushed.</p>",
+        "id": 526850049,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1751477503
+    },
+    {
+        "content": "<p>Still, I'd advise not using Gerby if you don't want to mess too much with code. As great as Gerby is, there is a HUGE amount of things you might end up needing to do =/</p>",
+        "id": 526850074,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1751477513
+    },
+    {
+        "content": "<p>For Clowder specifically, I've essentially spent the last two months working on a fork of Gerby that would do everything I wanted it to, along with corresponding changes to the website.</p>",
+        "id": 526850118,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1751477530
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276871\">Emily (she/her)</span> <a href=\"#narrow/channel/229111-community.3A-general/topic/Writing.20a.20book.20in.20LaTeX.20on.20the.20web/near/526850074\">said</a>:</p>\n<blockquote>\n<p>Still, I'd advise not using Gerby if you don't want to mess too much with code. As great as Gerby is, there is a HUGE amount of things you might end up needing to do =/</p>\n</blockquote>\n<p>It's also relatively easy to break the project if you don't compile it often, and then if that happens you'll have no idea what you did that got Gerby to not compile...</p>",
+        "id": 526850153,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1751477546
+    },
+    {
+        "content": "<p>Maybe using plain plasTeX could be a better solution. Gerby is a fork of it, but it's not well-maintained, so it's essentially something like 2 years behind plasTeX.</p>",
+        "id": 526850178,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1751477556
+    },
+    {
+        "content": "<p>I think Forester might be another nicer alternative, I think Tim used it for translations <a href=\"https://translations.thosgood.net/fga/\">here</a></p>",
+        "id": 526850286,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1751477603
+    },
+    {
+        "content": "<p>I thought Forester was not LaTeX?</p>",
+        "id": 526850944,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1751477898
+    },
+    {
+        "content": "<p>Regarding non-latex alternatives: in the long run, I'm very hopeful about <a href=\"https://typst.app/\">typst</a>. This is a LaTeX replacement with an HTML export feature <a href=\"https://typst.app/docs/reference/html/\">under active development</a>.</p>",
+        "id": 526857076,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1751480283
+    },
+    {
+        "content": "<p>There's also <a href=\"http://github.com/slatex/RusTeX\">github.com/slatex/RusTeX</a> which has an option to compile LaTeX to xhtml</p>",
+        "id": 526901074,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1751505318
+    },
+    {
+        "content": "<p>The group also has a webserver that you can run to serve the XHTML pages with mouseover and stuff like that, here's an example of a webpage written in LaTeX and compiled to XHTML using Rustex<br>\n<a href=\"https://mathhub.info/?uri=https%3A%2F%2Fmathhub.info%3Fa%3DPapers%2F22-CICM-Injecting-Formal-Mathematics%26d%3Dpaper%26l%3Den\">https://mathhub.info/?uri=https%3A%2F%2Fmathhub.info%3Fa%3DPapers%2F22-CICM-Injecting-Formal-Mathematics%26d%3Dpaper%26l%3Den</a></p>",
+        "id": 526901247,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1751505514
+    },
+    {
+        "content": "<p>the first thing that jumps out is the rich mouseover context, the previews of related pages</p>",
+        "id": 526901277,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1751505558
+    },
+    {
+        "content": "<p>Eventually we'll be able to produce accessible tagged PDFs, from which web pages can be <a href=\"https://www.pdfa.org/resource/deriving-html-from-pdf/\">derived</a> via something like <a href=\"https://ngpdf.com/\">ngPDF</a>. This depends on the progress of the <a href=\"https://latex3.github.io/tagging-project/\">LaTeX tagging project</a>; something that's also required as of this month for publishing ebooks in the EU/UK under the European Accessibility Act.</p>",
+        "id": 526951103,
+        "sender_full_name": "Ulrik Buchholtz",
+        "timestamp": 1751533965
+    },
+    {
+        "content": "<p>In case no one has mentioned this one: I've just started experimenting with a LaTeX package <a href=\"https://ctan.org/pkg/lwarp?lang=en\">lwarp</a> for a book-sized project. From the link:</p>\n<p>\"This package converts LATEX to HTML by using LATEX to process the user’s document and generate HTML tags. External utility programs are only used for the final conversion of text and images. Math may be represented by SVG files or MathJax. Hundreds of LATEX packages are supported, and their load order is automatically verified.\"</p>",
+        "id": 526999615,
+        "sender_full_name": "Rich Hilliard",
+        "timestamp": 1751550048
+    },
+    {
+        "content": "<p>Do you have any opinions on lwarp, <span class=\"user-mention\" data-user-id=\"276724\">@Rich Hilliard</span>?</p>",
+        "id": 527005266,
+        "sender_full_name": "John Baez",
+        "timestamp": 1751551482
+    },
+    {
+        "content": "<p>It was simple to install. Seems to do fine on the usual stuff: text formatting, document organization, references and linking. <br>\nIt supports various approaches to rendering math and diagrams. I haven't experimented with those enough yet to choose an approach.</p>",
+        "id": 527016489,
+        "sender_full_name": "Rich Hilliard",
+        "timestamp": 1751554290
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229111-community.3A-general/topic/Writing.20a.20book.20in.20LaTeX.20on.20the.20web/near/526850944\">said</a>:</p>\n<blockquote>\n<p>I thought Forester was not LaTeX?</p>\n</blockquote>\n<p>Forester is not LaTeX but it allows you to write arbitrary LaTeX, critically including general tikz or whatever other library-dependent code you want, in almost the way you’re used to. We’re using it a lot at Topos recently and it has a lot of great features including exporting to the Web by default and to ordinary LaTeX in a mostly automatic way, plus very flexible linking capabilities for writing in a modular way. I suspect it’s still “alpha” enough that John wouldn’t like it but I don’t think there’s anything clearly better yet.</p>",
+        "id": 527042351,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1751562612
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"280755\">@Owen Lynch</span> you’ve thought hard about this, do you want to drop your opinions about the various options mentioned here and why you like Forester best?</p>",
+        "id": 527042437,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1751562638
+    },
+    {
+        "content": "<p>By \"use arbitrary LaTeX\", you mean I can use packages like <code>tabularray</code>, etc. freely?</p>",
+        "id": 527064515,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1751572459
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/b8a_14t9HDjX9mVSoEz4iRXb/Screenshot-2025-07-03-at-1.24.00PM.png\">Screenshot 2025-07-03 at 1.24.00 PM.png</a><br>\nYes, you can. Here's an excerpt from a note of David Jaz's in the real Topos forest where he typesets a type theory using <code>mathpartir</code>; I added an example from the <code>tabularray</code> docs to see that Forester has no issues with that library either. It just runs your real LaTeX installation on the requisite parts of your forester document, then inserts the result into the final .xml output as SVG (I don't know any details about this processing pipeline.)</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/b8a_14t9HDjX9mVSoEz4iRXb/Screenshot-2025-07-03-at-1.24.00PM.png\" title=\"Screenshot 2025-07-03 at 1.24.00 PM.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1494x1192\" src=\"/user_uploads/thumbnail/21317/b8a_14t9HDjX9mVSoEz4iRXb/Screenshot-2025-07-03-at-1.24.00PM.png/840x560.webp\"></a></div>",
+        "id": 527068626,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1751574567
+    },
+    {
+        "content": "<p>The code looks something like this. It's a pretty analogous syntax to LaTeX, except for the somewhat annoying hygiene requirement to tag <em>everything</em>, including a paragraph of plain text, inside some backslash-and-braces macro.</p>\n<div class=\"codehilite\"><pre><span></span><code>\\p{In this sketch, I will describe a simple type theory whose contexts are in one-to-one corresondence with [direct categories](djm-002L). I don&#39;t think it quite works as stated.}\n\n\\p{The rules are as follows: }\n\n\\tex{\\usepackage{mathpartir}}{\n\\begin{mathpar}\n\\inferrule{\\phantom{\\bullet}}{\\bullet \\jctx }\n\\and \\inferrule{\\Gamma \\yields A \\jtype}{\\Gamma, .x : A \\yields x : A}\n\\and \\inferrule{\\Gamma \\yields \\mathcal{J}}{\\Gamma, .x : A \\yields \\mathcal{J}} \\\\\n\\inferrule{\\phantom{\\bullet}}{\\bullet : \\Gamma \\to \\bullet} \\and\n\\inferrule{\\sigma : \\Gamma \\to \\Delta \\and \\Delta \\yields A \\jtype \\and \\Gamma \\yields t : A[\\sigma]}{\\sigma, x \\gets t : \\Gamma \\to \\Delta, .x : A} \\\\\n\\inferrule{\\Gamma \\yields A \\jtype}{\\Gamma, .x : A \\jctx} \\and\n\\inferrule{\\sigma : \\Gamma \\to \\Delta}{\\Gamma \\yields \\Cone(\\sigma) \\jtype}\n\\end{mathpar}\n}\n\n\\p{Here is a test of the tabulararray #{\\LaTeX} package:}\n\\tex{\\usepackage{tabularray}}{\n\\begin{tblr}{lccr}\n\\hline\nAlpha &amp; Beta &amp; Gamma &amp; Delta \\\\\n\\hline\nEpsilon &amp; Zeta &amp; Eta &amp; Theta \\\\\n\n\\hline\nIota &amp; Kappa &amp; Lambda &amp; Mu \\\\\n\n\\hline\n\n\\end{tblr}\n}\n</code></pre></div>",
+        "id": 527068752,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1751574635
+    },
+    {
+        "content": "<p>Jon's motivation in developing Forester was exactly to allow people to \"build their own Stacks project in ten minutes\", incidentally, and it's true that you can probably get an example running without needing to do anything that \"feels like programming.\"</p>",
+        "id": 527068897,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1751574715
+    },
+    {
+        "content": "<p>I will say that there are like 5 different \"latex to html\" \"compilers\" and each of them works for some undefined subset of LaTeX, and I think none of those subsets include tikz; I think the only reasonable way to get good quality typesetting of figures is just to shell out to LaTeX and Forester makes this especially easy. Forester has its quirks, but I think there isn't really a serious contender in its domain.</p>",
+        "id": 527069100,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1751574816
+    },
+    {
+        "content": "<p>How many of these options have a way to insert additional code into the HTML output that isn't LaTeX?  E.g. to embed an interactive javascript activity or exercise?</p>",
+        "id": 527071828,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751576271
+    },
+    {
+        "content": "<p>Forester can do that!</p>",
+        "id": 527074907,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1751577896
+    },
+    {
+        "content": "<p>Also <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> I'd be happy to set up a website built with Forester for you.</p>",
+        "id": 527075214,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1751578037
+    },
+    {
+        "content": "<p>Thanks a million for the offer, <span class=\"user-mention\" data-user-id=\"280755\">@Owen Lynch</span>.   I'm not quite ready to dive in, which will happen when I start writing my book on combinatorics and categories.   A couple of questions:</p>\n<ul>\n<li>After the website is created, will it continue to work even if Forester dies (e.g., people move on to some other system and stop supporting Forester)?</li>\n<li>Will the LaTeX-like code with the \"somewhat annoying hygiene requirement to tag <em>everything</em>, including a paragraph of plain text, inside some backslash-and-braces macro\" be suitable for uploading to the arXiv, like an ordinary paper?   Or maybe suitable after a mechanizable process is applied to it?</li>\n</ul>",
+        "id": 527146958,
+        "sender_full_name": "John Baez",
+        "timestamp": 1751622843
+    },
+    {
+        "content": "<ul>\n<li>Forester creates static, standalone files that can be put on any webserver and can be read by any web browser, even if every copy of the forester program were deleted from the universe.</li>\n<li>There is a mechaniz<em>ed</em> process to convert from forester to LaTeX, which was used for <a href=\"https://arxiv.org/pdf/2505.18329\">https://arxiv.org/pdf/2505.18329</a>. That is, that paper was written in forester and then converted to LaTeX to upload to the arXiv.</li>\n</ul>",
+        "id": 527147545,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1751623081
+    },
+    {
+        "content": "<p>This process is slightly involved, but also extremely customizable (e.g., it is more or less straightforward to add new environments, change the document class, translate html tables into latex tables, etc.)</p>",
+        "id": 527150357,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1751624145
+    },
+    {
+        "content": "<p>It looks like lwarp is more full-featured than the other latex-to-html pipelines I've seen in the past though!</p>",
+        "id": 527150669,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1751624294
+    },
+    {
+        "content": "<p>Quite impressive!</p>",
+        "id": 527150706,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1751624312
+    },
+    {
+        "content": "<p>It looks like lwarp is a <em>single three-megabyte source code file</em> <a href=\"https://ctan.org/tex-archive/macros/latex/contrib/lwarp\">https://ctan.org/tex-archive/macros/latex/contrib/lwarp</a>, which is 99,690 lines. I am in awe at the mind who can program like this.</p>",
+        "id": 527151315,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1751624554
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span>  lwarp defines LaTeX environments warpprint and warpHTML to direct specific content only to the generated print or web versions, respectively. <br>\nWith warpHTML you could embed javascript in the HTML with &lt;script&gt;.</p>",
+        "id": 527158773,
+        "sender_full_name": "Rich Hilliard",
+        "timestamp": 1751627379
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"280755\">Owen Lynch</span> <a href=\"#narrow/stream/229111-community.3A-general/topic/Writing.20a.20book.20in.20LaTeX.20on.20the.20web/near/527151315\">said</a>:</p>\n<blockquote>\n<p>It looks like lwarp is a <em>single three-megabyte source code file</em> <a href=\"https://ctan.org/tex-archive/macros/latex/contrib/lwarp\">https://ctan.org/tex-archive/macros/latex/contrib/lwarp</a>, which is 99,690 lines. I am in awe at the mind who can program like this.</p>\n</blockquote>\n<p>There are also some 595 ancillary packages, as you can see in the documentation PDF, which is a bit longer than a Lurie book; it seems like you have one for making lwarp work with pretty much every TeX library (including tikz!) This might be easier for you to get started with, John, although it’s really amazingly enormous and I wonder whether the user usually gets to avoid all that complexity.</p>",
+        "id": 527218225,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1751651323
+    },
+    {
+        "content": "<p>Since I couldn't get myself to read Lurie's books, there's no way I'll engage with a comparably large book just to learn a piece of software.</p>",
+        "id": 527220323,
+        "sender_full_name": "John Baez",
+        "timestamp": 1751652714
+    },
+    {
+        "content": "<p>Surely that's just a reference manual and you wouldn't have to actually read it all to use the software?</p>",
+        "id": 527227693,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751659224
+    },
+    {
+        "content": "<p>I was just joking.</p>",
+        "id": 527228942,
+        "sender_full_name": "John Baez",
+        "timestamp": 1751660587
+    },
+    {
+        "content": "<p>Apparently the html version of the  <a href=\"https://github.com/zxcalc/book\">Picturing Quantum Software</a> book is made using make4ht ( another latex -&gt; html converter ...)</p>",
+        "id": 527488706,
+        "sender_full_name": "Simon Burton",
+        "timestamp": 1751897375
+    },
+    {
+        "content": "<p>That looks nice!   I'm raring to go on this book.</p>\n<p>(Hmm, that sounds like a very cowboy-ish expression, I wonder if non-Americans will understand it.)</p>",
+        "id": 527489546,
+        "sender_full_name": "John Baez",
+        "timestamp": 1751897626
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/229111-community.3A-general/topic/Writing.20a.20book.20in.20LaTeX.20on.20the.20web/near/526845631\">said</a>:</p>\n<blockquote>\n<p>My understanding is that pretext is not actually written <em>in</em> latex, but rather some kind of XML, which is kind of a dealbreaker for me.  (But if I'm wrong, someone please correct me.)</p>\n</blockquote>\n<p>I've started experimenting with PreTeXt, and it's actually fairly nice.  The mathematics is straight-up LaTeX.  The XML is only used for document structure such as sectioning, blocks, and lists; this is where LaTeX tends to use <code>begin</code>/<code>end</code> environments anyway, so the verbosity of XML is not that much greater, and appropriate editor tooling can automatically insert the ending tags for you.</p>\n<p>The PreTeXt schema introduces a bit more verbosity, e.g. a theorem requires a <code>&lt;theorem&gt;</code> tag containing a <code>&lt;statement&gt;</code> tag containing a <code>&lt;p&gt;</code> tag before you can start stating the theorem,  but that should also be automatable with a good editor (Emacs doesn't yet have such automation, as far as I can see, but I might do something about that if I continue using PreTeXt).  And the reason for that verbosity is logical, since a <code>&lt;theorem&gt;</code> tag can also contain a <code>&lt;title&gt;</code> and a <code>&lt;proof&gt;</code>, which are then associated to the theorem by the XML structure and can be easily programmatically manipulated.</p>\n<p>The XML-based design essentially <em>forces</em> you to separate semantics from presentation.  There is no way to say within the schema \"make this text 15 points tall and italics\", only \"here begins a section with this title\".  So it's not a replacement for (La)TeX as an engine for layout of printable documents.  But all those things you can do with TeX are exactly the things that make it so hard to compile to other formats like HTML, so this is arguably a good thing.</p>\n<p>PreTeXt produces HTML output that I think looks overall excellent, especially for textbooks (here are a <a href=\"https://activecalculus.org/single2e/frontmatter.html\">couple</a> <a href=\"https://complexanalysis.org/web/root-1-2-2.html\">examples</a>), and the available semantic information can at least in principle improve accessibility to screen readers and so on.  (And the PreTeXt people are thinking hard about this sort of thing -- for instance, you are instructed to put ending punctuation <em>outside</em> a display-math environment, because it is <em>semantically</em> not part of the mathematics and thus should be treated differently by non-visual output formats; but in visual output formats like PDF and HTML such punctuation is automatically moved to the end of the displayed mathematics, where it looks good, rather than at the beginning of the following line.)  It can also be compiled to PDF by way of LaTeX, so the output looks like LaTeX since it is, and also to epub and kindle formats.</p>\n<p>Personally, I prefer the \"linear\" presentation of a PreTeXt HTML document to the forester/stacks \"atomized\" approach, especially for something like a book that is \"projected on a totally ordered way on the page axis\" in the words of Serge Lang.  For authoring purposes, you're free to split up your source code into multiple files as finely as you like to facilitate reorganization, using <code>&lt;xi:include&gt;</code> tags to stitch it together.  Of course YMMV, but at the moment I'm happy enough with PreTeXt, compared to the alternatives I've seen, that I'm about to embark on a significant project using it.</p>",
+        "id": 564316669,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1765995453
+    },
+    {
+        "content": "<p>Very helpful review, thanks Mike.</p>",
+        "id": 564320887,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1765997017
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> how do you feel about <a href=\"https://qubit.guide\">qubit.guide</a>? (note the download icon button that links to <a href=\"https://qubit.guide/qubit_guide.pdf\">https://qubit.guide/qubit_guide.pdf</a> and <a href=\"https://qubit.guide/qubit_guide_b5.pdf\">https://qubit.guide/qubit_guide_b5.pdf</a>)</p>\n<p>it's written in markdown but exports to pure LaTeX (which is used to automatically build those PDFs whenever we update the markdown files)</p>\n<p>(sorry, haven't caught up with this thread yet, but just wanted to throw this out as another option if it hasn't already been mentioned)</p>",
+        "id": 564321946,
+        "sender_full_name": "Tim Hosgood",
+        "timestamp": 1765997415
+    },
+    {
+        "content": "<p>Thanks, Tim.  I don't feel anything (yet).   But I will someday loop back to this topic and try to find the system that's the easiest for me to use.</p>",
+        "id": 564661094,
+        "sender_full_name": "John Baez",
+        "timestamp": 1766139529
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> you forgot to mention one of the main advantages of preText for me: that it can output Braille for people who have difficulties seeing. I expect that means that other alphabets are also easily covered. I wanted to use it, as many of the  open source books recommended by <a href=\"https://textbooks.aimath.org/textbooks/approved-textbooks/\">AIM</a> use it, but I lost my patience. glad you haven't.</p>",
+        "id": 567281367,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1768005556
+    },
+    {
+        "content": "<p>I did mention \"accessibility to screen readers and so on\", but true I didn't mention Braille specifically.</p>",
+        "id": 567283510,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1768007611
+    }
+]
