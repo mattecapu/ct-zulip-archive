@@ -1,0 +1,32 @@
+[
+    {
+        "content": "<p>Note: This is the same question as here: <a href=\"https://math.stackexchange.com/questions/4956536/abstracting-the-undecidability-of-the-halting-problem\">https://math.stackexchange.com/questions/4956536/abstracting-the-undecidability-of-the-halting-problem</a></p>\n<p>The question asks something about abstraction, which is the bread and butter of CT, and I thought it'd be a good fit for here.</p>\n<p>I'm reposting the original question below:</p>\n<hr>\n<p>Let us work in some constructive metalogic (where we have at least the following: Natural numbers, Booleans, Lists, Disjoint Union, and Sets).</p>\n<p>To reason about Turing machines, we could (probably) define the following (metalogical) functions and sets:</p>\n<div class=\"codehilite\"><pre><span></span><code>TMData : Set == Seq(Bool)\n// TMData is the set of all finite boolean sequences\n\nTMEval(alg: TMData, input: TMData) : TMData + &quot;null&quot;\n// TMEval is the &#39;big step operational semantics&#39; of Turing machines.\n// It &#39;executes&#39; `alg` with `input`, and returns &quot;null&quot; on divergence or the answer.\n</code></pre></div>\n<p>Now, we can prove the following metalogical theorem:</p>\n<div class=\"codehilite\"><pre><span></span><code>SolvesHalting(halt_solver: TMData) ==\n               ∀inp_alg: TMData, TMEval(halt_solver, inp_alg) = (TMEval(inp_alg,[]) = &quot;null&quot; ? [0] : [1])\n// SolvesHalting is a metalogical predicate which says whether `halt_solver` can solve the halting problem.\n\nTHEOREM HaltingUnsolvable == ∀ alg: TMData : ¬ SolvesHalting(alg)\n// It is possible to prove this theorem in our metalogic. We would have to unfold the definitions of TMEval and TMData.\n</code></pre></div>\n<p>Now, I could define a \"new\" programming language / notion of computation. For instance, we could define:</p>\n<div class=\"codehilite\"><pre><span></span><code>* PythonData, PythonEval //PythonData is all python programs, which are ASTs\n* GodelData, GodelEval //GodelData is just Nat. These are the traditional partial recursive functions\n* TaggedTMData, TaggedTMEval //This is simply &#39;a copy&#39; of TMData, where each finite boolean sequence has a tag &#39;*&#39;, which makes the set different from TMData.\n</code></pre></div>\n<p>Now, I think that we could prove a version of the Halting problem undecidability for each of these (and more), which are different statements in the metalogic. My question is whether there is a way we can abstract the essence of this problem? The idea is to 'not repeat ourselves' with the proof, and have a single proof.</p>\n<ul>\n<li>Maybe we can define something like a <code>HaltUndecidable</code> to be a set (the data - eg. TMData, TaggedTMData, etc.) and an evaluation function subject to various conditions which are required for the halting problem? <br>\n      * Then <code>&lt;TMData, TMEval&gt;</code>, <code>&lt;PythonData, PythonEval&gt;</code>, etc. are instances of <code>HaltUndeciable</code>, and we don't have to prove anything else..<br>\n      * I'm curious whether one of the well-formedness conditions requires the set to be countably infinite? Could it be possible to prove a version of the halting problem where the set is uncountably infinite?</li>\n<li>Another approach might be to define the notion of a simulation between our different notions of computation, and prove a theorem that says that one version of the Halting problem \"lifts\" to another version if there is a simulation. Is this the way one typically goes about this?</li>\n<li>Does anything change significantly when our metalogic is classical, instead of constructive?</li>\n</ul>",
+        "id": 459551284,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1723229448
+    },
+    {
+        "content": "<p>perhaps you are noticing \"oracles and relativization\"? <a href=\"https://faculty.cc.gatech.edu/~ladha/S24/4510/L21.pdf\">https://faculty.cc.gatech.edu/~ladha/S24/4510/L21.pdf</a></p>",
+        "id": 459572956,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1723235799
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"281326\">@Ryan Wisnesky</span> , on a cursory glance, it does not look like I am? The link you shared seems to talk about complexity, etc., which was not my concern...</p>",
+        "id": 459586579,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1723241634
+    },
+    {
+        "content": "<p>Here is the connection in mind: in complexity theory you assume problems are decidable with a black box called an oracle, and do complexity theory 'relative to an oracle', and as such you actually get an entirely family of results out (called relativized results).  Each of your \"new\" programming languages struck me as having a 'black box' - not an oracle, but similar idea, imo</p>",
+        "id": 459587048,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1723241911
+    },
+    {
+        "content": "<p>I have answered there without using CT. As far as CT is concerned, the halting problem is often considered a special case of <a href=\"https://ncatlab.org/nlab/show/Lawvere%27s+fixed+point+theorem\">Lawvere's fixed point theorem</a>.</p>",
+        "id": 460039847,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1723455131
+    }
+]

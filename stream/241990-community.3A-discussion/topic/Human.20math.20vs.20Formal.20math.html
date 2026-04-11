@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Human math vs Formal math · community: discussion · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/index.html">community: discussion</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/Human.20math.20vs.20Formal.20math.html">Human math vs Formal math</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="582898508"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/Human%20math%20vs%20Formal%20math/near/582898508" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Peva Blanchard <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/Human.20math.20vs.20Formal.20math.html#582898508">(Mar 31 2026 at 21:16)</a>:</h4>
+<p>I recently stumbled upon this paper <a href="https://arxiv.org/pdf/2603.20396v1">Compression is all you need</a> which proposes a criterion to distinguish "human mathematics" (the mathematics humans discover and value) from "formal mathematics" (the totality of all valid deductions). I was a bit skeptical at first, but one of the authors is <a href="https://en.wikipedia.org/wiki/Michael_Freedman">Michael H. Freedman</a>.</p>
+<p>Here is the abstract.</p>
+<blockquote>
+<p>Human mathematics (HM), the mathematics humans discover and value, is a vanishingly<br>
+small subset of formal mathematics (FM), the totality of all valid deductions. We argue that HM is<br>
+distinguished by its compressibility through hierarchically nested definitions, lemmas, and theorems.<br>
+We model this with monoids. A mathematical deduction is a string of primitive symbols; a definition<br>
+or theorem is a named substring or macro whose use compresses the string. In the free abelian<br>
+monoid 𝐴𝑛, a logarithmically sparse macro set achieves exponential expansion of expressivity. In<br>
+the free non-abelian monoid 𝐹𝑛, even a polynomially-dense macro set only yields linear expansion;<br>
+superlinear expansion requires near-maximal density. We test these models against MathLib, a large<br>
+Lean 4 library of mathematics that we take as a proxy for HM. Each element has a depth (layers of<br>
+definitional nesting), a wrapped length (tokens in its definition), and an unwrapped length (primitive<br>
+symbols after fully expanding all references). We find unwrapped length grows exponentially with<br>
+both depth and wrapped length; wrapped length is approximately constant across all depths. These<br>
+results are consistent with 𝐴𝑛 and inconsistent with 𝐹𝑛, supporting the thesis that HM occupies a<br>
+polynomially-growing subset of the exponentially growing space FM. We discuss how compression,<br>
+measured on the MathLib dependency graph, and a PageRank-style analysis of that graph can quantify<br>
+mathematical interest and help direct automated reasoning toward the compressible regions where<br>
+human mathematics lives.</p>
+</blockquote>
+<p>It's the first time I see an attempt to characterize "human mathematics", so it is very intriguing to me.</p>
+<p>Are you aware of similar attempts? possibly from philosophers?</p>
+
+
+
+<a name="582911075"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/241990-community%3A%20discussion/topic/Human%20math%20vs%20Formal%20math/near/582911075" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/241990-community.3A-discussion/topic/Human.20math.20vs.20Formal.20math.html#582911075">(Mar 31 2026 at 23:01)</a>:</h4>
+<p>In the proof engineering community we often say that the verification conditions arising from proving code correct are "wide but shallow", and hence easier to automate, than propositions arising from 'normal math', which are 'narrow but deep' usually.  Certainly many people have noted formal verification pre 2020 seems to be more applied to code than math, I would argue for the deep vs wide reason.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Apr 11 2026 at 12:16 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>
