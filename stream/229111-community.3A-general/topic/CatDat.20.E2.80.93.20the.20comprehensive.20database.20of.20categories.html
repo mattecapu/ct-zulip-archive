@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>CatDat – the comprehensive database of categories · community: general · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/index.html">community: general</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html">CatDat – the comprehensive database of categories</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="580005238"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580005238" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580005238">(Mar 17 2026 at 17:09)</a>:</h4>
+<p>I am happy to announce CatDat – the comprehensive database of categories and their properties.</p>
+<p><a href="https://catdat.app">https://catdat.app</a></p>
+<p>I explain this app in detail in <a href="https://youtu.be/dQXbPxk__qA">this video</a>, but you can also click around to get a feel for it. Basically, you can find categories and their (non-)properties, search for combinations of properties, and compare categories with each other.</p>
+<div class="youtube-video message_inline_image"><a data-id="dQXbPxk__qA" href="https://youtu.be/dQXbPxk__qA"><img src="https://uploads.zulipusercontent.net/78e6381e50664b0a52831d56d5a8a8f9ce0d79c7/68747470733a2f2f692e7974696d672e636f6d2f76692f6451586250786b5f5f71412f6d7164656661756c742e6a7067"></a></div><p>I would love to know what you think about it, and would be even happier about any <a href="https://catdat.app/contribute">contributions</a>! In fact, the application is <a href="https://github.com/ScriptRaccoon/catdat">open-source</a>, and I believe that we, as a community, can complete and expand this database, thereby making it really useful.</p>
+<p>What makes this project special (in my opinion) is the integrated <strong>deduction system</strong>. From a small amount of properties and non-properties many other properties and non-properties can be deduced automatically. The deductions are displayed in a human-readable form on each category detail page.</p>
+<p>In the repo's README I also mention related projects, for example the <a href="https://catabase.fly.dev">Catabase</a>, but it is different and seems to be abandoned. Let me also mention that CatDat does not want to replace nLab; it tries to add to it.</p>
+<p>Personally, I also really enjoyed combining two of my biggest interests (category theory + software development).</p>
+
+
+
+<a name="580007430"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580007430" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fernando Chu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580007430">(Mar 17 2026 at 17:20)</a>:</h4>
+<p>Cool project! How does the deduction system work? Is it bruteforcing every possibility?</p>
+
+
+
+<a name="580011710"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580011710" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580011710">(Mar 17 2026 at 17:40)</a>:</h4>
+<p>Yeah more or less, but that is OK since (currently) there are "only" about 100 implications. The logic is basically: For a given set of properties, find an implication whose assumptions are known properties, but the conclusion is not. Add the conclusion to the list of properties. Continue until no implication is found.<br>
+For non-properties, we also work with the properties. Find an implication whose assumptions are known properties except for one (p), and such that the conclusion is a known non-property. Then p gets added to the non-properties (by proof of contradiction). Continue until no implication is found.<br>
+It's so simple but very effective. In particular, every proof is literally a one-liner (based on the known implications).<br>
+I hope it's clear. If not, the <a href="https://github.com/ScriptRaccoon/CatDat/blob/main/scripts/deduce-properties.ts">deduction code</a> tells the whole story.</p>
+
+
+
+<a name="580044588"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580044588" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Fernando Chu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580044588">(Mar 17 2026 at 20:43)</a>:</h4>
+<p>It is clear, thanks!</p>
+
+
+
+<a name="580162345"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580162345" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> fosco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580162345">(Mar 18 2026 at 11:06)</a>:</h4>
+<blockquote>
+<p>I would love to know what you think about it</p>
+</blockquote>
+<p>This is so cool!</p>
+
+
+
+<a name="580163258"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580163258" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> fosco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580163258">(Mar 18 2026 at 11:10)</a>:</h4>
+<p>the property of being "concrete" seems missing, and the homotopy category of spaces</p>
+<p>(of course it's the first thing I tried!)</p>
+
+
+
+<a name="580163369"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580163369" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580163369">(Mar 18 2026 at 11:11)</a>:</h4>
+<p>This is really cool! I can see this being very useful, assuming it receives enough contributions to capture a wide range of properties and examples covering different combinations of properties.</p>
+
+
+
+<a name="580163943"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580163943" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580163943">(Mar 18 2026 at 11:14)</a>:</h4>
+<p>One idea that could be nice to try is enumerating finite categories, up to equivalence, up to, say, 10 objects, and automatically deducing their properties. (This topic has been discussed previously on this Zulip, e.g. <a class="stream-topic" data-stream-id="229199" href="/#narrow/channel/229199-learning.3A-questions/topic/Enumerating.20finite.20categories/with/247591401">#learning: questions &gt; Enumerating finite categories</a>.) The reason this would be nice is that I imagine this could discharge many of the combinations of properties that are currently missing, and would furthermore give minimal examples/counterexamples.</p>
+
+
+
+<a name="580164861"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580164861" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> fosco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580164861">(Mar 18 2026 at 11:19)</a>:</h4>
+<p>Maybe I'm looking in the wrong place:</p>
+<blockquote>
+<ul>
+<li><strong>Proofs for Claims</strong>: Provide proofs for all new claims (properties, implications, morphism descriptions). (We are currently working on filling in the existing ones.)</li>
+</ul>
+</blockquote>
+<p>Are all proofs who seem to be missing to be added in the long run? For example, the claim "<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">F</mi><mi mathvariant="bold">i</mi><mi mathvariant="bold">n</mi><mi mathvariant="bold">A</mi><mi mathvariant="bold">b</mi></mrow><annotation encoding="application/x-tex">\bf FinAb</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathbf">FinAb</span></span></span></span></span> doesn't have a generator", is awaiting to be proved by someone, and if yes, is there a guideline for <em>how</em> to prove it?</p>
+
+
+
+<a name="580165187"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580165187" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> fosco <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580165187">(Mar 18 2026 at 11:21)</a>:</h4>
+<p>Take a soon-to-appear page "<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="bold">H</mi><mi mathvariant="bold">o</mi></mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="bold">T</mi><mi mathvariant="bold">o</mi><mi mathvariant="bold">p</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">{\bf Ho}({\bf Top})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">Ho</span></span></span><span class="mopen">(</span><span class="mord"><span class="mord"><span class="mord mathbf">Top</span></span></span><span class="mclose">)</span></span></span></span>": non-properties: it is not <a href="https://link.springer.com/chapter/10.1007/BFb0058516">concrete</a>, but good luck proving it in a one-liner! Is the mere link sufficient to count as "proof"?</p>
+
+
+
+<a name="580168824"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580168824" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580168824">(Mar 18 2026 at 11:40)</a>:</h4>
+<p>Yes, you can see examples in which the proof is simply a reference to a textbook, nLab page, etc.</p>
+
+
+
+<a name="580169036"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580169036" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580169036">(Mar 18 2026 at 11:41)</a>:</h4>
+<p>I notice there is a similar project <a href="https://smallcats.info/">SmallCategories</a>, which I'd never come across before. In particular, they have implemented the "generate finite categories" idea I mentioned above. It could be worth getting in contact with Ben Spitz and asking him whether he would consider merging his database with yours.</p>
+
+
+
+<a name="580196521"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580196521" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Theofilos Tsantilas <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580196521">(Mar 18 2026 at 13:46)</a>:</h4>
+<p>That seems a really neat project. I'm leaving this message here to remind myself to come back and see whether I can contribute when I find the time. Hope it grows!</p>
+
+
+
+<a name="580200132"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580200132" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580200132">(Mar 18 2026 at 13:59)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="282822">fosco</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/580163258">said</a>:</p>
+<blockquote>
+<p>the property of being "concrete" seems missing, and the homotopy category of spaces</p>
+</blockquote>
+<p>Thanks for the feedback!</p>
+<p>Adding "concretizable" (I don't think "concrete" is a property of a <em>category</em>) is on my todo list, but for me personally it has low priority. There is not much one can do with this property, and either it is trivial to check that something is concretizable, or it is very hard to disprove (hTop).</p>
+<p>Yeah hTop should be added, it is also on my todo list. It will be difficult to check all the properties here, though. Many constructions for hTop are weird in a 1-categorical setup. <a href="https://mathoverflow.net/questions/10364">Related</a>.</p>
+
+
+
+<a name="580201822"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580201822" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580201822">(Mar 18 2026 at 14:05)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="282822">fosco</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/580164861">said</a>:</p>
+<blockquote>
+<p>Are all proofs who seem to be missing to be added in the long run? For example, the claim "<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">F</mi><mi mathvariant="bold">i</mi><mi mathvariant="bold">n</mi><mi mathvariant="bold">A</mi><mi mathvariant="bold">b</mi></mrow><annotation encoding="application/x-tex">\bf FinAb</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathbf">FinAb</span></span></span></span></span> doesn't have a generator", is awaiting to be proved by someone, and if yes, is there a guideline for <em>how</em> to prove it?</p>
+</blockquote>
+<p>Yes, currently the reason for a property (or non-property) can be <code>NULL</code>, but I plan to change that. For this, first one has to write down the missing reasons. In many cases I already did that (and sometimes this was not easy), in some cases it is just a matter of writing down the obvious, but in some cases it is not clear at all, and I may even be wrong in some cases (which is why I would like to make the reason mandatory in the future).</p>
+<p>As Nathanael already explained, there are three types of proofs in CatDat: 1) Writing "This is trivial" <span aria-label="laughing" class="emoji emoji-1f606" role="img" title="laughing">:laughing:</span>  2) Writing down the proof. 3) Referencing a book or article of website. Have a look at the existing examples, this makes it even more clear, I think.</p>
+
+
+
+<a name="580202429"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580202429" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580202429">(Mar 18 2026 at 14:07)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/580163369">said</a>:</p>
+<blockquote>
+<p>This is really cool! I can see this being very useful, [...]</p>
+</blockquote>
+<p>Thanks a lot for your feedback! Also thank you very much for the further references, your pull requests and the issues via the repo. I will now have a look at them. <span aria-label="working on it" class="emoji emoji-1f6e0" role="img" title="working on it">:working_on_it:</span> See you on GitHub then! <span aria-label="folded hands" class="emoji emoji-1f64f" role="img" title="folded hands">:folded_hands:</span></p>
+
+
+
+<a name="580777413"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580777413" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Schwiebert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580777413">(Mar 21 2026 at 02:54)</a>:</h4>
+<p>This was my #1 desired database analogous to pi-base/DaRT that I wanted to see. Glad it's finally here!  Looking forward to learning how we can all mutually improve these sites.  </p>
+<p>Sometimes each type of site seems to require its own peculiarities, but as category theory teaches us sometimes there are ways to melt those differences away...</p>
+
+
+
+<a name="580940915"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580940915" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James E Hanson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580940915">(Mar 22 2026 at 18:19)</a>:</h4>
+<p>I don't know if this would be a good idea but do you have any plans for systematically tracking dual properties?</p>
+
+
+
+<a name="580942208"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/580942208" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#580942208">(Mar 22 2026 at 18:36)</a>:</h4>
+<p>Maybe simpler to link each category to its dual iff it's in the database....</p>
+
+
+
+<a name="581298296"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/581298296" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#581298296">(Mar 24 2026 at 08:07)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="645679">James E Hanson</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/580940915">said</a>:</p>
+<blockquote>
+<p>I don't know if this would be a good idea but do you have any plans for systematically tracking dual properties?</p>
+</blockquote>
+<p>I am already doing that? Maybe I misunderstood you. But on every property page, you can see the dual property (if available; sometimes it is not, e.g. nobody talks about co(cartesian closed) categories, or co(locally presentable) categories).</p>
+<p>The deduction system also heavily uses dual properties.</p>
+
+
+
+<a name="581298553"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/581298553" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#581298553">(Mar 24 2026 at 08:08)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/580942208">said</a>:</p>
+<blockquote>
+<p>Maybe simpler to link each category to its dual iff it's in the database....</p>
+</blockquote>
+<p>The idea is to never add a category which is dual to one of the categories already in the database. If something needs to be said about the dual category, it can also be said about the original - just by dualizing the statement. This is to avoid the clutter and to avoid duplicate information.</p>
+<p>For example, I have just added the information that <a href="https://catdat.app/category/CRing">CRing</a> is not <a href="https://catdat.app/property/coregular">coregular</a> - instead of saying that CRing^op is not regular.</p>
+<p>In the search page, there is also a link that dualizes the search.</p>
+
+
+
+<a name="581301939"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/581301939" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ralph Sarkis <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#581301939">(Mar 24 2026 at 08:25)</a>:</h4>
+<p>How would you say that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi mathvariant="bold">C</mi><mi mathvariant="bold">R</mi><mi mathvariant="bold">i</mi><mi mathvariant="bold">n</mi><mi mathvariant="bold">g</mi></mrow><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">p</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\mathbf{CRing}^{\mathrm{op}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9432em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord"><span class="mord mathbf" style="margin-right:0.01597em;">CRing</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7487em;"><span style="top:-3.1473em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">op</span></span></span></span></span></span></span></span></span></span></span></span></span> is isomorphic to the category of affine schemes? (and then transport all properties of one to the other, and similarly for equivalences)</p>
+
+
+
+<a name="581332217"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/581332217" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#581332217">(Mar 24 2026 at 10:49)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="284005">Ralph Sarkis</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/581301939">said</a>:</p>
+<blockquote>
+<p>How would you say that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi mathvariant="bold">C</mi><mi mathvariant="bold">R</mi><mi mathvariant="bold">i</mi><mi mathvariant="bold">n</mi><mi mathvariant="bold">g</mi></mrow><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">p</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\mathbf{CRing}^{\mathrm{op}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9432em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord"><span class="mord mathbf" style="margin-right:0.01597em;">CRing</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7487em;"><span style="top:-3.1473em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathrm mtight">op</span></span></span></span></span></span></span></span></span></span></span></span></span> is isomorphic to the category of affine schemes? (and then transport all properties of one to the other, and similarly for equivalences)</p>
+</blockquote>
+<p>Nitpick: these categories are equivalent, not isomorphic.</p>
+<p>To answer your question: The proof that two categories are isomorphic or equivalent does not belong to CatDat (currently). It can be mentioned in the category description, though.</p>
+<p>Here is a quote from <code>CONTRUBITING.md</code>:</p>
+<blockquote>
+<p><strong>No dual categories</strong>: As a rule of thumb, do not add categories that are dual to categories already in the database. Properties of the dual category should instead be added as properties of the original category (use the corresponding dual property). For example, do not add the dual of the category of sets.</p>
+<p><strong>No equivalent categories</strong>: Do not add categories that are equivalent or even isomorphic to categories already in the database. If the equivalence is non-trivial, mention it in the description of the original category. Some exceptions are allowed, since certain properties (such as being skeletal) are not invariant under equivalence.</p>
+</blockquote>
+
+
+
+<a name="581333006"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/581333006" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#581333006">(Mar 24 2026 at 10:52)</a>:</h4>
+<p>But I am currently revising this guideline in the <a href="https://github.com/ScriptRaccoon/CatDat/pull/12">PR on functors</a>. I definitely want to be able to add, say, the contravariant power set functor.</p>
+
+
+
+<a name="581360777"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/581360777" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zoltan A. Kocsis (Z.A.K.) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#581360777">(Mar 24 2026 at 12:57)</a>:</h4>
+<p>Have you considered some sort of notability guideline instead of a strict "no dual categories / no equivalent categories" rule?</p>
+<p>It seems to me that CatDat will provide maximal benefit to its audience if it mainly includes categories that we actually study and use. In some cases, it might happen that both a category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">C</mi></mrow><annotation encoding="application/x-tex">\mathcal{C}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.05834em;">C</span></span></span></span> and its opposite <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="script">C</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\mathcal{C}^{op}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.05834em;">C</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">p</span></span></span></span></span></span></span></span></span></span></span></span> are studied in the literature, possibly even under distinct names. For example, one has the category of complete Heyting algebras, and the category of locales. Which one should get priority over the other?</p>
+<p>The issue with dual categories like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi mathvariant="normal">G</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi>o</mi><mi>p</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\mathrm{Grp}^{op}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9321em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">Grp</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7376em;"><span style="top:-3.1362em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">p</span></span></span></span></span></span></span></span></span></span></span></span> does not seem to be that it is the opposite of a category already in the database, but rather that nobody cares, in that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi mathvariant="normal">G</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">p</mi></mrow><mrow><mi>o</mi><mi>p</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\mathrm{Grp}^{op}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9321em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">Grp</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7376em;"><span style="top:-3.1362em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">p</span></span></span></span></span></span></span></span></span></span></span></span> is not a category people study in its own right.</p>
+
+
+
+<a name="581401127"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/581401127" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#581401127">(Mar 24 2026 at 15:23)</a>:</h4>
+<p>Having no equivalent category duplicates but also equivalence non-invariant properties are at odds with each other. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>∐</mo><mrow><mi>n</mi><mo>∈</mo><mi mathvariant="double-struck">N</mi></mrow></msub><mi mathvariant="bold">B</mi><msub><mi>S</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\coprod_{n \in \mathbb N} \mathbf BS_n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0771em;vertical-align:-0.3271em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:0em;">∐</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1825em;"><span style="top:-2.4003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mrel mtight">∈</span><span class="mord mathbb mtight">N</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3271em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathbf">B</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">F</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">n</mi><mi mathvariant="sans-serif">B</mi><mi mathvariant="sans-serif">i</mi><mi mathvariant="sans-serif">j</mi></mrow><annotation encoding="application/x-tex">\mathsf{FinBij}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathsf">FinBij</span></span></span></span></span> are equivalent, but one is skeletal and the other is not. I won't argue against no dual categories, but it does mean you'll have to list stuff about affine varieties in the commutative rings page, same for any Stone-type dualities.</p>
+
+
+
+<a name="581448516"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/581448516" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#581448516">(Mar 24 2026 at 18:40)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="510824">Zoltan A. Kocsis (Z.A.K.)</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/581360777">said</a>:</p>
+<blockquote>
+<p>In some cases, it might happen that both a category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">C</mi></mrow><annotation encoding="application/x-tex">\mathcal{C}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.05834em;">C</span></span></span></span> and its opposite <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="script">C</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\mathcal{C}^{op}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.05834em;">C</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">p</span></span></span></span></span></span></span></span></span></span></span></span> are studied in the literature, possibly even under distinct names. </p>
+</blockquote>
+<p>That's a good point. I had the (wrong) impression that there is always one "main" category among <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>C</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup></mrow><annotation encoding="application/x-tex">C^{op}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">p</span></span></span></span></span></span></span></span></span></span></span></span>, and this one should be in CatDat then. But you are right, sometimes both are equally "natural". Affine group schemes and commutative Hopf algebras is another example.</p>
+
+
+
+<a name="581456860"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/581456860" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#581456860">(Mar 24 2026 at 19:25)</a>:</h4>
+<p>Hi <span class="user-mention" data-user-id="414434">@Martin Brandenburg</span> . Thanks for the resource, I find it very exciting. But I was a bit disappointed that it doesn't have things like "monoidal categories" or "smccs" or even "cccs", the kinds of category I'm most interested in. Is this outside of your plans, because of granularity, or have you not gotten to them?</p>
+
+
+
+<a name="581472074"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/581472074" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Schwiebert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#581472074">(Mar 24 2026 at 21:00)</a>:</h4>
+<p><span class="user-mention" data-user-id="276656">@Valeria de Paiva</span>  I could be misunderstanding, but when I read that I think "a monoidal category isn't a category with an intrinsic property, it's a category with additional structure."  I think websites like CatDat most often focus on a fixed target (like "category" or "group" or "ring" or "topological space") and focus on properties they can have, and their interrelationships, all scoped by that original choice of "category/group" etc.</p>
+<p>In comparison, one might ask why DaRT "doesn't have algebras/Hopf-algebras" and so on.</p>
+<p>Now, possibly a website <em>could</em> do multiple flavors of a thing like that, but having said that I can't imagine how i'd adapt what I've written to that scope.</p>
+<p>One can easily imagine a parallel site all suited for monoidal categories and their properties.</p>
+<p>But I could be hallucinating all this. Maybe "with extra structure" is as valid a property as other more "internal" properties a category could have.  Maybe it's not the issue I imagine.   I certainly do track things which are algebras and bialgebras in DaRT but it doesn't play a role, really.</p>
+
+
+
+<a name="581475304"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/581475304" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Schwiebert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#581475304">(Mar 24 2026 at 21:23)</a>:</h4>
+<p>Now that you mention it, it sounds more like a hierarchy of structures rather than of properties.  People often try to muddle them together in charts  <a href="https://math.stackexchange.com/q/5123210/29335">https://math.stackexchange.com/q/5123210/29335</a></p>
+
+
+
+<a name="581583760"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/581583760" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Matteo Capucci (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#581583760">(Mar 25 2026 at 10:57)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="685603">Ryan Schwiebert</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/581472074">said</a>:</p>
+<blockquote>
+<p>In comparison, one might ask why DaRT "doesn't have algebras/Hopf-algebras" and so on.</p>
+</blockquote>
+<p>One could make the case that <a href="https://ncatlab.org/nlab/show/property-like">[[property-like]]</a> structure (e.g. being cartesian or cartesian closed) deserves to be included, but not proper structure. On the other hand monoidal structures are basically everywhere! So it would be great to have (but of course, it's great as it is already!).</p>
+
+
+
+<a name="581659769"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/581659769" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#581659769">(Mar 25 2026 at 15:59)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276656">Valeria de Paiva</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/581456860">said</a>:</p>
+<blockquote>
+<p>[...] I was a bit disappointed that it doesn't have things like "monoidal categories" or "smccs" or even "cccs"</p>
+</blockquote>
+<p>Indeed, Nathanael has suggested the same in <a href="https://github.com/ScriptRaccoon/CatDat/issues/4">issue #4</a>, and we can continue the discussion there. It is definitely doable. As a first step, I want to add functors (<a href="https://github.com/ScriptRaccoon/CatDat/pull/12">PR for functors</a>). After this, I plan to find similarities between the entity systems "category" and "functor" and refactor the codebase. And then (I hope) monoidal categories etc. should not be a big issue anymore.</p>
+
+
+
+<a name="581659939"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/581659939" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#581659939">(Mar 25 2026 at 16:00)</a>:</h4>
+<p>hi <span class="user-mention" data-user-id="685603">@Ryan Schwiebert</span> I am interested in classes of categories that correspond (via curry-howard) to specific logics. So I'm not worried about  intrinsic properties vs property-like structure of categories. I thought CatDat would be useful for me, but I guess it isn't. I want a different  kind of granularity.</p>
+<p>(Sorry, had written before seeing <span class="user-mention" data-user-id="414434">@Martin Brandenburg</span> 's message. Thanks for that and for the stackexchange thread.)</p>
+
+
+
+<a name="581895061"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/581895061" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#581895061">(Mar 26 2026 at 13:04)</a>:</h4>
+<p>Since it has been requested (and will be necessary for introducing functors), dual categories can now also be added. All properties of a category (satisfied or not) that have a dual are automatically added to its dual category, if that dual category is available (<a href="https://github.com/ScriptRaccoon/CatDat/commit/be8e0fe63207abce3f8c28e37756715529844313">code</a>). It is made sure that there is no endless loop. As an example, I have added <a href="https://catdat.app/category/Set_op">the dual of the category of sets</a>. Here, 77 properties (satisfied or not) have been automatically deduced from the category of sets. For example, when you click on the reason for "has coequalizers", it shows "Its dual category has equalizers".<br>
+You can also add properties that are not dualized, in particular if they have not (yet) a dual in the database. For example, I have added the information that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>e</mi><msup><mi>t</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup></mrow><annotation encoding="application/x-tex">Set^{op}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord mathnormal">e</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">p</span></span></span></span></span></span></span></span></span></span></span></span> is not finitary algebraic.</p>
+
+
+
+<a name="581955976"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/581955976" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> 米田 豊 (MAITA, Yutaka) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#581955976">(Mar 26 2026 at 14:42)</a>:</h4>
+<p>What metatheory does CatDat rely on? Some categorical properties (e.g., <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><annotation encoding="application/x-tex">\mathbf{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord mathbf">Set</span></span></span></span></span> being a complete elementary topos) are sensitive to the choice of foundations.</p>
+
+
+
+<a name="582061602"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/582061602" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James E Hanson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#582061602">(Mar 27 2026 at 00:50)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="414434">Martin Brandenburg</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/581298296">said</a>:</p>
+<blockquote>
+<p>I am already doing that?</p>
+</blockquote>
+<p>Oh so is it just that you don't display a property in the list of properties unless there's actually an example of it in the database?</p>
+
+
+
+<a name="582113609"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/582113609" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#582113609">(Mar 27 2026 at 09:12)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="695793">米田 豊 (MAITA, Yutaka)</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/581955976">said</a>:</p>
+<blockquote>
+<p>What metatheory does CatDat rely on? Some categorical properties (e.g., <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><annotation encoding="application/x-tex">\mathbf{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord mathbf">Set</span></span></span></span></span> being a complete elementary topos) are sensitive to the choice of foundations.</p>
+</blockquote>
+<p>I work with ZFC and two universes <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>∈</mo><msup><mi>U</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">U \in U^+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7713em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7713em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span></span></span></span>. A category is, unless otherwise stated, defined as a category which is internal to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">U^+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7713em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7713em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span></span></span></span>. That is, the set of morphisms and the set of objects belong to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">U^+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7713em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7713em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span></span></span></span>. It is small when both sets belong to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi></mrow><annotation encoding="application/x-tex">U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span></span></span></span>. It is called locally small if the hom-sets belong to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi></mrow><annotation encoding="application/x-tex">U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span></span></span></span>. Generally, "small" refers to elements of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi></mrow><annotation encoding="application/x-tex">U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span></span></span></span>, and "essentially small" refers to sets (maybe I want them in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">U^+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7713em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7713em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span></span></span></span>) that are isomorphic to sets in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi></mrow><annotation encoding="application/x-tex">U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span></span></span></span>.  The category of sets <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><annotation encoding="application/x-tex">\mathbf{Set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6861em;"></span><span class="mord"><span class="mord mathbf">Set</span></span></span></span></span> has the object set <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi></mrow><annotation encoding="application/x-tex">U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span></span></span></span>. The category of large sets <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">\mathbf{Set}^+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8473em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">Set</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8473em;"><span style="top:-3.139em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span></span></span></span> has the object set <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">U^+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7713em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7713em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span></span></span></span>, it is of course not <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">U^+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7713em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7713em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span></span></span></span>-small, but <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mrow><mo>+</mo><mo>+</mo></mrow></msup></mrow><annotation encoding="application/x-tex">U^{++}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7713em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7713em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">++</span></span></span></span></span></span></span></span></span></span></span></span>-small if you like. Categories are <em>not</em> assumed to be locally small. Hence, the hom-functors <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mi>o</mi><mi>m</mi><mo stretchy="false">(</mo><mi>X</mi><mo separator="true">,</mo><mo>−</mo><mo stretchy="false">)</mo><mo>:</mo><mi mathvariant="script">C</mi><mo>→</mo><msup><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">hom(X,-) : \mathcal{C} \to \mathbf{Set}^+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">h</span><span class="mord mathnormal">o</span><span class="mord mathnormal">m</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">−</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathcal" style="margin-right:0.05834em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8473em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">Set</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8473em;"><span style="top:-3.139em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span></span></span></span> take values in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi mathvariant="bold">S</mi><mi mathvariant="bold">e</mi><mi mathvariant="bold">t</mi></mrow><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">\mathbf{Set}^+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8473em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">Set</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8473em;"><span style="top:-3.139em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span></span></span></span>.</p>
+<p>This is the framework I have been working with in the last 1-2 years, and it solves a lot of set-theoretic issues - at least when it comes to basic category theory (still in the process of updating my book with it...). Perhaps you were alluding to things like Vopenka's principle? We can think about these delicate questions as soon as categories and properties are added where this plays a role.</p>
+<p>That being said, I should probably write these conventions somewhere in CatDat.</p>
+
+
+
+<a name="582113806"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/582113806" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#582113806">(Mar 27 2026 at 09:13)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="645679">James E Hanson</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/582061602">said</a>:</p>
+<blockquote>
+<p>Oh so is it just that you don't display a property in the list of properties unless there's actually an example of it in the database?</p>
+</blockquote>
+<p>No. But apparently then I didn't yet understand your concern / suggestion. Can you perhaps phrase it in a different way? <span aria-label="slight smile" class="emoji emoji-1f642" role="img" title="slight smile">:slight_smile:</span></p>
+
+
+
+<a name="582119949"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/582119949" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#582119949">(Mar 27 2026 at 09:44)</a>:</h4>
+<p><strong>Meta comment.</strong> If you have a GitHub account, then you can also submit your ideas (or questions) in form of a <a href="https://github.com/ScriptRaccoon/CatDat/issues">GitHub issue</a>. This option has better visibility and allows me to organize these ideas in a better way. I am also much more active on GitHub than on Zulip (especially in the long run, it may happen that I am not online on Zulip for months). If you don't have a GitHub account, <a href="https://docs.google.com/forms/d/e/1FAIpQLSehzsz5xhE4-8MeDTb9ULbh-3-N17xXb-i_ZoDMD489PWaKGw/viewform?usp=send_form">this Google Form</a> provides another option.</p>
+
+
+
+<a name="582285130"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/582285130" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#582285130">(Mar 28 2026 at 01:11)</a>:</h4>
+<p>Functors are coming soon! <span aria-label="magic wand" class="emoji emoji-1fa84" role="img" title="magic wand">:magic_wand:</span> </p>
+<p><img alt="page for contravariant power set functor" class="inline-image" data-original-content-type="image/png" data-original-dimensions="1664x1856" data-original-src="/user_uploads/21317/KonBw6jJRVttrLOH8YNniMgs/Bildschirmfoto-2026-03-28-um-02.10.58.png" src="/user_uploads/thumbnail/21317/KonBw6jJRVttrLOH8YNniMgs/Bildschirmfoto-2026-03-28-um-02.10.58.png/840x560.webp"></p>
+<p><img alt="right adjoint property page" class="inline-image" data-original-content-type="image/png" data-original-dimensions="1688x1574" data-original-src="/user_uploads/21317/e1M_OfefCoBowNIRjsHUXiE8/Bildschirmfoto-2026-03-28-um-02.17.42.png" src="/user_uploads/thumbnail/21317/e1M_OfefCoBowNIRjsHUXiE8/Bildschirmfoto-2026-03-28-um-02.17.42.png/840x560.webp"></p>
+<p><img alt="list of implications of functor properties" class="inline-image" data-original-content-type="image/png" data-original-dimensions="1572x1652" data-original-src="/user_uploads/21317/xbJm9QsXrOWKCUrcRlcNa0ps/Bildschirmfoto-2026-03-28-um-02.13.15.png" src="/user_uploads/thumbnail/21317/xbJm9QsXrOWKCUrcRlcNa0ps/Bildschirmfoto-2026-03-28-um-02.13.15.png/840x560.webp"></p>
+<p><img alt="special adjoint functor theorem" class="inline-image" data-original-content-type="image/png" data-original-dimensions="1722x762" data-original-src="/user_uploads/21317/orK6o02zIXmghmZXH27bzi2I/Bildschirmfoto-2026-03-28-um-02.15.00.png" src="/user_uploads/thumbnail/21317/orK6o02zIXmghmZXH27bzi2I/Bildschirmfoto-2026-03-28-um-02.15.00.png/840x560.webp"></p>
+
+
+
+<a name="582289908"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/582289908" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> James E Hanson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#582289908">(Mar 28 2026 at 01:32)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="414434">Martin Brandenburg</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/582113806">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="645679">James E Hanson</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/582061602">said</a>:</p>
+<blockquote>
+<p>Oh so is it just that you don't display a property in the list of properties unless there's actually an example of it in the database?</p>
+</blockquote>
+<p>No. But apparently then I didn't yet understand your concern / suggestion. Can you perhaps phrase it in a different way? <span aria-label="slight smile" class="emoji emoji-1f642" role="img" title="slight smile">:slight_smile:</span></p>
+</blockquote>
+<p>Let me put it this way. Is the reason why properties like 'co-abelian' aren't listed just that these aren't properties people usually consider?</p>
+
+
+
+<a name="582290125"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/582290125" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#582290125">(Mar 28 2026 at 01:37)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="645679">James E Hanson</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/582289908">said</a>:</p>
+<blockquote>
+<p>Let me put it this way. Is the reason why properties like 'co-abelian' aren't listed just that these aren't properties people usually consider?</p>
+</blockquote>
+<p>Ah, this is a good question. Yes, that is basically it. (But notice that "abelian" is self-dual, so this is not a good example.) For this reason I also have not (yet) added "coalgebraic" (which actually has two meanings...) or "locally copresentable". But: I have noticed many times that it is useful to add dualized properties to decide other properties. This is because (among other things) "disjoint products", "coregular", "coextensive" and "co-Malcev" made it into CatDat, even though neither of these are common. I noticed that adding these gives a more complete picture. I also still need to add the dual of "exact filtered colimits". <em>Maybe</em> it is even good to enforce that every property has a dual property. <span aria-label="thinking" class="emoji emoji-1f914" role="img" title="thinking">:thinking:</span></p>
+
+
+
+<a name="582310269"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/582310269" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#582310269">(Mar 28 2026 at 08:32)</a>:</h4>
+<p>In theory, you only need to either add opposite categories, or add duals of every property (as long as it is possible to derive a statement about a category from properties both of it and of its dual). However, in practice, it is probably more convenient for users to have both opposite categories and the dual of every property.</p>
+
+
+
+<a name="582420325"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/582420325" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Joe Moeller <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#582420325">(Mar 29 2026 at 15:58)</a>:</h4>
+<p>You'll need to add properties to the database as well so you can look up which ones are self-dual.</p>
+
+
+
+<a name="582498401"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/582498401" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#582498401">(Mar 30 2026 at 07:55)</a>:</h4>
+<p>Yuto Kawase opened an issue on CatDat which I find quite important. Maybe you want to join the discussion? It is about if "locally small" should be redefined as "locally essentially small".<br>
+<a href="https://github.com/ScriptRaccoon/CatDat/issues/25">https://github.com/ScriptRaccoon/CatDat/issues/25</a><br>
+cc. <span class="user-mention" data-user-id="276092">@Nathanael Arkor</span></p>
+
+
+
+<a name="582500912"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/582500912" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#582500912">(Mar 30 2026 at 08:08)</a>:</h4>
+<p>I'm currently getting a "504 Gateway Time-out" when I try to visit <a href="http://catdat.app">catdat.app</a>.</p>
+
+
+
+<a name="582527363"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/582527363" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#582527363">(Mar 30 2026 at 10:28)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/582500912">said</a>:</p>
+<blockquote>
+<p>I'm currently getting a "504 Gateway Time-out" when I try to visit <a href="http://catdat.app">catdat.app</a>.</p>
+</blockquote>
+<p>I have checked this and could not reproduce it. To be alerted about this in the future I also created <a href="https://catdat.openstatus.dev/">https://catdat.openstatus.dev/</a> (which shows no problems either - so far). Is the issue still happening?</p>
+
+
+
+<a name="582533241"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/582533241" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#582533241">(Mar 30 2026 at 11:03)</a>:</h4>
+<p>Where are you based, <span class="user-mention" data-user-id="414434">@Martin Brandenburg</span> ? I was having DNS server errors for some sites hosted in North America this morning.</p>
+
+
+
+<a name="582534134"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/582534134" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#582534134">(Mar 30 2026 at 11:08)</a>:</h4>
+<p>I am based in Berlin, but  the website is hosted on Netlify, which has servers all around the world and a globally distributed CDN. So I cannot specify any location.</p>
+
+
+
+<a name="582534251"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/582534251" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#582534251">(Mar 30 2026 at 11:09)</a>:</h4>
+<p>(It seems to be working now for me.)</p>
+
+
+
+<a name="582534528"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/582534528" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Schwiebert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#582534528">(Mar 30 2026 at 11:11)</a>:</h4>
+<p>As I write this, <a href="https://www.netlifystatus.com/">https://www.netlifystatus.com/</a> has orange "partial outage" notices for the categories "Netlify functions" and "edge functions" which I think is possibly relevant.  Site's worked fine for me too when I tested.</p>
+
+
+
+<a name="582534666"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/582534666" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#582534666">(Mar 30 2026 at 11:12)</a>:</h4>
+<p>Okay sounds like my suggestion was irrelevant <span aria-label="grinning face with smiling eyes" class="emoji emoji-1f601" role="img" title="grinning face with smiling eyes">:grinning_face_with_smiling_eyes:</span></p>
+
+
+
+<a name="583224374"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/583224374" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#583224374">(Apr 02 2026 at 09:45)</a>:</h4>
+<p><strong>Functors</strong> are now available in CatDat! You can see the current list at <a href="https://catdat.app/functors">https://catdat.app/functors</a> and browse through the new pages. As with categories, we have <a href="https://catdat.app/functor/forget_vector">pages for individual functors</a>, <a href="https://catdat.app/functor-properties">properties</a>, <a href="https://catdat.app/functor-implications">implications</a>, and a deduction system. All details can be found <a href="https://github.com/ScriptRaccoon/CatDat/pull/12">here</a>.</p>
+
+
+
+<a name="583437076"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/583437076" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> JR Learnstomath <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#583437076">(Apr 03 2026 at 11:10)</a>:</h4>
+<p>Wow, this is AMAZING <span class="user-mention" data-user-id="414434">@Martin Brandenburg</span>! Thank you so much, this is hugely helpful to me as a not-in-academia-learning-CT person.</p>
+
+
+
+<a name="583437310"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/583437310" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> JR Learnstomath <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#583437310">(Apr 03 2026 at 11:12)</a>:</h4>
+<p>I didn't find <strong>locos</strong> (list-arithmetic distributive category), is it because it's from a 1990 paper? (I don't presume to be able to add to this database, I'm just learning stuff)</p>
+
+
+
+<a name="583497654"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/583497654" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#583497654">(Apr 03 2026 at 17:39)</a>:</h4>
+<p>I haven't heard of this property before. It seems to be very niche, right?</p>
+
+
+
+<a name="583527186"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/583527186" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#583527186">(Apr 03 2026 at 21:49)</a>:</h4>
+<p>I've never heard of it myself.</p>
+
+
+
+<a name="583527489"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/583527489" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Valeria de Paiva <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#583527489">(Apr 03 2026 at 21:53)</a>:</h4>
+<h1>List-arithmetic distributive categories: Locoi</h1>
+<p>J.R.B. Cockett , <a href="https://www.sciencedirect.com/science/article/pii/002240499090121W">https://www.sciencedirect.com/science/article/pii/002240499090121W</a></p>
+<p>but I have never worked with them myself.</p>
+
+
+
+<a name="583611807"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/583611807" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#583611807">(Apr 04 2026 at 20:34)</a>:</h4>
+<p>Are ya livin' la vida locos, <span class="user-mention" data-user-id="700428">@JR Learnstomath</span>?</p>
+
+
+
+<a name="583639488"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/583639488" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> JR Learnstomath <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#583639488">(Apr 05 2026 at 05:37)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="275920">John Baez</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/583611807">said</a>:</p>
+<blockquote>
+<p>Are ya livin' la vida locos, <span class="user-mention silent" data-user-id="700428">JR Learnstomath</span>?</p>
+</blockquote>
+<p>Indeed -- woke up in Locos City, cartesian cats and parametrized list object dolls  (eep, too many syllables!)</p>
+<p>Oh, I think that nowadays, it goes by the name arithmetic pretopos: nLab <a href="https://ncatlab.org/nlab/show/arithmetic+pretopos">https://ncatlab.org/nlab/show/arithmetic+pretopos</a></p>
+
+
+
+<a name="584129767"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/584129767" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dmitri Pavlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#584129767">(Apr 08 2026 at 04:25)</a>:</h4>
+<p>Are there any plans to turn this website into a wiki?  The current ways of contributing impose rather high barriers.</p>
+
+
+
+<a name="584261083"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/584261083" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Schwiebert <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#584261083">(Apr 08 2026 at 15:56)</a>:</h4>
+<p>I’m interested in the problem of lowering the contribution bar too. In the past the thing that was used the most was a suggestion form. Second most popular were suggestions submitted by chats (<a href="http://math.se">math.se</a> chatroom and blog comments). </p>
+<p>I like the idea of opening up some fields to wiki-like access and wonder if this architecture would allow that.</p>
+
+
+
+<a name="584348340"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/584348340" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#584348340">(Apr 09 2026 at 02:07)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="408784">Dmitri Pavlov</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/584129767">said</a>:</p>
+<blockquote>
+<p>Are there any plans to turn this website into a wiki?  The current ways of contributing impose rather high barriers.</p>
+</blockquote>
+<p>Hey Dmitri!</p>
+<p>First of all, there is the <a href="https://docs.google.com/forms/d/e/1FAIpQLSehzsz5xhE4-8MeDTb9ULbh-3-N17xXb-i_ZoDMD489PWaKGw/viewform">google form</a> that allows contributions for anyone, there is no barrier. (It has also been used already.) Submitting an issue on GitHub also only requires a GitHub account. The only technical "barrier" is when you want to create a pull request, that is true.</p>
+<p>But there are many reasons why I do not plan to make it a "Wiki". I assume this means that basically anyone can create an account and edit the data (maybe with some peer review process). Here is why:</p>
+<p>A Wiki (usually) only concerns static data. While CatDat generates static data in the end (except for the search and comparison pages), I think it is not really comparable to any other Wiki. Most of the data in CatDat is <em>generated</em>. As of writing this, there are 7800 category property assignments. But only 752 of them have been added manually! The vast majority of properties are deduced via the implications. On top of that, implications are also dualized automatically if applicable. There are even plans to make this whole deduction system more powerful and dynamic (see <a href="https://github.com/ScriptRaccoon/CatDat/issues/22">issue 22</a> for example).</p>
+<p>So, when someone wants to make a "Wiki style" edit, they actually also need to see all the deduced properties. But this means to rebuild the whole database, rerender all pages, maybe more. (Yes, rebuild, since what happens if some wrong property is fixed, for example?) How should we even do this in the browser? It is possible of course, but it requires a lot of effort.</p>
+<p>The deduction system also checks if any contradiction is generated. You cannot possibly add an implication that, via some steps in between, concludes that the category of sets is, say, abelian. If we want to allow "Wiki style" edits, for each potential edit a copy of the SQLite database has to be generated on the fly (where to save it?), checked for errors, ... I think this will produce a huge technical overhead.</p>
+<p>It is much easier to let CatDat do its thing on your local machine, check if everything is OK, and then push the commit. (Of course, the checks are also made during deployment.) I also like that the current system with PRs on GitHub has a built-in peer review system, that we can discuss in issues, comment on PRs, etc.</p>
+<p>But what we can and should do: make the <a href="https://github.com/ScriptRaccoon/CatDat/blob/main/CONTRIBUTING.md">contribution guidelines</a> easier to understand. Also maybe add a section for those who never used GitHub before. By the way, I also added a section with <a href="https://github.com/ScriptRaccoon/CatDat?tab=contributing-ov-file#example-pull-requests">example PRs</a> to make it easier to understand how they look like. I think they demonstrate quite well that additions to the database are mostly "just text" (<a href="https://github.com/ScriptRaccoon/CatDat/pull/40/changes">example</a>). If there is anything else one can improve in this document, please let me know (or create an issue / PR :D).</p>
+<p>EDIT. Ah and we can combine these approaches as well. What about adding a textarea on each page where every user can "submit" new data (a new category, a new proof, etc.), but <em>this just generates a GitHub issue</em>? Then I (or anyone with the technical background) can implement it. Maybe this makes the google form superfluous.</p>
+
+
+
+<a name="584351789"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/584351789" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#584351789">(Apr 09 2026 at 02:51)</a>:</h4>
+<p><a href="https://github.com/ScriptRaccoon/CatDat/pull/42">This recently opened PR</a> is also a quite good illustration in which way CatDat differs from a Wiki. It has added the property "cocartesian coclosed" (among other things). CatDat has assigned this property to all the categories automatically! Namely, it automatically dualized all the implications for "cartesian closed" categories and made deductions based on these. Not a single category was spared by these deductions. A Wiki approach (as I know it, at least) is the opposite, it would add the info here and there, but it would never be as systematic.</p>
+<p><a href="https://ncatlab.org/nlab/show/cocartesian+coclosed+category">This nlab page</a> mentions and proves the result that every category that is cartesian closed and cocartesian coclosed is automatically thin. Fun Fact: CatDat deduces this automatically, which is why it does not have to be manually added. The chain is basically: ccc =&gt; terminal object, coccc + terminal object =&gt; strict terminal object (dualized from: ccc + initial object =&gt; strict initial object), ccc + strict terminal object =&gt; thin.</p>
+
+
+
+<a name="584687150"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/584687150" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#584687150">(Apr 10 2026 at 14:19)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="414434">Martin Brandenburg</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/584348340">said</a>:</p>
+<blockquote>
+<p><span class="user-mention silent" data-user-id="408784">Dmitri Pavlov</span> <a href="#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/584129767">said</a>:</p>
+<blockquote>
+<p>Are there any plans to turn this website into a wiki?  The current ways of contributing impose rather high barriers.</p>
+</blockquote>
+<p>EDIT. Ah and we can combine these approaches as well. What about adding a textarea on each page where every user can "submit" new data (a new category, a new proof, etc.), but <em>this just generates a GitHub issue</em> (via GitHub API, the user does not need an account)? Then I (or anyone with the technical background) can implement it. Maybe this makes the google form superfluous.</p>
+</blockquote>
+<p>I have now added a suggestion form on (almost) every CatDat page. It generates issues on GitHub. I hope this helps to bring down the barrier to contribute. (<a href="https://github.com/ScriptRaccoon/CatDat/pull/49">Details</a>)</p>
+
+
+
+<a name="585105207"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/585105207" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Dmitri Pavlov <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#585105207">(Apr 13 2026 at 05:50)</a>:</h4>
+<p>A suggestion form is closer to what I had in mind.  It seems to be working, modulo a bizarre limit of 50 characters.  I hope you do not have spam bot problems, as the form appears to be unprotected (?).  Concerning your comments: the database does not have to be rebuilt every time an edit is made.  The edits can be approved asynchronously.  What I had in mind is similar to the suggestion form, but allowing for structured input of information, so that contributions only need to be approved, not created from a free-form information.</p>
+
+
+
+<a name="585198459"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229111-community%3A%20general/topic/CatDat%20%E2%80%93%20the%20comprehensive%20database%20of%20categories/near/585198459" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Martin Brandenburg <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories.html#585198459">(Apr 13 2026 at 14:01)</a>:</h4>
+<p>The form is not unprotected, see the linked PR for details. There is a rate limit, that can be elevated to an IP ban, and a profanity filter. Still no auth, so it is not 100% safe, yes. I will add auth when it becomes necessary (but at which point it makes no sense anymore to have this form since one can just write a GitHub issue directly).</p>
+<p>The limit of 50 characters is only for the short summary - that will be the title of the GitHub issue. That should indeed be short. The body can be up to 10000 characters (and we can increase this limit if necessary). Since you have already created <a href="https://github.com/ScriptRaccoon/CatDat/issues/71">an issue</a> (thanks!), it seems that this has worked well so far.</p>
+<blockquote>
+<p>What I had in mind is similar to the suggestion form, but allowing for structured input of information, so that contributions only need to be approved, not created from a free-form information.</p>
+</blockquote>
+<p>Yes, I know, but all the mentioned problems remain. But maybe it will work some day. The automated tests that I have added today are a step in that direction.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: May 02 2026 at 12:24 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

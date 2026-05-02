@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Monoidal product but \tensor is a lax functor. · learning: questions · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/index.html">learning: questions</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Monoidal.20product.20but.20.5Ctensor.20is.20a.20lax.20functor.2E.html">Monoidal product but \tensor is a lax functor.</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="586400357"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Monoidal%20product%20but%20%5Ctensor%20is%20a%20lax%20functor./near/586400357" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Will Jump <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Monoidal.20product.20but.20.5Ctensor.20is.20a.20lax.20functor.2E.html#586400357">(Apr 19 2026 at 21:59)</a>:</h4>
+<p>Has anyone run into something that looked like a monoidal product but \tensor: C \times C \to C is a lax functor? </p>
+<p>I'm playing around with the weak distributive law between the powerset monad and the distribution monad and the category you get by combining P,D and looking at the kleisli category (because the distributive law is weak PD isn't  exactly a monad). </p>
+<p>The thing which I think should be the monoidal product is a lax functor - it restricts to the normal monoidal product if you just look at the kleisli category of D. has this type of monoidal product been studied anywhere? Because I've got the powerset monad floating around at lot of things act like relations, does this imply there might be some sort of double category explanation - I'm not very familiar with this stuff. </p>
+<p>Cheers!</p>
+
+
+
+<a name="586400526"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Monoidal%20product%20but%20%5Ctensor%20is%20a%20lax%20functor./near/586400526" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Monoidal.20product.20but.20.5Ctensor.20is.20a.20lax.20functor.2E.html#586400526">(Apr 19 2026 at 22:01)</a>:</h4>
+<p>By "lax functor" do you mean something like a 2-functor between 2-categories or bicategories but where composition of 1-morphisms is only laxly preserved?   (I don't know what a lax functor between ordinary categories would be.)</p>
+
+
+
+<a name="586401165"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Monoidal%20product%20but%20%5Ctensor%20is%20a%20lax%20functor./near/586401165" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Will Jump <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Monoidal.20product.20but.20.5Ctensor.20is.20a.20lax.20functor.2E.html#586401165">(Apr 19 2026 at 22:12)</a>:</h4>
+<p>Ah sorry, I mean that C is enriched in posets and then <br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>∘</mo><msup><mi>f</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo stretchy="false">)</mo><mo>⊗</mo><mo stretchy="false">(</mo><mi>g</mi><mo>∘</mo><msup><mi>g</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo stretchy="false">)</mo><mo>≤</mo><mo stretchy="false">(</mo><mi>f</mi><mo>⊗</mo><mi>g</mi><mo stretchy="false">)</mo><mo>∘</mo><mo stretchy="false">(</mo><msup><mi>f</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo>⊗</mo><msup><mi>g</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(f \circ f&#x27;) \otimes (g \circ g&#x27;) \leq (f \otimes g) \circ (f&#x27; \otimes g&#x27;)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0019em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0019em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∘</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0019em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0019em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span><br>
+in the homset ordering.</p>
+
+
+
+<a name="586401481"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Monoidal%20product%20but%20%5Ctensor%20is%20a%20lax%20functor./near/586401481" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Monoidal.20product.20but.20.5Ctensor.20is.20a.20lax.20functor.2E.html#586401481">(Apr 19 2026 at 22:19)</a>:</h4>
+<p>Okay, that makes sense.   A category enriched in posets is a nice example of a 2-category, so my guess was actually right, but we don't need to talk about 2-categories here.</p>
+
+
+
+<a name="587677347"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Monoidal%20product%20but%20%5Ctensor%20is%20a%20lax%20functor./near/587677347" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Spencer Breiner <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Monoidal.20product.20but.20.5Ctensor.20is.20a.20lax.20functor.2E.html#587677347">(Apr 20 2026 at 05:33)</a>:</h4>
+<p>Check out <a href="https://ncatlab.org/nlab/show/duoidal%20category">[[duoidal category]]</a>.</p>
+
+
+
+<a name="587682425"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Monoidal%20product%20but%20%5Ctensor%20is%20a%20lax%20functor./near/587682425" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Monoidal.20product.20but.20.5Ctensor.20is.20a.20lax.20functor.2E.html#587682425">(Apr 20 2026 at 06:16)</a>:</h4>
+<p>These are studied in Gambino–Garner–Vasilakopoulou's <a href="https://arxiv.org/abs/2206.06858">Monoidal Kleisli Bicategories and the Arithmetic Product of Coloured Symmetric Sequences</a> under the name "oplax monoidal bicategory" (which generalises the notion of duoidal category). However, I would say that this is not ideal terminology, because it conflicts with the terminology <a href="https://ncatlab.org/nlab/show/lax+monoidal+category">oplax monoidal category</a>. A better name would be something like "oplaxly functorial monoidal bicategory".</p>
+
+
+
+<a name="587763996"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Monoidal%20product%20but%20%5Ctensor%20is%20a%20lax%20functor./near/587763996" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Will Jump <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Monoidal.20product.20but.20.5Ctensor.20is.20a.20lax.20functor.2E.html#587763996">(Apr 20 2026 at 13:18)</a>:</h4>
+<p>Ah that paper looks great! time to learn some definitions...</p>
+
+
+
+<a name="588598130"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Monoidal%20product%20but%20%5Ctensor%20is%20a%20lax%20functor./near/588598130" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Bjarki Gunnarsson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Monoidal.20product.20but.20.5Ctensor.20is.20a.20lax.20functor.2E.html#588598130">(Apr 21 2026 at 11:30)</a>:</h4>
+<p>There is also the paper <a href="https://dl.acm.org/doi/10.1145/3678232.3678249">Concurrent monads for shared state</a> which defines concurrent monads on ordered monoidal categories, which are the ones you describe. I'm finishing my master's thesis which deals with these where I look at ordered monoidal categories as objects of a 2-category with nice internal monads...</p>
+
+
+
+<a name="588609663"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Monoidal%20product%20but%20%5Ctensor%20is%20a%20lax%20functor./near/588609663" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Will Jump <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Monoidal.20product.20but.20.5Ctensor.20is.20a.20lax.20functor.2E.html#588609663">(Apr 21 2026 at 12:26)</a>:</h4>
+<p>Oh cool! I've wanted to learn something about concurrency for a while</p>
+
+
+
+<a name="588731856"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229199-learning%3A%20questions/topic/Monoidal%20product%20but%20%5Ctensor%20is%20a%20lax%20functor./near/588731856" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Will Jump <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229199-learning.3A-questions/topic/Monoidal.20product.20but.20.5Ctensor.20is.20a.20lax.20functor.2E.html#588731856">(Apr 21 2026 at 22:09)</a>:</h4>
+<p>I've read the paper you suggested and <a href="https://inria.hal.science/hal-02150199/document">monads with merging</a> exactly what I needed - thanks!  Looking forward to reading your thesis!</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: May 02 2026 at 12:24 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

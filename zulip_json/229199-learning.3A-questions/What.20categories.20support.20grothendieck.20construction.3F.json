@@ -1,0 +1,32 @@
+[
+    {
+        "content": "<p>I’ve come across the category of elements of construction which works for functors valued in Set. Also the actual “geothendieck construction” works for pseudofunctors valued in Cat. And straightening/unstraightening makes this work for infinity categories, from what little I know of it.</p>\n<p>However as far as I’m aware, if I just have a functor C -&gt; D there’s not a general way to somehow transform this into a functor E -&gt; C as a kind of projection from a total space. Hence my Q - what kinds of categories (and functors?) support a notion of grothendieck construction? I’d also be interested to hear enriched or internal generalisations if there are some.</p>",
+        "id": 591347485,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1777374242
+    },
+    {
+        "content": "<p>For enriched categories, there is a paper trying to answer that. \"The enriched grothendieck construction\". <a href=\"https://arxiv.org/abs/1804.03829\">https://arxiv.org/abs/1804.03829</a></p>",
+        "id": 591349458,
+        "sender_full_name": "fosco",
+        "timestamp": 1777374858
+    },
+    {
+        "content": "<p>The most general one possible for plain categories is that a category over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0715em;\">C</span></span></span></span> (i.e. a functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo>:</mo><mi>E</mi><mo>→</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">p : E \\to C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0576em;\">E</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0715em;\">C</span></span></span></span>) is equivalent to a lax functor into the bicategory Span (sets, spans, span transformations), or equivalently a normal lax functor into the bicategory of Profunctors (categories, profunctors, natural transformation). The cases you describe can be seen as instances of this construction if you compose with functors from Cat to Prof/Span and Set to Prof/Span. Cat and Cat^op both map to Prof so this is how you get the Grothendieck construction for both fibrations and opfibrations.</p>\n<p>A lax functor into Span recently goes by the name \"displayed category\": <a href=\"https://ncatlab.org/nlab/show/displayed+category\">https://ncatlab.org/nlab/show/displayed+category</a> though the observation can be traced back to some old lectures by Benabou. Displayed categories are used heavily in mechanizations of category theory because they make fibered notions nicer to work with in dependent type theory</p>",
+        "id": 591375153,
+        "sender_full_name": "Max New",
+        "timestamp": 1777381335
+    },
+    {
+        "content": "<p>Ah yes I've come across displayed categories before! It was nice seeing the most general possible way to convert a \"fibred\" category, so a functor E -&gt; C, into an \"indexed\" one. I've been looking at grothendieck fibrations recently too and if I understand correctly, these are roughly \"bundles with connection\"?</p>",
+        "id": 591376616,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1777381615
+    },
+    {
+        "content": "<p>Very roughly, yes, but there are at least four different reasonable ways of fleshing that phrase out in CT, corresponding to (discrete) (op)fibrations. There are also (discrete) Conduché fibrations which are more general still while nevertheless closer to the connection concept than general functors.</p>",
+        "id": 591447513,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1777398433
+    }
+]
