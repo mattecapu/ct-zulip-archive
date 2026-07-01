@@ -1,0 +1,38 @@
+[
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"438995\">James Deikun</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Calculations.20in.20Category.20Theory/near/566549462\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"751249\">David Jaz Myers</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Calculations.20in.20Category.20Theory/near/566530323\">said</a>:</p>\n<blockquote>\n<p>The difference between the inerts and the actives is reflected in this type theory as follows: the inerts are, roughly speaking, the weakenings: the maps between contexts which reflect forgetting about some of the variables in them. The actives correspond to the substitutions which use all of the variables in the context. I don't know when type theories admit active-inert factorization systems on their categories of contexts, but I think it's an interesting question.</p>\n</blockquote>\n<p>For essentially algebraic theories, or their <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-analogues, this basically happens when there is a presentation as a monad of the sort called \"strongly cartesian\", or sometimes \"polynomial\".  (Neither of these terms is really ideal--both of them could mean too many things.)</p>\n<p>Syntactically, this reflects \"rigidity\"--in the 1-pov this is simply the assertion that equations between terms don't make use of any structural operations (including weakening) to align their contexts.  This means that every term-in-context has a \"trace\" of which structural rules have been used on it, and this \"trace\" is invariant under permissible rewritings.</p>\n<p>What this corresponds to in the higher POV is less clear to me.  The \"rigidity\" is definitely less strict in that situation, as witnessed by the fact that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>E</mi><mi mathvariant=\"normal\">∞</mi></msub></mrow><annotation encoding=\"application/x-tex\">E_\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">∞</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> is a \"polynomial\" <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-monad presented by an algebraic pattern.</p>\n</blockquote>\n<p>This might be a fun question to work on a bit more, actually.</p>",
+        "id": 567388023,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1768135321
+    },
+    {
+        "content": "<p>Syntactically, the inert part of the factorization system corresponds to a renaming.  So what we want is, for each substitution, for it to canonically be a renaming of an \"active\" or \"generic\" substitution determined only by the operations of the substitution.  So, first off, if we blank out the context and all the references to variables in a substitution, we want to be able to reconstruct a substitution just from that, and the substitutions so reconstructed will be \"active\".  Needless to say, this means the same will apply to all the parts of a substitution: types, terms, and contexts.</p>",
+        "id": 567388376,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1768135801
+    },
+    {
+        "content": "<p>(All of these reconstructions are idempotent except for the one for contexts, which I can't see a way to make idempotent.  Maybe the one for contexts isn't actually important, though.)</p>",
+        "id": 567388674,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1768136141
+    },
+    {
+        "content": "<p>So in order for this to make sense, as a type theory, there are several conditions we need to hold.  Probably the simplest one is that, for any computation rule or other rule that produces a definitional equality, the left and right sides of the definitional equality produced have to reconstruct the same context for their respective active type or term judgements.</p>",
+        "id": 567389069,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1768136616
+    },
+    {
+        "content": "<p>Another rule we don't need to insist on, but can without loss of generality, and will probably simplify things if we do, is that formation and introduction and elimination rules are active as they stand.  (I think they will always be active up to an invertible renaming, and so, active in the semantics.)</p>",
+        "id": 567389230,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1768136812
+    },
+    {
+        "content": "<p>There's still quite a bit to work out, but I think I'll stop here for now.  Anybody, please feel free to join in with contributions or thoughts!</p>",
+        "id": 567389689,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1768137316
+    }
+]

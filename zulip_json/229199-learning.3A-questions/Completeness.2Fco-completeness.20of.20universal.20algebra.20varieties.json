@@ -1,0 +1,146 @@
+[
+    {
+        "content": "<p>Is every variety in universal algebra, defined as an equational class, a complete and/or co-complete category?</p>\n<p>I see that the category of fields is not complete, but that's not relevant, is it is not definable by a set of term equations (since division is only a partial operation).</p>",
+        "id": 425839823,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1710135269
+    },
+    {
+        "content": "<p>Yes: every variety is an \"algebraic category\" (a category equivalent to the category of models of an algebraic theory), and algebraic categories are complete and cocomplete. One place you can find these results is the book <em>Algebraic Theories</em> by Adamek, Rosicky, and Vitale.</p>",
+        "id": 425841046,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1710136400
+    },
+    {
+        "content": "<p>Good to know, and thanks for the reference!</p>",
+        "id": 425842420,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1710137454
+    },
+    {
+        "content": "<p>Note this result is actually a slick way to show that fields aren't definable by operations obeying equations.  It may seem obvious - after all, division is only partially defined - but it's actually hard to show directly that <em>no</em> variety is equivalent to the category of fields: maybe some elaborate collection of operations obeying weird equations could give a category that's secretly equivalent to the category of fields?  The quick way to rule this out is to show that the category of fields lacks properties that varieties all have.</p>",
+        "id": 425936840,
+        "sender_full_name": "John Baez",
+        "timestamp": 1710171424
+    },
+    {
+        "content": "<p>It's worth knowing that the nLab uses the term <a href=\"https://ncatlab.org/nlab/show/algebraic%20category\">[[algebraic category]]</a> in a more general sense than Evan is using it.   I like Evan's usage, and I think it's widespread, but the nLab calls this kind of category \"finitary monadic\".</p>",
+        "id": 425940859,
+        "sender_full_name": "John Baez",
+        "timestamp": 1710172484
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Completeness.2Fco-completeness.20of.20universal.20algebra.20varieties/near/425940859\">said</a>:</p>\n<blockquote>\n<p>It's worth knowing that the nLab uses the term <a href=\"https://ncatlab.org/nlab/show/algebraic%20category\">[[algebraic category]]</a> in a more general sense than Evan is using it.   I like Evan's usage, and I think it's widespread, but the nLab calls this kind of category \"finitary monadic\".</p>\n</blockquote>\n<p>Interesting, I always took \"algebraic\" to mean \"finitary monadic\" since finitary monadic categories are exactly the categories of models of Lawvere theories. In the nlab case, \"algebraic categories\" are apparently equivalent to categories of algebras of quasi-varieties as opposed to varieties (which correspond to monadic ones). But what kinds of theories are quasi-varieties and how do they relate to other notions of \"algebraic theory\"? For instance, are algebraic categories special cases of locally presentable categories, categories of models of essentially algebraic theories? If so, which essentially algebraic theories give rise to quasi-varieties (and thus which locally presentable categories are algebraic)? (it seems the connection might be given by Horn theories since every Horn theory is essentially algebraic and quasivarieties require Horn clauses for the equational axioms, but I don't know of any more concrete connection)</p>",
+        "id": 426031028,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1710202320
+    },
+    {
+        "content": "<p>On further thought this is directly relevant to the above question because nlab algebraic categories being locally presentable means that not only are varieties cocomplete, but quasi-varieties must be as well (since locally presentable categories are cocomplete, and therefore nlab algebraic categories are too). I will show this in detail below in one of my first \"proofs\" of sorts I've attempted, so please do let me know if I did anything wrong as I'm trying to learn this important mathematical skill! And if everything looks good, maybe this info (cocompleteness and being locally presentable) could be added to the nlab page on \"algebraic categories\" under \"properties\"?</p>\n<p>Here's my proof that all nlab algebraic categories are locally presentable. First, nlab algebraic categories ~ categories of algebras of quasi-varieties as per the page and AHS 24.11. Then, under Wikipedia's article on Horn theories (which cites from Burris and Sankappanavar 1981) it states \"classes of algebras definable by a set of quasi-identities [Horn clauses] are called quasi-varieties\". Thus, quasi-varieties ~ Horn theories (since Horn theories are just sets of Horn clauses) and so categories of algebras of quasivarieties ~ categories of models of Horn Theories. Lastly, under nlab \"essentially algebraic theory\" (citing a paper by Barr and Palmgren, Vickers) it states that \"Horn theory is essentially algebraic... essentially algebraic theories are equivalent to partial Horn theories\". Thus, Horn theories &lt; partial Horn theories ~ essentially algebraic theories. By Gabriel-Ulmer duality, locally presentable categories ~ categories of models of essentially algebraic theories and so categories of models of Horn theories &lt; locally presentable categories. Completing this proof by combining everything we get: categories of algebras of quasi-varieties ~ nlab algebraic categories &lt; locally presentable categories.</p>",
+        "id": 426043674,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1710210830
+    },
+    {
+        "content": "<p>This is close to true, but nLab algebraic categories entertain the possibility of a proper class of operations and/or axioms, which gives a kind of category which, like compact Hausdorff spaces, may be algebraic or even monadic without being locally presentable.</p>",
+        "id": 426046048,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1710212653
+    },
+    {
+        "content": "<p>By the way, in Corollary 1.52 of Adámek &amp; Rosický's book they show any locally presentable category is the category of models of a limits sketch - i.e., it's the category of small-limit-preserving functors from a small category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> with small limits to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span></span></span></span>.</p>",
+        "id": 426046668,
+        "sender_full_name": "John Baez",
+        "timestamp": 1710213132
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"609515\">@Kevin Carlson (aka Arlin)</span> So after a little more thought I realized this discussion reminds me of the one from yesterday where large sketches were mentioned, and so I wanted to know if they are indeed related. More precisely: As Dr. Baez points out here, locally presentable categories are categories of models of small limit sketches, as well as categories of models of generalized/essentially algebraic theories (which include Horn theories). There are thus two ways of generalizing the situation. First, as you mention here, we can expand beyond considering small sets of operations and axioms in our Horn theories (or more generally the generalized algebraic theories) to include classes. Secondly, at the same time, we can extend small limit sketches to large limit sketches, giving things like strongly compact categories. My ultimate question is then: is this the same process; do these two generalizations converge? Is extending from small to large sketches \"equivalent\" (in the sense of categories of models) to extending from theories with sets to theories with classes? In effect, are all algebraic categories sketchable by large limit sketches?</p>",
+        "id": 426353871,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1710340500
+    },
+    {
+        "content": "<p>Could someone list a few simple examples of mathematical gadgets that are described by Horn theories but not (small) limits theories?  I think that could give us some intuition on <span class=\"user-mention\" data-user-id=\"673117\">@John Onstead</span>'s question.</p>",
+        "id": 426390039,
+        "sender_full_name": "John Baez",
+        "timestamp": 1710350138
+    },
+    {
+        "content": "<p>Up to picking size parameters there are no such examples--specifically, finite limit theories strictly subsume Horn theories in the language where only finite conjunctions are allowed. For instance Cat is the models of a finite limit theory but not of a Horn theory, because Cat doesn't have enough regular projectives.</p>",
+        "id": 426392587,
+        "sender_full_name": "Kevin Carlson (aka Arlin)",
+        "timestamp": 1710350929
+    },
+    {
+        "content": "<p>This is from Barr's short paper cited on the nLab page: <a href=\"https://www.math.mcgill.ca/barr/papers/horn.pdf\">https://www.math.mcgill.ca/barr/papers/horn.pdf</a></p>",
+        "id": 426392921,
+        "sender_full_name": "Kevin Carlson (aka Arlin)",
+        "timestamp": 1710351024
+    },
+    {
+        "content": "<p>I see.  So is the similar question for choices of size parameters other than \"finite limit theory\" and \"Horn theory with finite conjunctions\" still open?  I guess that's exactly what John Onstead was asking, but now I understand the question a bit better.</p>",
+        "id": 426407561,
+        "sender_full_name": "John Baez",
+        "timestamp": 1710356302
+    },
+    {
+        "content": "<p>Yeah, it's not quite clear to me, there are lots of little variations and I don't understand them all super well.</p>",
+        "id": 426408536,
+        "sender_full_name": "Kevin Carlson (aka Arlin)",
+        "timestamp": 1710356646
+    },
+    {
+        "content": "<p>I guess I can try to clarify. Various types of sketches and theories have equivalences between them for complicated reasons I do not fully understand. For instance, there is a correspondence between generic sketches and basic first order theories, or limit sketches and generalized algebraic theories in that their categories of models in Set are equivalent. I was asking if there was a sketch-theory equivalence of this form between specifically large limit sketches and large generalized algebraic theories (which have proper classes of symbols and axioms rather than the usual bounded small sets). If so, then because algebraic categories are categories of models of (potentially large) Horn theories, and Horn theories are cases of generalized algebraic theories, this would imply algebraic categories are sketchable by large limit sketches.</p>",
+        "id": 426425533,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1710363496
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"673117\">John Onstead</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Completeness.2Fco-completeness.20of.20universal.20algebra.20varieties/near/426425533\">said</a>:</p>\n<blockquote>\n<p>I guess I can try to clarify. Various types of sketches and theories have equivalences between them for complicated reasons I do not fully understand. For instance, there is a correspondence between generic sketches and basic first order theories, or limit sketches and generalized algebraic theories in that their categories of models in Set are equivalent. </p>\n</blockquote>\n<p>I don't know the definition of \"generic\" sketch or \"basic\" first order theory.  As for limit sketches and generalized algebraic theories, the relation doesn't seem too mysterious.  I may be missing a lot of subtleties, but:</p>\n<p>I looked at <a href=\"https://ncatlab.org/nlab/show/generalized+algebraic+theory#examples\">how you can define the concept of category using a generalized algebraic theory</a>: you start with a type Ob and a dependent type Hom(a,b) depending on a,b:Ob, and then define composition from Hom(a,b) x Hom(b,c) to Hom(a,c), etc.   More generally a generalized algebraic theory allows finite iteration of dependence when forming dependent types.</p>\n<p>I know how you can define the concept of category using a limits sketch: you start with objects Ob and Mor, and say that composition of morphisms is defined on a pullback involving these, etc.    More generally a limits sketch allows you finite iteration of forming new objects as limits of diagrams involving old ones.</p>\n<p>Given this, it doesn't seem shocking that Cartmell found a translation procedure for going back and forth between generalized algebraic theories and limits sketches.</p>",
+        "id": 426430569,
+        "sender_full_name": "John Baez",
+        "timestamp": 1710365738
+    },
+    {
+        "content": "<p>I would find it less mentally stressful if Cartmell were restricting himself to generalized algebraic theories with finitary operations and claiming these were equivalent to finite limits theories.  From the nLab article (which is all I've read - not Cartmell's paper alas) it sounds like no such restriction is being imposed.   So I'm guessing that his claim is that generalized algebraic theories with \"smallary\" operations are equivalent to \"small limit sketches\" (which most people just call limit sketches).</p>",
+        "id": 426431243,
+        "sender_full_name": "John Baez",
+        "timestamp": 1710366061
+    },
+    {
+        "content": "<p>In the context of relating GATs to limit sketches and essentially algebraic theories, two related threads of work are Chaitanya Leena Subramaniam's thesis on <a href=\"https://arxiv.org/abs/2110.02804\">dependently typed algebraic theories</a> and Jonas Frey's work on <a href=\"https://arxiv.org/abs/2308.11967\">clans</a>.  Cartmell's definition of GAT is, IIRC, rather syntactic and harder to understand category-theoretically; I find these more recent repackagings easier to think about.</p>",
+        "id": 426433502,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1710367159
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> A generic sketch is just the general definition of a sketch: a directed graph equipped with a set of diagrams, cones, and cocones. A \"basic\" or \"suitable\" first order theory is a one such that the category of models is an accessible category, which are also the categories of models of generic sketches. There might be non-basic first order theories, in which case the category of models might not be accessible, but the category of models restricted to elementary embeddings will be accessible. I'm not exactly fully clear on what that exactly means, but it is what I have seen.<br>\nCartmell's paper does not mention sketches. The main result was that his generalized algebraic theories had equivalent categories of models as essentially algebraic theories. Regardless, I am interested if a theory-sketch translation procedure does indeed exist that works in generality rather than on a case-by-case basis. If so I could apply it to \"large theories\" to see if they are \"equivalent\" to large sketches. Unfortunately, I do not have full access to most works detailing relationships between theories and sketches (there's a section in Johnstone's Sketches of an Elephant about it, as well as it being a key subject in both Makkai and Pare's work \"Accessible Categories\" and in Adamek and Rosicky's work \"Locally Presentable and Accessible Categories\")<br>\n<span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> I'll look into these, thanks!</p>",
+        "id": 426434301,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1710367518
+    },
+    {
+        "content": "<p>There's a bunch of elementary material on sketches and theories in the free book <a href=\"http://www.tac.mta.ca/tac/reprints/articles/12/tr12abs.html\">Toposes, Triples and Theories</a>, starting on page 123, the chapter called \"Theories\".   At first they consider sketches with only cones, not cocones.   Later they include cocones.</p>\n<p>They define \"finite products sketches\" and their models, and they show any finite products sketch <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi></mrow><annotation encoding=\"application/x-tex\">S</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span></span></span></span> has a corresponding category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mi>P</mi><mo stretchy=\"false\">(</mo><mi>S</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">FP(S)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">FP</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mclose\">)</span></span></span></span> with finite products such that models of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi></mrow><annotation encoding=\"application/x-tex\">S</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span></span></span></span> correspond to finite-product-preserving functors <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mi>P</mi><mo stretchy=\"false\">(</mo><mi>S</mi><mo stretchy=\"false\">)</mo><mo>→</mo><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">FP(S) \\to \\mathsf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">FP</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span></span></span></span>.  </p>\n<p>Then they do the same for finite limits sketches, which they call \"left exact sketches\".   For each such sketch <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi></mrow><annotation encoding=\"application/x-tex\">S</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span></span></span></span> they construct a category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>L</mi><mi>E</mi><mo stretchy=\"false\">(</mo><mi>S</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">LE(S)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">L</span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mclose\">)</span></span></span></span> with finite limits such that models of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi></mrow><annotation encoding=\"application/x-tex\">S</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span></span></span></span> correspond to finite-imit-preserving functors <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>L</mi><mi>E</mi><mo stretchy=\"false\">(</mo><mi>S</mi><mo stretchy=\"false\">)</mo><mo>→</mo><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">LE(S) \\to \\mathsf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">L</span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">E</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.05764em;\">S</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span></span></span></span>.    I would call a category with finite limits an \"essentially algebraic theory\" but it seems that many people here weaken the finiteness restriction when discussing essentially algebraic theories.</p>\n<p>I don't see them doing some similar relating arbitrary small limits sketches to categories with small limits.</p>\n<p>All this stuff is very old.  I'd hope there are more complete treatments by now.  But it's pretty easy to read.</p>",
+        "id": 426437645,
+        "sender_full_name": "John Baez",
+        "timestamp": 1710369068
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Completeness.2Fco-completeness.20of.20universal.20algebra.20varieties/near/426431243\">said</a>:</p>\n<blockquote>\n<p>I would find it less mentally stressful if Cartmell were restricting himself to generalized algebraic theories with finitary operations and claiming these were equivalent to finite limits theories.</p>\n</blockquote>\n<p>Cartmell's generalised algebraic theories are finitary, and he does claim these are equivalent in a suitable sense to finite limit theories, though I would argue the claim was not actually proven until much later (e.g. in Chaitanya Leena Subramaniam's thesis).</p>",
+        "id": 426439687,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1710370216
+    },
+    {
+        "content": "<p>Oh, good!  About the finitarity, that is.   Since the nLab uses \"algebraic theory\" to mean something more general than I do (I mean a category with finite products), I assumed they were doing the same for \"essentially algebraic theory\".  But lo and behold, they're using \"essentially algebraic theory\" to mean \"finite limits theory\".   I'm relieved, and I hope nobody there decides to make up a new definition.</p>",
+        "id": 426440260,
+        "sender_full_name": "John Baez",
+        "timestamp": 1710370605
+    },
+    {
+        "content": "<p>We could open a conversation about changing the nLab's notion of \"algebraic theory\".</p>",
+        "id": 426441323,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1710371192
+    }
+]

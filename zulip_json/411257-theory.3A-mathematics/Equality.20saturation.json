@@ -1,0 +1,32 @@
+[
+    {
+        "content": "<p>I haven't read this paper but I'm reading it now. I'm pretty excited about equality saturation.</p>\n<p>e-graphs really clicked for me recently and I'm very happy about how they nicely handle equational reasoning problems that would otherwise lead to infinite loops. I can imagine using e-graphs for proof-search in type theory as well by carrying out a Datalog-like procedure to flood the search space with inhabitants, using e-graphs to control the proliferation of terms.</p>\n<p>Many problems in the equational reasoning of category theory are very simple or even decidable: it would be nice if we could make this formal by showing that equality is \"saturating\" for common categorical theories in the sense described in this paper.</p>\n<p><a href=\"/user_uploads/21317/TAkkBLInB_bPoN4ByWbD4m_5/Semantic-foundations-of-equality-saturatio-Unknown.pdf\">Semantic foundations of equality saturatio - Unknown.pdf</a></p>",
+        "id": 541093133,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1758659008
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276363\">@Amar Hadzihasanovic</span> They use a syntactic acyclicity condition in this paper - seems like a research challenge! \"We give a more general <em>contractibility</em> condition\" :)</p>",
+        "id": 541093279,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1758659064
+    },
+    {
+        "content": "<p>It's exciting that they say \"we still understand very little about equality saturation...We also do not know much about when EqSat terminates.\" Really, seems like a good research question</p>",
+        "id": 541093459,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1758659147
+    },
+    {
+        "content": "<blockquote>\n<p>With an appropriate cost model, EqSat can further pick<br>\nthe optimal program among all programs equivalent to the input, e.g. by using Knuth’s<br>\nalgorithm [16].</p>\n</blockquote>\n<p>To me the practical upshot of this is that for formal theorem proving in category theory one can assign a cost model based on syntactic complexity and then once the algorithm finds an equivalence class of terms it can return the term of minimal syntactic compexity, which is the term you would write down by hand, one which is easy to reason about in practice. To me such a guarantee seems really important for practical applications, we cannot automate constructions in category theory unless the construction is simple enough to reason about</p>",
+        "id": 541094020,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1758659362
+    },
+    {
+        "content": "<p>we were able to hook up Egglog, which implements EqSat, to CQL, pretty easily, for use as both an equational theorem prover and a (skolem) chase engine, thanks to many of the nice properties you mention</p>",
+        "id": 541113386,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1758667845
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "content": "<p>James Dolan told me something like this: if you take the topos of finite graphs, equip it with its double negation topology, and form the topos of sheaves on that, you get the topos of G-sets where G is the automorphism group of the <a href=\"https://en.wikipedia.org/wiki/Rado_graph\">Rado graph</a>.  Does this sound right, or approximately right?    If so, it should be an example of a very general pattern.</p>\n<p>(If I'm stating it in a confused way, it's my fault not his!)</p>",
+        "id": 491697813,
+        "sender_full_name": "John Baez",
+        "timestamp": 1735873773
+    },
+    {
+        "content": "<p>I know at least another example of such phenomenon. </p>\n<p>Caveat that I don't know the exact statement of the theorem therein, but can this be the general pattern? <a href=\"https://www.sciencedirect.com/science/article/pii/S0022404997001072\">https://www.sciencedirect.com/science/article/pii/S0022404997001072</a></p>",
+        "id": 491736508,
+        "sender_full_name": "fosco",
+        "timestamp": 1735900046
+    },
+    {
+        "content": "<p>That sounds right to me. By (one of the possible) definition(s), the Rado graph is an \"ultrahomogeneous model\" for the theory of graphs; the category of finite graphs has all of the properties needed for Fraisse theory to apply, so this is a common example.</p>",
+        "id": 491764104,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1735913772
+    },
+    {
+        "content": "<p>Caramello has several papers that are relevant, especially her Topological Galois Theory. The pattern is not as general as you might be hoping, but it's still worth describing. It's along the lines \"if the category of finite models of a theory has sufficiently nice properties (joint embedding, amalgamation) there exists an ultrahomogeneous model (usually assuming at least countable choice) and the double negation sheaves on the category of finite models is equivalent to the topos of continuous actions of the automorphism group of that model\".<br>\nAll of this is based on older results from model theory, expressed categorically.</p>\n<p>In the last chapter of my thesis I generalize this to replace groups by monoids, which for the models means putting conditions on the monos in a category of models rather than on all morphisms. A piece of that story is more cleanly written up in my \"Endomorphisms of models\" paper, but it doesn't include any of the material in terms of categories of models.</p>",
+        "id": 491765113,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1735914341
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"282822\">fosco</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/double.20negation.20topology/near/491736508\">said</a>:</p>\n<blockquote>\n<p>I know at least another example of such phenomenon. </p>\n<p>Caveat that I don't know the exact statement of the theorem therein, but can this be the general pattern? </p>\n<ul>\n<li>Carsten Butz and Ieke Moerdijk, <a href=\"https://www.sciencedirect.com/science/article/pii/S0022404997001072\">Representing topoi by topological groupoids</a>.</li>\n</ul>\n</blockquote>\n<p>This great result - every Grothendieck topos with <a href=\"https://ncatlab.org/nlab/show/point+of+a+topos#definition\">enough points</a> is equivalent to the topos of sheaves on a topological groupoid - must be relevant.   Thanks!   </p>\n<p>And when we take sheaves in the double negation topology we get a <em>Boolean</em> topos, and I vaguely recall that that then some stronger results kick in, and (with enough hypotheses?) this can be seen to be a topos of continuous actions of a topological (or localic? but Butz and Moerdijk get topological!) <em>group</em>.</p>",
+        "id": 491788691,
+        "sender_full_name": "John Baez",
+        "timestamp": 1735925944
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/double.20negation.20topology/near/491765113\">said</a>:</p>\n<blockquote>\n<p>Caramello has several papers that are relevant, especially her Topological Galois Theory. The pattern is not as general as you might be hoping, but it's still worth describing. It's along the lines \"if the category of finite models of a theory has sufficiently nice properties (joint embedding, amalgamation) there exists an ultrahomogeneous model (usually assuming at least countable choice) and the double negation sheaves on the category of finite models is equivalent to the topos of continuous actions of the automorphism group of that model\".</p>\n</blockquote>\n<p>Nice!   So it sounds like <a href=\"https://golem.ph.utexas.edu/category/2009/11/fraisse_limits.html\">Fraïssé limits</a> can be beautifully packaged using the topos of double negation sheaves on the category of finite models.   Nosing around, I see this:</p>\n<ul>\n<li>Olivia Caramello, <a href=\"https://arxiv.org/abs/0805.2778\">Fraïssé‘s construction from a topos-theoretic perspective</a>.</li>\n</ul>",
+        "id": 491789360,
+        "sender_full_name": "John Baez",
+        "timestamp": 1735926307
+    },
+    {
+        "content": "<p>Okay, James Dolan got back to me on this saying:</p>\n<blockquote>\n<p>yes, there's a lot more to say about that!  <span class=\"user-mention silent\" data-user-id=\"278546\">Chris Grossack (they/them)</span>  and i discussed some of it sometime in the last year and the discussion included in particular some interesting connections to &lt;<a href=\"https://arxiv.org/abs/0808.1972\">https://arxiv.org/abs/0808.1972</a>&gt;</p>\n<p>\"De Morgan's law and the theory of fields\"<br>\n Olivia Caramello, Peter Johnstone</p>\n<p>We show that the classifying topos for the theory of fields does not satisfy De Morgan's law, and we identify its largest dense De Morgan subtopos as the classifying topos for the theory of fields of nonzero characteristic which are algebraic over their prime fields.\"</p>\n</blockquote>\n<p>This example is closer to the one we were actually interested in; the case of graphs came up as an analogy.</p>",
+        "id": 491798428,
+        "sender_full_name": "John Baez",
+        "timestamp": 1735930886
+    }
+]

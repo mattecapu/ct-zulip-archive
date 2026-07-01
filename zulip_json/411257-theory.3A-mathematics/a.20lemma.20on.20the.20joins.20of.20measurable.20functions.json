@@ -1,0 +1,182 @@
+[
+    {
+        "content": "<p>The pointwise supremum of measurable function doesn't have to be measurable itself, but I found <a href=\"https://mathoverflow.net/a/316658/50376\">this MO answer</a> claiming that the join, meant as a colimit in a poset, still exists but it's not given by pointwise supremum. They give a proof and also link to a reference with a very similar proof.<br>\nI'm only half confident it is a legit result, does anyone else want to weigh in?</p>",
+        "id": 429687842,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1711468672
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/PPpEl98J7bQa8c2ZqhsoVRzB/image.png\">the proof</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/PPpEl98J7bQa8c2ZqhsoVRzB/image.png\" title=\"the proof\"><img src=\"/user_uploads/21317/PPpEl98J7bQa8c2ZqhsoVRzB/image.png\"></a></div>",
+        "id": 429687985,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1711468702
+    },
+    {
+        "content": "<p>The very last line \"Obviously <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>∫</mo><mi>E</mi></msub><mi>v</mi><mtext> </mtext><mi>d</mi><mi>x</mi><mo>=</mo><mi>s</mi></mrow><annotation encoding=\"application/x-tex\">\\int_E v \\, dx=s</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.1608em;vertical-align:-0.3558em;\"></span><span class=\"mop\"><span class=\"mop op-symbol small-op\" style=\"margin-right:0.19445em;position:relative;top:-0.0006em;\">∫</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1225em;\"><span style=\"top:-2.3442em;margin-left:-0.1945em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05764em;\">E</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3558em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">s</span></span></span></span>. This easily implies that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>v</mi><mo>=</mo><mo>⋁</mo><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">v=\\bigvee F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mop op-symbol small-op\" style=\"position:relative;top:0em;\">⋁</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span>\" is what confuses me</p>",
+        "id": 429688245,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1711468781
+    },
+    {
+        "content": "<p>Surely the sup of a <em>countable</em> family of measurable functions is measurable, and I feel that trying to go beyond the countable case would be going against the whole spirit of measure theory.</p>",
+        "id": 429689521,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711469091
+    },
+    {
+        "content": "<p>So before thinking about this proof I have to wonder why you care.</p>",
+        "id": 429689994,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711469205
+    },
+    {
+        "content": "<p>Missing / implicit there is the argument that if there is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>u</mi><mo>∈</mo><mi mathvariant=\"script\">F</mi></mrow><annotation encoding=\"application/x-tex\">u\\in \\mathcal{F}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\">u</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.09931em;\">F</span></span></span></span> which exceeds <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>v</mi></mrow><annotation encoding=\"application/x-tex\">v</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span></span></span></span> on any set of positive measure then the integral of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>v</mi></mrow><annotation encoding=\"application/x-tex\">v</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span></span></span></span> must be less than <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi></mrow><annotation encoding=\"application/x-tex\">s</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">s</span></span></span></span>, a contradiction. Thus <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>v</mi></mrow><annotation encoding=\"application/x-tex\">v</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span></span></span></span> almost everywhere bounds all functions in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">F</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{F}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.09931em;\">F</span></span></span></span>, and since there is a sequence of functions converging to it from below, it must be a least upper bound.</p>",
+        "id": 429690892,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1711469472
+    },
+    {
+        "content": "<p>As for the last step I'd say maybe \"obviously\" <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>v</mi><mo>=</mo><mo>⋁</mo><mi mathvariant=\"script\">F</mi></mrow><annotation encoding=\"application/x-tex\">v = \\bigvee \\mathcal F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mop op-symbol small-op\" style=\"position:relative;top:0em;\">⋁</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.09931em;\">F</span></span></span></span> a.e..  The argument needs more steps.  But the best you can get from an equation between integrals is equality of their integrands almost everywhere.  Are we working with equivalence classes of functions that are equal a.e.?</p>",
+        "id": 429690947,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711469489
+    },
+    {
+        "content": "<p>(Morgan just added some more steps.)</p>",
+        "id": 429691164,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711469548
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/411257-theory.3A-mathematics/topic/a.20lemma.20on.20the.20joins.20of.20measurable.20functions/near/429689521\">said</a>:</p>\n<blockquote>\n<p>Surely the sup of a <em>countable</em> family of measurable functions is measurable, and I feel that trying to go beyond the countable case would be going against the whole spirit of measure theory.</p>\n</blockquote>\n<p>Though I can buy one thing from that proof which is that you can always replace an uncountable sup of reals/real-valued functions with a countable one because of separability</p>",
+        "id": 429691541,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1711469667
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/411257-theory.3A-mathematics/topic/a.20lemma.20on.20the.20joins.20of.20measurable.20functions/near/429689994\">said</a>:</p>\n<blockquote>\n<p>So before thinking about this proof I have to wonder why you care.</p>\n</blockquote>\n<p>I'd like to say measurable functions <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi><mo>→</mo><mo stretchy=\"false\">[</mo><mn>0</mn><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">∞</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">I \\to [0,\\infty]</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">I</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">∞</span><span class=\"mclose\">]</span></span></span></span> form a <a href=\"https://ncatlab.org/nlab/show/quantale\">[[quantale]]</a>, thus in particular a <a href=\"https://ncatlab.org/nlab/show/suplattice\">[[suplattice]]</a>.</p>",
+        "id": 429691672,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1711469714
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/411257-theory.3A-mathematics/topic/a.20lemma.20on.20the.20joins.20of.20measurable.20functions/near/429690947\">said</a>:</p>\n<blockquote>\n<p>As for the last step I'd say maybe \"obviously\" <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>v</mi><mo>=</mo><mo>⋁</mo><mi mathvariant=\"script\">F</mi></mrow><annotation encoding=\"application/x-tex\">v = \\bigvee \\mathcal F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mop op-symbol small-op\" style=\"position:relative;top:0em;\">⋁</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.09931em;\">F</span></span></span></span> a.e..  The argument needs more steps.  But the best you can get from an equation between integrals is equality of their integrands almost everywhere.  Are we working with equivalence classes of functions that are equal a.e.?</p>\n</blockquote>\n<p>Yes I forgot to mention that</p>",
+        "id": 429691870,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1711469766
+    },
+    {
+        "content": "<p>How about the sup of all functions on the real line that are characteristic functions of singletons?</p>",
+        "id": 429691887,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711469772
+    },
+    {
+        "content": "<p>Isn't it the same as the sup of all functions on the real line that are characteristic functions of the intervals <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><mi>n</mi><mo separator=\"true\">,</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">[n,n+1]</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathnormal\">n</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">]</span></span></span></span>?</p>",
+        "id": 429692069,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1711469829
+    },
+    {
+        "content": "<p>The sup is 1; the sup of any countable subcollection is zero a.e..</p>",
+        "id": 429692071,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711469830
+    },
+    {
+        "content": "<p>Oh I see. No I'm not saying it has to be a subcollection!</p>",
+        "id": 429692141,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1711469853
+    },
+    {
+        "content": "<p>Well then the sup of any collection of functions is the sup of the one-element set of functions consisting of the sup.</p>",
+        "id": 429692666,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711470012
+    },
+    {
+        "content": "<p>uhm ok</p>",
+        "id": 429693004,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1711470131
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/_T3LNRn4nifGLD-jtQ6Dp8Ky/image.png\">image.png</a><br>\nalso the theorem here says subcollection!</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/_T3LNRn4nifGLD-jtQ6Dp8Ky/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/_T3LNRn4nifGLD-jtQ6Dp8Ky/image.png\"></a></div>",
+        "id": 429693037,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1711470143
+    },
+    {
+        "content": "<p>I guess your example doesn't apply since <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mn>1</mn><mrow><mo stretchy=\"false\">{</mo><mi>x</mi><mo stretchy=\"false\">}</mo></mrow></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">1_{\\{x\\}} = 0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9996em;vertical-align:-0.3552em;\"></span><span class=\"mord\"><span class=\"mord\">1</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3448em;\"><span style=\"top:-2.5198em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mopen mtight\">{</span><span class=\"mord mathnormal mtight\">x</span><span class=\"mclose mtight\">}</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3552em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span> almost everywhere</p>",
+        "id": 429693213,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1711470198
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span> <a href=\"#narrow/stream/411257-theory.3A-mathematics/topic/a.20lemma.20on.20the.20joins.20of.20measurable.20functions/near/429687842\">said</a>:</p>\n<blockquote>\n<p>The pointwise supremum of measurable function doesn't have to be measurable itself, but I found <a href=\"https://mathoverflow.net/a/316658/50376\">this MO answer</a> claiming that the join, meant as a colimit in a poset, still exists but it's not given by pointwise supremum. </p>\n</blockquote>\n<p>That claim is false. If it was true, then in particular the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>σ</mi></mrow><annotation encoding=\"application/x-tex\">\\sigma</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">σ</span></span></span></span>-algebra of measurable sets would have to be a complete Boolean algebra (just restrict to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">{</mo><mn>0</mn><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">\\{0,1\\}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">}</span></span></span></span>-valued functions to see this), but this is not the case. For example, let <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi mathvariant=\"double-struck\">R</mi></mrow><annotation encoding=\"application/x-tex\">A \\subseteq \\mathbb{R}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8193em;vertical-align:-0.136em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊆</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">R</span></span></span></span> be any non-measurable set, and consider the family of its points considered as singletons. Let''s denote the claimed supremum of this family by <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>A</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">A&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">A</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>. Then we must have <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>A</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>⊆</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A&#x27; \\subseteq A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8879em;vertical-align:-0.136em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">A</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊆</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span>, since for every <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>∈</mo><mi mathvariant=\"double-struck\">R</mi><mo>∖</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">x \\in \\mathbb{R} \\setminus A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathbb\">R</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∖</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span>, the set <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">R</mi><mo>∖</mo><mo stretchy=\"false\">{</mo><mi>x</mi><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R} \\setminus \\{x\\}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathbb\">R</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∖</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">}</span></span></span></span> upper bounds the family. On the other hand, we must have <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>⊆</mo><msup><mi>A</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">A \\subseteq A&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8193em;vertical-align:-0.136em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊆</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">A</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span>, since every element of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> appears in some member of the family. Hence <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>A</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>=</mo><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A&#x27; = A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">A</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span>, which is a contradiction by the assumed non-measurability.</p>",
+        "id": 429693632,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1711470332
+    },
+    {
+        "content": "<p>Right? Please double-check, since saying that an old MO answer with a good number of upvotes is wrong seems like a steep claim <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 429694078,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1711470469
+    },
+    {
+        "content": "<p>What is true, and what seems to be the direction that <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> is hinting at, is that you <em>do</em> get a complete lattice if you identify measurable functions that coincide almost everywhere with respect to any fixed finite measure. (And also for certain infinite measures, probably s-finite is enough.)</p>",
+        "id": 429694630,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1711470625
+    },
+    {
+        "content": "<p>I believe the ordering in the MO answer has <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>u</mi><mo>≤</mo><mi>v</mi></mrow><annotation encoding=\"application/x-tex\">u \\leq v</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719em;vertical-align:-0.136em;\"></span><span class=\"mord mathnormal\">u</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span></span></span></span> iff that holds almost-everywhere (this is a preorder, and quotienting by almost-everywhere equality makes it a poset).</p>",
+        "id": 429694737,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1711470669
+    },
+    {
+        "content": "<p>So your last message is the relevant one <span class=\"user-mention\" data-user-id=\"276702\">@Tobias Fritz</span></p>",
+        "id": 429694842,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1711470699
+    },
+    {
+        "content": "<p>Hmm okay, I see, I just skipped that part since I figured I know the definition of lattice supremum <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span> Perhaps that deserves to be made more explicit in that MO answer? In any case, that's a very old result, and I'm sure that it was known to von Neumann already</p>",
+        "id": 429695393,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1711470857
+    },
+    {
+        "content": "<p>Since algebras of bounded measurable functions modulo a.e. equality are the most basic examples of von Neumann algebras, and von Neumann algebras are well-known to have suprema of all bounded families (of self-adjoint elements). And as noted in the MO answer, lifting the boundedness assumption is easy</p>",
+        "id": 429695653,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1711470947
+    },
+    {
+        "content": "<p>Thanks Tobias, your reply made me realize this is just a variation of something I know very well, i.e. that quotienting a <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>σ</mi></mrow><annotation encoding=\"application/x-tex\">\\sigma</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">σ</span></span></span></span>-algebra by the ideal of null sets yields a complete poset.</p>",
+        "id": 429699042,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1711472056
+    },
+    {
+        "content": "<p>Yes, that's a nice way to put it!</p>",
+        "id": 429699391,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1711472161
+    },
+    {
+        "content": "<p>It may also be possible to give a clean proof based on that idea by looking at sublevel sets of the functions and noting that the sublevel sets of the supremum must be the suprema of the sublevel sets in the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>σ</mi></mrow><annotation encoding=\"application/x-tex\">\\sigma</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">σ</span></span></span></span>-algebra modulo null sets</p>",
+        "id": 429699976,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1711472328
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span> <a href=\"#narrow/stream/411257-theory.3A-mathematics/topic/a.20lemma.20on.20the.20joins.20of.20measurable.20functions/near/429687842\">said</a>:</p>\n<blockquote>\n<p>The pointwise supremum of measurable function doesn't have to be measurable itself, but I found <a href=\"https://mathoverflow.net/a/316658/50376\">this MO answer</a> claiming that the join, meant as a colimit in a poset, still exists but it's not given by pointwise supremum. They give a proof and also link to a reference with a very similar proof.<br>\nI'm only half confident it is a legit result, does anyone else want to weigh in?</p>\n</blockquote>\n<p>This is one of the many equivalent definitions of <strong>localizable measure spaces</strong>, a concept introduced by Irving Segal in 1950.  In particular, measurable subsets of R^n are localizable.  Perhaps the quickest introduction is a paper by Kelley “Decomposition and Representation Theorems in Measure Theory”.  The nLab article <a href=\"https://ncatlab.org/nlab/show/categories%20of%20measure%20theory\">[[categories of measure theory]]</a> provides further examples and motivation, and also has additional references.</p>",
+        "id": 436987867,
+        "sender_full_name": "Dmitri Pavlov",
+        "timestamp": 1714793932
+    }
+]

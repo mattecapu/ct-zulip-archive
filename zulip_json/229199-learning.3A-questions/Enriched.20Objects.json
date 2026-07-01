@@ -1,0 +1,104 @@
+[
+    {
+        "content": "<p>In the context of (virtual) equipments, one can internalize notions of representability into many different kinds of category, even beyond categories of categories, via proarrows. I'm wondering if this could be taken even further where there's some notion of \"internal enrichment\" that can work for any category, where we can define what it means for something to be \"enriched over\" some object in the general category C, which we can then call an \"enriched object internal to C\". Maybe for instance, if C = MonCat (viewed as a subcategory of BiCat on 1 object bicategories) then we get \"normal\" enriched categories; if C = BiCat then we get categories enriched in bicategories, and so on. If so, then perhaps we can use this to define a concept of \"enriched double category\" where instead of sets of horizontal or vertical arrows, we instead have objects of horizontal or vertical arrows. Or more general situations, perhaps where we can doubly enrich categories, or enrich even more exotic objects than categories. Any thoughts?</p>",
+        "id": 429421603,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1711376940
+    },
+    {
+        "content": "<p>You may find Leinster's paper <a href=\"https://arxiv.org/abs/math/9901139\">Generalized Enrichment for Categories and Multicategories</a> interesting, as it tackles similar questions to these.</p>",
+        "id": 429503389,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1711398017
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> Ah thanks! Looks like the objects that can be enriched are \"suitable\" generalized multicategories (T-multicategories) for cartesian monads.</p>",
+        "id": 429668650,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1711463640
+    },
+    {
+        "content": "<p>As a follow-up, in Dr. Shulman's  works he generalizes T-multicategories to the case of monads over virtual double categories (fc-multicategories). I'm wondering if enrichment as defined by Leinster in his paper generalizes straightforwardly to VDC type generalized multicategories, or if it only works for generalized multicategories via cartesian monads. Shulman's paper \"A Unified Framework\" in Appendix B1 discusses Leinster's paper but I'm not sure if it directly gives the answer.<br>\nSecondly, in Leinster's paper an enriched (C, T)-multicategory is given by a morphism from an object in (C', T')-Multicat of form MI(c) (for c in C) to some other object in (C', T')-Multicat. This generalizes the idea of an enriched category being a polyad, since if we take (C, T) = (Set, id) then we get that an enriched category is a virtual double functor from MI(S) to a virtual double category, with MI(S) now the VDC corresponding to the indiscrete category construction on the set S, which itself is given by I(S). Leinster states that the functor I (from Prop 1.1.2) in general acts as a generalization of this process of making indiscrete categories, so my question is if any object given by the I functor through this construction will always be seen as some form of an \"<a href=\"https://ncatlab.org/nlab/show/codiscrete+object\">indiscrete</a> object\" (in any sense of the term over at nlab) in (C, T)-Multicat. If so, then what properties would we expect of the full MI(S), and could the \"most\" general conception of \"an enriched object internal to a category\" be a morphism out of such an object in some particular setting?</p>",
+        "id": 429669062,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1711463760
+    },
+    {
+        "content": "<blockquote>\n<p>I'm wondering if enrichment as defined by Leinster in his paper generalizes straightforwardly to VDC type generalized multicategories, or if it only works for generalized multicategories via cartesian monads.</p>\n</blockquote>\n<p>I don't think this has been worked out in the literature, so it could be a good thing to think about if you're interested in it.</p>",
+        "id": 429749610,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1711491910
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> Ah, that's a bummer! Cartesian monad generalized multicategories cover a large array of cases (such as double categories and virtual double categories themselves) so Leinster's construction works well enough. Though, maybe I was a little curious about what an \"enriched topological space\" would look like, since topological spaces are generalized multicategories in Shulman's sense.</p>",
+        "id": 429768260,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1711504228
+    },
+    {
+        "content": "<p>Brandon Shapiro greatly extended the work of Leinster, perhaps you can find what you want in his thesis: <a href=\"https://pi.math.cornell.edu/~bts82/research/papers/thesis.pdf\">https://pi.math.cornell.edu/~bts82/research/papers/thesis.pdf</a></p>",
+        "id": 429822585,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1711533733
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275932\">@Matteo Capucci (he/him)</span> I was finally able to have a look through the thesis and it was very interesting, thanks for the recommendation! He does take a different approach altogether than Leinster- rather than dealing with monads in span categories, he instead works with algebras of familial monads. He does mention there being some overlap between the class of structures his and Leinster's methods apply to, but I'll need to keep trying to understand the paper before I'm able to figure out the exact relationship between the two methods.</p>",
+        "id": 430525387,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1711935916
+    },
+    {
+        "content": "<p>Ah! It wasn't in the original thesis but I did find <a href=\"https://pi.math.cornell.edu/~bts82/research/papers/enrichment.pdf\">this paper</a> that makes some connections more apparent. I'm going to go look through that now.</p>",
+        "id": 430527144,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1711937428
+    },
+    {
+        "content": "<p>Brandon Shapiro's work on familial monads as a framework for \"category-like structures\" has reminded me of a related question I've had for a while, so I'll ask it here. There are two object-wise notions that I believe maximally generalize what it means for something to be \"category-like\". The first notion is an object in a category concrete over Cat (so with a faithful functor to Cat). You can treat these objects as categories with structure, just like concrete categories over Set can be thought of as categories of sets with structure. These include all the doctrines we encounter from categorical logic and model theory, such as the doctrine of finite product categories, the doctrine of monoidal categories, the doctrine of topoi, and so on. </p>\n<p>The second notion is an object in a virtual equipment, since we can treat the proarrows as generalized profunctors and do formal category theory accordingly. Furthermore, most if not all important or relevant generalized multicategories form virtual equipments (the only requirement is that the VDC the monad T is on must have restrictions, which includes I believe all examples given under the nlab article... making me wonder what the proarrows and representability in the virtual equipment of topological spaces is and \"means\", but that's a question for another day). </p>\n<p>It's obvious there are examples of the latter that are not the former- the category of virtual double categories and many similar structures are virtual equipments, but not concrete over Cat (as far as I know). However, what I ultimately want to know is if there are any examples the other direction. Is it possible to have some example of a structured category that does not form a virtual equipment? Or is there a proof that any category concrete over Cat also forms a virtual equipment guaranteed?</p>",
+        "id": 430812239,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1712070540
+    },
+    {
+        "content": "<p>One way of interpreting your question is to ask, supposing we have a functor of virtual double categories <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><mi mathvariant=\"double-struck\">X</mi><mo>→</mo><mi mathvariant=\"double-struck\">Y</mi></mrow><annotation encoding=\"application/x-tex\">F : \\mathbb X \\to \\mathbb Y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">X</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">Y</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">Y</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb Y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">Y</span></span></span></span> is a virtual equipment, when does <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> create loose-identities and restrictions? (It suffices for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> to create loose-identities and lift restrictions, as they will be automatically preserved.)</p>",
+        "id": 430818066,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1712072058
+    },
+    {
+        "content": "<p>In §7 of Koudenburg's <a href=\"https://arxiv.org/abs/1511.04070\">A double-dimensional approach to formal category theory</a>, it is shown that monadic (augmented) virtual double categories inherit restrictions from its base, and inherits loose-identities if the monad is normal.</p>",
+        "id": 430818657,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1712072223
+    },
+    {
+        "content": "<p>This seems a fairly natural definition of \"virtual equipment of structured categories\".</p>",
+        "id": 430818707,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1712072244
+    },
+    {
+        "content": "<p>Interesting perspective, thanks! I'll certainly have to give this some more thought.</p>",
+        "id": 430885423,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1712096843
+    },
+    {
+        "content": "<p>While I continue to think over Nathanael Arkor's suggestion, I'm also trying to prove this myself using the functorial definition of an equipment, that an equipment is a 2-functor E: D -&gt; P with three properties: it is locally fully faithful, bijective on objects, and sends every morphism in D to one in P with a right adjoint. Obviously, if one has a full embedding F: C -&gt; D, then C automatically comes equipped with proarrows since you can just compose to get E compose F: C -&gt; P which will continue to satisfy the first and third property, and will trivially satisfy the second when P is restricted accordingly. So, any category with a full embedding into Cat, such as the category of finite product categories, Lex, cartesian categories, etc. will be equipped with proarrows, which are just profunctors between those categories. </p>\n<p>It seems more difficult to prove that if F is \"just faithful\" we can also get an equipment, since these may map two or more objects in the first category to the same object in the second category (for instance, if you have two monoidal categories with the same underlying category), and we are working with 2-categories which are always difficult to deal with. First, we have to define a good notion of \"faithful\" in the 2-categorical setting since equipments are 2-functors. A typical faithful functor is injective on hom sets, so the 2-categorical version should be essentially injective on objects in the hom categories. I think a locally fully faithful functor should suffice for this purpose. Since two locally fully faithful functors composed together gives another, we automatically still get the first property satisfied with any composition E compose F. However, there's still the issue of the second property. There's a \"hack\" that gives a bijective on objects functor for any functor, the bo-ff factorization system. I have no idea if it works for 2-categories and 2-functors, but if so you can find Im(E compose F) as the full image, in which case there's then a bijective on objects functor I: C -&gt; Im(E compose F). I believe this functor is also locally fully faithful, since we are factoring E compose F which is itself locally fully faithful. Thus, the functor I may satisfy the first two properties of an equipment. I still can't prove it satisfies the third, though. </p>\n<p>So there's still 3 big ifs for this \"proof\" to work: the bo-ff factorization system works for 2-categories, the factorization of a locally fully faithful functor gives a locally fully faithful bijective on objects functor, and the third condition of every morphism in C having a right adjoint in Im(E compose F) is somehow satisfied. Any help on sorting through these (or in finding other assumptions I might have overlooked) would help a lot!</p>",
+        "id": 430896471,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1712103943
+    },
+    {
+        "content": "<p>Update: It seems the bo-ff works for 2-categories, it's used in Def 5.6 in Marcum \"<a href=\"https://doi.org/10.1016/j.jpaa.2012.02.031\">The 2-category of spectra in a 2-category</a>\". Still not sure about the other two, but it really is surprising how little reference there is on factorization systems for 2-functors!</p>",
+        "id": 430906482,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1712111392
+    },
+    {
+        "content": "<p>Not sure if you've seen this Shulman paper, its earlier than the unified paper:<br>\n<a href=\"https://arxiv.org/pdf/1301.3191.pdf\">enriched categories as a free cocompletion</a></p>\n<p>From the abstract \"[one goal is...] the universal property of the process assigning to a monoidal category V the equipment of V-enriched categories\". Perhaps one could deform this UP to your original question about creating a category of objects enriched in some object. I suspect the data of an ordinary 1-category is not enough.</p>",
+        "id": 431171676,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1712176658
+    }
+]

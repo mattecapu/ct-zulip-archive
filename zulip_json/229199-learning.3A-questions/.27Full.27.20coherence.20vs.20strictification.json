@@ -1,0 +1,50 @@
+[
+    {
+        "content": "<p>On the nlab page <a href=\"https://ncatlab.org/nlab/show/coherence+theorem#relating_coherence_theorems\">https://ncatlab.org/nlab/show/coherence+theorem#relating_coherence_theorems</a> there is the claim:</p>\n<blockquote>\n<p>One thing to beware of is that even for structures whose free-algebra coherence theorem is of the form “all diagrams commute,” it does not necessarily follow that all such algebras can be fully strictified.</p>\n</blockquote>\n<p>Does anyone have an example where this fails?</p>",
+        "id": 435535850,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1714118614
+    },
+    {
+        "content": "<p>Maybe this: <a href=\"https://arxiv.org/abs/1005.1520\">https://arxiv.org/abs/1005.1520</a> ?</p>",
+        "id": 435549267,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1714123615
+    },
+    {
+        "content": "<p>I thought of it but I'm not sure in what sense the semistrict 3-categories used as a counterexample here would \"have a coherence theorem of the form 'all diagrams commute'\".</p>",
+        "id": 435549937,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1714123849
+    },
+    {
+        "content": "<p>I wouldn't have thought all diagrams for tricategories commute, since it's not true for braided monoidal categories, but it's possible I'm missing some subtlety.</p>",
+        "id": 435550453,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1714124041
+    },
+    {
+        "content": "<p>It seems that comment was added by <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> in revision 4: perhaps he had an example in mind he could share.</p>",
+        "id": 435552258,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1714124709
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"386922\">Graham Manuell</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/'Full'.20coherence.20vs.20strictification/near/435535850\">said</a>:</p>\n<blockquote>\n<p>On the nlab page <a href=\"https://ncatlab.org/nlab/show/coherence+theorem#relating_coherence_theorems\">https://ncatlab.org/nlab/show/coherence+theorem#relating_coherence_theorems</a> there is the claim:</p>\n<blockquote>\n<p>One thing to beware of is that even for structures whose free-algebra coherence theorem is of the form “all diagrams commute,” it does not necessarily follow that all such algebras can be fully strictified.</p>\n</blockquote>\n<p>Does anyone have an example where this fails?</p>\n</blockquote>\n<p>Is this not referring to the fact that tricategories do not strictify to strict-3-categories (the fully strictified version) but instead Gray-categories?</p>\n<p>EDIT: as said in the paragraph above in the nlab page</p>\n<p>EDIT 2: a construction that may be relevant to investigate here is in a paper from Dimitri Ara (<a href=\"https://arxiv.org/abs/1206.2941\">https://arxiv.org/abs/1206.2941</a>) and more specifically the construction in Remark 4.7</p>",
+        "id": 435552727,
+        "sender_full_name": "Rémy Tuyéras",
+        "timestamp": 1714124885
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"386922\">Graham Manuell</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/'Full'.20coherence.20vs.20strictification/near/435550453\">said</a>:</p>\n<blockquote>\n<p>I wouldn't have thought all diagrams for tricategories commute, since it's not true for braided monoidal categories, but it's possible I'm missing some subtlety.</p>\n</blockquote>\n<p>In his <em>Coherence in three-dimensional category theory</em> book Gurski proves an 'all diagrams commute' statement for tricategories by showing that certain freely-generated tricategories are triequivalent to 3-categories (Sec 10.1). The subtlety is what you're allowed to be free on: Gurski also shows that if you have non-equal endo-1-cells <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo separator=\"true\">,</mo><mi>b</mi><mo>:</mo><mi>I</mi><mo>→</mo><mi>I</mi></mrow><annotation encoding=\"application/x-tex\">a, b : I \\to I</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">b</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">I</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">I</span></span></span></span> in a monoidal bicategory <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>B</mi><mo separator=\"true\">,</mo><mo>⊗</mo><mo separator=\"true\">,</mo><mi>I</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(B, \\otimes, I)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">⊗</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">I</span><span class=\"mclose\">)</span></span></span></span> then you can construct a diagram of structural 2-cells that coherence does not force to commute (Sec 10.3). So the 'all' diagrams only applies to those where you've started with some basic objects and 1-cells, then freely added the monoidal structure after</p>",
+        "id": 435566120,
+        "sender_full_name": "Philip Saville",
+        "timestamp": 1714130346
+    },
+    {
+        "content": "<p>I think tricategories are what I had in mind, with \"free\" meaning free on a higher graph, not necessarily a computad.</p>",
+        "id": 435611219,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1714146115
+    }
+]

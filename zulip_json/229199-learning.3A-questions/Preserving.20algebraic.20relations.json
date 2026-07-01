@@ -1,0 +1,104 @@
+[
+    {
+        "content": "<p>The Galois group of a polynomial is the group of permutations of the roots that preserve all algebraic relations. In CT we talk about functors that preserve limits or homomorphisms that preserve structure.  What's the right way to think about preserving an algebraic relation?</p>",
+        "id": 437539356,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1715119369
+    },
+    {
+        "content": "<p>How come \"homomorphisms\" doesn't solve this problem, insofar as the Galois group is a group of automorphisms?</p>",
+        "id": 437544183,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1715121797
+    },
+    {
+        "content": "<p>Well, it's a <em>theorem</em> that the automorphisms of the splitting field are in bijection with the permutations that preserve all algebraic relations.  My question was more about whether there's a more abstract way to describe what it means for a set of roots to satisfy a set of algebraic relations.  The set of roots don't form a field; instead they're field elements.  But the relations seem to capture the whole relevant structure of the field itself and how the roots fit into it.  It seems like one could put an \"algebraic structure\" on an arbitrary finite set.  Is that algebraic structure necessarily connected to fields, or does it make sense to consider rings or monoids, or arbitrary models of a Lawvere theory, or even a finite sum sketch?</p>",
+        "id": 437643767,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1715172617
+    },
+    {
+        "content": "<p>For example, suppose I've got a single-sorted theory <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">T</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span> of some kind—algebraic theory, finite limits theory, geometric theory, whatever—a model <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span> of the theory in Set, and an equation <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi>Q</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">P(x) = Q(x)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">Q</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span></span></span></span>, where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi></mrow><annotation encoding=\"application/x-tex\">P</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">P</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q</mi></mrow><annotation encoding=\"application/x-tex\">Q</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">Q</span></span></span></span> are term constructors of arity 1.  There'll be some set of solutions in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span>, but we can also adjoin formal solutions, which gives us a model <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo stretchy=\"false\">[</mo><msub><mi>α</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>α</mi><mi>n</mi></msub><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">M[\\alpha_1, \\ldots, \\alpha_n]</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mopen\">[</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0037em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.0037em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">]</span></span></span></span>.  We can consider the group of automorphisms of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo stretchy=\"false\">[</mo><msub><mi>α</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>α</mi><mi>n</mi></msub><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">M[\\alpha_1, \\ldots, \\alpha_n]</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mopen\">[</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0037em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.0037em;\">α</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.0037em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">]</span></span></span></span> that fix <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span>.  Has anyone looked at doing this for any theory other than that of fields?</p>",
+        "id": 438054577,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1715379830
+    },
+    {
+        "content": "<p>There are various generalizations of Galois theory.  Borceux and Janelidze wrote a book called <em>Galois Theories</em> which should be interesting.  I haven't read it, but here's the abstract:</p>\n<blockquote>\n<p>Starting from the classical finite-dimensional Galois theory of fields, this book develops Galois theory in a much more general context, presenting work by Grothendieck in terms of separable algebras and then proceeding to the infinite-dimensional case, which requires considering topological Galois groups. In the core of the book, the authors first formalize the categorical context in which a general Galois theorem holds, and then give applications to Galois theory for commutative rings, central extensions of groups, the topological theory of covering maps and a Galois theorem for toposes. The book is designed to be accessible to a wide audience: the prerequisites are first courses in algebra and general topology, together with some familiarity with the categorical notions of limit and adjoint functors. The first chapters are accessible to advanced undergraduates, with later ones at a graduate level. For all algebraists and category theorists this book will be a rewarding read.</p>\n</blockquote>",
+        "id": 438090421,
+        "sender_full_name": "John Baez",
+        "timestamp": 1715415750
+    },
+    {
+        "content": "<p>I don't know if they tackle algebras of Lawvere theories.  Here's a paper that covers the Galois theory of algebras of Lawvere theories:</p>\n<ul>\n<li>Janelidze and Kelly, <a href=\"https://www.sciencedirect.com/science/article/pii/0022404994900574/\">Galois theory and a general notion of central extension</a>, <em>Journal of Pure and Applied Algebra</em>, <strong>97</strong> (1994), 135-161.</li>\n</ul>",
+        "id": 438090975,
+        "sender_full_name": "John Baez",
+        "timestamp": 1715416166
+    },
+    {
+        "content": "<p>Interestingly it uses the language of universal algebra and \"varieties\" rather than Lawvere theories, but they're essentially the same thing.</p>",
+        "id": 438091081,
+        "sender_full_name": "John Baez",
+        "timestamp": 1715416256
+    },
+    {
+        "content": "<p>Almost everything Kelly does proceeds at a level of technical sophistication and generality that makes it hard for me to find the answers to the simple questions I have until I take a long time to absorb his deeper thoughts.  This looks like no exception.   </p>\n<p>One thing I see right away is that to generalize Galois theory smoothly, they consider not <em>arbitrary</em> extensions of algebraic gadgets, but <em>central</em> extensions, which they define.  Every extension of a field is a central extension so this concept is invisible in classical Galois theory.</p>",
+        "id": 438091477,
+        "sender_full_name": "John Baez",
+        "timestamp": 1715416633
+    },
+    {
+        "content": "<p>This is also studied in what's appropriately called \"Model Theoretic Galois Theory\".  See <a href=\"https://www.jstor.org/stable/27805178\">this survey</a>, for instance.  In general, you can define a notion of \"algebraic closure\" model theoretically, and then one naturally studies the group of automorphisms of the algebraic closure as a kind of \"absolute galois group\" of your model.</p>",
+        "id": 438138895,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1715466852
+    },
+    {
+        "content": "<p>I know that there are interesting things to say about this, but I don't know them... I think I remember reading a few years ago that this stuff is related to \"existentially closed models\" and \"stable theories\" but that's some ESPECIALLY heavy duty model theory, and I might be misremembering.</p>",
+        "id": 438139074,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1715467126
+    },
+    {
+        "content": "<p>You might be interested in a textbook account of this algebraic closure stuff in Marker's \"Model Theory: An Introduction\" (Chapter 6), or another survey <a href=\"https://www.karlin.mff.cuni.cz/~krajicek/vddries-stable.pdf\">here</a></p>",
+        "id": 438139186,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1715467264
+    },
+    {
+        "content": "<p>This work sounds like it's going above the power of Lawvere theories into full-fledged classical first-order logic.   Right?  That should be lots of fun.   Jim Dolan thinks <a href=\"https://en.wikipedia.org/wiki/Beth_definability\">Beth's definability theorem</a> is a key result in <em>this</em> sort of Galois theory.</p>",
+        "id": 438170517,
+        "sender_full_name": "John Baez",
+        "timestamp": 1715504714
+    },
+    {
+        "content": "<p>Wow, thanks to both of you!  That's plenty to go read up on.</p>",
+        "id": 438370042,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1715608800
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Preserving.20algebraic.20relations/near/438170517\">said</a>:</p>\n<blockquote>\n<p>This work sounds like it's going above the power of Lawvere theories into full-fledged classical first-order logic.   Right?  That should be lots of fun.   Jim Dolan thinks <a href=\"https://en.wikipedia.org/wiki/Beth_definability\">Beth's definability theorem</a> is a key result in <em>this</em> sort of Galois theory.</p>\n</blockquote>\n<p>I was actually thinking about Beth's definability theorem just a few weeks ago! (And the closely related <a href=\"https://en.wikipedia.org/wiki/Craig_interpolation\">craig interpolation theorem</a>). I wrote about this on <a href=\"https://sunny.garden/@hallasurvivor/112349959135624885\">mastodon</a> recently, since I had to kill my blog post when I felt it getting long, haha. I have a lot to say about it, and maybe I'll write that up.... sometime that isn't now, lol</p>",
+        "id": 438481905,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1715650933
+    },
+    {
+        "content": "<p>Anyways, I would love to chat about some of this stuff sometime. Categorical model theory is a pet topic of mine, and I would love to hear Jim's thoughts on model theoretic galois theory and beth definability (I can loosely see the connection)</p>",
+        "id": 438482014,
+        "sender_full_name": "Chris Grossack (they/them)",
+        "timestamp": 1715651015
+    },
+    {
+        "content": "<p>Jim could talk about this much better than I could.  I think his idea is roughly: under some conditions, the <em>definable</em> aspects of a model of a theory in first-order logic are precisely those that are invariant under the group of automorphisms of that model.</p>",
+        "id": 438556582,
+        "sender_full_name": "John Baez",
+        "timestamp": 1715686540
+    },
+    {
+        "content": "<p>The easy direction is that definable aspects of our model (e.g. <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-ary predicates that we can express in the language of our model) are preserved by automorphisms of the model - this is just the <em>definition</em> of 'automorphism'.  The fun direction is the converse: anything invariant is definable.</p>",
+        "id": 438556838,
+        "sender_full_name": "John Baez",
+        "timestamp": 1715686658
+    }
+]

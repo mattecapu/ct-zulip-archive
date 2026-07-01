@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>locally cartesian closed categories without a terminal objec · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html">locally cartesian closed categories without a terminal objec</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="605483905"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/605483905" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Emily Riehl <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#605483905">(Jun 21 2026 at 22:55)</a>:</h4>
+<p>I'm in the process of revising my category theory book. You can see the current text of the <a href="https://emilyriehl.github.io/files/context.pdf">second edition</a> on my website. (At some point later I'd repost a PDF of the first edition.)</p>
+<p>While I'm trying not to add too many new pages, I have added one new section on locally cartesian closed categories. Readers are very welcome, especially if they can give me comments before August. </p>
+<p>In writing a motivating example, I realized that the category of sets and monomorphisms is locally cartesian closed... except that it doesn't have a terminal object (or products). It seems like most people use the term "locally cartesian closed" for the case with a terminal object and I like following the dominant convention. But is there a non-horrible name that I can use to refer to the case where I'm just asking for pullbacks and their adjoints? Some of the results in this section apply more generally and it would be cleaner to state them at that level of generality. But I'm also trying not to be too technical, so perhaps I should just give this up...</p>
+
+
+
+<a name="605493095"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/605493095" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#605493095">(Jun 21 2026 at 23:32)</a>:</h4>
+<p>Interesting. I thought I heard my adviser (Myles Tierney) once say that some people have used locally cartesian closed in precisely this sense: it just meant that every slice was cartesian closed. I wish he were around so I could ask him. The Categories list might be a good place to ask.</p>
+
+
+
+<a name="605498096"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/605498096" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Emily Riehl <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#605498096">(Jun 21 2026 at 23:51)</a>:</h4>
+<p>I think that might be the original usage but it seems to have shifted more recently. The sources I've found (eg <span class="user-mention" data-user-id="276770">@Steve Awodey</span>'s book) assume a terminal object.</p>
+<p>If we used "locally cartesian closed category" for the more general version then "lex locally cartesian closed category" is a possible name for the terminal object version. But I'd rather follow conventions here and it doesn't seem to be that.</p>
+
+
+
+<a name="605499618"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/605499618" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#605499618">(Jun 21 2026 at 23:57)</a>:</h4>
+<p>But lex locally cartesian closed would mean all finite limits, not just all finite products, no?</p>
+
+
+
+<a name="605499691"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/605499691" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#605499691">(Jun 21 2026 at 23:58)</a>:</h4>
+<p>(i.e. what Peter Johnstone calls "properly cartesian closed")</p>
+
+
+
+<a name="605520598"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/605520598" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#605520598">(Jun 22 2026 at 01:02)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276422">David Michael Roberts</span> <a href="#narrow/channel/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec/near/605499618">said</a>:</p>
+<blockquote>
+<p>But lex locally cartesian closed would mean all finite limits, not just all finite products, no?</p>
+</blockquote>
+<p>Yes, Emily is including pullbacks from the get-go even to be speaking of locally cartesian closed in the first place; the only issue is over the presence of a terminal. </p>
+<p>Speaking of Johnstone: he might be just the person to ask.</p>
+
+
+
+<a name="605554613"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/605554613" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Alexander Campbell <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#605554613">(Jun 22 2026 at 03:13)</a>:</h4>
+<p>One term that has been used for the more general notion is "partial locally cartesian closed category", see <a href="http://www.tac.mta.ca/tac/volumes/11/13/11-13abs.html">http://www.tac.mta.ca/tac/volumes/11/13/11-13abs.html</a> EDIT: Although now I see that they ask for binary products (in Definition 1.3).</p>
+
+
+
+<a name="605555769"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/605555769" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#605555769">(Jun 22 2026 at 03:17)</a>:</h4>
+<p><span class="user-mention" data-user-id="277611">@Todd Trimble</span>  Oh, sorry, I thought it was binary products only, I misread <span class="user-mention" data-user-id="888029">@Emily Riehl</span> 's comment <span aria-label="man facepalming" class="emoji emoji-1f926-200d-2642" role="img" title="man facepalming">:man_facepalming:</span></p>
+
+
+
+<a name="605603562"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/605603562" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#605603562">(Jun 22 2026 at 06:42)</a>:</h4>
+<p>I'd like to suggest that including a terminal object in the definition of "locally cartesian closed" is not the dominant usage. From what I can tell, the two conventions are roughly equal. I spent ten minutes skimming references on Google Scholar, and found plenty of recent references (here, "later" = "since Awodey's textbook") that take a locally cartesian category to be one without a terminal object. Here is a sample of papers using the convention without a terminal object (in no particular order, just the one Google Scholar gave me for searching for "locally cartesian closed category"):</p>
+<ul>
+<li><a href="https://arxiv.org/abs/0807.1704">Convenient Categories of Smooth Spaces</a> (2008)</li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S1571066108003976">The Interpretation of Intuitionistic Type Theory in Locally Cartesian Closed Categories an Intuitionistic Perspective</a></li>
+<li><a href="https://arxiv.org/abs/1005.4236">Local fibred right adjoints are polynomial</a> (2010)</li>
+<li><a href="https://arxiv.org/abs/1210.0828">Data types with symmetries and polynomial functors over groupoids</a> (2012)</li>
+<li><a href="https://link.springer.com/article/10.1007/s10485-011-9251-6">Algebraic Exponentiation in General Categorie</a> (2011)</li>
+<li><a href="https://www.diva-portal.org/smash/get/diva2:613378/FULLTEXT01.pdf">Locally cartesian closed categories, coalgebras, and containers</a> (2013)</li>
+<li><a href="https://dl.acm.org/doi/pdf/10.1145/3437992.3439922">Formalizing Category Theory in Agda</a> (2021)</li>
+<li><a href="https://arxiv.org/abs/2202.04543">Locally Cartesian Closed Categories</a> (2022)</li>
+<li><a href="https://arxiv.org/abs/2208.13088">Terms and derivatives of polynomial functors via negation</a> (2022)</li>
+<li><a href="https://studenttheses.uu.nl/server/api/core/bitstreams/2485cda5-fa61-4fec-abf4-9bbd53228b9c/content">Homotopical models of UF and their relationship to infty-topoi</a></li>
+<li><a href="https://www.mdpi.com/2227-7390/13/19/3155">Completeness and Cocompleteness Transfer for Internal Group Objects with Geometric Obstructions</a> (2025)</li>
+</ul>
+<p>(Furthermore, I found several papers with definitions of the form "a category with finite limits is locally cartesian closed", leaving open the possibility also of defining local cartesian closure differently for arbitrary categories.)</p>
+
+
+
+<a name="605604204"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/605604204" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#605604204">(Jun 22 2026 at 06:45)</a>:</h4>
+<p>I therefore think it would not be going against the dominant usage not to assume "locally cartesian closed" includes a terminal object. I think it is more useful not to include a terminal object in the definition, both because the terminology is more consistent this way ("locally" properly being used only to refer to the behaviour of slice categories, not global structure), and because there are plenty of examples of LCCCs without terminal objects.</p>
+
+
+
+<a name="605614539"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/605614539" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Steve Awodey <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#605614539">(Jun 22 2026 at 07:23)</a>:</h4>
+<p>If we use “lccc” to include a terminal object, then the case w/o 1 can be called “llccc”. <span aria-label="slight smile" class="emoji emoji-1f642" role="img" title="slight smile">:slight_smile:</span></p>
+
+
+
+<a name="606376169"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606376169" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zoltan A. Kocsis (Z.A.K.) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606376169">(Jun 25 2026 at 00:47)</a>:</h4>
+<p>I might be mistaken, but it seems like one could describe the "no terminal object" variant using straightforward alternative terminology, along the lines of <em>category with cartesian closed slices</em>.</p>
+<p>The "has terminal object" variant does not seem to admit a similarly straightforward description. If one would otherwise need to write "take a locally cartesian closed category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span></span></span></span> with terminal object" many times in the book, and the current literature is split 50-50, it makes sense to retain the term lccc to denote the harder to describe condition.</p>
+
+
+
+<a name="606385977"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606385977" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606385977">(Jun 25 2026 at 03:01)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/channel/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec/near/605604204">said</a>:</p>
+<blockquote>
+<p>there are plenty of examples of LCCCs without terminal objects</p>
+</blockquote>
+<p>I'd be interested to hear some of these examples.  I think the only example I knew of before Emily mentioned sets and monomorphisms was the category of spaces (or locales) and local homeomorphisms (which is even locally a topos).</p>
+<p>I suppose I ought to try to answer this by following all of your links, but their titles suggest to me that they're likely to omit a terminal object just because they don't need it (e.g. for defining polynomials) rather than because they have naturally-occurring examples that lack it.</p>
+
+
+
+<a name="606400700"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606400700" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606400700">(Jun 25 2026 at 05:43)</a>:</h4>
+<p>I added a list of examples to the <a href="https://ncatlab.org/nlab/show/locally+cartesian+closed+category#without_terminal_objects">nLab page</a>. Some are fairly trivial and included just to illustrate some degenerate cases, but there are quite a few more interesting examples.</p>
+
+
+
+<a name="606400802"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606400802" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606400802">(Jun 25 2026 at 05:44)</a>:</h4>
+<p>(I'm sure one could come up with other examples based on these.)</p>
+
+
+
+<a name="606401101"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606401101" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606401101">(Jun 25 2026 at 05:47)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="510824">Zoltan A. Kocsis (Z.A.K.)</span> <a href="#narrow/channel/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec/near/606376169">said</a>:</p>
+<blockquote>
+<p>I might be mistaken, but it seems like one could describe the "no terminal object" variant using straightforward alternative terminology, along the lines of <em>category with cartesian closed slices</em>.</p>
+</blockquote>
+<p>The issue is that "category with X slices" is precisely what "locally X" means, conventionally.</p>
+<blockquote>
+<p>The "has terminal object" variant does not seem to admit a similarly straightforward description.</p>
+</blockquote>
+<p>The property of having a terminal object doesn't have a common adjective, but "having finite products"/"having finite limits" does, which is equivalent to having a terminal object in this instance (as in <span class="user-mention" data-user-id="888029">@Emily Riehl</span>'s suggestion of "lex lccc").</p>
+
+
+
+<a name="606408491"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606408491" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nick Hu <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606408491">(Jun 25 2026 at 06:47)</a>:</h4>
+<p>If a locally cartesian closed category admits a terminal object, then it is itself (globally) cartesian closed: taking 'locally cartesian closed' to mean that every slice is cartesian closed, with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>≅</mo><mi>C</mi><mi mathvariant="normal">/</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">C \cong C / 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≅</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mord">/1</span></span></span></span> you immediately see this.</p>
+<p>In contrast, it's not really a mathematical analogy, but if you think about the term 'locally fully faithful 2-functor', it is not required to be a fully faithful 2-functor by definition.</p>
+<p>Ergo, it seems strange for the 'local cartesian closure' to require '(global) cartesian closure' by definition.</p>
+
+
+
+<a name="606409678"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606409678" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zoltan A. Kocsis (Z.A.K.) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606409678">(Jun 25 2026 at 06:56)</a>:</h4>
+<blockquote>
+<p>The issue is that "category with X slices" is precisely what "locally X" means, conventionally.</p>
+</blockquote>
+<p>This is not true. The adjective _locally_ has at best inconsistent usage. A locally small category is certainly not one where every slice category is small.</p>
+
+
+
+<a name="606409829"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606409829" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606409829">(Jun 25 2026 at 06:57)</a>:</h4>
+<p>Yes, "locally" has various meanings in category theory, but there is only one relevant meaning in this context.</p>
+
+
+
+<a name="606417500"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606417500" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Zoltan A. Kocsis (Z.A.K.) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606417500">(Jun 25 2026 at 07:42)</a>:</h4>
+<blockquote>
+<p>there is only one relevant meaning in this context.</p>
+</blockquote>
+<p>Well, not really, which is why the literature is split about 50-50 on whether to require terminal objects for lcccs ;)</p>
+<p>One can choose to treat "locally cartesian closed" as a single unit, or one can introduce "locally" an adjective meaning "slice-wise" in certain contexts. I don't think the latter makes much sense, for two reasons:</p>
+<ol>
+<li>
+<p>The previous edition of CTiC had no other uses for "locally" as "slicewise", and I assume the new edition won't either. The textbook might wish to follow and pass on the field's consensus terminology anyway, but this thread would not exist if there was such consensus.</p>
+</li>
+<li>
+<p>These contexts don't seem to exist. I don't think even the nLab contains any other examples of "locally" used properly in the "slicewise" sense, apart from <em>locally cartesian</em> and <em>locally cartesian closed</em>. E.g. <a href="https://ncatlab.org/nlab/show/locally+regular+category">locally regular categories</a> states that these are more than just slicewise regular categories.</p>
+</li>
+</ol>
+
+
+
+<a name="606429491"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606429491" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Cavallo <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606429491">(Jun 25 2026 at 08:42)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="510824">Zoltan A. Kocsis (Z.A.K.)</span> <a href="#narrow/channel/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec/near/606417500">said</a>:</p>
+<blockquote>
+<p>I don't think even the nLab contains any other examples of "locally" used properly in the "slicewise" sense, apart from <em>locally cartesian</em> and <em>locally cartesian closed</em>.</p>
+</blockquote>
+<p>One example, for whatever one example is worth, is local <a href="https://ncatlab.org/nlab/show/test+category">test category</a>. (By definition a local test category is slicewise a <em>weak</em> test category, but this is equivalent to being slicewise a test category.)</p>
+
+
+
+<a name="606443487"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606443487" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606443487">(Jun 25 2026 at 09:42)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="510824">Zoltan A. Kocsis (Z.A.K.)</span> <a href="#narrow/channel/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec/near/606417500">said</a>:</p>
+<blockquote>
+<p>Well, not really, which is why the literature is split about 50-50 on whether to require terminal objects for lcccs ;)</p>
+</blockquote>
+<p>"in this context" meaning in category theory generally (i.e. considering uses of "locally" in category theory with the exception of LCCCs).</p>
+<p>I must admit I am not convinced by the nLab page on <a href="https://ncatlab.org/nlab/show/locally%20regular%20categories">[[locally regular categories]]</a>. It gives one reference, to the <em>Elephant</em>, but (as far as I can see) Johnstone never formally introduces the terminology. He uses it in passing in the statement of a single proposition, so that he can refer to it in the following paragraph. The only other reference I can find in the category theory literature to this terminology is <span class="user-mention" data-user-id="277473">@Morgan Rogers (he/him)</span>'s <a href="https://arxiv.org/abs/2101.04015">On Supercompactly and Compactly Generated Toposes</a>. I would warrant this terminology comes from the nLab page itself. I don't think it is a convincing counterexample.</p>
+<p>(It is also worth highlighting that "locally regular categories" as defined on the nLab page are not assumed to have terminal objects, and when they do they are regular. So, one might suggest LCCCs should not have terminal objects either, for increased consistency with the terminology "locally regular category".)</p>
+<blockquote>
+<p>These contexts don't seem to exist.</p>
+</blockquote>
+<p>I don't have time to find more examples right now, although Peter Johnstone's most recent email on the categories mailing list gives evidence that the convention exists. To quote him:</p>
+<blockquote>
+<p>When I wrote the first two parts of the Elephant, I thought quite a lot about terminological questions like this. For "locally cartesian closed", I decided to break the usual rule that "locally P" means "all slices have property P" but not that the category itself has P. The reason was that there is, as far as I know, only one not-wholly-artificial example of a category whose slices are all cartesian closed but which is not itself cc (namely the category of all topological spaces and local homeomorphisms); and it didn't seem worth burdening oneself with more complicated terminology for the sake of this one counterexample.</p>
+</blockquote>
+<p>According to Johnstone's own reasoning, now that we have a number of "un-artifical" examples, it would be better to follow "the usual rule" and not impose the existence of the terminal object.</p>
+
+
+
+<a name="606444003"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606444003" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606444003">(Jun 25 2026 at 09:45)</a>:</h4>
+<p>(To be honest, I do not feel strongly invested in this terminology one way or another; I don't think it causes much confusion to clarify the terminology convention on a paper-by-paper basis. But I do think that examples and convention favour excluding the terminal object.)</p>
+
+
+
+<a name="606519246"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606519246" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606519246">(Jun 25 2026 at 15:12)</a>:</h4>
+<p>Just to weigh in on another instance of "locally" (and at risk of muddling the water), the standard (site-theoretic rather than syntactic) version of Deligne's theorem proves that the topos of sheaves on a <em>locally coherent</em> site, meaning a a site whose <em>slices are coherent categories</em> and whose covers are (generated by) finite families, has enough points. This is quite nice from the point of view that disjoint unions of coherent categories are locally coherent in this sense, and makes apparent that the presence or absence of the terminal object in the site is irrelevant to the proof.</p>
+<p>Unfortunately, there is a naming convention in topos theory which attaches the same adjective to the topos as the descriptor of the site it is built from. Thus a regular topos is one equivalent to (regular) sheaves on a regular category, a coherent topos is equivalent to (coherent) sheaves on a coherent category etc. If this convention  were to be followed, that would mean that Deligne's theorem describes "locally coherent toposes", which are not slice-wise coherent but rather have "enough" slices which are coherent toposes (namely, the slices over representable sheaves). In this vein, I have seen toposes described as "locally P" if they are covered by slices having property P. This clashes with other naming conventions frequently. Most notably "locally compact" has a topological meaning not at all captured by a slice-wise definition. Hence the chosen title for my paper that Nathanael referenced above...</p>
+<p>All of that said, I think as a property of <em>categories</em> in full generality, reserving "locally" for "slice-wise" is a sensible choice that can be adequately defended from encounters with topological notions of locality.</p>
+
+
+
+<a name="606519337"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606519337" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606519337">(Jun 25 2026 at 15:12)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="276092">Nathanael Arkor</span> <a href="#narrow/channel/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec/near/606443487">said</a>:</p>
+<blockquote>
+<p>Zoltan A. Kocsis (Z.A.K.) <a href="#narrow/channel/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec/near/606417500">said</a>:</p>
+<blockquote>
+<p>Well, not really, which is why the literature is split about 50-50 on whether to require terminal objects for lcccs ;)</p>
+</blockquote>
+<p>"in this context" meaning in category theory generally (i.e. considering uses of "locally" in category theory with the exception of LCCCs).</p>
+</blockquote>
+<p>The other meaning being mentioned is that "locally P" means "all hom-objects have property P", as in "locally small", "locally posetal", "locally fully faithful", etc.  That's certainly a meaning "in category theory", but it's also not relevant to this question since the other meaning of LCCC is not of that form.</p>
+
+
+
+<a name="606524277"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606524277" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606524277">(Jun 25 2026 at 15:30)</a>:</h4>
+<p>And, with the exception of "locally small" (which is arguably only an instance of this terminological pattern depending on one's foundational choices), I am inclined to think these usages are particular to two-dimensional category theory (at least, I can't think of any instances right now, but I may be forgetting).</p>
+
+
+
+<a name="606541642"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606541642" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606541642">(Jun 25 2026 at 16:44)</a>:</h4>
+<p>Certainly <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>-dimensional category theory for <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n&gt;2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span> also uses them.  In 1-dimensional category theory it's certainly not as common because there aren't as many properties one could ask of a set, and because we have special names for some other things: we say "faithful" instead of "locally injective", for instance.  But <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">n</span></span></span></span>-dimensional category theory is part of category theory.  (-:</p>
+<p>But, ultimately, as I said, not really relevant to this question.</p>
+
+
+
+<a name="606553044"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606553044" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606553044">(Jun 25 2026 at 17:37)</a>:</h4>
+<p>Then there are "locally presentable categories", in which "locally" has yet a third meaning.</p>
+
+
+
+<a name="606557465"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606557465" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Mike Shulman <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606557465">(Jun 25 2026 at 17:55)</a>:</h4>
+<p>Another possible replacement for "locally" in the literal sense of "each slice" is a less ambiguous word like "slice-wise" (compare with "hom-wise" for the "each hom-object" sense).</p>
+
+
+
+<a name="606560530"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606560530" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Nathanael Arkor <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606560530">(Jun 25 2026 at 18:11)</a>:</h4>
+<p>These different meanings (as well as alternative terminology such as "slice-wise" and "hom-wise") are described on the nLab page <a href="https://ncatlab.org/nlab/show/locally">[[locally]]</a>.</p>
+
+
+
+<a name="606601340"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606601340" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606601340">(Jun 25 2026 at 22:48)</a>:</h4>
+<p>Might "slice-wise cartesian closed category" be a reasonable option? It's at least pithy.</p>
+
+
+
+<a name="606605095"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606605095" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Kevin Carlson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606605095">(Jun 25 2026 at 23:35)</a>:</h4>
+<p>There does seem to be a pretty substantial impasse here, between this conversation and that on the CT mailing list, and it is true that "locally" is a terribly overloaded term. So there's a pretty good basis to use "slicewise ccc" as the official terminology in a new edition of the book while mentioning that some authors use lccc for slicewise ccc and some, for slicewise ccc + terminal, though it'd be a pretty substantial innovation. It would be easier to start using "slicewise" than "homwise" anyway, I think; "locally small" is much more deeply ingrained than any of the uses of "locally" on slices.</p>
+
+
+
+<a name="606612581"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606612581" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606612581">(Jun 26 2026 at 00:17)</a>:</h4>
+<p>I think slicewise (even though it sounds like a Newspeak work) is a better adjective than "locally" for a propery of a category C that holds for all slices C/A. The "locally" intuition is really a several steps removed, ultimately (it seems to me) via thinking about eg Sh(X) for X a space, and looking at Sh(X)/U - a very special situation indeed.</p>
+
+
+
+<a name="606615102"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606615102" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606615102">(Jun 26 2026 at 00:31)</a>:</h4>
+<blockquote>
+<p>even though it sounds like a Newspeak word </p>
+</blockquote>
+<p>(I know you weren't being really serious, but) I don't think in any obvious sense as in <em>1984</em>, since "slicewise" doesn't carry any socio-political connotations no matter how you slice it. It invites parody only in the very ordinary sense that any math jargon sounds ripe for parody. :-)</p>
+
+
+
+<a name="606615550"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606615550" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606615550">(Jun 26 2026 at 00:39)</a>:</h4>
+<p>Yes, not too serious, but for context:</p>
+<blockquote>
+<p>-wise" transforms any word into an adverb by eliminating all English adverbs not already ending in "-wise", e.g. <em>quickly</em> becomes <em>speedwise</em>, <em>slowly</em> becomes <em>unspeedwise</em>, <em>carefully</em> becomes <em>carewise</em>, <em>goodthink</em> is transformed to <em>goodthinkwise</em>, and words like <em>fully</em>, <em>completely</em>, and <em>totally</em> become <em>fullwise</em>.</p>
+</blockquote>
+<p>I could imagine "per-slice cartesian closed", but that's pretty inelegant too</p>
+
+
+
+<a name="606615608"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606615608" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606615608">(Jun 26 2026 at 00:40)</a>:</h4>
+<p>And I do recognise that slicewise in the proposed sense is not an adverb!</p>
+
+
+
+<a name="606615703"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606615703" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606615703">(Jun 26 2026 at 00:41)</a>:</h4>
+<p>I admit that that quote sounds like it could have been written by Orwell himself, in an essay on the abuses of the English language. :-)</p>
+
+
+
+<a name="606615745"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606615745" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606615745">(Jun 26 2026 at 00:42)</a>:</h4>
+<p>(Was it?)</p>
+
+
+
+<a name="606615918"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606615918" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606615918">(Jun 26 2026 at 00:45)</a>:</h4>
+<p>It's from Wikipedia's explanation, Orwell's original is much more in his style:</p>
+<blockquote>
+<p>Adjectives were formed by adding the suffix <em>-ful</em> to the noun verb, and adverbs by adding <em>-wise</em>. Thus, for example, <em>speedful</em> meant "rapid" and <em>speedwise</em> meant "quickly."  Certain of our present-day adjectives, such as <em>good, strong, big, black, soft,</em> were retained, but their total number was very small. There was little need for them, since almost any adjectival meaning could be arrived at by adding <em>-ful</em> to a noun-verb. None of the now-existing adverbs was retained, except for a few already ending in <em>-wise</em>; the <em>-wise</em> termination was invariable. the word <em>well</em>, for example, was replaced by <em>goodwise</em>.</p>
+</blockquote>
+<p>(one last point: this is 'A vocabulary', the 'B vocabulary' contained the politically-tinged ones that Todd obliquely referenced in his first reply)</p>
+
+
+
+<a name="606615998"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606615998" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606615998">(Jun 26 2026 at 00:47)</a>:</h4>
+<p>Okay, this stings a little, but only a little. :-)</p>
+
+
+
+<a name="606616064"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606616064" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606616064">(Jun 26 2026 at 00:48)</a>:</h4>
+<p>Sliceful Decartesful closeful category ..... urgh.</p>
+
+
+
+<a name="606736640"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/locally%20cartesian%20closed%20categories%20without%20a%20terminal%20objec/near/606736640" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec.html#606736640">(Jun 26 2026 at 14:20)</a>:</h4>
+<p>Has participating in a discussion such as this made me a slice-wiser? Time will tell.</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Jul 01 2026 at 13:03 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

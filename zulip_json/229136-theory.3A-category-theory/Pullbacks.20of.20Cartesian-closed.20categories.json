@@ -1,0 +1,44 @@
+[
+    {
+        "content": "<p>Say you have two concrete categories (A, U) and (B, V) over some category X and you take the pullback of U and V. If A and B are Cartesian-closed, I was wondering if the pullback is also Cartesian-closed.</p>\n<p>One problem I immediately ran into when trying to prove this was that the pullback is too strict and it's better to work with weak pullbacks to avoid issues with equality when you only have isomorphisms.</p>\n<p>However, I haven't been able to make any progress. Can't think of an obvious counterexample either.</p>\n<p>I'm particularly interested in the pullback of Pos (partially ordered sets and monotone functions) and Conv (convergence spaces and continuous functions) with respect to the forgetful functors into Set. Both of them are Cartesian-closed and I feel that the pullback (call it PosConv, which consists of partially ordered convergence spaces and monotone continuous maps), should also be Cartesian closed.</p>",
+        "id": 475088322,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1728212143
+    },
+    {
+        "content": "<p>In general, if you do not assume anything on the functors U : A → X and V : B → X, then you won't get a good property on the pullback: already, basic properties like the existence of a terminal object may fail. For instance, for any categories A and B, consider X = A + B and U and V be the two canonical inclusions, which are faithful. Then, the pullback is going to be empty, and also the version of the pullback where you take isomorphisms instead of equalities.</p>",
+        "id": 475089567,
+        "sender_full_name": "Vincent Moreau",
+        "timestamp": 1728213459
+    },
+    {
+        "content": "<p>On the other extreme, if you assume X to also be cartesian closed and the functors U : A → X and V : B → X to respect finite products and exponentials, then the pullback is a CCC, and actually it is a sub-CCC of the product A × B.</p>",
+        "id": 475089723,
+        "sender_full_name": "Vincent Moreau",
+        "timestamp": 1728213546
+    },
+    {
+        "content": "<p>I am not knowledgeable about convergence spaces, but what I can say is that the functor Pos → Set which sends a poset on its underlying set preserves finite products, but not exponentials, so it is an in-between situation. If the other one Conv → Set also preserves finite products, then the pullback has finite products.</p>",
+        "id": 475090320,
+        "sender_full_name": "Vincent Moreau",
+        "timestamp": 1728213754
+    },
+    {
+        "content": "<p>Thanks for the reply. Conv is like a CCC-version of Top. In any case V : Conv → Set will not preserve exponentials either since <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi><mo stretchy=\"false\">(</mo><msup><mi>B</mi><mi>A</mi></msup><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">V(B^A)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0913em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">A</span></span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span> will be a subset of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi><msup><mi>B</mi><mrow><mi>V</mi><mi>A</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">VB^{VA}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8413em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8413em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.22222em;\">V</span><span class=\"mord mathnormal mtight\">A</span></span></span></span></span></span></span></span></span></span></span></span>, just like in the Pos case.</p>",
+        "id": 475091824,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1728214321
+    },
+    {
+        "content": "<p>So I guess the \"in-between\" situation is kind of special and has to be handled on an adhoc basis, i.e. I can't just apply a result from category theory to conclude yes/no.</p>",
+        "id": 475092002,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1728214381
+    },
+    {
+        "content": "<p>I agree</p>",
+        "id": 475092080,
+        "sender_full_name": "Vincent Moreau",
+        "timestamp": 1728214407
+    }
+]

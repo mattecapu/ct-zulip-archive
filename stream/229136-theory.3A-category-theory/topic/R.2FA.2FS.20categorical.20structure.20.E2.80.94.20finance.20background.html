@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>R/A/S categorical structure — finance background · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/R.2FA.2FS.20categorical.20structure.20.E2.80.94.20finance.20background.html">R/A/S categorical structure — finance background</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="603059921"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/R/A/S%20categorical%20structure%20%E2%80%94%20finance%20background/near/603059921" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> mtollefsen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/R.2FA.2FS.20categorical.20structure.20.E2.80.94.20finance.20background.html#603059921">(Jun 14 2026 at 12:58)</a>:</h4>
+<p>I'm a finance/accounting person (background in insurance M&amp;A analysis), not a mathematician so I have used quite a bit of AI to create this question. </p>
+<p>Over a number of years, working on practical problems when financial modelling where two very similar business will have completely different modelling requirements for a number of reasons like: different treatment of revenues, different consolidation dates, different accounting treatment depending on the countries the companies reside.  This creates a situation where a model has to be overhauled to evaluate a transaction even though the businesses are operationally almost exactly the same.  Hours, days, weeks are spent doing this. </p>
+<p>My initial solution was to tackle the accounting treatment.  And created an Excel model that allows different accounting treatments.  What I have found is that this solution may have wider implications in the finance world because it may be use for trade capture and booking (just recording transactions basically) which has downstream implications to risk management, regulatory reporting, and other systems.  Here is where this question becomes a bit AI heavy: </p>
+<p>I arrived at a primitive structure — three temporal dimensions of any economic exchange: Recognition (R), Articulation (A), Settlement (S) — that seems to have a categorical shape to it. I've used AI tools (this post included) to help formalize and articulate the construction, since I don't have the formal vocabulary myself. The empirical/financial content is mine; the categorical framing is a collaborative attempt to translate it, and I want to be upfront that I can't independently verify whether the categorical language below is being used correctly. </p>
+<p>I posted a version of the core construction on Math Stack Exchange [link], where one part of it was confirmed as standard (the non-commutativity framing below). I'm hoping this community might have thoughts on the part that's still open — the two-party / natural transformation question — and more generally on whether this construction connects to anything in applied category theory that I should be aware of. </p>
+<p>The construction: </p>
+<p>Any exchange event can be represented as a composed morphism in a category C where: </p>
+<ul>
+<li>
+<p>Objects are economic states (the state of an obligation at a given moment) </p>
+</li>
+<li>
+<p>Morphisms are the three primitive operators: R̂, Â, Ŝ </p>
+</li>
+<li>
+<p>A complete transaction is the composition: T̂ = Ŝ ∘ Â ∘ R̂ </p>
+</li>
+</ul>
+<p>Non-commutativity (confirmed as standard framing on Math SE): </p>
+<p>The relative ordering of R̂ and Ŝ determines the classification of the resulting object — not whether the composition is valid, but what kind of object results: </p>
+<ul>
+<li>
+<p>R̂ before Ŝ → the unsettled interval is a receivable (value recognized, not yet received) </p>
+</li>
+<li>
+<p>Ŝ before R̂ → the unsettled interval is a deferred obligation (value received, not yet earned) </p>
+</li>
+</ul>
+<p>Both orderings are valid; they produce structurally distinct outcomes. This has been demonstrated empirically across a working prototype validated against derivatives, leases, loans, and structured credit instruments. So: two valid orderings, different results — not one forbidden ordering. Good to have that confirmed as the standard reading. </p>
+<p>The open question — two parties and the 16-state space: </p>
+<p>Any exchange involves two parties, each with their own R̂/Â/Ŝ timeline for the same underlying event. The empirically validated state space has 16 states (2 directions × 2³ timing combinations). </p>
+<p>I've conjectured that this 16-state space might be expressible as the set of natural transformations between two functors — one for each party's perspective on the same transaction, each mapping the underlying economic event into their own internal state category. If so, the 16-state bound would be categorically necessary rather than just empirically observed. </p>
+<p>This is the part I'm genuinely unsure about — both whether the construction is sensible at all, and whether (if it is) it actually buys anything beyond the empirical observation. </p>
+<p>More broadly: if this construction (or something like it — temporal/lifecycle morphisms with order-dependent classification) is something this community recognizes from elsewhere — open games, structured cospans, Petri nets, polynomial functors, whatever — I'd love a pointer. I came at this from finance, not from category theory, so I may well be reinventing something that already has a name. </p>
+<p>Any reaction — including "this framing doesn't quite work" — would be valuable.</p>
+
+
+
+<a name="603118642"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/R/A/S%20categorical%20structure%20%E2%80%94%20finance%20background/near/603118642" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Oisín Flynn-Connolly <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/R.2FA.2FS.20categorical.20structure.20.E2.80.94.20finance.20background.html#603118642">(Jun 14 2026 at 19:05)</a>:</h4>
+<p>I reread my previous and realised it read a bit unintendedly harsh, so, sorry for that!</p>
+<p>I do think category theory is a bit overkill for this problem and you should explore simpler frameworks. For example, the noncommutativity you mention seems to me to come down the fact that function composition is not commutative - something you probably already know from school. If you insist on using categories - the category theory vocab that you mention in your post is mostly straightforward and easy to learn yourself - you could do it in a few hours from a textbook.</p>
+
+
+
+<a name="603122100"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/R/A/S%20categorical%20structure%20%E2%80%94%20finance%20background/near/603122100" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Todd Trimble <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/R.2FA.2FS.20categorical.20structure.20.E2.80.94.20finance.20background.html#603122100">(Jun 14 2026 at 19:28)</a>:</h4>
+<p>You don't even have to know mathematics. Order of composition matters in everyday operations like putting on clothes. Putting on shoes does not commute with putting on socks.</p>
+
+
+
+<a name="603144516"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/R/A/S%20categorical%20structure%20%E2%80%94%20finance%20background/near/603144516" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> mtollefsen <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/R.2FA.2FS.20categorical.20structure.20.E2.80.94.20finance.20background.html#603144516">(Jun 14 2026 at 21:53)</a>:</h4>
+<p>Thank you both for your responses.  It’s a bit embarrasing to come here and ask what appears to be a fairly simplistic question.  But honestly, because of your responses, I am relieved that this does not require this level of math to solve. </p>
+<p>If I step away from AI, I can state plainly what I am trying to do and maybe you can point me in the right direction. </p>
+<p>I think that with these 3 parameters, I can articulate any financial asset, instrument, obligation, etc...  to the financial statements.  Which could mean boiling down ledger accounts from millions to 16  And that might impact technology infrastructure, regulation, etc... </p>
+<p>I have been challenged on an instrument by instrument basis, i.e., can you book contingent debt, can you book a warrant, can you book a derivative, and so on and so on.  Now while the answer has been yes, I cannot conclusively say, yes, it can book everything. </p>
+<p>So AI suggested that there is a mathematic way to prove that these parameters can indeed book every single financial asset. </p>
+<p>Thanks again and good luck to your respective countries in the World Cup!</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Jul 01 2026 at 13:03 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+[
+    {
+        "content": "<p>Is this the \"term model\" of the type theory? I've often found it psychologically easier to pretend I'm working in the term model when doing type-theoretic things, since then I have an actual concrete idea for what an arbitrary term should be - something one can obtain in a finite sequence of steps from applying the introduction and elimination rules of the types in your theory. At least, if I've understood correctly!</p>",
+        "id": 528703354,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752511861
+    },
+    {
+        "content": "<p>Yes, this is the term model.  But I actually think it's misleading to think too much about the term model when you're working <em>in</em> type theory, since type theory has much wider semantics than that.  If you have the term model too much in mind you may have too limited an idea of what exists.  For instance, it's true that in the term model all the objects are built from a finite sequence of steps of rules, but in a general model that isn't the case, so if you think too hard about that you may get misled.</p>",
+        "id": 528714352,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1752516034
+    },
+    {
+        "content": "<p>People think type theory is more \"syntactic\" than set theory, but it really isn't.  When we write <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">{</mo><mi>x</mi><mo>∣</mo><mi>x</mi><mo>&gt;</mo><mn>3</mn><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">\\{x \\mid x &gt; 3\\}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∣</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">&gt;</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">3</span><span class=\"mclose\">}</span></span></span></span> we don't think of it as a \"term\", we think of it as just representing an actual <em>set</em>, and we can do the same for the syntax of type theory.</p>",
+        "id": 528714539,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1752516105
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Continuations.2C.20parametricity.2C.20and.20polymorphism/near/528714352\">said</a>:</p>\n<blockquote>\n<p>Yes, this is the term model.  But I actually think it's misleading to think too much about the term model when you're working <em>in</em> type theory, since type theory has much wider semantics than that.  If you have the term model too much in mind you may have too limited an idea of what exists.  For instance, it's true that in the term model all the objects are built from a finite sequence of steps of rules, but in a general model that isn't the case, so if you think too hard about that you may get misled.</p>\n</blockquote>\n<p>Ooh ok, in what senses would this kind of thinking mislead you? I remember in the past being very confused because I had no intuition for what a \"term\" in type theory was supposed to be, whereas I had a good idea that a \"set\" was a collection of things. Thinking in terms of the term model gave me that intuition of what \"terms\" should be - so if I abandon it, I run into the same problem of not really knowing what a \"term\" is...</p>",
+        "id": 528733231,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752524260
+    },
+    {
+        "content": "<p>When working <em>in</em> type theory (as opposed to <em>on</em> type theory, i.e. doing metatheory), I don't like to use the word \"term\".  To me \"term\" suggests a syntactic object.  When working <em>in</em> type theory I generally use words like \"element\" instead.  Then the intution is just like for set theory: a type is a collection of things, and its elements are the things it is a collection of.</p>",
+        "id": 528736124,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1752525395
+    },
+    {
+        "content": "<p>5 messages were moved here from <a class=\"stream-topic\" data-stream-id=\"229199\" href=\"/#narrow/channel/229199-learning.3A-questions/topic/Continuations.2C.20parametricity.2C.20and.20polymorphism/with/528702400\">#learning: questions &gt; Continuations, parametricity, and polymorphism</a> by <span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span>.</p>",
+        "id": 528736187,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1752525426
+    },
+    {
+        "content": "<p>Hm, ok... so then, why do people use \"terms\" in type theory so often, as opposed to just \"element\"?</p>",
+        "id": 528736644,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752525620
+    },
+    {
+        "content": "<p>I like <em>inhabitant</em>, in type theory! Precisely to remain with type-theoretic intuition and not to get confused with set-theoretic intuition</p>",
+        "id": 528737500,
+        "sender_full_name": "Vincent R.B. Blazy",
+        "timestamp": 1752525969
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"934428\">Ruby Khondaker (she/her)</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/What.20is.20a.20term.3F/near/528736644\">said</a>:</p>\n<blockquote>\n<p>Hm, ok... so then, why do people use \"terms\" in type theory so often, as opposed to just \"element\"?</p>\n</blockquote>\n<p>I don't know, who are these people?  (-:</p>",
+        "id": 528738435,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1752526345
+    },
+    {
+        "content": "<p>in equational and Horn logic, initial models can be constructed from terms.  the terminology is prevalent there.  but once you move to more expressive logics, this property breaks down.</p>",
+        "id": 528738509,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1752526381
+    },
+    {
+        "content": "<p><em>Initial</em> models can <em>always</em> be constructed from terms (meaning syntactic objects).</p>",
+        "id": 528738917,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1752526545
+    },
+    {
+        "content": "<p>This is the central fact of categorical logic and the syntax/semantics adjunction.</p>",
+        "id": 528738963,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1752526567
+    },
+    {
+        "content": "<p>terms in the same signature of the theory you're starting with?  How do you witness existential quantifiers (that aren't \"exists unique\")?<br>\n<a href=\"/user_uploads/21317/wFXUbKjQJiTz0ohHNV6s72xJ/why-horn-formulas-matter-in-computer-science-initial-4rtnikvejv.pdf\">why-horn-formulas-matter-in-computer-science-initial-4rtnikvejv.pdf</a></p>",
+        "id": 528740514,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1752527186
+    },
+    {
+        "content": "<p>this is could be a difference in terminology again.  I'm quoting from e.g. <a href=\"https://link.springer.com/chapter/10.1007/3-540-15198-2_24\">https://link.springer.com/chapter/10.1007/3-540-15198-2_24</a> , which I'll try to find a free version for.</p>",
+        "id": 528740845,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1752527333
+    },
+    {
+        "content": "<p>Yeah, the initial model is doctrine-relative.</p>",
+        "id": 528740887,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1752527355
+    },
+    {
+        "content": "<p>Equational and Horn theories can be stated context-free, so it makes sense to talk about an initial model in a contextless doctrine, which is just a set.  But more general type theories with contexts are in a doctrine with contexts, and so their initial models have to be categories, not sets.</p>",
+        "id": 528741024,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1752527414
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/What.20is.20a.20term.3F/near/528738435\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"934428\">Ruby Khondaker (she/her)</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/What.20is.20a.20term.3F/near/528736644\">said</a>:</p>\n<blockquote>\n<p>Hm, ok... so then, why do people use \"terms\" in type theory so often, as opposed to just \"element\"?</p>\n</blockquote>\n<p>I don't know, who are these people?  (-:</p>\n</blockquote>\n<p>Hm, basically every type theory resource I've seen...?</p>",
+        "id": 528743374,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752528447
+    },
+    {
+        "content": "<p>It's hard for me to comment on it without a specific reference.</p>",
+        "id": 528744156,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1752528833
+    },
+    {
+        "content": "<p>If they're writing about the <em>syntax</em> of type theory, as many people are, then of course they're going to say \"term\".</p>",
+        "id": 528744200,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1752528860
+    },
+    {
+        "content": "<p>It's possible I misinterpreted what you meant when you said</p>\n<p><span class=\"user-mention silent\" data-user-id=\"934428\">Ruby Khondaker (she/her)</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/What.20is.20a.20term.3F/near/528703354\">said</a>:</p>\n<blockquote>\n<p>I've often found it psychologically easier to pretend I'm working in the term model when doing type-theoretic things</p>\n</blockquote>\n<p>If by \"doing type-theoretic things\" you meant \"working with the syntax of type theory\", then there's absolutely nothing wrong with \"working in the term model\", since that's really synonymous with working with syntax since the term model is built out of syntax.  I thought you meant instead \"doing mathematics inside a type-theoretic foundation\".</p>",
+        "id": 528744381,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1752528958
+    }
+]
