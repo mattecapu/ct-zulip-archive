@@ -1,0 +1,68 @@
+[
+    {
+        "content": "<p>Hello everyone. I was wondering if there are any resources on the use of Topos Theory applied to Functional Programming. I've been reading a bit on Topos Theory, and the texts tend to emphasize how toposes are used to relate global and local structures. I imagined that perhaps it could serve as a \"canonical\" way of representing data structures where one has nested contexts. For example, suppose we have geographical map inside another geographical map, and we want to define an interface that allows us to hop from one context to another. Perhaps Topos (or some other concept in Category Theory) can provide a clear framework for how to properly deal with such situations. I haven't been able to find references that try to apply Topos Theory to Functional Programming in the vein of Bartosz \"Category Theory for Programmers\".</p>",
+        "id": 441080209,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1716915710
+    },
+    {
+        "content": "<p>one direct way is that the syntactic passage from a simply typed lambda calculus to a higher order logic is reflected in the semantic passage from a cartesian closed category to a topos (which adds a type of Propositions/subobject classifier to a CCC).  An example paper in this line of work is Bell's \"Notes on toposes and local set theories\".</p>",
+        "id": 441086866,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1716918556
+    },
+    {
+        "content": "<p>Your description of the problem made me wonder if you have tried using just stalks of <a href=\"https://www.youtube.com/watch?v=RPuWHN0BTio\">presheaves</a> alone?  Not that topoi wouldn't be appropriate, crudely stalks : topoi :: elements : sets, but what you describe (a kind of recursive contextual organization of local-truth organized by space/topology) seems spot on.  Presheaves are <a href=\"https://hackage.haskell.org/package/data-category-0.5.0/docs/Data-Category-Presheaf.html\">available in haskell</a> at least, although I would also recommend checking out <a href=\"https://github.com/fdilke/bewl\">Bewl</a> an experimental system built in scala by <span class=\"user-mention\" data-user-id=\"661732\">@Felix Dilke</span>, which I have not used but seems kind of like topos-theoretic ADTs.</p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"RPuWHN0BTio\" href=\"https://www.youtube.com/watch?v=RPuWHN0BTio\"><img src=\"https://uploads.zulipusercontent.net/9aae313e849bf58023a4a7f1d87f0ba455f90d19/68747470733a2f2f692e7974696d672e636f6d2f76692f52507557484e304254696f2f64656661756c742e6a7067\"></a></div>",
+        "id": 441109937,
+        "sender_full_name": "Eric M Downes",
+        "timestamp": 1716928055
+    },
+    {
+        "content": "<p>The paper Ryan W. referenced is <a href=\"https://publish.uwo.ca/~jbell/topnotes.pdf\">here</a>.</p>",
+        "id": 441110670,
+        "sender_full_name": "Eric M Downes",
+        "timestamp": 1716928361
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"280788\">@Eric M Downes</span> , what do you recommend for learning sheaf/presheaf theory?</p>",
+        "id": 441112273,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1716929110
+    },
+    {
+        "content": "<p>BTW, thanks for both answers!</p>",
+        "id": 441112292,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1716929118
+    },
+    {
+        "content": "<p>Slightly related is the blog post by David Jaz Myers and Evan Patterson on <a href=\"https://blog.algebraicjulia.org/post/2021/09/cset-graphs-4/\">the propositional logic of subgraphs</a>. </p>\n<p>It is not exactly applying topos theory to functional programming, but applying topos theory to manipulate (query) graphs. Which is a fairly common data structure in programming.</p>\n<p>The underlying categorical data structure is that of <a href=\"https://blog.algebraicjulia.org/post/2020/09/cset-graphs-1/\">C-set</a>. It's basically (op)presheaves.</p>",
+        "id": 441112647,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1716929278
+    },
+    {
+        "content": "<p>As far as learning about sheaves... I really love this book <a href=\"https://www.amazon.ca/Sheaves-Geometry-Logic-Introduction-Theory/dp/0387977104\">MacLane and Moerdijk</a> and <a href=\"https://stacks.math.columbia.edu/tag/0078\">the stacks project</a> is canonical.  But first watch DJM's very accessible talk I linked above and if you are still psyched, before embarking on a year+ math quest, perhaps try and work through <a href=\"https://johncarlosbaez.wordpress.com/2020/01/05/topos-theory-part-1/\">John Baez' series on topoi</a> which heavily features sheaves and should be accessible if you worked through Bartosz' lectures on category theory and are willing to look up some math/topology syntax.  Your ally in learning this could be <span class=\"user-mention\" data-user-id=\"277503\">@David Egolf</span> as he has started an entire active thread for reading through the series.  Can' figure out how to generate the link to that topic, but you can find it in the same channel/stream/zulip-organizer-thing as this.</p>",
+        "id": 441113870,
+        "sender_full_name": "Eric M Downes",
+        "timestamp": 1716929822
+    },
+    {
+        "content": "<p>Here is <span class=\"user-mention\" data-user-id=\"277503\">@David Egolf</span> 's <a href=\"#narrow/stream/232160-learning.3A-reading-.26-references/topic/reading.20through.20Baez's.20topos.20theory.20blog.20posts\">thread</a></p>",
+        "id": 441114475,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1716930123
+    },
+    {
+        "content": "<p>(Alternately, if you need to build a cool database fast maybe you could just hire <a href=\"https://conexus.com\">Ryan's company</a> -- categorical databases is his area of expertise :)</p>",
+        "id": 441115054,
+        "sender_full_name": "Eric M Downes",
+        "timestamp": 1716930381
+    },
+    {
+        "content": "<p>Thanks for the suggestions. I'm just a humble phd student, trying to improve my thesis <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 441219230,
+        "sender_full_name": "Davi Sales Barreira",
+        "timestamp": 1716981682
+    }
+]

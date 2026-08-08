@@ -1,0 +1,32 @@
+[
+    {
+        "content": "<p>Does someone have a good reference with theorems about product categories? For example, theorems about limits and colimits, about epi-, mono- and isomorphisms, etc. I imagine that everything just happens pointwise, e.g. a cone in the product category is a limit cone iff its projections are limit cones, a morphism in the product category is an epimorphism iff its projects are epimorphisms, and so on.</p>",
+        "id": 466770604,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1725230403
+    },
+    {
+        "content": "<p>Indeed, everything happens componentwise in a product category, and for a morphism to be unique in any sense it needs to be unique componentwise. No reference, though, since that's the kind of thing that someone versed in category can see is true \"by inspection\". You might find those as problems in some introductory textbook?</p>",
+        "id": 466883264,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1725268320
+    },
+    {
+        "content": "<p>I've looked at some textbooks like the ones from Herrlich, MacLane and Riehl and they don't have a lot of discussion about product categories, not even in the problems.</p>\n<p>But what about more complicated notions. For example, if you take the product of two reflective subcategories, it the product reflective? Is the product of cartesian closed categories also cartesian closed?</p>\n<p>What I am particularly interested in is in the pullback of two categories along two faithful functors. Since the pullback is a subcategory of the product category, I was hoping that a reference on product categories would also cover pullbacks of categories.</p>",
+        "id": 466896153,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1725270959
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"575698\">Bernd Losert</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Reference.20on.20product.20categories/near/466896153\">said</a>:</p>\n<blockquote>\n<p>For example, if you take the product of two reflective subcategories, it the product reflective? Is the product of cartesian closed categories also cartesian closed?</p>\n</blockquote>\n<p>Yes, pairing the reflectors does the trick (you can use the characterization of reflective subcategories in terms of the universal properties of the objects, which is probably one of the equivalent conditions in Leinster's textbook being discussed <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Hints.20for.20Leinster's.20.22Basic.20Category.20Theory.22.20exercises\">here</a>). Yes, you can apply the closed construction componentwise and (since morphisms separate into the components to) you will retain the universal property of the closed structure.</p>\n<blockquote>\n<p>What I am particularly interested in is in the pullback of two categories along two faithful functors. Since the pullback is a subcategory of the product category, I was hoping that a reference on product categories would also cover pullbacks of categories.</p>\n</blockquote>\n<p>This is less likely. You're only going to end up with a non-full subcategory of the product category. There are some things which are reflected by faithful functors (monos and epis, say), but you'll need some more powerful properties of such a functor to deduce anything more interesting.</p>",
+        "id": 466920646,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1725276764
+    },
+    {
+        "content": "<p>Every limit of any kind is a subobject of a product, so it’s not a hopeful approach to say “l’ll just understand the product first and transfer properties down.” The subobject part is usually considerably harder than the product part.</p>",
+        "id": 466988162,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1725291990
+    }
+]

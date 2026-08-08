@@ -1,0 +1,440 @@
+[
+    {
+        "content": "<p>The nlab does define <a href=\"https://ncatlab.org/nlab/show/fibrant%2Bobject\">[[fibrant+object]]</a> but always in the context of a model category, but I've seen its use where no model structure is ever mentioned.  In other words, this word seems to carry a (large?) amount of implicit information around with it, which makes its frequent use rather difficult for non-illuminati to \"join in\" (as the reference material does not enlighten in the slightest).</p>\n<p>Note that I do understand the great power of short notation/words for effective and efficient communication between experts. That is most definitely <strong>not</strong> the source of my frustration. My frustration seems to arise from the wide gap between the formal definition and the in-practice use of 'fibrant'.</p>",
+        "id": 423027149,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1708698774
+    },
+    {
+        "content": "<p>What are some contexts you've seen the term used in the absence of a model category structure?</p>",
+        "id": 423027396,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1708698848
+    },
+    {
+        "content": "<p>Well, for one, in your question \"Strictification of fibrant double categories\"... (which was merely my prompt to ask). And all over material on type theory, especially cubical type theory.</p>",
+        "id": 423027967,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1708699032
+    },
+    {
+        "content": "<p>My impression was that the \"fibrant\" in \"fibrant double category\" referred to its characterisation in terms of fibrations (Theorem 4.1 of <a href=\"https://arxiv.org/abs/0706.1286\">Framed bicategories and monoidal fibrations</a>), rather than referring to it being a fibrant object in a model structure on double categories.</p>\n<p>Edit: confirmed <a href=\"#narrow/stream/348484-practice.3A-terminology-.26-notation/topic/Fibrant.20double.20categories/near/311859598\">here</a>.</p>",
+        "id": 423030291,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1708699758
+    },
+    {
+        "content": "<blockquote>\n<p>And all over material on type theory, especially cubical type theory.</p>\n</blockquote>\n<p>In the type theoretic context, people really are talking about fibrant objects in the model category theoretic sense, since the semantics of these type theories is higher categorical.</p>",
+        "id": 423030582,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1708699856
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/What.20does.20'fibrant'.20mean.3F/near/423030582\">said</a>:</p>\n<blockquote>\n<p>In the type theoretic context, people really are talking about fibrant objects in the model category theoretic sense, since the semantics of these type theories is higher categorical.</p>\n</blockquote>\n<p>And what's the 'Quillen model' involved that is implicitly assumed to be known by the readers?</p>",
+        "id": 423031456,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1708700152
+    },
+    {
+        "content": "<p>Maybe you could point out a specific example to check we're talking about the same thing?</p>",
+        "id": 423033121,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1708700632
+    },
+    {
+        "content": "<p>Examples: <a href=\"https://hott-uf.github.io/2017/abstracts/twoleveltt.pdf\">Formalization using two-level type theory</a> and <a href=\"https://drops.dagstuhl.de/storage/00lipics/lipics-vol084-fscd2017/LIPIcs.FSCD.2017.28/LIPIcs.FSCD.2017.28.pdf\">Models of Type Theory Base on Moore Paths</a>, both of which use 'fibrant' without definition.</p>",
+        "id": 423037182,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1708701827
+    },
+    {
+        "content": "<p>in the case of cubical type theory, this is outlined in <a href=\"https://www.cse.chalmers.se/~coquand/mod2.pdf\">https://www.cse.chalmers.se/~coquand/mod2.pdf</a> i believe</p>",
+        "id": 423038117,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1708702066
+    },
+    {
+        "content": "<p>Note that there are alsoformal frameworks other than model categories that give a precise general meaning to \"fibrant\", such as a <a href=\"https://ncatlab.org/nlab/show/fibration%20category\">[[fibration category]]</a>.</p>",
+        "id": 423044164,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708703836
+    },
+    {
+        "content": "<p>Two-level type theory is another such framework: the \"fibrant types\" in 2LTT are analogous to those in a model category, and might correspond to them in some semantics, but are a different thing.</p>",
+        "id": 423044358,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708703891
+    },
+    {
+        "content": "<p>The fibrant objects in semantics of cubical type theory may be also the fibrant objects in a model category, but one doesn't need the whole model category to talk about them, and in practice the whole model category wasn't constructed at first.</p>",
+        "id": 423044698,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708704003
+    },
+    {
+        "content": "<p>The nLab page does mention generalizations beyond model categories in the third paragraph.  But it would be great to add some intuitive motivation for what \"fibrant\" means, to make the connection between the various uses.</p>",
+        "id": 423044954,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708704064
+    },
+    {
+        "content": "<p>The page for <a href=\"https://ncatlab.org/nlab/show/fibration%2Bcategory\">[[fibration+category]]</a> seems to be a stub with no actual information in it?</p>\n<p>I think I understand 2LTT, so that would definitely be a good starting point for me. If there's formal material that defines fibrant object (carefully, rather than offhandedly) that would be perfect for me.</p>",
+        "id": 423046720,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1708704558
+    },
+    {
+        "content": "<p>The thing is that \"fibrant object\" is really a phrase like \"group multiplication\" -- it's not defined at all <em>in general</em>, it's postulated as part of an abstract structure, and only defined in specific examples.</p>",
+        "id": 423046936,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708704614
+    },
+    {
+        "content": "<p>It so happens that in a Quillen model category, a fibrant object can be defined as an object whose map to the terminal object is a fibration.  But the fibrations are also a not-defined-but-postulated thing in general, so this is only one short step from a postulate, like, say, conjugation in a group.</p>",
+        "id": 423047276,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708704720
+    },
+    {
+        "content": "<p>Well, that at least reassures me that I wasn't just missing something obvious!</p>",
+        "id": 423047393,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1708704746
+    },
+    {
+        "content": "<p>In particular, even for the specific usage in model category theory, there are frequently multiple model structures that may be considered on the same underlying category, which typically have different fibrations and different fibrant objects.</p>",
+        "id": 423047655,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1708704834
+    },
+    {
+        "content": "<p>How does one get initiated into the clan (pun intended) of people who understand what 'fibrant' means? Is this one of those things that remains an oral tradition?</p>",
+        "id": 423047798,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1708704875
+    },
+    {
+        "content": "<p>If you want to understand how the word is used in model category theory then you can read a book on model categories, of which there are several. If you want to understand every possible usage and connotation of the term \"fibration\" then yes, it might be more complicated.</p>",
+        "id": 423048418,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1708705045
+    },
+    {
+        "content": "<p>I'm actually fine understanding 'fibrant' only in the contexts where it overlaps with type theory, in all its guises. I have not yet seen how \"model categories\" would be helpful to me (though I certainly don't rule it out as a future thing.)</p>",
+        "id": 423049042,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1708705209
+    },
+    {
+        "content": "<p>As far as the type theory is concerned you could treat \"fibrant type\" as a second primitive term, like \"type\" itself.</p>\n<p>As for why the word \"fibrant\" rather than some other word, that has to do with the intended sort of semantics of these type theories, which leads back to model categories and fibration categories and so on, which are in turn abstractions of some specific classes of maps of topological spaces, which were called \"fibrations\" because of their relationship to fiber bundles.</p>",
+        "id": 423052631,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1708706198
+    },
+    {
+        "content": "<p>Fiber bundles from topology are things that I know (my formal training in pure mathematics leaned heavily on analysis, with the core topic of my PhD being complex dynamical systems, more specifically the geometry of Julia sets). Then I slowly morphed into a computer scientist, via a long stint as a software engineer (of symbolic computation software).</p>",
+        "id": 423054499,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1708706813
+    },
+    {
+        "content": "<p>It's not as remote a relationship as my message makes it sound, because typically in models of type theory, the fibrant types will be interpreted as morphisms with some kind of path lifting property, which fiber bundles also have.</p>",
+        "id": 423054811,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1708706917
+    },
+    {
+        "content": "<p>But this depends on the model.</p>",
+        "id": 423054882,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1708706939
+    },
+    {
+        "content": "<blockquote>\n<p>the fibrant types will be interpreted as morphisms with some kind of path lifting property</p>\n</blockquote>\n<p>I had 75% guessed that from usage, but it's nice to have it confirmed. I'd be glad to have some reading that makes this more precise. The note from Thierry that <span class=\"user-mention\" data-user-id=\"284453\">@Josselin Poiret</span> sent is 'packed' much too tightly to enlighten me. Pedagogically, I like material that has (intuition, formal definition, concrete examples).</p>",
+        "id": 423056392,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1708707365
+    },
+    {
+        "content": "<p>Maybe <a href=\"https://arxiv.org/abs/1712.04864\">https://arxiv.org/abs/1712.04864</a> ?</p>",
+        "id": 423057430,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1708707690
+    },
+    {
+        "content": "<p>That it comes with an Agda formalization is likely to be a huge help for me. Thanks.</p>",
+        "id": 423059716,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1708708482
+    },
+    {
+        "content": "<p>I visualize a cofibrant object as one that's uncoiled, unwound or puffed up.  An object oftens fails to be cofibrant when it's \"coiled up too tightly\", with a bunch of equations that should be equivalences or paths.   Cofibrant objects are better to map out of because they don't have such bad equations.  So, we often take an object and form a \"cofibrant replacement\" or \"resolution\" of it, systematically replacing all nontrivial equations by equivalences or paths.  This amounts to \"unwinding\" the object, or \"puffing it up\".</p>",
+        "id": 423071875,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708712863
+    },
+    {
+        "content": "<p>Everything about fibrant objects is formally dual to cofibrant objects.  Cofibrant objects are nice to map out of; fibrant objects are nice to map into.  But I have better intuitions for cofibrant objects.</p>",
+        "id": 423072546,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708713116
+    },
+    {
+        "content": "<p>I think of a fibrant object as having \"all the operations that it is supposed to\".  From this perspective, a general object of a model category is a sort of generalized \"presentation\" of an algebraic gadget, on which some of the intended operations may be defined partially, but not necessarily all.  A fibrant object is then one where all the operations are defined.</p>",
+        "id": 423073021,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708713323
+    },
+    {
+        "content": "<p>Maybe the old algebra/geometry duality is showing up when I give a geometric intuition for cofibrant objects and you give an algebraic intuition for fibrant ones?  I don't know.</p>",
+        "id": 423073377,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708713476
+    },
+    {
+        "content": "<p>I could draw a cofibrant replacement of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">Z</mi><mi mathvariant=\"normal\">/</mi><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{ Z}/n </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathbb\">Z</span><span class=\"mord\">/</span><span class=\"mord mathnormal\">n</span></span></span></span> in the model category of simplicial abelian groups and y'all would see how it's like uncoiling a wound-up thread.</p>",
+        "id": 423073895,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708713718
+    },
+    {
+        "content": "<p>But it's a nuisance to draw here so algebraists have an advantage over the geometers.  <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 423074411,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708713927
+    },
+    {
+        "content": "<p>Thanks <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> those bits of intuition are super useful! That's serious gold right there.</p>",
+        "id": 423074948,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1708714126
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"296322\">@Jacques Carette</span> I just want to express my sympathy and reinforce your comment. I too think that \"fibrant\" seems to be a useful metaphor for some homotopy theorists which conveys intuition that is associated with fibrant objects in model categories. <br>\nNot that anyone else here is dismissing your concerns, but I would like to echo the claim that \"it makes it difficult for the non-illuminati to join in.\" I think that the problem is that mathematical objects are multi-faceted and we can see them from many different perspectives, some of which may/may not be useful for the problem at hand. The student or outsider is generally only aware with one or two perspectives, or only knows the formal definition and some basic theorems, and they don't understand how their limited POV is relevant to the problem (This book uses the word \"fibration\" - how are Hurewicz fibrations related to this? how are Grothendieck fibrations related to this?). The expert is familiar with very many different perspectives and so when two experts communicate, the precise perspective, the meaning of the metaphor \"it is like a fibrant object\", does not need to be communicated as it is obvious. I think it is bad writing. _How_ is it like a fibrant object? In what way? What properties specifically, rigorously, does it share with fibrant objects? Otherwise, for the newcomer, it is as bad as saying \"Go off and read many books about fibrant objects each offering a complementary viewpoint and eventually you will find a book that covers the perspective I want to communicate. Then it will be obvious how these are like fibrant objects.\"</p>",
+        "id": 423076471,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1708714768
+    },
+    {
+        "content": "<p>I have complained before in this Zulip about the use of the term \"classifying space\" and the notation <strong>B(-)</strong> to convey some metaphorical similarity which is not explained. For example the nlab says on the page for bicategories:</p>\n<blockquote>\n<p>A monoidal category M may be regarded as a bicategory <strong>B</strong>M with one object. This is a special instance of delooping.</p>\n</blockquote>\n<p>Here I assume this is rigorous (there's some unspecified but presumably obvious higher category here) and if I knew enough about higher topos theory it would be obvious what it means, and the nlab is an open notebook for higher category theory and explicitly disclaims responsibility for being at all pedagogical, so I cannot be too critical of this. But, personally when explaining what is a bicategory is, I would certainly never use this notation <strong>B</strong>(M) constantly with the implication to the student that bicategories are somehow like classifying spaces for vector bundles over manifolds.</p>",
+        "id": 423078641,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1708715675
+    },
+    {
+        "content": "<p>I added my intuition about fibrant object to the nLab page <a href=\"https://ncatlab.org/nlab/show/fibrant%20object\">[[fibrant object]]</a>, and split off a page about <a href=\"https://ncatlab.org/nlab/show/cofibrant%20object\">[[cofibrant object]]</a> with some intuition based on what John said.</p>",
+        "id": 423081852,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708716959
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"424412\">Patrick Nicodemus</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/What.20does.20'fibrant'.20mean.3F/near/423078641\">said</a>:</p>\n<blockquote>\n<p>I have complained before in this Zulip about the use of the term \"classifying space\" and the notation <strong>B(-)</strong> to convey some metaphorical similarity which is not explained. For example the nlab says on the page for bicategories:</p>\n<blockquote>\n<p>A monoidal category M may be regarded as a bicategory <strong>B</strong>M with one object. This is a special instance of delooping.</p>\n</blockquote>\n<p>Here I assume this is rigorous (there's some unspecified but presumably obvious higher category here) and if I knew enough about higher topos theory it would be obvious what it means, and the nlab is an open notebook for higher category theory and explicitly disclaims responsibility for being at all pedagogical, so I cannot be too critical of this. But, personally when explaining what is a bicategory is, I would certainly never use this notation <strong>B</strong>(M) constantly with the implication to the student that bicategories are somehow like classifying spaces for vector bundles over manifolds.</p>\n</blockquote>\n<p>It would be easy for me to explain - and I don't know anything about higher topos theory, so that's certainly not a prerequisite.  Indeed I've explained it in various places already.  So the question is just: where would be the most useful place to put the explanation?  Maybe the nLab page on <a href=\"https://ncatlab.org/nlab/show/delooping\">[[delooping]]</a>?</p>",
+        "id": 423088351,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708719600
+    },
+    {
+        "content": "<p>I would describe the classifying space of a group, and why this is like treating the group as a 1-object groupoid, and also why taking the loop space of the classifyng space gets you back to the group you started with - hence the word \"delooping\".</p>",
+        "id": 423089324,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708720036
+    },
+    {
+        "content": "<p>This is digressing rather from the present topic, so should perhaps be moved.  But I may as well add that personally, although I do call this the \"delooping\" of a monoidal category and write it as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">B</mi><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{B}M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord mathbf\">B</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span>, I prefer to avoid calling it a \"classifying space\", because unlike the classical case of groups it is much less clear what, if anything, it \"classifies\" that's related to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span>.</p>",
+        "id": 423089605,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708720163
+    },
+    {
+        "content": "<p>Unless it's a group.  Indeed, there's a nice paper called \"what does the classifying space of a category classify?\"  It's not obvious unless the category is a groupoid. So while the construction is immensely fruitful, calling it a \"classifying space\" is confusing.</p>\n<p>Btw, in general I think complaining that things are never explained is less effective than asking someone to explain them.  A bunch of us love to explain things and have already explained many of those \"never explained\" things.  But we'll happily explain them again, especially if the explanation gets put on the nLab.</p>",
+        "id": 423090000,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708720331
+    },
+    {
+        "content": "<p>I'm curious if the intuition of \"fibrant = enough operations\" can be stretched to the injective model structure on chain complexes (maybe bounded below for simplicity)</p>",
+        "id": 423113993,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1708733548
+    },
+    {
+        "content": "<p>Certainly the intuition \"cofibrant = relations spooled out\" works when talking about projectives (it's where I personally gained that intuition!)</p>",
+        "id": 423114045,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1708733602
+    },
+    {
+        "content": "<p>I suppose if you think of division as an operation an abelian group might have, that kind of works?</p>",
+        "id": 423114410,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1708733917
+    },
+    {
+        "content": "<p>Can someone give me the simplest example of something that's not fibrant because it doesn't have all the operations it should?</p>",
+        "id": 423114707,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708734161
+    },
+    {
+        "content": "<p>I kind of like this idea \"you fail to be cofibrant if your operations obey too many equations; you fail to be fibrant if you don't have enough operations\" - but I only understand the first part.</p>",
+        "id": 423114758,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708734235
+    },
+    {
+        "content": "<p>Well, a horn isn't fibrant because you can't fill it and...<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">.</mi><mi mathvariant=\"normal\">.</mi><mi mathvariant=\"normal\">.</mi><mn>0</mn><mo>→</mo><mi mathvariant=\"double-struck\">Z</mi><mo>→</mo><mn>0...</mn></mrow><annotation encoding=\"application/x-tex\">...0\\to\\mathbb Z\\to0...</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">...0</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">Z</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0...</span></span></span></span> isn't fibrant because you can't divide by <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">2</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">2</span></span></span></span>?</p>",
+        "id": 423114841,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1708734281
+    },
+    {
+        "content": "<p>I'm not really sure these two cases feel similar though.</p>",
+        "id": 423114855,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1708734297
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Arlin</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/What.20does.20'fibrant'.20mean.3F/near/423114410\">said</a>:</p>\n<blockquote>\n<p>I suppose if you think of division as an operation an abelian group might have, that kind of works?</p>\n</blockquote>\n<p>Oh yeah baer's criterion is a nice way of fitting it into this framework!</p>",
+        "id": 423115441,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1708734780
+    },
+    {
+        "content": "<p>Re: John's question, I would use kan complexes as an example. A fibrant object in the quillen model structure is something which has all the necessary composition and inverses operators (which are only \"operators\" in the sense that they turn inputs into contractible spaces of outputs, although if you work with algebraic fibrant objects it's a little more honest)</p>",
+        "id": 423115594,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1708734908
+    },
+    {
+        "content": "<p>Those are the only kind of \"operations\" that ordinary model category theory can enforce in its fibrant objects, since all solutions to lifting problems in a model category are unique up to homotoy.</p>",
+        "id": 423116231,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708735454
+    },
+    {
+        "content": "<p>I have a good understanding of fibrancy in the category of simplicial sets as meaning \"having all horn-fillers\".  For some reason that's not what came to mind when I heard \"operations\", but okay, I can deal with that.</p>\n<p>What about in something like chain complexes of abelian groups?  I just discovered to my horror that injective resolutions (which I never think about) are fibrant replacements in a <em><a href=\"https://ncatlab.org/nlab/show/model+structure+on+chain+complexes#InjectiveStructureOnCochainComplexes\">different model structure</a></em> than my favorite model structure.   And of course this sort of thing makes getting intuition for what \"fibrant\" or \"cofibrant\" means a bit tougher: there are different model structures on the same category, so you first have to get intuition for the model structure.</p>",
+        "id": 423117479,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708736584
+    },
+    {
+        "content": "<p>One other thing I should have said: if you want to understand \"fibrant\" and \"cofibrant\" objects, it may help to first understand \"injective\" and \"projective\" objects, which are a bit similar, but much simpler since these are concepts that make sense in any category.</p>",
+        "id": 423117779,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708736833
+    },
+    {
+        "content": "<p>I was offering division (<a href=\"https://en.m.wikipedia.org/wiki/Divisible_group\">https://en.m.wikipedia.org/wiki/Divisible_group</a>) as something that would work as an operation in complexes of abelian groups, with the injective structure.</p>",
+        "id": 423122019,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1708740503
+    },
+    {
+        "content": "<p>Which is very much in line with your suggestion of understanding injective groups instead.</p>",
+        "id": 423122037,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1708740532
+    },
+    {
+        "content": "<p>Yes.  But people struggling for intuition should know that now we're comparing, not just about cofibrant vs. fibrant objects in the same model category, but in two different model structures.  And I guess that's yet another good thing for beginners to learn: in certain modern outlooks the \"ultimate goal\" of a model structure is to create an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty,1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-category, but different model structures on the same category will give the same <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty,1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-category if they have the same weak equivalences, so one can argue the concepts of fibration and cofibration are \"just technical tools\".</p>",
+        "id": 423122429,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708740925
+    },
+    {
+        "content": "<p>This is a rather high-flown philosophical view that somewhat neglects how important technical tools can be.</p>",
+        "id": 423122566,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708741010
+    },
+    {
+        "content": "<p>I actually find that very mysterious from this perspective.  On the one hand, we consider chain complexes but expect the maps between them to be only \"weak homomorphisms\" so that in order to represent any such weak homomorphism by a strict one we need the domain to be so \"puffed up\" that most of its strict equalities are replaced by homotopies.  On the other hand, we consider chain complexes but require them to be equipped with additional \"division\"-type operations.  Why on earth should those two ideas give rise to the same <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty,1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-category?  Except that somehow they both accidentally (?) induce the same notion of \"weak equivalence\".</p>",
+        "id": 423122924,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708741331
+    },
+    {
+        "content": "<p>Wait, do they really <em>induce</em> that notion though?</p>",
+        "id": 423124053,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1708742342
+    },
+    {
+        "content": "<p>Well we can define a map to be a quasi isomorphism iff its lift to a projective resolution (or injective resolution) is a chain homotopy equivalence</p>",
+        "id": 423135841,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1708751587
+    },
+    {
+        "content": "<p>But that's not just the notion of projective/injective objects, it's the operation of resolution and its functorality (either strictly or as a \"functor up to chain htpy equivalence\")</p>",
+        "id": 423135962,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1708751656
+    },
+    {
+        "content": "<p>Or I guess a better thing to say is (K-)projective complexes localized at chain homotopy equivalences are equivalent to (K-)injective complexes localized at chain homotopy equivalence</p>",
+        "id": 423136040,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1708751738
+    },
+    {
+        "content": "<p>It's true, as Brendan says, the weak equivalences are only determined by the functor of (co)fibrant replacement together  with the notion of chain homotopy equivalence.  But I still find it surprising -- from the perspective of \"cofibrancy as uncoiling, fibrancy as having operations\" that projective resolution + chain homotopy equivalence induces the same notion of quasi-isomorphism as injective resolution + chain homotopy equivalence.</p>",
+        "id": 423185431,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708792177
+    },
+    {
+        "content": "<p>So if I understand correctly, from a type-theoretic point of view, the 'fibrant' types are the ones that can participate in all type formation operations (like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Π</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">Σ</mi><mo separator=\"true\">,</mo><mrow><mi mathvariant=\"sans-serif\">I</mi><mi mathvariant=\"sans-serif\">d</mi></mrow></mrow><annotation encoding=\"application/x-tex\">\\Pi, \\Sigma, \\mathsf{Id}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\">Π</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">Σ</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Id</span></span></span></span></span>) and the non-fibrant ones are the special ones (such as interval types). Is that right?</p>",
+        "id": 423190478,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1708796053
+    },
+    {
+        "content": "<p>Well, in general (such as in 2LTT), the non-fibrant types can have their <em>own</em> type-forming operations.</p>",
+        "id": 423190502,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708796095
+    },
+    {
+        "content": "<p>Maybe in Orton-Pitts they don't?</p>",
+        "id": 423190538,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708796137
+    },
+    {
+        "content": "<p>I have not had the time to properly read Orton-Pitts  -- I was trying to extrapolate from the intuitions given above. </p>\n<p>I do see that non-fibrant types can have their own special operators.</p>",
+        "id": 423190659,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1708796250
+    },
+    {
+        "content": "<p>E.g. for any types <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A,B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span>, fibrant or not, there are types such as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>×</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A\\times B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A\\to B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span>, and so on.  And if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> are fibrant, then so are <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>×</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A\\times B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>→</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A\\to B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span>, and so on.</p>",
+        "id": 423190742,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708796322
+    },
+    {
+        "content": "<p>Ok, but now I don't see the point in segregating them into different classes?</p>",
+        "id": 423190819,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1708796404
+    },
+    {
+        "content": "<p>The difference is that the \"positive/inductive\" fibrant-type formers aren't just special cases of the non-fibrant ones, and their elimination rules only apply to other fibrant types.  So for instance if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> are fibrant you have both a non-fibrant type <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><msup><mo>+</mo><mi>e</mi></msup><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A+^e B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\"><span class=\"mbin\">+</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">e</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> and a fibrant type <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>+</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A+B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span>, and you can only define a map <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>+</mo><mi>B</mi><mo>→</mo><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">A+B \\to C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> by reduction to cases if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> is also fibrant.</p>",
+        "id": 423193418,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708798758
+    },
+    {
+        "content": "<p>And most importantly, there is both a non-fibrant equality type <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><msup><mo>=</mo><mi>e</mi></msup><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">x=^e y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6644em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\"><span class=\"mrel\">=</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">e</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span> and a fibrant identity type <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">x=y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span>, and you can only transport across the fibrant identity type in a fibrant motive.</p>",
+        "id": 423193501,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708798809
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/What.20does.20'fibrant'.20mean.3F/near/423190478\">said</a>:</p>\n<blockquote>\n<p>So if I understand correctly, from a type-theoretic point of view, the 'fibrant' types are the ones that can participate in all type formation operations (like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Π</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">Σ</mi><mo separator=\"true\">,</mo><mrow><mi mathvariant=\"sans-serif\">I</mi><mi mathvariant=\"sans-serif\">d</mi></mrow></mrow><annotation encoding=\"application/x-tex\">\\Pi, \\Sigma, \\mathsf{Id}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\">Π</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">Σ</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Id</span></span></span></span></span>) and the non-fibrant ones are the special ones (such as interval types). Is that right?</p>\n</blockquote>\n<p>my understanding of Orton-Pitts is that fibrant types are types which have a Kan composition operation, ie. can hcomp! Thus the inner type theory of fibrant types would be a cubical type theory.</p>",
+        "id": 423359802,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1708941057
+    }
+]

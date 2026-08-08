@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Knuth Bendix · practice: software · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/index.html">practice: software</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Knuth.20Bendix.html">Knuth Bendix</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="611171769"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Knuth%20Bendix/near/611171769" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tyler Bryson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Knuth.20Bendix.html#611171769">(Jul 16 2026 at 21:55)</a>:</h4>
+<p>Hi all,<br>
+I have a personal software project I've been working on for some time. One component is an implementation of Knuth Bendix for finitely presented categories. I'm starting to see results that, to me are good. But <em>huge grain of salt</em> I am no expert in term rewriting.<br>
+I'm curious if people here know of some good benchmarks / interesting completion problems I might try. Some recent results. I brought the wall time for Brauer monoid on 12 points down from over 4hrs to just under 3hrs. That's a confluent system with 8,341,198 rules and 316,234,143,224 non-identity elements. <br>
+Big normal form counts are handled as well. For example, the truncated simplex category Δ(55) completes in ~26 seconds with 115499 rules and the exact expected ~7.7×10^17 normal forms.<br>
+These laptop calculations using a recursive ordering, but I can also run wtlex. </p>
+<p>I know performance is hard to gauge. The point is more...my laptop doesn't explode when I ask it to do tasks like the above that require handling 10s-100's of millions of critical pairs. Anyway, happy to chat with folks</p>
+
+
+
+<a name="611173730"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Knuth%20Bendix/near/611173730" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Knuth.20Bendix.html#611173730">(Jul 16 2026 at 22:11)</a>:</h4>
+<p>there are problem sets available at <a href="https://www.tptp.org">https://www.tptp.org</a> , look for the "UEQ" / unit equality problems.  E and Vampire are the systems to beat performance-wise, and they go beyond equational logic.  For CQL, we like the 1980s algorithm because it is complete, more so than it being fast.</p>
+
+
+
+<a name="611194510"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Knuth%20Bendix/near/611194510" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Harrison Grodin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Knuth.20Bendix.html#611194510">(Jul 17 2026 at 01:51)</a>:</h4>
+<p>I have an (outdated, likely bit-rotted) implementation of Knuth-Bendix <a href="https://github.com/HarrisonGrodin/Completion.jl">here</a> - in case you're interested, there are <a href="https://github.com/HarrisonGrodin/Completion.jl/blob/master/test/complete.jl">a few test cases included</a>, the most substantial of which is the axioms for a group.</p>
+
+
+
+<a name="611194632"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Knuth%20Bendix/near/611194632" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Harrison Grodin <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Knuth.20Bendix.html#611194632">(Jul 17 2026 at 01:52)</a>:</h4>
+<p>(Fwiw, this implementation only handles trees, not categories more generally; and it's hilariously inefficient and slow!)</p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Aug 08 2026 at 12:52 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>
