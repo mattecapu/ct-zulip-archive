@@ -1,0 +1,56 @@
+[
+    {
+        "content": "<p>I don't know any set theory, only a very minor amount of category theory, so most likely this question will seem silly. But a little bit ago I was, in a sense, wondering what the category Set actually \"looks like\" from the point of view of its underlying directed graph of dots and arrows between them. I then began thinking- wouldn't its structure depend on the Continuum Hypothesis? Let's say TSet is the category Set when the external set theory we are building category theory on has the Continuum Hypothesis as true, and FSet for when it is false. There then should be a fully faithful embedding TSet -&gt; FSet, but this is not an equivalence because some isomorphism classes of objects- namely, the sets of cardinality between the cardinality of the naturals and reals- will be in FSet but not in TSet. </p>\n<p>It's already confusing that Set might \"look different\" depending on your external set theory. But an even more confusing question, and my question here today, is: what does Set (IE, by way of its underlying directed graph) \"look like\" when the Continuum Hypothesis is not assumed in either direction? Is \"Set\" even a validly defined category anymore, or is it some weird object in a \"quantum superposition\" between being the category FSet AND TSet at the same time? Or, most likely, do I have some misunderstanding of something that is going on here? Any help much appreciated!</p>",
+        "id": 431330556,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1712241960
+    },
+    {
+        "content": "<p>I'm not sure exactly what you mean by \"looks like\", but in general the structure of the category Set is essentially equivalent to the properties of the model of set theory it was constructed from.  At least, if your set theory is as strong as ZFC, then the category Set and the model <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>V</mi><mo separator=\"true\">,</mo><mo>∈</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(V,\\in)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∈</span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mclose\">)</span></span></span></span> are inter-constructible.</p>",
+        "id": 431337787,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1712243771
+    },
+    {
+        "content": "<p>In particular, there are as many \"categories Set\" as there are models of set theory.  So it makes no sense to talk of \"the\" category Set when CH is assumed, since there are many models of set theory satisfying CH and hence many such categories.</p>",
+        "id": 431337954,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1712243815
+    },
+    {
+        "content": "<p>In general, by Godel's incompleteness theorem, any reasonably specified set theory will still have many different models, and hence give rise to many different \"categories Set\".</p>",
+        "id": 431338145,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1712243870
+    },
+    {
+        "content": "<p>Mike's points should be very helpful, but I'll say a bit more:</p>\n<blockquote>\n<p>It's already confusing that Set might \"look different\" depending on your external set theory.</p>\n</blockquote>\n<p>I wouldn't put it quite that way, but this confusing stuff was a crucial realization in modern logic: Goedel's first incompleteness theorem, together with his completeness theorem (yeah he had one of those too) imply sufficiently powerful axioms systems never have a unique model.  In particular, there are infinitely many models of ZFC (assuming it's consistent: otherwise there are none at all), and it continues to have infinitely many models if we add any finite set of extra axioms (assuming it's still consistent with those extra axioms).   This is also true of Peano Arithmetic, the most popular axioms for natural numbers.</p>",
+        "id": 431363875,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712250590
+    },
+    {
+        "content": "<p>So, I think the best way to deal with this stuff is to learn a tiny bit of model theory, the soundness and completeness theorems for first order logic, Goedel's first and second incompleteness theorems, and just for kicks the Loewenheim-Skolem theorems, and really let them sink deep into your worldview.</p>",
+        "id": 431364449,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712250780
+    },
+    {
+        "content": "<p>After you're done, you won't be inclined to say that \"Set might look different...\" but rather something like \"given any background set theory, there are many models of the ZFC axioms, each of which gives its own category\".</p>",
+        "id": 431365031,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712250969
+    },
+    {
+        "content": "<p>But in your background set theory, Set is the category of all sets.</p>",
+        "id": 431365438,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712251096
+    },
+    {
+        "content": "<p>Ah thanks for the help! I didn't expect/know Godel's incompleteness theorem would factor in here, but now I know at least some of the implications it has in category theory.</p>",
+        "id": 431385785,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1712258204
+    }
+]

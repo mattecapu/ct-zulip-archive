@@ -1,0 +1,62 @@
+[
+    {
+        "content": "<p>Dear all,</p>\n<p>Does anyone know a reference for a proof of the following statement? It seems to be correct.</p>\n<p><em>Consider a monoidal category in which every object admits exactly one comonoid structure. Then the monoidal structure in the category is necessarily cartesian.</em></p>\n<p>This statement appears to hold without additional assumptions, but I am open to adding some if needed. For instance, I don’t mind assuming that the category is braided, even though that doesn’t seem strictly necessary.</p>\n<p>Best regards,<br>\nEduardo</p>",
+        "id": 523292929,
+        "sender_full_name": "Eduardo Hoefel",
+        "timestamp": 1749562288
+    },
+    {
+        "content": "<p>A similar result to this is <a href=\"https://ncatlab.org/nlab/show/Fox%27s+theorem\">Fox' theorem</a>.<br>\nIt also needs the additional assumption that every morphism is a homomorphism of comonoids.</p>",
+        "id": 523294064,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1749562627
+    },
+    {
+        "content": "<p>In case you are familiar with <a href=\"https://ncatlab.org/nlab/show/Markov+category\">Markov categories</a>, you can interpret (and prove) the idea in the following way:<br>\n1) Morphisms of comonoids are exactly the deterministic maps.<br>\n2) Deterministic maps always make their outputs conditionally independent given their inputs.<br>\n3) Therefore, their outputs are completely determined by their projections.<br>\n4) Therefore, the universal property of the product holds.</p>",
+        "id": 523295291,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1749562978
+    },
+    {
+        "content": "<p>Thank you Paolo ! I didn't know about Markov Categories, but it sounds like a quite interesting solution to this question.</p>\n<p><span class=\"user-mention silent\" data-user-id=\"275989\">Paolo Perrone</span> <a href=\"#narrow/channel/411257-theory.3A-mathematics/topic/comonoid.20uniqueness.20implies.20cartesian/near/523294064\">said</a>:</p>\n<blockquote>\n<p>A similar result to this is <a href=\"https://ncatlab.org/nlab/show/Fox%27s+theorem\">Fox' theorem</a>.<br>\nIt also needs the additional assumption that every morphism is a homomorphism of comonoids.</p>\n</blockquote>",
+        "id": 523296461,
+        "sender_full_name": "Eduardo Hoefel",
+        "timestamp": 1749563308
+    },
+    {
+        "content": "<p>A nice thing about Markov categories is that they allow to transfer ideas from probability to other areas of math. The idea of <em>independence</em> (and <em>conditional independence</em>) is particularly useful, also outside of probability.</p>",
+        "id": 523296873,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1749563423
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"927130\">Eduardo Hoefel</span> <a href=\"#narrow/channel/411257-theory.3A-mathematics/topic/comonoid.20uniqueness.20implies.20cartesian/near/523292929\">said</a>:</p>\n<blockquote>\n<p><em>Consider a monoidal category in which every object admits exactly one comonoid structure. Then the monoidal structure in the category is necessarily cartesian.</em></p>\n</blockquote>\n<p>That is actually not true, and many Markov categories are counterexamples to this! See Remark 11.29 <a href=\"https://arxiv.org/abs/1908.07021\">here</a>, which implies for example that <a href=\"https://ncatlab.org/nlab/show/FinStoch\">[[FinStoch]]</a> is a monoidal category in which every object has a unique comonoid structure.</p>\n<p>The fact that FinStoch is not cartesian is in a sense what probability is all about, namely the fact that a joint distribution of two random variables is not uniquely determined by its two marginals.</p>",
+        "id": 523299418,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1749564119
+    },
+    {
+        "content": "<p>For people less familiar with probability theory, a simpler counterexample is SetMulti, by which we mean the category of sets and multivalued functions, or in other words the subcategory of Rel consisting of the <a href=\"https://en.wikipedia.org/wiki/Total_relation\">total relations</a>. This is also a positive Markov category and hence my previous statement applies.</p>\n<p>It seems plausible that even (Rel,x) itself, which is not quite a Markov category, has unique comonoids. But I haven't checked the details of that.</p>",
+        "id": 523303554,
+        "sender_full_name": "Tobias Fritz",
+        "timestamp": 1749565144
+    },
+    {
+        "content": "<p>Thank you Tobias ! I will check your counter examples and read more about Markov Categories.</p>",
+        "id": 523305047,
+        "sender_full_name": "Eduardo Hoefel",
+        "timestamp": 1749565557
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"927130\">Eduardo Hoefel</span> has marked this topic as resolved.</p>",
+        "id": 523346658,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1749579323
+    },
+    {
+        "content": "<p>You also need to assume they are <em>commutative</em>, as far as I remember.</p>",
+        "id": 523720890,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1749722490
+    }
+]

@@ -1,0 +1,104 @@
+[
+    {
+        "content": "<p>The left adjoint of a monoidal functor is oplax monoidal: this can be proven directly, or one can use Kelly's general setting of doctrinal adjunction, but for that one needs to show that monoidal categories are algebras of a 2-monad. I looked  a bit at the literature for presentations of 2-monads from generators and relations, but they mainly seem to focus on 2-monads on the category of small categories. In the end you get doctrinal adjunction but only for small monoidal categories, while the direct proof does not have this restriction. Is there a satisfying way of getting rid of this size restriction?</p>",
+        "id": 464651820,
+        "sender_full_name": "Ambroise",
+        "timestamp": 1724420310
+    },
+    {
+        "content": "<p>I imagine so (but how satisfying it is I don't know): if the 2-monad is finitary in nature, extend the 2-monad to locally small categories by expressing any such as a union of small full subcategories, apply the 2-monad, and take the union of the result. Something similar should apply for 2-monads of bounded rank. </p>\n<p>I'm thinking this should be easy to formalize under a one-universe assumption currently being discussed elsewhere. :-) </p>\n<p>Obviously I don't know where to find this in the literature.</p>",
+        "id": 464662462,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1724424020
+    },
+    {
+        "content": "<p>Conceptually, there's nothing size-specific going on with the free monoidal category construction: the 2-monad on the 2-category of small categories extends to a 2-monad on the 2-category of large categories, assuming you can quantify over classes. So Kelly's general result applies directly. Perhaps the simplest solution to avoid worrying about classes is to assume a single universe, and call things in that universe \"small\", and things not in the universe \"large\", as Todd suggests. Then you can simply use the usual 2-monad on set-sized categories.</p>",
+        "id": 464706934,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1724435211
+    },
+    {
+        "content": "<p>Thank you for your explanations! It would be nice if Todd's statement that accessible 2-monads extend to 2-monads on CAT was explicitly proven somewhere :) Anyway, assuming a universe may indeed be the simplest way to solve my question, although I was hoping for another solution (afterall, the direct proof of doctrinal adjunction for monoidal categories does not require a universe)</p>",
+        "id": 465637278,
+        "sender_full_name": "Ambroise",
+        "timestamp": 1724823650
+    },
+    {
+        "content": "<p>The proof of doctrinal adjunction doesn't require a universe because you have allowed yourself to quantify over all large categories: this is also a foundational assumption you have made. Similarly, one can define a 2-monad without actually being able to construct a huge categories of large categories: you simply specify all the data of the 2-monad (i.e. for every large category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span>, a large category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">TA</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"mord mathnormal\">A</span></span></span></span>, etc.). This uses the same foundational assumptions you use for doctrinal adjunction.</p>",
+        "id": 465836768,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1724873691
+    },
+    {
+        "content": "<p>As far as I can see, Todd's approach does not avoid the need for universes, because in order to construct the 2-monad in question from smaller pieces, you still need to have a huge category of large categories.</p>",
+        "id": 465836894,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1724873746
+    },
+    {
+        "content": "<p>But I don't really see that allowing quantification over classes has many advantages over simply using a universe. It's not more general in any practical sense.</p>",
+        "id": 465837101,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1724873828
+    },
+    {
+        "content": "<p>I sort of generally assume that mathematicians in the street feel a little uneasy around classes (what operations are or are not allowed), but much less uneasy around sets, so that they can relax a little if the only thing to keep straight is sets versus small sets. That would be mostly a pedagogical or psychological thing. (Plus, a one-universe assumption feels so piddlingly modest, compared to what real set theorists are willing to consider.) </p>\n<p>(Of course, my general assumption might be wrong.) </p>\n<p>The one-universe assumption is the tack Mac Lane takes in his Categories for the Working Mathematician.</p>",
+        "id": 465856376,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1724882376
+    },
+    {
+        "content": "<p>Classes feel like a concept that only exists in set theory, whether via class-set theories like Morse-Kelley or via algebraic set theory or as first-order formulas which are not sets. </p>\n<p>In dependent type theory, one would just explicitly postulate a universe of some sort as part of the inference rules, and I think the same might be true of simply typed higher order logics.</p>",
+        "id": 465880236,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1724898584
+    },
+    {
+        "content": "<p>Thanks for the clarification <span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> ! Actually, there may be a way of avoiding the detour through 2-monads by exploiting a \"construction\" of the 2-category of monoidal categories from inserters and equifiers, starting from Cat in 2-Cat. Kelly's doctrinal adjunction can certainly be adapted for inserters (and maybe for a wide class of marked 2-limits), for example.</p>",
+        "id": 465999637,
+        "sender_full_name": "Ambroise",
+        "timestamp": 1724934102
+    },
+    {
+        "content": "<p>Put differently, it should be possible to prove doctrinal adjunction generally for the 2-category of algebras for any suitable kind of \"theory\", independently of whether free algebras for that theory exist.</p>",
+        "id": 466068321,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1724950710
+    },
+    {
+        "content": "<p>when you say \"theory\", do you have something precise in mind?</p>",
+        "id": 466086776,
+        "sender_full_name": "Ambroise",
+        "timestamp": 1724956508
+    },
+    {
+        "content": "<p>There are many ways one could make it precise, such as a Cat-operad or Cat-enriched Lawvere theory.  I didn't have a particular one in mind.</p>",
+        "id": 466132794,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1724977007
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276696\">Ambroise</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Presentation.20of.202-monads.20.28and.20size.20issues.29/near/465999637\">said</a>:</p>\n<blockquote>\n<p>Actually, there may be a way of avoiding the detour through 2-monads by exploiting a \"construction\" of the 2-category of monoidal categories from inserters and equifiers, starting from Cat in 2-Cat. Kelly's doctrinal adjunction can certainly be adapted for inserters (and maybe for a wide class of marked 2-limits), for example.</p>\n</blockquote>\n<p>This sounds really cool, but I don't understand. What would the statement look like, e.g., for inserters?</p>",
+        "id": 466250364,
+        "sender_full_name": "Tom Hirschowitz",
+        "timestamp": 1725018748
+    },
+    {
+        "content": "<p>I haven't checked the details, but here is the idea. An inserter diagram in 2-Cat consists in two parallel 2-functors F and G. From this data, you can define the 2-category of strict/lax/colax algebras: the objects are always the same (an object consists of a 1-cell Fa --&gt; Ga) but the 1-cells are squared filled with identites/2-cells(in one direction or another). Then you can state doctrinal adjunction as in the usual 2-monadic case.</p>",
+        "id": 466283765,
+        "sender_full_name": "Ambroise",
+        "timestamp": 1725029009
+    },
+    {
+        "content": "<p>I think that those 2-categories of algebras are all marked limits in some (generalised) sense, so they make sense for any inserter diagram in any 3-category, but I don't know how to state doctrinal adjunction in this more general situation</p>",
+        "id": 466283984,
+        "sender_full_name": "Ambroise",
+        "timestamp": 1725029082
+    },
+    {
+        "content": "<p>Oh, nice, thanks. I'd never heard of marked limits before.</p>",
+        "id": 466299115,
+        "sender_full_name": "Tom Hirschowitz",
+        "timestamp": 1725033146
+    }
+]

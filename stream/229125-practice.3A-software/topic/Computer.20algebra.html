@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Computer algebra · practice: software · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/index.html">practice: software</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html">Computer algebra</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="522974640"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/522974640" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#522974640">(Jun 08 2025 at 12:24)</a>:</h4>
+<p>How useful are Sage, Mathematica and other computer algebra systems (or symbolic algebra systems) for doing category theory?</p>
+<p>I do not know much about computer algebra. Here is my rough stereotyped understanding:</p>
+<ul>
+<li>there are computer algebra systems which deal with finitely presented algebraic structures</li>
+<li>there are symbolic algebra systems which can deal with abstract, not necessarily finite structures, and they can do things like equational rewriting between words in a group, or integration/differentiation; maybe they can even do conditional rewriting (a = b under hypothesis H where H is something decidable)</li>
+<li>there are theorem provers and proof assistants, which are maximally flexible and can encode arbitrary reasoning</li>
+</ul>
+<p>I use Rocq to formalize category theory but I'm wondering if there is a less time intensive way to use computers to help me do long computations in category theory.</p>
+
+
+
+<a name="522974862"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/522974862" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#522974862">(Jun 08 2025 at 12:29)</a>:</h4>
+<p>You might also check out <a href="https://github.com/homalg-project/CAP_project">CAP - Categories, Algorithms, and Programming</a>. I haven't tried it yet myself but the system looks quite impressive. It seems to have a focus on additive and abelian categories, though there's also plenty of stuff for ordinary category theory.</p>
+
+
+
+<a name="522974905"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/522974905" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#522974905">(Jun 08 2025 at 12:30)</a>:</h4>
+<p>Thank you. This is not the first time that GAP has come up here. I recall this conversation - <a class="message-link" href="/#narrow/channel/229136-theory.3A-category-theory/topic/software.20packages.20for.20computer-assisted.20category.20theory/near/247380219">#theory: category theory &gt; software packages for computer-assisted category theory @ 💬</a></p>
+
+
+
+<a name="522974935"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/522974935" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#522974935">(Jun 08 2025 at 12:31)</a>:</h4>
+<p>I will check out GAP I guess and try to understand what it can be useful for</p>
+
+
+
+<a name="522975121"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/522975121" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Evan Patterson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#522975121">(Jun 08 2025 at 12:35)</a>:</h4>
+<p>Though CAP is written in GAP, from what I understand, it's best understood as its own system.</p>
+
+
+
+<a name="522977548"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/522977548" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#522977548">(Jun 08 2025 at 13:28)</a>:</h4>
+<p>The "old school" CASes (Maple, Mathematica) are largely useless for CT. Oh, you can program them with what you want, but out of the box, there is nothing.</p>
+<p>It would be nice to see the area of "computational category theory" get reborn. With even more types than the original.</p>
+
+
+
+<a name="522991068"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/522991068" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#522991068">(Jun 08 2025 at 17:48)</a>:</h4>
+<p>When we originally stated building CQL (<a href="http://categoricaldata.net">http://categoricaldata.net</a>) we looked at a bunch of computer algebra systems to power it.  But none of them had sufficient automated theorem proving capability to be able to routinely decide word problems in finite presentations.  For example, Mathematica's Knuth-Bendix completion algorithm was (is?)  from the 90s and simply didn't perform.  On the other hand, our survey was ten years ago; perhaps CAS systems have improved.</p>
+
+
+
+<a name="610663422"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/610663422" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tyler Bryson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#610663422">(Jul 14 2026 at 20:23)</a>:</h4>
+<p>I've been working on a Knuth-Bendix implementation that handles finitely presented categories. The algorithm itself has scaling challenges but I have been getting incrementally better results over time. I'd be happy to try to benchmark some presentations. I'm far from an expert in this area...just someone trying to automate the boring stuff</p>
+
+
+
+<a name="610664998"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/610664998" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tyler Bryson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#610664998">(Jul 14 2026 at 20:33)</a>:</h4>
+<p><span class="user-mention" data-user-id="281326">@Ryan Wisnesky</span> oh oops! I should have read that closer. I actually just emailed David today on this exact subject (then came here to idly search "Knuth Bendix" and see what came up). Didn't put the connection together 'til a bit after replying</p>
+
+
+
+<a name="610665404"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/610665404" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#610665404">(Jul 14 2026 at 20:36)</a>:</h4>
+<p>Hey Tyler. I'd be happy to talk about what you find. Recently the more I read about e-graphs, the more I think they seem like an improvement over rewriting systems. Knuth Bendix seems to involve so many arbitrary choices and it seems like more of an art than a science to choose a presentation that admits a convergent system of rewrites. The e-graph approach  seems rather more general by comparison, without too much tailoring required.</p>
+
+
+
+<a name="610669265"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/610669265" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tyler Bryson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#610669265">(Jul 14 2026 at 21:02)</a>:</h4>
+<p>Interesting. My stuff has been mostly a performance hunt with some quality of life improvements. I haven't looked into e-graphs as yet. <br>
+On KB style algorithms, my original code (all python and lots of intermediate dataclass instantiation) was total crap. But a Rust rewrite (w/ python bindings) together with some optimization and parallelization strategies and an util that lets you speculatively confluent rulesets along functors have me at a point where I'm looking for new test problems.</p>
+
+
+
+<a name="610669417"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/610669417" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#610669417">(Jul 14 2026 at 21:03)</a>:</h4>
+<p>Can you elaborate on "speculatively confluent rulesets along functors"</p>
+
+
+
+<a name="610670551"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/610670551" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tyler Bryson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#610670551">(Jul 14 2026 at 21:12)</a>:</h4>
+<p>Sure :) Suppose you have a functor or a suspected functor between two Finitely Presented Categories (or groups/monoids if you prefer) F: D -&gt; C. This embodies two rewriting problems: one each for D and C. <br>
+Here's a process:</p>
+<ol>
+<li>start KB for C while keeping a list of the images of relations of D in C under F....say FG_D for short. </li>
+<li>reduce FG_D periodically dropping relations as they are validated (good KB algorithms are Noetherian...their rulesets only ever get more expressive)</li>
+<li>if at any point in C's KB FG_D is empty, then F is functor, and you can pullback the weights of C's generators to D (there's details here I'm glossing over)</li>
+<li>Complete KB on D</li>
+<li>then you can inject the confluent subsystem into FD into C's KB</li>
+</ol>
+
+
+
+<a name="610670947"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/610670947" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tyler Bryson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#610670947">(Jul 14 2026 at 21:15)</a>:</h4>
+<p>If you label rules as native or originating from a functor (and keep track of whether they reduce) then you can use the confluence of the subsystem to avoid generating a bunch critical pairs (for example, all in subsystem critical pairs and some block skipping hacks....the point is, knowing you have a confluent subsystem lets you cheat.)</p>
+
+
+
+<a name="610671062"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/610671062" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Patrick Nicodemus <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#610671062">(Jul 14 2026 at 21:15)</a>:</h4>
+<p>Okay, I think I get the picture.</p>
+
+
+
+<a name="610671521"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/610671521" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tyler Bryson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#610671521">(Jul 14 2026 at 21:19)</a>:</h4>
+<p>Implementing it is a little finicky...I kept breaking correctness with subsystem rule tagging causing nasty subtle interactions with Sims style covering block skip. But after that, adding functors proved a good speed up</p>
+
+
+
+<a name="610673897"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/610673897" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#610673897">(Jul 14 2026 at 21:37)</a>:</h4>
+<p><span class="user-mention" data-user-id="1007539">@Tyler Bryson</span> CQL uses an optimized version of this algorithm: <a href="https://epubs.siam.org/doi/10.1137/0214073">https://epubs.siam.org/doi/10.1137/0214073</a> for handling finitely presented categories.  It will decide any presentation for which an equivalent non-length decreasing re-write system exists, and contains a pspace algorithm as a sub-component that's where most of the computational cost goes.  You're certainly welcome to benchmark against CQL's built-in examples.  CQL also has a specialized left kan extension algorithm, but I understand it should be less performant than using egraphs (and cql can emit egglog code to do the computation)</p>
+
+
+
+<a name="610673962"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/610673962" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#610673962">(Jul 14 2026 at 21:38)</a>:</h4>
+<p>in CQL we never considered how to transport decision procedures along functors; to have a functor F : C -&gt; D in CQL, one must already have decision procedures for C and D's word problems</p>
+
+
+
+<a name="610674920"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/610674920" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tyler Bryson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#610674920">(Jul 14 2026 at 21:45)</a>:</h4>
+<p>Yeah. my typical use case is very paranoid. I use the word problem to assign a certainly, possibly, refuted truth value to my "functors" it was a natural place to just knit together the computational engine</p>
+
+
+
+<a name="611803387"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/611803387" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tyler Bryson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#611803387">(Jul 21 2026 at 04:27)</a>:</h4>
+<p><span class="user-mention" data-user-id="281326">@Ryan Wisnesky</span> I'd love to run your examples/compare perf. I don't immediately follow the connection to ground term rewriting though...new to your software. Where should I start?</p>
+
+
+
+<a name="611816601"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/611816601" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tyler Bryson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#611816601">(Jul 21 2026 at 06:35)</a>:</h4>
+<p>Oh wait. Looking at examples/Quotient.html this is a monoid completion problem...FindConnections makes a category w/ one object "Connection", generators for each of the 10 entities (6 people and 4 like actions), and relations imposed by the foreign keys....<br>
+    Sigma equations (liker → id, likee → id):<br>
+      l = liker(l)  and  liker(l) = likee(l)<br>
+      i.e.  l = A  and  A = B<br>
+That's a bit more like instances of schema as categories...but I'm missing some stuff surely.<br>
+The answer if you do KB on that category is that there are two normal forms corresponding to the equivalence classes:<br>
+Equivalence classes (2): <br>
+Maud: ['Maud', 'Ned', 'Rodd', 'Todd', 'l1', 'l2', 'l3'] <br>
+MrBurns: ['MrBurns', 'Smithers', 'l4']<br>
+But I'm definitely missing some stuff.</p>
+
+
+
+<a name="611818417"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/611818417" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#611818417">(Jul 21 2026 at 06:50)</a>:</h4>
+<p>Anywhere that cql uses categories it uses presentations with attached decision<br>
+procedures in order to do much of anything.  Those decision procedures are<br>
+sometimes created through knuth bendix completion of an equational theory into<br>
+a rewrite system.  But cql may also use congruence closure to decide a ground<br>
+theory, or a decision procedure for which there does not exist an equivalent<br>
+rewriting system (such as the main workhorse prover from the 1980s paper; it<br>
+is impossible to define a normal form sometimes and so the algorithm uses a<br>
+pspace algorithm to reason over all possible normal form choices).</p>
+<p>The “kb” example has a bunch of test cases for unfailing knuth bendix<br>
+completion, including entropic groupoids, which I also understand are<br>
+difficult or impossible to turn into a rewrite system.</p>
+
+
+
+<a name="611892560"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/611892560" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tyler Bryson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#611892560">(Jul 21 2026 at 13:37)</a>:</h4>
+<p><span class="user-mention" data-user-id="281326">@Ryan Wisnesky</span> Where? <a href="https://categoricaldata.net/examples/KB.html">https://categoricaldata.net/examples/KB.html</a> only has a few examples, none appear to be ground term rewriting.</p>
+
+
+
+<a name="611903769"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/611903769" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#611903769">(Jul 21 2026 at 14:23)</a>:</h4>
+<p>Indeed, rarely are equational theories in cql ground, and for ground theories,<br>
+cql uses congruence closure automatically.  But you can force specific provers<br>
+to be used, if say you wanted to use knuth bendix or any other provers on a<br>
+ground theory you can use the “prover” option to pick one.</p>
+<p>Cqls knuth bendix is not optimized for ground theories, but for maximizing the<br>
+class of theories it can decide.</p>
+
+
+
+<a name="611904505"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/611904505" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#611904505">(Jul 21 2026 at 14:25)</a>:</h4>
+<p>The kb examples come primarily from “completion without failure” by Bachmair<br>
+et al</p>
+<p>[|<br>
+<a href="https://www.researchgate.net/publication/2435307_Completion_Without_Failure">researchgate.net</a>|<br>
+<a href="https://www.researchgate.net/publication/2435307_Completion_Without_Failure">![](data:image/png;base64,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)</a>  <br>
+---|---](<a href="https://ww">https://ww</a><br>
+[message truncated]</p>
+
+
+
+<a name="611933862"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/611933862" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#611933862">(Jul 21 2026 at 16:26)</a>:</h4>
+<p><span class="user-mention" data-user-id="281326">@Ryan Wisnesky</span> was that huge link intentional?</p>
+
+
+
+<a name="611987772"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/611987772" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Tyler Bryson <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#611987772">(Jul 21 2026 at 21:09)</a>:</h4>
+<p>I've made my researchgate request...gosh I had forgotten how annoying getting papers was. I should say, how privileged I've been to be allowed to forget... :) Good reference though</p>
+
+
+
+<a name="612012470"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/612012470" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ryan Wisnesky <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#612012470">(Jul 22 2026 at 00:37)</a>:</h4>
+<p>If you’re referring to the bachmair link, I didn’t see the preview, I just<br>
+pasted the paper URL into an email… the URL itself looked small when i pasted<br>
+it, less than 250 characters :-).  Perhaps the lesson here is not to link to<br>
+research gate?</p>
+
+
+
+<a name="612052238"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/612052238" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#612052238">(Jul 22 2026 at 06:11)</a>:</h4>
+<p>I think if you adjust the square brackets appropriately the link will hide in the link text</p>
+
+
+
+<a name="612341840"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229125-practice%3A%20software/topic/Computer%20algebra/near/612341840" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229125-practice.3A-software/topic/Computer.20algebra.html#612341840">(Jul 23 2026 at 12:24)</a>:</h4>
+<p>Yeah, I often link to things like </p>
+<p><code>[this](http://math.ucr.edu/home/baez/jordan_pair.pdf)</code></p>
+<p>which produces</p>
+<p><a href="http://math.ucr.edu/home/baez/jordan_pair.pdf">this</a></p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Aug 22 2026 at 12:41 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>
