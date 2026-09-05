@@ -1,0 +1,92 @@
+[
+    {
+        "content": "<p>Is there anywhere in the literature containing a precise definition and study of what one might call \"pseudo multicategories\" -- that is, multicategories weakly enriched over Cat, in the same way that bicategories are categories weakly enriched over Cat?  Writing down such a definition is easy, of course, but I can't think of anywhere citable that I've seen it done.</p>",
+        "id": 457436457,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1723140421
+    },
+    {
+        "content": "<p>Have you seen this paper? <a href=\"https://arxiv.org/abs/1603.02146\">https://arxiv.org/abs/1603.02146</a></p>\n<p>It's not quite what you're looking for inasmuch as it treats 2-multicategories in the strict rather than pseudo sense, but it does define pseudo functors and pseudo natural transformations for 2-multicategories.</p>",
+        "id": 457438720,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1723141077
+    },
+    {
+        "content": "<p>That's certainly something!  Thanks.</p>",
+        "id": 457438962,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1723141146
+    },
+    {
+        "content": "<p>There's a definition of \"bi-multicategory\" in Definition 4.2.29 of <span class=\"user-mention\" data-user-id=\"277754\">@Philip Saville</span>'s thesis <a href=\"https://arxiv.org/abs/2007.00624\">Cartesian closed bicategories: type theory and coherence</a>.</p>",
+        "id": 457439466,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1723141267
+    },
+    {
+        "content": "<p>Ah, even better!</p>",
+        "id": 457439815,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1723141370
+    },
+    {
+        "content": "<p>(The appropriate terminology for such a structure is slightly subtle. In particular, for consistency \"pseudo multicategory\" ought to refer to a generalisation of a pseudo category, rather than a generalisation of a bicategory. Furthermore, \"multibicategory\" is already used in the literature to refer to what might alternatively be called a \"virtual bicategory\".)</p>",
+        "id": 457439943,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1723141409
+    },
+    {
+        "content": "<p>Yeah.  Probably \"weak 2-multicategory\" is the least ambiguous.</p>",
+        "id": 457440133,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1723141451
+    },
+    {
+        "content": "<p>Although \"virtual monoidal bicategory\" would also be systematic.</p>",
+        "id": 459313540,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1723159664
+    },
+    {
+        "content": "<p>Been working on a notion of quasi-multicategory, i.e. a simplicial generalization of multi (categories). I wonder if it would be of use.</p>",
+        "id": 462821657,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1723825902
+    },
+    {
+        "content": "<p>How would such a thing relate to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-operads in the style of Lurie or that of Cisinski-Moerdijk?</p>",
+        "id": 462856836,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1723842578
+    },
+    {
+        "content": "<p>I imagine the \"one\"-object (something like contractible) <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-multicategories would be the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-operads.</p>",
+        "id": 463443261,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1724083020
+    },
+    {
+        "content": "<p>I think those authors usually use “operad” to imply “colored”, ie multi-object, though.</p>",
+        "id": 463455285,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1724086142
+    },
+    {
+        "content": "<p>I see. Then it seems the dendroidal sets of <a href=\"https://ncatlab.org/nlab/show/(infinity,1)-operad#in_terms_of_dendroidal_sets\">https://ncatlab.org/nlab/show/(infinity,1)-operad#in_terms_of_dendroidal_sets</a><br>\n would coorespond to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi><mo>−</mo><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">\\infty-T</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">∞</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span>-multicategories with T = free monoid on sets.</p>",
+        "id": 464431536,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1724345743
+    },
+    {
+        "content": "<p>which is to say <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi><mo>−</mo><mi>f</mi><mi>c</mi></mrow><annotation encoding=\"application/x-tex\">\\infty-fc</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">∞</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mord mathnormal\">c</span></span></span></span>-multicategories would be like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-virtual double categories etc.</p>\n<p>(here the \"<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>\" is in the category direction, not the virtual direction)</p>",
+        "id": 464431692,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1724345803
+    },
+    {
+        "content": "<p>Yeah, that sounds right.</p>",
+        "id": 464452730,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1724351352
+    }
+]

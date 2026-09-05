@@ -1,0 +1,92 @@
+[
+    {
+        "content": "<p>The Law of Excluded Middle says that for any statement P,  \"P or not P\" is true.  </p>\n<p>𝗜𝘀 𝘁𝗵𝗶𝘀 𝗹𝗮𝘄 𝘁𝗿𝘂𝗲?  In classical logic it is.  But in intuitionistic logic it's not.   </p>\n<p>So, in intuitionistic logic we can ask what's the 𝙥𝙧𝙤𝙗𝙖𝙗𝙞𝙡𝙞𝙩𝙮 that a randomly chosen statement obeys the Law of Excluded Middle.  And the answer is \"at most 2/3 - or else your logic is classical\".</p>\n<p>This is a very nice new result by <span class=\"user-mention\" data-user-id=\"481356\">@Benjamin Merlin Bumpus (he/him)</span> and <span class=\"user-mention\" data-user-id=\"510824\">@Zoltan A. Kocsis</span>:</p>\n<p><a href=\"https://bmbumpus.com/2024/02/27/degree-of-classicality/\">https://bmbumpus.com/2024/02/27/degree-of-classicality/</a></p>\n<p>Of course they had to make this more precise before proving it.    Just as classical logic is described by Boolean algebras, intuitionistic logic is described by Heyting algebras.   They proved that in a finite Heyting algebra, if more than 2/3 of the statements obey the Law of Excluded Middle, then it must be a Boolean algebra!</p>",
+        "id": 423731893,
+        "sender_full_name": "John Baez",
+        "timestamp": 1709084919
+    },
+    {
+        "content": "<p>Can this also be seen as a theoretical confirmation of the paradox of Zaionc (I learned it from <a href=\"https://www.rairo-ita.org/articles/ita/abs/2022/01/ita220017/ita220017.html\">here</a>) saying that \"asymptotically almost all classical theorems are intuitionistic\" ?</p>",
+        "id": 423759583,
+        "sender_full_name": "Ralph Sarkis",
+        "timestamp": 1709104878
+    },
+    {
+        "content": "<p>there's a caveat: free heyting algebras with more than one generator are infinite, so I'd argue intuitionistic logic isn't captured by finite heyting algebras the way classical logic is with finite boolean algebras.</p>",
+        "id": 423765214,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1709107675
+    },
+    {
+        "content": "<p>True, but they have lots of finite quotients.</p>",
+        "id": 423765356,
+        "sender_full_name": "John Baez",
+        "timestamp": 1709107719
+    },
+    {
+        "content": "<p>The blog post claims that \"with much more effort, one can suitably extend this result to infinite Heyting algebras.\"</p>",
+        "id": 423765472,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1709107759
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284005\">Ralph Sarkis</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/How.20often.20does.20the.20law.20of.20excluded.20middle.20hold.3F/near/423759583\">said</a>:</p>\n<blockquote>\n<p>Can this also be seen as a theoretical confirmation of the paradox of Zaionc (I learned it from <a href=\"https://www.rairo-ita.org/articles/ita/abs/2022/01/ita220017/ita220017.html\">here</a>) saying that \"asymptotically almost all classical theorems are intuitionistic\" ?</p>\n</blockquote>\n<p>That sounds like an almost opposite claim.   I also wonder what it really means.  In the free Heyting algebra on one generator, I think all but finitely many elements are \"classically true\" (they map to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">⊤</mi></mrow><annotation encoding=\"application/x-tex\">\\top</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">⊤</span></span></span></span> in the free boolean algebra on one generator) but not true.</p>",
+        "id": 423765511,
+        "sender_full_name": "John Baez",
+        "timestamp": 1709107778
+    },
+    {
+        "content": "<p>It looks like what they actually prove in the infinite case is that if an infinite Heyting algebra is not Boolean, then the cardinality of the subset of elements not satisfying LEM must be at least as large as the cardinality of the subset of elements satisfying LEM.  So in some sense there must be \"at least as many counterexamples to LEM as there are examples\" if LEM doesn't hold globally.</p>",
+        "id": 423766087,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1709108025
+    },
+    {
+        "content": "<p>That's certainly something, but it doesn't seem like quite the same result.  In particular, it leaves open the possibility that the Heyting algebra comes with a measure in which the set of elements not satisfying LEM is arbitrarily small or even zero, which seems more relevant to questions of \"probability\".</p>",
+        "id": 423766313,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1709108127
+    },
+    {
+        "content": "<p>The blog post makes the comparison to results from group theory, but for a large class of groups one has a canonical \"Haar measure\" to compare subsets. I too wonder if there is a sufficiently canonical measure on Heyting algebras to compare subsets in this way. After all, the cardinality argument doesn't hold much water when I can divide a countably infinite set into arbitrarily many disjoint subsets of the same cardinality...</p>",
+        "id": 423770069,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1709109669
+    },
+    {
+        "content": "<p>I wonder if the theory of <a href=\"https://ncatlab.org/nlab/show/Fra%C3%AFss%C3%A9+limit\">Fraïssé limits</a> applies to Heyting algebras as it does to graphs.</p>",
+        "id": 423770937,
+        "sender_full_name": "John Baez",
+        "timestamp": 1709110029
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/How.20often.20does.20the.20law.20of.20excluded.20middle.20hold.3F/near/423766313\">said</a>:</p>\n<blockquote>\n<p>That's certainly something, but it doesn't seem like quite the same result.  In particular, it leaves open the possibility that the Heyting algebra comes with a measure in which the set of elements not satisfying LEM is arbitrarily small or even zero, which seems more relevant to questions of \"probability\".</p>\n</blockquote>\n<p>I thought at first that the topos of sheaves on the real interval in fact comes with such a measure, but the measure I was thinking of wasn't a measure on truth values.</p>",
+        "id": 423787817,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1709115897
+    },
+    {
+        "content": "<p>Then again, for this result to hold measure-theoretically you need some kind of uniformity condition on the measure or it won't hold in even the finite case.</p>",
+        "id": 423788995,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1709116289
+    },
+    {
+        "content": "<p>For compact topological groups, normalised to have volume 1 say, the result about proportion of commuting elements in a finite group extends to the measure of commuting elements.</p>",
+        "id": 423789690,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1709116511
+    },
+    {
+        "content": "<p>So considering a Heyting algebra as a semiring with extra structure, then one could think about how to extend the group result to semigroups</p>",
+        "id": 423790729,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1709116876
+    },
+    {
+        "content": "<p>However, see <a href=\"https://mathoverflow.net/a/180020/4177\">https://mathoverflow.net/a/180020/4177</a> where not even finite semigroups are guaranteed to admit an invariant measure</p>",
+        "id": 423791911,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1709117240
+    }
+]

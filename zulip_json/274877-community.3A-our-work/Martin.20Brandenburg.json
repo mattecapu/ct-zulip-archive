@@ -1,0 +1,56 @@
+[
+    {
+        "content": "<p>In this thread I will share the releases of CatDat (announced <a href=\"#narrow/channel/229111-community.3A-general/topic/CatDat.20.E2.80.93.20the.20comprehensive.20database.20of.20categories/near/580005238\">here</a>). Maybe I will write something from time to time. The complete list of releases is <a href=\"https://github.com/ScriptRaccoon/CatDat/releases\">here</a>.</p>",
+        "id": 616728919,
+        "sender_full_name": "Martin Brandenburg",
+        "timestamp": 1786822660
+    },
+    {
+        "content": "<p><a href=\"https://github.com/ScriptRaccoon/CatDat/releases/tag/v1.18.0\">Release v1.18.0</a> adds support for symmetric monoidal categories, includes several refactorings, and introduces parent structures. See the release notes and the linked PRs for details. (I usually write very detailed PR descriptions.)</p>\n<p><a href=\"https://github.com/ScriptRaccoon/CatDat/pull/323\">Parent structures</a> are cool because once you prove something for, say, the category of R-modules, it automatically proves it for the category of abelian groups.</p>",
+        "id": 616729002,
+        "sender_full_name": "Martin Brandenburg",
+        "timestamp": 1786822752
+    },
+    {
+        "content": "<p>While working on the properties of morphisms (<a href=\"https://github.com/ScriptRaccoon/CatDat/pull/320\">here</a>), I have created this nice overview. It is more detailed than the diagram in Joy of Cats. I haven't added it to the nLab because the editor always gives me errors (even though I have used exactly the same tikz syntax as on other pages).</p>\n<p><img alt=\"epis.webp\" class=\"inline-image\" data-original-content-type=\"image/webp\" data-original-dimensions=\"1936x1430\" data-original-src=\"/user_uploads/21317/dQtriAW3I_39CNHoQ7ZvyjST/epis.webp\" src=\"/user_uploads/thumbnail/21317/dQtriAW3I_39CNHoQ7ZvyjST/epis.webp/840x560.webp\"></p>\n<p><img alt=\"monos.webp\" class=\"inline-image\" data-original-content-type=\"image/webp\" data-original-dimensions=\"1936x1430\" data-original-src=\"/user_uploads/21317/wHINQa48Az4QUqxcxRGLy7v6/monos.webp\" src=\"/user_uploads/thumbnail/21317/wHINQa48Az4QUqxcxRGLy7v6/monos.webp/840x560.webp\"></p>\n<p>For now, I have added these diagrams <a href=\"https://catdat.app/content/relationships-epis-monos\">on this page</a>. They are not finished; for example, (effective) descent morphisms are currently missing.</p>",
+        "id": 616729757,
+        "sender_full_name": "Martin Brandenburg",
+        "timestamp": 1786823594
+    },
+    {
+        "content": "<p>Can we put that epimorphism impliciation diagram on the nLab please, linking to CatDat for credit?</p>",
+        "id": 616773116,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1786865420
+    },
+    {
+        "content": "<p>Maybe as an !include in all the pages for those flavours of epimorphisms? I usually have to go to <a href=\"https://ncatlab.org/nlab/show/epimorphism\">[[epimorphism]]</a> which has the list and the discussion of relations, but other pages in the hierarchy don't all list the ways in which they relate.</p>",
+        "id": 616773240,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1786865558
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276422\">David Michael Roberts</span> <a href=\"#narrow/channel/274877-community.3A-our-work/topic/Martin.20Brandenburg/near/616773116\">said</a>:</p>\n<blockquote>\n<p>Can we put that epimorphism impliciation diagram on the nLab please [...]</p>\n</blockquote>\n<p>Yes. But as mentioned, I have tried to do that (in fact, on the epimorphism page you mentioned), but I failed. An image would be easier, but (a) I don't know where to upload images for the nLab and if this is allowed at all, (b) an image cannot be edited, (c) so a tikzcd diagram would be better, but when I try to create any new tikzcd diagram on the nLab (even a simple one with just one node), the editor will throw an error. </p>\n<p>Maybe someone else is more lucky than me? The <code>tikzcd</code> source code of the diagrams can be found here: <br>\n<a href=\"https://gist.github.com/ScriptRaccoon/132fea9d3487cdb42f77b11593592917\">https://gist.github.com/ScriptRaccoon/132fea9d3487cdb42f77b11593592917</a> </p>\n<blockquote>\n<p>[...] linking to CatDat for credit</p>\n</blockquote>\n<p>Actually, my plan is to do it the other way round. nLab for documentation, CatDat for barebones data. I want to delete the CatDat page with the overview (the implications are saved in the database already) and replace the links to it with links to the nLab page, once the diagrams are on the nLab.</p>\n<p>I also saw Urs linking to the CatDat page on the category of abelian groups on <a href=\"https://ncatlab.org/nlab/show/Ab\">this nLab page</a>, but I don't like this since CatDat should rather refer to nLab, not vice versa.</p>",
+        "id": 616775393,
+        "sender_full_name": "Martin Brandenburg",
+        "timestamp": 1786867326
+    },
+    {
+        "content": "<p>OK, we can solve this, images on the nLab are fine, the tikz capacity on the nlab is practically non-existent. I'll get on this tomorrow</p>",
+        "id": 616786422,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1786878178
+    },
+    {
+        "content": "<p>Sorry I somehow missed the bit where you said you'd tried already!</p>",
+        "id": 616786761,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1786878502
+    },
+    {
+        "content": "<p><a href=\"https://github.com/ScriptRaccoon/CatDat/releases/tag/v1.19.0\">Release v1.19.0</a> adds a <a href=\"https://catdat.app/category/cocompletion-discrete-pair-join\">technical example</a> of a cocomplete category without equalizers (the free cocompletion of a suitable locally small category). Deciding all of its properties involved quite a lot of work. In this context, free cocompletions and small presheaves have also been studied in general. I was quite amazed to see that this example alone has witnessed 73 new combinations (!) of properties of the form \"p and not q\", or 153 when duals are taken into account.</p>\n<p>Moreover, I have started to break down the property of being regular into its constituent properties by adding the properties of having <a href=\"https://catdat.app/category-property/kernel_pairs\">kernel pairs</a> and of having <a href=\"https://catdat.app/category-property/coequalizers_of_kernel_pairs\">coequalizers of kernel pairs</a> (and their duals). The PR for the property of having pullback-stable regular epimorphisms is already in progress.</p>\n<p>The goal behind that is to have all constituents of a property in the database also recorded in the database. That is, if a property P is defined by \"A and B and C are satisfied\", we should try to add A, B, and C separately and record the equivalence P ⇔ A + B + C. Deciding A, B, and C for all categories in the database then gives a more detailed understanding of P, and in many cases, multiple proofs can be combined into one.</p>\n<p>Furthermore, I realized that it would be better to distinguish between \"<a href=\"https://catdat.app/category-property/natural_numbers_object\">natural number objects</a>\" and \"<a href=\"https://catdat.app/category-property/parametrized_natural_numbers_object\">parametrized natural number objects</a>\". Previously, only the latter was recorded, but without the \"parametrized\" prefix in its name, which was potentially confusing. Now, both properties are available in CatDat. The <a href=\"https://catdat.app/content/natural_numbers_objects\">connection to distributivity</a> has also been made more precise.</p>\n<p>Finally, someone asked via the suggestion form to add <a href=\"https://catdat.app/category-property/concretizable\">concrete categories</a> (or rather, concretizable categories, since for me and the nLab, \"concrete\" refers to extra structure, not a property). So this property has been added as well and decided for all categories in the database. In fact, only <strong>three</strong> categories in the database are not concretizable. This property had been on the list for quite a while, and I was hesitant to add it because I didn't see much value in it. But apparently, this was just my ignorance. After adding it, I learned about <a href=\"https://catdat.app/content/isbell_concreteness\">Isbell's condition for concretizability</a>, which I find very interesting, applied it to the technical example mentioned at the beginning, and was thereby able to remove the proofs that no generating or cogenerating sets exist, since these now follow as corollaries of non-concretizability.</p>\n<p>Having said this, I still do not know (cf. <a href=\"https://math.stackexchange.com/questions/5137415\">MSE</a>) a single example of a concretizable and cocomplete category without equalizers, or, more or less equivalently, a <em>practical</em> example of a cocomplete category without equalizers.</p>",
+        "id": 621062782,
+        "sender_full_name": "Martin Brandenburg",
+        "timestamp": 1788363616
+    }
+]

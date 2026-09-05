@@ -1,0 +1,170 @@
+[
+    {
+        "content": "<p>The Law of Excluded Middle says that for any statement P,  \"P or not P\" is true.  </p>\n<p>𝗜𝘀 𝘁𝗵𝗶𝘀 𝗹𝗮𝘄 𝘁𝗿𝘂𝗲?  In classical logic it is.  But in intuitionistic logic it's not.   </p>\n<p>So, in intuitionistic logic we can ask what's the 𝙥𝙧𝙤𝙗𝙖𝙗𝙞𝙡𝙞𝙩𝙮 that a randomly chosen statement obeys the Law of Excluded Middle.  And the answer is \"at most 2/3 - or else your logic is classical\".</p>\n<p>This is a very nice new result by <span class=\"user-mention\" data-user-id=\"481356\">@Benjamin Merlin Bumpus (he/him)</span> and <span class=\"user-mention\" data-user-id=\"510824\">@Zoltan A. Kocsis</span>:</p>\n<p><a href=\"https://bmbumpus.com/2024/02/27/degree-of-classicality/\">https://bmbumpus.com/2024/02/27/degree-of-classicality/</a></p>\n<p>Of course they had to make this more precise before proving it.    Just as classical logic is described by Boolean algebras, intuitionistic logic is described by Heyting algebras.   They proved that in a finite Heyting algebra, if more than 2/3 of the statements obey the Law of Excluded Middle, then it must be a Boolean algebra!</p>",
+        "id": 423731893,
+        "sender_full_name": "John Baez",
+        "timestamp": 1709084919
+    },
+    {
+        "content": "<p>Can this also be seen as a theoretical confirmation of the paradox of Zaionc (I learned it from <a href=\"https://www.rairo-ita.org/articles/ita/abs/2022/01/ita220017/ita220017.html\">here</a>) saying that \"asymptotically almost all classical theorems are intuitionistic\" ?</p>",
+        "id": 423759583,
+        "sender_full_name": "Ralph Sarkis",
+        "timestamp": 1709104878
+    },
+    {
+        "content": "<p>there's a caveat: free heyting algebras with more than one generator are infinite, so I'd argue intuitionistic logic isn't captured by finite heyting algebras the way classical logic is with finite boolean algebras.</p>",
+        "id": 423765214,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1709107675
+    },
+    {
+        "content": "<p>True, but they have lots of finite quotients.</p>",
+        "id": 423765356,
+        "sender_full_name": "John Baez",
+        "timestamp": 1709107719
+    },
+    {
+        "content": "<p>The blog post claims that \"with much more effort, one can suitably extend this result to infinite Heyting algebras.\"</p>",
+        "id": 423765472,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1709107759
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284005\">Ralph Sarkis</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/How.20often.20does.20the.20law.20of.20excluded.20middle.20hold.3F/near/423759583\">said</a>:</p>\n<blockquote>\n<p>Can this also be seen as a theoretical confirmation of the paradox of Zaionc (I learned it from <a href=\"https://www.rairo-ita.org/articles/ita/abs/2022/01/ita220017/ita220017.html\">here</a>) saying that \"asymptotically almost all classical theorems are intuitionistic\" ?</p>\n</blockquote>\n<p>That sounds like an almost opposite claim.   I also wonder what it really means.  In the free Heyting algebra on one generator, I think all but finitely many elements are \"classically true\" (they map to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">⊤</mi></mrow><annotation encoding=\"application/x-tex\">\\top</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">⊤</span></span></span></span> in the free boolean algebra on one generator) but not true.</p>",
+        "id": 423765511,
+        "sender_full_name": "John Baez",
+        "timestamp": 1709107778
+    },
+    {
+        "content": "<p>It looks like what they actually prove in the infinite case is that if an infinite Heyting algebra is not Boolean, then the cardinality of the subset of elements not satisfying LEM must be at least as large as the cardinality of the subset of elements satisfying LEM.  So in some sense there must be \"at least as many counterexamples to LEM as there are examples\" if LEM doesn't hold globally.</p>",
+        "id": 423766087,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1709108025
+    },
+    {
+        "content": "<p>That's certainly something, but it doesn't seem like quite the same result.  In particular, it leaves open the possibility that the Heyting algebra comes with a measure in which the set of elements not satisfying LEM is arbitrarily small or even zero, which seems more relevant to questions of \"probability\".</p>",
+        "id": 423766313,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1709108127
+    },
+    {
+        "content": "<p>The blog post makes the comparison to results from group theory, but for a large class of groups one has a canonical \"Haar measure\" to compare subsets. I too wonder if there is a sufficiently canonical measure on Heyting algebras to compare subsets in this way. After all, the cardinality argument doesn't hold much water when I can divide a countably infinite set into arbitrarily many disjoint subsets of the same cardinality...</p>",
+        "id": 423770069,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1709109669
+    },
+    {
+        "content": "<p>I wonder if the theory of <a href=\"https://ncatlab.org/nlab/show/Fra%C3%AFss%C3%A9+limit\">Fraïssé limits</a> applies to Heyting algebras as it does to graphs.</p>",
+        "id": 423770937,
+        "sender_full_name": "John Baez",
+        "timestamp": 1709110029
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/How.20often.20does.20the.20law.20of.20excluded.20middle.20hold.3F/near/423766313\">said</a>:</p>\n<blockquote>\n<p>That's certainly something, but it doesn't seem like quite the same result.  In particular, it leaves open the possibility that the Heyting algebra comes with a measure in which the set of elements not satisfying LEM is arbitrarily small or even zero, which seems more relevant to questions of \"probability\".</p>\n</blockquote>\n<p>I thought at first that the topos of sheaves on the real interval in fact comes with such a measure, but the measure I was thinking of wasn't a measure on truth values.</p>",
+        "id": 423787817,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1709115897
+    },
+    {
+        "content": "<p>Then again, for this result to hold measure-theoretically you need some kind of uniformity condition on the measure or it won't hold in even the finite case.</p>",
+        "id": 423788995,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1709116289
+    },
+    {
+        "content": "<p>For compact topological groups, normalised to have volume 1 say, the result about proportion of commuting elements in a finite group extends to the measure of commuting elements.</p>",
+        "id": 423789690,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1709116511
+    },
+    {
+        "content": "<p>So considering a Heyting algebra as a semiring with extra structure, then one could think about how to extend the group result to semigroups</p>",
+        "id": 423790729,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1709116876
+    },
+    {
+        "content": "<p>However, see <a href=\"https://mathoverflow.net/a/180020/4177\">https://mathoverflow.net/a/180020/4177</a> where not even finite semigroups are guaranteed to admit an invariant measure</p>",
+        "id": 423791911,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1709117240
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/How.20often.20does.20the.20law.20of.20excluded.20middle.20hold.3F/near/423770069\">said</a>:</p>\n<blockquote>\n<p>The blog post makes the comparison to results from group theory, but for a large class of groups one has a canonical \"Haar measure\" to compare subsets. I too wonder if there is a sufficiently canonical measure on Heyting algebras to compare subsets in this way. After all, the cardinality argument doesn't hold much water when I can divide a countably infinite set into arbitrarily many disjoint subsets of the same cardinality...</p>\n</blockquote>\n<p>The classical group-theoretic results (such as Gustafson's 5/8) indeed hold for the Haar measure on a locally compact group. I don't know whether one could have a canonical measure on a locally compact Heyting algebra in any analogous sense.</p>\n<p>However, the interesting cases of <em>density</em> on a Heyting algebra won't arise from an analogous measure: in most cases outside of topos theory (and in many cases inside), one will want to consider some countable Heyting algebra, such as a free HA on some generators, or one of its quotients. The analogous objects (e.g. free groups) don't admit invariant measures even in group theory, since a countable, locally compact group always carries the discrete topology.</p>\n<p>This doesn't stop group theorists from studying the density of nice subsets of groups, though! Even when you don't have a Haar measure, the group structure gives you a convenient gadget to measure density: the index (number of translates of a set required to cover the group). This gives you certain favored ways to enumerate elements (the ways that _measure index uniformly_), which is a major plot point in the group-theoretic works of Antolin, Martino, Ventura, Tointon that inspired our results.</p>\n<p>Fortunately, you can obtain similar density-measuring gadgets on Heyting algebras. For example, on finitely presented Heyting algebras, you can use the fact that all such algebras embed into products of finite Heyting algebras in nice, reasonably canonical ways. You can in a sense regard the degrees of satisfiability in these finite factors as providing bounds on the density of solutions in your algebra of interest, using the fact that \"ds(phi) in H1xH2\" always coincides with \"ds(phi) in H1\" times \"ds(phi) in H2\".</p>\n<p>If you want to study the non-finitely-presented (but still countable) case, you can fix certain natural ways of expanding a finite subset of the HA by applying the Heyting algebra operations, and characterize what happens to the density of solutions to an equation of interest when you expand a finite subset for a long time.</p>\n<p>I've started working on both of these approaches after the current article was sent off, and I have some partial results in both cases: e.g. one can show that, under these natural ways of measuring density, the density of LEM is zero in a free HA on a finite set of generators. But the rest is is all very much work-in-progress for now.</p>",
+        "id": 423806968,
+        "sender_full_name": "Zoltan A. Kocsis",
+        "timestamp": 1709123076
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/How.20often.20does.20the.20law.20of.20excluded.20middle.20hold.3F/near/423766313\">said</a>:</p>\n<blockquote>\n<p>That's certainly something, but it doesn't seem like quite the same result.  In particular, it leaves open the possibility that the Heyting algebra comes with a measure in which the set of elements not satisfying LEM is arbitrarily small or even zero, which seems more relevant to questions of \"probability\".</p>\n</blockquote>\n<p>Indeed, and see my comments below on the appropriate notions of density one would use instead of measure, given that on the syntactic side, the most exciting infinite HAs are countable, and lack anything like a uniform measure.</p>\n<p>If you do wish to think about probability measures, though, I think our infinite results are mostly interesting because of the negative part: if you take any one-variable equation in the language of Heyting algebras apart from LEM or the two trivial equations, you can construct infinite Heyting algebras where all these equations hold for all but finitely many elements, and therefore will hold with probability zero on _any_ measure that doesn't assign positive measure to singletons.</p>",
+        "id": 423808728,
+        "sender_full_name": "Zoltan A. Kocsis",
+        "timestamp": 1709123765
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276422\">David Michael Roberts</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/How.20often.20does.20the.20law.20of.20excluded.20middle.20hold.3F/near/423791911\">said</a>:</p>\n<blockquote>\n<p>However, see <a href=\"https://mathoverflow.net/a/180020/4177\">https://mathoverflow.net/a/180020/4177</a> where not even finite semigroups are guaranteed to admit an invariant measure</p>\n</blockquote>\n<p>Quite right! Invariant measures won't help much here, since the Heyting algebra operations are, unlike group operations, highly non-bijective. In fact, in many infinite algebras of interest, applying certain HA operations \"squashes down\" intuitively very large subsets to finite ones, and you generally don't want to concentrate all your measure on a finite set of elements.</p>\n<p>But there are other gadgets that allow us to assign reasonable notions of density to subsets of Heyting algebras. I point out some of these in my reply to <span class=\"user-mention\" data-user-id=\"277473\">@Morgan Rogers (he/him)</span> above. A good measure on a Heyting algebra would presumably be something that interacts nicely with these particular gadgets, much like the good measures of group theory interact nicely with the notion of index. The existence of such measures is an interesting question, although I'm personally focusing on things that you can say _without_ fixing a measure for the moment.</p>",
+        "id": 423810274,
+        "sender_full_name": "Zoltan A. Kocsis",
+        "timestamp": 1709124450
+    },
+    {
+        "content": "<p>I see I've joined the party late, but I guess this is the benefit of having a collaborator who is awake while you sleep! Obviously I second everything Zoltan said, and I want to join-in in emphasizing that the negative part of our results is particularly interesting for the infinite case.</p>",
+        "id": 423821550,
+        "sender_full_name": "Benjamin Merlin Bumpus (he/him)",
+        "timestamp": 1709128163
+    },
+    {
+        "content": "<p>Thanks for that detailed response!  I look forward to seeing the futher results you suggest.</p>\n<p>It does seem to me that if one wants to draw philosophical conclusions involving \"observations about the real world\", then the countable free/presented Heyting algebras are not necessarily as interesting as those that arise \"naturally\" in semantic toposes, which might be more likely to admit an interesting measure.</p>",
+        "id": 423854394,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1709137155
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/How.20often.20does.20the.20law.20of.20excluded.20middle.20hold.3F/near/423854394\">said</a>:</p>\n<blockquote>\n<p>Thanks for that detailed response!  I look forward to seeing the futher results you suggest.</p>\n<p>It does seem to me that if one wants to draw philosophical conclusions involving \"observations about the real world\", then the countable free/presented Heyting algebras are not necessarily as interesting as those that arise \"naturally\" in semantic toposes, which might be more likely to admit an interesting measure.</p>\n</blockquote>\n<p>Yes, definitely, I agree with you completely. In fact we don't draw any such conclusions, but we are simply motivated by the desire to.</p>",
+        "id": 423858894,
+        "sender_full_name": "Benjamin Merlin Bumpus (he/him)",
+        "timestamp": 1709138436
+    },
+    {
+        "content": "<p>Just wanted to add a related reference. In Nesetril + Ossona de Mendez' <a href=\"https://arxiv.org/abs/1303.2865\">A Model Theory Approach to Structural Limits</a> they define precisely the same thing as what the blog post calls \"degree of satisfiability\". In the Nesetril + Ossona de Mendez' theory these are called Stone pairings (in subsequent papers), see Definition 1 (page 8) in the above reference.</p>",
+        "id": 423890114,
+        "sender_full_name": "Tomáš Jakl",
+        "timestamp": 1709149266
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284005\">Ralph Sarkis</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/How.20often.20does.20the.20law.20of.20excluded.20middle.20hold.3F/near/423759583\">said</a>:</p>\n<blockquote>\n<p>Can this also be seen as a theoretical confirmation of the paradox of Zaionc (I learned it from <a href=\"https://www.rairo-ita.org/articles/ita/abs/2022/01/ita220017/ita220017.html\">here</a>) saying that \"asymptotically almost all classical theorems are intuitionistic\" ?</p>\n</blockquote>\n<p>Putting the two questions in the same language (very very roughly!) might help illuminate the differences.</p>\n<ul>\n<li>Zaionc's paradox: Can we count the number of <em>classical identities/laws</em> that are satisfied by <strong>all</strong> <em>intuitionistic propositions</em>?</li>\n<li>Our work: Can we count the number of <em>intuitionistic propositions</em> that satisfy a <em>classical identity/law</em> (that <strong>not all</strong> of them do)?</li>\n</ul>\n<p>LEM (<code>x∨¬x=T</code>) would be one of the laws that you exclude from the count in Zaionc's case (since intuitionistic propositions don't all satisfy LEM). On the other hand, we would ignore something like <code>x→(x∨x)=T</code> (since all intuitionistic propositions satisfy it, there's nothing for us to  count), whereas that's precisely the thing Zaionc wants to find.</p>\n<p>Of course, to make this precise, you have to pin down the notion of classical/intuitionistic logical law/identity, and explain when you consider two classical identities the same. This also differs in the two settings.  When people investigate Zaionc's paradox, they consider two identities the same only if they're syntactically the same (perhaps up to alpha-equivalence). This is way too coarse for us, we consider two identities the same if there cannot be any intuitionistic proposition that satisfies one but not the other.</p>\n<p>Zaionc's paradox also depends on some details of the enumeration, which is why <a href=\"https://www.sciencedirect.com/science/article/pii/S0168007211001333\">Genitrini and Kozik</a> get that in the full propositional language, only 5/8 of classical tautologies are intuitionistically valid (it's an amusing coincidence, but this 5/8 is not related to Gustafson's group-theoretic 5/8). For the purposes of their article, the exact number that they get is not all that important, though: the most interesting part is that one can count this at all, and the general technique that they use to pin down the value.</p>",
+        "id": 423913627,
+        "sender_full_name": "Zoltan A. Kocsis",
+        "timestamp": 1709159105
+    },
+    {
+        "content": "<p>Thanks, that clarifies things!</p>",
+        "id": 423941275,
+        "sender_full_name": "John Baez",
+        "timestamp": 1709175188
+    },
+    {
+        "content": "<p>This topic was moved here from <a class=\"stream-topic\" data-stream-id=\"229136\" href=\"/#narrow/stream/229136-theory.3A-category-theory/topic/How.20often.20does.20the.20law.20of.20excluded.20middle.20hold.3F\">#theory: category theory &gt; How often does the law of excluded middle hold?</a> by <span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span>.</p>",
+        "id": 423946535,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1709179244
+    },
+    {
+        "content": "<p>hi <span class=\"user-mention\" data-user-id=\"510824\">@Zoltan A. Kocsis</span>  and <span class=\"user-mention\" data-user-id=\"481356\">@Benjamin Merlin Bumpus (he/him)</span> . thanks for the explanations!  I wonder if your work would allow you also to count the number of linear implicative propositions that satisfy a intuitionistic implicative law? this was my original interest when I started working with Paul Tarau and talking to Pierre Lescanne about Zaionc's result. you can see the analogy, right? every provable implicative linear logic proposition is also a provable intuitionistic implicative proposition, but not conversely.</p>",
+        "id": 424971891,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1709678875
+    },
+    {
+        "content": "<p>Hi <span class=\"user-mention\" data-user-id=\"276656\">@Valeria de Paiva</span>.</p>\n<p>I would love to give this some further thought, and hope we'd be able to say something useful about linear logic.</p>\n<p>However, I don't think there are any <em>off-the-shelf</em> solutions where we could deploy the techniques developed for the intuitionistic case directly to questions about linear logic. Our intuitionistic logic results leaned on some fairly specific knowledge. For example, our results about classical identities in multiple variables rely partly on the Pitts quantifier theorem, and on a (not difficult, but fairly obscure) result of Yankov.</p>\n<p>If you think this would be an interesting avenue to explore further, or if it such results could be of use in your projects, I'll try to get up to speed on some relevant results about linear logic and evaluate our options, but this will take me some time. Are you interested in some specific identities, or about what can be said generally?</p>",
+        "id": 425205927,
+        "sender_full_name": "Zoltan A. Kocsis",
+        "timestamp": 1709772754
+    },
+    {
+        "content": "<p>Hi <span class=\"user-mention\" data-user-id=\"510824\">@Zoltan A. Kocsis</span> ,  let me explain why I thought there might be an off the shelf adaptation to linear logic.  the paper  by Pierre Lescanne mentioned by <span class=\"user-mention\" data-user-id=\"284005\">@Ralph Sarkis</span> above simply counts the number of implicative intuitionistic propositions that are also classically valid. Paul Tarau's paper on <a href=\"https://link.springer.com/chapter/10.1007/978-3-030-05998-9_8\">intuitionistic logic</a>, by contrast, <em>constructs</em> these propositions or theorems (as lambda terms) for increasing numbers of variables. My work with Paul then says that his algorithm for constructing the intuitionistic  lambda-terms can be adapted to be <em>linear</em> by a simple modification, see <br>\n<a href=\"https://arxiv.org/pdf/2009.10241.pdf\">Deriving Theorems in Implicational Linear Logic, Declaratively</a>. So it seemed to me that your way of looking at Lescanne's proof could possibly be adapted to linear logic too. but of course we're dealing with inferences, not models, so maybe you're right, the adaptation won't work so smoothly.</p>",
+        "id": 425208637,
+        "sender_full_name": "Valeria de Paiva",
+        "timestamp": 1709774397
+    }
+]

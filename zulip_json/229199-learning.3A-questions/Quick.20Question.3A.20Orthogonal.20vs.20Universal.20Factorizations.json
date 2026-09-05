@@ -1,0 +1,74 @@
+[
+    {
+        "content": "<p>Define an <a href=\"https://ncatlab.org/nlab/show/orthogonal+factorization+system\">orthogonal factorization system</a> in the usual sense. Now, define the concept of a \"universal factorization system\" to be any factorization system in a category determined by a universal construction. That is, if you can start with some situation involving a morphism f: A -&gt; B and derive a universal construction C from it, along with morphisms g: A -&gt; C and h: C -&gt; B such that f = h compose g, then this is a \"universal factorization system\". For instance, the image factorization system is both orthogonal and universal since the image of a morphism satisfies a universal property, and it gives rise to an orthogonal factorization system. In fact, nlab even states under the article for <a href=\"https://ncatlab.org/nlab/show/image#relation_to_factorization_systems\">image</a> that \"to give a notion of image is more or less equivalent to giving an OFS\".</p>\n<p>What I wanted to know was: are orthogonal and universal factorization systems \"the same\"? That is, given any kind of OFS on any category, is it always possible to determine some universal construction that you can use to factor morphisms within it? Likewise, given any universal factorization system, is the resulting system always an orthogonal one? My question is motivated by the fact that in an OFS, the factorization is unique up to unique isomorphism, which sounds like the \"unique up to isomorphism\" property satisfied by a universal construction.</p>",
+        "id": 436279102,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1714485780
+    },
+    {
+        "content": "<p>Well, every object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> of any category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> has a trivial universal property, namely it is a representing object for the functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mo stretchy=\"false\">(</mo><mo>−</mo><mo separator=\"true\">,</mo><mi>X</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">C(-,X)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mclose\">)</span></span></span></span>.  That isn't the kind of answer you want, but I don't know of any way to make the question \"is every OFS universal\" precise in such a way that it has a nontrivial answer.</p>",
+        "id": 436301222,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1714491802
+    },
+    {
+        "content": "<p>However, it's certainly not true that every universal factorization is orthogonal; for instance, some of them are <a href=\"https://ncatlab.org/nlab/show/weak%20factorization%20systems\">[[weak factorization systems]]</a> instead.</p>",
+        "id": 436301288,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1714491824
+    },
+    {
+        "content": "<p>I guess one slightly less trivial answer is that if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span> is a wide subcategory of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>, for every morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mi>x</mi><mo>→</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">f: x \\to y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span> we can take the comma category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mi mathvariant=\"normal\">/</mi><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">x / M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mord\">/</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span> of the constant functor at <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span> over the inclusion of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span> into <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>, and then the slice of this comma category over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span>. If <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span> is the right class of an OFS, then this slice always has an initial object given by the factor of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> in the left class. Then the \"uniqueness up to unique isomorphism\" should become the usual one of initial objects.</p>",
+        "id": 436306435,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1714493267
+    },
+    {
+        "content": "<p>Is this question living up to the usual rule of thumb that a \"quick question\" never has a quick answer?</p>",
+        "id": 436306825,
+        "sender_full_name": "John Baez",
+        "timestamp": 1714493367
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276363\">@Amar Hadzihasanovic</span>  That was my first thought too, but then I decided I didn't think it was any less trivial than the totally trivial answer.  But maybe it is?</p>",
+        "id": 436323924,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1714498907
+    },
+    {
+        "content": "<p>Here's a related example: you can ask \"is any monoidal structure universal?\" and the answer is yes in that monoidal categories are equivalent to representable multicategories.  Is that answer trivial?</p>",
+        "id": 436324045,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1714498949
+    },
+    {
+        "content": "<p>I think what feels trivial to me about them is that unlike a \"naturally occurring\" universal property, they don't simplify your life any.  For instance, if a monoidal category occurs naturally as a representable multicategory, then its associativity follows automatically from the universal property.  But if I just give you something that I claim is a monoidal category, building its underlying multicategory doesn't help you prove associativity: you have to already know associativity in order to get a multicategory.</p>",
+        "id": 436324359,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1714499066
+    },
+    {
+        "content": "<p>I guess the \"slightly less\" trivial bit was in that it is a question that can be asked of any wide subcategory, with no reference to factorisation systems, but I agree that it does not seem particularly informative.</p>",
+        "id": 436325446,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1714499549
+    },
+    {
+        "content": "<p>Thanks for the help!<br>\n<span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span>  I suppose a lack of a precise definition for \"universal factorization\" is why I was unable to find anything in the literature about them or this question. Perhaps a more concrete definition would be one in terms of the more specific universal construction of limits. In this case, limits (or colimits) where the diagrams more directly involve, in some way, the morphism f: A -&gt; B that we want to factor. For instance, the image can be defined as a limit of a diagram involving a pushout that itself depends on f. There's probably similar constructions where limits can be taken of diagrams involving f that can factor it in other ways.<br>\n<span class=\"user-mention\" data-user-id=\"276363\">@Amar Hadzihasanovic</span> I like this answer because it does connect the uniqueness ideas together. It would seem odd to me to find some construction in category theory unique up to isomorphism without some universal property being involved somewhere after all. It also helps me better understand what an OFS is doing, since I don't understand OFS as well as I understand universal properties. <br>\n<span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> I didn't know there was a \"quick question\" rule of thumb, it'll be good to know for the future!</p>",
+        "id": 436369101,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1714519253
+    },
+    {
+        "content": "<p>For the record: questions with non-quick answers are fine! :)</p>",
+        "id": 436456563,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1714544202
+    },
+    {
+        "content": "<p>Yes, I'm not trying to shut down long discussions here!   The title of the thread just amuses me.  I get lots of questions in my email, and whenever someone announces a \"quick question\" I feel a sinking sensation.  Like:</p>\n<blockquote>\n<p>Quick question: what's the deal with the \"observer\" in quantum mechanics?  </p>\n</blockquote>\n<p>Do these people think the brevity of the question means it'll be quick to answer?  Nobody ever says </p>\n<blockquote>\n<p>Quick question: what's the 7th homotopy group of the 5-sphere?\"  </p>\n</blockquote>\n<p>For that I could just answer \"Z/2\" and be done with it.</p>",
+        "id": 436460565,
+        "sender_full_name": "John Baez",
+        "timestamp": 1714547265
+    }
+]

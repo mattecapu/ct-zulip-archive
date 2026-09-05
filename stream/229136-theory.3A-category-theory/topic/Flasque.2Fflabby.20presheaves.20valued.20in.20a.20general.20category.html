@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Flasque/flabby presheaves valued in a general category · theory: category theory · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/index.html">theory: category theory</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html">Flasque/flabby presheaves valued in a general category</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="609589082"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Flasque/flabby%20presheaves%20valued%20in%20a%20general%20category/near/609589082" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html#609589082">(Jul 11 2026 at 07:32)</a>:</h4>
+<p>[I posted this on the nForum, but it will probably get more eyes and comments here]</p>
+<p>I have a proposal for a flasque (pre)sheaf with values in a general category C that should work in more generality: that the restriction maps be <a href="https://ncatlab.org/nlab/show/strong%20epimorphisms">[[strong epimorphisms]]</a> . Mathlib has adopted the definition that the restriction maps be just plain epimorphisms, but I dispute this, and I’m aiming to reprove all the results in mathlib in Lean using the stronger definition (and generalise them somewhat). Since for C a concrete category the desideratum is “surjection on underlying maps of sets”, plain epis are too weak. One might argue for extremal epimorphisms, though if the value category has finite limits, extremal=strong and the distinction disappears. I’m interested to hear others’ thoughts.</p>
+<p>The notion in the internal logic of a topos, as a pointwise notion, feels to me a generalisation that doesn’t really make sense in weaker doctrines. Also, any C where the hierarchy of epimorphisms collapses down to extremal = effective (and everything in between) doesn’t really give good data on what a general definition should be.</p>
+<p>I guess a good test would be if a version of the Godement resolution works as desired for general-ish C (allowing for the fact it will almost certainly be a cosimplicial object rather than a cochain complex). For instance for a Barr-exact or even regular category things should “just work”.</p>
+
+
+
+<a name="609591247"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Flasque/flabby%20presheaves%20valued%20in%20a%20general%20category/near/609591247" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html#609591247">(Jul 11 2026 at 08:08)</a>:</h4>
+<p>So for instance, if C were a regular category, sheaves with values in C should surely be said to be flasque is the restriction maps are regular epimorphisms. So the class of epis in a regular category that coincide with regular epis should be the candidates. Another desideratum to my mind is closure under composition. Obviously, for concrete categories C of models of some algebraic theory, the correct notion of epi should probably be those morphisms surjective on underlying sets.</p>
+
+
+
+<a name="609677421"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Flasque/flabby%20presheaves%20valued%20in%20a%20general%20category/near/609677421" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html#609677421">(Jul 12 2026 at 09:06)</a>:</h4>
+<p>Since most things proved using sheaves around the time of SGA would have freely exploited the fact that set epis are surjections, do you already have some example(s) of results for flabby sheaves whose proofs actually exploit a stronger property than being a plain epi?</p>
+
+
+
+<a name="609677904"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Flasque/flabby%20presheaves%20valued%20in%20a%20general%20category/near/609677904" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html#609677904">(Jul 12 2026 at 09:18)</a>:</h4>
+<p>I was thinking statements for regular-category-valued flabby sheaves that are analogous to the theorems about short exact sequences of flabby sheaves valued in an abelian category, except about congruences and coequalisers. Because I think getting the statements for eg semiabelian, or Barr-exact, or regular categories in such a way the abelian category theorems are a corollary is a perfectly natural thing to try. And in the case of a regular category, strong epi = regular epi.</p>
+
+
+
+<a name="609678745"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Flasque/flabby%20presheaves%20valued%20in%20a%20general%20category/near/609678745" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html#609678745">(Jul 12 2026 at 09:38)</a>:</h4>
+<p>Perhaps better to say is that (conceptually) short exact sequences get replaced by an effective epi and its kernel pair a regular category. So given an effective epi, one might recovers the usual theorems about ses of flabby sheaves when all the reguired replacements are made. Here it's conceivable that since in a regular category plain epis and <a href="https://ncatlab.org/nlab/show/regular+category#Epimorphisms">effective=regular=strong epis</a> are different, the theorem only works for flabby=restrict maps are strong/regular/effective.</p>
+
+
+
+<a name="609678975"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Flasque/flabby%20presheaves%20valued%20in%20a%20general%20category/near/609678975" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html#609678975">(Jul 12 2026 at 09:43)</a>:</h4>
+<p>For instance there is an argument that requires that the restriction map of the flabby sheaf sits in an exact diagram as in the picture:</p>
+<p><img alt="Screenshot of an exact diagram of sections of various sheaves under a s.e.s. and the surjective restriction maps" class="inline-image" data-original-content-type="image/png" data-original-dimensions="1022x306" data-original-src="/user_uploads/21317/QuvZmUFhlyJgvvKnKfD6bTye/Screenshot-2026-07-12-at-7.10.27PM.png" src="/user_uploads/thumbnail/21317/QuvZmUFhlyJgvvKnKfD6bTye/Screenshot-2026-07-12-at-7.10.27PM.png/840x560.webp"></p>
+<p>One might view this as a template for an abstract diagram chase argument in an abelian category, where the fact <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mo lspace="0em" mathvariant="normal" rspace="0em">′</mo></msup><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo><mo>→</mo><msup><mi>A</mi><mo lspace="0em" mathvariant="normal" rspace="0em">′</mo></msup><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A'(X) \to A'(U)</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:1.0019em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0019em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.109em;">U</span><span class="mclose">)</span></span></span></span> is a quotient map (=regular epi) is what is used, not the fact it's an epimorphism.</p>
+
+
+
+<a name="609683649"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Flasque/flabby%20presheaves%20valued%20in%20a%20general%20category/near/609683649" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html#609683649">(Jul 12 2026 at 11:13)</a>:</h4>
+<p>I've been thinking about epis in the category of commutative monoids this week, and this strikes me as a setting in which the failure would be demonstrable. But even before that, as your example shows, it doesn't make so much sense to talk about ordinary epis in a setting where exact sequences are being employed.</p>
+
+
+
+<a name="609683799"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Flasque/flabby%20presheaves%20valued%20in%20a%20general%20category/near/609683799" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html#609683799">(Jul 12 2026 at 11:16)</a>:</h4>
+<p>(That's what Barr's notion of exactness is supposed to capture, anyhow)</p>
+
+
+
+<a name="609683934"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Flasque/flabby%20presheaves%20valued%20in%20a%20general%20category/near/609683934" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html#609683934">(Jul 12 2026 at 11:18)</a>:</h4>
+<p>Are you aware of a context in which someone has employed the plain epi version of flasque sheaf valued in a category where these don't coincide with strong epis?</p>
+
+
+
+<a name="609686235"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Flasque/flabby%20presheaves%20valued%20in%20a%20general%20category/near/609686235" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html#609686235">(Jul 12 2026 at 11:59)</a>:</h4>
+<p>Oh, yes, cohomology of sheaves where the coefficients are commutative monoids (whatever that should look like) will also surely be a test of what is the good notion here.</p>
+
+
+
+<a name="609686662"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Flasque/flabby%20presheaves%20valued%20in%20a%20general%20category/near/609686662" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html#609686662">(Jul 12 2026 at 12:05)</a>:</h4>
+<p><span class="user-mention silent" data-user-id="277473">Morgan Rogers (he/him)</span> <a href="#narrow/channel/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category/near/609683934">said</a>:</p>
+<blockquote>
+<p>ich someone has employed the plain epi version of flasque sheaf valued in a category where these don't coincide with strong epis?</p>
+</blockquote>
+<p>No. I was told that the mathlib definition for arbitrary categories used plain epis as a formalisation convenience, but actually the theory is only currently (and known/projected to be) applied to abelian categories, where of course epis =  effective descent morphisms and every variant of epimorphism between those (so there are only two variants: ordinary epis, and split epis). This is I realised analogous to how division for a field is defined as a global function, even division by zero, but all uses of division will come with a hypothesis that the denominator is nonzero as appropriate. Except here it's "flabby has a convenient but technically wrong definition, except all uses will come with the hypothesis the value category is abelian, where the definition is via a theorem actually correct".</p>
+
+
+
+<a name="609686771"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Flasque/flabby%20presheaves%20valued%20in%20a%20general%20category/near/609686771" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html#609686771">(Jul 12 2026 at 12:07)</a>:</h4>
+<p>So I have no examples where anyone has used the too-lax definition of "restriction maps = plain epi" in a weak setting, and neither could anyone over at the mathlib zulip. The definition is purely technically pragmatic, though I'm firmly of the opinion it could be 'corrected' at essentially epsilon cost in proofs (an extra application of a lemma that says all epis are strong epis in an abelian category)</p>
+
+
+
+<a name="609687447"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Flasque/flabby%20presheaves%20valued%20in%20a%20general%20category/near/609687447" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html#609687447">(Jul 12 2026 at 12:21)</a>:</h4>
+<p><span class="user-mention" data-user-id="277473">@Morgan Rogers (he/him)</span> have you thought about a Godement-style resolution for commutative monoid sheaves?</p>
+
+
+
+<a name="609691882"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Flasque/flabby%20presheaves%20valued%20in%20a%20general%20category/near/609691882" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html#609691882">(Jul 12 2026 at 13:27)</a>:</h4>
+<p>Not explicitly, although it so happens that I was thinking about coequivalence relations in commutative monoids, and those seem relevant in the context of Godement resolutions, since Godement uses cokernels.</p>
+<p>I notice that Godement's product of stalks construction only produces a sheaf which is flasque in a pointed context: for a sheaf of sets which may be empty over some opens, the restriction maps are not surjective. Conversely, in the context of commutative monoids the projection maps will be surjective (assuming AC); they'll even be split.</p>
+
+
+
+<a name="609692085"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Flasque/flabby%20presheaves%20valued%20in%20a%20general%20category/near/609692085" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html#609692085">(Jul 12 2026 at 13:31)</a>:</h4>
+<p>Actually I can remove the parenthetical from that last sentence: they split even without the axiom of choice because we have a canonical element</p>
+
+
+
+<a name="609722984"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Flasque/flabby%20presheaves%20valued%20in%20a%20general%20category/near/609722984" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> David Michael Roberts <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html#609722984">(Jul 12 2026 at 21:22)</a>:</h4>
+<p>ah, so cat with a zero object is too strong for a test case? the map to 0 is always split epi, which gives a lot</p>
+
+
+
+<a name="609785973"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/229136-theory%3A%20category%20theory/topic/Flasque/flabby%20presheaves%20valued%20in%20a%20general%20category/near/609785973" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Morgan Rogers (he/him) <a href="https://mattecapu.github.io/ct-zulip-archive/stream/229136-theory.3A-category-theory/topic/Flasque.2Fflabby.20presheaves.20valued.20in.20a.20general.20category.html#609785973">(Jul 13 2026 at 08:21)</a>:</h4>
+<p>For Godement specifically it seems crucial that one can distinguish between general epi and strong epi for maps to the terminal object. An example would be <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="bold">C</mi><mi mathvariant="bold">M</mi><mi mathvariant="bold">o</mi><mi mathvariant="bold">n</mi></mrow><mi mathvariant="normal">/</mi><mi mathvariant="double-struck">Z</mi></mrow><annotation encoding="application/x-tex">\mathbf{CMon}/\mathbb{Z}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathbf">CMon</span></span><span class="mord">/</span><span class="mord mathbb">Z</span></span></span></span>.</p>
+<p>You can construct a sheaf taking value either <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">\mathbb{N}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">N</span></span></span></span> or <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">Z</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">Z</span></span></span></span> at every open of a space, so that some stalks are <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">\mathbb{N}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">N</span></span></span></span> and others are <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">Z</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">Z</span></span></span></span>. The Godement sheaf will assign to an open <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi></mrow><annotation encoding="application/x-tex">U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">U</span></span></span></span> either <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">N</mi></mrow><annotation encoding="application/x-tex">\mathbb{N}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">N</span></span></span></span> (if the stalk at any <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">x\in U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">U</span></span></span></span> takes this value) and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">Z</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6889em;"></span><span class="mord mathbb">Z</span></span></span></span> otherwise, including at the empty set. So the restriction maps will be epic but not strong epic.</p>
+<p>How does the resolution behave? Well, I think what I've just described ends up being identical to the original sheaf, so it's not doing much <span aria-label="sweat smile" class="emoji emoji-1f605" role="img" title="sweat smile">:sweat_smile:</span></p>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Sep 05 2026 at 14:48 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

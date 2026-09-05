@@ -1,0 +1,80 @@
+[
+    {
+        "content": "<p>Do free <strong>cocompletions</strong> under a chosen class of weights preserve existing <strong>limits</strong>? My guess is yes (e.g. taking presheaves does) but I can't think of a formal justification.</p>",
+        "id": 450647490,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1720686345
+    },
+    {
+        "content": "<p>One way to see this in the presheaf case is to consider the Isbell adjunction between the free completion and cocompletion; both adjoints commute with the respective Yoneda embeddings. However, it's a non-trivial fact that the free cocompletion is complete and vice-versa, which leads me to suspect that the preservation of limits should not be taken for granted.</p>",
+        "id": 450654508,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1720688289
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits/near/450647490\">said</a>:</p>\n<blockquote>\n<p>Do free <strong>cocompletions</strong> under a chosen class of weights preserve existing <strong>limits</strong>? My guess is yes (e.g. taking presheaves does) but I can't think of a formal justification.</p>\n</blockquote>\n<p>Yes. They do. The justification can be given by \"direct inspection\", in the sense that they can all be realised as full subcategories of presheaves, and simply nothing changes with respect to the argument that works for presheaves, everything \"happens\" in presheaves.</p>\n<p>I do not have a reference (<span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span> ). Notice that it is (!) true for cocompletions preserving a certain class of existing colimits.</p>",
+        "id": 450656383,
+        "sender_full_name": "Ivan Di Liberti",
+        "timestamp": 1720688688
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits/near/450654508\">said</a>:</p>\n<blockquote>\n<p>One way to see this in the presheaf case is to consider the Isbell adjunction between the free completion and cocompletion; both adjoints commute with the respective Yoneda embeddings. However, it's a non-trivial fact that the free cocompletion is complete and vice-versa, which leads me to suspect that the preservation of limits should not be taken for granted.</p>\n</blockquote>\n<p>You \"preserve the limits that exists\", or if you want, the inclusion is as flat as it gets.</p>",
+        "id": 450657185,
+        "sender_full_name": "Ivan Di Liberti",
+        "timestamp": 1720688945
+    },
+    {
+        "content": "<p>So <span class=\"user-mention\" data-user-id=\"277318\">@Ivan Di Liberti</span> you don't need to, say, be enriching/considering presheaves enriched over an accessible/lfp category for it to hold?</p>",
+        "id": 450657192,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1720688947
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits/near/450657192\">said</a>:</p>\n<blockquote>\n<p>So <span class=\"user-mention silent\" data-user-id=\"277318\">Ivan Di Liberti</span> you don't need to, say, be enriching/considering presheaves enriched over an accessible/lfp category for it to hold?</p>\n</blockquote>\n<p>No, the point is really, at the end of the day, that Yoneda preserve all existing limits. This has no size constraints.</p>",
+        "id": 450657441,
+        "sender_full_name": "Ivan Di Liberti",
+        "timestamp": 1720689026
+    },
+    {
+        "content": "<p>Oh of course, it's just the fact that <em>essentially by definition</em>, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi><mo stretchy=\"false\">(</mo><mo>−</mo><mo separator=\"true\">,</mo><msub><mrow><mi>lim</mi><mo>⁡</mo></mrow><mi>i</mi></msub><msub><mi>X</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo><mo>≅</mo><msub><mrow><mi>lim</mi><mo>⁡</mo></mrow><mi>i</mi></msub><mi mathvariant=\"script\">C</mi><mo stretchy=\"false\">(</mo><mo>−</mo><mo separator=\"true\">,</mo><msub><mi>X</mi><mi>i</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathcal{C}(-,\\lim_i X_i) \\cong \\lim_i \\mathcal{C}(-,X_i)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mop\"><span class=\"mop\">lim</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≅</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mop\"><span class=\"mop\">lim</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">i</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span> ; this is how the universal property of (weighted) limits is usually given!</p>",
+        "id": 450658947,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1720689474
+    },
+    {
+        "content": "<p>Thinking about the Isbell adjunction (which really might be hard to show exists in full generality, I suppose) was way overkill.</p>",
+        "id": 450659264,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1720689601
+    },
+    {
+        "content": "<p>Indeed for the Isbell adjunction to exist you do need that (small) presheaves are complete, and this is a constraint on both V (that needs to be bicomplete) and on the domain of the presheaves (accessibility will be sufficient when V locally presentable).</p>",
+        "id": 450659554,
+        "sender_full_name": "Ivan Di Liberti",
+        "timestamp": 1720689707
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277318\">Ivan Di Liberti</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/free.20cocompletions.20and.20existing.20limits/near/450656383\">said</a>:</p>\n<blockquote>\n<p>in the sense that they can all be realised as full subcategories of presheaves, and simply nothing changes with respect to the argument that works for presheaves,</p>\n</blockquote>\n<p>ah, of course!</p>",
+        "id": 450659777,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1720689787
+    },
+    {
+        "content": "<p>thanks :D</p>",
+        "id": 450659895,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1720689817
+    },
+    {
+        "content": "<p>A particularly simple abstract proof of this fact is that every dense and fully faithful functor creates limits: this follows from the fact that fully faithful functors are right <a href=\"https://ncatlab.org/nlab/show/relative%20adjoints\">[[relative adjoints]]</a>, and right relative adjoints preserve limits if the root is dense.</p>",
+        "id": 450699087,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1720701628
+    },
+    {
+        "content": "<p>(And every free cocompletion (under any class of weights) is dense and fully faithful, essentially by definition.)</p>",
+        "id": 450699224,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1720701665
+    }
+]
