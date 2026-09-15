@@ -1,0 +1,164 @@
+[
+    {
+        "content": "<p>Both PROPs and Poly-categories are gadgets formalizing multi-input multi-output processes. <br>\nIn PROPs there is extra  structure than in poly-categories in that you can compose along multiple objects at the same time. </p>\n<p>So... which one (if any) is the more general concept? Is there some common generalization?</p>\n<p>One way I could imagine thinking about it is that for a given PROP one can consider the subPolyCategory of morphisms that are composed out of morphisms that are only composed along a single object. </p>\n<p>I'm not sure how natural, canonical this is. <br>\nHow should I think about common generalization of multi-input multi-output processes?</p>",
+        "id": 433330039,
+        "sender_full_name": "Alexander Gietelink Oldenziel",
+        "timestamp": 1713197060
+    },
+    {
+        "content": "<p>PROPs generalise properads which generalise polycategories.</p>",
+        "id": 433337026,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1713198910
+    },
+    {
+        "content": "<p>In properads you may also compose along multiple objects at once. The difference in a PROP is that you can also compose along zero objects.</p>",
+        "id": 433337166,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1713198947
+    },
+    {
+        "content": "<p>I would say that polycategories are more general than PROPs, since every PROP has an underlying polycategory in which you remember only the composition along single objects, but not conversely.</p>",
+        "id": 433357625,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1713205202
+    },
+    {
+        "content": "<p>In the same way that, say, abelian groups are more general than rings.</p>",
+        "id": 433357718,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1713205234
+    },
+    {
+        "content": "<p>Yes, I suppose I was thinking that one has a wider range of operations at one's disposal, but I think \"generalise\" is probably misleading in this context.</p>",
+        "id": 433364218,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1713207529
+    },
+    {
+        "content": "<p>I think of PROPs and polycategories as very roughly analogous to monoidal categories and linearly distributive categories, respectively (the latter being, iirc, the representable polycategories). In this case, linearly distributive categories are more general, because they assume less structure and you can recover monoidal categories by identifying the two \"tensor\" and \"parr\" monoidal structures.</p>",
+        "id": 433455125,
+        "sender_full_name": "Chris Barrett",
+        "timestamp": 1713250965
+    },
+    {
+        "content": "<p>Linearly distributive categories actually generalize monoidal categories: by setting both monoidal structures to be equal, then all of the operations of monoidal categories live within linearly distributive categories.</p>\n<p>This can not be said for PROPs and polycategories because there is no tensor.</p>",
+        "id": 433461831,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1713253568
+    },
+    {
+        "content": "<p>I think what Chris said is fine, in the sense that there is a commutative (up to natural isomorphism) diagram of functors<br>\n<a href=\"/user_uploads/21317/x1lx2dWjN6_oJyPEC6hH4caN/3223f01d-0e85-451d-8019-477fb4c2dd61.jpg\">3223f01d-0e85-451d-8019-477fb4c2dd61.jpg</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/x1lx2dWjN6_oJyPEC6hH4caN/3223f01d-0e85-451d-8019-477fb4c2dd61.jpg\" title=\"3223f01d-0e85-451d-8019-477fb4c2dd61.jpg\"><img src=\"/user_uploads/21317/x1lx2dWjN6_oJyPEC6hH4caN/3223f01d-0e85-451d-8019-477fb4c2dd61.jpg\"></a></div>",
+        "id": 433463208,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1713254131
+    },
+    {
+        "content": "<p>(Actually should be <em>symmetric</em> monoidal categories and l.d. categories on top, or pros and planar polycategories on the bottom, sorry for the confusion)</p>",
+        "id": 433463583,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1713254280
+    },
+    {
+        "content": "<p>The top functor identifies a (symmetric) monoidal category with a \"degenerate\" (symmetric) linearly distributive category with tensor = par</p>\n<p>The bottom functor forgets the composition operations that are not allowed in a (non-planar) polycategory</p>\n<p>The left one embeds (symmetric) monoidal categories as the representable pro(p)s</p>\n<p>The right one embeds (symmetric) l.d. categories as the representable (non-planar) polycategories</p>",
+        "id": 433463823,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1713254365
+    },
+    {
+        "content": "<p>I didn't say what the morphisms are in the top row; it should be strong (symmetric) monoidal functors on the top left, and functors that are lax wrt tensor and oplax wrt par on the top right, I think.</p>",
+        "id": 433464479,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1713254582
+    },
+    {
+        "content": "<p>In what sense are monoidal categories representable PROs? This seems suspicious, because PROs encode more general composition than polycategories, so I would expect that a representable PRO would encode more general tensors than a representable polycategory.</p>",
+        "id": 433465800,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1713255052
+    },
+    {
+        "content": "<p>A PRO has multiary domain and multiary codomain of morphisms, so a representable PRO should have two tensor products, no?</p>",
+        "id": 433465886,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1713255083
+    },
+    {
+        "content": "<p>If there is a sense in which representable PROs are monoidal categories, it seems in a different sense to that in which linearly distributive categories are representable polycategories.</p>",
+        "id": 433466108,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1713255162
+    },
+    {
+        "content": "<p>A universal morphism in a PRO is the same as an invertible morphism, so when a PRO is representable the \"two\" tensor products coincide up to isomorphism (the inverse of a universal morphism for \"tensor\" is a universal morphism for \"par\").</p>\n<p>But it is true that we need to adjust the definitions on the two sides if we want to end up with \"a single monoidal structure\" instead of \"a pair of naturally isomorphic monoidal structures\".</p>",
+        "id": 433467308,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1713255609
+    },
+    {
+        "content": "<p>The coincidence of universal with invertible in a PRO follows from the same argument as the proof that an isomorphism in a category is the same as a morphism that is split epi and mono.</p>",
+        "id": 433467568,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1713255715
+    },
+    {
+        "content": "<p>By \"universal morphism\", you mean a morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo>→</mo><mi>A</mi><mo>⊗</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A, B \\to A \\otimes B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span> such that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi><mo stretchy=\"false\">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><mi>A</mi><mo>⊗</mo><mi>B</mi><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>X</mi><mi>m</mi></msub><mo separator=\"true\">;</mo><msub><mi>Y</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><msub><mi>Y</mi><mi>m</mi></msub><mo stretchy=\"false\">)</mo><mo>→</mo><mi mathvariant=\"script\">C</mi><mo stretchy=\"false\">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>X</mi><mi>m</mi></msub><mo separator=\"true\">;</mo><msub><mi>Y</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><msub><mi>Y</mi><mi>m</mi></msub><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathcal C(X_1, \\ldots, A \\otimes B, \\ldots, X_m; Y_1, \\ldots Y_m) \\to \\mathcal C(X_1, \\ldots, A, B, \\ldots, X_m; Y_1, \\ldots Y_m)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">m</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">m</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">m</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">m</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span> is invertible, or something else?</p>",
+        "id": 433472919,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1713257513
+    },
+    {
+        "content": "<p>Yes, that's what I mean. In a pro it also makes no difference if you include the \"context\" <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>X</mi><mi>m</mi></msub></mrow><annotation encoding=\"application/x-tex\">X_1, \\ldots, X_m</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">m</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> or not. </p>\n<p>(In a polycategory your definition would correspond to what is called \"strongly universal\", which is the notion of universality that is stable under composition).</p>",
+        "id": 433475848,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1713258489
+    },
+    {
+        "content": "<p>In a pro you have \"binary\" and \"n-ary\" identities, so the inverse image of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">d</mi></mrow><mrow><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi></mrow></msub><mo>∈</mo><mi mathvariant=\"script\">C</mi><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo separator=\"true\">;</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{id}_{A,B} \\in \\mathcal{C}(A, B; A, B)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9805em;vertical-align:-0.2861em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">id</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3283em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">A</span><span class=\"mpunct mtight\">,</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05017em;\">B</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mpunct\">;</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span></span></span></span>, which is a morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>⊗</mo><mi>B</mi><mo>→</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A \\otimes B \\to A, B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span>, turns out to be an inverse for your universal morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo>→</mo><mi>A</mi><mo>⊗</mo><mi>B</mi></mrow><annotation encoding=\"application/x-tex\">A, B \\to A \\otimes B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span></span></span></span>.</p>",
+        "id": 433476587,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1713258730
+    },
+    {
+        "content": "<p>Right, I see. The way I should have been thinking about it is that, by having more general composition operations, the constraints on the tensor products are stronger, and so the more general the composition, the closer one gets to trivialising the induced monoidal structure(s).</p>",
+        "id": 433479065,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1713259536
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Polycategories.20and.20PROPs.3B.20common.20generalization.20.3F/near/433475848\">said</a>:</p>\n<blockquote>\n<p>Yes, that's what I mean. In a pro it also makes no difference if you include the \"context\" <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo separator=\"true\">,</mo><mo>…</mo><mo separator=\"true\">,</mo><msub><mi>X</mi><mi>m</mi></msub></mrow><annotation encoding=\"application/x-tex\">X_1, \\ldots, X_m</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"minner\">…</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">m</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> or not.</p>\n</blockquote>\n<p>Are these observations written out anywhere?</p>",
+        "id": 433479201,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1713259569
+    },
+    {
+        "content": "<p>It seems like it would be useful to have a reference for representability of these different structures somewhere. (Probably this has even been mentioned on Zulip before.)</p>",
+        "id": 433479296,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1713259602
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"546041\">@Aaron David Fairbanks</span> is working on it.</p>",
+        "id": 433479386,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1713259630
+    },
+    {
+        "content": "<p>Representability of PROPs was mentioned on Zulip recently and someone cited my paper <a href=\"https://arxiv.org/abs/1911.00818\">A practical type theory for symmetric monoidal categories</a>.  I claim no originality, but at least it's written out there with a sketch of a proof that representable PROPs are equivalent to symmetric monoidal categories.</p>",
+        "id": 433567630,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1713286422
+    },
+    {
+        "content": "<p>One thing that it would be nice to have a reference for in the literature is the fact that representability in the sense of Definition 2.2 of \"A practical type theory for symmetric monoidal categories\" does coincide with representability in the polycategorical sense, i.e. a notion of strong universality.</p>",
+        "id": 433594746,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1713297288
+    },
+    {
+        "content": "<p>Yes.  Although it's a 1-line proof by the Yoneda lemma.</p>",
+        "id": 433597729,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1713298501
+    }
+]

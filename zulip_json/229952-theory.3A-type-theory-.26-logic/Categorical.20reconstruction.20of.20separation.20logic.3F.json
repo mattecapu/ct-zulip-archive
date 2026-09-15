@@ -1,0 +1,176 @@
+[
+    {
+        "content": "<p>(I did a quick search first, and couldn't find anything obvious.)  I'm firmly thinking in the context of <a href=\"https://ncatlab.org/nlab/show/computational%20trilogy\">[[computational trilogy]]</a> here: is there a categorical setting that gives rise to separation logic?  In other words, is there a way to extend the related concepts table found at <a href=\"https://ncatlab.org/nlab/show/regular%20logic\">[[regular logic]]</a> to have 'separation logic' under the 'internal logic' column?</p>",
+        "id": 429646556,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711457099
+    },
+    {
+        "content": "<p>I know the usual suspects are working on the problem, there was e.g. a result in POPL 24, \"Towards a Categorical Model of the Lilac Separation Logic \"</p>",
+        "id": 429697151,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1711471459
+    },
+    {
+        "content": "<p>Are you sure of the title and publication venue? Scholar can't find a paper with that title, and the POPL 24 page also lists no such paper.</p>",
+        "id": 429697804,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711471685
+    },
+    {
+        "content": "<p><a href=\"https://popl24.sigplan.org/details/lafi-2024-papers/7/Towards-a-Categorical-Model-of-the-Lilac-Separation-Logic\">https://popl24.sigplan.org/details/lafi-2024-papers/7/Towards-a-Categorical-Model-of-the-Lilac-Separation-Logic</a></p>",
+        "id": 429698680,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1711471951
+    },
+    {
+        "content": "<p>might a POPL workshop?  LAFI?</p>",
+        "id": 429698764,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1711471983
+    },
+    {
+        "content": "<p>Thanks - weird that Scholar has not picked it up - and that it's neither on Amal's or Steven's web page! Yes, that's a POPL affiliated workshop.</p>",
+        "id": 429698879,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711472018
+    },
+    {
+        "content": "<p>And the paper is an extended abstract with no results - everything categorical is in 2 short paragraphs right before the conclusion. Plus they mix in probabilities, which is a distraction.</p>\n<p>And, at the end of the day, not what I'm looking for: they establish that you can have semantics in a category of sheaves over a category of renamings (nice!), but this is not an \"internal logic\" kind of result. There is still quite a lot of work to do to extract the 'axiomatic' presentation.</p>",
+        "id": 429700106,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711472363
+    },
+    {
+        "content": "<p>does it have to be separation logic or can it be substructural logics in general?  the latter should have more work</p>",
+        "id": 429700742,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1711472562
+    },
+    {
+        "content": "<p>I'm interested in what 'separation' might mean categorically. So I'm most interested in 'star', 'magic wand' and the 'frame rule'. I don't care about heaps in particular, I'm happy to generalize to any kind of linear / affine resource.</p>",
+        "id": 429701962,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711472967
+    },
+    {
+        "content": "<p>there's certainly a lot of work on categorical models of linear logic; for sub-structural in general presumably you'll have more luck than for separation logic, for example <a href=\"https://link.springer.com/chapter/10.1007/978-3-030-43520-2_12\">https://link.springer.com/chapter/10.1007/978-3-030-43520-2_12</a></p>",
+        "id": 429702220,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1711473073
+    },
+    {
+        "content": "<p>I'm not sure what the \"start\" rule is, but there has been work on categorical models of the logic of bunched implications, upon which seperation logic is based. These appear to be cleanly modelled using a CCC with an additional symmetric monoidal closed structure, giving a category which is closed in two ways (the monoidal implication models the magic wand).</p>",
+        "id": 429705750,
+        "sender_full_name": "Chris Barrett",
+        "timestamp": 1711474273
+    },
+    {
+        "content": "<p>(Typo: 'star', not 'start'; edited).</p>\n<p>Indeed, that's the kind of work that I'm looking for! Anything written up?</p>",
+        "id": 429707281,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711474745
+    },
+    {
+        "content": "<p>This looks like a good reference: <a href=\"https://ncatlab.org/nlab/files/Biering-BunchedLogic.pdf\">https://ncatlab.org/nlab/files/Biering-BunchedLogic.pdf</a></p>\n<p>I must admit, though: I'm interested in this topic myself, but I've never been entirely clear on how the logic of bunched implications relates to separation logic proper (aside from the obvious \"they use the same connectives\"). It looks like this work tries to clarify that point, so maybe I should look more closely at it myself!</p>",
+        "id": 429709609,
+        "sender_full_name": "Chris Barrett",
+        "timestamp": 1711475557
+    },
+    {
+        "content": "<p><a href=\"https://doi.org/10.1016/j.entcs.2018.03.016\">This paper</a> is the most up to date that I'm aware of on the categorical logic of separation logic in that it is not just a BI-hyperdoctrine but also includes a persistence modality.</p>",
+        "id": 429742409,
+        "sender_full_name": "Max New",
+        "timestamp": 1711488278
+    },
+    {
+        "content": "<p>Not at all surprised to see the name 'Birkedal' attached to this. Thanks <span class=\"user-mention\" data-user-id=\"276642\">@Max New</span> .</p>",
+        "id": 429742707,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711488430
+    },
+    {
+        "content": "<p>But there's a big difference between separation logic and regular logic which is that a regular category (which is essentially sufficient conditions for the subobject hyperdoctrine to be regular) is a property of a category, but separation logic is not property but structure since you can have multiple interpretations of the separating conjunction (like we can have multiple monoidal structures). Further, there is less focus on models where the logic is interpreted as subobjects, instead, as in the linked paper, the starting point will be something like an ordered partial commutative monoid.</p>",
+        "id": 429742731,
+        "sender_full_name": "Max New",
+        "timestamp": 1711488444
+    },
+    {
+        "content": "<p>honestly I find the categorical logic of separation logic and Hoare logic to be surprisingly under developed but I should probably stop giving away research ideas for free</p>",
+        "id": 429742828,
+        "sender_full_name": "Max New",
+        "timestamp": 1711488486
+    },
+    {
+        "content": "<p>Thanks for confirming my suspicion that this area of categorical logic is under developed. (I can promise you that I won't do anything about it!)</p>",
+        "id": 429743063,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711488604
+    },
+    {
+        "content": "<p>Hi, if you don't know it, Peter has written a nice survey <a href=\"https://research.facebook.com/file/2847918112139218/from_categorical_logic_to_facebook_engineering.pdf\">From categorical logic to facebook engineering</a> -- categorical logic was there from the beginning. </p>\n<p>I'm not sure what you mean is surprisingly undeveloped, <span class=\"user-mention\" data-user-id=\"276642\">@Max New</span>, perhaps you mean the categorical treatment of program logic generally, as opposed to bunched logic (which I think of as basically about Day convolution)?</p>",
+        "id": 429795090,
+        "sender_full_name": "Sam Staton",
+        "timestamp": 1711522559
+    },
+    {
+        "content": "<p>Yeah let me clarify: the semantics of the logic of BI were being done categorically using Day convolution from the beginning and we should probably brag about this more. But there's been a ton of extensions to separation logic since then and few of those have actually extended the categorical analysis, with the Bizjak-Birkedal paper being a notable attempt to \"catch up\" with practice, whereas originally categorical logic was at the forefront.</p>\n<p>But what I think is really underdeveloped about it is incorporating the whole program logic: the logic and the language it is over in a categorical semantics. And I mean it's underdeveloped in that a lot of it is fairly obvious to anyone who understands Bart Jacobs' chapters on Predicate Logic and yet I don't know of a reference that does it.</p>",
+        "id": 429833964,
+        "sender_full_name": "Max New",
+        "timestamp": 1711537373
+    },
+    {
+        "content": "<p>Thanks <span class=\"user-mention\" data-user-id=\"308397\">@Sam Staton</span> that survey was exactly what I was looking for. It was at the absolute perfect level for me to understand the main points, and gives me pointers to things I can look up if I want to go deeper.</p>",
+        "id": 429886080,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711553030
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"296322\">@Jacques Carette</span> this thread also reminds me how much I hate that table. Everything starting with star-autonomous category should clearly be in a different table</p>",
+        "id": 429895437,
+        "sender_full_name": "Max New",
+        "timestamp": 1711555385
+    },
+    {
+        "content": "<p>I think this is all my fault, I think I've added more or less all these lines. If there is a table of logics and associated categorical doctrines, the fragments and extension of linear logic should clearly be in this table. Also, all the variants of lambda-calculus. But I think the beginning of the table is all about fragments of first-order classical logic or theories in first-order classical logic, right? </p>\n<p>So maybe we should make a table for existential/classical logical systems and  a table for constructive/computational logical systems (including linear logic and lambda calculuses)?</p>",
+        "id": 429898710,
+        "sender_full_name": "Jean-Baptiste Vienney",
+        "timestamp": 1711556305
+    },
+    {
+        "content": "<p>I agree there is a clear distinction between these two worlds although I don't know much about the computational interpretation of classical logic, and we can also do mathematics  with the linear / cartesian closed stuff.</p>",
+        "id": 429899720,
+        "sender_full_name": "Jean-Baptiste Vienney",
+        "timestamp": 1711556607
+    },
+    {
+        "content": "<p>Yes I agree the rows you added make sense to have somewhere just not in this same table</p>",
+        "id": 429906751,
+        "sender_full_name": "Max New",
+        "timestamp": 1711558717
+    },
+    {
+        "content": "<p>Hmm, but the name of the table is <a href=\"https://ncatlab.org/nlab/show/categories+and+logic+-+table\">categories and logic table</a>, so I don't know what should be its new name...</p>",
+        "id": 429909991,
+        "sender_full_name": "Jean-Baptiste Vienney",
+        "timestamp": 1711559712
+    },
+    {
+        "content": "<p>the original fields could be called \"categories and predicate logic\"</p>",
+        "id": 429910637,
+        "sender_full_name": "Max New",
+        "timestamp": 1711559941
+    },
+    {
+        "content": "<p>I'll remove these lines from the table and try to make another one (and add further lines into it!) named something like \"linear logic, lambda-calculus and categories\". Just give me a few days and I'll do it when I have some time.</p>",
+        "id": 429993974,
+        "sender_full_name": "Jean-Baptiste Vienney",
+        "timestamp": 1711600651
+    },
+    {
+        "content": "<p>Most of the links above point to work on categorical semantics of Bunched Implications, which includes the crucial separating conjunction connective, but do not include Separation Logic and the Frame rule. The concept of <a href=\"https://www.cs.ox.ac.uk/people/hongseok.yang/paper/asl-short.pdf\">local action</a> identified by Calcagno, O'Hearn and Yang is missing in an account that only covers Bunched Implications, but is essential to Separation Logic.</p>\n<p>Paul-André Melliès and Noam Zeilberger's \"<a href=\"http://noamz.org/papers/funts.pdf\">Functors are Type Refinement Systems</a>\" describes Hoare Logic and Separation Logic as refinements of state transformers (Section 5). They note that the frame rule is not automatic for all possible transformers.</p>\n<p>Another approach would be to consider Separation Logic as a kind of Dynamic Logic by having a modality <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><mi>c</mi><mo stretchy=\"false\">]</mo><mi>ϕ</mi></mrow><annotation encoding=\"application/x-tex\">[c]\\phi</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathnormal\">c</span><span class=\"mclose\">]</span><span class=\"mord mathnormal\">ϕ</span></span></span></span> graded by programs <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi></mrow><annotation encoding=\"application/x-tex\">c</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">c</span></span></span></span>. The frame rule would then correspond to the fact that this modality should be strong wrt the separating conjunction (<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ϕ</mi><mo>∗</mo><mo stretchy=\"false\">[</mo><mi>c</mi><mo stretchy=\"false\">]</mo><mi>ψ</mi><mo>⊢</mo><mo stretchy=\"false\">[</mo><mi>c</mi><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">(</mo><mi>ϕ</mi><mo>∗</mo><mi>ψ</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\phi * [c]\\psi \\vdash [c](\\phi * \\psi)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">ϕ</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathnormal\">c</span><span class=\"mclose\">]</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ψ</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⊢</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathnormal\">c</span><span class=\"mclose\">]</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">ϕ</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ψ</span><span class=\"mclose\">)</span></span></span></span>), but <strong>not</strong> wrt the normal conjunction (this is noted by Melliès and Zeilberger at the end of Section 5 and attributed to O'Hearn and Yang). IIRC, the Iris logic has a non-graded \"state update\" modality <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⇛</mo><mi>ϕ</mi></mrow><annotation encoding=\"application/x-tex\">\\Rrightarrow \\phi</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7733em;vertical-align:-0.1367em;\"></span><span class=\"mrel amsrm\">⇛</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">ϕ</span></span></span></span> that is lax and strong wrt separating conjunction.</p>",
+        "id": 432903011,
+        "sender_full_name": "Bob Atkey",
+        "timestamp": 1712928167
+    }
+]

@@ -1,0 +1,146 @@
+[
+    {
+        "content": "<p>I am an independent researcher from Costa Rica looking for an arXiv endorsement to submit to math.MG or math.CT.</p>\n<p>The paper develops a foundational framework for geometry in which finite relations and their compositions are the only primitives. Objects are equivalence classes of configurations under a congruence. Main results include a metric emergence theorem, a reconstruction theorem (every finite metric space arises from a relational system), a categorical equivalence RelSys∼≃LawMetfin building on Lawvere's 1973 formulation of metric spaces as enriched categories, and a space emergence theorem establishing that position is encoded in inter-system relations rather than in any ambient container.</p>\n<p>The paper is 33 pages. LaTeX source and full commit history are available at:<br>\n<a href=\"https://github.com/Jorge-Gonzalez/process-relational-geometry\">https://github.com/Jorge-Gonzalez/process-relational-geometry</a></p>\n<p>If anyone familiar with enriched categories or Lawvere metric spaces would be willing to endorse, I would be very grateful. My arXiv endorsement link is: <a href=\"https://arxiv.org/auth/endorse?x=O4P6WL\">https://arxiv.org/auth/endorse?x=O4P6WL</a><br>\nThank you.</p>",
+        "id": 590807038,
+        "sender_full_name": "Jorge L. Gonzalez",
+        "timestamp": 1777069175
+    },
+    {
+        "content": "<p>Hi Jorge. It's a bit hard to tell what you really do here; it is usually not advisable in a math paper to mix up your philosophy too much with your mathematics. What I can glean in five minutes is that you're building finite metric spaces out of quotients of the free categories on weighted directed graphs, for which you choose to use a non-standard name through most of the paper, and approximate certain infinite ones. Your abstract mentions several theorems as among your \"main results\" which in section 12 you admit are not actually new; there you also mention briefly that there is a considerable history of geometry of groups, graphs, groupoids, and so on, in which as far as I can tell your work forms a chapter. Yet you aim this as a new foundation for geometry. It seems like quite a stretch to me at this point.</p>",
+        "id": 590810160,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1777071510
+    },
+    {
+        "content": "<p>Thank you for your feedback — it is constructive and I'll address them before submission.</p>\n<p>You are right that the abstract oversells novelty relative to what Section 12 actually qualifies. The genuinely new contributions are narrower than the abstract implies: the (n,k) classification as a complete isomorphism invariant for single-generator congruences, the space emergence theorem (Section 14, showing space is derived from inter-system relations rather than assumed as a container), and the pointed GH emergence theorem with explicit conditions. The rest is indeed reformulation within an existing tradition, and the abstract should say so more honestly.</p>\n<p>On the philosophical framing — that is a fair criticism for a mathematics journal submission. It belongs in a companion essay rather than in the paper itself.</p>\n<p>Would you be willing to endorse despite these concerns, on the basis that the work is legitimate mathematics even if the framing needs adjustment? I am happy to revise the abstract before submission.</p>",
+        "id": 590811369,
+        "sender_full_name": "Jorge L. Gonzalez",
+        "timestamp": 1777072494
+    },
+    {
+        "content": "<p>I think that asking someone to endorse <em>despite</em> their concerns is bold.</p>",
+        "id": 590854455,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1777108652
+    },
+    {
+        "content": "<p>On another Zulip someone reported how they</p>\n<blockquote>\n<p>asked the ArXiv people and they said that public endorsement farming is not explicitly against the terms and conditions but they encouraged people to unrecommended people who did so and who were clearly AI-powered</p>\n</blockquote>",
+        "id": 590854623,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1777108862
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276422\">David Michael Roberts</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/arXiv.20endorsement.20.E2.80.94.20Lawvere.20metric.20spaces/near/590854455\">said</a>:</p>\n<blockquote>\n<p>I think that asking someone to endorse <em>despite</em> their concerns is bold.</p>\n</blockquote>\n<p>Jorge, not to pile on, but I agree with David. It's especially bold asking Kevin publicly and putting him on the spot like that. </p>\n<p>I'm getting stuck already in section 2. Do you or do you not include <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">d</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{id}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">id</span></span></span></span></span> as an element of a relational system? Can there be more than one identity element? </p>\n<p>In remark 2.6, how do you define a weighting, given a relational system? And how do you define the partial composition from the data of a weighted directed multigraph, i.e., how would you define the composite of a pair of compatible edges, <em>as another edge</em>?  (Concatenation is an operation that makes sense for <em>lists</em> of successively compatible edges, but the operation doesn't make sense for edges in a general (weighted) directed multigraph.)</p>",
+        "id": 590885978,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1777133512
+    },
+    {
+        "content": "<p>First, I want to apologize to Kevin directly. I honestly did not intend to put you in a difficult position. I am sorry.</p>\n<p>I want to address the AI point directly. I used Claude extensively to formalize this work. I am a web designer and programmer from Costa Rica with no formal mathematical training. I have been developing these ideas about geometric foundations for years — the intuitions about the dimensionless point, infinity as a direction not a destination, position as relational rather than intrinsic — but I had no way to express them rigorously. Using AI as a formalization tool allowed me to move from philosophical intuition to mathematical language. The ideas, the direction, the judgment about when the formalization was right or wrong — those were mine. The technical vocabulary and proof structure were produced collaboratively.</p>\n<p>I also want to note that I deliberately documented this process. The paper's repository at <a href=\"https://github.com/Jorge-Gonzalez/process-relational-geometry\">https://github.com/Jorge-Gonzalez/process-relational-geometry</a> contains twenty-one commits, each with a detailed message describing what changed mathematically and why — from the initial 885-line draft through the final 3,265-line paper. That history is public and traceable. It was not generated in one session. It developed over days of iteration, critique, proof correction, and philosophical clarification. I documented it precisely because I wanted the process to be transparent.</p>\n<p>On the technical critique — Todd's questions point to real gaps in how Sections 2 and 3 are written, yes, they need to be stated clearly. The identity element is not a primitive relation in R — it is the equivalence class of the empty configuration under the congruence, so there is exactly one identity per quotient. The composition operation acts on configurations — finite sequences of compatible edges — not on individual edges directly; two configurations compose when the target of the last edge of the first matches the source of the first edge of the second, and the operation is concatenation of sequences. Individual edges become single-element configurations and concatenation handles the rest. The weight function is defined on R and extended to configurations by summing along the sequence. These are clarifications of presentation rather than corrections to the underlying mathematics, but they are fair to ask for and I will make them explicit in a revision.</p>\n<p>Kevin's broader point about the abstract overstating novelty relative to what Section 12 qualifies is also correct. The genuinely new contributions are narrower: the (n,k) classification as a complete isomorphism invariant for single-generator congruences, the space emergence theorem showing space is derived from inter-system relations rather than assumed as a container, and the pointed GH emergence theorem with explicit conditions. The philosophical framing belongs in a companion essay rather than in the paper body. I will revise accordingly.</p>\n<p>I understand if the AI-assisted origin disqualifies the work in some eyes. My intention was never to misrepresent authorship. It was to find out whether ideas I had been carrying for years were pointing at something real, and to do that as seriously and responsibly as I could.</p>\n<p>I genuinely appreciate to everyone here taking the time to read the paper and engage critically. That engagement is exactly what I was looking for. The goal was never to slip something past the community. It was to have the conversation.</p>\n<p>I will not pursue the endorsement further. If someone feels the work merits it after this exchange, I am grateful. If not, I understand.</p>",
+        "id": 590893739,
+        "sender_full_name": "Jorge L. Gonzalez",
+        "timestamp": 1777139433
+    },
+    {
+        "content": "<p>I recognize that this community has high standards for what belongs in the mathematical record, and that those standards exist for good reasons. I am not a mathematician and I did not arrive here through the usual path. What I can offer is that the ideas were developed seriously, the process was documented transparently, and the technical concerns that have been raised are ones I intend to address carefully. Whether the result meets the bar is genuinely for this community to judge — and I mean that without reservation.</p>",
+        "id": 590894975,
+        "sender_full_name": "Jorge L. Gonzalez",
+        "timestamp": 1777140161
+    },
+    {
+        "content": "<p>You might trying giving your AI sections of the paper - cutting and pasting sections into it - and tell it \"can you find logical errors and gaps in this argument?\" or \"please criticize this section: don't be afraid to hurt my feelings\".  It could be helpful.</p>",
+        "id": 590898442,
+        "sender_full_name": "John Baez",
+        "timestamp": 1777142924
+    },
+    {
+        "content": "<p>I hadn't picked up on the AI aspect until you mentioned it now (it seems there must have been some other Zulip discussion where this was brought out). For discussion here, I think it's extremely important to be straight up about this aspect from the beginning. </p>\n<p>I don't have experience with Claude (or similar), but I know John has been using it and so his advice here is undoubtedly good. I was just going to say that it can be helpful to subject one's paper to some \"radical doubt\", for example how it clearly will read to someone coming at it for the first time, or do the proofs really hold up, etc. Since you say you lack formal mathematical training, this type of critical reading might not be so ingrained, so perhaps Claude can help out. </p>\n<p>But at the end of the day, you the author have to understand every bit of it thoroughly: you can stand behind all the definitions and proofs and be able to explain them, and not rely on some other entity to explain them. Getting to that point may take more than a few days (recalling \"It developed over days of iteration, critique, proof correction, and philosophical clarification\").</p>",
+        "id": 590900515,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1777144391
+    },
+    {
+        "content": "<p>Thank you, Todd, this is genuinely helpful advice and I take it seriously.</p>\n<p>You are right that the standard I need to meet is being able to stand behind every definition and proof independently, not simply having been part of producing them. That is a higher bar than I have reached so far, and I will be honest with myself about that gap.</p>\n<p>The revision I am planning — tightening the definitions in Sections 2 and 3, narrowing the novelty claims in the abstract, separating the philosophical framing from the mathematics — is a start. But your point goes deeper than presentation: it is about whether I can explain and defend the content on my own terms. That is the work I need to do before this is ready.</p>",
+        "id": 590903161,
+        "sender_full_name": "Jorge L. Gonzalez",
+        "timestamp": 1777146278
+    },
+    {
+        "content": "<p>Not directly related to the current criticism, but this exchange raises a broader question the academic community is beginning to navigate: how to evaluate work developed with AI as a genuine cognitive partner, not as a ghostwriter, but as a tool that extends what a person can formalize and express. The boundary between what a person knows and what they can access with assistance is shifting in ways that do not map cleanly onto existing standards of authorship and expertise. In my case it opened a precise and rigorous path to ideas I had been carrying for years but had no formal way to reach — acting as both a pedagogical guide and a means of accessing knowledge that would otherwise have required years of institutional training. That democratization of access feels worth acknowledging alongside the legitimate concerns. Where the community sees a validation problem, I see something different: ideas that would otherwise have remained private questions, never tested, never formalized, never offered to the conversation at all.</p>",
+        "id": 590904150,
+        "sender_full_name": "Jorge L. Gonzalez",
+        "timestamp": 1777147201
+    },
+    {
+        "content": "<p>For whatever my opinion is worth: I am open to people using these extraordinarily powerful agents (who would I be to stop them?), and there is a lot of reason to be excited, but there is a lot of reason still to be skeptical and wary. I was a moderator at MathOverflow for a little over a decade, and stepped down from the position just around the time the tsunami of AI slop was beginning to hit our shores. People are using these agents to skip a lot of hard work, and the \"validation problem\" has become staggering. </p>\n<p>My experience taught me that the AIs have not consistently achieved the level of depth and subtlety attained by human mathematicians, despite their sometimes shocking power. </p>\n<p>So my paltry advice would be: by all means use them, but keep a stern watch over them as well. Subject them to critical doubt as well, as best you can. \"With great power comes great responsibility.\"</p>",
+        "id": 590906750,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1777149791
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"1073887\">@Jorge L. Gonzalez</span> wrote:</p>\n<blockquote>\n<p>In my case it opened a precise and rigorous path to ideas I had been carrying for years but had no formal way to reach — acting as both a pedagogical guide and a means of accessing knowledge that would otherwise have required years of institutional training.</p>\n</blockquote>\n<p>It may have opened this path, but you haven't yet walked down it, because your document is not precise and rigorous.  People here have pointed out a few flaws, but then they've quit reading, because that's the tradition in math: there is always too much to read, so few will read a document once it becomes clear it has several flaws.  So there may be other flaws.  </p>\n<p>This is why I suggested using AI to search for flaws.  While most mathematicians at this point are opposed to writing math papers with the help of AI in the particular way you have, if you're committed to this way you might as well take full advantage of your AI's capabilities and get it to critically analyze your paper, giving it prompts to make sure it is eager to find mistakes.   Most mathematicians learn, often with difficulty, that they have to read their own papers in this highly critical spirit.</p>",
+        "id": 590909929,
+        "sender_full_name": "John Baez",
+        "timestamp": 1777152863
+    },
+    {
+        "content": "<p>I got stuck in your paper in the definition of \"relational system\", because you didn't clarify whether the composition operation <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∘</mo></mrow><annotation encoding=\"application/x-tex\">\\circ</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4445em;\"></span><span class=\"mord\">∘</span></span></span></span> was the <em>usual</em> composition of relations or some arbitrary binary operation.   Which is it?</p>\n<p>I suspect you want it to be an arbitrary binary operation, based on Definition 2.3, but the fact that you don't even mention the existence of the <em>usual</em> composition makes me nervous.  Surely its existence is important.  Maybe you mention it later, but you should reassure the reader immediately.</p>",
+        "id": 590910071,
+        "sender_full_name": "John Baez",
+        "timestamp": 1777153038
+    },
+    {
+        "content": "<p>Thank you <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span>, I recognize that pointing out the composition operation was an example rather than an exhaustive review, and that the real message is that the work is not ready in its current form. To answer your direct question: the composition is intended to be an arbitrary partially-defined binary operation on configurations, not the standard composition of relations. The relationship to standard relational composition should have been clarified immediately in the definition, and I will fix that. The honest next step is to develop the kind of critical reading of my own paper that you are describing — looking for what breaks rather than what holds. I genuinely appreciate the engagement. It is more than I expected and more useful than I could have hoped for at this stage.</p>",
+        "id": 590912119,
+        "sender_full_name": "Jorge L. Gonzalez",
+        "timestamp": 1777155127
+    },
+    {
+        "content": "<p>I think you’ve brought AI in here at the wrong moment. Given that you were going to bring these ideas to us at some point, there’s no reason you couldn’t have brought them before attempting to formulate them into a paper which is not, in fact, effective and rigorous, relying heavily on AI support to write material you don’t really understand—or even meta-understand in the sense that you know how it relates to ordinary mathematical writing and what exactly the shape of the gaps in your understanding might be. I think you’d get a lot more out of just trying to formalize your core ideas in dialogue with the actual humans here, some of whom are almost preternaturally eager to engage with the amazingly rare cases of an interested student who shows up trying sincerely to learn (I can think of basically three in the threeish years I’ve been here.)</p>",
+        "id": 590949793,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1777190624
+    },
+    {
+        "content": "<p>Once you actually have a real idea for a paper, and also clearly understand what it means to write a paper, it’s more plausible that AI might help write a better paper, faster—but it’s quite crucial that, as you might remark, in this situation you don’t need the AI to <em>enable</em> writing the paper.</p>",
+        "id": 590949853,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1777190692
+    },
+    {
+        "content": "<p>Thank you <span class=\"user-mention\" data-user-id=\"609515\">@Kevin Carlson</span>, this really means a lot to me. You are right, the current results do not back up the argument for the AI-assisted process, and I understand that now. I have kept these ideas to myself for a long time, partly from introversion and partly from not knowing where to bring them. The invitation to talk through them here with people who engage seriously, before attempting to formalize them, is exactly what I should have looked for from the start. I would be grateful for that opportunity, and for the generosity it implies.</p>",
+        "id": 590997484,
+        "sender_full_name": "Jorge L. Gonzalez",
+        "timestamp": 1777231738
+    },
+    {
+        "content": "<p>Not to pile on, but I'm reminded of the R.A. Fisher quote</p>\n<blockquote>\n<p>To consult the statistician after an experiment is finished is often merely to ask him to conduct a post mortem examination. He can perhaps say what the experiment died of.</p>\n</blockquote>\n<p>There's also a quote that I vaguely recall but can't find again and that is something to effect of: once mathematics is written up/published it is dead.</p>",
+        "id": 591013953,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1777246702
+    },
+    {
+        "content": "<p>Well, I don't agree with that last quote, because once mathematics is polished up and published then other people start using it, building on it, questioning it, etc.   It can then live on for centuries!</p>",
+        "id": 591014411,
+        "sender_full_name": "John Baez",
+        "timestamp": 1777247195
+    },
+    {
+        "content": "<p>It was certainly a very idiosyncratic take, and I wish I could find it again!</p>",
+        "id": 591025963,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1777253183
+    },
+    {
+        "content": "<p>Rene Thom once gave a parody of Bourbaki's symbols like the \"dangerous bend\" sign for difficult passages, which included a tombstone symbol for mathematics that was completely rigorous and formal.</p>",
+        "id": 591042227,
+        "sender_full_name": "John Baez",
+        "timestamp": 1777266303
+    },
+    {
+        "content": "<p>This topic was moved to <a class=\"stream-topic\" data-stream-id=\"241990\" href=\"/#narrow/channel/241990-community.3A-discussion/topic/arXiv.20endorsement.20.E2.80.94.20Lawvere.20metric.20spaces/with/591323607\">#community: discussion &gt; arXiv endorsement — Lawvere metric spaces</a> by <span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span>.</p>",
+        "id": 591323608,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1777367816
+    }
+]

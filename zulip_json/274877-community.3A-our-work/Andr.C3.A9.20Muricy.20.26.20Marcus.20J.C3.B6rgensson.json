@@ -1,0 +1,32 @@
+[
+    {
+        "content": "<p>Our master's thesis on implementing Poly and mode-dependent dynamical systems in Cubical Agda was finally published :)</p>\n<p><a href=\"https://odr.chalmers.se/server/api/core/bitstreams/774ba4a2-58b4-407f-aa6b-b0209b6c7d70/content\">https://odr.chalmers.se/server/api/core/bitstreams/774ba4a2-58b4-407f-aa6b-b0209b6c7d70/content</a></p>",
+        "id": 411596397,
+        "sender_full_name": "André Muricy Santos",
+        "timestamp": 1704629673
+    },
+    {
+        "content": "<p>Congratulations!  Do you think someone will apply this?</p>",
+        "id": 411601922,
+        "sender_full_name": "John Baez",
+        "timestamp": 1704635503
+    },
+    {
+        "content": "<p>Thank you John! I don't know, but I want to see if poly is helpful to dynamical systems experts, I have a meeting with a researcher at Chalmers later this month where I'll show this and other work, maybe something comes out of that :)</p>",
+        "id": 411602322,
+        "sender_full_name": "André Muricy Santos",
+        "timestamp": 1704635826
+    },
+    {
+        "content": "<p>Thanks for sharing your work! <br>\nI'm currently learning category theory and I was wondering about a few things in the paper. First, I was wondering what the relation of Poly and Chart is to the functor category of all endofunctors on Set - are they subcategories, and if so, in what way? If they are subcategories, would that make the monoid objects in Poly monads? Lastly I am confused by the note that Chart could also be called the \"arrow category\" of Set. Usually I think of arrow categories of C as being where the objects are morphisms in C and morphisms are commuting squares in C, IE, a functor category from the interval category to C. In which sense of \"arrow category\" is Chart an example of?</p>",
+        "id": 412244142,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1704932920
+    },
+    {
+        "content": "<p>Thanks for the questions :)<br>\nPoly is a subcategory of [Set,Set], but Chart is not! The reason I know this is because arrows between charts are not natural transformations. I don't know which canonical categorical structure they are, but they are not NTs <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span> I believe I've asked this before on this Zulip in fact. So yes monoids in Poly are monads, and comonoids are comonads.</p>\n<p>As for that note, here's how to see charts as commuting squares. <br>\n<a href=\"/user_uploads/21317/6RNGooALT6BBWeNkeYRHpJmX/Screenshot-2024-01-11-at-12.46.04.png\">Imagine this polynomial instead as a function from the directions to the positions</a>, so the domain is the union of the direction at every position, and the codomain is the positions. Then you can view a chart as a pair of functions that form a square; each polynomial is a function, and the upper part of the chart (the map on directions) is the upper part of the square and the lower part (the map on positions) is the lower part of the square. This square commutes because in the context of charts, maps on directions are limited to be maps <em>at that position</em>.</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/6RNGooALT6BBWeNkeYRHpJmX/Screenshot-2024-01-11-at-12.46.04.png\" title=\"Imagine this polynomial instead as a function from the directions to the positions\"><img src=\"/user_uploads/21317/6RNGooALT6BBWeNkeYRHpJmX/Screenshot-2024-01-11-at-12.46.04.png\"></a></div><p><a href=\"/user_uploads/21317/rIwoNP7_Eg1DNZP61wsvw_o7/Screenshot-2024-01-11-at-12.52.20.png\">This example from the thesis</a> shows that. If you were to start at a direction of the left polynomial, go right to the right polynomial, then down to its position, you'll always land at the same position as if you had gone down to a position first (so you stay at the left polynomial) then left to a position on the right.</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/rIwoNP7_Eg1DNZP61wsvw_o7/Screenshot-2024-01-11-at-12.52.20.png\" title=\"This example from the thesis\"><img src=\"/user_uploads/21317/rIwoNP7_Eg1DNZP61wsvw_o7/Screenshot-2024-01-11-at-12.52.20.png\"></a></div>",
+        "id": 412326592,
+        "sender_full_name": "André Muricy Santos",
+        "timestamp": 1704974064
+    }
+]

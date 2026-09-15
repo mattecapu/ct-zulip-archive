@@ -1,0 +1,38 @@
+[
+    {
+        "content": "<p>Pardon me, this is probably a naive question.</p>\n<p>One of the archetypal examples of a natural isomorphism is that of a finite-dimensional vector space to its double dual. I'd never actually sat down and thought about this until recently. The natural map in one direction is obvious, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>v</mi><mo>:</mo><mi>V</mi><mo stretchy=\"false\">)</mo><mo>↦</mo><mo stretchy=\"false\">(</mo><mo stretchy=\"false\">(</mo><mi>f</mi><mo>:</mo><msup><mi>V</mi><mo>∗</mo></msup><mo stretchy=\"false\">)</mo><mo>↦</mo><mi>f</mi><mo stretchy=\"false\">(</mo><mi>v</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(v: V) \\mapsto ((f: V^*) \\mapsto f(v))</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">↦</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">((</span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6887em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">∗</span></span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">↦</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">v</span><span class=\"mclose\">))</span></span></span></span> . But I couldn't think of how to construct an inverse.</p>\n<p>M.O. says you don't construct the inverse. You just prove injectivity, and that the two spaces are the same dimension, therefore the spaces are isomorphic. This makes perfect sense to me on a set-theoretic level. But I still don't see how to actually construct the inverse, to show that the map is an isomorphism in a category-theoretic sense.</p>\n<ul>\n<li>\n<p>Is there just some linear algebra algorithm I'm forgetting about? Any algorithm seems like it would require a basis...</p>\n</li>\n<li>\n<p>Is there some categorical property of f.d.Vec we're using here? Some sort of dependently-typed map <code>(f: V -&gt; W, injective(f), same_dimension(src(f), tgt(f))) -&gt; (f^{-1}: W -&gt; V)</code>? Or should we consider the double dual isomorphism an \"axiom\" of f.d.Vec, a fundamental property?</p>\n</li>\n<li>\n<p>Or, do these questions depend on fiddly foundational details?</p>\n</li>\n</ul>",
+        "id": 488688076,
+        "sender_full_name": "James Gilles",
+        "timestamp": 1734025866
+    },
+    {
+        "content": "<p>Remember that ‘finite dimensional vector space’ means vector space for which there exists a natural number <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> and a linear isomorphism with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>k</mi><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">k^n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span></span></span></span> (where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">k</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span></span></span></span> is your base field). This is equivalent to the existence of a finite basis. Armed with a basis, it should be ok to write down the inverse.</p>",
+        "id": 488689284,
+        "sender_full_name": "Nathan Corbyn",
+        "timestamp": 1734026309
+    },
+    {
+        "content": "<p>Ahh, that's it. Makes sense, thanks.</p>",
+        "id": 488689412,
+        "sender_full_name": "James Gilles",
+        "timestamp": 1734026366
+    },
+    {
+        "content": "<p>I guess I was confused because I was thinking of \"the category of finite-dimensional-vector spaces equipped with bases\" as distinct from \"the category of finite-dimensional vector spaces that CAN be equipped with bases\". You have to invoke choice to get from the second to the first, right?</p>",
+        "id": 488689803,
+        "sender_full_name": "James Gilles",
+        "timestamp": 1734026500
+    },
+    {
+        "content": "<p>You have to invoke choice to get a <em>functor</em> from the second to the first.  But when proving that some map you already have is an isomorphism, you don't need choice to choose one thing that you know exists.</p>",
+        "id": 488690026,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1734026565
+    },
+    {
+        "content": "<p>Ah, I see, this is just the elimination rule for the existential quantifier in a proof assistant. The type of the result doesn't depend on the basis, so we can apply Exists.elim -- and in this case, there's only one choice for the result, so it doesn't depend on the basis at all. Thanks!</p>",
+        "id": 488695024,
+        "sender_full_name": "James Gilles",
+        "timestamp": 1734028370
+    }
+]

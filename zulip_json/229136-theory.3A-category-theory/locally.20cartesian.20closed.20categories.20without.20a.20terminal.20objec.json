@@ -1,0 +1,254 @@
+[
+    {
+        "content": "<p>I'm in the process of revising my category theory book. You can see the current text of the <a href=\"https://emilyriehl.github.io/files/context.pdf\">second edition</a> on my website. (At some point later I'd repost a PDF of the first edition.)</p>\n<p>While I'm trying not to add too many new pages, I have added one new section on locally cartesian closed categories. Readers are very welcome, especially if they can give me comments before August. </p>\n<p>In writing a motivating example, I realized that the category of sets and monomorphisms is locally cartesian closed... except that it doesn't have a terminal object (or products). It seems like most people use the term \"locally cartesian closed\" for the case with a terminal object and I like following the dominant convention. But is there a non-horrible name that I can use to refer to the case where I'm just asking for pullbacks and their adjoints? Some of the results in this section apply more generally and it would be cleaner to state them at that level of generality. But I'm also trying not to be too technical, so perhaps I should just give this up...</p>",
+        "id": 605483905,
+        "sender_full_name": "Emily Riehl",
+        "timestamp": 1782082524
+    },
+    {
+        "content": "<p>Interesting. I thought I heard my adviser (Myles Tierney) once say that some people have used locally cartesian closed in precisely this sense: it just meant that every slice was cartesian closed. I wish he were around so I could ask him. The Categories list might be a good place to ask.</p>",
+        "id": 605493095,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1782084742
+    },
+    {
+        "content": "<p>I think that might be the original usage but it seems to have shifted more recently. The sources I've found (eg <span class=\"user-mention\" data-user-id=\"276770\">@Steve Awodey</span>'s book) assume a terminal object.</p>\n<p>If we used \"locally cartesian closed category\" for the more general version then \"lex locally cartesian closed category\" is a possible name for the terminal object version. But I'd rather follow conventions here and it doesn't seem to be that.</p>",
+        "id": 605498096,
+        "sender_full_name": "Emily Riehl",
+        "timestamp": 1782085919
+    },
+    {
+        "content": "<p>But lex locally cartesian closed would mean all finite limits, not just all finite products, no?</p>",
+        "id": 605499618,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1782086272
+    },
+    {
+        "content": "<p>(i.e. what Peter Johnstone calls \"properly cartesian closed\")</p>",
+        "id": 605499691,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1782086288
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276422\">David Michael Roberts</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec/near/605499618\">said</a>:</p>\n<blockquote>\n<p>But lex locally cartesian closed would mean all finite limits, not just all finite products, no?</p>\n</blockquote>\n<p>Yes, Emily is including pullbacks from the get-go even to be speaking of locally cartesian closed in the first place; the only issue is over the presence of a terminal. </p>\n<p>Speaking of Johnstone: he might be just the person to ask.</p>",
+        "id": 605520598,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1782090147
+    },
+    {
+        "content": "<p>One term that has been used for the more general notion is \"partial locally cartesian closed category\", see <a href=\"http://www.tac.mta.ca/tac/volumes/11/13/11-13abs.html\">http://www.tac.mta.ca/tac/volumes/11/13/11-13abs.html</a> EDIT: Although now I see that they ask for binary products (in Definition 1.3).</p>",
+        "id": 605554613,
+        "sender_full_name": "Alexander Campbell",
+        "timestamp": 1782098014
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"277611\">@Todd Trimble</span>  Oh, sorry, I thought it was binary products only, I misread <span class=\"user-mention\" data-user-id=\"888029\">@Emily Riehl</span> 's comment <span aria-label=\"man facepalming\" class=\"emoji emoji-1f926-200d-2642\" role=\"img\" title=\"man facepalming\">:man_facepalming:</span></p>",
+        "id": 605555769,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1782098260
+    },
+    {
+        "content": "<p>I'd like to suggest that including a terminal object in the definition of \"locally cartesian closed\" is not the dominant usage. From what I can tell, the two conventions are roughly equal. I spent ten minutes skimming references on Google Scholar, and found plenty of recent references (here, \"later\" = \"since Awodey's textbook\") that take a locally cartesian category to be one without a terminal object. Here is a sample of papers using the convention without a terminal object (in no particular order, just the one Google Scholar gave me for searching for \"locally cartesian closed category\"):</p>\n<ul>\n<li><a href=\"https://arxiv.org/abs/0807.1704\">Convenient Categories of Smooth Spaces</a> (2008)</li>\n<li><a href=\"https://www.sciencedirect.com/science/article/pii/S1571066108003976\">The Interpretation of Intuitionistic Type Theory in Locally Cartesian Closed Categories an Intuitionistic Perspective</a></li>\n<li><a href=\"https://arxiv.org/abs/1005.4236\">Local fibred right adjoints are polynomial</a> (2010)</li>\n<li><a href=\"https://arxiv.org/abs/1210.0828\">Data types with symmetries and polynomial functors over groupoids</a> (2012)</li>\n<li><a href=\"https://link.springer.com/article/10.1007/s10485-011-9251-6\">Algebraic Exponentiation in General Categorie</a> (2011)</li>\n<li><a href=\"https://www.diva-portal.org/smash/get/diva2:613378/FULLTEXT01.pdf\">Locally cartesian closed categories, coalgebras, and containers</a> (2013)</li>\n<li><a href=\"https://dl.acm.org/doi/pdf/10.1145/3437992.3439922\">Formalizing Category Theory in Agda</a> (2021)</li>\n<li><a href=\"https://arxiv.org/abs/2202.04543\">Locally Cartesian Closed Categories</a> (2022)</li>\n<li><a href=\"https://arxiv.org/abs/2208.13088\">Terms and derivatives of polynomial functors via negation</a> (2022)</li>\n<li><a href=\"https://studenttheses.uu.nl/server/api/core/bitstreams/2485cda5-fa61-4fec-abf4-9bbd53228b9c/content\">Homotopical models of UF and their relationship to infty-topoi</a></li>\n<li><a href=\"https://www.mdpi.com/2227-7390/13/19/3155\">Completeness and Cocompleteness Transfer for Internal Group Objects with Geometric Obstructions</a> (2025)</li>\n</ul>\n<p>(Furthermore, I found several papers with definitions of the form \"a category with finite limits is locally cartesian closed\", leaving open the possibility also of defining local cartesian closure differently for arbitrary categories.)</p>",
+        "id": 605603562,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1782110564
+    },
+    {
+        "content": "<p>I therefore think it would not be going against the dominant usage not to assume \"locally cartesian closed\" includes a terminal object. I think it is more useful not to include a terminal object in the definition, both because the terminology is more consistent this way (\"locally\" properly being used only to refer to the behaviour of slice categories, not global structure), and because there are plenty of examples of LCCCs without terminal objects.</p>",
+        "id": 605604204,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1782110743
+    },
+    {
+        "content": "<p>If we use “lccc” to include a terminal object, then the case w/o 1 can be called “llccc”. <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>",
+        "id": 605614539,
+        "sender_full_name": "Steve Awodey",
+        "timestamp": 1782112989
+    },
+    {
+        "content": "<p>I might be mistaken, but it seems like one could describe the \"no terminal object\" variant using straightforward alternative terminology, along the lines of <em>category with cartesian closed slices</em>.</p>\n<p>The \"has terminal object\" variant does not seem to admit a similarly straightforward description. If one would otherwise need to write \"take a locally cartesian closed category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0715em;\">C</span></span></span></span> with terminal object\" many times in the book, and the current literature is split 50-50, it makes sense to retain the term lccc to denote the harder to describe condition.</p>",
+        "id": 606376169,
+        "sender_full_name": "Zoltan A. Kocsis (Z.A.K.)",
+        "timestamp": 1782348461
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec/near/605604204\">said</a>:</p>\n<blockquote>\n<p>there are plenty of examples of LCCCs without terminal objects</p>\n</blockquote>\n<p>I'd be interested to hear some of these examples.  I think the only example I knew of before Emily mentioned sets and monomorphisms was the category of spaces (or locales) and local homeomorphisms (which is even locally a topos).</p>\n<p>I suppose I ought to try to answer this by following all of your links, but their titles suggest to me that they're likely to omit a terminal object just because they don't need it (e.g. for defining polynomials) rather than because they have naturally-occurring examples that lack it.</p>",
+        "id": 606385977,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1782356496
+    },
+    {
+        "content": "<p>I added a list of examples to the <a href=\"https://ncatlab.org/nlab/show/locally+cartesian+closed+category#without_terminal_objects\">nLab page</a>. Some are fairly trivial and included just to illustrate some degenerate cases, but there are quite a few more interesting examples.</p>",
+        "id": 606400700,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1782366204
+    },
+    {
+        "content": "<p>(I'm sure one could come up with other examples based on these.)</p>",
+        "id": 606400802,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1782366283
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"510824\">Zoltan A. Kocsis (Z.A.K.)</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec/near/606376169\">said</a>:</p>\n<blockquote>\n<p>I might be mistaken, but it seems like one could describe the \"no terminal object\" variant using straightforward alternative terminology, along the lines of <em>category with cartesian closed slices</em>.</p>\n</blockquote>\n<p>The issue is that \"category with X slices\" is precisely what \"locally X\" means, conventionally.</p>\n<blockquote>\n<p>The \"has terminal object\" variant does not seem to admit a similarly straightforward description.</p>\n</blockquote>\n<p>The property of having a terminal object doesn't have a common adjective, but \"having finite products\"/\"having finite limits\" does, which is equivalent to having a terminal object in this instance (as in <span class=\"user-mention\" data-user-id=\"888029\">@Emily Riehl</span>'s suggestion of \"lex lccc\").</p>",
+        "id": 606401101,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1782366452
+    },
+    {
+        "content": "<p>If a locally cartesian closed category admits a terminal object, then it is itself (globally) cartesian closed: taking 'locally cartesian closed' to mean that every slice is cartesian closed, with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mo>≅</mo><mi>C</mi><mi mathvariant=\"normal\">/</mi><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">C \\cong C / 1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0715em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≅</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.0715em;\">C</span><span class=\"mord\">/1</span></span></span></span> you immediately see this.</p>\n<p>In contrast, it's not really a mathematical analogy, but if you think about the term 'locally fully faithful 2-functor', it is not required to be a fully faithful 2-functor by definition.</p>\n<p>Ergo, it seems strange for the 'local cartesian closure' to require '(global) cartesian closure' by definition.</p>",
+        "id": 606408491,
+        "sender_full_name": "Nick Hu",
+        "timestamp": 1782370071
+    },
+    {
+        "content": "<blockquote>\n<p>The issue is that \"category with X slices\" is precisely what \"locally X\" means, conventionally.</p>\n</blockquote>\n<p>This is not true. The adjective _locally_ has at best inconsistent usage. A locally small category is certainly not one where every slice category is small.</p>",
+        "id": 606409678,
+        "sender_full_name": "Zoltan A. Kocsis (Z.A.K.)",
+        "timestamp": 1782370562
+    },
+    {
+        "content": "<p>Yes, \"locally\" has various meanings in category theory, but there is only one relevant meaning in this context.</p>",
+        "id": 606409829,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1782370623
+    },
+    {
+        "content": "<blockquote>\n<p>there is only one relevant meaning in this context.</p>\n</blockquote>\n<p>Well, not really, which is why the literature is split about 50-50 on whether to require terminal objects for lcccs ;)</p>\n<p>One can choose to treat \"locally cartesian closed\" as a single unit, or one can introduce \"locally\" an adjective meaning \"slice-wise\" in certain contexts. I don't think the latter makes much sense, for two reasons:</p>\n<ol>\n<li>\n<p>The previous edition of CTiC had no other uses for \"locally\" as \"slicewise\", and I assume the new edition won't either. The textbook might wish to follow and pass on the field's consensus terminology anyway, but this thread would not exist if there was such consensus.</p>\n</li>\n<li>\n<p>These contexts don't seem to exist. I don't think even the nLab contains any other examples of \"locally\" used properly in the \"slicewise\" sense, apart from <em>locally cartesian</em> and <em>locally cartesian closed</em>. E.g. <a href=\"https://ncatlab.org/nlab/show/locally+regular+category\">locally regular categories</a> states that these are more than just slicewise regular categories.</p>\n</li>\n</ol>",
+        "id": 606417500,
+        "sender_full_name": "Zoltan A. Kocsis (Z.A.K.)",
+        "timestamp": 1782373372
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"510824\">Zoltan A. Kocsis (Z.A.K.)</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec/near/606417500\">said</a>:</p>\n<blockquote>\n<p>I don't think even the nLab contains any other examples of \"locally\" used properly in the \"slicewise\" sense, apart from <em>locally cartesian</em> and <em>locally cartesian closed</em>.</p>\n</blockquote>\n<p>One example, for whatever one example is worth, is local <a href=\"https://ncatlab.org/nlab/show/test+category\">test category</a>. (By definition a local test category is slicewise a <em>weak</em> test category, but this is equivalent to being slicewise a test category.)</p>",
+        "id": 606429491,
+        "sender_full_name": "Evan Cavallo",
+        "timestamp": 1782376926
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"510824\">Zoltan A. Kocsis (Z.A.K.)</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec/near/606417500\">said</a>:</p>\n<blockquote>\n<p>Well, not really, which is why the literature is split about 50-50 on whether to require terminal objects for lcccs ;)</p>\n</blockquote>\n<p>\"in this context\" meaning in category theory generally (i.e. considering uses of \"locally\" in category theory with the exception of LCCCs).</p>\n<p>I must admit I am not convinced by the nLab page on <a href=\"https://ncatlab.org/nlab/show/locally%20regular%20categories\">[[locally regular categories]]</a>. It gives one reference, to the <em>Elephant</em>, but (as far as I can see) Johnstone never formally introduces the terminology. He uses it in passing in the statement of a single proposition, so that he can refer to it in the following paragraph. The only other reference I can find in the category theory literature to this terminology is <span class=\"user-mention\" data-user-id=\"277473\">@Morgan Rogers (he/him)</span>'s <a href=\"https://arxiv.org/abs/2101.04015\">On Supercompactly and Compactly Generated Toposes</a>. I would warrant this terminology comes from the nLab page itself. I don't think it is a convincing counterexample.</p>\n<p>(It is also worth highlighting that \"locally regular categories\" as defined on the nLab page are not assumed to have terminal objects, and when they do they are regular. So, one might suggest LCCCs should not have terminal objects either, for increased consistency with the terminology \"locally regular category\".)</p>\n<blockquote>\n<p>These contexts don't seem to exist.</p>\n</blockquote>\n<p>I don't have time to find more examples right now, although Peter Johnstone's most recent email on the categories mailing list gives evidence that the convention exists. To quote him:</p>\n<blockquote>\n<p>When I wrote the first two parts of the Elephant, I thought quite a lot about terminological questions like this. For \"locally cartesian closed\", I decided to break the usual rule that \"locally P\" means \"all slices have property P\" but not that the category itself has P. The reason was that there is, as far as I know, only one not-wholly-artificial example of a category whose slices are all cartesian closed but which is not itself cc (namely the category of all topological spaces and local homeomorphisms); and it didn't seem worth burdening oneself with more complicated terminology for the sake of this one counterexample.</p>\n</blockquote>\n<p>According to Johnstone's own reasoning, now that we have a number of \"un-artifical\" examples, it would be better to follow \"the usual rule\" and not impose the existence of the terminal object.</p>",
+        "id": 606443487,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1782380555
+    },
+    {
+        "content": "<p>(To be honest, I do not feel strongly invested in this terminology one way or another; I don't think it causes much confusion to clarify the terminology convention on a paper-by-paper basis. But I do think that examples and convention favour excluding the terminal object.)</p>",
+        "id": 606444003,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1782380707
+    },
+    {
+        "content": "<p>Just to weigh in on another instance of \"locally\" (and at risk of muddling the water), the standard (site-theoretic rather than syntactic) version of Deligne's theorem proves that the topos of sheaves on a <em>locally coherent</em> site, meaning a a site whose <em>slices are coherent categories</em> and whose covers are (generated by) finite families, has enough points. This is quite nice from the point of view that disjoint unions of coherent categories are locally coherent in this sense, and makes apparent that the presence or absence of the terminal object in the site is irrelevant to the proof.</p>\n<p>Unfortunately, there is a naming convention in topos theory which attaches the same adjective to the topos as the descriptor of the site it is built from. Thus a regular topos is one equivalent to (regular) sheaves on a regular category, a coherent topos is equivalent to (coherent) sheaves on a coherent category etc. If this convention  were to be followed, that would mean that Deligne's theorem describes \"locally coherent toposes\", which are not slice-wise coherent but rather have \"enough\" slices which are coherent toposes (namely, the slices over representable sheaves). In this vein, I have seen toposes described as \"locally P\" if they are covered by slices having property P. This clashes with other naming conventions frequently. Most notably \"locally compact\" has a topological meaning not at all captured by a slice-wise definition. Hence the chosen title for my paper that Nathanael referenced above...</p>\n<p>All of that said, I think as a property of <em>categories</em> in full generality, reserving \"locally\" for \"slice-wise\" is a sensible choice that can be adequately defended from encounters with topological notions of locality.</p>",
+        "id": 606519246,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1782400326
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec/near/606443487\">said</a>:</p>\n<blockquote>\n<p>Zoltan A. Kocsis (Z.A.K.) <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/locally.20cartesian.20closed.20categories.20without.20a.20terminal.20objec/near/606417500\">said</a>:</p>\n<blockquote>\n<p>Well, not really, which is why the literature is split about 50-50 on whether to require terminal objects for lcccs ;)</p>\n</blockquote>\n<p>\"in this context\" meaning in category theory generally (i.e. considering uses of \"locally\" in category theory with the exception of LCCCs).</p>\n</blockquote>\n<p>The other meaning being mentioned is that \"locally P\" means \"all hom-objects have property P\", as in \"locally small\", \"locally posetal\", \"locally fully faithful\", etc.  That's certainly a meaning \"in category theory\", but it's also not relevant to this question since the other meaning of LCCC is not of that form.</p>",
+        "id": 606519337,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1782400349
+    },
+    {
+        "content": "<p>And, with the exception of \"locally small\" (which is arguably only an instance of this terminological pattern depending on one's foundational choices), I am inclined to think these usages are particular to two-dimensional category theory (at least, I can't think of any instances right now, but I may be forgetting).</p>",
+        "id": 606524277,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1782401458
+    },
+    {
+        "content": "<p>Certainly <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-dimensional category theory for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">n&gt;2</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">&gt;</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">2</span></span></span></span> also uses them.  In 1-dimensional category theory it's certainly not as common because there aren't as many properties one could ask of a set, and because we have special names for some other things: we say \"faithful\" instead of \"locally injective\", for instance.  But <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-dimensional category theory is part of category theory.  (-:</p>\n<p>But, ultimately, as I said, not really relevant to this question.</p>",
+        "id": 606541642,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1782405891
+    },
+    {
+        "content": "<p>Then there are \"locally presentable categories\", in which \"locally\" has yet a third meaning.</p>",
+        "id": 606553044,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1782409051
+    },
+    {
+        "content": "<p>Another possible replacement for \"locally\" in the literal sense of \"each slice\" is a less ambiguous word like \"slice-wise\" (compare with \"hom-wise\" for the \"each hom-object\" sense).</p>",
+        "id": 606557465,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1782410100
+    },
+    {
+        "content": "<p>These different meanings (as well as alternative terminology such as \"slice-wise\" and \"hom-wise\") are described on the nLab page <a href=\"https://ncatlab.org/nlab/show/locally\">[[locally]]</a>.</p>",
+        "id": 606560530,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1782411097
+    },
+    {
+        "content": "<p>Might \"slice-wise cartesian closed category\" be a reasonable option? It's at least pithy.</p>",
+        "id": 606601340,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1782427712
+    },
+    {
+        "content": "<p>There does seem to be a pretty substantial impasse here, between this conversation and that on the CT mailing list, and it is true that \"locally\" is a terribly overloaded term. So there's a pretty good basis to use \"slicewise ccc\" as the official terminology in a new edition of the book while mentioning that some authors use lccc for slicewise ccc and some, for slicewise ccc + terminal, though it'd be a pretty substantial innovation. It would be easier to start using \"slicewise\" than \"homwise\" anyway, I think; \"locally small\" is much more deeply ingrained than any of the uses of \"locally\" on slices.</p>",
+        "id": 606605095,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1782430510
+    },
+    {
+        "content": "<p>I think slicewise (even though it sounds like a Newspeak work) is a better adjective than \"locally\" for a propery of a category C that holds for all slices C/A. The \"locally\" intuition is really a several steps removed, ultimately (it seems to me) via thinking about eg Sh(X) for X a space, and looking at Sh(X)/U - a very special situation indeed.</p>",
+        "id": 606612581,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1782433039
+    },
+    {
+        "content": "<blockquote>\n<p>even though it sounds like a Newspeak word </p>\n</blockquote>\n<p>(I know you weren't being really serious, but) I don't think in any obvious sense as in <em>1984</em>, since \"slicewise\" doesn't carry any socio-political connotations no matter how you slice it. It invites parody only in the very ordinary sense that any math jargon sounds ripe for parody. :-)</p>",
+        "id": 606615102,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1782433870
+    },
+    {
+        "content": "<p>Yes, not too serious, but for context:</p>\n<blockquote>\n<p>-wise\" transforms any word into an adverb by eliminating all English adverbs not already ending in \"-wise\", e.g. <em>quickly</em> becomes <em>speedwise</em>, <em>slowly</em> becomes <em>unspeedwise</em>, <em>carefully</em> becomes <em>carewise</em>, <em>goodthink</em> is transformed to <em>goodthinkwise</em>, and words like <em>fully</em>, <em>completely</em>, and <em>totally</em> become <em>fullwise</em>.</p>\n</blockquote>\n<p>I could imagine \"per-slice cartesian closed\", but that's pretty inelegant too</p>",
+        "id": 606615550,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1782434369
+    },
+    {
+        "content": "<p>And I do recognise that slicewise in the proposed sense is not an adverb!</p>",
+        "id": 606615608,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1782434405
+    },
+    {
+        "content": "<p>I admit that that quote sounds like it could have been written by Orwell himself, in an essay on the abuses of the English language. :-)</p>",
+        "id": 606615703,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1782434517
+    },
+    {
+        "content": "<p>(Was it?)</p>",
+        "id": 606615745,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1782434549
+    },
+    {
+        "content": "<p>It's from Wikipedia's explanation, Orwell's original is much more in his style:</p>\n<blockquote>\n<p>Adjectives were formed by adding the suffix <em>-ful</em> to the noun verb, and adverbs by adding <em>-wise</em>. Thus, for example, <em>speedful</em> meant \"rapid\" and <em>speedwise</em> meant \"quickly.\"  Certain of our present-day adjectives, such as <em>good, strong, big, black, soft,</em> were retained, but their total number was very small. There was little need for them, since almost any adjectival meaning could be arrived at by adding <em>-ful</em> to a noun-verb. None of the now-existing adverbs was retained, except for a few already ending in <em>-wise</em>; the <em>-wise</em> termination was invariable. the word <em>well</em>, for example, was replaced by <em>goodwise</em>.</p>\n</blockquote>\n<p>(one last point: this is 'A vocabulary', the 'B vocabulary' contained the politically-tinged ones that Todd obliquely referenced in his first reply)</p>",
+        "id": 606615918,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1782434741
+    },
+    {
+        "content": "<p>Okay, this stings a little, but only a little. :-)</p>",
+        "id": 606615998,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1782434830
+    },
+    {
+        "content": "<p>Sliceful Decartesful closeful category ..... urgh.</p>",
+        "id": 606616064,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1782434899
+    },
+    {
+        "content": "<p>Has participating in a discussion such as this made me a slice-wiser? Time will tell.</p>",
+        "id": 606736640,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1782483613
+    }
+]

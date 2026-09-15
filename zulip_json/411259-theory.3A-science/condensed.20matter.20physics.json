@@ -1,0 +1,206 @@
+[
+    {
+        "content": "<blockquote>\n<p>It was a pleasant surprise to learn it actually gets used within my field!</p>\n</blockquote>\n<p>Hah! I can finally ask... what is condensed matter physics and how is category theory relevant to it?</p>",
+        "id": 530407806,
+        "sender_full_name": "fosco",
+        "timestamp": 1753294966
+    },
+    {
+        "content": "<p>What choices of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo separator=\"true\">,</mo><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">f,g</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span> in calculating the integral <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∫</mo><mi>g</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><msup><mi>e</mi><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow></msup><mi>d</mi><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\int g(x)e^{f(x)} dx</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1.1941em;vertical-align:-0.3061em;\"></span><span class=\"mop op-symbol small-op\" style=\"margin-right:0.19445em;position:relative;top:-0.0006em;\">∫</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span><span class=\"mord\"><span class=\"mord mathnormal\">e</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.888em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen mtight\">(</span><span class=\"mord mathnormal mtight\">x</span><span class=\"mclose mtight\">)</span></span></span></span></span></span></span></span></span><span class=\"mord mathnormal\">d</span><span class=\"mord mathnormal\">x</span></span></span></span> define condensed matter physics?</p>\n<p>(src.: <br>\n<a href=\"/user_uploads/21317/EV5sijZOFmQEQ6BEnK5uxXI5/image.png\">image.png</a><br>\n)</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/EV5sijZOFmQEQ6BEnK5uxXI5/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"615x176\" src=\"/user_uploads/thumbnail/21317/EV5sijZOFmQEQ6BEnK5uxXI5/image.png/840x560.webp\"></a></div>",
+        "id": 530408173,
+        "sender_full_name": "fosco",
+        "timestamp": 1753295089
+    },
+    {
+        "content": "<p>I can't resist answering: condensed matter physics is the study of matter that's 'condensed', most notably solids and liquids.   An old physics definition of 'solid' says that solids are <em>crystals</em>.  This would exclude glasses and 'amorphous' solids like charcoal, which are often made of small crystals randomly piled next to each other.   Crystals are mathematically much easier to understand than these more random solids, and liquids.  Condensed matter physics tries to understand all these things.</p>",
+        "id": 530496479,
+        "sender_full_name": "John Baez",
+        "timestamp": 1753343692
+    },
+    {
+        "content": "<p>A fundamental tool of condensed matter physics is statistical mechanics.  Classical statistical mechanics was snidely summarized by that passage you quoted (with the wrong sign in the exponential, and some missing factors, so that mathematicians who take this literally will seem like fools to actual physicists.)   Quantum statistical mechanics is more important, but it uses similar expressions, where the integral is replaced by a trace.</p>\n<p>Who wrote that passage?  It reminds me of V. I. Arnold's explanation of mathematics as the branch of physics where experiments are cheap.</p>",
+        "id": 530496946,
+        "sender_full_name": "John Baez",
+        "timestamp": 1753343855
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"934428\">@Ruby Khondaker (she/her)</span> will surely be able to fill in a lot more details.</p>",
+        "id": 530497026,
+        "sender_full_name": "John Baez",
+        "timestamp": 1753343886
+    },
+    {
+        "content": "<p>Yes I think solids and liquids is accurate - the way I often introduce condensed matter to newcomers is saying that it’s like condensed milk :P</p>\n<p>Indeed, path integral methods are very prevalent in condensed matter via statistical mechanics and statistical field theory - Feynman diagrams get used all the time! There’s a cool story about the similarities between high-energy physics and condensed matter physics.</p>\n<p>In terms of the relevance of category theory - there are two main ways I’ve seen so far (though I’m relatively new to the field so I’m sure there are more). The first is <em>topology</em> - condensed matter is a setting where topological effects produce interesting nontrivial physics. Phenomena like the fractional quantum Hall effect, or anyons. It turns out that topological field theories are good tools to describe these, which can be thought of categorically as functors whose domain is an appropriate cobordism category. The braiding present within the category itself describes some of the most interesting parts of the physics!</p>\n<p>The second way I’m familiar with is through symmetry. Typically one imagines that group theory is the natural setting to discuss this, but somehow the materials nature produces end up being stranger. It’s helpful to consider so-called “higher form symmetries” which may or may not be invertible; these are usually implemented by topological operators, which depend on the homeomorphism type of some submanifold. Category theory provides a useful tool to organise these symmetries and study how they compose in a setting where invertibility isn’t guaranteed!</p>",
+        "id": 530499473,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1753344656
+    },
+    {
+        "content": "<p>Nice.  It's probably good to warn fosco (or anyone like fosco) that the fractional Hall effect only shows up in some carefully designed systems: thin films of materials at extremely low temperatures.    The \"extremely low temperature\" part lets us use beautiful math: at higher temperatures things get more random and complicated.  The \"thin film\" part lets use math like anyons and 3d TQFT that are relevant only when space is 2-dimensional.</p>",
+        "id": 530502229,
+        "sender_full_name": "John Baez",
+        "timestamp": 1753345494
+    },
+    {
+        "content": "<p>More generally, condensed matter physicists who like some particular beautiful branch of math (like 2-group symmetries, etc. etc.) typically have to work very hard to find real-world systems described by that math.    <em>Most</em> condensed matter physicists work in the reverse way, where they take real-world systems that are easier to find (like condensed milk, or quartz crystals, or silicon, or graphite, etc.) and figure out the math needed to describe those.</p>",
+        "id": 530502828,
+        "sender_full_name": "John Baez",
+        "timestamp": 1753345666
+    },
+    {
+        "content": "<p>Yeah it’s very important to clarify that the physics takes precedent here, not the math; category theory is important in condensed matter insofar as it is <em>useful</em>, irrespective of how pretty people find it.</p>",
+        "id": 530503183,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1753345774
+    },
+    {
+        "content": "<p>But of course there are lots of people like me who claim they are interested in condensed matter physics, who are mainly interested in beautiful mathematical structures and hoping they can be found in the real world.</p>",
+        "id": 530503489,
+        "sender_full_name": "John Baez",
+        "timestamp": 1753345862
+    },
+    {
+        "content": "<p>In my case I think my interest is more genuine with condensed matter itself, and it’s a nice bonus that I get to use cool math from time to time :)</p>",
+        "id": 530503672,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1753345914
+    },
+    {
+        "content": "<p>so, you're essentially telling me that condensed milk is mathematically described by a functor out of a cobordism category?</p>",
+        "id": 530504368,
+        "sender_full_name": "fosco",
+        "timestamp": 1753346120
+    },
+    {
+        "content": "<p>If yes, I can finally say I understand what the hell is \"milk\"</p>",
+        "id": 530504418,
+        "sender_full_name": "fosco",
+        "timestamp": 1753346134
+    },
+    {
+        "content": "<p>it's just an object of the category of...</p>",
+        "id": 530504501,
+        "sender_full_name": "fosco",
+        "timestamp": 1753346158
+    },
+    {
+        "content": "<p>As far as I’m aware, no, haha</p>\n<p><span class=\"user-mention silent\" data-user-id=\"282822\">fosco</span> <a href=\"#narrow/stream/229111-community.3A-general/topic/Introduce.20yourself!/near/530504368\">said</a>:</p>\n<blockquote>\n<p>so, you're essentially telling me that condensed milk is mathematically described by a functor out of a cobordism category?</p>\n</blockquote>",
+        "id": 530504511,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1753346160
+    },
+    {
+        "content": "<p>TQFTs and cobordism categories are only useful for describing very specially prepared systems like thin films of graphene at temperatures close to absolute zero.   More ordinary systems, like condensed milk at room temperature, are described by mathematics that's much more complicated.   (Higher) category theory is relevant here too, but it will take a few decades to clarify this.    One step in this direction is the work on <a href=\"https://arxiv.org/abs/2310.06137\">factorization algebras</a>.</p>",
+        "id": 530510961,
+        "sender_full_name": "John Baez",
+        "timestamp": 1753348317
+    },
+    {
+        "content": "<p>Wait ordinary systems need <em>harder</em> mathematics?</p>",
+        "id": 530511080,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1753348358
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"934428\">Ruby Khondaker (she/her)</span> <a href=\"#narrow/channel/229111-community.3A-general/topic/Introduce.20yourself!/near/530511080\">said</a>:</p>\n<blockquote>\n<p>Wait ordinary systems need <em>harder</em> mathematics?</p>\n</blockquote>\n<p>\"Aristotle said a bunch of stuff that was wrong. Galileo and Newton fixed things up. Then Einstein broke everything again. Now, we’ve basically got it all worked out, except for small stuff, big stuff, hot stuff, cold stuff, fast stuff, heavy stuff, dark stuff, turbulence, and the concept of time.\"</p>",
+        "id": 530511401,
+        "sender_full_name": "fosco",
+        "timestamp": 1753348499
+    },
+    {
+        "content": "<p>I find such jokes a bit tiresome since they neglect what we <em>do</em> understand, which is a hell of a lot.</p>",
+        "id": 530512670,
+        "sender_full_name": "John Baez",
+        "timestamp": 1753348915
+    },
+    {
+        "content": "<p>For example we understand a lot about liquids (like milk); I was just saying we have not yet brought higher category theory to bear on them.</p>",
+        "id": 530513084,
+        "sender_full_name": "John Baez",
+        "timestamp": 1753349043
+    },
+    {
+        "content": "<p>I am enjoying the repeated references to condensed milk :P</p>",
+        "id": 530513172,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1753349069
+    },
+    {
+        "content": "<p>It's a pretty sweet example</p>",
+        "id": 530519226,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1753351159
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/wxR-dwsuXPSeT0PdKkhi42K4/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/wxR-dwsuXPSeT0PdKkhi42K4/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1137x625\" src=\"/user_uploads/thumbnail/21317/wxR-dwsuXPSeT0PdKkhi42K4/image.png/840x560.webp\"></a></div><p>So, a prefactorization algebra is a copresheaf on a topological space <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span>, which has some... monoidal property when regarded as a functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>O</mi><mi>p</mi><mo stretchy=\"false\">(</mo><mi>M</mi><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mo>⊔</mo><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">∅</mi><mo stretchy=\"false\">)</mo><mo>→</mo><mo stretchy=\"false\">(</mo><mi>V</mi><mi>e</mi><mi>c</mi><mi>t</mi><mo separator=\"true\">,</mo><mo>⊗</mo><mo separator=\"true\">,</mo><mi>k</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(Op(M),\\sqcup,\\varnothing)\\to (Vect,\\otimes,k)</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">Op</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">⊔</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord amsrm\">∅</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span><span class=\"mord mathnormal\">ec</span><span class=\"mord mathnormal\">t</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">⊗</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mclose\">)</span></span></span></span>? Not exactly, but the idea seems to be that</p>",
+        "id": 530526556,
+        "sender_full_name": "fosco",
+        "timestamp": 1753353631
+    },
+    {
+        "content": "<p>23 messages were moved here from <a class=\"stream-topic\" data-stream-id=\"229111\" href=\"/#narrow/channel/229111-community.3A-general/topic/Introduce.20yourself.21/with/527570922\">#community: general &gt; Introduce yourself!</a> by <span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span>.</p>",
+        "id": 530527497,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1753353956
+    },
+    {
+        "content": "<p>Clark Barwick gave his CT keynote on a new abstract approach to factorization algebras, he has a <a href=\"https://webhomes.maths.ed.ac.uk/~cbarwick/papers/facts.pdf\">note about it on his website</a></p>",
+        "id": 530527868,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1753354096
+    },
+    {
+        "content": "<p>He explained his vision of the subject as being, possibly, a kind of \"formal theory of dissimilarity\" in the same vein as homotopy theory is a \"formal theory of similarity\"</p>",
+        "id": 530528134,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1753354203
+    },
+    {
+        "content": "<p>Cool!</p>",
+        "id": 530528901,
+        "sender_full_name": "fosco",
+        "timestamp": 1753354496
+    },
+    {
+        "content": "<p>You can also read about it from my thesis <span class=\"user-mention\" data-user-id=\"282822\">@fosco</span> , and all the other talks I gave.  The material is accessible here: <a href=\"http://www.federicapasqualone.com\">www.federicapasqualone.com</a></p>",
+        "id": 530578479,
+        "sender_full_name": "Federica Pasqualone",
+        "timestamp": 1753367708
+    },
+    {
+        "content": "<p>This topic was moved here from <a class=\"stream-topic\" data-stream-id=\"229111\" href=\"/#narrow/channel/229111-community.3A-general/topic/condensed.20matter.20physics\">#community: general &gt; condensed matter physics</a> by <span class=\"user-mention silent\" data-user-id=\"671813\">Madeleine Birchfield</span>.</p>",
+        "id": 531390009,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1753714157
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"282822\">fosco</span> <a href=\"#narrow/channel/411259-theory.3A-science/topic/condensed.20matter.20physics/near/530526556\">said</a>:</p>\n<blockquote>\n<p><a href=\"/user_uploads/21317/wxR-dwsuXPSeT0PdKkhi42K4/image.png\">image.png</a></p>\n<p>So, a prefactorization algebra is a copresheaf on a topological space <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span></span></span></span>, which has some... monoidal property when regarded as a functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>O</mi><mi>p</mi><mo stretchy=\"false\">(</mo><mi>M</mi><mo stretchy=\"false\">)</mo><mo separator=\"true\">,</mo><mo>⊔</mo><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">∅</mi><mo stretchy=\"false\">)</mo><mo>→</mo><mo stretchy=\"false\">(</mo><mi>V</mi><mi>e</mi><mi>c</mi><mi>t</mi><mo separator=\"true\">,</mo><mo>⊗</mo><mo separator=\"true\">,</mo><mi>k</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(Op(M),\\sqcup,\\varnothing)\\to (Vect,\\otimes,k)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">Op</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mclose\">)</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">⊔</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord amsrm\">∅</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span><span class=\"mord mathnormal\">ec</span><span class=\"mord mathnormal\">t</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">⊗</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mclose\">)</span></span></span></span>? Not exactly, but the idea seems to be that</p>\n</blockquote>\n<p>Can we say that it is an algebra over a multicategory (aka colored operad)? <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 532693436,
+        "sender_full_name": "Federica Pasqualone",
+        "timestamp": 1754301890
+    },
+    {
+        "content": "<p>Which operad, and why (meaning: among many operads, why that specific operad)?</p>",
+        "id": 532727822,
+        "sender_full_name": "fosco",
+        "timestamp": 1754314087
+    },
+    {
+        "content": "<p>Well, one can make a multicategory out of (connected) open sets in our case: There is an arrow from the U_i to the V (in the picture) iff the U_i are all pairwise disjoint and contained in V, otherwise there is no arrow.  Objects are obviously the connected open sets. Composition (trust me <span aria-label=\"rolling on the floor laughing\" class=\"emoji emoji-1f923\" role=\"img\" title=\"rolling on the floor laughing\">:rolling_on_the_floor_laughing:</span> ) works.</p>",
+        "id": 532853527,
+        "sender_full_name": "Federica Pasqualone",
+        "timestamp": 1754379640
+    },
+    {
+        "content": "<p>Why we prefer this description of a PFA compared to the other ones? <br>\nWhat if the target category of this algebra is an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span> - category (e.g. cochain complexes)? Now we just stack some homotopy coherence on top and the definition stays! <span aria-label=\"magic wand\" class=\"emoji emoji-1fa84\" role=\"img\" title=\"magic wand\">:magic_wand:</span> It's magic!</p>",
+        "id": 532854357,
+        "sender_full_name": "Federica Pasqualone",
+        "timestamp": 1754379901
+    },
+    {
+        "content": "<p>Why connected open sets?<br>\nWell, the first idea that comes to mind when taking observations on a manifold, is look: locally there is an open set that looks like the Euclidean space (of the appropriate dimension), let us see what we can do with open sets then! And connected, because if they were not connected, the structure map will factorize again through the connected components.</p>\n<p>However, I was recently wondering about this order we have on the objects, and .. what about convex hulls? They can be defined just in the presence of a linear structure and now what? Now comes my CT2025 talk ... <span aria-label=\"innocent\" class=\"emoji emoji-1f607\" role=\"img\" title=\"innocent\">:innocent:</span></p>",
+        "id": 532856264,
+        "sender_full_name": "Federica Pasqualone",
+        "timestamp": 1754380489
+    }
+]

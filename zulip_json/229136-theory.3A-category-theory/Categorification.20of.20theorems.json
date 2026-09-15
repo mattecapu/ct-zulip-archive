@@ -1,0 +1,38 @@
+[
+    {
+        "content": "<p>We have some general theories of categorification, for example opetopes seem to provide a general framework for categorification as the slice construction for opetopes automatically gives you these notions of relations between relations. There are many definitions of higher category. Recently in a related thread someone posted Garner's \"Homomorphisms of higher categories\" paper which gives a general technique to categorify strict functors to give definitions of weak functors between higher categories.</p>\n<p>Do any of these theories of categorification have any associated theorems about categorification of theorems? I.e. if A is the original theory and A' is the categorified theory, some limited fragment of the theory of A is directly translatable to the A' theory, where equalities are weakened to isomorphisms. Are there any such systematic ways of proving that results holding for lower categories hold for higher categories appropriately weakened?</p>",
+        "id": 422513027,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1708468678
+    },
+    {
+        "content": "<p>I think there are a few transfer theorems like that in homotopy theory but even there they end up doing most of the work the hard way.  Proving results in homotopy type theory (or rather, if you really want a \"transfer theorem\", intensional Martin-Lof type theory without Axiom K) is the most powerful method I know of off the top.</p>",
+        "id": 422526524,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1708477142
+    },
+    {
+        "content": "<p>It's almost impossible (read: usually actually impossible) to do with theorems as statements without looking at the proof at all because those equalities you were using and throwing away in classical proofs now have content and often to even get the statement you really want there are actual things to be proven <em>about</em> them.  Proofs as mathematical objects often contain enough information to recover what you need, but just the fact that they're true almost never does.</p>",
+        "id": 422527713,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1708478002
+    },
+    {
+        "content": "<p>The most efficient thing you can do is to work in a fragment of logic which is powerful enough that you can prove the classical theorem with a classical proof, but weak enough that it can only prove theorems whose \"space of truth values\" is (-1)-truncated in the categorified world.  (Maybe it can do other <em>constructions</em>, but has a way to separate them syntactically from theorems.)  Then you kind of don't need to know what the proof is, just that it was done in that fragment.  The problem with this is that traditional (pre-Univalent Foundations) mathematical logic outside of some obscure corners didn't really concern itself with most of the fragments of interest for this.  I think a lot of the classical algebraic topologists' interest in operads was exactly concerned with this, so you might want to look into that area.</p>",
+        "id": 422528593,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1708478756
+    },
+    {
+        "content": "<p>This is a really good point by the way, thanks for the observation. I agree that certainly the proof itself should be what lifts to the higher setting.</p>",
+        "id": 423079413,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1708716001
+    },
+    {
+        "content": "<p>Have you seen this paper? <a href=\"https://www.cse.chalmers.se/~peterd/papers/Coherence_Monoidal.pdf\">https://www.cse.chalmers.se/~peterd/papers/Coherence_Monoidal.pdf</a></p>",
+        "id": 423114755,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1708734229
+    }
+]
