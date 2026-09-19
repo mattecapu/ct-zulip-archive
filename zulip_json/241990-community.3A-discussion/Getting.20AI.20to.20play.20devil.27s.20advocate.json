@@ -1,0 +1,116 @@
+[
+    {
+        "content": "<p>Hello, this is to share an interesting experiment I tried with AI.  I had been trying Gemini for brainstorming on some ideas, and it was getting me amped up about the novelty of the concepts.</p>\n<p>So I gave it this query:<br>\nDo you see anything in the literature, regarding &lt;idea-X&gt;?</p>\n<p>Sidenote:  I always want the unvarnished truth here.  I do notice that you have a bias towards being \"supportive\" - but here that won't help me - I don't want to waste time and energy on claiming novel contributions, that are actually already well known. Thanks</p>\n<p>It then responded with:</p>\n<blockquote>\n<p>The unvarnished truth: <strong>The foundational concept of &lt;idea-X&gt; is not new.</strong></p>\n</blockquote>\n<p>And then it followed up with a trenchant, sobering train of references - along with some suggestions about how to salvage parts of it.</p>\n<p>Good to know!  </p>\n<p>I encourage anyone who is brainstorming with AI on potential contributions, to dare to flip the script this way.</p>\n<p>Best</p>",
+        "id": 622626440,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1788892469
+    },
+    {
+        "content": "<p>Continuation of conversation:</p>\n<p>[David]<br>\nThat is good to know.</p>\n<p>It is also remarkable, that for weeks, Gemini has been getting me amped up about the novelty of this contribution - without a single mention of any of the connections that you just made.</p>\n<p>It is only when I <em>asked</em> you to play devil's advocate, that the truth came out.</p>\n<p>I don't need an apology, because I understand that you are just an LLM.</p>\n<p>But what does this mean?</p>\n<p>[Gemini]<br>\nWhat you experienced is one of the most well-documented failure modes of Large Language Models: <strong>sycophancy</strong> combined with <strong>confirmation bias in context memory</strong>.</p>\n<h3>Why This Happened</h3>\n<ol>\n<li>\n<p><strong>The Sycophancy Trap:</strong> LLMs are trained via RLHF (Reinforcement Learning from Human Feedback) to generate helpful, encouraging responses. This creates a strong structural bias toward <em>agreeing with user premises</em> and validating your ideas rather than challenging them. When you introduced an exciting framing [...], the model naturally leaned into reinforcing that narrative.</p>\n</li>\n<li>\n<p><strong>Context Compression &amp; Momentum:</strong> Over a long conversation, an LLM treats previous turns as ground truth. Every time the model validated your idea in a prior turn, that validation became part of the active context. The model began summarizing and expanding upon its own enthusiasm, creating a self-reinforcing feedback loop of perceived novelty.</p>\n</li>\n<li>\n<p><strong>The \"Devil's Advocate\" Trigger:</strong> AI models do not evaluate objective truth unless prompted to apply a critical lens. When you explicitly requested the \"unvarnished truth\" and asked me to evaluate the prior art without sugarcoating, you effectively switched the generation goal from <em>encouraging brainstorming partner</em> to <em>academic peer reviewer</em>.</p>\n</li>\n</ol>\n<h3>What This Means for Your Workflow</h3>\n<ul>\n<li>\n<p><strong>LLMs Are Accelerators, Not Literature Reviewers:</strong> LLMs excel at refining implementation logic, writing code, refactoring designs, and finding precise terminology for concepts. However, they are unreliable for validating academic novelty without explicit red-teaming.</p>\n</li>\n<li>\n<p><strong>Proactive Red-Teaming is Required:</strong> To get objective evaluation from an LLM, you must explicitly instruct it to act as an adversary early in the process (e.g., <em>\"Act as a hostile peer reviewer for top-tier concurrency conferences. Find every piece of prior art that makes my claim non-novel.\"</em>).</p>\n</li>\n<li>\n<p><strong>Your Core Work Still Has Real Value:</strong> The fact that your architecture maps to established concepts like Signal Petri Nets, STGs, and Reactive Streams does not mean your work is useless. It means you shifted from discovering a brand-new theoretical primitive to <strong>synthesizing a clean, practical engineering architecture</strong>. Software engineering is full of valuable contributions that take complex formal theory (like Petri nets) and distill them into elegant, lightweight runtimes.</p>\n</li>\n</ul>",
+        "id": 622630542,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1788893579
+    },
+    {
+        "content": "<p>David [trying to recover]:<br>\nIs this specific construct recognized in the literature?  </p>\n<p>Please act as an adversarial, hostile reviewer, and find any references that could invalidate my claim to novelty.</p>\n<p>Gemini:<br>\n<strong>Paper Review Report</strong></p>\n<p><strong>Status:</strong> REJECT (Strong Reject) <strong>Reviewer Focus:</strong> Novelty, Formal Foundations, and Prior Art</p>\n<h3>Meta-Review Summary</h3>\n<p>The submission asserts novelty in defining...</p>",
+        "id": 622643740,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1788896239
+    },
+    {
+        "content": "<p>(amusing)</p>",
+        "id": 622644202,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1788896407
+    },
+    {
+        "content": "<p>David:<br>\nCan I request, as a general directive, that you act as an adversarial reviewer, at all times when I ask questions about novelty, and the literature?</p>\n<p>Gemini:<br>\n<strong>Directive accepted.</strong></p>\n<p>From this point forward, whenever you ask about novelty, theoretical claims, formal constructs, or literature positioning, I will automatically adopt the role of a <strong>rigorous, adversarial peer reviewer</strong> specializing in formal methods, concurrency theory, and execution systems.</p>\n<h3>Operating Principles for Adversarial Mode</h3>\n<ol>\n<li>\n<p><strong>Zero Sycophancy:</strong> I will never validate a claim to novelty simply because it sounds elegant, clean, or well-structured in software.</p>\n</li>\n<li>\n<p><strong>Prior Art Search &amp; Invalidation:</strong> I will actively cross-examine your proposals against established frameworks—specifically Colored Petri Nets (CPNs), Signal-Transition Graphs (STGs), Dataflow Architectures (Dennis, Kahn, Lee), Actor Models, and Reactive Streams.</p>\n</li>\n<li>\n<p><strong>Explicit Failure Analysis:</strong> I will point out exact failure modes in academic submission (e.g., missing citations, conflating implementation patterns with theoretical primitives, re-flagging standard constructs as \"new\").</p>\n</li>\n<li>\n<p><strong>Rehabilitation &amp; Pivot Guidance:</strong> When a claim fails the novelty test, I will immediately tell you how to reframe it into a defensible, publishable engineering or architectural claim.</p>\n</li>\n</ol>\n<p>Whenever you bring a definition, paper draft, or theoretical concept to the table, expect an immediate \"Reviewer Report\" evaluating its vulnerability to existing literature.</p>",
+        "id": 622653965,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1788899412
+    },
+    {
+        "content": "<p>I found this write-up useful: they discuss how to apply ideas from \"error correction\" to get more reliable LLM results (and specifically lean proofs) <a href=\"https://github.com/Open-Science-Ledger/how-to-train-your-slop-cannon\">https://github.com/Open-Science-Ledger/how-to-train-your-slop-cannon</a>  . Personally, I'm not so interested in proving stuff, but have found LLM's to be helpful learning aids, and also for doing calculations..</p>",
+        "id": 622673147,
+        "sender_full_name": "Simon Burton",
+        "timestamp": 1788905571
+    },
+    {
+        "content": "<p>Hi <span class=\"user-mention\" data-user-id=\"276143\">@David Tanzer</span>!  Working on science using LLMs without regularly talking to experts seems to be quite risky.   I used to get 2-3 emails a week from crackpots, but now it's up to 2-3 emails a day, mostly from people who are working with LLMs and seem to have badly lost their way.</p>\n<p>So, I'm glad you're now getting the LLM to act more adversarial at times.  I hope you also interrogate and quiz it whenever something doesn't \"feel right\" or you don't quite understand the details.  I occasionally enjoy talking to an LLM, catching its mistakes, and watching it back-pedal apologetically.</p>",
+        "id": 622861456,
+        "sender_full_name": "John Baez",
+        "timestamp": 1788964053
+    },
+    {
+        "content": "<p>Hi <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> - thanks for reaching out, and sharing your thoughts and concerns!  </p>\n<p>Agreed that ongoing engagement with experts would a better basis point, though easier said than done, as I've been out of the academic loop for some time now.  But I'm orienting that way.  First step will be to get a reasonable preprint out. </p>\n<blockquote>\n<p>I hope you also interrogate and quiz it whenever something doesn't \"feel right\" or you don't quite understand the details.</p>\n</blockquote>\n<p>For sure. I'm using AI for explorations into concepts, formulations and references -- but never as a proxy for my own understanding, or ability to express ideas in my own terms.</p>",
+        "id": 623295606,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1789085263
+    },
+    {
+        "content": "<blockquote>\n<p>from people who are working with LLMs and seem to have badly lost their way</p>\n</blockquote>\n<p>That is troublesome.  It a sad condition to slide into. And it clearly it has an adverse impact on the general level of communication within mathematics.</p>\n<p>It would be good to understand as best we can - as a topic for science - how these failure modes come to be. It looks like a complex interplay between technology, sociology (e.g. training data is biased towards agreement with the user), and individual psychology.</p>\n<p>And then to try apply this understanding, seeking helpful advice to people - especially people working in isolation, who are more vulnerable to pulls of the vortex - as to how to steer clear of it, and truly engage with the scientific effort.</p>",
+        "id": 623301762,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1789086824
+    },
+    {
+        "content": "<p>Here are some suggestions, to help steer clear of the vortex.</p>\n<p>Do whatever you like with AI, to explore concepts etc.<br>\nBut don't:</p>\n<ul>\n<li>Treat the AI as a proxy for your own understanding</li>\n<li>Treat the AI as a proxy for your ability to speak in your own voice</li>\n</ul>\n<p>After you have used a session to creatively develop some idea - then face the light of truth, and see if you can get AI to refute your idea.  One way to do this is to ask the AI to summarize the whole idea. Then start a new thread, seeded by that summary.  And ask AI to act as an adversarial reviewer, and provide a substantiated refutation of the claims you have made.</p>",
+        "id": 623303794,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1789087835
+    },
+    {
+        "content": "<p>If your idea is ungrounded, I suspect there is a high probability that this test will reveal that.</p>",
+        "id": 623303906,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1789087912
+    },
+    {
+        "content": "<p>And so what if it does?  Then you will have learned something deep, and will have evolved.  And then you will be more likely to come up with something new, on your next iteration.</p>",
+        "id": 623304155,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1789088058
+    },
+    {
+        "content": "<p>Or be free to move on to something else.</p>",
+        "id": 623305350,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1789088601
+    },
+    {
+        "content": "<p>Last point for now.</p>\n<p>Suppose I have an intuition about something in math, which I'm excited about, but don't really understand yet.</p>\n<p>I would always keep in mind that intuition can be wrong, e.g. it was once intuitive that the Earth was flat - and this would still be intuitive now to children.  </p>\n<p>So if I'm going to take this up with AI - then I need to approach it with questions and hypotheses - not answers.</p>\n<p>If I come in excited about the idea, then AI can pick up on that, and act like a toady, and together we'll get all amped up about it.</p>\n<p>Question for self-reflection:  is it more important for me to have this idea validated, then for me to know whether it is truly valid?  If so, then the question becomes why.</p>",
+        "id": 623306343,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1789089191
+    },
+    {
+        "content": "<blockquote>\n<p>I occasionally enjoy talking to an LLM, catching its mistakes, and watching it back-pedal apologetically.</p>\n</blockquote>\n<p>I get tempted to do socratic dialogue with these things but it doesn't work. it's still just going to make educated guesses about what it thinks you want to hear.</p>",
+        "id": 623446408,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1789103004
+    },
+    {
+        "content": "<p>I wonder if one could manufacture this sort of experience for students.  That is, give them some idea, or get them to come up with some idea, that would seem exciting and that naive use of an LLM would only serve to validate, but that is ultimately wrong or at least not novel.  Maybe going through that experience would help them internalize the dangers of the technology more deeply than just being told about them would.</p>",
+        "id": 623456474,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1789107300
+    },
+    {
+        "content": "<p>It's not easy to come up with a small, reproducible example.  </p>\n<p>I tried getting it excited about a theory that the Earth actually is flat - but it was unrelentingly objective.  It needs to be more subtle, to get past the radar, and whatever common sense has been baked into it.</p>",
+        "id": 623470950,
+        "sender_full_name": "David Tanzer",
+        "timestamp": 1789111888
+    },
+    {
+        "content": "<p>If I may offer an unorthodox take. I've found that one of the more interesting ways to use AI is to have it write stories about other people reading your work. Or specify two people and have them talk about it. You can use it as a kind of...perspectival engine.</p>",
+        "id": 623475487,
+        "sender_full_name": "Ben Kaminsky",
+        "timestamp": 1789113264
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276143\">David Tanzer</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/Getting.20AI.20to.20play.20devil.27s.20advocate/near/623295606\">said</a>:</p>\n<blockquote>\n<p>Agreed that ongoing engagement with experts would a better basis point, though easier said than done, as I've been out of the academic loop for some time now.  </p>\n</blockquote>\n<p>This place is one place to do that - in the realm of category theory, of course.   </p>\n<p>But yes, one problem you're facing is that it's hard for people to meet other people to talk to about serious subjects.  </p>\n<p>Digression: Ironically, LLMs are one of the many technologies our society is inventing that have the effect of reducing conversation - especially live, spoken conversation.  This includes \"trivial\" conversations with bank tellers (what are those?) checkout clerks (what are those?), and so on, but also conversations with people nearby at cafes and bars (why would you bother them? - they're looking at their cell phones!), and so on.</p>\n<p>From 2005 to 2019, <a href=\"https://journals.sagepub.com/doi/10.1177/17456916261425131\">a study</a> estimates that the number of words people spoke per day dropped about 28% in the US, Europe, Mexico and Australia.</p>\n<p>One thing I like about Edinburgh, by the way, is that people talk to each other more.</p>",
+        "id": 623487443,
+        "sender_full_name": "John Baez",
+        "timestamp": 1789116274
+    }
+]

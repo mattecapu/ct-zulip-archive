@@ -1,0 +1,116 @@
+[
+    {
+        "content": "<p>The nLab has articles on both Kan extensions and Kan lifts.  The <a href=\"https://ncatlab.org/nlab/show/Kan%20extensions\">[[Kan extensions]]</a> article is well-developed, and has formulas for pointwise Lan and Ran, however the <a href=\"https://ncatlab.org/nlab/show/Kan%20lifts\">[[Kan lifts]]</a> article is sparse and the only formulas it has are not for Cat.  I kind of feel like it should be possible to figure them out but I have no confidence I would get all the ops and cos in the right place.  Are these formulas already a known thing and my googling is just weak?</p>",
+        "id": 476897766,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1728967724
+    },
+    {
+        "content": "<p>I don't think Kan lifts exist in general in Cat.</p>",
+        "id": 476900962,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1728970080
+    },
+    {
+        "content": "<p>Kan lifts are essentially the same as relative adjoints (more precisely, relative adjoints are the appropriate notion of \"pointwise\" Kan lifts), so you can compute them in some situations using (relative) adjoint functor theorems, but in general there's not a straightforward way to compute them like there is with Kan extensions.</p>",
+        "id": 476915666,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1728975687
+    },
+    {
+        "content": "<p>And in general, just as not every functor has an adjoint, not every Kan lift exists, right?</p>",
+        "id": 476917181,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1728976065
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"438995\">James Deikun</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/End.2Fcoend.20formulas.20for.20Kan.20lifts/near/476897766\">said</a>:</p>\n<blockquote>\n<p>however the <a href=\"https://ncatlab.org/nlab/show/Kan%20lifts\">[[Kan lifts]]</a> article is sparse and the only formulas it has are not for Cat</p>\n</blockquote>\n<p>Did we gather all that was usefully said on this nCafe post, <a href=\"https://golem.ph.utexas.edu/category/2009/06/kan_lifts.html\">Kan Lifts</a>?</p>",
+        "id": 476928337,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1728979120
+    },
+    {
+        "content": "<p>Ah.  So Kan extensions may not exist in general either, but Kan lifts can somehow be absent in a deeper, more essential sense...</p>",
+        "id": 476940014,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1728982931
+    },
+    {
+        "content": "<p>Hm, I kind of buy it but not totally.  There is a nice characterization of when adjoints are \"essentially\" vs \"incidentally\" absent ((co)continuity), and a formula (in terms of potentially large limits, though, but the ends for Kan extensions can be large in some circumstances too!) for left/right adjoint, where these limits might fail to exist but iff they exist the adjoint exists, and they're even pointwise.</p>",
+        "id": 476947971,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1728985267
+    },
+    {
+        "content": "<p>(Hm, the fact that right relative adjoints can fail to be unique is more troubling though.  Under which criteria would a formula pick one?)</p>",
+        "id": 476950337,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1728986067
+    },
+    {
+        "content": "<p>(Oh, but the right relative adjoint is not a lift!)</p>",
+        "id": 476950871,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1728986236
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"438995\">James Deikun</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/End.2Fcoend.20formulas.20for.20Kan.20lifts/near/476940014\">said</a>:</p>\n<blockquote>\n<p>Ah.  So Kan extensions may not exist in general either, but Kan lifts can somehow be absent in a deeper, more essential sense...</p>\n</blockquote>\n<p>I suppose in the sense that, when a category is cocomplete enough, you have all Kan extensions, but there is not a corresponding property that implies that all Kan lifts exist.</p>",
+        "id": 476972989,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1728993895
+    },
+    {
+        "content": "<p>(Non-relative) adjoints are special because they can be identified either with Kan extensions or Kan lifts. However, there is a bifurcation with relative adjoints: left relative adjoints are lifts, whereas right relative adjoints are extensions.</p>",
+        "id": 476973373,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1728994015
+    },
+    {
+        "content": "<p>(And dually for relative coadjunctions.)</p>",
+        "id": 476973405,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1728994024
+    },
+    {
+        "content": "<p>It seems like a pointwise left Kan lift <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">t</mi></mrow><mi>p</mi></msub><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Lift}_p F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9805em;vertical-align:-0.2861em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">Lift</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">p</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> must exist when <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">p</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">p</span></span></span></span> preserves limits and the domain of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">p</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">p</span></span></span></span> is complete enough.  When <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> is dense this is also necessary, and perhaps the density comonad of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> somehow measures how much <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">p</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">p</span></span></span></span> can fail to preserve limits.</p>",
+        "id": 476975521,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1728994676
+    },
+    {
+        "content": "<p>Since the nice conditions on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">p</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">p</span></span></span></span> for all left Kan lifts to exist also imply a(n absolute) left adjoint exists, perhaps this is one reason Kan lifts are less prominent than Kan extensions.</p>",
+        "id": 476980318,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1728996115
+    },
+    {
+        "content": "<p>When <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> is dense, you can use the representable functor theorem to find when a lift/left relative adjoint exists, which will involve continuity of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">p</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">p</span></span></span></span> and the solution set condition.</p>",
+        "id": 476980420,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1728996135
+    },
+    {
+        "content": "<p>Are you sure that's not continuity of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">p</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">p</span></span></span></span>?  (And it was fixed, I see.)</p>",
+        "id": 476980908,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1728996290
+    },
+    {
+        "content": "<p>Oops, that's right.</p>",
+        "id": 476982435,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1728996706
+    },
+    {
+        "content": "<p>So it seems like a formula for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mrow><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">t</mi></mrow><mi>p</mi></msub><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Lift}_p F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9805em;vertical-align:-0.2861em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">Lift</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">p</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo>:</mo><msup><mi>D</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>→</mo><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">p : D&#x27; \\to D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> would be:</p>\n<p><span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><msub><mrow><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">f</mi><mi mathvariant=\"normal\">t</mi></mrow><mi>p</mi></msub><mi>F</mi><mo stretchy=\"false\">(</mo><mi>c</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mi><munder><mo><mrow><mi mathvariant=\"normal\">l</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">m</mi></mrow></mo><mrow><mi>x</mi><mo>∈</mo><mi>F</mi><mi>c</mi><mo>↓</mo><mi>p</mi></mrow></munder></mi><mstyle mathsize=\"0.9em\"><msub><mi mathvariant=\"normal\">Π</mi><mn>2</mn></msub><mi>x</mi></mstyle></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Lift}_p F(c) = \\underset{x \\in Fc \\downarrow p}{\\mathrm{lim}} \\small{\\Pi}_2x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1.0361em;vertical-align:-0.2861em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">Lift</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">p</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">c</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.5827em;vertical-align:-0.8882em;\"></span><span class=\"mord\"><span class=\"mop op-limits\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6944em;\"><span style=\"top:-2.3479em;margin-left:0em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">x</span><span class=\"mrel mtight\">∈</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.13889em;\">F</span><span class=\"mord mathnormal mtight\">c</span><span class=\"mrel mtight\">↓</span><span class=\"mord mathnormal mtight\">p</span></span></span></span><span style=\"top:-3em;\"><span class=\"pstrut\" style=\"height:3em;\"></span><span><span class=\"mop\"><span class=\"mord\"><span class=\"mord mathrm\">lim</span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8882em;\"><span></span></span></span></span></span></span><span class=\"mord sizing reset-size6 size5\"><span class=\"mord\"><span class=\"mord\">Π</span></span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2796em;\"><span style=\"top:-2.45em;margin-right:0.0556em;\"><span class=\"pstrut\" style=\"height:2.6em;\"></span><span class=\"sizing reset-size5 size2 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mord mathnormal sizing reset-size6 size5\">x</span></span></span></span></span></p>\n<p>with the following caveats: </p>\n<ul>\n<li>the formula will be evaluated in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>D</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">D&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> but its effectiveness will be checked in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span> so it only works to the extent <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">p</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">p</span></span></span></span> preserves the limit</li>\n<li>the limit in practice will probably be large so you'll need to get clever to ensure it exists and evaluate it.</li>\n</ul>",
+        "id": 476993941,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1728999952
+    },
+    {
+        "content": "<p>I haven't proved this formula though and I'm worried it might be a bit <em>too</em> pointwise to be real since it doesn't seem to take into account the properties of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> much.</p>",
+        "id": 476994909,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1729000235
+    }
+]

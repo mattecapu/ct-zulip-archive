@@ -1,0 +1,44 @@
+[
+    {
+        "content": "<p>For a monoid <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>M</mi><mo separator=\"true\">,</mo><mo>⋅</mo><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(M, \\cdot, 1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">⋅</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>, we can define a preorder <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>≤</mo><mi>y</mi><mo>=</mo><mi mathvariant=\"normal\">∃</mi><mi>z</mi><mi mathvariant=\"normal\">.</mi><mtext> </mtext><mi>x</mi><mo>⋅</mo><mi>z</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">x \\le y = \\exists z.\\ x \\cdot z = y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719em;vertical-align:-0.136em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">∃</span><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"mord\">.</span><span class=\"mspace\"> </span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span>. Does this preorder have a canonical name/reference? I've seen things like \"preorder induced by a monoid\" (rather long?), \"temporal order\", \"extension order\", \"prefix order\", and such, but it's not clear to me that these are standardized. (Is there even an nLab or Wikipedia page about this ordering?)</p>",
+        "id": 518749524,
+        "sender_full_name": "Harrison Grodin",
+        "timestamp": 1747430506
+    },
+    {
+        "content": "<p>(Also, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∃</mi><mi>z</mi><mi mathvariant=\"normal\">.</mi><mtext> </mtext><mi>z</mi><mo>⋅</mo><mi>x</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">\\exists z.\\ z \\cdot x = y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">∃</span><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"mord\">.</span><span class=\"mspace\"> </span><span class=\"mord mathnormal\" style=\"margin-right:0.04398em;\">z</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span> works just as well and is distinct when <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⋅</mo></mrow><annotation encoding=\"application/x-tex\">\\cdot</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4445em;\"></span><span class=\"mord\">⋅</span></span></span></span> is not commutative. Maybe this is \"suffix order\" vs the other is \"prefix order\"? Or, this is \"left-foo\" vs the other is \"right-foo\", where \"foo\" is a good name for this style of ordering that is used when <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⋅</mo></mrow><annotation encoding=\"application/x-tex\">\\cdot</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4445em;\"></span><span class=\"mord\">⋅</span></span></span></span> is commutative?)</p>",
+        "id": 518749724,
+        "sender_full_name": "Harrison Grodin",
+        "timestamp": 1747430597
+    },
+    {
+        "content": "<p>I guess this would be related to <a href=\"https://en.m.wikipedia.org/wiki/Green's_relations\">Green's relations</a> and the preorders they induce?</p>",
+        "id": 518752055,
+        "sender_full_name": "Ralph Sarkis",
+        "timestamp": 1747431742
+    },
+    {
+        "content": "<p>I’ve usually seen these called the (left / right)-natural orders</p>",
+        "id": 518791752,
+        "sender_full_name": "Nathan Corbyn",
+        "timestamp": 1747465163
+    },
+    {
+        "content": "<p>If you see your monoid as a 1-object category—i.e., deloop it—these orders arise as the preorder reflections of the slice and coslice at the single object, respectively</p>",
+        "id": 518791879,
+        "sender_full_name": "Nathan Corbyn",
+        "timestamp": 1747465277
+    },
+    {
+        "content": "<p>(See also <a href=\"https://leanprover-community.github.io/sphere-eversion/docs/Mathlib/Algebra/Order/Monoid/Canonical/Defs.html\">https://leanprover-community.github.io/sphere-eversion/docs/Mathlib/Algebra/Order/Monoid/Canonical/Defs.html</a>)</p>",
+        "id": 518791976,
+        "sender_full_name": "Nathan Corbyn",
+        "timestamp": 1747465384
+    },
+    {
+        "content": "<p>This is an aside, but I was recently excited about seeing this preorder as the <a href=\"https://ncatlab.org/nlab/show/category+of+elements\">[[category of elements]]</a> of the hom functors based on the monoid. I think that's a different way of phrasing what Corbyn said.</p>",
+        "id": 518866354,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1747526064
+    }
+]

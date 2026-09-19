@@ -1,0 +1,68 @@
+[
+    {
+        "content": "<p>For reference, I'm talking about notion introduced in the paper \"Fibrations of bigroupoids\" by Hardie, Kamps and Kieboom (essentially: you can lift n-arrows given a lift of their source, though in my case I'm starting with lifts of targets, for n=1,2)</p>\n<p>I have a consstruction that uses the strict fibre of a surjective-on-objects fibration of bigroupoids, and I am claiming this is equivalent to the weak/homotopy fibre. This feels like something someone might have done, but I'm not entirely sure where. </p>\n<p>In principle one could try something like restricting Lack's <a href=\"https://access.portico.org/Portico/auView?auId=ark:%2F27927%2Fpgh2h1dc1ns\">canonical model structure for bicategories</a> (my 2-functor is in fact strict), and then checking that homotopy fibres correspond to weak fibres in the usual sense, and match up all the concepts, and so on. I don't have easy access to this paper.</p>\n<p>Alternatively, one might imagine that someone has done some fairly nuts-and-bolts computation to check things work out, without resorting to model category tech. This feels unlikely.</p>\n<p>Yet again, someone might have done enough work on (semi?-)model structures on Kan complexes/sSet and how the Duskin/geometric nerve of a bigroupoid is a certain kind of Kan complex, and then general model category stuff in the simplicial world takes over. This is rather far afield from what I am familiar with, and probably overkill.</p>\n<p>Advice?</p>",
+        "id": 480907444,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1730895446
+    },
+    {
+        "content": "<p>There is also this paper I just found, giving the model structure on bigroupoids and weak 2-functors: <a href=\"https://arxiv.org/abs/1809.00963\">https://arxiv.org/abs/1809.00963</a></p>",
+        "id": 480908307,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1730895733
+    },
+    {
+        "content": "<p>I guess I'm after a reference that I can point to that justifies _some_ approach, because I'm secretly wanting to show that the appropriately weak fibre of a map of 2-stacks of bigroupoids is computed using this much more tractable strict fibre that I can have a good handle on.</p>\n<p>Oh, and I should say that this strict fibre is a legit 1-groupoid, rather than something like a bigroupoid merely equivalent to a 1-groupoid. That's what I'd rather work with!</p>",
+        "id": 480909265,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1730896084
+    },
+    {
+        "content": "<p>Lack sounds like the right starting point to me. I’m not sure I know what difference you’re drawing between homotopy fibers and weak fibers so take this as only somewhat confident. Mike would probably know better if he’s around.</p>",
+        "id": 480963088,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1730912368
+    },
+    {
+        "content": "<p>Here’s a copy of the paper. <a href=\"/user_uploads/21317/R3SYaf6IS5Fh3hEk798nDjCb/a-quillen-model-structure-for-bicategories.pdf\">a-quillen-model-structure-for-bicategories.pdf</a></p>",
+        "id": 480964217,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1730912726
+    },
+    {
+        "content": "<p>Well, either the homotopy fibres (defined using fibrant replacement etc) are equivalent to the weak fibres (defined using a general bicategorical construction), or not. This needs proving, and may well be the core of what needs to be done. I think the strict fibre in this case may well be the same as the homotopy pullback (since I have a fibration to start with and every object in Lack's model structure is fibrant), but this hasn't \"solved the problem\", since I still need to compare the weak and homotopy fibres.</p>",
+        "id": 481007711,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1730930379
+    },
+    {
+        "content": "<p>Hmm. thinking about the path object in Lack's model structure, how every object is fibrant, means if we treat the model structure as a category of fibrant objects, then according to <a href=\"https://ncatlab.org/nlab/show/category+of+fibrant+objects#PullbacksAlongFibrationsAreCorrectHomotopyPullbacks\">this proposition</a>, the using path-object strict construction of the homotopy fibre product (which should be the weak fibre) this will give the homotopically correct limit.</p>\n<p>But then this gives two constructions of the homotopy fibre, I think, and so they should be (bi)equivalent.</p>",
+        "id": 481010424,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1730931634
+    },
+    {
+        "content": "<p>So to collect my thoughts:</p>\n<ol>\n<li>In the Lack model structure on bicategories and strict 2-functors, every object is fibrant and the strict 2-functor I have is a fibration. So the strict fibre <em>is</em> the homotopy fibre for this model structure.</li>\n<li>Thinking of the underlying category with fibrant objects, the homotopy fibre for this setting can be computed using a wide (strict) pullback involving the path object, and the result is the weak fibre.</li>\n</ol>",
+        "id": 481025066,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1730940523
+    },
+    {
+        "content": "<ol start=\"3\">\n<li>So then one only needs to know that the calculation of the homotopy fibre in 2. is weakly equivalent to the calculation of the homotopy fibre in 1.</li>\n</ol>",
+        "id": 481025318,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1730940693
+    },
+    {
+        "content": "<p>OK, so this follows from <a href=\"https://ncatlab.org/nlab/show/homotopy+pullback#HomotopyPullbackByFactorizationLemma\">this corollary</a>, as it should.</p>",
+        "id": 481026378,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1730941355
+    },
+    {
+        "content": "<p>Great!</p>",
+        "id": 481028797,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1730943115
+    }
+]

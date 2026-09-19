@@ -1,0 +1,380 @@
+[
+    {
+        "content": "<p>I want a simple way to get myself in trouble with equivalence. </p>\n<p>Define a \"finite\" category to be a category with a finite number of objects and morphisms.</p>\n<p>This is problematic because you could have an infinite number of objects all isomorphic, and therefore, equivalent to one object.</p>\n<p>So \"number of objects\" isn't equivalence invariant.</p>\n<p>But you could maybe define a Functor on an \"essentially finite\" category, by returning the number of objects in the \"essentially finite\" categories skeleton.</p>\n<p>I saw \"Finite category\" was defined to be a category internal to FinSet on the nlab, which is very fun! This seems to me, to be phrased carefully in an equivalence invariant way. In particular, this implies a finite number of objects and morphisms.</p>\n<p>In any case, could somebody help me see how \"essentially finite\" is safe and useful, where simply \"finite\", in the sense introduced, gets me into trouble?</p>\n<p>The point here is to understand equivalence, not finite categories, so if folks have better examples to clarify equivalence feel free to share them.</p>",
+        "id": 508846561,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743196489
+    },
+    {
+        "content": "<p>It's hard for me to deliberately come up with ways to get in trouble by ignoring the fact that the finiteness of the set of objects is not invariant under equivalence.</p>",
+        "id": 508866812,
+        "sender_full_name": "John Baez",
+        "timestamp": 1743208880
+    },
+    {
+        "content": "<p>There are some interesting concepts of the cardinality of an essentially finite category that <em>are</em> invariant under equivalence.  Of course it's easy to come up with ones that <em>aren't</em>.</p>",
+        "id": 508867171,
+        "sender_full_name": "John Baez",
+        "timestamp": 1743209142
+    },
+    {
+        "content": "<p>In my experience, equivalence of categories is less a case of \"if you work with isomorphism bad things happen\" and more a case of \"if you work with isomorphism good things DON'T happen\".</p>",
+        "id": 508882738,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1743220876
+    },
+    {
+        "content": "<p>I see, interesting, so it's more a device to discover useful definitions?</p>",
+        "id": 508883008,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743221068
+    },
+    {
+        "content": "<p>Like I could focus on isomorphisms, but I'll just keep banging my head against a wall to make interesting conclusions?</p>",
+        "id": 508883041,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743221113
+    },
+    {
+        "content": "<p>For example, we informally think of the category whose objects are the \"model vector spaces\" <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"double-struck\">R</mi><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}^n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span></span></span></span> (one for each <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>) and whose arrows are linear maps as being \"the same\" as the category whose objects are <em>all</em> vector spaces <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span></span></span></span> whose arrows are linear maps. But here \"sameness\" has to mean equivalence. For concreteness say that the map from model vector spaces to all vector spaces is the inclusion, and the map the other way is defined by dimension. Then if you start with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span></span></span></span>, go to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"double-struck\">R</mi><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}^n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span></span></span></span> and then back, you end up at <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"double-struck\">R</mi><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\mathbb{R}^n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord\"><span class=\"mord mathbb\">R</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span></span></span></span> which is <em>not</em> the vector space <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span></span></span></span> you started with! It's merely <em>isomorphic</em> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span></span></span></span></p>",
+        "id": 508883045,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1743221115
+    },
+    {
+        "content": "<p>So if you want these categories to be the same, and morally they <em>should be</em>, then you need equivalence</p>",
+        "id": 508883072,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1743221136
+    },
+    {
+        "content": "<p>Here's another example:</p>",
+        "id": 508883084,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1743221148
+    },
+    {
+        "content": "<p>You probably want syntax and semantics to be \"dual\" to each other in some sense... How might one make this precise? Well you can start with a (cauchy complete) finite product category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">T</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{T}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">T</span></span></span></span> (thought of as a <a href=\"https://ncatlab.org/nlab/show/lawvere%20theory\">[[lawvere theory]]</a>) then go to its category of models (finite product functors <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">T</mi><mo>→</mo><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">\\mathbb{T} \\to \\mathsf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">T</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span></span></span></span>). From its category of models you can look at the (opposite of the ) full subcategory of free models to recover <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">T</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{T}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">T</span></span></span></span>.... But not on the nose! You only recover something <em>equivalent</em> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">T</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{T}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">T</span></span></span></span>!</p>",
+        "id": 508883293,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1743221302
+    },
+    {
+        "content": "<p>So if you want to be able to say that going from syntax to semantics and back gets you to the \"same place you started\", you're forced into considering equivalence as \"the right notion of sameness\". Isomorphism just doesn't work, since in general the full subcategory of free models might have more objects than the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">T</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{T}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">T</span></span></span></span> you started with (for basically the same reason Vect has more objects than the category of \"model vector spaces\" in the previous example)</p>",
+        "id": 508883364,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1743221391
+    },
+    {
+        "content": "<p>What you're saying makes a ton of sense, I'm going to think on it a bit.</p>\n<p>But I like the framing that \"I want to\" think up to isomorphism. This is very clarifying, it underscores how not problematic many would be aspects are, they're just \"boring\".</p>",
+        "id": 508884047,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743222049
+    },
+    {
+        "content": "<p>Re-stating a bit to introduce the concept of \"evil\" into this thread, asking that two categories be isomorphic is \"evil\" in that it requires comparing functors up to equality rather than natural isomorphism.  Whereas equivalence of categories is not evil.</p>",
+        "id": 508893270,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1743229404
+    },
+    {
+        "content": "<p>I would really warn against using the term \"evil\", as in my experience it causes more confusion than it avoids (discussed a little in this previous thread: <a class=\"message-link\" href=\"/#narrow/channel/229199-learning.3A-questions/topic/Question.20about.20reflector/near/468921111\">#learning: questions &gt; Question about reflector @ 💬</a> ).</p>",
+        "id": 508905123,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1743240185
+    },
+    {
+        "content": "<p>I'm avoiding the word \"Evil\" because I don't want to start a fight in this thread.</p>\n<p>That said, it's still confusing that \"nobody is going to arrest you for using definitions that only work for isomorphic Functors\" while languages are being built that make it impossible to state definitions that aren't invariant under equivalence.</p>\n<p>Such a language feature feels like \"inforcing the law\" under this metaphor.</p>\n<p>If nothing is \"wrong\" with definitions that only work up to functor isomorphisms, then banning them feels like implementing a geometry program that only lets you define definitions up to similarity.</p>\n<p>Which is useful, but isn't that also more limiting?</p>\n<p>Like is working with categories up to isomorphism similar to programming in assembly, or working directly with set theory axioms for everything?</p>",
+        "id": 508928589,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743259642
+    },
+    {
+        "content": "<p>I think the analogy with programming languages is exactly right: different programming languages are good for different purposes. I don't think any programmer thinks that everybody should adopt a single language, which is why it is puzzling to me that \"language pluralism\" is not the default attitude to foundations of mathematics. (Or perhaps it is for \"working mathematicians\" but not necessarily voiced as such.)</p>",
+        "id": 508930293,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1743260713
+    },
+    {
+        "content": "<p>Languages that \"automatically respect principle X\" are supposed to <em>help</em> you, by giving you formal guarantees that X holds as long as you can complete your proof in the language, they are not supposed to <em>constrain</em> you; if principle X is not important to you, don't use that language.</p>",
+        "id": 508930614,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1743260942
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277352\">Alex Kreitzberg</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Interrogating.20equivalence/near/508928589\">said</a>:</p>\n<blockquote>\n<p>That said, it's still confusing that \"nobody is going to arrest you for using definitions that only work for isomorphic [categories]\" while languages are being built that make it impossible to state definitions that aren't invariant under equivalence.</p>\n</blockquote>\n<p>Why would that be confusing?  Some people like to only use definitions that are invariant under equivalence of categories.  Some like it so much they set up languages where only these invariant definitions are possible.  But there's no law saying you have use to such languages!  Indeed, at least 99% of mathematicians <em>don't</em>.   </p>\n<p>Category theory where you care about isomorphism of categories is a somewhat different subject than category theory where you only care about equivalence of categories.  If you learn theorems about both you can decide what you think about these two subjects and their relation.</p>\n<p>In math each of us has a huge amount of freedom.  That includes the freedom to choose the limitations we impose on ourselves.</p>",
+        "id": 508932267,
+        "sender_full_name": "John Baez",
+        "timestamp": 1743262238
+    },
+    {
+        "content": "<p>Okay, I believe I get it now. I'll omit why I thought that was confusing, because you addressed it.</p>\n<p>An aside, I think that means the use of \"evil\" here gives the same connotation programmers intend when they use the word \"evil\". For example it could be a warning to be careful working with lengths when working up to similarity, or it can communicate you think the ambient setting is too low level for the problem you're trying to solve.</p>\n<p>In software the quote \"premature optimization is the root of all evil\" is commonly attributed to Knuth. Earnestly used, it's a suggestion to write programs that don't depend on details specific to the computer they run on. It's funny the joke/metaphor \"evil\" occured in such a similar circumstance.</p>\n<p>It's also funny that, I don't think Knuth would agree with most contexts that quote is invoked, assuming he even said it.</p>\n<p>In any case, a positive statement here, is working up to equivalence is the necessary tool to give mathematical content to \"isomorphic objects are the same.\"</p>",
+        "id": 508938082,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743266248
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Interrogating.20equivalence/near/508930293\">said</a>:</p>\n<blockquote>\n<p>I don't think any programmer thinks that everybody should adopt a single language, which is why it is puzzling to me that \"language pluralism\" is not the default attitude to foundations of mathematics. (Or perhaps it is for \"working mathematicians\" but not necessarily voiced as such.)</p>\n</blockquote>\n<p>Sadly, it's not, even for \"working mathematicians\".  Although that's largely because working mathematicians don't think about foundations of mathematics at all.</p>\n<p>I drew a comic strip about this.<br>\n<a href=\"/user_uploads/21317/X6vqpRHgbBe1WqLfGa_25h9V/Screenshot-from-2025-03-29-18-08-25.png\">Screenshot from 2025-03-29 18-08-25.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/X6vqpRHgbBe1WqLfGa_25h9V/Screenshot-from-2025-03-29-18-08-25.png\" title=\"Screenshot from 2025-03-29 18-08-25.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"523x494\" src=\"/user_uploads/thumbnail/21317/X6vqpRHgbBe1WqLfGa_25h9V/Screenshot-from-2025-03-29-18-08-25.png/840x560.webp\"></a></div>",
+        "id": 508974614,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743296951
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Interrogating.20equivalence/near/508930614\">said</a>:</p>\n<blockquote>\n<p>Languages that \"automatically respect principle X\" are supposed to <em>help</em> you, by giving you formal guarantees that X holds as long as you can complete your proof in the language, they are not supposed to <em>constrain</em> you; if principle X is not important to you, don't use that language.</p>\n</blockquote>\n<p>I agree.  However, I would also point out that the existence of such a language indicates that <em>someone</em> thought it was important or useful to ensure that X holds, so you might want to think carefully before deciding that principle X isn't important to you.  Perhaps a better question than \"is X important to me?\" is \"are there other goals or principles that conflict with X that are more important to me <em>right now</em>?\"</p>\n<p>For instance, many modern programming languages are built on a principle that memory leaks and segmentation faults should never happen, using garbage collection to relieve the programmer from manual memory management.  I think many people would agree that (with modern hardware) for most programming problems this is a good choice, and should probably be the \"default\" when programming.  But there are still some situations where (one can at least argue) a garbage collector introduces unacceptable overhead or unpredictability.</p>\n<p>To paraphrase Chesterton: don't take down a principle until you know why it was put up.</p>",
+        "id": 508989405,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743309571
+    },
+    {
+        "content": "<p>I mentioned the connection to the word evil not because I think the principle of equivalence is good or bad - fwiw, I'd call it both, depending on one's goals - but because the existing literature on the subject already uses the word 'evil' and hence that word might be helpful when learning.</p>",
+        "id": 508992229,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1743312190
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Interrogating.20equivalence/near/508932267\">said</a>:</p>\n<blockquote>\n<p>Category theory where you care about isomorphism of categories is a somewhat different subject than category theory where you only care about equivalence of categories.  If you learn theorems about both you can decide what you think about these two subjects and their relation.</p>\n</blockquote>\n<p>Interesting. I didn't know that the former subject (where you care about isomorphism of categories) even existed, as I feel that all of the stuff that I read is related to the latter (where you only care about equivalence) e.g. products and coproducts and all other limits are isomorphism-invariant, and hence non-isomorphic categories are not relevant to them.</p>",
+        "id": 509001402,
+        "sender_full_name": "Jencel Panic",
+        "timestamp": 1743321220
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277352\">Alex Kreitzberg</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Interrogating.20equivalence/near/508938082\">said</a>:</p>\n<blockquote>\n<p>In any case, a positive statement here, is working up to equivalence is the necessary tool to give mathematical content to \"isomorphic objects are the same.\"</p>\n</blockquote>\n<p>Yes, a formulation of this principle that I have read somewhere, (but no idea where) is that \"categorical properties are invariant with respect to isomorphism of objects (i.e. categorical properties are <em>isomorphism-invariant</em>)</p>",
+        "id": 509002768,
+        "sender_full_name": "Jencel Panic",
+        "timestamp": 1743322552
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"612694\">Jencel Panic</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Interrogating.20equivalence/near/509001402\">said</a>:</p>\n<blockquote>\n<p>I didn't know that the former subject (where you care about isomorphism of categories) even existed</p>\n</blockquote>\n<p>Nearly all the study of categories-up-to-isomorphism that I can think of is using them mainly as a tool to deduce facts about categories-up-to-equivalence without having to explicitly carry around so many isomorphisms.  For instance, using strict 2-categories instead of bicategories.  This is a powerful technique and there's a lot that one can do with it, but it seems a bit of a stretch to refer to it as <em>caring</em> about isomorphisms of categories when we only care about them as a tool to prove equivalence-invariant facts.</p>\n<p>I don't know if John had something more than this in mind, or if he was just imagining that such a subject <em>might</em> exist.  (Or, I suppose from a Platonist point of view it already exists, even if human mathematicians haven't been inspired to discover much about it.)</p>",
+        "id": 509006450,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743325415
+    },
+    {
+        "content": "<p>Maybe this will help clarify something for me. The sort of stuff I had in mind for thinking about categories up to isomorphism, would be things like \"measuring the number of objects used in a given representation of a category\", or \"counting arrows used for a certain composition\". Just really noodly shenanigans about \"superficial features\".</p>\n<p>However whenever I have an idea like this I'm generally suspicious there's a reframing like \"essentially finite\", just around the corner that makes thinking in this way redundant, or much more useful somehow.</p>\n<p>But the point is you can't be impressed by a \"superficially large\" contractible groupoid being equivalent to just one object, if you don't have a way to say that it's \"superficially large\".</p>\n<p>Is there a better way to think about this than thinking of categories up to isomorphism?</p>",
+        "id": 509032656,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743346493
+    },
+    {
+        "content": "<blockquote>\n<p>I don't know if John had something more than this in mind, or if he was just imagining that such a subject <em>might</em> exist.</p>\n</blockquote>\n<p>I think that the study of the 1-category Cat, where we consider categories as algebraic gadgets like groups or rings and care a lot about when they're isomorphic, is a subject that only exists in bits and pieces here and there.  I've never seen a book or even a paper that comes out and advocates this study.</p>\n<p>An example of what I mean is the study of the <a href=\"https://en.wikipedia.org/wiki/Quiver_(mathematics)#Path_algebra\">path algebra of a quiver</a>.  Here we</p>\n<ul>\n<li>\n<p>take a <a href=\"https://ncatlab.org/nlab/show/quiver\">[[quiver]]</a> <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span> (what category theorists often call a 'graph'), </p>\n</li>\n<li>\n<p>form the free category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">FG</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">FG</span></span></span></span> on that, </p>\n</li>\n</ul>\n<p>and then </p>\n<ul>\n<li>form the <strong>category algebra</strong> of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">FG</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">FG</span></span></span></span>, where elements are finite linear combinations of morphisms in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">FG</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">FG</span></span></span></span>, and the product of two morphisms is defined to be their composite, or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span> if they're not composable.</li>\n</ul>\n<p>People study quiver algebras quite intensely, and I can <em>imagine</em> them generalizing these to the category algebras of other categories, for example finite categories or finitely generated categories.  In fact I'd be shocked if they hadn't!   And these people might wind up becoming interested in the 1-category Cat.</p>",
+        "id": 509040103,
+        "sender_full_name": "John Baez",
+        "timestamp": 1743349706
+    },
+    {
+        "content": "<p>Are there any objects in that category that are isomorphic but not equal?</p>",
+        "id": 509040533,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743349886
+    },
+    {
+        "content": "<p>No, because when you take the free category on a graph none of its morphisms are isomorphisms except the identities: since it's 'free', nothing forces those other morphisms to be isomorphisms.</p>",
+        "id": 509040934,
+        "sender_full_name": "John Baez",
+        "timestamp": 1743350063
+    },
+    {
+        "content": "<p>But I would not be shocked if someone had studied the category algebras of some groupoids which have nonequal but isomorphic objects.</p>",
+        "id": 509041021,
+        "sender_full_name": "John Baez",
+        "timestamp": 1743350109
+    },
+    {
+        "content": "<p>Indeed, now I remember people study these in noncommutative algebra:</p>\n<ul>\n<li><a href=\"https://en.wikipedia.org/wiki/Groupoid_algebra\">Groupoid algebra</a>.</li>\n</ul>",
+        "id": 509041201,
+        "sender_full_name": "John Baez",
+        "timestamp": 1743350184
+    },
+    {
+        "content": "<p>I think that's a real world example of the \"shenanigans\" I was trying to articulate then, thank you for sharing!</p>",
+        "id": 509043126,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743351535
+    },
+    {
+        "content": "<p>That reminds me of the magnitude of a finite category with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> objects, which is defined by writing down an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>×</mo><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n\\times n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span> matrix whose <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>i</mi><mi>j</mi></mrow><annotation encoding=\"application/x-tex\">ij</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.854em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05724em;\">ij</span></span></span></span>-entry is the cardinality of the homset from object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>i</mi></mrow><annotation encoding=\"application/x-tex\">i</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6595em;\"></span><span class=\"mord mathnormal\">i</span></span></span></span> to object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>j</mi></mrow><annotation encoding=\"application/x-tex\">j</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.854em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05724em;\">j</span></span></span></span>, inverting it, and summing the entries.  This certainly doesn't look invariant under equivalence, but it's even worse than that: if the category contains any pair of unequal isomorphic objects, the matrix will have two identical rows (and columns) and hence won't even be invertible.</p>\n<p>On the other hand, one might argue that it would be better to index the rows and columns by the isomorphism classes of objects, so that the construction applies directly to any essentially finite category.</p>",
+        "id": 509043876,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743352133
+    },
+    {
+        "content": "<p>That's one definition of the magnitude of a finite category, but there's a more general definition involving a 'weighting', and <span class=\"user-mention\" data-user-id=\"277067\">@Tom Leinster</span> shows in <a href=\"https://arxiv.org/abs/math/0610260\">Lemma 1.12 here</a> that if two categories are equivalent and one has a weighting than the other does.  Then in Proposition 2.4 he shows two categories that admit weightings have the same cardinality if they're equivalent... or even have an adjunction between them!</p>",
+        "id": 509044956,
+        "sender_full_name": "John Baez",
+        "timestamp": 1743352870
+    },
+    {
+        "content": "<p>Mike Shulman's example does nicely show that an annoying problem will go away by embracing essentially finite categories and equivalence invariance. And he explained it in a manner that validates the heuristic I outlined.</p>\n<p>But I also love the context and subtlety with Baez's presention of the possible meaningful distinctions. </p>\n<p>In any case, I think both ends of my questions have been addressed.</p>\n<p>But I love the conversation so far, so feel free to keep talking if you find this interesting!</p>",
+        "id": 509050308,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743357125
+    },
+    {
+        "content": "<p>(I'm going to add Baez's quote that was moved from this thread because it is still useful context for this thread)</p>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Morita.20equivalent.20categories.20need.20not.20be.20equivalent/near/509045332\">said</a>:</p>\n<blockquote>\n<p>Similarly, I would not be surprised if two categories are equivalent if and only if their category algebras are Morita equivalent, i.e. have equivalent categories of representations.  I don't actually know if this is true, but if it were true maybe one could argue that the 'category algebra' construction should be thought of, not as a mere functor from the 1-category Cat to the usual 1-category of algebras, but from the 2-category Cat to the 2-category of algebras, bimodules and bimodule homomorphisms. </p>\n<p>So I think these issues can be debated, with the 'pro-evil' and 'anti-evil' attitudes to category theory both trying to prove their merit in these applications to fields where people treat categories as humble algebraic objects much like groups or rings.  </p>\n<p>I'd like to see these arguments be judged, not just by category theorists already committed to the principle of equivalence, but by 'practioners', like people who use category algebras in the study of quivers, or groupoid algebras in noncommutative algebra.   </p>\n<p>The category theorists can nudge the practitioners, of course, but it would be very interesting to discover if the 'inner logic' of these subjects pushes practitioners toward the principle of equivalence, or not.</p>\n</blockquote>",
+        "id": 509104323,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743398601
+    },
+    {
+        "content": "<p>Thanks!  That comment was indeed aimed at the general questions being discussed in this thread.</p>",
+        "id": 509108548,
+        "sender_full_name": "John Baez",
+        "timestamp": 1743401085
+    },
+    {
+        "content": "<p>Also of possible relevance: the nerve construction on (1-)categories is not equivalence-invariant. When doing homotopy theory with simplicial sets one thing that one hopes to achieve is making simplicial sets (weakly) equivalent if they are nerves of equivalent categories.</p>",
+        "id": 509388983,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1743495798
+    },
+    {
+        "content": "<p>What would it mean for the nerve construction on categories to be equivalent in the sense you're saying it's not?    What 2-category structure are you putting on simplicial sets, to define equivalence for them?</p>",
+        "id": 509497534,
+        "sender_full_name": "John Baez",
+        "timestamp": 1743524711
+    },
+    {
+        "content": "<p>Well if you view the 2-category of categories as a truncated oo-category, then the nerve construction is an embedding into the oo-category of spaces (modeled by simplicial sets)?</p>",
+        "id": 509504561,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1743526869
+    },
+    {
+        "content": "<p>I think the embedding of the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mn>2</mn><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(2,1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">2</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-category of small categories, functors, and natural isomorphisms into the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty, 1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-category of small <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty, 1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-categories can be presented by the nerve functor, where the category of simplicial sets is endowed with the Joyal model structure and the category of small categories with its canonical model structure.</p>",
+        "id": 509627076,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1743580860
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Interrogating.20equivalence/near/508930293\">said</a>:</p>\n<blockquote>\n<p>I don't think any programmer thinks that everybody should adopt a single language, which is why it is puzzling to me that \"language pluralism\" is not the default attitude to foundations of mathematics</p>\n</blockquote>\n<p>Rant incoming... </p>\n<p>I blame this on <a href=\"https://en.wikipedia.org/wiki/Formalism_(philosophy_of_mathematics)\">formalism, as a philosophy of mathematics</a>. Formalism served us right a century ago, but then it got so ingrained that the majority view nowadays seems to be that what we study are formal proofs in a formal system, which for convenience we call 'geometry', 'number theory', etc., despite the <em>very plain fact</em> that we do not, in fact, work formally most of the time if not at all (the closest being people who do mathematics directly on proof assistants, though I'd argue they still don't do what strict formalism would say they do).<br>\nIf you really believe all mathematics is shorthand for a formal system, then pluralism is hard to digest because it points at a 'psychosocial-objective' nature of mathematics rather than a 'formal-objective' one, so you better insist it's ZFC/ETCS/MLTT all the way down.</p>",
+        "id": 509647275,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1743586605
+    },
+    {
+        "content": "<p>I find that a very strange remark.  It seems to me that formalism leads very naturally to pluralism: if all we do in mathematics is manipulate formal symbols, then the symbols could just as well obey any rules we feel like.  And as an empirical observation, it seems to me the people most vocally opposed to pluralism, namely ZFC-theorists, also tend to be the most committed to a <em>Platonist</em> view of mathematics in which their favored fundamental objects (the cumulative hierarchy) are those that \"truly exist\".</p>",
+        "id": 509729951,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743607846
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Interrogating.20equivalence/near/509497534\">said</a>:</p>\n<blockquote>\n<p>What 2-category structure are you putting on simplicial sets, to define equivalence for them?</p>\n</blockquote>\n<p>Good point... if a construction is only defined (a priori) on the 1-category of categories, it only makes sense for that construction to be equivalence-invariant if you specify a notion of equivalence in the codomain category (or more demandingly, upgrade the codomain to a 2-category; any 2-functor necessarily preserves equivalence)! If there isn't an obvious contender then by default that's taken to be isomorphism (resp. the \"discrete\" 2-category where the only 2-morphisms are identities). So I'm pointing out that equivalent categories are not sent to isomorphic simplicial sets when taking the nerve.</p>",
+        "id": 509733952,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1743608819
+    },
+    {
+        "content": "<p>Okay.   Luckily there's a more clever 2-category of simplicial sets such that the nerve sends equivalent categories to equivalent simplicial sets.</p>",
+        "id": 509735673,
+        "sender_full_name": "John Baez",
+        "timestamp": 1743609264
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Interrogating.20equivalence/near/509729951\">said</a>:</p>\n<blockquote>\n<p>I find that a very strange remark.  It seems to me that formalism leads very naturally to pluralism: if all we do in mathematics is manipulate formal symbols, then the symbols could just as well obey any rules we feel like.  And as an empirical observation, it seems to me the people most vocally opposed to pluralism, namely ZFC-theorists, also tend to be the most committed to a <em>Platonist</em> view of mathematics in which their favored fundamental objects (the cumulative hierarchy) are those that \"truly exist\".</p>\n</blockquote>\n<p>I see the criticism but I thought Matteo was pointing at something that might not be so off base. If you pretend to believe that mathematics is ultimately founded on the first-order theory of ZFC then I do think there’s some ontological terror in proposed changes of foundations, whereas with some more realist philosophy you at least have some basis to explain how HoTT and ZFC, say, can both serve as foundations for a <em>mathematics</em> that in some sense exists outside of them. Also, of course, plenty of actual set theorists are pluralists; it seems like “working mathematicians” are likelier to be more reactionary on these matters.</p>",
+        "id": 509750404,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1743613328
+    },
+    {
+        "content": "<p>Matteo's comment about mathematicians' stress with multiple foundations reminds me of most adults' stress with PEMDAS being only one of many ambiguous conventions.</p>\n<p>I suspect PEMDAS frustrations are due to vague ideas of what it means for math to be objective, and disappointment with needing to deal with multiple conventions.</p>\n<p>I'm tempted to extend that last point to most adults. The Linux kernal team has been really struggling to culturally incorporate Rust. That makes sense to me because it's hard to learn a new language.</p>\n<p>I'd be surprised if genuine foundational concerns were at the heart of most folks frustrations. Unless \"vague ideas of objectivity\" really is a specific foundation's fault.</p>",
+        "id": 509770600,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743619821
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Interrogating.20equivalence/near/509750404\">said</a>:</p>\n<blockquote>\n<p>If you pretend to believe that mathematics is ultimately founded on the first-order theory of ZFC</p>\n</blockquote>\n<p>Perhaps, but I don't think that <em>is</em> what formalists (pretend to) believe.  For instance, the wikipedia article that Matteo linked to first describes how Hilbert wanted to formalize everything in finitary arithmetic, which was frustrated by Gödel's theorem, but then cites as other examples</p>\n<blockquote>\n<p>Other formalists, such as Rudolf Carnap, considered mathematics to be the investigation of formal axiom systems</p>\n</blockquote>\n<p>and</p>\n<blockquote>\n<p>Haskell Curry defines mathematics as \"the science of formal systems.\"</p>\n</blockquote>\n<p>both of which say \"systemS\", plural.  And the stanford encyclopedia of philosophy entry on <a href=\"https://plato.stanford.edu/entries/formalism-mathematics/\">formalism in the foundations of mathematics</a> does not once mention ZFC.</p>",
+        "id": 509788471,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743626044
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Interrogating.20equivalence/near/509750404\">said</a>:</p>\n<blockquote>\n<p>Also, of course, plenty of actual set theorists are pluralists; it seems like “working mathematicians” are likelier to be more reactionary on these matters.</p>\n</blockquote>\n<p>I can believe that plenty of set theorists are pluralists, especially with the recent rise of \"multiverse\" thinking.  But my own experience has been that the most vocal opponents of alternative foundations have also been set theorists.  \"Working\" mathematicians tend to be more \"passively\" reactionary, since they don't think about foundations much at all, and more open to being convinced otherwise when good arguments are presented.</p>\n<p>As additional evidence, I don't know what the current status of this is, but I know that at least not so very long ago, many set theorists professed to believe that there was a \"fact of the matter\" regarding whether the Continuum Hypothesis is true or false, which seems to me very hard to square with pluralism.</p>",
+        "id": 509789050,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743626237
+    },
+    {
+        "content": "<p>...Are Set theorists on the same page between the two options? Or do they think they haven't found the \"right\" Set theory yet, and so haven't determined the answer?</p>",
+        "id": 509789958,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743626534
+    },
+    {
+        "content": "<p>There was (maybe still is) definitely a research programme to try to find the \"right\" (or at least a \"better\") set theory that would decide the question.  I don't remember whether there is/was a weight of majority opinion on what the answer would turn out to be.</p>",
+        "id": 509790370,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743626694
+    },
+    {
+        "content": "<p>Thinking about these ideas, it clarifies I really like formalist methods, they seem self correcting. If the Formalist dream really was for there to be one canonical formal system, then its methods have deeply undermined it.</p>",
+        "id": 509791507,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743627104
+    },
+    {
+        "content": "<p>But I'm really liking Mac Lane's discussion in \"mathematics Form &amp; Function\" and the logic intro you shared a bit ago, because they leave space for intuition in a really practical way.</p>",
+        "id": 509798760,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1743630006
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> wrote:</p>\n<blockquote>\n<p>There was (maybe still is) definitely a research programme to try to find the \"right\" (or at least a \"better\") set theory that would decide the question. I don't remember whether there is/was a weight of majority opinion on what the answer would turn out to be.</p>\n</blockquote>\n<p>There's actually a lot of controversy.  For some reason Natalie Wolchover at <em>Quanta</em> magazine likes to report on this:</p>\n<ul>\n<li>\n<p>Natalie Wolchover, <a href=\"https://www.quantamagazine.org/to-settle-infinity-question-a-new-law-of-mathematics-20131126/\">To settle infinity dispute, a new law of logic</a>, November 26, 2013.</p>\n</li>\n<li>\n<p>Natalie Wolchover, <a href=\"https://www.quantamagazine.org/how-many-numbers-exist-infinity-proof-moves-math-closer-to-an-answer-20210715/\">How many numbers exist?  Infinity proof moves math closer to an answer</a>, July 15, 2021.</p>\n</li>\n</ul>\n<p>A couple of quotes from near the end of the latter, involving some axioms that people are playing with:</p>\n<blockquote>\n<p>The convergence of Martin’s maximum++ and (<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∗</mo></mrow><annotation encoding=\"application/x-tex\">\\ast</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4653em;\"></span><span class=\"mord\">∗</span></span></span></span>) creates a solid foundation for a tower of infinities in which the cardinality of the continuum is <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">ℵ</mi><mn>2</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\aleph_2</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\">ℵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>. “The question is, is it true?” asks Peter Koellner, a set theorist at Harvard.</p>\n</blockquote>\n<p>But....</p>\n<blockquote>\n<p>Notably, the person who might have been most enthusiastic about (<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∗</mo></mrow><annotation encoding=\"application/x-tex\">\\ast</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4653em;\"></span><span class=\"mord\">∗</span></span></span></span>)’s correctness has also turned against it. “I’m considered a traitor,” Woodin said in one of our Zoom conversations this summer.  Twenty-five years ago, when he posed (<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∗</mo></mrow><annotation encoding=\"application/x-tex\">\\ast</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4653em;\"></span><span class=\"mord\">∗</span></span></span></span>), Woodin thought the continuum hypothesis was false, and thus that (<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∗</mo></mrow><annotation encoding=\"application/x-tex\">\\ast</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4653em;\"></span><span class=\"mord\">∗</span></span></span></span>) was a source of light. But about a decade ago, he changed his mind. He now thinks that the continuum has cardinality <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">ℵ</mi><mn>1</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\aleph_1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\">ℵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> and that (<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∗</mo></mrow><annotation encoding=\"application/x-tex\">\\ast</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4653em;\"></span><span class=\"mord\">∗</span></span></span></span>) and forcing are “doomed.”</p>\n</blockquote>\n<p>My question is, where are these people getting their intuitions that some axioms are \"true\" or \"false\"?  It seems quite mystical.</p>",
+        "id": 509804119,
+        "sender_full_name": "John Baez",
+        "timestamp": 1743632614
+    },
+    {
+        "content": "<p>Not all beliefs about axioms of set theory need feel mystical. I really believe it's literally true that if I have two finite collections of anything (say, the items on my desk and the pets in my home), I can put them together. That's all the axiom of union says! One interpretation of Cantor's great insight is that you can just pretend that sets like \"the natural numbers\" behave in essentially this familiar manner of nice concrete finite sets, except that they can be in bijection with a proper subset. Well, if you take that seriously, that infinite sets are real and definite in more or less the same sense that finite ones are, then it becomes a real problem that we have obvious way to pin down whether there are sizes in between <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">ℵ</mi><mn>0</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\aleph_0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\">ℵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"fraktur\">c</mi><mi mathvariant=\"normal\">.</mi></mrow><annotation encoding=\"application/x-tex\">\\mathfrak c.</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4753em;\"></span><span class=\"mord mathfrak\">c</span><span class=\"mord\">.</span></span></span></span> This is not a problem that we ever run into with finite sets! So some people really really want there to be a <em>correct</em> answer. If there isn't one, which of course there are very serious reasons to suspect, then in a certain sense that undermines the whole Cantorian project, though very few people are likely to actually abandon the assumption that the natural numbers form a set over such issues.</p>",
+        "id": 509805623,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1743633302
+    },
+    {
+        "content": "<p>I agree with what you say; what sounds mystical is that I'm not hearing enough in Wolchover's articles about why these people have their intuitions.   Maybe she's just focusing on the dramatic, like this:</p>\n<blockquote>\n<p>Most set theorists would like nothing more than to exit the mathematical multiverse and coalesce behind a single picture of Cantor’s paradise, one that’s beautiful enough to call true.</p>\n</blockquote>\n<blockquote>\n<p>Kennedy, for one, thinks we may soon return to that “prelapsarian world.” “Hilbert, when he gave his speech, said human dignity depends upon us being able to decide things in mathematics in a yes-or-no fashion,” she said. “This was a matter of redeeming humanity, of whether mathematics is what we always thought it was: to establish the truth. Not just this truth, that truth. Not just possibilities. No. The continuum is this size, period.”</p>\n</blockquote>",
+        "id": 509810410,
+        "sender_full_name": "John Baez",
+        "timestamp": 1743635948
+    },
+    {
+        "content": "<p>Sure, that checks out. I'm sure it's very hard to explain these intuitions (to probably anyone, but especially) at Quanta level, to be fair.</p>",
+        "id": 509810557,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1743636046
+    },
+    {
+        "content": "<p>By the way, note that here Hilbert, the formalist, is supposedly claiming human dignity depends on us being able to establish <em>the truth of the matter</em> when it comes to things like the continuum hypothesis.  Or maybe it's just Kennedy who thinks it's a matter of \"redeeming humanity\".    (Where did we go wrong, to be cast out of Cantor's paradise?)</p>",
+        "id": 509810851,
+        "sender_full_name": "John Baez",
+        "timestamp": 1743636243
+    },
+    {
+        "content": "<p>Yeah, I'm pretty confused about how \"wir mussen wissen, wir werden wissen\" can be said by a formalist.</p>",
+        "id": 509810955,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1743636302
+    },
+    {
+        "content": "<p>Probably he was more sophisticated than what we now think of as formalism among his descendants.</p>",
+        "id": 509811249,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1743636472
+    },
+    {
+        "content": "<p>I was going to mention that Hilbert said, regarding axiomatic geometry \"One must be able to say at all times--instead of points, straight lines, and planes--tables, chairs, and beer mugs\" but I discovered that <a href=\"https://math.stackexchange.com/questions/56603/provenance-of-hilbert-quote-on-table-chair-beer-mug\">nobody is sure he said that</a>.  That led me down a little rabbit hole.</p>\n<p>Anyway, I suppose you can correctly notice that axiomatic reasoning must work just as well when you change the names of some types, yet still believe mathematics is about finding \"the truth\" - some sort of truth that motivates our choice of axioms.   I think almost all of us believe some axioms are better, at least more interesting, than others.</p>",
+        "id": 509811765,
+        "sender_full_name": "John Baez",
+        "timestamp": 1743636785
+    },
+    {
+        "content": "<p>According to <a href=\"https://plato.stanford.edu/entries/formalism-mathematics/\">SEP</a>,</p>\n<blockquote>\n<p>“formalism” in this sense—the Heine/Thomae position as interpreted by Frege and its descendants—is to be distinguished from a more sophisticated position (it is claimed), namely Hilbertian formalism... The Hilbertian position differs because it depends on a distinction within mathematical language between a <em>finitary</em> sector, whose sentences express contentful propositions, and an <em>ideal</em>, or <em>infinitary</em> sector. Where exactly Hilbert drew the distinction, or where it should be drawn, is a matter of debate. Crucially, though, Hilbert adopted an instrumentalistic attitude towards the ideal sector. The formulae of this language are, or are treated as if they are, uninterpreted, having the syntactic form of sentences to which we can apply formal rules of transformation and inference but no semantics. Nonetheless they are, or can be useful, if the ideal sector conservatively extends the finitary, that is if no proof from finitary premisses to a finitary conclusion which takes a detour through the infinitary language yields a conclusion we could not have reached using finitary means alone, albeit perhaps (herein lies the utility) by a longer, more unwieldy proof. The goal of the Hilbert programme was to provide a finitary proof of this conservative extension result; most, though not all, think this goal was proved impossible by Gödel’s second incompleteness theorem.</p>\n</blockquote>",
+        "id": 509818960,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743641372
+    },
+    {
+        "content": "<p>Very clarifying!</p>",
+        "id": 509821040,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1743642612
+    }
+]
