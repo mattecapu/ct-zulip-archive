@@ -1,0 +1,230 @@
+[
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229111-community.3A-general/topic/Introduce.20yourself!/near/542699939\">said</a>:</p>\n<blockquote>\n<ul>\n<li>Rebekah Aduddell, James Fairbanks, Amit Kumar, Pablo S. Ocal, Evan Patterson and Brandon T. Shapiro, <a href=\"https://arxiv.org/abs/2301.01445\">A compositional account of motifs, mechanisms, and dynamics in biochemical regulatory networks</a>.</li>\n</ul>\n</blockquote>\n<p>I have started reading this one, which is very interesting so far. I published a few things on sign matrices with applications to stochastic reaction networks. For instance, </p>\n<ul>\n<li><a href=\"https://arxiv.org/abs/1512.07043v3\">Sign properties of Metzler matrices with applications</a></li>\n<li><a href=\"https://arxiv.org/abs/2001.02116v5\">Ergodicity, Output-Controllability, and Antithetic Integral Control of Uncertain Stochastic Reaction Networks</a></li>\n</ul>\n<p>I am eager to see the connections and possibly extensions of those ideas in the context of Category Theory.</p>",
+        "id": 543104830,
+        "sender_full_name": "Corentin Briat",
+        "timestamp": 1759599495
+    },
+    {
+        "content": "<p>I like how your second paper blends control theory with the study of reaction networks.  I wrote a <a href=\"http://math.ucr.edu/home/baez/stoch_stable.pdf\">book</a> on reaction networks and Petri nets... not using category theory, but <a href=\"http://math.ucr.edu/home/baez/RxNet.pdf\">later</a> I started working with them using category theory.   I feel there's a lot left to be done, but people seem to be having trouble knowing how to start.  Maybe if we talk here you can come up with something good.</p>",
+        "id": 543160382,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759668407
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span>  That's very interesting, in particular regarding stochastic Petri nets. It is very interesting to me that randomness has an impact on the functionality of reaction networks and that stochastic reaction networks may be able to achieve more than deterministic ones. If we view a reaction network as a computer program consisting of counters (species counts) and where the reactions are instructions acting on those counters, then we can view stochastic reaction networks as random programs where the instructions are executed in a random manner. Yet, those programs achieve their goal, sometimes in a better manner than deterministic ones. This raises interesting questions regarding complexity theory and problem solvability. I am wondering whether this would have connections to random Turing machines as well.</p>",
+        "id": 543161152,
+        "sender_full_name": "Corentin Briat",
+        "timestamp": 1759669136
+    },
+    {
+        "content": "<p>I am happy to discuss those ideas here.</p>",
+        "id": 543161389,
+        "sender_full_name": "Corentin Briat",
+        "timestamp": 1759669384
+    },
+    {
+        "content": "<p>What I particularly like is the idea that biological systems are <em>not</em> best viewed as a computer, especially not a Turing machine.  They don't have a single \"input\" and a single \"output\", they are interacting continuously with the outside.   They do not have a \"program\".   It's also probably best to think of them not as \"computing\" but as \"coping\" - coping with their environment.   Some ideas from control theory might help us understand this, but biology is more complex.</p>",
+        "id": 543161584,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759669567
+    },
+    {
+        "content": "<p>I would disagree with some of those claims. If you pick, a bacteria for instance, it definitely has a program, a genetic one, that is executed in the cellular environment. It has many inputs coming from the environments and has outputs which can either be decisions or products. In the end, the cell is some sort of operating system that execute multiple programs or processes at the same time, and need to make sure that each program has the required resources for it to run properly (regulation, metabolism, etc.). It is not a standard computer architecture, though. So, not a Von Neumann architecture, more like a mess where everything is coupled with everything.</p>\n<p>Regarding coping vs. computing, I would argue that adapting to the environment (in the sense of coping, not evolving), relies on internal computations that are implemented in terms of chemical reactions. </p>\n<p>But I would agree that biology is complex and remains mostly poorly understood.</p>",
+        "id": 543162149,
+        "sender_full_name": "Corentin Briat",
+        "timestamp": 1759670136
+    },
+    {
+        "content": "<blockquote>\n<p>If you pick, a bacteria for instance, it definitely has a program, a genetic one, that is executed in the cellular environment.</p>\n</blockquote>\n<p>How is the DNA in a bacterium a \"program\"?  A \"program\" as we normally understand is a symbol string that directs a computer to carry out a precise sequence of instructions, where the computer moves between discrete states.   DNA in a bacterium is a strand of base pairs that produce messenger RNAs in an apparently random way with probabilities affected by the concentration of various transcription factors; these mRNAs then get used by ribosomes to create various proteins, including transcription factors, in a feedback loop, constantly interacting with its external environment - and I'm simplifying it a lot because I'm not an expert.   The whole bacterial cell is a stochastic system with no symbol strings that \"say what is going to happen\", and no clearly defined discrete set of states.   </p>\n<p>You can call the genome of a bacterium a \"program\" if you really want to - but I don't think the metaphor of computer programs sheds much light on it, because it's so different in all details.  I think the metaphor of \"computation\" and \"programs\" is reassuring because it makes us feel we understand things, but biology is so different that this metaphor hurts just as much as it helps - especially if we take it seriously without noting its many failures.</p>",
+        "id": 543162951,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759671038
+    },
+    {
+        "content": "<blockquote>\n<p>It is not a standard computer architecture, though. So, not a Von Neumann architecture, more like a mess where everything is coupled with everything.</p>\n</blockquote>\n<p>Okay, but then it's probably best not to think of a bacterium as a computer.   It's not a \"messy computer\" - the way in which everything interacts with everything else is not a drawback, it's probably the whole point.  It's a marvelous self-reproducing entity that manages to survive a much wider range of disruptions to its internal workings than any computer can.</p>",
+        "id": 543163380,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759671450
+    },
+    {
+        "content": "<p>Maybe that was not clear, but what I meant was that the program is stored in the DNA, but the program itself, its implementation and execution, are in terms of the resulting reaction network. In Synthetic Biology, we play a lot with designing circuits to achieve certain functions, those are ultimately implement in terms of DNA, which is then transfected to the cells on plasmids or directly in genome integration.</p>",
+        "id": 543163530,
+        "sender_full_name": "Corentin Briat",
+        "timestamp": 1759671600
+    },
+    {
+        "content": "<p>You say \"the program\", but I explained that there's no \"program\" in a bacterial cell: a \"program\" as we normally understand it is a symbol string that directs something to carry out a precise sequence of instructions.</p>",
+        "id": 543163833,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759671888
+    },
+    {
+        "content": "<p>Anyway, we seem to have quite different goals, and it's good we found that out so quickly.</p>",
+        "id": 543163975,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759672028
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229111-community.3A-general/topic/Introduce.20yourself!/near/543163380\">said</a>:</p>\n<blockquote>\n<p>Okay, but then it's probably best not to think of a bacterium as a computer.   It's not a \"messy computer\" - the way in which everything interacts with everything else is not a drawback, it's probably the whole point.  It's a marvelous self-reproducing entity that manages to survive a much wider range of disruptions to its internal workings than any computer can.</p>\n</blockquote>\n<p>Ok then maybe computer is not the right term, but a cell is something that computes itself using complex chemical processes. </p>\n<p>\"the way in which everything interacts with everything else is not a drawback, it's probably the whole point.\": The fact that cells lack modularity in their design is something that still remains unclear and goes against modern engineering paradigms. It has drawbacks and advantages, which are still being studied.</p>",
+        "id": 543163997,
+        "sender_full_name": "Corentin Briat",
+        "timestamp": 1759672047
+    },
+    {
+        "content": "<p>I'm mainly interested in biology insofar as it goes against modern engineering paradigms, because that's what might get out us of some of the ruts in our way of thinking.</p>",
+        "id": 543164081,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759672138
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229111-community.3A-general/topic/Introduce.20yourself!/near/543163833\">said</a>:</p>\n<blockquote>\n<p>You say \"the program\", but I explained that there's no \"program\" in a bacterial cell: a \"program\" as we normally understand it is a symbol string that directs something to carry out a precise sequence of instructions.</p>\n</blockquote>\n<p>Yes and that would be the definition used in computer science and I do not see why an analogous concept, yet different, could not be used in biology. There is a program encoded in DNA, this is not new, and if you pick a bacteria, remove its DNA and put another one, then the bacteria will do different things than the original one.</p>",
+        "id": 543164109,
+        "sender_full_name": "Corentin Briat",
+        "timestamp": 1759672164
+    },
+    {
+        "content": "<p>What's the \"program\" encoded in the DNA, in your opinion?</p>",
+        "id": 543164302,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759672395
+    },
+    {
+        "content": "<p>You are separating two things: the DNA, and the \"program\" encoded in the DNA.</p>",
+        "id": 543164358,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759672468
+    },
+    {
+        "content": "<p>DNA is the support like a place where you can store nucleotides. It is just storage. The program is coded in terms of the sequences of nucleotides that will consist of coding genes, binding sites, etc. all of which, as a whole, will describe what will be produced (mRNA and proteins), but also how the proteins may interact with the rest of the cells, including the DNA, etc. In other words, a reaction network, that perform some task.</p>",
+        "id": 543164598,
+        "sender_full_name": "Corentin Briat",
+        "timestamp": 1759672697
+    },
+    {
+        "content": "<p>So, in the end, it is not too far from the definition used in computer science.</p>",
+        "id": 543164642,
+        "sender_full_name": "Corentin Briat",
+        "timestamp": 1759672739
+    },
+    {
+        "content": "<p>Which is a definition that should be made more flexible to include biology and other things if, as you say, we want to get out of the ruts in our way of thinking. I also believe that engineering has shaped out way too much to the point that it is now difficult to think in a different manner than building blocks, modular systems, etc.</p>",
+        "id": 543164948,
+        "sender_full_name": "Corentin Briat",
+        "timestamp": 1759673071
+    },
+    {
+        "content": "<p>You again say \"the program is encoded in terms of sequences of nucleotides\", but you didn't say what \"the program\" is - that's what I was asking.</p>\n<p>I'll give it a try: is \"the program\" the entire chemical reaction network of the cell, perhaps including the information about probabilities that various reactions will occur under various conditions (like pH, etc. etc.)?</p>\n<p>If so, I'd prefer call it something like \"the chemical reaction network\".  </p>\n<p>But I also don't think all this information is encoded in the DNA.  For one thing, bacteria have a lot of epigenetic information - information not contained in the string of base pairs, in the form of methylation, and maybe in other forms I don't know about.  </p>\n<p>I actually think that as we dig down into this, we'll see the whole cell is the repository of information: i.e., we can get a bacterial cell from another such cell, and not from much less.   (If I'm wrong about this last point I'd love to hear about it.  E.g. if someone can \"boot up\" different bacteria from just their DNA and some very boring universal stuff.)</p>",
+        "id": 543165259,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759673368
+    },
+    {
+        "content": "<p>Yes, you can call the program the reaction network that performs a given task.</p>\n<p>Regarding epigenetics, I did not mention that to keep things simple. Methylation does not change the DNA, rather activate/deactivate some genes, so those are dynamic mechanisms that can change how DNA is transcribed, but the DNA itself (the sequence of nucleotides) does not really change. this can also be done by proteins through appropriate DNA binding sites.</p>",
+        "id": 543165703,
+        "sender_full_name": "Corentin Briat",
+        "timestamp": 1759673826
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"970092\">Corentin Briat</span> <a href=\"#narrow/channel/229111-community.3A-general/topic/Introduce.20yourself!/near/543164948\">said</a>:</p>\n<blockquote>\n<p>I also believe that engineering has shaped out way too much to the point that it is now difficult to think in a different manner than building blocks, modular systems, etc.</p>\n</blockquote>\n<p>Yes, applied category theory has a lot to say about those things: the buzzword is \"compositionality\".   I'm an applied category theorist, not a biologist at all, but to me one of the charms of biology (just like particle physics or general relativity) is that it confronts us with phenomena that really don't fit into our usual way of thinking.</p>",
+        "id": 543165710,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759673837
+    },
+    {
+        "content": "<blockquote>\n<p>I actually think that as we dig down into this, we'll see the whole cell is the repository of information: i.e., we can get a bacterial cell from another such cell, and not from much less. (If I'm wrong about this last point I'd love to hear about it. E.g. if someone can \"boot up\" different bacteria from just their DNA and some very boring universal stuff.)</p>\n</blockquote>\n<p>I am not sure to understand what you are talking about. But some researchers are working into having minimal cells, which just contain the genes necessary for survival. In the Craig Venter Institute for instance.</p>",
+        "id": 543165954,
+        "sender_full_name": "Corentin Briat",
+        "timestamp": 1759674105
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> Then, I'd like to discuss more with you about those things as this is also the way I feel.</p>",
+        "id": 543165997,
+        "sender_full_name": "Corentin Briat",
+        "timestamp": 1759674159
+    },
+    {
+        "content": "<p>Sorry, I don't understand: what is also the way you feel?</p>",
+        "id": 543166180,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759674344
+    },
+    {
+        "content": "<p>This statement: \"one of the charms of biology (just like particle physics or general relativity) is that it confronts us with phenomena that really don't fit into our usual way of thinking.\"</p>\n<p>Sorry, I thought I had quoted it.</p>",
+        "id": 543166235,
+        "sender_full_name": "Corentin Briat",
+        "timestamp": 1759674398
+    },
+    {
+        "content": "<p>Okay, no prob.</p>",
+        "id": 543166295,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759674449
+    },
+    {
+        "content": "<p>I'm glad to hear you feel this way, but also a bit surprised, since you're using terms like \"program\" and \"task\" which seem to be taken from computer science and management, and applying them to bacteria.</p>",
+        "id": 543166404,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759674551
+    },
+    {
+        "content": "<p>One book on the math of gene regulatory networks that seems to avoid these metaphors is <em><a href=\"https://arxiv.org/abs/2502.18713\">Symmetries of Living Systems</a></em>.</p>",
+        "id": 543166642,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759674745
+    },
+    {
+        "content": "<p>Because terminology is transversal to me and I enjoy finding bridges between fields. There are good things in every field, and I do believe that the concepts of information, program, etc. may be useful in other fields, like biology. Also, I am using the word program but you used the CS definition immediately. Since you are talking about management, companies also execute a program or an algorithm if you prefer.</p>",
+        "id": 543166869,
+        "sender_full_name": "Corentin Briat",
+        "timestamp": 1759674969
+    },
+    {
+        "content": "<p>I don't know a definition of \"program\" other than the definition in computer science!    Maybe there is one.... okay, yes, you can ask for the program at a concert.    But the definition in computer science is so dominant in our culture that I think if we're talking about something very different, like how a cell works, it's safest to use some other word than program, to avoid the mental baggage that comes from computer science.   E.g. people tend to say the DNA \"stores the program\", which sounds very computer-sciency and precise, but in reality the cell is not carrying out a sequence of operations written down in some code.   I'd rather say the DNA interacts chemically with its environment.</p>",
+        "id": 543167608,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759675740
+    },
+    {
+        "content": "<p>Anyway, I think I'm repeating myself, so I'll stop (for now).</p>",
+        "id": 543167640,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759675777
+    },
+    {
+        "content": "<p>Alright, happy to talk again. Perhaps about more technical things, this time.</p>",
+        "id": 543168844,
+        "sender_full_name": "Corentin Briat",
+        "timestamp": 1759676992
+    },
+    {
+        "content": "<p>Sure!  If you don't say \"program\" and \"task\", I'll be able to talk about the math.  <span aria-label=\"wink\" class=\"emoji emoji-1f609\" role=\"img\" title=\"wink\">:wink:</span></p>",
+        "id": 543168903,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759677045
+    },
+    {
+        "content": "<p>In case, you are interested, I am co-organizing an online workshop on biological control systems. More info can be found there: <a href=\"https://www.biocontrolseminars.org/workshop-2025\">https://www.biocontrolseminars.org/workshop-2025</a>. We also have a monthly seminar series: <a href=\"https://www.biocontrolseminars.org/seminar-series\">https://www.biocontrolseminars.org/seminar-series</a></p>",
+        "id": 543169287,
+        "sender_full_name": "Corentin Briat",
+        "timestamp": 1759677471
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229111-community.3A-general/topic/Introduce.20yourself!/near/543162951\">said</a>:</p>\n<blockquote>\n<blockquote>\n<p>If you pick, a bacteria for instance, it definitely has a program, a genetic one, that is executed in the cellular environment.</p>\n</blockquote>\n<p>How is the DNA in a bacterium a \"program\"?  A \"program\" as we normally understand is a symbol string that directs a computer to carry out a precise sequence of instructions, where the computer moves between discrete states.   DNA in a bacterium is a strand of base pairs that produce messenger RNAs in an apparently random way with probabilities affected by the concentration of various transcription factors; these mRNAs then get used by ribosomes to create various proteins, including transcription factors, in a feedback loop, constantly interacting with its external environment - and I'm simplifying it a lot because I'm not an expert.   The whole bacterial cell is a stochastic system with no symbol strings that \"say what is going to happen\", and no clearly defined discrete set of states.   </p>\n<p>You can call the genome of a bacterium a \"program\" if you really want to - but I don't think the metaphor of computer programs sheds much light on it, because it's so different in all details.  I think the metaphor of \"computation\" and \"programs\" is reassuring because it makes us feel we understand things, but biology is so different that this metaphor hurts just as much as it helps - especially if we take it seriously without noting its many failures.</p>\n</blockquote>\n<p>Apologies for jumping in a bit late.  I just wanted to mention that John's criticism of the questionable computer and information processing metaphor in systems biology, which I fully share,  was well worded already in the 70's by Humberto Maturana in his seminal  <a href=\"https://reflexus.org/wp-content/uploads/BoC.pdf\">Biology of Cognition  report</a> (written while he was invited by Heinz von Foerster to his famous <em>Biological Computing Laboratory</em>).    He claimed there  that the brain is not a computer decoding “reality”, instead it constructs it, in an endless helix of sensory motor  <em>correlations</em> that <em>become</em> the objects populating the Umwelt of each organism.   A still novel idea today, but nonsensical in 1969, which triggered  the theory of autopoiesis (joint with Francisco Varela), structural coupling and later, Varela's enactive program in cognitive science  (cf.  Varela, F. J., Thompson, E. &amp; Rosch, E. (1991). <em>The embodied mind.</em>  MIT Press). <a href=\"https://drive.google.com/file/d/1P_ZI3pV3NQFdXaXicCVkaQDLcMyAEDx3/view?usp=sharing\">Revised 2020 edition here.</a></p>",
+        "id": 543174953,
+        "sender_full_name": "Jorge Soto-Andrade",
+        "timestamp": 1759682986
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"319067\">Jorge Soto-Andrade</span> <a href=\"#narrow/channel/411259-theory.3A-science/topic/DNA/near/543174953\">said</a>:</p>\n<blockquote>\n<p>Apologies for jumping in a bit late.  I just wanted to mention that John's criticism of the questionable computer and information processing metaphor in systems biology, which I fully share,  was well worded already in the 70's by Humberto Maturana in his seminal  <a href=\"https://reflexus.org/wp-content/uploads/BoC.pdf\">Biology of Cognition  report</a> (written while he was invited by Heinz von Foerster to his famous <em>Biological Computing Laboratory</em>). </p>\n</blockquote>\n<p>The link seems broken <br>\n<a href=\"/user_uploads/21317/A7TF-fI1cP9tqVMVyURz75iR/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/A7TF-fI1cP9tqVMVyURz75iR/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1962x864\" src=\"/user_uploads/thumbnail/21317/A7TF-fI1cP9tqVMVyURz75iR/image.png/840x560.webp\"></a></div>",
+        "id": 543192315,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1759697682
+    },
+    {
+        "content": "<p>Thanks for pointing this out. Curiously, I open the link  <a href=\"https://reflexus.org/wp-content/uploads/BoC.pdf\">https://reflexus.org/wp-content/uploads/BoC.pdf</a>  with no problems on different computers (on MacOS) and different browsers. Anyway, I attach the report here Hope it works now<br>\n<a href=\"/user_uploads/21317/QUpW3vZoGXo8hUpJPzGSFHel/BoC.pdf\">BoC.pdf</a>. <br>\n It is reprinted also in <br>\nAutopoiesis and Cognition: The Realization of the Living Dordecht: D. Reidel Publishing Co., 1980, pp. 5–58.</p>",
+        "id": 543205551,
+        "sender_full_name": "Jorge Soto-Andrade",
+        "timestamp": 1759713203
+    }
+]

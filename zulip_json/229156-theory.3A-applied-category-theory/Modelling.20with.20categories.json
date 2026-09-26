@@ -1,0 +1,560 @@
+[
+    {
+        "content": "<p>I'm going to ask a naive-sounding questions: Suppose I have a class of things, call them <em>Thing</em> with a 'natural' notion of <em>Thing</em> homomorphism, so that we get a category, <strong>Thing</strong>. Great. What can we learn about 'things' (the objects) by studying <strong>Thing</strong>?</p>\n<p>One can clearly start looking for certain properties of <strong>Thing</strong>: does it have products, an initial object, etc. One can do silly things and look at presheaves over <strong>Thing</strong> and (mistakenly) be amazed that we now have a category with an incredible set of properties and believe lots of structure's been unearthed about <strong>Thing</strong> (to be clear: all presheaves are quite magical, it's not <strong>Thing</strong>'s fault.)</p>\n<p>The reason to ask the question 'naively' is at least twofold: 1) someone might answer that question with much more insight than a more fancy-sounding version, 2) people might get distracted by accidents of the phrasing of the fancy-sounding version. </p>\n<p>The motivation for the question is the <a href=\"https://en.wikipedia.org/wiki/Law_of_the_instrument\">law of the instrument</a> (if all you have is a hammer, everything looks like a nail). I often roll my eyes when I see people \"applying category theory\" left right and center. But that is a rather negative way to look at it. The <em>positive</em> way to look at it is to do some <em>analysis of the tool</em> to better understand what the problem space for which it is well-suited. In this case,</p>\n<ol>\n<li>What can we learn via using this particular instrument, and</li>\n<li>What questions should we be asking that will lead to this new knowledge.</li>\n</ol>\n<p>[Not sure if this a \"theory: applied category theory\" or a \"theory: philosophy\" question. Both?]</p>",
+        "id": 430060182,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711630102
+    },
+    {
+        "content": "<p>I think a textbook answer here is that, if your system is compositional, what you gain with category theory is a way to reason compositionally.  similarly, if your system is symmetric, what you gain with group theory is a way to reason symmetrically.  in other words, category theory is for axiomatizing compositional systems first and foremost, not arbitrary ones, and that is where the power comes from.</p>",
+        "id": 430127713,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1711646788
+    },
+    {
+        "content": "<p>That seems like too high a level an \"answer\" that has (for me) no new content. Because, to \"reason categorically\", you're going to need to know more (like some monoidal structure, etc). Just categories doesn't give you that!  Similarly, group theory is indeed a great tool in the presence of symmetry but, AFAIK, \"symmetry breaking\" is still an art, not a science.</p>",
+        "id": 430129764,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711647348
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/430060182\">said</a>:</p>\n<blockquote>\n<p>I'm going to ask a naive-sounding questions: Suppose I have a class of things, call them <em>Thing</em> with a 'natural' notion of <em>Thing</em> homomorphism, so that we get a category, <strong>Thing</strong>. Great. What can we learn about 'things' (the objects) by studying <strong>Thing</strong>?</p>\n</blockquote>\n<p>Are you looking for \"applied category theory\" answers or \"pure mathematician\" answers?    I have a lot of pure mathematician answers, since when I hear \"what can we learn about 'things'?\" that sounds like a pure math question. Pure mathematicians like to go around learning about things.  Applied mathematicians like to go around using math to get stuff done.</p>",
+        "id": 430140185,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711650540
+    },
+    {
+        "content": "<p>Among pure mathematicians, category theory was not originally invented to study individual categories of things. It was invented to study when two processes of turning things of one kind into things of another kind could count as \"essentially the same\".   And this was a very practical concern, since people had invented a big pile of ways of turning topological spaces into abelian groups.</p>",
+        "id": 430140613,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711650672
+    },
+    {
+        "content": "<p>Later, as category theory grew, it became important to know whether various categories of things had nice properties.  For example it became important to know if a category of things is <em>abelian</em>, since people had cooked up a bunch of great stuff you can do with an abelian category.</p>",
+        "id": 430140895,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711650754
+    },
+    {
+        "content": "<p>I think only later did mathematicians get really interested in questions like whether a category is complete or cocomplete.</p>",
+        "id": 430141408,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711650938
+    },
+    {
+        "content": "<p>And most pure mathematicians still get interested in category theory following this historical route - with ontogeny recapitulating phylogeny.   I know I did!    Only after I was quite committed to category theory did I decide that it was interesting to know whether categories have limits or colimits.</p>",
+        "id": 430141857,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711651085
+    },
+    {
+        "content": "<p>On the other hand, there are also people who learn category theory mainly because they like it, not because they were working on something else and gradually realized it's important.  I don't completely understand such people, but there seem to be a lot around here.   For these people, as soon as you tell them about a kind of thing, and a map between such things, they want to know properties of the category of such things: that is their favorite way of getting insight into things.</p>",
+        "id": 430142359,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711651285
+    },
+    {
+        "content": "<p>Something partly implied by John's answer is that if the categorical point of view is condensed in \"<em>it's the morphisms, not the objects</em>\", then it's iteration one level higher is \"<em>it's the functors, not the categories</em>\"; I think it's quite rare that studying a category in isolation is enlightening; defining a category tends to be useful insofar as we are also defining some functors in and out of it...</p>",
+        "id": 430144703,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1711652200
+    },
+    {
+        "content": "<p>And this is where some questions whose use is somewhat mysterious in isolation find their applicability. Say that we have shown that a category is cocomplete, and say also that it is generated under colimits by some generating set of objects. Lots of naturally occurring examples. But so what?</p>",
+        "id": 430144943,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1711652295
+    },
+    {
+        "content": "<p>Well, if we also have a functor coming out of it, and that functor is a left adjoint, this means that we can calculate the functor on any object by just computing it on generating objects, and then computing it as a colimit in the codomain category.</p>",
+        "id": 430145119,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1711652369
+    },
+    {
+        "content": "<p>Which I would say is the classical version of \"compositionality\" from before everyone became obsessed with monoidal categories.</p>",
+        "id": 430145337,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1711652445
+    },
+    {
+        "content": "<p>To add on to the above discussion, I'll state how I personally use categories. I think of categories as being instruments for the purposes of comparing mathematical structures. So if your \"problem space\" involves having two or more kinds of mathematical objects and the questions you are asking are about how to find or understand ways to go between or compare them, then category theory provides an elegant setting with which to view those kinds of problems.</p>\n<p>Here's what I mean. Once you have a category Thing, you have automatically identified an object in Cat corresponding to Thing, and as an object in Cat, it will have morphisms- functors- into it and out of it into a whole bunch of other categories in Cat. Each functor is a general way by which you can compare the objects in Thing with the objects in the other category, and studying all possible comparisons of these forms tells you a lot about \"things\" in Thing. For instance, let's say Thing has a faithful functor to Set. You can now interpret \"things\" as sets with extra structure. Or more generally if you have a faithful functor from Thing to C, then you can interpret \"things\" as objects in C with \"extra structure\". In addition, if you have an embedding or better yet a fully faithful functor from Thing into some category D, you can view \"things\" as special cases of objects of D, with objects in D as \"generalizations\" of \"things\". <br>\nI hope this helps!</p>",
+        "id": 430145661,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1711652557
+    },
+    {
+        "content": "<p>I might not be well-suited to comment, as I'm still new to the topic, but I will try to speak to a few things that I haven't seen mentioned. Also, to contrast with <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> , I'm one of the people who likes category theory as an end and not as a means. I believe that there are three fundamental values one gains from looking at categories, with each of these corresponding to a categorical principle at a given layer.</p>\n<ol>\n<li>(morphisms) First, looking at <strong>Thing</strong> rather than an instance of a Thing is a kind of \"unboxing\" of Thing. Objects are, by nature, vacuous, and so the perspective is that rather than closely examining things locally, we can understand them by way of how they relate to all other things. The fact that you can \"reconstruct\" many of the desired properties you'd want to understand when looking \"in the box\" from this global perspective instead strikes me as elegant.</li>\n<li>(functors) Having a way to talk about mappings between morphisms extends the question of \"how do things relate to each other?\" to \"how are relationships comparable?\" which is a really nice way of formalising <em>analogy</em>. Given how ubiquitous it is for people to communicate by way of metaphor and imagery, it feels like there's something philosophically rich by exercising this viewpoint.</li>\n<li>(natural transformations) When doing my undergraduate degree, I was often dissatisfied with notions of \"equality up to isomorphism\" being any different than actual equality. When looking at two analogies, it's natural (pardon the pun) to ask \"do these <em>really</em> make the same comparisons?\" and thinking categorically helps give a more rigorous way to ask questions about equivalence, equality, and isomorphism, that seems to be the heart of mathematics---namely the desire to abstract.</li>\n</ol>\n<p>Anyways, it took me long enough to write this that both <span class=\"user-mention\" data-user-id=\"276363\">@Amar Hadzihasanovic</span>  and <span class=\"user-mention\" data-user-id=\"673117\">@John Onstead</span> have said some very insightful things that overlap with a lot of this.</p>\n<p>To be a bit more grounded, focusing on bullet point 1. I come from a bit of a computer science background, and programming only really \"clicked\" with me once I learned functional programming (before this, programming was the chance to work on fun puzzles, whereas after I started to appreciate it for how rich it is conceptually). The idea that you can discuss things purely based on how they act on other things corresponds to the notion of \"point-free\" programming, and designing code in this way can often provide clarity through simplicity, and lends itself to a more \"diagrammatic\" way of thinking about code. As a programmer, I don't care about <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext mathvariant=\"monospace\">Int</mtext></mrow><annotation encoding=\"application/x-tex\">\\texttt{Int}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6111em;\"></span><span class=\"mord text\"><span class=\"mord texttt\">Int</span></span></span></span></span> or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext mathvariant=\"monospace\">Bool</mtext></mrow><annotation encoding=\"application/x-tex\">\\texttt{Bool}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6111em;\"></span><span class=\"mord text\"><span class=\"mord texttt\">Bool</span></span></span></span></span>---I want to be able to <em>do things</em> (with maps and folds, goddammit!)</p>",
+        "id": 430146841,
+        "sender_full_name": "Nolan Peter Shaw",
+        "timestamp": 1711653107
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> I put the question under 'applied' because I'm one of those people who believes that to get things done, it is extremely helpful to really understand the theory [and yes, I do drive a car whose details I don't understand - but that's different from what I do in my research!]  So understanding what questions are sensible to ask can be classified as pure mathematics, fine! Knowing this, I can be more efficient at getting things done because I don't ask stupid questions...</p>\n<p><span class=\"user-mention\" data-user-id=\"276363\">@Amar Hadzihasanovic</span> I quite like <em>it's the morphisms, not the objects</em> and <em>it's the functors, not the categories</em>. It's kind of a tell-tale sign of shallow understanding when someone's focusing real hard on the objects. But then I'm baffled by 'representable functors'! Not their definition, that makes sense, but their importance. Because they sure seem to focus real hard on the objects!  </p>\n<p>You definitely got closer to the meaning of my question with your story on adjoints, as that's a concrete example of (question to ask / what you'll learn / why that's useful) triple that I'm interested in.</p>\n<p><span class=\"user-mention\" data-user-id=\"673117\">@John Onstead</span> I already 'knew' this (as I said, my question is naive sounding, I've published a number of things that use a fair amount of category theory, on top of having formalized a lot.) What I'm looking for is a more concrete version of what you say.</p>",
+        "id": 430147592,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711653456
+    },
+    {
+        "content": "<p>This is a bit of a side note, but I think it's important to point out that objects ARE important - inasmuch as they are used to decide what morphisms exist.</p>\n<p>For example, it's possible to dream up a lot of categories of \"structured things\" and \"structure preserving maps between them\". If you decide your morphisms should be structure preserving maps, the way in which you set up the structure in your objects will determine what morphisms you get.</p>\n<p>But if you have an object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> with features that don't impact the morphisms to or from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> - then those features of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> aren't really being modelled in your category, I'd argue.</p>",
+        "id": 430148349,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1711653785
+    },
+    {
+        "content": "<blockquote>\n<p>But if you have an object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> with features that don't impact the morphisms to or from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> - then those features of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi></mrow><annotation encoding=\"application/x-tex\">A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span> aren't really being modelled in your category, I'd argue.</p>\n</blockquote>\n<p>Which is why I always tend to find categories with a single point, or even those where the objects are <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">N</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{N}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">N</span></span></span></span> (like more categories of matrices) extra-odd.</p>",
+        "id": 430149696,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711654426
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/430147592\">said</a>:</p>\n<blockquote>\n<p>I quite like <em>it's the morphisms, not the objects</em> and <em>it's the functors, not the categories</em>. It's kind of a tell-tale sign of shallow understanding when someone's focusing real hard on the objects. But then I'm baffled by 'representable functors'! Not their definition, that makes sense, but their importance. Because they sure seem to focus real hard on the objects!  </p>\n</blockquote>\n<p>I don't think it's good to get <em>too</em> carried away with the \"objects bad, morphisms good\" philosophy.  </p>\n<p>But we could argue that representability is all about morphisms: morphisms from all objects to some particular object.  As you know, an object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>∈</mo><mi mathvariant=\"sans-serif\">C</mi></mrow><annotation encoding=\"application/x-tex\">x \\in \\mathsf{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathsf\">C</span></span></span></span> represents a functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><msup><mi mathvariant=\"sans-serif\">C</mi><mrow><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow></msup><mo>→</mo><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">F : \\mathsf{C}^{\\rm{op}} \\to \\mathsf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\"><span class=\"mord mathrm mtight\">op</span></span></span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span></span></span></span> iff <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">h</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mo>−</mo><mo separator=\"true\">,</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{hom}(-, x)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">hom</span></span><span class=\"mopen\">(</span><span class=\"mord\">−</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span></span></span></span> is naturally isomorphic to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span>.  </p>\n<p>That's formally very attractive, and almost magical: a big fat functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> is being distilled down to a tiny little object <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span>.    This opens up all sorts of new possibilities.</p>\n<p>But since I'm a humble fellow who first got interested in category theory through applications (to pure math, and mathematical physics), this only clicked with me through examples.   It's an amazing fact that in topology, all sort of interesting functors are representable.  This means that all sorts of concepts we consider, like \"the set of isomorphism classes of principal <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>-bundles on a space\", or \"the 2nd cohomology group of a space\", can actually be distilled into <em>spaces</em>.... which we can then use topology to study!</p>\n<p>So, abstractly, we're saying: this scary-looking set <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo stretchy=\"false\">(</mo><mi>y</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">F(y)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span></span></span></span> is really just a set of morphisms, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">h</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>y</mi><mo separator=\"true\">,</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{hom}(y,x)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">hom</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span></span></span></span>.</p>",
+        "id": 430172074,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711665344
+    },
+    {
+        "content": "<p>(In fact these spaces I'm talking about are really homotopy types, since the category I'm talking about is not really Top, but some category of homotopy types.   And thus homotopy type theory was born... but that's another story.)</p>",
+        "id": 430172475,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711665574
+    },
+    {
+        "content": "<p>I might answer the original question going in a different direction. It's not necessarily that you might learn about properties of things by looking at <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">T</mi><mi mathvariant=\"bold\">h</mi><mi mathvariant=\"bold\">i</mi><mi mathvariant=\"bold\">n</mi><mi mathvariant=\"bold\">g</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Thing}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathbf\" style=\"margin-right:0.01597em;\">Thing</span></span></span></span></span>, it's just it turns out that a lot of things can be framed as categories, so people have spent a lot of time working on mathematical tools for making your life easier when you learn to speak their language. For instance, I often use <span class=\"user-mention\" data-user-id=\"275914\">@Joe Moeller</span>'s monoidal Grothendieck construction to build new categories out of old categories, which saves me a lot of work. So while you may not learn anything new about things, you may find that you can refer to a wide variety of other people's work when you are trying to prove theorems.</p>",
+        "id": 430173470,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1711666210
+    },
+    {
+        "content": "<p>Talking about representability is clearly a tangent... but since I started it, I can't complain! Anyways: my feeling is that representability seems worthwhile when you've got some kind of careful balance between your objects and morphisms (i.e. how much information is in each); then representability seems super useful indeed. Topological spaces are rather 'information rich' in that sense.</p>\n<p><span class=\"user-mention\" data-user-id=\"280755\">@Owen Lynch</span> I'm a big fan of transferring theorems from one place to another, so obviously category theory is extremely useful in that setting. I'm still trying to wrap my head around \"modelling with categories\": how can I tell when the people doing this are serious, and when are they deluding themselves? [Both obviously happens.] I was trying to tease out tell-tale sign of 'serious'.</p>",
+        "id": 430180297,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711670340
+    },
+    {
+        "content": "<p>Broadly on this topic, I think this is an interesting question: Given a bunch of things of interest, how can one come up with sensible notions of morphisms between those things?</p>\n<p>(Hopefully that is not too much of a tangent!)</p>",
+        "id": 430182944,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1711672189
+    },
+    {
+        "content": "<blockquote>\n<p>Given a bunch of things of interest, how can one come up with sensible notions of morphisms between those things?</p>\n</blockquote>\n<p>The most famous approaches are:</p>\n<ul>\n<li>think of those things as algebras of a monad on some category</li>\n<li>think of those things as algebras of a Lawvere theory (or 'algebraic theory') </li>\n<li>think of those things as algebras of a finite limits theory (or 'essentially algebraic theory')</li>\n<li>think of those things as algebras of a limits theory</li>\n<li>think of those things as algebras of a theory in some other <a href=\"https://ncatlab.org/johnbaez/show/Doctrines\">doctrine</a>.</li>\n</ul>\n<p>Or, generalize the concept of doctrine still further....</p>",
+        "id": 430185023,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711673750
+    },
+    {
+        "content": "<p>Another way I have found very fruitful of \"finding the right morphisms\":<br>\nIf the objects have an \"underlying object of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>\", <em>and</em> I have some construction <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> that turns an object into an object of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span>, ask</p>\n<ul>\n<li>what are the morphisms of the underlying <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>-objects that I can turn into <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span>-morphisms between the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span>-images, so that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> will be a functor?</li>\n</ul>",
+        "id": 430206550,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1711691671
+    },
+    {
+        "content": "<p>(Typically <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> is sets and functions, or some other concrete category over sets and functions.)</p>",
+        "id": 430206613,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1711691752
+    },
+    {
+        "content": "<p>Also, sometimes you get two interesting notions of morphism by trying to make <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> first covariant, then contravariant.</p>",
+        "id": 430206743,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1711691852
+    },
+    {
+        "content": "<p>If you have a category whose objects are things, one productive thing you can do, that might not be so obvious without using category-theoretic tools, is to define <em>open things</em> as some class of cospans of thing-homomorphisms</p>",
+        "id": 430243954,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1711712684
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/430206550\">said</a>:</p>\n<blockquote>\n<p>Another way I have found very fruitful of \"finding the right morphisms\":<br>\nIf the objects have an \"underlying object of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>\", <em>and</em> I have some construction <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> that turns an object into an object of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span>, ask</p>\n<ul>\n<li>what are the morphisms of the underlying <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span>-objects that I can turn into <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>D</mi></mrow><annotation encoding=\"application/x-tex\">D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.02778em;\">D</span></span></span></span>-morphisms between the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span>-images, so that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> will be a functor?</li>\n</ul>\n</blockquote>\n<p>Isn't this the essence of why 'displayed categories' are so nice?</p>",
+        "id": 430258449,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711719984
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/430243954\">said</a>:</p>\n<blockquote>\n<p>If you have a category whose objects are things, one productive thing you can do, that might not be so obvious without using category-theoretic tools, is to define <em>open things</em> as some class of cospans of thing-homomorphisms</p>\n</blockquote>\n<p>Now <em>that</em> is seriously not obvious and new information for me! Thank you.</p>",
+        "id": 430258584,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711720060
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/430258584\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/430243954\">said</a>:</p>\n<blockquote>\n<p>If you have a category whose objects are things, one productive thing you can do, that might not be so obvious without using category-theoretic tools, is to define <em>open things</em> as some class of cospans of thing-homomorphisms</p>\n</blockquote>\n<p>Now <em>that</em> is seriously not obvious and new information for me! Thank you.</p>\n</blockquote>\n<p>This also works with relations in some cases.</p>\n<p>To give a concrete example:  in quantum computing, it is well known that (odd prime dimensional) stabilizer states are projectively represented by affine isosotropic subspaces over finite fields, and that the evolution by Clifford operators corresponds to taking the action of affine symplectomrophisms on these subspaces.  However, if you take the complement and work with affine <em>co</em>isotropic subspaces, then the relational composition corresponds to usual composition of  linear operators in finite dimensional Hilbert spaces.  And in this setting, the Clifford evolution, the states, and the effects are all just these kinds of subspaces!</p>\n<p>So the correspondance between the \"affine isotropic subspace\" semantics, and the \"Hilbert spaces\" semantics is formalized by doing essentially what Jules is talking about.  And the structure of affine isotropic subspaces that theorists usually work do not compose in the right way, so instead you actually need to take the complementary representation of affine coisotropic subspaces!  So in this case, the right notion of \"open thing\" is actually the dual of what people normally work with... without category theory, this subtlety would be very hard to pick up on.</p>",
+        "id": 430260132,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1711720729
+    },
+    {
+        "content": "<p>I think the relational perspective works best when the states of systems are already known to be represented by some sort of subobject.  It is a completely natural thing to regard subobjects as relations, and sometimes this can offer a structural perspective  which may not have been known otherwise.</p>\n<p>Maybe this is more obvious than the cospan semantics which Jules  is referring to, but these two kinds of approaches are very conceptually similar in my opinion.</p>",
+        "id": 430261909,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1711721425
+    },
+    {
+        "content": "<p>(Jokingly) Thanks <span class=\"user-mention\" data-user-id=\"277391\">@Cole Comfort</span>  for the reminder that even though I'm co-author of 3 papers that deals with quantum, I still know approximately nothing about the topic. (They are all very focused on PL-oriented views.)</p>\n<p>More seriously: solid food for thought.</p>",
+        "id": 430263354,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711722140
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/430263354\">said</a>:</p>\n<blockquote>\n<p>(Jokingly) Thanks <span class=\"user-mention silent\" data-user-id=\"277391\">Cole Comfort</span>  for the reminder that even though I'm co-author of 3 papers that deals with quantum, I still know approximately nothing about the topic. (They are all very focused on PL-oriented views.)</p>\n<p>More seriously: solid food for thought.</p>\n</blockquote>\n<p>Yeah maybe I am really pushing what is meant by \"well-known\" <span aria-label=\"joy\" class=\"emoji emoji-1f602\" role=\"img\" title=\"joy\">:joy:</span></p>",
+        "id": 430264184,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1711722528
+    },
+    {
+        "content": "<p>Luckily you don't need to know or care about quantum mechanics, affine isotropic subspaces, etc. to see nice examples of the philosophy Jules mentioned: treating \"open\" things as cospans of things.   Jules used this philosophy to define \"open games\", and I've used it to define \"open electrical circuits\", \"open Petri nets\", \"open chemical reaction networks\", \"open Markov processes\" and other things.  Basically whenever engineers or scientists use network-like diagrams, this is a thing you can do with them.</p>",
+        "id": 430297022,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711735758
+    },
+    {
+        "content": "<p>A good intro to this philosophy may be Brendan Fong's <em><a href=\"https://arxiv.org/abs/1609.05382\">The Algebra of Open and Interconnected Systems</a></em>.</p>",
+        "id": 430297241,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711735842
+    },
+    {
+        "content": "<p>I'm sure someone pointed out that this use of cospans has appeared in software architecture 20+ years ago? [What's new to me is not the technique but the <em>philosophy</em>].</p>",
+        "id": 430300976,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1711737452
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/430297241\">said</a>:</p>\n<blockquote>\n<p>A good intro to this philosophy may be Brendan Fong's <em><a href=\"https://arxiv.org/abs/1609.05382\">The Algebra of Open and Interconnected Systems</a></em>.</p>\n</blockquote>\n<p>Three things which <span class=\"user-mention\" data-user-id=\"276053\">@Brendan Fong</span>  does in his thesis is that he works with decorated cospans, decorated correlations, as well as categories of relations.</p>\n<p>For example, he works with \"Lagrangian cospans,\" \"Lagrangian corelations,\" and \"Lagrangian relations\" to give categorical semantics for some idealized class of electrical circuits.  To me, all three of these categories feel like, \"open things\" and it seems to me like \"Lagrangian corelations,\" and \"Lagrangian relations\" should actually be equivalent.  But in general, I get the feeling that \"decorated cospans\" are the central construction which he uses to model open systems.</p>\n<p>Obviously, you are not Brendan himself, but do you agree with my reading that all three of these approaches are different ways in which one can construct categorical semantics for \"open systems?\" </p>\n<p>In this specific example, because the morphisms can be regarded as subobjects, I don't see the advantage of using decorated corelations or cospans over relations, because you can concretely define composition to be given by relational composition and you don't have to know any more complicated categorical constructions.  But maybe I am missing the point and decorated cospans are inherently more \"open\" for some reason.</p>\n<p>What I was trying to argue for in my earlier response is that if you have a  system whose behaviour is represented by some sort of subobject (for example some kind of linear subspace), then it is natural to ask if these kinds of subobjects are closed under relational composition.  In some sense given a thing, subobjects are one of the simplest kinds of thing-homorphisms.  And to me, this feels like a very concrete way in which one can obtain a categorical semantics for these kinds open systems.  In the example of electrical circuits or stabilizer states, it feels as if physicists treat these states as closed systems only because the are neglecting that they can be composed,  which is probably only because of the pervasive historical bias towards function-composition.  The  perspective which reveals that such things can be composed makes them manifestly open in my view.</p>",
+        "id": 430309579,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1711741731
+    },
+    {
+        "content": "<p>I tend to focus on decorated (and structured) cospans since these let us describe the <em>syntax</em> of various kinds of open systems, which is where I like to start.  For example, an electrical circuit with m input wires and n output wires is a morphism from m to n in a suitable decorated or structured cospan category<br>\n  But then it's sometimes good to describe the <em>semantics</em> by a functor from this category to some category of relations or corelations.  More precisely, it's good to do this when your semantics ignores the 'internal workings' of your system and only describes the 'externally visible' way your system sets up a relation (or corelation) between the inputs and outputs.  I call this general sort of semantics 'black-boxing'.</p>",
+        "id": 430317820,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711746209
+    },
+    {
+        "content": "<p>But in software we're often interested in semantics that describe the 'internal workings' as well - e.g. we might have a semantics that gives a set of differential equations for how <em>all</em> the currents and potentials in our circuit change with time, not just those observable from the input and output wires.</p>",
+        "id": 430318218,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711746423
+    },
+    {
+        "content": "<p>Then we'd describe the semantics using a functor from one decorated (or structured) cospan category to another.</p>",
+        "id": 430318383,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711746496
+    },
+    {
+        "content": "<p>As for when to use relations vs when to use corelations, I haven't thought about this much beyond what was in <a href=\"https://arxiv.org/abs/1504.05625\">my paper with Brendan</a>, since I haven't been doing much black-boxing lately: in our epidemiology software we want to simulate the  whole system, including its 'internal workings'.</p>",
+        "id": 430318816,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711746740
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/430317820\">said</a>:</p>\n<blockquote>\n<p>I tend to focus on decorated (and structured) cospans since these let us describe the <em>syntax</em> of various kinds of open systems, which is where I like to start.  For example, an electrical circuit with m input wires and n output wires is a morphism from m to n in a suitable decorated or structured cospan category<br>\n  But then it's sometimes good to describe the <em>semantics</em> by a functor from this category to some category of relations or corelations.  More precisely, it's good to do this when your semantics ignores the 'internal workings' of your system and only describes the 'externally visible' way your system sets up a relation (or corelation) between the inputs and outputs.  I call this general sort of semantics 'black-boxing'.</p>\n</blockquote>\n<p>I see.  I suppose my motivation is different, because I often like to give generators and relations presentations for  these kinds of categories of open systems.  So I usually want to present a syntax in terms of an equational theory and prove it is equivalent to the semantics, with the end goal of being able to treat both the syntax and semantics as being essentially the same.</p>\n<p>Morally, I feel like my motivation is in some sense the opposite of black boxing.  Which is nice, because you guys have revealed lots of open problems for me when I view stuff from this dual perspective.</p>",
+        "id": 430319148,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1711746929
+    },
+    {
+        "content": "<p>\"Open problems\".  <span aria-label=\"laughing\" class=\"emoji emoji-1f606\" role=\"img\" title=\"laughing\">:laughing:</span></p>\n<p>Yes, we need a detailed study of the (typically) props that provide targets of black-boxing semantics, and it's really interesting to get presentations for these, not only for the obvious reason (presentations make easier to define maps <em>out</em> of these props), but because throwing out some of the relations gives interesting props of a more 'syntactic' flavor.</p>",
+        "id": 430321308,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711748289
+    },
+    {
+        "content": "<p>An example is <a href=\"https://arxiv.org/abs/1707.08321\">our rather detailed study</a> of various props related to the most boring electrical circuits: circuits made only of purely conductive wires.  From a very 'black-boxed' perspective all such a circuit gives is a corelation saying whether current can or cannot flow between two input or output wires (or better, 'terminals').  But finding a good presentation of the prop of corelations can shed light on the internal workings of such a circuit.</p>",
+        "id": 430321976,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711748717
+    },
+    {
+        "content": "<p>I think this is the sort of thing you were talking about.</p>",
+        "id": 430322241,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711748902
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/430322241\">said</a>:</p>\n<blockquote>\n<p>I think this is the sort of thing you were talking about.</p>\n</blockquote>\n<p>Pretty much.  But correlations is much easier to present (at least with respect to the coproduct) than most of the other categories in Brendan's thesis.</p>",
+        "id": 430322789,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1711749251
+    },
+    {
+        "content": "<p>The question of openness is more of my own spin, but if you posed it explicitly it would make these things easier to publish <span aria-label=\"joy\" class=\"emoji emoji-1f602\" role=\"img\" title=\"joy\">:joy:</span>.  We evocatively said that we opened up one of your guys' black boxes in our recent paper and the reviewer was not happy with this wording, haha</p>",
+        "id": 430322890,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1711749336
+    },
+    {
+        "content": "<p>If you feel like giving presentations is not the same as opening the box, we will refrain from saying that.  Maybe I was being too poetic.  In the introduction I usually try to be more florid than the rest of the article, borrowing from my masters supervisor Robin's style.</p>",
+        "id": 430325595,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1711751082
+    },
+    {
+        "content": "<p><a href=\"https://golem.ph.utexas.edu/category/2024/03/why_mathematics_is_boring_1.html\">I'm all for exciting introductions!</a>  I like the idea of presentations as \"opening the box\".  If you give me your referee's email address, I'll go argue with them.  <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 430340254,
+        "sender_full_name": "John Baez",
+        "timestamp": 1711760352
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/430340254\">said</a>:</p>\n<blockquote>\n<p><a href=\"https://golem.ph.utexas.edu/category/2024/03/why_mathematics_is_boring_1.html\">I'm all for exciting introductions!</a>  I like the idea of presentations as \"opening the box\".  If you give me your referee's email address, I'll go argue with them.  <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>\n</blockquote>\n<p>One must respect the sanctity of the peer-review process ;)</p>",
+        "id": 430350047,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1711767456
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/430297022\">said</a>:</p>\n<blockquote>\n<p>Jules used this philosophy to define \"open games\"</p>\n</blockquote>\n<p>Sadly not true, open games are <em>weird</em> by comparison to all the other things John mentioned which are cospanish. It might be possible to get a confusingly-different category of \"open games\" by using cospanish methodology, I've idly wondered about it a bunch of times but never put in enough work to actually figure it out</p>",
+        "id": 430982862,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1712144599
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/430147592\">said</a>:</p>\n<blockquote>\n<p>But then I'm baffled by 'representable functors'! Not their definition, that makes sense, but their importance. Because they sure seem to focus real hard on the objects!  </p>\n</blockquote>\n<p>One perspective on representability I quite like is the algebraic one. You can see a category as an algebraic structure, and presheaves over it as its actions. A representable presheaf then is a particularly simple action: it's <em>free</em>, meaning you generate the presheaf by choosing some generators on each object and then 'closing under functoriality', and its generators are as simple as they can get: you just start with one generator on the representing object. So showing a functor is representable is a way to show it can be constructed with very little extra data.</p>",
+        "id": 431013105,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1712153417
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/430982862\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/430297022\">said</a>:</p>\n<blockquote>\n<p>Jules used this philosophy to define \"open games\"</p>\n</blockquote>\n<p>Sadly not true, open games are <em>weird</em> by comparison to all the other things John mentioned which are cospanish. It might be possible to get a confusingly-different category of \"open games\" by using cospanish methodology, I've idly wondered about it a bunch of times but never put in enough work to actually figure it out</p>\n</blockquote>\n<p>lenses and parametric lenses are spanish instead of cospanish, so it's the other side of the open coin :)</p>",
+        "id": 431013550,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1712153524
+    },
+    {
+        "content": "<p>It's more different than just spans vs cospans. Categories of cospans are generally <em>network theories</em>, where both <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo separator=\"true\">;</mo></mrow><annotation encoding=\"application/x-tex\">;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mpunct\">;</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">⊗</span></span></span></span> composition are spacelike. But open games is a <em>process theory</em>, where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">⊗</span></span></span></span> is spacelike but <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo separator=\"true\">;</mo></mrow><annotation encoding=\"application/x-tex\">;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mpunct\">;</span></span></span></span> is timelike</p>",
+        "id": 431272465,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1712224250
+    },
+    {
+        "content": "<p>(I never wrote that in any papers because it's not a theorem or anything I know how to define, I just know it when I see it)</p>",
+        "id": 431272713,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1712224324
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/431272465\">said</a>:</p>\n<blockquote>\n<p>It's more different than just spans vs cospans. Categories of cospans are generally <em>network theories</em>, where both $;$ and $\\otimes$ composition are spacelike. But open games is a <em>process theory</em>, where $\\otimes$ is spacelike but $;$ is timelike</p>\n</blockquote>\n<p>I think Matteo is talking about the fact that fibre-wise opposites of fibrations are equivalent to categories of spans where one leg is a cartesian map and one is a vertical map.</p>\n<p>So in the case of lenses, they are equivalent to spans (of charts) where each leg has one component as the identity</p>",
+        "id": 431282683,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1712227755
+    },
+    {
+        "content": "<p>Total digression: I'm always curious about people who post comments containing quotes where all the double dollar signs have been converted to single dollar signs so the math doesn't work anymore.</p>",
+        "id": 431371413,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712253114
+    },
+    {
+        "content": "<p>How does that happen?</p>",
+        "id": 431371505,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712253131
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/431371505\">said</a>:</p>\n<blockquote>\n<p>How does that happen?</p>\n</blockquote>\n<p>I think it's a bug with the Zulip mobile app. It previously didn't have the 'quote' option at all. Now it seems to strip away certain punctuation when you quote things</p>",
+        "id": 431379284,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1712255592
+    },
+    {
+        "content": "<p>Interesting!  I never use that app: even when I'm on my cell phone I access Zulip using Firefox.  So I didn't know that.</p>",
+        "id": 431381416,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712256444
+    },
+    {
+        "content": "<p>The issue doesn't seem to have been reported on GitHub; I've now done so.</p>",
+        "id": 431393388,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1712261266
+    },
+    {
+        "content": "<p>What's the name of the mobile app? Is it good?</p>\n<p>(a colleague of mine tried one and was quite disappointed, so I never bothered to try)</p>",
+        "id": 431402642,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1712264945
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"619003\">Peva Blanchard</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/431402642\">said</a>:</p>\n<blockquote>\n<p>What's the name of the mobile app? Is it good?</p>\n<p>(a colleague of mine tried one and was quite disappointed, so I never bothered to try)</p>\n</blockquote>\n<p>It's just called \"Zulip\". It has some rough edges, but it's usable.</p>",
+        "id": 431405700,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1712266293
+    },
+    {
+        "content": "<p>Great, I'll give it a try. Thank you!</p>",
+        "id": 431406752,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1712266749
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/431272465\">said</a>:</p>\n<blockquote>\n<p>It's more different than just spans vs cospans. Categories of cospans are generally <em>network theories</em>, where both $;$ and $\\otimes$ composition are spacelike. But open games is a <em>process theory</em>, where $\\otimes$ is spacelike but $;$ is timelike</p>\n</blockquote>\n<p>This is OT but I'm on the aforementioned bad mobile app so cant fork the thread rn, but: what do you mean by spacelike and timelike? My intuition is that as long as ; interchanges with tensor everything is spacelike, and you need some genuine premonoidality to tell the difference (related lit is Mario Roman's recent papers on effectful streams, as well as earlier ones I forgot the name of; but also a neat work of Spivak and Shapiro on 'normal duoidal' cats).</p>",
+        "id": 431457771,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1712300046
+    },
+    {
+        "content": "<p>I think spacelike has a dagger, whereas timelike doesn't. We can go left-to-right or right-to-left in space, but we can only go yesterday-to-today in time.</p>",
+        "id": 431499809,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1712314860
+    },
+    {
+        "content": "<p>Or maybe: the more you can bend wires around, the less difference the distinction between the ; direction and the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⊗</mo></mrow><annotation encoding=\"application/x-tex\">\\otimes</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">⊗</span></span></span></span> direction really makes, so that categories of spans or cospans end up just wanting to be wiring diagrams instead of string diagrams.</p>",
+        "id": 431527890,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1712324831
+    },
+    {
+        "content": "<p>Yes, as soon as you have a compact structure, the flow of information between different parts of some composite morphism no longer follows a dag-like shape, thus no specific operation can be thought of as happening before any other in a meaningful sense. Now, this is an informal statement, because you could always treat the cups and caps of your compact structure as boxes like any other, forget that they satisfy special properties, and recover a dag-like structure. However, this can be an unnatural perspective if your category is indeed self-dual compact closed: it forces you to come up with an interpretation of the cups and caps that is consistent with the time-like intuition about what your morphisms represent. It's not impossible though: adding partiality (caps) and nondeterminism (cups) to some smc in which morphisms represent total deterministic processes usually gives you a self-dual compact closed category.</p>",
+        "id": 431559164,
+        "sender_full_name": "Robin Piedeleu",
+        "timestamp": 1712333252
+    },
+    {
+        "content": "<p>Yeah, I think all these intuitions are fine as long as you don't look at quantum processes, which \"should\" be timelike but behave as though they're spacelike in most ways</p>",
+        "id": 431563168,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1712334530
+    },
+    {
+        "content": "<p>One of the reasons for creating this thread was to try to understand, ahead of time, when people are doing BS with 'categorical modeling'. I did not have UMAP in mind when I start the thread, but apparently <a href=\"https://topos.site/blog/2024-04-05-understanding-umap/\">I should have</a>.</p>\n<p>This is an issue with category theory, IMHO: it can equally reveal that you have found valuable structure and serve as obscuring that what you're doing is BS. </p>\n<p>Warning: over-generalization. Seems to be that the positive parts are mathematical (i.e. giving names to the 'right' abstractions) and the negative parts are largely sociological (doubling-down on 'abstract nonsense' as a source of pride, and many of the other cultural ills  already well documented.)</p>\n<p>[I am well aware that there are a number of people trying to be pedagogical and working hard at de-mystifying category theory.]</p>",
+        "id": 431671790,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1712408561
+    },
+    {
+        "content": "<p>I think of this issue with category theory as part of a more general issue with mathematics.  <em><a href=\"https://www.math.columbia.edu/~woit/wordpress/?p=10314\">Lost in Math</a></em> discusses how the quest for mathematical beauty has led particle physics and quantum gravity astray, and the <a href=\"https://rwer.wordpress.com/2022/12/13/the-misuse-of-mathematics-in-economics/\">misuse of mathematics in theoretical economics</a> is probably even worse.</p>",
+        "id": 431692615,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712426383
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/431671790\">said</a>:</p>\n<blockquote>\n<p>One of the reasons for creating this thread was to try to understand, ahead of time, when people are doing BS with 'categorical modeling'. I did not have UMAP in mind when I start the thread, but apparently <a href=\"https://topos.site/blog/2024-04-05-understanding-umap/\">I should have</a>.</p>\n</blockquote>\n<p>FWIW, I don't think you should have UMAP in mind because I don't think it's representative at all of how people in the applied category theory community are trying to use category theory for modeling.</p>",
+        "id": 431694104,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1712427666
+    },
+    {
+        "content": "<p>You're right, Evan.  UMAP was not created by people \"in the applied category theory community\".</p>\n<p>The issue with UMAP is that this very useful algorithm was first described using a little category theory - a little, but it was sufficiently unfamiliar to the people who actually <em>use</em> UMAP that it caused a lot of head-scratching, with people wondering whether category theory provided the \"secret sauce\" that makes the algorithm work.     I read the paper and wrote an article about this:</p>\n<ul>\n<li><a href=\"https://johncarlosbaez.wordpress.com/2020/02/10/the-category-theory-behind-umap/\">The category theory behind UMAP</a>.</li>\n</ul>\n<p>If category theory helped the creators of UMAP come up with good ideas, it served its role. But they probably should have written at least one paper explaining it without mentioning anything about categories.</p>",
+        "id": 431695284,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712428549
+    },
+    {
+        "content": "<p>I have no idea what UMAP is, so what follows is not intended to throw any shade at these people, because it may be great work.  However, it seems to me that \"category theory\" has recently become trendy among non-pure-mathematicians.</p>\n<p>One consequence of this is that more people want to learn categorical methods to solve their problems, which is great for them because they can solve their problem, and great for everyone already applying categorical methods because there is strength in numbers.</p>\n<p>But along the same lines of what I think Jacques is saying, sometimes people slap the words \"category theory\" on their work to give them mathematical street-cred. In some cases, they do not even employ categorical tools at all, and a great number of these papers are completely nonsensical.  And I have seen people in our community who should know better endorse papers or people peddling this kind of nonsense.  I fear that the apparent openness of \"applied category theorists\" to welcome people into their ranks is too indiscriminate, because if people outside of categorical circles realize it is nonsense, it would reflect poorly on people trying to actually use category theory to solve problems in applied domains.</p>",
+        "id": 431696914,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1712429640
+    },
+    {
+        "content": "<p>I have had similar worries, and you phrase them better than I could.</p>",
+        "id": 431697023,
+        "sender_full_name": "Owen Lynch",
+        "timestamp": 1712429708
+    },
+    {
+        "content": "<p>I don't really know exactly what it means to \"welcome people into our ranks\", and in what way Cole thinks we should be doing less of that.  I think we'd need to be a bit more specific to make progress on this question, even though it's bound to be uncomfortable.</p>",
+        "id": 431699755,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712431817
+    },
+    {
+        "content": "<p>By welcome into our ranks, I mean to involve people in conferences, workshops and give endorsements.  I am not referring to the secret badge that people get when they officially become category theorists.</p>\n<p>But I am being intentionally vague so as not to cause offense/harm to myself.</p>",
+        "id": 431700124,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1712432218
+    },
+    {
+        "content": "<p>Someday I hope somebody writes a book with a title roughly in the spirit of \"So, you want to apply category theory to your research problem...\". I'm imagining this book hopefully doing the following:</p>\n<ul>\n<li>pointing to a lot of good resources at a variety of levels</li>\n<li>presenting many specific strategies that can be employed to successfully apply category theory</li>\n<li>illustrating these strategies with \"case studies\" of successful applications, with examples taken from a variety of fields</li>\n<li>including throughout various slogans/rules-of-thumb/intuitive viewpoints</li>\n<li>presenting all this material at a variety of levels of abstraction</li>\n</ul>",
+        "id": 431700255,
+        "sender_full_name": "David Egolf",
+        "timestamp": 1712432342
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277391\">Cole Comfort</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/431700124\">said</a>:</p>\n<blockquote>\n<p>By welcome into our ranks, I mean to involve people in conferences, workshops and give endorsements.  </p>\n</blockquote>\n<p>Okay, that's clear enough.   I was wondering about this: </p>\n<p>A bunch of people with grandiose hopes and dreams come into this Zulip.   I'm never sure which ones it's good to engage with, but I generally start off by optimistically engaging with them.  I would not call this \"welcoming them into our ranks\", though maybe some of them feel that's what is going on - at first.   Many are unable to focus their thoughts on one topic for long enough to make serious progress, and the rest of us eventually realize that, and they eventually leave.   A few stick around and become quite serious.</p>\n<blockquote>\n<p>I am not referring to the secret badge that people get when they officially become category theorists.</p>\n</blockquote>\n<p><span aria-label=\"shush\" class=\"emoji emoji-1f92b\" role=\"img\" title=\"shush\">:shush:</span></p>",
+        "id": 431702995,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712434782
+    },
+    {
+        "content": "<blockquote>\n<p>I am not referring to the secret badge that people get when they officially become category theorists.</p>\n</blockquote>\n<p>Damn, so this tattoo artist I met was a con ... now wondering how I will scratch \"I &lt;3 Yoneda\" off my back <span aria-label=\"disappointed\" class=\"emoji emoji-1f61e\" role=\"img\" title=\"disappointed\">:disappointed:</span></p>",
+        "id": 431747366,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1712481090
+    },
+    {
+        "content": "<p>Joke aside. It is a hard balance to find for a community: staying true to the craft, and being open and welcoming to foreigners. A social form of the safety vs liveness <a href=\"https://en.wikipedia.org/wiki/Safety_and_liveness_properties\">dilemma</a>. Drop either one and the community is dead.</p>\n<p>There are social means to address it. Here are, on the top of my mind, some practical actions.</p>\n<p>I'll start with the obvious one. For journals, conferences inside CT/ACT, well ... just don't lower the bar: have a decent program committee, select good reviewers, etc.</p>\n<p>For publications about CT/ACT, but outside CT/ACT community, it's harder. But it is still possible to reach out to the journal/conf orgs/paper authors. Maybe they used the words \"category theory\" wrongly because they want the street-cred, or just because they just don't know enough about it. It's also possible to publish a paper/survey/blog article/books, like the one about umap, to rectify/correct things. Or like what <span class=\"user-mention\" data-user-id=\"277503\">@David Egolf</span> suggests (btw, David, you may be interested in <a href=\"https://arxiv.org/abs/1803.05316\">Seven sketches in compositionality</a> if you don't already know it).</p>\n<p>All of this has a cost, time-wise, but also social-wise: for young researchers this might not be the first thing to do. But it's also possible to team up with more established people.</p>\n<p>Now, regarding Zulip: in other communities, there is usually a chart/banner describing the preferred way to behave, and moderators to enforce it. But more specifically, regarding this Zulip instance, and as a newcomer/learner/tourist myself, I really like <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> position: both open and true to the craft. This, I think, reflects in the kind of feedback I've seen (and received) here: positive encouragements when appropriate and firm corrections when necessary.</p>",
+        "id": 431747441,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1712481150
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"296322\">Jacques Carette</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/431671790\">said</a>:</p>\n<blockquote>\n<p>One of the reasons for creating this thread was to try to understand, ahead of time, when people are doing BS with 'categorical modeling'. </p>\n</blockquote>\n<p>This is a really hard question, and my approach has always been to not worry about it, because the downsides of false positives are much worse than the downsides of false negatives</p>",
+        "id": 431804121,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1712514567
+    },
+    {
+        "content": "<p>It seems everyone is worrying about non-mathematicians talking BS about category theory, but my experience is that it's more common that category theorists talk equal amounts of BS about an application domain (but of course both happen quite often)</p>",
+        "id": 431804221,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1712514640
+    },
+    {
+        "content": "<p>Applied category theory is applied mathematics so the ultimate test is the usual one: you're not doing BS if you're solving a problem</p>",
+        "id": 431804279,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1712514715
+    },
+    {
+        "content": "<p>But of course stuff takes time. I've been working on compositional game theory full time since 2015 and we're only recently starting to solve actual problems with it. In the meantime there's no really objective way to tell.</p>",
+        "id": 431804380,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1712514787
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/431804221\">said</a>:</p>\n<blockquote>\n<p>It seems everyone is worrying about non-mathematicians talking BS about category theory, but my experience is that it's more common that category theorists talk equal amounts of BS about an application domain (but of course both happen quite often)</p>\n</blockquote>\n<p>I think the difference often boils down to the paper appearing completely unmotivated, versus being incoherent.  A paper \"being unmotivated\" is <em>somewhat</em> subjective as you said, but there is no such ambiguity when the paper makes no sense.</p>",
+        "id": 431804745,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1712515113
+    },
+    {
+        "content": "<p>For example, I have heard stories about some of the older generation of category theorists not liking what is often known now as \"applied category theory,\" which is more of a matter of taste, rather than rigour.</p>",
+        "id": 431804937,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1712515222
+    },
+    {
+        "content": "<p>My surprise is immeasurable</p>",
+        "id": 431805409,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1712515671
+    },
+    {
+        "content": "<p>Sure there are incoherent papers, those are the ones that should just be desk-rejected and nobody could reasonable call it gatekeeping. I think I see unmotivated papers coming in equal measure from both category theory experts and category theory beginners. Both have an equal chance of containing something interesting</p>",
+        "id": 431805563,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1712515795
+    },
+    {
+        "content": "<p>An interesting paper in the latter case is \"here is a good description of my problem domain and why it's really difficult, now here is some very naive category theory that probably has no chance of being useful\". An interesting paper in the former case is \"here's some good category theory, now here is a very naive description of an application that it probably has no chance of being useful for\"</p>",
+        "id": 431805722,
+        "sender_full_name": "Jules Hedges",
+        "timestamp": 1712515899
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275901\">Jules Hedges</span> <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Modelling.20with.20categories/near/431804221\">said</a>:</p>\n<blockquote>\n<p>but my experience is that it's more common that category theorists talk equal amounts of BS about an application domain (but of course both happen quite often)</p>\n</blockquote>\n<p>Do you have some examples of the sorts of things you have in mind (if it's possible to give examples without calling anyone out specifically)?</p>",
+        "id": 431811434,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1712519796
+    },
+    {
+        "content": "<p>imo there's an xkcd about this phenomenon, just replace \"physicist\" with \"applied category theorist\" :-) <a href=\"https://xkcd.com/793/\">https://xkcd.com/793/</a></p>",
+        "id": 432313241,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1712687312
+    }
+]

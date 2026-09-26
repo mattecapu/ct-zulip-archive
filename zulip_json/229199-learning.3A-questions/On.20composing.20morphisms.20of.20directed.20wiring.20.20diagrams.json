@@ -1,0 +1,86 @@
+[
+    {
+        "content": "<p><em>When we model an open system as a horizontal 1-cell in a double category and the morphisms of open systems as 2-moprhims in the said double category</em>, then <strong>not only</strong> we can compose  open systems along interfaces by  composing the horizontal 1-cells, <strong>but  also</strong> we can  compose morphisms of open systems  along morphisms of interfaces using the horizontal composition of 2-morphisms. </p>\n<p>Now, on the other hand,  <em>when we model  open systems by constructing suitable algebras on  Spivak's opeads of directed wiring diagrams</em> as in <a href=\"https://arxiv.org/abs/1408.1598\">Algebras of Open Dynamical Systems on the Operad of Wiring Diagrams</a>, I think <strong>we only</strong> get a theory of how to compose open systems along interfaces prescribed by the nature of the underlying directed wiring diagram, <strong>but not</strong> how to compose  morphisms of open systems  along morphisms of interfaces. </p>\n<p>Now,  in this regard, I think modelling open system as a horizontal 1-cell in double category has an edge over the operadic approach. Now, since the operad of directed wiring diagram is induced from a symmetric monoidal category, <em>this was expected.</em> </p>\n<p>Now, I feel there should be a notion of  a  \"<em>kind of double operad of directed wiring diagrams</em>\" induced from a symmetric monoidal double category where there would be a natural notion of a \"<em>morphism between wiring diagrams</em>\" and the double operad structure should tell us how to compose such morphisms between wiring diagrams. Now, I think a suitable notion of <em>double algebra kind of structure</em> on the double operad of directed wiring diagrams  should say us how to  compose  morphisms of open systems  along morphisms of interfaces. Then, I think this notion of  double algebra on the double operad of wiring diagrams would be an operadic analogue of \"modelling open systems as horizontal 1-cells in a symmetric monoidal  double category\".</p>\n<p>But, I am almost certain that the above discussion is already well establised and probably has been discussed in the paper <a href=\"https://arxiv.org/pdf/2505.18329\">Towards a double operadic theory of systems</a>. <em>Although I am yet to read this paper, <em>but I am very much interested in composing morphisms of open systems  along morphisms of interfaces</em> using an operadic approach, and would very much like to know whether the Spivak's operad's of directed wiring diagrams have already a  double analogue.</em> <strong>Before starting to read this paper, I would like to ask whether the framework in this paper is actually taking care of  composing morphisms of open systems  along morphisms of interfaces ?</strong></p>\n<p>After recenlty learning about virtual double categories, I will  also not be surprised if the exisiting notion of <em>such double operads of wiring diagrams</em> are induced from a particular class of virtual double categories.</p>",
+        "id": 581197255,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1774291914
+    },
+    {
+        "content": "<p>Yes, I believe it does do that, treating directed wiring diagrams from the perspective of lens, though I'm not familiar with the contents of the paper in a detailed way.</p>",
+        "id": 581208747,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1774295983
+    },
+    {
+        "content": "<p>I see. Thanks very much!</p>",
+        "id": 581213243,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1774297495
+    },
+    {
+        "content": "<p>DOTS is a general framework, but it seems to have two really important classes of examples: the variable sharing paradigm, where the composition patterns are undirected wiring diagrams (cospans), and the machine paradigm, where the composition patterns are directed wiring diagrams (lenses).</p>",
+        "id": 581214914,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1774298065
+    },
+    {
+        "content": "<p>Thank you! Interesting! Earlier, I went through (although not in details) the main ideas in the paper <a href=\"https://arxiv.org/pdf/2007.14442\">An Algebra of Resource Sharing Machines</a>, which unifies the two important classes you mentioned at the level of operads.  Now, it seems DOTS is a double analogue of it (double operads), which also covers  composition of  morphisms of open systems along morphisms of interfaces.</p>",
+        "id": 581279483,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1774330402
+    },
+    {
+        "content": "<p>Yes, Sophie used to be in our <a class=\"stream\" data-stream-id=\"578830\" href=\"/#narrow/channel/578830-practice.3A-epidemiology\">#practice: epidemiology</a> group, and she unified the two classes Evan mentioned and applied this unification to stock-flow diagrams, which are a key aspect of our work.</p>\n<p>More recently our group (which Evan has been unable to attend of late, being busy developing CatColab) spent several sessions of our weekly meeting going through Sophie's closely related paper <a href=\"https://arxiv.org/abs/2503.05457\">Dependent directed wiring diagrams</a>.   This should represent yet another paradigm, and Sophie also applies <em>this</em> paradigm to stock-flow models!</p>",
+        "id": 581281124,
+        "sender_full_name": "John Baez",
+        "timestamp": 1774331381
+    },
+    {
+        "content": "<p>But Evan came to our most recent meeting, which is great because he seems to have discovered that CatColab, based on double categorical doctrines, solves a lot of problems with our earlier implementation of stock-flow diagrams in CatLab.</p>",
+        "id": 581281443,
+        "sender_full_name": "John Baez",
+        "timestamp": 1774331570
+    },
+    {
+        "content": "<p>Our group plans to keep working on these issues.   Two big questions are to what extent CatColab can become the new platform for work with stock-flow diagrams in epidemiology - and if so, to what extent this is compatible for working with DOTS.   Here I'm talking about actual software, not just math.</p>",
+        "id": 581281688,
+        "sender_full_name": "John Baez",
+        "timestamp": 1774331719
+    },
+    {
+        "content": "<p>Thanks!! Very interesting!!</p>",
+        "id": 581284634,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1774333322
+    },
+    {
+        "content": "<p>The DOTS approach certainly copes with these wiring styles for composition of subsystems. The tight direction is there to allow things like coarse-graining and safety guarantees, via maps out, and also detecting behaviours, via maps in. E.g., trajectories of systems are measured by maps into a system from a clock system. </p>\n<p>Interestingly they're finding a difference between wiring styles. Symmetric monoidal loose right modules, the focus of the DOTS paper, work well when you have a global notion of time (aka synchronous); algebras for double operads work well when you have a distributed (aka concurrent or asynchronous) notion of time where you not only have to specify clocks but also combine them to form new clocks.</p>",
+        "id": 581316255,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1774344982
+    },
+    {
+        "content": "<p>You might want to check §4.3 in David's <a href=\"https://www.davidjaz.com/Papers/DynamicalBook.pdf\">book</a> for a breakdown on how functoriality works</p>",
+        "id": 581343041,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1774352441
+    },
+    {
+        "content": "<p>Or <a href=\"https://github.com/mattecapu/categorical-systems-theory\">my notes</a> about that</p>",
+        "id": 581343115,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1774352472
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"302507\">David Corfield</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/On.20composing.20morphisms.20of.20directed.20wiring.20.20diagrams/near/581316255\">said</a>:</p>\n<blockquote>\n<p>The DOTS approach certainly copes with these wiring styles for composition of subsystems. The tight direction is there to allow things like coarse-graining and safety guarantees, via maps out, and also detecting behaviours, via maps in. E.g., trajectories of systems are measured by maps into a system from a clock system. </p>\n<p>Interestingly they're finding a difference between wiring styles. Symmetric monoidal loose right modules, the focus of the DOTS paper, work well when you have a global notion of time (aka synchronous); algebras for double operads work well when you have a distributed (aka concurrent or asynchronous) notion of time where you not only have to specify clocks but also combine them to form new clocks.</p>\n</blockquote>\n<p>Very interesting!! Thanks very much!  I think now I have a lot of motivation to learn DOTS.</p>",
+        "id": 581348930,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1774353981
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275932\">@Matteo Capucci (he/him)</span>  Thanks very much for sharing your notes and referring the relevant portion in David's book. I will check.</p>",
+        "id": 581349222,
+        "sender_full_name": "Adittya Chaudhuri",
+        "timestamp": 1774354057
+    }
+]

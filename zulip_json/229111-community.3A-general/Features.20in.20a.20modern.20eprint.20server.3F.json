@@ -1,0 +1,86 @@
+[
+    {
+        "content": "<p>Hi guys. Regarding: <a class=\"stream-topic\" data-stream-id=\"229111\" href=\"/#narrow/channel/229111-community.3A-general/topic/AI-generated.20papers/with/547042620\">#community: general &gt; AI-generated papers</a></p>\n<p>I know right now there is some worry about preprints/etc. I've actually been working coding up a new eprint server as part of a startup project. After speaking with several people in the research community it seems there is increasing demand for alternatives with better features. I already have a pretty good working prototype (React/Django/Postgres/S3 modern stack) that has some pretty nice goodies (AI-assisted [not solely!] screening to catch 99% of BS papers, richer diffs, native github/code data integration, native API that directly supports overlay journals with GraphQL).</p>\n<p>While I don't have a private demo to showcase just yet, I'm wondering what people would want in a modern preprint server? What features do people consider most important? Please fire away.</p>",
+        "id": 547421655,
+        "sender_full_name": "Ben Kaminsky",
+        "timestamp": 1761634919
+    },
+    {
+        "content": "<p>Please support typst. Using latex in 2025 is criminal.</p>",
+        "id": 547436940,
+        "sender_full_name": "Fabrizio Romano Genovese",
+        "timestamp": 1761641298
+    },
+    {
+        "content": "<p>Please support LuaLaTeX and other 'nonstandard' variants on TeX. ArXiv effectively bans the use of these things, since it will detect that the pdf is produced by LaTeX and demand you upload the source, but it can't compile the source, so there's effectively no way to upload it at all. I think this is actually quite damaging to the open source ecosystem.</p>\n<p>Really though, the most important feature in a preprint server is a plausible guarantee that the papers will continue to be accessible in the long term. Anything else is extra.</p>",
+        "id": 548204090,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1761929146
+    },
+    {
+        "content": "<p>It's easy to offer a preprint server in the heat of the moment, but arXiv has to deal with nearly 35 years of legacy (La)TeX code, a bunch of it written before pdf was the de facto standard of document exchange, and more than 2.6 million papers...</p>",
+        "id": 548242680,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1761943178
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276071\">Nathaniel Virgo</span> <a href=\"#narrow/channel/229111-community.3A-general/topic/Features.20in.20a.20modern.20eprint.20server.3F/near/548204090\">said</a>:</p>\n<blockquote>\n<p>Please support LuaLaTeX and other 'nonstandard' variants on TeX. (Or at least allow uploading of pdf files generated using them.) ArXiv effectively bans the use of these things, since it will detect that the pdf is produced by LaTeX and demand you upload the source, but it can't compile the source, so there's effectively no way to upload it at all. I think this is actually quite damaging to the open source ecosystem.</p>\n</blockquote>\n<p>Hi. I'm using Tectonic though I have not tested LuaLatex features. A \"last ditch\" upload option was implemented that allows your own pdfs + the source if for some reason it you use cannot compile using the website pipeline.</p>",
+        "id": 553759719,
+        "sender_full_name": "Ben Kaminsky",
+        "timestamp": 1762315120
+    },
+    {
+        "content": "<p>BTW, what's the rationale for compiling preprints on the server? Why can't anyone use what they like and just upload a PDF+sources?</p>",
+        "id": 553793399,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1762332017
+    },
+    {
+        "content": "<p>My desiderata are:<br>\n(1) Make it as simple and stupid as it can be. we are not customers who need to be allured by shiny things, and instead most people I know in academic prefer reliable, old-fashioned websites to fancy js-only modern slop. it'd be great if the website core functionality only relies on HTML, CSS and web forms to function!<br>\n(2) Segueing from above, use as much standard protocols as you can. This means an RSS feed, ORCID/OAuth/Shibboleth authentication, and whatnot.<br>\n(3) Support open review. People should be able to post public reviews under preprints, this includes authors posting errata and new versions.</p>",
+        "id": 553794359,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1762332326
+    },
+    {
+        "content": "<p>The public review question is going to be quite controversial. At the very best it’s going to make for a substantial moderation burden.</p>",
+        "id": 553928839,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1762365760
+    },
+    {
+        "content": "<p>As for on-server compilation, I’m sure ArXiv was originally quite interested in avoiding the storage and bandwidth burdens of holding a ton of PDFs. That’s less important now though perhaps not totally insignificant, but there also seems to be a single source of truth/reproducibility/iterability problem with posting sources the server can’t confirm are actually compilable. I’m not sure how significant this seems.</p>",
+        "id": 553929184,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1762365863
+    },
+    {
+        "content": "<p>I think public review should be separated from the business of archiving:</p>\n<p>1) There are lots of things that can go wrong with public review, and lots of things that can make people (especially those whose papers are reviewed, but also the reviewers) very upset.  Doing it well will require a team committed to moderating it this in an ongoing way.</p>\n<p>2) There's no <em>need</em> for public review to be bundled with archiving.  Anyone who wants to set up public review for archived papers can do it now by setting up a website linked to the arXiv or any other archive of papers.</p>",
+        "id": 553942499,
+        "sender_full_name": "John Baez",
+        "timestamp": 1762369788
+    },
+    {
+        "content": "<p>Thus, I think if someone thinks public review is a good idea, they should start it now, not as part of any archiving process.  I believe they'll soon encounter issue 1).</p>",
+        "id": 553943171,
+        "sender_full_name": "John Baez",
+        "timestamp": 1762370021
+    },
+    {
+        "content": "<p>I'd actually argue a review server linked to the arXiv would be a bigger public service than another eprint server.  But probably even harder to make work.  On the other hand, even if such a review server failed, at least the articles wouldn't go down along with the reviews!</p>",
+        "id": 553956047,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1762374418
+    },
+    {
+        "content": "<p>I mean, there are already a bunch of (what amount to) preprint servers that no one in mathematics uses. And there's HAL, more used by Francophone mathematicians, which has a bunch of features that are really cool that arXiv doesn't have. So making yet another one has to differentiate it from the market. </p>\n<p>Moreover, in the 90s there were a bunch of subject-specific mathematics preprint servers that eventually just folded because everyone just used the arXiv, and they were all basically one-man [sic] shows running on 90s tech. So competing against the arXiv is the big challenge.</p>\n<p>At the tail end of this trend, people were collecting links here, many of them presumably broken now <a href=\"https://mathoverflow.net/questions/186708/big-list-of-repositories-of-mathematical-preprints-and-postprints\">https://mathoverflow.net/questions/186708/big-list-of-repositories-of-mathematical-preprints-and-postprints</a> and I would imagine this missed a bunch that were long defunct by 2015</p>\n<p>Even the really nice Front for the Mathematics arXiv shuttered in the last decade or so, and that was really just an improved interface that accessed arXiv stuff.</p>",
+        "id": 553977148,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1762383474
+    },
+    {
+        "content": "<p>I decided early on I'm not supporting public comments. It's just another moderation headache and it would only deter people from posting if they are afraid they'd be publicly nitpicked.</p>",
+        "id": 554004494,
+        "sender_full_name": "Ben Kaminsky",
+        "timestamp": 1762403475
+    }
+]
