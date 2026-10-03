@@ -1,0 +1,38 @@
+[
+    {
+        "content": "<p>I would like to model judgements of equality. The inference rule expressing <a href=\"https://en.wikipedia.org/wiki/Subject_reduction\">subject reduction</a>, i.e. that terms preserve their types under reduction, uses such judgements.</p>\n<div class=\"codehilite\"><pre><span></span><code>Γ ⊢ A: B    Γ ⊢ C: ⊤     Γ ⊢ s(C) = A    Γ ⊢ t(C) = A&#39;    Γ ⊢ A&#39;: B&#39;\n—————————————————————————————————————————————————————————————————————\nΓ ⊢ A: B&#39;\n</code></pre></div>\n\n<p>where <code>B, B'</code> are types refining the sort of terms and <code>⊤</code> is the type that trivially refines the sort of reductions.  The function symbols <code>s</code> and <code>t</code> pick out the source and target of a reduction, respectively.</p>\n<p>In the absence of the equality judgements, I could model this as a natural transformation between profunctors.  What's the right way to model the equality judgements?</p>",
+        "id": 490235746,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1734731669
+    },
+    {
+        "content": "<p>Details:</p>\n<p>I'm modeling lambda calculus using a graph-structured lambda theory.  I'll use a reduction strategy where we only reduce lambdas in the head position of an application, resulting in weak head normal form.  (Modeling lambda calculus in a lambda theory is kind of silly, but it lets me reason about the number of steps in a reduction and lets the theory handle bound variables and substitution.)</p>",
+        "id": 490235795,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1734731698
+    },
+    {
+        "content": "<ul>\n<li>The graph structure<ul>\n<li>One generating sort T for terms</li>\n<li>One generating sort R for reductions</li>\n<li>Two generating morphisms s, t: R -&gt; T for the source and target of a reduction</li>\n</ul>\n</li>\n<li>Two generating function symbols for terms<ul>\n<li>App: T x T -&gt; T</li>\n<li>Lam: (T -&gt; T) -&gt; T</li>\n</ul>\n</li>\n<li>Two generating function symbols for reductions<ul>\n<li>Beta: ((T -&gt; T) x T) -&gt; T</li>\n<li>Head: R x T -&gt; R</li>\n</ul>\n</li>\n<li>Two equations for the source and target of Beta<ul>\n<li>s(Beta(a, b)) = App(Lam(a), b)</li>\n<li>t(Beta(a, b)) = eval(a, b)</li>\n</ul>\n</li>\n<li>Two equations for the source and target of Head<ul>\n<li>s(Head(a, b)) = App(s(a), b)</li>\n<li>t(Head(a, b)) = App(t(a), b)</li>\n</ul>\n</li>\n</ul>",
+        "id": 490235809,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1734731703
+    },
+    {
+        "content": "<p>Is modeling this without pro-functors an option?  Just treating G |- t1 = t2 : T to mean that morphisms G |- t1 : T and G |- t2 : T are equal?  A priori I'd expect most inference rules not to turn into equations in a lambda theory, but into more general formulae (implications, etc).</p>",
+        "id": 490245272,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1734737679
+    },
+    {
+        "content": "<p>Most inference rules actually turn out to be natural and dinatural transformations between profunctors.  For example,</p>\n<div class=\"codehilite\"><pre><span></span><code>Γ ⊢ v: A    Γ, x: A ⊢ B: C\n——————————————————————————\nΓ ⊢ B[v/x]: C\n</code></pre></div>\n\n<p>is natural in Γ and C and dinatural in A.  The dinatural part is α: F =&gt; G, where</p>\n<div class=\"codehilite\"><pre><span></span><code>F, G: T^op x T x T^op x T -&gt; Set\nF = (Γ, A, A&#39;, C) --∆AA&#39;C--&gt; (Γ, Γ, A, A&#39;, C) --iso--&gt; ((Γ, A), ((Γ, A&#39;), C)) --hom x hom--&gt; Γ ⊢ A    Γ, A&#39; ⊢ C\nG = (Γ, A, A&#39;, C) --ΓδδC--&gt; (Γ, 1, 1, C) --iso--&gt; (Γ, C) --hom--&gt; Γ ⊢ C\nα(m, n) = n ⚬ (Γ x m)\n</code></pre></div>\n\n<p>and the commuting hexagon says that given <code>f:A -&gt; A',  h: Γ -&gt; A,  j: Γ, A' -&gt; C</code>,</p>\n<div class=\"codehilite\"><pre><span></span><code>(j ⚬ Γh) ⚬ Γf = j ⚬ Γ(h ⚬ f).\n</code></pre></div>",
+        "id": 490246308,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1734738496
+    },
+    {
+        "content": "<p>In this particular case, I guess I can write something like</p>\n<div class=\"codehilite\"><pre><span></span><code>Γ ⊢ s(A): B    Γ ⊢ t(A): B&#39;\n———————————————————————————\nΓ ⊢ s(A): B&#39;\n</code></pre></div>\n<p>But I'd still like to understand what categorical machinery would let me say <code>Γ ⊢ x(A) = y(B)</code>.</p>",
+        "id": 490278922,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1734768958
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "content": "<p>Looking for examples of categories of familiar (probably but not necessarily algebraic) objects having certain properties.</p>\n<p>Context: I have been working on some model theory recently, and specifically Fraïssé theory. Classically, Fraïssé theory starts with a category of finitely generated structures and embeddings between these. They are assumed to have the following nice properties:</p>\n<ul>\n<li><strong>Joint embedding property</strong>: any pair of structures embeds into a common third structure.</li>\n<li><strong>Amalgamation property</strong>: any span of embeddings of structures can be completed to a square.</li>\n</ul>\n<p>From these, one can construct a \"universal\" structure containing all of the finitely generated ones in a \"homogeneous\" way. This may sound obscure if this is your first time hearing about it but there are some important examples in combinatorics that may be familiar (see the <a href=\"https://en.wikipedia.org/wiki/Fra%C3%AFss%C3%A9_limit\">Wikipedia page</a> ).</p>\n<p>Anyhow, I have generalised this construction to relax the amalgamation property requirement on embeddings of structures: I instead consider the larger category of homomorphisms of structures and ask that <em>any span in which one leg is an embedding can be completed to a square in which the opposite side is also an embedding</em> (if in doubt, interpret \"embedding\" as \"monomorphism\"). The price of this relaxation is that the properties of the resulting limit object aren't quite as nice (I can explain more if you like; this is work I'm presenting at SYCO next week).</p>\n<p>This is great! except that I currently have very few \"natural\" examples of categories of structures that satisfy this relaxed condition but which fail to satisfy the stronger/original amalgamation property. So I'm hoping that someone here might have some suggestions.</p>",
+        "id": 512128606,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1744649307
+    },
+    {
+        "content": "<p>In universal algebra this property is called <em>transferable injections</em>. When pushouts exist, this is equivalent to requiring that monos are stable under pushout.</p>",
+        "id": 512162855,
+        "sender_full_name": "Ivan Di Liberti",
+        "timestamp": 1744660773
+    },
+    {
+        "content": "<p>You may want to read <strong>Categorical algebraic properties. A compendium on amalgamation, congruence extension, epimorphisms, residual smallness, and injectivity</strong> by <em>Tholen et al</em> which I have indeed read in my life, but at the moment I can't find online.</p>",
+        "id": 512163641,
+        "sender_full_name": "Ivan Di Liberti",
+        "timestamp": 1744661042
+    },
+    {
+        "content": "<p>There's a copy <a href=\"https://tholen.mathstats.yorku.ca/files/2022/09/kmpt_pp79-111.pdf\">online here</a>.</p>",
+        "id": 512164158,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1744661199
+    },
+    {
+        "content": "<p>That's extremely helpful in that even at Proposition 1.6 they say that the Transferability Property (TP) implies the Amalgamation Property (AP) as soon as the category has products! The argument is easy and completely general, I'm surprised I hadn't spotted it before. (They also say that it implies the \"congruence extension property\" (CEP) where the other leg of the span is instead assumed to be an epimorphism; they do not assume the opposite side of the constructed square to be an epimorphism too, but this imposing this results in an equivalent condition as soon as the epimorphisms are strong and one has an epi-mono factorization, which is the case in there general set-up in Section 6.)</p>\n<p>Since varieties have products, I will need to be a lot more constrained in my search than I had guessed with my title \"categories of algebraic objects\". Unfortunately, the huge table of examples that Kiss, Márki, Pröhle and Tholen is not directly helpful to me because all of the examples that I already know about have finite products (I don't know much about cylindric algebras, but since they have a fully algebraic presentation I think the category of these still has products). But it does at least exclude a lot of naive things I might have tried!</p>",
+        "id": 512307860,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1744720416
+    },
+    {
+        "content": "<p>I still haven't found any convenient examples (or at least I'm lacking examples with an intrinsic description not related to the monoids that I'm building from them heh). I'll be talking about this at SYCO in London this week, so let me know if you spot an example ;)</p>",
+        "id": 513881234,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1745417130
+    }
+]

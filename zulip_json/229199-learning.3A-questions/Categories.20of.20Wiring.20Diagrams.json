@@ -1,0 +1,38 @@
+[
+    {
+        "content": "<p>Wiring diagrams in symmetric monoidal categories compose in two ways: end-to-end (\"categorically\") and via substitution (\"operadically\"). Is there a (higher) (generalized) (multi-)category of wiring diagrams in which both composition operations appear, along with identities relating them?</p>",
+        "id": 535855098,
+        "sender_full_name": "Richard Samuelson",
+        "timestamp": 1755971562
+    },
+    {
+        "content": "<p>Note that end-to-end composition is a special case of substitution: take the two diagrams you want to compose end-to-end and substitute them both into the linear diagram with two nodes on a single wire.</p>",
+        "id": 535855666,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1755972213
+    },
+    {
+        "content": "<p>I see!</p>",
+        "id": 535855808,
+        "sender_full_name": "Richard Samuelson",
+        "timestamp": 1755972411
+    },
+    {
+        "content": "<p>Given that, we can take substitution as primary, which looks like the multiplication for a monad whose algebras are symmetric monoidal categories.  So one guess would be that we can take the monad on the category of <a href=\"https://ncatlab.org/nlab/show/pre-nets\">[[pre-nets]]</a> whose algebras are symmetric strict monoidal categories, and then consider generalized multicategories for that monad.</p>\n<p>Unfortunately, that doesn't work.  Specifically, that monad is not cartesian, because it \"contains\" the free abelian monoid monad: the endomorphisms of the unit object in a monoidal category are an abelian monoid, and a pre-net contains events with no input or output places that generate such endomorphisms.</p>",
+        "id": 535857083,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1755974230
+    },
+    {
+        "content": "<p>I don't know that anyone has worked out a really satisfying solution to that problem.  I and various others have thought about it and tried various things.</p>\n<p>One thing you can do is restrict the allowed pre-nets.  For instance, I think if you require all events to have exactly one place as output, or if you require all events to have at least one place as both input and output, in both of those cases you can get a cartesian monad and hence a notion of generalized multicategory.</p>",
+        "id": 535857164,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1755974354
+    },
+    {
+        "content": "<p>Thank you for getting back to me <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> ! I think that this question has to do with examples 4.2.14 and 4.2.15 in Leinster's <em>Higher Operads, Higher Categories</em>. He says that labelled trees form generalized multi-categories in two different ways: end-to-end and via substitution.</p>",
+        "id": 535920217,
+        "sender_full_name": "Richard Samuelson",
+        "timestamp": 1756062223
+    }
+]

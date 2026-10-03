@@ -1,0 +1,182 @@
+[
+    {
+        "content": "<p>I recently stumbled upon this paper <a href=\"https://arxiv.org/pdf/2603.20396v1\">Compression is all you need</a> which proposes a criterion to distinguish \"human mathematics\" (the mathematics humans discover and value) from \"formal mathematics\" (the totality of all valid deductions). I was a bit skeptical at first, but one of the authors is <a href=\"https://en.wikipedia.org/wiki/Michael_Freedman\">Michael H. Freedman</a>.</p>\n<p>Here is the abstract.</p>\n<blockquote>\n<p>Human mathematics (HM), the mathematics humans discover and value, is a vanishingly<br>\nsmall subset of formal mathematics (FM), the totality of all valid deductions. We argue that HM is<br>\ndistinguished by its compressibility through hierarchically nested definitions, lemmas, and theorems.<br>\nWe model this with monoids. A mathematical deduction is a string of primitive symbols; a definition<br>\nor theorem is a named substring or macro whose use compresses the string. In the free abelian<br>\nmonoid 𝐴𝑛, a logarithmically sparse macro set achieves exponential expansion of expressivity. In<br>\nthe free non-abelian monoid 𝐹𝑛, even a polynomially-dense macro set only yields linear expansion;<br>\nsuperlinear expansion requires near-maximal density. We test these models against MathLib, a large<br>\nLean 4 library of mathematics that we take as a proxy for HM. Each element has a depth (layers of<br>\ndefinitional nesting), a wrapped length (tokens in its definition), and an unwrapped length (primitive<br>\nsymbols after fully expanding all references). We find unwrapped length grows exponentially with<br>\nboth depth and wrapped length; wrapped length is approximately constant across all depths. These<br>\nresults are consistent with 𝐴𝑛 and inconsistent with 𝐹𝑛, supporting the thesis that HM occupies a<br>\npolynomially-growing subset of the exponentially growing space FM. We discuss how compression,<br>\nmeasured on the MathLib dependency graph, and a PageRank-style analysis of that graph can quantify<br>\nmathematical interest and help direct automated reasoning toward the compressible regions where<br>\nhuman mathematics lives.</p>\n</blockquote>\n<p>It's the first time I see an attempt to characterize \"human mathematics\", so it is very intriguing to me.</p>\n<p>Are you aware of similar attempts? possibly from philosophers?</p>",
+        "id": 582898508,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1774991762
+    },
+    {
+        "content": "<p>In the proof engineering community we often say that the verification conditions arising from proving code correct are \"wide but shallow\", and hence easier to automate, than propositions arising from 'normal math', which are 'narrow but deep' usually.  Certainly many people have noted formal verification pre 2020 seems to be more applied to code than math, I would argue for the deep vs wide reason.</p>",
+        "id": 582911075,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1774998089
+    },
+    {
+        "content": "<p>Here's a long article that I enjoyed and basically agree with:</p>\n<ul>\n<li>David Bessis, <a href=\"https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy\">The fall of the theorem economy</a>.</li>\n</ul>\n<p>It says that mathematicians should hurry up and let people know that the point of math is not just proving theorems - so that the people who claim AI can quickly make human mathematicians unnecessary by getting good at proving theorems won't fool the world.   </p>\n<p>I've known this all along, and everything I do is supposed to make that clear, so it seems a bit sad that we have to run out and tell people this... but we may need to.</p>",
+        "id": 589388698,
+        "sender_full_name": "John Baez",
+        "timestamp": 1776826365
+    },
+    {
+        "content": "<p>Sounds like what I did in the last collaborative YouTube video advertising CT for Quantum and AI.  We gotta get better at sales here! <span aria-label=\"rolling on the floor laughing\" class=\"emoji emoji-1f923\" role=\"img\" title=\"rolling on the floor laughing\">:rolling_on_the_floor_laughing:</span></p>",
+        "id": 590114428,
+        "sender_full_name": "Federica 🦅",
+        "timestamp": 1776839014
+    },
+    {
+        "content": "<p>I think the article does a great job articulating the reasons that AI won't replace the actual work of mathematicians any time soon. It also strikes me that this analysis applies to many other applications to which AI is being used to replace human labour.<br>\nIt's funny that Bessis is careful to defend a number of people he quotes from the potential accusation of Luddism. I'm reading Brian Merchant's <em>Blood in the Machine</em> at the moment, a historical account of the Luddites, and it's been illuminating to learn that the modern meaning of the term (ignorant technophobe) is inherited from the ruling class' depiction of the workers involved. In fact, these were people being pushed out of work by unregulated introduction of machinery by capitalists whose plight was consistently ignored or dismissed by the government of the time. They had no objection to technology that improved their working conditions, but they were left with essentially no choice but to start destroying the technology that deprived them of work after all other options were denied.<br>\nIt may not surprise you in light of current and recent events to learn that 1) this destruction of property was very popular with the public of the time 2) the government's response was to continually ramp up the severity of the penalties for these actions rather than consider any of the proposed reforms, until it literally became punishable by death to destroy cloth-manufacturing machinery.</p>",
+        "id": 590195177,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1776861200
+    },
+    {
+        "content": "<p>It does seem like the Luddites have been unfairly slandered</p>",
+        "id": 590236813,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1776870406
+    },
+    {
+        "content": "<p>I don't normally chime in on AI discussion but I feel there's something major that Bessis is missing. Correct me if I'm wrong, but Bessis' reasoning seems to be: 1. math is not merely proving theorems and manipulating symbols, but involves a conceptual element, 2. AI cannot do the conceptual element of math, Conc: therefore, AI will not fully replace human mathematicians. I actually agree with premise 1, which is the main argument he seems to defend in his article, and he defends it quite successfully. However, I think premise 2 is deeply flawed, and no explanation for this argument seems to be given in the article, it is just assumed.</p>",
+        "id": 590290920,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1776887275
+    },
+    {
+        "content": "<p>At least from my perspective, there seems to be no barrier, in terms of the laws of physics, stopping someone from training an AI model to solve problems <em>exactly like</em> a human mathematician (just obviously a lot faster and more efficiently). In fact, even now, when I encounter a new math object or concept I often go to an LLM and say \"Explain the conceptual intuition behind concept X, and then explain the main motivation for why I should consider X important\". In many cases, the LLM is actually really good at explaining this and I walk away with a much better understanding. Of course, this is nowhere near what is needed for AI to actually do anything novel, but this seems to be less an insurmountable barrier and more a problem of finding the right AI model and training data. </p>\n<p>My question is: why can't you train an AI model not on Lean or formal logic directly as the teams mentioned in Bessis' article did, but instead train an AI model on the intuitive and conceptual reasoning human mathematicians employ when deriving new definitions or progressing on stages in proofs? Then, when you ask such a model to solve a math problem, it starts trying to generate new definitions like a human mathematician would, and at the end can not only spit out the solution to the problem, but an intuitive explanation for the motivation behind each and every step it used in the proof, as well as an intuitive explanation for every new mathematical object or concept it formally defined?</p>",
+        "id": 590290929,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1776887278
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"673117\">John Onstead</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/Human.20math.20vs.20Formal.20math/near/590290929\">said</a>:</p>\n<blockquote>\n<p>My question is: why can't you train an AI model not on Lean or formal logic directly as the teams mentioned in Bessis' article did, but instead train an AI model on the intuitive and conceptual reasoning human mathematicians employ when deriving new definitions or progressing on stages in proofs?</p>\n</blockquote>\n<p>I think this is the intent of the paper <a href=\"https://arxiv.org/pdf/2603.20396v1\">Compression is all you need</a> I mentioned in the first post. From their abstract</p>\n<blockquote>\n<p>We discuss how compression, measured on the MathLib dependency graph, and a PageRank-style analysis of that graph can quantify mathematical interest and help direct automated reasoning toward the compressible regions where human mathematics lives.</p>\n</blockquote>",
+        "id": 590297549,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1776889761
+    },
+    {
+        "content": "<p>I just finished reading Bessis's blog post. There is a lot of interesting things (and punchlines) to unpack!</p>\n<p>I might have missed the sentence, but I don't think he said that AI will never be able to do \"human mathematics\". He insisted instead on clarifying what it means for humans to do maths, and letting non-math humans know that it's not really about proving theorems.</p>\n<p>He mentioned, however, some things that seem to relate to the paper <em>Compression is all you need</em>, e.g., canonization, i.e., building definitions that can be reused later (for the sole purpose of doing more maths in the future).</p>",
+        "id": 590298703,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1776890198
+    },
+    {
+        "content": "<p>The part that caught my attention, about \"doing maths humanly\", is the following quote</p>\n<blockquote>\n<p>My proposed <em>conceptualist</em> resolution is a rephrasing of Thurston’s view: mathematics does rely on a meaningless game of formal symbols, but we only play this game because we project meaning onto it.</p>\n<p>Meaning is a cognitive phenomenon—a product of our neural architecture—and not a direct access to transcendence.</p>\n<p>When we “do math”, we manipulate formal expressions and gradually develop an intuitive feel for what they represent, as if they were pointers to objects that “existed” in a Platonic sense. Platonists take this neuroplastic side-effect at face value. Formalists view it as accessory. Conceptualists like me recognize mathematics as a critical cognitive infrastructure of the human species.</p>\n</blockquote>\n<p>I think this counts as an example of an attempt to characterize \"human mathematics\".</p>",
+        "id": 590299726,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1776890626
+    },
+    {
+        "content": "<p>I tentatively like intuitionism, it seems like the philosophical motivations for it competes in the same space as \"conceptualism\". In any case, I don't like brushing a lot of subtle issues under the \"it's psychology\" rug (but that's an aside, I liked the article).</p>",
+        "id": 590300227,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1776890867
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"673117\">John Onstead</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/Human.20math.20vs.20Formal.20math/near/590290920\">said</a>:</p>\n<blockquote>\n<p>I don't normally chime in on AI discussion but I feel there's something major that Bessis is missing. Correct me if I'm wrong, but Bessis' reasoning seems to be: 1. math is not merely proving theorems and manipulating symbols, but involves a conceptual element, 2. AI cannot do the conceptual element of math, Conc: therefore, AI will not fully replace human mathematicians. </p>\n</blockquote>\n<p>I don't think he claims 2.  He seems to be saying that <em>right now</em>, humans are better at the conceptual aspect of math than computers - so we, meaning mathematicians, shouldn't throw away this advantage by telling people that all that really matters is proving theorems.</p>",
+        "id": 590342316,
+        "sender_full_name": "John Baez",
+        "timestamp": 1776907463
+    },
+    {
+        "content": "<p>Terry Tao is I think sub-tooting that blog in the thread here: <a href=\"https://mathstodon.xyz/@tao/116450581967483825\">https://mathstodon.xyz/@tao/116450581967483825</a> with a sample:</p>\n<blockquote>\n<p>As a crude first approximation, the problem-solving component of mathematical research (which, one should stress, is not the <em>only</em> aspect of such research) can be decomposed into three subcomponents:</p>\n<ol>\n<li>Proof generation (finding a solution to a given problem);</li>\n<li>Proof verification (checking that a proposed solution actually works); and</li>\n<li>Proof digestion (understanding the essence of a solution, placing it in context with previous literature, summarizing and explaining it effectively, and gaining insights on other related problems and topics).</li>\n</ol>\n</blockquote>\n<p>and comments about how 1 and 2 are now something that AI systems are making big progress on, but 3 is something that is just as important, something more open-ended and subjective. And perhaps at risk:</p>\n<blockquote>\n<p>In fact, with the current cultural incentives that reward the first authors to \"solve\" the problem, rather than the later authors who \"digest\" the solution, one may end up with the perverse situation in which an AI-generated (and formally verified) solution to an problem that is presented to the community without any significant digestion may actually <em>inhibit</em> the progress of the field that the problem lies in, by discouraging any further attempts to work on the problem, simplify and explain the proof, and extract broader insights.</p>\n</blockquote>",
+        "id": 590344200,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1776908969
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"619003\">Peva Blanchard</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/Human.20math.20vs.20Formal.20math/near/590298703\">said</a>:</p>\n<blockquote>\n<p>I might have missed the sentence, but I don't think he said that AI will never be able to do \"human mathematics\". He insisted instead on clarifying what it means for humans to do maths, and letting non-math humans know that it's not really about proving theorems.</p>\n</blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/Human.20math.20vs.20Formal.20math/near/590342316\">said</a>:</p>\n<blockquote>\n<p>I don't think he claims 2. He seems to be saying that <em>right now</em>, humans are better at the conceptual aspect of math than computers - so we, meaning mathematicians, shouldn't throw away this advantage by telling people that all that really matters is proving theorems.</p>\n</blockquote>\n<p>Ah, I see. Thanks for clearing that up!</p>",
+        "id": 590351649,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1776914756
+    },
+    {
+        "content": "<p>GH Hardy would no doubt say that there is as much point to an AI understanding math conceptually as there is to an AI appreciating art instead of a human or a robot going to the gym instead of a human.</p>",
+        "id": 590351912,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1776914949
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281326\">Ryan Wisnesky</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/Human.20math.20vs.20Formal.20math/near/590351912\">said</a> in <a href=\"#narrow/channel/241990-community.3A-discussion/topic/Human.20math.20vs.20Formal.20math/with/590351912\">#community: discussion &gt; Human math vs Formal math</a>:</p>\n<blockquote>\n<p>GH Hardy would no doubt say that there is as much point to an AI understanding math conceptually as there is to an AI appreciating art instead of a human or a robot going to the gym instead of a human.</p>\n</blockquote>\n<p>Sure, but professionally going to the gym or appreciating art is kind of rare, especially on taxpayer money. Mathematicians need to justify to the outside world why having human professionals focus on conceptual understanding is valuable (to society at large and not just those doing the understanding) in a possible era of automated problem-solving. Not saying this justification doesn't exist, just that it needs to be given over and over again.</p>",
+        "id": 590397207,
+        "sender_full_name": "Martti Karvonen",
+        "timestamp": 1776934102
+    },
+    {
+        "content": "<p>Note that two authors of the \"Compression is all you need\" paper, Eve Bodnia and Michael Freedman, are respectively CEO and \"Chief of Mathematics\" of the AI company <a href=\"https://logicalintelligence.com/\">Logical Intelligence</a>. So it seems to me that their goal <em>is</em> to some extent to automate parts of human mathematics, as maybe witnessed by the following sentence (page 4):</p>\n<blockquote>\n<p>The goal is to give AI agents exploring formal mathematics a sense of direction: stay where compression is possible.</p>\n</blockquote>\n<p>Another clue is that the title \"Compression is all you need\" is a nod to the paper that introduced the transformer architecture used in LLMs, <a href=\"https://en.wikipedia.org/wiki/Attention_Is_All_You_Need\">Attention Is All You Need</a>.</p>",
+        "id": 590401669,
+        "sender_full_name": "Pablo Donato",
+        "timestamp": 1776935256
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"934428\">Ruby Khondaker (she/her)</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/Human.20math.20vs.20Formal.20math/near/590236813\">said</a>:</p>\n<blockquote>\n<p>It does seem like the Luddites have been unfairly slandered</p>\n</blockquote>\n<p>I don't think whether the historical Luddites were 'good' or 'bad' is particularly relevant to the present situation, but in any case, I found <a href=\"https://www.verysane.ai/p/against-the-luddites\">this essay</a> pretty convincing that the bad reputation of the Luddites is deserved after all.</p>",
+        "id": 590405871,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1776936382
+    },
+    {
+        "content": "<p>Given that: <a href=\"https://conceptualmathematics.wordpress.com/wp-content/uploads/2014/01/fifty-years-of-functorial-semantics.pdf\">Natural structure with respect to a given doctrine is a    precise mathematical model for a very general scientific process of concept formation</a>, do you still think conceptualization can't be relegated, if not now, then sometime later, to machines?  At the risk of self-promoting, <a href=\"https://philpapers.org/archive/VENFSF.pdf\">if measurements of properties of a given category of particulars can be construed as representable functors, then the corresponding representing objects along with their incidence relations constitute the theory subcategory of the given category</a>, which readily lends itself to be relegated to computers, although not to the current variant AI fixated on particulars, not realizing that any particular is infinite, and hence the scientific resort to abstracting concepts with respect to a limited doctrine (cf. Maxwell; see <a href=\"https://www.amacad.org/sites/default/files/daedalus/downloads/Su2006_On-Body-in-Mind.pdf\">Fodor's dog</a> for an entertaining account).  The theory theory  of concepts championed by <a href=\"https://www.alisongopnik.com/Papers_Alison/Gopnik_HumeStudies_withTOC.pdf\">Professor Alison Gopnik</a> aligns with above mathematical abstraction of concepts (cf. <a href=\"http://tac.mta.ca/tac/reprints/articles/5/tr5.pdf\">functorial semantics of Professor F. William Lawvere</a>, <a href=\"https://mes-ehres.fr/ChEh/oeuvres/Ehresmann_C.-Oeuvres_IV_1.pdf\">sketches of Professor Andree Ehresmann</a>, and <a href=\"https://conceptualmathematics.wordpress.com/wp-content/uploads/2013/02/lawvereinterview.pdf\">descent of Grothendieck</a>).  The profound resemblance / parallels between ordinary concepts and scientific conceptualization have been noted by, among others, <a href=\"https://www.amacad.org/sites/default/files/daedalus/downloads/Daedalus_Fa03_On-Science.pdf\">Einstein</a>, <a href=\"https://inference-review.com/article/categories-from-zero-to-infinity\">Schapira</a>, and <a href=\"https://conceptualmathematics.wordpress.com/2022/08/30/what-are-foundations-of-geometry-and-algebra/\">Professor F. William Lawvere</a>.</p>\n<p>Lastly, the <a href=\"http://www.tac.mta.ca/tac/reprints/articles/16/tr16.pdf\">conceptual-formal duality</a> involves two adjoints pairs: theory-representations and theory-presentations, with theory as the common category making words / symbol strings meaningful.</p>\n<p>In closing, <a href=\"https://claude.ai/share/d67d15c4-c2f7-439c-9271-fa03be2a9d22\">most AIs agree that their fixation on particulars is pathological.</a></p>",
+        "id": 590413166,
+        "sender_full_name": "Posina Venkata Rayudu",
+        "timestamp": 1776938407
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"619003\">Peva Blanchard</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/Human.20math.20vs.20Formal.20math/near/582898508\">said</a>:</p>\n<blockquote>\n<p>I recently stumbled upon this paper <a href=\"https://arxiv.org/pdf/2603.20396v1\">Compression is all you need</a> which proposes a criterion to distinguish \"human mathematics\" (the mathematics humans discover and value) from \"formal mathematics\" (the totality of all valid deductions).</p>\n</blockquote>\n<p>They claim that a certain theorem in mathlib:</p>\n<blockquote>\n<p>when fully unwrapped, reaches approximately <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>10</mn><mn>104</mn></msup></mrow><annotation encoding=\"application/x-tex\">10^{104}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\">1</span><span class=\"mord\"><span class=\"mord\">0</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">104</span></span></span></span></span></span></span></span></span></span></span></span> primitive terms</p>\n</blockquote>\n<p>which is so big to be absurd? Unless I misunderstood, the way they compute this number is they take the DAG of lemmas used in a theorem and 'unroll it' to its universal covering tree. Then they look at the size of this tree (presumably number of nodes, but I guess this is basically on the same order of magnitude as the leaves). I don't understand why this is a useful metric though.</p>\n<p>I confess I didn't read through but I also don't understand why the free non/abelian monoid on a finite alphabet is a good model of compression? What has abelianity do with it?</p>",
+        "id": 590678390,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1777026815
+    },
+    {
+        "content": "<p>Ultimately, I agree with their 'conclusion', namely that HM is a very small subset of FM, which is why logicism is absurd, and that much of mathematics is indeed managing the explosive growth of complexity by making good use of hierarchical concepts. I even wrote a <a href=\"https://matteocapucci.eu/math-is-a-language/\">blog post about it</a> some years ago.</p>",
+        "id": 590678723,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1777026939
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"673117\">John Onstead</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/Human.20math.20vs.20Formal.20math/near/590290929\">said</a>:</p>\n<blockquote>\n<p>At least from my perspective, there seems to be no barrier, in terms of the laws of physics, stopping someone from training an AI model to solve problems <em>exactly like</em> a human mathematician (just obviously a lot faster and more efficiently).</p>\n</blockquote>\n<p>One barrier might be Gödelian arguments, such as the  Gödel-Lucas-Penrose argument. <a href=\"https://consc.net/papers/penrose.html\">Chalmers puts it as:</a></p>\n<blockquote>\n<p>The argument is given in a somewhat indirect form, involving complex procedures by which a given formal system might have evolved, but its basic structure is very simple. In a simplified and somewhat loose form, the argument goes as follows:</p>\n<p>(1) Assume my reasoning powers are captured by some formal system <em>F</em> (to put this more briefly, \"I am F\"). Consider the class of statements I can know to be true, <em>given</em> this assumption.</p>\n<p>(2) Given that I know that I am <em>F</em>, I know that <em>F</em> is sound (as I know that I am sound). Indeed, I know that the larger system <em>F'</em> is sound, where <em>F'</em> is <em>F</em> supplemented by the further assumption \"I am <em>F</em>\". (Supplementing a sound system with a true statement yields a sound system.)</p>\n<p>(3) So I know that <em>G(F')</em> is true, where this is the Gödel sentence of the system <em>F'</em>.</p>\n<p>(4) But <em>F'</em> could not see that <em>G(F')</em> is true (by Gödel's theorem).</p>\n<p>(5) By assumption, however, I am now effectively equivalent to <em>F'</em>. After all, I am <em>F</em> supplemented by the knowledge that I am <em>F</em>.</p>\n<p>(6) This is a contradiction, so the initial assumption must be false, and <em>F</em> must not have captured my powers of reasoning after all.</p>\n<p>(7) The conclusion generalizes: my reasoning powers cannot be captured by any formal system.</p>\n<p>Strictly speaking, the conclusion that must be drawn is that I cannot <em>know</em> that I am identical to a formal system <em>F</em>; in showing that I can see the truth of <em>G(F')</em>, we assumed not just that I am <em>F</em> but that I know I am <em>F</em>. But this is still a strong conclusion. For example, it would rule out even the possibility that we could empirically discover that we were identical to some system <em>F</em> - if we were to \"discover\" this, the reasoning would lead us to a contradiction. So even this would be threatening to the prospects of AI.</p>\n</blockquote>",
+        "id": 591220656,
+        "sender_full_name": "V Slicer",
+        "timestamp": 1777319772
+    },
+    {
+        "content": "<p>Nothing prevents the \"I\" in Chalmers' argument from being an artificial intelligence.  At least nothing in the argument prevents it.</p>",
+        "id": 591252004,
+        "sender_full_name": "John Baez",
+        "timestamp": 1777334195
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"1070312\">V Slicer</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/Human.20math.20vs.20Formal.20math/near/591220656\">said</a>:</p>\n<blockquote>\n<p>formal system</p>\n</blockquote>\n<p>Also I don't see how AI = formal system. Current models are nothing like that!</p>",
+        "id": 591306018,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1777363170
+    },
+    {
+        "content": "<p>The argument by Penrose, summarized there by Chalmers, is meant to show the falsity of the computational theory of mind. This is a stronger claim that encompasses all possible algorithmic implementations including all existing large language models. Penrose would agree that 'artificial intelligence' is possible, if we're using it as actually artificial and not simply algorithmic. He argues that reality and what we know of physics isn't limited to the algorithmic so it would be in principle possible.</p>",
+        "id": 591316182,
+        "sender_full_name": "V Slicer",
+        "timestamp": 1777365969
+    },
+    {
+        "content": "<p>Gödel shared his view in his “Gibbs lecture” in 1951:</p>\n<blockquote>\n<p>So the following disjunctive conclusion is inevitable: Either mathematics is incompletable in this sense, that its evident axioms can never be comprised in a finite rule, that is to say, the human mind (even within the realm of pure mathematics) infinitely surpasses the powers of any finite machine, or else there exist absolutely unsolvable diophantine problems of the type specified . . . (Gödel 1995: 310).</p>\n</blockquote>",
+        "id": 591317448,
+        "sender_full_name": "V Slicer",
+        "timestamp": 1777366341
+    },
+    {
+        "content": "<p>My interrogation on starting this thread was more about \"how do human do maths?\" rather than \"is it possible for AI to do maths, and how?\". The paper \"compression is all you need\" proposes some intriguing combinatorial criterion on the output of this human activity, namely \"human mathematics\".</p>\n<p>But now, I am wondering about the process of humans doing math, rather than its output. I am wondering if some sociologists (or anthropologists?) have led empirical inquiries on that topic. E.g.</p>\n<ul>\n<li>what are the individual motivations, justifications?</li>\n<li>what are the groups, their practices and rituals?</li>\n<li>what are the artefacts and tools?</li>\n<li>etc.</li>\n</ul>\n<p>I'm sure a lot of answers to these questions will look obvious to us. But it will be nice to have a comprehensive dataset.</p>",
+        "id": 591331711,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1777369884
+    },
+    {
+        "content": "<p>In that direction, I recall  Gowers' essay on the <a href=\"https://www.dpmms.cam.ac.uk/~wtg10/2cultures.pdf\">two cultures</a>, i.e. theory-builders vs problem-solvers. But it is an essay (well-informed, for sure), not an actual empirical investigation.</p>",
+        "id": 591331776,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1777369906
+    },
+    {
+        "content": "<p>Oh,  and also <a href=\"https://www.math.columbia.edu/~harris/website/mathematics-without-apologies\">Mathematics without apologies</a>, but again not an actual empirical investigation.</p>",
+        "id": 591331968,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1777369952
+    }
+]

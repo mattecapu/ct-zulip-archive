@@ -1,0 +1,44 @@
+[
+    {
+        "content": "<p>The ordinary cube category has one object per dimension, right?</p>\n<p>But if I want to define the underlying data of a double category -- the analogue of a quiver for a category -- as a presheaf, the source should have two one-dimensional objects, for the tight and loose directions. Similarly, in three dimensions you should have 3 one-dimensional and 3 two-dimensional objects. The pattern continues in Pascal's triangle.</p>\n<p>Pretty sure the resulting category can be described in any dimension d as the poset of sub-linear-orders of [0..d-1], with inclusions replaced by triples<br>\n<img alt=\"cube.png\" class=\"inline-image\" data-original-content-type=\"image/png\" data-original-dimensions=\"421x184\" data-original-src=\"/user_uploads/21317/OOwMqaWqWAoLnkEMpTzUwjDL/cube.png\" src=\"/user_uploads/thumbnail/21317/OOwMqaWqWAoLnkEMpTzUwjDL/cube.png/840x560.webp\">. Also reminds of k-blades in clifford algebras.</p>\n<p>Is there a name for this object?</p>",
+        "id": 613332129,
+        "sender_full_name": "James Gilles",
+        "timestamp": 1785296688
+    },
+    {
+        "content": "<p>It's actually just the dth power of the category you drew, which is itself the globe category, simplex category, or cube category truncated to dimension 1.</p>",
+        "id": 613333269,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1785297392
+    },
+    {
+        "content": "<p>(Alternately, it's the category on which quivers are presheaves.)</p>",
+        "id": 613333469,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1785297473
+    },
+    {
+        "content": "<p>The category you're trying to build, as a locally presentable category, is the dth tensor power of the category of quivers, and it is reasonable to call that category the \"d-fold quivers\" or something similar.</p>",
+        "id": 613333778,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1785297628
+    },
+    {
+        "content": "<p>Oh, huh, right. That makes sense.</p>\n<p>Is there any standard way to derive the composition / coherence equations you need in this context? It seems like it might be slightly easier in this setting where you can't permute dimensions and there's limited globularity complicating things. (I'm thinking of Shulman's paper where he constructs monoidal bicategories from monoidal double categories).</p>\n<p>This sort of construction seems good when you want different behavior in different directions. So that behavior will probably need its own coherence in practice. But I'm wondering about the, like, barest possible coherence without going to infinity stuff. (Idk if that is a well formed question.)</p>",
+        "id": 613350044,
+        "sender_full_name": "James Gilles",
+        "timestamp": 1785306448
+    },
+    {
+        "content": "<p>Normally I don't think of a \"quiver\" as having reflexivity/identity edges.</p>",
+        "id": 613351408,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1785307099
+    },
+    {
+        "content": "<p>Hm, yeah.  These are actually \"n-fold reflexive quivers\", I guess.  You could use actual \"n-fold quivers\" too of course, if you wanted things to look more like the ordinary category case and less like cubical sets.  (They would look like semi-cubical sets instead.)</p>",
+        "id": 613358689,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1785310118
+    }
+]

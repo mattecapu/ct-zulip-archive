@@ -1,0 +1,62 @@
+[
+    {
+        "content": "<p>Let (A, U) and (B, V) be two concrete categories over a category X. One can define a subcategory C of A × B whose objects (a, b) satisfy Ua = Vb and whose morphisms (f, g) satisfy Uf = Vg. If I am not mistaken, C is just the pullback of U and V. Does anyone have any reference with some theory about these kinds of categories?</p>",
+        "id": 420817989,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707586161
+    },
+    {
+        "content": "<p>Your description is very abstract, which of course we like as category theorists, but abstraction also means excluding information to focus on the (presumed) salient details of the problem. Maybe premature but my initial reaction is that not much can be said other than what follows from general properties of the pullbacks.<br>\nDo you have any questions in mind? For example, many classes of morphisms are stable under pullback, so if you have a conjecture of the form \"if U has property P, then the canonical functor C -&gt; B also has property P\" then we could discuss this.</p>",
+        "id": 420822300,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1707589761
+    },
+    {
+        "content": "<p>A minor comment: In general, imposing an equality of objects \"Ua = Vb\" isn't very sensible unless at least one of the functors U, V is an isofibration, which typically for concrete categories they always are (maybe it's part of your definition of concrete category?)</p>",
+        "id": 420827026,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1707593452
+    },
+    {
+        "content": "<blockquote>\n<p>Do you have any questions in mind?</p>\n</blockquote>\n<p>Yes. Let W : C → X be the obvious forgetful functor. What can we say about W if both U and V are e.g. topological or monadic or solid? What about the case where e.g. U is monadic and V is topological. If A' is a reflective subcategory of A, is there are corresponding reflective subcategory in C?</p>",
+        "id": 420828609,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707594989
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Concrete.20product.20categories/near/420827026\">said</a>:</p>\n<blockquote>\n<p>A minor comment: In general, imposing an equality of objects \"Ua = Vb\" isn't very sensible unless at least one of the functors U, V is an isofibration, which typically for concrete categories they always are (maybe it's part of your definition of concrete category?)</p>\n</blockquote>\n<p>And a followup minor comment: instead of using an equation here I would by default specify an isomorphism.  Thus, instead of using the <em>pullback</em> of U and V I would use their <a href=\"https://ncatlab.org/nlab/show/2-pullback\">[[2-pullback]]</a>.  There are various flavors of 2-pullback but I usually use the <a href=\"https://ncatlab.org/nlab/show/comma+object\">iso-comma object</a>.   But when at least one of U or V is an isofibration this is equivalent to the pullback.</p>",
+        "id": 420829281,
+        "sender_full_name": "John Baez",
+        "timestamp": 1707595638
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276480\">Reid Barton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Concrete.20product.20categories/near/420827026\">said</a>:</p>\n<blockquote>\n<p>A minor comment: In general, imposing an equality of objects \"Ua = Vb\" isn't very sensible unless at least one of the functors U, V is an isofibration, which typically for concrete categories they always are (maybe it's part of your definition of concrete category?)</p>\n</blockquote>\n<p>It is sensible though. Suppose U : Top → Set and V : PreOrd → Set. Then the pullback of U and V gives me the category of preordered topological spaces, which is a category that I need to deal with in my research.</p>",
+        "id": 421155690,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707784283
+    },
+    {
+        "content": "<p>Yes, because in this case both of your functors are isofibrations.</p>",
+        "id": 421160916,
+        "sender_full_name": "Reid Barton",
+        "timestamp": 1707788094
+    },
+    {
+        "content": "<p>Not sure what isofibrations are, but they are both topological and the pullback will also end up being topological.</p>",
+        "id": 421161362,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707788426
+    },
+    {
+        "content": "<p>A <a href=\"https://ncatlab.org/nlab/show/topological%20concrete%20category\">[[topological concrete category]]</a> (in the strict sense) is always an <a href=\"https://ncatlab.org/nlab/show/isofibration\">[[isofibration]]</a>.</p>",
+        "id": 421165047,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1707791062
+    },
+    {
+        "content": "<p>Ah, so \"isofibration\" is what is called \"transportable\" in the topological categories literature.</p>",
+        "id": 421228850,
+        "sender_full_name": "Bernd Losert",
+        "timestamp": 1707825502
+    }
+]

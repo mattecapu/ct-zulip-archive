@@ -1,0 +1,110 @@
+[
+    {
+        "content": "<p>I'm trying to learn how to make LaTeX more accessible and wanted to ask if anyone has any experience embedding alt text for commutative diagrams (drawn in my case with tikzcd) inside a LaTeX document. </p>\n<p>I've read some <a href=\"https://epubs.siam.org/pb-assets/files/Preparing%20Accessible%20Mathematics%20Content.pdf\">useful author guidelines</a> on preparing accessible mathematical content that describe how to do this for graphics included with <code>\\includegraphics</code> but my tikzcd diagrams are drawn in a normal displayed equation environment. Those guidelines do discuss alt text for code generated figures:</p>\n<blockquote>\n<p>If the code-generated figure is relatively complex with code much longer than a description of the figure’s key takeaway, e.g., a complex commutative diagram or a collection of curves on a surface, then include descriptive alt text as per the guidelines above</p>\n</blockquote>\n<p>but suggest including this as a separate file. The file I have in mind has a huge number of figures, most of which are not labeled, so I don't like this solution. I'd rather embed the alt text near the source code in the LaTeX file itself. Does anyone have any pointers?</p>",
+        "id": 593534999,
+        "sender_full_name": "Emily Riehl",
+        "timestamp": 1778162771
+    },
+    {
+        "content": "<p>Eg the best idea I've had is to create a macro called <code>\\alt-text{}</code> taking one argument (the natural language alt text) and displaying nothing. But this is a naive idea and I'd love a better one.</p>",
+        "id": 593535459,
+        "sender_full_name": "Emily Riehl",
+        "timestamp": 1778162872
+    },
+    {
+        "content": "<p>Maybe <span class=\"user-mention\" data-user-id=\"309103\">@Carlo Angiuli</span> has a suggestion? (I'm recalling <a href=\"https://www.carloangiuli.com/pages/accessible-latex.html\">https://www.carloangiuli.com/pages/accessible-latex.html</a>)</p>",
+        "id": 593540724,
+        "sender_full_name": "Tom de Jong",
+        "timestamp": 1778164049
+    },
+    {
+        "content": "<p>By alt-text, do you mean \"a written description of what the diagram contains\", like \"A square with corners A,B,C,D, and arrows f,g,h,k, such that...\" or something else?</p>",
+        "id": 593598402,
+        "sender_full_name": "fosco",
+        "timestamp": 1778178996
+    },
+    {
+        "content": "<p>Yes, that's the idea. I shudder to think what Igor Bakovic's worst/best diagrams would need to describe them.</p>",
+        "id": 593700382,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1778222889
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276422\">David Michael Roberts</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/alt.20text.20for.20commutative.20diagrams/near/593700382\">said</a>:</p>\n<blockquote>\n<p>Yes, that's the idea. I shudder to think what Igor Bakovic's worst/best diagrams would need to describe them.</p>\n</blockquote>\n<p>I̴̺̖͛̓ ̶̛͍̞̐a̵̗͒̈́̈́͜m̸̖̈ ̷̗̪̆a̵̭̣̩͊͝ ̸̧͊̒͂d̴͚͌́͒i̵̘͑a̷̡͍̿̕g̷̗͐͑͆r̸̨̾̀͠a̵̢̛͘m̵̦̮̎͂ ̸̲̂̅-̶̲̬̓̕ ̶̭̯̔̊b̸͇͋͒̈ḛ̴̈̽ ̷̻̆̇̅n̵̢̥̂ó̸̯̗̙͒ẗ̴̠́̏ ̵̺̰̑ḁ̵̠̒͑f̴̠̩̄r̵͙͈̋͋̇a̶̦̫̩͗́i̶͔͊͝d̵͓̩̈</p>",
+        "id": 593710479,
+        "sender_full_name": "fosco",
+        "timestamp": 1778225992
+    },
+    {
+        "content": "<p>Yes, I'm going to experiment with what the guidelines characterize as \"descriptive alt text,\" meaning roughly 150 characters summarizing the main takeaway. As the recommendation for simple figures is to have the LaTeX source serve as the alt text, I may only do this for the more complicated diagrams, but we'll see.</p>",
+        "id": 593868872,
+        "sender_full_name": "Emily Riehl",
+        "timestamp": 1778269407
+    },
+    {
+        "content": "<p>Probably the simplest diagrams can have their implied equations or higher-cells definitions as alt-text?</p>",
+        "id": 593950243,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1778312791
+    },
+    {
+        "content": "<p>Tikzcd code is basically a labelled directed graph, so the lowest effort solution would be to include the tikzcd code as the alt text. Presumably many of the people reading it would already be familiar with tikzcd syntax.</p>",
+        "id": 594112965,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1778427690
+    },
+    {
+        "content": "<p>I don't believe that would be much better than nothing: tikzcd contains a lot of symbols, which screen readers aren't particularly good at dealing with.</p>",
+        "id": 594270195,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1778500299
+    },
+    {
+        "content": "<p>Who is the alt-text for? Is it for people who can see, but only badly, or people who have gone blind or people who have been blind from birth? I imagine what a useful description is could be different in these different cases.</p>\n<p>It's an interesting and difficult / maybe impossible problem to think how complicated diagrams could possibly be described in a comprehensible way. I'm not convinced 150 characters would be enough.</p>\n<p>I guess an advantage of having the source code would be that, even if it isn't directly useful, it can be copied into an llm or something and the  reader can ask it whatever questions they want about what the diagram looks like, though I don't know how good llms are at understanding the layout of diagrams from source code these days and maybe taking a screenshot would work better.</p>",
+        "id": 595044643,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1778751008
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"386922\">@Graham Manuell</span> there are plenty of standards (some of them legal) for the content of alt-text; <a href=\"https://www.communications.gov.uk/guidance/accessible-communications/accessibility-standards/#Alt-text-for-images,-graphs-and-tables\">here</a> is a standard set by the UK government for its communications, for example. But I understood Emily's question to be a practical one: PDF readers and screen readers can parse alt-text to be displayed or read aloud, respectively; it would be nice to have a standard way to achieve this in LaTeX in order to meet those standards where they exist (or even when they don't).</p>",
+        "id": 595051323,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1778753453
+    },
+    {
+        "content": "<p>I did understand it as a technical question about LaTeX and that's important, but I thought it was also worth discussing how to actually describe the diagrams. If it's just about satisfying some legal conditions that's fine, but it's probably also a good idea to actually make the descriptions useful.</p>",
+        "id": 595054742,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1778754808
+    },
+    {
+        "content": "<p>The standards set expectations about the function of the alt-text, but you're right that it doesn't answer what we should be aiming for, since just describing the topology/shape of the diagram isn't necessarily helpful. <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span></p>",
+        "id": 595084899,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1778766465
+    },
+    {
+        "content": "<p>I agree with Graham, there is an extremely interesting question behind the mere technical problem. What does a diagram convey?</p>",
+        "id": 595230901,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1778826274
+    },
+    {
+        "content": "<p>Hi, this isn't answering Emily's question, nor will it be new to many people here, but I just want to recommend the article <a href=\"https://www.ams.org/notices/200210/comm-morin.pdf\">the World of Blind Mathematicians</a>, in the AMS, to anyone who hasn't read it.  I especially liked the anecdote on page 1250 about the conference room plunged into darkness, and yet people, blind <em>and</em> sighted, were able to follow the lecture without any visual aids.</p>",
+        "id": 595928518,
+        "sender_full_name": "Joshua Wrigley",
+        "timestamp": 1779135630
+    },
+    {
+        "content": "<p>Thanks, what a fascinating read! It's fun because I was reading about Morin's proof of the sphere eversion a few days ago, and I was amazed to learn of his blindness. It reminded me of Thurston's strabism which allegedly make him unable to perceive depth without effort, and once he learned to do that, going one dimension higher wasn't such a big deal.</p>",
+        "id": 596170239,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1779197839
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"386922\">Graham Manuell</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/alt.20text.20for.20commutative.20diagrams/near/595044643\">said</a>:</p>\n<blockquote>\n<p>I guess an advantage of having the source code would be that, even if it isn't directly useful, it can be copied into an llm or something and the  reader can ask it whatever questions they want about what the diagram looks like, though I don't know how good llms are at understanding the layout of diagrams from source code these days and maybe taking a screenshot would work better.</p>\n</blockquote>\n<p>Recently I was pondering the use of <a href=\"https://arxiv.org/abs/2502.14437\">rule-based NLG systems</a> for expressing structured information. In <a href=\"https://arxiv.org/abs/2007.04454\">Explaining Natural Language Query Results</a> it's done for database queries. The reader would be able to query information about the graph, the author could include some queries that capture interesting information, or there could be some standard queries included for that sort of graph.</p>",
+        "id": 596831701,
+        "sender_full_name": "V Slicer",
+        "timestamp": 1779391521
+    }
+]

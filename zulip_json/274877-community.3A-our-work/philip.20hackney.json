@@ -1,0 +1,92 @@
+[
+    {
+        "content": "<p>a couple blog posts (the first of which was written roughly a year ago), both related to 2-Segal spaces:</p>\n<ul>\n<li><a href=\"http://phck.net/post/2-segal-spaces-and-delta-s.html\">2-Segal spaces and ΔS</a></li>\n<li><a href=\"http://phck.net/post/against-active-inert.html\">against active-inert pushouts</a></li>\n</ul>\n<p>(there was only one other post before this, from more than a decade ago!)</p>",
+        "id": 595137527,
+        "sender_full_name": "philip hackney",
+        "timestamp": 1778782530
+    },
+    {
+        "content": "<p>This week I'm making some small revisions to \"<a href=\"https://arxiv.org/abs/2605.26199\">On partial groups of small order</a>\" (which I posted on arxiv about a bit more than a month ago), to get it ready for journal submission.</p>",
+        "id": 607648738,
+        "sender_full_name": "philip hackney",
+        "timestamp": 1782921037
+    },
+    {
+        "content": "<p>This paper is about a computer enumeration of Chermak's \"partial groups\", which I prefer to view as a certain kind of symmetric simplicial set. They are like groups except the n-to-1 multiplications are only partially defined (in a controlled way). I'm still a bit shocked that I could do this at all, though there are a LOT of partial groups, way more than I would've guessed (over 179 million of order ≤ 10).</p>",
+        "id": 607649522,
+        "sender_full_name": "philip hackney",
+        "timestamp": 1782921249
+    },
+    {
+        "content": "<p>More concretely, a partial group is a symmetric simplicial set which 1) is reduced X₀ = *, and 2) has the usual Segal maps being injective functions. [Groupoids are essentially symmetric sets where the Segal maps are bijective functions.]</p>",
+        "id": 607650341,
+        "sender_full_name": "philip hackney",
+        "timestamp": 1782921466
+    },
+    {
+        "content": "<p>One thing that's fun about having 140GB of partial groups sitting on your computer is you can run experiments on them. For instance, you might notice that every 4-Segal partial group of order ≤ 10 is 2-coskeletal. Then you can try to prove the that it's just always true! (OK I originally noticed this for order ≤ 9, which is only ~30MB of partial groups.)</p>",
+        "id": 607897929,
+        "sender_full_name": "philip hackney",
+        "timestamp": 1783012679
+    },
+    {
+        "content": "<p>But what you might not notice is that your proof of 4-Segal =&gt; 2-coskeletal doesn't depend much on 2. For that you need Justin Lynd to point out that maybe you really proved 2k-Segal =&gt; k-coskeletal (for k≥2). <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+        "id": 607898456,
+        "sender_full_name": "philip hackney",
+        "timestamp": 1783012852
+    },
+    {
+        "content": "<p>The updated version of this enumeration paper is <a href=\"https://arxiv.org/abs/2605.26199\">now available on the arxiv</a> and submitted somewhere. I wrote a new abstract. The paper has definitely been improved based on comments from friends. (and me rereading it and groaning at a couple things)</p>",
+        "id": 608983453,
+        "sender_full_name": "philip hackney",
+        "timestamp": 1783516806
+    },
+    {
+        "content": "<p>At the same time, I also updated a related paper with Salati &amp; Lynd on arxiv, which is now called <a href=\"https://arxiv.org/abs/2603.03167\">binary partial groups</a>. (previously \"partial groups as partial groups\"). It's about how to regard unital partial magmas with inverses as partial groups in two ways -- a 2-skeletal way, and a 2-coskeletal way.</p>",
+        "id": 608984204,
+        "sender_full_name": "philip hackney",
+        "timestamp": 1783516971
+    },
+    {
+        "content": "<p>What I learned writing the BPG paper really had a big impact on the enumeration project. Earlier algorithms were a bit \"top down\" and much less capable, but the best algorithm I know <em>starts</em> by enumerating all the BPGs carried on a fixed involutive set. And then once you have a fixed BPG, you try to make 3-dimensional extensions of the underlying 2D-partial group, then 4D-extensions of each 3D-partial group, etc. Works pretty well for small orders.</p>",
+        "id": 608985862,
+        "sender_full_name": "philip hackney",
+        "timestamp": 1783517358
+    },
+    {
+        "content": "<p>Here's a fact about simplicial sets: X is isomorphic to the nerve of a category if and only if X is 2-coskeletal and the Segal maps in dimensions 2 and 3 are bijections. A variant of this is on <a href=\"https://ncatlab.org/nlab/show/simplicial+skeleton#CoskeletalityOfSimplicialNervesOfCategories\">nlab</a> but instead with strict fillers for inner 2 &amp; 3 dimensional horns.</p>",
+        "id": 612575951,
+        "sender_full_name": "philip hackney",
+        "timestamp": 1784899150
+    },
+    {
+        "content": "<p>A version of this is also known for <a href=\"https://ncatlab.org/nlab/show/higher+Segal+space\">2-Segal sets</a>. Bergner–Osorno–Ozornova–Rovelli–Scheimbauer showed that every 2-Segal set is 3-coskeletal (<a href=\"https://arxiv.org/abs/1609.02853\">Corollary 1.7</a>) and somewhat later Walker Stern showed (<a href=\"https://www.walkerstern.com/assets/pdf/Survey_draft3.pdf\">Proposition 4.9</a>) that if a simplicial set X is 3-coskeletal and satisfies the 2-Segal conditions corresponding to the square and the pentagon (these are conditions on sets of 3 and 4 simplices), then it is 2-Segal.</p>",
+        "id": 612577663,
+        "sender_full_name": "philip hackney",
+        "timestamp": 1784899698
+    },
+    {
+        "content": "<p>I'm finishing up a note that does something similar for d-Segal sets: a simplicial set is d-Segal iff it's \"d-Segal in dimensions d+1 and d+2\" and is (d+1)-coskeletal. (The real theorem is a bit better than this, splitting into upper/lower variants, and for the reverse direction only asking for (d+2)-coskeletal.)</p>",
+        "id": 612578500,
+        "sender_full_name": "philip hackney",
+        "timestamp": 1784899933
+    },
+    {
+        "content": "<p>This is a question Stern asked a long time ago, and I made some partial progress more than three years ago but didn't ever push through to the end -- it was a bit too annoying, too many cases to deal with.</p>",
+        "id": 612579466,
+        "sender_full_name": "philip hackney",
+        "timestamp": 1784900230
+    },
+    {
+        "content": "<p>Also this isn't true at all for simplicial spaces/anima/∞-groupoids. If M is a space, then the associated constant simplicial space is automatically d-Segal for all d. But that constant simplicial space being n-coskeletal boils down, more or less, to the iterated loop space <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"normal\">Ω</mi><mi>n</mi></msup><mi>M</mi></mrow><annotation encoding=\"application/x-tex\">\\Omega^n M</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\"><span class=\"mord\">Ω</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span><span class=\"mord mathnormal\" style=\"margin-right:0.109em;\">M</span></span></span></span> being contractible. So we can break it with an Eilenberg–MacLane space or a sphere.</p>",
+        "id": 612580826,
+        "sender_full_name": "philip hackney",
+        "timestamp": 1784900662
+    },
+    {
+        "content": "<p>The preprint of this coskeletality result is <a href=\"https://arxiv.org/abs/2607.24476\">now up on arxiv</a>. </p>\n<p>While working on the paper I did some calculations of d-Segality for a couple standard simplicial-set models of the n-sphere, namely <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi mathvariant=\"normal\">Δ</mi><mi>n</mi></msup><mi mathvariant=\"normal\">/</mi><mi mathvariant=\"normal\">∂</mi><msup><mi mathvariant=\"normal\">Δ</mi><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\Delta^n/\\partial \\Delta^n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord\">Δ</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span><span class=\"mord\">/</span><span class=\"mord\" style=\"margin-right:0.0556em;\">∂</span><span class=\"mord\"><span class=\"mord\">Δ</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∂</mi><msup><mi mathvariant=\"normal\">Δ</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><annotation encoding=\"application/x-tex\">\\partial \\Delta^{n+1}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\" style=\"margin-right:0.0556em;\">∂</span><span class=\"mord\"><span class=\"mord\">Δ</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">n</span><span class=\"mbin mtight\">+</span><span class=\"mord mtight\">1</span></span></span></span></span></span></span></span></span></span></span></span>, which are 2n-Segal and (n+1)-Segal, respectively (and no lower... except the first case when n is odd you can do a little bit better). Here is a <a href=\"http://phck.net/post/spheres.html\">blog post</a> which states this more precisely, and has a linked PDF with details.</p>",
+        "id": 613610718,
+        "sender_full_name": "philip hackney",
+        "timestamp": 1785405732
+    }
+]
