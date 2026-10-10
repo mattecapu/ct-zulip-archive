@@ -1,0 +1,188 @@
+[
+    {
+        "content": "<p>[You can replace \"Grothendieck toposes\" with \"toposes bounded over S\" for your favourite elementary topos S if you like.]<br>\nThe initial topos (the degenerate one) is a strict 2-initial object. One can construct coproducts of toposes as the product of their underlying categories. The boundedness/Grothendieck restriction is enough to guarantee the existence of pullbacks, and the pullback of the coproduct inclusions is the initial category, so coproducts are disjoint (two toposes are complementary clopen subtoposes in their coproduct). We're in good shape, so the question is, is this 2-category extensive (in the most straightforward sense that one can generalize extensivity to this setting)? Has anyone written about this?</p>\n<p>A related question whose answer is not necessarily determined by the above: are unions of subtoposes preserved by pullbacks in this topos? They are stable by pullback along inclusions, but what about surjections?</p>",
+        "id": 527537235,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1751913360
+    },
+    {
+        "content": "<p>After showing that the product of logoses is the coproduct of toposes (B3.4.1), <em>Sketches of an Elephant</em> remarks </p>\n<blockquote>\n<p>Also, coproducts are disjoint and stable under pullback; for we can identify <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">E</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{E}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08944em;\">E</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">F</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{F}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.09931em;\">F</span></span></span></span> with the complementary open subtoposes <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"script\">E</mi><mo>×</mo><mi mathvariant=\"script\">F</mi><mo stretchy=\"false\">)</mo><mi mathvariant=\"normal\">/</mi><mo stretchy=\"false\">(</mo><mn>1</mn><mo separator=\"true\">,</mo><mn>0</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\mathcal{E}\\times\\mathcal{F})/(1,0)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathcal\" style=\"margin-right:0.08944em;\">E</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.09931em;\">F</span><span class=\"mclose\">)</span><span class=\"mord\">/</span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">0</span><span class=\"mclose\">)</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"script\">E</mi><mo>×</mo><mi mathvariant=\"script\">F</mi><mo stretchy=\"false\">)</mo><mi mathvariant=\"normal\">/</mi><mo stretchy=\"false\">(</mo><mn>0</mn><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\mathcal{E}\\times\\mathcal{F})/(0,1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathcal\" style=\"margin-right:0.08944em;\">E</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.09931em;\">F</span><span class=\"mclose\">)</span><span class=\"mord\">/</span><span class=\"mopen\">(</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span> of the coproduct, and any geometric morphism <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo>:</mo><mi mathvariant=\"script\">G</mi><mo>→</mo><mi mathvariant=\"script\">E</mi><mo>×</mo><mi mathvariant=\"script\">F</mi></mrow><annotation encoding=\"application/x-tex\">f:\\mathcal{G} \\to \\mathcal{E}\\times\\mathcal{F}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7805em;vertical-align:-0.0972em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.0593em;\">G</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08944em;\">E</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.09931em;\">F</span></span></span></span> induces a corresponding decomposition <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">G</mi><mo>≃</mo><mi mathvariant=\"script\">G</mi><mi mathvariant=\"normal\">/</mi><msup><mi>f</mi><mo>∗</mo></msup><mo stretchy=\"false\">(</mo><mn>1</mn><mo separator=\"true\">,</mo><mn>0</mn><mo stretchy=\"false\">)</mo><mo>×</mo><mi mathvariant=\"script\">G</mi><mi mathvariant=\"normal\">/</mi><msup><mi>f</mi><mo>∗</mo></msup><mo stretchy=\"false\">(</mo><mn>0</mn><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathcal{G} \\simeq \\mathcal{G}/f^*(1,0) \\times \\mathcal{G}/f^*(0,1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7805em;vertical-align:-0.0972em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.0593em;\">G</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≃</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.0593em;\">G</span><span class=\"mord\">/</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6887em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">∗</span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\">1</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">0</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">×</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.0593em;\">G</span><span class=\"mord\">/</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6887em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">∗</span></span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span> of its domain.</p>\n</blockquote>",
+        "id": 527543087,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751915229
+    },
+    {
+        "content": "<p>\"Coproducts are disjoint and pullback-stable\" is one definition of extensive for 1-categories.  I don't know offhand whether that is equivalent to something about slice categories as in the 1-categorical case, is that more what you had in mind?</p>",
+        "id": 527543491,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751915339
+    },
+    {
+        "content": "<p>That is what I had in mind, thanks; I suppose the term extensive for this property was popularised after the Elephant was published. I'm still interested in unions of subtoposes though!</p>",
+        "id": 527626886,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1751962276
+    },
+    {
+        "content": "<p>I would expect that you can construct the union of subtoposes by taking their coproduct and then the (surjection, inclusion) factorization.  In which case, pullback-stability of unions should follow from pullback-stability of coproducts and surjections.</p>",
+        "id": 527741934,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1751995322
+    },
+    {
+        "content": "<p>Surjections are not stable under pullback(!)</p>",
+        "id": 527838056,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1752050943
+    },
+    {
+        "content": "<p>Some classes of surjection are stable, but which of the properties ensuring stability will be inherited by the surjection part of the universal morphism from the coproduct is not obvious (some of them might be checkable manually though)</p>",
+        "id": 527838506,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1752051080
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"277473\">@Morgan Rogers (he/him)</span>  I think joins of subtoposes should be stable under pullback. I haven't checked this carefully, but here's an attempt at a proof sketch:</p>\n<p>All toposes are localic over the classifying topos of the theory of objects. The embeddings into an object of this slice 2-category should be the same as embeddings of the underlying topos without considering the geometric morphism. Also pullbacks should be computed in the same way. So the question reduces to that for locales internal to this topos and the result is true for locales.</p>",
+        "id": 531773688,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1753862186
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/527838056\">said</a>:</p>\n<blockquote>\n<p>Surjections are not stable under pullback(!)</p>\n</blockquote>\n<p>!!!</p>\n<p>I guess I more or less knew that, because I knew theorems that, say, open surjections and proper surjections are pullback-stable, and if all surjections were pullback-stable those theorems wouldn't be as important.  But I hadn't really internalized it.</p>\n<p>What's a simple example of a pullback of a surjection that's not a surjection?</p>",
+        "id": 531780390,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1753863980
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"386922\">@Graham Manuell</span> wrote:</p>\n<blockquote>\n<p>All toposes are localic over the classifying topos of the theory of objects.</p>\n</blockquote>\n<p>I wish I understood this, and I think I could, despite my general ignorance of topos theory.   </p>\n<ol>\n<li>What's the classifying topos of the theory of objects?  <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"sans-serif\">S</mi><mi mathvariant=\"sans-serif\">e</mi><mi mathvariant=\"sans-serif\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathsf{Set}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathsf\">Set</span></span></span></span></span>???</li>\n<li>What does it mean to say all toposes are localic over this?</li>\n<li>Why is it true?  I'm actually more interested in a hand-wavy intuitive answer, like \"why it's obvious when you have the right mental picture\", rather than a proof.</li>\n</ol>",
+        "id": 531787735,
+        "sender_full_name": "John Baez",
+        "timestamp": 1753866053
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> I'll give you an example in locales. Let <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">N</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span> be the extended natural numbers with the Scott topology and let <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mspace></mspace><mspace width=\"0.1111em\"/><mo lspace=\"0em\" rspace=\"0.17em\"></mo><mtext> ⁣</mtext><mo lspace=\"0em\" rspace=\"0em\">:</mo><mspace width=\"0.3333em\"/><mi mathvariant=\"double-struck\">N</mi><mo>→</mo><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">f\\colon \\mathbb{N} \\to N</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace nobreak\"></span><span class=\"mspace\" style=\"margin-right:0.1111em;\"></span><span class=\"mpunct\"></span><span class=\"mspace\" style=\"margin-right:-0.1667em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mrel\">:</span></span><span class=\"mspace\" style=\"margin-right:0.3333em;\"></span><span class=\"mord mathbb\">N</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span> be the obvious map from the natural numbers with the discrete topology. This map is an epimorphism in locales (essentially since infinity is a directed join of points in the image). Let <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi><mspace></mspace><mspace width=\"0.1111em\"/><mo lspace=\"0em\" rspace=\"0.17em\"></mo><mtext> ⁣</mtext><mo lspace=\"0em\" rspace=\"0em\">:</mo><mspace width=\"0.3333em\"/><mn>1</mn><mo>→</mo><mi>N</mi></mrow><annotation encoding=\"application/x-tex\">g\\colon 1 \\to N</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8389em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace nobreak\"></span><span class=\"mspace\" style=\"margin-right:0.1111em;\"></span><span class=\"mpunct\"></span><span class=\"mspace\" style=\"margin-right:-0.1667em;\"></span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mrel\">:</span></span><span class=\"mspace\" style=\"margin-right:0.3333em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">N</span></span></span></span> pick out infinity. Then the pullback is 0, and of course, $$0 \\to 1$ $is not an epi.</p>",
+        "id": 531787806,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1753866077
+    },
+    {
+        "content": "<p>Thanks!  So why do we use the word \"surjection\" for this class of geometric morphisms?  In the light of examples like that it seems singularly inappropriate.  Wouldn't \"epimorphism\" be better?</p>",
+        "id": 531788394,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1753866223
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> The classifying topos of objects, call it O, is the functor category from finite sets to sets. Every topos admits a localic geometirc morphism to this topos. Every topos classifies a geometric theory which without loss of generality involves only one sort. The single sort if given by O. Then to get the geometric theory we don't need to add any any more objects, just more relations. Adding relations corresponds giving a localic geometric morphism.</p>",
+        "id": 531788707,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1753866301
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> General epis are usual called surjections cause they form a nice factorisation system with the embeddings / regular monos. Surjections of topological spaces are just epis, not quotients so I think this terminology is appropriate.</p>\n<p>But regular epis also are not pullback stable. These examples are harder to describe easily, but you can get them taking products with non-exponentiable locales.</p>",
+        "id": 531789494,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1753866542
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"386922\">Graham Manuell</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/531789494\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> General epis are usual called surjections cause they form a nice factorisation system with the embeddings / regular monos.</p>\n</blockquote>\n<p>But the word \"surjection\" means in other contexts that it maps onto every point of the codomain, which is evidently not true here.  We don't say that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">Z</mi><mo>→</mo><mi mathvariant=\"double-struck\">Q</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{Z}\\to \\mathbb{Q}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">Z</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8556em;vertical-align:-0.1667em;\"></span><span class=\"mord mathbb\">Q</span></span></span></span> is a \"surjection\" of rings, because it's not, even though it is an epimorphism.  I don't see that a factorization system justifies it, and I didn't suggest anything about quotients or regular epis so I don't think those are relevant.  I'm just saying I think <em>this</em> class of morphisms should be called \"epimorphisms\" rather than \"surjections\" since they are not \"surjective\" in the intuitive sense.</p>",
+        "id": 531790343,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1753866805
+    },
+    {
+        "content": "<p>In particular, your example shows that the inclusion of sober spaces into locales does not reflect \"surjections\", so it is not a good generalization of the standard notion for topological spaces.</p>",
+        "id": 531790516,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1753866862
+    },
+    {
+        "content": "<p>I guess I'm not too concerned that points don't behave well in the pointfree setting.</p>",
+        "id": 531790521,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1753866863
+    },
+    {
+        "content": "<p>That's fair, but pullbacks not behaving well is more problematic.</p>",
+        "id": 531790635,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1753866897
+    },
+    {
+        "content": "<p>If some function \"maps onto every element of the codomain\" even in some pointfree sense, that ought to remain true under pullback.</p>",
+        "id": 531790841,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1753866952
+    },
+    {
+        "content": "<p>Sure. Whatever they are called they definitely are badly behaved.</p>",
+        "id": 531798733,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1753869130
+    },
+    {
+        "content": "<p>And because of that, I think they shouldn't be called \"surjections\".</p>",
+        "id": 531874131,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1753890052
+    },
+    {
+        "content": "<p>For me, the point-free notion captured by surjections is \"the pushforward of the maximal subtopos/sublocale in the domain is the maximal subthing of the codomain\". Put this way, it's intuitive that some kind of descent condition would be needed to ensure stability under pullback.</p>",
+        "id": 531930470,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1753909535
+    },
+    {
+        "content": "<p>I don't get the intuition.  It's also true in topological spaces that a map is a surjection if and only if the pushforward of the maximal subspace in the domain is the maximal subspace of the codomain.</p>",
+        "id": 531952092,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1753919435
+    },
+    {
+        "content": "<p>The intuition being that pushforwards don't inherently interact well with pullbacks. If I take the map from the real numbers with the discrete topology to the realms with their usual topology and pull back along the inclusion of the dense sublocale of the latter, the domain is again the trivial locale; that's another example of a surjection that is not stable under pullback (even though it is pointwise surjective), so you can't expect surjections of topological spaces to be well-behaved as surjections of locales.</p>",
+        "id": 532031726,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1753956248
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532031726\">said</a>:</p>\n<blockquote>\n<p>you can't expect surjections of topological spaces to be well-behaved as surjections of locales.</p>\n</blockquote>\n<p>Do you mean that the other way around?</p>",
+        "id": 532089050,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1753971897
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532031726\">said</a>:</p>\n<blockquote>\n<p>the dense sublocale of the latter</p>\n</blockquote>\n<p>And did you mean the maximal dense sublocale?</p>",
+        "id": 532089277,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1753971949
+    },
+    {
+        "content": "<p>How far does that example generalize?  If <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> is any topological space, what can you say about the pullback of its discrete retopologization to its maximal dense sublocale?  Obviously if <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi></mrow><annotation encoding=\"application/x-tex\">X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span></span></span></span> is already discrete the pullback is surjective.</p>",
+        "id": 532090025,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1753972121
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532089050\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532031726\">said</a>:</p>\n<blockquote>\n<p>you can't expect surjections of topological spaces to be well-behaved as surjections of locales.</p>\n</blockquote>\n<p>Do you mean that the other way around?</p>\n</blockquote>\n<p>No: I meant that a surjection of (sober) spaces, when viewed in the category of locales, loses the pullback property you described.</p>",
+        "id": 532095939,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1753973590
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532089277\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532031726\">said</a>:</p>\n<blockquote>\n<p>the dense sublocale of the latter</p>\n</blockquote>\n<p>And did you mean the maximal dense sublocale?</p>\n</blockquote>\n<p>The minimal dense sublocale, ie the double-negation sublocale.<br>\nRegarding generality, any non-discrete space will have a frame of opens which is not Boolean, so the double-negation sublocale will be a non-trivial sublocale. I don't know off the top of my head under what conditions this sublocale might be spatial (equivalently, when the pullback of the surjection from the distectization remains a surjection). <span class=\"user-mention\" data-user-id=\"386922\">@Graham Manuell</span> do you know?</p>",
+        "id": 532098032,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1753974060
+    },
+    {
+        "content": "<p>Well, it'll be iff the space has a dense discrete subspace.</p>",
+        "id": 532103206,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1753975317
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532095939\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532089050\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/Is.20the.202-category.20of.20Grothendieck.20toposes.20extensive.3F/near/532031726\">said</a>:</p>\n<blockquote>\n<p>you can't expect surjections of topological spaces to be well-behaved as surjections of locales.</p>\n</blockquote>\n<p>Do you mean that the other way around?</p>\n</blockquote>\n<p>No: I meant that a surjection of (sober) spaces, when viewed in the category of locales, loses the pullback property you described.</p>\n</blockquote>\n<p>Right -- that sounds like saying that surjections of locales are <em>not</em> as well-behaved as surjections of spaces.</p>",
+        "id": 532106136,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1753976041
+    }
+]

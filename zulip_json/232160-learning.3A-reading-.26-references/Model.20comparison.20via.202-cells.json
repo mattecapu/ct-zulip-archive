@@ -1,0 +1,206 @@
+[
+    {
+        "content": "<p>In category theory, and specifically applied category theory, we often structure models as functors, with the domain of the functor representing syntax, the codomain representing semantics, and the functor itself assigning semantic interpretations to syntactic elements. </p>\n<p>I am looking for prior work which takes this (or a similar perspective) and uses natural transformations (or other 2-cells) to structure model comparisons. I would appreciate any pointers or worked examples, especially things that are closer to the applied end of the spectrum (e.g., probability, dynamics).</p>",
+        "id": 547720229,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1761745621
+    },
+    {
+        "content": "<p>Well, I guess you already know about ologs and algebraic profunctors, Spencer. Double Lawvere theories also do this. But I’m somehow guessing these aren’t what you want.</p>",
+        "id": 547771344,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1761757868
+    },
+    {
+        "content": "<p>I'm mostly looking for references that I can pass on to students. Ologs are a good example, but I don't know a good worked example that takes this perspective. </p>\n<p>Something with a quantitative element would also be nice. Perrone's paper on \"Markov categories &amp; entropy\" is another that touches on this issue.</p>",
+        "id": 547792607,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1761764529
+    },
+    {
+        "content": "<p>I'm not sure I'm catching what you mean. You don't think most ologs work reflects the functorial semantics perspective?</p>",
+        "id": 547793796,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1761764930
+    },
+    {
+        "content": "<p>I think most ologs work concentrates on migrations, which are more like base change, rather than homomorphisms between models of the same olog.</p>",
+        "id": 547794197,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1761765056
+    },
+    {
+        "content": "<p>I'm saying that ologs would provide a good example of this perspective, if I knew of good references to point at that work through this idea. Most references I know talk about things like graph homomorphisms, but there's a pretty big conceptual step to recognize how to use the 2-cells for this purpose. </p>\n<p>One place that I expect to find something, but don't know quite where to look, is in the literature on coalgebras and bisomulation.</p>",
+        "id": 547798398,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1761766630
+    },
+    {
+        "content": "<p>I think graph homomorphisms are a great example and have found (computer science) students very receptive to it</p>",
+        "id": 547810889,
+        "sender_full_name": "Nathan Corbyn",
+        "timestamp": 1761771632
+    },
+    {
+        "content": "<p>With apologies for suggesting my own work, my <a href=\"https://arxiv.org/abs/2006.08945\">thesis</a> takes this perspective on statistics: statistical models are viewed as Markov functors from syntactical Markov categories (with bells and whistles) into a category of Markov kernels, and morphisms between those (monoidal natural transformations) are studied as homomorphisms of statistical models. A number of concrete examples are worked out in detail. A fun thing is computing the automorphism groups of some classical kinds of models, such as linear models and linear mixed models.</p>",
+        "id": 547837315,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1761786387
+    },
+    {
+        "content": "<p>I prefer to use the words \"schema\" and \"foundations\" for the domain and codomains of models. Just because \"syntax\" and \"semantics\" is a dichotomy I think of in terms of the type-theory/category-theory relationship. </p>\n<p>In general, I think this form of model structural specification falls under the umbrella of <strong><em>functorial semantics</em></strong>. I've seen this kind of modeling in the context of lawvere theories, GATs, universal algebra, Charles Ereshmann talked a lot about this in terms of signatures, anything from higher category theory that involves a \"walking object\" W  so that the structure of objects in X is hom(W,X). A lot of Riehl/Verity's elements book uses this mindset, for example this paper talks about the walking adjunction and monad: <a href=\"https://arxiv.org/abs/1310.8279\">RV15</a>. </p>\n<p>As a potential new perspective, your comparison natural transformations, under the right meta-theory lens, can also be thought of as encoding functors, where you use one model as a schema, and another model as the foundations. ie a natural transformation between appropriate models can be thought of as a 2-model.</p>",
+        "id": 547994545,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1761844999
+    },
+    {
+        "content": "<p>However, sometimes the direct natural transformations are not the correct morphisms for your model. For example see the introduction to Patterson's work here: <a href=\"https://arxiv.org/abs/2310.05384\">P24</a>. This necessitates a change at a higher meta-theory level</p>",
+        "id": 547997159,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1761845824
+    },
+    {
+        "content": "<p>I don't think this subject really needs more idiosyncratic (use of) terminology, which includes the way you're using \"2-model\".  A \"2-model\" normally refers to a model of a 2-dimensional theory, a \"2-theory\", not a model of a theory that \"lives in the second dimension\".</p>",
+        "id": 547997228,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1761845844
+    },
+    {
+        "content": "<p>What would you call a model that requires two levels of functorial specification. e.g. like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>:</mo><mi>C</mi><mi>a</mi><msub><mi>t</mi><mo>∗</mo></msub><mo stretchy=\"false\">(</mo><mi mathvariant=\"double-struck\">A</mi><mo separator=\"true\">,</mo><mi mathvariant=\"double-struck\">B</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">M:Cat_*(\\mathbb A,\\mathbb B)(A,B)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mord mathnormal\">a</span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1757em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">∗</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathbb\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathbb\">B</span><span class=\"mclose\">)</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span></span></span></span>?</p>",
+        "id": 547997567,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1761845967
+    },
+    {
+        "content": "<p>It's actually more of a 0-model, because the elements of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>a</mi><msub><mi>t</mi><mo>∗</mo></msub><mo stretchy=\"false\">(</mo><mi mathvariant=\"double-struck\">A</mi><mo separator=\"true\">,</mo><mi mathvariant=\"double-struck\">B</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">Cat_*(\\mathbb A,\\mathbb B)(A,B)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mord mathnormal\">a</span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1757em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">∗</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathbb\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathbb\">B</span><span class=\"mclose\">)</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span></span></span></span> are (tuples of) functions, not functors.</p>",
+        "id": 547997979,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1761846087
+    },
+    {
+        "content": "<p>if * = 2 and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">B</mi><mo>=</mo><mi>C</mi><mi>a</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb B = Cat</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">B</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\">t</span></span></span></span> we have <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>a</mi><msub><mi>t</mi><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mi mathvariant=\"double-struck\">A</mi><mo separator=\"true\">,</mo><mi>C</mi><mi>a</mi><mi>t</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">Cat_2(\\mathbb A, Cat)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mord mathnormal\">a</span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathbb\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span></span></span></span> are 2-functors and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>a</mi><msub><mi>t</mi><mn>2</mn></msub><mo stretchy=\"false\">(</mo><mi mathvariant=\"double-struck\">A</mi><mo separator=\"true\">,</mo><mi>C</mi><mi>a</mi><mi>t</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">Cat_2(\\mathbb A, Cat)(A,B)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mord mathnormal\">a</span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathbb\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\">t</span><span class=\"mclose\">)</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span></span></span></span> are diagrams of 1-functors</p>",
+        "id": 547998525,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1761846259
+    },
+    {
+        "content": "<p>I apologize if my terminology is not so standard, thank you for feedback</p>",
+        "id": 547998739,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1761846310
+    },
+    {
+        "content": "<p>I thought by \"*\" you meant \"with products\", because the standard meaning of \"pointed\" didn't work in context.  Categories of 2-categories are usually known as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mtext>-</mtext><mrow><mi mathvariant=\"bold\">C</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"bold\">t</mi></mrow></mrow><annotation encoding=\"application/x-tex\">2\\text -\\mathbf{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\">2</span><span class=\"mord text\"><span class=\"mord\">-</span></span><span class=\"mord\"><span class=\"mord mathbf\">Cat</span></span></span></span></span> (sometimes with a subscript or superscript for strictness) or sometimes <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">B</mi><mi mathvariant=\"bold\">i</mi><mi mathvariant=\"bold\">C</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{BiCat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">BiCat</span></span></span></span></span> if you are talking about weak 2-categories specifically (but that terminology is somewhat obsolescent).</p>",
+        "id": 547999675,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1761846559
+    },
+    {
+        "content": "<p>Anyway, in the case you speak of, then what you're talking about is an ordinary model or 1-model.</p>",
+        "id": 547999856,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1761846617
+    },
+    {
+        "content": "<p>yes, I apologize for not introducing my perspective, I view <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>a</mi><msub><mi>t</mi><mo>∗</mo></msub></mrow><annotation encoding=\"application/x-tex\">Cat_*</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mord mathnormal\">a</span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1757em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">∗</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> to be the place holder for arbitrary structured higher categories, i.e. some kind of not-yet-specified higher doctrine</p>",
+        "id": 547999986,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1761846659
+    },
+    {
+        "content": "<p>so what would you call an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>:</mo><mi>C</mi><mi>a</mi><msub><mi>t</mi><mn>3</mn></msub><mo stretchy=\"false\">(</mo><mi mathvariant=\"double-struck\">A</mi><mo separator=\"true\">,</mo><mi>C</mi><mi>a</mi><msub><mi>t</mi><mn>2</mn></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mo separator=\"true\">,</mo><mi>b</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">M:Cat_3(\\mathbb A, Cat_2)(A,B)(a,b)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mord mathnormal\">a</span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathbb\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mord mathnormal\">a</span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">a</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">b</span><span class=\"mclose\">)</span></span></span></span>?</p>",
+        "id": 548000107,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1761846706
+    },
+    {
+        "content": "<p>Anyone else who sees that is going to think you mean pointed categories and get confused.</p>",
+        "id": 548000136,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1761846715
+    },
+    {
+        "content": "<p><em>That</em> would be a 2-model.</p>",
+        "id": 548000184,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1761846726
+    },
+    {
+        "content": "<p>Oh, wait, no it wouldn't, I missed the extra set of parens, it would be a 1-model again.</p>",
+        "id": 548000325,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1761846770
+    },
+    {
+        "content": "<p>okay so <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>:</mo><mi>C</mi><mi>a</mi><msub><mi>t</mi><mn>3</mn></msub><mo stretchy=\"false\">(</mo><mi mathvariant=\"double-struck\">A</mi><mo separator=\"true\">,</mo><mi>C</mi><mi>a</mi><msub><mi>t</mi><mn>2</mn></msub><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">(</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">M:Cat_3(\\mathbb A, Cat_2)(A,B)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mord mathnormal\">a</span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord mathbb\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mord mathnormal\">a</span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"mclose\">)</span></span></span></span> is a 2-model? <span aria-label=\"face with spiral eyes\" class=\"emoji emoji-1f635-200d-1f4ab\" role=\"img\" title=\"face with spiral eyes\">:face_with_spiral_eyes:</span></p>",
+        "id": 548000493,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1761846826
+    },
+    {
+        "content": "<p>So you want to refer to the ultimate codomain object dimensionality as the n in n-model? I have been loosely using the term for counting how many layers of functorial semantics one needs to specify a structure</p>",
+        "id": 548000773,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1761846908
+    },
+    {
+        "content": "<p>Yes.  If \"model\" has a numeric prefix, it refers to the nature of the model, whether it is composed of functions (0-functors), functors, 2-functors, etc, not to the context in which it is introduced.  This contrasts with a numeric prefix on \"morphism\" or \"transfor\".</p>",
+        "id": 548000814,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1761846920
+    },
+    {
+        "content": "<p>...but agrees with a numeric prefix on \"category\" or \"functor\".</p>",
+        "id": 548000980,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1761846970
+    },
+    {
+        "content": "<p>Sorry to take over this thread I will ask one more question of you James, thank you for your feedback, if I wanted to name these models not by their categorical dimensionality but rather how many layers of iterated functorial semantics it takes to specify them, would you have any suggestions in mind as to what to name it?</p>",
+        "id": 548001299,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1761847070
+    },
+    {
+        "content": "<p>The best I can think of is \"(k-1)-morphism of [n-]models\", although this deemphasizes the analogy between the lower-dimensional and higher-dimensional layers.</p>",
+        "id": 548002084,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1761847294
+    },
+    {
+        "content": "<p>If you only want to go to 4 layers at most, you can use the sequence \"doctrine, theory, model, homomorphism\".</p>",
+        "id": 548002762,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1761847489
+    },
+    {
+        "content": "<p>If neither is something you can work with, then and only then you should invent idiosyncratic terminology, but make sure you read enough of the related literature to avoid overlapping with something established.  (It can help to google your prospective terms.)</p>",
+        "id": 548003445,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1761847686
+    },
+    {
+        "content": "<p>There's a sense in which the number of layers is the dimensionality:<br>\n<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>:</mo><mi>C</mi><mi>a</mi><msub><mi>t</mi><mi>n</mi></msub><mo stretchy=\"false\">(</mo><msub><mi>A</mi><mn>0</mn></msub><mo separator=\"true\">,</mo><msub><mi>B</mi><mn>0</mn></msub><mo stretchy=\"false\">)</mo><mi mathvariant=\"normal\">.</mi><mi mathvariant=\"normal\">.</mi><mi mathvariant=\"normal\">.</mi><mo stretchy=\"false\">(</mo><msub><mi>A</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo separator=\"true\">,</mo><msub><mi>B</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy=\"false\">)</mo><mo>∼</mo></mrow><annotation encoding=\"application/x-tex\">M:Cat_n(A_0,B_0)...(A_{k-1},B_{k-1}) \\sim</annotation></semantics></math></span><span aria-hidden=\"true\" class=\"katex-html\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10903em;\">M</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mord mathnormal\">a</span><span class=\"mord\"><span class=\"mord mathnormal\">t</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:-0.0502em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mord\">...</span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\">A</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.03148em;\">k</span><span class=\"mbin mtight\">−</span><span class=\"mord mtight\">1</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2083em;\"><span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.05017em;\">B</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-left:-0.0502em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.03148em;\">k</span><span class=\"mbin mtight\">−</span><span class=\"mord mtight\">1</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2083em;\"><span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∼</span></span></span></span> <a href=\"/user_uploads/21317/iVhwCe2MpxlL_ssAKcspPioy/Screenshot-2025-10-30-at-3.35.22PM.png\">(diagram)</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/iVhwCe2MpxlL_ssAKcspPioy/Screenshot-2025-10-30-at-3.35.22PM.png\" title=\"(diagram)\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1538x1066\" src=\"/user_uploads/thumbnail/21317/iVhwCe2MpxlL_ssAKcspPioy/Screenshot-2025-10-30-at-3.35.22PM.png/840x560.webp\"></a></div>",
+        "id": 548020148,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1761853252
+    },
+    {
+        "content": "<p>M is a k-globe of n-categories, n-functors, n-natural transformations, n- modifications, etc up to n- (<a href=\"https://ncatlab.org/nlab/show/transfor\">k-transfors</a>)</p>",
+        "id": 548020179,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1761853262
+    },
+    {
+        "content": "<p>so k here is the globular dimension, I think this lines up with the k that you used above.</p>",
+        "id": 548020262,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1761853289
+    },
+    {
+        "content": "<p>Returning to <span class=\"user-mention\" data-user-id=\"278008\">@Spencer Breiner</span>'s request, I'm not at all sure I get what you're after, but you might try work by <span class=\"user-mention\" data-user-id=\"390506\">@Daniela Petrisan</span> and colleagues on categorical automata theory, e.g., <a href=\"https://www.irif.fr/~colcombe/Publications/CALCO17-colcombet-petrisan.pdf\">Colcombet-Petrisan</a>, or the approach of labelled transition systems based on lax functors, e.g., <a href=\"https://arxiv.org/pdf/1404.5267\"> Brengos</a>. Is it relevant?</p>",
+        "id": 562118569,
+        "sender_full_name": "Tom Hirschowitz",
+        "timestamp": 1764946094
+    }
+]

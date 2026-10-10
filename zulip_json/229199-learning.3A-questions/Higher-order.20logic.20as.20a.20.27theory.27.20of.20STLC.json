@@ -1,0 +1,92 @@
+[
+    {
+        "content": "<p>I have been reading Mitchell's \"Foundations for Programming Languages\", and I am a little bit curious / confused about something..</p>\n<p>The book does start off with 'logics' (first equational logic (aka Universal Algebra), and then the Simply Typed Lambda calculus). Moreover, once you have a <em>logic</em>, you can make a <em>theory</em> by having a signature and some axioms. For instance, using equational logic, and a single-sorted signature with a binary (composition) and unary (inverse) function symbols, we can specify the theory of groups.</p>\n<p>In the book (example 4.4.7 to be precise), there is a 'way' of obtaining 'logic' <strong>as a theory</strong> from STLC (Simply Typed Lambda Calculus) by doing the following:</p>\n<ul>\n<li>Add a type for truth values _tv_</li>\n<li>Add the following constants / function symbols:<br>\n    * or : tv → tv → tv<br>\n    * not : tv → tv<br>\n    * ∀&lt;σ&gt; : (σ →tv) → tv.  /* A family of symbols for each type */</li>\n</ul>\n<p>Then we have a bunch of axioms (which correspond to Church's theory of simple types).<br>\nIn essence, <strong>we can present higher-order logic as a theory of λ-calculus (with just function types)</strong>.</p>\n<p>What surprises me is that I always equated STLC with 'boring' intuitionistic <em>propositional</em> calculus, which does not have 'forall's etc. I always thought we'd need a better logic (than STLC, with dependent types maybe?) to do 'forall's etc. But here, apparently, it seems like we 'can do' 'forall's in just STLC, by adding a whole bunch of 'meaningless' axioms. I'd be curious if this is a general/well-known technique? To me, it almost seems like we have 'set theory' be a theory of 'basic' equational logic by just forcing all theorems of set theory to be axioms.. Am I missing something?</p>\n<p>I am just curious to hear any thoughts / remarks...</p>",
+        "id": 463264389,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1724028672
+    },
+    {
+        "content": "<p>Higher order logic can indeed be defined as STLC + a type of propositions.  The fact that you \"only need one binder (lambda)\" and other binders (such as forall) can be represented as constants is known as \"<a href=\"https://softwareengineering.stackexchange.com/questions/107687/what-is-the-origin-and-meaning-of-the-phrase-lambda-the-ultimate\">lambda the ultimate</a>\" in programming language circles.</p>",
+        "id": 463271365,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1724031799
+    },
+    {
+        "content": "<p>One way to see how this isn't quite as shocking as it initially seems is to think semantically. STLC has semantics in Cartesian closed categories, whereas lambda calculus plus the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext mathvariant=\"monospace\">tv</mtext></mrow><annotation encoding=\"application/x-tex\">\\texttt{tv}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5536em;\"></span><span class=\"mord text\"><span class=\"mord texttt\">tv</span></span></span></span></span> stuff you've added would have its most natural semantics in a topos. But you're not going to be able to assert that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>σ</mi><mo>→</mo><mtext mathvariant=\"monospace\">tv</mtext></mrow><annotation encoding=\"application/x-tex\">\\sigma \\to \\texttt{tv}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">σ</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.5536em;\"></span><span class=\"mord text\"><span class=\"mord texttt\">tv</span></span></span></span></span> has any relationship to the set of monomorphisms into <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>σ</mi></mrow><annotation encoding=\"application/x-tex\">\\sigma</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">σ</span></span></span></span> in terms of the STLC. Another way of thinking of this is that it's possible to give a notion of a topos <em>internal to</em> a finitely complete category, but that's quite different than the notion of <em>a topos</em>, and in general there will be models of the theory you've described here quite different than the intended examples where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext mathvariant=\"monospace\">tv</mtext></mrow><annotation encoding=\"application/x-tex\">\\texttt{tv}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5536em;\"></span><span class=\"mord text\"><span class=\"mord texttt\">tv</span></span></span></span></span> is an actual subobject classifier.</p>",
+        "id": 463293409,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1724039960
+    },
+    {
+        "content": "<p>I see. I'm curious whether I could take the idea further? Could I perhaps have \"STLC\" as a <em>theory</em> of equational logic?</p>\n<p>Or could I think of it this way - in STLC, we could 'simulate' adding new <em>rules of inference</em> by just adding <em>axioms</em> of the form <code>premise → conclusion</code>?</p>",
+        "id": 463539234,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1724110968
+    },
+    {
+        "content": "<p>Yes to the first question: the purely equational form of simply typed lambda calculus is sometimes called \"categorical abstract machine language\" and was the original intermediate form for the CAML compiler, which converted STLC with its variable-full syntax into variable-free terms in CAML and then optimized those terms using equations.  CAML was superseded by other intermediate forms in compiling but is still a convenience language to use.  The syntax of CAML is given here: <a href=\"https://en.wikipedia.org/wiki/Curry–Howard_correspondence#Curry–Howard–Lambek_correspondence\">https://en.wikipedia.org/wiki/Curry–Howard_correspondence#Curry–Howard–Lambek_correspondence</a> .</p>",
+        "id": 463541146,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1724111559
+    },
+    {
+        "content": "<p>Yes to the second question, but the catch is that there are a bunch of theorems about the STLC that only apply to closed terms; having axioms makes those theorems not apply.  For example, \"every closed term of type numeral reduces to a natural number\" can be invalidated by an axiom stating \"infinity exists\".  (this is a terrible example; this phenomenon also comes up in HoTT, where it is much more of a problem)</p>",
+        "id": 463542917,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1724112075
+    },
+    {
+        "content": "<p>Oh wow. This discussion really seems to blur the distinction between 'logics' and 'theories of a particular logic', and that makes me a little uncomfortable.. XD</p>",
+        "id": 463546303,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1724113973
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Higher-order.20logic.20as.20a.20'theory'.20of.20STLC/near/463293409\">said</a>:</p>\n<blockquote>\n<p>STLC has semantics in Cartesian closed categories, whereas lambda calculus plus the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext mathvariant=\"monospace\">tv</mtext></mrow><annotation encoding=\"application/x-tex\">\\texttt{tv}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5536em;\"></span><span class=\"mord text\"><span class=\"mord texttt\">tv</span></span></span></span></span> stuff you've added would have its most natural semantics in a topos. </p>\n</blockquote>\n<p>Here, is 'lambda calculus' different form STLC? In my question, I thought that they were the same...</p>",
+        "id": 463546484,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1724114119
+    },
+    {
+        "content": "<p>I was not meaning to draw a distinction, no.</p>",
+        "id": 463563762,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1724122192
+    },
+    {
+        "content": "<p>I might have spelled it out there because before some edit I was going to say something about dependently-typed lambda calculus, but then changed my mind.</p>",
+        "id": 463563903,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1724122216
+    },
+    {
+        "content": "<p>Just to add, if I understand your question right <span class=\"user-mention\" data-user-id=\"726654\">@Suraaj K S</span>, there are various successful mechanized proof systems that use this idea, such as HOL4 and Isabelle/HOL. For instance the HOL4 logic manual <a href=\"http://sourceforge.net/projects/hol/files/hol/trindemossen-1/trindemossen-1-logic.pdf/download\">here</a>.</p>",
+        "id": 464588509,
+        "sender_full_name": "Sam Staton",
+        "timestamp": 1724403426
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"308397\">Sam Staton</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Higher-order.20logic.20as.20a.20'theory'.20of.20STLC/near/464588509\">said</a>:</p>\n<blockquote>\n<p>Just to add, if I understand your question right <span class=\"user-mention silent\" data-user-id=\"726654\">Suraaj K S</span>, there are various successful mechanized proof systems that use this idea, such as HOL4 and Isabelle/HOL. For instance the HOL4 logic manual <a href=\"http://sourceforge.net/projects/hol/files/hol/trindemossen-1/trindemossen-1-logic.pdf/download\">here</a>.</p>\n</blockquote>\n<p>Thanks for your response. I was wondering if you could elaborate a little bit? Is the idea that you could have something like MLTT as a <em>theory</em> of HOL4?</p>",
+        "id": 464888301,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1724525907
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"726654\">Suraaj K S</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Higher-order.20logic.20as.20a.20'theory'.20of.20STLC/near/464888301\">said</a>:</p>\n<blockquote>\n<p>Thanks for your response. I was wondering if you could elaborate a little bit? Is the idea that you could have something like MLTT as a <em>theory</em> of HOL4?</p>\n</blockquote>\n<p>HOL4 and Isabelle/HOL are simple type theories, so don't really have anything to do with MLTT. Quote:</p>\n<blockquote>\n<p>The reason for restricting <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi></mrow><annotation encoding=\"application/x-tex\">p</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">p</span></span></span></span> to be closed, i.e. to have no free variables, is that otherwise for consistency the defined type operator would have to depend upon (i.e. be a function of) those variables. Such dependent types are not (yet!) a part of the HOL system</p>\n</blockquote>\n<p>It is actually possible to have a dependent type theory like MLTT be a theory of higher order logic, by using the presentation of dependent type theory with a single type judgment and then adding a <a href=\"https://ncatlab.org/nlab/show/type%20of%20all%20propositions\">[[type of all propositions]]</a> to the type theory along with the usual dependent product types, dependent sum types, identity types, and some form of infinity (such as the natural numbers).  </p>\n<p>But this is really only possible in the presentation of dependent type theory using a single type judgment. Most dependent type theories being used in the real world define types using an infinitely many Russell universes and zero type judgments or infinitely many Coquand universes and infinitely many type judgments, and then you no longer have a higher order logic because higher order logic doesn't really have an infinite number of universes.</p>",
+        "id": 464889556,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1724526560
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Higher-order.20logic.20as.20a.20'theory'.20of.20STLC/near/463293409\">said</a>:</p>\n<blockquote>\n<p>But you're not going to be able to assert that σ→tv has any relationship to the set of monomorphisms into σ in terms of the STLC</p>\n</blockquote>\n<p>I was wondering if this point could be elaborated? Why are we talking about monomorphisms here? (Sorry, I've just started learning this stuff, and I'm sure I might be asking something very trivial...)</p>",
+        "id": 465293139,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1724718083
+    },
+    {
+        "content": "<p>One point of elaboration is that whereas STLC can be axiomatized equationally (the axioms are even written on wikipedia), the axiomatization of a topos is not purely equational, because the machinery required to define sub object classifiers includes concepts such as monos that are not purely equational (requiring implication).  So STLC + a type prop + equations has a natural model in a topos, but is itself not a complete description of a \"free\" topos like how STLC + equations is a complete description of a \"free\" cartesian closed category.</p>",
+        "id": 465295164,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1724718765
+    }
+]

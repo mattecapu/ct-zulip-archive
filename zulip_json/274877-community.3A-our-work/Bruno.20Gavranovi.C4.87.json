@@ -1,0 +1,158 @@
+[
+    {
+        "content": "<p>This is as good as time as any to make a thread here: I've published my PhD thesis!</p>\n<p>The thesis title is </p>\n<p><strong>Fundamental Components of Deep Learning: A category-theoretic approach</strong></p>\n<p>You can find it <a href=\"https://www.brunogavranovic.com/assets/FundamentalComponentsOfDeepLearning.pdf\">here</a>, together with the <a href=\"https://www.brunogavranovic.com/posts/2024-03-13-my-thesis-is-out.html\">accompanying blog post</a>. At some point I will give more context around this, but for now I'll just leave here the last paragraph of the thesis which summarises how I see this thesis fitting into a broader research programme which studies <em>the process</em> by which we find structure in data, and attempts to formalise this with concrete implementation of systems which do that via iterative updates.</p>\n<p><a href=\"/user_uploads/21317/KWcB-ReFQYVrIbZOtx2OzrMI/Screenshot_20240314_120107.png\">Screenshot_20240314_120107.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/KWcB-ReFQYVrIbZOtx2OzrMI/Screenshot_20240314_120107.png\" title=\"Screenshot_20240314_120107.png\"><img src=\"/user_uploads/21317/KWcB-ReFQYVrIbZOtx2OzrMI/Screenshot_20240314_120107.png\"></a></div><p>I'm looking forward to hearing your thoughts and comments.</p>",
+        "id": 426527387,
+        "sender_full_name": "Bruno Gavranović",
+        "timestamp": 1710418092
+    },
+    {
+        "content": "<p>And lastly, I want to promote here our latest position paper  <a href=\"https://arxiv.org/abs/2402.15332\">Categorical Deep Learning: An Algebraic Theory of Architectures</a> which directly builds on the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">P</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"bold\">r</mi><mi mathvariant=\"bold\">a</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{Para}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Para</span></span></span></span></span> construction and provides a general theory of architectures of neural networks that directly subsumes <a href=\"https://arxiv.org/abs/2104.13478\">Geometric Deep Learning</a> : it formulates equivariant maps as morphisms of monad algebra homomorphisms, and shows how by genrealising these to particular endofunctor algebra homomorphisms we can go beyond equivariance to invertible transformations, and start capturing transformations which aren't invertible, such as constructors for lists, trees, and all sorts of inductive and coinductive structures in theoretical computer science.</p>",
+        "id": 426528285,
+        "sender_full_name": "Bruno Gavranović",
+        "timestamp": 1710418437
+    },
+    {
+        "content": "<p>This revealed some interesting correspondences, for instance those between parametric mealy machines and recurrent neural networks. We're still trying to figure out many parts of this and I imagine lots of people in the community here might have interesting ideas about structured computation that can be captured in these ways.</p>\n<p><a href=\"/user_uploads/21317/j7UtKIrMy25AbIFzdzDwg4Yt/Screenshot_20240314_121419.png\">Screenshot_20240314_121419.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/j7UtKIrMy25AbIFzdzDwg4Yt/Screenshot_20240314_121419.png\" title=\"Screenshot_20240314_121419.png\"><img src=\"/user_uploads/21317/j7UtKIrMy25AbIFzdzDwg4Yt/Screenshot_20240314_121419.png\"></a></div>",
+        "id": 426528448,
+        "sender_full_name": "Bruno Gavranović",
+        "timestamp": 1710418499
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276875\">Bruno Gavranović</span> <a href=\"#narrow/stream/274877-community.3A-our-work/topic/Bruno.20Gavranovi.C4.87/near/426527387\">said</a>:</p>\n<blockquote>\n<p>I'll just leave here the last paragraph of the thesis which summarises how I see this thesis fitting into a broader research programme [...]<br>\nI'm looking forward to hearing your thoughts and comments.</p>\n</blockquote>\n<p>That resonates with a vague thought I had while watching <a href=\"https://www.youtube.com/watch?v=kojH8a7BW04\">this video</a> yesterday. In it, they build an AI agent to play Trackmania (a car racing game),  the agent is faster than humans, but very inconsistent due to some chaotic behavior in the physics engine. On the other hand, humans can get fairly consistent (modulo human parameters like fatigue) but not at faster speeds. I was thinking about how to train for consistency in such a setting, and I believe that maybe using a compositional model would help (if the agent understands which settings are harder to navigate like humans do, it will be more careful and try to mitigate the inconsistencies). Are there some results about compositionality as a means to achieve consistency?</p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"kojH8a7BW04\" href=\"https://www.youtube.com/watch?v=kojH8a7BW04\"><img src=\"https://uploads.zulipusercontent.net/002b360b4a4362cd4a854433501fe50d8a39d1ed/68747470733a2f2f692e7974696d672e636f6d2f76692f6b6f6a48386137425730342f64656661756c742e6a7067\"></a></div>",
+        "id": 426567176,
+        "sender_full_name": "Ralph Sarkis",
+        "timestamp": 1710430046
+    },
+    {
+        "content": "<p>Ah, absolutely!</p>\n<p>I think compositional models are the key to achieving consistency. Take for example the universal approximation theorem: it tells you that with an infinitely wide network you can approximate any function. And while that's true, there's a very neat <a href=\"https://neuralnetworksanddeeplearning.com/chap4.html\">visual proof</a> that it does not tell you anything about generalisation: say, fitting a function <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">f(x)=x^2</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span> is done by fitting a bunch of squares under it, meaning for any finite dataset there's always a part of the input which the neural network hasn't seen, and has no means of generalising well on.<br>\nSo there is no 'consistency' as you call it: you can't fully learn function <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">x^2</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span> with a single linear layer, because you can only produce a linear combination of inputs, which <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">x^2</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8141em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.8141em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span> is not.</p>\n<p>I actually watched <a href=\"https://www.youtube.com/watch?v=Dw3BZ6O_8LY\">the other</a> video from the same creator on Youtube and I believe the same story applies here. This current Trackmania model seems to largely overfit, and can easily get confused on out of distribution examples.<br>\nFor this particular case, some physics-based priors seem to be necessary to achieve good generalisations. But I'm not sure what algebraic structure can be used to encode them.</p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"Dw3BZ6O_8LY\" href=\"https://www.youtube.com/watch?v=Dw3BZ6O_8LY\"><img src=\"https://uploads.zulipusercontent.net/864659d3d797655281afe5429e0710b54159cffb/68747470733a2f2f692e7974696d672e636f6d2f76692f447733425a364f5f384c592f64656661756c742e6a7067\"></a></div><p>I think the same issue arises when dealing with, say, structural recursion. There is ample evidence (<a href=\"https://arxiv.org/abs/2401.12947\">1</a>, <a href=\"https://arxiv.org/abs/2402.05785\">2</a>) that transformers perform an analogus operation to 'fitting squares' when learning complex algorithms, and have no architectural bias that would allow them to learn how to perform, say, structural recursion. They can learn it for 1,3,10, or perhaps 20 steps, but they eventually break down.</p>\n<p>The deep learning community indeed identified compositionality as a useful tool in describing the world around us --- take <a href=\"https://youtu.be/llGG62fNN64?t=668\">Yoshua Bengio's Turing Lecture</a> which states that 'Compositionality is useful to describe the world around us effectively'. But no specific connections to category theory have been made.</p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"llGG62fNN64\" href=\"https://youtu.be/llGG62fNN64?t=668\"><img src=\"https://uploads.zulipusercontent.net/fff81f6e99f99c1d15da59aee43bb28736d5e9a5/68747470733a2f2f692e7974696d672e636f6d2f76692f6c6c47473632664e4e36342f64656661756c742e6a7067\"></a></div>",
+        "id": 426832443,
+        "sender_full_name": "Bruno Gavranović",
+        "timestamp": 1710541958
+    },
+    {
+        "content": "<p>Perhaps the consistency problems can be dealt with by explicitly training for consistency by selecting for strategies that take longer before diverging when applied to very small perturbations of the input?</p>",
+        "id": 426866879,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1710571118
+    },
+    {
+        "content": "<p>Bruno can I ask about your involvement with Paul lessard and symbolica? He was just on machine learning street talk and they claimed to have raised $30M, the main paper they referenced was CDL: algebraic theory of architectures. </p>\n<p>What is this $30m specifically for? Are you accruing compute to now train a model based on Para?</p>",
+        "id": 431158231,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1712171616
+    },
+    {
+        "content": "<p>Congrats on publishing the thesis btw!</p>",
+        "id": 431158494,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1712171714
+    },
+    {
+        "content": "<p><a href=\"https://finance.yahoo.com/news/vinod-khosla-betting-former-tesla-130000001.html\">https://finance.yahoo.com/news/vinod-khosla-betting-former-tesla-130000001.html</a></p>",
+        "id": 432349475,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1712700048
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277976\">Noah Chrein</span> <a href=\"#narrow/stream/274877-community.3A-our-work/topic/Bruno.20Gavranovi.C4.87/near/431158231\">said</a>:</p>\n<blockquote>\n<p>What is this $30m specifically for?</p>\n</blockquote>\n<p>And even more importantly, how much of these 30m are you giving to your fellow category theorists to fund their research? <span aria-label=\"hearts\" class=\"emoji emoji-2665\" role=\"img\" title=\"hearts\">:hearts:</span></p>",
+        "id": 432439043,
+        "sender_full_name": "fosco",
+        "timestamp": 1712735901
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"281326\">@Ryan Wisnesky</span> please don't post links without accompanying text...</p>",
+        "id": 432439356,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1712735998
+    },
+    {
+        "content": "<p>I clicked anyway. It made me sad.</p>\n<blockquote>\n<p>Khosla admits he does not understand the math-filled paper—pointing out there are very few people in the world who fully understand category theory—“when these really smart people gravitate to an idea, it’s an important idea,” he said.</p>\n</blockquote>\n<p><span aria-label=\"man facepalming\" class=\"emoji emoji-1f926-200d-2642\" role=\"img\" title=\"man facepalming\">:man_facepalming:</span> I really do not want CT to be beached by a tech hype tide... but at least if it's successful enough policymakers will put money into it for a while.</p>",
+        "id": 432445009,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1712737460
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277976\">Noah Chrein</span> <a href=\"#narrow/stream/274877-community.3A-our-work/topic/Bruno.20Gavranovi.C4.87/near/431158231\">said</a>:</p>\n<blockquote>\n<p>Bruno can I ask about your involvement with Paul lessard and symbolica? He was just on machine learning street talk and they claimed to have raised $30M, the main paper they referenced was CDL: algebraic theory of architectures. </p>\n<p>What is this $30m specifically for? Are you accruing compute to now train a model based on Para?</p>\n</blockquote>\n<p>Absolutely, <span class=\"user-mention\" data-user-id=\"277976\">@Noah Chrein</span> .</p>\n<p>This is as good time as any to announce a few different pieces of exciting news:</p>\n<ul>\n<li>I have started a new position at <a href=\"https://symbolica.ai/\">Symbolica</a>, leading a research programme on <a href=\"https://categoricaldeeplearning.com/\">categorical deep learning</a></li>\n<li>We're developing foundation models for structured reasoning: models that manipulate structured data, learn algebraic structure, and do so with interpretable and verifiable logic</li>\n<li>Symbolica has raised a $31M funding round led by Vinod Khosla giving us the runway, the space, and the resources to pursue this ambitious goal.</li>\n</ul>",
+        "id": 432449056,
+        "sender_full_name": "Bruno Gavranović",
+        "timestamp": 1712738471
+    },
+    {
+        "content": "<p>I'm incredibly excited about this, for a few different reasons.</p>\n<p>Monoids, categories, universal properties and other concepts from category theory have been an indespensable tool for myself and many other scientists for understanding the world. It allowed us to find robust patterns in data, and also communicate, verify and explain our reasoning to one another. In many ways, isn't this the goal of deep learning? Creation of models which understand the world in robust, generalisable, but also verifiable ways?</p>",
+        "id": 432449404,
+        "sender_full_name": "Bruno Gavranović",
+        "timestamp": 1712738561
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277976\">Noah Chrein</span> <a href=\"#narrow/stream/274877-community.3A-our-work/topic/Bruno.20Gavranovi.C4.87/near/431158231\">said</a>:</p>\n<blockquote>\n<p>What is this $30m specifically for? </p>\n</blockquote>\n<p>The funding is to be used for the development of this research programme, staffing, and compute.</p>",
+        "id": 432450022,
+        "sender_full_name": "Bruno Gavranović",
+        "timestamp": 1712738720
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"282822\">fosco</span> <a href=\"#narrow/stream/274877-community.3A-our-work/topic/Bruno.20Gavranovi.C4.87/near/432439043\">said</a>:</p>\n<blockquote>\n<p>how much of these 30m are you giving to your fellow category theorists to fund their research? <span aria-label=\"hearts\" class=\"emoji emoji-2665\" role=\"img\" title=\"hearts\">:hearts:</span></p>\n</blockquote>\n<p>We're hiring fellow category theorists! We're opening up offices in UK and AUS - check out the <a href=\"https://jobs.gusto.com/boards/-67195a74-31b4-4052-ba18-e859d461808c\">job ads</a>.</p>",
+        "id": 432450219,
+        "sender_full_name": "Bruno Gavranović",
+        "timestamp": 1712738768
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/274877-community.3A-our-work/topic/Bruno.20Gavranovi.C4.87/near/432445009\">said</a>:</p>\n<blockquote>\n<blockquote>\n<p>Khosla admits he does not understand the math-filled paper—pointing out there are very few people in the world who fully understand category theory—“when these really smart people gravitate to an idea, it’s an important idea,” he said.</p>\n</blockquote>\n<p><span aria-label=\"man facepalming\" class=\"emoji emoji-1f926-200d-2642\" role=\"img\" title=\"man facepalming\">:man_facepalming:</span> I really do not want CT to be beached by a tech hype tide... but at least if it's successful enough policymakers will put money into it for a while.</p>\n</blockquote>\n<p>This is a justified concern, and one I've been thinking about myself. It's easy to <a href=\"https://twitter.com/bgavran3/status/1409590847910203392\">overpromise</a> and build hype! I'm trying hard - together with some other fantastic people we've hired - to keep us grounded.</p>\n<p>Khosla indeed isn't privy to insights behind CT, but our team is.</p>",
+        "id": 432451271,
+        "sender_full_name": "Bruno Gavranović",
+        "timestamp": 1712739008
+    },
+    {
+        "content": "<p>You should advertise those over in <a class=\"stream\" data-stream-id=\"245502\" href=\"/#narrow/stream/245502-community.3A-positions\">#community: positions</a> !</p>",
+        "id": 432456672,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1712740538
+    },
+    {
+        "content": "<p>I did it - easy enough to do while I was looking over the ads.</p>",
+        "id": 432515481,
+        "sender_full_name": "John Baez",
+        "timestamp": 1712758928
+    },
+    {
+        "content": "<p>Thanks <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> !</p>",
+        "id": 432520246,
+        "sender_full_name": "Bruno Gavranović",
+        "timestamp": 1712760129
+    },
+    {
+        "content": "<p>Thanks for the info Bruno, this is wonderful.</p>\n<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/stream/274877-community.3A-our-work/topic/Bruno.20Gavranovi.C4.87/near/432445009\">said</a>:</p>\n<blockquote>\n<p>I really do not want CT to be beached by a tech hype tide</p>\n</blockquote>\n<p>This is just one of the first waves of a storm brewing in structured AI. The structure-first (i.e. Cat Theory) view of AI is probably correct and I think more VC type \"whales\" are about to beach themselves here. Let's hope we don't get too disrupted by whatever explodes out of the beached whales.  This is what I was trying to allude to in this <a href=\"#narrow/stream/229122-meta.3A-meta/topic/AI.20responses/near/431202324\">thread</a>   when I was mentioning potential AI agents entering into the zulip (originally in response to a different thread but moved by a mod). 30m is a \"drop in the ocean\" for AI VC funding and I can imagine some poaching of category theorists. </p>\n<p>I wonder <span class=\"user-mention\" data-user-id=\"276875\">@Bruno Gavranović</span>  if you have any thoughts about how this community and individual category theorists can navigate the structured-AI hype train that, I feel, is about to hit CT.  Maybe we can continue this conversation in that other  <a href=\"#narrow/stream/229122-meta.3A-meta/topic/AI.20responses/near/431202324\">thread</a> or start a new one.</p>",
+        "id": 432529011,
+        "sender_full_name": "Noah Chrein",
+        "timestamp": 1712762343
+    },
+    {
+        "content": "<p>What does \"VC\" stand for?</p>",
+        "id": 432532762,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1712763378
+    },
+    {
+        "content": "<p><a href=\"https://en.wikipedia.org/wiki/Venture_capital\">https://en.wikipedia.org/wiki/Venture_capital</a></p>",
+        "id": 432532954,
+        "sender_full_name": "Ralph Sarkis",
+        "timestamp": 1712763462
+    },
+    {
+        "content": "<p>Thanks <span class=\"user-mention\" data-user-id=\"284005\">@Ralph Sarkis</span></p>",
+        "id": 432534236,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1712763851
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> 's message in <a href=\"#narrow/channel/229111-community.3A-general/topic/Introduce.20yourself!/near/497090108\">a different thread</a> reminded me that I never posted <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7273698639749804032/\">my update</a> with respect to Symbolica here, and realised that some people might not know that I am not working there anymore, nor that I am not endorsing the company in any way.</p>\n<p>A copy of the message I posted in the other thread:</p>\n<blockquote>\n<p>I just want to add a correction here: I am not employed by nor affiliated with Symbolica in any way anymore, nor do I endorse any research they claim to be doing. I was <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:7273698639749804032/\">fired</a> in December without any warning and escorted out of the office on the spot. Many other people have also been fired, or resigned voluntarily. Dominic Verity is one of them, Neil Ghani another. But this isn't limited to just category theorists - this holds for many competent ML researchers too. There's <a href=\"https://x.com/IntuitMachine/status/1869062676422496326\">much more</a> to say, but I was threatened legal action for talking about it publicly. So if you want to know more, feel free to reach out via DMs.</p>\n</blockquote>\n<p>and my original post about it <a href=\"https://x.com/bgavran3/status/1867932769936183321\">on twitter</a>.</p>\n<p>As a short personal update, I am figuring out exactly what is next for me, and hoping to have some good news to share in the near future.</p>",
+        "id": 497181035,
+        "sender_full_name": "Bruno Gavranović",
+        "timestamp": 1738429867
+    },
+    {
+        "content": "<p>Oh wow, that's rough. I hope that didn't put you into immediate financial difficulties, and I hope things work out for you soon!</p>",
+        "id": 497196632,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1738442544
+    }
+]

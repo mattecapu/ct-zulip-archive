@@ -1,0 +1,134 @@
+[
+    {
+        "content": "<p>I'm software architect and I use ologs to design the components of a system -- the abstractions and their relationship.</p>\n<p>Since I'm new to ologs I need to use instances to make sure an aspect is valid. If the instances of two types connect well, then the aspect becomes valid.</p>\n<p>For drawing boxes and arrows we have plenty of tools: <a href=\"http://draw.io/\">draw.io</a>, quiver, catcolab etc. But none of them offer instances.</p>\n<p>More, on complex diagrams I use (co)spans, (co)products, facts, universal properties ... also none of these are available in classic diagram creator tools.</p>\n<p>So I was left with a custom homemade React app which does these basics [1].</p>\n<p>But I still wonder if a.) are there people creating ologs with instances b.) how they manage to do it without a dedicated app?</p>\n<p>Thanks a lot!</p>",
+        "id": 536251542,
+        "sender_full_name": "Csongor",
+        "timestamp": 1756218827
+    },
+    {
+        "content": "<p>In principle, most data sets (instances), such as SQL data sets, can be put into 'categorical normal form', so that you can e.g. do functorial data migration on them using e.g. SQL or whatever you'd like.  And checking olog instances against their olog schemas is pretty easy (decidable).  (vs checking morphisms of ologs, which is hard/undecidable.) For tooling that manipulates olog instances, there's the old FQL tool <a href=\"https://github.com/categoricalData/fql\">https://github.com/categoricalData/fql</a> that operates by SQL translation.  The newer CQL tool <a href=\"https://categoricaldata.net\">https://categoricaldata.net</a> will use external engines such as egglog or the E theorem prover to operate.   CQL also contains EASIK and a CQL &lt;-&gt; EASIK bridge for editing olog schemas <a href=\"https://mta.ca/~rrosebru/project/Easik/\">https://mta.ca/~rrosebru/project/Easik/</a> .  CQL is operated primarily by writing formulae in regular logic, to be close to database theory, rather than using graphical notations, and provides data import/export to SQL, CSV, XML, JSON, RDF, etc.  Do please ping me if you want to use it and I can help you set it up!</p>",
+        "id": 536261225,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1756221704
+    },
+    {
+        "content": "<p>CatColab does have simple support for instances as \"diagrams\" in a model, by the way. Facts are in a PR merging pretty soon that will allow for cospan composition of models. I'd be interested to understand more how you use co/products and such in what sounds like a diagram-drawing workflow!</p>",
+        "id": 536272471,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1756225088
+    },
+    {
+        "content": "<p>The other software we use at Topos for instances is <a href=\"https://github.com/AlgebraicJulia/Catlab.jl\">CatLab</a> in AlgebraicJulia. It mainly considers instances in terms of data structures, not in terms of drawing diagrams, but has visualization capabilities via export to GraphViz.</p>",
+        "id": 536272930,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1756225245
+    },
+    {
+        "content": "<p>Thanks <span class=\"user-mention\" data-user-id=\"281326\">@Ryan Wisnesky</span>! The first tool I've met after learning about ologs / functorial migrations was FQL/CQL. That EASIK screenshot triggered, I guess, the idea to have a fully featured olog editor. Something similar, but without the db aspect (schema, sql, db, code, java). A pure thinking / design tool in the browser, so easy to use as pen and paper.</p>",
+        "id": 536370074,
+        "sender_full_name": "Csongor",
+        "timestamp": 1756283044
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"609515\">@Kevin Carlson</span> I've checked the CatColab's olog feature and my impression is that this a tool for advanced ACT practitioners who, by experience, can draw boxes and arrows on the fly, which are always correct (valid aspects, commute). And these olog diagrams together with other diagrams are part of a larger research process. </p>\n<p>In contrast, I'm an olog end-user, somebody who likes to understand the relationships between <code>a person</code> and <code>a car</code>, somebody who wants to draw a person box, a car box, then see why he can't just connect these two things with a <code>has</code> arrow.</p>\n<p>I've re-created all the ologs from Spivak's \"OLOGS: A CATEGORICAL FRAMEWORK FOR KNOWLEDGE REPRESENTATION\" first with pen and paper, then with my home made app. The biggest hurdle with pen and paper was the instances, that's why I've created the app.</p>\n<p>Now I use this technique to design / architect software [1], and a friend of mine, a political scientist is using ologs to decide the truthiness of a simple sentence, which is usually the end result of a long research of his entire department. </p>\n<p>More, we are playing olog games with friends ... they come up with a mundane / hard / funny question / thing and we put it into the olog editor and see if it's true, how it works, how to twist it to make it true. </p>\n<p>In other words I believe ologs are a general purpose tool, easy to learn as the Pythagoras theorem, and <em>everybody should use it</em>, young and old :D :P</p>\n<p>When posting here I was wondering if anybody else came already to this conclusion, and more, if by chance there is an olog tool for end users like me.</p>\n<p>[1] This is a long article how I've created the <code>list</code> software concept using ologs for structure and finite state machines for behavior.  The olog part, with screenshots featuring product types is here:  <a href=\"https://www.osequi.com/studies/list/list.html#provably-correct-structure-with-ologs\">https://www.osequi.com/studies/list/list.html#provably-correct-structure-with-ologs</a></p>",
+        "id": 536379397,
+        "sender_full_name": "Csongor",
+        "timestamp": 1756286346
+    },
+    {
+        "content": "<p>Thanks! But what is it about CatColab that makes you feel that way? We don't intend it to require any particular brilliance from the practitioner, so it'd be great to understand why it reads like that to you. I don't understand, in particular, why you feel like you need to always come up with \"valid aspects\" and commutative diagrams in CatColab; I don't particularly even know what you mean by \"validity\" here, or why you can't back up and change an olog in CatColab as well as in your preferred tool.</p>",
+        "id": 536466762,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1756315388
+    },
+    {
+        "content": "<p>Good question, Kevin.    What makes Catcolab feel like it's only for experts, <span class=\"user-mention\" data-user-id=\"952176\">@Csongor</span> </p>\n<p>I'm good at math but terrible at everything to do with software, so let's see how hard it is for me to set up an olog on Catcolab.   I type \"olog Catcolab\" into a search engine, blunder my way to</p>\n<p><a href=\"https://catcolab.org/help/logics/simple-olog\">Logics / Olog</a></p>\n<p>and try to avoid getting intimidated by not reading anything, just trying to figure out how to start creating an olog.  I don't see anything that tells me how to do it, so I click on an example:</p>\n<p><a href=\"https://catcolab.org/model/0194d356-a82a-7362-afd2-72e30864ba9d\">Novels and novelists</a></p>\n<p>I see an olog: some boxes with arrows going between them, labeled by text.  I don't see how to create new boxes, but I can type new words into the existing boxes.  So it seems to work.</p>\n<p>Okay, there's a weird little gray thing with a plus sign on it near the bottom, so I try that.  Using that I'm able to create a new type \"A dog\" and a new aspect \"A dog has as owner an author\".   So it seems to work.</p>\n<p>At top left there's a bunch of gray lines, and if I click on those I get to choose \"New model\", and if I click on that I see \"Informal\".  I don't know what that means, but I bet it's the <em>kind</em> of model.  So I click on that and I get a big menu with a lot of choices of <em>kind</em> of model.  To avoid becoming intimidated by all these choices, I just click on \"olog\".</p>\n<p>Then I get a mostly empty page that says \"Untitled\" - but luckily, in gray it says \"Click button or press Shift-Enter to create a cell\", and thanks to the example I sort of know how to create an olog by clicking on this.</p>\n<p>This seems roughly as easy or hard as doing, say, a money transfer on my bank account.</p>",
+        "id": 536468830,
+        "sender_full_name": "John Baez",
+        "timestamp": 1756316225
+    },
+    {
+        "content": "<p>Cool! That's not ideal but it could definitely be worse and we're aware of most of the points at which it was harder than it really needs to be. I do notice that you don't seem to have wandered into the \"new analysis\" button, which is where you would actually <em>visualize</em> your olog, nor the \"new diagram\" button, which is where you would instantiate one.</p>",
+        "id": 536474717,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1756318529
+    },
+    {
+        "content": "<p>I saw them, actually.   I was just trying to get started....</p>",
+        "id": 536475575,
+        "sender_full_name": "John Baez",
+        "timestamp": 1756318895
+    },
+    {
+        "content": "<p>Sure, I guess I should have said something more like \"did you experience any distress at not having drawn or instantiated these ologs yet, or were you just getting started?\"</p>",
+        "id": 536475683,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1756318935
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"609515\">@Kevin Carlson</span> I guess the keyword is \"olog end user\" ... a person who reads the Spivak paper and expects a whiteboard where he can draw ologs [1]</p>\n<p>In contrast, when I open CatColab &gt; Get Started &gt; Menu ... I see \"New model\" ... Me, as an olog practitioner I don't even know what a model would be ... No word about models in the Spivak paper.</p>\n<p>So the key thing is the lens: you, researchers have a tremendous knowledge about CT/ACT, an olog end user knows only types, aspects, instances, facts ... boxes and arrows, and the content (instances) of the boxes defines the validity of the arrows.</p>\n<p>Don't get me wrong, CatColab is perhaps the best tool for research, various modelling, but there are users (hopefully there will be) who needs only to draw boxes, add content, and see how the arrows behave. These users might not even have math education, or heard about category theory, like my political sciences friend who likes using it that simple digital whiteboard.</p>\n<p>[1] A quick screencast of my olog app, a simple whiteboard: <a href=\"https://drive.google.com/file/d/1NKPk1kMLjWIZNnql4orbLPUm27UmB98Z/view?usp=sharing\">https://drive.google.com/file/d/1NKPk1kMLjWIZNnql4orbLPUm27UmB98Z/view?usp=sharing</a></p>\n<p>[2] A screenshot of CatColab / Menu: <a href=\"https://drive.google.com/file/d/1veuTqPkE7FW1Hvb45z5EPZtvxx1N9ecl/view?usp=sharing\">https://drive.google.com/file/d/1veuTqPkE7FW1Hvb45z5EPZtvxx1N9ecl/view?usp=sharing</a></p>",
+        "id": 536479268,
+        "sender_full_name": "Csongor",
+        "timestamp": 1756320470
+    },
+    {
+        "content": "<p>One sec, updating the links from Google Drive to something freely accessible</p>",
+        "id": 536479415,
+        "sender_full_name": "Csongor",
+        "timestamp": 1756320549
+    },
+    {
+        "content": "<p>OK, that helps a lot; the most key distinction is that CatColab is not just for building ologs, but also for \"models\" of many other \"theories\" (there is a certain \"theory\" whose models are \"ologs\") so to make it comfortable for somebody who just wants ologs we ought to have a version of the user interface that hides all the different theories.</p>",
+        "id": 536479420,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1756320552
+    },
+    {
+        "content": "<p>Great! Those are the two 'free' links: </p>\n<p>[1] - <a href=\"https://limewire.com/d/DpTKB#7tXc7QWjf6\">https://limewire.com/d/DpTKB#7tXc7QWjf6</a><br>\n[2] - <a href=\"https://limewire.com/d/o2Fao#Gy1HCaZWBA\">https://limewire.com/d/o2Fao#Gy1HCaZWBA</a></p>",
+        "id": 536479974,
+        "sender_full_name": "Csongor",
+        "timestamp": 1756320797
+    },
+    {
+        "content": "<p>On the other hand John said it perfectly: \"try to avoid getting intimidated by not reading anything\" ... CatColab would be intimidating for someone who knows only a few things about ologs and nothing about CT/ACT</p>",
+        "id": 536480278,
+        "sender_full_name": "Csongor",
+        "timestamp": 1756320923
+    },
+    {
+        "content": "<p>Thanks for those! I can't really see the whole interface in your app, I guess you use a keyboard interaction to make a new entity type? I like the interface for tables quite a lot.</p>",
+        "id": 536480474,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1756321004
+    },
+    {
+        "content": "<p>Try it at your own peril :D <a href=\"https://oe-clean.surge.sh/\">https://oe-clean.surge.sh/</a> .... for example pressing 'h' brings up the menu, and drawing arrows is not always successful, it might drop a new type/thing instead</p>",
+        "id": 536480742,
+        "sender_full_name": "Csongor",
+        "timestamp": 1756321132
+    },
+    {
+        "content": "<p>hint: double click to get started, aka drop a type/thing <br>\npro tip: start drawing an arrow from an existing box then drop it for a new box</p>",
+        "id": 536480998,
+        "sender_full_name": "Csongor",
+        "timestamp": 1756321232
+    },
+    {
+        "content": "<p>Dark mode is more user friendly ....</p>\n<p><a href=\"/user_uploads/21317/ckjrwlB0eMzR044qk_TD-mhk/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/ckjrwlB0eMzR044qk_TD-mhk/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"3198x2070\" src=\"/user_uploads/thumbnail/21317/ckjrwlB0eMzR044qk_TD-mhk/image.png/840x560.webp\"></a></div>",
+        "id": 536481432,
+        "sender_full_name": "Csongor",
+        "timestamp": 1756321417
+    },
+    {
+        "content": "<p>I hope, <span class=\"user-mention\" data-user-id=\"609515\">@Kevin Carlson</span>, that it would be pretty easy to create an interface for Catcolab that <em>only does ologs</em>, or only does some other sort of model.   And maybe it could have a little red dot in the lower right corner (I'm joking, I hate these cryptic icons that are so fashionable nowadays) that if you clicked on it would say \"YOU HAVE EATEN THE RED PILL: ALL OF THIS WAS JUST A TINY PORTION OF WHAT CATCOLAB IS CAPABLE OF\", or something a bit less ridiculous, and welcome you to a broader framework.</p>",
+        "id": 536750424,
+        "sender_full_name": "John Baez",
+        "timestamp": 1756459576
+    },
+    {
+        "content": "<p>Yes, this is a really nice idea! I've recorded it on our issue tracker.</p>",
+        "id": 537547440,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1756930421
+    }
+]
