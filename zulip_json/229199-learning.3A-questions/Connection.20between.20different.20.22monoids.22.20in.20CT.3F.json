@@ -1,0 +1,56 @@
+[
+    {
+        "content": "<p>I was wondering if there was a connection between these three notions in CT?</p>\n<ul>\n<li>Monoidal Category - A category which has a monoidal product</li>\n<li>Monoid in a Category - This is a particular object (+ morphisms) in a category</li>\n<li>Monoid is a category - A one object category is a monoid.</li>\n</ul>\n<p>Apart from using 'monoid' in all three definitions, is there another connection? For instance, can one be defined in terms of another?<br>\nMaybe something like a Monoid in <em>Cat</em> is a Monoidal category, etc.?</p>",
+        "id": 442811547,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1717599652
+    },
+    {
+        "content": "<p>Almost. A <em>strict</em> monoidal category is a monoid in Cat, but a general monoidal category is only a <a href=\"https://ncatlab.org/nlab/show/pseudomonoid\">[[pseudomonoid]]</a>.</p>",
+        "id": 442813921,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1717600207
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"726654\">Suraaj K S</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Connection.20between.20different.20.22monoids.22.20in.20CT.3F/near/442811547\">said</a>:</p>\n<blockquote>\n<p>Monoid is a category - A one object category is a monoid.</p>\n</blockquote>\n<p>Also a one-obect <em>bicategory</em> is a monoidal category.</p>",
+        "id": 442814302,
+        "sender_full_name": "Dylan Braithwaite",
+        "timestamp": 1717600295
+    },
+    {
+        "content": "<p>Ah I see. Can the idea of 'monoids in a category' be derived from other notions?</p>",
+        "id": 442815720,
+        "sender_full_name": "Suraaj K S",
+        "timestamp": 1717600614
+    },
+    {
+        "content": "<p>Almost everything in category theory can be derived from something else, but if you walk down that path, you are apt to end up back where you started (or maybe one level up in an abstraction hierarchy).</p>\n<p>At least one good representations for a monoid (in any monoidal category) is as a monoidal functor out of finite sets (with coproduct for the monoidal structure). It sends an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-element set to an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-fold tensor of the underlying object, and the unique arrows <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>→</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">2\\to 1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">2</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>→</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">0\\to 1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span> to the multiplication and unit, respectively. All other functions can be built from these via coproduct and composition.</p>",
+        "id": 442819118,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1717601434
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"278008\">Spencer Breiner</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Connection.20between.20different.20.22monoids.22.20in.20CT.3F/near/442819118\">said</a>:</p>\n<blockquote>\n<p>Almost everything in category theory can be derived from something else, but if you walk down that path, you are apt to end up back where you started (or maybe one level up in an abstraction hierarchy).</p>\n</blockquote>\n<p>True.  But as Spencer knows, that is not a bad thing.  At very least it's fun and educational - sort of like hiking along different trails to get to know the woods.</p>",
+        "id": 442822662,
+        "sender_full_name": "John Baez",
+        "timestamp": 1717602314
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"726654\">Suraaj K S</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Connection.20between.20different.20.22monoids.22.20in.20CT.3F/near/442815720\">said</a>:</p>\n<blockquote>\n<p>Ah I see. Can the idea of 'monoids in a category' be derived from other notions?</p>\n</blockquote>\n<p>'Monoid in a category' is just barely meaningful, but 'monoid in a monoidal category M' is a very important concept, and there are several nice ways to define it.  For example, it's a lax monoidal functor from the terminal monoidal category to M.</p>",
+        "id": 442823891,
+        "sender_full_name": "John Baez",
+        "timestamp": 1717602580
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"278008\">Spencer Breiner</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Connection.20between.20different.20.22monoids.22.20in.20CT.3F/near/442819118\">said</a>:</p>\n<blockquote>\n<p>Almost everything in category theory can be derived from something else, but if you walk down that path, you are apt to end up back where you started (or maybe one level up in an abstraction hierarchy).</p>\n<p>At least one good representations for a monoid (in any monoidal category) is as a monoidal functor out of finite sets (with coproduct for the monoidal structure). It sends an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-element set to an <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-fold tensor of the underlying object, and the unique arrows <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>→</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">2\\to 1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">2</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>→</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">0\\to 1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span> to the multiplication and unit, respectively. All other functions can be built from these via coproduct and composition.</p>\n</blockquote>\n<p>I may misunderstand your message, but I'm pretty sure that the property you describe relies instead on the <a href=\"https://ncatlab.org/nlab/show/simplex+category#universal_properties\">augmented simplex category</a>, i.e. the category of finite ordinals and order-preserving functions. I think that the category of finite sets would correspond to the case of commutative monoids.</p>",
+        "id": 442853524,
+        "sender_full_name": "Vincent Moreau",
+        "timestamp": 1717609488
+    },
+    {
+        "content": "<p>Thanks, <span class=\"user-mention silent\" data-user-id=\"629800\">Vincent Moreau</span>. I was indeed thinking about commutative monoids</p>",
+        "id": 442945171,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1717638857
+    }
+]

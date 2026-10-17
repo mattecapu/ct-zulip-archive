@@ -1,0 +1,38 @@
+[
+    {
+        "content": "<p>Let <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>T</mi><mo separator=\"true\">,</mo><mi>η</mi><mo separator=\"true\">,</mo><mi>μ</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(T, \\eta, \\mu)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">η</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">μ</span><span class=\"mclose\">)</span></span></span></span>  be an idempotent monad in a cartesian monoidal category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"script\">C</mi></mrow><annotation encoding=\"application/x-tex\">\\mathcal{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.05834em;\">C</span></span></span></span> (I may want to consider monoidal categories with diagonals more generally, but let's keep it simple), with left and right monoidal strengths <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi></mrow><annotation encoding=\"application/x-tex\">s</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">s</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">t</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6151em;\"></span><span class=\"mord mathnormal\">t</span></span></span></span>. I am trying, and miserably failing, to prove that the following (outer) diagram commutes:</p>\n<p><a href=\"/user_uploads/21317/LjYZ4IED1yTQL-ahbNw4YHvY/screenshot-2024-02-16-160553.png\">screenshot-2024-02-16-160553.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/LjYZ4IED1yTQL-ahbNw4YHvY/screenshot-2024-02-16-160553.png\" title=\"screenshot-2024-02-16-160553.png\"><img src=\"/user_uploads/21317/LjYZ4IED1yTQL-ahbNw4YHvY/screenshot-2024-02-16-160553.png\"></a></div><p>That is, in pseudo-Haskell, <code>liftM2 (,) a a = fmap (λ x → (x, x)) a</code> (which is the usual definition of an \"idempotent applicative functor\"). The triangles are my attempts, but I still have no idea whether the remaining square commutes. Any ideas?</p>",
+        "id": 421877164,
+        "sender_full_name": "Naïm Favier",
+        "timestamp": 1708096170
+    },
+    {
+        "content": "<p>I figured it out:<br>\n<a href=\"/user_uploads/21317/t-nBAcPxMUzXrGzcDJZERmgJ/screenshot-2024-02-16-225953.png\">screenshot-2024-02-16-225953.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/t-nBAcPxMUzXrGzcDJZERmgJ/screenshot-2024-02-16-225953.png\" title=\"screenshot-2024-02-16-225953.png\"><img src=\"/user_uploads/21317/t-nBAcPxMUzXrGzcDJZERmgJ/screenshot-2024-02-16-225953.png\"></a></div>",
+        "id": 421945371,
+        "sender_full_name": "Naïm Favier",
+        "timestamp": 1708120834
+    },
+    {
+        "content": "<p>I wonder if there's a general strategy for proving this sort of things... I sort of just stared at nlab's proof that <a href=\"https://ncatlab.org/nlab/show/idempotent+monad#idempotent_strong_monads_are_commutative\">idempotent strong monads are commutative</a> until inspiration struck</p>",
+        "id": 421947073,
+        "sender_full_name": "Naïm Favier",
+        "timestamp": 1708121695
+    },
+    {
+        "content": "<p>I don't think this diagram is well-formed (maximal paths don't all end in the same place). <br>\nI'd also like to know if this property is true. \"Idempotent\" in this context seems a bit ambiguous, e.g. the Maybe monad is idempotent as an applicative functor but not as a monad.</p>",
+        "id": 422109494,
+        "sender_full_name": "Hugo Paquet",
+        "timestamp": 1708273457
+    },
+    {
+        "content": "<p>Oops, you're right. I thought I had convinced myself it worked despite the wonkiness, but now I'm not so sure. I'll see if I can salvage it.</p>\n<p>Yes, \"idempotent\" is ambiguous and not a great name anyway since this does not correspond to the notion of an idempotent monoid in any way. I think a better name would be \"diagonal monoidal functor\", but oh well (the name \"idempotent monoidal functor\" is already established in <em>Programming contextual computations</em>).</p>",
+        "id": 422110478,
+        "sender_full_name": "Naïm Favier",
+        "timestamp": 1708274216
+    },
+    {
+        "content": "<p>Fixed it:</p>\n<p><a href=\"/user_uploads/21317/Z1ar-QuTi91Bnya-KjhHdzkc/screenshot-2024-02-18-184753.png\">screenshot-2024-02-18-184753.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/Z1ar-QuTi91Bnya-KjhHdzkc/screenshot-2024-02-18-184753.png\" title=\"screenshot-2024-02-18-184753.png\"><img src=\"/user_uploads/21317/Z1ar-QuTi91Bnya-KjhHdzkc/screenshot-2024-02-18-184753.png\"></a></div><p>It's still <span aria-label=\"woozy face\" class=\"emoji emoji-1f974\" role=\"img\" title=\"woozy face\">:woozy_face:</span> but at least I can translate it into an equational chain now:</p>\n<p>Tδ<br>\n= Tδ ; Tη ; μ (monad law)<br>\n= Tδ ; T (A × η) ; Ts ; μ (η is left-strong)<br>\n= Tδ ; T (A × η) ; η ; μ ; Ts ; μ (monad law)<br>\n= Tδ ; T (A × η) ; T (η × TA) ; Tt ; μ ; Ts ; μ (η is right-strong)<br>\n= Tδ ; Т (η × η) ; Tt ; μ ; Ts ; μ<br>\n= Tη ; Tδ ; Tt ; μ ; Ts ; μ (naturality of Tδ)<br>\n= η ; Tδ ; Tt ; μ ; Ts ; μ (idempotence)<br>\n= δ ; t ; η ; μ ; Ts ; μ (naturality of η)<br>\n= δ ; t ; Ts ; μ (monad law)</p>",
+        "id": 422115875,
+        "sender_full_name": "Naïm Favier",
+        "timestamp": 1708278922
+    }
+]

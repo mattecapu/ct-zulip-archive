@@ -1,0 +1,80 @@
+[
+    {
+        "content": "<p>There are lots of ways to think about double categories, but for the purpose of this post I'm interested in viewing a (strict) double category as \"a category with two types of morphism\", where we think of a square as asserting that its frame  commutes. (\"Frame\" means the four objects and four morphisms that define a square's type.)</p>\n<p>As an example, imagine sets equipped with two different structures. Let horizontal morphisms preserve one structure and vertical morphisms preserve the other, and let squares assert that the underlying maps in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">S</mi><mi mathvariant=\"bold\">e</mi><mi mathvariant=\"bold\">t</mi></mrow><annotation encoding=\"application/x-tex\">\\bf Set</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Set</span></span></span></span></span> commute.</p>\n<p>To interpret a general double category in this sort of way, the double category should at least be \"thin\", meaning there is at most one square that fills each frame. But for it to really feel like the squares are \"asserting equality\", it feels like we need a bit more than that. For example, if we have squares</p>\n<p><a href=\"/user_uploads/21317/4MBWYLBehb3QkfEjGe53Fqu4/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/4MBWYLBehb3QkfEjGe53Fqu4/image.png\" title=\"image.png\"><img src=\"/user_uploads/21317/4MBWYLBehb3QkfEjGe53Fqu4/image.png\"></a></div><p>then it seems like we should be able to conclude that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mo>=</mo><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">h=g</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">h</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span>. The idea being that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>g</mi></mrow><annotation encoding=\"application/x-tex\">g</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi></mrow><annotation encoding=\"application/x-tex\">h</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">h</span></span></span></span> can both be thought of as a kind of composite of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi></mrow><annotation encoding=\"application/x-tex\">a</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">a</span></span></span></span> (despite their not being the same type), and so the two composites should be equal.</p>\n<p>So I'm wondering if there's a structure like this that's been studied - a double category with additional axioms such that it makes sense to think of the squares as asserting that the frame commutes.</p>",
+        "id": 449759068,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1720408122
+    },
+    {
+        "content": "<p>I believe you can characterize the situation by asking the dbl category to be (a) fibrant (aka framed bicat aka proarrow equipment) (b) transpositive (ie it's a strict double category) and (c) for the transpose to be fibrant again</p>",
+        "id": 449787118,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1720421123
+    },
+    {
+        "content": "<p>Practically it means you have extensions and restrictions along both tight and loose maps. So in the example you make, h=g because they are both restrictions of F along (1_X,a)</p>",
+        "id": 449787267,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1720421183
+    },
+    {
+        "content": "<p>I wonder if one can prove that every 'transpositively fibrant' double category is equivalent to a double category of arrows</p>",
+        "id": 449787430,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1720421269
+    },
+    {
+        "content": "<p>That makes a lot of sense, but I think it might be too strong, because if we change <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mn>1</mn><mi>X</mi></msub></mrow><annotation encoding=\"application/x-tex\">1_X</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7944em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\">1</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3283em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.07847em;\">X</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> to some other morphism, we shouldn't be able to draw the same conclusion. At least, we can't draw that conclusion if we're looking at the double category of squares in some category.</p>",
+        "id": 449787684,
+        "sender_full_name": "Nathaniel Virgo",
+        "timestamp": 1720421373
+    },
+    {
+        "content": "<p>Uhm that's very true</p>",
+        "id": 449789284,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1720422087
+    },
+    {
+        "content": "<p>A category of squares though is transpositively fibrant <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span> because it is fibrant &amp; invariant under transposition! What am I missing?</p>",
+        "id": 449789418,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1720422151
+    },
+    {
+        "content": "<blockquote>\n<p>As an example, imagine sets equipped with two different structures. Let horizontal morphisms preserve one structure and vertical morphisms preserve the other, and let squares assert that the underlying maps in Set commute.</p>\n</blockquote>\n<p>It's worth warning that such double categories are typically ill-behaved. In the paper \"Limits in double categories\", Grandis and Paré describe a double category of topological groups in this way, but later note that isomorphisms in one direction do not transpose to isomorphisms in the other direction.</p>",
+        "id": 449789535,
+        "sender_full_name": "Bryce Clarke",
+        "timestamp": 1720422204
+    },
+    {
+        "content": "<p>Ah, no, it isn't fibrant unless the base category is finitely complete 🤦🏻‍♂️</p>",
+        "id": 449789643,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1720422243
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Double.20categories.20where.20the.20squares.20.22assert.20equality.22/near/449789418\">said</a>:</p>\n<blockquote>\n<p>A category of squares though is transpositively fibrant <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span> because it is fibrant &amp; invariant under transposition! What am I missing?</p>\n</blockquote>\n<p>The double category of squares does not have conjoints.</p>",
+        "id": 449789661,
+        "sender_full_name": "Bryce Clarke",
+        "timestamp": 1720422247
+    },
+    {
+        "content": "<p>Indeed!</p>",
+        "id": 449789686,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1720422262
+    },
+    {
+        "content": "<p>Perhaps companions both ways are enough</p>",
+        "id": 449789781,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1720422316
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276071\">@Nathaniel Virgo</span> perhaps the notion you are looking for is <a href=\"https://ncatlab.org/nlab/show/right-connected%20double%20category\">[[right-connected double category]]</a>. I have some talk slides on the notion <a href=\"https://bryceclarke.github.io/talk-slides/2023-02-higher-categories-seminar.pdf\">here</a>.</p>",
+        "id": 449790258,
+        "sender_full_name": "Bryce Clarke",
+        "timestamp": 1720422538
+    }
+]

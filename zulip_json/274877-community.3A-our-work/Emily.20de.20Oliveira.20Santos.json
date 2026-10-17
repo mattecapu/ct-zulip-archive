@@ -1,0 +1,170 @@
+[
+    {
+        "content": "<p>Today <a href=\"https://epochai.org/\">Epoch AI</a> has <a href=\"https://x.com/EpochAIResearch/status/1854996368814936250\">announced</a> a math benchmark to test AI systems comprised of extremely hard problems in research math.</p>\n<p>You can check <a href=\"https://arxiv.org/abs/2411.04872\">the paper</a>, the <a href=\"https://x.com/EpochAIResearch/status/1854996368814936250\">announcement video</a>, or <a href=\"https://epochai.org/frontiermath\">their website</a> for more details, including interviews with Borcherds, Tao, Chen, and Gowers (!!)</p>\n<p>Something I thought the people here on Zulip would appreciate to know is that some of the problems in the benchmark were specifically on category theory :)</p>",
+        "id": 481399658,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1731106691
+    },
+    {
+        "content": "<p>I'm impatient and lazy. I did a ctrl-F on the paper to try to see which problems on category theory those were. I didn't see anything. Can you tell us what the problems were?</p>",
+        "id": 481400737,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1731107214
+    },
+    {
+        "content": "<p>I think the benchmark has to be kept mostly secret, unfortunately for our interest in what category-theoretic problems with numerical answers people have got in there!</p>",
+        "id": 481401535,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1731107691
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277611\">Todd Trimble</span> <a href=\"#narrow/channel/274877-community.3A-our-work/topic/Emily.20de.20Oliveira.20Santos/near/481400737\">said</a>:</p>\n<blockquote>\n<p>I'm impatient and lazy. I did a ctrl-F on the paper to try to see which problems on category theory those were. I didn't see anything. Can you tell us what the problems were?</p>\n</blockquote>\n<p>I wish I could, but since data contamination¹ is an issue, I unfortunately can't go into more details than saying category theory was one of the areas which the benchmark aimed to cover (as mentioned in the paper)</p>\n<p>¹i.e. when problems and solutions of a benchmark get leaked and models end up being trained on those, so they end up being able to solve them by merely reproducing what they have seem</p>",
+        "id": 481401640,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1731107756
+    },
+    {
+        "content": "<p>Oh, you're a co-author, Emily! So I guess you were involved in constructing the category theory-related problems, then? Very cool.</p>",
+        "id": 481401795,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1731107841
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/channel/274877-community.3A-our-work/topic/Emily.20de.20Oliveira.20Santos/near/481401795\">said</a>:</p>\n<blockquote>\n<p>Oh, you're a co-author, Emily! So I guess you were involved in constructing the category theory-related problems, then? Very cool.</p>\n</blockquote>\n<p>Yep! It was super cool coming up with them, and I even ended up figuring a number of things that are going to be super useful in some of the research I've been doing!</p>",
+        "id": 481402374,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1731108149
+    },
+    {
+        "content": "<p>There was one particular problem which I ended up not submitting to FrontierMath because I had a certain issue with it, so I ended up submitting it to a different benchmark (<a href=\"https://scale.com/blog/humanitys-last-exam\">this one</a>)</p>",
+        "id": 481402593,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1731108255
+    },
+    {
+        "content": "<p>I think there's a good chance I'll be able to share it here once that other benchmark is over</p>\n<p>(i.e. if either the problem gets rejected or if it makes into the dataset but not into the private subset of it, which according to the description on their website will be \"small\")</p>",
+        "id": 481402620,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1731108275
+    },
+    {
+        "content": "<p>Thank you Emily! Follow-up question: can numerical solutions be infinite sequences of numbers? Or is it that all of the posed questions are single numbers or maybe finite sets of numbers?</p>",
+        "id": 481405287,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1731109999
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277611\">Todd Trimble</span> <a href=\"#narrow/channel/274877-community.3A-our-work/topic/Emily.20de.20Oliveira.20Santos/near/481405287\">said</a>:</p>\n<blockquote>\n<p>Thank you Emily! Follow-up question: can numerical solutions be infinite sequences of numbers? Or is it that all of the posed questions are single numbers or maybe finite sets of numbers?</p>\n</blockquote>\n<p>I think (judging from the paper) that the allowed kinds of solutions were single numbers, finite sets of numbers, or <code>SymPy</code> objects (so e.g. things like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>e</mi><mrow><mi>ln</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mn>2</mn><mi>π</mi><mo stretchy=\"false\">)</mo></mrow></msup></mrow><annotation encoding=\"application/x-tex\">e^{\\ln(2\\pi)}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.888em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">e</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.888em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mop mtight\"><span class=\"mtight\">l</span><span class=\"mtight\">n</span></span><span class=\"mopen mtight\">(</span><span class=\"mord mtight\">2</span><span class=\"mord mathnormal mtight\" style=\"margin-right:0.03588em;\">π</span><span class=\"mclose mtight\">)</span></span></span></span></span></span></span></span></span></span></span></span>, matrices, etc.). Most likely infinite sequences or infinite objects in general could not be allowed because it'd make automatically verifying the model's answers too hard =/</p>",
+        "id": 481405825,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1731110373
+    },
+    {
+        "content": "<p>(I'm not saying this is the case though, just what I think is probably true)</p>",
+        "id": 481405827,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1731110374
+    },
+    {
+        "content": "<p>At least, it seems hard to quantify how strongly you believe that the model is generating the correct infinite stream, unless it gives you a program that produces that stream that you can put in bisimulation with a known-correct one. But that would add a whole lot of trouble!</p>",
+        "id": 481407586,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1731111387
+    },
+    {
+        "content": "<p>I saw the paper linked on Mathstodon, and was having a hard time imagining what on earth the CT problems could be. That the answers are so highly constrained makes the whole exercise somehow differently interesting for me. Now I'm even more mystified as to the kinds of problems they could be.</p>\n<p>I have been contacted more than once through various channels by various companies wanting me to use my expertise in mathematics to come up with problems for the purposes of AI research — but the kinds of problems they are after are not ones I really consider (IMO-style, mostly).</p>",
+        "id": 481420579,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1731120872
+    },
+    {
+        "content": "<p>Obviously we can't know what the specific problems are, but how about giving a general hint of the type of problem? Something like \"enumerate the number of non-isomorphic/equivalent groupoids with n morphisms\" seems like a problem that falls in the realm of \"having a numeric answer\", but also feels less like category theory.</p>",
+        "id": 481420706,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1731120996
+    },
+    {
+        "content": "<p>I'm a little apprehensive on talking about the problems that made it into the dataset, but likely I'll be able to talk a bit about the problems I submitted to the other benchmark project that had been running during October (<a href=\"https://scale.com/blog/humanitys-last-exam\">this one</a>, from Scale AI) once it's over.</p>",
+        "id": 481460167,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1731158327
+    },
+    {
+        "content": "<p>For those, I tried to make sure that a core part of the problem involved non-trivial category theory, and often the problem involved some combinatorics after that.</p>",
+        "id": 481460173,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1731158337
+    },
+    {
+        "content": "<p>There was one problem that I was originally going to submit to FrontierMath but ended up not doing so due to a few reasons (in the end I also wasn't completely happy with how it came out).</p>",
+        "id": 481460184,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1731158347
+    },
+    {
+        "content": "<p>Hopefully I'll be able to share it here once that other benchmark is over, but for now I can say that the core category theory part of that problem was \"Isbell duality\" :)</p>",
+        "id": 481460191,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1731158354
+    },
+    {
+        "content": "<p>Let me see if I can make up a semi-compelling example since Emily can't share much here. Aiming for a lower level than this dataset, more like a problem you could give in a graduate-level course, how about \"How many functors between the following two very small categories are such that left Kan extension along them is full?\"</p>",
+        "id": 481498738,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1731189993
+    },
+    {
+        "content": "<p>This is just on my mind because I recently had to characterize which functors have full left Kan extensions, and it was quite doable but didn't seem to be findable in the literature.</p>",
+        "id": 481498796,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1731190045
+    },
+    {
+        "content": "<p>Now, depending on which categories you chose in my problem the ratio of category theory to combinatorics could be arbitrary. It'd be interesting to try to get more CT and less combinatorics.</p>",
+        "id": 481498876,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1731190090
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/channel/274877-community.3A-our-work/topic/Emily.20de.20Oliveira.20Santos/near/481498796\">said</a>:</p>\n<blockquote>\n<p>This is just on my mind because I recently had to characterize which functors have full left Kan extensions, and it was quite doable but didn't seem to be findable in the literature.</p>\n</blockquote>\n<p>This sounds quite interesting! Were you after general conditions for the left Kan extensions to be full, or was the setup somewhat specific?</p>",
+        "id": 481787889,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1731351359
+    },
+    {
+        "content": "<p>(I'd love to hear more either way! :)</p>",
+        "id": 481787938,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1731351365
+    },
+    {
+        "content": "<p>Ah, I was misremembering; I was looking for conditions on a general <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> such that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>f</mi><mo stretchy=\"false\">!</mo></msub></mrow><annotation encoding=\"application/x-tex\">f_!</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mclose mtight\">!</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> has epimorphic unit and such that it preserves monos and convinced by self that necessary (I think?) and sufficient conditions are that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> be full and that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span>'s comma categories be <a href=\"https://ncatlab.org/nlab/show/confluent+category\">confluent</a>. This was in the middle of working on a conjecture of Ben Bumpus and some of his collaborators.</p>",
+        "id": 481801887,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1731356165
+    },
+    {
+        "content": "<p>This was a fun exercise because I remember it as the first time talking to Claude \"helped\" me with a real problem, in that it gave me obviously wrong guesses to fix, which was easier than generating wrong guesses for myself.</p>",
+        "id": 481802251,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1731356304
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/channel/274877-community.3A-our-work/topic/Emily.20de.20Oliveira.20Santos/near/481801887\">said</a>:</p>\n<blockquote>\n<p>Ah, I was misremembering; I was looking for conditions on a general <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> such that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>f</mi><mo stretchy=\"false\">!</mo></msub></mrow><annotation encoding=\"application/x-tex\">f_!</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mclose mtight\">!</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> has epimorphic unit and such that it preserves monos and convinced by self that necessary (I think?) and sufficient conditions are that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span> be full and that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span>'s comma categories be <a href=\"https://ncatlab.org/nlab/show/confluent+category\">confluent</a>. This was in the middle of working on a conjecture of Ben Bumpus and some of his collaborators.</p>\n</blockquote>\n<p>Oh, that sounds really interesting! Did you end up writing this down? I've been gathering similar such conditions on Clowder¹, and would love to have a look at it!</p>\n<p>(¹More specifically, Item (f) of Item 4 of Proposition 8.5.1.1.2 (as of writing), <a href=\"https://www.clowderproject.com/tag/0116.html\">here</a>)</p>",
+        "id": 482451841,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1731607290
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/channel/274877-community.3A-our-work/topic/Emily.20de.20Oliveira.20Santos/near/481802251\">said</a>:</p>\n<blockquote>\n<p>This was a fun exercise because I remember it as the first time talking to Claude \"helped\" me with a real problem, in that it gave me obviously wrong guesses to fix, which was easier than generating wrong guesses for myself.</p>\n</blockquote>\n<p>I've found AI tools have been surprisingly useful lately (at least compared to GPT4, which was pretty much unusable for math when it first came out). A while ago they actually helped me compute a coend which I otherwise would be struggling with for a long time.</p>",
+        "id": 482452588,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1731607506
+    },
+    {
+        "content": "<p>I've also found them to be pretty useful for stuff like generating programs to explicitly compute traces of categories, like <a href=\"https://github.com/topological-modular-forms/divisibility-posets-trace/tree/main\">here</a> (context: <a href=\"https://mathoverflow.net/questions/482041/what-is-the-trace-of-the-category-of-divisibility-posets\">MO 482041</a>)</p>",
+        "id": 482452827,
+        "sender_full_name": "Emily (she/her)",
+        "timestamp": 1731607590
+    }
+]

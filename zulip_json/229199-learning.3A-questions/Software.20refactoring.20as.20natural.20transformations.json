@@ -1,0 +1,140 @@
+[
+    {
+        "content": "<p>So I've been working on a language called \"plumbing\" for hooking up \"AI agents\" into networks. It is based on the copy-discard category with a bit of extra structure that <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> kindly let me write about on the <a href=\"https://golem.ph.utexas.edu/category/2026/03/a_typed_language_for_agent_coordination.html\">n-Category cafe</a>.</p>\n<p>Last night I was doing some work on the runtime. A fairly major refactor. I am using a \"coding agent\" to assist with this and a methodology that basically involves a whole bunch of discussion and design before passing it over to \"engineering\" to do the actual implementation. Here is a diagram of what the process looks like, roughly, from a talk I gave a couple of weeks ago at the Quantum Software Lab in Edinburgh,</p>\n<p><img alt=\"image.png\" class=\"inline-image\" data-original-content-type=\"image/png\" data-original-dimensions=\"1612x922\" data-original-src=\"/user_uploads/21317/pjnHEB7-Asqkn7ed4-1pU1Na/image.png\" src=\"/user_uploads/thumbnail/21317/pjnHEB7-Asqkn7ed4-1pU1Na/image.png/840x560.webp\"></p>\n<p>I explain in a bit more detail what happened at the link below, but it looks like, because I set the whole thing up in categorical terms, and gave quite precise instructions about the target of the refactor -- a design note and an explicit operational semantics -- when the coding agent came upon a question in its planning and review cycle, the framing of \"software refactor\" happened in terms of natural transformations. This is a very good way to look at it and not something I have seen before. Maybe it is known to people who work with proof assistants?</p>\n<p>The really nice thing about this is that sort of framing <em>constrainst the implementation</em> so much that the coding agent doesn't have much scope to go off and do nonsense. It just gets on with the tedious mechanical details.</p>\n<p><a href=\"https://leithdocs.com/ldc/documents/notes/research/bridge-as-natural-transformation.md\">https://leithdocs.com/ldc/documents/notes/research/bridge-as-natural-transformation.md</a></p>",
+        "id": 579420206,
+        "sender_full_name": "ww",
+        "timestamp": 1773478912
+    },
+    {
+        "content": "<p>I don't understand this sentence:</p>\n<blockquote>\n<p>when the coding agent came upon a question in its planning and review cycle, the framing of \"software refactor\" happened in terms of natural transformations.</p>\n</blockquote>\n<p>The passive voice at the end is confusing to me, I guess, and \"framing\" is quite abstract.  Did the coding agent doing the refactoring take advantage of the naturality?  Or did you, knowing the naturality, take advantage of it to answer a question the coding agent had?</p>",
+        "id": 579456991,
+        "sender_full_name": "John Baez",
+        "timestamp": 1773508010
+    },
+    {
+        "content": "<p>I mean it noticed the naturality and used it to organise its work so that it could check it was doing the right thing.</p>",
+        "id": 579457548,
+        "sender_full_name": "ww",
+        "timestamp": 1773508504
+    },
+    {
+        "content": "<p>Oh wow, that's the best of all.</p>",
+        "id": 579457735,
+        "sender_full_name": "John Baez",
+        "timestamp": 1773508669
+    },
+    {
+        "content": "<p>I wish your article included some quotes from Claude showing how it \"noticed the naturality\".   Some people will be very dubious without evidence.  And it would be fun.</p>",
+        "id": 579457832,
+        "sender_full_name": "John Baez",
+        "timestamp": 1773508762
+    },
+    {
+        "content": "<p>The article (below the editorial bit, which was me) was written by claude after I noticed a mention of a discussion between the \"engineer\" agent and the \"theorist\" agent about naturality. I stopped them and said, \"hey, what did you do there? write it up\".</p>",
+        "id": 579459123,
+        "sender_full_name": "ww",
+        "timestamp": 1773509902
+    },
+    {
+        "content": "<p>I will try to set up to record of everything that happens to have a better audit trail for the next time something like this occurs. It's a bit cumbersome (until I can get the plumbing runtime developed enough to be able to replace claude code...).</p>",
+        "id": 579459736,
+        "sender_full_name": "ww",
+        "timestamp": 1773510416
+    },
+    {
+        "content": "<p>Oh!   The article doesn't say: \"The following was written by Claude\".    I think you should add something like that, for a whole bunch of reasons.</p>",
+        "id": 579459754,
+        "sender_full_name": "John Baez",
+        "timestamp": 1773510435
+    },
+    {
+        "content": "<p>Good idea! Done.</p>",
+        "id": 579459876,
+        "sender_full_name": "ww",
+        "timestamp": 1773510594
+    },
+    {
+        "content": "<p>Actually, it isn't cumbersome at all to extract the transcripts. I've put it here (it's quite long, you'll want to search for \"natural transformation\") <a href=\"https://river.styx.org/transcripts/bridge-natural-transformation/\">https://river.styx.org/transcripts/bridge-natural-transformation/</a></p>",
+        "id": 579462947,
+        "sender_full_name": "ww",
+        "timestamp": 1773513662
+    },
+    {
+        "content": "<p>I've caused it to make a nice summary. The key passage:</p>\n<blockquote>\n<p><strong>Architect</strong> was asked:</p>\n<p>Review for architectural soundness, boundary correctness, system vision alignment. Specific questions: Is \"close fabric sockets, agent creates fresh ones\" the right boundary? Should <code>make_zmq_handler</code> be in <code>bridge.ml</code> or a separate module? Is the two-backend transport abstraction unnecessary complexity? Does tool dispatch through pipe adapters add too many layers?</p>\n<p>The <strong>Architect</strong> responded (unprompted) with the key observation: <em>\"The bridge is a natural transformation between representations; a ZMQ-native handler is not a bridge at all\"</em> — answering the <code>make_zmq_handler</code> location question by reframing the entire module boundary in categorical terms.</p>\n</blockquote>\n<p>(Evidently it was not the \"Theorist\" it was the \"Architect\")</p>",
+        "id": 579464396,
+        "sender_full_name": "ww",
+        "timestamp": 1773515308
+    },
+    {
+        "content": "<p>So... in which sense is a refactor a natural transformation? I don't understand if this is a thing inside plumbing (ie there is a 'refactor' operation or smh) or you're talking about the codebase implementing plumbing</p>",
+        "id": 579558276,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1773590753
+    },
+    {
+        "content": "<p>He's talking about the codebase that implements plumbing.   He wants to refactor it, so he got Claude to do it using a network of agents, and the \"Architect\" agent realized that the refactoring process can be thought of as a natural transformation:</p>\n<p><span class=\"user-mention silent\" data-user-id=\"405160\">ww</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Software.20refactoring.20as.20natural.20transformations/near/579420206\">said</a>:</p>\n<blockquote>\n<p>So I've been working on a language called \"plumbing\" for hooking up \"AI agents\" into networks. It is based on the copy-discard category with a bit of extra structure that <span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> kindly let me write about on the <a href=\"https://golem.ph.utexas.edu/category/2026/03/a_typed_language_for_agent_coordination.html\">n-Category cafe</a>.</p>\n<p>Last night I was doing some work on the runtime. A fairly major refactor. I am using a \"coding agent\" to assist with this and a methodology that basically involves a whole bunch of discussion and design before passing it over to \"engineering\" to do the actual implementation. Here is a diagram of what the process looks like, roughly, from a talk I gave a couple of weeks ago at the Quantum Software Lab in Edinburgh,</p>\n<p><img alt=\"image.png\" class=\"inline-image\" data-original-content-type=\"image/png\" data-original-dimensions=\"1612x922\" data-original-src=\"/user_uploads/21317/pjnHEB7-Asqkn7ed4-1pU1Na/image.png\" src=\"/user_uploads/thumbnail/21317/pjnHEB7-Asqkn7ed4-1pU1Na/image.png/840x560.webp\"></p>\n<p>I explain in a bit more detail what happened at the link below, but it looks like, because I set the whole thing up in categorical terms, and gave quite precise instructions about the target of the refactor -- a design note and an explicit operational semantics -- when the coding agent came upon a question in its planning and review cycle, the framing of \"software refactor\" happened in terms of natural transformations. This is a very good way to look at it and not something I have seen before. Maybe it is known to people who work with proof assistants?</p>\n<p><a href=\"https://leithdocs.com/ldc/documents/notes/research/bridge-as-natural-transformation.md\">https://leithdocs.com/ldc/documents/notes/research/bridge-as-natural-transformation.md</a></p>\n</blockquote>",
+        "id": 579560285,
+        "sender_full_name": "John Baez",
+        "timestamp": 1773592642
+    },
+    {
+        "content": "<p>Having worked with Claude Opus 4.6, this level of cleverness does not shock me.</p>",
+        "id": 579560487,
+        "sender_full_name": "John Baez",
+        "timestamp": 1773592836
+    },
+    {
+        "content": "<p>Ok but then I'm having a hard time understanding if the claim is actually formal? How's a codebase a functor? How is refactoring a natural transformation? And how did Claude leverage this fact to constrain the edits? <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span></p>",
+        "id": 579560870,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1773593203
+    },
+    {
+        "content": "<p>Hi Matteo!</p>\n<p>So here's the argument. I have some category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi></mrow><annotation encoding=\"application/x-tex\">C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span></span></span></span> which is the interface that I am preserving. In this case it is a category (a copy-discard category with some extra structure). In general, maybe it isn't, I don't know.</p>\n<p>There is a functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>:</mo><mi>C</mi><mo>→</mo><mi>I</mi><mi>m</mi><mi>p</mi><mi>l</mi></mrow><annotation encoding=\"application/x-tex\">F : C \\rightarrow Impl</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">I</span><span class=\"mord mathnormal\">m</span><span class=\"mord mathnormal\" style=\"margin-right:0.01968em;\">pl</span></span></span></span> that gives it an implementation. Again, people might not habitually make their implementations of interfaces well-behaved like this, but I try to.</p>\n<p>Now in this case, we want to change implementations, so we want a different functor, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi><mo>:</mo><mi>C</mi><mo>→</mo><mi>I</mi><mi>m</mi><mi>p</mi><mi>l</mi></mrow><annotation encoding=\"application/x-tex\">G : C \\rightarrow Impl</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">I</span><span class=\"mord mathnormal\">m</span><span class=\"mord mathnormal\" style=\"margin-right:0.01968em;\">pl</span></span></span></span>.</p>\n<p>In the example above, we are actually replacing a compiler back end which is a bit of a complicated to do, so we end up with intermediate states in the refactor where some parts of the compiler are using <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> and some parts are using <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>. </p>\n<p>To make the whole thing stay coherent, we need a morphism (actually an isomorphism) <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>→</mo><mi>G</mi><mo stretchy=\"false\">(</mo><mi>x</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">F(x) \\rightarrow G(x)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">G</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span></span></span></span>.</p>\n<p>If we insist that there is a natural transformation <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>⇒</mo><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">F \\Rightarrow G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⇒</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span> then this is a guarantee that the compiler keeps doing the right thing even in the intermediate state of refactoring.</p>\n<p>This kind of semantics preservation is exactly what refactoring <em>means</em> I think.</p>",
+        "id": 579561528,
+        "sender_full_name": "ww",
+        "timestamp": 1773593828
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Software.20refactoring.20as.20natural.20transformations/near/579560870\">said</a>:</p>\n<blockquote>\n<p>And how did Claude leverage this fact to constrain the edits? <span aria-label=\"thinking\" class=\"emoji emoji-1f914\" role=\"img\" title=\"thinking\">:thinking:</span></p>\n</blockquote>\n<p>It did this by including in its plan unit tests that checked (not with total coverage so not perfectly, but enough to be useful) that the naturality continued to hold throughout the process.</p>\n<p>The actual execution of the plan diverged though because of bugs in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> which mean that we didn't actually want a natural transformation. But that also means that it wasn't a true, bug-for-bug, refactor.</p>",
+        "id": 579561848,
+        "sender_full_name": "ww",
+        "timestamp": 1773594131
+    },
+    {
+        "content": "<p>So you or Claude caught the bugs in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> when trying to do the refactor?   Was <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> a functor despite the bugs?</p>",
+        "id": 579565266,
+        "sender_full_name": "John Baez",
+        "timestamp": 1773597830
+    },
+    {
+        "content": "<p>if one's theories are categories and one's models/implementations are functors, then according to the original functorial semantics ideas I would expect that one's model morphisms to indeed be exactly the natural transformations.  I think it would be more surprising if Claude said a model morphism wasn't a natural transformation (maybe it is extra natural or two natural transformations or something else entirely)</p>",
+        "id": 579565288,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1773597855
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Software.20refactoring.20as.20natural.20transformations/near/579565266\">said</a>:</p>\n<blockquote>\n<p>So you or Claude caught the bugs in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> when trying to do the refactor?   Was <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> a functor despite the bugs?</p>\n</blockquote>\n<p>It actually kept trying to replicate the bugs and I kept telling it to stop! </p>\n<p>This is one area where it loses sight of what the \"right\" thing to do is.</p>\n<p><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> ought to have been a functor but it's really impossible to tell because in the original implementation there was no explicit operational semantics to define it. That was the problem that led to the refactoring exercise.</p>\n<p>Its replacement, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>, has such a definition.</p>",
+        "id": 579568799,
+        "sender_full_name": "ww",
+        "timestamp": 1773601713
+    },
+    {
+        "content": "<p>Okay.   Now you should do another refactor from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>H</mi></mrow><annotation encoding=\"application/x-tex\">H</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.08125em;\">H</span></span></span></span> and demand that it be a natural transformation, just to give a flawless example of this methodology.   <span aria-label=\"wink\" class=\"emoji emoji-1f609\" role=\"img\" title=\"wink\">:wink:</span></p>",
+        "id": 579571134,
+        "sender_full_name": "John Baez",
+        "timestamp": 1773604280
+    },
+    {
+        "content": "<p>You joke, but there are two reasonable choices of message queue system for the implementation: ZeroMQ and nanomsg. ZeroMQ is more well known and has Ocaml bindings so I chose that path, reasoning that it was a big enough piece of work to get rid of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">F</span></span></span></span> and write <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span> properly. nanomsg is lighter and better designed so is a better choice but it needs bindings written. So at some point, I may do that.</p>",
+        "id": 579624950,
+        "sender_full_name": "ww",
+        "timestamp": 1773644891
+    },
+    {
+        "content": "<p>Oh, I see now. So it is indeed a thing <em>in</em> the codebase, not at the codebase level: you checked that two implementations are semantically equivalent by exhibiting an explicit certificate, in the form of an isomorphism of models.</p>",
+        "id": 579649216,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1773652560
+    }
+]
