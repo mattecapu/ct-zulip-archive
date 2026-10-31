@@ -1,0 +1,32 @@
+[
+    {
+        "content": "<p>Hello,</p>\n<p>In the poly book <a href=\"https://toposinstitute.github.io/poly/poly-book.pdf\">https://toposinstitute.github.io/poly/poly-book.pdf</a> it is proven in section 4.5 that there is an adjoint to the parallel/dirichlet product in the category of polynomial functors. I was wondering where this was first proven.</p>\n<p>I can see that it is in Spivak's \"functorial aggregation\" paper as Proposition 2.1.12 paper. The first draft of that is from 2021. <a href=\"https://arxiv.org/abs/2111.10968v1\">https://arxiv.org/abs/2111.10968v1</a> However, it's not clear if that's the origin.</p>",
+        "id": 634655058,
+        "sender_full_name": "Ian Price",
+        "timestamp": 1792864792
+    },
+    {
+        "content": "<p>I would not be surprised if the core of that proof was already in Joyal's work on Species, and the case of Poly is a specialization of that.</p>",
+        "id": 634659140,
+        "sender_full_name": "Jacques Carette",
+        "timestamp": 1792867551
+    },
+    {
+        "content": "<p>I don't know about Poly, but for the category of species, which are presheaves on the groupoid of finite sets, the Dirichlet product is obtained via <a href=\"https://ncatlab.org/nlab/show/Day%20convolution\">[[Day convolution]]</a> from a monoidal structure on the groupoid of finite sets.   Thanks to how Day convolution works, the Dirichlet product thus preserves colimits in each argument, and it follows (via an adjoint functor theorem) that it has an adjoint in each argument.</p>",
+        "id": 634670778,
+        "sender_full_name": "John Baez",
+        "timestamp": 1792874961
+    },
+    {
+        "content": "<p>Thanks Jacques and John,<br>\nI hadn't thought to explicitly look in the species literature. The story using Day convolution makes a lot of sense.</p>",
+        "id": 634747578,
+        "sender_full_name": "Ian Price",
+        "timestamp": 1792929524
+    },
+    {
+        "content": "<p>We call tensor the \"Hancock\" product in Scotland, so I felt obliged to point you to Hyvernat-Setzer-Hancock's work on <strong>interactions structures</strong> (a.k.a. indexed containers, a.k.a. dependent polynomial functors). So the Poly case is precisely the special case where the index set I = 1.</p>\n<ul>\n<li>I learned it from <a href=\"https://hal.science/hal-00387603/file/main.pdf\">Programming interfaces and basic topology, 2006</a>, where the actual proof is left as an exercise to the reader, although IMHO if you have the definition you already have the proof :)</li>\n<li>You can actually find the proof in <a href=\"https://theses.hal.science/tel-00011871v1/document\">Hyvernat's thesis, §3.4, 2005</a>, which is probably the earliest explicit origin, and phrased in the language of containers/polynomial-functors.</li>\n<li>The cartesian case is tackled in <a href=\"https://link.springer.com/chapter/10.1007/978-3-642-13962-8_2\">Higher-order Containers, 2010</a> by Altenkirch-Levy-Staton.</li>\n</ul>",
+        "id": 634949686,
+        "sender_full_name": "Orestis Melkonian",
+        "timestamp": 1793013409
+    }
+]

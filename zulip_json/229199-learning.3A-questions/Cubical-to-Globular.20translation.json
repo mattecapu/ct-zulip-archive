@@ -1,0 +1,470 @@
+[
+    {
+        "content": "<p>Recently I've been looking at ways to evaluate \"cubical pasting diagrams\" in terms of \"globular pasting diagrams\". Some motivation for this is <a href=\"https://ncatlab.org/nlab/show/quintet+construction\">the double category of squares</a>, which is most naturally expressed using a cubical structure. I mean, it's in the name - square!</p>\n<p>But of course, the usual definition of bicategories uses <em>globular</em> shapes. So you need to think a little about how to turn your ability to evaluate globular pasting diagrams to let you evaluate these \"cubical\" ones.</p>\n<p>I presume there are analogs of this in higher dimensions too, but I quickly run out of visualisation power <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span> . Is there a general theory of how to evaluate cubical diagrams using globular ones? Or more generally, how to translate a cubical theory to a globular one?</p>",
+        "id": 527821214,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752045188
+    },
+    {
+        "content": "<p>I guess maybe another way of phrasing this is - given a \"globular\" structure on a higher category (i.e. 0-cells, 1-cells, ... together with ways of composing them), is there a natural way to convert it to a \"cubical\" structure (i.e. 0-squares, 1-squares, ... together with ways of composing them)?</p>",
+        "id": 527821676,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752045388
+    },
+    {
+        "content": "<p><a href=\"https://arxiv.org/abs/math/0007009\">Read this paper</a>.</p>",
+        "id": 527821827,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752045460
+    },
+    {
+        "content": "<p>oh nice, that looks pretty much exactly like what i'm looking for! i'll take a look :)</p>",
+        "id": 527821935,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752045517
+    },
+    {
+        "content": "<p>my main motivation for this is trying to understand the crans-gray tensor product</p>",
+        "id": 527821978,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752045536
+    },
+    {
+        "content": "<p>i think this is probably easier to think about in the cubical setting because of the natural monoidal structure on the cube category?</p>",
+        "id": 527822099,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752045580
+    },
+    {
+        "content": "<p>so you get day-convolution for free</p>",
+        "id": 527822118,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752045589
+    },
+    {
+        "content": "<p>so my thought was - if i want to tensor together two globular <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories, i can first translate them both into cubical <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories, tensor them there, and then translate back!</p>",
+        "id": 527822213,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752045625
+    },
+    {
+        "content": "<p>which hopefully recovers the usual tensor product of globular <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories..</p>",
+        "id": 527822248,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752045642
+    },
+    {
+        "content": "<p>Yes that's a way to define the tensor product of strict <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories, but it's not the one that people have found most convenient.</p>",
+        "id": 527822279,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752045657
+    },
+    {
+        "content": "<p>hm, how about just weak <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories?</p>",
+        "id": 527822317,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752045674
+    },
+    {
+        "content": "<p>and is there a more convenient way?</p>",
+        "id": 527822337,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752045681
+    },
+    {
+        "content": "<p>i guess for further context, my motivation for this is to try to understand functor categories for weak <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories</p>",
+        "id": 527822465,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752045734
+    },
+    {
+        "content": "<p>Personally I think that <a href=\"https://arxiv.org/abs/2505.01387\">the diagrammatic model</a> has the “best” definition of the Gray tensor product, but I am biased about that.</p>",
+        "id": 527822487,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752045745
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"934428\">Ruby Khondaker (she/her)</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Cubical-to-Globular.20translation/near/527822465\">said</a>:</p>\n<blockquote>\n<p>i guess for further context, my motivation for this is to try to understand functor categories for weak <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories</p>\n</blockquote>\n<p>and because of tensor-hom, it would suffice to understand the tensor product of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories</p>",
+        "id": 527822535,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752045767
+    },
+    {
+        "content": "<p>(It is a Day convolution but on a vastly more expressive category of shapes, which includes globes, cubes, and all sorts of other shapes.)</p>",
+        "id": 527822562,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752045777
+    },
+    {
+        "content": "<p>ooh!</p>",
+        "id": 527822578,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752045785
+    },
+    {
+        "content": "<p>but yeah the idea would be - the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-cells of a functor category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><mi mathvariant=\"script\">X</mi><mo separator=\"true\">,</mo><mi mathvariant=\"script\">Y</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">[\\mathcal{X}, \\mathcal{Y}]</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathcal\" style=\"margin-right:0.14643em;\">X</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">Y</span><span class=\"mclose\">]</span></span></span></span> would just be maps <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>G</mi><mi>n</mi></msub><mo>→</mo><mo stretchy=\"false\">[</mo><mi mathvariant=\"script\">X</mi><mo separator=\"true\">,</mo><mi mathvariant=\"script\">Y</mi><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">G_n \\to [\\mathcal{X}, \\mathcal{Y}]</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">G</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord mathcal\" style=\"margin-right:0.14643em;\">X</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">Y</span><span class=\"mclose\">]</span></span></span></span> where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>G</mi><mi>n</mi></msub></mrow><annotation encoding=\"application/x-tex\">G_n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">G</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span> is the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-globe</p>",
+        "id": 527822766,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752045852
+    },
+    {
+        "content": "<p>And then by tensor-hom those are equivalently described by maps <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>G</mi><mi>n</mi></msub><mo>⊗</mo><mi mathvariant=\"script\">X</mi><mo>→</mo><mi mathvariant=\"script\">Y</mi></mrow><annotation encoding=\"application/x-tex\">G_n \\otimes \\mathcal{X} \\to \\mathcal{Y}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8333em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">G</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.1514em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.14643em;\">X</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7805em;vertical-align:-0.0972em;\"></span><span class=\"mord mathcal\" style=\"margin-right:0.08222em;\">Y</span></span></span></span> (or maybe the other order of tensoring, not quite sure)</p>",
+        "id": 527822837,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752045887
+    },
+    {
+        "content": "<p>For strict <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories, people have been using some machinery known as “Steiner theory”.<br>\nSee <a href=\"https://arxiv.org/abs/math/0403237\">the original article</a>, <a href=\"https://arxiv.org/abs/1607.00668\">this monograph by Ara and Maltsiniotis</a>, and <a href=\"https://arxiv.org/abs/2404.07273\">chapter 11 of my book</a>.</p>",
+        "id": 527822939,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752045932
+    },
+    {
+        "content": "<p>because i have a good idea of what lax <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-functors look like, but not natural transformations or higher transfors</p>",
+        "id": 527822986,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752045955
+    },
+    {
+        "content": "<p>Yes, that is the idea.</p>",
+        "id": 527823019,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752045969
+    },
+    {
+        "content": "<p>is there not anything for weak <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories yet?</p>",
+        "id": 527823063,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752045983
+    },
+    {
+        "content": "<p>What do you mean by weak <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories?</p>",
+        "id": 527823262,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752046050
+    },
+    {
+        "content": "<p>Clémence's paper that I have linked is about <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">∞</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty, \\infty)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">∞</span><span class=\"mclose\">)</span></span></span></span>-categories.</p>",
+        "id": 527823299,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752046066
+    },
+    {
+        "content": "<p>oh so the same thing i talked about in the <a class=\"stream-topic\" data-stream-id=\"229199\" href=\"/#narrow/channel/229199-learning.3A-questions/topic/Omega-Category.20Theory/with/527566191\">#learning: questions &gt; Omega-Category Theory</a> thread - leinster's \"geometric\" definition of weak <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">∞</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty, \\infty)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">∞</span><span class=\"mclose\">)</span></span></span></span> category</p>",
+        "id": 527823341,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046086
+    },
+    {
+        "content": "<p>No, I don't believe there's anything very good for those models.</p>",
+        "id": 527823370,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752046100
+    },
+    {
+        "content": "<p>oh no... do you have an idea of why that is? i guess that's exactly the sort of thing i'm trying to figure out now, haha</p>",
+        "id": 527823445,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046127
+    },
+    {
+        "content": "<p>Well, it's already very complicated to define the Gray tensor product for strict <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories and these models are a more complicated version of those.</p>",
+        "id": 527823771,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752046241
+    },
+    {
+        "content": "<p>That's not a technical answer, just a “from experience” answer.</p>",
+        "id": 527823823,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752046260
+    },
+    {
+        "content": "<p>mhm mhm</p>",
+        "id": 527823848,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046267
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"934428\">Ruby Khondaker (she/her)</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Cubical-to-Globular.20translation/near/527822213\">said</a>:</p>\n<blockquote>\n<p>so my thought was - if i want to tensor together two globular <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories, i can first translate them both into cubical <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories, tensor them there, and then translate back!</p>\n</blockquote>\n<p>would this sort of construction work?</p>",
+        "id": 527823875,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046278
+    },
+    {
+        "content": "<p>There is very little about cubical weak <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories.</p>",
+        "id": 527824119,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752046376
+    },
+    {
+        "content": "<p>oh, interesting! how about cubical strict <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories?</p>",
+        "id": 527824167,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046394
+    },
+    {
+        "content": "<p>i guess that's in the paper you linked</p>",
+        "id": 527824212,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046408
+    },
+    {
+        "content": "<p>hm i wonder if it would suffice to just weaken the strict definition</p>",
+        "id": 527824304,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046439
+    },
+    {
+        "content": "<p>so long as there's some \"free strict cubical <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-category monad\" this should be doable?</p>",
+        "id": 527824420,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046484
+    },
+    {
+        "content": "<p>There is a series of papers by Camell Kachour on cubical weak <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories, but I am not sure how solid this work is; the author writes stuff like</p>\n<blockquote>\n<p>Sorry to say that, but my work must go beyond than those of Jacob Lurie, that I respect a lot, where applications of my approach much be much more easier and flexible for the future.</p>\n</blockquote>\n<p>on their MathOverflow profile which does not exactly boost my confidence about them. The papers are also only self-cited.</p>",
+        "id": 527824703,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752046592
+    },
+    {
+        "content": "<p>ah... <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 527824747,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046609
+    },
+    {
+        "content": "<p>ok nice it does look like there's a notion of \"free <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-category\" on cubical sets</p>",
+        "id": 527824882,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046663
+    },
+    {
+        "content": "<p>in the strict sense</p>",
+        "id": 527824920,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046679
+    },
+    {
+        "content": "<p>so then it should be pretty straightforward to define the weak version, if i just copy leinster's approach</p>",
+        "id": 527824951,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046692
+    },
+    {
+        "content": "<p>modulo figuring out how cubes work compared to globes</p>",
+        "id": 527824985,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046710
+    },
+    {
+        "content": "<p>Honestly I think that at the moment you do not display a very good sense of how difficult problems are.</p>",
+        "id": 527825009,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752046720
+    },
+    {
+        "content": "<p>yeah, i think that's fair, i am very new to all of this</p>",
+        "id": 527825086,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046748
+    },
+    {
+        "content": "<p>i guess i usually can't automatically see the reasons why a problem would be hard because of my lack of experience</p>",
+        "id": 527825141,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046777
+    },
+    {
+        "content": "<p>Yeah, that's what supervisors are for</p>",
+        "id": 527825144,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752046778
+    },
+    {
+        "content": "<p>ah, my supervisor is also a physicist <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 527825183,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046799
+    },
+    {
+        "content": "<p>i guess i can just try out defining cubical weak <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-categories and see why the \"obvious\" approach fails</p>",
+        "id": 527825430,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046889
+    },
+    {
+        "content": "<p>I would recommend reading a bit. Since we started this conversation yesterday, I have recommended multiple relevant and often very long papers.</p>",
+        "id": 527825564,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752046936
+    },
+    {
+        "content": "<p>A good way to get a sense of the difficulties is to see what difficulties other authors have had to overcome.</p>",
+        "id": 527825646,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752046960
+    },
+    {
+        "content": "<p>mhm that’s true, though of course it takes quite a while to digest all of those!</p>",
+        "id": 527825742,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752046993
+    },
+    {
+        "content": "<p>I'm all for “rediscovering” but you cannot reinvent the totality of higher category theory alone.</p>",
+        "id": 527825770,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752047004
+    },
+    {
+        "content": "<p>oh I’m not trying anything as ambitious as that! I just wanna understand functor categories for weak <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">∞</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty, \\infty)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">∞</span><span class=\"mclose\">)</span></span></span></span> categories is all</p>",
+        "id": 527825909,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752047048
+    },
+    {
+        "content": "<p>so that I can understand the weak <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">∞</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty, \\infty)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">∞</span><span class=\"mclose\">)</span></span></span></span> category of weak <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mi mathvariant=\"normal\">∞</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty, \\infty)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">∞</span><span class=\"mclose\">)</span></span></span></span> categories</p>",
+        "id": 527825981,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752047073
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"934428\">Ruby Khondaker (she/her)</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Cubical-to-Globular.20translation/near/527825183\">said</a>:</p>\n<blockquote>\n<p>ah, my supervisor is also a physicist <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>\n</blockquote>\n<p>If you're in Oxford, there's plenty of other people that you can talk to!</p>",
+        "id": 527826235,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752047164
+    },
+    {
+        "content": "<p>to be clear i totally get where you're coming from</p>",
+        "id": 527826266,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752047172
+    },
+    {
+        "content": "<p>i can understand how frustrating it must be from your end for me to be asking a bunch of silly questions that already have answers in the literature</p>",
+        "id": 527826317,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752047192
+    },
+    {
+        "content": "<p>when the obvious thing to do would just be \"read the literature lol\"</p>",
+        "id": 527826364,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752047210
+    },
+    {
+        "content": "<p>i guess i get a different sort of appreciation for the difficulty of a problem if i try it myself and then run into the stumbling blocks naturally</p>",
+        "id": 527826466,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752047246
+    },
+    {
+        "content": "<p>not necessarily better or worse, just different</p>",
+        "id": 527826495,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752047257
+    },
+    {
+        "content": "<p>Oh don't worry about me, I'm not duty-bound to answer!</p>",
+        "id": 527826505,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752047258
+    },
+    {
+        "content": "<p>ah no no i wasn't saying you were!</p>",
+        "id": 527826563,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752047278
+    },
+    {
+        "content": "<p>just that i can totally get how it's annoying on your end</p>",
+        "id": 527826587,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752047288
+    },
+    {
+        "content": "<p>Yeah but it's not, I would just switch off if I was annoyed.</p>",
+        "id": 527826683,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752047321
+    },
+    {
+        "content": "<p>ah, apologies, tone is harder to read over text</p>",
+        "id": 527826735,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752047340
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Cubical-to-Globular.20translation/near/527825564\">said</a>:</p>\n<blockquote>\n<p>I would recommend reading a bit. Since we started this conversation yesterday, I have recommended multiple relevant and often very long papers.</p>\n</blockquote>\n<p>when you said this i thought this was in some kind of exasperated tone <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+        "id": 527826784,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752047359
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276363\">Amar Hadzihasanovic</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Cubical-to-Globular.20translation/near/527826235\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"934428\">Ruby Khondaker (she/her)</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Cubical-to-Globular.20translation/near/527825183\">said</a>:</p>\n<blockquote>\n<p>ah, my supervisor is also a physicist <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>\n</blockquote>\n<p>If you're in Oxford, there's plenty of other people that you can talk to!</p>\n</blockquote>\n<p>also any you'd recommend? i'd be pretty interested!</p>",
+        "id": 527826941,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752047415
+    },
+    {
+        "content": "<p>Christopher Douglas, Andre Henriques and Ulrike Tillmann would be people with whom you can certainly discuss higher category theory.</p>",
+        "id": 527827417,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752047601
+    },
+    {
+        "content": "<p>Just the first that come to my mind.</p>",
+        "id": 527827492,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752047632
+    },
+    {
+        "content": "<p>And no, I meant the reading as \"honest\" advice, in the sense that I think it may help you gain some appreciation of what difficulties are involved with e.g. Gray products or algebraic weak higher categories, since often these would be discussed in the papers, and at the moment it seems that you underestimate them (which is not a criticism).</p>",
+        "id": 527828066,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752047845
+    },
+    {
+        "content": "<p>It is useful to have a better assessment of the difficulties since during a PhD you don't necessarily want to start a project that takes you into a rabbit hole (note that this is advice that I myself have not followed in my PhD, so take it with a pinch of hypocrisy).</p>",
+        "id": 527828302,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1752047933
+    },
+    {
+        "content": "<p>ah thanks for the advice! i'll see if i can talk to those people sometime</p>",
+        "id": 527829689,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752048382
+    },
+    {
+        "content": "<p>though i guess i haven't really thought of this as a \"project\" per se</p>",
+        "id": 527829733,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752048397
+    },
+    {
+        "content": "<p>this is more just, like, a hobby for me</p>",
+        "id": 527829747,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752048403
+    },
+    {
+        "content": "<p>Hm if i managed to come up with a definition of weak cubical <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi></mrow><annotation encoding=\"application/x-tex\">n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">n</span></span></span></span>-category would that be good</p>",
+        "id": 527868225,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752061017
+    },
+    {
+        "content": "<p>I don't exactly know how I'd be able to check such a definition</p>",
+        "id": 527868273,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752061031
+    },
+    {
+        "content": "<p>Or maybe, what would a good \"target\" to aim for be?</p>",
+        "id": 527868941,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1752061250
+    }
+]

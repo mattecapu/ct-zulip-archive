@@ -1,0 +1,134 @@
+[
+    {
+        "content": "<p>IMO, the tight direction in double cats is the one deputed for morphological comparison, including isomorphism checks</p>",
+        "id": 432903357,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1712928298
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"386922\">Graham Manuell</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Cat.28Mon.28Cat.29.29.20vs.20Mon.28Cat.28Cat.29.29/near/432865068\">said</a>:</p>\n<blockquote>\n<p>I don't know if this is related or not, but I never know how to think of isomorphisms in double categories. Usually when two objects are isomorphic I think of them as the same thing, but what if they are, say, horizontally isomorphic, but not vertically isomorphic?</p>\n</blockquote>\n<p>Surely there's nothing that <em>can</em> be said in general? In an arbitrary double category, isomorphism in one direction may look entirely different to isomorphism in the other direction, so it really depends on the double category in question.</p>",
+        "id": 432909696,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1712930207
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"386922\">Graham Manuell</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Cat.28Mon.28Cat.29.29.20vs.20Mon.28Cat.28Cat.29.29/near/432865068\">said</a>:</p>\n<blockquote>\n<p>Relatedly there doesn't appear to be one accepted notion of equivalence of double categories?</p>\n</blockquote>\n<p>There's a 2-category of double categories and pseudo double functors, and one can consider an equivalence in this 2-category. If someone told me two double categories were equivalent, this is what I'd assume they meant. For instance, this is the notion of equivalence used in Grandis and Paré's strictification theorem for pseudo double categories. What other notions of equivalence have you encountered?</p>",
+        "id": 432910490,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1712930416
+    },
+    {
+        "content": "<p>(Note that it really is appropriate to consider the 2-category of double categories and <em>pseudo</em> double functors, rather than lax or colax double functors, since any equivalence can be improved to an adjoint equivalence in both directions, from which you can deduce that both adjoints must be both lax and colax, hence pseudo.)</p>",
+        "id": 432910942,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1712930539
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Cat.28Mon.28Cat.29.29.20vs.20Mon.28Cat.28Cat.29.29/near/432909696\">said</a>:</p>\n<blockquote>\n<p>Surely there's nothing that <em>can</em> be said in general? In an arbitrary double category, isomorphism in one direction may look entirely different to isomorphism in the other direction, so it really depends on the double category in question.</p>\n</blockquote>\n<p>This is entirely possible, but where does this leave us? Are general double categories just bad?</p>",
+        "id": 432926109,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1712934993
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Cat.28Mon.28Cat.29.29.20vs.20Mon.28Cat.28Cat.29.29/near/432910490\">said</a>:</p>\n<blockquote>\n<p>There's a 2-category of double categories and pseudo double functors, and one can consider an equivalence in this 2-category.</p>\n</blockquote>\n<p>It's more like there is a double-categories-enriched-category of double categories, no? You can use either horizontal or vertical transformations. I can't say off the top of my head the different notions of equivalence I've seen, but at least there are several different model structures people have considered that have different notions of weak equivalence.</p>",
+        "id": 432926155,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1712935011
+    },
+    {
+        "content": "<blockquote>\n<p>This is entirely possible, but where does this leave us? Are general double categories just bad?</p>\n</blockquote>\n<p>This seems an odd question. Certainly if you want isomorphism in both directions to be related, then you want something stronger than an arbitrary double category. But I don't see why it should be considered a weakness that isomorphism in both directions can behave differently.</p>",
+        "id": 432926672,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1712935153
+    },
+    {
+        "content": "<blockquote>\n<p>You can use either horizontal or vertical transformations.</p>\n</blockquote>\n<p>You can, but this seems a bit like saying that there isn't one accepted notion of equivalence of categories, because you can consider both equivalence and Morita equivalence. Rather, they are two different but related concepts, and the notion that is appropriate depends on the context. Taking the tight transformations gives the strictest notion of equivalence, and it is my experience that this is usually the appropriate one. But I'm not familiar with the model structure literature.</p>",
+        "id": 432927277,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1712935320
+    },
+    {
+        "content": "<p>Well my original question was how to think about such things. It feels like there should be some way to know when two objects are actually the same.</p>",
+        "id": 432927331,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1712935328
+    },
+    {
+        "content": "<p>How do/would people deal with double categories in homotopy type theory?</p>",
+        "id": 432927445,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1712935366
+    },
+    {
+        "content": "<p>Perhaps you can give some examples of double categories you have in mind, and how isomorphism behaves unexpectedly in them?</p>",
+        "id": 432927447,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1712935366
+    },
+    {
+        "content": "<p>I don't really know any concrete examples that aren't proarrow equipments, unfortunately. Perhaps you are right that thinking about one would be a good start.</p>",
+        "id": 432928305,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1712935606
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Cat.28Mon.28Cat.29.29.20vs.20Mon.28Cat.28Cat.29.29/near/432927277\">said</a>:</p>\n<blockquote>\n<p>Taking the tight transformations gives the strictest notion of equivalence, and it is my experience that this is usually the appropriate one. But I'm not familiar with the model structure literature.</p>\n</blockquote>\n<p>Are you you restricting the class of double categories here? Otherwise I don't know why one direction would be stricter than the other?</p>",
+        "id": 432928590,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1712935693
+    },
+    {
+        "content": "<p>Hmm. Or perhaps \"companion pairs of isomorphisms\" are the 'right' strict notion of isomorphism in general?</p>",
+        "id": 432929513,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1712935998
+    },
+    {
+        "content": "<p>There is, in fact, a general notion of \"isomorphism\" that can be defined generically across all higher-dimensional structures.  It specializes to ordinary isomorphism in categories, to ordinary equivalence in 2-categories, and so on.  In double categories, it specializes to a companion pair of equivalences, a.k.a. a \"gregarious equivalence\".  This is developed in the context of HoTT in the monograph <a href=\"https://arxiv.org/abs/2102.06275\">The Univalence Principle</a> by Ahrens, North, Tsementzis, and myself.</p>",
+        "id": 432934324,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1712937416
+    },
+    {
+        "content": "<p>The double categories in which tight isomorphisms, or tight equivalences, are the \"right\" notion of equivalence are usually those that are at least \"isofibrant\", so that every tight equivalence has a loose companion and therefore induces a gregarious equivalence.  And conversely, of course, every gregarious equivalence has an underlying tight equivalence.</p>",
+        "id": 432934820,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1712937554
+    },
+    {
+        "content": "<p>17 messages were moved here from <a class=\"stream-topic\" data-stream-id=\"229136\" href=\"/#narrow/stream/229136-theory.3A-category-theory/topic/Cat.28Mon.28Cat.29.29.20vs.20Mon.28Cat.28Cat.29.29\">#theory: category theory &gt; Cat(Mon(Cat)) vs Mon(Cat(Cat))</a> by <span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span>.</p>",
+        "id": 432934897,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1712937579
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"386922\">Graham Manuell</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/isomorphisms.20in.20double.20categories/near/432928590\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Cat.28Mon.28Cat.29.29.20vs.20Mon.28Cat.28Cat.29.29/near/432927277\">said</a>:</p>\n<blockquote>\n<p>Taking the tight transformations gives the strictest notion of equivalence, and it is my experience that this is usually the appropriate one. But I'm not familiar with the model structure literature.</p>\n</blockquote>\n<p>Are you you restricting the class of double categories here? Otherwise I don't know why one direction would be stricter than the other?</p>\n</blockquote>\n<p>Ah, yes, I meant in the context of pseudo double categories, sorry.</p>",
+        "id": 432942117,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1712940068
+    },
+    {
+        "content": "<p>You also need the pseudo double categories to be at least \"isofibrant\" (loose companions for tight isomorphisms) if you want equivalence using tight transformations to be \"strictly stricter\" than other notions in the sense that it implies them.</p>",
+        "id": 432943057,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1712940477
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/isomorphisms.20in.20double.20categories/near/432934324\">said</a>:</p>\n<blockquote>\n<p>There is, in fact, a general notion of \"isomorphism\" that can be defined generically across all higher-dimensional structures.  It specializes to ordinary isomorphism in categories, to ordinary equivalence in 2-categories, and so on.  In double categories, it specializes to a companion pair of equivalences, a.k.a. a \"gregarious equivalence\".  This is developed in the context of HoTT in the monograph <a href=\"https://arxiv.org/abs/2102.06275\">The Univalence Principle</a> by Ahrens, North, Tsementzis, and myself.</p>\n</blockquote>\n<p>Thanks! This is exactly what I was looking for.</p>",
+        "id": 432966533,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1712948886
+    },
+    {
+        "content": "<p>Sometimes people think of an ordinary category as being the horizontal part of a double category with only identity morphisms vertically. In particular categories over your original category are displayed by lax morphisms from this double category into <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">p</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">n</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Span}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Span</span></span></span></span></span>. But this way of viewing categories as double categories sends equivalent categories to inequivalent double categories. Is there a version of this story that respects equivalence?</p>",
+        "id": 433123727,
+        "sender_full_name": "Oscar Cunningham",
+        "timestamp": 1713090731
+    },
+    {
+        "content": "<p>I don't think so, because lax functors also don't respect equivalence.</p>",
+        "id": 433143188,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1713108772
+    }
+]

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8" />
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+<link rel="stylesheet" href="https://mattecapu.github.io/ct-zulip-archive/style.css" /><title>Monoidal Closure of tensor in Poly · learning: reading &amp; references · Zulip Chat Archive</title>
+</head>
+<body>
+<header>
+<a href="https://mattecapu.github.io/ct-zulip-archive" class="home-link">
+        <img class="logo" src="https://zulip-avatars.s3.amazonaws.com/21317/realm/icon.png?version=3" />
+        <h1>Category Theory<br/>Zulip Server<br/>Archive</h1>
+        </a>
+        <p>
+        You're reading the public-facing archive of the <a href="https://categorytheory.zulipchat.com/">Category Theory Zulip server</a>.<br/>
+        
+        To join the server you need an invite. Anybody can get an invite by contacting <a href="https://matteocapucci.wordpress.com">Matteo Capucci</a> at <em>name dot surname at gmail dot com</em>.<br/>
+        
+        For all things related to this archive refer to the same person.
+        </p>
+        </header>
+        <hr />
+    
+<h2>Stream: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/index.html">learning: reading &amp; references</a></h2>
+<h3>Topic: <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Monoidal.20Closure.20of.20tensor.20in.20Poly.html">Monoidal Closure of tensor in Poly</a></h3>
+
+<hr>
+
+<base href="https://categorytheory.zulipchat.com">
+
+<a name="634655058"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Monoidal%20Closure%20of%20tensor%20in%20Poly/near/634655058" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ian Price <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Monoidal.20Closure.20of.20tensor.20in.20Poly.html#634655058">(Oct 24 2026 at 17:59)</a>:</h4>
+<p>Hello,</p>
+<p>In the poly book <a href="https://toposinstitute.github.io/poly/poly-book.pdf">https://toposinstitute.github.io/poly/poly-book.pdf</a> it is proven in section 4.5 that there is an adjoint to the parallel/dirichlet product in the category of polynomial functors. I was wondering where this was first proven.</p>
+<p>I can see that it is in Spivak's "functorial aggregation" paper as Proposition 2.1.12 paper. The first draft of that is from 2021. <a href="https://arxiv.org/abs/2111.10968v1">https://arxiv.org/abs/2111.10968v1</a> However, it's not clear if that's the origin.</p>
+
+
+
+<a name="634659140"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Monoidal%20Closure%20of%20tensor%20in%20Poly/near/634659140" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Jacques Carette <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Monoidal.20Closure.20of.20tensor.20in.20Poly.html#634659140">(Oct 24 2026 at 18:45)</a>:</h4>
+<p>I would not be surprised if the core of that proof was already in Joyal's work on Species, and the case of Poly is a specialization of that.</p>
+
+
+
+<a name="634670778"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Monoidal%20Closure%20of%20tensor%20in%20Poly/near/634670778" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> John Baez <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Monoidal.20Closure.20of.20tensor.20in.20Poly.html#634670778">(Oct 24 2026 at 20:49)</a>:</h4>
+<p>I don't know about Poly, but for the category of species, which are presheaves on the groupoid of finite sets, the Dirichlet product is obtained via <a href="https://ncatlab.org/nlab/show/Day%20convolution">[[Day convolution]]</a> from a monoidal structure on the groupoid of finite sets.   Thanks to how Day convolution works, the Dirichlet product thus preserves colimits in each argument, and it follows (via an adjoint functor theorem) that it has an adjoint in each argument.</p>
+
+
+
+<a name="634747578"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Monoidal%20Closure%20of%20tensor%20in%20Poly/near/634747578" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Ian Price <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Monoidal.20Closure.20of.20tensor.20in.20Poly.html#634747578">(Oct 25 2026 at 11:58)</a>:</h4>
+<p>Thanks Jacques and John,<br>
+I hadn't thought to explicitly look in the species literature. The story using Day convolution makes a lot of sense.</p>
+
+
+
+<a name="634949686"></a>
+<h4><a href="https://categorytheory.zulipchat.com#narrow/stream/232160-learning%3A%20reading%20%26%20references/topic/Monoidal%20Closure%20of%20tensor%20in%20Poly/near/634949686" class="zl"><img src="https://mattecapu.github.io/ct-zulip-archive/assets/img/zulip.svg" alt="view this post on Zulip" style="width:20px;height:20px;"></a> Orestis Melkonian <a href="https://mattecapu.github.io/ct-zulip-archive/stream/232160-learning.3A-reading-.26-references/topic/Monoidal.20Closure.20of.20tensor.20in.20Poly.html#634949686">(Oct 26 2026 at 11:16)</a>:</h4>
+<p>We call tensor the "Hancock" product in Scotland, so I felt obliged to point you to Hyvernat-Setzer-Hancock's work on <strong>interactions structures</strong> (a.k.a. indexed containers, a.k.a. dependent polynomial functors). So the Poly case is precisely the special case where the index set I = 1.</p>
+<ul>
+<li>I learned it from <a href="https://hal.science/hal-00387603/file/main.pdf">Programming interfaces and basic topology, 2006</a>, where the actual proof is left as an exercise to the reader, although IMHO if you have the definition you already have the proof :)</li>
+<li>You can actually find the proof in <a href="https://theses.hal.science/tel-00011871v1/document">Hyvernat's thesis, §3.4, 2005</a>, which is probably the earliest explicit origin, and phrased in the language of containers/polynomial-functors.</li>
+<li>The cartesian case is tackled in <a href="https://link.springer.com/chapter/10.1007/978-3-642-13962-8_2">Higher-order Containers, 2010</a> by Altenkirch-Levy-Staton.</li>
+</ul>
+
+
+
+<footer class="site-footer">
+
+<hr><p>Last updated: Oct 31 2026 at 16:58 UTC</p>
+This archive runs on a customization of <a href="https://github.com/zulip/zulip-archive">zulip-archive</a>
+</footer>
+</body>
+
+</html>

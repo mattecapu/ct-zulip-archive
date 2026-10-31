@@ -1,0 +1,86 @@
+[
+    {
+        "content": "<p>I just realized that the nLab page about the notion of <a href=\"https://ncatlab.org/nlab/show/Lawvere%20theory\">[[Lawvere theory]]</a> says that</p>\n<blockquote>\n<p>A homomorphism of such theories <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>→</mo><msup><mi>T</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">T\\to T&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> is a product-preserving functor.</p>\n</blockquote>\n<p>(The text is right after Definition A).  We agree that this is not enough, right?  It should be a product-preserving functor <em>sending the generating object of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi></mrow><annotation encoding=\"application/x-tex\">T</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span></span></span></span> to the generating object of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>T</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">T&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span></em>.  Otherwise, for example, the terminal Lawvere theory would also be initial, which contradicts the rest of the article (and general practice).  Before I edit the article, would someone confirm that I'm not missing something obvious?</p>",
+        "id": 452633747,
+        "sender_full_name": "Damiano Mazza",
+        "timestamp": 1721412767
+    },
+    {
+        "content": "<p>I would agree that a morphism of Lawvere theories should preserve the distinguished generator, just as the nLab says that a morphism of <a href=\"https://ncatlab.org/nlab/show/PROPs\">[[PROPs]]</a> preserves the generator. The analogy here being, of course, that a Lawvere theory is to a PROP as a category with finite products is to a symmetric monoidal category.</p>",
+        "id": 452635145,
+        "sender_full_name": "Evan Patterson",
+        "timestamp": 1721413226
+    },
+    {
+        "content": "<p>That sounds like an important edit to make, Damiano!  Thanks!</p>",
+        "id": 452660679,
+        "sender_full_name": "John Baez",
+        "timestamp": 1721420318
+    },
+    {
+        "content": "<p>Another way of thinking about this is that Lawvere is part of the coslice category of finite product categories under FinSet^op.</p>",
+        "id": 452664152,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1721421781
+    },
+    {
+        "content": "<p>Of course Damiano is correct. A product-preserving functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>→</mo><msup><mi>T</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">T \\to T&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> that makes the triangle involving the <em>given product-preserving functors</em> out of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mi mathvariant=\"normal\">F</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow><mrow><mi>o</mi><mi>p</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">\\mathrm{FinSet}^{op}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7376em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">FinSet</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7376em;\"><span style=\"top:-3.1362em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">o</span><span class=\"mord mathnormal mtight\">p</span></span></span></span></span></span></span></span></span></span></span></span> commute up to isomorphism.</p>",
+        "id": 452678960,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1721429768
+    },
+    {
+        "content": "<p>Which is what Kevin Carlson said using different words.</p>",
+        "id": 452679042,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1721429799
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277611\">Todd Trimble</span> <a href=\"#narrow/stream/232160-learning.3A-reading-.26-references/topic/Morphism.20of.20Lawvere.20theories.20on.20the.20nLab/near/452678960\">said</a>:</p>\n<blockquote>\n<p>Of course Damiano is correct. A product-preserving functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>→</mo><msup><mi>T</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">T \\to T&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.13889em;\">T</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> that makes the triangle involving the <em>given product-preserving functors</em> out of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mi mathvariant=\"normal\">F</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow><mrow><mi>o</mi><mi>p</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">\\mathrm{FinSet}^{op}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7376em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">FinSet</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7376em;\"><span style=\"top:-3.1362em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">o</span><span class=\"mord mathnormal mtight\">p</span></span></span></span></span></span></span></span></span></span></span></span> commute up to isomorphism.</p>\n</blockquote>\n<p>I don’t think there should be an up to isomorphism here. (CC <span class=\"user-mention\" data-user-id=\"276092\">@Nathanael Arkor</span>)</p>",
+        "id": 452788784,
+        "sender_full_name": "Nathan Corbyn",
+        "timestamp": 1721459428
+    },
+    {
+        "content": "<p>If one is defining an \"algebraic theory\" in terms of identity-on-objects functors, then the triangle should commute strictly, so as to get a correspondence with monad morphisms. A popular alternative is to define an algebraic theory simply to be a category with finite products, in which case a morphism should just be a functor preserving finite products, but then one does not get a monad–theory correspondence. I don't personally see the value in using any notion of algebraic theory between these two notions (including the one described on the nLab page), because you get the worst of both words: an awkward definition, and no good monad–theory correspondence.</p>",
+        "id": 452825769,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1721471546
+    },
+    {
+        "content": "<p>(I think the nLab page could do with some attention, to clarify the subtleties in the definition and their motivation, but I don't have time at the moment.)</p>",
+        "id": 452825808,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1721471598
+    },
+    {
+        "content": "<blockquote>\n<p>If one is defining an \"algebraic theory\" in terms of identity-on-objects functors, then the triangle should commute strictly</p>\n</blockquote>\n<p>I agree with that. I'm actually fine with either convention, but would say that it is a <em>convention</em>.</p>",
+        "id": 452826567,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1721472329
+    },
+    {
+        "content": "<p>For example, we shouldn't be saying <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mi mathvariant=\"normal\">F</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">n</mi><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow><mrow><mi>o</mi><mi>p</mi></mrow></msup></mrow><annotation encoding=\"application/x-tex\">\\mathrm{FinSet}^{op}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7376em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">FinSet</span></span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7376em;\"><span style=\"top:-3.1362em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">o</span><span class=\"mord mathnormal mtight\">p</span></span></span></span></span></span></span></span></span></span></span></span> under this convention, but some skeleton of that.</p>",
+        "id": 452826707,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1721472458
+    },
+    {
+        "content": "<p>I feel \"convention\" suggests that we could make different choices, but we have collectively agreed on a certain choice to make communication simpler. Here, though, if the definition is relaxed, there are mathematical consequences (e.g. failure of the monad–theory correspondence) as well as as more conceptual ones (e.g. the directness of the correspondence with universal algebra). I think this is something that is often overlooked in the definition of algebraic theories (because many people have been incorrectly trained to see all definitions that involve equality as being uncategorical).</p>",
+        "id": 452828178,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1721473358
+    },
+    {
+        "content": "<p>(Of course, it is true that we should take <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">F</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">F</span></span></span></span> instead of the opposite of the category of finite sets, but this is something the nLab page does do correctly.)</p>",
+        "id": 452828210,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1721473394
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/232160-learning.3A-reading-.26-references/topic/Morphism.20of.20Lawvere.20theories.20on.20the.20nLab/near/452828210\">said</a>:</p>\n<blockquote>\n<p>(Of course, it is true that we should take <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">F</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">F</span></span></span></span> instead of the opposite of the category of finite sets, but this is something the nLab page does do correctly.)</p>\n</blockquote>\n<p>I hadn't looked any time recently. Good to know. </p>\n<p>Of course I agree with the rest of what you say.</p>",
+        "id": 452828415,
+        "sender_full_name": "Todd Trimble",
+        "timestamp": 1721473556
+    }
+]

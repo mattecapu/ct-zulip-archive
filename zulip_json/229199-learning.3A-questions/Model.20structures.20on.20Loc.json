@@ -1,0 +1,56 @@
+[
+    {
+        "content": "<p>What model structures, if any, exist on the category of locales?</p>",
+        "id": 486690420,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733593908
+    },
+    {
+        "content": "<p><a href=\"#narrow/channel/229199-learning.3A-questions/topic/Model.20structures.20on.20Loc/near/486690420\">A message</a> was moved here from <a class=\"stream-topic\" data-stream-id=\"229199\" href=\"/#narrow/channel/229199-learning.3A-questions/topic/What.20Are.20Categories.20of.20Spaces.3F\">#learning: questions &gt; What Are Categories of Spaces?</a> by <span class=\"user-mention silent\" data-user-id=\"671813\">Madeleine Birchfield</span>.</p>",
+        "id": 486695021,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1733597580
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"671813\">Madeleine Birchfield</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/What.20Are.20Categories.20of.20Spaces.3F/near/486690420\">said</a>:</p>\n<blockquote>\n<p>What model structures, if any, exist on the category of locales?</p>\n</blockquote>\n<p>That's an interesting thing to consider! To start, there's a way to <a href=\"https://ncatlab.org/nlab/show/transferred+model+structure#idea\">transfer model structures</a> along adjoint functors. Since <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Top}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Top</span></span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">L</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">c</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Loc}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Loc</span></span></span></span></span> share an adjunction maybe you can transfer some model structure (like the classical or Strom model structure) from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Top}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Top</span></span></span></span></span> to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">T</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">p</mi></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Top}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Top</span></span></span></span></span> along it. But I have no idea if those model structures actually would transfer along this adjunction!</p>",
+        "id": 486696736,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1733598980
+    },
+    {
+        "content": "<p>One problem with putting model structures on Loc is that the most general method for constructing model structures uses the small object argument to build factorizations, but I am skeptical that there are very many small objects in Loc, because it is the <em>dual</em> of an algebraic category.  In particular, it's certainly not locally presentable.</p>",
+        "id": 486699629,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1733601438
+    },
+    {
+        "content": "<p>But you might have more luck with a Strom-style model structure.</p>",
+        "id": 486699657,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1733601466
+    },
+    {
+        "content": "<p>Well as it turns out, <a href=\"https://arxiv.org/pdf/2310.14235\">there's a Quillen-like model structure on locales after all</a>, and in fact it's part of a whole class of model structures that one can put on any bicomplete category that shares a special sub-category with Top containing the unit interval, point, and a few related objects!</p>",
+        "id": 489095899,
+        "sender_full_name": "John Onstead",
+        "timestamp": 1734280086
+    },
+    {
+        "content": "<p>Nice!</p>",
+        "id": 489158258,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1734331592
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Model.20structures.20on.20Loc/near/486699629\">said</a>:</p>\n<blockquote>\n<p>One problem with putting model structures on Loc is that the most general method for constructing model structures uses the small object argument to build factorizations, but I am skeptical that there are very many small objects in Loc, because it is the <em>dual</em> of an algebraic category.  In particular, it's certainly not locally presentable.</p>\n</blockquote>\n<p>Is there some general statement about it being hard for co-algebraic categories to be locally presentable? Set is co-algebraic, so it's not literally impossible.</p>",
+        "id": 489296589,
+        "sender_full_name": "James E Hanson",
+        "timestamp": 1734370298
+    },
+    {
+        "content": "<p>If a category and its dual are both locally presentable, then it is a preorder.  So Set is not co-algebraic in the sense of being co-locally-presentable.</p>",
+        "id": 489315342,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1734374603
+    }
+]
