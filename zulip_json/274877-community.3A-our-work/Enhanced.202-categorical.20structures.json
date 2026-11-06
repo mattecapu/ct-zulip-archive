@@ -1,0 +1,80 @@
+[
+    {
+        "content": "<p>John Bourke, Joanna Ko, and I have a new preprint on arXiv: <a href=\"https://arxiv.org/abs/2412.07475\">Enhanced 2-categorical structures, two-dimensional limit sketches and the symmetry of internalisation</a>. Here's the abstract:</p>\n<blockquote>\n<p>Many structures of interest in two-dimensional category theory have aspects that are inherently strict. This strictness is not a limitation, but rather plays a fundamental role in the theory of such structures. For instance, a monoidal fibration is – crucially – a <em>strict</em> monoidal functor, rather than a pseudo or lax monoidal functor. Other examples include monoidal double categories, double fibrations, and intercategories. We provide an explanation for this phenomenon from the perspective of enhanced 2-categories, which are 2-categories having a distinguished subclass of 1-cells representing the strict morphisms. As part of our development, we introduce enhanced 2-categorical limit sketches and explain how this setting addresses shortcomings in the theory of 2-categorical limit sketches. In particular, we establish the symmetry of internalisation for such structures, entailing, for instance, that a monoidal double category is equivalently a pseudomonoid in an enhanced 2-category of double categories, or a pseudocategory in an enhanced 2-category of monoidal categories.</p>\n</blockquote>\n<p>There are also some <a href=\"http://xabier.garcia.martinez.webs.uvigo.gal/CT2024/files/Slides/Bourke_Slides.pdf\">slides on this work</a> from John's talk at CT this year. I'm not going to summarise the paper here, because I think the introduction to the paper does a good job, but I'm very happy to answer any questions or receive any comments here!</p>",
+        "id": 488167207,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1733943874
+    },
+    {
+        "content": "<p>Would you be able to say anything about why \"a monoidal fibration is – crucially – a <em>strict</em> monoidal functor, rather than a pseudo or lax monoidal functor\"? Why is this crucial?</p>",
+        "id": 489758621,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1734528797
+    },
+    {
+        "content": "<p>One of the most important properties of fibrations is their relationship to pseudofunctors. It is therefore reasonable to expect that a good notion of fibration corresponds to a notion of pseudofunctor in a way extending the classical correspondence. This is indeed true for monoidal fibrations (see <a href=\"https://arxiv.org/abs/0706.1286\">Shulman</a> and <a href=\"https://arxiv.org/abs/1809.00727\">Moeller–Vasilakopoulou</a>); the fact that the underlying functors are strict monoidal corresponds to the fact that fibrations are, intuitively, projections, so that the monoidal structure on the total category is defined in terms of that on the base. If you drop the requirement that the monoidal functors are strict, you would lose this correspondence.</p>",
+        "id": 489787137,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1734536838
+    },
+    {
+        "content": "<p>However, if a fibration is a pseudo monoidal functor, it seems it ought to be possible to modify the tensor product of its domain by transporting it along the monoidality constraints to make it a strict monoidal functor.</p>",
+        "id": 489806568,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1734542468
+    },
+    {
+        "content": "<p>That does seem plausible. The \"crucially\" in the abstract was intended to correspond to the fact that it is the strict monoidal functors that are primitive rather than the pseudo monoidal ones (for instance, there are similar situations in which it is certainly not possible to strictify like this). But perhaps another word would be clearer there.</p>",
+        "id": 489823864,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1734548712
+    },
+    {
+        "content": "<p>I don't object to the word \"crucially\".</p>",
+        "id": 489825641,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1734549348
+    },
+    {
+        "content": "<p>So I think the non-strict versions still correspond to monoidal pseudofunctors, right? You should be able to replace the domain category with its pseudomorphism classifier to strictify the fibration and this should give something equivalent. Possibly there is also some thought required with using morphisms of fibrations that only commute up to isomorphism.</p>\n<p>I bring this up since the nonstrict version seems to be pretty common in practice. For example, I believe the reflection from commutative monoids to abelian groups is a monoidal fibration in the weaker sense and making it strict seems like it would be quite painful.</p>",
+        "id": 490123581,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1734686790
+    },
+    {
+        "content": "<p>Is it clear that the strict monoidal functor obtained by the pseudo morphism classifier would be a fibration if the original pseudo monoidal functor was?</p>",
+        "id": 490125563,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1734687589
+    },
+    {
+        "content": "<p>I would be interested to see some examples of non-strict monoidal fibrations. However, our paper is not so much making an argument about the \"correct\" definition of structure-preserving fibration, as it is observing that people have already defined various notions of structure-preserving fibration in the literature, each of which does preserve the given structure strictly, and giving a context in which these structures can be defined and studied. It turns out that requiring strict structure preservation lends nice properties to such fibrations (e.g. monoidal fibrations are equivalent to pseudomonoids in fibrations), which lends credence to the definition being the most appropriate one, but I think the stronger evidence is how often this strictness condition is imposed in the literature.</p>",
+        "id": 490127396,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1734688310
+    },
+    {
+        "content": "<p>Note that the notion of Grothedieck fibration (as opposed to \"Street fibration\") already involves equality of objects, but can be formulated without violating the principle of equivalence as a <a href=\"https://ncatlab.org/nlab/show/displayed%20category\">[[displayed category]]</a>.  Monoidal strictness can also be formulated for a displayed category in an invariant way, with the tensor product of the \"domain\" (the displayed category) being dependent/displayed over that of the \"codomain\" (the base).</p>",
+        "id": 490192597,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1734711713
+    },
+    {
+        "content": "<p>My argument for strictification doesn't change either category or the functor, only the tensor product of the domain, so the functor is trivially still a fibration in that case.</p>",
+        "id": 490192754,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1734711755
+    },
+    {
+        "content": "<p>IMO a good 'technical' reason to stick to strict morphisms is that non-strict morphisms often don't admit base change (e.g. you can't, in general, strictly pullback non-strictly monoidal functors along each other), which is weird for a notion of fibration</p>",
+        "id": 491317945,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1735585395
+    },
+    {
+        "content": "<p>Of course one could argue iso/lax commas are more natural 'base change' operations in those cases so ultimately one is back to a 'conceptual' preference for strictness in display maps, albeit of a different nature</p>",
+        "id": 491318086,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1735585480
+    }
+]

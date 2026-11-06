@@ -1,0 +1,56 @@
+[
+    {
+        "content": "<p>This page <a href=\"https://ncatlab.org/nlab/show/lax+2-adjunction\">https://ncatlab.org/nlab/show/lax+2-adjunction</a> discusses various notions of adjunction between 2-categories, but it seems to be missing one that feels very natural to me and i'm wondering where I can find a reference for it.</p>\n<p>The last paragraph reads:</p>\n<blockquote>\n<p>One might additionally consider allowing the functors to be lax, as in (Betti-Power) (Seely). But lax functors are even harder to incorporate in a 3-category-like structure than lax transformations, since one can’t even whisker any sort of transformation by a lax functor. Seely also seems to say that ϕ^ and ϕˇ are both strict in their first coordinate, rather than one in the first and one in the second as seems (to me) to be necessary for a Yoneda restatement.</p>\n</blockquote>\n<p>I believe that a more natural notion is that, instead of both functors being lax, the right adjoint should be lax and the left adjoint should be colax. In Grandis and Pare's papers on double categories this is what they develop as a notion of adjunction between double categories. But surely Grandis and Pare were not the first to discover this, right? I would think that this notion would have been studied for 2-categories before it was studied for double categories. Where can I find a reference on these colax/lax adjunctions between 2-categories?</p>",
+        "id": 512699303,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1744842725
+    },
+    {
+        "content": "<p>The idea really goes back to Kelly's paper <a href=\"https://link.springer.com/chapter/10.1007/BFb0063105\">Doctrinal adjunction</a>. Kelly doesn't consider the case of colax–lax adjunctions between 2-categories, but it falls out of this general framework.</p>",
+        "id": 512700255,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1744843299
+    },
+    {
+        "content": "<p>In general I think colax/lax adjunctions are under-studied.  One reason is probably that since you can't compose a lax functor and a colax functor and get much of anything sensible, in order to talk about the unit and counit of such an adjunction you need the ambient structure to be some kind of double category.  And I think it's actually easier to define the appropriate double-category-like thing when the objects are also (perhaps pseudo) double categories, because the transformations can be strict in the tight direction, so the whole structure is an ordinary strict double category, rather than some kind of doubly-weak double category or triple category.</p>",
+        "id": 512704245,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1744845393
+    },
+    {
+        "content": "<p>Okay, I see. I get why that's less convenient but even in the 2-categorical setting it's still interesting that it's uniquely defined if it exists, right? Like the unit/counit presentation is one very useful way of presenting it, but there should be a concept of \"colax left adjoint\" which is unique up to equivalence if it exists.</p>",
+        "id": 512704596,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1744845614
+    },
+    {
+        "content": "<p>Have you proven that?</p>",
+        "id": 512705807,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1744846423
+    },
+    {
+        "content": "<p>Lax functors between 2-categories are pretty weird, I wouldn't trust any intuition about them until I'd double and triple checked it.  To start with, for instance, the notion of lax functor is not invariant under replacing a 2-category by an equivalent one.</p>",
+        "id": 512706162,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1744846645
+    },
+    {
+        "content": "<p>No, I have started proving it but I was hoping to save myself some time by finding a reference</p>",
+        "id": 512716026,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1744853084
+    },
+    {
+        "content": "<p>A very recent work on colax adjunctions (but only between pseudofunctors, not co/lax functors) is Miloslav Štěpán's <a href=\"https://arxiv.org/abs/2504.04467\">thesis</a> (or simply the extracted <a href=\"https://arxiv.org/abs/2405.00488\">paper</a>). In particular, he mentions in Remark 2.3.7 that — already in this less general setting — left colax adjoints are not unique.</p>",
+        "id": 512753306,
+        "sender_full_name": "David Kern",
+        "timestamp": 1744873327
+    },
+    {
+        "content": "<p>The \"colax adjunctions\" in Miloslav's work are not the same as colax–lax adjunctions: as seen in Definition 2.3.1, the colaxity appears in the unit/counit rather than the functors.</p>",
+        "id": 512762779,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1744876804
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "content": "<p>have a pretty good sense of what category theory says about first-order logic (look at coherent categories or hyperdoctrines). And topoi and type theory give a perspective on higher-order logic. But what about the in-between system(s), e.g. second-order logic? What categorical structures (if any) correspond to second-order logic, or to one of the nice fragments, like existential second-order logic?</p>\n<p>Talk of 2-logic brought this to mind because, well, that's another way to increment the index by 1, as it were. Lol.</p>",
+        "id": 554594801,
+        "sender_full_name": "Evan Washington",
+        "timestamp": 1762725755
+    },
+    {
+        "content": "<p>I think it is straight-forward to describe the categorical structure of second-order logic as a restriction on semantics of higher-order logic. Leveraging that to help do the interesting things people do with second-order logic would take more work of course.</p>",
+        "id": 554740799,
+        "sender_full_name": "Max New",
+        "timestamp": 1762791560
+    },
+    {
+        "content": "<p>I thought that logicians usually don't worry much about the difference between second-order and higher-order, since you can rewrite every higher-order theory to a second-order one, right? To get a category whose internal logic was really strictly second-but-not-higher order, I guess you'd need a stratification on the objects such that only objects in the first universe had power-objects. But it doesn't seem particularly natural, does it?</p>",
+        "id": 554770893,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1762800998
+    },
+    {
+        "content": "<p>Well, restricting (or rather: observe there exists such a restriction) which objects have exponentials it's not unheard of in category theory</p>",
+        "id": 554775902,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1762802978
+    },
+    {
+        "content": "<p>It's perhaps worth mentioning that <span class=\"user-mention\" data-user-id=\"448726\">@Dylan McDermott</span> and I studied second-order (and, more generally, nth-order) algebraic structure in <a href=\"https://arkor.co/files/Monadic%20and%20Higher-Order%20Structure.pdf#page=24\">Higher-order algebraic theories</a>, in which there is some ability to quantify over variables (and metavariables, etc.), but only up to a limited order. Perhaps surprisingly, although limiting the quantification in this way may seem unnatural, it leads to insights into the structure of higher-order structure, as one can see (n + 1)th-order structure as being \"algebraic\" over nth-order structure.</p>\n<p>This kind of quantification is not the same as the quantification in second/higher-order logic, but I suspect similar techniques could be used to study second-order logic, so it may be of interest to take a look at.</p>",
+        "id": 554794256,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1762809865
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Where's.20all.20the.20second-order.20logic.3F/near/554775902\">said</a>:</p>\n<blockquote>\n<p>Well, restricting (or rather: observe there exists such a restriction) which objects have exponentials it's not unheard of in category theory</p>\n</blockquote>\n<p>Yes, but this almost proves my point, if anything: you'd ideally have a reasonably natural category in which only the \"atomic\" objects were exponentiable, or something like that, which doesn't seem too easy to build. What ways does one even have to make certain objects be exponentiable, as opposed to looking for the exponentiable ones in a pre-existing category?</p>",
+        "id": 554816419,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1762821451
+    },
+    {
+        "content": "<p>I'm curious about what additional properties categorical semantics might possess when we restrict our attention from general second-order theories to a much narrower class, namely, second-order arithmetic. Do you have any insight?</p>",
+        "id": 554856362,
+        "sender_full_name": "米田 豊 (MAITA, Yutaka)",
+        "timestamp": 1762848761
+    },
+    {
+        "content": "<p>There is a very interesting history about the categorical semantics of System F i.e. the polymorphic lambda-calculus, which stands to second-order propositional intuitionistic logic as the lambda-calculus stands to propositional intuitionistic logic. In a certain sense this is what brought linear logic to life (linear logic came out of the coherence space model of System F). This is of a different flavour than the usual semantics of higher-order intuitionistic logic as exemplified by topoi because it is essentially impredicative (it asks for \"unbounded\" quantification over all types).</p>",
+        "id": 554859356,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1762849894
+    },
+    {
+        "content": "<p>This is traditionally more of a \"logic in CS\" topic than a \"mathematical logic\" topic and I do not know how much work there is on a philosophical perspective to it, although a quick search brings up at least <a href=\"https://arxiv.org/abs/1710.10205\">this paper</a> which seems interesting.</p>",
+        "id": 554859909,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1762850095
+    },
+    {
+        "content": "<p>Although the question has obviously been very fertile, I find there is something disappointing about the \"standard\" categorical answer as it seems to make a bit of a sleight of hand: it deals with the impredicativity of quantification over all types by \"externalising\" it (the semantics involves a categorical fibration, and then quantification is modelled by a base-indexed limit). Girard certainly considered this a case where to accurately model the \"dynamic\" aspect of 2nd order one needs to move on from categorical semantics, and I think he was onto something, although I have not thought about the question deeply enough to give a fully formed opinion.</p>",
+        "id": 554862654,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1762851040
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Where's.20all.20the.20second-order.20logic.3F/near/554794256\">said</a>:</p>\n<blockquote>\n<p>It's perhaps worth mentioning that <span class=\"user-mention silent\" data-user-id=\"448726\">Dylan McDermott</span> and I studied second-order (and, more generally, nth-order) algebraic structure in <a href=\"https://arkor.co/files/Monadic%20and%20Higher-Order%20Structure.pdf#page=24\">Higher-order algebraic theories</a>, in which there is some ability to quantify over variables (and metavariables, etc.), but only up to a limited order. Perhaps surprisingly, although limiting the quantification in this way may seem unnatural, it leads to insights into the structure of higher-order structure, as one can see (n + 1)th-order structure as being \"algebraic\" over nth-order structure.</p>\n<p>This kind of quantification is not the same as the quantification in second/higher-order logic, but I suspect similar techniques could be used to study second-order logic, so it may be of interest to take a look at.</p>\n</blockquote>\n<p>Can you expand on meaning of (n+1)-th order being algebraic over n-th order? Can one interpret that as an internal Lawvere theory inside some synctactic category? Say something like a 2nd order Lawvere theory is a Lawvere theory where one adds a previous Lawvere theory to the metatheory.</p>\n<p>I just skimmed very fast through your paper, so feel free to tell me I'm just being lazy and I should just read it.</p>",
+        "id": 555098567,
+        "sender_full_name": "Fernando Yamauti",
+        "timestamp": 1762948359
+    },
+    {
+        "content": "<blockquote>\n<p>meaning of (n+1)-th order being algebraic over n-th order?</p>\n</blockquote>\n<p>By this I mean that, just as ordinary algebraic theories can be seen to correspond to certain monads on the category of sets, so too can (n + 1)th-order algebraic theories be seen to correspond to certain monads on the category of nth-order algebraic theories (recovering the classical correspondence when n = 0). This appears as Theorem 4.7.6 in the Chapter of my thesis I linked to.</p>",
+        "id": 555133742,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1762957830
+    }
+]

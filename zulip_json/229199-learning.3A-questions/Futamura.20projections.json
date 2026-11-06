@@ -1,0 +1,68 @@
+[
+    {
+        "content": "<p>I ran across the term \"Futamura projection\" when reading souffle-lang's site.  </p>\n<p><a href=\"http://blog.sigfpe.com/2009/05/three-projections-of-doctor-futamura.html\">http://blog.sigfpe.com/2009/05/three-projections-of-doctor-futamura.html</a></p>\n<p>While the atmosphere is crackling with category-theoretic energy, I actually can't find sources that discuss the connection.</p>\n<p>Can anyone couch the concept of Futamura projections in terms of category theory?  I have a feeling it'll make it faster for me to understand...</p>",
+        "id": 470815673,
+        "sender_full_name": "Ryan Schwiebert",
+        "timestamp": 1726542489
+    },
+    {
+        "content": "<p>I honestly read \"futurama projections\" three times before noticing that no, that's not what's written</p>",
+        "id": 470915591,
+        "sender_full_name": "fosco",
+        "timestamp": 1726563630
+    },
+    {
+        "content": "<p>This being said: the thing that comes to mind when reading that one can \"stuff a description of a specialiser into the specialiser's own first input\" is Lawvere's fixpoint theorem, survey'd here <a href=\"https://arxiv.org/abs/math/0305282\">https://arxiv.org/abs/math/0305282</a> <br>\nAnd probably this is corroborated by the previous remark that this is all about machines making machines (so, whatever category you can encode this in, will have internal homs)?</p>",
+        "id": 470916432,
+        "sender_full_name": "fosco",
+        "timestamp": 1726563838
+    },
+    {
+        "content": "<p>(I have no precise idea what I'm talking about, of course)</p>",
+        "id": 470916559,
+        "sender_full_name": "fosco",
+        "timestamp": 1726563858
+    },
+    {
+        "content": "<p>Huh: I never would have thought to see \"fixed point theorems\" grouped with \"paradoxes and incompleteness theorems\". Interesting!</p>",
+        "id": 470953523,
+        "sender_full_name": "Ryan Schwiebert",
+        "timestamp": 1726572969
+    },
+    {
+        "content": "<p>See </p>\n<ul>\n<li>Wikipedia, <a href=\"https://en.wikipedia.org/wiki/Quine_(computing)\">Quine</a></li>\n</ul>\n<blockquote>\n<p>A <strong>quine</strong> is a <a href=\"https://en.wikipedia.org/wiki/Computer_program\">computer program</a> that takes no input and produces a copy of its own <a href=\"https://en.wikipedia.org/wiki/Source_code\">source code</a> as its only output. The standard terms for these programs in the <a href=\"https://en.wikipedia.org/wiki/Computability_theory\">computability theory</a> and <a href=\"https://en.wikipedia.org/wiki/Computer_science\">computer science</a> literature are \"self-replicating programs\", \"self-reproducing programs\", and \"self-copying programs\".</p>\n</blockquote>\n<blockquote>\n<p>A quine is a <a href=\"https://en.wikipedia.org/wiki/Fixed_point_(mathematics)\">fixed point</a> of an execution environment, when that environment is viewed as a <a href=\"https://en.wikipedia.org/wiki/Function_(mathematics)\">function</a> transforming programs into their outputs. Quines are possible in any <a href=\"https://en.wikipedia.org/wiki/Turing_completeness\">Turing-complete</a> programming language, as a direct consequence of <a href=\"https://en.wikipedia.org/wiki/Kleene%27s_recursion_theorem\">Kleene's recursion theorem</a>.</p>\n</blockquote>",
+        "id": 471019422,
+        "sender_full_name": "John Baez",
+        "timestamp": 1726587486
+    },
+    {
+        "content": "<p>Also see Quine's presentation of the Liar paradox and Goedel's first incompleteness theorem in terms of quining:</p>\n<ul>\n<li>W. V. Quine, <a href=\"https://math.dartmouth.edu/~matc/Readers/HowManyAngels/WaysofParadox/WaysofParadox.html\">The ways of paradox</a>.</li>\n</ul>\n<blockquote>\n<p>In an effort to clear up this antinomy it has been protested that the phrase 'This sentence', so used, refers to nothing. This is claimed on the ground that you cannot get rid of the phrase by supplying a sentence that is referred to. For what sentence does the phrase refer to? The sentence 'This sentence is false'. If, accordingly, we supplant the phrase 'This sentence' by a quotation of the sentence referred to, we get: ' 'This sentence is false' is false'. But the whole outside sentence here attributes falsity no longer to itself but merely to something other than itself, thereby engendering no paradox.</p>\n</blockquote>\n<blockquote>\n<p>If, however, in our perversity we are still bent on constructing a sentence that does attribute falsity unequivocally to itself, we can do so thus: ' ' Yields a falsehood when appended to its own quotation' yields a falsehood when appended to its own quotation'. This sentence specifies a string of nine words and says of this string that if you put it down twice, with quotation marks around the first of the two occurrences, the result is false. But that result is the very sentence that is doing the telling. The sentence is true if and only if it is false, and we have our antinomy.</p>\n</blockquote>",
+        "id": 471021055,
+        "sender_full_name": "John Baez",
+        "timestamp": 1726587791
+    },
+    {
+        "content": "<p>I'll admit I'm confused about the precise relation between Quine's original trick - ' ' Yields a falsehood when appended to its own quotation' yields a falsehood when appended to its own quotation' - and fixed point theorems.   What's the map that has a fixed point here?</p>\n<p>On the other hand, it seems the modern computer science use of \"quine\" is different: it's a program that yields itself as output, so it's a fixed point of evaluation.   For a proof that any Turing complete language has such a fixed point, try this:</p>\n<ul>\n<li><a href=\"https://cs.stackexchange.com/a/92545/107769\">Why does the fixed point theorem apply to quines?</a></li>\n</ul>\n<p>Maybe the two uses of \"quine\" are more connected than I realize.</p>",
+        "id": 471023998,
+        "sender_full_name": "John Baez",
+        "timestamp": 1726588443
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"685603\">@Ryan Schwiebert</span>, I often wonder about this question too.</p>\n<p>Some time ago I came across <a href=\"https://johnwickerson.wordpress.com/2020/05/21/diagrams-for-composing-compilers/\">this</a> particularly compelling graphical calculus for composing compilers.<br>\n<a href=\"/user_uploads/21317/1HzIEiZeSsK9FkEckY2V1wl9/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/1HzIEiZeSsK9FkEckY2V1wl9/image.png\" title=\"image.png\"><img data-original-dimensions=\"1000x656\" src=\"/user_uploads/thumbnail/21317/1HzIEiZeSsK9FkEckY2V1wl9/image.png/840x560.webp\"></a></div><p>While I'm not sure if it says anything related to Futamura projection in particular, it seems highly relevant.<br>\nSome of the high-level algebra is reminiscent of the algebra of composing maps with the <a href=\"https://ncatlab.org/nlab/show/para+construction\">para</a> construction too</p>",
+        "id": 471035809,
+        "sender_full_name": "Bruno Gavranović",
+        "timestamp": 1726591343
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"294557\">@dusko</span> presents the Futamura projections in terms of \"monoidal computers\" in Section 6.2.2 of <a href=\"https://arxiv.org/abs/2208.03817\">his book</a>.</p>",
+        "id": 471199774,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1726647975
+    },
+    {
+        "content": "<p>The linked blog post talks about specializers, which fix an input and then optimize the resulting program.  But optimization of internals is deeply related to the execution of programs, which denotational semantics largely ignores.  So if there is a nontrivial categorical view of the Futamura projections, it will have to be in a context where we can model programs evolving over time.  The Lambek &amp; Scott approach to interpreting lambda calculus in a CCC won't suffice: the morphisms are beta-equivalence classes of terms with one free variable, but the number of beta reduction steps is precisely what the optimizer is attempting to reduce.</p>",
+        "id": 471403945,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1726723458
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "content": "<p>Hello Guys, </p>\n<p>I approached the only Category Theory professor in my department to collaborate in applied category theory in AI as a general guiding research topic for part of my master thesis. She was very kind but asked me a very specific question that I wasn’t ready to answer with my intro-level CT:</p>\n<p><strong>Her question, summarized:</strong><br>\nIn computational/AI contexts, is Category Theory mainly being used just as a <em>language</em> to describe constructions more succinctly, or are there cases where <strong>theorems from particular categorical structures are essential to prove non-trivial results</strong> in neural networks, algorithms, or other AI subfield — results that could not be established (or would be much harder) without CT?</p>\n<p>She compared this to Hopf algebras, where CT is necessary to reach classification theorems (I may not correct citing her here), and asked whether similar things exist in AI/ML.</p>\n<p><strong>Ask:</strong> I would appreciate references (titles only are fine) to recent papers (2023–present preferred) of this type — either in applied CT for AI, or in applied CT in other computational areas that may be relevant.</p>\n<p>Thanks!</p>",
+        "id": 543028261,
+        "sender_full_name": "Pierre R",
+        "timestamp": 1759525009
+    },
+    {
+        "content": "<p>my usual rejoinder to this kind of question is that, when you have a compositional system, category theory just applies, same as how when you have a symmetric system group theory just applies; whether or not you <em>must</em> use some underlying aspect of a system such as symmetry or compositionally is often 'no' simply because of human cleverness.  Anyway, when database theorists try to figure out if various classes of logic programming language are closed under composition, they don't think of themselves as doing category theory, even though they are directly probing the compositionality of a given system, and this was a major community goal - 20 years ago.  Others will have to speak for the more modern kind of AI (database theory being 'symbolic' AI / deductive logic).</p>",
+        "id": 543054923,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1759548757
+    },
+    {
+        "content": "<p>From what I can tell, one of the major problems of AI as a field is that there are hardly any theoretical results that apply to the kind of AI/ML that people use in practice, and all this engineering of tremendous civilizational importance and which huge numbers of people and projects are directly exposed to is being done purely by vibe-guided experimentation, with a very short path to deployment.  So probably there aren't any results of importance out there that essentially use category theory, but that says very little about whether category theory could be essential to important results.</p>",
+        "id": 543070773,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1759566886
+    },
+    {
+        "content": "<p>Since the person asking the question </p>\n<blockquote>\n<p>are there cases where <strong>theorems from particular categorical structures are essential to prove non-trivial results</strong> in neural networks, algorithms, or other AI subfield</p>\n</blockquote>\n<p>was not an AI expert but \"the only category theory professor\" in <span class=\"user-mention\" data-user-id=\"867930\">@Pierre R</span>'s department, this was probably <em>not</em> the usual question we all hear, where someone is doubting the usefulness of category theory to their field, and challenging us to change their mind.   (\"See if you can change my mind!  I have it firmly set not to change!\")</p>\n<p>Instead, it could be a case of a category theorist wondering how their field could be useful to some other subject!</p>\n<p>But personally, I find that the usefulness of categories in \"applied category theory\" is often less about theorems and more about using them as part of a software environment.  The theorems exist, but often they merely show that the software makes sense.</p>",
+        "id": 543087752,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759584555
+    },
+    {
+        "content": "<p>Hello John,</p>\n<p>You are completely right in your reading of the question. She is not doubting Category Theory—she works in theoretical CT—and neither am I.</p>\n<p>I think what she is really asking me to do is look for AI papers where CT concepts are essential to reaching the main conclusions of the work.</p>\n<p>As a beginner, I tend to think that any paper using CT in a meaningful way already makes CT essential. But from her point of view, simply reframing things in terms of Categories, Functors, or Natural Transformations is not enough to count as strong theoretical CT.</p>\n<p>That’s probably what prompted my response, since I’m not sure whether my understanding is too basic to even classify work in that way.</p>",
+        "id": 543097462,
+        "sender_full_name": "Pierre R",
+        "timestamp": 1759592924
+    },
+    {
+        "content": "<p>Some relevant work appeared at <a href=\"https://gataslab.org/act2025/act2025#schedule\">ACT</a> this year, I think. You could check there for slides.</p>",
+        "id": 543156120,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1759664160
+    },
+    {
+        "content": "<blockquote>\n<p>I think what she is really asking me to do is look for AI papers where CT concepts are essential to reaching the main conclusions of the work.</p>\n</blockquote>\n<p>Okay.  I think you should read the work of some people here:</p>\n<ul>\n<li><a href=\"https://johncarlosbaez.wordpress.com/2025/02/08/category-theorists-in-ai/\">Category theorists in AI</a>.</li>\n</ul>",
+        "id": 543159834,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759667937
+    },
+    {
+        "content": "<p>If I can add to the discussion, a paper that I think it's quite important to machine learning theory is the fact that d-separation can be proved in the categorical setting ([2207.05740] The d-separation criterion in Categorical Probability <a href=\"https://share.google/lHyRxqCZ3jC5aU8Ej\">https://share.google/lHyRxqCZ3jC5aU8Ej</a>).</p>\n<p>Other recent works that have a more \"proving theorems\" approach are </p>\n<p>[2401.14669] Hidden Markov Models and the Bayes Filter in Categorical Probability <a href=\"https://share.google/lQ0KkPEUh15rl8jhe\">https://share.google/lQ0KkPEUh15rl8jhe</a></p>\n<p>[2406.11814] Stochastic Neural Network Symmetrisation in Markov Categories <a href=\"https://share.google/1lR26Vux5fSGAGrsm\">https://share.google/1lR26Vux5fSGAGrsm</a></p>\n<p>I should cite more people to be comprehensive, but these works may be what your professor is looking for. <br>\nThe important thing here is that by proving theorems for Markov categories, they immediately hold in different probabilistic and possibilistic settings. Ironically, in some books the d-separation criterion is proven for finite sets, and then the proof for Gaussian probability is deemed analogous and basically left to the reader (see Kooler Friedman's book Probabilistic Graphical Models: Principles and Techniques <a href=\"https://share.google/p0h31upQzkfM29Bpu\">https://share.google/p0h31upQzkfM29Bpu</a>).</p>",
+        "id": 543269655,
+        "sender_full_name": "Antonio Lorenzin",
+        "timestamp": 1759745311
+    },
+    {
+        "content": "<p>Another important insight is how intractable the standard probability theory can be if we consider the setting beyond finite and gaussian probability, where one has to deal with multiple integrations. Without the categorical perspective, even understanding what is the right analogous statement of a theorem for finite sets can be challenging. Using categorical semantics, you even have the proof under standard assumptions (such as \"having conditionals\").</p>\n<p>I remember talking to David Dalrymple of ARIA and he was interested in aciomatisations beyond finite sets and gaussian probability, so it is plausible that this ability of categorical semantics may be important for the future of AI.</p>",
+        "id": 543272274,
+        "sender_full_name": "Antonio Lorenzin",
+        "timestamp": 1759746066
+    },
+    {
+        "content": "<p>Last thing, I'm honestly amazed by the fact that the use of string diagrams have already emerged in machine learning independently from category theory under the name of factor graphs (Factor graph - Wikipedia <a href=\"https://share.google/vnySaqubG4ZNIaVGs\">https://share.google/vnySaqubG4ZNIaVGs</a>).</p>",
+        "id": 543272821,
+        "sender_full_name": "Antonio Lorenzin",
+        "timestamp": 1759746221
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"419640\">@Antonio Lorenzin</span>  is there any reason you are giving google share links rather than links to the arXiv? I think I would prefer to go to the source (or if that's where they go, not through Google's tracking)</p>",
+        "id": 543419764,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1759791328
+    },
+    {
+        "content": "<p>I have a silly reason, i.e. when I ask my phone to share the link from Google search, it generates a Google link <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span> Sorry for this! </p>\n<p>Here are the correct links:</p>\n<ul>\n<li>The d-separation criterion in Categorical Probability <a href=\"https://arxiv.org/abs/2207.05740\">https://arxiv.org/abs/2207.05740</a></li>\n<li>Hidden Markov Models and the Bayes Filter in Categorical Probability <a href=\"https://arxiv.org/abs/2401.14669\">https://arxiv.org/abs/2401.14669</a></li>\n<li>Stochastic Neural Network Symmetrisation in Markov Categories <a href=\"https://arxiv.org/abs/2406.11814\">https://arxiv.org/abs/2406.11814</a></li>\n<li>Koller Friedman book Probabilistic Graphical Models <a href=\"https://mitpress.mit.edu/9780262013192/probabilistic-graphical-models/\">https://mitpress.mit.edu/9780262013192/probabilistic-graphical-models/</a></li>\n<li>Factor graph <a href=\"https://en.m.wikipedia.org/wiki/Factor_graph\">https://en.m.wikipedia.org/wiki/Factor_graph</a></li>\n</ul>",
+        "id": 543449702,
+        "sender_full_name": "Antonio Lorenzin",
+        "timestamp": 1759816918
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"867930\">Pierre R</span> <a href=\"#narrow/channel/232160-learning.3A-reading-.26-references/topic/Papers.20Where.20CT.20Is.20Essential.20For.20Theoretical.20Results.20in.20AI.3F/near/543028261\">said</a>:</p>\n<blockquote>\n<p><strong>Her question, summarized:</strong><br>\nIn computational/AI contexts, is Category Theory mainly being used just as a <em>language</em> to describe constructions more succinctly, or are there cases where <strong>theorems from particular categorical structures are essential to prove non-trivial results</strong> in neural networks, algorithms, or other AI subfield — results that could not be established (or would be much harder) without CT?</p>\n</blockquote>\n<p>You might want to check Sheaf Neural Networks. In general, the closest subfield of deep learning to CT is <a href=\"https://geometricdeeplearning.com\">Geometric Deep Learning</a>. Some people are also using algebro-geometric methods to study what is arguably the biggest problem in deep learning, namely why do NNs work so goddamn well---this is <a href=\"https://timaeus.co/learn\">Singular Learning Theory</a>.</p>\n<p>Finally, there have been quite a few papers on compositionality for AI models, starting from <a href=\"https://arxiv.org/abs/1711.10455\">https://arxiv.org/abs/1711.10455</a> and <a href=\"https://arxiv.org/abs/2103.01931\">https://arxiv.org/abs/2103.01931</a>, and related papers. Shiebler, Gavranovic and Wilson wrote a lit review some years ago, <a href=\"https://arxiv.org/abs/2106.07032\">https://arxiv.org/abs/2106.07032</a>.</p>\n<p>However, I believe the jury is still out on whether CT can be applied to mainstream AI to the point that an AI scientist would feel the need to go and learn CT in the same way they eventually learn calculus or linear algebra. In fact, I would say this is true of almost any topic (programming language theory being the most notable exception, IMO). CT remains a great tool to enhance understanding, and to organize knowledge.</p>",
+        "id": 545601908,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1760716149
+    },
+    {
+        "content": "<p>Hey <span class=\"user-mention\" data-user-id=\"867930\">@Pierre R</span>, good for you on choosing such a challenging and interesting topic for your Master's thesis. I hope it all goes well.</p>\n<p><em>Disclaimer:</em> My background is mostly from ML, Complex Systems and Signal Processing, with a very basic understanding of specific subfields within CT that might potentially relate to these three disciplines. So, for advanced CT topics, you should better consult with the more experienced people in this community.</p>\n<p>Crucially, for CT (and multidisciplinary CT and ML) papers, you might have to broaden your search before 2023. Unlike the ML literature, you might have to look at CT papers that are decades old. The situation is somewhat different.</p>\n<p>You mentioned both ML and AI, so does your definition of AI in the context of your thesis also include non-ML approaches, such as GOFAI / 'Symbolic AI' (e.g., using hand-picked rules and traditional knowledge graphs), as mentioned by others above? I will focus on ML in this reply and use a numbered list for brevity reasons. Also, feel free to DM me at any time, but using the public channels might benefit others too.</p>\n<ol>\n<li>There is a common misconception that ML mostly involves heuristics or severely lacks theoretical foundations, but this is far from the truth. The actual problem is that <strong>ML is very multidisciplinary</strong> with <em>too many</em> theoretical foundations (e.g., Information Theory, Learning Theory, etc.), which creates a major problem when trying to see how everything \"fits together\".  Hopefully, CT can somehow help in this respect in the future.</li>\n<li>At the risk of stating the obvious, CT is usually used as a <strong>“unifying language”</strong> or <strong>meta-theoretical framework</strong>, so directly using CT to process data or define models (e.g., ANNs) might not be a good angle to explore or even (mathematically) valid.</li>\n<li>So far, I would argue that the most impactful work in ML related to CT is the Nonlinear Dimensionality Reduction (i.e. decomposition) method of <strong>UMAP</strong>, which uses <strong>Manifold Learning</strong>. Briefly, it builds on top of previous CT work by M. Barr, D. Spivak and others in order to propose a topology-aware method that tries to preserve certain important topological representations/features (but not all). It relates to the category of <strong>fuzzy simplicial sets</strong> and the category of some specific <strong>metric spaces</strong>. The authors also released a very stable software library that can be used both for development purposes and research experiments. Links below. In general, the connection between CT and ML is usually more apparent when it comes to <em>Manifold Learning, Topological Machine Learning</em>, etc. UMAP exemplifies this.</li>\n</ol>\n<p>Original paper:</p>\n<ul>\n<li><a href=\"https://arxiv.org/abs/1802.03426\">https://arxiv.org/abs/1802.03426</a></li>\n</ul>\n<p>Further discussion and explanation of the Maths behind UMAP:</p>\n<ul>\n<li><a href=\"https://adelejackson.com/files/Maths_of_UMAP.pdf\">https://adelejackson.com/files/Maths_of_UMAP.pdf</a></li>\n<li><a href=\"https://link.springer.com/content/pdf/10.1007/s10485-025-09827-x.pdf\">https://link.springer.com/content/pdf/10.1007/s10485-025-09827-x.pdf</a></li>\n<li><a href=\"https://dspivak.net/metric_realization090922.pdf\">https://dspivak.net/metric_realization090922.pdf</a></li>\n</ul>",
+        "id": 545790147,
+        "sender_full_name": "kourouklides",
+        "timestamp": 1760832338
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"280178\">@Tim Hosgood</span> has written an <a href=\"https://topos.institute/blog/2024-04-05-understanding-umap/\">article</a> about UMAP on the Topos Institute blog. From what I remember from the article, it is not clear UMAP could count as an application of category theory.</p>",
+        "id": 545808851,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1760857053
+    },
+    {
+        "content": "<p>In general, I wouldn’t take the specific blog post into serious consideration dues to a series of reasons (obviously this doesn’t apply to the whole blog by the institute).</p>\n<p>As the author admits himself, he is not from an ML background.</p>\n<p>What counts or does not count as “an application of CT” needs a definition. But for sure, UMAP has been <em>influenced</em> by CT.</p>",
+        "id": 545820518,
+        "sender_full_name": "kourouklides",
+        "timestamp": 1760870406
+    },
+    {
+        "content": "<p>I'll add one concrete example: this paper on  <a href=\"https://arxiv.org/abs/2507.08796\">filter-equivariant functions</a> tells you how to fully extrapolate the behaviour of a certain class of list-functions.</p>\n<p>That is, if you have a function <code>f : [a] -&gt; [a]</code> which is natural in <code>a</code> (i.e. it's the component of some natural transformation <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext>List</mtext><mo>⇒</mo><mtext>List</mtext></mrow><annotation encoding=\"application/x-tex\">\\text{List} \\Rightarrow \\text{List}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord text\"><span class=\"mord\">List</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">⇒</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord text\"><span class=\"mord\">List</span></span></span></span></span>) and also filter-equivariant, then to determine this function on lists of <em>any</em> length all you need is an example of this function on <em>one</em> length 2 list. </p>\n<p>For example, let's say I tell you I have a mysterious natural filter-equivariant function <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi></mrow><annotation encoding=\"application/x-tex\">f</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span></span></span></span>, and you need to guess what it is. If I tell you that</p>\n<p><span class=\"katex-display\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"sans-serif\">f</mi><mo stretchy=\"false\">(</mo><mo stretchy=\"false\">[</mo><mn>4</mn><mo separator=\"true\">,</mo><mn>7</mn><mo stretchy=\"false\">]</mo><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">[</mo><mn>7</mn><mo separator=\"true\">,</mo><mn>4</mn><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">\\mathsf{f}([4, 7]) = [7, 4]</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathsf\" style=\"margin-right:0.06944em;\">f</span><span class=\"mopen\">([</span><span class=\"mord\">4</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">7</span><span class=\"mclose\">])</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\">7</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">4</span><span class=\"mclose\">]</span></span></span></span></span></p>\n<p>then this paper argues that I've fully defined the function for you, and gives you an algorithm for computing the action of this function on any other input list.</p>\n<p>While you theoretically <em>could</em> argue that this could've been done 'without CT or FP', or perhaps say that it's merely a 'first step' towards more general mathematical specifications of extrapolation, I think this is a pretty strong contender for 'CT was necessary to obtain this result'.</p>",
+        "id": 545823432,
+        "sender_full_name": "Bruno Gavranović",
+        "timestamp": 1760873434
+    },
+    {
+        "content": "<p>Ho</p>\n<p><span class=\"user-mention silent\" data-user-id=\"979752\">kourouklides</span> <a href=\"#narrow/channel/232160-learning.3A-reading-.26-references/topic/Papers.20Where.20CT.20Is.20Essential.20For.20Theoretical.20Results.20in.20AI.3F/near/545820518\">said</a>:</p>\n<blockquote>\n<p>In general, I wouldn’t take the specific blog post into serious consideration due to a series of reasons (obviously this doesn’t apply to the whole blog by the institute).</p>\n</blockquote>\n<p>I don't see <span class=\"user-mention\" data-user-id=\"280178\">@Tim Hosgood</span> arguing in this post that UMAP \"doesn't count as an application of category theory\".  Instead he's trying to explain UMAP in a way that doesn't mention category theory.  As he says, \"can we unpack things in less technical language?\"</p>\n<p>Often an application of subject X to subject Y can be explained in a way that doesn't mention X.</p>",
+        "id": 545824079,
+        "sender_full_name": "John Baez",
+        "timestamp": 1760874142
+    },
+    {
+        "content": "<p>Sorry, I didn't mean to downplay the influence of CT on UMAP. I had Pierre's request in mind</p>\n<p><span class=\"user-mention silent\" data-user-id=\"867930\">Pierre R</span> <a href=\"#narrow/channel/232160-learning.3A-reading-.26-references/topic/Papers.20Where.20CT.20Is.20Essential.20For.20Theoretical.20Results.20in.20AI.3F/near/543028261\">said</a>:</p>\n<blockquote>\n<p>are there cases where <strong>theorems from particular categorical structures are essential to prove non-trivial results</strong> in neural networks, algorithms, or other AI subfield — results that could not be established (or would be much harder) without CT?</p>\n</blockquote>\n<p>And reading Tim Hosgood's article, I was unsure UMAP essentially relies on CT in this way. What seems to be true is that the creators of UMAP were essentially guided towards their invention by CT. So it's good anyway to study their perspective.</p>",
+        "id": 545940277,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1760957230
+    },
+    {
+        "content": "<p>Okay, that make sense.   Finding theorems in category theory that are <em>essential</em> to proving results in other areas is fairly hard.   I'd say that's quite a bit more restrictive than finding \"applications\" of category theory to other areas.</p>",
+        "id": 546029237,
+        "sender_full_name": "John Baez",
+        "timestamp": 1760978042
+    }
+]

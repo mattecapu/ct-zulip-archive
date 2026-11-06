@@ -1,0 +1,218 @@
+[
+    {
+        "content": "<p>I began an nLab stub for <a href=\"https://ncatlab.org/nlab/show/double+infinity-category\">[[double infinity-categories]]</a> (additions very welcome). But the question <a href=\"https://nforum.ncatlab.org/discussion/19041/double-infinitycategory/\">arose</a> as to the best name for them. At the moment the choices seem to be 'double <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-category' or 'double <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty, 1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-category'. But what's the logic behind the choice? Why not '<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-double category'?</p>",
+        "id": 508461110,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1743066214
+    },
+    {
+        "content": "<p>I like infty-double-category in analogy to infty-2-category, as Urs says on the nforum</p>",
+        "id": 508470149,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1743069023
+    },
+    {
+        "content": "<p>I'm not even sure the definition of double <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-category in the literature is \"correct\", it should really include vertical completeness, otherwise there's an unnecessary degree of freedom similar to the one in non-complete Segal spaces.</p>",
+        "id": 508473933,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1743070165
+    },
+    {
+        "content": "<p>That being said, the construction seems to be better described by \"double <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty,1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-category since both directions are built like <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty,1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-categories rather than building a definition of double category first and then homotopically weakening it.</p>",
+        "id": 508474915,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1743070484
+    },
+    {
+        "content": "<p>The question of vertical/horizontal completeness of higher double categories was discussed by <span class=\"user-mention\" data-user-id=\"727989\">@Nima Rasekh</span>  last year at HoTT-UF in a talk on joint work with Niels Van Der Weide, Benedikt Ahrens and Paige Randall North</p>\n<p><a href=\"https://hott-uf.github.io/2024/slides/Rasekh.pdf\">https://hott-uf.github.io/2024/slides/Rasekh.pdf</a></p>",
+        "id": 508542794,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1743087758
+    },
+    {
+        "content": "<p>One point that came up that I wasn't aware of is that one can view non-completeness at least in one direction as a feature, eg for rings we have the notion of isomorphism and of Morita equivalence, and they can't both coincide with the internal type of identification in the type of objects</p>",
+        "id": 508544271,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1743088107
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"438995\">James Deikun</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/naming.20homotopified.20double.20categories/near/508473933\">said</a>:</p>\n<blockquote>\n<p>I'm not even sure the definition of double <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-category in the literature is \"correct\", it should really include vertical completeness, otherwise there's an unnecessary degree of freedom similar to the one in non-complete Segal spaces.</p>\n</blockquote>\n<p>Thanks <span class=\"user-mention\" data-user-id=\"277289\">@Jonas Frey</span> for the shout out!<br>\n<span class=\"user-mention\" data-user-id=\"438995\">@James Deikun</span> I think the \"correct\" notion is somewhat tricky.</p>\n<ul>\n<li>If you generalize naively from strict to non-strict, then the intuition might be to do \\infty-category objects internal to \\infty-categories, which unwinds to double complete Segal spaces (i.e. complete in all directions). That has the flaw that the space of objects is over-determined: it is equivalent to the space of horizontal equivalences and vertical equivalences. In particular it will lack a key example like Prof.</li>\n<li>One solution is to weaken in one direction, which is particularly suitable for double categories that are naturally pseudo double categories (i.e that happen to be strict in one direction). But in general this definition of completeness is annoyingly non-symmetric.</li>\n<li>A better --symmetric-- analogue might  be \"gregarious completeness\", in the sense we do in the paper. The actual \\infty-version is WIP by some people (I think). Here is a talk about it: <a href=\"https://acmbl.github.io/greg_slides.pdf\">https://acmbl.github.io/greg_slides.pdf</a> (note Prof is in fact gregarious complete so at least it would be an example)</li>\n</ul>",
+        "id": 508544530,
+        "sender_full_name": "Nima Rasekh",
+        "timestamp": 1743088178
+    },
+    {
+        "content": "<p>It feels like both \"vertically complete\" and \"gregarious complete\" are kind of non-comparable in how \"good\" they are.  Vertically complete seems more appropriate for cases where symmetry is not a concern while gregarious complete is better when it is.  Fortunately they seem to coincide for equipments!</p>",
+        "id": 508550111,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1743089405
+    },
+    {
+        "content": "<p>Yeah, I think that's the suprising gist of it, unlike categories and bicategories, where there is a \"most general\" notion of completeness and corresponding equivalence, there isn't one for double categories.<br>\nBut yes, for many relevant examples that's fine, and they happen to coincide as we prove in the paper.</p>",
+        "id": 508550829,
+        "sender_full_name": "Nima Rasekh",
+        "timestamp": 1743089538
+    },
+    {
+        "content": "<p>Nima, when you say \"non-symmetric\", do you mean under transposition? I'm sorry to ask before having actually looked into any of this (but I'm doing so anyway <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span> )</p>",
+        "id": 508554783,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1743090371
+    },
+    {
+        "content": "<p>I don't find non-symmetry under transposition to be annoying.  It seems to me that that's probably the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-analogue of the fact that so many important double 1-categories are <em>strict</em> in one direction but not the other, i.e. for \"framed <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-bicategories\" or \"<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-equipments\".</p>\n<p>Although the gregarious-complete double <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-categories would probably be the analogue both of double 1-categories that are strict in both directions (which are fairly common) and those that are weak in both directions (which are both rare and hard to define).</p>",
+        "id": 508566233,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743092993
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/naming.20homotopified.20double.20categories/near/508554783\">said</a>:</p>\n<blockquote>\n<p>Nima, when you say \"non-symmetric\", do you mean under transposition? I'm sorry to ask before having actually looked into any of this (but I'm doing so anyway <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span> )</p>\n</blockquote>\n<p>When I say non-symmetric I simply mean in that definition the completeness (or univalence) condition is only about one direction, meaning the space of object is equivalent to the space of horizontal equivalences. There is no connection between vertical equivalences and objects. This was motivated by the question which completeness condition is suitable when defining double oo-categories.</p>",
+        "id": 508589439,
+        "sender_full_name": "Nima Rasekh",
+        "timestamp": 1743099277
+    },
+    {
+        "content": "<p>Yeah, I see how the answer is sort-of-yes, but sort of that the frame shifts when thinking HoTTotopically.</p>",
+        "id": 508589920,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1743099458
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/naming.20homotopified.20double.20categories/near/508566233\">said</a>:</p>\n<blockquote>\n<p>I don't find non-symmetry under transposition to be annoying.  It seems to me that that's probably the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-analogue of the fact that so many important double 1-categories are <em>strict</em> in one direction but not the other, i.e. for \"framed <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-bicategories\" or \"<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-equipments\".</p>\n<p>Although the gregarious-complete double <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-categories would probably be the analogue both of double 1-categories that are strict in both directions (which are fairly common) and those that are weak in both directions (which are both rare and hard to define).</p>\n</blockquote>\n<p>I think, particularly in a set theoretical setting, this is largely correct.</p>\n<p>However, if one is in a univalent setting, then there are in fact natural \"doubly weak\" examples, such as Prof: the double category of univalent categories, functors and profunctors. In this case, both functors and profunctors are part of a bicategorical structure, but neither are part of a strict 2-category (as observed here <a href=\"https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.FSCD.2019.5\">https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.FSCD.2019.5</a>).</p>",
+        "id": 508589965,
+        "sender_full_name": "Nima Rasekh",
+        "timestamp": 1743099477
+    },
+    {
+        "content": "<p>Well, yes, in a univalent setting there aren't even any strict 2-categories to speak of.  I was indeed thinking only of set-theoretic foundations.</p>",
+        "id": 508595994,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743101408
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/naming.20homotopified.20double.20categories/near/508595994\">said</a>:</p>\n<blockquote>\n<p>Well, yes, in a univalent setting there aren't even any strict 2-categories to speak of.  I was indeed thinking only of set-theoretic foundations.</p>\n</blockquote>\n<p>Well, if one takes setcategories, then they do form a univalent category, and so also a univalent 2-category (if one add natural transformations), meaning if one also adds profunctors one gets a pseudo double category (so functors compose strictly, pseudo functors weakly). </p>\n<p>In the univalent setting I guess, it depends with what type of object one starts.</p>",
+        "id": 508596865,
+        "sender_full_name": "Nima Rasekh",
+        "timestamp": 1743101706
+    },
+    {
+        "content": "<p>Okay, but there aren't really any set-categories to speak of, so that's not much of an example.  (-:</p>",
+        "id": 508597069,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743101768
+    },
+    {
+        "content": "<p>What do you mean by set-categories?</p>",
+        "id": 508597401,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1743101862
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277289\">Jonas Frey</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/naming.20homotopified.20double.20categories/near/508597401\">said</a>:</p>\n<blockquote>\n<p>What do you mean by set-categories?</p>\n</blockquote>\n<p>It's just a category in which the objects are a set.</p>",
+        "id": 508597593,
+        "sender_full_name": "Nima Rasekh",
+        "timestamp": 1743101910
+    },
+    {
+        "content": "<p>Ok but are they also supposed to be univalent?</p>",
+        "id": 508597746,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1743101960
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277289\">Jonas Frey</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/naming.20homotopified.20double.20categories/near/508597746\">said</a>:</p>\n<blockquote>\n<p>Ok but are they also supposed to be univalent?</p>\n</blockquote>\n<p>No, not necessarily.</p>",
+        "id": 508597810,
+        "sender_full_name": "Nima Rasekh",
+        "timestamp": 1743101982
+    },
+    {
+        "content": "<p>Ok then I don't agree with Mike's statement that \"there aren't really any\", at least if we assume that all types admit covers by 0-types. But in any case they're artificial if we assume that Set is univalent.</p>",
+        "id": 508598209,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1743102105
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/naming.20homotopified.20double.20categories/near/508597069\">said</a>:</p>\n<blockquote>\n<p>Okay, but there aren't really any set-categories to speak of, so that's not much of an example.  (-:</p>\n</blockquote>\n<p>Well the category of setcategories is defined indepedent of particular examples.<br>\nI guess your point is that most categories we would construct start with the universe of sets, in which case it would be univalent?</p>\n<p>On the other hand, there are at least some examples even if we focus on univalent ones, namely univalent categories without automorphisms, so posets maybe or Delta.</p>",
+        "id": 508598355,
+        "sender_full_name": "Nima Rasekh",
+        "timestamp": 1743102144
+    },
+    {
+        "content": "<p>I mean the point of setcategories is that they are supposed to occur when we care about categories up to isomorphisms, instead of equivalences. I agree this is not what we usually do, but it does happen sometimes.</p>",
+        "id": 508598679,
+        "sender_full_name": "Nima Rasekh",
+        "timestamp": 1743102274
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277289\">Jonas Frey</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/naming.20homotopified.20double.20categories/near/508598209\">said</a>:</p>\n<blockquote>\n<p>if we assume that all types admit covers by 0-types</p>\n</blockquote>\n<p>Why would you assume that?</p>",
+        "id": 508602506,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743103778
+    },
+    {
+        "content": "<p>Well, I would say that's \"classical\" metatheory and in general I don't mind classical metatheory. </p>\n<p>On the other hand, I also like the philosophical point of view that size and h-level grow in parallel.</p>",
+        "id": 508603031,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1743103958
+    },
+    {
+        "content": "<p>The latter is probably not consistent with the existence of truncations, so probably not what you had in mind.</p>\n<p>But anyways, even without assuming covers by 0-types we get interesting strict 1-categories, in terms of generators and relations</p>",
+        "id": 508604616,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1743104558
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277289\">Jonas Frey</span> <a href=\"#narrow/channel/229136-theory.3A-category-theory/topic/naming.20homotopified.20double.20categories/near/508603031\">said</a>:</p>\n<blockquote>\n<p>Well, I would say that's \"classical\" metatheory and in general I don't mind classical metatheory.</p>\n</blockquote>\n<p>I don't agree that that's metatheory.  It's an axiom <em>of</em> the theory.</p>",
+        "id": 508609293,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743106308
+    },
+    {
+        "content": "<p>There are <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-topos models (constructed in a classical metatheory) in which it fails.</p>",
+        "id": 508609418,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743106345
+    },
+    {
+        "content": "<p>I admit it was an exaggeration to say there aren't any strict categories \"to speak of\".  But my main point was that the notion of \"strict 2-category\" is not very important or useful in UF, because the primary 2-categories that 2-category theory is aimed at are not strict, and that's because the primary 1-categories that 1-category theory is aimed are not strict.</p>",
+        "id": 508609797,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743106487
+    },
+    {
+        "content": "<p>Which theory is meta is a matter of perspective, but I guess I'm promoting Voevodsky's viewpoint of an axiomatics of HoTT that is \"as classical as possible\". This is not supposed to capture the logic of an arbitrary infty-topos, but specifically the infty-topos of spaces (eg in classical set theoretic metatheory)</p>",
+        "id": 508611224,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1743107057
+    },
+    {
+        "content": "<p>So I guess my answer to your question \"why would you assume that?\" is \"because in my classical mental model I think it's true\".</p>",
+        "id": 508612500,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1743107499
+    },
+    {
+        "content": "<p>I agree that constructing strict <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>-cats via set-covers is artificial and not \"what category theory is about\"</p>",
+        "id": 508614472,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1743108173
+    },
+    {
+        "content": "<p>I don't see any way that the theory in which we're doing mathematics (here, category theory) could be called meta.</p>\n<p>But okay, if you want to be totally classical that's fine.</p>",
+        "id": 508624686,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743112259
+    },
+    {
+        "content": "<p>I agree with you that \"meta theory\" doesn't make sense without \"object theory\", and that I chose my words sub-optimally here. Maybe \"foundation\" makes more sense. </p>\n<p><del>But since you're referring to category theory, I'll have to disagree and say hat this is the object theory, and the meta theory is type theory.</del> (forget the last part, I misread your statement as saying that \"category theory\" is the foundation)</p>",
+        "id": 508626761,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1743113113
+    },
+    {
+        "content": "<p>Ah, I did phrase that sloppily, sorry.</p>",
+        "id": 508647069,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1743124464
+    }
+]

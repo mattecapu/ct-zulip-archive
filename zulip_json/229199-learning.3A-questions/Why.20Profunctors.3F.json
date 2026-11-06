@@ -1,0 +1,86 @@
+[
+    {
+        "content": "<p>I've been learning a bunch about profunctors recently (e.g. my recent question about <a class=\"stream-topic\" data-stream-id=\"229199\" href=\"/#narrow/channel/229199-learning.3A-questions/topic/.E2.9C.94.20Comma.20Categories.20vs.20Categories.20of.20Elements/with/531779789\">#learning: questions &gt; ✔ Comma Categories vs Categories of Elements</a> ), and I wanted to ask a \"soft\" question about why they end up being so useful.</p>\n<p>It seems that most forms of formal category theory need a way to include profunctors within them, whether that be with a yoneda structure, or with something like a virtual equipment. I've also heard that in the enriched setting, they're vital for talking about weighted limits and pointwise kan extensions!</p>\n<p>These feel like pretty sophisticated/\"high-level\" reasons to care about profunctors. A low-level reason might be that they naturally correspond to \"categorified relations\". Yet (perhaps naively) it feels like profunctors play a much larger role in category theory than relations do in ordinary math - the biggest use-case for ordinary relations are equivalence relations, which can also be modelled with e.g. coequalizers. But \"relations between groups\" or \"linear relations\" or \"relations between modules\" seem to be far less common? (Of course, this could just be my lack of math experience!).</p>\n<p>So to me, it feels like there's some kind of \"unreasonable effectiveness\" of profunctors within category theory, beyond them just being categorified relations. For people who work with them often, what would you say is a soft, \"intuitive\" reason for why this is the case?</p>",
+        "id": 534818427,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1755431135
+    },
+    {
+        "content": "<p>Much of linear algebra can framed in the internal language of linear relations. For example, a linear subspace is not a morphism in FVect, nor an object; but rather a subobject.  It is natural to think of linear subspaces as linear relations.</p>\n<p>Linear algebra developed before regular categories were invented, so classical results in linear algebra were not originally framed in this language.</p>\n<p>However, mathematical abstraction can be very useful. So if we already have the tools at our disposal, and we are developing new mathematics, why not use them?</p>",
+        "id": 534821775,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1755435026
+    },
+    {
+        "content": "<p>I see, so in some sense this is more a historical accident rather than something intrinsic to category theory?</p>",
+        "id": 534822331,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1755435663
+    },
+    {
+        "content": "<p>That is just my personal opinion, but I don't think that linear relations are less useful for linear algebra than profunctors are for category theory.  Even in category theory, profunctors are relatively niche, but it doesn't mean that they aren't useful.</p>",
+        "id": 534823348,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1755436819
+    },
+    {
+        "content": "<p>I think relations are very important in ordinary math.  For one thing, one shouldn't restrict artificially to the case of binary relations (or profunctors), even though many contexts for formalizing them require such a structure: usually the (bi/double/virtual/etc.) category of relations or profunctors is compact closed, so you can talk about relations of other arities by tensoring in the domain and codomain.  And unary relations are, of course, just subsets (subobjects) which are important.  Even binary relations include inequalities, which are also very important.</p>",
+        "id": 534830199,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1755444774
+    },
+    {
+        "content": "<p>presentations of pro functors have the same syntax as 'naturally' related families of conjunctive (select/from/where) queries in SQL, that's one reason <a href=\"http://categoricaldata.net\">categoricaldata.net</a> uses them and certainly select/from/where queries have been quite useful in computer science so I'd expect the same of pro functors within math more generally.</p>",
+        "id": 534838296,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1755454083
+    },
+    {
+        "content": "<p>Ooh, that’s a use case I hadn’t even come across before!</p>",
+        "id": 534838615,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1755454476
+    },
+    {
+        "content": "<p>I think I've told Ruby this before, but I think mysterious effectiveness of profunctors in category-based math is deeply analogous to the equally mysterious effectiveness of linear operators (or matrices) in set-based math.    Linear algebra has a lot of benefits - for example that's why group representations are so much nicer than actions of groups on sets.  So it would be a shame not to bring some of those benefits to category theory!</p>",
+        "id": 534841942,
+        "sender_full_name": "John Baez",
+        "timestamp": 1755458435
+    },
+    {
+        "content": "<p>Btw, control theory is nicely phrased in terms of linear relations, as Jason Erbele and I worked out in our paper <a href=\"http://math.ucr.edu/home/baez/control.pdf\">Categories in control</a>, and the same is true for electrical circuits, as Brendan Fong and I discovered in <a href=\"http://math.ucr.edu/home/baez/circuits.pdf\">A compositional framework for passive linear networks</a>.  Cole has also done a lot of work on linear relations.  The category of linear relations is so rich that Pawel Sobocinski has a blog about it... not a blog post, an entire blog.</p>",
+        "id": 534842251,
+        "sender_full_name": "John Baez",
+        "timestamp": 1755458965
+    },
+    {
+        "content": "<p>Is that <a href=\"https://graphicallinearalgebra.net/\">Graphical Linear Algebra</a>? I came across that a while back and quite enjoyed it (though admittedly the early sections were a little slow-going); it definitely helped me significantly in understanding Hopf algebras!</p>",
+        "id": 534842608,
+        "sender_full_name": "Ruby Khondaker (she/her)",
+        "timestamp": 1755459542
+    },
+    {
+        "content": "<p>Yes, that's it.   Two teams independently characterized the category LinRel: one being Bonchi-Sobocinski-Zanasi and the other being Baez-Erbele.   In LinRel, every object is a commutative Frobenius monoid and a bicommutative Hopf monoid in two ways, and these interact in a nice way!   So Pawel got very excited about this and blogged about it.</p>",
+        "id": 534901907,
+        "sender_full_name": "John Baez",
+        "timestamp": 1755507463
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Why.20Profunctors.3F/near/534841942\">said</a>:</p>\n<blockquote>\n<p>I think mysterious effectiveness of profunctors in category-based math is deeply analogous to the equally mysterious effectiveness of linear operators (or matrices) in set-based math</p>\n</blockquote>\n<p>This sounds like a statement comparing pre- and fully-quantum field theory, is there an article that elaborates on this phenomenon from a more general perspective (as oppose to through concrete examples)?</p>",
+        "id": 534949727,
+        "sender_full_name": "Alonso Perez-Lona",
+        "timestamp": 1755522869
+    },
+    {
+        "content": "<p>I don't really know what \"pre- and fully quantum field theory\", though I know about <a href=\"https://ncatlab.org/nlab/show/prequantization\">[[prequantization]]</a> as the first step in <a href=\"https://ncatlab.org/nlab/show/geometric%20quantization\">[[geometric quantization]]</a>.  Anyway, I don't know anything written from the perspective you want, though Urs Schreiber may have written something, which may be visible on those nLab articles I just linked to.   Prequantization is like 'linearization' of a classical phase space.</p>",
+        "id": 534952221,
+        "sender_full_name": "John Baez",
+        "timestamp": 1755523584
+    },
+    {
+        "content": "<p>Okay, Urs talks about <a href=\"https://ncatlab.org/nlab/show/prequantum%20field%20theory\">[[prequantum field theory]]</a>.  I suspect he invented that term.</p>",
+        "id": 534952657,
+        "sender_full_name": "John Baez",
+        "timestamp": 1755523733
+    }
+]

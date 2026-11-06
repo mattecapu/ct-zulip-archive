@@ -1,0 +1,140 @@
+[
+    {
+        "content": "<p>I've been looking into the internal logic of smooth topoi (specifically well-adapted models for SDG) and came across a claim in Kostecki's Differential Geometry in Toposes (p. 15, footnote 9).<br>\nThe text suggests that because the NNO in models with invertible infinitesimals (like \\mathcal{Z} or \\mathcal{B}) is of 'geometric' rather than 'arithmetic' origin, it may overcome the standard restrictions of Gödel's incompleteness theorems—partially due to the weakening of induction.<br>\nHow formalized is this 'potential possibility' suggested by Lawvere and Reyes? Is there a known proof or a specific model where the internal NNO is demonstrably complete (or at least avoids the standard diagonal argument construction), or is this still primarily a foundational conjecture?</p>\n<p><a href=\"/user_uploads/21317/wvxFOZu42xFbY9ZekXyR6PRj/Screenshot_20260312_131920_Chrome.jpg\">Screenshot_20260312_131920_Chrome.jpg</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/wvxFOZu42xFbY9ZekXyR6PRj/Screenshot_20260312_131920_Chrome.jpg\" title=\"Screenshot_20260312_131920_Chrome.jpg\"><img data-original-content-type=\"image/jpeg\" data-original-dimensions=\"1080x832\" src=\"/user_uploads/thumbnail/21317/wvxFOZu42xFbY9ZekXyR6PRj/Screenshot_20260312_131920_Chrome.jpg/840x560.webp\"></a></div>",
+        "id": 579043406,
+        "sender_full_name": "Keith Elliott Peterson",
+        "timestamp": 1773344748
+    },
+    {
+        "content": "<p>Could you or anyone expand on how exactly induction is weakened? I guess the point is roughly that if there are invertible infinitesimals, then there must be some infinite natural numbers, as in hyperreal analysis, and the induction principle, if there is one, for these hypernatural numbers will be different than that for the plain naturals. But I don't know what such an induction principle would be; thinking about the little I know of hyperreal analysis, one usually seems to use the transfer principle to say that first-order statements behave the same with or without the invertible infinitesimals, but the second-order theory of the hyperreals , including the hypernaturals, seems scary and perhaps not much used. But presumably the geometry here makes this all make at least a bit more sense?</p>",
+        "id": 579047623,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1773346358
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"389450\">@Keith Elliott Peterson</span> , to write in LaTeX, you can use two dollar symbols, then the LaTeX code, and then two other dollar symbols. Just to make your text better looking  <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span> (your question sounds really interesting)</p>",
+        "id": 579047651,
+        "sender_full_name": "Jean-Baptiste Vienney",
+        "timestamp": 1773346371
+    },
+    {
+        "content": "<p>I'm a bit confused. Surely Godel's incompleteness theorem applies to an NNO in any topos? The internal language of a topos is powerful enough to prove induction from the universal property of an NNO, so validate Peano's axioms.</p>\n<p>I don't know the context but I think the text is saying that there is a <em>different</em> object that is <em>not</em> an NNO, and that is the \"geometric\" natural numbers, but not an NNO</p>",
+        "id": 579057145,
+        "sender_full_name": "Max New",
+        "timestamp": 1773350666
+    },
+    {
+        "content": "<p>Yes, that's right, if there are invertible infinitesimals then it seems at least intuitively clear that the hypernaturals won't be an NNO, since, well, you just can't prove things for all hypernaturals by counting up from zero one at a time.</p>",
+        "id": 579066499,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1773355901
+    },
+    {
+        "content": "<p>Yes, the screenshotted text is explicitly giving a formula to construct the object of \"geometric natural numbers\" (though I don't know what the formula means!) which it explicitly contrasts with the NNO.</p>",
+        "id": 579070567,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1773358392
+    },
+    {
+        "content": "<p>Is there a reference for Lawvere's suggested approach for 'overcoming' Gödel's incompleteness theorem, as alluded to in the footnote in the screenshot?</p>",
+        "id": 579071638,
+        "sender_full_name": "James E Hanson",
+        "timestamp": 1773359195
+    },
+    {
+        "content": "<p>Here's the document in question <a href=\"https://www.fuw.edu.pl/~kostecki/sdg.pdf\">https://www.fuw.edu.pl/~kostecki/sdg.pdf</a></p>",
+        "id": 579071751,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1773359269
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/m_-DSqkDtxrtGHZ5i-4BWut6/Screenshot-2026-03-13-at-10.18.41AM.png\">Screenshot 2026-03-13 at 10.18.41 AM.png</a><br>\nNot massively helpful, but in case any of these ring bells for people</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/m_-DSqkDtxrtGHZ5i-4BWut6/Screenshot-2026-03-13-at-10.18.41AM.png\" title=\"Screenshot 2026-03-13 at 10.18.41 AM.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1646x582\" src=\"/user_uploads/thumbnail/21317/m_-DSqkDtxrtGHZ5i-4BWut6/Screenshot-2026-03-13-at-10.18.41AM.png/840x560.webp\"></a></div>",
+        "id": 579071869,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1773359346
+    },
+    {
+        "content": "<p>Reyes' paper <em>Synthetic reasoning and variable sets</em> referenced further down doesn't seem to discuss it (I happen to have that book at hand)</p>",
+        "id": 579072154,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1773359555
+    },
+    {
+        "content": "<p>The thing is that the incompleteness theorem is extremely general. As long as the object in question is still a model of intuitionistic Robinson arithmetic (<a href=\"https://arxiv.org/abs/2006.12275v1\">or even a weak subintuitionistic fragment thereof</a>) , incompleteness will apply. In particular, induction isn't even really essential.</p>",
+        "id": 579072741,
+        "sender_full_name": "James E Hanson",
+        "timestamp": 1773359959
+    },
+    {
+        "content": "<p>Some of this might be a truism unrelated to decidability? 'the weakening of arithmetic means the restriction of the validity of induction' could simply mean 'the use of a non-initial model (of arithmetic) means the restriction of the use of initiality', which is true in general, for all theories regardless of decidability.</p>",
+        "id": 579073634,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1773360516
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"438995\">James Deikun</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Smooth.20NNO.20and.20G.C3.B6delian.20incompleteness/near/579070567\">said</a>:</p>\n<blockquote>\n<p>(though I don't know what the formula means!)</p>\n</blockquote>\n<p>I believe <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Y</mi></mrow><annotation encoding=\"application/x-tex\">Y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">Y</span></span></span></span> is just Yoneda and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">ℓ</mi></mrow><annotation encoding=\"application/x-tex\">\\ell</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">ℓ</span></span></span></span> might be the contravariant embedding of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>C</mi><mi mathvariant=\"normal\">∞</mi></msup></mrow><annotation encoding=\"application/x-tex\">C^\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">∞</span></span></span></span></span></span></span></span></span></span></span>-rings into <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>C</mi><mi mathvariant=\"normal\">∞</mi></msup></mrow><annotation encoding=\"application/x-tex\">C^\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.07153em;\">C</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">∞</span></span></span></span></span></span></span></span></span></span></span>-schemes. In effect, the geometric natural numbers become the space whose smooth functions are the same as the smooth functions on <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">N</mi><mi mathvariant=\"normal\">.</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{N}.</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">N</span><span class=\"mord\">.</span></span></span></span> But I don't understand why this isn't an NNO.</p>",
+        "id": 579074016,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1773360818
+    },
+    {
+        "content": "<p>I'm likewise nonplussed by the claim about Lawvere's claim</p>",
+        "id": 579075157,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1773361676
+    },
+    {
+        "content": "<p>What an interesting paper... I don't understand how one would break induction though, <del>and in any case <a href=\"https://en.wikipedia.org/wiki/Robinson_arithmetic\">Godel's incompleteness does not depend on it</a></del> (I see James already mentioned it)</p>",
+        "id": 579206494,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1773390132
+    },
+    {
+        "content": "<p>Though intuitively <span class=\"user-mention\" data-user-id=\"609515\">@Kevin Carlson</span>'s argument makes sense, so there should be topoi in which N has non-standard elements. I wonder if the NNO property only captures induction for standard elements then?</p>",
+        "id": 579207515,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1773390469
+    },
+    {
+        "content": "<p>I would expect it to be possible that one or both of axioms 1 and 3 of Robinson arithmetic (following the Wikipedia page linked by Matteo) could fail for an alternative natural numbers in non-Boolean toposes.<br>\nHowever, decidability/incompleteness is already a bit less interesting in intuitionistic logic; a topos fails to be Boolean as soon as there is a subobject/proposition which fails to be complemented (failure of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ϕ</mi><mo>∨</mo><mi mathvariant=\"normal\">¬</mi><mi>ϕ</mi></mrow><annotation encoding=\"application/x-tex\">\\phi \\vee \\neg\\phi</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">ϕ</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∨</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\">¬</span><span class=\"mord mathnormal\">ϕ</span></span></span></span>, where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">¬</mi></mrow><annotation encoding=\"application/x-tex\">\\neg</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">¬</span></span></span></span> still makes sense as the Heyting <em>pseudocomplement</em> operation, so that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">¬</mi><mi>ϕ</mi></mrow><annotation encoding=\"application/x-tex\">\\neg\\phi</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\">¬</span><span class=\"mord mathnormal\">ϕ</span></span></span></span> is the strongest proposition inconsistent with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ϕ</mi></mrow><annotation encoding=\"application/x-tex\">\\phi</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">ϕ</span></span></span></span> in the sense that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ϕ</mi><mo>∧</mo><mi mathvariant=\"normal\">¬</mi><mi>ϕ</mi><mo>→</mo><mi mathvariant=\"normal\">⊥</mi></mrow><annotation encoding=\"application/x-tex\">\\phi \\wedge \\neg\\phi \\rightarrow \\bot</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">ϕ</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∧</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\">¬</span><span class=\"mord mathnormal\">ϕ</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord\">⊥</span></span></span></span>), and any such proposition is automatically one for which no theory can prove the disjunction, let alone be able to prove one or the other.</p>",
+        "id": 579252189,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1773403961
+    },
+    {
+        "content": "<p>I expect that the OP <span class=\"user-mention\" data-user-id=\"389450\">@Keith Elliott Peterson</span> already understands what I mean given that the context is SDG which is incompatible with LEM, so I'm curious what kind of incompleteness statement you would expect to apply?</p>",
+        "id": 579252477,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1773404064
+    },
+    {
+        "content": "<p>I expect a suitable intuitionistic version of this kind of incompleteness would be whenever you can prove a disjunction but you can't prove either disjunct.</p>",
+        "id": 579272322,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1773409627
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"438995\">James Deikun</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Smooth.20NNO.20and.20G.C3.B6delian.20incompleteness/near/579272322\">said</a>:</p>\n<blockquote>\n<p>I expect a suitable intuitionistic version of this kind of incompleteness would be whenever you can prove a disjunction but you can't prove either disjunct.</p>\n</blockquote>\n<p><a href=\"https://en.wikipedia.org/wiki/Disjunction_and_existence_properties\">But most 'standard' constructive theories actually do have the property that whenever they prove a disjunction they also prove one of the disjuncts.</a></p>",
+        "id": 579307310,
+        "sender_full_name": "James E Hanson",
+        "timestamp": 1773418440
+    },
+    {
+        "content": "<p>But the second incompleteness theorem and variants thereof are still pretty philosophically meaningful for intuitionistic theories. Heyting arithmetic has the disjunction property but can't prove that it has the disjunction property, for instance. (<a href=\"https://doi.org/10.1073/pnas.72.8.2877\">See Theorem 2 at the end of Friedman's paper here.</a>)</p>",
+        "id": 579307904,
+        "sender_full_name": "James E Hanson",
+        "timestamp": 1773418591
+    },
+    {
+        "content": "<p>Changing what you decide to call 'the natural numbers' can't get around this.</p>",
+        "id": 579308195,
+        "sender_full_name": "James E Hanson",
+        "timestamp": 1773418669
+    },
+    {
+        "content": "<p>It would be quite frustrating if the improper citation style in Keith’s shared excerpt had sent us all down a mere wild goose chase.</p>",
+        "id": 579308566,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1773418766
+    }
+]

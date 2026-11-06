@@ -1,0 +1,50 @@
+[
+    {
+        "content": "<p>I'm needing to say a bit about double profunctors in my paper for the Paré volume.   I'm using 'loose' double profunctors from a double category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">D</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{D}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">D</span></span></span></span> to a double category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">E</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{E}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">E</span></span></span></span>, which (for starters) give a set of <em>loose</em> heteromorphisms from any object of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">D</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{D}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">D</span></span></span></span> to any object of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">E</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb{E}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">E</span></span></span></span>.</p>\n<p>My question: did Bob Paré explore loose double profunctors in this paper?</p>\n<ul>\n<li>Robert Paré, <a href=\"http://www.tac.mta.ca/tac/volumes/25/17/25-17.pdf\">Yoneda theory for double categories</a>.</li>\n</ul>\n<p>He goes about studying double profunctors in some way that I'm having trouble understanding.  I just want to know if I should thank him for initiating the subject of <em>loose</em> double profunctors.</p>",
+        "id": 540615074,
+        "sender_full_name": "John Baez",
+        "timestamp": 1758405787
+    },
+    {
+        "content": "<p>A lax double functor from <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">D</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbb D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">D</span></span></span></span> to Span, the kind of thing Paré highlights in that paper, is instead a <em>tight</em> double profunctor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>↛</mo><mi mathvariant=\"double-struck\">D</mi></mrow><annotation encoding=\"application/x-tex\">1\\nrightarrow \\mathbb D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel amsrm\">↛</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">D</span></span></span></span>, and I don’t think Paré considers the two-sided tight bimodules, since he’s really after a Yoneda embedding. I’m about 90% sure no loose double profunctors show up in that paper. I’m not aware of anyone saying anything about them, other than the nLab author that observes at <a href=\"https://ncatlab.org/nlab/show/double%20profunctor\">[[double profunctor]]</a> that they definitely don’t compose, until David Jaz Myers’ program to use them for systems theory, which is finally becoming paper-ified starting <a href=\"https://arxiv.org/abs/2505.18329\">here</a>.</p>",
+        "id": 540615928,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1758406979
+    },
+    {
+        "content": "<p>A key problem with the loose double profunctors, as you may already be aware, is that you really can’t represent them as double functors into Span, because you’d need to <em>transpose</em> the tight and weak arrows of the domain, which has to be made special sense of in a weak double category, plus the tight arrows in Span have no 2-cells so you also have to upgrade to codomain Prof. Evan gave a definition of a “twisted lax double functor” to follow this line through on the Topos blog and there’s a paper cooking regarding it, but David and Sophie found “a double category over the walking loose arrow” was a way easier definition to get off the ground.</p>",
+        "id": 540616083,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1758407214
+    },
+    {
+        "content": "<p>Thanks!   I'm trying to write a little section in my paper to create a bridge between my work on structured/decorated cospans and David and Sophie's paper.   So I'm familiar with the \"double category over the walking loose arrow\" perspective, which seems extremely efficient.  I haven't thought at all about the \"double functor into Span\" perspective (on tight bimodules), or the \"twisted lax double functor\" perspective (on loose bimodules).   I'm actually giving a rough explanation of the \"pseudo bimodule internal to the 2-category Cat\" perspective.</p>",
+        "id": 540617005,
+        "sender_full_name": "John Baez",
+        "timestamp": 1758408499
+    },
+    {
+        "content": "<p>Anyway, it's good to know that Paré was talking about  a certain special class of <em>tight</em> double profunctors.</p>",
+        "id": 540617046,
+        "sender_full_name": "John Baez",
+        "timestamp": 1758408563
+    },
+    {
+        "content": "<p>I wrote something about the relationship between Paré's work and tight/loose distributors in the introduction to <a href=\"https://arxiv.org/abs/2508.11611\">Exponentiable virtual double categories and presheaves for double categories</a>, which you might find helpful, John.</p>",
+        "id": 540686630,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1758490688
+    },
+    {
+        "content": "<p>I think it's definitely fair to say Paré was the first to study tight presheaves.</p>",
+        "id": 540686664,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1758490734
+    },
+    {
+        "content": "<p>(In fact, this was Bob's original motivation to study pseudo double categories, rather than strict double categories.)</p>",
+        "id": 540686676,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1758490756
+    }
+]

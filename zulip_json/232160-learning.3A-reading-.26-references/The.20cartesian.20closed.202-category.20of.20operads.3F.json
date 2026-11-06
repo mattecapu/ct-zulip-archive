@@ -1,0 +1,50 @@
+[
+    {
+        "content": "<p>Dear category theorists,</p>\n<p>The <a href=\"https://ncatlab.org/nlab/show/cartesian+closed+2-category\">cartesian closed 2-category</a> webpage mentions that the 2-category of operads is cartesian closed. I am puzzled by this claim.</p>\n<p>Monoids are categories with one objects, and the category of categories is indeed cartesian closed, but the full subcategory of monoids is not stable by the internal hom given that it can increase the number of objects. As operads are one object multicategories, in analogy with the case of monoids I would be ready to believe that multicategories assemble into a cartesian closed (2-)category whose full subcategory of one-object multicategories, i.e. operads, is not stable by the internal hom.</p>\n<p>Is the \"operad\" in that webpage a synonym for multicategory? Or is the 2-category of one-object multicategories really cartesian closed, in which case the analogy between the situation of operads w.r.t multicategories and the situation of monoids w.r.t categories is not completely accurate? Or is this a typo? Or something else?</p>",
+        "id": 463608085,
+        "sender_full_name": "Vincent Moreau",
+        "timestamp": 1724136309
+    },
+    {
+        "content": "<p>I suspect whoever wrote that example on the nLab page was referring to Theorem 5.4.6 of Gambino–Joyal's <a href=\"https://arxiv.org/abs/1405.7270\">On operads, bimodules and analytic functors</a>, in which they do refer to multicategories as (coloured) operads.</p>",
+        "id": 463627656,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1724141602
+    },
+    {
+        "content": "<p>I see, thanks for the reference and the nlab edit!</p>",
+        "id": 463630845,
+        "sender_full_name": "Vincent Moreau",
+        "timestamp": 1724142818
+    },
+    {
+        "content": "<p>This is very interesting, as I would expect that the Bim construction that they use on bicategories can be obtained as the horizontal bicategory of the analog construction on appropriate double categories. I am guessing a bit, but it would feel natural that the vertical category, on the other hand, would be the category of coloured operads and their functor-like morphisms.</p>",
+        "id": 463636047,
+        "sender_full_name": "Vincent Moreau",
+        "timestamp": 1724144047
+    },
+    {
+        "content": "<p>Still guessing: the double category of coloured operads would thus perhaps be a cartesian closed 1-category in the vertical direction and a cartesian closed 2-category in the horizontal direction. This kind of structure seems very intriguing to me...</p>",
+        "id": 463637056,
+        "sender_full_name": "Vincent Moreau",
+        "timestamp": 1724144255
+    },
+    {
+        "content": "<p>There is indeed a natural double category of multicategories and bimodules, as you describe. However, I'm not sure what notion of double categorical closure implies that the loose-bicategory is cartesian closed.</p>",
+        "id": 463637199,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1724144282
+    },
+    {
+        "content": "<p>Indeed, usually everything is oriented in the direction of squares as in <a href=\"http://www.tac.mta.ca/tac/volumes/40/3/40-03abs.html\">Cartesian Closed Double Categories</a>, right?</p>",
+        "id": 463638621,
+        "sender_full_name": "Vincent Moreau",
+        "timestamp": 1724144473
+    },
+    {
+        "content": "<p>There's a more general notion of closure for double categories in the recent preprint <a href=\"https://arxiv.org/abs/2408.03180\">Enriched duality in double categories II: modules and comodules</a> of Aravantinos-Sotiropoulos and Vasilakopoulou. I haven't thought about whether this might be any better for defining loose closure.</p>",
+        "id": 463643304,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1724145514
+    }
+]
