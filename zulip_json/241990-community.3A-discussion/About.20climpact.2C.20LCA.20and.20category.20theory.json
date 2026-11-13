@@ -1,0 +1,62 @@
+[
+    {
+        "content": "<p>I'm replying here (<span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> <span class=\"user-mention\" data-user-id=\"609515\">@Kevin Carlson</span> and <span class=\"user-mention\" data-user-id=\"275932\">@Matteo Capucci (he/him)</span>) about some points/questions raised in the topic <a href=\"#narrow/stream/229156-theory.3A-applied-category-theory/topic/Evil\">Evil</a>.</p>\n<p><em>About Climpact, and the difficulty of the questions.</em> </p>\n<p>Point taken. If I meet again with the people behind it, I'll forward the feedback. Thanks!</p>\n<p><em>About the dubious CO2 estimations, and LCA</em>. </p>\n<p>I think that a lot of LCA practitioners will agree on that one. And there are many reasons to not trust blindly LCA results:</p>\n<ul>\n<li>what are the implicit assumptions?</li>\n<li>how data has been collected?</li>\n<li>how the numbers have been communicated? </li>\n<li>etc. </li>\n</ul>\n<p>There is, however, a deeper reason for me. Roughly speaking, LCA is a body of knowledge that has grown trying to answer, in the most rigorous way <strong>possible</strong>, the question \"what is the environmental impact of X?\". For that, people have developed various methods, and the most used is called \"attributional LCA\". With this method, you try to answer the following question. <em>While doing X, a total amount of Y kg CO2 eq has been released: what share of this total amount should be attributed to you specifically?</em> I.e., <em>what is your responsibility in this impact?</em>. This question is different than: <em>what share of this total amount is causally related to you?</em></p>\n<p>It's a nuance that took me some time to grasp. Attributional LCA aims at computing numbers that are \"fair\", that \"incentivizes\" in the good direction. Hence, it is always on the normative side of things. I remember an LCA expert challenging his colleagues: \"with this methodology, are we confident to defend our numbers in a court?\"</p>\n<p>Of course, there are best practices: whenever possible, physics-based allocation is preferred. But, as we move up the ladder of human activities, the distinction between economical activities and physical processes gets blurrier. For instance, you need a cow to produce meat and milk. How do you allocate the impact of raising a cow to the meat and milk respectively? Should it be based on the mass, market price or xyz? This question is not about physics but about economic policy design.</p>\n<p>My current position is that, whatever the choices are made in the process of computing numbers, they should be as transparent, open and accessible as possible. And, by default, I don't think of a LCA result, e.g. \"the impact of 1 kWh of electricity is 0.7 kgCO2-eq\" as a fact about nature.</p>\n<p>(I have to mention another method, called \"consequential LCA\", which try to adopt a \"causality-based\" reasoning. Conceptually, I prefer this method. I have no experience with it though, and in practice, it is rarely used. I think that's because it is harder to implement and interpret.)</p>\n<p><em>About categorical modeling of LCA</em></p>\n<p>I did experiment with AlgebraicJulia, I think 3 years ago. Actually, that's how I discovered ACT, the Topos institute and so on. In my company, I developed a DSL (<a href=\"https://github.com/kleis-technology/lcaac\">https://github.com/kleis-technology/lcaac</a>) for LCA modeling. However, I started designing it before knowing enough about CT. Then, I had big dreams of applying CT to get a sound design for my DSL, and well ... reality happened ^^ I realized I thought I knew how, but actually I didn't know enough. So for now, on this track, I'm slowly incorporating categorical Petri nets and the related stuff (double category).</p>",
+        "id": 457115017,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1723038558
+    },
+    {
+        "content": "<p>Thanks for the explanation! The difference between attributional and consequential is something I've been pondering when confronted with LCAs in the past. Good to have names attached to this. Also, really interesting problem: I wonder if things like Shapley values can be used to attribute shared emissions.</p>",
+        "id": 457119941,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1723039795
+    },
+    {
+        "content": "<p>oh interesting! A friend recently told me about Shapley values, but I never connected the notion to the \"sharing of burden\" in LCA. Thanks!</p>",
+        "id": 457121738,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1723040368
+    },
+    {
+        "content": "<p>Thanks for this, Peva! Yes, with that further context, and hopefully without seeming to be piling on people who are trying to do good work, I think a quiz on the topic of \"can you accurately guess our answer to the question 'what attribution of CO2 emissions to each of the following possible actions would strike the optimal balance in justification between getting the physical explanation right, getting the social explanation right, and maximizing the positive policy outcomes of causing people to have the resulting belief' \" is probably really hard to execute successfully.</p>",
+        "id": 457164592,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1723053655
+    },
+    {
+        "content": "<p>Yes, it's hard to create a good quiz of this form - and even harder to do well answering such a quiz, which was my complaint while taking the quiz.  </p>\n<p>I think a better quiz would replace questions like </p>\n<p>\"how does the amount of CO2 released from eating a year's worth of tomatoes hand-picked in Spain compare to the amount of CO2 released from taking a train from Berlin to Lausanne and going on a week-long ski trip?\" </p>\n<p>with questions having fewer sources of uncertainty.    For example, some of us eat a lot more tomatoes in a year than others!   Also, I've never been on a ski trip, so I don't know much about the CO2 released in such acitivities, though ski lifts come to mind.   So I have to second-guess what the questioners were thinking about <em>both</em> these issues - and also many others.</p>",
+        "id": 457318162,
+        "sender_full_name": "John Baez",
+        "timestamp": 1723109985
+    },
+    {
+        "content": "<p>It would simplify things to make <em>one</em> of the comparanda be something with a very clear, unarguable carbon emissions, like \"burning one liter of petrol\" or \"burning 50 liters of petrol\", not including the extra CO2 created in the process of drilling for the oil, or the extra CO2 created in the process of building the road to the oil well, or... any of that.</p>",
+        "id": 457318431,
+        "sender_full_name": "John Baez",
+        "timestamp": 1723110069
+    },
+    {
+        "content": "<p>I can imagine why the quiz-makers would find questions like this unpleasantly nerdy:</p>\n<p>\"If you eat one tomato hand-picked in Spain and shipped to London once a week, how much CO2 emissions are you responsible for, as measured in liters of petrol burnt?\"</p>",
+        "id": 457318815,
+        "sender_full_name": "John Baez",
+        "timestamp": 1723110242
+    },
+    {
+        "content": "<p>But being a nerd, I would greatly prefer such questions, and as I took a quiz like this I would feel I was learning useful facts, much more useful than, say</p>\n<p>\"The amount of CO2 released from eating a year's worth of tomatoes hand-picked in Spain is 1/25th the amount of CO2 released from taking a train from Berlin to Lausanne and going on a week-long ski trip.\"</p>",
+        "id": 457319134,
+        "sender_full_name": "John Baez",
+        "timestamp": 1723110337
+    },
+    {
+        "content": "<p>I would be learning to estimate CO2 emissions as measured in liters of petrol.</p>",
+        "id": 457319522,
+        "sender_full_name": "John Baez",
+        "timestamp": 1723110483
+    },
+    {
+        "content": "<p>(In fact I'm so nerdy that I'd rather just know the amount of CO2 released, measured in kilos.)</p>",
+        "id": 457319690,
+        "sender_full_name": "John Baez",
+        "timestamp": 1723110526
+    }
+]

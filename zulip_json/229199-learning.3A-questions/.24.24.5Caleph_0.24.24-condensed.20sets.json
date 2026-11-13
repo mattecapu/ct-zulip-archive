@@ -1,0 +1,278 @@
+[
+    {
+        "content": "<p>So <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>-condensed sets can be defined for a regular cardinal <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>. For example, the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>-pyknotic sets are defined to be <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>-condensed sets for an inaccessible cardinal <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>. And the light condensed sets are the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">ℵ</mi><mn>1</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\aleph_1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\">ℵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>-condensed sets. </p>\n<p>What are the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">ℵ</mi><mn>0</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\aleph_0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\">ℵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>-condensed sets?</p>",
+        "id": 486614362,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733530711
+    },
+    {
+        "content": "<p>Sheaves on the category of finite sets with the coherent coverage, no? But this implies that a sheaf is determined by its value on a point, by preservation of finite coproducts. And then one needs that surjections are sent to equalisers.</p>",
+        "id": 486657579,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733567776
+    },
+    {
+        "content": "<p>At least, the value of the sheaf on objects is determined by where it sends the point. The arrow component of the functor is determined by where it sends the map {1,2}-&gt;*. I'm guessing the final category you're after is just equivalent to Set, but I'm checking it in a low-brow way.</p>",
+        "id": 486661190,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733570924
+    },
+    {
+        "content": "<p>Ok, and the value of the functor on {a,b}-&gt;* is the diagonal map, so, yes, the sheaf is specified completely by the choice of a single set. <br>\nI know there's abstract characterisations of the sheaf cat as a cocompletion, so the answer is going to end up being Set. But it's sometimes fun to get one's hands dirty...</p>",
+        "id": 486661618,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733571329
+    },
+    {
+        "content": "<p>To be concrete, every aleph0-condensed set is Set(—,X):FinSet^op--&gt;Set for some arbitrary set X.</p>",
+        "id": 486685805,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733590171
+    },
+    {
+        "content": "<p>I had a hunch there was something degenerate about <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">ℵ</mi><mn>0</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\aleph_0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\">ℵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>-condensed sets but wasn't exactly sure what the degeneracy was going to be.</p>",
+        "id": 486689697,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733593252
+    },
+    {
+        "content": "<p>Next thing I wonder is, given two regular cardinals <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi><mo>≤</mo><mi>λ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa \\leq \\lambda</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7719em;vertical-align:-0.136em;\"></span><span class=\"mord mathnormal\">κ</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">λ</span></span></span></span>, do the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>-condensed sets embed into the <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>λ</mi></mrow><annotation encoding=\"application/x-tex\">\\lambda</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\">λ</span></span></span></span>-condensed sets?  Because if so than the embedding of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">ℵ</mi><mn>0</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\aleph_0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\">ℵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>-condensed sets into other condensed sets provides a way of representing the \"uncondensed\" sets in condensed sets. (If not then never mind.)</p>",
+        "id": 486689941,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733593461
+    },
+    {
+        "content": "<p>Actually, I think that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">ℵ</mi><mn>0</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\aleph_0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\">ℵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>-condensed sets already embed into <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>-condensed sets for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">ℵ</mi><mn>0</mn></msub><mo>≤</mo><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\aleph_0 \\leq \\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\">ℵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>, since I believe <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>-condensed sets form a local topos over Set.</p>",
+        "id": 486691121,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733594465
+    },
+    {
+        "content": "<p>At least <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>-condensed <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-groupoids form a local <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty,1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-topos over <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi><mrow><mi mathvariant=\"normal\">G</mi><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">p</mi><mi mathvariant=\"normal\">d</mi></mrow></mrow><annotation encoding=\"application/x-tex\">\\infty\\mathrm{Grpd}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\">∞</span><span class=\"mord\"><span class=\"mord mathrm\">Grpd</span></span></span></span></span> modulo size issues, and I think everything still holds when we 0-truncate everything.</p>",
+        "id": 486691307,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733594567
+    },
+    {
+        "content": "<p>I think you need strong limit or something, not regular, to get a ff functor.</p>",
+        "id": 486705539,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733606482
+    },
+    {
+        "content": "<p>Hmm, Proposition 2.9 in <a href=\"https://www.math.uni-bonn.de/people/scholze/Condensed.pdf\">https://www.math.uni-bonn.de/people/scholze/Condensed.pdf</a> does the case where both cardinals are uncountable strong limit. So you just need to consider kappa=aleph_0 and lambda a strong limit.</p>",
+        "id": 486705798,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733606689
+    },
+    {
+        "content": "<p>so essentially, it is the pyknotic sets that embed in larger cardinal pyknotic sets.</p>",
+        "id": 486705914,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733606775
+    },
+    {
+        "content": "<p>Strong limit≠inaccessible, though.</p>",
+        "id": 486705990,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733606854
+    },
+    {
+        "content": "<p>Aleph_0 is still strong limit</p>",
+        "id": 486706059,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733606893
+    },
+    {
+        "content": "<p>Yes but Scholze used uncountable strong limits, so excluding <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">ℵ</mi><mn>0</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\aleph_0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\">ℵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>.</p>",
+        "id": 486706086,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733606932
+    },
+    {
+        "content": "<p>unless there are other uncountable strong limits that aren't inaccessible that I'm forgetting off the top of my head</p>",
+        "id": 486706120,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733606979
+    },
+    {
+        "content": "<p>On the other hand, I don't think there is any barrier to adaping Scholze's proof to the case of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi><mo>=</mo><msub><mi mathvariant=\"normal\">ℵ</mi><mn>0</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\kappa = \\aleph_0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\">ℵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>.</p>",
+        "id": 486706212,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733607024
+    },
+    {
+        "content": "<p>There is a cofinal sequence of uncountable strong limit cardinals in ZFC</p>",
+        "id": 486706331,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733607124
+    },
+    {
+        "content": "<p>Scholze deliberately avoided assuming the existence of inaccessibles</p>",
+        "id": 486706356,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733607157
+    },
+    {
+        "content": "<p>Ah okay.</p>",
+        "id": 486706471,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733607244
+    },
+    {
+        "content": "<p>Regarding adapting Scholze's proof, the aleph_0-small extremally disconnected sets are the finite discrete spaces, and the claims in the first paragraph should be immediate, no? I don't quite see instantly why the unit of the adjunction should be an iso, but I assume that's not a problem at all.</p>",
+        "id": 486706498,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733607281
+    },
+    {
+        "content": "<p>Finite discrete spaces are a full subcat of lambda-small extremally disconnected spaces for all (strong limit) lambda, so it should be easy.</p>",
+        "id": 486706633,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733607370
+    },
+    {
+        "content": "<p>BTW, beth_{alpha+omega} is always strong limit, for all ordinals alpha, just so you have a concrete example!</p>",
+        "id": 486706705,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733607453
+    },
+    {
+        "content": "<p>Thanks</p>",
+        "id": 486706831,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733607547
+    },
+    {
+        "content": "<p>The point is that one _can_ use regular cardinals instead of strong limit, but the characterisations as different kinds of sheaves might not work.</p>",
+        "id": 486706842,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733607562
+    },
+    {
+        "content": "<p>Unfortunately the example I was really interested in was the relationship between <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">ℵ</mi><mn>0</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\aleph_0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\">ℵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>-condensed sets and light condensed sets, the latter which I believe are not from a strong limit cardinal.</p>",
+        "id": 486706932,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733607622
+    },
+    {
+        "content": "<p>That is, freely passing between the sites of kappa-small profinite sets, kappa-small extremally disconnected spaces, and compact hausdorff spaces is not so cheap.</p>",
+        "id": 486706971,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733607662
+    },
+    {
+        "content": "<p>One needs to use the 'real' definition, not a characterisation.</p>",
+        "id": 486707006,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733607695
+    },
+    {
+        "content": "<p>Possibly using the opposite of countable boolean algebras as the site of definition for light condensed sets, and the opposite of finite boolean algebras for aleph_0-small condensed sets...</p>",
+        "id": 486707119,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733607778
+    },
+    {
+        "content": "<p>Though the latter feels weird! Since those are all very specific sizes.<br>\nAnd yes, aleph_1 is not strong limit.</p>",
+        "id": 486707162,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733607832
+    },
+    {
+        "content": "<p>isn't the opposite of finite boolean algebras just finite sets?</p>",
+        "id": 486707230,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733607888
+    },
+    {
+        "content": "<p>no, I think it's the other way around - the opposite of finite sets is finite boolean algebras</p>",
+        "id": 486707274,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733607934
+    },
+    {
+        "content": "<p>The equivalence is via the contravariant powerset functor, I believe.</p>",
+        "id": 486707424,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733608038
+    },
+    {
+        "content": "<p>but the op functor in Cat is an involution so maybe the opposite of finite boolean algebras is finite sets</p>",
+        "id": 486707517,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733608104
+    },
+    {
+        "content": "<p>In particular, Scholze uses only the countable boolean alg site, the profinite sets that are countable _sequential_ limits, and the profinite sets that are countable limits, not extremally disconnected stuff.</p>",
+        "id": 486707586,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733608193
+    },
+    {
+        "content": "<p>From memory. It was a long time ago I watched the lectures!</p>",
+        "id": 486707902,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733608464
+    },
+    {
+        "content": "<p>In <a href=\"https://arxiv.org/pdf/2409.12835\">this paper</a> the author uses all countable limits, not just the sequential limits, in defining light profinite sets:</p>\n<blockquote>\n<p>Definition 1. A light profinite set is a topological space that arises as a countable limit of finite discrete sets.</p>\n</blockquote>",
+        "id": 486708079,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733608643
+    },
+    {
+        "content": "<p>but I've seen it defined using countable sequential limits, countable cofiltered limits, etc</p>",
+        "id": 486708102,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733608672
+    },
+    {
+        "content": "<p>but every finite set is a light profinite set because it is the sequential limit of the constant sequential diagram involving the identity function on the finite set.</p>",
+        "id": 486708327,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733608839
+    },
+    {
+        "content": "<p>so it might be possible to show that finite sets embed fully faithfully in light profinite sets and then maybe use that to show that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">ℵ</mi><mn>0</mn></msub></mrow><annotation encoding=\"application/x-tex\">\\aleph_0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8444em;vertical-align:-0.15em;\"></span><span class=\"mord\"><span class=\"mord\">ℵ</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3011em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">0</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.15em;\"><span></span></span></span></span></span></span></span></span></span>-condensed sets embed fully faithfully in light condensed sets.</p>",
+        "id": 486708399,
+        "sender_full_name": "Madeleine Birchfield",
+        "timestamp": 1733608918
+    },
+    {
+        "content": "<p>Scholze proved the equivalence of the sequential/non-sequential in his lectures, I recall. Or at least stated it...</p>",
+        "id": 486709644,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733609939
+    },
+    {
+        "content": "<p><a href=\"https://youtu.be/_4G582SIo28?feature=shared\">https://youtu.be/_4G582SIo28?feature=shared</a> at 14:40 is where the relevant material starts</p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"_4G582SIo28\" href=\"https://youtu.be/_4G582SIo28?feature=shared\"><img src=\"https://uploads.zulipusercontent.net/c480df4ec0a235d6c85dea38f743ec6bdd5437e1/68747470733a2f2f692e7974696d672e636f6d2f76692f5f344735383253496f32382f64656661756c742e6a7067\"></a></div>",
+        "id": 486709846,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733610111
+    },
+    {
+        "content": "<p>Finite sets manifestly embed fully faithfully in (light) profinite sets, as the constant sequential diagrams, for example.</p>",
+        "id": 486709980,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733610201
+    },
+    {
+        "content": "<p>In fact at 25:00 he defines a light profinite set in such a way it includes finite sets. Namely via countable, not just countable infinite boolean algebras.</p>",
+        "id": 486710212,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733610416
+    },
+    {
+        "content": "<p>The equivalence with sequential profinite is about 39:10</p>",
+        "id": 486710709,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733610811
+    },
+    {
+        "content": "<p>The definition of light condensed set is around 1:00:40</p>",
+        "id": 486711852,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1733611803
+    }
+]

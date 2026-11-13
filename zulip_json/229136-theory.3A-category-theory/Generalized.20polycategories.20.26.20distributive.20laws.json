@@ -1,0 +1,56 @@
+[
+    {
+        "content": "<p>The paper \"A unified framework for generalized multicategories\" has at its heart the construction of the horizontal kleisli virtual double category of a monad on a virtual double category; generalized multicategories are monoids in a horizontal kleisli double category on a virtual equipment satisfying a condition (that they're normalized). Another paper \"Polycategories via pseudo-distributive laws\" defines a certain type of generalized polycategory (ordinary and symmetric ones) using a kleisli bicategory construction, but this time it's a two sided kleisli category relative to a distributive law of a comonad over a monad. In fact the situation is even more particular: we have a monad on the vertical bicategory of an equipment and by taking companions &amp; conjoints we get both a monad and a comonad on the horizontal bicategory. </p>\n<p>Because I vaguely knew about this polycategory paper I had thought the construction of the horizontal kleisli category in the Crutwell-Shulman paper would generalize easily to a 2 sided kleisli category relative to a distributive law of a comonad over a monad. But I just tried to work out the details and it seems like it breaks down horribly, the arrows for the comonad point in the wrong direction for us to define 2-cells analogous to how we do it for just a monad. However it does seem like (I haven't checked this carefully) the construction goes through for the horizontal kleisli category of a monad distributing over another monad. But this is kinda strange, since (1) for an ordinary category we need a comonad in the domain and a monad in the codomain to define the 2-sided kleisli category and (2) the Garner paper uses both a comonad and a monad. Maybe (1) is a red herring in that we've already given up on having a composition law in a virtual double category and that's where the requirement comes from. But (2) is still confusing to me. Maybe the way the comonad arises, ie by taking a monad and taking conjoints of its structure maps, means we're not \"really\" working with a comonad at all? I'm not sure.</p>\n<p>If anyone has thought about this or has thoughts on it I'd love to hear</p>",
+        "id": 433077525,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1713041342
+    },
+    {
+        "content": "<p>In Koslowski's <a href=\"http://www.tac.mta.ca/tac/volumes/14/7/14-07abs.html\">A monadic approach to polycategories</a>, he parameterises a generalised polycategory by a distributive law between two monads, not a monad and a comonad.</p>",
+        "id": 433079532,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1713043437
+    },
+    {
+        "content": "<p>I would be interested to know how the approaches relate, though.</p>",
+        "id": 433079735,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1713043618
+    },
+    {
+        "content": "<p>What you want for a virtual-double-categorical version of generalized polycategories is a \"horizontal\" distributive law relating two <em>vertical</em> monads.  As you noted, in an equipment a vertical monad induces both a horizontal monad and a horizontal comonad, and in Richard's construction he's taken the horizontal monad induced by one of the vertical monads and the horizontal comonad induced by the other one.  I guess this is what you need to do if you want to work purely at the bicategorical level, but at the double-categorical level the natural thing is to have two monads.  The subtle bit though is that the distributive law is <em>horizontal</em> although the monads are vertical; this is the modification that allows you to define a two-sided Kleisli double category.</p>",
+        "id": 433094300,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1713059647
+    },
+    {
+        "content": "<p>(I would be really happy if someone would write down this construction precisely and publish it!  It's been in the back of my mind for years, but I'm probably never going to get around to it.)</p>",
+        "id": 433094322,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1713059692
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276092\">Nathanael Arkor</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Generalized.20polycategories.20.26.20distributive.20laws/near/433079532\">said</a>:</p>\n<blockquote>\n<p>In Koslowski's <a href=\"http://www.tac.mta.ca/tac/volumes/14/7/14-07abs.html\">A monadic approach to polycategories</a>, he parameterises a generalised polycategory by a distributive law between two monads, not a monad and a comonad.</p>\n</blockquote>\n<p>I am just going to warn that a few years ago, I was trying to use this paper and I realised that I couldn't reproduce the main example — that is, that what the author says corresponds to planar polycategories is actually planar polycategories: it seemed to me that composition did not satisfy \"interchange\", so it was a kind of \"premonoidal\" version of polycategories. I tried emailing the author but never got a reply (they seem to be doing completely different research nowadays).</p>\n<p>I may have missed something at the time, but all I say is, I wouldn't trust that part unless you are able to reprove it.</p>",
+        "id": 433095624,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1713061161
+    },
+    {
+        "content": "<p>And to clarify, it seemed to me that the technical content on distributive laws of monads was correct, just that it possibly doesn't produce \"planar polycategories\" as an example in the way that it says it does.</p>",
+        "id": 433095700,
+        "sender_full_name": "Amar Hadzihasanovic",
+        "timestamp": 1713061260
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Generalized.20polycategories.20.26.20distributive.20laws/near/433094322\">said</a>:</p>\n<blockquote>\n<p>(I would be really happy if someone would write down this construction precisely and publish it!  It's been in the back of my mind for years, but I'm probably never going to get around to it.)</p>\n</blockquote>\n<p>I'm thinking of writing it down precisely, but I'm not sure I have any interesting applications to put in a paper. I've just been trying to think about what defines a flavor of (higher) category theory and this seemed like an important example to understand for that</p>",
+        "id": 433113421,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1713080867
+    },
+    {
+        "content": "<p>Specifically I was wondering if there are examples that do not fit into this framework (appropriately categorified to handle higher structures, I guess). Eg can we make sense of something like a double category but where the basic cell shape is a hexagon, with three sorts of 1-cells? It seems like this notion of generalized multi/polycategory relative to a distributive law does capture anything where cells have an input and an output and the shape of the inputs/outputs is a reasonably behaved container. But I guess I feel a generalized category should have cells of various dimensions and those cells should have boundaries that are equipped with a partition which for globular things is a partition into an input and an output but eg in double categories the boundary of a 2-cell is a square, with the boundary partitioned into two noncontiguous pairs of 1-cells that all line up correctly</p>",
+        "id": 433114134,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1713081512
+    }
+]

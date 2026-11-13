@@ -1,0 +1,38 @@
+[
+    {
+        "content": "<p>I am looking for an account of how sheafification with respect to a Lawvere-Tierney topology <code>j : Ω → Ω</code> is expressed in the internal language of a topos. In other words, how does one express the ++-construction. My best guess is that <code>A++ = { u : A → Ω | j (singleton u) }</code> where <code>singleton u := (∀ x y, u x ∧ u y ⇒ x = y) ∧ (∃ x . u x)</code>, but I'd prefer a written account to having it figure out myself.</p>",
+        "id": 518545142,
+        "sender_full_name": "Andrej Bauer",
+        "timestamp": 1747402186
+    },
+    {
+        "content": "<p>In case anyone cares, my suggestion is of course too naive. One has to throw in a quotient, or just mimic the +-construction. I am in the process of formalizing this, will post a gist when done.</p>",
+        "id": 518838175,
+        "sender_full_name": "Andrej Bauer",
+        "timestamp": 1747503350
+    },
+    {
+        "content": "<p>Johnstone gives a construction in in terms of elementary toposes in A4.4.4 of the elephant, and I think it translates to <br>\n<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>+</mo><mo>+</mo><mo>=</mo><mo stretchy=\"false\">{</mo><mi>p</mi><mo>:</mo><mi>A</mi><mo>→</mo><msub><mi mathvariant=\"normal\">Ω</mi><mi>j</mi></msub><mi mathvariant=\"normal\">∣</mi><mi>j</mi><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∃</mi><mi>a</mi><mo>∈</mo><mi>A</mi><mi mathvariant=\"normal\">.</mi><mi>p</mi><mo>=</mo><mo stretchy=\"false\">{</mo><mi>b</mi><mo>∈</mo><mi>A</mi><mi mathvariant=\"normal\">∣</mi><mi>j</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo>=</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">}</mo><mo stretchy=\"false\">)</mo><mo stretchy=\"false\">}</mo></mrow><annotation encoding=\"application/x-tex\">A++ = \\{p : A \\to \\Omega_j | j(\\exists a \\in A . p = \\{b \\in A | j(a=b)\\})\\}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord\">+</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord mathnormal\">p</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">→</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0361em;vertical-align:-0.2861em;\"></span><span class=\"mord\"><span class=\"mord\">Ω</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3117em;\"><span style=\"top:-2.55em;margin-left:0em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\" style=\"margin-right:0.05724em;\">j</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span><span class=\"mord\">∣</span><span class=\"mord mathnormal\" style=\"margin-right:0.05724em;\">j</span><span class=\"mopen\">(</span><span class=\"mord\">∃</span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8778em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mord\">.</span><span class=\"mord mathnormal\">p</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">{</span><span class=\"mord mathnormal\">b</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mord\">∣</span><span class=\"mord mathnormal\" style=\"margin-right:0.05724em;\">j</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">b</span><span class=\"mclose\">)})}</span></span></span></span><br>\nin the internal language.</p>",
+        "id": 518928312,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1747579574
+    },
+    {
+        "content": "<p>A reference is Barbara Veit, \"A Proof of the Associated Sheaf Theorem by Means of Categorical Logic\", JSL Vol. 46, No. 1 (Mar., 1981), pp. 45-55.</p>",
+        "id": 519042564,
+        "sender_full_name": "Nicola Gambino",
+        "timestamp": 1747645322
+    },
+    {
+        "content": "<p>Here is the promised <a href=\"https://gist.github.com/andrejbauer/6404c64d74526b934dc2d1166adaed03\">Coq formalization of sheafification in logical form</a>. I followed Barbara Veit's paper cited by <span class=\"user-mention\" data-user-id=\"360410\">@Nicola Gambino</span>.  A couple of things still remain:</p>\n<ul>\n<li>sheafification is a reflection</li>\n<li>sheafification preserves finite limits</li>\n</ul>\n<p>If anyone has the energy to do these two, please let me know so that I can update the gist.</p>",
+        "id": 520087569,
+        "sender_full_name": "Andrej Bauer",
+        "timestamp": 1748016872
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"344629\">@Andrej Bauer</span> I finished the <a href=\"https://gist.github.com/clayrat/2e3fd65c17e66be30039b29fda52fb65\">reflection part</a>. Could you confirm that this is what you had in mind?</p>",
+        "id": 576362632,
+        "sender_full_name": "Alex Gryzlov",
+        "timestamp": 1772233070
+    }
+]

@@ -1,0 +1,98 @@
+[
+    {
+        "content": "<p>Well. Equivariant homotopy theory is homotopy theory internal to presheaves on the <a href=\"https://ncatlab.org/nlab/show/orbit+category\">orbit category</a>. More generally, homotopy theory inside the topos of presheaves over a homotopy type is parametrized homotopy theory.</p>",
+        "id": 521885150,
+        "sender_full_name": "Fernando Yamauti",
+        "timestamp": 1748918521
+    },
+    {
+        "content": "<p>As for the 1-cat case, one analogous of the first would be the topos of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>-sets. But I can't remember now any interesting theorem internal to this topos that would translate externally to something surprising. Perhaps people around here who have worked with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>-sets or representation theory of discrete groups might know some examples. Let's try tagging some <span class=\"user-mention\" data-user-id=\"277473\">@Morgan Rogers (he/him)</span> <span class=\"user-mention\" data-user-id=\"275920\">@John Baez</span> <span class=\"user-mention\" data-user-id=\"629912\">@Ryuya Hora</span></p>",
+        "id": 521886403,
+        "sender_full_name": "Fernando Yamauti",
+        "timestamp": 1748919239
+    },
+    {
+        "content": "<p>I don't know if you've seen this already, but there's an <a href=\"https://mathoverflow.net/q/412505/447\">MO question</a> in this area which might provide some leads. E.g.,  the <a href=\"https://ncatlab.org/nlab/show/Bohr+topos\">[[Bohr topos]]</a> mentioned there is a presheaf topos.</p>",
+        "id": 521915809,
+        "sender_full_name": "David Corfield",
+        "timestamp": 1748932955
+    },
+    {
+        "content": "<p>Many thanks!</p>\n<p><span class=\"user-mention silent\" data-user-id=\"557567\">Fernando Yamauti</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Examples.20of.20interpreting.20internal.20logic.20in.20Psh.28C.29/near/521885150\">said</a>:</p>\n<blockquote>\n<p>Well. Equivariant homotopy theory is homotopy theory internal to presheaves on the <a href=\"https://ncatlab.org/nlab/show/orbit+category\">orbit category</a>. More generally, homotopy theory inside the topos of presheaves over a homotopy type is parametrized homotopy theory.</p>\n</blockquote>\n<p>Many thanks! Both for providing this example and for pinging people around!</p>\n<p>So I guess for homotopy theory, we are interested in the presheaves of abelian groups, right? Is there any concrete geometric formula that serves as minimal working example of what is going on there?</p>",
+        "id": 521922310,
+        "sender_full_name": "Yiming Xu",
+        "timestamp": 1748935102
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"302507\">David Corfield</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Examples.20of.20interpreting.20internal.20logic.20in.20Psh.28C.29/near/521915809\">said</a>:</p>\n<blockquote>\n<p>I don't know if you've seen this already, but there's an <a href=\"https://mathoverflow.net/q/412505/447\">MO question</a> in this area which might provide some leads. E.g.,  the <a href=\"https://ncatlab.org/nlab/show/Bohr+topos\">[[Bohr topos]]</a> mentioned there is a presheaf topos.</p>\n</blockquote>\n<p>Many thanks for the reference, I will check that as well.</p>",
+        "id": 521922473,
+        "sender_full_name": "Yiming Xu",
+        "timestamp": 1748935164
+    },
+    {
+        "content": "<p>Beware that it sounds like you are conflating two logical aspects of toposes. Classifying toposes relate to geometric theories (the fragment of logic whose interpretation is preserved by geometric morphisms) while the \"internal language of a topos\" usually refers to the richer higher-order logic, which in typical accounts is written with notation resembling that of set theory. Only in the latter can one can talk about the Heyting operation on subobjects, notably including pseudocomplements, which are needed to state de Morgan's laws or the law of excluded middle.</p>",
+        "id": 521928496,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1748936972
+    },
+    {
+        "content": "<p>So if you've heard that a theorem is true \"in any Boolean topos\", that's typically a statement that the proof of the theorem is valid in the internal language of such toposes (typically meaning it uses LEM but nothing stronger)</p>",
+        "id": 521928862,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1748937086
+    },
+    {
+        "content": "<p>I see. My fault! Then I think I should edit the title of my question to only address interpreting geometric formulas. I intended to talk about Grothendieck topos stuff. The current piece of work relevant to this question does care about the preservation of formulas, which makes the negation operator unavailable for us since the subobject classifier is not necessarily preserved by geometric morphism.</p>\n<p>But incidentally, what if we have a geometric morphism that luckily preserves the subobject classifier? Do we have an intuitive criteria that tell us when it happens?</p>",
+        "id": 521929486,
+        "sender_full_name": "Yiming Xu",
+        "timestamp": 1748937265
+    },
+    {
+        "content": "<p>I should clarify that these things <em>are</em> interrelated, and produce surprising results. A classic example is the result that the universal local ring (which lives in the Zariski topos) is a field.</p>",
+        "id": 521932298,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1748937984
+    },
+    {
+        "content": "<p>To get back to answering your original question, the interpretation of a geometric formula in a presheaf topos (after fixing a signature/language and its interpretation in the topos over which to interpret the formula) tend to be not so surprising: everything is calculated \"pointwise\", so conjunctions and disjunctions are intersections and unions in the sets obtained by evaluating a presheaf, and similarly for existential quantification.</p>",
+        "id": 521933250,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1748938245
+    },
+    {
+        "content": "<p>Yes, the simplicity of presheaves, just as families of structures, makes it challenging to dig out something nontrivial. We would need a interesting presheaf topos, and I am not aware of any except for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>-sets (as hinted), and maybe the topos of trees (<a href=\"https://cs.au.dk/~birke/papers/sgdt-journal.pdf\">https://cs.au.dk/~birke/papers/sgdt-journal.pdf</a>)</p>",
+        "id": 521934076,
+        "sender_full_name": "Yiming Xu",
+        "timestamp": 1748938460
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Examples.20of.20interpreting.20geometric.20logic.20in.20Psh.28C.29/near/521932298\">said</a>:</p>\n<blockquote>\n<p>I should clarify that these things <em>are</em> interrelated, and produce surprising results. A classic example is the result that the universal local ring (which lives in the Zariski topos) is a field.</p>\n</blockquote>\n<p>Indeed surprising! Could you please elaborate a bit on why this example is a witness to the relevance?</p>",
+        "id": 521934610,
+        "sender_full_name": "Yiming Xu",
+        "timestamp": 1748938583
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"917926\">Yiming Xu</span> <a href=\"#narrow/channel/229199-learning.3A-questions/topic/Examples.20of.20interpreting.20geometric.20logic.20in.20Psh.28C.29/near/521934076\">said</a>:</p>\n<blockquote>\n<p>Yes, the simplicity of presheaves, just as families of structures, makes it challenging to dig out something nontrivial. We would need a interesting presheaf topos, and I am not aware of any except for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>-sets (as hinted), and maybe the topos of trees (<a href=\"https://cs.au.dk/~birke/papers/sgdt-journal.pdf\">https://cs.au.dk/~birke/papers/sgdt-journal.pdf</a>)</p>\n</blockquote>\n<p>While these two are certainly interesting, one can also find quite a lot of interesting structure in simplicial sets, cubical sets, or similar presheaf topoi. My collaborators and I have been extending some of the work by Riehl and Shulman using certain logical aspects of presheaves on the simplex category (these logical aspects are themselves closely related by the work by Blechschmidt and others on the logical properties of the Zariski topos). Also a lot of the work in dependent type theory on parametricity features various presheaf categories to structure things.</p>",
+        "id": 522098421,
+        "sender_full_name": "daniel gratzer",
+        "timestamp": 1748950878
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"917926\">Yiming Xu</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Examples.20of.20interpreting.20geometric.20logic.20in.20Psh.28C.29/near/521922310\">said</a>:</p>\n<blockquote>\n<p>So I guess for homotopy theory, we are interested in the presheaves of abelian groups, right? Is there any concrete geometric formula that serves as minimal working example of what is going on there?</p>\n</blockquote>\n<p>It should be presheaves valued in homotopy types (aka anima and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∞</mi></mrow><annotation encoding=\"application/x-tex\">\\infty</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord\">∞</span></span></span></span>-groupoids). So I was referring to <a href=\"https://ncatlab.org/nlab/show/(infinity,1)-topos\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty, 1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-topoi</a>. Though a lot of people in homotopy theory tend to say simply \"topoi\" and drop the prefix.</p>\n<p>In this case, anything that can be proven in HoTT should also be a theorem internally inside those things (e.g., Hurewicz theorem).</p>\n<p>What tends to give more surprising theorems, even for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>-topoi, are statements about internal topoi. For instance, there are very simple characterizations of when a geometric morphism is, for instance, proper or locally connected in terms of the internal sites inside the codomain of the respective geometric morphism. Externalising those statements tends to be a hell even when the codomain is a presheaf topos.</p>\n<p>Also, since you assumed that internal statements inside sheaves over top spaces are meaningful, perhaps it's relevant to notice that presheaves over preorders (finite preorders if we are talking about higher topoi) are sheaves over the respective <a href=\"https://ncatlab.org/nlab/show/specialization+topology#alexandroff_topological_spaces\">Aleksandrov space</a>. The Bohr topos mentioned by <span class=\"user-mention\" data-user-id=\"302507\">@David Corfield</span> is such an example.</p>\n<p>I would still, though, like to see some complicated statement about, say, representation theory of finite groups over some field <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">k</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span></span></span></span> turned into a simpler statement about <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">k</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span></span></span></span>-algebras inside the topoi of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi></mrow><annotation encoding=\"application/x-tex\">G</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\">G</span></span></span></span>-sets.</p>",
+        "id": 522119429,
+        "sender_full_name": "Fernando Yamauti",
+        "timestamp": 1748956212
+    },
+    {
+        "content": "<p>A nonzero number of classifying toposes turn out to be presheaf topoi, and they of course are defined by a generic interpretation of a specific geometric theory.  For instance, the topos of simplicial sets is the classifying topos of a strict interval.</p>",
+        "id": 522165549,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1748967038
+    },
+    {
+        "content": "<p>Oh that's nice! Makes much sense! I will also think more in this direction of theories of presheaf types.</p>",
+        "id": 522175790,
+        "sender_full_name": "Yiming Xu",
+        "timestamp": 1748970242
+    }
+]

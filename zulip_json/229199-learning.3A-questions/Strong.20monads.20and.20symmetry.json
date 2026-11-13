@@ -1,0 +1,50 @@
+[
+    {
+        "content": "<p>I'm trying to understand why people tell the story of strong monads in the order they usually do - in particular, the relationship between strength and symmetry of the monoidal category setting. Strong monads are of course central to Moggi's computational lambda calculus. The stories I've found all seem to first specialise to a symmetric monoidal category, then introduce strength; is symmetry necessary?</p>\n<p>Actually, it seems that people mostly don't tell the story of strong monads at all. Awodey, Barr &amp; Wells TTT, Milewski, Pierce, Riehl, Fong &amp; Spivak, Schalk &amp; Simmons, Leinster, Perrone, Rydeheard &amp; Burstall, Smith, Bell, all I think do not even mention strong functors or strength (at least not by those names). </p>\n<p>I believe that strong monads are due to Kock (1972), who worked only in a symmetric monoidal setting. Mac Lane defines \"closed\" (p184, 2nd ed) only for <em>symmetric</em> monoidal categories, and a \"strong\" monoidal functor (p258) only in the context of a symmetric monoidal category. I think there is no explicit mention of strong monads.</p>\n<p>Moggi uses only strength with respect to products (obviously symmetric), not to an arbitrary monoidal category. Barr &amp; Wells CT4CS mentions Mulry in passing. But in \"Strong Monads, Algebras and Fixed Points\" (LMS Lecture Notes 171, 1991) Mulry defines strong monads only with respect to product; in \"Monads in Semantics\" (ENTCS 14:275-286, 1998) and \"Notions of Monad Strength\" (EPTCS 129, 2013) he generalizes to strong monads in symmetric monoidal categories.</p>\n<p>Why are all these restricted to <em>symmetric</em> monoidal categories? I don't see why one cannot define the notions of monad, strength, strong functor, and strong monad in monoidal categories more generally (but I confess that I have not worked through the details). Does something go wrong? Does it all work, but for some reason it is not very useful or very interesting?</p>",
+        "id": 495493919,
+        "sender_full_name": "Jeremy Gibbons",
+        "timestamp": 1737637670
+    },
+    {
+        "content": "<p>I now do mention strong monads :)<br>\nMy \"notes\" are now a book with an extra chapter on monoidal categories, here are the contents:<br>\n<a href=\"/user_uploads/21317/uLyq4Wo250Gn05faaOAVAb4f/image.png\">image.png</a><br>\nI require <em>symmetric</em> monoidal categories only later, when I talk about relating left and right strengths (and obtaining commutative monads).</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/uLyq4Wo250Gn05faaOAVAb4f/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"689x861\" src=\"/user_uploads/thumbnail/21317/uLyq4Wo250Gn05faaOAVAb4f/image.png/840x560.webp\"></a></div>",
+        "id": 495552652,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1737653575
+    },
+    {
+        "content": "<p>Marvellous - thanks! I will take a look.</p>",
+        "id": 495555425,
+        "sender_full_name": "Jeremy Gibbons",
+        "timestamp": 1737654575
+    },
+    {
+        "content": "<p>(Sorry that, at least for the time being, I'm not allowed to share the entire chapter here. The Oxford library has it, also in electronic form.)</p>",
+        "id": 495555801,
+        "sender_full_name": "Paolo Perrone",
+        "timestamp": 1737654705
+    },
+    {
+        "content": "<p>No problem. I found our e-subscription.</p>",
+        "id": 495558350,
+        "sender_full_name": "Jeremy Gibbons",
+        "timestamp": 1737655522
+    },
+    {
+        "content": "<p>Apparently I ought also to reread McDermott &amp; Uustalu's \"What Makes a Strong Monad?\". Which was in \"my\" workshop (MSFP 2022).</p>",
+        "id": 495559158,
+        "sender_full_name": "Jeremy Gibbons",
+        "timestamp": 1737655801
+    },
+    {
+        "content": "<p>The nLab treatment of <a href=\"https://ncatlab.org/nlab/show/strong%20monads\">[[strong monads]]</a> doesn't require symmetry and distinguishes left and right strengths.  I was involved in setting up the <a href=\"https://ncatlab.org/nlab/show/strong+monad#abstractly\">abstract definition</a> given there.  I was trying to understand the definition of 'strength' and having trouble stomaching the commutative diagrams in the <a href=\"https://ncatlab.org/nlab/show/strong+monad#ConcreteDefinition\">concrete definition</a>, and I guessed that a (left) strong monad in a monoidal category <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span></span></span></span> was a monad in the 2-category of (left) <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>V</mi></mrow><annotation encoding=\"application/x-tex\">V</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.22222em;\">V</span></span></span></span>-actegories:</p>\n<ul>\n<li>John Baez, <a href=\"https://golem.ph.utexas.edu/category/2009/07/the_monads_hurt_my_head_but_no.html#c025476\">The monads hurt my head - but not anymore</a>.</li>\n</ul>\n<p>It's possible this was already known by experts... but anyway, it's now been extensively developed in the nLab article, though someone still has a question about one of the coherence laws for a left-strong monad.</p>",
+        "id": 495569107,
+        "sender_full_name": "John Baez",
+        "timestamp": 1737659507
+    },
+    {
+        "content": "<p>The McDermott–Uustalu paper is very good, and shows that symmetry is not required for any of the theory (including commutativity). My understanding is that the frequent assumption of symmetry elsewhere in the literature is purely historical, since Kock assumed it in the original papers.</p>",
+        "id": 495581230,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1737664606
+    }
+]

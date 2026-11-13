@@ -1,0 +1,62 @@
+[
+    {
+        "content": "<p>What are the known notions of n-category which directly subsume tricategories in an evident way?<br>\nI don't mean up to Quillen equivalence, I mean any theorem I want to prove about tricategories, I can prove about these n-categories and I'll get the result for tricategories. I think this requirement implies that I only care about \"algebraic\" models here unless there's an obvious way to \"bias\" the geometric model to become algebraic.</p>",
+        "id": 418644586,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1706537390
+    },
+    {
+        "content": "<p>I think the only one that can do that is a Batanin-Leinster algebra for a suitably chosen globular operad.</p>",
+        "id": 418677910,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1706546678
+    },
+    {
+        "content": "<p>Noob question, but why isn't this 'trivially' the case? I was expecting all definitions of weak n-categories to specialize to tri- and bicategories!</p>",
+        "id": 418798573,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1706607425
+    },
+    {
+        "content": "<p>Some models of higher cats are very different shapes than ordinary cats, like quasicategories are just geometrically very different looking than the usual categories.<br>\nLike say you have a coherence condition in a bi category that asserts that a pasting diagram commutes (two disks with the same boundary are equal)<br>\nand at level 3 you want to weaken this to a 3 cell between the disks (two disks are homotopic by a 3 cell)<br>\nAt this point it may not be even necessary to demand that you have a unique composite of the pasting diagrams on both sides (i.e. two well defined disks) before you have a morphism between them, and indeed demanding to choose a composite is kind of awkward because the composite of a pasting diagram involves choosing arbitrary composition orders for the morphisms involved. instead you could define a 3 cell directly in terms of the pasting diagrams themselves. So the shape of a 3 cell is no longer a map between 2 cells but a more complicated structure relating pasting diagrams of 2 cells.</p>",
+        "id": 418834339,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1706620941
+    },
+    {
+        "content": "<p>In quasicategories a 2 cell is a filler for a triangle of 1 cells, a 3 cell is a filler for a tetrahedron whose faces are 2 cells and so on</p>",
+        "id": 418834536,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1706621012
+    },
+    {
+        "content": "<p>Or you could define composition so that we don't have a single designated composite but it's only defined by a universal property. I think opetopes do this.</p>",
+        "id": 418835985,
+        "sender_full_name": "Patrick Nicodemus",
+        "timestamp": 1706621482
+    },
+    {
+        "content": "<p>Uhm I see, makes sense</p>",
+        "id": 418841524,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1706623336
+    },
+    {
+        "content": "<p>Any correct definition of n-categories has to specialize to tricategories <em>up to \"Quillen\" equivalence</em>, but Patrick specified that's not the question he's asking now.</p>",
+        "id": 418883702,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1706634492
+    },
+    {
+        "content": "<p>(I put it in quotes because I'm not sure anyone has actually written down a Quillen model structure for tricategories.)</p>",
+        "id": 418883806,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1706634519
+    },
+    {
+        "content": "<p>Indeed quasicategories also don't have single designated composites, and to the extent the composites even have universal properties it's quite implicit.</p>",
+        "id": 418889692,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1706636571
+    }
+]
