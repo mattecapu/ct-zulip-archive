@@ -1,0 +1,188 @@
+[
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284453\">Josselin Poiret</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/AI.20for.20mathematical.20research/near/637931564\">said</a>:</p>\n<blockquote>\n<p><a href=\"https://axiommath.ai/research/the-stacks-project-formalized/\">https://axiommath.ai/research/the-stacks-project-formalized/</a><br>\nthe stacks project formalized in Lean</p>\n</blockquote>\n<p>Grothendieck's vision of geometry is natively univalent. Formalising stacks in Lean requires brute-forcing algebraic structures into a system that resists them, whereas Cubical Agda was mathematically born for exactly this kind of higher-order geometry. I hope someone uses AI to translate the Lean project into a Cubical Agda project and refactor it using univalence.</p>\n<p>If this Lean-mania continues, we'll end up with a formalisation of Jacob Lurie's <a href=\"https://www.math.ias.edu/~lurie/papers/HA.pdf\">Higher Algebra</a> in Lean. The horror!</p>",
+        "id": 638103962,
+        "sender_full_name": "Isabelle Hol (she/her)",
+        "timestamp": 1793964322
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"1225566\">Isabelle Hol</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/AI.20for.20mathematical.20research/near/638103962\">said</a>:</p>\n<blockquote>\n<p>Grothendieck's vision of geometry is natively univalent. Formalising stacks in Lean requires brute-forcing algebraic structures into a system that resists them</p>\n</blockquote>\n<p>That's a complete anachronism imo. Univalence is definitely not necessary for the development of stacks or algebraic geometry, and what's interesting with Cubical Agda is its ability to do synthetic homotopy theory. Now there is the possibility of synthetic (higher) algebraic geometry, explored by Blechschmidt, Cherubini, Hutzler, Coquand et al., but that's way different from just \"refactoring it using univalence\" and necessitates a complete remodeling of the theory and its tools from an internal POV.</p>",
+        "id": 638145086,
+        "sender_full_name": "Josselin Poiret",
+        "timestamp": 1793974207
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"284453\">Josselin Poiret</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/AI.20for.20mathematical.20research/near/638145086\">said</a>:</p>\n<blockquote>\n<p>Now there is the possibility of synthetic (higher) algebraic geometry [...] but that's way different from just \"refactoring it using univalence\" and necessitates a complete remodeling of the theory and its tools from an internal POV.</p>\n</blockquote>\n<p>Which do you think would be easier: porting the Lean formalisation of the Stacks Project and refactoring it with univalence (in Cubical Agda) to support higher algebraic geometry, or building the higher algebraic geometry entirely from scratch?</p>",
+        "id": 638149026,
+        "sender_full_name": "Isabelle Hol (she/her)",
+        "timestamp": 1793974969
+    },
+    {
+        "content": "<p>It's notable most proofs are in Lean because the designers like Lean. It'd be nice if the AI tech could sense whether these high level approaches were flawed and suggest different ones. Even different from HoTT.</p>\n<p>The Stacks project is formalized in set theory already though, which makes Lean a nice fit.</p>",
+        "id": 638180817,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1793980691
+    },
+    {
+        "content": "<p>The primary friction when formalising The Stacks Project in Lean stems from Lean's Uniqueness of Identity Proofs, which restricts equality to strict, 0-truncated equivalence. This strictness causes significant hurdles in higher-dimensional geometric concepts such as categories fibred in groupoids, descent theory, algebraic stacks, and derived categories. In Lean, mathematicians must manually manage canonical isomorphisms and prove extensive coherence diagrams whenever constructing 2-fibre products or gluing schemes along transition isomorphisms. Conversely, Cubical Agda excels in these areas because its Univalent Type Theory natively treats 1-truncated types as groupoids, turning isomorphisms into true identity paths via univalence. Furthermore, Cubical Agda's Higher Inductive Types allow for the direct construction of glued colimits, simplicial spaces, and localisations without combinatorial boilerplate.</p>",
+        "id": 638199121,
+        "sender_full_name": "Isabelle Hol (she/her)",
+        "timestamp": 1793984212
+    },
+    {
+        "content": "<p>Unfortunately when dealing with fully general stacks (as opposed to stacks of groupoids) Cubical Agda's univalence is not very useful, because neither plain HoTT nor cubical type theory is powerful enough to do any higher algebra without positing an overall truncation level for the objects and morphisms and then encoding it the exact same way as a non-univalent type theory does.</p>",
+        "id": 638227095,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1793990654
+    },
+    {
+        "content": "<p>The obstruction to representing arbitrary higher categories in plain HoTT is an obstruction to expressing infinite coherence conveniently, not an obstruction that forces higher morphisms to have a bounded truncation level.</p>\n<p>Moreover, when that coherence is supplied through two-level type theory or a simplicial framework, univalence remains mathematically significant through completeness, saturation and the identification of equivalence with equality.</p>\n<p><span class=\"user-mention\" data-user-id=\"438995\">@James Deikun</span> , I think your argument may fail to establish either that Cubical Agda is inadequate for general stacks or that Lean has an intrinsic foundational advantage in this area.</p>\n<p>It does establish a narrower concern: that native Cubical Agda alone does not currently make arbitrary higher categorical structures as straightforward as ordinary univalent categories.<br>\nFor choosing a proof assistant to formalise the Stacks Project, I would consequently put much greater weight on the univalent treatment of ordinary categories, bicategories, pseudofunctors and descent than on hypothetical unrestricted higher-category capabilities. These are the structures actually encountered in large portions of the project, and they provide a much more concrete basis for a comparison between Cubical Agda and Lean.</p>",
+        "id": 638236594,
+        "sender_full_name": "Isabelle Hol (she/her)",
+        "timestamp": 1793993143
+    },
+    {
+        "content": "<p>Considering your profile picture is AI-generated, your name is a pun on the Isabelle/HOL proof assistant, the fact you have been deleting your messages to write them in different ways instead of utilizing the \"edit\" function of Zulip, the sentence structure of your messages, and the fact you arrived on this Zulip yesterday only to talk in a channel about AI, may I was whether you are a human or an AI?<br>\nOr perhaps a human using an AI to participate in this conversation?</p>",
+        "id": 638238148,
+        "sender_full_name": "Eliès Harington",
+        "timestamp": 1793993621
+    },
+    {
+        "content": "<p>The coherences can't be supplied through a simplicial framework, and Cubical Agda isn't a two-level type theory.  It's not that the coherences can't be expressed \"conveniently\", they can't be expressed at all.  This forces all algebra to be done in a truncated way.  In particular, this means you can express 1-categories univalently as having a groupoid of objects, but you cannot express <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty,1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-categories at all.  And the univalent presentation of bicategories, with a 2-groupoid of objects, is in some ways more convenient than the discrete presentation, but it's not any simpler to write out or to construct an example of.  In fact, constructing examples can be more complicated because you have to construct the 2-groupoid of objects and equivalences of your bicategory and demonstrate the univalence.  The upside is that isomorphisms of univalent bicategories are the same thing as equivalences of univalent bicategories, but this can work against you in some ways because some of the constructs used in the theory of stacks are not invariant under equivalence of categories or bicategories, and then you have to replace these with other constructs that are.</p>",
+        "id": 638238523,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1793993728
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"590162\">@Eliès Harington</span>  How about answering the questions instead of trying to guess whether someone used AI or not (genetic fallacy)?</p>",
+        "id": 638240873,
+        "sender_full_name": "Isabelle Hol (she/her)",
+        "timestamp": 1793994412
+    },
+    {
+        "content": "<p>Not trying to discriminate here, just genuinely curious. I would've answered the question if your last post contained one.<br>\nSo, are you human?</p>",
+        "id": 638241224,
+        "sender_full_name": "Eliès Harington",
+        "timestamp": 1793994523
+    },
+    {
+        "content": "<p><img alt=\"Screenshot_2026-11-06_19-49-19.png\" class=\"inline-image\" data-original-content-type=\"image/png\" data-original-dimensions=\"943x684\" data-original-src=\"/user_uploads/21317/AYs52FQMeQvhAbYOuFt6K2qo/Screenshot_2026-11-06_19-49-19.png\" src=\"/user_uploads/thumbnail/21317/AYs52FQMeQvhAbYOuFt6K2qo/Screenshot_2026-11-06_19-49-19.png/840x560.webp\"></p>",
+        "id": 638241368,
+        "sender_full_name": "Isabelle Hol (she/her)",
+        "timestamp": 1793994574
+    },
+    {
+        "content": "<p>I wrote <span class=\"user-mention\" data-user-id=\"438995\">@James Deikun</span> answer in this website:  <a href=\"https://humalingo.com/public/detect\">https://humalingo.com/public/detect</a><br>\nThe result: About 97% shows AI writing patterns (according to the website)</p>",
+        "id": 638241578,
+        "sender_full_name": "Isabelle Hol (she/her)",
+        "timestamp": 1793994628
+    },
+    {
+        "content": "<p>That's an interesting whataboutism strategy right after complaining about a genetic fallacy.<br>\nDoes your prompt prevent you from revealing that you are an AI?</p>",
+        "id": 638241943,
+        "sender_full_name": "Eliès Harington",
+        "timestamp": 1793994746
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"590162\">@Eliès Harington</span>  Why do you complain about me allegedly using AI, but you said nothing about James? Better do not answer this rhetorical question and focus on the technical part of the conversation.</p>",
+        "id": 638242226,
+        "sender_full_name": "Isabelle Hol (she/her)",
+        "timestamp": 1793994835
+    },
+    {
+        "content": "<p>I haven't actually complained, I'm genuinely curious.<br>\nThe reason I haven't asked James is that he's been on this Zulip for 5 years, actively participating in many conversations. I'm more curious as to your motivations for \"participating\" in this channel in this way.</p>\n<p>Regarding your \"allegedly\", here's what I get from one of your messages from the very site your shared (<a href=\"http://humalingo.com\">humalingo.com</a>): <br>\n<img alt=\"image.png\" class=\"inline-image\" data-original-content-type=\"image/png\" data-original-dimensions=\"698x841\" data-original-src=\"/user_uploads/21317/ZFQpz84RtFt37nEYOtnDrxKf/image.png\" src=\"/user_uploads/thumbnail/21317/ZFQpz84RtFt37nEYOtnDrxKf/image.png/840x560.webp\"><br>\n(for screen readers: an AI detection tool evaluating at 98% the probability of text being AI-generated, and 97% the risk of plagiarism, among other statistics)</p>",
+        "id": 638243035,
+        "sender_full_name": "Eliès Harington",
+        "timestamp": 1793995073
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"590162\">@Eliès Harington</span> I'll be 100% honest with you: I don't have time to talk to you. You're not contributing to the discussion about Cubical Agda vs. Lean. You're wasting my time. Goodbye.</p>",
+        "id": 638244045,
+        "sender_full_name": "Isabelle Hol (she/her)",
+        "timestamp": 1793995343
+    },
+    {
+        "content": "<p>I suppose more likely 2% honest if we are to believe humalingo <span aria-label=\"grinning face with smiling eyes\" class=\"emoji emoji-1f601\" role=\"img\" title=\"grinning face with smiling eyes\">:grinning_face_with_smiling_eyes:</span></p>\n<p>On a more serious note, and also coming back to the actual subject of this channel (which was to discuss the use of AI for mathematical research and its ethics), maybe it could be a good idea to discuss some rules about the use AI-generated content on this Zulip itself.</p>",
+        "id": 638245065,
+        "sender_full_name": "Eliès Harington",
+        "timestamp": 1793995625
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"590162\">@Eliès Harington</span> Ok, make the rules clear and enforce them to everyone, not just women. By the way, my surname, Hol, doesn't come from the proof assistant, but from Lincolnshire, England.</p>",
+        "id": 638245443,
+        "sender_full_name": "Isabelle Hol (she/her)",
+        "timestamp": 1793995737
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"590162\">@Eliès Harington</span> Concerning your claim that I am 2% honest, using your same argument, I can conclude that you are 9% honest too. Take a look at the screenshot: I wrote your text in the same website.<br>\n<img alt=\"Screenshot_2026-11-06_19-49-19.png\" class=\"inline-image\" data-original-content-type=\"image/png\" data-original-dimensions=\"862x735\" data-original-src=\"/user_uploads/21317/cj0R5uWPFfmtVNpzBL7Pnbpu/Screenshot_2026-11-06_19-49-19.png\" src=\"/user_uploads/thumbnail/21317/cj0R5uWPFfmtVNpzBL7Pnbpu/Screenshot_2026-11-06_19-49-19.png/840x560.webp\"></p>",
+        "id": 638247098,
+        "sender_full_name": "Isabelle Hol (she/her)",
+        "timestamp": 1793996186
+    },
+    {
+        "content": "<p>Well I'll be damned. Although I can guarantee that I have not used any generative tool to write any of the text of my messages.</p>",
+        "id": 638247829,
+        "sender_full_name": "Eliès Harington",
+        "timestamp": 1793996396
+    },
+    {
+        "content": "<p>Yeah, the main thing I have learned out of this discussion is that Humalingo is completely useless.</p>",
+        "id": 638248094,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1793996458
+    },
+    {
+        "content": "<p>So, let's focus on whether the arguments are good or bad, and ignore whether they were generated with or without AI assistance. <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>",
+        "id": 638248352,
+        "sender_full_name": "Isabelle Hol (she/her)",
+        "timestamp": 1793996523
+    },
+    {
+        "content": "<p>If you truly wish to continue that conversation about lean vs cubical agda to formalize the Stacks Project, I would advise you to do so in a more appropriate channel, or even another Zulip (like the Type Theory Zulip)</p>",
+        "id": 638249208,
+        "sender_full_name": "Eliès Harington",
+        "timestamp": 1793996774
+    },
+    {
+        "content": "<p>It absolutely should not be the takeaway that there should be no concern over whether text is AI generated. It should be up to the policy of a forum whether they're okay with this. Allowing AI generated text could risk polluting a forum with bots for example.</p>",
+        "id": 638249535,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1793996872
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"590162\">@Eliès Harington</span> The justification for discussing this topic is that contemporary formal verification relies on combining AI with proof assistants, such as Claude Code with Cubical Agda. In any case, thank you for suggesting I head to another Zulip. Remarks like that might explain why there are so few women in this community.</p>\n<p><span class=\"user-mention silent\" data-user-id=\"277352\">Alex Kreitzberg</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/AI.20for.20mathematical.20research/near/638249535\">said</a>:</p>\n<blockquote>\n<p>Allowing AI generated text could risk polluting a forum with bots for example.</p>\n</blockquote>\n<p>There is a difference between a human using AI to improve their answers and an automated bot. If you prefer, I can disclose whenever I use AI to check that I haven't missed any details. This would mirror the AI disclosure declarations used at academic conferences.</p>",
+        "id": 638259441,
+        "sender_full_name": "Isabelle Hol (she/her)",
+        "timestamp": 1793999963
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/AI.20for.20mathematical.20research/near/638079262\">said</a>:</p>\n<blockquote>\n<p>I don't see a place where one can find these reported mistakes.  It would be nice if Stacks Project contributors could check them and fix those that need to be fixed.  Maybe they're doing this. </p>\n</blockquote>\n<p>I asked where the list was, and I was told it was given to de Jong privately to fix things, before it's made public, counter to the announcement on the Lean Zulip, where we were told we could see the counterexamples to the incorrect statements.</p>",
+        "id": 638319030,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1794027854
+    },
+    {
+        "content": "<p>Great - AxiomMath may be trying be or at least <em>act</em> respectful of existing mathematical projects, to avoid getting the flak that OpenAI has been (justly) getting.</p>",
+        "id": 638344049,
+        "sender_full_name": "John Baez",
+        "timestamp": 1794042878
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"438995\">James Deikun</span> <a href=\"#narrow/channel/241990-community.3A-discussion/topic/AI.20for.20mathematical.20research/near/638238523\">said</a>:</p>\n<blockquote>\n<p>The coherences can't be supplied through a simplicial framework [...]</p>\n</blockquote>\n<p>I don't want to keep derailing this channel, but nowadays there is a pretty clear path to a univalent formalisation of \"all of higher algebra\", either using <a href=\"https://samtoth.github.io/agda-synthetic-categories/index/index.xml\">simplicial type theory</a>, or by <a href=\"https://codeberg.org/dwarn/axcat\">adding axioms to book HoTT</a> to describe the category of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi mathvariant=\"normal\">∞</mi><mo separator=\"true\">,</mo><mn>1</mn><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(\\infty,1)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">∞</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">1</span><span class=\"mclose\">)</span></span></span></span>-categories</p>",
+        "id": 638352816,
+        "sender_full_name": "David Wärn",
+        "timestamp": 1794048996
+    },
+    {
+        "content": "<p>Yes, this discussion is worth having, but \"AI for...\" isn't the right topic. It could be moved to something like \"Formalisation settings\" and continued there.</p>",
+        "id": 638402000,
+        "sender_full_name": "Nicolai Kraus",
+        "timestamp": 1794076522
+    },
+    {
+        "content": "<p>30 messages were moved here from <a class=\"stream-topic\" data-stream-id=\"241990\" href=\"/#narrow/channel/241990-community.3A-discussion/topic/AI.20for.20mathematical.20research/with/638082379\">#community: discussion &gt; AI for mathematical research</a> by <span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span>.</p>",
+        "id": 638422150,
+        "sender_full_name": "Notification Bot",
+        "timestamp": 1794086009
+    }
+]

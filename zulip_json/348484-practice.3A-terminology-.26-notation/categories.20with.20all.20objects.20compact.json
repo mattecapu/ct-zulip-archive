@@ -1,0 +1,68 @@
+[
+    {
+        "content": "<p>Is there a name for these things?<br>\nNotable examples: FinSet, fpGrp, Op(X) for X a <a href=\"https://en.wikipedia.org/wiki/Noetherian_topological_space\">Noetherian space</a>.</p>\n<p>Indeed given the last example, I'd be inclined to call such categories Noetherian (warning: this is ragebait).</p>",
+        "id": 530103711,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1753176431
+    },
+    {
+        "content": "<p>I don’t get it, which sense of compact do you mean?</p>",
+        "id": 530174575,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1753199031
+    },
+    {
+        "content": "<p>...for every object, <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>hom</mi><mo>⁡</mo><mo stretchy=\"false\">(</mo><mi>X</mi><mo separator=\"true\">,</mo><mo>−</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\hom(X,-)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mop\">hom</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">X</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">−</span><span class=\"mclose\">)</span></span></span></span> commutes with <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-filtered colimits?</p>",
+        "id": 530180434,
+        "sender_full_name": "fosco",
+        "timestamp": 1753200790
+    },
+    {
+        "content": "<p>Indeed...But it's not very meaningful in a category where basically no filtered colimits exist, is it?</p>",
+        "id": 530183220,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1753201727
+    },
+    {
+        "content": "<p>What do you mean?</p>",
+        "id": 530322586,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1753270607
+    },
+    {
+        "content": "<p>FinSet certainly admits all finite filtered colimits, what am I missing?</p>",
+        "id": 530322677,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1753270638
+    },
+    {
+        "content": "<p>Ah, you need omega filtered colimits for them to be interesting... uhm.</p>",
+        "id": 530322916,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1753270728
+    },
+    {
+        "content": "<p>You need a bit of infinity to say which objects are finite (compact)?</p>",
+        "id": 530346003,
+        "sender_full_name": "John Baez",
+        "timestamp": 1753277692
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275932\">Matteo Capucci (he/him)</span> <a href=\"#narrow/stream/348484-practice.3A-terminology-.26-notation/topic/categories.20with.20all.20objects.20compact/near/530322677\">said</a>:</p>\n<blockquote>\n<p>FinSet certainly admits all finite filtered colimits, what am I missing?</p>\n</blockquote>\n<p>A category has all finite filtered colimits if and only if it’s Cauchy complete, because a finite filtered category is just one with a homomorphic weak terminal object (the maps from each object form a cocone) and for such a category the inclusion of the weak terminal and its canonical idempotent is final.</p>",
+        "id": 530395759,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1753290635
+    },
+    {
+        "content": "<p>A different way of saying roughly the same thing is that every finite filtered colimit is absolute, so every object is compact with respect to every finite filtered colimit.</p>",
+        "id": 530396010,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1753290725
+    },
+    {
+        "content": "<p>There's a potential confusion because there are two \"sizes\" that could be related to filteredness.  On one hand we could talk about the actual size of the domain category, which is what Kevin is talking about.</p>\n<p>On the other hand there is a more general notion of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>-filtered category for a cardinal <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>, which means that every diagram of size <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>&lt;</mo><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">&lt;\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mrel\">&lt;</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span> admits a cocone.  Usually when we say \"filtered\" we mean \"<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-filtered\", which is to say that every finite diagram admits a cocone.  So Kevin's comment is about \"finite <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ω</mi></mrow><annotation encoding=\"application/x-tex\">\\omega</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">ω</span></span></span></span>-filtered colimits\": when the entire category is also finite, there must exist a cocone under the entire diagram, i.e. a homomorphic weak terminal object.</p>\n<p>Maybe this is obvious, but I thought it would be good to make explicit.</p>",
+        "id": 530399645,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1753291941
+    }
+]

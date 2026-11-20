@@ -1,0 +1,62 @@
+[
+    {
+        "content": "<p>I'm wondering if anybody's ever categorified the notion of a positive definite map? It seems like the sort of thing Lawvere would have done, but I didn't immediately find it on a quick skim. I have my own ideas and purposes, but I'm interested in seeing what's already out there.</p>",
+        "id": 447292814,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1719425564
+    },
+    {
+        "content": "<p>There is the obvious dagger categorical generalization of a positive semidefinite matrix:  ie one which admits a decomposition of the form $ f;f^\\dag $ .  But I don't think this counts as categorification.  I would be interested to know as well!</p>",
+        "id": 447444075,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1719484607
+    },
+    {
+        "content": "<p>So <span class=\"user-mention\" data-user-id=\"275914\">@Joe Moeller</span>: do you really mean \"categorification\" in the officially sense of boosting things from sets to categories, and vector spaces to 2-vector spaces, and so on - or do you mean \"generalization to other categories\"?   Since you were my student I hope you'd never become one of those terrible people who uses \"categorification\" in the other sense, but sometimes it happens.</p>",
+        "id": 447450893,
+        "sender_full_name": "John Baez",
+        "timestamp": 1719486845
+    },
+    {
+        "content": "<p>Both categorification and generalization to other categories are interesting here, and I think <span class=\"user-mention\" data-user-id=\"277391\">@Cole Comfort</span> nailed it for the latter.</p>",
+        "id": 447451109,
+        "sender_full_name": "John Baez",
+        "timestamp": 1719486928
+    },
+    {
+        "content": "<p>My intention is to categorify in the sense of going up a level, but I'd be happy to hear about \"horizontal categorifications\" as well.</p>",
+        "id": 447553106,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1719513511
+    },
+    {
+        "content": "<p>You might want the hom functor of a compact closed rig category.  A matrix is positive definite iff it defines an inner product.  The inner product satisfies</p>\n<div class=\"codehilite\"><pre><span></span><code>&lt;x, 0&gt; = 0 = &lt;0, x&gt;\n&lt;x + y, z&gt; = &lt;x, z&gt; + &lt;y, z&gt;\n&lt;x, y + z&gt; = &lt;x, y&gt; + &lt;x, z&gt;\n&lt;cx, y&gt; = c̅ &lt;x, y&gt;\n&lt;x, cy&gt; = c &lt;x, y&gt;\n&lt;x, y&gt; = bar{&lt;y, x&gt;}\n∑ᵢ &lt;x, eᵢ&gt; &lt;eᵢ, y&gt; = &lt;x, y&gt;\n&lt;T† x, y&gt; = &lt;x, Ty&gt;\n</code></pre></div>\n\n<p>where bar/overline is conjugation, † is conjugate transpose and eᵢ is some orthonormal basis.</p>\n<p>In every category, the hom satisfies properties analogous to some of these:</p>\n<div class=\"codehilite\"><pre><span></span><code>∫ᵢ hom(x, i) hom(i, y) ≅ hom(x, y)\nhom(Lx, y) ≅ hom(x, Ry) if L, R are adjoint functors.\n</code></pre></div>\n\n<p>In a compact closed category, where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">h</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>x</mi><mo separator=\"true\">,</mo><mi>y</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">{\\rm hom}(x, y)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathrm\">hom</span></span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mclose\">)</span></span></span></span> is isomorphic to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mo>∗</mo></msup><mo>⊗</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">x^* \\otimes y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.772em;vertical-align:-0.0833em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6887em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mbin mtight\">∗</span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span>, it also satisfies</p>\n<div class=\"codehilite\"><pre><span></span><code>hom(x, y) ≅ hom(y, x)*.\n</code></pre></div>\n\n<p>In a compact closed rig category like FinVect having a monoidal operation + with unit 0 over which tensor distributes, the rest of the laws hold up to isomorphism.</p>",
+        "id": 447553290,
+        "sender_full_name": "Mike Stay",
+        "timestamp": 1719513565
+    },
+    {
+        "content": "<p>This dagger categorical form makes sense to me, thanks!</p>",
+        "id": 447553544,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1719513628
+    },
+    {
+        "content": "<p>Thanks Mike, this looks super interesting. I'll stew on it a bit.</p>",
+        "id": 447553723,
+        "sender_full_name": "Joe Moeller",
+        "timestamp": 1719513671
+    },
+    {
+        "content": "<p>Dominic Verdon appears to have categorified <em>completely positive maps,</em> which is a closely related concept, so maybe you will find something useful in this paper:</p>",
+        "id": 447597022,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1719525105
+    },
+    {
+        "content": "<p><a href=\"https://arxiv.org/abs/2108.09872\">https://arxiv.org/abs/2108.09872</a></p>",
+        "id": 447597027,
+        "sender_full_name": "Cole Comfort",
+        "timestamp": 1719525107
+    }
+]

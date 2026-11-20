@@ -1,0 +1,80 @@
+[
+    {
+        "content": "<p>Given a monoidal category and the structure of a concrete category on it, ie a forgetful functor to the category of sets, what compatibility should we demand in order for this to deserve the name \"concrete monoidal category\"? For many \"sets with structure\" categories like topological spaces, posets, varieties over an algebraically closed k, manifolds, the forgetful functor is strong monoidal with respect to the cartesian monoidal structure. But also very interesting is modules over a commutative ring, where the functor isn't strong but it is lax and the internal homs are still ordinary functions satisfying a predicate. In both cases the forgetful functor is corepresented by the monoidal unit (because the unit is a monoid this implies the forgetful functor are lax). But we also might think of k-algebras as \"concrete monoidal\", maybe, and here the forgetful functor is corepresented by a different object, namely k[X]</p>",
+        "id": 420399634,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1707376713
+    },
+    {
+        "content": "<p>This is like asking for a concrete bicategory... or a 2-Yoneda lemma, if there is such a thing ..</p>",
+        "id": 420530564,
+        "sender_full_name": "Simon Burton",
+        "timestamp": 1707421838
+    },
+    {
+        "content": "<p>Are you thinking that a monoidal category is a 1-object bicategory?  That's true of course, but it doesn't seem to me to go in the direction Brendan is thinking about.</p>",
+        "id": 420531252,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1707422081
+    },
+    {
+        "content": "<p>If you want to emphasize the \"internal homs are ordinary functions satisfying a predicate\" point of view, you could ask that the forgetful functor is a (lax) <a href=\"https://ncatlab.org/nlab/show/closed%20functor\">[[closed functor]]</a> whose comparison map is a monomorphism.</p>",
+        "id": 420531339,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1707422125
+    },
+    {
+        "content": "<p>(Between monoidal categories, a lax closed functor is equivalent to a lax monoidal functor, but emphasizing the closed structure is relevant for \"internalizing\" concreteness with internal-homs.)</p>",
+        "id": 420531522,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1707422183
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"277321\">@Simon Burton</span> wrote:</p>\n<blockquote>\n<p>This is like asking for a concrete bicategory... or a 2-Yoneda lemma, if there is such a thing ..</p>\n</blockquote>\n<ul>\n<li>nLab, <a href=\"https://ncatlab.org/nlab/show/Yoneda+lemma+for+bicategories\">Yoneda lemma for bicategories</a>.</li>\n</ul>\n<p>The Yoneda lemma for bicategories is a conceptually nice way to show every bicategory is equivalent to a 2-category, since it embeds any bicategory <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"bold\">B</mi></mrow><annotation encoding=\"application/x-tex\">\\mathbf{B}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord mathbf\">B</span></span></span></span> into the bicategory <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">[</mo><msup><mi mathvariant=\"bold\">B</mi><mtext>op</mtext></msup><mo separator=\"true\">,</mo><mrow><mi mathvariant=\"bold\">C</mi><mi mathvariant=\"bold\">a</mi><mi mathvariant=\"bold\">t</mi></mrow><mo stretchy=\"false\">]</mo></mrow><annotation encoding=\"application/x-tex\">[\\mathbf{B}^{\\text{op}},\\mathbf{Cat}]</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">[</span><span class=\"mord\"><span class=\"mord mathbf\">B</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord text mtight\"><span class=\"mord mtight\">op</span></span></span></span></span></span></span></span></span></span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathbf\">Cat</span></span><span class=\"mclose\">]</span></span></span></span>, which is actually a 2-category.</p>",
+        "id": 420531644,
+        "sender_full_name": "John Baez",
+        "timestamp": 1707422228
+    },
+    {
+        "content": "<p>So yeah, are these pieces fitting together yet? A \"concrete monoidal category\" would be a one object bicategory with a (forgetful?) bifunctor to Cat.</p>",
+        "id": 420541592,
+        "sender_full_name": "Simon Burton",
+        "timestamp": 1707426263
+    },
+    {
+        "content": "<p>Usually a <a href=\"https://ncatlab.org/nlab/show/concrete%20category\">[[concrete category]]</a> is one with a faithful functor to Set.  Brendan is asking about when such a concrete category has a monoidal structure, but its forgetful functor still lands in Set -- not Cat.  That's one reason I said I don't think viewing a monoidal category as a 1-object bicategory is helpful for this question.</p>",
+        "id": 420543164,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1707426938
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277321\">Simon Burton</span> <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/Concrete.20monoidal.20categories/near/420541592\">said</a>:</p>\n<blockquote>\n<p>So yeah, are these pieces fitting together yet? A \"concrete monoidal category\" would be a one object bicategory with a (forgetful?) bifunctor to Cat.</p>\n</blockquote>\n<p>I think this would turn out to be a monoidal category equipped with a faithful action on some other category (although I'm not 100% sure what faithful means here). This is concrete in the same sense that cayley's theorem shows every group is a concrete permutation group, but I think that sense of concrete is different than what we mean by a concrete category</p>",
+        "id": 420548332,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1707429211
+    },
+    {
+        "content": "<p>As a (small) monoidal category is a pseudomonoid in Cat, a natural guess would be that a concrete monoidal category is a pseudomonoid in the 2-category of concrete categories. Defined this way, the resulting notion is sensitive to how one defines the latter - for instance, in Joy of Cats concrete functors are functors making the relevant triangle commute strictly, which would imply that the forgetful functor should be strict monoidal. If instead one requires the relevant triangle to commute up to a specified iso, you'd get monoidal categories whose forgetful functor is strong monoidal. I guess one could also work in a 2-category of \"(op)lax concrete functors\", in which case the resulting pseudomonoids have a  forgetful functor that is (op)lax monoidal. </p>\n<p>I haven't really thought what the conditions on 2-cells being \"concrete\" imply about the monoidal structure, but I'd guess that they won't rule out examples of interest.</p>",
+        "id": 420616075,
+        "sender_full_name": "Martti Karvonen",
+        "timestamp": 1707471759
+    },
+    {
+        "content": "<p>I guess you want to allow lax monoidal forgetful functors in your definition of \"concrete monoidal category\" if you want Vect with its usual tensor product to count as a concrete monoidal category.</p>",
+        "id": 420718125,
+        "sender_full_name": "John Baez",
+        "timestamp": 1707507236
+    },
+    {
+        "content": "<p>(Brendan said essentially this at the start.)</p>",
+        "id": 420718589,
+        "sender_full_name": "John Baez",
+        "timestamp": 1707507401
+    },
+    {
+        "content": "<p>Often in monoidal categories the underlying set of an object is given by the functor <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">H</mi><mi mathvariant=\"normal\">o</mi><mi mathvariant=\"normal\">m</mi></mrow><mo stretchy=\"false\">(</mo><mi>I</mi><mo separator=\"true\">,</mo><mo>−</mo><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{Hom}(I,-)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">Hom</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">I</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\">−</span><span class=\"mclose\">)</span></span></span></span>, where <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi></mrow><annotation encoding=\"application/x-tex\">I</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.07847em;\">I</span></span></span></span> is the monoidal unit. So one very strong condition on a concrete monoidal category would be to demand precisely this.</p>",
+        "id": 421893533,
+        "sender_full_name": "Oscar Cunningham",
+        "timestamp": 1708100457
+    }
+]

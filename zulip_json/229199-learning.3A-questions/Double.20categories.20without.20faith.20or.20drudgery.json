@@ -1,0 +1,200 @@
+[
+    {
+        "content": "<p>Kind of a special case of <a href=\"#narrow/stream/229136-theory.3A-category-theory/topic/coherence.20for.20categorical.20constructions/near/327773591\">this question by <span class=\"user-mention\" data-user-id=\"275932\">@Matteo Capucci (he/him)</span> </a>...</p>\n<p>I am trying to learn about double categories.  It seems that most double categories that we care about in practice, e.g. <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext mathvariant=\"bold\">Prof</mtext></mrow><annotation encoding=\"application/x-tex\">\\textbf{Prof}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">Prof</span></span></span></span></span>, are actually weak double categories, i.e. pseudo categories internal to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mtext mathvariant=\"bold\">Cat</mtext></mrow><annotation encoding=\"application/x-tex\">\\textbf{Cat}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6861em;\"></span><span class=\"mord text\"><span class=\"mord textbf\">Cat</span></span></span></span></span>.  I found the paper <a href=\"https://arxiv.org/pdf/math/0604549.pdf\">*Pseudo-Categories* by N. Martins-Ferreira</a>, which gives a formal definition of these, along with pseudo functors and pseudo natural transformations between them.  However, there are a lot of extremely involved coherences to even define these things, and what seems like way more involved coherences to check basic things like composition of pseudo functors giving a pseudo functor.  I imagine that if I wanted then to begin to study \"double category theory\" just as I have studied \"category theory\", exploring the double categorical analogues for limits, adjunctions, Kan extensions, presheafs, profunctors, etc. every single step of the way would require checking a ton of coherences.  It would probably move at least 10x slower than for category theory.</p>\n<p>Of course there is the option to, every time I am confronted with a coherence, say \"oh yeah it probably works out\", and it seems that this is what most people do, but as <span class=\"user-mention\" data-user-id=\"276363\">@Amar Hadzihasanovic</span> points out in the above question, category theory is full of cases where it actually doesn't work out.</p>\n<p>So I don't know what to do.  How do I enter into double category theory without either making unfounded assumptions that \"it all works out\" or spending hours checking coherences for every tiny step I want to make?</p>",
+        "id": 423191848,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1708797293
+    },
+    {
+        "content": "<p>One thing you can do is get other people to check the coherence laws.    You can get a grad student to do it... </p>\n<p>... oh wait, <em>you're</em> a grad student, or at least you were.  (Are you now?) </p>\n<p>... or you can write papers with coauthors where you come up with theorems so delightful that they're willing to help out by checking the coherence laws.</p>\n<p>Another thing you can do is use existing work to the maximum extent.  There are various papers that provide \"power tools\" for working with double categories.  For example, Mike Shulman's <a href=\"https://arxiv.org/abs/0706.1286\">Framed bicategories and monoidal fibrations</a> has let me avoid massive coherence law verifications.  So - read the literature deeply and learn the state of the art!</p>",
+        "id": 423192896,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708798275
+    },
+    {
+        "content": "<p>Another thing you can do is build your own power tools.   If you do this you may have to start by checking lots of coherence laws, but you'll prove theorems that can let you work at a higher level and not have to go down to the \"machine code\" of the fundamental definitions so often.</p>",
+        "id": 423193023,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708798389
+    },
+    {
+        "content": "<p>OK let's say I want to convince myself that weak double categories form a bicategory, or double category, or weak double category, or whatever they form.  What are the power tools for that?  The Martins-Ferreira paper has a whole bunch of scary coherences that look like they will take me a really long time to check.</p>",
+        "id": 423193253,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1708798599
+    },
+    {
+        "content": "<p>I'm not currently a grad student, I just work part-time at Conexus now.</p>",
+        "id": 423193312,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1708798677
+    },
+    {
+        "content": "<p>This is an area where virtual double categories are surprisingly better than pseudo double categories.  There's a lot of stuff you can prove about them at a high level by working with Cartesian monads.  Monads have a much better-developed theory than pseudocategories.</p>",
+        "id": 423193445,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1708798793
+    },
+    {
+        "content": "<p>Not to necessarily disagree, but pseudo double categories are the algebras for a 2-monad, and you can get lots of mileage out of that.  For instance, pseudo double categories form a 2-category because the algebras for any 2-monad form a 2-category.</p>",
+        "id": 423193551,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708798862
+    },
+    {
+        "content": "<p>Where can I read about this stuff?</p>",
+        "id": 423193694,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1708799001
+    },
+    {
+        "content": "<p>Okay, yes Christian told me you work at Conexus but I wasn't sure if you'd left grad school.</p>\n<blockquote>\n<p>OK let's say I want to convince myself that weak double categories form a bicategory, or double category, or weak double category, or whatever they form. What are the power tools for that? </p>\n</blockquote>\n<p>I'd read <a href=\"https://ncatlab.org/nlab/show/double+category#higher_categories_of_double_categories\">Higher categories of double categories</a> on the nLab, and then, since there's a shortage of references for details, I'd ask Mike Shulman where I can learn more details.</p>\n<blockquote>\n<p>The Martins-Ferreira paper has a whole bunch of scary coherences that look like they will take me a really long time to check.</p>\n</blockquote>\n<p>So you still think you need to check every step of a paper you're reading, even if the end result seems obvious?  I.e. none of the work other people have done can save you from repeating that work?   If this is your attitude I think you'll have to check a lot of coherence laws at some point, because often the way to get to a higher level of abstraction involves proving theorems where the proofs use a lower level of abstraction: you do grungy work at first so you don't have to do it later.</p>",
+        "id": 423193705,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708799013
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"280784\">Joshua Meyers</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery/near/423193694\">said</a>:</p>\n<blockquote>\n<p>Where can I read about this stuff?</p>\n</blockquote>\n<p>I think you should be more specific, unless you're trying to get people to list <em>lots</em> of papers.</p>",
+        "id": 423193777,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708799081
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"275920\">John Baez</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery/near/423193777\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"280784\">Joshua Meyers</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery/near/423193694\">said</a>:</p>\n<blockquote>\n<p>Where can I read about this stuff?</p>\n</blockquote>\n<p>I think you should be more specific, unless you're trying to get people to list <em>lots</em> of papers.</p>\n</blockquote>\n<p>I just meant the two suggestions, (1) of <span class=\"user-mention\" data-user-id=\"438995\">@James Deikun</span> to look into virtual double categories and Cartesian monads, and (2) of <span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> to look into how pseudo double categories are the algebras for a 2-monad</p>",
+        "id": 423193829,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1708799152
+    },
+    {
+        "content": "<p>Okay, they can answer those.</p>",
+        "id": 423193897,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708799192
+    },
+    {
+        "content": "<p>Obviously you should read the nLab articles <a href=\"https://ncatlab.org/nlab/show/double%20category\">[[double category]]</a>, <a href=\"https://ncatlab.org/nlab/show/virtual%20double%20category\">[[virtual double category]]</a> and lots of the papers in the references, but maybe there's more.</p>",
+        "id": 423193937,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708799254
+    },
+    {
+        "content": "<p>I think you should read lots of papers without verifying all results, just to get the \"lay of the land\".</p>",
+        "id": 423194018,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708799317
+    },
+    {
+        "content": "<p>Well, the tutorial introduction to virtual double categories as Cartesian monads is Leinster's <a href=\"https://arxiv.org/abs/math/0305049\">Higher operads, Higher Categories</a> and then there's so much on monads in general I don't know where to begin, you're best off just searching for anything you think might be helpful for the stuff you're actually working on.</p>",
+        "id": 423194150,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1708799444
+    },
+    {
+        "content": "<p>I don't think <span class=\"user-mention\" data-user-id=\"280784\">@Joshua Meyers</span> is talking about verifying the coherences being scary because he wants to verify the results, but rather because they're part of the definition of pseudocategory and the coherences need to hold when <em>applying</em> the results.</p>",
+        "id": 423194250,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1708799531
+    },
+    {
+        "content": "<p>For learning 2-monad machinery in general I would recommend Steve Lack's <a href=\"https://arxiv.org/abs/math/0702535\">2-categories companion</a>.  I don't know of somewhere that a construction of the 2-monad for pseudo double categories is written down explicitly, unfortunately, but I think that's true for many monads.  The general machinery of presentations of monads ensures that it exists.</p>",
+        "id": 423194272,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708799576
+    },
+    {
+        "content": "<p>Thanks!  I'll look into this stuff</p>",
+        "id": 423194359,
+        "sender_full_name": "Joshua Meyers",
+        "timestamp": 1708799679
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"438995\">James Deikun</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery/near/423194250\">said</a>:</p>\n<blockquote>\n<p>I don't think <span class=\"user-mention silent\" data-user-id=\"280784\">Joshua Meyers</span> is talking about verifying the coherences being scary because he wants to verify the results, but rather because they're part of the definition of pseudocategory and the coherences need to hold when <em>applying</em> the results.</p>\n</blockquote>\n<p>When I last spoke to Joshua he wanted to personally verify all the theorems he used.  At least that was my impression - maybe I got it wrong.  But I think this is why he said:</p>\n<blockquote>\n<p>I imagine that if I wanted then to begin to study \"double category theory\" just as I have studied \"category theory\", exploring the double categorical analogues for limits, adjunctions, Kan extensions, presheafs, profunctors, etc. every single step of the way would require checking a ton of coherences. It would probably move at least 10x slower than for category theory.</p>\n</blockquote>",
+        "id": 423197095,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708802439
+    },
+    {
+        "content": "<p>Ah, that would certainly be laborious!  <span aria-label=\"shock\" class=\"emoji emoji-1f628\" role=\"img\" title=\"shock\">:shock:</span>  Yeah, that's something to get over right quick.  If someone really feels like shoring up the foundations, it would be much better to formalize a few of the theorems than to check them all by hand.</p>",
+        "id": 423197540,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1708802856
+    },
+    {
+        "content": "<p>Yes, if you really wanted to verify everything you use I think that clearly implies that you want to work in a proof assistant and not on paper. Then at least other people as careful as you can rely on your stuff.  New and Licata have a type theory for double categories; as far as I know it doesn’t interact with the main proof assistants, but I don’t know very far. <a href=\"https://maxsnew.com/docs/virtual-equipments.pdf\">https://maxsnew.com/docs/virtual-equipments.pdf</a></p>",
+        "id": 423296094,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1708899372
+    },
+    {
+        "content": "<p>Oh this is very neat!</p>",
+        "id": 423299506,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1708902759
+    },
+    {
+        "content": "<p>(also, if anyone is interested in formalizing double categories then please message me! I'm about to start working on adding them to mathlib)</p>",
+        "id": 423299525,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1708902796
+    },
+    {
+        "content": "<p>Double categories have recently been formalized in Coq UniMath: <a href=\"https://arxiv.org/abs/2402.05265\">https://arxiv.org/abs/2402.05265</a>.  That may or may not be applicable to how you'll do it in Lean, though.</p>",
+        "id": 423299812,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1708903099
+    },
+    {
+        "content": "<p>Yeah, I'm definitely going to take a look at that paper. But I expect the final product will end up pretty different in the absence of univalence</p>",
+        "id": 423299881,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1708903189
+    },
+    {
+        "content": "<p>(and because mathlib's category theory library tries to design everything to play nicely with lean's simplifier &amp; like everything in mathlib makes extensive use of type classes)</p>",
+        "id": 423300250,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1708903538
+    },
+    {
+        "content": "<p>By the way, AlgebraicJulia relies pretty heavily on decorated and structured cospans for its epidemiological modeling software, which may also be repurposed for other modeling tasks.  So far it doesn't treat those cospans using double categories.   Mathematically speaking it 'should' - though one must always strike a balance between idealism and practicality.    Luckily Evan Patterson, one of the main developers of AlgebraicJulia, is becoming an expert on double categories.  So I'm hoping that eventually the AlgebraicJulia ecosystem will use double categories.   </p>\n<p>This is different than formalizing theorems about double categories: it's about putting the math of double categories to practical use.   But that may boost interest in double categories, which could speed up getting their theory worked out well, and even getting it formalized.  And eventually, if our civilization doesn't collapse first, the formalization could feed back to help the practical applications.</p>",
+        "id": 423301326,
+        "sender_full_name": "John Baez",
+        "timestamp": 1708904658
+    },
+    {
+        "content": "<p>Double categories are also how one “should”/hopefully soon will be doing categorical database theory, for instance, to allow for both relational and functional database structures on an equal footing.</p>",
+        "id": 423328483,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1708927396
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Arlin</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/Double.20categories.20without.20faith.20or.20drudgery/near/423296094\">said</a>:</p>\n<blockquote>\n<p>Yes, if you really wanted to verify everything you use I think that clearly implies that you want to work in a proof assistant and not on paper. Then at least other people as careful as you can rely on your stuff.  New and Licata have a type theory for double categories; as far as I know it doesn’t interact with the main proof assistants, but I don’t know very far. <a href=\"https://maxsnew.com/docs/virtual-equipments.pdf\">https://maxsnew.com/docs/virtual-equipments.pdf</a></p>\n</blockquote>\n<p>The type theory Dan and I developed is what I like to call a \"domain-specific type theory\". In theory some version might be implemented as an embedded DSL in a proof assistant but it's certainly not a trivial task to do so. Dan did make a kind of <a href=\"https://github.com/maxsnew/virtual-equipments/blob/41a00668c662116e147559b1aa86dd52d76c0e1b/agda/STC.agda\">shallow embedding of the syntax in Agda</a> so that we could get some machine-checked proofs but you can't instantiate them to prove things about, say some double category you construct in the proof assistant:</p>",
+        "id": 423410701,
+        "sender_full_name": "Max New",
+        "timestamp": 1708958664
+    },
+    {
+        "content": "<p>Thanks for the explanation Max. Do you have a particular vision about how so-called DSTTs would best be used?</p>",
+        "id": 423458020,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1708971801
+    },
+    {
+        "content": "<p>I do, and I should probably get to writing a grant about it...</p>",
+        "id": 423471662,
+        "sender_full_name": "Max New",
+        "timestamp": 1708976827
+    },
+    {
+        "content": "<p>I would really love to work on making edsl's in proof assistants easier to use. The only thoughts I've had towards this are to try and use Lean4's macro system to implement the \"Type Systems as Macros\" paper/the turnstile racket library, but it's not clear how this would handle integrating the host type system and the domain language type system</p>",
+        "id": 423476581,
+        "sender_full_name": "Brendan Murphy",
+        "timestamp": 1708978712
+    },
+    {
+        "content": "<p>You should probably talk to William Bowman: <a href=\"https://www.youtube.com/watch?v=vPYgzEdCxt8\">https://www.youtube.com/watch?v=vPYgzEdCxt8</a></p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"vPYgzEdCxt8\" href=\"https://www.youtube.com/watch?v=vPYgzEdCxt8\"><img src=\"https://uploads.zulipusercontent.net/ec3c9c07ff829e8fef0bd4ca47ba1b2420773d5b/68747470733a2f2f692e7974696d672e636f6d2f76692f765059677a4564437874382f64656661756c742e6a7067\"></a></div>",
+        "id": 423486486,
+        "sender_full_name": "Max New",
+        "timestamp": 1708982925
+    }
+]

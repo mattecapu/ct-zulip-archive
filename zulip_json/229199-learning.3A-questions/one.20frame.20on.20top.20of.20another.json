@@ -1,0 +1,110 @@
+[
+    {
+        "content": "<p>I've just come up with a construction that takes two frames <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo separator=\"true\">,</mo><msup><mi>F</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">F,F&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9463em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> and constructs a new frame by identifying the top of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span></span></span></span> with the bottom of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>F</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">F&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> (everything in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>F</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup></mrow><annotation encoding=\"application/x-tex\">F&#x27;</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7519em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span></span></span></span> is above everything in <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi></mrow><annotation encoding=\"application/x-tex\">F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6833em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.1389em;\">F</span></span></span></span>). The \"obvious\" joins and meets seem to distribute just fine.</p>\n<p>Has anyone encountered this before? Perhaps on spaces? It's a construction that seems reasonable from the algebraic/frame point of view but counterintuitive from the topological point of view.</p>",
+        "id": 622526445,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1788871038
+    },
+    {
+        "content": "<p>This is a well known operation in the theory of posets/lattices, called the \"ordinal sum\" or the \"ordered sum\" or the \"linear sum\". See, eg, Section 1.24 of my edition of Davey and Priestley's \"Introduction to Lattices and Order\".</p>\n<p>It's definitely \"well known\" that the linear sum of two distributive lattices is distributive, and people definitely study this (though I'm not sure of any references off the top of my head). I'm not sure of anybody using this notion for frames (and I can't find anything on quickly looking around for it either), but lattice-theoretically it's a very natural thing to consider.</p>",
+        "id": 622584194,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1788883002
+    },
+    {
+        "content": "<p>Do you know what it corresponds to for (topological) spaces, even? Say we have two spaces X and Y and we consider the new space (hopefully it has enough points?) we get from doing this operation to their opens (say Y on top of X)... It should hopefully be pretty easy to figure out what the resulting space is, in terms of X and Y? I'm busy just this second, but I might think about it later today if someone else doesn't think about it first</p>",
+        "id": 622585091,
+        "sender_full_name": "Chris Grossack (she/they)",
+        "timestamp": 1788883200
+    },
+    {
+        "content": "<p>I don't know if it has a name, but a back-of-the-envelope computations seems to say that if you perform this construction on two spaces, (the result is spatial and) the topology is on the disjoint union of their carriers, one inclusion (the space above) is a closed map, the other (the space below) is open.</p>",
+        "id": 622604432,
+        "sender_full_name": "fosco",
+        "timestamp": 1788887709
+    },
+    {
+        "content": "<p>Is this true?  If the topology is spatial, then every open set that contains a point of the space above must contain all points of the space below.</p>",
+        "id": 622614219,
+        "sender_full_name": "James Deikun",
+        "timestamp": 1788889685
+    },
+    {
+        "content": "<p>It is true that there are open and closed subspaces as fosco describes whose points correspond to the original spaces, but the standard way to achieve that is Artin gluing... so I guess this is a quotient of the Artin gluing?</p>",
+        "id": 622621989,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1788891424
+    },
+    {
+        "content": "<p>(deleted)</p>",
+        "id": 622748400,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1788938718
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"277473\">Morgan Rogers (he/him)</span> This is exactly an Artin gluing, with the meet semilattice map given by h(a) = [a=1], I think, i.e. h(a) = 1 if a = 1 and h(a) = 0 otherwise.</p>",
+        "id": 622788978,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1788948399
+    },
+    {
+        "content": "<p>By the way, the operation on posets is also studied from a categorical perspective in <span class=\"user-mention\" data-user-id=\"739584\">@Roy Ferguson</span>'s PhD thesis.</p>",
+        "id": 622790645,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1788948864
+    },
+    {
+        "content": "<p>Oh of course, you have to choose which meet semilattice map to glue along. Thanks <span class=\"user-mention\" data-user-id=\"386922\">@Graham Manuell</span> !</p>",
+        "id": 622793015,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1788949492
+    },
+    {
+        "content": "<p>I would have said that artin gluing in the sense of toposes puts the toposes \"on top of each other\" in a sense,  but on the level of points rather than frames of opens ... <del>In particular gluing to localic toposes along the constant 1 functor should give something like the join/ordinal sum of points (with specialization ordering)</del>.</p>",
+        "id": 622809108,
+        "sender_full_name": "Jonas Frey",
+        "timestamp": 1788953678
+    },
+    {
+        "content": "<p>Where can I find that thesis, <span class=\"user-mention\" data-user-id=\"739584\">@Roy Ferguson</span> ?</p>",
+        "id": 622817536,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1788955738
+    },
+    {
+        "content": "<p><a href=\"https://scholar.sun.ac.za/server/api/core/bitstreams/29b72861-2a64-469b-94f9-8c2c817f02a8/content\">https://scholar.sun.ac.za/server/api/core/bitstreams/29b72861-2a64-469b-94f9-8c2c817f02a8/content</a></p>",
+        "id": 622914112,
+        "sender_full_name": "Graham Manuell",
+        "timestamp": 1788974211
+    },
+    {
+        "content": "<p>Sorry I am late to the conversation and thank you <span class=\"user-mention\" data-user-id=\"386922\">@Graham Manuell</span> for sharing! We call this operation \"stacking of spaces\" and arrived at a special case of it by transporting stacking of preorders along the specialisation equivalence. But this operation works out for Top as well. All these operations are examples of monoidal sum structures (in the sense of Zurab Janelidze), which have the property that a certain nice class of morphisms called the c-reflecting morphisms are all extensive (in the sense Michael Hoefnagel and Emma Theart). Curiously, the usual coproduct and stacking of spaces are the only monoidal sum structures on Top where this is the case (see Section 4.5).</p>",
+        "id": 623118246,
+        "sender_full_name": "Roy Ferguson",
+        "timestamp": 1789039820
+    },
+    {
+        "content": "<p>I just want to point out that, pedantically, what is described in the OP is perhaps not quite the ordinal sum as mentioned in post 2, because it sounds as though the OP identifies one frame's top element with another's bottom element, instead of keeping those two distinct.</p>",
+        "id": 623153934,
+        "sender_full_name": "Sridhar Ramesh",
+        "timestamp": 1789047602
+    },
+    {
+        "content": "<p>That's a helpful caveat <span class=\"user-mention\" data-user-id=\"390188\">@Sridhar Ramesh</span>. Without the identification I described, the locale has an extra point \"in the middle\" which does not come from either of the original spaces (but I'm fairly sure that the operation discussed in the remaining posts is the one I described)</p>",
+        "id": 623178948,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1789052483
+    },
+    {
+        "content": "<p>This discussion is fascinating! And just to add to the caveat, although the ordinal sum of posets has a monoidal unit, its restriction to frames does not as the unit would have to be empty, while the stacking of spaces is a legit monoidal struture with unit</p>",
+        "id": 623218568,
+        "sender_full_name": "Vincent Moreau",
+        "timestamp": 1789061873
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"629800\">@Vincent Moreau</span>  yes! This was a frustration of ours when looking for sum structures in categories of relational structures bounded above and below. Monoidal sum structures always have unit the initial object, and so stacking/ordinal sum is not a candidate for such categories. But, if we \"transport\" stacking along the functor Top-&gt;Frm, I think this operation actually gives us a monoidal product structure, where the unit is terminal.</p>\n<p>Another thing I didn't mention regarding Artin gluings is that stacking and coproduct in Top (the sufficiently extensive ones) are two extremes of Artin gluings, where for coproduct you glue along the map that sends everything to the top, while for stacking you glue along the map that only sends top to top and everything else to bottom.</p>",
+        "id": 623460774,
+        "sender_full_name": "Roy Ferguson",
+        "timestamp": 1789108928
+    }
+]

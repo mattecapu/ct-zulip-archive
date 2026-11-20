@@ -1,0 +1,248 @@
+[
+    {
+        "content": "<p>In this thread, I would like to share my progress reading Lawvere's <a href=\"https://ncatlab.org/nlab/files/Lawvere-LinearCategories.pdf\">Introduction Linear Categories and Applications</a>, including some attempts to solve the exercises. Anyone interested in this material is welcome to contribute.</p>",
+        "id": 576927762,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772530768
+    },
+    {
+        "content": "<p>I like the little algebra exercises, this should be fun. How far have you gotten by yourself, <span class=\"user-mention\" data-user-id=\"1037235\">@Moby-Dick</span> ?</p>",
+        "id": 576930010,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1772531418
+    },
+    {
+        "content": "<p>Let's start by the Foreword. Lawvere begins by considering a set whose elements are either non-negative real numbers or the positive infinity. He introduces the operations:<br>\na + b := minimum of a and b,<br>\na * b := ordinary sum of a and b.</p>",
+        "id": 576931433,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772531804
+    },
+    {
+        "content": "<p>Using this notation, we will look like crazy to the outsiders.</p>",
+        "id": 576931558,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772531836
+    },
+    {
+        "content": "<p>Lawvere's motivation is to find the shortest path between two cities.</p>",
+        "id": 576931976,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772531930
+    },
+    {
+        "content": "<p>Huh? That's not an example he gives as far as I've seen</p>",
+        "id": 576932393,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1772532031
+    },
+    {
+        "content": "<p>He mentions \"linear control systems\", but I don't know what that precisely refers to without further context (which presumably may arise later)</p>",
+        "id": 576932879,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1772532145
+    },
+    {
+        "content": "<p>in page ii he says: \"the elements of A are indices for certain states or products or locations, likewise B.\" I imagine these locations as cities.</p>",
+        "id": 576933414,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772532297
+    },
+    {
+        "content": "<p>The cost of going from city a city to another is defined. For example, the cost can be a length or the cost in oil. Using matrix multiplication, he computes the minimum cost of going from city a in province A to city c in province C, passing through city b in province B.</p>",
+        "id": 576934854,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772532677
+    },
+    {
+        "content": "<p>Okay, but he doesn't talk about finding shortest paths (although I can't deny that for a particular choice of linear category that would be what is calculated!) so I don't think you could say that's his \"motivation\". Maybe I'm being too picky.</p>",
+        "id": 576934941,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1772532703
+    },
+    {
+        "content": "<p>minimum cost from a to c = minimum { cost from a to b + cost from b to c : for all b in B}</p>",
+        "id": 576935051,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772532742
+    },
+    {
+        "content": "<p>the length is a particular kind of cost</p>",
+        "id": 576935250,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772532815
+    },
+    {
+        "content": "<p>Sure. It's a useful particular case to have in mind, at any rate!</p>",
+        "id": 576935330,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1772532841
+    },
+    {
+        "content": "<p>To fix ideas, let A = Quebec, B = Ontario, C = Manitoba,</p>",
+        "id": 576936012,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772533032
+    },
+    {
+        "content": "<p>a = Montreal, c = Winnipeg</p>",
+        "id": 576936185,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772533084
+    },
+    {
+        "content": "<p>A --- f ---&gt; B is called the matrix (of cost for traveling between between the cities of Quebec and Ontario).</p>",
+        "id": 576936602,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772533211
+    },
+    {
+        "content": "<p>the entry f(b/a) of the matrix f represents the cost of going from city a to city b</p>",
+        "id": 576936730,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772533252
+    },
+    {
+        "content": "<p>B --- g ---&gt; C is the matrix (of cost for traveling between between the cities of Ontario and Manitoba).<br>\nthe entry g(c/b) of the matrix g represents the cost of going from city b to city c</p>",
+        "id": 576936913,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772533308
+    },
+    {
+        "content": "<p>That's unusual notation, right? One might be more accustomed to <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mo stretchy=\"false\">(</mo><mi>a</mi><mo separator=\"true\">,</mo><mi>b</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">f(a,b)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">a</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\">b</span><span class=\"mclose\">)</span></span></span></span> or <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>f</mi><mrow><mi>a</mi><mo separator=\"true\">,</mo><mi>b</mi></mrow></msub></mrow><annotation encoding=\"application/x-tex\">f_{a,b}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.9805em;vertical-align:-0.2861em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.3361em;\"><span style=\"top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mathnormal mtight\">a</span><span class=\"mpunct mtight\">,</span><span class=\"mord mathnormal mtight\">b</span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.2861em;\"><span></span></span></span></span></span></span></span></span></span> for the coefficients of matrices.</p>",
+        "id": 576937474,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1772533467
+    },
+    {
+        "content": "<p>time to compose!<br>\nA --- gf ---&gt; C is the matrix of cost for traveling from the cities of Quebec to the cities of Manitoba, choosing the minimum cost strategy while crossing Ontario</p>",
+        "id": 576937861,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772533573
+    },
+    {
+        "content": "<p>yes, his notation is not your friend</p>",
+        "id": 576937947,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772533599
+    },
+    {
+        "content": "<p>I would prefer lower and upper index notation, like in tensors</p>",
+        "id": 576938106,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772533638
+    },
+    {
+        "content": "<p>Explicitly, gf(c/a) = min_{b in B} ( g(c/b) + f(b/a) ).</p>",
+        "id": 576938473,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772533738
+    },
+    {
+        "content": "<p>Or, in tropical notation, we have a matrix multiplication in a rig:<br>\ngf(c/a) = sum_{b in B} g(c/b)*f(b/a)</p>",
+        "id": 576938676,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772533797
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"1037235\">Moby-Dick</span> <a href=\"#narrow/channel/232160-learning.3A-reading-.26-references/topic/Lawvere.2C.20Introduction.20Linear.20Categories.20and.20Applications/near/576937861\">said</a>:</p>\n<blockquote>\n<p>time to compose!<br>\nA --- gf ---&gt; C is the matrix of cost for traveling from the cities of Quebec to the cities of Manitoba, choosing the minimum cost strategy while crossing Ontario</p>\n</blockquote>\n<p>Looking at the geography of Canada, this seems a reasonable description for this case, but if you had chosen a smaller region that one doesn't have to pass through on a shortest path from A to C, it becomes clearer that the composite is more accurately \"the shortest path from cities of Quebec to cities of Manitoba <em>conditioned on</em> passing through some city in Ontario\". For instance, if there is some trail through Ontario that happens to be shorter than any path through a city, then we won't actually be calculating the matrix of shortest paths here.</p>",
+        "id": 576939185,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1772533941
+    },
+    {
+        "content": "<p>We can also interpret A, B and C as Bachelor, Master an PhD, so that the elements of each set is a university in which this degree is obtained. f and g can be interpreted as the tuition cost.</p>",
+        "id": 576940396,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772534264
+    },
+    {
+        "content": "<blockquote>\n<p>While the general concept of category involves associativity of \"multiplication\", the additional special feature of linear categories is that the \"maps\" from any object A to any object B can also be added in a way that satisfies the distributive laws below (also known as bilinearity) [diagrams omitted]</p>\n</blockquote>\n<p>To place this in some wider context, categories in which the homsets form <em>abelian groups</em> had been around for a long time before Lawvere gave these lectures. Another way of presenting his definition would be to say that linear categories are categories <em>enriched in commutative monoids</em>. People have since also studied variants where the addition distributes over composition only on one side or the other.</p>",
+        "id": 576960422,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1772540106
+    },
+    {
+        "content": "<p>What a nice book, thanks for sharing it</p>",
+        "id": 577050785,
+        "sender_full_name": "Simon Burton",
+        "timestamp": 1772563847
+    },
+    {
+        "content": "<p><a href=\"/user_uploads/21317/mfo6iHs7vKTe9IFpTV65tMHw/Screenshot-2026-03-05-at-08-51-56-Lawvere-LinearCategories.pdf.png\">Screenshot 2026-03-05 at 08-51-56 Lawvere-LinearCategories.pdf.png</a><br>\nReading this fragment in the foreword (below, on page iii), I was reminded of George Soros's <a href=\"https://www.opensocietyfoundations.org/uploads/9ae17912-2262-4646-8ffc-d01afc934c36/george-soros-general-theory-of-reflexivity-transcript.pdf\">theory of reflexivity</a>. According to Soros, in social phenomena there are two functions: the cognitive function (used to understand reality) and the manipulative function (used to change reality). Reflexivity happens when the input of the cognitive function is the output of the manipulative function, and the input of the manipulative function is the output of the cognitive function. This is the explanation of self-referential social phenomena, such as the economic bubbles.</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/mfo6iHs7vKTe9IFpTV65tMHw/Screenshot-2026-03-05-at-08-51-56-Lawvere-LinearCategories.pdf.png\" title=\"Screenshot 2026-03-05 at 08-51-56 Lawvere-LinearCategories.pdf.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"721x208\" src=\"/user_uploads/thumbnail/21317/mfo6iHs7vKTe9IFpTV65tMHw/Screenshot-2026-03-05-at-08-51-56-Lawvere-LinearCategories.pdf.png/840x560.webp\"></a></div><p>For Lawvere, instead of cognitive and manipulative functions there are two processes: one objective (x) and the other subjective (y). He says that y controls x if the equation x = b(y - a x) is satisfied, where a x is the observation of the objective process x and b is the controlling intervention. Here is what I think may be an example of a physical system illustrating this model of control: <a href=\"https://youtube.com/shorts/19AqJKv2LbI?si=4SyTL2PsHbn_JJeV\">Inverted pendulum</a></p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"19AqJKv2LbI\" href=\"https://youtube.com/shorts/19AqJKv2LbI?si=4SyTL2PsHbn_JJeV\"><img src=\"https://uploads.zulipusercontent.net/4a7462ac7d8b34831ae47b8c70b38661ab95f914/68747470733a2f2f692e7974696d672e636f6d2f76692f313941714a4b76324c62492f6d7164656661756c742e6a7067\"></a></div><p>I don't know to what extent Soros's reflexivity can be formalized within the framework of linear categories. I leave it as an open question. My favorite author concerning self-referential economic phenomena is <a href=\"https://emeritus.er.ethz.ch/about-us/people/sornette.html\">Didier Sornette</a>. Here is the Master’s Thesis of one of his students, in which the theory of reflexivity is explored:</p>\n<p>Shintre, Devendra. \"<a href=\"https://ethz.ch/content/dam/ethz/special-interest/mtec/chair-of-entrepreneurial-risks-dam/documents/dissertation/master%20thesis/Devendra_Masters_Thesis_V4.pdf\">Modelling Forex Market Reflexivity using Self-Exciting Point Process and Ensemble Learning.</a>\" (2019).</p>",
+        "id": 577510886,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772720344
+    },
+    {
+        "content": "<p>Reading into the first chapter, we get to Lawvere's definition of rig. Interestingly, Lawvere chooses the \"four-variable combination of the commutative and associative laws\" such as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mo stretchy=\"false\">(</mo><mi>c</mi><mo>+</mo><mi>d</mi><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">(</mo><mi>a</mi><mo>+</mo><mi>c</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mo stretchy=\"false\">(</mo><mi>b</mi><mo>+</mo><mi>d</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(a+b)+(c+d) = (a+c)+(b+d)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">b</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">c</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">d</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">a</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">c</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">b</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">d</span><span class=\"mclose\">)</span></span></span></span> for addition, but I notice that he only makes explicit one side of the unit laws, such as <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>+</mo><mi>x</mi><mo>=</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">0+x = x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span>. It's not immediately obvious to me how to prove that <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mn>0</mn><mo>=</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x+0 = x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span> from here, which is needed to deduce associativity and commutativity from the four-variable axiom. Am I missing something?</p>",
+        "id": 577908510,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1772883465
+    },
+    {
+        "content": "<p>can't you go <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mn>0</mn><mo>=</mo><mo stretchy=\"false\">(</mo><mn>0</mn><mo>+</mo><mn>0</mn><mo stretchy=\"false\">)</mo><mo>+</mo><mo stretchy=\"false\">(</mo><mi>x</mi><mo>+</mo><mn>0</mn><mo stretchy=\"false\">)</mo><mo>=</mo><mo stretchy=\"false\">(</mo><mn>0</mn><mo>+</mo><mi>x</mi><mo stretchy=\"false\">)</mo><mo>+</mo><mo stretchy=\"false\">(</mo><mn>0</mn><mo>+</mo><mn>0</mn><mo stretchy=\"false\">)</mo><mo>=</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">x+0 = (0+0)+(x+0) = (0+x)+(0+0) = x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">0</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">0</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\">0</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span>?</p>",
+        "id": 577908735,
+        "sender_full_name": "Matteo Capucci (he/him)",
+        "timestamp": 1772883630
+    },
+    {
+        "content": "<p>where does the last equation come from?</p>",
+        "id": 577909170,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1772883993
+    },
+    {
+        "content": "<p>I put the axioms in prover9, let it run for some time, and it couldn't find a proof of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mn>0</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">x + 0 = 0</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span></span></span></span>, so it's probably safe to say it's not provable, even though I don't have a counter model.<br>\nHere is my code for the record:</p>\n<div class=\"codehilite\"><pre><span></span><code>formulas(sos).\n\n    0 + x = x.\n    (a + b) + (x + y) = (a + x) + (b + y).\n    1 * x = x.\n    (a * b) * (x * y) = (a * x) * (b * y).\n    a * 0 = 0.\n    a * (x + y) = (a * x) + (a * y).\n\nend_of_list.\n\nformulas(goals).\n\n  x + 0 = x.\n\nend_of_list.\n</code></pre></div>",
+        "id": 577914943,
+        "sender_full_name": "Clémence Chanavat",
+        "timestamp": 1772889152
+    },
+    {
+        "content": "<p>If the axioms listed by <span class=\"user-mention\" data-user-id=\"637053\">@Clémence Chanavat</span>  are <em>all</em> the axioms, then <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">∀</mi><mi>x</mi><mi mathvariant=\"normal\">.</mi><mi>x</mi><mo>+</mo><mn>0</mn><mo>=</mo><mi>x</mi></mrow><annotation encoding=\"application/x-tex\">\\forall x. x + 0 = x</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7778em;vertical-align:-0.0833em;\"></span><span class=\"mord\">∀</span><span class=\"mord mathnormal\">x</span><span class=\"mord\">.</span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">x</span></span></span></span> is clearly not provable. The universal closure of each formula in <code>sos</code> is satisfied by the operations <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>:</mo><mo>=</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">x + y := y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6667em;vertical-align:-0.0833em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span> and <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>⋅</mo><mi>y</mi><mo>:</mo><mo>=</mo><mi>y</mi></mrow><annotation encoding=\"application/x-tex\">x \\cdot y := y</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4445em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⋅</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">:=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.625em;vertical-align:-0.1944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">y</span></span></span></span>.</p>\n<p>But under that operation, when <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo mathvariant=\"normal\">≠</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">0 \\neq 1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\"><span class=\"mrel\"><span class=\"mord vbox\"><span class=\"thinbox\"><span class=\"rlap\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"inner\"><span class=\"mord\"><span class=\"mrel\"></span></span></span><span class=\"fix\"></span></span></span></span></span><span class=\"mrel\">=</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span> one has <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>+</mo><mn>0</mn><mo>=</mo><mn>0</mn><mo mathvariant=\"normal\">≠</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">1 + 0 = 0 \\neq 1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.7278em;vertical-align:-0.0833em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\"><span class=\"mrel\"><span class=\"mord vbox\"><span class=\"thinbox\"><span class=\"rlap\"><span class=\"strut\" style=\"height:0.8889em;vertical-align:-0.1944em;\"></span><span class=\"inner\"><span class=\"mord\"><span class=\"mrel\"></span></span></span><span class=\"fix\"></span></span></span></span></span><span class=\"mrel\">=</span></span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6444em;\"></span><span class=\"mord\">1</span></span></span></span>.</p>",
+        "id": 577916347,
+        "sender_full_name": "Zoltan A. Kocsis (Z.A.K.)",
+        "timestamp": 1772890381
+    },
+    {
+        "content": "<p>Notice the typo<br>\n<a href=\"/user_uploads/21317/IjkfGVwMSo3XucSi2S8eWVCg/typo_rig.png\">typo_rig.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/21317/IjkfGVwMSo3XucSi2S8eWVCg/typo_rig.png\" title=\"typo_rig.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"739x276\" src=\"/user_uploads/thumbnail/21317/IjkfGVwMSo3XucSi2S8eWVCg/typo_rig.png/840x560.webp\"></a></div>",
+        "id": 577917093,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772891075
+    },
+    {
+        "content": "<p>Ah the moral of the story for me is not to try to be too efficient with one's axiomatisations</p>",
+        "id": 577947161,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1772922298
+    },
+    {
+        "content": "<p>As a statistician, my main motivation for studying rigs (also known as \"semi-rings\" in the French literature) is their thermodynamic interpretation (some rigs can be interpreted this way, not all):</p>\n<ul>\n<li>Elements of the rig = Chemical Potentials.</li>\n<li>Addition = Mixing of Gases.</li>\n<li>Multiplication  = Bonding of Gases.</li>\n<li>Additive Identity  = Zero Chemical Potential reference.</li>\n<li>Multiplicative Identity  = The state where chemical potentials add as zero.</li>\n<li>Result of Addition = Equilibrium Free Energy per particle.</li>\n<li>Temperature Parameter  = Ambient physical temperature.</li>\n<li>Entropy Function  = Measure of state distinguishability and mixing dynamics.</li>\n<li>Distributive Property = Bonding a gas to a mixture of two other gases produces the same total chemical potential as bonding that gas to each component separately before mixing them.</li>\n</ul>\n<p>Source: <a href=\"https://arxiv.org/pdf/1108.2874\">https://arxiv.org/pdf/1108.2874</a></p>",
+        "id": 577970423,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772941261
+    },
+    {
+        "content": "<p>(Of course, <em>statistical mechanics</em> and <em>statistical inference</em> are two different sciences. However, in statistical inference many models are mathematically equivalent to models in statistical mechanics. For example, the probability distribution underlying logistic regression corresponds to the Boltzmann distribution.)</p>",
+        "id": 577970734,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772941599
+    },
+    {
+        "content": "<p>Interesting! Do you already have some intuition of what the relationship between the above and linear categories could be?</p>",
+        "id": 577987133,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1772959511
+    },
+    {
+        "content": "<p>To develop that intuition, I need to take the Lawvere's course and read Matilde Marcolli &amp; Ryan Thorngren's paper \"Thermodynamic Semirings\". I just copied from the last paper what the dictionary could be.</p>",
+        "id": 578011892,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772978134
+    },
+    {
+        "content": "<p>In other words, I am in the process of developing that intuition, but I guess it will take a year.</p>",
+        "id": 578011926,
+        "sender_full_name": "Moby-Dick",
+        "timestamp": 1772978171
+    }
+]
