@@ -1,0 +1,266 @@
+[
+    {
+        "content": "<p>I read the thread <a href=\"#narrow/channel/229111-community.3A-general/topic/set.20theoretic.20and.20categorical.20foundations/with/541750240\">set theoretic and categorical foundations</a>, hoping to understand a bit more various aspects of foundations of mathematics. But now,  I am more confused than before.</p>\n<p>Is there a good reference that gives a historical account of the problem of foundations of mathematics? </p>\n<p>I am interested in knowing how this problem has been formulated, why set theory has this prominent role, and what the alternatives are (including reformulations of the problem). So, more about the genealogy of ideas than the actual mathematical content.</p>",
+        "id": 542017475,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1759146995
+    },
+    {
+        "content": "<p>Just as a start, are you familiar with all the material here, including the timeline of discoveries?</p>\n<ul>\n<li>Wikipedia, <a href=\"https://en.wikipedia.org/wiki/Foundations_of_mathematics\">Foundations of Mathematics</a>.</li>\n</ul>",
+        "id": 542048310,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759154373
+    },
+    {
+        "content": "<p>There's a slightly more advanced overview here:</p>\n<ul>\n<li>Stanford Encyclopedia of Philosophy, <a href=\"https://plato.stanford.edu/entries/philosophy-mathematics/\">Philosophy of Mathematics</a>.  </li>\n</ul>\n<p>All this is standard stuff that people interested in foundations of mathematics would expect others to know when discussing this subject.</p>",
+        "id": 542049728,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759154682
+    },
+    {
+        "content": "<p>Thank you John. I am remotely familiar with the content of the wikipedia page (but clearly not enough).</p>\n<p>My understanding, very briefly, is:</p>\n<ol start=\"0\">\n<li>Back in the days (before 19th), people were doing math kind of hand-wavy</li>\n<li>Then popped up a series of paradoxes and weird things (cantor sets, infinitesimals, non-euclidean geometries, and so on) that shook the general confidence in the \"solidity\" of mathematics</li>\n<li>Came up the idea of encoding all mathematics in one framework (ZFC being one candidate) with the hope that we could prove its consistency and completeness.</li>\n<li>But then Gödel broke all those hopes.</li>\n</ol>\n<p>I am not sure I understand what the \"problem of founding mathematics\" is about. At first, I thought it was the point 2: find a framework (e.g. ZFC), reduce all mathematics to it, and prove it is consistent and complete. But Gödel's theorems just show this is a dead end.</p>\n<p>A more relaxed formulation would be: find a framework (e.g. ZFC) and reduce all mathematics to it. But then ... why would we want to do that? And why ZFC specifically?</p>",
+        "id": 542070088,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1759159190
+    },
+    {
+        "content": "<p>another reason to reduce all math to a foundational formal system is to help mechanize proof checking using a computer.  proof assistants such as mizar use set theory, although type theory is popular too.</p>",
+        "id": 542073463,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1759160009
+    },
+    {
+        "content": "<p>Oh interesting, thank you. So a goal more modest than \"proving consistency and completeness\" is \"checking proofs are valid\", which in practice is already a big deal.</p>",
+        "id": 542078731,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1759161307
+    },
+    {
+        "content": "<p>I think there's a more at stake too from a philosophical perspective:</p>\n<ul>\n<li>ontology: what is the substance of the objects mathematics talks about?</li>\n<li>epistemology: can the content of mathematics be organised with respect to some starting point? Is there a common language of (mathematical) structures in which we can present our knowledge? and relating to proofs: What are the criteria for mathematical truth?</li>\n</ul>",
+        "id": 542080167,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1759161617
+    },
+    {
+        "content": "<p>I believe a very important touch stone was Cantor discovering that \"completed infinites\" seemed necessary to do mathematics.</p>\n<p>You could pretend actually completing a limit wasn't really possible, those are \"potential infinites\".</p>\n<p>But Cantor established the continuum was \"bigger than\" the natural numbers. so now you can't easily pretend infinite math doesn't exist anymore.</p>\n<p>If you do like this, or don't like this, how do you decide either way since we can only prove with a finite amount of stuff?</p>\n<p>A second aspect is geometry, as Euclid did it, was a sort of science of space. As understanding of space and mathematics improved, if Euclid's work was understood as a science, it was essentially falsified. However there seemed to be good reason to believe all of Euclid's work was still \"true\". In what sense is this possible? Defining this would establish the sense in which mathematics wasn't physics.</p>\n<p>Attempting to answer these, and other, questions leads to its own hornets nest of issues.</p>\n<p>I understand Sets to be important because, in addition to packaging in infinity, if you decide their axiom system is okay, along with a first order logic (<del>which I believe can prove its own consistency without set theory</del>) - it's surprisingly easy to build all the major structural math constructions. Building specialized applications with geometry is comparatively more difficult for example, we don't make databases with straight edges and compasses. The philosophical advantage of this, is we're at least as confident in everything else as we are in sets.</p>\n<p>One way to think about that previous thread was asking whether Set Theory is alone in this. A modern popular competitor \"Type Theory\" is still basically a sort of Set Theory (actually, it's a set theory which doesn't even need a logic slapped on). Are logicians collectively running off of the founders ideas, but there are other choices? Or if your goal is to prove all of math relative to one axiom system (so we're making a general purpose language, not a domain specific language), are Sets the only game in town?</p>\n<p>(As always I'm open to comments on my understanding of this stuff)</p>",
+        "id": 542081522,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1759161924
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"619003\">Peva Blanchard</span> <a href=\"#narrow/channel/232160-learning.3A-reading-.26-references/topic/About.20the.20foundations.20of.20mathematics/near/542070088\">said</a>:</p>\n<blockquote>\n<p>A more relaxed formulation would be: find a framework (e.g. ZFC) and reduce all mathematics to it. But then ... why would we want to do that?</p>\n</blockquote>\n<p>In order to increase our confidence that what we do is not contradictory.  As you said, people started being scared that we would end up deriving a contradiction using what seemed to be perfectly valid logical steps from perfectly valid axioms.  If you reduce all mathematics to some formal system S that you trust, then you feel safe.</p>\n<p>In this respect, Gödel's second incompleteness theorem only \"killed\" Hilbert's original goal, which was to reduce all of mathematics to an especially trust-worthy S, whose consistency would be self-evident (according to him).  Like I said in the other thread, today we happily trust systems that Hilbert would have never trusted, maybe because we've been using them for almost a century and got used to them.   Also, the fact that we can implement these systems on a computer probably makes us feel even safer, because it helps  reduce human error.</p>",
+        "id": 542083566,
+        "sender_full_name": "Damiano Mazza",
+        "timestamp": 1759162459
+    },
+    {
+        "content": "<p>It is important to stress, however (as I already did in the other thread), that even if Hilbert's program had worked, we still would not be completely safe from an unexpected contradiction.  This is because a proof of consistency of a system T using a system S is only as good as the trust you have in S: if S is inconsistent, then it can prove anything, including the consistency of T.  In particular, if a system proves its own consistency, it is basically proving nothing at all.  So, in the end, even in Hilbert's \"dream world\" we would have had to accept the consistency of his \"finitistic\" system (and, therefore, the consistency of mathematics) by faith.</p>",
+        "id": 542085746,
+        "sender_full_name": "Damiano Mazza",
+        "timestamp": 1759163030
+    },
+    {
+        "content": "<p>That's a point that I think isn't stressed enough: since an inconsistent theory proves anything, it also proves its own consistency, so even <em>a priori</em> a proof of consistency of a system in itself can't tell us that the system is consistent.  Godel's theorem only strengthens that to say that  a proof of consistency of a system in itself actually tells us the system is <em>inconsistent</em>.</p>",
+        "id": 542087762,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1759163507
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"281326\">Ryan Wisnesky</span> <a href=\"#narrow/channel/232160-learning.3A-reading-.26-references/topic/About.20the.20foundations.20of.20mathematics/near/542073463\">said</a>:</p>\n<blockquote>\n<p>proof assistants such as mizar use set theory</p>\n</blockquote>\n<p>Are you sure the plural is justified there?  Mizar is the only proof assistant I know of that uses set theory (and even it also has a type-theoretic layer on top, because bare set theory is so inappropriate for a proof assistant).</p>",
+        "id": 542087935,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1759163559
+    },
+    {
+        "content": "<p>Consistency-wise, I think this is the main point:</p>\n<p><span class=\"user-mention silent\" data-user-id=\"277352\">Alex Kreitzberg</span> <a href=\"#narrow/channel/232160-learning.3A-reading-.26-references/topic/About.20the.20foundations.20of.20mathematics/near/542081522\">said</a>:</p>\n<blockquote>\n<p>we're at least as confident in everything else as we are in sets.</p>\n</blockquote>\n<p>If the foundational theory is more \"self-evidently\" consistent, or we can at least develop an intuition for it that convinces us of its consistency, then anything we build on top of it is at least as consistent, without our having to go through a parallel process of convincing ourselves that we believe in its consistency.</p>",
+        "id": 542088423,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1759163684
+    },
+    {
+        "content": "<p>But another very important benefit of a foundational theory is interoperability.  If algebra and geometry are both defined in terms of sets, then a geometer can easily make use of algebra and vice versa.</p>",
+        "id": 542088614,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1759163731
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"619003\">Peva Blanchard</span> <a href=\"#narrow/channel/232160-learning.3A-reading-.26-references/topic/About.20the.20foundations.20of.20mathematics/near/542070088\">said</a>:</p>\n<blockquote>\n<p>A more relaxed formulation would be: find a framework (e.g. ZFC) and reduce all mathematics to it. But then ... why would we want to do that? And why ZFC specifically?</p>\n</blockquote>\n<p>The first question has been adequately answered, but in brief: by putting everything under one umbrella, we both increase the unity of mathematics (always a good thing) and reduce the chance of inconsistencies as compared with a patchwork approach where people keep making up new formalisms as they go.</p>\n<p>As for the second, it's important to study history, because ZFC was certainly not \"inevitable\"; it arose for some historically contingent reasons.   </p>\n<p>Alex pointed to a key step in the history:</p>\n<p><span class=\"user-mention silent\" data-user-id=\"277352\">Alex Kreitzberg</span> <a href=\"#narrow/channel/232160-learning.3A-reading-.26-references/topic/About.20the.20foundations.20of.20mathematics/near/542081522\">said</a>:</p>\n<blockquote>\n<p>I believe a very important touch stone was Cantor discovering that \"completed infinites\" seemed necessary to do mathematics.</p>\n<p>You could pretend actually completing a limit wasn't really possible, those are \"potential infinites\".</p>\n<p>But Cantor established the continuum was \"bigger than\" the natural numbers. so now you can't easily pretend infinite math doesn't exist anymore.</p>\n</blockquote>\n<p>Cantor delved into the theory of infinite sets, showing some were bigger than others, and discovering many marvelous things about them, some very useful.  But his work also led to <em>contradictions</em> like the <a href=\"https://en.wikipedia.org/wiki/Burali-Forti_paradox\">Burali-Forti paradox</a>:</p>\n<blockquote>\n<p>In <a href=\"https://en.wikipedia.org/wiki/Set_theory\">set theory</a>, a field of <a href=\"https://en.wikipedia.org/wiki/Mathematics\">mathematics</a>, the <strong>Burali-Forti paradox</strong> demonstrates that constructing \"the set of all <a href=\"https://en.wikipedia.org/wiki/Ordinal_number\">ordinal numbers</a>\" leads to a contradiction and therefore shows an <a href=\"https://en.wikipedia.org/wiki/Antinomy\">antinomy</a> in a system that allows its construction. It is named after <a href=\"https://en.wikipedia.org/wiki/Cesare_Burali-Forti\">Cesare Burali-Forti</a>, who, in 1897, published a paper proving a theorem which, unknown to him, contradicted a previously proved result by <a href=\"https://en.wikipedia.org/wiki/Georg_Cantor\">Georg Cantor</a>. <a href=\"https://en.wikipedia.org/wiki/Bertrand_Russell\">Bertrand Russell</a> subsequently noticed the contradiction, and when he published it in his 1903 book <em><a href=\"https://en.wikipedia.org/wiki/Principles_of_Mathematics\">Principles of Mathematics</a></em>, he stated that it had been suggested to him by Burali-Forti's paper, with the result that it came to be known by Burali-Forti's name.</p>\n</blockquote>\n<p>Frege's approach to set theory was also inconsistent: the problem was noticed by Russell and is thus called <a href=\"https://en.wikipedia.org/wiki/Russell%27s_paradox\">Russell's paradox</a>:</p>\n<blockquote>\n<p>Russell discovered the paradox in May or June 1901. By his own account in his 1919 <em>Introduction to Mathematical Philosophy</em>, he \"attempted to discover some flaw in Cantor's proof that there is no greatest cardinal\".  In a 1902 letter, he announced the discovery to Gottlob Frege of the paradox in Frege's 1879 <em><a href=\"https://en.wikipedia.org/wiki/Begriffsschrift\">Begriffsschrift</a></em> and framed the problem in terms of both logic and set theory, and in particular in terms of Frege's definition of <a href=\"https://en.wikipedia.org/wiki/Function_(mathematics)\">function</a>.</p>\n</blockquote>\n<blockquote>\n<p>Russell wrote to Frege about the paradox just as Frege was preparing the second volume of his <em>Grundgesetze der Arithmetik</em>.  Frege responded to Russell very quickly; his letter dated 22 June 1902 appeared, with van Heijenoort's commentary in Heijenoort 1967:126–127. Frege then wrote an appendix admitting to the paradox, and proposed a solution that Russell would endorse in his <em>Principles of Mathematics</em>, but was later considered by some to be unsatisfactory....</p>\n</blockquote>",
+        "id": 542097793,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759166493
+    },
+    {
+        "content": "<p>Russell wrote an enormous 3-volume book with Whitehead trying to lay out a system that dodged these paradoxes: the <em><a href=\"https://en.wikipedia.org/wiki/Principia_Mathematica\">Principia Mathematica</a></em>, with the 3 volumes coming out in 1910, 1912 and 1913.</p>\n<blockquote>\n<p><em>PM</em>, according to its introduction, had three aims: (1) to analyse to the greatest possible extent the ideas and methods of mathematical logic and to minimise the number of <a href=\"https://en.wikipedia.org/wiki/Primitive_notion\">primitive notions</a>, <a href=\"https://en.wikipedia.org/wiki/Axiom\">axioms</a>, and <a href=\"https://en.wikipedia.org/wiki/Inference_rule\">inference rules</a>; (2) to precisely express mathematical propositions in <a href=\"https://en.wikipedia.org/wiki/Mathematical_logic\">symbolic logic</a> using the most convenient notation that precise expression allows; (3) to solve the paradoxes that plagued logic and <a href=\"https://en.wikipedia.org/wiki/Set_theory\">set theory</a> at the turn of the 20th century, like <a href=\"https://en.wikipedia.org/wiki/Russell%27s_paradox\">Russell's paradox</a>.<a href=\"https://en.wikipedia.org/wiki/Principia_Mathematica#cite_note-3\">[3]</a></p>\n</blockquote>\n<blockquote>\n<p>This third aim motivated the adoption of the theory of <a href=\"https://en.wikipedia.org/wiki/System_of_types\">types</a> in <em>PM</em>. The theory of types adopts grammatical restrictions on formulas that rule out the unrestricted comprehension of classes, properties, and functions. The effect of this is that formulas such as would allow the comprehension of objects like the Russell set turn out to be ill-formed: they violate the grammatical restrictions of the system of <em>PM</em>.</p>\n</blockquote>\n<p>But the type theory introduced in <em>Principia Mathematica</em> (somewhat different from what people now call type theory) was very burdensome.</p>\n<p>Further developments and problems led to <a href=\"https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory\">ZFC</a>... rather slowly, and not without difficulties:</p>\n<blockquote>\n<p>In 1908, <a href=\"https://en.wikipedia.org/wiki/Ernst_Zermelo\">Ernst Zermelo</a> proposed the first <a href=\"https://en.wikipedia.org/wiki/Axiomatic_set_theory\">axiomatic set theory</a>, <a href=\"https://en.wikipedia.org/wiki/Zermelo_set_theory\">Zermelo set theory</a>. However, as first pointed out by <a href=\"https://en.wikipedia.org/wiki/Abraham_Fraenkel\">Abraham Fraenkel</a> in a 1921 letter to Zermelo, this theory was incapable of proving the existence of certain sets and <a href=\"https://en.wikipedia.org/wiki/Cardinal_number\">cardinal numbers</a> whose existence was taken for granted by most set theorists of the time, notably the cardinal number aleph-omega and the set {Z, P(Z), P(P(Z)), P(P(P(Z))) , . . . }, where Z is any infinite set and P is the <a href=\"https://en.wikipedia.org/wiki/Power_set\">power set</a> operation.</p>\n</blockquote>\n<blockquote>\n<p>Moreover, one of Zermelo's axioms invoked a concept, that of a \"definite\" property, whose operational meaning was not clear. In 1922, Fraenkel and <a href=\"https://en.wikipedia.org/wiki/Thoralf_Skolem\">Thoralf Skolem</a> independently proposed operationalizing a \"definite\" property as one that could be formulated as a well-formed formula in a <a href=\"https://en.wikipedia.org/wiki/First-order_logic\">first-order logic</a> whose <a href=\"https://en.wikipedia.org/wiki/Atomic_formula\">atomic formulas</a> were limited to set membership and identity. They also independently proposed replacing the <a href=\"https://en.wikipedia.org/wiki/Axiom_schema_of_specification\">axiom schema of specification</a> with the <a href=\"https://en.wikipedia.org/wiki/Axiom_schema_of_replacement\">axiom schema of replacement</a>. Appending this schema, as well as the <a href=\"https://en.wikipedia.org/wiki/Axiom_of_regularity\">axiom of regularity</a> (first proposed by <a href=\"https://en.wikipedia.org/wiki/John_von_Neumann\">John von Neumann</a>), to Zermelo set theory yields the theory ZFC.</p>\n</blockquote>",
+        "id": 542100017,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759167134
+    },
+    {
+        "content": "<p>(This passage doesn't make it clear where the axiom of choice, the \"C\" in ZFC, came in.)</p>",
+        "id": 542101132,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759167476
+    },
+    {
+        "content": "<p>mike: I'm only familiar with Mizar and metamath as set-theory based proof assistants (and even metamath is agnostic; it's the largest library for metamath that uses set theory)</p>",
+        "id": 542133129,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1759177458
+    },
+    {
+        "content": "<p>Concerning Set-theory based proof assistants, there are also Isabelle/ZF and PVS. I seem to remember that there was also another one being developed recently at ETH Zurich but I don't remember the name of the project or their authors.</p>",
+        "id": 542136535,
+        "sender_full_name": "Kenji Maillard",
+        "timestamp": 1759178712
+    },
+    {
+        "content": "<p>Ok, I suppose I should include metamath and Isabelle/ZF although the set theory isn't built into the ground system.  I don't know anything about PVS but a brief persual of it looks type-theoretic rather than set-theoretic?</p>",
+        "id": 542143387,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1759181331
+    },
+    {
+        "content": "<p>Also, ZFC wasn't dominant, in my understanding, until around the time of Cohen's proof that not AC and not CH are relatively consistent with ZF and ZFC resp. before then you had the class-set theories NBG (used by Gödel for the relative consistency of CGH and AC with ZF) and MK as contenders.</p>",
+        "id": 542176610,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1759202833
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"276777\">@Mike Shulman</span> yes, I was going to say Metamath, though really just the subset of that based on zfc <a href=\"https://us.metamath.org/mpeuni/mmset.html#zfcaxioms\">https://us.metamath.org/mpeuni/mmset.html#zfcaxioms</a></p>",
+        "id": 542176795,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1759203021
+    },
+    {
+        "content": "<p>Thank you all for your answers. </p>\n<p>So let me try to summarize. The problem of founding mathematics consists in reducing mathematics to a specific framework. We can broadly separate the motivations in:</p>\n<ol>\n<li>\n<p><em>logical</em>. We want to avoid inconsistencies crawling up everywhere. We cannot hope to absolutely prevent any inconsistency, but we can at least reduce the perceived risk. Strategies to reduce this risk include, on the pragmatic side, proof-checking but also designing the founding framework to be as self-evident as possible, or convincing oneself that this framework is self-evident. I guess this self-evidency also relates to the philosophical aspect.</p>\n</li>\n<li>\n<p><em>philosophical</em>. The specific framework chosen to found math upon comes with an ontological commitment (what mathematical entities are) and epistemological organization (e.g. what and how we can know, or unifying mathematical knowledge).</p>\n</li>\n</ol>\n<p>The fact that Set theory specifically, in the form of ZFC (which, I learn now, was not as dominant as I thought), has played, and is still playing (I guess), the role of this founding framework is a combination of mathematical reasons, but also contingent historical conditions.</p>",
+        "id": 542197348,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1759216031
+    },
+    {
+        "content": "<p>I think Penelope Maddy's work describing the differing purposes of foundations should be mentioned. <a href=\"https://sites.socsci.uci.edu/~pjmaddy/bio/STF%20printed%20version.pdf\">https://sites.socsci.uci.edu/~pjmaddy/bio/STF%20printed%20version.pdf</a></p>\n<p>It should be noted that her arguments against structural foundations may not be the best, nor aimed at even then-current ideas (eg CCAF, which is really not taken as a  foundation by anyone). She even takes shots at the material multiverse view, which feels like a kind of set-theorist (mild) civil war</p>",
+        "id": 542200133,
+        "sender_full_name": "David Michael Roberts",
+        "timestamp": 1759216941
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276422\">David Michael Roberts</span> <a href=\"#narrow/channel/232160-learning.3A-reading-.26-references/topic/About.20the.20foundations.20of.20mathematics/near/542200133\">said</a>:</p>\n<blockquote>\n<p>I think Penelope Maddy's work describing the differing purposes of foundations should be mentioned. <a href=\"https://sites.socsci.uci.edu/~pjmaddy/bio/STF%20printed%20version.pdf\">https://sites.socsci.uci.edu/~pjmaddy/bio/STF%20printed%20version.pdf</a></p>\n</blockquote>\n<p>Thank you! I just started reading, but she pins exactly the question that troubles me (and which has been partially answered above)</p>\n<blockquote>\n<p>The question for us is: what's the point of this exercise? What 'goal', properly thought as 'foundational', is served by this 'embedding'?</p>\n</blockquote>",
+        "id": 542255742,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1759233599
+    },
+    {
+        "content": "<p>You omitted the \"practical\" motivation of interoperability.</p>",
+        "id": 542314794,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1759248102
+    },
+    {
+        "content": "<p>I spent a bit of time reading <a href=\"https://sites.socsci.uci.edu/~pjmaddy/bio/STF%20printed%20version.pdf\">Maddy's paper</a>, and she provides nice names for the various aspects we usually expect from a \"foundational framework\".</p>\n<ul>\n<li><strong>Meta-mathematical corral</strong>: by reducing mathematics to a single framework, we can formulate propositions about all mathematics in this specific framework.</li>\n<li><strong>Elucidation</strong>: It is the ability to replace an imprecise notion with a precise one, e.g. \"the real line\" and Dedekind cuts.</li>\n<li><strong>Risk assessment</strong>: by Gödel's theorems, if we are consistent, we cannot hope to prove consistency once and for all. But the foundational framework can provide a \"consistency scale\" (she mentions ZFC + large cardinal axioms) against which one can assess a specific theory.</li>\n<li><strong>Shared standard</strong>: proofs formalized in the foundational framework (she mentions the universe hierarchy V (?)) are considered to form the standard way of doing proofs.</li>\n<li><strong>Generous arena</strong>: being able to encode any theory allows various theories to import and export results from and to each other.</li>\n</ul>",
+        "id": 543070768,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1759566878
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/232160-learning.3A-reading-.26-references/topic/About.20the.20foundations.20of.20mathematics/near/542314794\">said</a>:</p>\n<blockquote>\n<p>You omitted the \"practical\" motivation of interoperability.</p>\n</blockquote>\n<p>I guess \"interoperability\" falls under <strong>Generous arena</strong>, and possibly <strong>Shared standard</strong>.</p>",
+        "id": 543070809,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1759566919
+    },
+    {
+        "content": "<p>She also mentions three more problematic aspects</p>\n<ul>\n<li><strong>Metaphysical insight</strong>: the objects of the foundational framework form the \"true ontology\". However, the fact that natural numbers can be encoded in multiple manners in Set theory is one witness of the fact that Set theory fails in this regard.</li>\n<li><strong>Epistemic source</strong>: knowing a mathematical fact is reduced to knowing a fact in the foundational framework. However, she argues that epistemological order is different than logical order (cf, e.g., Pythagoras theorems)</li>\n<li><strong>Essential guidance</strong>: the foundational framework, via its methods and language, should guide mathematicians in exploring their domains. This aspect has been put forward by Mac Lane in defense of category theory. But she argues that it would be surprising that a single framework (be it Set theory, ot Category theory) could fill in this role alone.</li>\n</ul>",
+        "id": 543070820,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1759566934
+    },
+    {
+        "content": "<p>All this is very nice.  I think that the \"risk assessment\" feature of ZFC has worked so well that few people worry in practice about inconsistencies showing up in ZFC.  But as you add axioms imposing the existences of larger and larger cardinals, you eventually hit the <a href=\"https://en.wikipedia.org/wiki/Reinhardt_cardinal\">Reinhardt cardinals</a> which have been proved <em>in</em>consistent with ZFC (though not (yet) with ZF).   So there's a range going from \"very likely to be fine\" to \"not good at all\".   But very <em>very</em> few mathematicians make use of the upper end of this range: it's really only a few professional set theorists, who enjoy exploring the boundaries.</p>",
+        "id": 543087313,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759584125
+    },
+    {
+        "content": "<p>There's also <a href=\"https://en.wikipedia.org/wiki/Ordinal_analysis#Examples\">a lot of interesting axioms for mathematics</a> that are <em>weaker</em> than ZFC, and thus <em>more</em> likely to be consistent.  Their strength is often measured by countable ordinals in the field of <a href=\"https://en.wikipedia.org/wiki/Ordinal_analysis\">ordinal analysis</a>.</p>",
+        "id": 543087465,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759584304
+    },
+    {
+        "content": "<p>Arguably, very very few mathematicians even make use of the full strength of ZFC.</p>",
+        "id": 543096961,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1759592488
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"619003\">Peva Blanchard</span> <a href=\"#narrow/channel/232160-learning.3A-reading-.26-references/topic/About.20the.20foundations.20of.20mathematics/near/543070768\">said</a>:</p>\n<blockquote>\n<ul>\n<li><strong>Elucidation</strong>: It is the ability to replace an imprecise notion with a precise one, e.g. \"the real line\" and Dedekind cuts.</li>\n</ul>\n</blockquote>\n<p>I think it's worth mentioning that while a foundational framework can be used for this purpose, it's not the <em>only</em> way to replace an imprecise notion with a precise one.  Domain-specific axiomatic theories can do just as well.  For instance, we can make informal notions of plane geometry precise by encoding points as ordered pairs of real numbers, but we can make them equally precise by working with a formal axiomatic system for geometry such as Hilbert's refinement of Euclid's axioms.  These two approaches, sometimes called \"analytic\" and \"synthetic\", each have strengths and complement each other, but neither is more precise than the other in principle.</p>",
+        "id": 543097291,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1759592776
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"276777\">Mike Shulman</span> <a href=\"#narrow/channel/232160-learning.3A-reading-.26-references/topic/About.20the.20foundations.20of.20mathematics/near/543097291\">said</a>:</p>\n<blockquote>\n<p>I think it's worth mentioning that while a foundational framework can be used for this purpose, it's not the <em>only</em> way to replace an imprecise notion with a precise one.  Domain-specific axiomatic theories can do just as well.</p>\n</blockquote>\n<p>In her paper, the presentation of the various aspects is intertwined with references to Set theory. This makes, e.g., \"Elucidation\" look like an aspect of Set theory specifically. But I guess we can understand each aspect as an expected trait of any kind of \"foundational work\".</p>\n<p>I guess we could say that building a domain-specific axiomatic theory is also \"partly a foundational work\". Because, for instance, it sometimes helps replacing imprecise notions with precise ones, i.e. this work shares the Elucidation trait.</p>\n<p>However, building a domain-specific axiomatic theory does not share the other traits (e.g. meta-mathematical corral, and generous arena). So this work is less \"foundational\" than Set theory.</p>",
+        "id": 543119376,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1759615324
+    },
+    {
+        "content": "<p>A good test of Maddy's perspective would be to check which aspects Type Theory share. (But I would need to learn more about type theory)</p>",
+        "id": 543119497,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1759615439
+    },
+    {
+        "content": "<p>All of them.</p>",
+        "id": 543120224,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1759616409
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"619003\">Peva Blanchard</span> <a href=\"#narrow/channel/232160-learning.3A-reading-.26-references/topic/About.20the.20foundations.20of.20mathematics/near/543070820\">said</a>:</p>\n<blockquote>\n<p>She also mentions three more problematic aspects</p>\n<ul>\n<li><strong>Metaphysical insight</strong>: the objects of the foundational framework form the \"true ontology\". However, the fact that natural numbers can be encoded in multiple manners in Set theory is one witness of the fact that Set theory fails in this regard.</li>\n</ul>\n</blockquote>\n<p>I wonder if you're paraphrasing Maddy well here. Perhaps she says something more like \"one point you could use to try to argue that set theory fails in this regard.\" </p>\n<p>But the fact that a theory that makes no promise that there will be an ontologically unique collection called \"the natural numbers\" does not then produce one is no more an argument that the theory has failed to produce genuine metaphysical insight than the fact that metaphysical materialism fails to explain what substance fairies are made of is an argument against that theory. </p>\n<p>You might argue that type theory is giving <em>better</em> metaphysical insight if you have a pre-existing conviction that there <em>ought</em> to be \"one true natural numbers\" and you consider that type theory accomplishes this, but that's quite a different claim.</p>",
+        "id": 543403665,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1759782865
+    },
+    {
+        "content": "<p>Mmh, you're right, I distorted her exact sayings. </p>\n<p>Here is the exact quote</p>\n<blockquote>\n<p>The other purported foundational role for set theory that seems to me spurious<br>\nis what might be called the Metaphysical Insight. The thought here is that the<br>\nset-theoretic reduction of a given mathematical object to a given set actually reveals<br>\nthe true metaphysical identity that object enjoyed all along. Benacerraf famously<br>\nargued that this can’t be right, because, for example, Zermelo took the natural num-<br>\nbers to be ∅, {∅}, {{∅}}, . . . , von Neumann took them to be ∅, {∅}, {∅, {∅}}, . . . , and<br>\nthere’s no principled reason to choose one over the other.</p>\n</blockquote>\n<p>She concludes the section as follows.</p>\n<blockquote>\n<p>For our purposes, the simple point is these set-theoretic reductions don’t give any sort of deep metaphysical information about the nature of the line or of ordered pairs or of natural numbers, nor are they<br>\nso intended.</p>\n</blockquote>\n<p>I guess this shows that Maddy agrees with your point.</p>",
+        "id": 543409918,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1759785586
+    },
+    {
+        "content": "<p>By the way, she mentions an interesting distinction: defining a mathematical concept is not identifying a mathematical object. She cites Moschovakis [1]</p>\n<blockquote>\n<p>A typical example of the method we will adopt is the ‘identifica-<br>\ntion’ of [the geometric line] with the set . . . of real numbers. . . .<br>\nWhat is the precise meaning of this ‘identification’ ? Certainly<br>\nnot that points are real numbers. . . . What we mean by the ‘iden-<br>\ntification’ of [the line] with [the reals] is that the correspondence<br>\n. . . gives a faithful representation . . . which allows us to give<br>\narithmetic definitions for all the useful geometric notions and to<br>\nstudy the mathematical properties of [the line] as if points were<br>\nreal numbers. . . . In the same way, we will discover within the<br>\nuniverse of sets faithful representations of all the mathematical<br>\nobjects we need, and we will study set theory . . . as if all<br>\nmathematical objects were sets.</p>\n</blockquote>\n<p>[1] Yiannis N. Moschovakis, Notes on set theory, Undergraduate Texts<br>\nin Mathematics, Springer-Verlag, New York, 1994. MR1260432</p>",
+        "id": 543411370,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1759786107
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/channel/232160-learning.3A-reading-.26-references/topic/About.20the.20foundations.20of.20mathematics/near/543403665\">said</a>:</p>\n<blockquote>\n<p>You might argue that type theory is giving <em>better</em> metaphysical insight if you have a pre-existing conviction that there <em>ought</em> to be \"one true natural numbers\" and you consider that type theory accomplishes this, but that's quite a different claim.</p>\n</blockquote>\n<p>I have a very remote understanding of type theory, so I cannot say much about its metaphysical insight. </p>\n<p>But here is my current understanding. If a foundational framework can only have, at best, faithful representations of mathematical objects, then, I guess, the only sensible we can do within the framework is relate all those faithful representations with one another. So that we can work with the most convenient representation, and yet be assured that all results would transport to any other representation. In that case, I would say the foundational framework provides a metaphysical insight.</p>",
+        "id": 543413544,
+        "sender_full_name": "Peva Blanchard",
+        "timestamp": 1759787240
+    },
+    {
+        "content": "<p>When I saw the \"gives a faithful representation\" point, it reminded of the term \"faithful functor\" which to me resonated with her use of the terminology. This made me curious about the etymology of the definition.</p>",
+        "id": 543413559,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1759787248
+    },
+    {
+        "content": "<p>\"Faithful functor\" is named after \"faithful representation\", as of a group, which is a kind of injective homomorphism; a \"faithful representation\" in non-technical language is a representation that includes all the information about the representandum, which is generally something very much like an injective map into the representans.</p>",
+        "id": 543590401,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1759859142
+    },
+    {
+        "content": "<p>I imagine Alex's shocked face comes from seeing the words \"representandum\" and \"representans\" called \"non-technical language\".</p>",
+        "id": 543700319,
+        "sender_full_name": "John Baez",
+        "timestamp": 1759915807
+    },
+    {
+        "content": "<p>I was impressed with that way of saying \"represented\" and \"representing\" <span aria-label=\"rolling on the floor laughing\" class=\"emoji emoji-1f923\" role=\"img\" title=\"rolling on the floor laughing\">:rolling_on_the_floor_laughing:</span>, but I meant it as an \"ooooooh\" face. Because now I could imagine \"faithful groupoid representations\" carrying the word \"faithful\" to all functors.</p>",
+        "id": 543775217,
+        "sender_full_name": "Alex Kreitzberg",
+        "timestamp": 1759936619
+    }
+]

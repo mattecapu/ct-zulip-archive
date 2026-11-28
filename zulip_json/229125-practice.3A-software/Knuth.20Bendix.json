@@ -1,0 +1,26 @@
+[
+    {
+        "content": "<p>Hi all,<br>\nI have a personal software project I've been working on for some time. One component is an implementation of Knuth Bendix for finitely presented categories. I'm starting to see results that, to me are good. But <em>huge grain of salt</em> I am no expert in term rewriting.<br>\nI'm curious if people here know of some good benchmarks / interesting completion problems I might try. Some recent results. I brought the wall time for Brauer monoid on 12 points down from over 4hrs to just under 3hrs. That's a confluent system with 8,341,198 rules and 316,234,143,224 non-identity elements. <br>\nBig normal form counts are handled as well. For example, the truncated simplex category Δ(55) completes in ~26 seconds with 115499 rules and the exact expected ~7.7×10^17 normal forms.<br>\nThese laptop calculations using a recursive ordering, but I can also run wtlex. </p>\n<p>I know performance is hard to gauge. The point is more...my laptop doesn't explode when I ask it to do tasks like the above that require handling 10s-100's of millions of critical pairs. Anyway, happy to chat with folks</p>",
+        "id": 611171769,
+        "sender_full_name": "Tyler Bryson",
+        "timestamp": 1784238915
+    },
+    {
+        "content": "<p>there are problem sets available at <a href=\"https://www.tptp.org\">https://www.tptp.org</a> , look for the \"UEQ\" / unit equality problems.  E and Vampire are the systems to beat performance-wise, and they go beyond equational logic.  For CQL, we like the 1980s algorithm because it is complete, more so than it being fast.</p>",
+        "id": 611173730,
+        "sender_full_name": "Ryan Wisnesky",
+        "timestamp": 1784239910
+    },
+    {
+        "content": "<p>I have an (outdated, likely bit-rotted) implementation of Knuth-Bendix <a href=\"https://github.com/HarrisonGrodin/Completion.jl\">here</a> - in case you're interested, there are <a href=\"https://github.com/HarrisonGrodin/Completion.jl/blob/master/test/complete.jl\">a few test cases included</a>, the most substantial of which is the axioms for a group.</p>",
+        "id": 611194510,
+        "sender_full_name": "Harrison Grodin",
+        "timestamp": 1784253064
+    },
+    {
+        "content": "<p>(Fwiw, this implementation only handles trees, not categories more generally; and it's hilariously inefficient and slow!)</p>",
+        "id": 611194632,
+        "sender_full_name": "Harrison Grodin",
+        "timestamp": 1784253160
+    }
+]

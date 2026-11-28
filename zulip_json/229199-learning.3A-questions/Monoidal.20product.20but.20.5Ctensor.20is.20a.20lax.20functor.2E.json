@@ -1,0 +1,62 @@
+[
+    {
+        "content": "<p>Has anyone run into something that looked like a monoidal product but \\tensor: C \\times C \\to C is a lax functor? </p>\n<p>I'm playing around with the weak distributive law between the powerset monad and the distribution monad and the category you get by combining P,D and looking at the kleisli category (because the distributive law is weak PD isn't  exactly a monad). </p>\n<p>The thing which I think should be the monoidal product is a lax functor - it restricts to the normal monoidal product if you just look at the kleisli category of D. has this type of monoidal product been studied anywhere? Because I've got the powerset monad floating around at lot of things act like relations, does this imply there might be some sort of double category explanation - I'm not very familiar with this stuff. </p>\n<p>Cheers!</p>",
+        "id": 586400357,
+        "sender_full_name": "Will Jump",
+        "timestamp": 1776635951
+    },
+    {
+        "content": "<p>By \"lax functor\" do you mean something like a 2-functor between 2-categories or bicategories but where composition of 1-morphisms is only laxly preserved?   (I don't know what a lax functor between ordinary categories would be.)</p>",
+        "id": 586400526,
+        "sender_full_name": "John Baez",
+        "timestamp": 1776636117
+    },
+    {
+        "content": "<p>Ah sorry, I mean that C is enriched in posets and then <br>\n<span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\">(</mo><mi>f</mi><mo>∘</mo><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">)</mo><mo>⊗</mo><mo stretchy=\"false\">(</mo><mi>g</mi><mo>∘</mo><msup><mi>g</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">)</mo><mo>≤</mo><mo stretchy=\"false\">(</mo><mi>f</mi><mo>⊗</mo><mi>g</mi><mo stretchy=\"false\">)</mo><mo>∘</mo><mo stretchy=\"false\">(</mo><msup><mi>f</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo>⊗</mo><msup><mi>g</mi><mo mathvariant=\"normal\" lspace=\"0em\" rspace=\"0em\">′</mo></msup><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">(f \\circ f&#x27;) \\otimes (g \\circ g&#x27;) \\leq (f \\otimes g) \\circ (f&#x27; \\otimes g&#x27;)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0019em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0019em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mclose\">)</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">∘</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0019em;vertical-align:-0.25em;\"></span><span class=\"mopen\">(</span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.10764em;\">f</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span><span class=\"mbin\">⊗</span><span class=\"mspace\" style=\"margin-right:0.2222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:1.0019em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.7519em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\"><span class=\"mord mtight\">′</span></span></span></span></span></span></span></span></span><span class=\"mclose\">)</span></span></span></span><br>\nin the homset ordering.</p>",
+        "id": 586401165,
+        "sender_full_name": "Will Jump",
+        "timestamp": 1776636746
+    },
+    {
+        "content": "<p>Okay, that makes sense.   A category enriched in posets is a nice example of a 2-category, so my guess was actually right, but we don't need to talk about 2-categories here.</p>",
+        "id": 586401481,
+        "sender_full_name": "John Baez",
+        "timestamp": 1776637146
+    },
+    {
+        "content": "<p>Check out <a href=\"https://ncatlab.org/nlab/show/duoidal%20category\">[[duoidal category]]</a>.</p>",
+        "id": 587677347,
+        "sender_full_name": "Spencer Breiner",
+        "timestamp": 1776663207
+    },
+    {
+        "content": "<p>These are studied in Gambino–Garner–Vasilakopoulou's <a href=\"https://arxiv.org/abs/2206.06858\">Monoidal Kleisli Bicategories and the Arithmetic Product of Coloured Symmetric Sequences</a> under the name \"oplax monoidal bicategory\" (which generalises the notion of duoidal category). However, I would say that this is not ideal terminology, because it conflicts with the terminology <a href=\"https://ncatlab.org/nlab/show/lax+monoidal+category\">oplax monoidal category</a>. A better name would be something like \"oplaxly functorial monoidal bicategory\".</p>",
+        "id": 587682425,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1776665796
+    },
+    {
+        "content": "<p>Ah that paper looks great! time to learn some definitions...</p>",
+        "id": 587763996,
+        "sender_full_name": "Will Jump",
+        "timestamp": 1776691124
+    },
+    {
+        "content": "<p>There is also the paper <a href=\"https://dl.acm.org/doi/10.1145/3678232.3678249\">Concurrent monads for shared state</a> which defines concurrent monads on ordered monoidal categories, which are the ones you describe. I'm finishing my master's thesis which deals with these where I look at ordered monoidal categories as objects of a 2-category with nice internal monads...</p>",
+        "id": 588598130,
+        "sender_full_name": "Bjarki Gunnarsson",
+        "timestamp": 1776771051
+    },
+    {
+        "content": "<p>Oh cool! I've wanted to learn something about concurrency for a while</p>",
+        "id": 588609663,
+        "sender_full_name": "Will Jump",
+        "timestamp": 1776774382
+    },
+    {
+        "content": "<p>I've read the paper you suggested and <a href=\"https://inria.hal.science/hal-02150199/document\">monads with merging</a> exactly what I needed - thanks!  Looking forward to reading your thesis!</p>",
+        "id": 588731856,
+        "sender_full_name": "Will Jump",
+        "timestamp": 1776809374
+    }
+]

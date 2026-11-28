@@ -1,0 +1,68 @@
+[
+    {
+        "content": "<p>What's a good reference for the classification of finite-dimensional algebraic representations of the algebraic group <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">G</mi><mi mathvariant=\"normal\">L</mi></mrow><mo stretchy=\"false\">(</mo><mi>n</mi><mo separator=\"true\">,</mo><mi>k</mi><mo stretchy=\"false\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\mathrm{GL}(n,k)</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">GL</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\">n</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right:0.1667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mclose\">)</span></span></span></span> when <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi></mrow><annotation encoding=\"application/x-tex\">k</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span></span></span></span> is an arbitrary field of characteristic zero?   For <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>=</mo><mi mathvariant=\"double-struck\">C</mi></mrow><annotation encoding=\"application/x-tex\">k = \\mathbb{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">C</span></span></span></span>, Fulton does it using Young diagrams in Chapter 8 of his book <em>Young Tableaux</em>.   Other treatments for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>=</mo><mi mathvariant=\"double-struck\">C</mi></mrow><annotation encoding=\"application/x-tex\">k = \\mathbb{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">C</span></span></span></span> are easily found online, e.g. this blog article:</p>\n<ul>\n<li>David Speyer, <a href=\"https://sbseminar.wordpress.com/2008/07/08/how-to-write-down-the-representations-of-gl_n/\">How to write down the representations of GL(n)</a>.</li>\n</ul>\n<p>But I want a citable, and I hope easily understood, reference that does it for any field of characteristic zero!</p>",
+        "id": 423736116,
+        "sender_full_name": "John Baez",
+        "timestamp": 1709088166
+    },
+    {
+        "content": "<p>i don't know if it's actually in there or not, but after spending some years working with representation theorists i have learnt that the answer to \"what is a good reference for ...\" is invariably \"bourbaki\" — have you looked there?</p>",
+        "id": 423908853,
+        "sender_full_name": "Tim Hosgood",
+        "timestamp": 1709156880
+    },
+    {
+        "content": "<p>if you're happy with polynomial representations then Chapter I, Appendix A, Section 8 of Macdonald's book <em><a href=\"https://math.berkeley.edu/~corteel/MATH249/macdonald.pdf\">Symmetric Functions and Hall Polynomials</a></em> does this (though apparently it's all also found in Schur's 1927 paper)</p>",
+        "id": 423909986,
+        "sender_full_name": "Tim Hosgood",
+        "timestamp": 1709157380
+    },
+    {
+        "content": "<p>(I'm guessing that \"algebraic\" might mean \"polynomial\" to you here, but it's essentially as randomly used a word as \"geometric\", so maybe not!)</p>",
+        "id": 423910826,
+        "sender_full_name": "Tim Hosgood",
+        "timestamp": 1709157716
+    },
+    {
+        "content": "<p>Thanks, I'll check those out!</p>\n<p>Like Speyer I say the 1d representation of GL(n,k) sending any matrix in GL(n,k) to the inverse of its determinant is algebraic but not polynomial, because this function from GL(n,k) is not a polynomial in the matrix entries, but it is a morphism of algebraic varieties.</p>",
+        "id": 423939373,
+        "sender_full_name": "John Baez",
+        "timestamp": 1709173728
+    },
+    {
+        "content": "<p>Every irreducible algebraic representation of GL(n,k) is the tensor product of an irreducible polynomial representation and a representation of the form <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">d</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">t</mi></mrow><mo stretchy=\"false\">(</mo><mi>g</mi><msup><mo stretchy=\"false\">)</mo><mi>n</mi></msup></mrow><annotation encoding=\"application/x-tex\">\\mathrm{det}(g)^n</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:1em;vertical-align:-0.25em;\"></span><span class=\"mord\"><span class=\"mord mathrm\">det</span></span><span class=\"mopen\">(</span><span class=\"mord mathnormal\" style=\"margin-right:0.03588em;\">g</span><span class=\"mclose\"><span class=\"mclose\">)</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height:0.6644em;\"><span style=\"top:-3.063em;margin-right:0.05em;\"><span class=\"pstrut\" style=\"height:2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mathnormal mtight\">n</span></span></span></span></span></span></span></span></span></span></span> for <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>∈</mo><mi mathvariant=\"double-struck\">Z</mi></mrow><annotation encoding=\"application/x-tex\">n \\in\\mathbb{Z}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.5782em;vertical-align:-0.0391em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">∈</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">Z</span></span></span></span>... at least when <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>=</mo><mi mathvariant=\"double-struck\">C</mi></mrow><annotation encoding=\"application/x-tex\">k = \\mathbb{C}</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.6944em;\"></span><span class=\"mord mathnormal\" style=\"margin-right:0.03148em;\">k</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right:0.2778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height:0.6889em;\"></span><span class=\"mord mathbb\">C</span></span></span></span>.</p>",
+        "id": 423939759,
+        "sender_full_name": "John Baez",
+        "timestamp": 1709174036
+    },
+    {
+        "content": "<p>But this is one of the things I want to see someone tackle for any field of chacteristic zero!</p>",
+        "id": 423940059,
+        "sender_full_name": "John Baez",
+        "timestamp": 1709174271
+    },
+    {
+        "content": "<p>Okay, MacDonald classifies polynomial representations of GL(n,k) for any field k of characteristic zero in Appendix A Section 8.  But alas, he doesn't classify all algebraic representations.</p>",
+        "id": 424139142,
+        "sender_full_name": "John Baez",
+        "timestamp": 1709255484
+    },
+    {
+        "content": "<p><a href=\"https://www.jmilne.org/math/CourseNotes/LAG.pdf\">https://www.jmilne.org/math/CourseNotes/LAG.pdf</a> might also be a good place to check though</p>",
+        "id": 424147938,
+        "sender_full_name": "Tim Hosgood",
+        "timestamp": 1709259001
+    },
+    {
+        "content": "<p>oh I think you'll maybe find it in Jantzen's <em>Representations of algebraic groups</em> (which, I think, cites Bourbaki)</p>",
+        "id": 424149011,
+        "sender_full_name": "Tim Hosgood",
+        "timestamp": 1709259751
+    },
+    {
+        "content": "<p>Heh, I'm looking at Jantzen just now!</p>",
+        "id": 424150476,
+        "sender_full_name": "John Baez",
+        "timestamp": 1709260798
+    }
+]

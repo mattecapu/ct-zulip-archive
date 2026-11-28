@@ -1,0 +1,116 @@
+[
+    {
+        "content": "<p>I've come across the following slogan in which I do not understand any part. Can someone decode it for me or even prove what it says ? \"The bicategory of locally κ-presentable category and κ-accessible right adjoint functors between them has all Cat-enriched pseudo limits and they are preserved by the forgetful functor to Cat. \"</p>",
+        "id": 420333062,
+        "sender_full_name": "Jan Pax",
+        "timestamp": 1707336336
+    },
+    {
+        "content": "<p>Do you know any of the words “bicategory”, “locally presentable category”, “accessible functor”, or “pseudo limit”? Presumably “right adjoint” and “preserved by a forgetful functor” are ok? Those definitions are of course the places to start; it doesn’t make much sense to ask someone to define all the words and also explain and prove the statement all in one go.</p>",
+        "id": 420333725,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707336578
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"609515\">@Kevin Arlin</span>  Yes, I do know all words you mention but not how they are connected into that statement. I know even enriched by a category (i.e. when hom sets are that category and as usual any category is Set-enriched) but not Cat-enriched pseudo limits.</p>",
+        "id": 420335030,
+        "sender_full_name": "Jan Pax",
+        "timestamp": 1707337081
+    },
+    {
+        "content": "<p>If you know what a pseudo limit is, “cat enriched” is redundant here.</p>",
+        "id": 420335159,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707337116
+    },
+    {
+        "content": "<p>The statement says that a certain bicategory has all limits of a certain flavor and they’re preserved by a certain functor. You say you know all the words and that’s a common kind of sentence so I’m not sure what to explain next—would you like a more explicit description of what pseudo limits are in general, or in the case of lp categories, or what?</p>",
+        "id": 420335344,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707337188
+    },
+    {
+        "content": "<p>It's possible that whoever said the sentence meant \"Cat-<em>weighted</em>\" instead of \"Cat-enriched\", which makes it a stronger statement than one that's just about conical pseudo limits.</p>",
+        "id": 420335436,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1707337205
+    },
+    {
+        "content": "<p>Yeah, that would make more sense, although weighted pseudo limits are an annoying thing to talk about instead of just flexible ones—it’s true for flexibles, right?</p>",
+        "id": 420335540,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707337244
+    },
+    {
+        "content": "<p>It should be true for PIE-limits at least; not sure about flexibles, but maybe.</p>",
+        "id": 420335881,
+        "sender_full_name": "Mike Shulman",
+        "timestamp": 1707337339
+    },
+    {
+        "content": "<p>I understand that pseudo limit is a limit whose cones commute up to 2-cell isomorphism, is that OK ? I would like to have some intuition behind the entire sentence, but that hasn't helped you much in the decision on what to explain, right ?</p>",
+        "id": 420335917,
+        "sender_full_name": "Jan Pax",
+        "timestamp": 1707337353
+    },
+    {
+        "content": "<p>Right, you started by claiming you have no idea what any of it means but now you say you do have an intuitive rough sense, so it’s hard to guess what needs clarification first.</p>",
+        "id": 420336062,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707337412
+    },
+    {
+        "content": "<p><span class=\"user-mention\" data-user-id=\"609515\">@Kevin Arlin</span>  Yes, I meant in fact that there is a bunch of abstract notions which together make no sense to me. Let alone their truth how they could be proved.</p>",
+        "id": 420336384,
+        "sender_full_name": "Jan Pax",
+        "timestamp": 1707337528
+    },
+    {
+        "content": "<p>Maybe you could pick one abstract notion at a time you’d like more intuition for, then.</p>",
+        "id": 420336713,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707337653
+    },
+    {
+        "content": "<p>I can also say that a very similar statement is Theorem 5.1 of Makkai-Paré’s book on accessible categories, if you’d just like to see something about how it’s proved.</p>",
+        "id": 420336811,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707337687
+    },
+    {
+        "content": "<p>Very roughly speaking, you figure out how to present presentable categories by sketches, which are somewhat like algebraic theories, figure out how to take colimits of sketches, which isn’t all that hard, prove that colimits of sketches are sent to limits of the associated presentable categories, and then all that’s left is to check that these limits are computed as in Cat.</p>",
+        "id": 420337027,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707337772
+    },
+    {
+        "content": "<p>OK, I'll try to find pdf of the MP book. I would like to see a hint on how to prove the words \"has all\" in my original statement.</p>",
+        "id": 420337366,
+        "sender_full_name": "Jan Pax",
+        "timestamp": 1707337880
+    },
+    {
+        "content": "<p>I just gave such a hint: you can compute limits of presentable categories via colimits of their sketches. This is an old book so there might be a more modern and quite different way to do this but I don’t think I know another reference.</p>",
+        "id": 420337643,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707337964
+    },
+    {
+        "content": "<p>But also, this isn’t an easy theorem.</p>",
+        "id": 420337669,
+        "sender_full_name": "Kevin Arlin",
+        "timestamp": 1707337976
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"366205\">Jan Pax</span> <a href=\"#narrow/stream/229199-learning.3A-questions/topic/a.20dense.20sentence.20which.20calls.20to.20be.20decoded/near/420337366\">said</a>:</p>\n<blockquote>\n<p>OK, I'll try to find pdf of the MP book. I would like to see a hint on how to prove the words \"has all\" in my original statement.</p>\n</blockquote>\n<p>I feel the simplest proof makes use of <a href=\"https://ncatlab.org/nlab/show/Gabriel-Ulmer%20duality\">[[Gabriel-Ulmer duality]]</a>. If you can prove that the 2-category of <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>-complete categories has pseudo colimits, then this implies that the bicategory of locally <span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>κ</mi></mrow><annotation encoding=\"application/x-tex\">\\kappa</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height:0.4306em;\"></span><span class=\"mord mathnormal\">κ</span></span></span></span>-presentable categoreis has pseudo limits.</p>",
+        "id": 420338023,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1707338112
+    },
+    {
+        "content": "<p>(Conceptually, this is essentially the same as Kevin Arlin's suggestion, but there are convenient 2-categorical techniques for proving cocompleteness of 2-categories of algebras for 2-monads.)</p>",
+        "id": 420338224,
+        "sender_full_name": "Nathanael Arkor",
+        "timestamp": 1707338195
+    }
+]

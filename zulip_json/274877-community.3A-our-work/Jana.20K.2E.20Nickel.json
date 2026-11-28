@@ -1,0 +1,44 @@
+[
+    {
+        "content": "<p>Hello,<br>\nFor my PhD studies, I am studying virtual double categories. To obtain a better understanding of companions and conjoints, I have written down very detailed notes introducing the definitions and proving some related results. Perhaps, they will be useful to someone else. I will appreciate any comments!<br>\n<a href=\"/user_uploads/21317/h8sZI3-NXxvPyYOmnuC0oOE9/Nickel_Companions-and-conjoints-in-a-virtual-equipment.pdf\">Nickel_Companions and conjoints in a virtual equipment.pdf</a></p>",
+        "id": 574293336,
+        "sender_full_name": "Jana Nickel",
+        "timestamp": 1771335850
+    },
+    {
+        "content": "<p>I will hopefully have a masters student studying virtual double categories soon, in which case these will be very useful!</p>",
+        "id": 574293643,
+        "sender_full_name": "Morgan Rogers (he/him)",
+        "timestamp": 1771335931
+    },
+    {
+        "content": "<p>So far, the notes are only hand-written, but I might translate them to LaTeX at some point.</p>",
+        "id": 574293828,
+        "sender_full_name": "Jana Nickel",
+        "timestamp": 1771335981
+    },
+    {
+        "content": "<p>These are nice notes Jana, very detailed!</p>\n<p>As a comment let me advertise the notion of augmented virtual double category, introduced <a href=\"http://www.tac.mta.ca/tac/volumes/35/10/35-10abs.html\">here</a>, which ``extends'' that of virtual double category, which might be useful to you.</p>\n<p>If all loose units exists then the two notions coincide. The language of augmented virtual double categories however allows you to suppress the cocartesian cells associated to such units (which you use a lot in your notes). This is explained on the third page (p263) of the reference (see especially the bottom display).</p>\n<p>This allows for efficient proofs, see e.g. Lemma 8.1 which is the analogue of the theorem on p7 of your notes.</p>\n<p>Another comment: I find that medium-sized composites of cells in virtual double categories can still be understood well when depicting cells with all their boundaries left out, reducing them to labeled (``lego'') blocks that still retain the right shape. This saves a lot of space; see p320 for an example.</p>",
+        "id": 574599779,
+        "sender_full_name": "Roald Koudenburg",
+        "timestamp": 1771447396
+    },
+    {
+        "content": "<p>That's nice notation, Roald, hadn't noted it before. Do you have any library setup for this, or you're just drawing straight in TiKZ?</p>",
+        "id": 574614210,
+        "sender_full_name": "Kevin Carlson",
+        "timestamp": 1771452857
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"584178\">Roald Koudenburg</span> <a href=\"#narrow/channel/274877-community.3A-our-work/topic/Jana.20K.2E.20Nickel/near/574599779\">schrieb</a>:</p>\n<blockquote>\n<p>These are nice notes Jana, very detailed!</p>\n<p>As a comment let me advertise the notion of augmented virtual double category, introduced <a href=\"http://www.tac.mta.ca/tac/volumes/35/10/35-10abs.html\">here</a>, which ``extends'' that of virtual double category, which might be useful to you.</p>\n<p>If all loose units exists then the two notions coincide. The language of augmented virtual double categories however allows you to suppress the cocartesian cells associated to such units (which you use a lot in your notes). This is explained on the third page (p263) of the reference (see especially the bottom display).</p>\n<p>This allows for efficient proofs, see e.g. Lemma 8.1 which is the analogue of the theorem on p7 of your notes.</p>\n<p>Another comment: I find that medium-sized composites of cells in virtual double categories can still be understood well when depicting cells with all their boundaries left out, reducing them to labeled (``lego'') blocks that still retain the right shape. This saves a lot of space; see p320 for an example.</p>\n</blockquote>\n<p>Many thanks for your advice!</p>",
+        "id": 574615090,
+        "sender_full_name": "Jana Nickel",
+        "timestamp": 1771453246
+    },
+    {
+        "content": "<p><span class=\"user-mention silent\" data-user-id=\"609515\">Kevin Carlson</span> <a href=\"#narrow/channel/274877-community.3A-our-work/topic/Jana.20K.2E.20Nickel/near/574614210\">said</a>:</p>\n<blockquote>\n<p>That's nice notation, Roald, hadn't noted it before. Do you have any library setup for this, or you're just drawing straight in TiKZ?</p>\n</blockquote>\n<p>It's straight TiKZ Kevin. But the drawings are simple, so the code is simple too. Below is the code of the first composite of the equation that I mentioned. The parameters in [] set the unit lengths. The first draw command draws the boundaries. The second draw commands draws the labels in the middle of the cells.</p>\n<p>\\begin{tikzpicture}[x=1.6em, y=1.6em, font=\\scriptsize]<br>\n    \\draw   (0,2) -- (1,2) -- (1,3) -- (0,3) -- (0,1) -- (1,0) -- (2,0) -- (3,1) -- (3,3) -- (2,3) -- (2,2) -- (3,2) (0,1) -- (3,1);<br>\n    \\draw    (1.5,0.5) node {c}<br>\n            (1.5,1.5) node {$\\phi_n'$}<br>\n            (1.5,2.5) node[xshift=.75pt] {$\\dotsb$}<br>\n            (2.5,2.5) node {cc};                            <br>\n\\end{tikzpicture}</p>",
+        "id": 574683880,
+        "sender_full_name": "Roald Koudenburg",
+        "timestamp": 1771493737
+    }
+]
